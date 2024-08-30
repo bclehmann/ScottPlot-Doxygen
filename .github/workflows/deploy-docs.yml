@@ -34,6 +34,9 @@ jobs:
         with:
           submodules: 'true'
 
+      - name: Make input_filter.py executable
+        run: chmod +x ./input_filter.py
+
       - name: Doxygen Action
         uses: mattnotmitt/doxygen-action@v1.9.8
         with:
