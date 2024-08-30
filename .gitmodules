@@ -1,0 +1,3 @@
+[submodule "ScottPlot"]
+	path = ScottPlot
+	url = https://github.com/ScottPlot/ScottPlot
