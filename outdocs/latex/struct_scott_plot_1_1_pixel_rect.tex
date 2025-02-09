@@ -1,0 +1,601 @@
+\doxysection{Scott\+Plot.\+Pixel\+Rect Struct Reference}
+\hypertarget{struct_scott_plot_1_1_pixel_rect}{}\label{struct_scott_plot_1_1_pixel_rect}\index{ScottPlot.PixelRect@{ScottPlot.PixelRect}}
+Inheritance diagram for Scott\+Plot.\+Pixel\+Rect\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{struct_scott_plot_1_1_pixel_rect}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect_ac6a1d5be4e16112427a588aa6d3da007}{Pixel\+Rect}} (\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}} center, float radius)
+\begin{DoxyCompactList}\small\item\em Create a rectangle from the bounding box of a circle centered at {\itshape center}  with radius {\itshape radius}  \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect_a26fef6b8cd4c4e9597a261d7b2a695f6}{Pixel\+Rect}} (\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}} corner1, \mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}} corner2)
+\begin{DoxyCompactList}\small\item\em Create a rectangle with edges at the given pixel positions. This constructor will rectify the points so rectangles will always have positive area. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect_a153def999daa4502687adf004442e480}{Pixel\+Rect}} (\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}} top\+Left\+Corner, \mbox{\hyperlink{struct_scott_plot_1_1_pixel_size}{Pixel\+Size}} size)
+\begin{DoxyCompactList}\small\item\em Create a rectangle representing pixels on a screen. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect_a694887f4b93884b72a76d2f83676a29a}{Pixel\+Rect}} (\mbox{\hyperlink{namespace_scott_plot_a3dfefa78aee0c8cf7184895e4ad7d44b}{Pixel\+Offset}} offset, \mbox{\hyperlink{struct_scott_plot_1_1_pixel_size}{Pixel\+Size}} size)
+\begin{DoxyCompactList}\small\item\em Create a rectangle representing pixels on a screen. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect_a7200b2642cf1d96551c6586334566e28}{Pixel\+Rect}} (\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}} top\+Left\+Corner, float width, float height)
+\begin{DoxyCompactList}\small\item\em Create a rectangle representing pixels on a screen. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect_a3faa8087e38172c07d6e6be818fd5e6a}{Pixel\+Rect}} (\mbox{\hyperlink{struct_scott_plot_1_1_pixel_size}{Pixel\+Size}} size)
+\begin{DoxyCompactList}\small\item\em Create a rectangle representing pixels on a screen. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect_aa327528a0b4ef5a2f70af3ca67c110c5}{Pixel\+Rect}} (\mbox{\hyperlink{struct_scott_plot_1_1_pixel_size}{Pixel\+Size}} size, \mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}} offset)
+\begin{DoxyCompactList}\small\item\em Create a rectangle representing pixels on a screen. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect_a533936d7414c67fe0ddaeac3b6afecf7}{Pixel\+Rect}} (\mbox{\hyperlink{struct_scott_plot_1_1_pixel_size}{Pixel\+Size}} size, \mbox{\hyperlink{namespace_scott_plot_a3dfefa78aee0c8cf7184895e4ad7d44b}{Pixel\+Offset}} offset)
+\begin{DoxyCompactList}\small\item\em Create a rectangle representing pixels on a screen. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect_ac9eab5123f13fb42028a8a8810527267}{Pixel\+Rect}} (float left, float right, float bottom, float top)
+\begin{DoxyCompactList}\small\item\em Create a rectangle from the given edges. This constructor permits inverted rectangles with negative area. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect_a3e49b4c65059c9d9e04c806a9d5dc987}{Pixel\+Rect}} (\mbox{\hyperlink{namespace_scott_plot_a4321f186551947968cc1fb441ff2735b}{Pixel\+RangeX}} x\+Range, \mbox{\hyperlink{namespace_scott_plot_a5ac63604fb6f80a0ceaca4400e4b7e65}{Pixel\+RangeY}} y\+Range)
+\begin{DoxyCompactList}\small\item\em Create a pixel rectangle from two pixel ranges. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect_a789158a99b4c4f64ff933b36ee420a3e}{Pixel\+Rect}} (\mbox{\hyperlink{class_i_enumerable}{IEnumerable}}$<$ \mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}} $>$ pixels)
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect}{Pixel\+Rect}} \mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect_a28b540ef908cc315d8c2e08be4897562}{With\+Pan}} (float x, float y)
+\item 
+override string \mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect_abb2e29664e5c41aa25d5b9ad8891b387}{To\+String}} ()
+\item 
+Skia\+Sharp.\+SKRect \mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect_aed9dbb8f44b5bff126e5e9eea1c57ae7}{To\+SKRect}} ()
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect}{Pixel\+Rect}} \mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect_ac80df12afcb003f383c71b540ca62d4e}{Contract}} (float delta)
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect}{Pixel\+Rect}} \mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect_af8b402c1268f500ec7be8c7e9c9c61df}{Contract}} (float x, float y)
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect}{Pixel\+Rect}} \mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect_ad6a4798d81c39ffbc9c69902e24c4566}{Contract}} (\mbox{\hyperlink{struct_scott_plot_1_1_pixel_padding}{Pixel\+Padding}} padding)
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect}{Pixel\+Rect}} \mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect_adbab88bb15d4551323c6828b5ac6fc96}{Expand}} (\mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect}{Pixel\+Rect}} other)
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect}{Pixel\+Rect}} \mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect_a354f17379a2adcd90aa961e7a2e7af83}{Intersect}} (\mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect}{Pixel\+Rect}} other)
+\begin{DoxyCompactList}\small\item\em Returns the intersection with another rectangle. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect}{Pixel\+Rect}} \mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect_a067abfcafa93b96b02258d0872fa110d}{Expand}} (\mbox{\hyperlink{struct_scott_plot_1_1_pixel_padding}{Pixel\+Padding}} pad)
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect}{Pixel\+Rect}} \mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect_aaa5abf6dd8355fd47e201d0f32bbc195}{Expand}} (float delta)
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect}{Pixel\+Rect}} \mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect_a2c4a83e7ccaa6a599074f566f5e4fa4f}{ExpandX}} (float x)
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect}{Pixel\+Rect}} \mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect_a6ae6bd4eef55a2120536f48287a82d68}{ExpandY}} (float y)
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect}{Pixel\+Rect}} \mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect_a20c55c9348c3ca1048f4d431c8aaa5f0}{With\+Delta}} (float x, float y)
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect}{Pixel\+Rect}} \mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect_adf8f73790668ae29ee04c7aeb23e362a}{With\+Delta}} (float x, float y, \mbox{\hyperlink{namespace_scott_plot_a2da000551e02ef1d0af13793cf678abc}{Alignment}} alignment)
+\item 
+bool \mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect_ad3b73947af63a8a5e6e9711a2629d24c}{Equals}} (\mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect}{Pixel\+Rect}} other)
+\item 
+override bool \mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect_abf2e7798f3dc19c349157c5b38725c73}{Equals}} (object? obj)
+\item 
+override int \mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect_a3f11aabb184ff53203c1e4c110f53f53}{Get\+Hash\+Code}} ()
+\item 
+bool \mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect_a26d5157e5f8e8c5cba288a3fd246d817}{Contains}} (\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}} px)
+\item 
+bool \mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect_a5087ffac6c3a469503b725d73e705f93}{Contains}} (float x, float y)
+\item 
+bool \mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect_ae5ae066c91340a4ca566b24b83ea0118}{ContainsX}} (float x)
+\item 
+bool \mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect_a59ca39606fe4800eb1fa8142fba5cbaf}{ContainsY}} (float y)
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}} \mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect_a685291769c804c9de5842b2598874447}{Get\+Aligned\+Pixel}} (\mbox{\hyperlink{namespace_scott_plot_a2da000551e02ef1d0af13793cf678abc}{Alignment}} alignment)
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect}{Pixel\+Rect}} \mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect_a6e6632c4fc5bd80a00f155526ad3cfa7}{With\+Offset}} (\mbox{\hyperlink{namespace_scott_plot_a3dfefa78aee0c8cf7184895e4ad7d44b}{Pixel\+Offset}} offset)
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect}{Pixel\+Rect}} \mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect_a078bda1cf8732c34b0e273a336336387}{Aligned\+Inside}} (\mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect}{Pixel\+Rect}} larger\+Rect, \mbox{\hyperlink{namespace_scott_plot_a2da000551e02ef1d0af13793cf678abc}{Alignment}} alignment)
+\begin{DoxyCompactList}\small\item\em Return the position of this rectangle aligned inside a larger one. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect}{Pixel\+Rect}} \mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect_a480cd48612e4c84e7aa5e4b14209680d}{Aligned\+Inside}} (\mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect}{Pixel\+Rect}} larger\+Rect, \mbox{\hyperlink{namespace_scott_plot_a2da000551e02ef1d0af13793cf678abc}{Alignment}} alignment, \mbox{\hyperlink{struct_scott_plot_1_1_pixel_padding}{Pixel\+Padding}} padding)
+\begin{DoxyCompactList}\small\item\em Return the position of this rectangle aligned inside a larger one. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect_a4b21efb4d5eb6cda497fe22974b267a7}{operator==}} (\mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect}{Pixel\+Rect}} a, \mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect}{Pixel\+Rect}} b)
+\item 
+static bool \mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect_a0ef997f7936cce192406bf686a6617f4}{operator!=}} (\mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect}{Pixel\+Rect}} a, \mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect}{Pixel\+Rect}} b)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+readonly float \mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect_a3222061e32c4e04337fb60a8d84f443e}{Left}}
+\item 
+readonly float \mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect_ae7f1526391b6fe71cb3e432482b5ed95}{Right}}
+\item 
+readonly float \mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect_ac222804d1b5d82f8c94e6369a16a6c3e}{Bottom}}
+\item 
+readonly float \mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect_ad137e68eaddd500b5921f5b38575e20f}{Top}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect_a8b7082ce4fc9ceea955aa3d5c9f467a9}{Horizontal\+Center}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+float \mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect_a8284ce6b35864f61ed6092a7f147a42b}{Vertical\+Center}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+float \mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect_a6d942a6572a6b5ef15cb66a48131e6f5}{Width}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+float \mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect_af51b790be946385140e901e3125aa7c6}{Height}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+bool \mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect_ab596a3bf0f9a3b1c70eb3137d9a931b2}{Has\+Area}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}} \mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect_a84fdf04c7f7ffe105c3d4b0920b69a73}{Top\+Left}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}} \mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect_aa5cfa56ff7b4a2f6af2b7eb2cb7a2076}{Top\+Right}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}} \mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect_a01ee144787c93557c2ec1136bd8aa5f7}{Bottom\+Left}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}} \mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect_a8379535b0fb58a4cdcd0151177d25210}{Bottom\+Right}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}} \mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect_aaeb7e1236d83b96b8204542911f50dee}{Left\+Center}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}} \mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect_aea007076404d5c3250c5a5e110470e54}{Right\+Center}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}} \mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect_ae76bb1a8b75d01eddb228aa6820390f0}{Bottom\+Center}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}} \mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect_af0f4cf7597c87b0a1fb3f1eed605448d}{Top\+Center}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}} \mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect_a49e39623c919dfb20ceea7c8aab446b3}{Center}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_pixel_size}{Pixel\+Size}} \mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect_aa224a7fe31e92a6e8838860baad8c03d}{Size}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_pixel_line}{Pixel\+Line}} \mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect_a96ee5f61904dc21eb2a1505888ed8194}{Bottom\+Line}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_pixel_line}{Pixel\+Line}} \mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect_a9978b97894c99ddff10f228fbbfd412b}{Top\+Line}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_pixel_line}{Pixel\+Line}} \mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect_afb2d5615e3c460906d85cf5ce5bb5edd}{Left\+Line}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_pixel_line}{Pixel\+Line}} \mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect_a67a2576c59636911d8c179d9c12c5c48}{Right\+Line}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+static \mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect}{Pixel\+Rect}} \mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect_abf0d15007030a473a358d072b86c73b3}{Zero}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+static \mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect}{Pixel\+Rect}} \mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect_ab0abc7d6818a5badc3fcba5ce5bd1559}{NaN}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{struct_scott_plot_1_1_pixel_rect_ac6a1d5be4e16112427a588aa6d3da007}\index{ScottPlot.PixelRect@{ScottPlot.PixelRect}!PixelRect@{PixelRect}}
+\index{PixelRect@{PixelRect}!ScottPlot.PixelRect@{ScottPlot.PixelRect}}
+\doxysubsubsection{\texorpdfstring{PixelRect()}{PixelRect()}\hspace{0.1cm}{\footnotesize\ttfamily [1/11]}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_pixel_rect_ac6a1d5be4e16112427a588aa6d3da007} 
+Scott\+Plot.\+Pixel\+Rect.\+Pixel\+Rect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}}}]{center}{, }\item[{float}]{radius}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Create a rectangle from the bounding box of a circle centered at {\itshape center}  with radius {\itshape radius}  
+
+\Hypertarget{struct_scott_plot_1_1_pixel_rect_a26fef6b8cd4c4e9597a261d7b2a695f6}\index{ScottPlot.PixelRect@{ScottPlot.PixelRect}!PixelRect@{PixelRect}}
+\index{PixelRect@{PixelRect}!ScottPlot.PixelRect@{ScottPlot.PixelRect}}
+\doxysubsubsection{\texorpdfstring{PixelRect()}{PixelRect()}\hspace{0.1cm}{\footnotesize\ttfamily [2/11]}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_pixel_rect_a26fef6b8cd4c4e9597a261d7b2a695f6} 
+Scott\+Plot.\+Pixel\+Rect.\+Pixel\+Rect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}}}]{corner1}{, }\item[{\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}}}]{corner2}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Create a rectangle with edges at the given pixel positions. This constructor will rectify the points so rectangles will always have positive area. 
+
+\Hypertarget{struct_scott_plot_1_1_pixel_rect_a153def999daa4502687adf004442e480}\index{ScottPlot.PixelRect@{ScottPlot.PixelRect}!PixelRect@{PixelRect}}
+\index{PixelRect@{PixelRect}!ScottPlot.PixelRect@{ScottPlot.PixelRect}}
+\doxysubsubsection{\texorpdfstring{PixelRect()}{PixelRect()}\hspace{0.1cm}{\footnotesize\ttfamily [3/11]}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_pixel_rect_a153def999daa4502687adf004442e480} 
+Scott\+Plot.\+Pixel\+Rect.\+Pixel\+Rect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}}}]{top\+Left\+Corner}{, }\item[{\mbox{\hyperlink{struct_scott_plot_1_1_pixel_size}{Pixel\+Size}}}]{size}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Create a rectangle representing pixels on a screen. 
+
+\Hypertarget{struct_scott_plot_1_1_pixel_rect_a694887f4b93884b72a76d2f83676a29a}\index{ScottPlot.PixelRect@{ScottPlot.PixelRect}!PixelRect@{PixelRect}}
+\index{PixelRect@{PixelRect}!ScottPlot.PixelRect@{ScottPlot.PixelRect}}
+\doxysubsubsection{\texorpdfstring{PixelRect()}{PixelRect()}\hspace{0.1cm}{\footnotesize\ttfamily [4/11]}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_pixel_rect_a694887f4b93884b72a76d2f83676a29a} 
+Scott\+Plot.\+Pixel\+Rect.\+Pixel\+Rect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_scott_plot_a3dfefa78aee0c8cf7184895e4ad7d44b}{Pixel\+Offset}}}]{offset}{, }\item[{\mbox{\hyperlink{struct_scott_plot_1_1_pixel_size}{Pixel\+Size}}}]{size}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Create a rectangle representing pixels on a screen. 
+
+\Hypertarget{struct_scott_plot_1_1_pixel_rect_a7200b2642cf1d96551c6586334566e28}\index{ScottPlot.PixelRect@{ScottPlot.PixelRect}!PixelRect@{PixelRect}}
+\index{PixelRect@{PixelRect}!ScottPlot.PixelRect@{ScottPlot.PixelRect}}
+\doxysubsubsection{\texorpdfstring{PixelRect()}{PixelRect()}\hspace{0.1cm}{\footnotesize\ttfamily [5/11]}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_pixel_rect_a7200b2642cf1d96551c6586334566e28} 
+Scott\+Plot.\+Pixel\+Rect.\+Pixel\+Rect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}}}]{top\+Left\+Corner}{, }\item[{float}]{width}{, }\item[{float}]{height}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Create a rectangle representing pixels on a screen. 
+
+\Hypertarget{struct_scott_plot_1_1_pixel_rect_a3faa8087e38172c07d6e6be818fd5e6a}\index{ScottPlot.PixelRect@{ScottPlot.PixelRect}!PixelRect@{PixelRect}}
+\index{PixelRect@{PixelRect}!ScottPlot.PixelRect@{ScottPlot.PixelRect}}
+\doxysubsubsection{\texorpdfstring{PixelRect()}{PixelRect()}\hspace{0.1cm}{\footnotesize\ttfamily [6/11]}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_pixel_rect_a3faa8087e38172c07d6e6be818fd5e6a} 
+Scott\+Plot.\+Pixel\+Rect.\+Pixel\+Rect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_scott_plot_1_1_pixel_size}{Pixel\+Size}}}]{size}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Create a rectangle representing pixels on a screen. 
+
+\Hypertarget{struct_scott_plot_1_1_pixel_rect_aa327528a0b4ef5a2f70af3ca67c110c5}\index{ScottPlot.PixelRect@{ScottPlot.PixelRect}!PixelRect@{PixelRect}}
+\index{PixelRect@{PixelRect}!ScottPlot.PixelRect@{ScottPlot.PixelRect}}
+\doxysubsubsection{\texorpdfstring{PixelRect()}{PixelRect()}\hspace{0.1cm}{\footnotesize\ttfamily [7/11]}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_pixel_rect_aa327528a0b4ef5a2f70af3ca67c110c5} 
+Scott\+Plot.\+Pixel\+Rect.\+Pixel\+Rect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_scott_plot_1_1_pixel_size}{Pixel\+Size}}}]{size}{, }\item[{\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}}}]{offset}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Create a rectangle representing pixels on a screen. 
+
+\Hypertarget{struct_scott_plot_1_1_pixel_rect_a533936d7414c67fe0ddaeac3b6afecf7}\index{ScottPlot.PixelRect@{ScottPlot.PixelRect}!PixelRect@{PixelRect}}
+\index{PixelRect@{PixelRect}!ScottPlot.PixelRect@{ScottPlot.PixelRect}}
+\doxysubsubsection{\texorpdfstring{PixelRect()}{PixelRect()}\hspace{0.1cm}{\footnotesize\ttfamily [8/11]}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_pixel_rect_a533936d7414c67fe0ddaeac3b6afecf7} 
+Scott\+Plot.\+Pixel\+Rect.\+Pixel\+Rect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_scott_plot_1_1_pixel_size}{Pixel\+Size}}}]{size}{, }\item[{\mbox{\hyperlink{namespace_scott_plot_a3dfefa78aee0c8cf7184895e4ad7d44b}{Pixel\+Offset}}}]{offset}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Create a rectangle representing pixels on a screen. 
+
+\Hypertarget{struct_scott_plot_1_1_pixel_rect_ac9eab5123f13fb42028a8a8810527267}\index{ScottPlot.PixelRect@{ScottPlot.PixelRect}!PixelRect@{PixelRect}}
+\index{PixelRect@{PixelRect}!ScottPlot.PixelRect@{ScottPlot.PixelRect}}
+\doxysubsubsection{\texorpdfstring{PixelRect()}{PixelRect()}\hspace{0.1cm}{\footnotesize\ttfamily [9/11]}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_pixel_rect_ac9eab5123f13fb42028a8a8810527267} 
+Scott\+Plot.\+Pixel\+Rect.\+Pixel\+Rect (\begin{DoxyParamCaption}\item[{float}]{left}{, }\item[{float}]{right}{, }\item[{float}]{bottom}{, }\item[{float}]{top}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Create a rectangle from the given edges. This constructor permits inverted rectangles with negative area. 
+
+\Hypertarget{struct_scott_plot_1_1_pixel_rect_a3e49b4c65059c9d9e04c806a9d5dc987}\index{ScottPlot.PixelRect@{ScottPlot.PixelRect}!PixelRect@{PixelRect}}
+\index{PixelRect@{PixelRect}!ScottPlot.PixelRect@{ScottPlot.PixelRect}}
+\doxysubsubsection{\texorpdfstring{PixelRect()}{PixelRect()}\hspace{0.1cm}{\footnotesize\ttfamily [10/11]}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_pixel_rect_a3e49b4c65059c9d9e04c806a9d5dc987} 
+Scott\+Plot.\+Pixel\+Rect.\+Pixel\+Rect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_scott_plot_a4321f186551947968cc1fb441ff2735b}{Pixel\+RangeX}}}]{x\+Range}{, }\item[{\mbox{\hyperlink{namespace_scott_plot_a5ac63604fb6f80a0ceaca4400e4b7e65}{Pixel\+RangeY}}}]{y\+Range}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Create a pixel rectangle from two pixel ranges. 
+
+\Hypertarget{struct_scott_plot_1_1_pixel_rect_a789158a99b4c4f64ff933b36ee420a3e}\index{ScottPlot.PixelRect@{ScottPlot.PixelRect}!PixelRect@{PixelRect}}
+\index{PixelRect@{PixelRect}!ScottPlot.PixelRect@{ScottPlot.PixelRect}}
+\doxysubsubsection{\texorpdfstring{PixelRect()}{PixelRect()}\hspace{0.1cm}{\footnotesize\ttfamily [11/11]}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_pixel_rect_a789158a99b4c4f64ff933b36ee420a3e} 
+Scott\+Plot.\+Pixel\+Rect.\+Pixel\+Rect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_i_enumerable}{IEnumerable}}$<$ \mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}} $>$}]{pixels}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{struct_scott_plot_1_1_pixel_rect_a078bda1cf8732c34b0e273a336336387}\index{ScottPlot.PixelRect@{ScottPlot.PixelRect}!AlignedInside@{AlignedInside}}
+\index{AlignedInside@{AlignedInside}!ScottPlot.PixelRect@{ScottPlot.PixelRect}}
+\doxysubsubsection{\texorpdfstring{AlignedInside()}{AlignedInside()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_pixel_rect_a078bda1cf8732c34b0e273a336336387} 
+\mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect}{Pixel\+Rect}} Scott\+Plot.\+Pixel\+Rect.\+Aligned\+Inside (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect}{Pixel\+Rect}}}]{larger\+Rect}{, }\item[{\mbox{\hyperlink{namespace_scott_plot_a2da000551e02ef1d0af13793cf678abc}{Alignment}}}]{alignment}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return the position of this rectangle aligned inside a larger one. 
+
+\Hypertarget{struct_scott_plot_1_1_pixel_rect_a480cd48612e4c84e7aa5e4b14209680d}\index{ScottPlot.PixelRect@{ScottPlot.PixelRect}!AlignedInside@{AlignedInside}}
+\index{AlignedInside@{AlignedInside}!ScottPlot.PixelRect@{ScottPlot.PixelRect}}
+\doxysubsubsection{\texorpdfstring{AlignedInside()}{AlignedInside()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_pixel_rect_a480cd48612e4c84e7aa5e4b14209680d} 
+\mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect}{Pixel\+Rect}} Scott\+Plot.\+Pixel\+Rect.\+Aligned\+Inside (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect}{Pixel\+Rect}}}]{larger\+Rect}{, }\item[{\mbox{\hyperlink{namespace_scott_plot_a2da000551e02ef1d0af13793cf678abc}{Alignment}}}]{alignment}{, }\item[{\mbox{\hyperlink{struct_scott_plot_1_1_pixel_padding}{Pixel\+Padding}}}]{padding}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return the position of this rectangle aligned inside a larger one. 
+
+\Hypertarget{struct_scott_plot_1_1_pixel_rect_a5087ffac6c3a469503b725d73e705f93}\index{ScottPlot.PixelRect@{ScottPlot.PixelRect}!Contains@{Contains}}
+\index{Contains@{Contains}!ScottPlot.PixelRect@{ScottPlot.PixelRect}}
+\doxysubsubsection{\texorpdfstring{Contains()}{Contains()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_pixel_rect_a5087ffac6c3a469503b725d73e705f93} 
+bool Scott\+Plot.\+Pixel\+Rect.\+Contains (\begin{DoxyParamCaption}\item[{float}]{x}{, }\item[{float}]{y}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{struct_scott_plot_1_1_pixel_rect_a26d5157e5f8e8c5cba288a3fd246d817}\index{ScottPlot.PixelRect@{ScottPlot.PixelRect}!Contains@{Contains}}
+\index{Contains@{Contains}!ScottPlot.PixelRect@{ScottPlot.PixelRect}}
+\doxysubsubsection{\texorpdfstring{Contains()}{Contains()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_pixel_rect_a26d5157e5f8e8c5cba288a3fd246d817} 
+bool Scott\+Plot.\+Pixel\+Rect.\+Contains (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}}}]{px}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{struct_scott_plot_1_1_pixel_rect_ae5ae066c91340a4ca566b24b83ea0118}\index{ScottPlot.PixelRect@{ScottPlot.PixelRect}!ContainsX@{ContainsX}}
+\index{ContainsX@{ContainsX}!ScottPlot.PixelRect@{ScottPlot.PixelRect}}
+\doxysubsubsection{\texorpdfstring{ContainsX()}{ContainsX()}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_pixel_rect_ae5ae066c91340a4ca566b24b83ea0118} 
+bool Scott\+Plot.\+Pixel\+Rect.\+ContainsX (\begin{DoxyParamCaption}\item[{float}]{x}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{struct_scott_plot_1_1_pixel_rect_a59ca39606fe4800eb1fa8142fba5cbaf}\index{ScottPlot.PixelRect@{ScottPlot.PixelRect}!ContainsY@{ContainsY}}
+\index{ContainsY@{ContainsY}!ScottPlot.PixelRect@{ScottPlot.PixelRect}}
+\doxysubsubsection{\texorpdfstring{ContainsY()}{ContainsY()}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_pixel_rect_a59ca39606fe4800eb1fa8142fba5cbaf} 
+bool Scott\+Plot.\+Pixel\+Rect.\+ContainsY (\begin{DoxyParamCaption}\item[{float}]{y}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{struct_scott_plot_1_1_pixel_rect_ac80df12afcb003f383c71b540ca62d4e}\index{ScottPlot.PixelRect@{ScottPlot.PixelRect}!Contract@{Contract}}
+\index{Contract@{Contract}!ScottPlot.PixelRect@{ScottPlot.PixelRect}}
+\doxysubsubsection{\texorpdfstring{Contract()}{Contract()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_pixel_rect_ac80df12afcb003f383c71b540ca62d4e} 
+\mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect}{Pixel\+Rect}} Scott\+Plot.\+Pixel\+Rect.\+Contract (\begin{DoxyParamCaption}\item[{float}]{delta}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{struct_scott_plot_1_1_pixel_rect_af8b402c1268f500ec7be8c7e9c9c61df}\index{ScottPlot.PixelRect@{ScottPlot.PixelRect}!Contract@{Contract}}
+\index{Contract@{Contract}!ScottPlot.PixelRect@{ScottPlot.PixelRect}}
+\doxysubsubsection{\texorpdfstring{Contract()}{Contract()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_pixel_rect_af8b402c1268f500ec7be8c7e9c9c61df} 
+\mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect}{Pixel\+Rect}} Scott\+Plot.\+Pixel\+Rect.\+Contract (\begin{DoxyParamCaption}\item[{float}]{x}{, }\item[{float}]{y}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{struct_scott_plot_1_1_pixel_rect_ad6a4798d81c39ffbc9c69902e24c4566}\index{ScottPlot.PixelRect@{ScottPlot.PixelRect}!Contract@{Contract}}
+\index{Contract@{Contract}!ScottPlot.PixelRect@{ScottPlot.PixelRect}}
+\doxysubsubsection{\texorpdfstring{Contract()}{Contract()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_pixel_rect_ad6a4798d81c39ffbc9c69902e24c4566} 
+\mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect}{Pixel\+Rect}} Scott\+Plot.\+Pixel\+Rect.\+Contract (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_scott_plot_1_1_pixel_padding}{Pixel\+Padding}}}]{padding}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{struct_scott_plot_1_1_pixel_rect_abf2e7798f3dc19c349157c5b38725c73}\index{ScottPlot.PixelRect@{ScottPlot.PixelRect}!Equals@{Equals}}
+\index{Equals@{Equals}!ScottPlot.PixelRect@{ScottPlot.PixelRect}}
+\doxysubsubsection{\texorpdfstring{Equals()}{Equals()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_pixel_rect_abf2e7798f3dc19c349157c5b38725c73} 
+override bool Scott\+Plot.\+Pixel\+Rect.\+Equals (\begin{DoxyParamCaption}\item[{object?}]{obj}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{struct_scott_plot_1_1_pixel_rect_ad3b73947af63a8a5e6e9711a2629d24c}\index{ScottPlot.PixelRect@{ScottPlot.PixelRect}!Equals@{Equals}}
+\index{Equals@{Equals}!ScottPlot.PixelRect@{ScottPlot.PixelRect}}
+\doxysubsubsection{\texorpdfstring{Equals()}{Equals()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_pixel_rect_ad3b73947af63a8a5e6e9711a2629d24c} 
+bool Scott\+Plot.\+Pixel\+Rect.\+Equals (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect}{Pixel\+Rect}}}]{other}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{struct_scott_plot_1_1_pixel_rect_aaa5abf6dd8355fd47e201d0f32bbc195}\index{ScottPlot.PixelRect@{ScottPlot.PixelRect}!Expand@{Expand}}
+\index{Expand@{Expand}!ScottPlot.PixelRect@{ScottPlot.PixelRect}}
+\doxysubsubsection{\texorpdfstring{Expand()}{Expand()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_pixel_rect_aaa5abf6dd8355fd47e201d0f32bbc195} 
+\mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect}{Pixel\+Rect}} Scott\+Plot.\+Pixel\+Rect.\+Expand (\begin{DoxyParamCaption}\item[{float}]{delta}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{struct_scott_plot_1_1_pixel_rect_a067abfcafa93b96b02258d0872fa110d}\index{ScottPlot.PixelRect@{ScottPlot.PixelRect}!Expand@{Expand}}
+\index{Expand@{Expand}!ScottPlot.PixelRect@{ScottPlot.PixelRect}}
+\doxysubsubsection{\texorpdfstring{Expand()}{Expand()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_pixel_rect_a067abfcafa93b96b02258d0872fa110d} 
+\mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect}{Pixel\+Rect}} Scott\+Plot.\+Pixel\+Rect.\+Expand (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_scott_plot_1_1_pixel_padding}{Pixel\+Padding}}}]{pad}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{struct_scott_plot_1_1_pixel_rect_adbab88bb15d4551323c6828b5ac6fc96}\index{ScottPlot.PixelRect@{ScottPlot.PixelRect}!Expand@{Expand}}
+\index{Expand@{Expand}!ScottPlot.PixelRect@{ScottPlot.PixelRect}}
+\doxysubsubsection{\texorpdfstring{Expand()}{Expand()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_pixel_rect_adbab88bb15d4551323c6828b5ac6fc96} 
+\mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect}{Pixel\+Rect}} Scott\+Plot.\+Pixel\+Rect.\+Expand (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect}{Pixel\+Rect}}}]{other}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{struct_scott_plot_1_1_pixel_rect_a2c4a83e7ccaa6a599074f566f5e4fa4f}\index{ScottPlot.PixelRect@{ScottPlot.PixelRect}!ExpandX@{ExpandX}}
+\index{ExpandX@{ExpandX}!ScottPlot.PixelRect@{ScottPlot.PixelRect}}
+\doxysubsubsection{\texorpdfstring{ExpandX()}{ExpandX()}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_pixel_rect_a2c4a83e7ccaa6a599074f566f5e4fa4f} 
+\mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect}{Pixel\+Rect}} Scott\+Plot.\+Pixel\+Rect.\+ExpandX (\begin{DoxyParamCaption}\item[{float}]{x}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{struct_scott_plot_1_1_pixel_rect_a6ae6bd4eef55a2120536f48287a82d68}\index{ScottPlot.PixelRect@{ScottPlot.PixelRect}!ExpandY@{ExpandY}}
+\index{ExpandY@{ExpandY}!ScottPlot.PixelRect@{ScottPlot.PixelRect}}
+\doxysubsubsection{\texorpdfstring{ExpandY()}{ExpandY()}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_pixel_rect_a6ae6bd4eef55a2120536f48287a82d68} 
+\mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect}{Pixel\+Rect}} Scott\+Plot.\+Pixel\+Rect.\+ExpandY (\begin{DoxyParamCaption}\item[{float}]{y}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{struct_scott_plot_1_1_pixel_rect_a685291769c804c9de5842b2598874447}\index{ScottPlot.PixelRect@{ScottPlot.PixelRect}!GetAlignedPixel@{GetAlignedPixel}}
+\index{GetAlignedPixel@{GetAlignedPixel}!ScottPlot.PixelRect@{ScottPlot.PixelRect}}
+\doxysubsubsection{\texorpdfstring{GetAlignedPixel()}{GetAlignedPixel()}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_pixel_rect_a685291769c804c9de5842b2598874447} 
+\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}} Scott\+Plot.\+Pixel\+Rect.\+Get\+Aligned\+Pixel (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_scott_plot_a2da000551e02ef1d0af13793cf678abc}{Alignment}}}]{alignment}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{struct_scott_plot_1_1_pixel_rect_a3f11aabb184ff53203c1e4c110f53f53}\index{ScottPlot.PixelRect@{ScottPlot.PixelRect}!GetHashCode@{GetHashCode}}
+\index{GetHashCode@{GetHashCode}!ScottPlot.PixelRect@{ScottPlot.PixelRect}}
+\doxysubsubsection{\texorpdfstring{GetHashCode()}{GetHashCode()}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_pixel_rect_a3f11aabb184ff53203c1e4c110f53f53} 
+override int Scott\+Plot.\+Pixel\+Rect.\+Get\+Hash\+Code (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{struct_scott_plot_1_1_pixel_rect_a354f17379a2adcd90aa961e7a2e7af83}\index{ScottPlot.PixelRect@{ScottPlot.PixelRect}!Intersect@{Intersect}}
+\index{Intersect@{Intersect}!ScottPlot.PixelRect@{ScottPlot.PixelRect}}
+\doxysubsubsection{\texorpdfstring{Intersect()}{Intersect()}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_pixel_rect_a354f17379a2adcd90aa961e7a2e7af83} 
+\mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect}{Pixel\+Rect}} Scott\+Plot.\+Pixel\+Rect.\+Intersect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect}{Pixel\+Rect}}}]{other}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the intersection with another rectangle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & Other rectangle\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Intersection rectangle
+\end{DoxyReturn}
+\Hypertarget{struct_scott_plot_1_1_pixel_rect_a0ef997f7936cce192406bf686a6617f4}\index{ScottPlot.PixelRect@{ScottPlot.PixelRect}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!ScottPlot.PixelRect@{ScottPlot.PixelRect}}
+\doxysubsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_pixel_rect_a0ef997f7936cce192406bf686a6617f4} 
+static bool Scott\+Plot.\+Pixel\+Rect.\+operator!= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect}{Pixel\+Rect}}}]{a}{, }\item[{\mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect}{Pixel\+Rect}}}]{b}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\Hypertarget{struct_scott_plot_1_1_pixel_rect_a4b21efb4d5eb6cda497fe22974b267a7}\index{ScottPlot.PixelRect@{ScottPlot.PixelRect}!operator==@{operator==}}
+\index{operator==@{operator==}!ScottPlot.PixelRect@{ScottPlot.PixelRect}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_pixel_rect_a4b21efb4d5eb6cda497fe22974b267a7} 
+static bool Scott\+Plot.\+Pixel\+Rect.\+operator== (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect}{Pixel\+Rect}}}]{a}{, }\item[{\mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect}{Pixel\+Rect}}}]{b}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\Hypertarget{struct_scott_plot_1_1_pixel_rect_aed9dbb8f44b5bff126e5e9eea1c57ae7}\index{ScottPlot.PixelRect@{ScottPlot.PixelRect}!ToSKRect@{ToSKRect}}
+\index{ToSKRect@{ToSKRect}!ScottPlot.PixelRect@{ScottPlot.PixelRect}}
+\doxysubsubsection{\texorpdfstring{ToSKRect()}{ToSKRect()}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_pixel_rect_aed9dbb8f44b5bff126e5e9eea1c57ae7} 
+Skia\+Sharp.\+SKRect Scott\+Plot.\+Pixel\+Rect.\+To\+SKRect (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{struct_scott_plot_1_1_pixel_rect_abb2e29664e5c41aa25d5b9ad8891b387}\index{ScottPlot.PixelRect@{ScottPlot.PixelRect}!ToString@{ToString}}
+\index{ToString@{ToString}!ScottPlot.PixelRect@{ScottPlot.PixelRect}}
+\doxysubsubsection{\texorpdfstring{ToString()}{ToString()}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_pixel_rect_abb2e29664e5c41aa25d5b9ad8891b387} 
+override string Scott\+Plot.\+Pixel\+Rect.\+To\+String (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{struct_scott_plot_1_1_pixel_rect_a20c55c9348c3ca1048f4d431c8aaa5f0}\index{ScottPlot.PixelRect@{ScottPlot.PixelRect}!WithDelta@{WithDelta}}
+\index{WithDelta@{WithDelta}!ScottPlot.PixelRect@{ScottPlot.PixelRect}}
+\doxysubsubsection{\texorpdfstring{WithDelta()}{WithDelta()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_pixel_rect_a20c55c9348c3ca1048f4d431c8aaa5f0} 
+\mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect}{Pixel\+Rect}} Scott\+Plot.\+Pixel\+Rect.\+With\+Delta (\begin{DoxyParamCaption}\item[{float}]{x}{, }\item[{float}]{y}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{struct_scott_plot_1_1_pixel_rect_adf8f73790668ae29ee04c7aeb23e362a}\index{ScottPlot.PixelRect@{ScottPlot.PixelRect}!WithDelta@{WithDelta}}
+\index{WithDelta@{WithDelta}!ScottPlot.PixelRect@{ScottPlot.PixelRect}}
+\doxysubsubsection{\texorpdfstring{WithDelta()}{WithDelta()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_pixel_rect_adf8f73790668ae29ee04c7aeb23e362a} 
+\mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect}{Pixel\+Rect}} Scott\+Plot.\+Pixel\+Rect.\+With\+Delta (\begin{DoxyParamCaption}\item[{float}]{x}{, }\item[{float}]{y}{, }\item[{\mbox{\hyperlink{namespace_scott_plot_a2da000551e02ef1d0af13793cf678abc}{Alignment}}}]{alignment}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{struct_scott_plot_1_1_pixel_rect_a6e6632c4fc5bd80a00f155526ad3cfa7}\index{ScottPlot.PixelRect@{ScottPlot.PixelRect}!WithOffset@{WithOffset}}
+\index{WithOffset@{WithOffset}!ScottPlot.PixelRect@{ScottPlot.PixelRect}}
+\doxysubsubsection{\texorpdfstring{WithOffset()}{WithOffset()}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_pixel_rect_a6e6632c4fc5bd80a00f155526ad3cfa7} 
+\mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect}{Pixel\+Rect}} Scott\+Plot.\+Pixel\+Rect.\+With\+Offset (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_scott_plot_a3dfefa78aee0c8cf7184895e4ad7d44b}{Pixel\+Offset}}}]{offset}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{struct_scott_plot_1_1_pixel_rect_a28b540ef908cc315d8c2e08be4897562}\index{ScottPlot.PixelRect@{ScottPlot.PixelRect}!WithPan@{WithPan}}
+\index{WithPan@{WithPan}!ScottPlot.PixelRect@{ScottPlot.PixelRect}}
+\doxysubsubsection{\texorpdfstring{WithPan()}{WithPan()}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_pixel_rect_a28b540ef908cc315d8c2e08be4897562} 
+\mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect}{Pixel\+Rect}} Scott\+Plot.\+Pixel\+Rect.\+With\+Pan (\begin{DoxyParamCaption}\item[{float}]{x}{, }\item[{float}]{y}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{struct_scott_plot_1_1_pixel_rect_ac222804d1b5d82f8c94e6369a16a6c3e}\index{ScottPlot.PixelRect@{ScottPlot.PixelRect}!Bottom@{Bottom}}
+\index{Bottom@{Bottom}!ScottPlot.PixelRect@{ScottPlot.PixelRect}}
+\doxysubsubsection{\texorpdfstring{Bottom}{Bottom}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_pixel_rect_ac222804d1b5d82f8c94e6369a16a6c3e} 
+readonly float Scott\+Plot.\+Pixel\+Rect.\+Bottom}
+
+\Hypertarget{struct_scott_plot_1_1_pixel_rect_a3222061e32c4e04337fb60a8d84f443e}\index{ScottPlot.PixelRect@{ScottPlot.PixelRect}!Left@{Left}}
+\index{Left@{Left}!ScottPlot.PixelRect@{ScottPlot.PixelRect}}
+\doxysubsubsection{\texorpdfstring{Left}{Left}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_pixel_rect_a3222061e32c4e04337fb60a8d84f443e} 
+readonly float Scott\+Plot.\+Pixel\+Rect.\+Left}
+
+\Hypertarget{struct_scott_plot_1_1_pixel_rect_ae7f1526391b6fe71cb3e432482b5ed95}\index{ScottPlot.PixelRect@{ScottPlot.PixelRect}!Right@{Right}}
+\index{Right@{Right}!ScottPlot.PixelRect@{ScottPlot.PixelRect}}
+\doxysubsubsection{\texorpdfstring{Right}{Right}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_pixel_rect_ae7f1526391b6fe71cb3e432482b5ed95} 
+readonly float Scott\+Plot.\+Pixel\+Rect.\+Right}
+
+\Hypertarget{struct_scott_plot_1_1_pixel_rect_ad137e68eaddd500b5921f5b38575e20f}\index{ScottPlot.PixelRect@{ScottPlot.PixelRect}!Top@{Top}}
+\index{Top@{Top}!ScottPlot.PixelRect@{ScottPlot.PixelRect}}
+\doxysubsubsection{\texorpdfstring{Top}{Top}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_pixel_rect_ad137e68eaddd500b5921f5b38575e20f} 
+readonly float Scott\+Plot.\+Pixel\+Rect.\+Top}
+
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{struct_scott_plot_1_1_pixel_rect_ae76bb1a8b75d01eddb228aa6820390f0}\index{ScottPlot.PixelRect@{ScottPlot.PixelRect}!BottomCenter@{BottomCenter}}
+\index{BottomCenter@{BottomCenter}!ScottPlot.PixelRect@{ScottPlot.PixelRect}}
+\doxysubsubsection{\texorpdfstring{BottomCenter}{BottomCenter}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_pixel_rect_ae76bb1a8b75d01eddb228aa6820390f0} 
+\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}} Scott\+Plot.\+Pixel\+Rect.\+Bottom\+Center\hspace{0.3cm}{\ttfamily [get]}}
+
+\Hypertarget{struct_scott_plot_1_1_pixel_rect_a01ee144787c93557c2ec1136bd8aa5f7}\index{ScottPlot.PixelRect@{ScottPlot.PixelRect}!BottomLeft@{BottomLeft}}
+\index{BottomLeft@{BottomLeft}!ScottPlot.PixelRect@{ScottPlot.PixelRect}}
+\doxysubsubsection{\texorpdfstring{BottomLeft}{BottomLeft}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_pixel_rect_a01ee144787c93557c2ec1136bd8aa5f7} 
+\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}} Scott\+Plot.\+Pixel\+Rect.\+Bottom\+Left\hspace{0.3cm}{\ttfamily [get]}}
+
+\Hypertarget{struct_scott_plot_1_1_pixel_rect_a96ee5f61904dc21eb2a1505888ed8194}\index{ScottPlot.PixelRect@{ScottPlot.PixelRect}!BottomLine@{BottomLine}}
+\index{BottomLine@{BottomLine}!ScottPlot.PixelRect@{ScottPlot.PixelRect}}
+\doxysubsubsection{\texorpdfstring{BottomLine}{BottomLine}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_pixel_rect_a96ee5f61904dc21eb2a1505888ed8194} 
+\mbox{\hyperlink{struct_scott_plot_1_1_pixel_line}{Pixel\+Line}} Scott\+Plot.\+Pixel\+Rect.\+Bottom\+Line\hspace{0.3cm}{\ttfamily [get]}}
+
+\Hypertarget{struct_scott_plot_1_1_pixel_rect_a8379535b0fb58a4cdcd0151177d25210}\index{ScottPlot.PixelRect@{ScottPlot.PixelRect}!BottomRight@{BottomRight}}
+\index{BottomRight@{BottomRight}!ScottPlot.PixelRect@{ScottPlot.PixelRect}}
+\doxysubsubsection{\texorpdfstring{BottomRight}{BottomRight}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_pixel_rect_a8379535b0fb58a4cdcd0151177d25210} 
+\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}} Scott\+Plot.\+Pixel\+Rect.\+Bottom\+Right\hspace{0.3cm}{\ttfamily [get]}}
+
+\Hypertarget{struct_scott_plot_1_1_pixel_rect_a49e39623c919dfb20ceea7c8aab446b3}\index{ScottPlot.PixelRect@{ScottPlot.PixelRect}!Center@{Center}}
+\index{Center@{Center}!ScottPlot.PixelRect@{ScottPlot.PixelRect}}
+\doxysubsubsection{\texorpdfstring{Center}{Center}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_pixel_rect_a49e39623c919dfb20ceea7c8aab446b3} 
+\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}} Scott\+Plot.\+Pixel\+Rect.\+Center\hspace{0.3cm}{\ttfamily [get]}}
+
+\Hypertarget{struct_scott_plot_1_1_pixel_rect_ab596a3bf0f9a3b1c70eb3137d9a931b2}\index{ScottPlot.PixelRect@{ScottPlot.PixelRect}!HasArea@{HasArea}}
+\index{HasArea@{HasArea}!ScottPlot.PixelRect@{ScottPlot.PixelRect}}
+\doxysubsubsection{\texorpdfstring{HasArea}{HasArea}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_pixel_rect_ab596a3bf0f9a3b1c70eb3137d9a931b2} 
+bool Scott\+Plot.\+Pixel\+Rect.\+Has\+Area\hspace{0.3cm}{\ttfamily [get]}}
+
+\Hypertarget{struct_scott_plot_1_1_pixel_rect_af51b790be946385140e901e3125aa7c6}\index{ScottPlot.PixelRect@{ScottPlot.PixelRect}!Height@{Height}}
+\index{Height@{Height}!ScottPlot.PixelRect@{ScottPlot.PixelRect}}
+\doxysubsubsection{\texorpdfstring{Height}{Height}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_pixel_rect_af51b790be946385140e901e3125aa7c6} 
+float Scott\+Plot.\+Pixel\+Rect.\+Height\hspace{0.3cm}{\ttfamily [get]}}
+
+\Hypertarget{struct_scott_plot_1_1_pixel_rect_a8b7082ce4fc9ceea955aa3d5c9f467a9}\index{ScottPlot.PixelRect@{ScottPlot.PixelRect}!HorizontalCenter@{HorizontalCenter}}
+\index{HorizontalCenter@{HorizontalCenter}!ScottPlot.PixelRect@{ScottPlot.PixelRect}}
+\doxysubsubsection{\texorpdfstring{HorizontalCenter}{HorizontalCenter}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_pixel_rect_a8b7082ce4fc9ceea955aa3d5c9f467a9} 
+float Scott\+Plot.\+Pixel\+Rect.\+Horizontal\+Center\hspace{0.3cm}{\ttfamily [get]}}
+
+\Hypertarget{struct_scott_plot_1_1_pixel_rect_aaeb7e1236d83b96b8204542911f50dee}\index{ScottPlot.PixelRect@{ScottPlot.PixelRect}!LeftCenter@{LeftCenter}}
+\index{LeftCenter@{LeftCenter}!ScottPlot.PixelRect@{ScottPlot.PixelRect}}
+\doxysubsubsection{\texorpdfstring{LeftCenter}{LeftCenter}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_pixel_rect_aaeb7e1236d83b96b8204542911f50dee} 
+\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}} Scott\+Plot.\+Pixel\+Rect.\+Left\+Center\hspace{0.3cm}{\ttfamily [get]}}
+
+\Hypertarget{struct_scott_plot_1_1_pixel_rect_afb2d5615e3c460906d85cf5ce5bb5edd}\index{ScottPlot.PixelRect@{ScottPlot.PixelRect}!LeftLine@{LeftLine}}
+\index{LeftLine@{LeftLine}!ScottPlot.PixelRect@{ScottPlot.PixelRect}}
+\doxysubsubsection{\texorpdfstring{LeftLine}{LeftLine}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_pixel_rect_afb2d5615e3c460906d85cf5ce5bb5edd} 
+\mbox{\hyperlink{struct_scott_plot_1_1_pixel_line}{Pixel\+Line}} Scott\+Plot.\+Pixel\+Rect.\+Left\+Line\hspace{0.3cm}{\ttfamily [get]}}
+
+\Hypertarget{struct_scott_plot_1_1_pixel_rect_ab0abc7d6818a5badc3fcba5ce5bd1559}\index{ScottPlot.PixelRect@{ScottPlot.PixelRect}!NaN@{NaN}}
+\index{NaN@{NaN}!ScottPlot.PixelRect@{ScottPlot.PixelRect}}
+\doxysubsubsection{\texorpdfstring{NaN}{NaN}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_pixel_rect_ab0abc7d6818a5badc3fcba5ce5bd1559} 
+\mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect}{Pixel\+Rect}} Scott\+Plot.\+Pixel\+Rect.\+NaN\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+\Hypertarget{struct_scott_plot_1_1_pixel_rect_aea007076404d5c3250c5a5e110470e54}\index{ScottPlot.PixelRect@{ScottPlot.PixelRect}!RightCenter@{RightCenter}}
+\index{RightCenter@{RightCenter}!ScottPlot.PixelRect@{ScottPlot.PixelRect}}
+\doxysubsubsection{\texorpdfstring{RightCenter}{RightCenter}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_pixel_rect_aea007076404d5c3250c5a5e110470e54} 
+\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}} Scott\+Plot.\+Pixel\+Rect.\+Right\+Center\hspace{0.3cm}{\ttfamily [get]}}
+
+\Hypertarget{struct_scott_plot_1_1_pixel_rect_a67a2576c59636911d8c179d9c12c5c48}\index{ScottPlot.PixelRect@{ScottPlot.PixelRect}!RightLine@{RightLine}}
+\index{RightLine@{RightLine}!ScottPlot.PixelRect@{ScottPlot.PixelRect}}
+\doxysubsubsection{\texorpdfstring{RightLine}{RightLine}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_pixel_rect_a67a2576c59636911d8c179d9c12c5c48} 
+\mbox{\hyperlink{struct_scott_plot_1_1_pixel_line}{Pixel\+Line}} Scott\+Plot.\+Pixel\+Rect.\+Right\+Line\hspace{0.3cm}{\ttfamily [get]}}
+
+\Hypertarget{struct_scott_plot_1_1_pixel_rect_aa224a7fe31e92a6e8838860baad8c03d}\index{ScottPlot.PixelRect@{ScottPlot.PixelRect}!Size@{Size}}
+\index{Size@{Size}!ScottPlot.PixelRect@{ScottPlot.PixelRect}}
+\doxysubsubsection{\texorpdfstring{Size}{Size}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_pixel_rect_aa224a7fe31e92a6e8838860baad8c03d} 
+\mbox{\hyperlink{struct_scott_plot_1_1_pixel_size}{Pixel\+Size}} Scott\+Plot.\+Pixel\+Rect.\+Size\hspace{0.3cm}{\ttfamily [get]}}
+
+\Hypertarget{struct_scott_plot_1_1_pixel_rect_af0f4cf7597c87b0a1fb3f1eed605448d}\index{ScottPlot.PixelRect@{ScottPlot.PixelRect}!TopCenter@{TopCenter}}
+\index{TopCenter@{TopCenter}!ScottPlot.PixelRect@{ScottPlot.PixelRect}}
+\doxysubsubsection{\texorpdfstring{TopCenter}{TopCenter}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_pixel_rect_af0f4cf7597c87b0a1fb3f1eed605448d} 
+\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}} Scott\+Plot.\+Pixel\+Rect.\+Top\+Center\hspace{0.3cm}{\ttfamily [get]}}
+
+\Hypertarget{struct_scott_plot_1_1_pixel_rect_a84fdf04c7f7ffe105c3d4b0920b69a73}\index{ScottPlot.PixelRect@{ScottPlot.PixelRect}!TopLeft@{TopLeft}}
+\index{TopLeft@{TopLeft}!ScottPlot.PixelRect@{ScottPlot.PixelRect}}
+\doxysubsubsection{\texorpdfstring{TopLeft}{TopLeft}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_pixel_rect_a84fdf04c7f7ffe105c3d4b0920b69a73} 
+\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}} Scott\+Plot.\+Pixel\+Rect.\+Top\+Left\hspace{0.3cm}{\ttfamily [get]}}
+
+\Hypertarget{struct_scott_plot_1_1_pixel_rect_a9978b97894c99ddff10f228fbbfd412b}\index{ScottPlot.PixelRect@{ScottPlot.PixelRect}!TopLine@{TopLine}}
+\index{TopLine@{TopLine}!ScottPlot.PixelRect@{ScottPlot.PixelRect}}
+\doxysubsubsection{\texorpdfstring{TopLine}{TopLine}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_pixel_rect_a9978b97894c99ddff10f228fbbfd412b} 
+\mbox{\hyperlink{struct_scott_plot_1_1_pixel_line}{Pixel\+Line}} Scott\+Plot.\+Pixel\+Rect.\+Top\+Line\hspace{0.3cm}{\ttfamily [get]}}
+
+\Hypertarget{struct_scott_plot_1_1_pixel_rect_aa5cfa56ff7b4a2f6af2b7eb2cb7a2076}\index{ScottPlot.PixelRect@{ScottPlot.PixelRect}!TopRight@{TopRight}}
+\index{TopRight@{TopRight}!ScottPlot.PixelRect@{ScottPlot.PixelRect}}
+\doxysubsubsection{\texorpdfstring{TopRight}{TopRight}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_pixel_rect_aa5cfa56ff7b4a2f6af2b7eb2cb7a2076} 
+\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}} Scott\+Plot.\+Pixel\+Rect.\+Top\+Right\hspace{0.3cm}{\ttfamily [get]}}
+
+\Hypertarget{struct_scott_plot_1_1_pixel_rect_a8284ce6b35864f61ed6092a7f147a42b}\index{ScottPlot.PixelRect@{ScottPlot.PixelRect}!VerticalCenter@{VerticalCenter}}
+\index{VerticalCenter@{VerticalCenter}!ScottPlot.PixelRect@{ScottPlot.PixelRect}}
+\doxysubsubsection{\texorpdfstring{VerticalCenter}{VerticalCenter}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_pixel_rect_a8284ce6b35864f61ed6092a7f147a42b} 
+float Scott\+Plot.\+Pixel\+Rect.\+Vertical\+Center\hspace{0.3cm}{\ttfamily [get]}}
+
+\Hypertarget{struct_scott_plot_1_1_pixel_rect_a6d942a6572a6b5ef15cb66a48131e6f5}\index{ScottPlot.PixelRect@{ScottPlot.PixelRect}!Width@{Width}}
+\index{Width@{Width}!ScottPlot.PixelRect@{ScottPlot.PixelRect}}
+\doxysubsubsection{\texorpdfstring{Width}{Width}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_pixel_rect_a6d942a6572a6b5ef15cb66a48131e6f5} 
+float Scott\+Plot.\+Pixel\+Rect.\+Width\hspace{0.3cm}{\ttfamily [get]}}
+
+\Hypertarget{struct_scott_plot_1_1_pixel_rect_abf0d15007030a473a358d072b86c73b3}\index{ScottPlot.PixelRect@{ScottPlot.PixelRect}!Zero@{Zero}}
+\index{Zero@{Zero}!ScottPlot.PixelRect@{ScottPlot.PixelRect}}
+\doxysubsubsection{\texorpdfstring{Zero}{Zero}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_pixel_rect_abf0d15007030a473a358d072b86c73b3} 
+\mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect}{Pixel\+Rect}} Scott\+Plot.\+Pixel\+Rect.\+Zero\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Primitives/Pixel\+Rect.\+cs\end{DoxyCompactItemize}

@@ -1,0 +1,138 @@
+\doxysection{Scott\+Plot.\+Font\+Style Class Reference}
+\hypertarget{class_scott_plot_1_1_font_style}{}\label{class_scott_plot_1_1_font_style}\index{ScottPlot.FontStyle@{ScottPlot.FontStyle}}
+
+
+This configuration object (reference type) permanently lives inside objects which require styling. It is recommended to use this object as an init-\/only property.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override string \mbox{\hyperlink{class_scott_plot_1_1_font_style_ac9848da85ca8d41383d834c6b60f9e7d}{To\+String}} ()
+\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_font_style_ae80b7aced55601c7f8d9165f0a987712}{Set\+Best\+Font}} (string text)
+\begin{DoxyCompactList}\small\item\em Use the characters in {\itshape text}  to determine an installed system font most likely to support this character set. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_scott_plot_1_1_font_style}{Font\+Style}} \mbox{\hyperlink{class_scott_plot_1_1_font_style_a2c28e2951b5201c2bcee70617f2d277e}{Clone}} ()
+\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_font_style_a3e588f17ab38e16a75d107a77eaf5272}{Apply\+To\+Paint}} (SKPaint paint)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static SKTypeface \mbox{\hyperlink{class_scott_plot_1_1_font_style_ade28bde8ca5140853b19b36e10b802ae}{Create\+Typeface\+From\+Name}} (string font, bool bold, bool italic)
+\item 
+static SKTypeface \mbox{\hyperlink{class_scott_plot_1_1_font_style_af3ce40c291b7a74e4d304c014ad7047d}{Create\+Typeface\+From\+File}} (string path)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+SKTypeface \mbox{\hyperlink{class_scott_plot_1_1_font_style_a84095c7ea93a1a1cbdebb6d1f6a70fa0}{Typeface}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+string \mbox{\hyperlink{class_scott_plot_1_1_font_style_adc4d9212b44375cdd863d5a8dc7e1bee}{Name}} = Fonts.\+Default\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+bool \mbox{\hyperlink{class_scott_plot_1_1_font_style_a39d8392560dea77010c177a1be30a080}{Bold}} = false\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+bool \mbox{\hyperlink{class_scott_plot_1_1_font_style_a2744877003c274e5a77685ac1db44825}{Italic}} = false\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} \mbox{\hyperlink{class_scott_plot_1_1_font_style_a15ce4560551db36993c1900119b1aadd}{Color}} = \mbox{\hyperlink{struct_scott_plot_1_1_colors_a2aafa2dc613a50b4fa1699a09fe003b1}{Colors.\+Black}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_scott_plot_1_1_font_style_acf5fc35eb57a3683dea49bcaf7ab6106}{Size}} = 12\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+bool \mbox{\hyperlink{class_scott_plot_1_1_font_style_a2bfa91df74bae92649fab32a2b93fc42}{Anti\+Alias}} = true\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This configuration object (reference type) permanently lives inside objects which require styling. It is recommended to use this object as an init-\/only property. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_scott_plot_1_1_font_style_a3e588f17ab38e16a75d107a77eaf5272}\index{ScottPlot.FontStyle@{ScottPlot.FontStyle}!ApplyToPaint@{ApplyToPaint}}
+\index{ApplyToPaint@{ApplyToPaint}!ScottPlot.FontStyle@{ScottPlot.FontStyle}}
+\doxysubsubsection{\texorpdfstring{ApplyToPaint()}{ApplyToPaint()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_font_style_a3e588f17ab38e16a75d107a77eaf5272} 
+void Scott\+Plot.\+Font\+Style.\+Apply\+To\+Paint (\begin{DoxyParamCaption}\item[{SKPaint}]{paint}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_font_style_a2c28e2951b5201c2bcee70617f2d277e}\index{ScottPlot.FontStyle@{ScottPlot.FontStyle}!Clone@{Clone}}
+\index{Clone@{Clone}!ScottPlot.FontStyle@{ScottPlot.FontStyle}}
+\doxysubsubsection{\texorpdfstring{Clone()}{Clone()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_font_style_a2c28e2951b5201c2bcee70617f2d277e} 
+\mbox{\hyperlink{class_scott_plot_1_1_font_style}{Font\+Style}} Scott\+Plot.\+Font\+Style.\+Clone (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_font_style_af3ce40c291b7a74e4d304c014ad7047d}\index{ScottPlot.FontStyle@{ScottPlot.FontStyle}!CreateTypefaceFromFile@{CreateTypefaceFromFile}}
+\index{CreateTypefaceFromFile@{CreateTypefaceFromFile}!ScottPlot.FontStyle@{ScottPlot.FontStyle}}
+\doxysubsubsection{\texorpdfstring{CreateTypefaceFromFile()}{CreateTypefaceFromFile()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_font_style_af3ce40c291b7a74e4d304c014ad7047d} 
+static SKTypeface Scott\+Plot.\+Font\+Style.\+Create\+Typeface\+From\+File (\begin{DoxyParamCaption}\item[{string}]{path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\Hypertarget{class_scott_plot_1_1_font_style_ade28bde8ca5140853b19b36e10b802ae}\index{ScottPlot.FontStyle@{ScottPlot.FontStyle}!CreateTypefaceFromName@{CreateTypefaceFromName}}
+\index{CreateTypefaceFromName@{CreateTypefaceFromName}!ScottPlot.FontStyle@{ScottPlot.FontStyle}}
+\doxysubsubsection{\texorpdfstring{CreateTypefaceFromName()}{CreateTypefaceFromName()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_font_style_ade28bde8ca5140853b19b36e10b802ae} 
+static SKTypeface Scott\+Plot.\+Font\+Style.\+Create\+Typeface\+From\+Name (\begin{DoxyParamCaption}\item[{string}]{font}{, }\item[{bool}]{bold}{, }\item[{bool}]{italic}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\Hypertarget{class_scott_plot_1_1_font_style_ae80b7aced55601c7f8d9165f0a987712}\index{ScottPlot.FontStyle@{ScottPlot.FontStyle}!SetBestFont@{SetBestFont}}
+\index{SetBestFont@{SetBestFont}!ScottPlot.FontStyle@{ScottPlot.FontStyle}}
+\doxysubsubsection{\texorpdfstring{SetBestFont()}{SetBestFont()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_font_style_ae80b7aced55601c7f8d9165f0a987712} 
+void Scott\+Plot.\+Font\+Style.\+Set\+Best\+Font (\begin{DoxyParamCaption}\item[{string}]{text}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Use the characters in {\itshape text}  to determine an installed system font most likely to support this character set. 
+
+\Hypertarget{class_scott_plot_1_1_font_style_ac9848da85ca8d41383d834c6b60f9e7d}\index{ScottPlot.FontStyle@{ScottPlot.FontStyle}!ToString@{ToString}}
+\index{ToString@{ToString}!ScottPlot.FontStyle@{ScottPlot.FontStyle}}
+\doxysubsubsection{\texorpdfstring{ToString()}{ToString()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_font_style_ac9848da85ca8d41383d834c6b60f9e7d} 
+override string Scott\+Plot.\+Font\+Style.\+To\+String (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{class_scott_plot_1_1_font_style_a2bfa91df74bae92649fab32a2b93fc42}\index{ScottPlot.FontStyle@{ScottPlot.FontStyle}!AntiAlias@{AntiAlias}}
+\index{AntiAlias@{AntiAlias}!ScottPlot.FontStyle@{ScottPlot.FontStyle}}
+\doxysubsubsection{\texorpdfstring{AntiAlias}{AntiAlias}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_font_style_a2bfa91df74bae92649fab32a2b93fc42} 
+bool Scott\+Plot.\+Font\+Style.\+Anti\+Alias = true\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_font_style_a39d8392560dea77010c177a1be30a080}\index{ScottPlot.FontStyle@{ScottPlot.FontStyle}!Bold@{Bold}}
+\index{Bold@{Bold}!ScottPlot.FontStyle@{ScottPlot.FontStyle}}
+\doxysubsubsection{\texorpdfstring{Bold}{Bold}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_font_style_a39d8392560dea77010c177a1be30a080} 
+bool Scott\+Plot.\+Font\+Style.\+Bold = false\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_font_style_a15ce4560551db36993c1900119b1aadd}\index{ScottPlot.FontStyle@{ScottPlot.FontStyle}!Color@{Color}}
+\index{Color@{Color}!ScottPlot.FontStyle@{ScottPlot.FontStyle}}
+\doxysubsubsection{\texorpdfstring{Color}{Color}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_font_style_a15ce4560551db36993c1900119b1aadd} 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} Scott\+Plot.\+Font\+Style.\+Color = \mbox{\hyperlink{struct_scott_plot_1_1_colors_a2aafa2dc613a50b4fa1699a09fe003b1}{Colors.\+Black}}\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_font_style_a2744877003c274e5a77685ac1db44825}\index{ScottPlot.FontStyle@{ScottPlot.FontStyle}!Italic@{Italic}}
+\index{Italic@{Italic}!ScottPlot.FontStyle@{ScottPlot.FontStyle}}
+\doxysubsubsection{\texorpdfstring{Italic}{Italic}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_font_style_a2744877003c274e5a77685ac1db44825} 
+bool Scott\+Plot.\+Font\+Style.\+Italic = false\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_font_style_adc4d9212b44375cdd863d5a8dc7e1bee}\index{ScottPlot.FontStyle@{ScottPlot.FontStyle}!Name@{Name}}
+\index{Name@{Name}!ScottPlot.FontStyle@{ScottPlot.FontStyle}}
+\doxysubsubsection{\texorpdfstring{Name}{Name}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_font_style_adc4d9212b44375cdd863d5a8dc7e1bee} 
+string Scott\+Plot.\+Font\+Style.\+Name = Fonts.\+Default\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_font_style_acf5fc35eb57a3683dea49bcaf7ab6106}\index{ScottPlot.FontStyle@{ScottPlot.FontStyle}!Size@{Size}}
+\index{Size@{Size}!ScottPlot.FontStyle@{ScottPlot.FontStyle}}
+\doxysubsubsection{\texorpdfstring{Size}{Size}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_font_style_acf5fc35eb57a3683dea49bcaf7ab6106} 
+float Scott\+Plot.\+Font\+Style.\+Size = 12\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_font_style_a84095c7ea93a1a1cbdebb6d1f6a70fa0}\index{ScottPlot.FontStyle@{ScottPlot.FontStyle}!Typeface@{Typeface}}
+\index{Typeface@{Typeface}!ScottPlot.FontStyle@{ScottPlot.FontStyle}}
+\doxysubsubsection{\texorpdfstring{Typeface}{Typeface}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_font_style_a84095c7ea93a1a1cbdebb6d1f6a70fa0} 
+SKTypeface Scott\+Plot.\+Font\+Style.\+Typeface\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Primitives/Font\+Style.\+cs\end{DoxyCompactItemize}

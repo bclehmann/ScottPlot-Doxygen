@@ -1,0 +1,109 @@
+\doxysection{Scott\+Plot.\+Control.\+Mouse\+State Class Reference}
+\hypertarget{class_scott_plot_1_1_control_1_1_mouse_state}{}\label{class_scott_plot_1_1_control_1_1_mouse_state}\index{ScottPlot.Control.MouseState@{ScottPlot.Control.MouseState}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_control_1_1_mouse_state_a7dca0b4f9a6dbe1a97ef143bb204ab49}{Down}} (\mbox{\hyperlink{namespace_scott_plot_1_1_control_a1ce2192b1e04dba3b2c4e0ff10f1ab3b}{Mouse\+Button}} button)
+\item 
+bool \mbox{\hyperlink{class_scott_plot_1_1_control_1_1_mouse_state_a1eb8eb4c3b4a0b647c03282740388390}{Is\+Down}} (\mbox{\hyperlink{namespace_scott_plot_1_1_control_a1ce2192b1e04dba3b2c4e0ff10f1ab3b}{Mouse\+Button}} button)
+\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_control_1_1_mouse_state_a66fb35ccbcdb63b84f946ce834b94150}{Up}} (\mbox{\hyperlink{namespace_scott_plot_1_1_control_a1ce2192b1e04dba3b2c4e0ff10f1ab3b}{Mouse\+Button}} button)
+\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_control_1_1_mouse_state_a416aafd5c4311b9318bc1db358f51cc0}{Down}} (\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}} position, \mbox{\hyperlink{namespace_scott_plot_1_1_control_a1ce2192b1e04dba3b2c4e0ff10f1ab3b}{Mouse\+Button}} button, \mbox{\hyperlink{class_scott_plot_1_1_control_1_1_multi_axis_limit_manager}{Multi\+Axis\+Limit\+Manager}} limits)
+\item 
+bool \mbox{\hyperlink{class_scott_plot_1_1_control_1_1_mouse_state_a9668ac629227f8fa6aba20d14413554b}{Is\+Dragging}} (\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}} position)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{class_scott_plot_1_1_control_1_1_mouse_state_a7c976e77a9659318fee1e0e57980216e}{Minimum\+Drag\+Distance}} = 5
+\begin{DoxyCompactList}\small\item\em A click-\/drag must exceed this number of pixels before it is considered a drag. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}} \mbox{\hyperlink{class_scott_plot_1_1_control_1_1_mouse_state_a38e5ff980144c706f4ef9cf9817a1799}{Last\+Position}} = new(float.\+NaN, float.\+NaN)
+\item 
+\mbox{\hyperlink{class_scott_plot_1_1_control_1_1_multi_axis_limit_manager}{Multi\+Axis\+Limit\+Manager}} \mbox{\hyperlink{class_scott_plot_1_1_control_1_1_mouse_state_aa30b024a7feb3db3f1ce39b4dc55caf6}{Mouse\+Down\+Axis\+Limits}} = new()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+IRead\+Only\+Collection$<$ \mbox{\hyperlink{namespace_scott_plot_1_1_control_a1ce2192b1e04dba3b2c4e0ff10f1ab3b}{Mouse\+Button}} $>$ \mbox{\hyperlink{class_scott_plot_1_1_control_1_1_mouse_state_a0d894820e9c6653e57d48bc4d0f6bc93}{Pressed\+Buttons}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}} \mbox{\hyperlink{class_scott_plot_1_1_control_1_1_mouse_state_ac7cfe2e069d23115f9224baa2a1b42e5}{Mouse\+Down\+Position}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_scott_plot_1_1_control_1_1_mouse_state_a7dca0b4f9a6dbe1a97ef143bb204ab49}\index{ScottPlot.Control.MouseState@{ScottPlot.Control.MouseState}!Down@{Down}}
+\index{Down@{Down}!ScottPlot.Control.MouseState@{ScottPlot.Control.MouseState}}
+\doxysubsubsection{\texorpdfstring{Down()}{Down()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_control_1_1_mouse_state_a7dca0b4f9a6dbe1a97ef143bb204ab49} 
+void Scott\+Plot.\+Control.\+Mouse\+State.\+Down (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_scott_plot_1_1_control_a1ce2192b1e04dba3b2c4e0ff10f1ab3b}{Mouse\+Button}}}]{button}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_scott_plot_1_1_control_1_1_mouse_state_a416aafd5c4311b9318bc1db358f51cc0}\index{ScottPlot.Control.MouseState@{ScottPlot.Control.MouseState}!Down@{Down}}
+\index{Down@{Down}!ScottPlot.Control.MouseState@{ScottPlot.Control.MouseState}}
+\doxysubsubsection{\texorpdfstring{Down()}{Down()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_control_1_1_mouse_state_a416aafd5c4311b9318bc1db358f51cc0} 
+void Scott\+Plot.\+Control.\+Mouse\+State.\+Down (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}}}]{position}{, }\item[{\mbox{\hyperlink{namespace_scott_plot_1_1_control_a1ce2192b1e04dba3b2c4e0ff10f1ab3b}{Mouse\+Button}}}]{button}{, }\item[{\mbox{\hyperlink{class_scott_plot_1_1_control_1_1_multi_axis_limit_manager}{Multi\+Axis\+Limit\+Manager}}}]{limits}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_control_1_1_mouse_state_a1eb8eb4c3b4a0b647c03282740388390}\index{ScottPlot.Control.MouseState@{ScottPlot.Control.MouseState}!IsDown@{IsDown}}
+\index{IsDown@{IsDown}!ScottPlot.Control.MouseState@{ScottPlot.Control.MouseState}}
+\doxysubsubsection{\texorpdfstring{IsDown()}{IsDown()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_control_1_1_mouse_state_a1eb8eb4c3b4a0b647c03282740388390} 
+bool Scott\+Plot.\+Control.\+Mouse\+State.\+Is\+Down (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_scott_plot_1_1_control_a1ce2192b1e04dba3b2c4e0ff10f1ab3b}{Mouse\+Button}}}]{button}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_scott_plot_1_1_control_1_1_mouse_state_a9668ac629227f8fa6aba20d14413554b}\index{ScottPlot.Control.MouseState@{ScottPlot.Control.MouseState}!IsDragging@{IsDragging}}
+\index{IsDragging@{IsDragging}!ScottPlot.Control.MouseState@{ScottPlot.Control.MouseState}}
+\doxysubsubsection{\texorpdfstring{IsDragging()}{IsDragging()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_control_1_1_mouse_state_a9668ac629227f8fa6aba20d14413554b} 
+bool Scott\+Plot.\+Control.\+Mouse\+State.\+Is\+Dragging (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}}}]{position}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_control_1_1_mouse_state_a66fb35ccbcdb63b84f946ce834b94150}\index{ScottPlot.Control.MouseState@{ScottPlot.Control.MouseState}!Up@{Up}}
+\index{Up@{Up}!ScottPlot.Control.MouseState@{ScottPlot.Control.MouseState}}
+\doxysubsubsection{\texorpdfstring{Up()}{Up()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_control_1_1_mouse_state_a66fb35ccbcdb63b84f946ce834b94150} 
+void Scott\+Plot.\+Control.\+Mouse\+State.\+Up (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_scott_plot_1_1_control_a1ce2192b1e04dba3b2c4e0ff10f1ab3b}{Mouse\+Button}}}]{button}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_scott_plot_1_1_control_1_1_mouse_state_a38e5ff980144c706f4ef9cf9817a1799}\index{ScottPlot.Control.MouseState@{ScottPlot.Control.MouseState}!LastPosition@{LastPosition}}
+\index{LastPosition@{LastPosition}!ScottPlot.Control.MouseState@{ScottPlot.Control.MouseState}}
+\doxysubsubsection{\texorpdfstring{LastPosition}{LastPosition}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_control_1_1_mouse_state_a38e5ff980144c706f4ef9cf9817a1799} 
+\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}} Scott\+Plot.\+Control.\+Mouse\+State.\+Last\+Position = new(float.\+NaN, float.\+NaN)}
+
+\Hypertarget{class_scott_plot_1_1_control_1_1_mouse_state_a7c976e77a9659318fee1e0e57980216e}\index{ScottPlot.Control.MouseState@{ScottPlot.Control.MouseState}!MinimumDragDistance@{MinimumDragDistance}}
+\index{MinimumDragDistance@{MinimumDragDistance}!ScottPlot.Control.MouseState@{ScottPlot.Control.MouseState}}
+\doxysubsubsection{\texorpdfstring{MinimumDragDistance}{MinimumDragDistance}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_control_1_1_mouse_state_a7c976e77a9659318fee1e0e57980216e} 
+float Scott\+Plot.\+Control.\+Mouse\+State.\+Minimum\+Drag\+Distance = 5}
+
+
+
+A click-\/drag must exceed this number of pixels before it is considered a drag. 
+
+\Hypertarget{class_scott_plot_1_1_control_1_1_mouse_state_aa30b024a7feb3db3f1ce39b4dc55caf6}\index{ScottPlot.Control.MouseState@{ScottPlot.Control.MouseState}!MouseDownAxisLimits@{MouseDownAxisLimits}}
+\index{MouseDownAxisLimits@{MouseDownAxisLimits}!ScottPlot.Control.MouseState@{ScottPlot.Control.MouseState}}
+\doxysubsubsection{\texorpdfstring{MouseDownAxisLimits}{MouseDownAxisLimits}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_control_1_1_mouse_state_aa30b024a7feb3db3f1ce39b4dc55caf6} 
+\mbox{\hyperlink{class_scott_plot_1_1_control_1_1_multi_axis_limit_manager}{Multi\+Axis\+Limit\+Manager}} Scott\+Plot.\+Control.\+Mouse\+State.\+Mouse\+Down\+Axis\+Limits = new()}
+
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{class_scott_plot_1_1_control_1_1_mouse_state_ac7cfe2e069d23115f9224baa2a1b42e5}\index{ScottPlot.Control.MouseState@{ScottPlot.Control.MouseState}!MouseDownPosition@{MouseDownPosition}}
+\index{MouseDownPosition@{MouseDownPosition}!ScottPlot.Control.MouseState@{ScottPlot.Control.MouseState}}
+\doxysubsubsection{\texorpdfstring{MouseDownPosition}{MouseDownPosition}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_control_1_1_mouse_state_ac7cfe2e069d23115f9224baa2a1b42e5} 
+\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}} Scott\+Plot.\+Control.\+Mouse\+State.\+Mouse\+Down\+Position\hspace{0.3cm}{\ttfamily [get]}}
+
+\Hypertarget{class_scott_plot_1_1_control_1_1_mouse_state_a0d894820e9c6653e57d48bc4d0f6bc93}\index{ScottPlot.Control.MouseState@{ScottPlot.Control.MouseState}!PressedButtons@{PressedButtons}}
+\index{PressedButtons@{PressedButtons}!ScottPlot.Control.MouseState@{ScottPlot.Control.MouseState}}
+\doxysubsubsection{\texorpdfstring{PressedButtons}{PressedButtons}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_control_1_1_mouse_state_a0d894820e9c6653e57d48bc4d0f6bc93} 
+IRead\+Only\+Collection$<$\mbox{\hyperlink{namespace_scott_plot_1_1_control_a1ce2192b1e04dba3b2c4e0ff10f1ab3b}{Mouse\+Button}}$>$ Scott\+Plot.\+Control.\+Mouse\+State.\+Pressed\+Buttons\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Control/Mouse\+State.\+cs\end{DoxyCompactItemize}

@@ -1,0 +1,119 @@
+\hypertarget{classNumericAutomatic}{}\doxysection{Numeric\+Automatic Class Reference}
+\label{classNumericAutomatic}\index{NumericAutomatic@{NumericAutomatic}}
+Inheritance diagram for Numeric\+Automatic\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classNumericAutomatic}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classNumericAutomatic_a910c1ee07d24f90bb33d48a52d7cbcb1}{Regenerate}} (\mbox{\hyperlink{structCoordinateRange}{Coordinate\+Range}} range, Edge edge, \mbox{\hyperlink{structPixelLength}{Pixel\+Length}} size, SKPaint paint, \mbox{\hyperlink{classLabelStyle}{Label\+Style}} label\+Style)
+\begin{DoxyCompactList}\small\item\em Generate ticks based on the current settings and store the result in \mbox{\hyperlink{classNumericAutomatic_a13e7a8cbee0a3c347956803cb5c1778b}{Ticks}} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classDecimalTickSpacingCalculator}{Decimal\+Tick\+Spacing\+Calculator}} \mbox{\hyperlink{classNumericAutomatic_ab321a05f8150e8e49accf17edfd455de}{Tick\+Spacing\+Calculator}} = new()
+\item 
+int? \mbox{\hyperlink{classNumericAutomatic_a02f5410c62b7f66a3b11810b7fb8697f}{Target\+Tick\+Count}} = null
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structTick}{Tick}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classNumericAutomatic_a13e7a8cbee0a3c347956803cb5c1778b}{Ticks}} = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+int \mbox{\hyperlink{classNumericAutomatic_a741dd03aae4ebe2f73afd2031f247af1}{Max\+Tick\+Count}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+bool \mbox{\hyperlink{classNumericAutomatic_afbd41ad52fa6e11a6d54512431ce45b0}{Integer\+Ticks\+Only}} = false\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+Func$<$ double, string $>$ \mbox{\hyperlink{classNumericAutomatic_a19d86d5a575f8531d3270cb886f55e5e}{Label\+Formatter}} = \mbox{\hyperlink{classLabelFormatters_a76bc8d30f3997eb97f866213d2a48dcb}{Label\+Formatters.\+Numeric}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{interfaceIMinorTickGenerator}{IMinor\+Tick\+Generator}} \mbox{\hyperlink{classNumericAutomatic_a78c1f30cc3c4b04c9618ec2338a7deb0}{Minor\+Tick\+Generator}} = new \mbox{\hyperlink{classEvenlySpacedMinorTickGenerator}{Evenly\+Spaced\+Minor\+Tick\+Generator}}(5)\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{classNumericAutomatic_a67c66223b68ef308fd09b11e17753eab}{Minimum\+Tick\+Spacing}} = 0\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+double \mbox{\hyperlink{classNumericAutomatic_a2f78413dd09d16c3c3e8f6c242027b8e}{Tick\+Density}} = 1.\+0\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classNumericAutomatic_a910c1ee07d24f90bb33d48a52d7cbcb1}\label{classNumericAutomatic_a910c1ee07d24f90bb33d48a52d7cbcb1}} 
+\index{NumericAutomatic@{NumericAutomatic}!Regenerate@{Regenerate}}
+\index{Regenerate@{Regenerate}!NumericAutomatic@{NumericAutomatic}}
+\doxysubsubsection{\texorpdfstring{Regenerate()}{Regenerate()}}
+{\footnotesize\ttfamily void Numeric\+Automatic.\+Regenerate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structCoordinateRange}{Coordinate\+Range}}}]{range,  }\item[{Edge}]{edge,  }\item[{\mbox{\hyperlink{structPixelLength}{Pixel\+Length}}}]{size,  }\item[{SKPaint}]{paint,  }\item[{\mbox{\hyperlink{classLabelStyle}{Label\+Style}}}]{label\+Style }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Generate ticks based on the current settings and store the result in \mbox{\hyperlink{classNumericAutomatic_a13e7a8cbee0a3c347956803cb5c1778b}{Ticks}} 
+
+
+
+Implements \mbox{\hyperlink{interfaceITickGenerator_afce3e3bc89a3026ca1dc3dfca576020f}{ITick\+Generator}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classNumericAutomatic_a02f5410c62b7f66a3b11810b7fb8697f}\label{classNumericAutomatic_a02f5410c62b7f66a3b11810b7fb8697f}} 
+\index{NumericAutomatic@{NumericAutomatic}!TargetTickCount@{TargetTickCount}}
+\index{TargetTickCount@{TargetTickCount}!NumericAutomatic@{NumericAutomatic}}
+\doxysubsubsection{\texorpdfstring{TargetTickCount}{TargetTickCount}}
+{\footnotesize\ttfamily int? Numeric\+Automatic.\+Target\+Tick\+Count = null}
+
+\mbox{\Hypertarget{classNumericAutomatic_ab321a05f8150e8e49accf17edfd455de}\label{classNumericAutomatic_ab321a05f8150e8e49accf17edfd455de}} 
+\index{NumericAutomatic@{NumericAutomatic}!TickSpacingCalculator@{TickSpacingCalculator}}
+\index{TickSpacingCalculator@{TickSpacingCalculator}!NumericAutomatic@{NumericAutomatic}}
+\doxysubsubsection{\texorpdfstring{TickSpacingCalculator}{TickSpacingCalculator}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classDecimalTickSpacingCalculator}{Decimal\+Tick\+Spacing\+Calculator}} Numeric\+Automatic.\+Tick\+Spacing\+Calculator = new()}
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{classNumericAutomatic_afbd41ad52fa6e11a6d54512431ce45b0}\label{classNumericAutomatic_afbd41ad52fa6e11a6d54512431ce45b0}} 
+\index{NumericAutomatic@{NumericAutomatic}!IntegerTicksOnly@{IntegerTicksOnly}}
+\index{IntegerTicksOnly@{IntegerTicksOnly}!NumericAutomatic@{NumericAutomatic}}
+\doxysubsubsection{\texorpdfstring{IntegerTicksOnly}{IntegerTicksOnly}}
+{\footnotesize\ttfamily bool Numeric\+Automatic.\+Integer\+Ticks\+Only = false\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classNumericAutomatic_a19d86d5a575f8531d3270cb886f55e5e}\label{classNumericAutomatic_a19d86d5a575f8531d3270cb886f55e5e}} 
+\index{NumericAutomatic@{NumericAutomatic}!LabelFormatter@{LabelFormatter}}
+\index{LabelFormatter@{LabelFormatter}!NumericAutomatic@{NumericAutomatic}}
+\doxysubsubsection{\texorpdfstring{LabelFormatter}{LabelFormatter}}
+{\footnotesize\ttfamily Func$<$double, string$>$ Numeric\+Automatic.\+Label\+Formatter = \mbox{\hyperlink{classLabelFormatters_a76bc8d30f3997eb97f866213d2a48dcb}{Label\+Formatters.\+Numeric}}\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classNumericAutomatic_a741dd03aae4ebe2f73afd2031f247af1}\label{classNumericAutomatic_a741dd03aae4ebe2f73afd2031f247af1}} 
+\index{NumericAutomatic@{NumericAutomatic}!MaxTickCount@{MaxTickCount}}
+\index{MaxTickCount@{MaxTickCount}!NumericAutomatic@{NumericAutomatic}}
+\doxysubsubsection{\texorpdfstring{MaxTickCount}{MaxTickCount}}
+{\footnotesize\ttfamily int Numeric\+Automatic.\+Max\+Tick\+Count\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classNumericAutomatic_a67c66223b68ef308fd09b11e17753eab}\label{classNumericAutomatic_a67c66223b68ef308fd09b11e17753eab}} 
+\index{NumericAutomatic@{NumericAutomatic}!MinimumTickSpacing@{MinimumTickSpacing}}
+\index{MinimumTickSpacing@{MinimumTickSpacing}!NumericAutomatic@{NumericAutomatic}}
+\doxysubsubsection{\texorpdfstring{MinimumTickSpacing}{MinimumTickSpacing}}
+{\footnotesize\ttfamily float Numeric\+Automatic.\+Minimum\+Tick\+Spacing = 0\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classNumericAutomatic_a78c1f30cc3c4b04c9618ec2338a7deb0}\label{classNumericAutomatic_a78c1f30cc3c4b04c9618ec2338a7deb0}} 
+\index{NumericAutomatic@{NumericAutomatic}!MinorTickGenerator@{MinorTickGenerator}}
+\index{MinorTickGenerator@{MinorTickGenerator}!NumericAutomatic@{NumericAutomatic}}
+\doxysubsubsection{\texorpdfstring{MinorTickGenerator}{MinorTickGenerator}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceIMinorTickGenerator}{IMinor\+Tick\+Generator}} Numeric\+Automatic.\+Minor\+Tick\+Generator = new \mbox{\hyperlink{classEvenlySpacedMinorTickGenerator}{Evenly\+Spaced\+Minor\+Tick\+Generator}}(5)\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classNumericAutomatic_a2f78413dd09d16c3c3e8f6c242027b8e}\label{classNumericAutomatic_a2f78413dd09d16c3c3e8f6c242027b8e}} 
+\index{NumericAutomatic@{NumericAutomatic}!TickDensity@{TickDensity}}
+\index{TickDensity@{TickDensity}!NumericAutomatic@{NumericAutomatic}}
+\doxysubsubsection{\texorpdfstring{TickDensity}{TickDensity}}
+{\footnotesize\ttfamily double Numeric\+Automatic.\+Tick\+Density = 1.\+0\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classNumericAutomatic_a13e7a8cbee0a3c347956803cb5c1778b}\label{classNumericAutomatic_a13e7a8cbee0a3c347956803cb5c1778b}} 
+\index{NumericAutomatic@{NumericAutomatic}!Ticks@{Ticks}}
+\index{Ticks@{Ticks}!NumericAutomatic@{NumericAutomatic}}
+\doxysubsubsection{\texorpdfstring{Ticks}{Ticks}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structTick}{Tick}} \mbox{[}$\,$\mbox{]} Numeric\+Automatic.\+Ticks = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Tick\+Generators/Numeric\+Automatic.\+cs\end{DoxyCompactItemize}

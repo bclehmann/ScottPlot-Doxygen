@@ -1,0 +1,367 @@
+\hypertarget{classLabelStyle}{}\doxysection{Label\+Style Class Reference}
+\label{classLabelStyle}\index{LabelStyle@{LabelStyle}}
+Inheritance diagram for Label\+Style\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classLabelStyle}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classLabelStyle_a80145f579b555038743a5a53cbc1d0cb}{Set\+Best\+Font}} ()
+\begin{DoxyCompactList}\small\item\em Use the characters in \mbox{\hyperlink{classLabelStyle_a36f650ef305080a27d5f841026022f49}{Text}} to determine an installed system font most likely to support this character set. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classLabelStyle_a88f33741f16e5d694d45b4baeb1dcf05}{Apply\+To\+Paint}} (SKPaint paint)
+\item 
+\mbox{\hyperlink{structMeasuredText}{Measured\+Text}} \mbox{\hyperlink{classLabelStyle_afb6c4b93bcb8fbb0be4bbb6b9401472a}{Measure}} ()
+\begin{DoxyCompactList}\small\item\em Return size information for the contents of the \mbox{\hyperlink{classLabelStyle_a36f650ef305080a27d5f841026022f49}{Text}} property \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structMeasuredText}{Measured\+Text}} \mbox{\hyperlink{classLabelStyle_ab347396b211d1446d2b7325af0695200}{Measure}} (string \mbox{\hyperlink{classLabelStyle_a5186ac89adfb7e296a1c9f08361782bc}{text}})
+\begin{DoxyCompactList}\small\item\em Return size information for the given text \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structMeasuredText}{Measured\+Text}} \mbox{\hyperlink{classLabelStyle_ad95dd4a3c103c92a89fd183a87c28f11}{Measure}} (string \mbox{\hyperlink{classLabelStyle_a5186ac89adfb7e296a1c9f08361782bc}{text}}, SKPaint paint)
+\item 
+\mbox{\hyperlink{structPixel}{Pixel}} \mbox{\hyperlink{classLabelStyle_ad6e9670c2c12fa83774b76b03ba7be70}{Get\+Render\+Location}} (\mbox{\hyperlink{structPixelRect}{Pixel\+Rect}} rect, \mbox{\hyperlink{classLabelStyle_a27b121798312ad588d2be18c553f42d7}{Alignment}} rect\+Alignment, float offsetX, float offsetY, SKPaint paint)
+\begin{DoxyCompactList}\small\item\em Use the \mbox{\hyperlink{classLabel}{Label}}\textquotesingle{}s size and \mbox{\hyperlink{classLabelStyle_a27b121798312ad588d2be18c553f42d7}{Alignment}} to determine where it should be drawn relative to the given rectangle (aligned to the rectangle according to {\itshape rect\+Alignment} ). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classLabelStyle_a81373e3289575245b52c04c8aa71a0d4}{Render}} (SKCanvas canvas, \mbox{\hyperlink{structPixel}{Pixel}} px, SKPaint paint, bool bottom=true)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classLabelStyle_ad5ce4fa6e73aac98934e0408bb071845}{Italic}} = false
+\item 
+bool \mbox{\hyperlink{classLabelStyle_a218b439cc082fd2929d6ba107cc9279a}{Anti\+Alias}} = true
+\item 
+float \mbox{\hyperlink{classLabelStyle_aed21e2c6f559fe1b7b878e886bb2393c}{Point\+Size}} = 0
+\item 
+bool \mbox{\hyperlink{classLabelStyle_a369da4494b2a4752059802316da6b937}{Point\+Filled}} = false
+\item 
+\mbox{\hyperlink{structColor}{Color}} \mbox{\hyperlink{classLabelStyle_a207a1e9d54d79d41f213035d2e711615}{Point\+Color}} = \mbox{\hyperlink{structColors_ac0ee156a7c46d47e32b3ccbd52ecd379}{Colors.\+Magenta}}
+\item 
+float \mbox{\hyperlink{classLabelStyle_a02e5f90656804e1969f443191570ac9c}{OffsetX}} = 0
+\item 
+float \mbox{\hyperlink{classLabelStyle_aac100ff37b94d398046b991d9e30fafc}{OffsetY}} = 0
+\item 
+float \mbox{\hyperlink{classLabelStyle_a7bfa9a8565949bc4fcf4f4f47d9315fb}{Border\+RadiusX}} = 0
+\item 
+float \mbox{\hyperlink{classLabelStyle_ad35f65b5d0732bd181ce8f14e10ae2fc}{Border\+RadiusY}} = 0
+\item 
+string \mbox{\hyperlink{classLabelStyle_a5186ac89adfb7e296a1c9f08361782bc}{text}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classLabelStyle_ac41d9eedbbc14be82165ede2f0edee73}{Is\+Visible}} = true\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+string \mbox{\hyperlink{classLabelStyle_a36f650ef305080a27d5f841026022f49}{Text}} = string.\+Empty\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+Alignment \mbox{\hyperlink{classLabelStyle_a27b121798312ad588d2be18c553f42d7}{Alignment}} = Alignment.\+Upper\+Left\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{classLabelStyle_a02fd9facdd972a891d7e875fdac201ac}{Rotation}} = 0\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Rotation in degrees clockwise from 0 (horizontal text) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structColor}{Color}} \mbox{\hyperlink{classLabelStyle_a42c7a826a2f0face09e88242d483944f}{Fore\+Color}} = \mbox{\hyperlink{structColors_a6a4f09e77ec6d0ef4c08348eb2e21714}{Colors.\+Black}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{structColor}{Color}} \mbox{\hyperlink{classLabelStyle_a618aa9d1f8745c2d0dda494844f244d7}{Back\+Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{structColor}{Color}} \mbox{\hyperlink{classLabelStyle_acfeea6ee2c426507da426bb0912ff6ae}{Background\+Color}} = \mbox{\hyperlink{structColors_a9695917727155acebdb5b379dcfdad8b}{Colors.\+Transparent}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{structColor}{Color}} \mbox{\hyperlink{classLabelStyle_a6efd725336be72b8f769fb0565e985fd}{Border\+Color}} = \mbox{\hyperlink{structColors_a9695917727155acebdb5b379dcfdad8b}{Colors.\+Transparent}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{classLabelStyle_ad7748f905f282e82dc3b018ae2c3216e}{Border\+Width}} = 1\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{structPixelRect}{Pixel\+Rect}} \mbox{\hyperlink{classLabelStyle_afffb0c660f8d65ce15ef64b273f8c21c}{Last\+Render\+Pixel\+Rect}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{structColor}{Color}} \mbox{\hyperlink{classLabelStyle_ae7325b779bdbb48327a33519ed06b5fc}{Shadow\+Color}} = \mbox{\hyperlink{structColors_a9695917727155acebdb5b379dcfdad8b}{Colors.\+Transparent}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{structPixelOffset}{Pixel\+Offset}} \mbox{\hyperlink{classLabelStyle_ab6d9250b1bbfe3b4949534a4920cd175}{Shadow\+Offset}} = new(3, 3)\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+bool \mbox{\hyperlink{classLabelStyle_a93b73190effd43e3debca6f315294872}{Anti\+Alias\+Background}} = true\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+bool \mbox{\hyperlink{classLabelStyle_adead9afa9bcfa56b916925e68edf17c3}{Anti\+Alias\+Text}} = true\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+bool \mbox{\hyperlink{classLabelStyle_a60fb673f12b5a8f4a69faa296b07717d}{Subpixel\+Text}} = true\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+string \mbox{\hyperlink{classLabelStyle_a96c5695d294fd407442b4e724e8e0582}{Font\+Name}} = Fonts.\+Default\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{classLabelStyle_a6872b62c1686ae01023baab12fba4a34}{Font\+Size}} = 12\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+bool \mbox{\hyperlink{classLabelStyle_acb545a9bfee698f9aae325e2cced105d}{Bold}} = false\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float? \mbox{\hyperlink{classLabelStyle_a55d7965e63d25695f506a5fff965ec68}{Line\+Spacing}} = null\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Manually defined line height in pixels. If not defined, the default line spacing will be used (according to the typeface, size, etc.) \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classLabelStyle_a725b4e6c512eb920c9a8d6c10c23a738}{Padding}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{structPixelPadding}{Pixel\+Padding}} \mbox{\hyperlink{classLabelStyle_aa45317b95d5d5b5c76675b6680718bd3}{Pixel\+Padding}} = new(0, 0, 0, 0)\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{classLabelStyle_a2bdf995e2c34812574e4dc08f43cf54b}{Border\+Radius}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classLabelStyle_a88f33741f16e5d694d45b4baeb1dcf05}\label{classLabelStyle_a88f33741f16e5d694d45b4baeb1dcf05}} 
+\index{LabelStyle@{LabelStyle}!ApplyToPaint@{ApplyToPaint}}
+\index{ApplyToPaint@{ApplyToPaint}!LabelStyle@{LabelStyle}}
+\doxysubsubsection{\texorpdfstring{ApplyToPaint()}{ApplyToPaint()}}
+{\footnotesize\ttfamily void Label\+Style.\+Apply\+To\+Paint (\begin{DoxyParamCaption}\item[{SKPaint}]{paint }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classLabelStyle_ad6e9670c2c12fa83774b76b03ba7be70}\label{classLabelStyle_ad6e9670c2c12fa83774b76b03ba7be70}} 
+\index{LabelStyle@{LabelStyle}!GetRenderLocation@{GetRenderLocation}}
+\index{GetRenderLocation@{GetRenderLocation}!LabelStyle@{LabelStyle}}
+\doxysubsubsection{\texorpdfstring{GetRenderLocation()}{GetRenderLocation()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structPixel}{Pixel}} Label\+Style.\+Get\+Render\+Location (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPixelRect}{Pixel\+Rect}}}]{rect,  }\item[{\mbox{\hyperlink{classLabelStyle_a27b121798312ad588d2be18c553f42d7}{Alignment}}}]{rect\+Alignment,  }\item[{float}]{offsetX,  }\item[{float}]{offsetY,  }\item[{SKPaint}]{paint }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Use the \mbox{\hyperlink{classLabel}{Label}}\textquotesingle{}s size and \mbox{\hyperlink{classLabelStyle_a27b121798312ad588d2be18c553f42d7}{Alignment}} to determine where it should be drawn relative to the given rectangle (aligned to the rectangle according to {\itshape rect\+Alignment} ). 
+
+\mbox{\Hypertarget{classLabelStyle_afb6c4b93bcb8fbb0be4bbb6b9401472a}\label{classLabelStyle_afb6c4b93bcb8fbb0be4bbb6b9401472a}} 
+\index{LabelStyle@{LabelStyle}!Measure@{Measure}}
+\index{Measure@{Measure}!LabelStyle@{LabelStyle}}
+\doxysubsubsection{\texorpdfstring{Measure()}{Measure()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structMeasuredText}{Measured\+Text}} Label\+Style.\+Measure (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return size information for the contents of the \mbox{\hyperlink{classLabelStyle_a36f650ef305080a27d5f841026022f49}{Text}} property 
+
+\mbox{\Hypertarget{classLabelStyle_ab347396b211d1446d2b7325af0695200}\label{classLabelStyle_ab347396b211d1446d2b7325af0695200}} 
+\index{LabelStyle@{LabelStyle}!Measure@{Measure}}
+\index{Measure@{Measure}!LabelStyle@{LabelStyle}}
+\doxysubsubsection{\texorpdfstring{Measure()}{Measure()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structMeasuredText}{Measured\+Text}} Label\+Style.\+Measure (\begin{DoxyParamCaption}\item[{string}]{text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return size information for the given text 
+
+\mbox{\Hypertarget{classLabelStyle_ad95dd4a3c103c92a89fd183a87c28f11}\label{classLabelStyle_ad95dd4a3c103c92a89fd183a87c28f11}} 
+\index{LabelStyle@{LabelStyle}!Measure@{Measure}}
+\index{Measure@{Measure}!LabelStyle@{LabelStyle}}
+\doxysubsubsection{\texorpdfstring{Measure()}{Measure()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structMeasuredText}{Measured\+Text}} Label\+Style.\+Measure (\begin{DoxyParamCaption}\item[{string}]{text,  }\item[{SKPaint}]{paint }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classLabelStyle_a81373e3289575245b52c04c8aa71a0d4}\label{classLabelStyle_a81373e3289575245b52c04c8aa71a0d4}} 
+\index{LabelStyle@{LabelStyle}!Render@{Render}}
+\index{Render@{Render}!LabelStyle@{LabelStyle}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily void Label\+Style.\+Render (\begin{DoxyParamCaption}\item[{SKCanvas}]{canvas,  }\item[{\mbox{\hyperlink{structPixel}{Pixel}}}]{px,  }\item[{SKPaint}]{paint,  }\item[{bool}]{bottom = {\ttfamily true} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classLabelStyle_a80145f579b555038743a5a53cbc1d0cb}\label{classLabelStyle_a80145f579b555038743a5a53cbc1d0cb}} 
+\index{LabelStyle@{LabelStyle}!SetBestFont@{SetBestFont}}
+\index{SetBestFont@{SetBestFont}!LabelStyle@{LabelStyle}}
+\doxysubsubsection{\texorpdfstring{SetBestFont()}{SetBestFont()}}
+{\footnotesize\ttfamily void Label\+Style.\+Set\+Best\+Font (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Use the characters in \mbox{\hyperlink{classLabelStyle_a36f650ef305080a27d5f841026022f49}{Text}} to determine an installed system font most likely to support this character set. 
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classLabelStyle_a218b439cc082fd2929d6ba107cc9279a}\label{classLabelStyle_a218b439cc082fd2929d6ba107cc9279a}} 
+\index{LabelStyle@{LabelStyle}!AntiAlias@{AntiAlias}}
+\index{AntiAlias@{AntiAlias}!LabelStyle@{LabelStyle}}
+\doxysubsubsection{\texorpdfstring{AntiAlias}{AntiAlias}}
+{\footnotesize\ttfamily bool Label\+Style.\+Anti\+Alias = true}
+
+\mbox{\Hypertarget{classLabelStyle_a7bfa9a8565949bc4fcf4f4f47d9315fb}\label{classLabelStyle_a7bfa9a8565949bc4fcf4f4f47d9315fb}} 
+\index{LabelStyle@{LabelStyle}!BorderRadiusX@{BorderRadiusX}}
+\index{BorderRadiusX@{BorderRadiusX}!LabelStyle@{LabelStyle}}
+\doxysubsubsection{\texorpdfstring{BorderRadiusX}{BorderRadiusX}}
+{\footnotesize\ttfamily float Label\+Style.\+Border\+RadiusX = 0}
+
+\mbox{\Hypertarget{classLabelStyle_ad35f65b5d0732bd181ce8f14e10ae2fc}\label{classLabelStyle_ad35f65b5d0732bd181ce8f14e10ae2fc}} 
+\index{LabelStyle@{LabelStyle}!BorderRadiusY@{BorderRadiusY}}
+\index{BorderRadiusY@{BorderRadiusY}!LabelStyle@{LabelStyle}}
+\doxysubsubsection{\texorpdfstring{BorderRadiusY}{BorderRadiusY}}
+{\footnotesize\ttfamily float Label\+Style.\+Border\+RadiusY = 0}
+
+\mbox{\Hypertarget{classLabelStyle_ad5ce4fa6e73aac98934e0408bb071845}\label{classLabelStyle_ad5ce4fa6e73aac98934e0408bb071845}} 
+\index{LabelStyle@{LabelStyle}!Italic@{Italic}}
+\index{Italic@{Italic}!LabelStyle@{LabelStyle}}
+\doxysubsubsection{\texorpdfstring{Italic}{Italic}}
+{\footnotesize\ttfamily bool Label\+Style.\+Italic = false}
+
+\mbox{\Hypertarget{classLabelStyle_a02e5f90656804e1969f443191570ac9c}\label{classLabelStyle_a02e5f90656804e1969f443191570ac9c}} 
+\index{LabelStyle@{LabelStyle}!OffsetX@{OffsetX}}
+\index{OffsetX@{OffsetX}!LabelStyle@{LabelStyle}}
+\doxysubsubsection{\texorpdfstring{OffsetX}{OffsetX}}
+{\footnotesize\ttfamily float Label\+Style.\+OffsetX = 0}
+
+\mbox{\Hypertarget{classLabelStyle_aac100ff37b94d398046b991d9e30fafc}\label{classLabelStyle_aac100ff37b94d398046b991d9e30fafc}} 
+\index{LabelStyle@{LabelStyle}!OffsetY@{OffsetY}}
+\index{OffsetY@{OffsetY}!LabelStyle@{LabelStyle}}
+\doxysubsubsection{\texorpdfstring{OffsetY}{OffsetY}}
+{\footnotesize\ttfamily float Label\+Style.\+OffsetY = 0}
+
+\mbox{\Hypertarget{classLabelStyle_a207a1e9d54d79d41f213035d2e711615}\label{classLabelStyle_a207a1e9d54d79d41f213035d2e711615}} 
+\index{LabelStyle@{LabelStyle}!PointColor@{PointColor}}
+\index{PointColor@{PointColor}!LabelStyle@{LabelStyle}}
+\doxysubsubsection{\texorpdfstring{PointColor}{PointColor}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structColor}{Color}} Label\+Style.\+Point\+Color = \mbox{\hyperlink{structColors_ac0ee156a7c46d47e32b3ccbd52ecd379}{Colors.\+Magenta}}}
+
+\mbox{\Hypertarget{classLabelStyle_a369da4494b2a4752059802316da6b937}\label{classLabelStyle_a369da4494b2a4752059802316da6b937}} 
+\index{LabelStyle@{LabelStyle}!PointFilled@{PointFilled}}
+\index{PointFilled@{PointFilled}!LabelStyle@{LabelStyle}}
+\doxysubsubsection{\texorpdfstring{PointFilled}{PointFilled}}
+{\footnotesize\ttfamily bool Label\+Style.\+Point\+Filled = false}
+
+\mbox{\Hypertarget{classLabelStyle_aed21e2c6f559fe1b7b878e886bb2393c}\label{classLabelStyle_aed21e2c6f559fe1b7b878e886bb2393c}} 
+\index{LabelStyle@{LabelStyle}!PointSize@{PointSize}}
+\index{PointSize@{PointSize}!LabelStyle@{LabelStyle}}
+\doxysubsubsection{\texorpdfstring{PointSize}{PointSize}}
+{\footnotesize\ttfamily float Label\+Style.\+Point\+Size = 0}
+
+\mbox{\Hypertarget{classLabelStyle_a5186ac89adfb7e296a1c9f08361782bc}\label{classLabelStyle_a5186ac89adfb7e296a1c9f08361782bc}} 
+\index{LabelStyle@{LabelStyle}!text@{text}}
+\index{text@{text}!LabelStyle@{LabelStyle}}
+\doxysubsubsection{\texorpdfstring{text}{text}}
+{\footnotesize\ttfamily string Label\+Style.\+text}
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{classLabelStyle_a27b121798312ad588d2be18c553f42d7}\label{classLabelStyle_a27b121798312ad588d2be18c553f42d7}} 
+\index{LabelStyle@{LabelStyle}!Alignment@{Alignment}}
+\index{Alignment@{Alignment}!LabelStyle@{LabelStyle}}
+\doxysubsubsection{\texorpdfstring{Alignment}{Alignment}}
+{\footnotesize\ttfamily Alignment Label\+Style.\+Alignment = Alignment.\+Upper\+Left\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classLabelStyle_a93b73190effd43e3debca6f315294872}\label{classLabelStyle_a93b73190effd43e3debca6f315294872}} 
+\index{LabelStyle@{LabelStyle}!AntiAliasBackground@{AntiAliasBackground}}
+\index{AntiAliasBackground@{AntiAliasBackground}!LabelStyle@{LabelStyle}}
+\doxysubsubsection{\texorpdfstring{AntiAliasBackground}{AntiAliasBackground}}
+{\footnotesize\ttfamily bool Label\+Style.\+Anti\+Alias\+Background = true\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classLabelStyle_adead9afa9bcfa56b916925e68edf17c3}\label{classLabelStyle_adead9afa9bcfa56b916925e68edf17c3}} 
+\index{LabelStyle@{LabelStyle}!AntiAliasText@{AntiAliasText}}
+\index{AntiAliasText@{AntiAliasText}!LabelStyle@{LabelStyle}}
+\doxysubsubsection{\texorpdfstring{AntiAliasText}{AntiAliasText}}
+{\footnotesize\ttfamily bool Label\+Style.\+Anti\+Alias\+Text = true\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classLabelStyle_a618aa9d1f8745c2d0dda494844f244d7}\label{classLabelStyle_a618aa9d1f8745c2d0dda494844f244d7}} 
+\index{LabelStyle@{LabelStyle}!BackColor@{BackColor}}
+\index{BackColor@{BackColor}!LabelStyle@{LabelStyle}}
+\doxysubsubsection{\texorpdfstring{BackColor}{BackColor}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structColor}{Color}} Label\+Style.\+Back\+Color\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classLabelStyle_acfeea6ee2c426507da426bb0912ff6ae}\label{classLabelStyle_acfeea6ee2c426507da426bb0912ff6ae}} 
+\index{LabelStyle@{LabelStyle}!BackgroundColor@{BackgroundColor}}
+\index{BackgroundColor@{BackgroundColor}!LabelStyle@{LabelStyle}}
+\doxysubsubsection{\texorpdfstring{BackgroundColor}{BackgroundColor}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structColor}{Color}} Label\+Style.\+Background\+Color = \mbox{\hyperlink{structColors_a9695917727155acebdb5b379dcfdad8b}{Colors.\+Transparent}}\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classLabelStyle_acb545a9bfee698f9aae325e2cced105d}\label{classLabelStyle_acb545a9bfee698f9aae325e2cced105d}} 
+\index{LabelStyle@{LabelStyle}!Bold@{Bold}}
+\index{Bold@{Bold}!LabelStyle@{LabelStyle}}
+\doxysubsubsection{\texorpdfstring{Bold}{Bold}}
+{\footnotesize\ttfamily bool Label\+Style.\+Bold = false\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classLabelStyle_a6efd725336be72b8f769fb0565e985fd}\label{classLabelStyle_a6efd725336be72b8f769fb0565e985fd}} 
+\index{LabelStyle@{LabelStyle}!BorderColor@{BorderColor}}
+\index{BorderColor@{BorderColor}!LabelStyle@{LabelStyle}}
+\doxysubsubsection{\texorpdfstring{BorderColor}{BorderColor}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structColor}{Color}} Label\+Style.\+Border\+Color = \mbox{\hyperlink{structColors_a9695917727155acebdb5b379dcfdad8b}{Colors.\+Transparent}}\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classLabelStyle_a2bdf995e2c34812574e4dc08f43cf54b}\label{classLabelStyle_a2bdf995e2c34812574e4dc08f43cf54b}} 
+\index{LabelStyle@{LabelStyle}!BorderRadius@{BorderRadius}}
+\index{BorderRadius@{BorderRadius}!LabelStyle@{LabelStyle}}
+\doxysubsubsection{\texorpdfstring{BorderRadius}{BorderRadius}}
+{\footnotesize\ttfamily float Label\+Style.\+Border\+Radius\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classLabelStyle_ad7748f905f282e82dc3b018ae2c3216e}\label{classLabelStyle_ad7748f905f282e82dc3b018ae2c3216e}} 
+\index{LabelStyle@{LabelStyle}!BorderWidth@{BorderWidth}}
+\index{BorderWidth@{BorderWidth}!LabelStyle@{LabelStyle}}
+\doxysubsubsection{\texorpdfstring{BorderWidth}{BorderWidth}}
+{\footnotesize\ttfamily float Label\+Style.\+Border\+Width = 1\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classLabelStyle_a96c5695d294fd407442b4e724e8e0582}\label{classLabelStyle_a96c5695d294fd407442b4e724e8e0582}} 
+\index{LabelStyle@{LabelStyle}!FontName@{FontName}}
+\index{FontName@{FontName}!LabelStyle@{LabelStyle}}
+\doxysubsubsection{\texorpdfstring{FontName}{FontName}}
+{\footnotesize\ttfamily string Label\+Style.\+Font\+Name = Fonts.\+Default\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classLabelStyle_a6872b62c1686ae01023baab12fba4a34}\label{classLabelStyle_a6872b62c1686ae01023baab12fba4a34}} 
+\index{LabelStyle@{LabelStyle}!FontSize@{FontSize}}
+\index{FontSize@{FontSize}!LabelStyle@{LabelStyle}}
+\doxysubsubsection{\texorpdfstring{FontSize}{FontSize}}
+{\footnotesize\ttfamily float Label\+Style.\+Font\+Size = 12\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classLabelStyle_a42c7a826a2f0face09e88242d483944f}\label{classLabelStyle_a42c7a826a2f0face09e88242d483944f}} 
+\index{LabelStyle@{LabelStyle}!ForeColor@{ForeColor}}
+\index{ForeColor@{ForeColor}!LabelStyle@{LabelStyle}}
+\doxysubsubsection{\texorpdfstring{ForeColor}{ForeColor}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structColor}{Color}} Label\+Style.\+Fore\+Color = \mbox{\hyperlink{structColors_a6a4f09e77ec6d0ef4c08348eb2e21714}{Colors.\+Black}}\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classLabelStyle_ac41d9eedbbc14be82165ede2f0edee73}\label{classLabelStyle_ac41d9eedbbc14be82165ede2f0edee73}} 
+\index{LabelStyle@{LabelStyle}!IsVisible@{IsVisible}}
+\index{IsVisible@{IsVisible}!LabelStyle@{LabelStyle}}
+\doxysubsubsection{\texorpdfstring{IsVisible}{IsVisible}}
+{\footnotesize\ttfamily bool Label\+Style.\+Is\+Visible = true\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classLabelStyle_afffb0c660f8d65ce15ef64b273f8c21c}\label{classLabelStyle_afffb0c660f8d65ce15ef64b273f8c21c}} 
+\index{LabelStyle@{LabelStyle}!LastRenderPixelRect@{LastRenderPixelRect}}
+\index{LastRenderPixelRect@{LastRenderPixelRect}!LabelStyle@{LabelStyle}}
+\doxysubsubsection{\texorpdfstring{LastRenderPixelRect}{LastRenderPixelRect}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structPixelRect}{Pixel\+Rect}} Label\+Style.\+Last\+Render\+Pixel\+Rect\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{classLabelStyle_a55d7965e63d25695f506a5fff965ec68}\label{classLabelStyle_a55d7965e63d25695f506a5fff965ec68}} 
+\index{LabelStyle@{LabelStyle}!LineSpacing@{LineSpacing}}
+\index{LineSpacing@{LineSpacing}!LabelStyle@{LabelStyle}}
+\doxysubsubsection{\texorpdfstring{LineSpacing}{LineSpacing}}
+{\footnotesize\ttfamily float? Label\+Style.\+Line\+Spacing = null\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Manually defined line height in pixels. If not defined, the default line spacing will be used (according to the typeface, size, etc.) 
+
+\mbox{\Hypertarget{classLabelStyle_a725b4e6c512eb920c9a8d6c10c23a738}\label{classLabelStyle_a725b4e6c512eb920c9a8d6c10c23a738}} 
+\index{LabelStyle@{LabelStyle}!Padding@{Padding}}
+\index{Padding@{Padding}!LabelStyle@{LabelStyle}}
+\doxysubsubsection{\texorpdfstring{Padding}{Padding}}
+{\footnotesize\ttfamily float Label\+Style.\+Padding\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}, {\ttfamily [add]}}
+
+\mbox{\Hypertarget{classLabelStyle_aa45317b95d5d5b5c76675b6680718bd3}\label{classLabelStyle_aa45317b95d5d5b5c76675b6680718bd3}} 
+\index{LabelStyle@{LabelStyle}!PixelPadding@{PixelPadding}}
+\index{PixelPadding@{PixelPadding}!LabelStyle@{LabelStyle}}
+\doxysubsubsection{\texorpdfstring{PixelPadding}{PixelPadding}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structPixelPadding}{Pixel\+Padding}} Label\+Style.\+Pixel\+Padding = new(0, 0, 0, 0)\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classLabelStyle_a02fd9facdd972a891d7e875fdac201ac}\label{classLabelStyle_a02fd9facdd972a891d7e875fdac201ac}} 
+\index{LabelStyle@{LabelStyle}!Rotation@{Rotation}}
+\index{Rotation@{Rotation}!LabelStyle@{LabelStyle}}
+\doxysubsubsection{\texorpdfstring{Rotation}{Rotation}}
+{\footnotesize\ttfamily float Label\+Style.\+Rotation = 0\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Rotation in degrees clockwise from 0 (horizontal text) 
+
+\mbox{\Hypertarget{classLabelStyle_ae7325b779bdbb48327a33519ed06b5fc}\label{classLabelStyle_ae7325b779bdbb48327a33519ed06b5fc}} 
+\index{LabelStyle@{LabelStyle}!ShadowColor@{ShadowColor}}
+\index{ShadowColor@{ShadowColor}!LabelStyle@{LabelStyle}}
+\doxysubsubsection{\texorpdfstring{ShadowColor}{ShadowColor}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structColor}{Color}} Label\+Style.\+Shadow\+Color = \mbox{\hyperlink{structColors_a9695917727155acebdb5b379dcfdad8b}{Colors.\+Transparent}}\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classLabelStyle_ab6d9250b1bbfe3b4949534a4920cd175}\label{classLabelStyle_ab6d9250b1bbfe3b4949534a4920cd175}} 
+\index{LabelStyle@{LabelStyle}!ShadowOffset@{ShadowOffset}}
+\index{ShadowOffset@{ShadowOffset}!LabelStyle@{LabelStyle}}
+\doxysubsubsection{\texorpdfstring{ShadowOffset}{ShadowOffset}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structPixelOffset}{Pixel\+Offset}} Label\+Style.\+Shadow\+Offset = new(3, 3)\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classLabelStyle_a60fb673f12b5a8f4a69faa296b07717d}\label{classLabelStyle_a60fb673f12b5a8f4a69faa296b07717d}} 
+\index{LabelStyle@{LabelStyle}!SubpixelText@{SubpixelText}}
+\index{SubpixelText@{SubpixelText}!LabelStyle@{LabelStyle}}
+\doxysubsubsection{\texorpdfstring{SubpixelText}{SubpixelText}}
+{\footnotesize\ttfamily bool Label\+Style.\+Subpixel\+Text = true\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classLabelStyle_a36f650ef305080a27d5f841026022f49}\label{classLabelStyle_a36f650ef305080a27d5f841026022f49}} 
+\index{LabelStyle@{LabelStyle}!Text@{Text}}
+\index{Text@{Text}!LabelStyle@{LabelStyle}}
+\doxysubsubsection{\texorpdfstring{Text}{Text}}
+{\footnotesize\ttfamily string Label\+Style.\+Text = string.\+Empty\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Primitives/Label\+Style.\+cs\end{DoxyCompactItemize}

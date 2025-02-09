@@ -1,0 +1,228 @@
+\hypertarget{classBlazorPlotBase}{}\doxysection{Blazor\+Plot\+Base Class Reference}
+\label{classBlazorPlotBase}\index{BlazorPlotBase@{BlazorPlotBase}}
+Inheritance diagram for Blazor\+Plot\+Base\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classBlazorPlotBase}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classBlazorPlotBase_a8199527e2dcdf928a65f7f9e83f1409b}{Blazor\+Plot\+Base}} ()
+\item 
+float \mbox{\hyperlink{classBlazorPlotBase_a97fd9b3f053a210315352a22d8e76f82}{Detect\+Display\+Scale}} ()
+\begin{DoxyCompactList}\small\item\em Determine the DPI scaling ratio of the present display. A value of 1.\+0 means no scaling, and 1.\+5 means 150\% scaling. This operation may be costly so do not call it frequently. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBlazorPlotBase_acd06bb50177de2efccdc061e6c48aa88}{Reset}} ()
+\begin{DoxyCompactList}\small\item\em Disposes the current \mbox{\hyperlink{classPlot}{Plot}} and creates a new one for the control \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBlazorPlotBase_af0c04ca91b17177923111c9f14758d64}{Reset}} (\mbox{\hyperlink{classPlot}{Plot}} plot)
+\begin{DoxyCompactList}\small\item\em Loads the given \mbox{\hyperlink{classPlot}{Plot}} into the control \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classBlazorPlotBase_a541e8c427df7a617109587946959274e}{Refresh}} ()
+\begin{DoxyCompactList}\small\item\em Render the plot and update the image \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBlazorPlotBase_a7987526f140add48c3bfba1724a5972f}{Show\+Context\+Menu}} (\mbox{\hyperlink{structPixel}{Pixel}} position)
+\begin{DoxyCompactList}\small\item\em Launch the default pop-\/up menu (typically in response to a right-\/click) at the given position in the control \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBlazorPlotBase_a92d4215ef9714bd6a9be6e8abc550f44}{On\+Pointer\+Moved}} (Pointer\+Event\+Args e)
+\item 
+void \mbox{\hyperlink{classBlazorPlotBase_a4230e7b6be854fd3ddbac93cc807f8d5}{On\+Pointer\+Pressed}} (Pointer\+Event\+Args e)
+\item 
+void \mbox{\hyperlink{classBlazorPlotBase_a5c3b1f95461d8897b5001256f37ea062}{On\+Pointer\+Released}} (Pointer\+Event\+Args e)
+\item 
+void \mbox{\hyperlink{classBlazorPlotBase_a391e2a593b7fe7dcbfb3c6887dde99a6}{On\+Pointer\+Wheel\+Changed}} (Wheel\+Event\+Args e)
+\item 
+void \mbox{\hyperlink{classBlazorPlotBase_a73ba3384e56bfef4709b60c2440b32bf}{On\+Key\+Down}} (Keyboard\+Event\+Args e)
+\item 
+void \mbox{\hyperlink{classBlazorPlotBase_a3a455019e6de932122e25b3e4d8ef365}{On\+Key\+Up}} (Keyboard\+Event\+Args e)
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{classBlazorPlotBase_a949c0ff682fdeba7bcf4a03cd99322e8}{Style}} = string.\+Empty\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+bool \mbox{\hyperlink{classBlazorPlotBase_a4fc02567fd4917bf28a84d987c54d6c7}{Enable\+Render\+Loop}} = false\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{classPlot}{Plot}} \mbox{\hyperlink{classBlazorPlotBase_a2948b3c2799cf014c724dbd6505291b0}{Plot}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{interfaceIPlotInteraction}{IPlot\+Interaction}} \mbox{\hyperlink{classBlazorPlotBase_abcd6eb796c1e53f167655ea3707d8f84}{Interaction}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{interfaceIPlotMenu}{IPlot\+Menu}} \mbox{\hyperlink{classBlazorPlotBase_aee075bacae6bbe268a290cc8bb2cb714}{Menu}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+Interactivity.\+User\+Input\+Processor \mbox{\hyperlink{classBlazorPlotBase_a40925ba3541630d7851a6ae17051d3dc}{User\+Input\+Processor}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+GRContext? \mbox{\hyperlink{classBlazorPlotBase_a4ca053e8eb51e3612721f80cee5e9d77}{GRContext}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+float \mbox{\hyperlink{classBlazorPlotBase_a26255f6e079c1ca545251ec867400f9f}{Display\+Scale}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classBlazorPlotBase_a8199527e2dcdf928a65f7f9e83f1409b}\label{classBlazorPlotBase_a8199527e2dcdf928a65f7f9e83f1409b}} 
+\index{BlazorPlotBase@{BlazorPlotBase}!BlazorPlotBase@{BlazorPlotBase}}
+\index{BlazorPlotBase@{BlazorPlotBase}!BlazorPlotBase@{BlazorPlotBase}}
+\doxysubsubsection{\texorpdfstring{BlazorPlotBase()}{BlazorPlotBase()}}
+{\footnotesize\ttfamily Blazor\+Plot\+Base.\+Blazor\+Plot\+Base (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classBlazorPlotBase_a97fd9b3f053a210315352a22d8e76f82}\label{classBlazorPlotBase_a97fd9b3f053a210315352a22d8e76f82}} 
+\index{BlazorPlotBase@{BlazorPlotBase}!DetectDisplayScale@{DetectDisplayScale}}
+\index{DetectDisplayScale@{DetectDisplayScale}!BlazorPlotBase@{BlazorPlotBase}}
+\doxysubsubsection{\texorpdfstring{DetectDisplayScale()}{DetectDisplayScale()}}
+{\footnotesize\ttfamily float Blazor\+Plot\+Base.\+Detect\+Display\+Scale (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Determine the DPI scaling ratio of the present display. A value of 1.\+0 means no scaling, and 1.\+5 means 150\% scaling. This operation may be costly so do not call it frequently. 
+
+
+
+Implements \mbox{\hyperlink{interfaceIPlotControl_aa091d213054094b8acdc307ceda2db06}{IPlot\+Control}}.
+
+\mbox{\Hypertarget{classBlazorPlotBase_a73ba3384e56bfef4709b60c2440b32bf}\label{classBlazorPlotBase_a73ba3384e56bfef4709b60c2440b32bf}} 
+\index{BlazorPlotBase@{BlazorPlotBase}!OnKeyDown@{OnKeyDown}}
+\index{OnKeyDown@{OnKeyDown}!BlazorPlotBase@{BlazorPlotBase}}
+\doxysubsubsection{\texorpdfstring{OnKeyDown()}{OnKeyDown()}}
+{\footnotesize\ttfamily void Blazor\+Plot\+Base.\+On\+Key\+Down (\begin{DoxyParamCaption}\item[{Keyboard\+Event\+Args}]{e }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classBlazorPlotBase_a3a455019e6de932122e25b3e4d8ef365}\label{classBlazorPlotBase_a3a455019e6de932122e25b3e4d8ef365}} 
+\index{BlazorPlotBase@{BlazorPlotBase}!OnKeyUp@{OnKeyUp}}
+\index{OnKeyUp@{OnKeyUp}!BlazorPlotBase@{BlazorPlotBase}}
+\doxysubsubsection{\texorpdfstring{OnKeyUp()}{OnKeyUp()}}
+{\footnotesize\ttfamily void Blazor\+Plot\+Base.\+On\+Key\+Up (\begin{DoxyParamCaption}\item[{Keyboard\+Event\+Args}]{e }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classBlazorPlotBase_a92d4215ef9714bd6a9be6e8abc550f44}\label{classBlazorPlotBase_a92d4215ef9714bd6a9be6e8abc550f44}} 
+\index{BlazorPlotBase@{BlazorPlotBase}!OnPointerMoved@{OnPointerMoved}}
+\index{OnPointerMoved@{OnPointerMoved}!BlazorPlotBase@{BlazorPlotBase}}
+\doxysubsubsection{\texorpdfstring{OnPointerMoved()}{OnPointerMoved()}}
+{\footnotesize\ttfamily void Blazor\+Plot\+Base.\+On\+Pointer\+Moved (\begin{DoxyParamCaption}\item[{Pointer\+Event\+Args}]{e }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classBlazorPlotBase_a4230e7b6be854fd3ddbac93cc807f8d5}\label{classBlazorPlotBase_a4230e7b6be854fd3ddbac93cc807f8d5}} 
+\index{BlazorPlotBase@{BlazorPlotBase}!OnPointerPressed@{OnPointerPressed}}
+\index{OnPointerPressed@{OnPointerPressed}!BlazorPlotBase@{BlazorPlotBase}}
+\doxysubsubsection{\texorpdfstring{OnPointerPressed()}{OnPointerPressed()}}
+{\footnotesize\ttfamily void Blazor\+Plot\+Base.\+On\+Pointer\+Pressed (\begin{DoxyParamCaption}\item[{Pointer\+Event\+Args}]{e }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classBlazorPlotBase_a5c3b1f95461d8897b5001256f37ea062}\label{classBlazorPlotBase_a5c3b1f95461d8897b5001256f37ea062}} 
+\index{BlazorPlotBase@{BlazorPlotBase}!OnPointerReleased@{OnPointerReleased}}
+\index{OnPointerReleased@{OnPointerReleased}!BlazorPlotBase@{BlazorPlotBase}}
+\doxysubsubsection{\texorpdfstring{OnPointerReleased()}{OnPointerReleased()}}
+{\footnotesize\ttfamily void Blazor\+Plot\+Base.\+On\+Pointer\+Released (\begin{DoxyParamCaption}\item[{Pointer\+Event\+Args}]{e }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classBlazorPlotBase_a391e2a593b7fe7dcbfb3c6887dde99a6}\label{classBlazorPlotBase_a391e2a593b7fe7dcbfb3c6887dde99a6}} 
+\index{BlazorPlotBase@{BlazorPlotBase}!OnPointerWheelChanged@{OnPointerWheelChanged}}
+\index{OnPointerWheelChanged@{OnPointerWheelChanged}!BlazorPlotBase@{BlazorPlotBase}}
+\doxysubsubsection{\texorpdfstring{OnPointerWheelChanged()}{OnPointerWheelChanged()}}
+{\footnotesize\ttfamily void Blazor\+Plot\+Base.\+On\+Pointer\+Wheel\+Changed (\begin{DoxyParamCaption}\item[{Wheel\+Event\+Args}]{e }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classBlazorPlotBase_a541e8c427df7a617109587946959274e}\label{classBlazorPlotBase_a541e8c427df7a617109587946959274e}} 
+\index{BlazorPlotBase@{BlazorPlotBase}!Refresh@{Refresh}}
+\index{Refresh@{Refresh}!BlazorPlotBase@{BlazorPlotBase}}
+\doxysubsubsection{\texorpdfstring{Refresh()}{Refresh()}}
+{\footnotesize\ttfamily virtual void Blazor\+Plot\+Base.\+Refresh (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Render the plot and update the image 
+
+
+
+Implements \mbox{\hyperlink{interfaceIPlotControl_ac5672b6f3e3e2825da1e95f0cd2f4bcb}{IPlot\+Control}}.
+
+\mbox{\Hypertarget{classBlazorPlotBase_acd06bb50177de2efccdc061e6c48aa88}\label{classBlazorPlotBase_acd06bb50177de2efccdc061e6c48aa88}} 
+\index{BlazorPlotBase@{BlazorPlotBase}!Reset@{Reset}}
+\index{Reset@{Reset}!BlazorPlotBase@{BlazorPlotBase}}
+\doxysubsubsection{\texorpdfstring{Reset()}{Reset()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Blazor\+Plot\+Base.\+Reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Disposes the current \mbox{\hyperlink{classPlot}{Plot}} and creates a new one for the control 
+
+
+
+Implements \mbox{\hyperlink{interfaceIPlotControl_a3021825d73d2bcf47dfd5f6f562e2cdf}{IPlot\+Control}}.
+
+\mbox{\Hypertarget{classBlazorPlotBase_af0c04ca91b17177923111c9f14758d64}\label{classBlazorPlotBase_af0c04ca91b17177923111c9f14758d64}} 
+\index{BlazorPlotBase@{BlazorPlotBase}!Reset@{Reset}}
+\index{Reset@{Reset}!BlazorPlotBase@{BlazorPlotBase}}
+\doxysubsubsection{\texorpdfstring{Reset()}{Reset()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Blazor\+Plot\+Base.\+Reset (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPlot}{Plot}}}]{plot }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Loads the given \mbox{\hyperlink{classPlot}{Plot}} into the control 
+
+
+
+Implements \mbox{\hyperlink{interfaceIPlotControl_a3204ee77a937b93563c72a8fbaacd957}{IPlot\+Control}}.
+
+\mbox{\Hypertarget{classBlazorPlotBase_a7987526f140add48c3bfba1724a5972f}\label{classBlazorPlotBase_a7987526f140add48c3bfba1724a5972f}} 
+\index{BlazorPlotBase@{BlazorPlotBase}!ShowContextMenu@{ShowContextMenu}}
+\index{ShowContextMenu@{ShowContextMenu}!BlazorPlotBase@{BlazorPlotBase}}
+\doxysubsubsection{\texorpdfstring{ShowContextMenu()}{ShowContextMenu()}}
+{\footnotesize\ttfamily void Blazor\+Plot\+Base.\+Show\+Context\+Menu (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPixel}{Pixel}}}]{position }\end{DoxyParamCaption})}
+
+
+
+Launch the default pop-\/up menu (typically in response to a right-\/click) at the given position in the control 
+
+
+
+Implements \mbox{\hyperlink{interfaceIPlotControl_aa822894e483df742fb376cd3169eefc4}{IPlot\+Control}}.
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{classBlazorPlotBase_a26255f6e079c1ca545251ec867400f9f}\label{classBlazorPlotBase_a26255f6e079c1ca545251ec867400f9f}} 
+\index{BlazorPlotBase@{BlazorPlotBase}!DisplayScale@{DisplayScale}}
+\index{DisplayScale@{DisplayScale}!BlazorPlotBase@{BlazorPlotBase}}
+\doxysubsubsection{\texorpdfstring{DisplayScale}{DisplayScale}}
+{\footnotesize\ttfamily float Blazor\+Plot\+Base.\+Display\+Scale\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classBlazorPlotBase_a4fc02567fd4917bf28a84d987c54d6c7}\label{classBlazorPlotBase_a4fc02567fd4917bf28a84d987c54d6c7}} 
+\index{BlazorPlotBase@{BlazorPlotBase}!EnableRenderLoop@{EnableRenderLoop}}
+\index{EnableRenderLoop@{EnableRenderLoop}!BlazorPlotBase@{BlazorPlotBase}}
+\doxysubsubsection{\texorpdfstring{EnableRenderLoop}{EnableRenderLoop}}
+{\footnotesize\ttfamily bool Blazor\+Plot\+Base.\+Enable\+Render\+Loop = false\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classBlazorPlotBase_a4ca053e8eb51e3612721f80cee5e9d77}\label{classBlazorPlotBase_a4ca053e8eb51e3612721f80cee5e9d77}} 
+\index{BlazorPlotBase@{BlazorPlotBase}!GRContext@{GRContext}}
+\index{GRContext@{GRContext}!BlazorPlotBase@{BlazorPlotBase}}
+\doxysubsubsection{\texorpdfstring{GRContext}{GRContext}}
+{\footnotesize\ttfamily GRContext? Blazor\+Plot\+Base.\+GRContext\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{classBlazorPlotBase_abcd6eb796c1e53f167655ea3707d8f84}\label{classBlazorPlotBase_abcd6eb796c1e53f167655ea3707d8f84}} 
+\index{BlazorPlotBase@{BlazorPlotBase}!Interaction@{Interaction}}
+\index{Interaction@{Interaction}!BlazorPlotBase@{BlazorPlotBase}}
+\doxysubsubsection{\texorpdfstring{Interaction}{Interaction}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceIPlotInteraction}{IPlot\+Interaction}} Blazor\+Plot\+Base.\+Interaction\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classBlazorPlotBase_aee075bacae6bbe268a290cc8bb2cb714}\label{classBlazorPlotBase_aee075bacae6bbe268a290cc8bb2cb714}} 
+\index{BlazorPlotBase@{BlazorPlotBase}!Menu@{Menu}}
+\index{Menu@{Menu}!BlazorPlotBase@{BlazorPlotBase}}
+\doxysubsubsection{\texorpdfstring{Menu}{Menu}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceIPlotMenu}{IPlot\+Menu}} Blazor\+Plot\+Base.\+Menu\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classBlazorPlotBase_a2948b3c2799cf014c724dbd6505291b0}\label{classBlazorPlotBase_a2948b3c2799cf014c724dbd6505291b0}} 
+\index{BlazorPlotBase@{BlazorPlotBase}!Plot@{Plot}}
+\index{Plot@{Plot}!BlazorPlotBase@{BlazorPlotBase}}
+\doxysubsubsection{\texorpdfstring{Plot}{Plot}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPlot}{Plot}} Blazor\+Plot\+Base.\+Plot\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{classBlazorPlotBase_a949c0ff682fdeba7bcf4a03cd99322e8}\label{classBlazorPlotBase_a949c0ff682fdeba7bcf4a03cd99322e8}} 
+\index{BlazorPlotBase@{BlazorPlotBase}!Style@{Style}}
+\index{Style@{Style}!BlazorPlotBase@{BlazorPlotBase}}
+\doxysubsubsection{\texorpdfstring{Style}{Style}}
+{\footnotesize\ttfamily string Blazor\+Plot\+Base.\+Style = string.\+Empty\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classBlazorPlotBase_a40925ba3541630d7851a6ae17051d3dc}\label{classBlazorPlotBase_a40925ba3541630d7851a6ae17051d3dc}} 
+\index{BlazorPlotBase@{BlazorPlotBase}!UserInputProcessor@{UserInputProcessor}}
+\index{UserInputProcessor@{UserInputProcessor}!BlazorPlotBase@{BlazorPlotBase}}
+\doxysubsubsection{\texorpdfstring{UserInputProcessor}{UserInputProcessor}}
+{\footnotesize\ttfamily Interactivity.\+User\+Input\+Processor Blazor\+Plot\+Base.\+User\+Input\+Processor\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5 Controls/\+Scott\+Plot.\+Blazor/Blazor\+Plot\+Base.\+cs\end{DoxyCompactItemize}

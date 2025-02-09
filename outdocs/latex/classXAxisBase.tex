@@ -1,0 +1,207 @@
+\hypertarget{classXAxisBase}{}\doxysection{XAxis\+Base Class Reference}
+\label{classXAxisBase}\index{XAxisBase@{XAxisBase}}
+Inheritance diagram for XAxis\+Base\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{classXAxisBase}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classXAxisBase_a287e49073fa1272a5cc69d4e066e07c6}{XAxis\+Base}} ()
+\item 
+virtual float \mbox{\hyperlink{classXAxisBase_a6aab9fc55986fb22c45405610ef7f9bb}{Measure}} ()
+\begin{DoxyCompactList}\small\item\em Return the size (in pixels) of the panel in the dimension perpendicular to the edge it lays on \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classXAxisBase_acff2c5dd5d20cfa1dbe642d9ab00e2d1}{Get\+Pixel}} (double position, \mbox{\hyperlink{structPixelRect}{Pixel\+Rect}} data\+Area)
+\begin{DoxyCompactList}\small\item\em Get the pixel position of a coordinate given the location and size of the data area \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classXAxisBase_ac6129478abafc8deeaa2e962c711f9c5}{Get\+Coordinate}} (float pixel, \mbox{\hyperlink{structPixelRect}{Pixel\+Rect}} data\+Area)
+\begin{DoxyCompactList}\small\item\em Get the coordinate of a pixel position given the location and size of the data area \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structPixelRect}{Pixel\+Rect}} \mbox{\hyperlink{classXAxisBase_a59faf8644be368c3957eeb53f476d7ef}{Get\+Panel\+Rect}} (\mbox{\hyperlink{structPixelRect}{Pixel\+Rect}} data\+Rect, float size, float offset)
+\begin{DoxyCompactList}\small\item\em Return the rectangle for this panel \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classXAxisBase_a37a0d593722ec854f812083716cd379c}{Render}} (\mbox{\hyperlink{classRenderPack}{Render\+Pack}} rp, float size, float offset)
+\begin{DoxyCompactList}\small\item\em Draw this panel on a canvas \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classXAxisBase_aae0c154c4cb504680d966a9c6ea4a149}{Get\+Pixel\+Distance}} (double distance, \mbox{\hyperlink{structPixelRect}{Pixel\+Rect}} data\+Area)
+\begin{DoxyCompactList}\small\item\em Given a distance in coordinate space, converts to pixel space \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classXAxisBase_ae5528b70b5d693237ca8b9807501c5b4}{Get\+Coordinate\+Distance}} (float distance, \mbox{\hyperlink{structPixelRect}{Pixel\+Rect}} data\+Area)
+\begin{DoxyCompactList}\small\item\em Given a distance in pixel space, converts to coordinate space \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classXAxisBase_ac4eb17b025706979e3dbafb828baeb5e}{Regenerate\+Ticks}} (\mbox{\hyperlink{structPixelLength}{Pixel\+Length}} size)
+\begin{DoxyCompactList}\small\item\em Use the \mbox{\hyperlink{classAxisBase_ad28f36ed0ada2bb660256e1b8c2b0f7d}{Tick\+Label\+Style}} to generate ticks with ideal spacing. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{classXAxisBase_a6f0d507ae662c43207d803846b4f0c88}{Width}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classXAxisBase_a287e49073fa1272a5cc69d4e066e07c6}\label{classXAxisBase_a287e49073fa1272a5cc69d4e066e07c6}} 
+\index{XAxisBase@{XAxisBase}!XAxisBase@{XAxisBase}}
+\index{XAxisBase@{XAxisBase}!XAxisBase@{XAxisBase}}
+\doxysubsubsection{\texorpdfstring{XAxisBase()}{XAxisBase()}}
+{\footnotesize\ttfamily XAxis\+Base.\+XAxis\+Base (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classXAxisBase_ac6129478abafc8deeaa2e962c711f9c5}\label{classXAxisBase_ac6129478abafc8deeaa2e962c711f9c5}} 
+\index{XAxisBase@{XAxisBase}!GetCoordinate@{GetCoordinate}}
+\index{GetCoordinate@{GetCoordinate}!XAxisBase@{XAxisBase}}
+\doxysubsubsection{\texorpdfstring{GetCoordinate()}{GetCoordinate()}}
+{\footnotesize\ttfamily double XAxis\+Base.\+Get\+Coordinate (\begin{DoxyParamCaption}\item[{float}]{pixel,  }\item[{\mbox{\hyperlink{structPixelRect}{Pixel\+Rect}}}]{data\+Area }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the coordinate of a pixel position given the location and size of the data area 
+
+
+
+Implements \mbox{\hyperlink{interfaceIAxis_a6f1fba5166f44b3d5d3a49d9d4fa8767}{IAxis}}.
+
+\mbox{\Hypertarget{classXAxisBase_ae5528b70b5d693237ca8b9807501c5b4}\label{classXAxisBase_ae5528b70b5d693237ca8b9807501c5b4}} 
+\index{XAxisBase@{XAxisBase}!GetCoordinateDistance@{GetCoordinateDistance}}
+\index{GetCoordinateDistance@{GetCoordinateDistance}!XAxisBase@{XAxisBase}}
+\doxysubsubsection{\texorpdfstring{GetCoordinateDistance()}{GetCoordinateDistance()}}
+{\footnotesize\ttfamily double XAxis\+Base.\+Get\+Coordinate\+Distance (\begin{DoxyParamCaption}\item[{float}]{pixel\+Distance,  }\item[{\mbox{\hyperlink{structPixelRect}{Pixel\+Rect}}}]{data\+Area }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Given a distance in pixel space, converts to coordinate space 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pixel\+Distance} & A distance in pixel units\\
+\hline
+{\em data\+Area} & The rectangle onto which the coordinates are mapped\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The same distance in coordinate units
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfaceIAxis_a53f51e0020af0aff3b28e1420bc251ce}{IAxis}}.
+
+\mbox{\Hypertarget{classXAxisBase_a59faf8644be368c3957eeb53f476d7ef}\label{classXAxisBase_a59faf8644be368c3957eeb53f476d7ef}} 
+\index{XAxisBase@{XAxisBase}!GetPanelRect@{GetPanelRect}}
+\index{GetPanelRect@{GetPanelRect}!XAxisBase@{XAxisBase}}
+\doxysubsubsection{\texorpdfstring{GetPanelRect()}{GetPanelRect()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structPixelRect}{Pixel\+Rect}} XAxis\+Base.\+Get\+Panel\+Rect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPixelRect}{Pixel\+Rect}}}]{data\+Rect,  }\item[{float}]{size,  }\item[{float}]{offset }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return the rectangle for this panel 
+
+
+
+Implements \mbox{\hyperlink{interfaceIPanel_a0e0b911af145b8a7797de86bd6e3d94e}{IPanel}}.
+
+\mbox{\Hypertarget{classXAxisBase_acff2c5dd5d20cfa1dbe642d9ab00e2d1}\label{classXAxisBase_acff2c5dd5d20cfa1dbe642d9ab00e2d1}} 
+\index{XAxisBase@{XAxisBase}!GetPixel@{GetPixel}}
+\index{GetPixel@{GetPixel}!XAxisBase@{XAxisBase}}
+\doxysubsubsection{\texorpdfstring{GetPixel()}{GetPixel()}}
+{\footnotesize\ttfamily float XAxis\+Base.\+Get\+Pixel (\begin{DoxyParamCaption}\item[{double}]{position,  }\item[{\mbox{\hyperlink{structPixelRect}{Pixel\+Rect}}}]{data\+Area }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the pixel position of a coordinate given the location and size of the data area 
+
+
+
+Implements \mbox{\hyperlink{interfaceIAxis_aeb617694defc22d1c88db1b9f49b189b}{IAxis}}.
+
+\mbox{\Hypertarget{classXAxisBase_aae0c154c4cb504680d966a9c6ea4a149}\label{classXAxisBase_aae0c154c4cb504680d966a9c6ea4a149}} 
+\index{XAxisBase@{XAxisBase}!GetPixelDistance@{GetPixelDistance}}
+\index{GetPixelDistance@{GetPixelDistance}!XAxisBase@{XAxisBase}}
+\doxysubsubsection{\texorpdfstring{GetPixelDistance()}{GetPixelDistance()}}
+{\footnotesize\ttfamily double XAxis\+Base.\+Get\+Pixel\+Distance (\begin{DoxyParamCaption}\item[{double}]{coordinate\+Distance,  }\item[{\mbox{\hyperlink{structPixelRect}{Pixel\+Rect}}}]{data\+Area }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Given a distance in coordinate space, converts to pixel space 
+
+
+\begin{DoxyParams}{Parameters}
+{\em coordinate\+Distance} & A distance in coordinate units\\
+\hline
+{\em data\+Area} & The rectangle onto which the coordinates are mapped\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The same distance in pixel units
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfaceIAxis_a59389a04e3af51f1f1fd82ffd5f9f6af}{IAxis}}.
+
+\mbox{\Hypertarget{classXAxisBase_a6aab9fc55986fb22c45405610ef7f9bb}\label{classXAxisBase_a6aab9fc55986fb22c45405610ef7f9bb}} 
+\index{XAxisBase@{XAxisBase}!Measure@{Measure}}
+\index{Measure@{Measure}!XAxisBase@{XAxisBase}}
+\doxysubsubsection{\texorpdfstring{Measure()}{Measure()}}
+{\footnotesize\ttfamily virtual float XAxis\+Base.\+Measure (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Return the size (in pixels) of the panel in the dimension perpendicular to the edge it lays on 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfaceIPanel_a974b8efde6b8f1b9e573d4437e18b59d}{IPanel}}.
+
+\mbox{\Hypertarget{classXAxisBase_ac4eb17b025706979e3dbafb828baeb5e}\label{classXAxisBase_ac4eb17b025706979e3dbafb828baeb5e}} 
+\index{XAxisBase@{XAxisBase}!RegenerateTicks@{RegenerateTicks}}
+\index{RegenerateTicks@{RegenerateTicks}!XAxisBase@{XAxisBase}}
+\doxysubsubsection{\texorpdfstring{RegenerateTicks()}{RegenerateTicks()}}
+{\footnotesize\ttfamily void XAxis\+Base.\+Regenerate\+Ticks (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPixelLength}{Pixel\+Length}}}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Use the \mbox{\hyperlink{classAxisBase_ad28f36ed0ada2bb660256e1b8c2b0f7d}{Tick\+Label\+Style}} to generate ticks with ideal spacing. 
+
+
+
+Implements \mbox{\hyperlink{interfaceIAxis_a0b1fb76ab306fb3ea8d234f4a1053be3}{IAxis}}.
+
+\mbox{\Hypertarget{classXAxisBase_a37a0d593722ec854f812083716cd379c}\label{classXAxisBase_a37a0d593722ec854f812083716cd379c}} 
+\index{XAxisBase@{XAxisBase}!Render@{Render}}
+\index{Render@{Render}!XAxisBase@{XAxisBase}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily virtual void XAxis\+Base.\+Render (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classRenderPack}{Render\+Pack}}}]{rp,  }\item[{float}]{size,  }\item[{float}]{offset }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Draw this panel on a canvas 
+
+
+\begin{DoxyParams}{Parameters}
+{\em surface} & contains the canvas to draw on\\
+\hline
+{\em data\+Rect} & dimensions of the data area (pixel units)\\
+\hline
+{\em size} & size of this panel (pixel units)\\
+\hline
+{\em offset} & distance from the edge of this panel to the edge of the data area\\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interfaceIPanel_a521381a218c86184b8ea51fa8a45c46d}{IPanel}}.
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{classXAxisBase_a6f0d507ae662c43207d803846b4f0c88}\label{classXAxisBase_a6f0d507ae662c43207d803846b4f0c88}} 
+\index{XAxisBase@{XAxisBase}!Width@{Width}}
+\index{Width@{Width}!XAxisBase@{XAxisBase}}
+\doxysubsubsection{\texorpdfstring{Width}{Width}}
+{\footnotesize\ttfamily double XAxis\+Base.\+Width\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Axis\+Panels/XAxis\+Base.\+cs\end{DoxyCompactItemize}

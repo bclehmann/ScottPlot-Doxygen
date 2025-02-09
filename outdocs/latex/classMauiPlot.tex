@@ -1,0 +1,164 @@
+\hypertarget{classMauiPlot}{}\doxysection{Maui\+Plot Class Reference}
+\label{classMauiPlot}\index{MauiPlot@{MauiPlot}}
+Inheritance diagram for Maui\+Plot\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classMauiPlot}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classMauiPlot_a3b1978c51381ba79b0d73dd36ac27a2c}{Maui\+Plot}} ()
+\item 
+void \mbox{\hyperlink{classMauiPlot_aff9a97dd3d4d73abee0784c6fee5ab07}{Reset}} ()
+\begin{DoxyCompactList}\small\item\em Disposes the current \mbox{\hyperlink{classPlot}{Plot}} and creates a new one for the control \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMauiPlot_a160272b58f1ac4e47f7955eec1b6c8bd}{Reset}} (\mbox{\hyperlink{classPlot}{Plot}} plot)
+\begin{DoxyCompactList}\small\item\em Loads the given \mbox{\hyperlink{classPlot}{Plot}} into the control \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMauiPlot_a7ac80cf53e3597807324ad39543082eb}{Refresh}} ()
+\begin{DoxyCompactList}\small\item\em Render the plot and update the image \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMauiPlot_a5eb755073d77b2310003f62a380abb71}{Show\+Context\+Menu}} (\mbox{\hyperlink{structPixel}{Pixel}} position)
+\begin{DoxyCompactList}\small\item\em Launch the default pop-\/up menu (typically in response to a right-\/click) at the given position in the control \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classMauiPlot_a343d2c6ac9f54cca8d9d4831328b9687}{Detect\+Display\+Scale}} ()
+\begin{DoxyCompactList}\small\item\em Determine the DPI scaling ratio of the present display. A value of 1.\+0 means no scaling, and 1.\+5 means 150\% scaling. This operation may be costly so do not call it frequently. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPlot}{Plot}} \mbox{\hyperlink{classMauiPlot_a61da0911e124a17fbf3cb60179c0a645}{Plot}} = new()\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+Skia\+Sharp.? GRContext \mbox{\hyperlink{classMauiPlot_a57d774b3101f893644e22e2c1ae3d24b}{GRContext}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{interfaceIPlotInteraction}{IPlot\+Interaction}} \mbox{\hyperlink{classMauiPlot_ac0ecaa7e8370a48b84765c41e99790f0}{Interaction}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{interfaceIPlotMenu}{IPlot\+Menu}} \mbox{\hyperlink{classMauiPlot_a51824ce7a55bb7bacdf253e8a9390e02}{Menu}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+Interactivity.\+User\+Input\+Processor \mbox{\hyperlink{classMauiPlot_a9215b32a242faec543c590ba6f39f9c2}{User\+Input\+Processor}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+float \mbox{\hyperlink{classMauiPlot_a2951e84a74bfd92a0e150a4be8986b9f}{Display\+Scale}} = 1\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classMauiPlot_a3b1978c51381ba79b0d73dd36ac27a2c}\label{classMauiPlot_a3b1978c51381ba79b0d73dd36ac27a2c}} 
+\index{MauiPlot@{MauiPlot}!MauiPlot@{MauiPlot}}
+\index{MauiPlot@{MauiPlot}!MauiPlot@{MauiPlot}}
+\doxysubsubsection{\texorpdfstring{MauiPlot()}{MauiPlot()}}
+{\footnotesize\ttfamily Maui\+Plot.\+Maui\+Plot (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classMauiPlot_a343d2c6ac9f54cca8d9d4831328b9687}\label{classMauiPlot_a343d2c6ac9f54cca8d9d4831328b9687}} 
+\index{MauiPlot@{MauiPlot}!DetectDisplayScale@{DetectDisplayScale}}
+\index{DetectDisplayScale@{DetectDisplayScale}!MauiPlot@{MauiPlot}}
+\doxysubsubsection{\texorpdfstring{DetectDisplayScale()}{DetectDisplayScale()}}
+{\footnotesize\ttfamily float Maui\+Plot.\+Detect\+Display\+Scale (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Determine the DPI scaling ratio of the present display. A value of 1.\+0 means no scaling, and 1.\+5 means 150\% scaling. This operation may be costly so do not call it frequently. 
+
+
+
+Implements \mbox{\hyperlink{interfaceIPlotControl_aa091d213054094b8acdc307ceda2db06}{IPlot\+Control}}.
+
+\mbox{\Hypertarget{classMauiPlot_a7ac80cf53e3597807324ad39543082eb}\label{classMauiPlot_a7ac80cf53e3597807324ad39543082eb}} 
+\index{MauiPlot@{MauiPlot}!Refresh@{Refresh}}
+\index{Refresh@{Refresh}!MauiPlot@{MauiPlot}}
+\doxysubsubsection{\texorpdfstring{Refresh()}{Refresh()}}
+{\footnotesize\ttfamily void Maui\+Plot.\+Refresh (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Render the plot and update the image 
+
+
+
+Implements \mbox{\hyperlink{interfaceIPlotControl_ac5672b6f3e3e2825da1e95f0cd2f4bcb}{IPlot\+Control}}.
+
+\mbox{\Hypertarget{classMauiPlot_aff9a97dd3d4d73abee0784c6fee5ab07}\label{classMauiPlot_aff9a97dd3d4d73abee0784c6fee5ab07}} 
+\index{MauiPlot@{MauiPlot}!Reset@{Reset}}
+\index{Reset@{Reset}!MauiPlot@{MauiPlot}}
+\doxysubsubsection{\texorpdfstring{Reset()}{Reset()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Maui\+Plot.\+Reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Disposes the current \mbox{\hyperlink{classPlot}{Plot}} and creates a new one for the control 
+
+
+
+Implements \mbox{\hyperlink{interfaceIPlotControl_a3021825d73d2bcf47dfd5f6f562e2cdf}{IPlot\+Control}}.
+
+\mbox{\Hypertarget{classMauiPlot_a160272b58f1ac4e47f7955eec1b6c8bd}\label{classMauiPlot_a160272b58f1ac4e47f7955eec1b6c8bd}} 
+\index{MauiPlot@{MauiPlot}!Reset@{Reset}}
+\index{Reset@{Reset}!MauiPlot@{MauiPlot}}
+\doxysubsubsection{\texorpdfstring{Reset()}{Reset()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Maui\+Plot.\+Reset (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPlot}{Plot}}}]{plot }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Loads the given \mbox{\hyperlink{classPlot}{Plot}} into the control 
+
+
+
+Implements \mbox{\hyperlink{interfaceIPlotControl_a3204ee77a937b93563c72a8fbaacd957}{IPlot\+Control}}.
+
+\mbox{\Hypertarget{classMauiPlot_a5eb755073d77b2310003f62a380abb71}\label{classMauiPlot_a5eb755073d77b2310003f62a380abb71}} 
+\index{MauiPlot@{MauiPlot}!ShowContextMenu@{ShowContextMenu}}
+\index{ShowContextMenu@{ShowContextMenu}!MauiPlot@{MauiPlot}}
+\doxysubsubsection{\texorpdfstring{ShowContextMenu()}{ShowContextMenu()}}
+{\footnotesize\ttfamily void Maui\+Plot.\+Show\+Context\+Menu (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPixel}{Pixel}}}]{position }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Launch the default pop-\/up menu (typically in response to a right-\/click) at the given position in the control 
+
+
+
+Implements \mbox{\hyperlink{interfaceIPlotControl_aa822894e483df742fb376cd3169eefc4}{IPlot\+Control}}.
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{classMauiPlot_a2951e84a74bfd92a0e150a4be8986b9f}\label{classMauiPlot_a2951e84a74bfd92a0e150a4be8986b9f}} 
+\index{MauiPlot@{MauiPlot}!DisplayScale@{DisplayScale}}
+\index{DisplayScale@{DisplayScale}!MauiPlot@{MauiPlot}}
+\doxysubsubsection{\texorpdfstring{DisplayScale}{DisplayScale}}
+{\footnotesize\ttfamily float Maui\+Plot.\+Display\+Scale = 1\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classMauiPlot_a57d774b3101f893644e22e2c1ae3d24b}\label{classMauiPlot_a57d774b3101f893644e22e2c1ae3d24b}} 
+\index{MauiPlot@{MauiPlot}!GRContext@{GRContext}}
+\index{GRContext@{GRContext}!MauiPlot@{MauiPlot}}
+\doxysubsubsection{\texorpdfstring{GRContext}{GRContext}}
+{\footnotesize\ttfamily Skia\+Sharp.? GRContext Maui\+Plot.\+GRContext\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{classMauiPlot_ac0ecaa7e8370a48b84765c41e99790f0}\label{classMauiPlot_ac0ecaa7e8370a48b84765c41e99790f0}} 
+\index{MauiPlot@{MauiPlot}!Interaction@{Interaction}}
+\index{Interaction@{Interaction}!MauiPlot@{MauiPlot}}
+\doxysubsubsection{\texorpdfstring{Interaction}{Interaction}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceIPlotInteraction}{IPlot\+Interaction}} Maui\+Plot.\+Interaction\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classMauiPlot_a51824ce7a55bb7bacdf253e8a9390e02}\label{classMauiPlot_a51824ce7a55bb7bacdf253e8a9390e02}} 
+\index{MauiPlot@{MauiPlot}!Menu@{Menu}}
+\index{Menu@{Menu}!MauiPlot@{MauiPlot}}
+\doxysubsubsection{\texorpdfstring{Menu}{Menu}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceIPlotMenu}{IPlot\+Menu}} Maui\+Plot.\+Menu\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classMauiPlot_a61da0911e124a17fbf3cb60179c0a645}\label{classMauiPlot_a61da0911e124a17fbf3cb60179c0a645}} 
+\index{MauiPlot@{MauiPlot}!Plot@{Plot}}
+\index{Plot@{Plot}!MauiPlot@{MauiPlot}}
+\doxysubsubsection{\texorpdfstring{Plot}{Plot}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPlot}{Plot}} Maui\+Plot.\+Plot = new()\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classMauiPlot_a9215b32a242faec543c590ba6f39f9c2}\label{classMauiPlot_a9215b32a242faec543c590ba6f39f9c2}} 
+\index{MauiPlot@{MauiPlot}!UserInputProcessor@{UserInputProcessor}}
+\index{UserInputProcessor@{UserInputProcessor}!MauiPlot@{MauiPlot}}
+\doxysubsubsection{\texorpdfstring{UserInputProcessor}{UserInputProcessor}}
+{\footnotesize\ttfamily Interactivity.\+User\+Input\+Processor Maui\+Plot.\+User\+Input\+Processor\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5 Controls/\+Scott\+Plot.\+Maui/Maui\+Plot.\+cs\end{DoxyCompactItemize}

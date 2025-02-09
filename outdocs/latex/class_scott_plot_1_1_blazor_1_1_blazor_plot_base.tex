@@ -1,0 +1,278 @@
+\doxysection{Scott\+Plot.\+Blazor.\+Blazor\+Plot\+Base Class Reference}
+\hypertarget{class_scott_plot_1_1_blazor_1_1_blazor_plot_base}{}\label{class_scott_plot_1_1_blazor_1_1_blazor_plot_base}\index{ScottPlot.Blazor.BlazorPlotBase@{ScottPlot.Blazor.BlazorPlotBase}}
+Inheritance diagram for Scott\+Plot.\+Blazor.\+Blazor\+Plot\+Base\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_scott_plot_1_1_blazor_1_1_blazor_plot_base}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_scott_plot_1_1_blazor_1_1_blazor_plot_base_a4d2d888ef56d3d1ca4668d00c371fc3b}{Blazor\+Plot\+Base}} ()
+\item 
+float \mbox{\hyperlink{class_scott_plot_1_1_blazor_1_1_blazor_plot_base_a02ae33760736d8590955e80fc8857662}{Detect\+Display\+Scale}} ()
+\begin{DoxyCompactList}\small\item\em Determine the DPI scaling ratio of the present display. A value of 1.\+0 means no scaling, and 1.\+5 means 150\% scaling. This operation may be costly so do not call it frequently. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_blazor_1_1_blazor_plot_base_a712b562456a5f9b86905dd664de9054c}{Reset}} ()
+\begin{DoxyCompactList}\small\item\em Disposes the current \doxylink{class_scott_plot_1_1_plot}{Plot} and creates a new one for the control. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_blazor_1_1_blazor_plot_base_ade474f742d3e0563be5d1dfcdb4894bc}{Reset}} (\mbox{\hyperlink{class_scott_plot_1_1_plot}{Plot}} plot)
+\begin{DoxyCompactList}\small\item\em Loads the given \doxylink{class_scott_plot_1_1_plot}{Plot} into the control. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_scott_plot_1_1_blazor_1_1_blazor_plot_base_aa3e50f47059c8fa16317e776212ee71d}{Refresh}} ()
+\begin{DoxyCompactList}\small\item\em Render the plot and update the image. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_blazor_1_1_blazor_plot_base_ae95c61a6ab7a7c3ee0d9762e60ebea9a}{Show\+Context\+Menu}} (\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}} position)
+\begin{DoxyCompactList}\small\item\em Launch the default pop-\/up menu (typically in response to a right-\/click) at the given position in the control. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_blazor_1_1_blazor_plot_base_a57fe394d179d5423f38f21b3f74d3fe6}{On\+Pointer\+Moved}} (Pointer\+Event\+Args e)
+\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_blazor_1_1_blazor_plot_base_ac79ea1c555e83b92c03b1dbedaf52b16}{On\+Pointer\+Pressed}} (Pointer\+Event\+Args e)
+\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_blazor_1_1_blazor_plot_base_a4f3f10cb980e026b13230f6126f990fb}{On\+Pointer\+Released}} (Pointer\+Event\+Args e)
+\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_blazor_1_1_blazor_plot_base_a2d49a888c7bd084a912a34e0ebf9cf3c}{On\+Pointer\+Wheel\+Changed}} (Wheel\+Event\+Args e)
+\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_blazor_1_1_blazor_plot_base_af6dfdcad86ef2960d223587135100dc7}{On\+Key\+Down}} (Keyboard\+Event\+Args e)
+\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_blazor_1_1_blazor_plot_base_aed303bd5a2eb6ee079fde038b3ff56df}{On\+Key\+Up}} (Keyboard\+Event\+Args e)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_scott_plot_1_1_i_plot_control}{Scott\+Plot.\+IPlot\+Control}}}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_scott_plot_1_1_blazor_1_1_blazor_plot_base_a3573a17d878775047991682e9761e6e0}{Style}} = string.\+Empty\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+bool \mbox{\hyperlink{class_scott_plot_1_1_blazor_1_1_blazor_plot_base_a1308c57c2260cb01cbadf28012136cdf}{Enable\+Render\+Loop}} = false\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{class_scott_plot_1_1_plot}{Plot}} \mbox{\hyperlink{class_scott_plot_1_1_blazor_1_1_blazor_plot_base_a8050335e0d55a0b302f61975a7f316e5}{Plot}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The \doxylink{class_scott_plot_1_1_plot}{Plot} displayed by this interactive control. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{interface_scott_plot_1_1_i_plot_interaction}{IPlot\+Interaction}} \mbox{\hyperlink{class_scott_plot_1_1_blazor_1_1_blazor_plot_base_a31f2e7ec62f618e12750f54f04d08e1e}{Interaction}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Options for configuring user inputs. This functionality is being replaced by \doxylink{class_scott_plot_1_1_blazor_1_1_blazor_plot_base_a95e8a9ff7d8827d5b573785d5c337e54}{User\+Input\+Processor}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{interface_scott_plot_1_1_i_plot_menu}{IPlot\+Menu}} \mbox{\hyperlink{class_scott_plot_1_1_blazor_1_1_blazor_plot_base_a1f53ea1b8dbb14621b0a7ee488ab977e}{Menu}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Platform-\/specific logic for managing the context menu. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_scott_plot_1_1_interactivity_1_1_user_input_processor}{Interactivity.\+User\+Input\+Processor}} \mbox{\hyperlink{class_scott_plot_1_1_blazor_1_1_blazor_plot_base_a95e8a9ff7d8827d5b573785d5c337e54}{User\+Input\+Processor}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em This object takes in UI events and contains logic for how to respond to them. This is a newer alternative to the older \doxylink{class_scott_plot_1_1_blazor_1_1_blazor_plot_base_a31f2e7ec62f618e12750f54f04d08e1e}{Interaction} system. \end{DoxyCompactList}\item 
+GRContext? \mbox{\hyperlink{class_scott_plot_1_1_blazor_1_1_blazor_plot_base_a838b9fecaa0d0c45994566ec0b540231}{GRContext}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Context for hardware-\/accelerated graphics (or null if not available) \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_scott_plot_1_1_blazor_1_1_blazor_plot_base_ab311ba8a54089168861ec31dae172455}{Display\+Scale}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The value of the present display scaling. Mouse positions are multiplied by this value for pixel/coordinate conversions. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{interface_scott_plot_1_1_i_plot_control}{Scott\+Plot.\+IPlot\+Control}}}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_scott_plot_1_1_blazor_1_1_blazor_plot_base_a4d2d888ef56d3d1ca4668d00c371fc3b}\index{ScottPlot.Blazor.BlazorPlotBase@{ScottPlot.Blazor.BlazorPlotBase}!BlazorPlotBase@{BlazorPlotBase}}
+\index{BlazorPlotBase@{BlazorPlotBase}!ScottPlot.Blazor.BlazorPlotBase@{ScottPlot.Blazor.BlazorPlotBase}}
+\doxysubsubsection{\texorpdfstring{BlazorPlotBase()}{BlazorPlotBase()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_blazor_1_1_blazor_plot_base_a4d2d888ef56d3d1ca4668d00c371fc3b} 
+Scott\+Plot.\+Blazor.\+Blazor\+Plot\+Base.\+Blazor\+Plot\+Base (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_scott_plot_1_1_blazor_1_1_blazor_plot_base_a02ae33760736d8590955e80fc8857662}\index{ScottPlot.Blazor.BlazorPlotBase@{ScottPlot.Blazor.BlazorPlotBase}!DetectDisplayScale@{DetectDisplayScale}}
+\index{DetectDisplayScale@{DetectDisplayScale}!ScottPlot.Blazor.BlazorPlotBase@{ScottPlot.Blazor.BlazorPlotBase}}
+\doxysubsubsection{\texorpdfstring{DetectDisplayScale()}{DetectDisplayScale()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_blazor_1_1_blazor_plot_base_a02ae33760736d8590955e80fc8857662} 
+float Scott\+Plot.\+Blazor.\+Blazor\+Plot\+Base.\+Detect\+Display\+Scale (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Determine the DPI scaling ratio of the present display. A value of 1.\+0 means no scaling, and 1.\+5 means 150\% scaling. This operation may be costly so do not call it frequently. 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_plot_control_aa11515568028768ad0a9a1bf17b34182}{Scott\+Plot.\+IPlot\+Control}}.
+
+\Hypertarget{class_scott_plot_1_1_blazor_1_1_blazor_plot_base_af6dfdcad86ef2960d223587135100dc7}\index{ScottPlot.Blazor.BlazorPlotBase@{ScottPlot.Blazor.BlazorPlotBase}!OnKeyDown@{OnKeyDown}}
+\index{OnKeyDown@{OnKeyDown}!ScottPlot.Blazor.BlazorPlotBase@{ScottPlot.Blazor.BlazorPlotBase}}
+\doxysubsubsection{\texorpdfstring{OnKeyDown()}{OnKeyDown()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_blazor_1_1_blazor_plot_base_af6dfdcad86ef2960d223587135100dc7} 
+void Scott\+Plot.\+Blazor.\+Blazor\+Plot\+Base.\+On\+Key\+Down (\begin{DoxyParamCaption}\item[{Keyboard\+Event\+Args}]{e}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_scott_plot_1_1_blazor_1_1_blazor_plot_base_aed303bd5a2eb6ee079fde038b3ff56df}\index{ScottPlot.Blazor.BlazorPlotBase@{ScottPlot.Blazor.BlazorPlotBase}!OnKeyUp@{OnKeyUp}}
+\index{OnKeyUp@{OnKeyUp}!ScottPlot.Blazor.BlazorPlotBase@{ScottPlot.Blazor.BlazorPlotBase}}
+\doxysubsubsection{\texorpdfstring{OnKeyUp()}{OnKeyUp()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_blazor_1_1_blazor_plot_base_aed303bd5a2eb6ee079fde038b3ff56df} 
+void Scott\+Plot.\+Blazor.\+Blazor\+Plot\+Base.\+On\+Key\+Up (\begin{DoxyParamCaption}\item[{Keyboard\+Event\+Args}]{e}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_scott_plot_1_1_blazor_1_1_blazor_plot_base_a57fe394d179d5423f38f21b3f74d3fe6}\index{ScottPlot.Blazor.BlazorPlotBase@{ScottPlot.Blazor.BlazorPlotBase}!OnPointerMoved@{OnPointerMoved}}
+\index{OnPointerMoved@{OnPointerMoved}!ScottPlot.Blazor.BlazorPlotBase@{ScottPlot.Blazor.BlazorPlotBase}}
+\doxysubsubsection{\texorpdfstring{OnPointerMoved()}{OnPointerMoved()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_blazor_1_1_blazor_plot_base_a57fe394d179d5423f38f21b3f74d3fe6} 
+void Scott\+Plot.\+Blazor.\+Blazor\+Plot\+Base.\+On\+Pointer\+Moved (\begin{DoxyParamCaption}\item[{Pointer\+Event\+Args}]{e}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_scott_plot_1_1_blazor_1_1_blazor_plot_base_ac79ea1c555e83b92c03b1dbedaf52b16}\index{ScottPlot.Blazor.BlazorPlotBase@{ScottPlot.Blazor.BlazorPlotBase}!OnPointerPressed@{OnPointerPressed}}
+\index{OnPointerPressed@{OnPointerPressed}!ScottPlot.Blazor.BlazorPlotBase@{ScottPlot.Blazor.BlazorPlotBase}}
+\doxysubsubsection{\texorpdfstring{OnPointerPressed()}{OnPointerPressed()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_blazor_1_1_blazor_plot_base_ac79ea1c555e83b92c03b1dbedaf52b16} 
+void Scott\+Plot.\+Blazor.\+Blazor\+Plot\+Base.\+On\+Pointer\+Pressed (\begin{DoxyParamCaption}\item[{Pointer\+Event\+Args}]{e}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_scott_plot_1_1_blazor_1_1_blazor_plot_base_a4f3f10cb980e026b13230f6126f990fb}\index{ScottPlot.Blazor.BlazorPlotBase@{ScottPlot.Blazor.BlazorPlotBase}!OnPointerReleased@{OnPointerReleased}}
+\index{OnPointerReleased@{OnPointerReleased}!ScottPlot.Blazor.BlazorPlotBase@{ScottPlot.Blazor.BlazorPlotBase}}
+\doxysubsubsection{\texorpdfstring{OnPointerReleased()}{OnPointerReleased()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_blazor_1_1_blazor_plot_base_a4f3f10cb980e026b13230f6126f990fb} 
+void Scott\+Plot.\+Blazor.\+Blazor\+Plot\+Base.\+On\+Pointer\+Released (\begin{DoxyParamCaption}\item[{Pointer\+Event\+Args}]{e}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_scott_plot_1_1_blazor_1_1_blazor_plot_base_a2d49a888c7bd084a912a34e0ebf9cf3c}\index{ScottPlot.Blazor.BlazorPlotBase@{ScottPlot.Blazor.BlazorPlotBase}!OnPointerWheelChanged@{OnPointerWheelChanged}}
+\index{OnPointerWheelChanged@{OnPointerWheelChanged}!ScottPlot.Blazor.BlazorPlotBase@{ScottPlot.Blazor.BlazorPlotBase}}
+\doxysubsubsection{\texorpdfstring{OnPointerWheelChanged()}{OnPointerWheelChanged()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_blazor_1_1_blazor_plot_base_a2d49a888c7bd084a912a34e0ebf9cf3c} 
+void Scott\+Plot.\+Blazor.\+Blazor\+Plot\+Base.\+On\+Pointer\+Wheel\+Changed (\begin{DoxyParamCaption}\item[{Wheel\+Event\+Args}]{e}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_scott_plot_1_1_blazor_1_1_blazor_plot_base_aa3e50f47059c8fa16317e776212ee71d}\index{ScottPlot.Blazor.BlazorPlotBase@{ScottPlot.Blazor.BlazorPlotBase}!Refresh@{Refresh}}
+\index{Refresh@{Refresh}!ScottPlot.Blazor.BlazorPlotBase@{ScottPlot.Blazor.BlazorPlotBase}}
+\doxysubsubsection{\texorpdfstring{Refresh()}{Refresh()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_blazor_1_1_blazor_plot_base_aa3e50f47059c8fa16317e776212ee71d} 
+virtual void Scott\+Plot.\+Blazor.\+Blazor\+Plot\+Base.\+Refresh (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Render the plot and update the image. 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_plot_control_a06515ebfc38fce1ae2a8dfdaa662c294}{Scott\+Plot.\+IPlot\+Control}}.
+
+\Hypertarget{class_scott_plot_1_1_blazor_1_1_blazor_plot_base_a712b562456a5f9b86905dd664de9054c}\index{ScottPlot.Blazor.BlazorPlotBase@{ScottPlot.Blazor.BlazorPlotBase}!Reset@{Reset}}
+\index{Reset@{Reset}!ScottPlot.Blazor.BlazorPlotBase@{ScottPlot.Blazor.BlazorPlotBase}}
+\doxysubsubsection{\texorpdfstring{Reset()}{Reset()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_blazor_1_1_blazor_plot_base_a712b562456a5f9b86905dd664de9054c} 
+void Scott\+Plot.\+Blazor.\+Blazor\+Plot\+Base.\+Reset (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Disposes the current \doxylink{class_scott_plot_1_1_plot}{Plot} and creates a new one for the control. 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_plot_control_a3c35aec5502c19eba32a34cb9f7dfd20}{Scott\+Plot.\+IPlot\+Control}}.
+
+\Hypertarget{class_scott_plot_1_1_blazor_1_1_blazor_plot_base_ade474f742d3e0563be5d1dfcdb4894bc}\index{ScottPlot.Blazor.BlazorPlotBase@{ScottPlot.Blazor.BlazorPlotBase}!Reset@{Reset}}
+\index{Reset@{Reset}!ScottPlot.Blazor.BlazorPlotBase@{ScottPlot.Blazor.BlazorPlotBase}}
+\doxysubsubsection{\texorpdfstring{Reset()}{Reset()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_blazor_1_1_blazor_plot_base_ade474f742d3e0563be5d1dfcdb4894bc} 
+void Scott\+Plot.\+Blazor.\+Blazor\+Plot\+Base.\+Reset (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_scott_plot_1_1_plot}{Plot}}}]{plot}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Loads the given \doxylink{class_scott_plot_1_1_plot}{Plot} into the control. 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_plot_control_a7577b50882b1814f3344ab414e24cb44}{Scott\+Plot.\+IPlot\+Control}}.
+
+\Hypertarget{class_scott_plot_1_1_blazor_1_1_blazor_plot_base_ae95c61a6ab7a7c3ee0d9762e60ebea9a}\index{ScottPlot.Blazor.BlazorPlotBase@{ScottPlot.Blazor.BlazorPlotBase}!ShowContextMenu@{ShowContextMenu}}
+\index{ShowContextMenu@{ShowContextMenu}!ScottPlot.Blazor.BlazorPlotBase@{ScottPlot.Blazor.BlazorPlotBase}}
+\doxysubsubsection{\texorpdfstring{ShowContextMenu()}{ShowContextMenu()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_blazor_1_1_blazor_plot_base_ae95c61a6ab7a7c3ee0d9762e60ebea9a} 
+void Scott\+Plot.\+Blazor.\+Blazor\+Plot\+Base.\+Show\+Context\+Menu (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}}}]{position}{}\end{DoxyParamCaption})}
+
+
+
+Launch the default pop-\/up menu (typically in response to a right-\/click) at the given position in the control. 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_plot_control_a724dd4f2dbc8eb65dd0d169431b5ed21}{Scott\+Plot.\+IPlot\+Control}}.
+
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{class_scott_plot_1_1_blazor_1_1_blazor_plot_base_ab311ba8a54089168861ec31dae172455}\index{ScottPlot.Blazor.BlazorPlotBase@{ScottPlot.Blazor.BlazorPlotBase}!DisplayScale@{DisplayScale}}
+\index{DisplayScale@{DisplayScale}!ScottPlot.Blazor.BlazorPlotBase@{ScottPlot.Blazor.BlazorPlotBase}}
+\doxysubsubsection{\texorpdfstring{DisplayScale}{DisplayScale}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_blazor_1_1_blazor_plot_base_ab311ba8a54089168861ec31dae172455} 
+float Scott\+Plot.\+Blazor.\+Blazor\+Plot\+Base.\+Display\+Scale\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The value of the present display scaling. Mouse positions are multiplied by this value for pixel/coordinate conversions. 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_plot_control_afbe575470185aa2a1f797bbd7a0e75c2}{Scott\+Plot.\+IPlot\+Control}}.
+
+\Hypertarget{class_scott_plot_1_1_blazor_1_1_blazor_plot_base_a1308c57c2260cb01cbadf28012136cdf}\index{ScottPlot.Blazor.BlazorPlotBase@{ScottPlot.Blazor.BlazorPlotBase}!EnableRenderLoop@{EnableRenderLoop}}
+\index{EnableRenderLoop@{EnableRenderLoop}!ScottPlot.Blazor.BlazorPlotBase@{ScottPlot.Blazor.BlazorPlotBase}}
+\doxysubsubsection{\texorpdfstring{EnableRenderLoop}{EnableRenderLoop}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_blazor_1_1_blazor_plot_base_a1308c57c2260cb01cbadf28012136cdf} 
+bool Scott\+Plot.\+Blazor.\+Blazor\+Plot\+Base.\+Enable\+Render\+Loop = false\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_blazor_1_1_blazor_plot_base_a838b9fecaa0d0c45994566ec0b540231}\index{ScottPlot.Blazor.BlazorPlotBase@{ScottPlot.Blazor.BlazorPlotBase}!GRContext@{GRContext}}
+\index{GRContext@{GRContext}!ScottPlot.Blazor.BlazorPlotBase@{ScottPlot.Blazor.BlazorPlotBase}}
+\doxysubsubsection{\texorpdfstring{GRContext}{GRContext}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_blazor_1_1_blazor_plot_base_a838b9fecaa0d0c45994566ec0b540231} 
+GRContext? Scott\+Plot.\+Blazor.\+Blazor\+Plot\+Base.\+GRContext\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Context for hardware-\/accelerated graphics (or null if not available) 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_plot_control_a34f8c1df93361a966cfe7c4f7e03910b}{Scott\+Plot.\+IPlot\+Control}}.
+
+\Hypertarget{class_scott_plot_1_1_blazor_1_1_blazor_plot_base_a31f2e7ec62f618e12750f54f04d08e1e}\index{ScottPlot.Blazor.BlazorPlotBase@{ScottPlot.Blazor.BlazorPlotBase}!Interaction@{Interaction}}
+\index{Interaction@{Interaction}!ScottPlot.Blazor.BlazorPlotBase@{ScottPlot.Blazor.BlazorPlotBase}}
+\doxysubsubsection{\texorpdfstring{Interaction}{Interaction}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_blazor_1_1_blazor_plot_base_a31f2e7ec62f618e12750f54f04d08e1e} 
+\mbox{\hyperlink{interface_scott_plot_1_1_i_plot_interaction}{IPlot\+Interaction}} Scott\+Plot.\+Blazor.\+Blazor\+Plot\+Base.\+Interaction\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Options for configuring user inputs. This functionality is being replaced by \doxylink{class_scott_plot_1_1_blazor_1_1_blazor_plot_base_a95e8a9ff7d8827d5b573785d5c337e54}{User\+Input\+Processor}. 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_plot_control_ae503734717812d8018497b48c77fd744}{Scott\+Plot.\+IPlot\+Control}}.
+
+\Hypertarget{class_scott_plot_1_1_blazor_1_1_blazor_plot_base_a1f53ea1b8dbb14621b0a7ee488ab977e}\index{ScottPlot.Blazor.BlazorPlotBase@{ScottPlot.Blazor.BlazorPlotBase}!Menu@{Menu}}
+\index{Menu@{Menu}!ScottPlot.Blazor.BlazorPlotBase@{ScottPlot.Blazor.BlazorPlotBase}}
+\doxysubsubsection{\texorpdfstring{Menu}{Menu}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_blazor_1_1_blazor_plot_base_a1f53ea1b8dbb14621b0a7ee488ab977e} 
+\mbox{\hyperlink{interface_scott_plot_1_1_i_plot_menu}{IPlot\+Menu}} Scott\+Plot.\+Blazor.\+Blazor\+Plot\+Base.\+Menu\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Platform-\/specific logic for managing the context menu. 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_plot_control_a3c970f5b3b54bbf5796b9a8f8f47ccfc}{Scott\+Plot.\+IPlot\+Control}}.
+
+\Hypertarget{class_scott_plot_1_1_blazor_1_1_blazor_plot_base_a8050335e0d55a0b302f61975a7f316e5}\index{ScottPlot.Blazor.BlazorPlotBase@{ScottPlot.Blazor.BlazorPlotBase}!Plot@{Plot}}
+\index{Plot@{Plot}!ScottPlot.Blazor.BlazorPlotBase@{ScottPlot.Blazor.BlazorPlotBase}}
+\doxysubsubsection{\texorpdfstring{Plot}{Plot}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_blazor_1_1_blazor_plot_base_a8050335e0d55a0b302f61975a7f316e5} 
+\mbox{\hyperlink{class_scott_plot_1_1_plot}{Plot}} Scott\+Plot.\+Blazor.\+Blazor\+Plot\+Base.\+Plot\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The \doxylink{class_scott_plot_1_1_plot}{Plot} displayed by this interactive control. 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_plot_control_ac5c49a58b4d8452af92f01ec935139ed}{Scott\+Plot.\+IPlot\+Control}}.
+
+\Hypertarget{class_scott_plot_1_1_blazor_1_1_blazor_plot_base_a3573a17d878775047991682e9761e6e0}\index{ScottPlot.Blazor.BlazorPlotBase@{ScottPlot.Blazor.BlazorPlotBase}!Style@{Style}}
+\index{Style@{Style}!ScottPlot.Blazor.BlazorPlotBase@{ScottPlot.Blazor.BlazorPlotBase}}
+\doxysubsubsection{\texorpdfstring{Style}{Style}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_blazor_1_1_blazor_plot_base_a3573a17d878775047991682e9761e6e0} 
+string Scott\+Plot.\+Blazor.\+Blazor\+Plot\+Base.\+Style = string.\+Empty\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_blazor_1_1_blazor_plot_base_a95e8a9ff7d8827d5b573785d5c337e54}\index{ScottPlot.Blazor.BlazorPlotBase@{ScottPlot.Blazor.BlazorPlotBase}!UserInputProcessor@{UserInputProcessor}}
+\index{UserInputProcessor@{UserInputProcessor}!ScottPlot.Blazor.BlazorPlotBase@{ScottPlot.Blazor.BlazorPlotBase}}
+\doxysubsubsection{\texorpdfstring{UserInputProcessor}{UserInputProcessor}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_blazor_1_1_blazor_plot_base_a95e8a9ff7d8827d5b573785d5c337e54} 
+\mbox{\hyperlink{class_scott_plot_1_1_interactivity_1_1_user_input_processor}{Interactivity.\+User\+Input\+Processor}} Scott\+Plot.\+Blazor.\+Blazor\+Plot\+Base.\+User\+Input\+Processor\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+This object takes in UI events and contains logic for how to respond to them. This is a newer alternative to the older \doxylink{class_scott_plot_1_1_blazor_1_1_blazor_plot_base_a31f2e7ec62f618e12750f54f04d08e1e}{Interaction} system. 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_plot_control_a49c623cd834bd6d6f572ec0b5b24c892}{Scott\+Plot.\+IPlot\+Control}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5 Controls/\+Scott\+Plot.\+Blazor/Blazor\+Plot\+Base.\+cs\end{DoxyCompactItemize}

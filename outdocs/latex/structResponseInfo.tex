@@ -1,0 +1,77 @@
+\hypertarget{structResponseInfo}{}\doxysection{Response\+Info Struct Reference}
+\label{structResponseInfo}\index{ResponseInfo@{ResponseInfo}}
+
+
+Describes what may need to happen after a user action response has completed executing  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override string \mbox{\hyperlink{structResponseInfo_aa17f9155da392f3e91fee3c8fd9a6c48}{To\+String}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{structResponseInfo_aa217a406f16a0149138fcb680c415966}{Refresh\+Needed}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Request a render after all responses have finished executing \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{structResponseInfo_ada9df34f3791c47b1a775e04429b1efd}{Is\+Primary}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em If true, all other responses will not be executed until the response that returned this result returns a new result with this flag false. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{structResponseInfo}{Response\+Info}} \mbox{\hyperlink{structResponseInfo_a7473c5e4b6c0e8baeec2dfce19ed1718}{No\+Action\+Required}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+static \mbox{\hyperlink{structResponseInfo}{Response\+Info}} \mbox{\hyperlink{structResponseInfo_a6a4bb7162f9afb5cfc2d30809899e740}{Refresh}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Describes what may need to happen after a user action response has completed executing 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{structResponseInfo_aa17f9155da392f3e91fee3c8fd9a6c48}\label{structResponseInfo_aa17f9155da392f3e91fee3c8fd9a6c48}} 
+\index{ResponseInfo@{ResponseInfo}!ToString@{ToString}}
+\index{ToString@{ToString}!ResponseInfo@{ResponseInfo}}
+\doxysubsubsection{\texorpdfstring{ToString()}{ToString()}}
+{\footnotesize\ttfamily override string Response\+Info.\+To\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{structResponseInfo_ada9df34f3791c47b1a775e04429b1efd}\label{structResponseInfo_ada9df34f3791c47b1a775e04429b1efd}} 
+\index{ResponseInfo@{ResponseInfo}!IsPrimary@{IsPrimary}}
+\index{IsPrimary@{IsPrimary}!ResponseInfo@{ResponseInfo}}
+\doxysubsubsection{\texorpdfstring{IsPrimary}{IsPrimary}}
+{\footnotesize\ttfamily bool Response\+Info.\+Is\+Primary\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+If true, all other responses will not be executed until the response that returned this result returns a new result with this flag false. 
+
+\mbox{\Hypertarget{structResponseInfo_a7473c5e4b6c0e8baeec2dfce19ed1718}\label{structResponseInfo_a7473c5e4b6c0e8baeec2dfce19ed1718}} 
+\index{ResponseInfo@{ResponseInfo}!NoActionRequired@{NoActionRequired}}
+\index{NoActionRequired@{NoActionRequired}!ResponseInfo@{ResponseInfo}}
+\doxysubsubsection{\texorpdfstring{NoActionRequired}{NoActionRequired}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structResponseInfo}{Response\+Info}} Response\+Info.\+No\+Action\+Required\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+\mbox{\Hypertarget{structResponseInfo_a6a4bb7162f9afb5cfc2d30809899e740}\label{structResponseInfo_a6a4bb7162f9afb5cfc2d30809899e740}} 
+\index{ResponseInfo@{ResponseInfo}!Refresh@{Refresh}}
+\index{Refresh@{Refresh}!ResponseInfo@{ResponseInfo}}
+\doxysubsubsection{\texorpdfstring{Refresh}{Refresh}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structResponseInfo}{Response\+Info}} Response\+Info.\+Refresh\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+\mbox{\Hypertarget{structResponseInfo_aa217a406f16a0149138fcb680c415966}\label{structResponseInfo_aa217a406f16a0149138fcb680c415966}} 
+\index{ResponseInfo@{ResponseInfo}!RefreshNeeded@{RefreshNeeded}}
+\index{RefreshNeeded@{RefreshNeeded}!ResponseInfo@{ResponseInfo}}
+\doxysubsubsection{\texorpdfstring{RefreshNeeded}{RefreshNeeded}}
+{\footnotesize\ttfamily bool Response\+Info.\+Refresh\+Needed\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Request a render after all responses have finished executing 
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Interactivity/Response\+Info.\+cs\end{DoxyCompactItemize}

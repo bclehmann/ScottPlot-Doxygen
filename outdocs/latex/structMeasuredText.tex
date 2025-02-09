@@ -1,0 +1,115 @@
+\hypertarget{structMeasuredText}{}\doxysection{Measured\+Text Struct Reference}
+\label{structMeasuredText}\index{MeasuredText@{MeasuredText}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structPixelRect}{Pixel\+Rect}} \mbox{\hyperlink{structMeasuredText_ad9edda3ce1088fb7aadf5dab2ec88d00}{Rect}} (Alignment alignment)
+\begin{DoxyCompactList}\small\item\em Return a rectangle representing the bounding box of the entire text with the alignment point centered at the origin. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structPixelSize}{Pixel\+Size}} \mbox{\hyperlink{structMeasuredText_a387858d6efae75425f8be6f0f92202e0}{Size}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Size of the entire multiline label in pixels. Width is the largest value returned by paint.\+Measure\+Text(). Height is the line height multiplied by the number of lines. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{structMeasuredText_a6695e77f9317af7aa5d4a7638134ac19}{Line\+Height}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Vertical spacing between each line. This is the value returned by Get\+Font\+Metrics(). \end{DoxyCompactList}\item 
+float\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{structMeasuredText_a5349b3281366fe091d9be469a6ee7497}{Line\+Widths}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Width of each line of text in pixel units. \end{DoxyCompactList}\item 
+required float \mbox{\hyperlink{structMeasuredText_acb2e8b3e59138a69a19e06919a4b9914}{Vertical\+Offset}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Recommended vertical offset when calling SKCanvas.\+Draw\+Text(). See \href{https://github.com/ScottPlot/ScottPlot/issues/3700}{\texttt{ https\+://github.\+com/\+Scott\+Plot/\+Scott\+Plot/issues/3700}} for details. \end{DoxyCompactList}\item 
+required float \mbox{\hyperlink{structMeasuredText_a7e95b1192f79f30b8cbe0980a134241a}{Bottom}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Distance below the baseline the rendered font may occupy. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{structMeasuredText_a059b80fe7122f1a1c017c052313839c7}{Width}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Width of the entire text. Equals the length of the widest line. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{structMeasuredText_a5561042a45ca46a8b017e005c8e2ec04}{Height}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Height of the entire text. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{structMeasuredText_ad9edda3ce1088fb7aadf5dab2ec88d00}\label{structMeasuredText_ad9edda3ce1088fb7aadf5dab2ec88d00}} 
+\index{MeasuredText@{MeasuredText}!Rect@{Rect}}
+\index{Rect@{Rect}!MeasuredText@{MeasuredText}}
+\doxysubsubsection{\texorpdfstring{Rect()}{Rect()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structPixelRect}{Pixel\+Rect}} Measured\+Text.\+Rect (\begin{DoxyParamCaption}\item[{Alignment}]{alignment }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return a rectangle representing the bounding box of the entire text with the alignment point centered at the origin. 
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{structMeasuredText_a7e95b1192f79f30b8cbe0980a134241a}\label{structMeasuredText_a7e95b1192f79f30b8cbe0980a134241a}} 
+\index{MeasuredText@{MeasuredText}!Bottom@{Bottom}}
+\index{Bottom@{Bottom}!MeasuredText@{MeasuredText}}
+\doxysubsubsection{\texorpdfstring{Bottom}{Bottom}}
+{\footnotesize\ttfamily required float Measured\+Text.\+Bottom\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Distance below the baseline the rendered font may occupy. 
+
+\mbox{\Hypertarget{structMeasuredText_a5561042a45ca46a8b017e005c8e2ec04}\label{structMeasuredText_a5561042a45ca46a8b017e005c8e2ec04}} 
+\index{MeasuredText@{MeasuredText}!Height@{Height}}
+\index{Height@{Height}!MeasuredText@{MeasuredText}}
+\doxysubsubsection{\texorpdfstring{Height}{Height}}
+{\footnotesize\ttfamily float Measured\+Text.\+Height\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Height of the entire text. 
+
+\mbox{\Hypertarget{structMeasuredText_a6695e77f9317af7aa5d4a7638134ac19}\label{structMeasuredText_a6695e77f9317af7aa5d4a7638134ac19}} 
+\index{MeasuredText@{MeasuredText}!LineHeight@{LineHeight}}
+\index{LineHeight@{LineHeight}!MeasuredText@{MeasuredText}}
+\doxysubsubsection{\texorpdfstring{LineHeight}{LineHeight}}
+{\footnotesize\ttfamily float Measured\+Text.\+Line\+Height\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Vertical spacing between each line. This is the value returned by Get\+Font\+Metrics(). 
+
+\mbox{\Hypertarget{structMeasuredText_a5349b3281366fe091d9be469a6ee7497}\label{structMeasuredText_a5349b3281366fe091d9be469a6ee7497}} 
+\index{MeasuredText@{MeasuredText}!LineWidths@{LineWidths}}
+\index{LineWidths@{LineWidths}!MeasuredText@{MeasuredText}}
+\doxysubsubsection{\texorpdfstring{LineWidths}{LineWidths}}
+{\footnotesize\ttfamily float \mbox{[}$\,$\mbox{]} Measured\+Text.\+Line\+Widths\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Width of each line of text in pixel units. 
+
+\mbox{\Hypertarget{structMeasuredText_a387858d6efae75425f8be6f0f92202e0}\label{structMeasuredText_a387858d6efae75425f8be6f0f92202e0}} 
+\index{MeasuredText@{MeasuredText}!Size@{Size}}
+\index{Size@{Size}!MeasuredText@{MeasuredText}}
+\doxysubsubsection{\texorpdfstring{Size}{Size}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structPixelSize}{Pixel\+Size}} Measured\+Text.\+Size\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Size of the entire multiline label in pixels. Width is the largest value returned by paint.\+Measure\+Text(). Height is the line height multiplied by the number of lines. 
+
+\mbox{\Hypertarget{structMeasuredText_acb2e8b3e59138a69a19e06919a4b9914}\label{structMeasuredText_acb2e8b3e59138a69a19e06919a4b9914}} 
+\index{MeasuredText@{MeasuredText}!VerticalOffset@{VerticalOffset}}
+\index{VerticalOffset@{VerticalOffset}!MeasuredText@{MeasuredText}}
+\doxysubsubsection{\texorpdfstring{VerticalOffset}{VerticalOffset}}
+{\footnotesize\ttfamily required float Measured\+Text.\+Vertical\+Offset\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Recommended vertical offset when calling SKCanvas.\+Draw\+Text(). See \href{https://github.com/ScottPlot/ScottPlot/issues/3700}{\texttt{ https\+://github.\+com/\+Scott\+Plot/\+Scott\+Plot/issues/3700}} for details. 
+
+\mbox{\Hypertarget{structMeasuredText_a059b80fe7122f1a1c017c052313839c7}\label{structMeasuredText_a059b80fe7122f1a1c017c052313839c7}} 
+\index{MeasuredText@{MeasuredText}!Width@{Width}}
+\index{Width@{Width}!MeasuredText@{MeasuredText}}
+\doxysubsubsection{\texorpdfstring{Width}{Width}}
+{\footnotesize\ttfamily float Measured\+Text.\+Width\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Width of the entire text. Equals the length of the widest line. 
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Primitives/Measured\+Text.\+cs\end{DoxyCompactItemize}

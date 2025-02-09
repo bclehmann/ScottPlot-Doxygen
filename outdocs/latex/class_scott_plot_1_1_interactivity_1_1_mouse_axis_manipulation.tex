@@ -1,0 +1,61 @@
+\doxysection{Scott\+Plot.\+Interactivity.\+Mouse\+Axis\+Manipulation Class Reference}
+\hypertarget{class_scott_plot_1_1_interactivity_1_1_mouse_axis_manipulation}{}\label{class_scott_plot_1_1_interactivity_1_1_mouse_axis_manipulation}\index{ScottPlot.Interactivity.MouseAxisManipulation@{ScottPlot.Interactivity.MouseAxisManipulation}}
+
+
+This class stores logic for changing axis limits according to mouse inputs in pixel units. Methods here are similar to those in \doxylink{class_scott_plot_1_1_plot_aee0a0bf05ca86a9fa2cc676c9fb9e193}{Plot.\+Axes} except their inputs are all mouse events.  
+
+
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_scott_plot_1_1_interactivity_1_1_mouse_axis_manipulation_ad97f70a51bea545f5bd3cf2889d01748}{Mouse\+Wheel\+Zoom}} (\mbox{\hyperlink{class_scott_plot_1_1_plot}{Plot}} plot, double fracX, double fracY, \mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}} pixel, bool Change\+Opposing\+Axes\+Together)
+\item 
+static void \mbox{\hyperlink{class_scott_plot_1_1_interactivity_1_1_mouse_axis_manipulation_a81561e833a1e911376762663da5aecab}{Drag\+Pan}} (\mbox{\hyperlink{class_scott_plot_1_1_plot}{Plot}} plot, \mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}} mouse\+Down, \mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}} mouse\+Now)
+\item 
+static void \mbox{\hyperlink{class_scott_plot_1_1_interactivity_1_1_mouse_axis_manipulation_a89ea06c2e3eeb134c36cc55598ce9f7c}{Drag\+Zoom}} (\mbox{\hyperlink{class_scott_plot_1_1_plot}{Plot}} plot, \mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}} mouse\+Down, \mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}} mouse\+Now)
+\item 
+static void \mbox{\hyperlink{class_scott_plot_1_1_interactivity_1_1_mouse_axis_manipulation_ae06db24d09daa4093ae35a414e6c9600}{Place\+Zoom\+Rectangle}} (\mbox{\hyperlink{class_scott_plot_1_1_plot}{Plot}} plot, \mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}} mouse\+Down, \mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}} mouse\+Now)
+\item 
+static void \mbox{\hyperlink{class_scott_plot_1_1_interactivity_1_1_mouse_axis_manipulation_a73bfdc3f1a70617937530f3d99610557}{Auto\+Scale}} (\mbox{\hyperlink{class_scott_plot_1_1_plot}{Plot}} plot, \mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}} pixel, bool all\+Parallel\+Axes)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class stores logic for changing axis limits according to mouse inputs in pixel units. Methods here are similar to those in \doxylink{class_scott_plot_1_1_plot_aee0a0bf05ca86a9fa2cc676c9fb9e193}{Plot.\+Axes} except their inputs are all mouse events. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_scott_plot_1_1_interactivity_1_1_mouse_axis_manipulation_a73bfdc3f1a70617937530f3d99610557}\index{ScottPlot.Interactivity.MouseAxisManipulation@{ScottPlot.Interactivity.MouseAxisManipulation}!AutoScale@{AutoScale}}
+\index{AutoScale@{AutoScale}!ScottPlot.Interactivity.MouseAxisManipulation@{ScottPlot.Interactivity.MouseAxisManipulation}}
+\doxysubsubsection{\texorpdfstring{AutoScale()}{AutoScale()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_interactivity_1_1_mouse_axis_manipulation_a73bfdc3f1a70617937530f3d99610557} 
+static void Scott\+Plot.\+Interactivity.\+Mouse\+Axis\+Manipulation.\+Auto\+Scale (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_scott_plot_1_1_plot}{Plot}}}]{plot}{, }\item[{\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}}}]{pixel}{, }\item[{bool}]{all\+Parallel\+Axes}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\Hypertarget{class_scott_plot_1_1_interactivity_1_1_mouse_axis_manipulation_a81561e833a1e911376762663da5aecab}\index{ScottPlot.Interactivity.MouseAxisManipulation@{ScottPlot.Interactivity.MouseAxisManipulation}!DragPan@{DragPan}}
+\index{DragPan@{DragPan}!ScottPlot.Interactivity.MouseAxisManipulation@{ScottPlot.Interactivity.MouseAxisManipulation}}
+\doxysubsubsection{\texorpdfstring{DragPan()}{DragPan()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_interactivity_1_1_mouse_axis_manipulation_a81561e833a1e911376762663da5aecab} 
+static void Scott\+Plot.\+Interactivity.\+Mouse\+Axis\+Manipulation.\+Drag\+Pan (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_scott_plot_1_1_plot}{Plot}}}]{plot}{, }\item[{\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}}}]{mouse\+Down}{, }\item[{\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}}}]{mouse\+Now}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\Hypertarget{class_scott_plot_1_1_interactivity_1_1_mouse_axis_manipulation_a89ea06c2e3eeb134c36cc55598ce9f7c}\index{ScottPlot.Interactivity.MouseAxisManipulation@{ScottPlot.Interactivity.MouseAxisManipulation}!DragZoom@{DragZoom}}
+\index{DragZoom@{DragZoom}!ScottPlot.Interactivity.MouseAxisManipulation@{ScottPlot.Interactivity.MouseAxisManipulation}}
+\doxysubsubsection{\texorpdfstring{DragZoom()}{DragZoom()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_interactivity_1_1_mouse_axis_manipulation_a89ea06c2e3eeb134c36cc55598ce9f7c} 
+static void Scott\+Plot.\+Interactivity.\+Mouse\+Axis\+Manipulation.\+Drag\+Zoom (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_scott_plot_1_1_plot}{Plot}}}]{plot}{, }\item[{\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}}}]{mouse\+Down}{, }\item[{\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}}}]{mouse\+Now}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\Hypertarget{class_scott_plot_1_1_interactivity_1_1_mouse_axis_manipulation_ad97f70a51bea545f5bd3cf2889d01748}\index{ScottPlot.Interactivity.MouseAxisManipulation@{ScottPlot.Interactivity.MouseAxisManipulation}!MouseWheelZoom@{MouseWheelZoom}}
+\index{MouseWheelZoom@{MouseWheelZoom}!ScottPlot.Interactivity.MouseAxisManipulation@{ScottPlot.Interactivity.MouseAxisManipulation}}
+\doxysubsubsection{\texorpdfstring{MouseWheelZoom()}{MouseWheelZoom()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_interactivity_1_1_mouse_axis_manipulation_ad97f70a51bea545f5bd3cf2889d01748} 
+static void Scott\+Plot.\+Interactivity.\+Mouse\+Axis\+Manipulation.\+Mouse\+Wheel\+Zoom (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_scott_plot_1_1_plot}{Plot}}}]{plot}{, }\item[{double}]{fracX}{, }\item[{double}]{fracY}{, }\item[{\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}}}]{pixel}{, }\item[{bool}]{Change\+Opposing\+Axes\+Together}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\Hypertarget{class_scott_plot_1_1_interactivity_1_1_mouse_axis_manipulation_ae06db24d09daa4093ae35a414e6c9600}\index{ScottPlot.Interactivity.MouseAxisManipulation@{ScottPlot.Interactivity.MouseAxisManipulation}!PlaceZoomRectangle@{PlaceZoomRectangle}}
+\index{PlaceZoomRectangle@{PlaceZoomRectangle}!ScottPlot.Interactivity.MouseAxisManipulation@{ScottPlot.Interactivity.MouseAxisManipulation}}
+\doxysubsubsection{\texorpdfstring{PlaceZoomRectangle()}{PlaceZoomRectangle()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_interactivity_1_1_mouse_axis_manipulation_ae06db24d09daa4093ae35a414e6c9600} 
+static void Scott\+Plot.\+Interactivity.\+Mouse\+Axis\+Manipulation.\+Place\+Zoom\+Rectangle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_scott_plot_1_1_plot}{Plot}}}]{plot}{, }\item[{\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}}}]{mouse\+Down}{, }\item[{\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}}}]{mouse\+Now}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Interactivity/\mbox{\hyperlink{_mouse_axis_manipulation_8cs}{Mouse\+Axis\+Manipulation.\+cs}}\end{DoxyCompactItemize}

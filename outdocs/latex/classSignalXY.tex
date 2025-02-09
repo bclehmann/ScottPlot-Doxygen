@@ -1,0 +1,239 @@
+\hypertarget{classSignalXY}{}\doxysection{Signal\+XY Class Reference}
+\label{classSignalXY}\index{SignalXY@{SignalXY}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} \mbox{\hyperlink{classSignalXY_ab7f02b7231c96120d970852c3c4505c3}{Get\+Axis\+Limits}} ()
+\item 
+\mbox{\hyperlink{structDataPoint}{Data\+Point}} \mbox{\hyperlink{classSignalXY_ada97a6d29f8954b4a9797c90f62ceff9}{Get\+Nearest}} (\mbox{\hyperlink{structCoordinates}{Coordinates}} location, \mbox{\hyperlink{structRenderDetails}{Render\+Details}} render\+Info, float max\+Distance=15)
+\item 
+virtual void \mbox{\hyperlink{classSignalXY_a5320556e21c5f4980181945cb6e6df96}{Render}} (\mbox{\hyperlink{classRenderPack}{Render\+Pack}} rp)
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interfaceISignalXYSource}{ISignal\+XYSource}} \mbox{\hyperlink{classSignalXY_a5ad81cdb5679126008d733c2ba7a207f}{data\+Source}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{interfaceISignalXYSource}{ISignal\+XYSource}} \mbox{\hyperlink{classSignalXY_ab8eb0fd3902188ec622c3803968d28dd}{Data}} = \mbox{\hyperlink{classSignalXY_a5ad81cdb5679126008d733c2ba7a207f}{data\+Source}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+bool \mbox{\hyperlink{classSignalXY_ad4bc813b155e07a6865aaa14057dd58f}{Is\+Visible}} = true\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+int \mbox{\hyperlink{classSignalXY_a13acdd4c6e7bfa9be4f5fc0d1afb82b5}{XAxis\+Index}} = 0\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+int \mbox{\hyperlink{classSignalXY_ae17589ba185b7d4f86d1fa0671ba6108}{YAxis\+Index}} = 0\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{interfaceIAxes}{IAxes}} \mbox{\hyperlink{classSignalXY_a5558ecca4e19b41aa6a7903fda63bb97}{Axes}} = new \mbox{\hyperlink{classAxes}{Axes}}()\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{classLineStyle}{Line\+Style}} \mbox{\hyperlink{classSignalXY_a27a7fb75765d29e515131dfa98f98dee}{Line\+Style}} = new() \{ Width = 1 \}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{classSignalXY_ade6fb303d03aa32f50e227d5c87f3321}{Line\+Width}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+Line\+Pattern \mbox{\hyperlink{classSignalXY_a3a7e88e70cb9b54d1ca46597a5170074}{Line\+Pattern}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{structColor}{Color}} \mbox{\hyperlink{classSignalXY_ae27ad0ad6bc871c4bb1e17ec2e4b03f4}{Line\+Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{classMarkerStyle}{Marker\+Style}} \mbox{\hyperlink{classSignalXY_a59c2ab29ab2ddc78a5f7a39d492a7705}{Marker\+Style}} = new() \{ Size = 0, Shape = Marker\+Shape.\+Filled\+Circle \}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+Marker\+Shape \mbox{\hyperlink{classSignalXY_af633ef423b3ea7e94396e6572e799490}{Marker\+Shape}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{classSignalXY_ab48f0ffda7191b462eafdf7377831ddd}{Marker\+Size}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{structColor}{Color}} \mbox{\hyperlink{classSignalXY_ab4cc5ff505790519f2a490f2fc014194}{Marker\+Fill\+Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{structColor}{Color}} \mbox{\hyperlink{classSignalXY_ad2e2aaec74f1905bb1bb0197d68a9e2f}{Marker\+Line\+Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{structColor}{Color}} \mbox{\hyperlink{classSignalXY_a237d749ad82f4ccfbf8db1407dca86ac}{Marker\+Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{classSignalXY_a9124482a158ca8727388f3936083f85f}{Marker\+Line\+Width}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+Connect\+Style \mbox{\hyperlink{classSignalXY_a4d67bab713acee627c25706f24a3b3e8}{Connect\+Style}} = Connect\+Style.\+Straight\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The style of lines to use when connecting points. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classSignalXY_a5827184b5dd9ee7c0cab22c1ab77ad21}{Min\+Render\+Index}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+int \mbox{\hyperlink{classSignalXY_aa9cb34628988ecc23ce1db5e8c8983b6}{Max\+Render\+Index}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{structColor}{Color}} \mbox{\hyperlink{classSignalXY_ae64e2cf0f94fa871a5783016493d21bb}{Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+string \mbox{\hyperlink{classSignalXY_aafe8aa60fa53450a7a6c4fdeb5b4b8af}{Label}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+string \mbox{\hyperlink{classSignalXY_af2cd690fb354e9f108c25f54e77d9828}{Legend\+Text}} = string.\+Empty\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$ \mbox{\hyperlink{classLegendItem}{Legend\+Item}} $>$ \mbox{\hyperlink{classSignalXY_aa1ad3579cae26628e8b136c40b67135d}{Legend\+Items}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classSignalXY_ab7f02b7231c96120d970852c3c4505c3}\label{classSignalXY_ab7f02b7231c96120d970852c3c4505c3}} 
+\index{SignalXY@{SignalXY}!GetAxisLimits@{GetAxisLimits}}
+\index{GetAxisLimits@{GetAxisLimits}!SignalXY@{SignalXY}}
+\doxysubsubsection{\texorpdfstring{GetAxisLimits()}{GetAxisLimits()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} Signal\+XY.\+Get\+Axis\+Limits (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classSignalXY_ada97a6d29f8954b4a9797c90f62ceff9}\label{classSignalXY_ada97a6d29f8954b4a9797c90f62ceff9}} 
+\index{SignalXY@{SignalXY}!GetNearest@{GetNearest}}
+\index{GetNearest@{GetNearest}!SignalXY@{SignalXY}}
+\doxysubsubsection{\texorpdfstring{GetNearest()}{GetNearest()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structDataPoint}{Data\+Point}} Signal\+XY.\+Get\+Nearest (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structCoordinates}{Coordinates}}}]{location,  }\item[{\mbox{\hyperlink{structRenderDetails}{Render\+Details}}}]{render\+Info,  }\item[{float}]{max\+Distance = {\ttfamily 15} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classSignalXY_a5320556e21c5f4980181945cb6e6df96}\label{classSignalXY_a5320556e21c5f4980181945cb6e6df96}} 
+\index{SignalXY@{SignalXY}!Render@{Render}}
+\index{Render@{Render}!SignalXY@{SignalXY}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily virtual void Signal\+XY.\+Render (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classRenderPack}{Render\+Pack}}}]{rp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{classSignalXY_a5558ecca4e19b41aa6a7903fda63bb97}\label{classSignalXY_a5558ecca4e19b41aa6a7903fda63bb97}} 
+\index{SignalXY@{SignalXY}!Axes@{Axes}}
+\index{Axes@{Axes}!SignalXY@{SignalXY}}
+\doxysubsubsection{\texorpdfstring{Axes}{Axes}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceIAxes}{IAxes}} Signal\+XY.\+Axes = new \mbox{\hyperlink{classAxes}{Axes}}()\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classSignalXY_ae64e2cf0f94fa871a5783016493d21bb}\label{classSignalXY_ae64e2cf0f94fa871a5783016493d21bb}} 
+\index{SignalXY@{SignalXY}!Color@{Color}}
+\index{Color@{Color}!SignalXY@{SignalXY}}
+\doxysubsubsection{\texorpdfstring{Color}{Color}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structColor}{Color}} Signal\+XY.\+Color\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classSignalXY_a4d67bab713acee627c25706f24a3b3e8}\label{classSignalXY_a4d67bab713acee627c25706f24a3b3e8}} 
+\index{SignalXY@{SignalXY}!ConnectStyle@{ConnectStyle}}
+\index{ConnectStyle@{ConnectStyle}!SignalXY@{SignalXY}}
+\doxysubsubsection{\texorpdfstring{ConnectStyle}{ConnectStyle}}
+{\footnotesize\ttfamily Connect\+Style Signal\+XY.\+Connect\+Style = Connect\+Style.\+Straight\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The style of lines to use when connecting points. 
+
+\mbox{\Hypertarget{classSignalXY_ab8eb0fd3902188ec622c3803968d28dd}\label{classSignalXY_ab8eb0fd3902188ec622c3803968d28dd}} 
+\index{SignalXY@{SignalXY}!Data@{Data}}
+\index{Data@{Data}!SignalXY@{SignalXY}}
+\doxysubsubsection{\texorpdfstring{Data}{Data}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceISignalXYSource}{ISignal\+XYSource}} Signal\+XY.\+Data = \mbox{\hyperlink{classSignalXY_a5ad81cdb5679126008d733c2ba7a207f}{data\+Source}}\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classSignalXY_a5ad81cdb5679126008d733c2ba7a207f}\label{classSignalXY_a5ad81cdb5679126008d733c2ba7a207f}} 
+\index{SignalXY@{SignalXY}!dataSource@{dataSource}}
+\index{dataSource@{dataSource}!SignalXY@{SignalXY}}
+\doxysubsubsection{\texorpdfstring{dataSource}{dataSource}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceISignalXYSource}{ISignal\+XYSource}} Signal\+XY.\+data\+Source\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classSignalXY_ad4bc813b155e07a6865aaa14057dd58f}\label{classSignalXY_ad4bc813b155e07a6865aaa14057dd58f}} 
+\index{SignalXY@{SignalXY}!IsVisible@{IsVisible}}
+\index{IsVisible@{IsVisible}!SignalXY@{SignalXY}}
+\doxysubsubsection{\texorpdfstring{IsVisible}{IsVisible}}
+{\footnotesize\ttfamily bool Signal\+XY.\+Is\+Visible = true\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classSignalXY_aafe8aa60fa53450a7a6c4fdeb5b4b8af}\label{classSignalXY_aafe8aa60fa53450a7a6c4fdeb5b4b8af}} 
+\index{SignalXY@{SignalXY}!Label@{Label}}
+\index{Label@{Label}!SignalXY@{SignalXY}}
+\doxysubsubsection{\texorpdfstring{Label}{Label}}
+{\footnotesize\ttfamily string Signal\+XY.\+Label\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classSignalXY_aa1ad3579cae26628e8b136c40b67135d}\label{classSignalXY_aa1ad3579cae26628e8b136c40b67135d}} 
+\index{SignalXY@{SignalXY}!LegendItems@{LegendItems}}
+\index{LegendItems@{LegendItems}!SignalXY@{SignalXY}}
+\doxysubsubsection{\texorpdfstring{LegendItems}{LegendItems}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$\mbox{\hyperlink{classLegendItem}{Legend\+Item}}$>$ Signal\+XY.\+Legend\+Items\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{classSignalXY_af2cd690fb354e9f108c25f54e77d9828}\label{classSignalXY_af2cd690fb354e9f108c25f54e77d9828}} 
+\index{SignalXY@{SignalXY}!LegendText@{LegendText}}
+\index{LegendText@{LegendText}!SignalXY@{SignalXY}}
+\doxysubsubsection{\texorpdfstring{LegendText}{LegendText}}
+{\footnotesize\ttfamily string Signal\+XY.\+Legend\+Text = string.\+Empty\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classSignalXY_ae27ad0ad6bc871c4bb1e17ec2e4b03f4}\label{classSignalXY_ae27ad0ad6bc871c4bb1e17ec2e4b03f4}} 
+\index{SignalXY@{SignalXY}!LineColor@{LineColor}}
+\index{LineColor@{LineColor}!SignalXY@{SignalXY}}
+\doxysubsubsection{\texorpdfstring{LineColor}{LineColor}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structColor}{Color}} Signal\+XY.\+Line\+Color\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classSignalXY_a3a7e88e70cb9b54d1ca46597a5170074}\label{classSignalXY_a3a7e88e70cb9b54d1ca46597a5170074}} 
+\index{SignalXY@{SignalXY}!LinePattern@{LinePattern}}
+\index{LinePattern@{LinePattern}!SignalXY@{SignalXY}}
+\doxysubsubsection{\texorpdfstring{LinePattern}{LinePattern}}
+{\footnotesize\ttfamily Line\+Pattern Signal\+XY.\+Line\+Pattern\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classSignalXY_a27a7fb75765d29e515131dfa98f98dee}\label{classSignalXY_a27a7fb75765d29e515131dfa98f98dee}} 
+\index{SignalXY@{SignalXY}!LineStyle@{LineStyle}}
+\index{LineStyle@{LineStyle}!SignalXY@{SignalXY}}
+\doxysubsubsection{\texorpdfstring{LineStyle}{LineStyle}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classLineStyle}{Line\+Style}} Signal\+XY.\+Line\+Style = new() \{ Width = 1 \}\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classSignalXY_ade6fb303d03aa32f50e227d5c87f3321}\label{classSignalXY_ade6fb303d03aa32f50e227d5c87f3321}} 
+\index{SignalXY@{SignalXY}!LineWidth@{LineWidth}}
+\index{LineWidth@{LineWidth}!SignalXY@{SignalXY}}
+\doxysubsubsection{\texorpdfstring{LineWidth}{LineWidth}}
+{\footnotesize\ttfamily float Signal\+XY.\+Line\+Width\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classSignalXY_a237d749ad82f4ccfbf8db1407dca86ac}\label{classSignalXY_a237d749ad82f4ccfbf8db1407dca86ac}} 
+\index{SignalXY@{SignalXY}!MarkerColor@{MarkerColor}}
+\index{MarkerColor@{MarkerColor}!SignalXY@{SignalXY}}
+\doxysubsubsection{\texorpdfstring{MarkerColor}{MarkerColor}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structColor}{Color}} Signal\+XY.\+Marker\+Color\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classSignalXY_ab4cc5ff505790519f2a490f2fc014194}\label{classSignalXY_ab4cc5ff505790519f2a490f2fc014194}} 
+\index{SignalXY@{SignalXY}!MarkerFillColor@{MarkerFillColor}}
+\index{MarkerFillColor@{MarkerFillColor}!SignalXY@{SignalXY}}
+\doxysubsubsection{\texorpdfstring{MarkerFillColor}{MarkerFillColor}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structColor}{Color}} Signal\+XY.\+Marker\+Fill\+Color\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classSignalXY_ad2e2aaec74f1905bb1bb0197d68a9e2f}\label{classSignalXY_ad2e2aaec74f1905bb1bb0197d68a9e2f}} 
+\index{SignalXY@{SignalXY}!MarkerLineColor@{MarkerLineColor}}
+\index{MarkerLineColor@{MarkerLineColor}!SignalXY@{SignalXY}}
+\doxysubsubsection{\texorpdfstring{MarkerLineColor}{MarkerLineColor}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structColor}{Color}} Signal\+XY.\+Marker\+Line\+Color\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classSignalXY_a9124482a158ca8727388f3936083f85f}\label{classSignalXY_a9124482a158ca8727388f3936083f85f}} 
+\index{SignalXY@{SignalXY}!MarkerLineWidth@{MarkerLineWidth}}
+\index{MarkerLineWidth@{MarkerLineWidth}!SignalXY@{SignalXY}}
+\doxysubsubsection{\texorpdfstring{MarkerLineWidth}{MarkerLineWidth}}
+{\footnotesize\ttfamily float Signal\+XY.\+Marker\+Line\+Width\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classSignalXY_af633ef423b3ea7e94396e6572e799490}\label{classSignalXY_af633ef423b3ea7e94396e6572e799490}} 
+\index{SignalXY@{SignalXY}!MarkerShape@{MarkerShape}}
+\index{MarkerShape@{MarkerShape}!SignalXY@{SignalXY}}
+\doxysubsubsection{\texorpdfstring{MarkerShape}{MarkerShape}}
+{\footnotesize\ttfamily Marker\+Shape Signal\+XY.\+Marker\+Shape\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classSignalXY_ab48f0ffda7191b462eafdf7377831ddd}\label{classSignalXY_ab48f0ffda7191b462eafdf7377831ddd}} 
+\index{SignalXY@{SignalXY}!MarkerSize@{MarkerSize}}
+\index{MarkerSize@{MarkerSize}!SignalXY@{SignalXY}}
+\doxysubsubsection{\texorpdfstring{MarkerSize}{MarkerSize}}
+{\footnotesize\ttfamily float Signal\+XY.\+Marker\+Size\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classSignalXY_a59c2ab29ab2ddc78a5f7a39d492a7705}\label{classSignalXY_a59c2ab29ab2ddc78a5f7a39d492a7705}} 
+\index{SignalXY@{SignalXY}!MarkerStyle@{MarkerStyle}}
+\index{MarkerStyle@{MarkerStyle}!SignalXY@{SignalXY}}
+\doxysubsubsection{\texorpdfstring{MarkerStyle}{MarkerStyle}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classMarkerStyle}{Marker\+Style}} Signal\+XY.\+Marker\+Style = new() \{ Size = 0, Shape = Marker\+Shape.\+Filled\+Circle \}\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classSignalXY_aa9cb34628988ecc23ce1db5e8c8983b6}\label{classSignalXY_aa9cb34628988ecc23ce1db5e8c8983b6}} 
+\index{SignalXY@{SignalXY}!MaxRenderIndex@{MaxRenderIndex}}
+\index{MaxRenderIndex@{MaxRenderIndex}!SignalXY@{SignalXY}}
+\doxysubsubsection{\texorpdfstring{MaxRenderIndex}{MaxRenderIndex}}
+{\footnotesize\ttfamily int Signal\+XY.\+Max\+Render\+Index\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classSignalXY_a5827184b5dd9ee7c0cab22c1ab77ad21}\label{classSignalXY_a5827184b5dd9ee7c0cab22c1ab77ad21}} 
+\index{SignalXY@{SignalXY}!MinRenderIndex@{MinRenderIndex}}
+\index{MinRenderIndex@{MinRenderIndex}!SignalXY@{SignalXY}}
+\doxysubsubsection{\texorpdfstring{MinRenderIndex}{MinRenderIndex}}
+{\footnotesize\ttfamily int Signal\+XY.\+Min\+Render\+Index\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classSignalXY_a13acdd4c6e7bfa9be4f5fc0d1afb82b5}\label{classSignalXY_a13acdd4c6e7bfa9be4f5fc0d1afb82b5}} 
+\index{SignalXY@{SignalXY}!XAxisIndex@{XAxisIndex}}
+\index{XAxisIndex@{XAxisIndex}!SignalXY@{SignalXY}}
+\doxysubsubsection{\texorpdfstring{XAxisIndex}{XAxisIndex}}
+{\footnotesize\ttfamily int Signal\+XY.\+XAxis\+Index = 0\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classSignalXY_ae17589ba185b7d4f86d1fa0671ba6108}\label{classSignalXY_ae17589ba185b7d4f86d1fa0671ba6108}} 
+\index{SignalXY@{SignalXY}!YAxisIndex@{YAxisIndex}}
+\index{YAxisIndex@{YAxisIndex}!SignalXY@{SignalXY}}
+\doxysubsubsection{\texorpdfstring{YAxisIndex}{YAxisIndex}}
+{\footnotesize\ttfamily int Signal\+XY.\+YAxis\+Index = 0\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Plottables/Signal\+XY.\+cs\end{DoxyCompactItemize}

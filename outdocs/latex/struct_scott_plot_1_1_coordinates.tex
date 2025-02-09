@@ -1,0 +1,191 @@
+\doxysection{Scott\+Plot.\+Coordinates Struct Reference}
+\hypertarget{struct_scott_plot_1_1_coordinates}{}\label{struct_scott_plot_1_1_coordinates}\index{ScottPlot.Coordinates@{ScottPlot.Coordinates}}
+
+
+Represents a point in coordinate space (X and Y axis units)  
+
+
+Inheritance diagram for Scott\+Plot.\+Coordinates\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{struct_scott_plot_1_1_coordinates}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_coordinates_af8664a24f653bedf8d228237349bd070}{Coordinates}} (double x, double y)
+\item 
+double \mbox{\hyperlink{struct_scott_plot_1_1_coordinates_acd9e573a91350974f9f3b0a55e6c8e4c}{Distance\+Squared}} (\mbox{\hyperlink{struct_scott_plot_1_1_coordinates}{Coordinates}} pt)
+\item 
+double \mbox{\hyperlink{struct_scott_plot_1_1_coordinates_a6e0eb7fa5032a5b352d45ee00298f65e}{Distance}} (\mbox{\hyperlink{struct_scott_plot_1_1_coordinates}{Coordinates}} pt)
+\item 
+override string \mbox{\hyperlink{struct_scott_plot_1_1_coordinates_acd08eef637ee4e6829580fda3b1a2856}{To\+String}} ()
+\item 
+bool \mbox{\hyperlink{struct_scott_plot_1_1_coordinates_ac8c339a70a5b34f28fabd0cf678a2d59}{Equals}} (\mbox{\hyperlink{struct_scott_plot_1_1_coordinates}{Coordinates}} other)
+\item 
+override bool \mbox{\hyperlink{struct_scott_plot_1_1_coordinates_a2a0bae03faad2cb98c083df4a51f8bd2}{Equals}} (object? obj)
+\item 
+override int \mbox{\hyperlink{struct_scott_plot_1_1_coordinates_ac4a4df3ea019daf94a03a23a49e43611}{Get\+Hash\+Code}} ()
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_coordinate_rect}{Coordinate\+Rect}} \mbox{\hyperlink{struct_scott_plot_1_1_coordinates_a785d8181f99fdfcabec37c63c01e1a68}{To\+Rect}} (double radiusX, double radiusY)
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_coordinate_rect}{Coordinate\+Rect}} \mbox{\hyperlink{struct_scott_plot_1_1_coordinates_a72f35f8c1644500699b2ac6eb8898bec}{To\+Rect}} (double radius)
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_coordinates}{Coordinates}} \mbox{\hyperlink{struct_scott_plot_1_1_coordinates_a86e2566d5b2e95fd357443d89f4e833d}{With\+Delta}} (double dX, double dY)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{struct_scott_plot_1_1_coordinates_a0891d70b8c49a9125116d7d142a1f48c}{operator==}} (\mbox{\hyperlink{struct_scott_plot_1_1_coordinates}{Coordinates}} a, \mbox{\hyperlink{struct_scott_plot_1_1_coordinates}{Coordinates}} b)
+\item 
+static bool \mbox{\hyperlink{struct_scott_plot_1_1_coordinates_acb0d06ee6336ff72e8cd8762b0342676}{operator!=}} (\mbox{\hyperlink{struct_scott_plot_1_1_coordinates}{Coordinates}} a, \mbox{\hyperlink{struct_scott_plot_1_1_coordinates}{Coordinates}} b)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{struct_scott_plot_1_1_coordinates_aef144c0d314ce0ba376d9531e9b92e32}{X}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+double \mbox{\hyperlink{struct_scott_plot_1_1_coordinates_a4de0af551eba90d67c3e3e3f8fae0ee4}{Y}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+bool \mbox{\hyperlink{struct_scott_plot_1_1_coordinates_aca3186d70cd6459b627057300f6f5d7e}{Are\+Real}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+static \mbox{\hyperlink{struct_scott_plot_1_1_coordinates}{Coordinates}} \mbox{\hyperlink{struct_scott_plot_1_1_coordinates_a1e5c366b388b0685d2916c7788188223}{NaN}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+static \mbox{\hyperlink{struct_scott_plot_1_1_coordinates}{Coordinates}} \mbox{\hyperlink{struct_scott_plot_1_1_coordinates_a65ad3bb5090748c7a8ad103862559c4f}{Origin}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+static \mbox{\hyperlink{struct_scott_plot_1_1_coordinates}{Coordinates}} \mbox{\hyperlink{struct_scott_plot_1_1_coordinates_a1a72e63c10f29c5ba5c12b31a2fc1b6e}{Infinity}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_coordinates}{Coordinates}} \mbox{\hyperlink{struct_scott_plot_1_1_coordinates_a5a6177c091107552661bf90045b617e2}{Rotated}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a point in coordinate space (X and Y axis units) 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{struct_scott_plot_1_1_coordinates_af8664a24f653bedf8d228237349bd070}\index{ScottPlot.Coordinates@{ScottPlot.Coordinates}!Coordinates@{Coordinates}}
+\index{Coordinates@{Coordinates}!ScottPlot.Coordinates@{ScottPlot.Coordinates}}
+\doxysubsubsection{\texorpdfstring{Coordinates()}{Coordinates()}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_coordinates_af8664a24f653bedf8d228237349bd070} 
+Scott\+Plot.\+Coordinates.\+Coordinates (\begin{DoxyParamCaption}\item[{double}]{x}{, }\item[{double}]{y}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{struct_scott_plot_1_1_coordinates_a6e0eb7fa5032a5b352d45ee00298f65e}\index{ScottPlot.Coordinates@{ScottPlot.Coordinates}!Distance@{Distance}}
+\index{Distance@{Distance}!ScottPlot.Coordinates@{ScottPlot.Coordinates}}
+\doxysubsubsection{\texorpdfstring{Distance()}{Distance()}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_coordinates_a6e0eb7fa5032a5b352d45ee00298f65e} 
+double Scott\+Plot.\+Coordinates.\+Distance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_scott_plot_1_1_coordinates}{Coordinates}}}]{pt}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{struct_scott_plot_1_1_coordinates_acd9e573a91350974f9f3b0a55e6c8e4c}\index{ScottPlot.Coordinates@{ScottPlot.Coordinates}!DistanceSquared@{DistanceSquared}}
+\index{DistanceSquared@{DistanceSquared}!ScottPlot.Coordinates@{ScottPlot.Coordinates}}
+\doxysubsubsection{\texorpdfstring{DistanceSquared()}{DistanceSquared()}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_coordinates_acd9e573a91350974f9f3b0a55e6c8e4c} 
+double Scott\+Plot.\+Coordinates.\+Distance\+Squared (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_scott_plot_1_1_coordinates}{Coordinates}}}]{pt}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{struct_scott_plot_1_1_coordinates_ac8c339a70a5b34f28fabd0cf678a2d59}\index{ScottPlot.Coordinates@{ScottPlot.Coordinates}!Equals@{Equals}}
+\index{Equals@{Equals}!ScottPlot.Coordinates@{ScottPlot.Coordinates}}
+\doxysubsubsection{\texorpdfstring{Equals()}{Equals()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_coordinates_ac8c339a70a5b34f28fabd0cf678a2d59} 
+bool Scott\+Plot.\+Coordinates.\+Equals (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_scott_plot_1_1_coordinates}{Coordinates}}}]{other}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{struct_scott_plot_1_1_coordinates_a2a0bae03faad2cb98c083df4a51f8bd2}\index{ScottPlot.Coordinates@{ScottPlot.Coordinates}!Equals@{Equals}}
+\index{Equals@{Equals}!ScottPlot.Coordinates@{ScottPlot.Coordinates}}
+\doxysubsubsection{\texorpdfstring{Equals()}{Equals()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_coordinates_a2a0bae03faad2cb98c083df4a51f8bd2} 
+override bool Scott\+Plot.\+Coordinates.\+Equals (\begin{DoxyParamCaption}\item[{object?}]{obj}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{struct_scott_plot_1_1_coordinates_ac4a4df3ea019daf94a03a23a49e43611}\index{ScottPlot.Coordinates@{ScottPlot.Coordinates}!GetHashCode@{GetHashCode}}
+\index{GetHashCode@{GetHashCode}!ScottPlot.Coordinates@{ScottPlot.Coordinates}}
+\doxysubsubsection{\texorpdfstring{GetHashCode()}{GetHashCode()}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_coordinates_ac4a4df3ea019daf94a03a23a49e43611} 
+override int Scott\+Plot.\+Coordinates.\+Get\+Hash\+Code (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{struct_scott_plot_1_1_coordinates_acb0d06ee6336ff72e8cd8762b0342676}\index{ScottPlot.Coordinates@{ScottPlot.Coordinates}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!ScottPlot.Coordinates@{ScottPlot.Coordinates}}
+\doxysubsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_coordinates_acb0d06ee6336ff72e8cd8762b0342676} 
+static bool Scott\+Plot.\+Coordinates.\+operator!= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_scott_plot_1_1_coordinates}{Coordinates}}}]{a}{, }\item[{\mbox{\hyperlink{struct_scott_plot_1_1_coordinates}{Coordinates}}}]{b}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\Hypertarget{struct_scott_plot_1_1_coordinates_a0891d70b8c49a9125116d7d142a1f48c}\index{ScottPlot.Coordinates@{ScottPlot.Coordinates}!operator==@{operator==}}
+\index{operator==@{operator==}!ScottPlot.Coordinates@{ScottPlot.Coordinates}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_coordinates_a0891d70b8c49a9125116d7d142a1f48c} 
+static bool Scott\+Plot.\+Coordinates.\+operator== (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_scott_plot_1_1_coordinates}{Coordinates}}}]{a}{, }\item[{\mbox{\hyperlink{struct_scott_plot_1_1_coordinates}{Coordinates}}}]{b}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\Hypertarget{struct_scott_plot_1_1_coordinates_a72f35f8c1644500699b2ac6eb8898bec}\index{ScottPlot.Coordinates@{ScottPlot.Coordinates}!ToRect@{ToRect}}
+\index{ToRect@{ToRect}!ScottPlot.Coordinates@{ScottPlot.Coordinates}}
+\doxysubsubsection{\texorpdfstring{ToRect()}{ToRect()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_coordinates_a72f35f8c1644500699b2ac6eb8898bec} 
+\mbox{\hyperlink{struct_scott_plot_1_1_coordinate_rect}{Coordinate\+Rect}} Scott\+Plot.\+Coordinates.\+To\+Rect (\begin{DoxyParamCaption}\item[{double}]{radius}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{struct_scott_plot_1_1_coordinates_a785d8181f99fdfcabec37c63c01e1a68}\index{ScottPlot.Coordinates@{ScottPlot.Coordinates}!ToRect@{ToRect}}
+\index{ToRect@{ToRect}!ScottPlot.Coordinates@{ScottPlot.Coordinates}}
+\doxysubsubsection{\texorpdfstring{ToRect()}{ToRect()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_coordinates_a785d8181f99fdfcabec37c63c01e1a68} 
+\mbox{\hyperlink{struct_scott_plot_1_1_coordinate_rect}{Coordinate\+Rect}} Scott\+Plot.\+Coordinates.\+To\+Rect (\begin{DoxyParamCaption}\item[{double}]{radiusX}{, }\item[{double}]{radiusY}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{struct_scott_plot_1_1_coordinates_acd08eef637ee4e6829580fda3b1a2856}\index{ScottPlot.Coordinates@{ScottPlot.Coordinates}!ToString@{ToString}}
+\index{ToString@{ToString}!ScottPlot.Coordinates@{ScottPlot.Coordinates}}
+\doxysubsubsection{\texorpdfstring{ToString()}{ToString()}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_coordinates_acd08eef637ee4e6829580fda3b1a2856} 
+override string Scott\+Plot.\+Coordinates.\+To\+String (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{struct_scott_plot_1_1_coordinates_a86e2566d5b2e95fd357443d89f4e833d}\index{ScottPlot.Coordinates@{ScottPlot.Coordinates}!WithDelta@{WithDelta}}
+\index{WithDelta@{WithDelta}!ScottPlot.Coordinates@{ScottPlot.Coordinates}}
+\doxysubsubsection{\texorpdfstring{WithDelta()}{WithDelta()}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_coordinates_a86e2566d5b2e95fd357443d89f4e833d} 
+\mbox{\hyperlink{struct_scott_plot_1_1_coordinates}{Coordinates}} Scott\+Plot.\+Coordinates.\+With\+Delta (\begin{DoxyParamCaption}\item[{double}]{dX}{, }\item[{double}]{dY}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{struct_scott_plot_1_1_coordinates_aca3186d70cd6459b627057300f6f5d7e}\index{ScottPlot.Coordinates@{ScottPlot.Coordinates}!AreReal@{AreReal}}
+\index{AreReal@{AreReal}!ScottPlot.Coordinates@{ScottPlot.Coordinates}}
+\doxysubsubsection{\texorpdfstring{AreReal}{AreReal}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_coordinates_aca3186d70cd6459b627057300f6f5d7e} 
+bool Scott\+Plot.\+Coordinates.\+Are\+Real\hspace{0.3cm}{\ttfamily [get]}}
+
+\Hypertarget{struct_scott_plot_1_1_coordinates_a1a72e63c10f29c5ba5c12b31a2fc1b6e}\index{ScottPlot.Coordinates@{ScottPlot.Coordinates}!Infinity@{Infinity}}
+\index{Infinity@{Infinity}!ScottPlot.Coordinates@{ScottPlot.Coordinates}}
+\doxysubsubsection{\texorpdfstring{Infinity}{Infinity}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_coordinates_a1a72e63c10f29c5ba5c12b31a2fc1b6e} 
+\mbox{\hyperlink{struct_scott_plot_1_1_coordinates}{Coordinates}} Scott\+Plot.\+Coordinates.\+Infinity\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+\Hypertarget{struct_scott_plot_1_1_coordinates_a1e5c366b388b0685d2916c7788188223}\index{ScottPlot.Coordinates@{ScottPlot.Coordinates}!NaN@{NaN}}
+\index{NaN@{NaN}!ScottPlot.Coordinates@{ScottPlot.Coordinates}}
+\doxysubsubsection{\texorpdfstring{NaN}{NaN}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_coordinates_a1e5c366b388b0685d2916c7788188223} 
+\mbox{\hyperlink{struct_scott_plot_1_1_coordinates}{Coordinates}} Scott\+Plot.\+Coordinates.\+NaN\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+\Hypertarget{struct_scott_plot_1_1_coordinates_a65ad3bb5090748c7a8ad103862559c4f}\index{ScottPlot.Coordinates@{ScottPlot.Coordinates}!Origin@{Origin}}
+\index{Origin@{Origin}!ScottPlot.Coordinates@{ScottPlot.Coordinates}}
+\doxysubsubsection{\texorpdfstring{Origin}{Origin}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_coordinates_a65ad3bb5090748c7a8ad103862559c4f} 
+\mbox{\hyperlink{struct_scott_plot_1_1_coordinates}{Coordinates}} Scott\+Plot.\+Coordinates.\+Origin\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+\Hypertarget{struct_scott_plot_1_1_coordinates_a5a6177c091107552661bf90045b617e2}\index{ScottPlot.Coordinates@{ScottPlot.Coordinates}!Rotated@{Rotated}}
+\index{Rotated@{Rotated}!ScottPlot.Coordinates@{ScottPlot.Coordinates}}
+\doxysubsubsection{\texorpdfstring{Rotated}{Rotated}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_coordinates_a5a6177c091107552661bf90045b617e2} 
+\mbox{\hyperlink{struct_scott_plot_1_1_coordinates}{Coordinates}} Scott\+Plot.\+Coordinates.\+Rotated\hspace{0.3cm}{\ttfamily [get]}}
+
+\Hypertarget{struct_scott_plot_1_1_coordinates_aef144c0d314ce0ba376d9531e9b92e32}\index{ScottPlot.Coordinates@{ScottPlot.Coordinates}!X@{X}}
+\index{X@{X}!ScottPlot.Coordinates@{ScottPlot.Coordinates}}
+\doxysubsubsection{\texorpdfstring{X}{X}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_coordinates_aef144c0d314ce0ba376d9531e9b92e32} 
+double Scott\+Plot.\+Coordinates.\+X\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{struct_scott_plot_1_1_coordinates_a4de0af551eba90d67c3e3e3f8fae0ee4}\index{ScottPlot.Coordinates@{ScottPlot.Coordinates}!Y@{Y}}
+\index{Y@{Y}!ScottPlot.Coordinates@{ScottPlot.Coordinates}}
+\doxysubsubsection{\texorpdfstring{Y}{Y}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_coordinates_a4de0af551eba90d67c3e3e3f8fae0ee4} 
+double Scott\+Plot.\+Coordinates.\+Y\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Primitives/Coordinates.\+cs\end{DoxyCompactItemize}

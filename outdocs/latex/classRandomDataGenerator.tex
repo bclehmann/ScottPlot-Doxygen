@@ -1,0 +1,266 @@
+\hypertarget{classRandomDataGenerator}{}\doxysection{Random\+Data\+Generator Class Reference}
+\label{classRandomDataGenerator}\index{RandomDataGenerator@{RandomDataGenerator}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classRandomDataGenerator_a9232d6210a7199ade9e61242952e63cc}{Random\+Data\+Generator}} (int? seed=null)
+\begin{DoxyCompactList}\small\item\em Create a random number generator. The seed is random by default, but could be fixed to the defined value \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classRandomDataGenerator_ac07e48ca5ae4faaa7c8ee42809b67783}{Seed}} (int seed)
+\item 
+double \mbox{\hyperlink{classRandomDataGenerator_ab6f34760bd7cb6864702381cd7d515c3}{Random\+Number}} ()
+\begin{DoxyCompactList}\small\item\em Return a uniformly random number between 0 (inclusive) and 1 (exclusive) \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classRandomDataGenerator_a3256dee4183b73116c995118f11a751c}{Random\+Number}} (double max)
+\begin{DoxyCompactList}\small\item\em Return a uniformly random number between 0 (inclusive) and {\itshape max}  (exclusive) \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classRandomDataGenerator_af6f1e86549c8ef99ae493f0b85becf59}{Random\+Number}} (double min, double max)
+\begin{DoxyCompactList}\small\item\em Return a uniformly random number between {\itshape min}  (inclusive) and {\itshape max}  (exclusive) \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classRandomDataGenerator_aa7378d80f6699383ab28b9551639b9aa}{Random\+Non\+Zero\+Number}} (double max=1)
+\begin{DoxyCompactList}\small\item\em Return a random number guaranteed not to be zero \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classRandomDataGenerator_a193fba511d170d3343552be6ea13b978}{Random\+Integer}} ()
+\begin{DoxyCompactList}\small\item\em Return a random integer up to the maximum integer size \end{DoxyCompactList}\item 
+byte \mbox{\hyperlink{classRandomDataGenerator_a744e996118690c105300ca2def6acee5}{Random\+Byte}} ()
+\begin{DoxyCompactList}\small\item\em Return a random byte (0-\/255) \end{DoxyCompactList}\item 
+byte \mbox{\hyperlink{classRandomDataGenerator_ae35510a1af8dc1ef0895461f01b6b622}{Random\+Byte}} (byte min, byte max)
+\begin{DoxyCompactList}\small\item\em Return a random byte between the given values (inclusive) \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classRandomDataGenerator_a9e7afd9b22d0aff27640c281fb80e575}{Random\+Integer}} (int max)
+\begin{DoxyCompactList}\small\item\em Return a random integer between zero (inclusive) and {\itshape max}  (exclusive) \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classRandomDataGenerator_a6c032feebc5fb9eaef8300a35f7d46a3}{Random\+Integer}} (int min, int max)
+\begin{DoxyCompactList}\small\item\em Return a random integer between {\itshape min}  (inclusive) and {\itshape max}  (exclusive) \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classRandomDataGenerator_aee1596dd257f6116c2fde3ff999d2285}{Random\+Normal\+Number}} (double mean=0, double std\+Dev=1)
+\begin{DoxyCompactList}\small\item\em Return a number normally distributed around the given {\itshape mean}  according to the {\itshape std\+Dev}  standard deviation. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classRandomDataGenerator_a1319846839adf35234b697925855a993}{Add\+Noise\+In\+Place}} (double\mbox{[}$\,$\mbox{]} values, double magnitude)
+\begin{DoxyCompactList}\small\item\em Mutate the given array by adding noise (± magnitude) and return it \end{DoxyCompactList}\item 
+double\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classRandomDataGenerator_a7a5d0cc572833c6498d0361ab4558415}{Add\+Noise}} (double\mbox{[}$\,$\mbox{]} input, double magnitude)
+\begin{DoxyCompactList}\small\item\em Return a copy of the given data with random noise added (± magnitude) \end{DoxyCompactList}\item 
+double\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classRandomDataGenerator_ae5445496cd2f655a9b3253367f5262ad}{Random\+Sample}} (int count, double mult=1, double offset=0)
+\begin{DoxyCompactList}\small\item\em Uniformly distributed random numbers between 0 and 1 (multiplied by {\itshape mult}  then added to {\itshape offset} ). \end{DoxyCompactList}\item 
+double\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classRandomDataGenerator_a72890bbac583a811bed6b5af0e7150a9}{Random\+Normal\+Sample}} (int count, double mean=0, double std\+Dev=1)
+\begin{DoxyCompactList}\small\item\em Return a collection of numbers normally distributed around the given {\itshape mean}  according to the {\itshape std\+Dev}  standard deviation. \end{DoxyCompactList}\item 
+double\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classRandomDataGenerator_a3d1fc50f0fffb27cf4bc21b6262e9ad1}{Random\+Sin}} (int count)
+\begin{DoxyCompactList}\small\item\em Sine wave with random frequency, amplitude, and phase \end{DoxyCompactList}\item 
+double\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classRandomDataGenerator_abafcbb5123091b96ec93e50a312b2c1b}{Random\+Walk}} (int count, double mult=1, double offset=0, double slope=0)
+\begin{DoxyCompactList}\small\item\em A sequence of numbers that starts at {\itshape offset}  and \char`\"{}walks\char`\"{} randomly from one point to the next, scaled by {\itshape mult}  with an approximate slope of {\itshape slope} . \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{structOHLC}{OHLC}} $>$ \mbox{\hyperlink{classRandomDataGenerator_a979605dbfb168f3a67b3a2621e343be2}{Random\+OHLCs}} (int count)
+\begin{DoxyCompactList}\small\item\em Return a collection OHLCs representing random price action \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{structOHLC}{OHLC}} $>$ \mbox{\hyperlink{classRandomDataGenerator_ab2030950736a7468b889a5b8c665b8fd}{Random\+OHLCs}} (int count, Date\+Time start)
+\begin{DoxyCompactList}\small\item\em Return a collection OHLCs representing random price action \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classRandomDataGenerator}{Random\+Data\+Generator}} \mbox{\hyperlink{classRandomDataGenerator_adfe124834f9f1539457b675ef99242fd}{Generate}} = new(0)\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classRandomDataGenerator_a9232d6210a7199ade9e61242952e63cc}\label{classRandomDataGenerator_a9232d6210a7199ade9e61242952e63cc}} 
+\index{RandomDataGenerator@{RandomDataGenerator}!RandomDataGenerator@{RandomDataGenerator}}
+\index{RandomDataGenerator@{RandomDataGenerator}!RandomDataGenerator@{RandomDataGenerator}}
+\doxysubsubsection{\texorpdfstring{RandomDataGenerator()}{RandomDataGenerator()}}
+{\footnotesize\ttfamily Random\+Data\+Generator.\+Random\+Data\+Generator (\begin{DoxyParamCaption}\item[{int?}]{seed = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Create a random number generator. The seed is random by default, but could be fixed to the defined value 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classRandomDataGenerator_a7a5d0cc572833c6498d0361ab4558415}\label{classRandomDataGenerator_a7a5d0cc572833c6498d0361ab4558415}} 
+\index{RandomDataGenerator@{RandomDataGenerator}!AddNoise@{AddNoise}}
+\index{AddNoise@{AddNoise}!RandomDataGenerator@{RandomDataGenerator}}
+\doxysubsubsection{\texorpdfstring{AddNoise()}{AddNoise()}}
+{\footnotesize\ttfamily double \mbox{[}$\,$\mbox{]} Random\+Data\+Generator.\+Add\+Noise (\begin{DoxyParamCaption}\item[{double\mbox{[}$\,$\mbox{]}}]{input,  }\item[{double}]{magnitude }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return a copy of the given data with random noise added (± magnitude) 
+
+\mbox{\Hypertarget{classRandomDataGenerator_a1319846839adf35234b697925855a993}\label{classRandomDataGenerator_a1319846839adf35234b697925855a993}} 
+\index{RandomDataGenerator@{RandomDataGenerator}!AddNoiseInPlace@{AddNoiseInPlace}}
+\index{AddNoiseInPlace@{AddNoiseInPlace}!RandomDataGenerator@{RandomDataGenerator}}
+\doxysubsubsection{\texorpdfstring{AddNoiseInPlace()}{AddNoiseInPlace()}}
+{\footnotesize\ttfamily void Random\+Data\+Generator.\+Add\+Noise\+In\+Place (\begin{DoxyParamCaption}\item[{double\mbox{[}$\,$\mbox{]}}]{values,  }\item[{double}]{magnitude }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Mutate the given array by adding noise (± magnitude) and return it 
+
+\mbox{\Hypertarget{classRandomDataGenerator_a744e996118690c105300ca2def6acee5}\label{classRandomDataGenerator_a744e996118690c105300ca2def6acee5}} 
+\index{RandomDataGenerator@{RandomDataGenerator}!RandomByte@{RandomByte}}
+\index{RandomByte@{RandomByte}!RandomDataGenerator@{RandomDataGenerator}}
+\doxysubsubsection{\texorpdfstring{RandomByte()}{RandomByte()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily byte Random\+Data\+Generator.\+Random\+Byte (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return a random byte (0-\/255) 
+
+\mbox{\Hypertarget{classRandomDataGenerator_ae35510a1af8dc1ef0895461f01b6b622}\label{classRandomDataGenerator_ae35510a1af8dc1ef0895461f01b6b622}} 
+\index{RandomDataGenerator@{RandomDataGenerator}!RandomByte@{RandomByte}}
+\index{RandomByte@{RandomByte}!RandomDataGenerator@{RandomDataGenerator}}
+\doxysubsubsection{\texorpdfstring{RandomByte()}{RandomByte()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily byte Random\+Data\+Generator.\+Random\+Byte (\begin{DoxyParamCaption}\item[{byte}]{min,  }\item[{byte}]{max }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return a random byte between the given values (inclusive) 
+
+\mbox{\Hypertarget{classRandomDataGenerator_a193fba511d170d3343552be6ea13b978}\label{classRandomDataGenerator_a193fba511d170d3343552be6ea13b978}} 
+\index{RandomDataGenerator@{RandomDataGenerator}!RandomInteger@{RandomInteger}}
+\index{RandomInteger@{RandomInteger}!RandomDataGenerator@{RandomDataGenerator}}
+\doxysubsubsection{\texorpdfstring{RandomInteger()}{RandomInteger()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily int Random\+Data\+Generator.\+Random\+Integer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return a random integer up to the maximum integer size 
+
+\mbox{\Hypertarget{classRandomDataGenerator_a9e7afd9b22d0aff27640c281fb80e575}\label{classRandomDataGenerator_a9e7afd9b22d0aff27640c281fb80e575}} 
+\index{RandomDataGenerator@{RandomDataGenerator}!RandomInteger@{RandomInteger}}
+\index{RandomInteger@{RandomInteger}!RandomDataGenerator@{RandomDataGenerator}}
+\doxysubsubsection{\texorpdfstring{RandomInteger()}{RandomInteger()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily int Random\+Data\+Generator.\+Random\+Integer (\begin{DoxyParamCaption}\item[{int}]{max }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return a random integer between zero (inclusive) and {\itshape max}  (exclusive) 
+
+\mbox{\Hypertarget{classRandomDataGenerator_a6c032feebc5fb9eaef8300a35f7d46a3}\label{classRandomDataGenerator_a6c032feebc5fb9eaef8300a35f7d46a3}} 
+\index{RandomDataGenerator@{RandomDataGenerator}!RandomInteger@{RandomInteger}}
+\index{RandomInteger@{RandomInteger}!RandomDataGenerator@{RandomDataGenerator}}
+\doxysubsubsection{\texorpdfstring{RandomInteger()}{RandomInteger()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily int Random\+Data\+Generator.\+Random\+Integer (\begin{DoxyParamCaption}\item[{int}]{min,  }\item[{int}]{max }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return a random integer between {\itshape min}  (inclusive) and {\itshape max}  (exclusive) 
+
+\mbox{\Hypertarget{classRandomDataGenerator_aa7378d80f6699383ab28b9551639b9aa}\label{classRandomDataGenerator_aa7378d80f6699383ab28b9551639b9aa}} 
+\index{RandomDataGenerator@{RandomDataGenerator}!RandomNonZeroNumber@{RandomNonZeroNumber}}
+\index{RandomNonZeroNumber@{RandomNonZeroNumber}!RandomDataGenerator@{RandomDataGenerator}}
+\doxysubsubsection{\texorpdfstring{RandomNonZeroNumber()}{RandomNonZeroNumber()}}
+{\footnotesize\ttfamily double Random\+Data\+Generator.\+Random\+Non\+Zero\+Number (\begin{DoxyParamCaption}\item[{double}]{max = {\ttfamily 1} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return a random number guaranteed not to be zero 
+
+\mbox{\Hypertarget{classRandomDataGenerator_aee1596dd257f6116c2fde3ff999d2285}\label{classRandomDataGenerator_aee1596dd257f6116c2fde3ff999d2285}} 
+\index{RandomDataGenerator@{RandomDataGenerator}!RandomNormalNumber@{RandomNormalNumber}}
+\index{RandomNormalNumber@{RandomNormalNumber}!RandomDataGenerator@{RandomDataGenerator}}
+\doxysubsubsection{\texorpdfstring{RandomNormalNumber()}{RandomNormalNumber()}}
+{\footnotesize\ttfamily double Random\+Data\+Generator.\+Random\+Normal\+Number (\begin{DoxyParamCaption}\item[{double}]{mean = {\ttfamily 0},  }\item[{double}]{std\+Dev = {\ttfamily 1} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return a number normally distributed around the given {\itshape mean}  according to the {\itshape std\+Dev}  standard deviation. 
+
+\mbox{\Hypertarget{classRandomDataGenerator_a72890bbac583a811bed6b5af0e7150a9}\label{classRandomDataGenerator_a72890bbac583a811bed6b5af0e7150a9}} 
+\index{RandomDataGenerator@{RandomDataGenerator}!RandomNormalSample@{RandomNormalSample}}
+\index{RandomNormalSample@{RandomNormalSample}!RandomDataGenerator@{RandomDataGenerator}}
+\doxysubsubsection{\texorpdfstring{RandomNormalSample()}{RandomNormalSample()}}
+{\footnotesize\ttfamily double \mbox{[}$\,$\mbox{]} Random\+Data\+Generator.\+Random\+Normal\+Sample (\begin{DoxyParamCaption}\item[{int}]{count,  }\item[{double}]{mean = {\ttfamily 0},  }\item[{double}]{std\+Dev = {\ttfamily 1} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return a collection of numbers normally distributed around the given {\itshape mean}  according to the {\itshape std\+Dev}  standard deviation. 
+
+\mbox{\Hypertarget{classRandomDataGenerator_ab6f34760bd7cb6864702381cd7d515c3}\label{classRandomDataGenerator_ab6f34760bd7cb6864702381cd7d515c3}} 
+\index{RandomDataGenerator@{RandomDataGenerator}!RandomNumber@{RandomNumber}}
+\index{RandomNumber@{RandomNumber}!RandomDataGenerator@{RandomDataGenerator}}
+\doxysubsubsection{\texorpdfstring{RandomNumber()}{RandomNumber()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily double Random\+Data\+Generator.\+Random\+Number (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return a uniformly random number between 0 (inclusive) and 1 (exclusive) 
+
+\mbox{\Hypertarget{classRandomDataGenerator_a3256dee4183b73116c995118f11a751c}\label{classRandomDataGenerator_a3256dee4183b73116c995118f11a751c}} 
+\index{RandomDataGenerator@{RandomDataGenerator}!RandomNumber@{RandomNumber}}
+\index{RandomNumber@{RandomNumber}!RandomDataGenerator@{RandomDataGenerator}}
+\doxysubsubsection{\texorpdfstring{RandomNumber()}{RandomNumber()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily double Random\+Data\+Generator.\+Random\+Number (\begin{DoxyParamCaption}\item[{double}]{max }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return a uniformly random number between 0 (inclusive) and {\itshape max}  (exclusive) 
+
+\mbox{\Hypertarget{classRandomDataGenerator_af6f1e86549c8ef99ae493f0b85becf59}\label{classRandomDataGenerator_af6f1e86549c8ef99ae493f0b85becf59}} 
+\index{RandomDataGenerator@{RandomDataGenerator}!RandomNumber@{RandomNumber}}
+\index{RandomNumber@{RandomNumber}!RandomDataGenerator@{RandomDataGenerator}}
+\doxysubsubsection{\texorpdfstring{RandomNumber()}{RandomNumber()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily double Random\+Data\+Generator.\+Random\+Number (\begin{DoxyParamCaption}\item[{double}]{min,  }\item[{double}]{max }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return a uniformly random number between {\itshape min}  (inclusive) and {\itshape max}  (exclusive) 
+
+\mbox{\Hypertarget{classRandomDataGenerator_a979605dbfb168f3a67b3a2621e343be2}\label{classRandomDataGenerator_a979605dbfb168f3a67b3a2621e343be2}} 
+\index{RandomDataGenerator@{RandomDataGenerator}!RandomOHLCs@{RandomOHLCs}}
+\index{RandomOHLCs@{RandomOHLCs}!RandomDataGenerator@{RandomDataGenerator}}
+\doxysubsubsection{\texorpdfstring{RandomOHLCs()}{RandomOHLCs()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{structOHLC}{OHLC}}$>$ Random\+Data\+Generator.\+Random\+OHLCs (\begin{DoxyParamCaption}\item[{int}]{count }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return a collection OHLCs representing random price action 
+
+\mbox{\Hypertarget{classRandomDataGenerator_ab2030950736a7468b889a5b8c665b8fd}\label{classRandomDataGenerator_ab2030950736a7468b889a5b8c665b8fd}} 
+\index{RandomDataGenerator@{RandomDataGenerator}!RandomOHLCs@{RandomOHLCs}}
+\index{RandomOHLCs@{RandomOHLCs}!RandomDataGenerator@{RandomDataGenerator}}
+\doxysubsubsection{\texorpdfstring{RandomOHLCs()}{RandomOHLCs()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{structOHLC}{OHLC}}$>$ Random\+Data\+Generator.\+Random\+OHLCs (\begin{DoxyParamCaption}\item[{int}]{count,  }\item[{Date\+Time}]{start }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return a collection OHLCs representing random price action 
+
+\mbox{\Hypertarget{classRandomDataGenerator_ae5445496cd2f655a9b3253367f5262ad}\label{classRandomDataGenerator_ae5445496cd2f655a9b3253367f5262ad}} 
+\index{RandomDataGenerator@{RandomDataGenerator}!RandomSample@{RandomSample}}
+\index{RandomSample@{RandomSample}!RandomDataGenerator@{RandomDataGenerator}}
+\doxysubsubsection{\texorpdfstring{RandomSample()}{RandomSample()}}
+{\footnotesize\ttfamily double \mbox{[}$\,$\mbox{]} Random\+Data\+Generator.\+Random\+Sample (\begin{DoxyParamCaption}\item[{int}]{count,  }\item[{double}]{mult = {\ttfamily 1},  }\item[{double}]{offset = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Uniformly distributed random numbers between 0 and 1 (multiplied by {\itshape mult}  then added to {\itshape offset} ). 
+
+\mbox{\Hypertarget{classRandomDataGenerator_a3d1fc50f0fffb27cf4bc21b6262e9ad1}\label{classRandomDataGenerator_a3d1fc50f0fffb27cf4bc21b6262e9ad1}} 
+\index{RandomDataGenerator@{RandomDataGenerator}!RandomSin@{RandomSin}}
+\index{RandomSin@{RandomSin}!RandomDataGenerator@{RandomDataGenerator}}
+\doxysubsubsection{\texorpdfstring{RandomSin()}{RandomSin()}}
+{\footnotesize\ttfamily double \mbox{[}$\,$\mbox{]} Random\+Data\+Generator.\+Random\+Sin (\begin{DoxyParamCaption}\item[{int}]{count }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sine wave with random frequency, amplitude, and phase 
+
+\mbox{\Hypertarget{classRandomDataGenerator_abafcbb5123091b96ec93e50a312b2c1b}\label{classRandomDataGenerator_abafcbb5123091b96ec93e50a312b2c1b}} 
+\index{RandomDataGenerator@{RandomDataGenerator}!RandomWalk@{RandomWalk}}
+\index{RandomWalk@{RandomWalk}!RandomDataGenerator@{RandomDataGenerator}}
+\doxysubsubsection{\texorpdfstring{RandomWalk()}{RandomWalk()}}
+{\footnotesize\ttfamily double \mbox{[}$\,$\mbox{]} Random\+Data\+Generator.\+Random\+Walk (\begin{DoxyParamCaption}\item[{int}]{count,  }\item[{double}]{mult = {\ttfamily 1},  }\item[{double}]{offset = {\ttfamily 0},  }\item[{double}]{slope = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+A sequence of numbers that starts at {\itshape offset}  and \char`\"{}walks\char`\"{} randomly from one point to the next, scaled by {\itshape mult}  with an approximate slope of {\itshape slope} . 
+
+\mbox{\Hypertarget{classRandomDataGenerator_ac07e48ca5ae4faaa7c8ee42809b67783}\label{classRandomDataGenerator_ac07e48ca5ae4faaa7c8ee42809b67783}} 
+\index{RandomDataGenerator@{RandomDataGenerator}!Seed@{Seed}}
+\index{Seed@{Seed}!RandomDataGenerator@{RandomDataGenerator}}
+\doxysubsubsection{\texorpdfstring{Seed()}{Seed()}}
+{\footnotesize\ttfamily void Random\+Data\+Generator.\+Seed (\begin{DoxyParamCaption}\item[{int}]{seed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{classRandomDataGenerator_adfe124834f9f1539457b675ef99242fd}\label{classRandomDataGenerator_adfe124834f9f1539457b675ef99242fd}} 
+\index{RandomDataGenerator@{RandomDataGenerator}!Generate@{Generate}}
+\index{Generate@{Generate}!RandomDataGenerator@{RandomDataGenerator}}
+\doxysubsubsection{\texorpdfstring{Generate}{Generate}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classRandomDataGenerator}{Random\+Data\+Generator}} Random\+Data\+Generator.\+Generate = new(0)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/Random\+Data\+Generator.\+cs\end{DoxyCompactItemize}

@@ -1,0 +1,159 @@
+\hypertarget{interfaceIAxes}{}\doxysection{IAxes Interface Reference}
+\label{interfaceIAxes}\index{IAxes@{IAxes}}
+
+
+This interface describes a pair of 1D axes. It is intended to be stored inside \mbox{\hyperlink{interfaceIPlottable}{IPlottable}} objects, defining which axes they use and providing logic for coordinate/pixel conversions.  
+
+
+Inheritance diagram for IAxes\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interfaceIAxes}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structPixelRect}{Pixel\+Rect}} \mbox{\hyperlink{interfaceIAxes_a1d7c87b248a9ba04cd89a035eb9264e6}{Get\+Pixel\+Rect}} (\mbox{\hyperlink{structCoordinateRect}{Coordinate\+Rect}} rect)
+\item 
+\mbox{\hyperlink{structPixelLine}{Pixel\+Line}} \mbox{\hyperlink{interfaceIAxes_ac0d2b9af3766c6c339ee0d8d51d073da}{Get\+Pixel\+Line}} (\mbox{\hyperlink{structCoordinateLine}{Coordinate\+Line}} rect)
+\item 
+\mbox{\hyperlink{structPixel}{Pixel}} \mbox{\hyperlink{interfaceIAxes_a4c814f41677e9447e3fc992d95305637}{Get\+Pixel}} (\mbox{\hyperlink{structCoordinates}{Coordinates}} coordinates)
+\item 
+float \mbox{\hyperlink{interfaceIAxes_a769c5a80e5886fd81f74b7192e4c9937}{Get\+PixelX}} (double x\+Coordinate)
+\item 
+float \mbox{\hyperlink{interfaceIAxes_aa2ae897f96e089fd0adc49905395bd12}{Get\+PixelY}} (double y\+Coordinate)
+\item 
+\mbox{\hyperlink{structCoordinates}{Coordinates}} \mbox{\hyperlink{interfaceIAxes_abf921d6c621dca6ed0e2d07b2444c9d8}{Get\+Coordinates}} (\mbox{\hyperlink{structPixel}{Pixel}} pixel)
+\item 
+double \mbox{\hyperlink{interfaceIAxes_a36469ed55ea0bedafeedc5e2b452a341}{Get\+CoordinateX}} (float pixel)
+\item 
+double \mbox{\hyperlink{interfaceIAxes_ae72cf39bad7065ae044ac6b951856779}{Get\+CoordinateY}} (float pixel)
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structPixelRect}{Pixel\+Rect}} \mbox{\hyperlink{interfaceIAxes_ae8d83b9f7f2a466695fdfa94ee861267}{Data\+Rect}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Describes the region in the center of the figure where plottable data will be displayed. This region is set by the renderer immediately before a Plottable\textquotesingle{}s Render() method is called. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{interfaceIXAxis}{IXAxis}} \mbox{\hyperlink{interfaceIAxes_a8753ab69facf4cbaf412e90d32cca8d7}{XAxis}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{interfaceIYAxis}{IYAxis}} \mbox{\hyperlink{interfaceIAxes_a64ced68339a034571898082ead0158aa}{YAxis}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This interface describes a pair of 1D axes. It is intended to be stored inside \mbox{\hyperlink{interfaceIPlottable}{IPlottable}} objects, defining which axes they use and providing logic for coordinate/pixel conversions. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{interfaceIAxes_abf921d6c621dca6ed0e2d07b2444c9d8}\label{interfaceIAxes_abf921d6c621dca6ed0e2d07b2444c9d8}} 
+\index{IAxes@{IAxes}!GetCoordinates@{GetCoordinates}}
+\index{GetCoordinates@{GetCoordinates}!IAxes@{IAxes}}
+\doxysubsubsection{\texorpdfstring{GetCoordinates()}{GetCoordinates()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structCoordinates}{Coordinates}} IAxes.\+Get\+Coordinates (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPixel}{Pixel}}}]{pixel }\end{DoxyParamCaption})}
+
+
+
+Implemented in \mbox{\hyperlink{classAxes_aedfdf488a7bb379dcd2fec707558141e}{Axes}}.
+
+\mbox{\Hypertarget{interfaceIAxes_a36469ed55ea0bedafeedc5e2b452a341}\label{interfaceIAxes_a36469ed55ea0bedafeedc5e2b452a341}} 
+\index{IAxes@{IAxes}!GetCoordinateX@{GetCoordinateX}}
+\index{GetCoordinateX@{GetCoordinateX}!IAxes@{IAxes}}
+\doxysubsubsection{\texorpdfstring{GetCoordinateX()}{GetCoordinateX()}}
+{\footnotesize\ttfamily double IAxes.\+Get\+CoordinateX (\begin{DoxyParamCaption}\item[{float}]{pixel }\end{DoxyParamCaption})}
+
+
+
+Implemented in \mbox{\hyperlink{classAxes_ad3193382ac1d32cd8464604d9d2e797a}{Axes}}.
+
+\mbox{\Hypertarget{interfaceIAxes_ae72cf39bad7065ae044ac6b951856779}\label{interfaceIAxes_ae72cf39bad7065ae044ac6b951856779}} 
+\index{IAxes@{IAxes}!GetCoordinateY@{GetCoordinateY}}
+\index{GetCoordinateY@{GetCoordinateY}!IAxes@{IAxes}}
+\doxysubsubsection{\texorpdfstring{GetCoordinateY()}{GetCoordinateY()}}
+{\footnotesize\ttfamily double IAxes.\+Get\+CoordinateY (\begin{DoxyParamCaption}\item[{float}]{pixel }\end{DoxyParamCaption})}
+
+
+
+Implemented in \mbox{\hyperlink{classAxes_a304dba9eeb21feeb9d7189ddca178660}{Axes}}.
+
+\mbox{\Hypertarget{interfaceIAxes_a4c814f41677e9447e3fc992d95305637}\label{interfaceIAxes_a4c814f41677e9447e3fc992d95305637}} 
+\index{IAxes@{IAxes}!GetPixel@{GetPixel}}
+\index{GetPixel@{GetPixel}!IAxes@{IAxes}}
+\doxysubsubsection{\texorpdfstring{GetPixel()}{GetPixel()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structPixel}{Pixel}} IAxes.\+Get\+Pixel (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structCoordinates}{Coordinates}}}]{coordinates }\end{DoxyParamCaption})}
+
+
+
+Implemented in \mbox{\hyperlink{classAxes_af91b2a3c7e0a2acf7a1fc3f213a1b17f}{Axes}}.
+
+\mbox{\Hypertarget{interfaceIAxes_ac0d2b9af3766c6c339ee0d8d51d073da}\label{interfaceIAxes_ac0d2b9af3766c6c339ee0d8d51d073da}} 
+\index{IAxes@{IAxes}!GetPixelLine@{GetPixelLine}}
+\index{GetPixelLine@{GetPixelLine}!IAxes@{IAxes}}
+\doxysubsubsection{\texorpdfstring{GetPixelLine()}{GetPixelLine()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structPixelLine}{Pixel\+Line}} IAxes.\+Get\+Pixel\+Line (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structCoordinateLine}{Coordinate\+Line}}}]{rect }\end{DoxyParamCaption})}
+
+
+
+Implemented in \mbox{\hyperlink{classAxes_ab9d22d6fbaf0f839649cc8ddf07cab09}{Axes}}.
+
+\mbox{\Hypertarget{interfaceIAxes_a1d7c87b248a9ba04cd89a035eb9264e6}\label{interfaceIAxes_a1d7c87b248a9ba04cd89a035eb9264e6}} 
+\index{IAxes@{IAxes}!GetPixelRect@{GetPixelRect}}
+\index{GetPixelRect@{GetPixelRect}!IAxes@{IAxes}}
+\doxysubsubsection{\texorpdfstring{GetPixelRect()}{GetPixelRect()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structPixelRect}{Pixel\+Rect}} IAxes.\+Get\+Pixel\+Rect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structCoordinateRect}{Coordinate\+Rect}}}]{rect }\end{DoxyParamCaption})}
+
+
+
+Implemented in \mbox{\hyperlink{classAxes_ac0f89baf249d65223259d40cc25571a3}{Axes}}.
+
+\mbox{\Hypertarget{interfaceIAxes_a769c5a80e5886fd81f74b7192e4c9937}\label{interfaceIAxes_a769c5a80e5886fd81f74b7192e4c9937}} 
+\index{IAxes@{IAxes}!GetPixelX@{GetPixelX}}
+\index{GetPixelX@{GetPixelX}!IAxes@{IAxes}}
+\doxysubsubsection{\texorpdfstring{GetPixelX()}{GetPixelX()}}
+{\footnotesize\ttfamily float IAxes.\+Get\+PixelX (\begin{DoxyParamCaption}\item[{double}]{x\+Coordinate }\end{DoxyParamCaption})}
+
+
+
+Implemented in \mbox{\hyperlink{classAxes_a768b4cfe16ffbe80e00ef0399828ec59}{Axes}}.
+
+\mbox{\Hypertarget{interfaceIAxes_aa2ae897f96e089fd0adc49905395bd12}\label{interfaceIAxes_aa2ae897f96e089fd0adc49905395bd12}} 
+\index{IAxes@{IAxes}!GetPixelY@{GetPixelY}}
+\index{GetPixelY@{GetPixelY}!IAxes@{IAxes}}
+\doxysubsubsection{\texorpdfstring{GetPixelY()}{GetPixelY()}}
+{\footnotesize\ttfamily float IAxes.\+Get\+PixelY (\begin{DoxyParamCaption}\item[{double}]{y\+Coordinate }\end{DoxyParamCaption})}
+
+
+
+Implemented in \mbox{\hyperlink{classAxes_afc46013eb72833ffcaa3696aed2ecee6}{Axes}}.
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{interfaceIAxes_ae8d83b9f7f2a466695fdfa94ee861267}\label{interfaceIAxes_ae8d83b9f7f2a466695fdfa94ee861267}} 
+\index{IAxes@{IAxes}!DataRect@{DataRect}}
+\index{DataRect@{DataRect}!IAxes@{IAxes}}
+\doxysubsubsection{\texorpdfstring{DataRect}{DataRect}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structPixelRect}{Pixel\+Rect}} IAxes.\+Data\+Rect\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Describes the region in the center of the figure where plottable data will be displayed. This region is set by the renderer immediately before a Plottable\textquotesingle{}s Render() method is called. 
+
+\mbox{\Hypertarget{interfaceIAxes_a8753ab69facf4cbaf412e90d32cca8d7}\label{interfaceIAxes_a8753ab69facf4cbaf412e90d32cca8d7}} 
+\index{IAxes@{IAxes}!XAxis@{XAxis}}
+\index{XAxis@{XAxis}!IAxes@{IAxes}}
+\doxysubsubsection{\texorpdfstring{XAxis}{XAxis}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceIXAxis}{IXAxis}} IAxes.\+XAxis\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{interfaceIAxes_a64ced68339a034571898082ead0158aa}\label{interfaceIAxes_a64ced68339a034571898082ead0158aa}} 
+\index{IAxes@{IAxes}!YAxis@{YAxis}}
+\index{YAxis@{YAxis}!IAxes@{IAxes}}
+\doxysubsubsection{\texorpdfstring{YAxis}{YAxis}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceIYAxis}{IYAxis}} IAxes.\+YAxis\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Interfaces/IAxes.\+cs\end{DoxyCompactItemize}

@@ -1,0 +1,79 @@
+\hypertarget{interfaceIVectorFieldSource}{}\doxysection{IVector\+Field\+Source Interface Reference}
+\label{interfaceIVectorFieldSource}\index{IVectorFieldSource@{IVectorFieldSource}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+IRead\+Only\+List$<$ \mbox{\hyperlink{structRootedCoordinateVector}{Rooted\+Coordinate\+Vector}} $>$ \mbox{\hyperlink{interfaceIVectorFieldSource_a789fc288c8aa0d9b1f7ed7508848573c}{Get\+Rooted\+Vectors}} ()
+\item 
+\mbox{\hyperlink{structDataPoint}{Data\+Point}} \mbox{\hyperlink{interfaceIVectorFieldSource_a3fd08f91b2c9d00c9588dd498839cba8}{Get\+Nearest}} (\mbox{\hyperlink{structCoordinates}{Coordinates}} location, \mbox{\hyperlink{structRenderDetails}{Render\+Details}} render\+Info, float max\+Distance=15)
+\begin{DoxyCompactList}\small\item\em Return the point nearest a specific location given the X/Y pixel scaling information from a previous render. Will return \mbox{\hyperlink{structDataPoint_a603f30d56d53e5db758b40e244e2ffe8}{Data\+Point.\+None}} if the nearest point is greater than {\itshape max\+Distance}  pixels away. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structCoordinateRange}{Coordinate\+Range}} \mbox{\hyperlink{interfaceIVectorFieldSource_abc92eb14e86bf9a0e46641d2fcc8f47b}{Get\+LimitsX}} ()
+\item 
+\mbox{\hyperlink{structCoordinateRange}{Coordinate\+Range}} \mbox{\hyperlink{interfaceIVectorFieldSource_a9250ef9571381568ddca1863952e6e65}{Get\+LimitsY}} ()
+\item 
+\mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} \mbox{\hyperlink{interfaceIVectorFieldSource_a2d9247a10cb55a0b6de7301c41319ef6}{Get\+Limits}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{interfaceIVectorFieldSource_a958772c78ea1394079c1dc128e3dea04}{Min\+Render\+Index}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+int \mbox{\hyperlink{interfaceIVectorFieldSource_a768c64e2493db6d4ed48fdd75def0604}{Max\+Render\+Index}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{interfaceIVectorFieldSource_a2d9247a10cb55a0b6de7301c41319ef6}\label{interfaceIVectorFieldSource_a2d9247a10cb55a0b6de7301c41319ef6}} 
+\index{IVectorFieldSource@{IVectorFieldSource}!GetLimits@{GetLimits}}
+\index{GetLimits@{GetLimits}!IVectorFieldSource@{IVectorFieldSource}}
+\doxysubsubsection{\texorpdfstring{GetLimits()}{GetLimits()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} IVector\+Field\+Source.\+Get\+Limits (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{interfaceIVectorFieldSource_abc92eb14e86bf9a0e46641d2fcc8f47b}\label{interfaceIVectorFieldSource_abc92eb14e86bf9a0e46641d2fcc8f47b}} 
+\index{IVectorFieldSource@{IVectorFieldSource}!GetLimitsX@{GetLimitsX}}
+\index{GetLimitsX@{GetLimitsX}!IVectorFieldSource@{IVectorFieldSource}}
+\doxysubsubsection{\texorpdfstring{GetLimitsX()}{GetLimitsX()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structCoordinateRange}{Coordinate\+Range}} IVector\+Field\+Source.\+Get\+LimitsX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{interfaceIVectorFieldSource_a9250ef9571381568ddca1863952e6e65}\label{interfaceIVectorFieldSource_a9250ef9571381568ddca1863952e6e65}} 
+\index{IVectorFieldSource@{IVectorFieldSource}!GetLimitsY@{GetLimitsY}}
+\index{GetLimitsY@{GetLimitsY}!IVectorFieldSource@{IVectorFieldSource}}
+\doxysubsubsection{\texorpdfstring{GetLimitsY()}{GetLimitsY()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structCoordinateRange}{Coordinate\+Range}} IVector\+Field\+Source.\+Get\+LimitsY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{interfaceIVectorFieldSource_a3fd08f91b2c9d00c9588dd498839cba8}\label{interfaceIVectorFieldSource_a3fd08f91b2c9d00c9588dd498839cba8}} 
+\index{IVectorFieldSource@{IVectorFieldSource}!GetNearest@{GetNearest}}
+\index{GetNearest@{GetNearest}!IVectorFieldSource@{IVectorFieldSource}}
+\doxysubsubsection{\texorpdfstring{GetNearest()}{GetNearest()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structDataPoint}{Data\+Point}} IVector\+Field\+Source.\+Get\+Nearest (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structCoordinates}{Coordinates}}}]{location,  }\item[{\mbox{\hyperlink{structRenderDetails}{Render\+Details}}}]{render\+Info,  }\item[{float}]{max\+Distance = {\ttfamily 15} }\end{DoxyParamCaption})}
+
+
+
+Return the point nearest a specific location given the X/Y pixel scaling information from a previous render. Will return \mbox{\hyperlink{structDataPoint_a603f30d56d53e5db758b40e244e2ffe8}{Data\+Point.\+None}} if the nearest point is greater than {\itshape max\+Distance}  pixels away. 
+
+\mbox{\Hypertarget{interfaceIVectorFieldSource_a789fc288c8aa0d9b1f7ed7508848573c}\label{interfaceIVectorFieldSource_a789fc288c8aa0d9b1f7ed7508848573c}} 
+\index{IVectorFieldSource@{IVectorFieldSource}!GetRootedVectors@{GetRootedVectors}}
+\index{GetRootedVectors@{GetRootedVectors}!IVectorFieldSource@{IVectorFieldSource}}
+\doxysubsubsection{\texorpdfstring{GetRootedVectors()}{GetRootedVectors()}}
+{\footnotesize\ttfamily IRead\+Only\+List$<$\mbox{\hyperlink{structRootedCoordinateVector}{Rooted\+Coordinate\+Vector}}$>$ IVector\+Field\+Source.\+Get\+Rooted\+Vectors (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{interfaceIVectorFieldSource_a768c64e2493db6d4ed48fdd75def0604}\label{interfaceIVectorFieldSource_a768c64e2493db6d4ed48fdd75def0604}} 
+\index{IVectorFieldSource@{IVectorFieldSource}!MaxRenderIndex@{MaxRenderIndex}}
+\index{MaxRenderIndex@{MaxRenderIndex}!IVectorFieldSource@{IVectorFieldSource}}
+\doxysubsubsection{\texorpdfstring{MaxRenderIndex}{MaxRenderIndex}}
+{\footnotesize\ttfamily int IVector\+Field\+Source.\+Max\+Render\+Index\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{interfaceIVectorFieldSource_a958772c78ea1394079c1dc128e3dea04}\label{interfaceIVectorFieldSource_a958772c78ea1394079c1dc128e3dea04}} 
+\index{IVectorFieldSource@{IVectorFieldSource}!MinRenderIndex@{MinRenderIndex}}
+\index{MinRenderIndex@{MinRenderIndex}!IVectorFieldSource@{IVectorFieldSource}}
+\doxysubsubsection{\texorpdfstring{MinRenderIndex}{MinRenderIndex}}
+{\footnotesize\ttfamily int IVector\+Field\+Source.\+Min\+Render\+Index\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Interfaces/IVector\+Field\+Source.\+cs\end{DoxyCompactItemize}

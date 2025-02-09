@@ -1,0 +1,143 @@
+\doxysection{Scott\+Plot.\+IPlot\+Interaction Interface Reference}
+\hypertarget{interface_scott_plot_1_1_i_plot_interaction}{}\label{interface_scott_plot_1_1_i_plot_interaction}\index{ScottPlot.IPlotInteraction@{ScottPlot.IPlotInteraction}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{interface_scott_plot_1_1_i_plot_interaction_ab4d81d93e8c0bbb2427a1b2b76875977}{Disable}} ()
+\begin{DoxyCompactList}\small\item\em Disable all mouse interactivity. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interface_scott_plot_1_1_i_plot_interaction_ab31112d4a3b53a562f66566e518f532f}{Enable}} ()
+\begin{DoxyCompactList}\small\item\em Enable mouse interactivity using the default mouse actions. Enabling this disables the newer \doxylink{interface_scott_plot_1_1_i_plot_control_a49c623cd834bd6d6f572ec0b5b24c892}{IPlot\+Control.\+User\+Input\+Processor}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interface_scott_plot_1_1_i_plot_interaction_a6f6f72e11991682086e4d4b974545ae6}{Enable}} (\mbox{\hyperlink{class_scott_plot_1_1_control_1_1_plot_actions}{Plot\+Actions}} custom\+Actions)
+\begin{DoxyCompactList}\small\item\em Enable mouse interactivity using custom mouse actions. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interface_scott_plot_1_1_i_plot_interaction_adbdacdc469dce29f06b8469c07dc9b17}{On\+Mouse\+Move}} (\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}} new\+Position)
+\item 
+void \mbox{\hyperlink{interface_scott_plot_1_1_i_plot_interaction_acc3d9a95337da5f39a805292dfb02a62}{Key\+Up}} (\mbox{\hyperlink{namespace_scott_plot_1_1_control_afccfe76da99cb53fbf88864d1e6e66b4}{Key}} key)
+\item 
+void \mbox{\hyperlink{interface_scott_plot_1_1_i_plot_interaction_a81c2d4bca8730d4483c6fae31e80c3a2}{Key\+Down}} (\mbox{\hyperlink{namespace_scott_plot_1_1_control_afccfe76da99cb53fbf88864d1e6e66b4}{Key}} key)
+\item 
+void \mbox{\hyperlink{interface_scott_plot_1_1_i_plot_interaction_a996236656377649e3ba44a2a1248baa9}{Mouse\+Down}} (\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}} position, \mbox{\hyperlink{namespace_scott_plot_1_1_control_a1ce2192b1e04dba3b2c4e0ff10f1ab3b}{Mouse\+Button}} button)
+\item 
+void \mbox{\hyperlink{interface_scott_plot_1_1_i_plot_interaction_a6bf2841658e9dd9b53a2af6301cb66a9}{Mouse\+Up}} (\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}} position, \mbox{\hyperlink{namespace_scott_plot_1_1_control_a1ce2192b1e04dba3b2c4e0ff10f1ab3b}{Mouse\+Button}} button)
+\item 
+void \mbox{\hyperlink{interface_scott_plot_1_1_i_plot_interaction_a4ff3c809b9ee1710cdab1d5db32fd151}{Double\+Click}} ()
+\item 
+void \mbox{\hyperlink{interface_scott_plot_1_1_i_plot_interaction_ad9069dc957571b540d24cea697d9b5b3}{Mouse\+Wheel\+Vertical}} (\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}} pixel, float delta)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{interface_scott_plot_1_1_i_plot_interaction_a99b72baac86b01059deb5d5bcd8f64df}{Is\+Enabled}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Controls whether this event processor processes new events. Enabling this disables the newer \doxylink{interface_scott_plot_1_1_i_plot_control_a49c623cd834bd6d6f572ec0b5b24c892}{IPlot\+Control.\+User\+Input\+Processor}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{interface_scott_plot_1_1_i_plot_control}{IPlot\+Control}} \mbox{\hyperlink{interface_scott_plot_1_1_i_plot_interaction_a7ca1456601649f2a6287007734349c9c}{Plot\+Control}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+bool \mbox{\hyperlink{interface_scott_plot_1_1_i_plot_interaction_a18ea2c170ec5d34b70d9e79f5d80da8c}{Change\+Opposing\+Axes\+Together}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em If enabled, mouse interactions over a single axis will be applied to all axes with the same orientation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_scott_plot_1_1_i_plot_interaction_ab4d81d93e8c0bbb2427a1b2b76875977}\index{ScottPlot.IPlotInteraction@{ScottPlot.IPlotInteraction}!Disable@{Disable}}
+\index{Disable@{Disable}!ScottPlot.IPlotInteraction@{ScottPlot.IPlotInteraction}}
+\doxysubsubsection{\texorpdfstring{Disable()}{Disable()}}
+{\footnotesize\ttfamily \label{interface_scott_plot_1_1_i_plot_interaction_ab4d81d93e8c0bbb2427a1b2b76875977} 
+void Scott\+Plot.\+IPlot\+Interaction.\+Disable (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Disable all mouse interactivity. 
+
+\Hypertarget{interface_scott_plot_1_1_i_plot_interaction_a4ff3c809b9ee1710cdab1d5db32fd151}\index{ScottPlot.IPlotInteraction@{ScottPlot.IPlotInteraction}!DoubleClick@{DoubleClick}}
+\index{DoubleClick@{DoubleClick}!ScottPlot.IPlotInteraction@{ScottPlot.IPlotInteraction}}
+\doxysubsubsection{\texorpdfstring{DoubleClick()}{DoubleClick()}}
+{\footnotesize\ttfamily \label{interface_scott_plot_1_1_i_plot_interaction_a4ff3c809b9ee1710cdab1d5db32fd151} 
+void Scott\+Plot.\+IPlot\+Interaction.\+Double\+Click (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{interface_scott_plot_1_1_i_plot_interaction_ab31112d4a3b53a562f66566e518f532f}\index{ScottPlot.IPlotInteraction@{ScottPlot.IPlotInteraction}!Enable@{Enable}}
+\index{Enable@{Enable}!ScottPlot.IPlotInteraction@{ScottPlot.IPlotInteraction}}
+\doxysubsubsection{\texorpdfstring{Enable()}{Enable()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{interface_scott_plot_1_1_i_plot_interaction_ab31112d4a3b53a562f66566e518f532f} 
+void Scott\+Plot.\+IPlot\+Interaction.\+Enable (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Enable mouse interactivity using the default mouse actions. Enabling this disables the newer \doxylink{interface_scott_plot_1_1_i_plot_control_a49c623cd834bd6d6f572ec0b5b24c892}{IPlot\+Control.\+User\+Input\+Processor}. 
+
+\Hypertarget{interface_scott_plot_1_1_i_plot_interaction_a6f6f72e11991682086e4d4b974545ae6}\index{ScottPlot.IPlotInteraction@{ScottPlot.IPlotInteraction}!Enable@{Enable}}
+\index{Enable@{Enable}!ScottPlot.IPlotInteraction@{ScottPlot.IPlotInteraction}}
+\doxysubsubsection{\texorpdfstring{Enable()}{Enable()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{interface_scott_plot_1_1_i_plot_interaction_a6f6f72e11991682086e4d4b974545ae6} 
+void Scott\+Plot.\+IPlot\+Interaction.\+Enable (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_scott_plot_1_1_control_1_1_plot_actions}{Plot\+Actions}}}]{custom\+Actions}{}\end{DoxyParamCaption})}
+
+
+
+Enable mouse interactivity using custom mouse actions. 
+
+\Hypertarget{interface_scott_plot_1_1_i_plot_interaction_a81c2d4bca8730d4483c6fae31e80c3a2}\index{ScottPlot.IPlotInteraction@{ScottPlot.IPlotInteraction}!KeyDown@{KeyDown}}
+\index{KeyDown@{KeyDown}!ScottPlot.IPlotInteraction@{ScottPlot.IPlotInteraction}}
+\doxysubsubsection{\texorpdfstring{KeyDown()}{KeyDown()}}
+{\footnotesize\ttfamily \label{interface_scott_plot_1_1_i_plot_interaction_a81c2d4bca8730d4483c6fae31e80c3a2} 
+void Scott\+Plot.\+IPlot\+Interaction.\+Key\+Down (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_scott_plot_1_1_control_afccfe76da99cb53fbf88864d1e6e66b4}{Key}}}]{key}{}\end{DoxyParamCaption})}
+
+\Hypertarget{interface_scott_plot_1_1_i_plot_interaction_acc3d9a95337da5f39a805292dfb02a62}\index{ScottPlot.IPlotInteraction@{ScottPlot.IPlotInteraction}!KeyUp@{KeyUp}}
+\index{KeyUp@{KeyUp}!ScottPlot.IPlotInteraction@{ScottPlot.IPlotInteraction}}
+\doxysubsubsection{\texorpdfstring{KeyUp()}{KeyUp()}}
+{\footnotesize\ttfamily \label{interface_scott_plot_1_1_i_plot_interaction_acc3d9a95337da5f39a805292dfb02a62} 
+void Scott\+Plot.\+IPlot\+Interaction.\+Key\+Up (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_scott_plot_1_1_control_afccfe76da99cb53fbf88864d1e6e66b4}{Key}}}]{key}{}\end{DoxyParamCaption})}
+
+\Hypertarget{interface_scott_plot_1_1_i_plot_interaction_a996236656377649e3ba44a2a1248baa9}\index{ScottPlot.IPlotInteraction@{ScottPlot.IPlotInteraction}!MouseDown@{MouseDown}}
+\index{MouseDown@{MouseDown}!ScottPlot.IPlotInteraction@{ScottPlot.IPlotInteraction}}
+\doxysubsubsection{\texorpdfstring{MouseDown()}{MouseDown()}}
+{\footnotesize\ttfamily \label{interface_scott_plot_1_1_i_plot_interaction_a996236656377649e3ba44a2a1248baa9} 
+void Scott\+Plot.\+IPlot\+Interaction.\+Mouse\+Down (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}}}]{position}{, }\item[{\mbox{\hyperlink{namespace_scott_plot_1_1_control_a1ce2192b1e04dba3b2c4e0ff10f1ab3b}{Mouse\+Button}}}]{button}{}\end{DoxyParamCaption})}
+
+\Hypertarget{interface_scott_plot_1_1_i_plot_interaction_a6bf2841658e9dd9b53a2af6301cb66a9}\index{ScottPlot.IPlotInteraction@{ScottPlot.IPlotInteraction}!MouseUp@{MouseUp}}
+\index{MouseUp@{MouseUp}!ScottPlot.IPlotInteraction@{ScottPlot.IPlotInteraction}}
+\doxysubsubsection{\texorpdfstring{MouseUp()}{MouseUp()}}
+{\footnotesize\ttfamily \label{interface_scott_plot_1_1_i_plot_interaction_a6bf2841658e9dd9b53a2af6301cb66a9} 
+void Scott\+Plot.\+IPlot\+Interaction.\+Mouse\+Up (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}}}]{position}{, }\item[{\mbox{\hyperlink{namespace_scott_plot_1_1_control_a1ce2192b1e04dba3b2c4e0ff10f1ab3b}{Mouse\+Button}}}]{button}{}\end{DoxyParamCaption})}
+
+\Hypertarget{interface_scott_plot_1_1_i_plot_interaction_ad9069dc957571b540d24cea697d9b5b3}\index{ScottPlot.IPlotInteraction@{ScottPlot.IPlotInteraction}!MouseWheelVertical@{MouseWheelVertical}}
+\index{MouseWheelVertical@{MouseWheelVertical}!ScottPlot.IPlotInteraction@{ScottPlot.IPlotInteraction}}
+\doxysubsubsection{\texorpdfstring{MouseWheelVertical()}{MouseWheelVertical()}}
+{\footnotesize\ttfamily \label{interface_scott_plot_1_1_i_plot_interaction_ad9069dc957571b540d24cea697d9b5b3} 
+void Scott\+Plot.\+IPlot\+Interaction.\+Mouse\+Wheel\+Vertical (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}}}]{pixel}{, }\item[{float}]{delta}{}\end{DoxyParamCaption})}
+
+\Hypertarget{interface_scott_plot_1_1_i_plot_interaction_adbdacdc469dce29f06b8469c07dc9b17}\index{ScottPlot.IPlotInteraction@{ScottPlot.IPlotInteraction}!OnMouseMove@{OnMouseMove}}
+\index{OnMouseMove@{OnMouseMove}!ScottPlot.IPlotInteraction@{ScottPlot.IPlotInteraction}}
+\doxysubsubsection{\texorpdfstring{OnMouseMove()}{OnMouseMove()}}
+{\footnotesize\ttfamily \label{interface_scott_plot_1_1_i_plot_interaction_adbdacdc469dce29f06b8469c07dc9b17} 
+void Scott\+Plot.\+IPlot\+Interaction.\+On\+Mouse\+Move (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}}}]{new\+Position}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{interface_scott_plot_1_1_i_plot_interaction_a18ea2c170ec5d34b70d9e79f5d80da8c}\index{ScottPlot.IPlotInteraction@{ScottPlot.IPlotInteraction}!ChangeOpposingAxesTogether@{ChangeOpposingAxesTogether}}
+\index{ChangeOpposingAxesTogether@{ChangeOpposingAxesTogether}!ScottPlot.IPlotInteraction@{ScottPlot.IPlotInteraction}}
+\doxysubsubsection{\texorpdfstring{ChangeOpposingAxesTogether}{ChangeOpposingAxesTogether}}
+{\footnotesize\ttfamily \label{interface_scott_plot_1_1_i_plot_interaction_a18ea2c170ec5d34b70d9e79f5d80da8c} 
+bool Scott\+Plot.\+IPlot\+Interaction.\+Change\+Opposing\+Axes\+Together\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+If enabled, mouse interactions over a single axis will be applied to all axes with the same orientation. 
+
+\Hypertarget{interface_scott_plot_1_1_i_plot_interaction_a99b72baac86b01059deb5d5bcd8f64df}\index{ScottPlot.IPlotInteraction@{ScottPlot.IPlotInteraction}!IsEnabled@{IsEnabled}}
+\index{IsEnabled@{IsEnabled}!ScottPlot.IPlotInteraction@{ScottPlot.IPlotInteraction}}
+\doxysubsubsection{\texorpdfstring{IsEnabled}{IsEnabled}}
+{\footnotesize\ttfamily \label{interface_scott_plot_1_1_i_plot_interaction_a99b72baac86b01059deb5d5bcd8f64df} 
+bool Scott\+Plot.\+IPlot\+Interaction.\+Is\+Enabled\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Controls whether this event processor processes new events. Enabling this disables the newer \doxylink{interface_scott_plot_1_1_i_plot_control_a49c623cd834bd6d6f572ec0b5b24c892}{IPlot\+Control.\+User\+Input\+Processor}. 
+
+\Hypertarget{interface_scott_plot_1_1_i_plot_interaction_a7ca1456601649f2a6287007734349c9c}\index{ScottPlot.IPlotInteraction@{ScottPlot.IPlotInteraction}!PlotControl@{PlotControl}}
+\index{PlotControl@{PlotControl}!ScottPlot.IPlotInteraction@{ScottPlot.IPlotInteraction}}
+\doxysubsubsection{\texorpdfstring{PlotControl}{PlotControl}}
+{\footnotesize\ttfamily \label{interface_scott_plot_1_1_i_plot_interaction_a7ca1456601649f2a6287007734349c9c} 
+\mbox{\hyperlink{interface_scott_plot_1_1_i_plot_control}{IPlot\+Control}} Scott\+Plot.\+IPlot\+Interaction.\+Plot\+Control\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Interfaces/IPlot\+Interaction.\+cs\end{DoxyCompactItemize}

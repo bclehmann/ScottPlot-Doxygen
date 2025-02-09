@@ -1,0 +1,61 @@
+\doxysection{Scott\+Plot.\+Data\+Sources.\+Signal\+Interpolation Class Reference}
+\hypertarget{class_scott_plot_1_1_data_sources_1_1_signal_interpolation}{}\label{class_scott_plot_1_1_data_sources_1_1_signal_interpolation}\index{ScottPlot.DataSources.SignalInterpolation@{ScottPlot.DataSources.SignalInterpolation}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_scott_plot_1_1_data_sources_1_1_signal_interpolation_a1bfa5fd0733b7384e90076cb51cc441d}{Interpolate\+BeforeX}} (Render\+Pack rp, \mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}}\mbox{[}$\,$\mbox{]} pixels, \mbox{\hyperlink{namespace_scott_plot_aa42f072dac0344ddc25e4f2c253b3a6b}{Connect\+Style}} connect\+Style)
+\begin{DoxyCompactList}\small\item\em If the point to the left of the graph is extremely far outside the data area, modify it using interpolation so it\textquotesingle{}s closer to the data area to prevent render artifacts. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_scott_plot_1_1_data_sources_1_1_signal_interpolation_aa0f7cc381272f995aeb528e4f5c9b89f}{Interpolate\+BeforeY}} (Render\+Pack rp, \mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}}\mbox{[}$\,$\mbox{]} pixels, \mbox{\hyperlink{namespace_scott_plot_aa42f072dac0344ddc25e4f2c253b3a6b}{Connect\+Style}} connect\+Style)
+\begin{DoxyCompactList}\small\item\em If the point to the bottom of the graph is extremely far outside the data area, modify it using interpolation so it\textquotesingle{}s closer to the data area to prevent render artifacts. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_scott_plot_1_1_data_sources_1_1_signal_interpolation_a4925f53cc873d2af26c9bad942d69578}{Interpolate\+AfterX}} (Render\+Pack rp, \mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}}\mbox{[}$\,$\mbox{]} pixels, \mbox{\hyperlink{namespace_scott_plot_aa42f072dac0344ddc25e4f2c253b3a6b}{Connect\+Style}} connect\+Style)
+\begin{DoxyCompactList}\small\item\em If the point to the right of the graph is extremely far outside the data area, modify it using interpolation so it\textquotesingle{}s closer to the data area to prevent render artifacts. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_scott_plot_1_1_data_sources_1_1_signal_interpolation_a0570e0a8b714d6bb3c508661d224a4b7}{Interpolate\+AfterY}} (Render\+Pack rp, \mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}}\mbox{[}$\,$\mbox{]} pixels, \mbox{\hyperlink{namespace_scott_plot_aa42f072dac0344ddc25e4f2c253b3a6b}{Connect\+Style}} connect\+Style)
+\begin{DoxyCompactList}\small\item\em If the point to the top of the graph is extremely far outside the data area, modify it using interpolation so it\textquotesingle{}s closer to the data area to prevent render artifacts. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_scott_plot_1_1_data_sources_1_1_signal_interpolation_a4925f53cc873d2af26c9bad942d69578}\index{ScottPlot.DataSources.SignalInterpolation@{ScottPlot.DataSources.SignalInterpolation}!InterpolateAfterX@{InterpolateAfterX}}
+\index{InterpolateAfterX@{InterpolateAfterX}!ScottPlot.DataSources.SignalInterpolation@{ScottPlot.DataSources.SignalInterpolation}}
+\doxysubsubsection{\texorpdfstring{InterpolateAfterX()}{InterpolateAfterX()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_data_sources_1_1_signal_interpolation_a4925f53cc873d2af26c9bad942d69578} 
+static void Scott\+Plot.\+Data\+Sources.\+Signal\+Interpolation.\+Interpolate\+AfterX (\begin{DoxyParamCaption}\item[{Render\+Pack}]{rp}{, }\item[{\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}}\mbox{[}$\,$\mbox{]}}]{pixels}{, }\item[{\mbox{\hyperlink{namespace_scott_plot_aa42f072dac0344ddc25e4f2c253b3a6b}{Connect\+Style}}}]{connect\+Style}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+If the point to the right of the graph is extremely far outside the data area, modify it using interpolation so it\textquotesingle{}s closer to the data area to prevent render artifacts. 
+
+\Hypertarget{class_scott_plot_1_1_data_sources_1_1_signal_interpolation_a0570e0a8b714d6bb3c508661d224a4b7}\index{ScottPlot.DataSources.SignalInterpolation@{ScottPlot.DataSources.SignalInterpolation}!InterpolateAfterY@{InterpolateAfterY}}
+\index{InterpolateAfterY@{InterpolateAfterY}!ScottPlot.DataSources.SignalInterpolation@{ScottPlot.DataSources.SignalInterpolation}}
+\doxysubsubsection{\texorpdfstring{InterpolateAfterY()}{InterpolateAfterY()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_data_sources_1_1_signal_interpolation_a0570e0a8b714d6bb3c508661d224a4b7} 
+static void Scott\+Plot.\+Data\+Sources.\+Signal\+Interpolation.\+Interpolate\+AfterY (\begin{DoxyParamCaption}\item[{Render\+Pack}]{rp}{, }\item[{\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}}\mbox{[}$\,$\mbox{]}}]{pixels}{, }\item[{\mbox{\hyperlink{namespace_scott_plot_aa42f072dac0344ddc25e4f2c253b3a6b}{Connect\+Style}}}]{connect\+Style}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+If the point to the top of the graph is extremely far outside the data area, modify it using interpolation so it\textquotesingle{}s closer to the data area to prevent render artifacts. 
+
+\Hypertarget{class_scott_plot_1_1_data_sources_1_1_signal_interpolation_a1bfa5fd0733b7384e90076cb51cc441d}\index{ScottPlot.DataSources.SignalInterpolation@{ScottPlot.DataSources.SignalInterpolation}!InterpolateBeforeX@{InterpolateBeforeX}}
+\index{InterpolateBeforeX@{InterpolateBeforeX}!ScottPlot.DataSources.SignalInterpolation@{ScottPlot.DataSources.SignalInterpolation}}
+\doxysubsubsection{\texorpdfstring{InterpolateBeforeX()}{InterpolateBeforeX()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_data_sources_1_1_signal_interpolation_a1bfa5fd0733b7384e90076cb51cc441d} 
+static void Scott\+Plot.\+Data\+Sources.\+Signal\+Interpolation.\+Interpolate\+BeforeX (\begin{DoxyParamCaption}\item[{Render\+Pack}]{rp}{, }\item[{\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}}\mbox{[}$\,$\mbox{]}}]{pixels}{, }\item[{\mbox{\hyperlink{namespace_scott_plot_aa42f072dac0344ddc25e4f2c253b3a6b}{Connect\+Style}}}]{connect\+Style}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+If the point to the left of the graph is extremely far outside the data area, modify it using interpolation so it\textquotesingle{}s closer to the data area to prevent render artifacts. 
+
+\Hypertarget{class_scott_plot_1_1_data_sources_1_1_signal_interpolation_aa0f7cc381272f995aeb528e4f5c9b89f}\index{ScottPlot.DataSources.SignalInterpolation@{ScottPlot.DataSources.SignalInterpolation}!InterpolateBeforeY@{InterpolateBeforeY}}
+\index{InterpolateBeforeY@{InterpolateBeforeY}!ScottPlot.DataSources.SignalInterpolation@{ScottPlot.DataSources.SignalInterpolation}}
+\doxysubsubsection{\texorpdfstring{InterpolateBeforeY()}{InterpolateBeforeY()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_data_sources_1_1_signal_interpolation_aa0f7cc381272f995aeb528e4f5c9b89f} 
+static void Scott\+Plot.\+Data\+Sources.\+Signal\+Interpolation.\+Interpolate\+BeforeY (\begin{DoxyParamCaption}\item[{Render\+Pack}]{rp}{, }\item[{\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}}\mbox{[}$\,$\mbox{]}}]{pixels}{, }\item[{\mbox{\hyperlink{namespace_scott_plot_aa42f072dac0344ddc25e4f2c253b3a6b}{Connect\+Style}}}]{connect\+Style}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+If the point to the bottom of the graph is extremely far outside the data area, modify it using interpolation so it\textquotesingle{}s closer to the data area to prevent render artifacts. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Data\+Sources/\mbox{\hyperlink{_signal_interpolation_8cs}{Signal\+Interpolation.\+cs}}\end{DoxyCompactItemize}

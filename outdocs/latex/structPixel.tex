@@ -1,0 +1,295 @@
+\hypertarget{structPixel}{}\doxysection{Pixel Struct Reference}
+\label{structPixel}\index{Pixel@{Pixel}}
+
+
+Represents an X/Y location on screen in pixel units. Pixels in screen units are distinct from \mbox{\hyperlink{structCoordinates}{Coordinates}} with axis units. Pixels use float precision, whereas \mbox{\hyperlink{structCoordinates}{Coordinates}} use double precision.  
+
+
+Inheritance diagram for Pixel\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{structPixel}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structPixel_afd7778636bf3fd5b9c8ef18f39cdf149}{Pixel}} (float x, float y)
+\begin{DoxyCompactList}\small\item\em Create a pixel, casting double values into ones with float precision \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structPixel_aec3b5435dfc58ec2a74604510918082c}{Pixel}} (double x, double y)
+\begin{DoxyCompactList}\small\item\em Create a pixel, casting double values into ones with float precision \end{DoxyCompactList}\item 
+override string \mbox{\hyperlink{structPixel_ae53cdac74e6e987edd7b737467e6445c}{To\+String}} ()
+\item 
+SKPoint \mbox{\hyperlink{structPixel_afe0dc9b1180be096d993228b4f0192f9}{To\+SKPoint}} ()
+\begin{DoxyCompactList}\small\item\em Convert the \mbox{\hyperlink{namespaceScottPlot}{Scott\+Plot}} pixel to a \mbox{\hyperlink{namespaceSkiaSharp}{Skia\+Sharp}} point \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{structPixel_a3abefd5df2c762c620d3c702e38b50a1}{Equals}} (\mbox{\hyperlink{structPixel}{Pixel}} other)
+\item 
+override bool \mbox{\hyperlink{structPixel_a01b55e4a6de467a3ca3b3e3d5aa39db4}{Equals}} (object? obj)
+\item 
+override int \mbox{\hyperlink{structPixel_ae8baee3dde904ff523a9273108ad5ce7}{Get\+Hash\+Code}} ()
+\item 
+readonly float \mbox{\hyperlink{structPixel_a6d4d2f38dcf7aa0b286745c685117c2e}{Distance\+From}} (\mbox{\hyperlink{structPixel}{Pixel}} px2)
+\item 
+readonly \mbox{\hyperlink{structPixel}{Pixel}} \mbox{\hyperlink{structPixel_acdead60f2bbc88b6f8b057363fa837c8}{With\+Offset}} (float dX, float dY)
+\item 
+readonly \mbox{\hyperlink{structPixel}{Pixel}} \mbox{\hyperlink{structPixel_a5cad61a0d33d968833c0ad7d1f2957bb}{With\+Offset}} (\mbox{\hyperlink{structPixelOffset}{Pixel\+Offset}} offset)
+\item 
+readonly \mbox{\hyperlink{structPixel}{Pixel}} \mbox{\hyperlink{structPixel_ac935c87e5318dba67ed6ee5fc0e2a952}{Moved\+Right}} (float dX)
+\item 
+readonly \mbox{\hyperlink{structPixel}{Pixel}} \mbox{\hyperlink{structPixel_a9497708f5b243993e7eb75e0e9736a28}{Moved\+Left}} (float dX)
+\item 
+readonly \mbox{\hyperlink{structPixel}{Pixel}} \mbox{\hyperlink{structPixel_a719af878611884fba83da81d952e7973}{Moved\+Up}} (float dY)
+\item 
+readonly \mbox{\hyperlink{structPixel}{Pixel}} \mbox{\hyperlink{structPixel_a23294d4b2f8b1e3b10c896f4b8b4282d}{Moved\+Down}} (float dY)
+\item 
+readonly \mbox{\hyperlink{structPixel}{Pixel}} \mbox{\hyperlink{structPixel_a0357aef49622121c31863d01ad289e4d}{Divide}} (float v)
+\item 
+readonly \mbox{\hyperlink{structPixel}{Pixel}} \mbox{\hyperlink{structPixel_af5fd7af9f4fe696e5b185d131e9784b9}{Divide}} (float x, float y)
+\item 
+readonly \mbox{\hyperlink{structPixel}{Pixel}} \mbox{\hyperlink{structPixel_a29dbcefba6249eadb49bfee631c39f56}{Multiply}} (float v)
+\item 
+readonly \mbox{\hyperlink{structPixel}{Pixel}} \mbox{\hyperlink{structPixel_a510fcfcd637452cd59ede7a26bc4ac76}{Multiply}} (float x, float y)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{structPixel_a409e2fa93d42a7586e68d21b25cb3c2d}{operator==}} (\mbox{\hyperlink{structPixel}{Pixel}} a, \mbox{\hyperlink{structPixel}{Pixel}} b)
+\item 
+static bool \mbox{\hyperlink{structPixel_afb84ad765d955792ecd790051897e0de}{operator!=}} (\mbox{\hyperlink{structPixel}{Pixel}} a, \mbox{\hyperlink{structPixel}{Pixel}} b)
+\item 
+static \mbox{\hyperlink{structPixel}{Pixel}} \mbox{\hyperlink{structPixel_aa676c4f6cf08323fdae045e6bc7cf339}{operator+}} (\mbox{\hyperlink{structPixel}{Pixel}} a, \mbox{\hyperlink{structPixel}{Pixel}} b)
+\item 
+static \mbox{\hyperlink{structPixel}{Pixel}} \mbox{\hyperlink{structPixel_a58a5f3797b19c27255829b0e39704f78}{operator-\/}} (\mbox{\hyperlink{structPixel}{Pixel}} a, \mbox{\hyperlink{structPixel}{Pixel}} b)
+\item 
+static \mbox{\hyperlink{structPixel}{Pixel}} \mbox{\hyperlink{structPixel_a10f0adaab80527ab74a8c1a2a6ad8570}{operator$\ast$}} (\mbox{\hyperlink{structPixel}{Pixel}} a, float b)
+\item 
+static \mbox{\hyperlink{structPixel}{Pixel}} \mbox{\hyperlink{structPixel_afff391e9fcd9dd0937aa68b6d56e8365}{operator/}} (\mbox{\hyperlink{structPixel}{Pixel}} a, float b)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{structPixel_a2648cd1caf15196e0600563c3efb0b51}{X}}
+\begin{DoxyCompactList}\small\item\em Horizontal position on the screen in pixel units. Larger numbers are farther right on the screen. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{structPixel_a32187a8c2eb2f1ef7892ad4e70d34e15}{Y}}
+\begin{DoxyCompactList}\small\item\em Vertical position on the screen in pixel units. Larger numbers are lower on the screen. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{structPixel}{Pixel}} \mbox{\hyperlink{structPixel_a91e03243f9b61f0d237f408958d87a92}{NaN}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Represents an invalid pixel location \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{structPixel}{Pixel}} \mbox{\hyperlink{structPixel_a52c7b01c809a620c6078e2abd1b1ddca}{Zero}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents an X/Y location on screen in pixel units. Pixels in screen units are distinct from \mbox{\hyperlink{structCoordinates}{Coordinates}} with axis units. Pixels use float precision, whereas \mbox{\hyperlink{structCoordinates}{Coordinates}} use double precision. 
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structPixel_afd7778636bf3fd5b9c8ef18f39cdf149}\label{structPixel_afd7778636bf3fd5b9c8ef18f39cdf149}} 
+\index{Pixel@{Pixel}!Pixel@{Pixel}}
+\index{Pixel@{Pixel}!Pixel@{Pixel}}
+\doxysubsubsection{\texorpdfstring{Pixel()}{Pixel()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Pixel.\+Pixel (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Create a pixel, casting double values into ones with float precision 
+
+\mbox{\Hypertarget{structPixel_aec3b5435dfc58ec2a74604510918082c}\label{structPixel_aec3b5435dfc58ec2a74604510918082c}} 
+\index{Pixel@{Pixel}!Pixel@{Pixel}}
+\index{Pixel@{Pixel}!Pixel@{Pixel}}
+\doxysubsubsection{\texorpdfstring{Pixel()}{Pixel()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Pixel.\+Pixel (\begin{DoxyParamCaption}\item[{double}]{x,  }\item[{double}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Create a pixel, casting double values into ones with float precision 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{structPixel_a6d4d2f38dcf7aa0b286745c685117c2e}\label{structPixel_a6d4d2f38dcf7aa0b286745c685117c2e}} 
+\index{Pixel@{Pixel}!DistanceFrom@{DistanceFrom}}
+\index{DistanceFrom@{DistanceFrom}!Pixel@{Pixel}}
+\doxysubsubsection{\texorpdfstring{DistanceFrom()}{DistanceFrom()}}
+{\footnotesize\ttfamily readonly float Pixel.\+Distance\+From (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPixel}{Pixel}}}]{px2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structPixel_a0357aef49622121c31863d01ad289e4d}\label{structPixel_a0357aef49622121c31863d01ad289e4d}} 
+\index{Pixel@{Pixel}!Divide@{Divide}}
+\index{Divide@{Divide}!Pixel@{Pixel}}
+\doxysubsubsection{\texorpdfstring{Divide()}{Divide()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily readonly \mbox{\hyperlink{structPixel}{Pixel}} Pixel.\+Divide (\begin{DoxyParamCaption}\item[{float}]{v }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{structPixel_af5fd7af9f4fe696e5b185d131e9784b9}\label{structPixel_af5fd7af9f4fe696e5b185d131e9784b9}} 
+\index{Pixel@{Pixel}!Divide@{Divide}}
+\index{Divide@{Divide}!Pixel@{Pixel}}
+\doxysubsubsection{\texorpdfstring{Divide()}{Divide()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily readonly \mbox{\hyperlink{structPixel}{Pixel}} Pixel.\+Divide (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{structPixel_a01b55e4a6de467a3ca3b3e3d5aa39db4}\label{structPixel_a01b55e4a6de467a3ca3b3e3d5aa39db4}} 
+\index{Pixel@{Pixel}!Equals@{Equals}}
+\index{Equals@{Equals}!Pixel@{Pixel}}
+\doxysubsubsection{\texorpdfstring{Equals()}{Equals()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily override bool Pixel.\+Equals (\begin{DoxyParamCaption}\item[{object?}]{obj }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structPixel_a3abefd5df2c762c620d3c702e38b50a1}\label{structPixel_a3abefd5df2c762c620d3c702e38b50a1}} 
+\index{Pixel@{Pixel}!Equals@{Equals}}
+\index{Equals@{Equals}!Pixel@{Pixel}}
+\doxysubsubsection{\texorpdfstring{Equals()}{Equals()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool Pixel.\+Equals (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPixel}{Pixel}}}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structPixel_ae8baee3dde904ff523a9273108ad5ce7}\label{structPixel_ae8baee3dde904ff523a9273108ad5ce7}} 
+\index{Pixel@{Pixel}!GetHashCode@{GetHashCode}}
+\index{GetHashCode@{GetHashCode}!Pixel@{Pixel}}
+\doxysubsubsection{\texorpdfstring{GetHashCode()}{GetHashCode()}}
+{\footnotesize\ttfamily override int Pixel.\+Get\+Hash\+Code (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structPixel_a23294d4b2f8b1e3b10c896f4b8b4282d}\label{structPixel_a23294d4b2f8b1e3b10c896f4b8b4282d}} 
+\index{Pixel@{Pixel}!MovedDown@{MovedDown}}
+\index{MovedDown@{MovedDown}!Pixel@{Pixel}}
+\doxysubsubsection{\texorpdfstring{MovedDown()}{MovedDown()}}
+{\footnotesize\ttfamily readonly \mbox{\hyperlink{structPixel}{Pixel}} Pixel.\+Moved\+Down (\begin{DoxyParamCaption}\item[{float}]{dY }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structPixel_a9497708f5b243993e7eb75e0e9736a28}\label{structPixel_a9497708f5b243993e7eb75e0e9736a28}} 
+\index{Pixel@{Pixel}!MovedLeft@{MovedLeft}}
+\index{MovedLeft@{MovedLeft}!Pixel@{Pixel}}
+\doxysubsubsection{\texorpdfstring{MovedLeft()}{MovedLeft()}}
+{\footnotesize\ttfamily readonly \mbox{\hyperlink{structPixel}{Pixel}} Pixel.\+Moved\+Left (\begin{DoxyParamCaption}\item[{float}]{dX }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structPixel_ac935c87e5318dba67ed6ee5fc0e2a952}\label{structPixel_ac935c87e5318dba67ed6ee5fc0e2a952}} 
+\index{Pixel@{Pixel}!MovedRight@{MovedRight}}
+\index{MovedRight@{MovedRight}!Pixel@{Pixel}}
+\doxysubsubsection{\texorpdfstring{MovedRight()}{MovedRight()}}
+{\footnotesize\ttfamily readonly \mbox{\hyperlink{structPixel}{Pixel}} Pixel.\+Moved\+Right (\begin{DoxyParamCaption}\item[{float}]{dX }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structPixel_a719af878611884fba83da81d952e7973}\label{structPixel_a719af878611884fba83da81d952e7973}} 
+\index{Pixel@{Pixel}!MovedUp@{MovedUp}}
+\index{MovedUp@{MovedUp}!Pixel@{Pixel}}
+\doxysubsubsection{\texorpdfstring{MovedUp()}{MovedUp()}}
+{\footnotesize\ttfamily readonly \mbox{\hyperlink{structPixel}{Pixel}} Pixel.\+Moved\+Up (\begin{DoxyParamCaption}\item[{float}]{dY }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structPixel_a29dbcefba6249eadb49bfee631c39f56}\label{structPixel_a29dbcefba6249eadb49bfee631c39f56}} 
+\index{Pixel@{Pixel}!Multiply@{Multiply}}
+\index{Multiply@{Multiply}!Pixel@{Pixel}}
+\doxysubsubsection{\texorpdfstring{Multiply()}{Multiply()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily readonly \mbox{\hyperlink{structPixel}{Pixel}} Pixel.\+Multiply (\begin{DoxyParamCaption}\item[{float}]{v }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{structPixel_a510fcfcd637452cd59ede7a26bc4ac76}\label{structPixel_a510fcfcd637452cd59ede7a26bc4ac76}} 
+\index{Pixel@{Pixel}!Multiply@{Multiply}}
+\index{Multiply@{Multiply}!Pixel@{Pixel}}
+\doxysubsubsection{\texorpdfstring{Multiply()}{Multiply()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily readonly \mbox{\hyperlink{structPixel}{Pixel}} Pixel.\+Multiply (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{structPixel_afb84ad765d955792ecd790051897e0de}\label{structPixel_afb84ad765d955792ecd790051897e0de}} 
+\index{Pixel@{Pixel}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!Pixel@{Pixel}}
+\doxysubsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily static bool Pixel.\+operator!= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPixel}{Pixel}}}]{a,  }\item[{\mbox{\hyperlink{structPixel}{Pixel}}}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{structPixel_a10f0adaab80527ab74a8c1a2a6ad8570}\label{structPixel_a10f0adaab80527ab74a8c1a2a6ad8570}} 
+\index{Pixel@{Pixel}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!Pixel@{Pixel}}
+\doxysubsubsection{\texorpdfstring{operator$\ast$()}{operator*()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{structPixel}{Pixel}} Pixel.\+operator$\ast$ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPixel}{Pixel}}}]{a,  }\item[{float}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{structPixel_aa676c4f6cf08323fdae045e6bc7cf339}\label{structPixel_aa676c4f6cf08323fdae045e6bc7cf339}} 
+\index{Pixel@{Pixel}!operator+@{operator+}}
+\index{operator+@{operator+}!Pixel@{Pixel}}
+\doxysubsubsection{\texorpdfstring{operator+()}{operator+()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{structPixel}{Pixel}} Pixel.\+operator+ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPixel}{Pixel}}}]{a,  }\item[{\mbox{\hyperlink{structPixel}{Pixel}}}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{structPixel_a58a5f3797b19c27255829b0e39704f78}\label{structPixel_a58a5f3797b19c27255829b0e39704f78}} 
+\index{Pixel@{Pixel}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!Pixel@{Pixel}}
+\doxysubsubsection{\texorpdfstring{operator-\/()}{operator-()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{structPixel}{Pixel}} Pixel.\+operator-\/ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPixel}{Pixel}}}]{a,  }\item[{\mbox{\hyperlink{structPixel}{Pixel}}}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{structPixel_afff391e9fcd9dd0937aa68b6d56e8365}\label{structPixel_afff391e9fcd9dd0937aa68b6d56e8365}} 
+\index{Pixel@{Pixel}!operator/@{operator/}}
+\index{operator/@{operator/}!Pixel@{Pixel}}
+\doxysubsubsection{\texorpdfstring{operator/()}{operator/()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{structPixel}{Pixel}} Pixel.\+operator/ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPixel}{Pixel}}}]{a,  }\item[{float}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{structPixel_a409e2fa93d42a7586e68d21b25cb3c2d}\label{structPixel_a409e2fa93d42a7586e68d21b25cb3c2d}} 
+\index{Pixel@{Pixel}!operator==@{operator==}}
+\index{operator==@{operator==}!Pixel@{Pixel}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily static bool Pixel.\+operator== (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPixel}{Pixel}}}]{a,  }\item[{\mbox{\hyperlink{structPixel}{Pixel}}}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{structPixel_afe0dc9b1180be096d993228b4f0192f9}\label{structPixel_afe0dc9b1180be096d993228b4f0192f9}} 
+\index{Pixel@{Pixel}!ToSKPoint@{ToSKPoint}}
+\index{ToSKPoint@{ToSKPoint}!Pixel@{Pixel}}
+\doxysubsubsection{\texorpdfstring{ToSKPoint()}{ToSKPoint()}}
+{\footnotesize\ttfamily SKPoint Pixel.\+To\+SKPoint (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Convert the \mbox{\hyperlink{namespaceScottPlot}{Scott\+Plot}} pixel to a \mbox{\hyperlink{namespaceSkiaSharp}{Skia\+Sharp}} point 
+
+\mbox{\Hypertarget{structPixel_ae53cdac74e6e987edd7b737467e6445c}\label{structPixel_ae53cdac74e6e987edd7b737467e6445c}} 
+\index{Pixel@{Pixel}!ToString@{ToString}}
+\index{ToString@{ToString}!Pixel@{Pixel}}
+\doxysubsubsection{\texorpdfstring{ToString()}{ToString()}}
+{\footnotesize\ttfamily override string Pixel.\+To\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structPixel_acdead60f2bbc88b6f8b057363fa837c8}\label{structPixel_acdead60f2bbc88b6f8b057363fa837c8}} 
+\index{Pixel@{Pixel}!WithOffset@{WithOffset}}
+\index{WithOffset@{WithOffset}!Pixel@{Pixel}}
+\doxysubsubsection{\texorpdfstring{WithOffset()}{WithOffset()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily readonly \mbox{\hyperlink{structPixel}{Pixel}} Pixel.\+With\+Offset (\begin{DoxyParamCaption}\item[{float}]{dX,  }\item[{float}]{dY }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structPixel_a5cad61a0d33d968833c0ad7d1f2957bb}\label{structPixel_a5cad61a0d33d968833c0ad7d1f2957bb}} 
+\index{Pixel@{Pixel}!WithOffset@{WithOffset}}
+\index{WithOffset@{WithOffset}!Pixel@{Pixel}}
+\doxysubsubsection{\texorpdfstring{WithOffset()}{WithOffset()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily readonly \mbox{\hyperlink{structPixel}{Pixel}} Pixel.\+With\+Offset (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPixelOffset}{Pixel\+Offset}}}]{offset }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structPixel_a2648cd1caf15196e0600563c3efb0b51}\label{structPixel_a2648cd1caf15196e0600563c3efb0b51}} 
+\index{Pixel@{Pixel}!X@{X}}
+\index{X@{X}!Pixel@{Pixel}}
+\doxysubsubsection{\texorpdfstring{X}{X}}
+{\footnotesize\ttfamily float Pixel.\+X}
+
+
+
+Horizontal position on the screen in pixel units. Larger numbers are farther right on the screen. 
+
+\mbox{\Hypertarget{structPixel_a32187a8c2eb2f1ef7892ad4e70d34e15}\label{structPixel_a32187a8c2eb2f1ef7892ad4e70d34e15}} 
+\index{Pixel@{Pixel}!Y@{Y}}
+\index{Y@{Y}!Pixel@{Pixel}}
+\doxysubsubsection{\texorpdfstring{Y}{Y}}
+{\footnotesize\ttfamily float Pixel.\+Y}
+
+
+
+Vertical position on the screen in pixel units. Larger numbers are lower on the screen. 
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{structPixel_a91e03243f9b61f0d237f408958d87a92}\label{structPixel_a91e03243f9b61f0d237f408958d87a92}} 
+\index{Pixel@{Pixel}!NaN@{NaN}}
+\index{NaN@{NaN}!Pixel@{Pixel}}
+\doxysubsubsection{\texorpdfstring{NaN}{NaN}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structPixel}{Pixel}} Pixel.\+NaN\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+
+
+Represents an invalid pixel location 
+
+\mbox{\Hypertarget{structPixel_a52c7b01c809a620c6078e2abd1b1ddca}\label{structPixel_a52c7b01c809a620c6078e2abd1b1ddca}} 
+\index{Pixel@{Pixel}!Zero@{Zero}}
+\index{Zero@{Zero}!Pixel@{Pixel}}
+\doxysubsubsection{\texorpdfstring{Zero}{Zero}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structPixel}{Pixel}} Pixel.\+Zero\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Primitives/Pixel.\+cs\end{DoxyCompactItemize}

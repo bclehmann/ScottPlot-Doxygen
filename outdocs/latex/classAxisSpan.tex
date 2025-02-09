@@ -1,0 +1,228 @@
+\hypertarget{classAxisSpan}{}\doxysection{Axis\+Span Class Reference}
+\label{classAxisSpan}\index{AxisSpan@{AxisSpan}}
+Inheritance diagram for Axis\+Span\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classAxisSpan}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+abstract \mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} \mbox{\hyperlink{classAxisSpan_a17c06d2b92e68f098b2b5a69fb8b3239}{Get\+Axis\+Limits}} ()
+\begin{DoxyCompactList}\small\item\em Return the 2D area (in coordinate space) occupied by the data contained in this plottable \end{DoxyCompactList}\item 
+abstract void \mbox{\hyperlink{classAxisSpan_af57046c9de82200e4fb4c64758414a79}{Render}} (\mbox{\hyperlink{classRenderPack}{Render\+Pack}} rp)
+\begin{DoxyCompactList}\small\item\em Draw the data from this plottable into the data area defined in the \mbox{\hyperlink{classAxes}{Axes}}. By default the surface is already clipped to the data area, but this can be cleared inside the plottable. \end{DoxyCompactList}\item 
+abstract ? \mbox{\hyperlink{classAxisSpanUnderMouse}{Axis\+Span\+Under\+Mouse}} \mbox{\hyperlink{classAxisSpan_ab029998dabe75fa807cdd10ccb1ca554}{Under\+Mouse}} (\mbox{\hyperlink{structCoordinateRect}{Coordinate\+Rect}} rect)
+\item 
+abstract void \mbox{\hyperlink{classAxisSpan_aceeba7d9a3f00b3cfdd6e0a1ed9a2909}{Drag\+To}} (\mbox{\hyperlink{classAxisSpanUnderMouse}{Axis\+Span\+Under\+Mouse}} start, \mbox{\hyperlink{structCoordinates}{Coordinates}} mouse\+Now)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classAxisSpan_aa90851fa8b14224973edaa48e85cc9c9}{Render}} (\mbox{\hyperlink{classRenderPack}{Render\+Pack}} rp, \mbox{\hyperlink{structPixelRect}{Pixel\+Rect}} rect)
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classAxisSpan_aa46c4ff9491cdc4da42ad19ab5b030ce}{Is\+Visible}} = true\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{interfaceIAxes}{IAxes}} \mbox{\hyperlink{classAxisSpan_aa2befbb4ddda60728797a1027b628206}{Axes}} = new \mbox{\hyperlink{classAxes}{Axes}}()\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{classLabelStyle}{Label\+Style}} \mbox{\hyperlink{classAxisSpan_ae52e76b065c904565e828907dadb6c80}{Label}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+string \mbox{\hyperlink{classAxisSpan_a824dfcabed9258a615dc2643f23fa5b4}{Legend\+Text}} = string.\+Empty\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{classLineStyle}{Line\+Style}} \mbox{\hyperlink{classAxisSpan_adf2049e908d59d49b72a0790c51050f1}{Line\+Style}} = new()\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{classAxisSpan_a3dd93ba9ac98422bc00144c9177b5b11}{Line\+Width}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+Line\+Pattern \mbox{\hyperlink{classAxisSpan_ae044b57c323c06c9f10c1e0e89815f0a}{Line\+Pattern}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{structColor}{Color}} \mbox{\hyperlink{classAxisSpan_a5dedb0b46a845a9127b2a7c12a5f033f}{Line\+Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{classFillStyle}{Fill\+Style}} \mbox{\hyperlink{classAxisSpan_a05aec8eea5b0b08607335d42766ac866}{Fill\+Style}} = new()\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{structColor}{Color}} \mbox{\hyperlink{classAxisSpan_a7a28cdfddaa9a61b2a2d3b9b4878e7d7}{Fill\+Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{structColor}{Color}} \mbox{\hyperlink{classAxisSpan_a5c8fb1b5f605633318ac2002af53924f}{Fill\+Hatch\+Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{interfaceIHatch}{IHatch}}? \mbox{\hyperlink{classAxisSpan_a3ca07c7716022b266a7f11c691735194}{Fill\+Hatch}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$ \mbox{\hyperlink{classLegendItem}{Legend\+Item}} $>$ \mbox{\hyperlink{classAxisSpan_a4a9a22cb48d93f6373e8376d44b383b1}{Legend\+Items}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+bool \mbox{\hyperlink{classAxisSpan_ad1e553976808f4524f9b16d4891825ce}{Enable\+Autoscale}} = true\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+bool \mbox{\hyperlink{classAxisSpan_a6186780932d8daa84a05ea099ef3d427}{Is\+Draggable}} = false\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+bool \mbox{\hyperlink{classAxisSpan_ac85c7f0d067400d740a84eef6879e928}{Is\+Resizable}} = false\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classAxisSpan_aceeba7d9a3f00b3cfdd6e0a1ed9a2909}\label{classAxisSpan_aceeba7d9a3f00b3cfdd6e0a1ed9a2909}} 
+\index{AxisSpan@{AxisSpan}!DragTo@{DragTo}}
+\index{DragTo@{DragTo}!AxisSpan@{AxisSpan}}
+\doxysubsubsection{\texorpdfstring{DragTo()}{DragTo()}}
+{\footnotesize\ttfamily abstract void Axis\+Span.\+Drag\+To (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classAxisSpanUnderMouse}{Axis\+Span\+Under\+Mouse}}}]{start,  }\item[{\mbox{\hyperlink{structCoordinates}{Coordinates}}}]{mouse\+Now }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classVerticalSpan_a31726fb150e6fa1b442df66e5275af61}{Vertical\+Span}}, and \mbox{\hyperlink{classHorizontalSpan_ae2cc726e4212417964124c1532a129e8}{Horizontal\+Span}}.
+
+\mbox{\Hypertarget{classAxisSpan_a17c06d2b92e68f098b2b5a69fb8b3239}\label{classAxisSpan_a17c06d2b92e68f098b2b5a69fb8b3239}} 
+\index{AxisSpan@{AxisSpan}!GetAxisLimits@{GetAxisLimits}}
+\index{GetAxisLimits@{GetAxisLimits}!AxisSpan@{AxisSpan}}
+\doxysubsubsection{\texorpdfstring{GetAxisLimits()}{GetAxisLimits()}}
+{\footnotesize\ttfamily abstract \mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} Axis\+Span.\+Get\+Axis\+Limits (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Return the 2D area (in coordinate space) occupied by the data contained in this plottable 
+
+
+
+Implements \mbox{\hyperlink{interfaceIPlottable_ac98e2f5e56f9f938bbd081c87c7c6f50}{IPlottable}}.
+
+
+
+Implemented in \mbox{\hyperlink{classVerticalSpan_a8fe95861383953074076d57e7d957168}{Vertical\+Span}}, and \mbox{\hyperlink{classHorizontalSpan_adb7bad9cacc15e6faa4cf9e3f6c82441}{Horizontal\+Span}}.
+
+\mbox{\Hypertarget{classAxisSpan_af57046c9de82200e4fb4c64758414a79}\label{classAxisSpan_af57046c9de82200e4fb4c64758414a79}} 
+\index{AxisSpan@{AxisSpan}!Render@{Render}}
+\index{Render@{Render}!AxisSpan@{AxisSpan}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily abstract void Axis\+Span.\+Render (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classRenderPack}{Render\+Pack}}}]{rp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Draw the data from this plottable into the data area defined in the \mbox{\hyperlink{classAxes}{Axes}}. By default the surface is already clipped to the data area, but this can be cleared inside the plottable. 
+
+
+
+Implements \mbox{\hyperlink{interfaceIPlottable_a201a1a236dc718eda93db143a5ade9f8}{IPlottable}}.
+
+
+
+Implemented in \mbox{\hyperlink{classVerticalSpan_a3bb6606f608859f038957ea112fe2e96}{Vertical\+Span}}, and \mbox{\hyperlink{classHorizontalSpan_ac19ab44605844dd9e6b8cfe8804eb9a6}{Horizontal\+Span}}.
+
+\mbox{\Hypertarget{classAxisSpan_aa90851fa8b14224973edaa48e85cc9c9}\label{classAxisSpan_aa90851fa8b14224973edaa48e85cc9c9}} 
+\index{AxisSpan@{AxisSpan}!Render@{Render}}
+\index{Render@{Render}!AxisSpan@{AxisSpan}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Axis\+Span.\+Render (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classRenderPack}{Render\+Pack}}}]{rp,  }\item[{\mbox{\hyperlink{structPixelRect}{Pixel\+Rect}}}]{rect }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classAxisSpan_ab029998dabe75fa807cdd10ccb1ca554}\label{classAxisSpan_ab029998dabe75fa807cdd10ccb1ca554}} 
+\index{AxisSpan@{AxisSpan}!UnderMouse@{UnderMouse}}
+\index{UnderMouse@{UnderMouse}!AxisSpan@{AxisSpan}}
+\doxysubsubsection{\texorpdfstring{UnderMouse()}{UnderMouse()}}
+{\footnotesize\ttfamily abstract ? \mbox{\hyperlink{classAxisSpanUnderMouse}{Axis\+Span\+Under\+Mouse}} Axis\+Span.\+Under\+Mouse (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structCoordinateRect}{Coordinate\+Rect}}}]{rect }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classVerticalSpan_a194cb6c1c06736b3d961332d36c26763}{Vertical\+Span}}, and \mbox{\hyperlink{classHorizontalSpan_af62c273759c9c08db7518707e1c22fe0}{Horizontal\+Span}}.
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{classAxisSpan_aa2befbb4ddda60728797a1027b628206}\label{classAxisSpan_aa2befbb4ddda60728797a1027b628206}} 
+\index{AxisSpan@{AxisSpan}!Axes@{Axes}}
+\index{Axes@{Axes}!AxisSpan@{AxisSpan}}
+\doxysubsubsection{\texorpdfstring{Axes}{Axes}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceIAxes}{IAxes}} Axis\+Span.\+Axes = new \mbox{\hyperlink{classAxes}{Axes}}()\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classAxisSpan_ad1e553976808f4524f9b16d4891825ce}\label{classAxisSpan_ad1e553976808f4524f9b16d4891825ce}} 
+\index{AxisSpan@{AxisSpan}!EnableAutoscale@{EnableAutoscale}}
+\index{EnableAutoscale@{EnableAutoscale}!AxisSpan@{AxisSpan}}
+\doxysubsubsection{\texorpdfstring{EnableAutoscale}{EnableAutoscale}}
+{\footnotesize\ttfamily bool Axis\+Span.\+Enable\+Autoscale = true\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classAxisSpan_a7a28cdfddaa9a61b2a2d3b9b4878e7d7}\label{classAxisSpan_a7a28cdfddaa9a61b2a2d3b9b4878e7d7}} 
+\index{AxisSpan@{AxisSpan}!FillColor@{FillColor}}
+\index{FillColor@{FillColor}!AxisSpan@{AxisSpan}}
+\doxysubsubsection{\texorpdfstring{FillColor}{FillColor}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structColor}{Color}} Axis\+Span.\+Fill\+Color\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classAxisSpan_a3ca07c7716022b266a7f11c691735194}\label{classAxisSpan_a3ca07c7716022b266a7f11c691735194}} 
+\index{AxisSpan@{AxisSpan}!FillHatch@{FillHatch}}
+\index{FillHatch@{FillHatch}!AxisSpan@{AxisSpan}}
+\doxysubsubsection{\texorpdfstring{FillHatch}{FillHatch}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceIHatch}{IHatch}}? Axis\+Span.\+Fill\+Hatch\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classAxisSpan_a5c8fb1b5f605633318ac2002af53924f}\label{classAxisSpan_a5c8fb1b5f605633318ac2002af53924f}} 
+\index{AxisSpan@{AxisSpan}!FillHatchColor@{FillHatchColor}}
+\index{FillHatchColor@{FillHatchColor}!AxisSpan@{AxisSpan}}
+\doxysubsubsection{\texorpdfstring{FillHatchColor}{FillHatchColor}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structColor}{Color}} Axis\+Span.\+Fill\+Hatch\+Color\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classAxisSpan_a05aec8eea5b0b08607335d42766ac866}\label{classAxisSpan_a05aec8eea5b0b08607335d42766ac866}} 
+\index{AxisSpan@{AxisSpan}!FillStyle@{FillStyle}}
+\index{FillStyle@{FillStyle}!AxisSpan@{AxisSpan}}
+\doxysubsubsection{\texorpdfstring{FillStyle}{FillStyle}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classFillStyle}{Fill\+Style}} Axis\+Span.\+Fill\+Style = new()\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classAxisSpan_a6186780932d8daa84a05ea099ef3d427}\label{classAxisSpan_a6186780932d8daa84a05ea099ef3d427}} 
+\index{AxisSpan@{AxisSpan}!IsDraggable@{IsDraggable}}
+\index{IsDraggable@{IsDraggable}!AxisSpan@{AxisSpan}}
+\doxysubsubsection{\texorpdfstring{IsDraggable}{IsDraggable}}
+{\footnotesize\ttfamily bool Axis\+Span.\+Is\+Draggable = false\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classAxisSpan_ac85c7f0d067400d740a84eef6879e928}\label{classAxisSpan_ac85c7f0d067400d740a84eef6879e928}} 
+\index{AxisSpan@{AxisSpan}!IsResizable@{IsResizable}}
+\index{IsResizable@{IsResizable}!AxisSpan@{AxisSpan}}
+\doxysubsubsection{\texorpdfstring{IsResizable}{IsResizable}}
+{\footnotesize\ttfamily bool Axis\+Span.\+Is\+Resizable = false\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classAxisSpan_aa46c4ff9491cdc4da42ad19ab5b030ce}\label{classAxisSpan_aa46c4ff9491cdc4da42ad19ab5b030ce}} 
+\index{AxisSpan@{AxisSpan}!IsVisible@{IsVisible}}
+\index{IsVisible@{IsVisible}!AxisSpan@{AxisSpan}}
+\doxysubsubsection{\texorpdfstring{IsVisible}{IsVisible}}
+{\footnotesize\ttfamily bool Axis\+Span.\+Is\+Visible = true\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classAxisSpan_ae52e76b065c904565e828907dadb6c80}\label{classAxisSpan_ae52e76b065c904565e828907dadb6c80}} 
+\index{AxisSpan@{AxisSpan}!Label@{Label}}
+\index{Label@{Label}!AxisSpan@{AxisSpan}}
+\doxysubsubsection{\texorpdfstring{Label}{Label}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classLabelStyle}{Label\+Style}} Axis\+Span.\+Label\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classAxisSpan_a4a9a22cb48d93f6373e8376d44b383b1}\label{classAxisSpan_a4a9a22cb48d93f6373e8376d44b383b1}} 
+\index{AxisSpan@{AxisSpan}!LegendItems@{LegendItems}}
+\index{LegendItems@{LegendItems}!AxisSpan@{AxisSpan}}
+\doxysubsubsection{\texorpdfstring{LegendItems}{LegendItems}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$\mbox{\hyperlink{classLegendItem}{Legend\+Item}}$>$ Axis\+Span.\+Legend\+Items\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{classAxisSpan_a824dfcabed9258a615dc2643f23fa5b4}\label{classAxisSpan_a824dfcabed9258a615dc2643f23fa5b4}} 
+\index{AxisSpan@{AxisSpan}!LegendText@{LegendText}}
+\index{LegendText@{LegendText}!AxisSpan@{AxisSpan}}
+\doxysubsubsection{\texorpdfstring{LegendText}{LegendText}}
+{\footnotesize\ttfamily string Axis\+Span.\+Legend\+Text = string.\+Empty\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classAxisSpan_a5dedb0b46a845a9127b2a7c12a5f033f}\label{classAxisSpan_a5dedb0b46a845a9127b2a7c12a5f033f}} 
+\index{AxisSpan@{AxisSpan}!LineColor@{LineColor}}
+\index{LineColor@{LineColor}!AxisSpan@{AxisSpan}}
+\doxysubsubsection{\texorpdfstring{LineColor}{LineColor}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structColor}{Color}} Axis\+Span.\+Line\+Color\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classAxisSpan_ae044b57c323c06c9f10c1e0e89815f0a}\label{classAxisSpan_ae044b57c323c06c9f10c1e0e89815f0a}} 
+\index{AxisSpan@{AxisSpan}!LinePattern@{LinePattern}}
+\index{LinePattern@{LinePattern}!AxisSpan@{AxisSpan}}
+\doxysubsubsection{\texorpdfstring{LinePattern}{LinePattern}}
+{\footnotesize\ttfamily Line\+Pattern Axis\+Span.\+Line\+Pattern\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classAxisSpan_adf2049e908d59d49b72a0790c51050f1}\label{classAxisSpan_adf2049e908d59d49b72a0790c51050f1}} 
+\index{AxisSpan@{AxisSpan}!LineStyle@{LineStyle}}
+\index{LineStyle@{LineStyle}!AxisSpan@{AxisSpan}}
+\doxysubsubsection{\texorpdfstring{LineStyle}{LineStyle}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classLineStyle}{Line\+Style}} Axis\+Span.\+Line\+Style = new()\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classAxisSpan_a3dd93ba9ac98422bc00144c9177b5b11}\label{classAxisSpan_a3dd93ba9ac98422bc00144c9177b5b11}} 
+\index{AxisSpan@{AxisSpan}!LineWidth@{LineWidth}}
+\index{LineWidth@{LineWidth}!AxisSpan@{AxisSpan}}
+\doxysubsubsection{\texorpdfstring{LineWidth}{LineWidth}}
+{\footnotesize\ttfamily float Axis\+Span.\+Line\+Width\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Plottables/Axis\+Span.\+cs\end{DoxyCompactItemize}

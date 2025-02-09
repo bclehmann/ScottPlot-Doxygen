@@ -1,0 +1,289 @@
+\hypertarget{classHeatmap}{}\doxysection{Heatmap Class Reference}
+\label{classHeatmap}\index{Heatmap@{Heatmap}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classHeatmap_a6a9f9bb8409e01422c14a9f9ecc09652}{Update}} ()
+\begin{DoxyCompactList}\small\item\em Regenerate the image using the present settings and data in \mbox{\hyperlink{classHeatmap_ab8573eaac4ed3ca7fd311a2f76127450}{Intensities}} \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} \mbox{\hyperlink{classHeatmap_a037a5f7fe974643ce1abd8a6e6e364f1}{Get\+Axis\+Limits}} ()
+\item 
+double \mbox{\hyperlink{classHeatmap_a165da6a47f6621cf6d6d890ba2aad228}{Get\+Value}} (\mbox{\hyperlink{structCoordinates}{Coordinates}} coordinates)
+\begin{DoxyCompactList}\small\item\em Return the value of the cell beneath the given point. Returns NaN if the point is outside the heatmap area. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structRange}{Range}} \mbox{\hyperlink{classHeatmap_a26689d107eb14aa5f860b9ca69c74c09}{Get\+Range}} ()
+\item 
+virtual void \mbox{\hyperlink{classHeatmap_abca445bba1bd98879ad739b69b289c6e}{Render}} (\mbox{\hyperlink{classRenderPack}{Render\+Pack}} rp)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classHeatmap_af8775cfa9f2d948634b4d4babd9227cc}{x}}
+\begin{DoxyCompactList}\small\item\em Return the position in the array beneath the given point \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+double\mbox{[}\{ get;set;\}public\mbox{]} \mbox{\hyperlink{classHeatmap_a60cc249ee72d746004f5ab96a1426ed5}{intensities}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+double\mbox{[},\mbox{]} \mbox{\hyperlink{classHeatmap_ab8573eaac4ed3ca7fd311a2f76127450}{Intensities}} = \mbox{\hyperlink{classHeatmap_a60cc249ee72d746004f5ab96a1426ed5}{intensities}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Data values for the heatmap. \mbox{\hyperlink{classHeatmap_a6a9f9bb8409e01422c14a9f9ecc09652}{Update}} must be called after changing this array or editing its values. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classHeatmap_ae1753d0d0dce816195d6574b3942fe33}{Is\+Visible}} = true\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{interfaceIAxes}{IAxes}} \mbox{\hyperlink{classHeatmap_ad19ef581a9e986edcb2b0600b5c325c9}{Axes}} = new \mbox{\hyperlink{classAxes}{Axes}}()\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{interfaceIColormap}{IColormap}} \mbox{\hyperlink{classHeatmap_aef5af6ae289ec95d8b60d23bfb125682}{Colormap}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+Alignment \mbox{\hyperlink{classHeatmap_af7b4f0d2f41fa0e47411e554a395823a}{Cell\+Alignment}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{structCoordinateRect}{Coordinate\+Rect}}? \mbox{\hyperlink{classHeatmap_a4a4e7e0e7d9b614087d83b3870e90fea}{Extent}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{structCoordinateRect}{Coordinate\+Rect}}? \mbox{\hyperlink{classHeatmap_a67133f302b0ba2c04fdb6c68a2e22ec5}{Position}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em If defined, the this rectangle sets the axis boundaries of heatmap data. Note that the actual heatmap area is 1 cell larger than this rectangle. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classHeatmap_acb7d48202e92e034b8a8d2e04c4af750}{Flip\+Vertically}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+bool \mbox{\hyperlink{classHeatmap_ad5658828dfce40294122041bfb078a52}{Flip\+Horizontally}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+bool \mbox{\hyperlink{classHeatmap_a258023572279c5b62eefca1c4a6a256c}{Flip\+Columns}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+bool \mbox{\hyperlink{classHeatmap_a93072a60d2af18e5d7c6c4bae89fe2d4}{Flip\+Rows}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+bool \mbox{\hyperlink{classHeatmap_ade5672befdd57ecd413c772207635864}{Smooth}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+double \mbox{\hyperlink{classHeatmap_a437cf69a358fe4acb88e9c466b967ac1}{Cell\+Width}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Width of a single cell from the heatmap (in coordinate units) \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classHeatmap_a308fe00313ed8a9034762546485dc892}{Cell\+Height}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Height of a single cell from the heatmap (in coordinate units) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structColor}{Color}} \mbox{\hyperlink{classHeatmap_a40e7bf487800ac4c85c60e273a70b480}{Na\+NCell\+Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Defines what color will be used to fill cells containing NaN. \end{DoxyCompactList}\item 
+byte?\mbox{[},\mbox{]}?? \mbox{\hyperlink{classHeatmap_aff0eb88c62fcf2ef4398a733195aa888}{Alpha\+Map}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em If present, this array defines transparency for each cell in the heatmap. Values range from 0 (transparent) through 255 (opaque). \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classHeatmap_afcc3c0b2507f7df3e2250c624e1a42eb}{Opacity}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Controls the opacity of the entire heatmap from 0 (transparent) to 1 (opaque) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$ \mbox{\hyperlink{classLegendItem}{Legend\+Item}} $>$ \mbox{\hyperlink{classHeatmap_ac108496295966cfab8260a3ca72cefec}{Legend\+Items}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{structRange}{Range}} \mbox{\hyperlink{classHeatmap_a9aa5c00d6f350f9d3eb394ab421cc2bc}{Data\+Range}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{structRange}{Range}} of values spanned by the data the last time it was updated \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structRange}{Range}}? \mbox{\hyperlink{classHeatmap_a8aa350e6f936b0a4ba840a179bca1b6d}{Manual\+Range}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em If supplied, the colormap will span this range of values \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classHeatmap_a037a5f7fe974643ce1abd8a6e6e364f1}\label{classHeatmap_a037a5f7fe974643ce1abd8a6e6e364f1}} 
+\index{Heatmap@{Heatmap}!GetAxisLimits@{GetAxisLimits}}
+\index{GetAxisLimits@{GetAxisLimits}!Heatmap@{Heatmap}}
+\doxysubsubsection{\texorpdfstring{GetAxisLimits()}{GetAxisLimits()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} Heatmap.\+Get\+Axis\+Limits (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classHeatmap_a26689d107eb14aa5f860b9ca69c74c09}\label{classHeatmap_a26689d107eb14aa5f860b9ca69c74c09}} 
+\index{Heatmap@{Heatmap}!GetRange@{GetRange}}
+\index{GetRange@{GetRange}!Heatmap@{Heatmap}}
+\doxysubsubsection{\texorpdfstring{GetRange()}{GetRange()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structRange}{Range}} Heatmap.\+Get\+Range (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classHeatmap_a165da6a47f6621cf6d6d890ba2aad228}\label{classHeatmap_a165da6a47f6621cf6d6d890ba2aad228}} 
+\index{Heatmap@{Heatmap}!GetValue@{GetValue}}
+\index{GetValue@{GetValue}!Heatmap@{Heatmap}}
+\doxysubsubsection{\texorpdfstring{GetValue()}{GetValue()}}
+{\footnotesize\ttfamily double Heatmap.\+Get\+Value (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structCoordinates}{Coordinates}}}]{coordinates }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return the value of the cell beneath the given point. Returns NaN if the point is outside the heatmap area. 
+
+\mbox{\Hypertarget{classHeatmap_abca445bba1bd98879ad739b69b289c6e}\label{classHeatmap_abca445bba1bd98879ad739b69b289c6e}} 
+\index{Heatmap@{Heatmap}!Render@{Render}}
+\index{Render@{Render}!Heatmap@{Heatmap}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily virtual void Heatmap.\+Render (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classRenderPack}{Render\+Pack}}}]{rp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classHeatmap_a6a9f9bb8409e01422c14a9f9ecc09652}\label{classHeatmap_a6a9f9bb8409e01422c14a9f9ecc09652}} 
+\index{Heatmap@{Heatmap}!Update@{Update}}
+\index{Update@{Update}!Heatmap@{Heatmap}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Heatmap.\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Regenerate the image using the present settings and data in \mbox{\hyperlink{classHeatmap_ab8573eaac4ed3ca7fd311a2f76127450}{Intensities}} 
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classHeatmap_af8775cfa9f2d948634b4d4babd9227cc}\label{classHeatmap_af8775cfa9f2d948634b4d4babd9227cc}} 
+\index{Heatmap@{Heatmap}!x@{x}}
+\index{x@{x}!Heatmap@{Heatmap}}
+\doxysubsubsection{\texorpdfstring{x}{x}}
+{\footnotesize\ttfamily int Heatmap.\+x}
+
+
+
+Return the position in the array beneath the given point 
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{classHeatmap_aff0eb88c62fcf2ef4398a733195aa888}\label{classHeatmap_aff0eb88c62fcf2ef4398a733195aa888}} 
+\index{Heatmap@{Heatmap}!AlphaMap@{AlphaMap}}
+\index{AlphaMap@{AlphaMap}!Heatmap@{Heatmap}}
+\doxysubsubsection{\texorpdfstring{AlphaMap}{AlphaMap}}
+{\footnotesize\ttfamily byte? \mbox{[},\mbox{]}?? Heatmap.\+Alpha\+Map\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+If present, this array defines transparency for each cell in the heatmap. Values range from 0 (transparent) through 255 (opaque). 
+
+\mbox{\Hypertarget{classHeatmap_ad19ef581a9e986edcb2b0600b5c325c9}\label{classHeatmap_ad19ef581a9e986edcb2b0600b5c325c9}} 
+\index{Heatmap@{Heatmap}!Axes@{Axes}}
+\index{Axes@{Axes}!Heatmap@{Heatmap}}
+\doxysubsubsection{\texorpdfstring{Axes}{Axes}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceIAxes}{IAxes}} Heatmap.\+Axes = new \mbox{\hyperlink{classAxes}{Axes}}()\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classHeatmap_af7b4f0d2f41fa0e47411e554a395823a}\label{classHeatmap_af7b4f0d2f41fa0e47411e554a395823a}} 
+\index{Heatmap@{Heatmap}!CellAlignment@{CellAlignment}}
+\index{CellAlignment@{CellAlignment}!Heatmap@{Heatmap}}
+\doxysubsubsection{\texorpdfstring{CellAlignment}{CellAlignment}}
+{\footnotesize\ttfamily Alignment Heatmap.\+Cell\+Alignment\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classHeatmap_a308fe00313ed8a9034762546485dc892}\label{classHeatmap_a308fe00313ed8a9034762546485dc892}} 
+\index{Heatmap@{Heatmap}!CellHeight@{CellHeight}}
+\index{CellHeight@{CellHeight}!Heatmap@{Heatmap}}
+\doxysubsubsection{\texorpdfstring{CellHeight}{CellHeight}}
+{\footnotesize\ttfamily double Heatmap.\+Cell\+Height\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Height of a single cell from the heatmap (in coordinate units) 
+
+\mbox{\Hypertarget{classHeatmap_a437cf69a358fe4acb88e9c466b967ac1}\label{classHeatmap_a437cf69a358fe4acb88e9c466b967ac1}} 
+\index{Heatmap@{Heatmap}!CellWidth@{CellWidth}}
+\index{CellWidth@{CellWidth}!Heatmap@{Heatmap}}
+\doxysubsubsection{\texorpdfstring{CellWidth}{CellWidth}}
+{\footnotesize\ttfamily double Heatmap.\+Cell\+Width\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Width of a single cell from the heatmap (in coordinate units) 
+
+\mbox{\Hypertarget{classHeatmap_aef5af6ae289ec95d8b60d23bfb125682}\label{classHeatmap_aef5af6ae289ec95d8b60d23bfb125682}} 
+\index{Heatmap@{Heatmap}!Colormap@{Colormap}}
+\index{Colormap@{Colormap}!Heatmap@{Heatmap}}
+\doxysubsubsection{\texorpdfstring{Colormap}{Colormap}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceIColormap}{IColormap}} Heatmap.\+Colormap\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classHeatmap_a9aa5c00d6f350f9d3eb394ab421cc2bc}\label{classHeatmap_a9aa5c00d6f350f9d3eb394ab421cc2bc}} 
+\index{Heatmap@{Heatmap}!DataRange@{DataRange}}
+\index{DataRange@{DataRange}!Heatmap@{Heatmap}}
+\doxysubsubsection{\texorpdfstring{DataRange}{DataRange}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structRange}{Range}} Heatmap.\+Data\+Range\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+\mbox{\hyperlink{structRange}{Range}} of values spanned by the data the last time it was updated 
+
+\mbox{\Hypertarget{classHeatmap_a4a4e7e0e7d9b614087d83b3870e90fea}\label{classHeatmap_a4a4e7e0e7d9b614087d83b3870e90fea}} 
+\index{Heatmap@{Heatmap}!Extent@{Extent}}
+\index{Extent@{Extent}!Heatmap@{Heatmap}}
+\doxysubsubsection{\texorpdfstring{Extent}{Extent}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structCoordinateRect}{Coordinate\+Rect}}? Heatmap.\+Extent\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classHeatmap_a258023572279c5b62eefca1c4a6a256c}\label{classHeatmap_a258023572279c5b62eefca1c4a6a256c}} 
+\index{Heatmap@{Heatmap}!FlipColumns@{FlipColumns}}
+\index{FlipColumns@{FlipColumns}!Heatmap@{Heatmap}}
+\doxysubsubsection{\texorpdfstring{FlipColumns}{FlipColumns}}
+{\footnotesize\ttfamily bool Heatmap.\+Flip\+Columns\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classHeatmap_ad5658828dfce40294122041bfb078a52}\label{classHeatmap_ad5658828dfce40294122041bfb078a52}} 
+\index{Heatmap@{Heatmap}!FlipHorizontally@{FlipHorizontally}}
+\index{FlipHorizontally@{FlipHorizontally}!Heatmap@{Heatmap}}
+\doxysubsubsection{\texorpdfstring{FlipHorizontally}{FlipHorizontally}}
+{\footnotesize\ttfamily bool Heatmap.\+Flip\+Horizontally\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classHeatmap_a93072a60d2af18e5d7c6c4bae89fe2d4}\label{classHeatmap_a93072a60d2af18e5d7c6c4bae89fe2d4}} 
+\index{Heatmap@{Heatmap}!FlipRows@{FlipRows}}
+\index{FlipRows@{FlipRows}!Heatmap@{Heatmap}}
+\doxysubsubsection{\texorpdfstring{FlipRows}{FlipRows}}
+{\footnotesize\ttfamily bool Heatmap.\+Flip\+Rows\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classHeatmap_acb7d48202e92e034b8a8d2e04c4af750}\label{classHeatmap_acb7d48202e92e034b8a8d2e04c4af750}} 
+\index{Heatmap@{Heatmap}!FlipVertically@{FlipVertically}}
+\index{FlipVertically@{FlipVertically}!Heatmap@{Heatmap}}
+\doxysubsubsection{\texorpdfstring{FlipVertically}{FlipVertically}}
+{\footnotesize\ttfamily bool Heatmap.\+Flip\+Vertically\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classHeatmap_a60cc249ee72d746004f5ab96a1426ed5}\label{classHeatmap_a60cc249ee72d746004f5ab96a1426ed5}} 
+\index{Heatmap@{Heatmap}!intensities@{intensities}}
+\index{intensities@{intensities}!Heatmap@{Heatmap}}
+\doxysubsubsection{\texorpdfstring{intensities}{intensities}}
+{\footnotesize\ttfamily double \mbox{[} \{ get; set; \}public \mbox{]} Heatmap.\+intensities\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classHeatmap_ab8573eaac4ed3ca7fd311a2f76127450}\label{classHeatmap_ab8573eaac4ed3ca7fd311a2f76127450}} 
+\index{Heatmap@{Heatmap}!Intensities@{Intensities}}
+\index{Intensities@{Intensities}!Heatmap@{Heatmap}}
+\doxysubsubsection{\texorpdfstring{Intensities}{Intensities}}
+{\footnotesize\ttfamily double \mbox{[},\mbox{]} Heatmap.\+Intensities = \mbox{\hyperlink{classHeatmap_a60cc249ee72d746004f5ab96a1426ed5}{intensities}}\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Data values for the heatmap. \mbox{\hyperlink{classHeatmap_a6a9f9bb8409e01422c14a9f9ecc09652}{Update}} must be called after changing this array or editing its values. 
+
+\mbox{\Hypertarget{classHeatmap_ae1753d0d0dce816195d6574b3942fe33}\label{classHeatmap_ae1753d0d0dce816195d6574b3942fe33}} 
+\index{Heatmap@{Heatmap}!IsVisible@{IsVisible}}
+\index{IsVisible@{IsVisible}!Heatmap@{Heatmap}}
+\doxysubsubsection{\texorpdfstring{IsVisible}{IsVisible}}
+{\footnotesize\ttfamily bool Heatmap.\+Is\+Visible = true\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classHeatmap_ac108496295966cfab8260a3ca72cefec}\label{classHeatmap_ac108496295966cfab8260a3ca72cefec}} 
+\index{Heatmap@{Heatmap}!LegendItems@{LegendItems}}
+\index{LegendItems@{LegendItems}!Heatmap@{Heatmap}}
+\doxysubsubsection{\texorpdfstring{LegendItems}{LegendItems}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$\mbox{\hyperlink{classLegendItem}{Legend\+Item}}$>$ Heatmap.\+Legend\+Items\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{classHeatmap_a8aa350e6f936b0a4ba840a179bca1b6d}\label{classHeatmap_a8aa350e6f936b0a4ba840a179bca1b6d}} 
+\index{Heatmap@{Heatmap}!ManualRange@{ManualRange}}
+\index{ManualRange@{ManualRange}!Heatmap@{Heatmap}}
+\doxysubsubsection{\texorpdfstring{ManualRange}{ManualRange}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structRange}{Range}}? Heatmap.\+Manual\+Range\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+If supplied, the colormap will span this range of values 
+
+\mbox{\Hypertarget{classHeatmap_a40e7bf487800ac4c85c60e273a70b480}\label{classHeatmap_a40e7bf487800ac4c85c60e273a70b480}} 
+\index{Heatmap@{Heatmap}!NaNCellColor@{NaNCellColor}}
+\index{NaNCellColor@{NaNCellColor}!Heatmap@{Heatmap}}
+\doxysubsubsection{\texorpdfstring{NaNCellColor}{NaNCellColor}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structColor}{Color}} Heatmap.\+Na\+NCell\+Color\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Defines what color will be used to fill cells containing NaN. 
+
+\mbox{\Hypertarget{classHeatmap_afcc3c0b2507f7df3e2250c624e1a42eb}\label{classHeatmap_afcc3c0b2507f7df3e2250c624e1a42eb}} 
+\index{Heatmap@{Heatmap}!Opacity@{Opacity}}
+\index{Opacity@{Opacity}!Heatmap@{Heatmap}}
+\doxysubsubsection{\texorpdfstring{Opacity}{Opacity}}
+{\footnotesize\ttfamily double Heatmap.\+Opacity\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Controls the opacity of the entire heatmap from 0 (transparent) to 1 (opaque) 
+
+\mbox{\Hypertarget{classHeatmap_a67133f302b0ba2c04fdb6c68a2e22ec5}\label{classHeatmap_a67133f302b0ba2c04fdb6c68a2e22ec5}} 
+\index{Heatmap@{Heatmap}!Position@{Position}}
+\index{Position@{Position}!Heatmap@{Heatmap}}
+\doxysubsubsection{\texorpdfstring{Position}{Position}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structCoordinateRect}{Coordinate\+Rect}}? Heatmap.\+Position\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+If defined, the this rectangle sets the axis boundaries of heatmap data. Note that the actual heatmap area is 1 cell larger than this rectangle. 
+
+\mbox{\Hypertarget{classHeatmap_ade5672befdd57ecd413c772207635864}\label{classHeatmap_ade5672befdd57ecd413c772207635864}} 
+\index{Heatmap@{Heatmap}!Smooth@{Smooth}}
+\index{Smooth@{Smooth}!Heatmap@{Heatmap}}
+\doxysubsubsection{\texorpdfstring{Smooth}{Smooth}}
+{\footnotesize\ttfamily bool Heatmap.\+Smooth\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Plottables/Heatmap.\+cs\end{DoxyCompactItemize}

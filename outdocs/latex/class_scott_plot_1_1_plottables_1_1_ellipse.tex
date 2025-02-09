@@ -1,0 +1,280 @@
+\doxysection{Scott\+Plot.\+Plottables.\+Ellipse Class Reference}
+\hypertarget{class_scott_plot_1_1_plottables_1_1_ellipse}{}\label{class_scott_plot_1_1_plottables_1_1_ellipse}\index{ScottPlot.Plottables.Ellipse@{ScottPlot.Plottables.Ellipse}}
+Inheritance diagram for Scott\+Plot.\+Plottables.\+Ellipse\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.666667cm]{class_scott_plot_1_1_plottables_1_1_ellipse}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_ellipse_a0e6ab480c56c4d3dc12480e00ff5ab76}{Get\+Axis\+Limits}} ()
+\begin{DoxyCompactList}\small\item\em Return the 2D area (in coordinate space) occupied by the data contained in this plottable. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_ellipse_a4fabca4f1ddda5e6f65eccb119a44a9e}{Render}} (Render\+Pack rp)
+\begin{DoxyCompactList}\small\item\em Draw the data from this plottable into the data area defined in the \doxylink{class_scott_plot_1_1_axes}{Axes}. By default the surface is already clipped to the data area, but this can be cleared inside the plottable. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable}{Scott\+Plot.\+IPlottable}}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_coordinates}{Coordinates}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_ellipse_a723abf579b94ba9240cdd88045a6eaf3}{Center}} = \mbox{\hyperlink{struct_scott_plot_1_1_coordinates_a65ad3bb5090748c7a8ad103862559c4f}{Coordinates.\+Origin}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_ellipse_a7519aa628840b78e32d6d2c29113b611}{Is\+Visible}} = true\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Toggles whether this plottable is shown and contributes to the automatic axis limit detection. The calling method will check this variable (it does not need to be checked inside the Render method). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{interface_scott_plot_1_1_i_axes}{IAxes}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_ellipse_ada0566760d236586c6fce9b64f5b7236}{Axes}} = new \mbox{\hyperlink{class_scott_plot_1_1_axes}{Axes}}()\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em This object performs coordinate/pixel translation at render time based on the latest data area. It stores the axes to use for this plottable and also the data area (in pixels) updated just before each render. If this object is null it will be constructed using the default X and Y axes at render time. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_enumerable}{IEnumerable}}$<$ \mbox{\hyperlink{class_scott_plot_1_1_legend_item}{Legend\+Item}} $>$ \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_ellipse_ab87ffd8e6ee870b5af4051a71dd7441c}{Legend\+Items}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Items which will appear in the legend. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_scott_plot_1_1_line_style}{Line\+Style}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_ellipse_aa6848e51fa88ccb5de684cd11777bbc5}{Line\+Style}} = new() \{ Width = 1 \}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_ellipse_a3ca09c8a5df5f4b4f8a1df5b960a38b6}{Line\+Width}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{namespace_scott_plot_a625917eb44cadb4de90991e525db6ab5}{Line\+Pattern}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_ellipse_a8e822e74d6c3052ac15c614a6384b9ff}{Line\+Pattern}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_ellipse_a04f052dce7192a44e052ee2ef8fcb233}{Line\+Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{class_scott_plot_1_1_fill_style}{Fill\+Style}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_ellipse_ad954db27e3d26f1ffd702c36c70fd957}{Fill\+Style}} = new() \{ \mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} = \mbox{\hyperlink{struct_scott_plot_1_1_colors_aecffb5296bdfb8fdb3168a75822b5da0}{Colors.\+Transparent}} \}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_ellipse_a0cf1f96fd9f2c3f7cb882b38567e2e7e}{Fill\+Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_ellipse_ae8c8f549053b52c5182b9d5c22ff8be0}{Fill\+Hatch\+Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{interface_scott_plot_1_1_i_hatch}{IHatch}}? \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_ellipse_ab1abd1b070ff44ba0568f305213e1f60}{Fill\+Hatch}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+string \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_ellipse_a2c42fba51c27f690d334c655d68f39d5}{Label}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+string \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_ellipse_af82782a6c0a6ef1536502a86f46faf50}{Legend\+Text}} = string.\+Empty\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em If populated, this text appears in the legend. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_ellipse_a84715b4d6bc925632f65b65e3fcc658f}{RadiusX}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Horizontal radius (axis units) \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_ellipse_a951e9b9a0a976b4350562eeb9a57dbfe}{RadiusY}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Horizontal radius (axis units) \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_ellipse_a99bec67f6ca0d8dc0ff251e69bc39ef8}{Rotation}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Rotation of the ellipse (degrees) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable}{Scott\+Plot.\+IPlottable}}}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{interface_scott_plot_1_1_i_has_line}{Scott\+Plot.\+IHas\+Line}}}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{interface_scott_plot_1_1_i_has_fill}{Scott\+Plot.\+IHas\+Fill}}}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{interface_scott_plot_1_1_i_has_legend_text}{Scott\+Plot.\+IHas\+Legend\+Text}}}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_ellipse_a0e6ab480c56c4d3dc12480e00ff5ab76}\index{ScottPlot.Plottables.Ellipse@{ScottPlot.Plottables.Ellipse}!GetAxisLimits@{GetAxisLimits}}
+\index{GetAxisLimits@{GetAxisLimits}!ScottPlot.Plottables.Ellipse@{ScottPlot.Plottables.Ellipse}}
+\doxysubsubsection{\texorpdfstring{GetAxisLimits()}{GetAxisLimits()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_ellipse_a0e6ab480c56c4d3dc12480e00ff5ab76} 
+\mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}} Scott\+Plot.\+Plottables.\+Ellipse.\+Get\+Axis\+Limits (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return the 2D area (in coordinate space) occupied by the data contained in this plottable. 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable_a2e455cf76f9e8bc3187900b1a90487c3}{Scott\+Plot.\+IPlottable}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_ellipse_a4fabca4f1ddda5e6f65eccb119a44a9e}\index{ScottPlot.Plottables.Ellipse@{ScottPlot.Plottables.Ellipse}!Render@{Render}}
+\index{Render@{Render}!ScottPlot.Plottables.Ellipse@{ScottPlot.Plottables.Ellipse}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_ellipse_a4fabca4f1ddda5e6f65eccb119a44a9e} 
+virtual void Scott\+Plot.\+Plottables.\+Ellipse.\+Render (\begin{DoxyParamCaption}\item[{Render\+Pack}]{rp}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Draw the data from this plottable into the data area defined in the \doxylink{class_scott_plot_1_1_axes}{Axes}. By default the surface is already clipped to the data area, but this can be cleared inside the plottable. 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable_a11d2487f1d7628e019a09748d876c289}{Scott\+Plot.\+IPlottable}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_ellipse_a723abf579b94ba9240cdd88045a6eaf3}\index{ScottPlot.Plottables.Ellipse@{ScottPlot.Plottables.Ellipse}!Center@{Center}}
+\index{Center@{Center}!ScottPlot.Plottables.Ellipse@{ScottPlot.Plottables.Ellipse}}
+\doxysubsubsection{\texorpdfstring{Center}{Center}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_ellipse_a723abf579b94ba9240cdd88045a6eaf3} 
+\mbox{\hyperlink{struct_scott_plot_1_1_coordinates}{Coordinates}} Scott\+Plot.\+Plottables.\+Ellipse.\+Center = \mbox{\hyperlink{struct_scott_plot_1_1_coordinates_a65ad3bb5090748c7a8ad103862559c4f}{Coordinates.\+Origin}}}
+
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_ellipse_ada0566760d236586c6fce9b64f5b7236}\index{ScottPlot.Plottables.Ellipse@{ScottPlot.Plottables.Ellipse}!Axes@{Axes}}
+\index{Axes@{Axes}!ScottPlot.Plottables.Ellipse@{ScottPlot.Plottables.Ellipse}}
+\doxysubsubsection{\texorpdfstring{Axes}{Axes}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_ellipse_ada0566760d236586c6fce9b64f5b7236} 
+\mbox{\hyperlink{interface_scott_plot_1_1_i_axes}{IAxes}} Scott\+Plot.\+Plottables.\+Ellipse.\+Axes = new \mbox{\hyperlink{class_scott_plot_1_1_axes}{Axes}}()\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+This object performs coordinate/pixel translation at render time based on the latest data area. It stores the axes to use for this plottable and also the data area (in pixels) updated just before each render. If this object is null it will be constructed using the default X and Y axes at render time. 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable_aa68bc5153a673a7cd4a68f93da377d0a}{Scott\+Plot.\+IPlottable}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_ellipse_a0cf1f96fd9f2c3f7cb882b38567e2e7e}\index{ScottPlot.Plottables.Ellipse@{ScottPlot.Plottables.Ellipse}!FillColor@{FillColor}}
+\index{FillColor@{FillColor}!ScottPlot.Plottables.Ellipse@{ScottPlot.Plottables.Ellipse}}
+\doxysubsubsection{\texorpdfstring{FillColor}{FillColor}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_ellipse_a0cf1f96fd9f2c3f7cb882b38567e2e7e} 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} Scott\+Plot.\+Plottables.\+Ellipse.\+Fill\+Color\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_has_fill_a22e0a80821a7ed97ea4af9f5f5614f0e}{Scott\+Plot.\+IHas\+Fill}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_ellipse_ab1abd1b070ff44ba0568f305213e1f60}\index{ScottPlot.Plottables.Ellipse@{ScottPlot.Plottables.Ellipse}!FillHatch@{FillHatch}}
+\index{FillHatch@{FillHatch}!ScottPlot.Plottables.Ellipse@{ScottPlot.Plottables.Ellipse}}
+\doxysubsubsection{\texorpdfstring{FillHatch}{FillHatch}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_ellipse_ab1abd1b070ff44ba0568f305213e1f60} 
+\mbox{\hyperlink{interface_scott_plot_1_1_i_hatch}{IHatch}}? Scott\+Plot.\+Plottables.\+Ellipse.\+Fill\+Hatch\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_has_fill_a681a7efc565989ffe28dc38f6bf42d9e}{Scott\+Plot.\+IHas\+Fill}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_ellipse_ae8c8f549053b52c5182b9d5c22ff8be0}\index{ScottPlot.Plottables.Ellipse@{ScottPlot.Plottables.Ellipse}!FillHatchColor@{FillHatchColor}}
+\index{FillHatchColor@{FillHatchColor}!ScottPlot.Plottables.Ellipse@{ScottPlot.Plottables.Ellipse}}
+\doxysubsubsection{\texorpdfstring{FillHatchColor}{FillHatchColor}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_ellipse_ae8c8f549053b52c5182b9d5c22ff8be0} 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} Scott\+Plot.\+Plottables.\+Ellipse.\+Fill\+Hatch\+Color\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_has_fill_a677a670c4b6c9718d48c8556d93f7094}{Scott\+Plot.\+IHas\+Fill}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_ellipse_ad954db27e3d26f1ffd702c36c70fd957}\index{ScottPlot.Plottables.Ellipse@{ScottPlot.Plottables.Ellipse}!FillStyle@{FillStyle}}
+\index{FillStyle@{FillStyle}!ScottPlot.Plottables.Ellipse@{ScottPlot.Plottables.Ellipse}}
+\doxysubsubsection{\texorpdfstring{FillStyle}{FillStyle}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_ellipse_ad954db27e3d26f1ffd702c36c70fd957} 
+\mbox{\hyperlink{class_scott_plot_1_1_fill_style}{Fill\+Style}} Scott\+Plot.\+Plottables.\+Ellipse.\+Fill\+Style = new() \{ \mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} = \mbox{\hyperlink{struct_scott_plot_1_1_colors_aecffb5296bdfb8fdb3168a75822b5da0}{Colors.\+Transparent}} \}\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_has_fill_aceaa90166768f5edc0e81d89b6165b0a}{Scott\+Plot.\+IHas\+Fill}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_ellipse_a7519aa628840b78e32d6d2c29113b611}\index{ScottPlot.Plottables.Ellipse@{ScottPlot.Plottables.Ellipse}!IsVisible@{IsVisible}}
+\index{IsVisible@{IsVisible}!ScottPlot.Plottables.Ellipse@{ScottPlot.Plottables.Ellipse}}
+\doxysubsubsection{\texorpdfstring{IsVisible}{IsVisible}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_ellipse_a7519aa628840b78e32d6d2c29113b611} 
+bool Scott\+Plot.\+Plottables.\+Ellipse.\+Is\+Visible = true\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Toggles whether this plottable is shown and contributes to the automatic axis limit detection. The calling method will check this variable (it does not need to be checked inside the Render method). 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable_abbe75ba55a332d695313ccb5dc780923}{Scott\+Plot.\+IPlottable}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_ellipse_a2c42fba51c27f690d334c655d68f39d5}\index{ScottPlot.Plottables.Ellipse@{ScottPlot.Plottables.Ellipse}!Label@{Label}}
+\index{Label@{Label}!ScottPlot.Plottables.Ellipse@{ScottPlot.Plottables.Ellipse}}
+\doxysubsubsection{\texorpdfstring{Label}{Label}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_ellipse_a2c42fba51c27f690d334c655d68f39d5} 
+string Scott\+Plot.\+Plottables.\+Ellipse.\+Label\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_ellipse_ab87ffd8e6ee870b5af4051a71dd7441c}\index{ScottPlot.Plottables.Ellipse@{ScottPlot.Plottables.Ellipse}!LegendItems@{LegendItems}}
+\index{LegendItems@{LegendItems}!ScottPlot.Plottables.Ellipse@{ScottPlot.Plottables.Ellipse}}
+\doxysubsubsection{\texorpdfstring{LegendItems}{LegendItems}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_ellipse_ab87ffd8e6ee870b5af4051a71dd7441c} 
+\mbox{\hyperlink{class_i_enumerable}{IEnumerable}}$<$\mbox{\hyperlink{class_scott_plot_1_1_legend_item}{Legend\+Item}}$>$ Scott\+Plot.\+Plottables.\+Ellipse.\+Legend\+Items\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Items which will appear in the legend. 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable_a4565f96a253f832bd9aa8033c99eff75}{Scott\+Plot.\+IPlottable}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_ellipse_af82782a6c0a6ef1536502a86f46faf50}\index{ScottPlot.Plottables.Ellipse@{ScottPlot.Plottables.Ellipse}!LegendText@{LegendText}}
+\index{LegendText@{LegendText}!ScottPlot.Plottables.Ellipse@{ScottPlot.Plottables.Ellipse}}
+\doxysubsubsection{\texorpdfstring{LegendText}{LegendText}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_ellipse_af82782a6c0a6ef1536502a86f46faf50} 
+string Scott\+Plot.\+Plottables.\+Ellipse.\+Legend\+Text = string.\+Empty\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+If populated, this text appears in the legend. 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_has_legend_text_ad89967a734dbda7c02217a19c17d88d8}{Scott\+Plot.\+IHas\+Legend\+Text}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_ellipse_a04f052dce7192a44e052ee2ef8fcb233}\index{ScottPlot.Plottables.Ellipse@{ScottPlot.Plottables.Ellipse}!LineColor@{LineColor}}
+\index{LineColor@{LineColor}!ScottPlot.Plottables.Ellipse@{ScottPlot.Plottables.Ellipse}}
+\doxysubsubsection{\texorpdfstring{LineColor}{LineColor}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_ellipse_a04f052dce7192a44e052ee2ef8fcb233} 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} Scott\+Plot.\+Plottables.\+Ellipse.\+Line\+Color\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_has_line_aa6dfc6fced8c40566cc6fdf237b66175}{Scott\+Plot.\+IHas\+Line}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_ellipse_a8e822e74d6c3052ac15c614a6384b9ff}\index{ScottPlot.Plottables.Ellipse@{ScottPlot.Plottables.Ellipse}!LinePattern@{LinePattern}}
+\index{LinePattern@{LinePattern}!ScottPlot.Plottables.Ellipse@{ScottPlot.Plottables.Ellipse}}
+\doxysubsubsection{\texorpdfstring{LinePattern}{LinePattern}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_ellipse_a8e822e74d6c3052ac15c614a6384b9ff} 
+\mbox{\hyperlink{namespace_scott_plot_a625917eb44cadb4de90991e525db6ab5}{Line\+Pattern}} Scott\+Plot.\+Plottables.\+Ellipse.\+Line\+Pattern\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_has_line_a36a31df15a64944ab9108d98574a5ada}{Scott\+Plot.\+IHas\+Line}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_ellipse_aa6848e51fa88ccb5de684cd11777bbc5}\index{ScottPlot.Plottables.Ellipse@{ScottPlot.Plottables.Ellipse}!LineStyle@{LineStyle}}
+\index{LineStyle@{LineStyle}!ScottPlot.Plottables.Ellipse@{ScottPlot.Plottables.Ellipse}}
+\doxysubsubsection{\texorpdfstring{LineStyle}{LineStyle}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_ellipse_aa6848e51fa88ccb5de684cd11777bbc5} 
+\mbox{\hyperlink{class_scott_plot_1_1_line_style}{Line\+Style}} Scott\+Plot.\+Plottables.\+Ellipse.\+Line\+Style = new() \{ Width = 1 \}\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_has_line_a1a04ccd6d040be2e80338c8af04ea291}{Scott\+Plot.\+IHas\+Line}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_ellipse_a3ca09c8a5df5f4b4f8a1df5b960a38b6}\index{ScottPlot.Plottables.Ellipse@{ScottPlot.Plottables.Ellipse}!LineWidth@{LineWidth}}
+\index{LineWidth@{LineWidth}!ScottPlot.Plottables.Ellipse@{ScottPlot.Plottables.Ellipse}}
+\doxysubsubsection{\texorpdfstring{LineWidth}{LineWidth}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_ellipse_a3ca09c8a5df5f4b4f8a1df5b960a38b6} 
+float Scott\+Plot.\+Plottables.\+Ellipse.\+Line\+Width\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_has_line_aa5f2d70e52466770207ed3547ffeecb3}{Scott\+Plot.\+IHas\+Line}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_ellipse_a84715b4d6bc925632f65b65e3fcc658f}\index{ScottPlot.Plottables.Ellipse@{ScottPlot.Plottables.Ellipse}!RadiusX@{RadiusX}}
+\index{RadiusX@{RadiusX}!ScottPlot.Plottables.Ellipse@{ScottPlot.Plottables.Ellipse}}
+\doxysubsubsection{\texorpdfstring{RadiusX}{RadiusX}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_ellipse_a84715b4d6bc925632f65b65e3fcc658f} 
+double Scott\+Plot.\+Plottables.\+Ellipse.\+RadiusX\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Horizontal radius (axis units) 
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_ellipse_a951e9b9a0a976b4350562eeb9a57dbfe}\index{ScottPlot.Plottables.Ellipse@{ScottPlot.Plottables.Ellipse}!RadiusY@{RadiusY}}
+\index{RadiusY@{RadiusY}!ScottPlot.Plottables.Ellipse@{ScottPlot.Plottables.Ellipse}}
+\doxysubsubsection{\texorpdfstring{RadiusY}{RadiusY}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_ellipse_a951e9b9a0a976b4350562eeb9a57dbfe} 
+double Scott\+Plot.\+Plottables.\+Ellipse.\+RadiusY\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Horizontal radius (axis units) 
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_ellipse_a99bec67f6ca0d8dc0ff251e69bc39ef8}\index{ScottPlot.Plottables.Ellipse@{ScottPlot.Plottables.Ellipse}!Rotation@{Rotation}}
+\index{Rotation@{Rotation}!ScottPlot.Plottables.Ellipse@{ScottPlot.Plottables.Ellipse}}
+\doxysubsubsection{\texorpdfstring{Rotation}{Rotation}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_ellipse_a99bec67f6ca0d8dc0ff251e69bc39ef8} 
+double Scott\+Plot.\+Plottables.\+Ellipse.\+Rotation\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Rotation of the ellipse (degrees) 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Plottables/Ellipse.\+cs\end{DoxyCompactItemize}

@@ -1,0 +1,505 @@
+\doxysection{Scott\+Plot.\+Color Struct Reference}
+\hypertarget{struct_scott_plot_1_1_color}{}\label{struct_scott_plot_1_1_color}\index{ScottPlot.Color@{ScottPlot.Color}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override string \mbox{\hyperlink{struct_scott_plot_1_1_color_a92005ea3797229dc929d1f8aca7f1f09}{To\+String}} ()
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_color_a59114b0da1bdb226e91de33932745d6f}{Color}} (byte red, byte green, byte blue, byte alpha=255)
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_color_a1ccd123cd1d19d5157f9e663bf16be7a}{Color}} (float red, float green, float blue, float alpha=1)
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_color_a90d51092ae48fae8f0ce6f88aae9c8b2}{Color}} (string hex\+Code)
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_color_a0bcc46e1c5a7c2be363faa525a6ad7e5}{Color}} (uint argb)
+\item 
+override int \mbox{\hyperlink{struct_scott_plot_1_1_color_a50dde58a19f51414f1d9b0c10cfd579b}{Get\+Hash\+Code}} ()
+\item 
+override bool \mbox{\hyperlink{struct_scott_plot_1_1_color_ac2297dcd5f4e2a985446175220f63692}{Equals}} (object? obj)
+\item 
+readonly \mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} \mbox{\hyperlink{struct_scott_plot_1_1_color_aa5d12803de981576ea48b02556aa9b0c}{With\+Red}} (byte red)
+\item 
+readonly \mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} \mbox{\hyperlink{struct_scott_plot_1_1_color_af6ab77c3c2f461c648dc648d415dfd5a}{With\+Green}} (byte green)
+\item 
+readonly \mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} \mbox{\hyperlink{struct_scott_plot_1_1_color_af40b3955033d8bec081174b5f491a1e5}{With\+Blue}} (byte blue)
+\item 
+readonly \mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} \mbox{\hyperlink{struct_scott_plot_1_1_color_a0ec320ae48ef3a854687f38a8cf90ab7}{With\+Alpha}} (byte alpha)
+\item 
+readonly \mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} \mbox{\hyperlink{struct_scott_plot_1_1_color_a13ffb9dfc9b0eedc701f70e10960c4a4}{With\+Alpha}} (double alpha)
+\item 
+readonly \mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} \mbox{\hyperlink{struct_scott_plot_1_1_color_a784b2ae7fb91411cf7d20e09cb722a56}{With\+Opacity}} (double opacity=.\+5)
+\item 
+string \mbox{\hyperlink{struct_scott_plot_1_1_color_a7a0ed92fe25ab389f01e32b62ef82411}{To\+Hex}} ()
+\item 
+string \mbox{\hyperlink{struct_scott_plot_1_1_color_a0b5c5ae3bd2b23695142efcee89a01a9}{To\+String\+RGB}} ()
+\item 
+string \mbox{\hyperlink{struct_scott_plot_1_1_color_ad56dda24c7e903eb4e8be74abae17c55}{To\+String\+RGBA}} ()
+\item 
+Skia\+Sharp.\+SKColor \mbox{\hyperlink{struct_scott_plot_1_1_color_a0f7ef42014e2642e12fae1ad72d258b1}{To\+SKColor}} ()
+\item 
+float float float l \mbox{\hyperlink{struct_scott_plot_1_1_color_ae499fba15aed0939c0d13e4dd4e26da0}{To\+HSL}} ()
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} \mbox{\hyperlink{struct_scott_plot_1_1_color_a4e87e0445798193096fb1feed9635d7f}{With\+Lightness}} (float lightness=.\+5f)
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} \mbox{\hyperlink{struct_scott_plot_1_1_color_a24d15e133297ee380801ba982b71f8bb}{Lighten}} (double fraction=.\+5f)
+\begin{DoxyCompactList}\small\item\em Amount to lighten the color (from 0-\/1). Larger numbers produce lighter results. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} \mbox{\hyperlink{struct_scott_plot_1_1_color_a17efd1181782f37d3499a6e3359e08d0}{Darken}} (double fraction=.\+5f)
+\begin{DoxyCompactList}\small\item\em Amount to darken the color (from 0-\/1). Larger numbers produce darker results. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} \mbox{\hyperlink{struct_scott_plot_1_1_color_ad3b9e685ead0703709f527cbc391171e}{Mixed\+With}} (\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} other\+Color, double fraction)
+\begin{DoxyCompactList}\small\item\em Return this color mixed with another color. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} \mbox{\hyperlink{struct_scott_plot_1_1_color_ad5f7752dc41af30a4265e474f8ff28bb}{Interpolate\+Rgb}} (\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} c1, double factor)
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{struct_scott_plot_1_1_color_a0b68348d559b1f8a12adefafb7d4943e}{Interpolate\+Array\+Rgb}} (\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} c1, int steps)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{struct_scott_plot_1_1_color_adc84bcae8af9e42971b617dc070f8651}{operator==}} (\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} a, \mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} b)
+\item 
+static bool \mbox{\hyperlink{struct_scott_plot_1_1_color_a436f99a88f42c462bec49e38a442e8a8}{operator!=}} (\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} a, \mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} b)
+\item 
+static \mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} \mbox{\hyperlink{struct_scott_plot_1_1_color_a24e908efb259aa5bf3e12ac9c6305a0e}{Gray}} (byte value)
+\item 
+static \mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} \mbox{\hyperlink{struct_scott_plot_1_1_color_ae9971f5b47212ded410f697d6bc785e6}{From\+ARGB}} (int argb)
+\item 
+static \mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} \mbox{\hyperlink{struct_scott_plot_1_1_color_a09bcc6d46820c51cf7d0c2850d1c2f68}{From\+ARGB}} (uint argb)
+\item 
+static \mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} \mbox{\hyperlink{struct_scott_plot_1_1_color_a96430bd1461b95674efa11d608311857}{From\+Hex}} (string hex)
+\item 
+static \mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{struct_scott_plot_1_1_color_a507bc1453dc37c462cbc5ee31460231e}{From\+Hex}} (string\mbox{[}$\,$\mbox{]} hex)
+\item 
+static \mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} \mbox{\hyperlink{struct_scott_plot_1_1_color_a60e959cdc66beb45b2ab7e63cf846bc3}{From\+Color}} (System.\+Drawing.\+Color color)
+\item 
+static \mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} \mbox{\hyperlink{struct_scott_plot_1_1_color_a1a5e2b196cae41d1ffb535cec7bebff4}{From\+SKColor}} (SKColor skcolor)
+\item 
+static \mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} \mbox{\hyperlink{struct_scott_plot_1_1_color_ac80ea5b1a81cc8d9396efc21c617f7f5}{From\+HSL}} (float hue, float saturation, float luminosity, float alpha=1)
+\begin{DoxyCompactList}\small\item\em Create a \doxylink{struct_scott_plot_1_1_color}{Color} given Hue, Saturation, and Luminance (as fractions from 0 to 1) \end{DoxyCompactList}\item 
+static byte \mbox{\hyperlink{struct_scott_plot_1_1_color_a0c2ba5d756f1fea4e1d23ef2367bee3d}{Interpolate\+Rgb}} (byte b1, byte b2, double factor)
+\item 
+static \mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} \mbox{\hyperlink{struct_scott_plot_1_1_color_aee38c9792746eaee6d6619b1d0e1677e}{Interpolate\+Rgb}} (\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} c1, \mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} c2, double factor)
+\item 
+static \mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{struct_scott_plot_1_1_color_a7ebef8d3bed73d81da52eda198ca8328}{Interpolate\+Rgb\+Array}} (\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} c1, \mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} c2, int steps)
+\item 
+static \mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} \mbox{\hyperlink{struct_scott_plot_1_1_color_a3379804742e3cb899c62d98d571136e1}{Random\+Hue}} ()
+\item 
+static System.\+Drawing.\+Color \mbox{\hyperlink{struct_scott_plot_1_1_color_a099acc1060c8415a740b108f755bc403}{To\+Color}} (\mbox{\hyperlink{struct_scott_plot_1_1_color}{Scott\+Plot.\+Color}} color)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+readonly byte \mbox{\hyperlink{struct_scott_plot_1_1_color_aaef7d5f9787b743877d87f09d09942fb}{Red}}
+\item 
+readonly byte \mbox{\hyperlink{struct_scott_plot_1_1_color_ada5cfc358aaa3c35966954a2b7f8b0b8}{Green}}
+\item 
+readonly byte \mbox{\hyperlink{struct_scott_plot_1_1_color_a32891f20525e591d30df769e3a2bc40d}{Blue}}
+\item 
+readonly byte \mbox{\hyperlink{struct_scott_plot_1_1_color_a2cee72ddcf8b94de65ce80fccf9cbdb4}{Alpha}}
+\item 
+float \mbox{\hyperlink{struct_scott_plot_1_1_color_a87cde0f02330c826b6cd69b6be7a7597}{h}}
+\begin{DoxyCompactList}\small\item\em Hue, Saturation, and Luminance (as fractions from 0 to 1) \end{DoxyCompactList}\item 
+float float \mbox{\hyperlink{struct_scott_plot_1_1_color_ae5d4a29596fdee60c0ce17e9e3214a2b}{s}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+byte \mbox{\hyperlink{struct_scott_plot_1_1_color_a3f79e69cc7c5b6bd379a437be91058aa}{R}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+byte \mbox{\hyperlink{struct_scott_plot_1_1_color_ac07ab92a9737c7bb5c657bdc7ef546cb}{G}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+byte \mbox{\hyperlink{struct_scott_plot_1_1_color_af2154911710ed7c95d1875dd4edba138}{B}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+byte \mbox{\hyperlink{struct_scott_plot_1_1_color_abcd2d926ddc72e33392476db2156e886}{A}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+uint \mbox{\hyperlink{struct_scott_plot_1_1_color_ac5477a441bb2a5d6067be851ad0d5b47}{ARGB}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+float \mbox{\hyperlink{struct_scott_plot_1_1_color_a4e8f37074cba44987076fe245ace8434}{Luminance}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Luminance as a fraction from 0 to 1. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{struct_scott_plot_1_1_color_abd24383e69e7c2308d5ea5254db0540a}{Hue}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Hue as a fraction from 0 to 1. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{struct_scott_plot_1_1_color_a4e78292c7ca33ce072cd41c156610062}{Saturation}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Saturation as a fraction from 0 to 1. \end{DoxyCompactList}\item 
+uint \mbox{\hyperlink{struct_scott_plot_1_1_color_ad7baf489babd578ba9ba5eb330b21671}{Premultiplied\+ARGB}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{struct_scott_plot_1_1_color_a59114b0da1bdb226e91de33932745d6f}\index{ScottPlot.Color@{ScottPlot.Color}!Color@{Color}}
+\index{Color@{Color}!ScottPlot.Color@{ScottPlot.Color}}
+\doxysubsubsection{\texorpdfstring{Color()}{Color()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_color_a59114b0da1bdb226e91de33932745d6f} 
+Scott\+Plot.\+Color.\+Color (\begin{DoxyParamCaption}\item[{byte}]{red}{, }\item[{byte}]{green}{, }\item[{byte}]{blue}{, }\item[{byte}]{alpha}{ = {\ttfamily 255}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{struct_scott_plot_1_1_color_a1ccd123cd1d19d5157f9e663bf16be7a}\index{ScottPlot.Color@{ScottPlot.Color}!Color@{Color}}
+\index{Color@{Color}!ScottPlot.Color@{ScottPlot.Color}}
+\doxysubsubsection{\texorpdfstring{Color()}{Color()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_color_a1ccd123cd1d19d5157f9e663bf16be7a} 
+Scott\+Plot.\+Color.\+Color (\begin{DoxyParamCaption}\item[{float}]{red}{, }\item[{float}]{green}{, }\item[{float}]{blue}{, }\item[{float}]{alpha}{ = {\ttfamily 1}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{struct_scott_plot_1_1_color_a90d51092ae48fae8f0ce6f88aae9c8b2}\index{ScottPlot.Color@{ScottPlot.Color}!Color@{Color}}
+\index{Color@{Color}!ScottPlot.Color@{ScottPlot.Color}}
+\doxysubsubsection{\texorpdfstring{Color()}{Color()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_color_a90d51092ae48fae8f0ce6f88aae9c8b2} 
+Scott\+Plot.\+Color.\+Color (\begin{DoxyParamCaption}\item[{string}]{hex\+Code}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{struct_scott_plot_1_1_color_a0bcc46e1c5a7c2be363faa525a6ad7e5}\index{ScottPlot.Color@{ScottPlot.Color}!Color@{Color}}
+\index{Color@{Color}!ScottPlot.Color@{ScottPlot.Color}}
+\doxysubsubsection{\texorpdfstring{Color()}{Color()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_color_a0bcc46e1c5a7c2be363faa525a6ad7e5} 
+Scott\+Plot.\+Color.\+Color (\begin{DoxyParamCaption}\item[{uint}]{argb}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{struct_scott_plot_1_1_color_a17efd1181782f37d3499a6e3359e08d0}\index{ScottPlot.Color@{ScottPlot.Color}!Darken@{Darken}}
+\index{Darken@{Darken}!ScottPlot.Color@{ScottPlot.Color}}
+\doxysubsubsection{\texorpdfstring{Darken()}{Darken()}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_color_a17efd1181782f37d3499a6e3359e08d0} 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} Scott\+Plot.\+Color.\+Darken (\begin{DoxyParamCaption}\item[{double}]{fraction}{ = {\ttfamily \+:\+:5f}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Amount to darken the color (from 0-\/1). Larger numbers produce darker results. 
+
+\Hypertarget{struct_scott_plot_1_1_color_ac2297dcd5f4e2a985446175220f63692}\index{ScottPlot.Color@{ScottPlot.Color}!Equals@{Equals}}
+\index{Equals@{Equals}!ScottPlot.Color@{ScottPlot.Color}}
+\doxysubsubsection{\texorpdfstring{Equals()}{Equals()}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_color_ac2297dcd5f4e2a985446175220f63692} 
+override bool Scott\+Plot.\+Color.\+Equals (\begin{DoxyParamCaption}\item[{object?}]{obj}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{struct_scott_plot_1_1_color_ae9971f5b47212ded410f697d6bc785e6}\index{ScottPlot.Color@{ScottPlot.Color}!FromARGB@{FromARGB}}
+\index{FromARGB@{FromARGB}!ScottPlot.Color@{ScottPlot.Color}}
+\doxysubsubsection{\texorpdfstring{FromARGB()}{FromARGB()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_color_ae9971f5b47212ded410f697d6bc785e6} 
+static \mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} Scott\+Plot.\+Color.\+From\+ARGB (\begin{DoxyParamCaption}\item[{int}]{argb}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\Hypertarget{struct_scott_plot_1_1_color_a09bcc6d46820c51cf7d0c2850d1c2f68}\index{ScottPlot.Color@{ScottPlot.Color}!FromARGB@{FromARGB}}
+\index{FromARGB@{FromARGB}!ScottPlot.Color@{ScottPlot.Color}}
+\doxysubsubsection{\texorpdfstring{FromARGB()}{FromARGB()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_color_a09bcc6d46820c51cf7d0c2850d1c2f68} 
+static \mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} Scott\+Plot.\+Color.\+From\+ARGB (\begin{DoxyParamCaption}\item[{uint}]{argb}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\Hypertarget{struct_scott_plot_1_1_color_a60e959cdc66beb45b2ab7e63cf846bc3}\index{ScottPlot.Color@{ScottPlot.Color}!FromColor@{FromColor}}
+\index{FromColor@{FromColor}!ScottPlot.Color@{ScottPlot.Color}}
+\doxysubsubsection{\texorpdfstring{FromColor()}{FromColor()}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_color_a60e959cdc66beb45b2ab7e63cf846bc3} 
+static \mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} Scott\+Plot.\+Color.\+From\+Color (\begin{DoxyParamCaption}\item[{System.\+Drawing.\+Color}]{color}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\Hypertarget{struct_scott_plot_1_1_color_a96430bd1461b95674efa11d608311857}\index{ScottPlot.Color@{ScottPlot.Color}!FromHex@{FromHex}}
+\index{FromHex@{FromHex}!ScottPlot.Color@{ScottPlot.Color}}
+\doxysubsubsection{\texorpdfstring{FromHex()}{FromHex()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_color_a96430bd1461b95674efa11d608311857} 
+static \mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} Scott\+Plot.\+Color.\+From\+Hex (\begin{DoxyParamCaption}\item[{string}]{hex}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{struct_scott_plot_1_1_color_a507bc1453dc37c462cbc5ee31460231e}\index{ScottPlot.Color@{ScottPlot.Color}!FromHex@{FromHex}}
+\index{FromHex@{FromHex}!ScottPlot.Color@{ScottPlot.Color}}
+\doxysubsubsection{\texorpdfstring{FromHex()}{FromHex()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_color_a507bc1453dc37c462cbc5ee31460231e} 
+static \mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}}\mbox{[}$\,$\mbox{]} Scott\+Plot.\+Color.\+From\+Hex (\begin{DoxyParamCaption}\item[{string\mbox{[}$\,$\mbox{]}}]{hex}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\Hypertarget{struct_scott_plot_1_1_color_ac80ea5b1a81cc8d9396efc21c617f7f5}\index{ScottPlot.Color@{ScottPlot.Color}!FromHSL@{FromHSL}}
+\index{FromHSL@{FromHSL}!ScottPlot.Color@{ScottPlot.Color}}
+\doxysubsubsection{\texorpdfstring{FromHSL()}{FromHSL()}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_color_ac80ea5b1a81cc8d9396efc21c617f7f5} 
+static \mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} Scott\+Plot.\+Color.\+From\+HSL (\begin{DoxyParamCaption}\item[{float}]{hue}{, }\item[{float}]{saturation}{, }\item[{float}]{luminosity}{, }\item[{float}]{alpha}{ = {\ttfamily 1}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Create a \doxylink{struct_scott_plot_1_1_color}{Color} given Hue, Saturation, and Luminance (as fractions from 0 to 1) 
+
+\Hypertarget{struct_scott_plot_1_1_color_a1a5e2b196cae41d1ffb535cec7bebff4}\index{ScottPlot.Color@{ScottPlot.Color}!FromSKColor@{FromSKColor}}
+\index{FromSKColor@{FromSKColor}!ScottPlot.Color@{ScottPlot.Color}}
+\doxysubsubsection{\texorpdfstring{FromSKColor()}{FromSKColor()}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_color_a1a5e2b196cae41d1ffb535cec7bebff4} 
+static \mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} Scott\+Plot.\+Color.\+From\+SKColor (\begin{DoxyParamCaption}\item[{SKColor}]{skcolor}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\Hypertarget{struct_scott_plot_1_1_color_a50dde58a19f51414f1d9b0c10cfd579b}\index{ScottPlot.Color@{ScottPlot.Color}!GetHashCode@{GetHashCode}}
+\index{GetHashCode@{GetHashCode}!ScottPlot.Color@{ScottPlot.Color}}
+\doxysubsubsection{\texorpdfstring{GetHashCode()}{GetHashCode()}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_color_a50dde58a19f51414f1d9b0c10cfd579b} 
+override int Scott\+Plot.\+Color.\+Get\+Hash\+Code (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{struct_scott_plot_1_1_color_a24e908efb259aa5bf3e12ac9c6305a0e}\index{ScottPlot.Color@{ScottPlot.Color}!Gray@{Gray}}
+\index{Gray@{Gray}!ScottPlot.Color@{ScottPlot.Color}}
+\doxysubsubsection{\texorpdfstring{Gray()}{Gray()}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_color_a24e908efb259aa5bf3e12ac9c6305a0e} 
+static \mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} Scott\+Plot.\+Color.\+Gray (\begin{DoxyParamCaption}\item[{byte}]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{struct_scott_plot_1_1_color_a0b68348d559b1f8a12adefafb7d4943e}\index{ScottPlot.Color@{ScottPlot.Color}!InterpolateArrayRgb@{InterpolateArrayRgb}}
+\index{InterpolateArrayRgb@{InterpolateArrayRgb}!ScottPlot.Color@{ScottPlot.Color}}
+\doxysubsubsection{\texorpdfstring{InterpolateArrayRgb()}{InterpolateArrayRgb()}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_color_a0b68348d559b1f8a12adefafb7d4943e} 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}}\mbox{[}$\,$\mbox{]} Scott\+Plot.\+Color.\+Interpolate\+Array\+Rgb (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}}}]{c1}{, }\item[{int}]{steps}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{struct_scott_plot_1_1_color_a0c2ba5d756f1fea4e1d23ef2367bee3d}\index{ScottPlot.Color@{ScottPlot.Color}!InterpolateRgb@{InterpolateRgb}}
+\index{InterpolateRgb@{InterpolateRgb}!ScottPlot.Color@{ScottPlot.Color}}
+\doxysubsubsection{\texorpdfstring{InterpolateRgb()}{InterpolateRgb()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_color_a0c2ba5d756f1fea4e1d23ef2367bee3d} 
+static byte Scott\+Plot.\+Color.\+Interpolate\+Rgb (\begin{DoxyParamCaption}\item[{byte}]{b1}{, }\item[{byte}]{b2}{, }\item[{double}]{factor}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\Hypertarget{struct_scott_plot_1_1_color_aee38c9792746eaee6d6619b1d0e1677e}\index{ScottPlot.Color@{ScottPlot.Color}!InterpolateRgb@{InterpolateRgb}}
+\index{InterpolateRgb@{InterpolateRgb}!ScottPlot.Color@{ScottPlot.Color}}
+\doxysubsubsection{\texorpdfstring{InterpolateRgb()}{InterpolateRgb()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_color_aee38c9792746eaee6d6619b1d0e1677e} 
+static \mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} Scott\+Plot.\+Color.\+Interpolate\+Rgb (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}}}]{c1}{, }\item[{\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}}}]{c2}{, }\item[{double}]{factor}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\Hypertarget{struct_scott_plot_1_1_color_ad5f7752dc41af30a4265e474f8ff28bb}\index{ScottPlot.Color@{ScottPlot.Color}!InterpolateRgb@{InterpolateRgb}}
+\index{InterpolateRgb@{InterpolateRgb}!ScottPlot.Color@{ScottPlot.Color}}
+\doxysubsubsection{\texorpdfstring{InterpolateRgb()}{InterpolateRgb()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_color_ad5f7752dc41af30a4265e474f8ff28bb} 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} Scott\+Plot.\+Color.\+Interpolate\+Rgb (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}}}]{c1}{, }\item[{double}]{factor}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{struct_scott_plot_1_1_color_a7ebef8d3bed73d81da52eda198ca8328}\index{ScottPlot.Color@{ScottPlot.Color}!InterpolateRgbArray@{InterpolateRgbArray}}
+\index{InterpolateRgbArray@{InterpolateRgbArray}!ScottPlot.Color@{ScottPlot.Color}}
+\doxysubsubsection{\texorpdfstring{InterpolateRgbArray()}{InterpolateRgbArray()}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_color_a7ebef8d3bed73d81da52eda198ca8328} 
+static \mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}}\mbox{[}$\,$\mbox{]} Scott\+Plot.\+Color.\+Interpolate\+Rgb\+Array (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}}}]{c1}{, }\item[{\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}}}]{c2}{, }\item[{int}]{steps}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\Hypertarget{struct_scott_plot_1_1_color_a24d15e133297ee380801ba982b71f8bb}\index{ScottPlot.Color@{ScottPlot.Color}!Lighten@{Lighten}}
+\index{Lighten@{Lighten}!ScottPlot.Color@{ScottPlot.Color}}
+\doxysubsubsection{\texorpdfstring{Lighten()}{Lighten()}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_color_a24d15e133297ee380801ba982b71f8bb} 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} Scott\+Plot.\+Color.\+Lighten (\begin{DoxyParamCaption}\item[{double}]{fraction}{ = {\ttfamily \+:\+:5f}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Amount to lighten the color (from 0-\/1). Larger numbers produce lighter results. 
+
+\Hypertarget{struct_scott_plot_1_1_color_ad3b9e685ead0703709f527cbc391171e}\index{ScottPlot.Color@{ScottPlot.Color}!MixedWith@{MixedWith}}
+\index{MixedWith@{MixedWith}!ScottPlot.Color@{ScottPlot.Color}}
+\doxysubsubsection{\texorpdfstring{MixedWith()}{MixedWith()}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_color_ad3b9e685ead0703709f527cbc391171e} 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} Scott\+Plot.\+Color.\+Mixed\+With (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}}}]{other\+Color}{, }\item[{double}]{fraction}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return this color mixed with another color. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other\+Color} & \doxylink{struct_scott_plot_1_1_color}{Color} to mix with this color\\
+\hline
+{\em fraction} & Fraction of {\itshape other\+Color}  to use\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{struct_scott_plot_1_1_color_a436f99a88f42c462bec49e38a442e8a8}\index{ScottPlot.Color@{ScottPlot.Color}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!ScottPlot.Color@{ScottPlot.Color}}
+\doxysubsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_color_a436f99a88f42c462bec49e38a442e8a8} 
+static bool Scott\+Plot.\+Color.\+operator!= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}}}]{a}{, }\item[{\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}}}]{b}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\Hypertarget{struct_scott_plot_1_1_color_adc84bcae8af9e42971b617dc070f8651}\index{ScottPlot.Color@{ScottPlot.Color}!operator==@{operator==}}
+\index{operator==@{operator==}!ScottPlot.Color@{ScottPlot.Color}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_color_adc84bcae8af9e42971b617dc070f8651} 
+static bool Scott\+Plot.\+Color.\+operator== (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}}}]{a}{, }\item[{\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}}}]{b}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\Hypertarget{struct_scott_plot_1_1_color_a3379804742e3cb899c62d98d571136e1}\index{ScottPlot.Color@{ScottPlot.Color}!RandomHue@{RandomHue}}
+\index{RandomHue@{RandomHue}!ScottPlot.Color@{ScottPlot.Color}}
+\doxysubsubsection{\texorpdfstring{RandomHue()}{RandomHue()}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_color_a3379804742e3cb899c62d98d571136e1} 
+static \mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} Scott\+Plot.\+Color.\+Random\+Hue (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\Hypertarget{struct_scott_plot_1_1_color_a099acc1060c8415a740b108f755bc403}\index{ScottPlot.Color@{ScottPlot.Color}!ToColor@{ToColor}}
+\index{ToColor@{ToColor}!ScottPlot.Color@{ScottPlot.Color}}
+\doxysubsubsection{\texorpdfstring{ToColor()}{ToColor()}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_color_a099acc1060c8415a740b108f755bc403} 
+static System.\+Drawing.\+Color Scott\+Plot.\+Color.\+To\+Color (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_scott_plot_1_1_color}{Scott\+Plot.\+Color}}}]{color}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\Hypertarget{struct_scott_plot_1_1_color_a7a0ed92fe25ab389f01e32b62ef82411}\index{ScottPlot.Color@{ScottPlot.Color}!ToHex@{ToHex}}
+\index{ToHex@{ToHex}!ScottPlot.Color@{ScottPlot.Color}}
+\doxysubsubsection{\texorpdfstring{ToHex()}{ToHex()}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_color_a7a0ed92fe25ab389f01e32b62ef82411} 
+string Scott\+Plot.\+Color.\+To\+Hex (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{struct_scott_plot_1_1_color_ae499fba15aed0939c0d13e4dd4e26da0}\index{ScottPlot.Color@{ScottPlot.Color}!ToHSL@{ToHSL}}
+\index{ToHSL@{ToHSL}!ScottPlot.Color@{ScottPlot.Color}}
+\doxysubsubsection{\texorpdfstring{ToHSL()}{ToHSL()}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_color_ae499fba15aed0939c0d13e4dd4e26da0} 
+float float float l Scott\+Plot.\+Color.\+To\+HSL (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{struct_scott_plot_1_1_color_a0f7ef42014e2642e12fae1ad72d258b1}\index{ScottPlot.Color@{ScottPlot.Color}!ToSKColor@{ToSKColor}}
+\index{ToSKColor@{ToSKColor}!ScottPlot.Color@{ScottPlot.Color}}
+\doxysubsubsection{\texorpdfstring{ToSKColor()}{ToSKColor()}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_color_a0f7ef42014e2642e12fae1ad72d258b1} 
+Skia\+Sharp.\+SKColor Scott\+Plot.\+Color.\+To\+SKColor (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{struct_scott_plot_1_1_color_a92005ea3797229dc929d1f8aca7f1f09}\index{ScottPlot.Color@{ScottPlot.Color}!ToString@{ToString}}
+\index{ToString@{ToString}!ScottPlot.Color@{ScottPlot.Color}}
+\doxysubsubsection{\texorpdfstring{ToString()}{ToString()}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_color_a92005ea3797229dc929d1f8aca7f1f09} 
+override string Scott\+Plot.\+Color.\+To\+String (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{struct_scott_plot_1_1_color_a0b5c5ae3bd2b23695142efcee89a01a9}\index{ScottPlot.Color@{ScottPlot.Color}!ToStringRGB@{ToStringRGB}}
+\index{ToStringRGB@{ToStringRGB}!ScottPlot.Color@{ScottPlot.Color}}
+\doxysubsubsection{\texorpdfstring{ToStringRGB()}{ToStringRGB()}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_color_a0b5c5ae3bd2b23695142efcee89a01a9} 
+string Scott\+Plot.\+Color.\+To\+String\+RGB (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{struct_scott_plot_1_1_color_ad56dda24c7e903eb4e8be74abae17c55}\index{ScottPlot.Color@{ScottPlot.Color}!ToStringRGBA@{ToStringRGBA}}
+\index{ToStringRGBA@{ToStringRGBA}!ScottPlot.Color@{ScottPlot.Color}}
+\doxysubsubsection{\texorpdfstring{ToStringRGBA()}{ToStringRGBA()}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_color_ad56dda24c7e903eb4e8be74abae17c55} 
+string Scott\+Plot.\+Color.\+To\+String\+RGBA (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{struct_scott_plot_1_1_color_a0ec320ae48ef3a854687f38a8cf90ab7}\index{ScottPlot.Color@{ScottPlot.Color}!WithAlpha@{WithAlpha}}
+\index{WithAlpha@{WithAlpha}!ScottPlot.Color@{ScottPlot.Color}}
+\doxysubsubsection{\texorpdfstring{WithAlpha()}{WithAlpha()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_color_a0ec320ae48ef3a854687f38a8cf90ab7} 
+readonly \mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} Scott\+Plot.\+Color.\+With\+Alpha (\begin{DoxyParamCaption}\item[{byte}]{alpha}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{struct_scott_plot_1_1_color_a13ffb9dfc9b0eedc701f70e10960c4a4}\index{ScottPlot.Color@{ScottPlot.Color}!WithAlpha@{WithAlpha}}
+\index{WithAlpha@{WithAlpha}!ScottPlot.Color@{ScottPlot.Color}}
+\doxysubsubsection{\texorpdfstring{WithAlpha()}{WithAlpha()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_color_a13ffb9dfc9b0eedc701f70e10960c4a4} 
+readonly \mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} Scott\+Plot.\+Color.\+With\+Alpha (\begin{DoxyParamCaption}\item[{double}]{alpha}{}\end{DoxyParamCaption})}
+
+\Hypertarget{struct_scott_plot_1_1_color_af40b3955033d8bec081174b5f491a1e5}\index{ScottPlot.Color@{ScottPlot.Color}!WithBlue@{WithBlue}}
+\index{WithBlue@{WithBlue}!ScottPlot.Color@{ScottPlot.Color}}
+\doxysubsubsection{\texorpdfstring{WithBlue()}{WithBlue()}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_color_af40b3955033d8bec081174b5f491a1e5} 
+readonly \mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} Scott\+Plot.\+Color.\+With\+Blue (\begin{DoxyParamCaption}\item[{byte}]{blue}{}\end{DoxyParamCaption})}
+
+\Hypertarget{struct_scott_plot_1_1_color_af6ab77c3c2f461c648dc648d415dfd5a}\index{ScottPlot.Color@{ScottPlot.Color}!WithGreen@{WithGreen}}
+\index{WithGreen@{WithGreen}!ScottPlot.Color@{ScottPlot.Color}}
+\doxysubsubsection{\texorpdfstring{WithGreen()}{WithGreen()}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_color_af6ab77c3c2f461c648dc648d415dfd5a} 
+readonly \mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} Scott\+Plot.\+Color.\+With\+Green (\begin{DoxyParamCaption}\item[{byte}]{green}{}\end{DoxyParamCaption})}
+
+\Hypertarget{struct_scott_plot_1_1_color_a4e87e0445798193096fb1feed9635d7f}\index{ScottPlot.Color@{ScottPlot.Color}!WithLightness@{WithLightness}}
+\index{WithLightness@{WithLightness}!ScottPlot.Color@{ScottPlot.Color}}
+\doxysubsubsection{\texorpdfstring{WithLightness()}{WithLightness()}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_color_a4e87e0445798193096fb1feed9635d7f} 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} Scott\+Plot.\+Color.\+With\+Lightness (\begin{DoxyParamCaption}\item[{float}]{lightness}{ = {\ttfamily \+:\+:5f}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{struct_scott_plot_1_1_color_a784b2ae7fb91411cf7d20e09cb722a56}\index{ScottPlot.Color@{ScottPlot.Color}!WithOpacity@{WithOpacity}}
+\index{WithOpacity@{WithOpacity}!ScottPlot.Color@{ScottPlot.Color}}
+\doxysubsubsection{\texorpdfstring{WithOpacity()}{WithOpacity()}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_color_a784b2ae7fb91411cf7d20e09cb722a56} 
+readonly \mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} Scott\+Plot.\+Color.\+With\+Opacity (\begin{DoxyParamCaption}\item[{double}]{opacity}{ = {\ttfamily .5}}\end{DoxyParamCaption})}
+
+\Hypertarget{struct_scott_plot_1_1_color_aa5d12803de981576ea48b02556aa9b0c}\index{ScottPlot.Color@{ScottPlot.Color}!WithRed@{WithRed}}
+\index{WithRed@{WithRed}!ScottPlot.Color@{ScottPlot.Color}}
+\doxysubsubsection{\texorpdfstring{WithRed()}{WithRed()}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_color_aa5d12803de981576ea48b02556aa9b0c} 
+readonly \mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} Scott\+Plot.\+Color.\+With\+Red (\begin{DoxyParamCaption}\item[{byte}]{red}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{struct_scott_plot_1_1_color_a2cee72ddcf8b94de65ce80fccf9cbdb4}\index{ScottPlot.Color@{ScottPlot.Color}!Alpha@{Alpha}}
+\index{Alpha@{Alpha}!ScottPlot.Color@{ScottPlot.Color}}
+\doxysubsubsection{\texorpdfstring{Alpha}{Alpha}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_color_a2cee72ddcf8b94de65ce80fccf9cbdb4} 
+readonly byte Scott\+Plot.\+Color.\+Alpha}
+
+\Hypertarget{struct_scott_plot_1_1_color_a32891f20525e591d30df769e3a2bc40d}\index{ScottPlot.Color@{ScottPlot.Color}!Blue@{Blue}}
+\index{Blue@{Blue}!ScottPlot.Color@{ScottPlot.Color}}
+\doxysubsubsection{\texorpdfstring{Blue}{Blue}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_color_a32891f20525e591d30df769e3a2bc40d} 
+readonly byte Scott\+Plot.\+Color.\+Blue}
+
+\Hypertarget{struct_scott_plot_1_1_color_ada5cfc358aaa3c35966954a2b7f8b0b8}\index{ScottPlot.Color@{ScottPlot.Color}!Green@{Green}}
+\index{Green@{Green}!ScottPlot.Color@{ScottPlot.Color}}
+\doxysubsubsection{\texorpdfstring{Green}{Green}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_color_ada5cfc358aaa3c35966954a2b7f8b0b8} 
+readonly byte Scott\+Plot.\+Color.\+Green}
+
+\Hypertarget{struct_scott_plot_1_1_color_a87cde0f02330c826b6cd69b6be7a7597}\index{ScottPlot.Color@{ScottPlot.Color}!h@{h}}
+\index{h@{h}!ScottPlot.Color@{ScottPlot.Color}}
+\doxysubsubsection{\texorpdfstring{h}{h}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_color_a87cde0f02330c826b6cd69b6be7a7597} 
+float Scott\+Plot.\+Color.\+h}
+
+
+
+Hue, Saturation, and Luminance (as fractions from 0 to 1) 
+
+\Hypertarget{struct_scott_plot_1_1_color_aaef7d5f9787b743877d87f09d09942fb}\index{ScottPlot.Color@{ScottPlot.Color}!Red@{Red}}
+\index{Red@{Red}!ScottPlot.Color@{ScottPlot.Color}}
+\doxysubsubsection{\texorpdfstring{Red}{Red}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_color_aaef7d5f9787b743877d87f09d09942fb} 
+readonly byte Scott\+Plot.\+Color.\+Red}
+
+\Hypertarget{struct_scott_plot_1_1_color_ae5d4a29596fdee60c0ce17e9e3214a2b}\index{ScottPlot.Color@{ScottPlot.Color}!s@{s}}
+\index{s@{s}!ScottPlot.Color@{ScottPlot.Color}}
+\doxysubsubsection{\texorpdfstring{s}{s}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_color_ae5d4a29596fdee60c0ce17e9e3214a2b} 
+float float Scott\+Plot.\+Color.\+s}
+
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{struct_scott_plot_1_1_color_abcd2d926ddc72e33392476db2156e886}\index{ScottPlot.Color@{ScottPlot.Color}!A@{A}}
+\index{A@{A}!ScottPlot.Color@{ScottPlot.Color}}
+\doxysubsubsection{\texorpdfstring{A}{A}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_color_abcd2d926ddc72e33392476db2156e886} 
+byte Scott\+Plot.\+Color.\+A\hspace{0.3cm}{\ttfamily [get]}}
+
+\Hypertarget{struct_scott_plot_1_1_color_ac5477a441bb2a5d6067be851ad0d5b47}\index{ScottPlot.Color@{ScottPlot.Color}!ARGB@{ARGB}}
+\index{ARGB@{ARGB}!ScottPlot.Color@{ScottPlot.Color}}
+\doxysubsubsection{\texorpdfstring{ARGB}{ARGB}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_color_ac5477a441bb2a5d6067be851ad0d5b47} 
+uint Scott\+Plot.\+Color.\+ARGB\hspace{0.3cm}{\ttfamily [get]}}
+
+\Hypertarget{struct_scott_plot_1_1_color_af2154911710ed7c95d1875dd4edba138}\index{ScottPlot.Color@{ScottPlot.Color}!B@{B}}
+\index{B@{B}!ScottPlot.Color@{ScottPlot.Color}}
+\doxysubsubsection{\texorpdfstring{B}{B}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_color_af2154911710ed7c95d1875dd4edba138} 
+byte Scott\+Plot.\+Color.\+B\hspace{0.3cm}{\ttfamily [get]}}
+
+\Hypertarget{struct_scott_plot_1_1_color_ac07ab92a9737c7bb5c657bdc7ef546cb}\index{ScottPlot.Color@{ScottPlot.Color}!G@{G}}
+\index{G@{G}!ScottPlot.Color@{ScottPlot.Color}}
+\doxysubsubsection{\texorpdfstring{G}{G}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_color_ac07ab92a9737c7bb5c657bdc7ef546cb} 
+byte Scott\+Plot.\+Color.\+G\hspace{0.3cm}{\ttfamily [get]}}
+
+\Hypertarget{struct_scott_plot_1_1_color_abd24383e69e7c2308d5ea5254db0540a}\index{ScottPlot.Color@{ScottPlot.Color}!Hue@{Hue}}
+\index{Hue@{Hue}!ScottPlot.Color@{ScottPlot.Color}}
+\doxysubsubsection{\texorpdfstring{Hue}{Hue}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_color_abd24383e69e7c2308d5ea5254db0540a} 
+float Scott\+Plot.\+Color.\+Hue\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Hue as a fraction from 0 to 1. 
+
+\Hypertarget{struct_scott_plot_1_1_color_a4e8f37074cba44987076fe245ace8434}\index{ScottPlot.Color@{ScottPlot.Color}!Luminance@{Luminance}}
+\index{Luminance@{Luminance}!ScottPlot.Color@{ScottPlot.Color}}
+\doxysubsubsection{\texorpdfstring{Luminance}{Luminance}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_color_a4e8f37074cba44987076fe245ace8434} 
+float Scott\+Plot.\+Color.\+Luminance\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Luminance as a fraction from 0 to 1. 
+
+\Hypertarget{struct_scott_plot_1_1_color_ad7baf489babd578ba9ba5eb330b21671}\index{ScottPlot.Color@{ScottPlot.Color}!PremultipliedARGB@{PremultipliedARGB}}
+\index{PremultipliedARGB@{PremultipliedARGB}!ScottPlot.Color@{ScottPlot.Color}}
+\doxysubsubsection{\texorpdfstring{PremultipliedARGB}{PremultipliedARGB}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_color_ad7baf489babd578ba9ba5eb330b21671} 
+uint Scott\+Plot.\+Color.\+Premultiplied\+ARGB\hspace{0.3cm}{\ttfamily [get]}}
+
+\Hypertarget{struct_scott_plot_1_1_color_a3f79e69cc7c5b6bd379a437be91058aa}\index{ScottPlot.Color@{ScottPlot.Color}!R@{R}}
+\index{R@{R}!ScottPlot.Color@{ScottPlot.Color}}
+\doxysubsubsection{\texorpdfstring{R}{R}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_color_a3f79e69cc7c5b6bd379a437be91058aa} 
+byte Scott\+Plot.\+Color.\+R\hspace{0.3cm}{\ttfamily [get]}}
+
+\Hypertarget{struct_scott_plot_1_1_color_a4e78292c7ca33ce072cd41c156610062}\index{ScottPlot.Color@{ScottPlot.Color}!Saturation@{Saturation}}
+\index{Saturation@{Saturation}!ScottPlot.Color@{ScottPlot.Color}}
+\doxysubsubsection{\texorpdfstring{Saturation}{Saturation}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_color_a4e78292c7ca33ce072cd41c156610062} 
+float Scott\+Plot.\+Color.\+Saturation\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Saturation as a fraction from 0 to 1. 
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Primitives/Color.\+cs\end{DoxyCompactItemize}

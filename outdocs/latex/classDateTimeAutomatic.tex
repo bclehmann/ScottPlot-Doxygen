@@ -1,0 +1,89 @@
+\hypertarget{classDateTimeAutomatic}{}\doxysection{Date\+Time\+Automatic Class Reference}
+\label{classDateTimeAutomatic}\index{DateTimeAutomatic@{DateTimeAutomatic}}
+Inheritance diagram for Date\+Time\+Automatic\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classDateTimeAutomatic}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classDateTimeAutomatic_ab760087045283513cf25d0e12b9c7ef9}{Regenerate}} (\mbox{\hyperlink{structCoordinateRange}{Coordinate\+Range}} range, Edge edge, \mbox{\hyperlink{structPixelLength}{Pixel\+Length}} size, SKPaint paint, \mbox{\hyperlink{classLabelStyle}{Label\+Style}} label\+Style)
+\begin{DoxyCompactList}\small\item\em Generate ticks based on the current settings and store the result in \mbox{\hyperlink{classDateTimeAutomatic_ab918936fb0424cea0919a284fd7c9524}{Ticks}} \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$ double $>$ \mbox{\hyperlink{classDateTimeAutomatic_a6de05cbdc9c58071f8a8897bd2cf3eeb}{Convert\+To\+Coordinate\+Space}} (\mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$ Date\+Time $>$ dates)
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+Func$<$ Date\+Time, string $>$? \mbox{\hyperlink{classDateTimeAutomatic_a7218dfc0c1cd9b83b7a7e87ca8dff0b3}{Label\+Formatter}} = null\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em If assigned, this function will be used to create tick labels \end{DoxyCompactList}\item 
+\mbox{\hyperlink{interfaceITimeUnit}{ITime\+Unit}}? \mbox{\hyperlink{classDateTimeAutomatic_ad282a31108599b6b699a8722c07cd982}{Time\+Unit}} = null\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{structTick}{Tick}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classDateTimeAutomatic_ab918936fb0424cea0919a284fd7c9524}{Ticks}} = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+int \mbox{\hyperlink{classDateTimeAutomatic_ae9646c227a6c7728d9afd30e57b8d845}{Max\+Tick\+Count}} = 10\+\_\+000\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classDateTimeAutomatic_a6de05cbdc9c58071f8a8897bd2cf3eeb}\label{classDateTimeAutomatic_a6de05cbdc9c58071f8a8897bd2cf3eeb}} 
+\index{DateTimeAutomatic@{DateTimeAutomatic}!ConvertToCoordinateSpace@{ConvertToCoordinateSpace}}
+\index{ConvertToCoordinateSpace@{ConvertToCoordinateSpace}!DateTimeAutomatic@{DateTimeAutomatic}}
+\doxysubsubsection{\texorpdfstring{ConvertToCoordinateSpace()}{ConvertToCoordinateSpace()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$double$>$ Date\+Time\+Automatic.\+Convert\+To\+Coordinate\+Space (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$ Date\+Time $>$}]{dates }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Implements \mbox{\hyperlink{interfaceIDateTimeTickGenerator_a528da18b042ee87af38720a7b6edf1be}{IDate\+Time\+Tick\+Generator}}.
+
+\mbox{\Hypertarget{classDateTimeAutomatic_ab760087045283513cf25d0e12b9c7ef9}\label{classDateTimeAutomatic_ab760087045283513cf25d0e12b9c7ef9}} 
+\index{DateTimeAutomatic@{DateTimeAutomatic}!Regenerate@{Regenerate}}
+\index{Regenerate@{Regenerate}!DateTimeAutomatic@{DateTimeAutomatic}}
+\doxysubsubsection{\texorpdfstring{Regenerate()}{Regenerate()}}
+{\footnotesize\ttfamily void Date\+Time\+Automatic.\+Regenerate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structCoordinateRange}{Coordinate\+Range}}}]{range,  }\item[{Edge}]{edge,  }\item[{\mbox{\hyperlink{structPixelLength}{Pixel\+Length}}}]{size,  }\item[{SKPaint}]{paint,  }\item[{\mbox{\hyperlink{classLabelStyle}{Label\+Style}}}]{label\+Style }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Generate ticks based on the current settings and store the result in \mbox{\hyperlink{classDateTimeAutomatic_ab918936fb0424cea0919a284fd7c9524}{Ticks}} 
+
+
+
+Implements \mbox{\hyperlink{interfaceITickGenerator_afce3e3bc89a3026ca1dc3dfca576020f}{ITick\+Generator}}.
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{classDateTimeAutomatic_a7218dfc0c1cd9b83b7a7e87ca8dff0b3}\label{classDateTimeAutomatic_a7218dfc0c1cd9b83b7a7e87ca8dff0b3}} 
+\index{DateTimeAutomatic@{DateTimeAutomatic}!LabelFormatter@{LabelFormatter}}
+\index{LabelFormatter@{LabelFormatter}!DateTimeAutomatic@{DateTimeAutomatic}}
+\doxysubsubsection{\texorpdfstring{LabelFormatter}{LabelFormatter}}
+{\footnotesize\ttfamily Func$<$Date\+Time, string$>$? Date\+Time\+Automatic.\+Label\+Formatter = null\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+If assigned, this function will be used to create tick labels 
+
+\mbox{\Hypertarget{classDateTimeAutomatic_ae9646c227a6c7728d9afd30e57b8d845}\label{classDateTimeAutomatic_ae9646c227a6c7728d9afd30e57b8d845}} 
+\index{DateTimeAutomatic@{DateTimeAutomatic}!MaxTickCount@{MaxTickCount}}
+\index{MaxTickCount@{MaxTickCount}!DateTimeAutomatic@{DateTimeAutomatic}}
+\doxysubsubsection{\texorpdfstring{MaxTickCount}{MaxTickCount}}
+{\footnotesize\ttfamily int Date\+Time\+Automatic.\+Max\+Tick\+Count = 10\+\_\+000\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classDateTimeAutomatic_ab918936fb0424cea0919a284fd7c9524}\label{classDateTimeAutomatic_ab918936fb0424cea0919a284fd7c9524}} 
+\index{DateTimeAutomatic@{DateTimeAutomatic}!Ticks@{Ticks}}
+\index{Ticks@{Ticks}!DateTimeAutomatic@{DateTimeAutomatic}}
+\doxysubsubsection{\texorpdfstring{Ticks}{Ticks}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structTick}{Tick}} \mbox{[}$\,$\mbox{]} Date\+Time\+Automatic.\+Ticks = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classDateTimeAutomatic_ad282a31108599b6b699a8722c07cd982}\label{classDateTimeAutomatic_ad282a31108599b6b699a8722c07cd982}} 
+\index{DateTimeAutomatic@{DateTimeAutomatic}!TimeUnit@{TimeUnit}}
+\index{TimeUnit@{TimeUnit}!DateTimeAutomatic@{DateTimeAutomatic}}
+\doxysubsubsection{\texorpdfstring{TimeUnit}{TimeUnit}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceITimeUnit}{ITime\+Unit}}? Date\+Time\+Automatic.\+Time\+Unit = null\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Tick\+Generators/Date\+Time\+Automatic.\+cs\end{DoxyCompactItemize}

@@ -1,0 +1,81 @@
+\hypertarget{interfaceIColormap}{}\doxysection{IColormap Interface Reference}
+\label{interfaceIColormap}\index{IColormap@{IColormap}}
+Inheritance diagram for IColormap\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=10.795181cm]{interfaceIColormap}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structColor}{Color}} \mbox{\hyperlink{interfaceIColormap_ab3ec7b5e6319bac0e497e578ab42799d}{Get\+Color}} (double position)
+\begin{DoxyCompactList}\small\item\em Returns the color of a position on this colormap (from 0 to 1). Returns transparent if NaN. Positions outside the range will be clamped. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structColor}{Color}} \mbox{\hyperlink{interfaceIColormap_a488cfd5f5f822edd60308fff64707699}{Get\+Color}} (double position, \mbox{\hyperlink{structRange}{Range}} range)
+\begin{DoxyCompactList}\small\item\em Returns the color of a position on this colormap (according to the given range). Returns transparent if NaN. Positions outside the range will be clamped. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{interfaceIColormap_ae8f2b2bc7c0e7d08976d377e41e040f0}{Name}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classFull}{Full}} name for this colormap \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{interfaceIColormap_ab3ec7b5e6319bac0e497e578ab42799d}\label{interfaceIColormap_ab3ec7b5e6319bac0e497e578ab42799d}} 
+\index{IColormap@{IColormap}!GetColor@{GetColor}}
+\index{GetColor@{GetColor}!IColormap@{IColormap}}
+\doxysubsubsection{\texorpdfstring{GetColor()}{GetColor()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structColor}{Color}} IColormap.\+Get\+Color (\begin{DoxyParamCaption}\item[{double}]{position }\end{DoxyParamCaption})}
+
+
+
+Returns the color of a position on this colormap (from 0 to 1). Returns transparent if NaN. Positions outside the range will be clamped. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & position from 0 (first color) to 1 (last color)\\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classCustom_a20e384b053e91b09d068f85a7017502a}{Custom}}, \mbox{\hyperlink{classColormapBase_ab3a1449cad768570728205bff7580d28}{Colormap\+Base}}, \mbox{\hyperlink{classScottPlot_1_1Colormaps_1_1GrayscaleReversed_a24d2753e8a16cbef17d3a85c9fa8b449}{Scott\+Plot.\+Colormaps.\+Grayscale\+Reversed}}, \mbox{\hyperlink{classScottPlot_1_1Colormaps_1_1Grayscale_acbea6f6a8063ae95c89973ea6cda474b}{Scott\+Plot.\+Colormaps.\+Grayscale}}, \mbox{\hyperlink{classScottPlot_1_1Colormaps_1_1ByteColormapBase_acc3471d7700db91f4a92c07016874346}{Scott\+Plot.\+Colormaps.\+Byte\+Colormap\+Base}}, and \mbox{\hyperlink{classArgbColormapBase_a09d250baaff2242414229cefd7cc41a7}{Argb\+Colormap\+Base}}.
+
+\mbox{\Hypertarget{interfaceIColormap_a488cfd5f5f822edd60308fff64707699}\label{interfaceIColormap_a488cfd5f5f822edd60308fff64707699}} 
+\index{IColormap@{IColormap}!GetColor@{GetColor}}
+\index{GetColor@{GetColor}!IColormap@{IColormap}}
+\doxysubsubsection{\texorpdfstring{GetColor()}{GetColor()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structColor}{Color}} IColormap.\+Get\+Color (\begin{DoxyParamCaption}\item[{double}]{position,  }\item[{\mbox{\hyperlink{structRange}{Range}}}]{range }\end{DoxyParamCaption})}
+
+
+
+Returns the color of a position on this colormap (according to the given range). Returns transparent if NaN. Positions outside the range will be clamped. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & position relative to the given range\\
+\hline
+{\em range} & range of values spanned by this colormap\\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classColormapBase_afd9294f61d64b383909e617b76b9f2e6}{Colormap\+Base}}.
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{interfaceIColormap_ae8f2b2bc7c0e7d08976d377e41e040f0}\label{interfaceIColormap_ae8f2b2bc7c0e7d08976d377e41e040f0}} 
+\index{IColormap@{IColormap}!Name@{Name}}
+\index{Name@{Name}!IColormap@{IColormap}}
+\doxysubsubsection{\texorpdfstring{Name}{Name}}
+{\footnotesize\ttfamily string IColormap.\+Name\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+\mbox{\hyperlink{classFull}{Full}} name for this colormap 
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Interfaces/IColormap.\+cs\end{DoxyCompactItemize}

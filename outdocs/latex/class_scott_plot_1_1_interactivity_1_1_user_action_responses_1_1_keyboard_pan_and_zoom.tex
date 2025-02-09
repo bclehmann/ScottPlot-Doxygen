@@ -1,0 +1,150 @@
+\doxysection{Scott\+Plot.\+Interactivity.\+User\+Action\+Responses.\+Keyboard\+Pan\+And\+Zoom Class Reference}
+\hypertarget{class_scott_plot_1_1_interactivity_1_1_user_action_responses_1_1_keyboard_pan_and_zoom}{}\label{class_scott_plot_1_1_interactivity_1_1_user_action_responses_1_1_keyboard_pan_and_zoom}\index{ScottPlot.Interactivity.UserActionResponses.KeyboardPanAndZoom@{ScottPlot.Interactivity.UserActionResponses.KeyboardPanAndZoom}}
+Inheritance diagram for Scott\+Plot.\+Interactivity.\+User\+Action\+Responses.\+Keyboard\+Pan\+And\+Zoom\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_scott_plot_1_1_interactivity_1_1_user_action_responses_1_1_keyboard_pan_and_zoom}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_interactivity_1_1_response_info}{Response\+Info}} \mbox{\hyperlink{class_scott_plot_1_1_interactivity_1_1_user_action_responses_1_1_keyboard_pan_and_zoom_a7d6d14a6550b08322ca1977df3945fd1}{Execute}} (\mbox{\hyperlink{class_scott_plot_1_1_plot}{Plot}} plot, \mbox{\hyperlink{interface_scott_plot_1_1_interactivity_1_1_i_user_action}{IUser\+Action}} user\+Input, \mbox{\hyperlink{class_scott_plot_1_1_interactivity_1_1_keyboard_state}{Keyboard\+State}} keys)
+\begin{DoxyCompactList}\small\item\em Perform the given action on the specified plot and return a result indicating what to do next. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_scott_plot_1_1_interactivity_1_1_i_user_action_response}{Scott\+Plot.\+Interactivity.\+IUser\+Action\+Response}}}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_interactivity_1_1_key}{Key}} \mbox{\hyperlink{class_scott_plot_1_1_interactivity_1_1_user_action_responses_1_1_keyboard_pan_and_zoom_ae67a7faf080f92672519aeca3ed5bfdd}{Pan\+Left\+Key}} = Standard\+Keys.\+Left\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_interactivity_1_1_key}{Key}} \mbox{\hyperlink{class_scott_plot_1_1_interactivity_1_1_user_action_responses_1_1_keyboard_pan_and_zoom_a501f468407e7b72e20126dfc9d3530c1}{Pan\+Right\+Key}} = Standard\+Keys.\+Right\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_interactivity_1_1_key}{Key}} \mbox{\hyperlink{class_scott_plot_1_1_interactivity_1_1_user_action_responses_1_1_keyboard_pan_and_zoom_a974786e12cd4265d8dc0331338e8e1df}{Pan\+Down\+Key}} = Standard\+Keys.\+Down\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_interactivity_1_1_key}{Key}} \mbox{\hyperlink{class_scott_plot_1_1_interactivity_1_1_user_action_responses_1_1_keyboard_pan_and_zoom_a55162fbaf55d2871a09f24eea079b0ad}{Pan\+Up\+Key}} = Standard\+Keys.\+Up\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_interactivity_1_1_key}{Key}} \mbox{\hyperlink{class_scott_plot_1_1_interactivity_1_1_user_action_responses_1_1_keyboard_pan_and_zoom_ac4af7bddb9c17888aa347c9c26ab49e0}{Zoom\+Modifier\+Key}} = Standard\+Keys.\+Control\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em When this key is held, pan actions will zoom instead. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_interactivity_1_1_key}{Key}} \mbox{\hyperlink{class_scott_plot_1_1_interactivity_1_1_user_action_responses_1_1_keyboard_pan_and_zoom_abefe3d0b5c29ea0fd56825e4b2d1f92a}{Large\+Step\+Key}} = Standard\+Keys.\+Shift\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em When this key is held, panning will occur in larger steps. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_interactivity_1_1_key}{Key}} \mbox{\hyperlink{class_scott_plot_1_1_interactivity_1_1_user_action_responses_1_1_keyboard_pan_and_zoom_a97985bcaf308fc3aa800f01c99c48fc3}{Fine\+Step\+Key}} = Standard\+Keys.\+Alt\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em When this key is held, panning will occur in single pixel steps. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_scott_plot_1_1_interactivity_1_1_user_action_responses_1_1_keyboard_pan_and_zoom_aafd94737855872c9ded12b47cb4b7b28}{Step\+Distance}} = 20\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_scott_plot_1_1_interactivity_1_1_user_action_responses_1_1_keyboard_pan_and_zoom_a305d8708dcd1e64409e9914af227c216}{Large\+Step\+Distance}} = 100\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_scott_plot_1_1_interactivity_1_1_user_action_responses_1_1_keyboard_pan_and_zoom_a1917b4dabcf3d919674ba16a87ac8ba1}{Fine\+Step\+Distance}} = 1\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+double \mbox{\hyperlink{class_scott_plot_1_1_interactivity_1_1_user_action_responses_1_1_keyboard_pan_and_zoom_ae92f37831e935a4ac690fee4c563f4ce}{Delta\+Zoom\+In}} = 0.\+85f\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+double \mbox{\hyperlink{class_scott_plot_1_1_interactivity_1_1_user_action_responses_1_1_keyboard_pan_and_zoom_a8e66c4e309f719b9ad05eec82ed8be1f}{Delta\+Zoom\+Out}} = 1.\+15f\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_scott_plot_1_1_interactivity_1_1_user_action_responses_1_1_keyboard_pan_and_zoom_a7d6d14a6550b08322ca1977df3945fd1}\index{ScottPlot.Interactivity.UserActionResponses.KeyboardPanAndZoom@{ScottPlot.Interactivity.UserActionResponses.KeyboardPanAndZoom}!Execute@{Execute}}
+\index{Execute@{Execute}!ScottPlot.Interactivity.UserActionResponses.KeyboardPanAndZoom@{ScottPlot.Interactivity.UserActionResponses.KeyboardPanAndZoom}}
+\doxysubsubsection{\texorpdfstring{Execute()}{Execute()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_interactivity_1_1_user_action_responses_1_1_keyboard_pan_and_zoom_a7d6d14a6550b08322ca1977df3945fd1} 
+\mbox{\hyperlink{struct_scott_plot_1_1_interactivity_1_1_response_info}{Response\+Info}} Scott\+Plot.\+Interactivity.\+User\+Action\+Responses.\+Keyboard\+Pan\+And\+Zoom.\+Execute (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_scott_plot_1_1_plot}{Plot}}}]{plot}{, }\item[{\mbox{\hyperlink{interface_scott_plot_1_1_interactivity_1_1_i_user_action}{IUser\+Action}}}]{user\+Actions}{, }\item[{\mbox{\hyperlink{class_scott_plot_1_1_interactivity_1_1_keyboard_state}{Keyboard\+State}}}]{keys}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Perform the given action on the specified plot and return a result indicating what to do next. 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_interactivity_1_1_i_user_action_response_a3cf481e59779d4380bfef6575eb0513d}{Scott\+Plot.\+Interactivity.\+IUser\+Action\+Response}}.
+
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{class_scott_plot_1_1_interactivity_1_1_user_action_responses_1_1_keyboard_pan_and_zoom_ae92f37831e935a4ac690fee4c563f4ce}\index{ScottPlot.Interactivity.UserActionResponses.KeyboardPanAndZoom@{ScottPlot.Interactivity.UserActionResponses.KeyboardPanAndZoom}!DeltaZoomIn@{DeltaZoomIn}}
+\index{DeltaZoomIn@{DeltaZoomIn}!ScottPlot.Interactivity.UserActionResponses.KeyboardPanAndZoom@{ScottPlot.Interactivity.UserActionResponses.KeyboardPanAndZoom}}
+\doxysubsubsection{\texorpdfstring{DeltaZoomIn}{DeltaZoomIn}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_interactivity_1_1_user_action_responses_1_1_keyboard_pan_and_zoom_ae92f37831e935a4ac690fee4c563f4ce} 
+double Scott\+Plot.\+Interactivity.\+User\+Action\+Responses.\+Keyboard\+Pan\+And\+Zoom.\+Delta\+Zoom\+In = 0.\+85f\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_interactivity_1_1_user_action_responses_1_1_keyboard_pan_and_zoom_a8e66c4e309f719b9ad05eec82ed8be1f}\index{ScottPlot.Interactivity.UserActionResponses.KeyboardPanAndZoom@{ScottPlot.Interactivity.UserActionResponses.KeyboardPanAndZoom}!DeltaZoomOut@{DeltaZoomOut}}
+\index{DeltaZoomOut@{DeltaZoomOut}!ScottPlot.Interactivity.UserActionResponses.KeyboardPanAndZoom@{ScottPlot.Interactivity.UserActionResponses.KeyboardPanAndZoom}}
+\doxysubsubsection{\texorpdfstring{DeltaZoomOut}{DeltaZoomOut}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_interactivity_1_1_user_action_responses_1_1_keyboard_pan_and_zoom_a8e66c4e309f719b9ad05eec82ed8be1f} 
+double Scott\+Plot.\+Interactivity.\+User\+Action\+Responses.\+Keyboard\+Pan\+And\+Zoom.\+Delta\+Zoom\+Out = 1.\+15f\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_interactivity_1_1_user_action_responses_1_1_keyboard_pan_and_zoom_a1917b4dabcf3d919674ba16a87ac8ba1}\index{ScottPlot.Interactivity.UserActionResponses.KeyboardPanAndZoom@{ScottPlot.Interactivity.UserActionResponses.KeyboardPanAndZoom}!FineStepDistance@{FineStepDistance}}
+\index{FineStepDistance@{FineStepDistance}!ScottPlot.Interactivity.UserActionResponses.KeyboardPanAndZoom@{ScottPlot.Interactivity.UserActionResponses.KeyboardPanAndZoom}}
+\doxysubsubsection{\texorpdfstring{FineStepDistance}{FineStepDistance}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_interactivity_1_1_user_action_responses_1_1_keyboard_pan_and_zoom_a1917b4dabcf3d919674ba16a87ac8ba1} 
+float Scott\+Plot.\+Interactivity.\+User\+Action\+Responses.\+Keyboard\+Pan\+And\+Zoom.\+Fine\+Step\+Distance = 1\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_interactivity_1_1_user_action_responses_1_1_keyboard_pan_and_zoom_a97985bcaf308fc3aa800f01c99c48fc3}\index{ScottPlot.Interactivity.UserActionResponses.KeyboardPanAndZoom@{ScottPlot.Interactivity.UserActionResponses.KeyboardPanAndZoom}!FineStepKey@{FineStepKey}}
+\index{FineStepKey@{FineStepKey}!ScottPlot.Interactivity.UserActionResponses.KeyboardPanAndZoom@{ScottPlot.Interactivity.UserActionResponses.KeyboardPanAndZoom}}
+\doxysubsubsection{\texorpdfstring{FineStepKey}{FineStepKey}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_interactivity_1_1_user_action_responses_1_1_keyboard_pan_and_zoom_a97985bcaf308fc3aa800f01c99c48fc3} 
+\mbox{\hyperlink{struct_scott_plot_1_1_interactivity_1_1_key}{Key}} Scott\+Plot.\+Interactivity.\+User\+Action\+Responses.\+Keyboard\+Pan\+And\+Zoom.\+Fine\+Step\+Key = Standard\+Keys.\+Alt\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+When this key is held, panning will occur in single pixel steps. 
+
+\Hypertarget{class_scott_plot_1_1_interactivity_1_1_user_action_responses_1_1_keyboard_pan_and_zoom_a305d8708dcd1e64409e9914af227c216}\index{ScottPlot.Interactivity.UserActionResponses.KeyboardPanAndZoom@{ScottPlot.Interactivity.UserActionResponses.KeyboardPanAndZoom}!LargeStepDistance@{LargeStepDistance}}
+\index{LargeStepDistance@{LargeStepDistance}!ScottPlot.Interactivity.UserActionResponses.KeyboardPanAndZoom@{ScottPlot.Interactivity.UserActionResponses.KeyboardPanAndZoom}}
+\doxysubsubsection{\texorpdfstring{LargeStepDistance}{LargeStepDistance}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_interactivity_1_1_user_action_responses_1_1_keyboard_pan_and_zoom_a305d8708dcd1e64409e9914af227c216} 
+float Scott\+Plot.\+Interactivity.\+User\+Action\+Responses.\+Keyboard\+Pan\+And\+Zoom.\+Large\+Step\+Distance = 100\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_interactivity_1_1_user_action_responses_1_1_keyboard_pan_and_zoom_abefe3d0b5c29ea0fd56825e4b2d1f92a}\index{ScottPlot.Interactivity.UserActionResponses.KeyboardPanAndZoom@{ScottPlot.Interactivity.UserActionResponses.KeyboardPanAndZoom}!LargeStepKey@{LargeStepKey}}
+\index{LargeStepKey@{LargeStepKey}!ScottPlot.Interactivity.UserActionResponses.KeyboardPanAndZoom@{ScottPlot.Interactivity.UserActionResponses.KeyboardPanAndZoom}}
+\doxysubsubsection{\texorpdfstring{LargeStepKey}{LargeStepKey}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_interactivity_1_1_user_action_responses_1_1_keyboard_pan_and_zoom_abefe3d0b5c29ea0fd56825e4b2d1f92a} 
+\mbox{\hyperlink{struct_scott_plot_1_1_interactivity_1_1_key}{Key}} Scott\+Plot.\+Interactivity.\+User\+Action\+Responses.\+Keyboard\+Pan\+And\+Zoom.\+Large\+Step\+Key = Standard\+Keys.\+Shift\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+When this key is held, panning will occur in larger steps. 
+
+\Hypertarget{class_scott_plot_1_1_interactivity_1_1_user_action_responses_1_1_keyboard_pan_and_zoom_a974786e12cd4265d8dc0331338e8e1df}\index{ScottPlot.Interactivity.UserActionResponses.KeyboardPanAndZoom@{ScottPlot.Interactivity.UserActionResponses.KeyboardPanAndZoom}!PanDownKey@{PanDownKey}}
+\index{PanDownKey@{PanDownKey}!ScottPlot.Interactivity.UserActionResponses.KeyboardPanAndZoom@{ScottPlot.Interactivity.UserActionResponses.KeyboardPanAndZoom}}
+\doxysubsubsection{\texorpdfstring{PanDownKey}{PanDownKey}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_interactivity_1_1_user_action_responses_1_1_keyboard_pan_and_zoom_a974786e12cd4265d8dc0331338e8e1df} 
+\mbox{\hyperlink{struct_scott_plot_1_1_interactivity_1_1_key}{Key}} Scott\+Plot.\+Interactivity.\+User\+Action\+Responses.\+Keyboard\+Pan\+And\+Zoom.\+Pan\+Down\+Key = Standard\+Keys.\+Down\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_interactivity_1_1_user_action_responses_1_1_keyboard_pan_and_zoom_ae67a7faf080f92672519aeca3ed5bfdd}\index{ScottPlot.Interactivity.UserActionResponses.KeyboardPanAndZoom@{ScottPlot.Interactivity.UserActionResponses.KeyboardPanAndZoom}!PanLeftKey@{PanLeftKey}}
+\index{PanLeftKey@{PanLeftKey}!ScottPlot.Interactivity.UserActionResponses.KeyboardPanAndZoom@{ScottPlot.Interactivity.UserActionResponses.KeyboardPanAndZoom}}
+\doxysubsubsection{\texorpdfstring{PanLeftKey}{PanLeftKey}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_interactivity_1_1_user_action_responses_1_1_keyboard_pan_and_zoom_ae67a7faf080f92672519aeca3ed5bfdd} 
+\mbox{\hyperlink{struct_scott_plot_1_1_interactivity_1_1_key}{Key}} Scott\+Plot.\+Interactivity.\+User\+Action\+Responses.\+Keyboard\+Pan\+And\+Zoom.\+Pan\+Left\+Key = Standard\+Keys.\+Left\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_interactivity_1_1_user_action_responses_1_1_keyboard_pan_and_zoom_a501f468407e7b72e20126dfc9d3530c1}\index{ScottPlot.Interactivity.UserActionResponses.KeyboardPanAndZoom@{ScottPlot.Interactivity.UserActionResponses.KeyboardPanAndZoom}!PanRightKey@{PanRightKey}}
+\index{PanRightKey@{PanRightKey}!ScottPlot.Interactivity.UserActionResponses.KeyboardPanAndZoom@{ScottPlot.Interactivity.UserActionResponses.KeyboardPanAndZoom}}
+\doxysubsubsection{\texorpdfstring{PanRightKey}{PanRightKey}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_interactivity_1_1_user_action_responses_1_1_keyboard_pan_and_zoom_a501f468407e7b72e20126dfc9d3530c1} 
+\mbox{\hyperlink{struct_scott_plot_1_1_interactivity_1_1_key}{Key}} Scott\+Plot.\+Interactivity.\+User\+Action\+Responses.\+Keyboard\+Pan\+And\+Zoom.\+Pan\+Right\+Key = Standard\+Keys.\+Right\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_interactivity_1_1_user_action_responses_1_1_keyboard_pan_and_zoom_a55162fbaf55d2871a09f24eea079b0ad}\index{ScottPlot.Interactivity.UserActionResponses.KeyboardPanAndZoom@{ScottPlot.Interactivity.UserActionResponses.KeyboardPanAndZoom}!PanUpKey@{PanUpKey}}
+\index{PanUpKey@{PanUpKey}!ScottPlot.Interactivity.UserActionResponses.KeyboardPanAndZoom@{ScottPlot.Interactivity.UserActionResponses.KeyboardPanAndZoom}}
+\doxysubsubsection{\texorpdfstring{PanUpKey}{PanUpKey}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_interactivity_1_1_user_action_responses_1_1_keyboard_pan_and_zoom_a55162fbaf55d2871a09f24eea079b0ad} 
+\mbox{\hyperlink{struct_scott_plot_1_1_interactivity_1_1_key}{Key}} Scott\+Plot.\+Interactivity.\+User\+Action\+Responses.\+Keyboard\+Pan\+And\+Zoom.\+Pan\+Up\+Key = Standard\+Keys.\+Up\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_interactivity_1_1_user_action_responses_1_1_keyboard_pan_and_zoom_aafd94737855872c9ded12b47cb4b7b28}\index{ScottPlot.Interactivity.UserActionResponses.KeyboardPanAndZoom@{ScottPlot.Interactivity.UserActionResponses.KeyboardPanAndZoom}!StepDistance@{StepDistance}}
+\index{StepDistance@{StepDistance}!ScottPlot.Interactivity.UserActionResponses.KeyboardPanAndZoom@{ScottPlot.Interactivity.UserActionResponses.KeyboardPanAndZoom}}
+\doxysubsubsection{\texorpdfstring{StepDistance}{StepDistance}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_interactivity_1_1_user_action_responses_1_1_keyboard_pan_and_zoom_aafd94737855872c9ded12b47cb4b7b28} 
+float Scott\+Plot.\+Interactivity.\+User\+Action\+Responses.\+Keyboard\+Pan\+And\+Zoom.\+Step\+Distance = 20\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_interactivity_1_1_user_action_responses_1_1_keyboard_pan_and_zoom_ac4af7bddb9c17888aa347c9c26ab49e0}\index{ScottPlot.Interactivity.UserActionResponses.KeyboardPanAndZoom@{ScottPlot.Interactivity.UserActionResponses.KeyboardPanAndZoom}!ZoomModifierKey@{ZoomModifierKey}}
+\index{ZoomModifierKey@{ZoomModifierKey}!ScottPlot.Interactivity.UserActionResponses.KeyboardPanAndZoom@{ScottPlot.Interactivity.UserActionResponses.KeyboardPanAndZoom}}
+\doxysubsubsection{\texorpdfstring{ZoomModifierKey}{ZoomModifierKey}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_interactivity_1_1_user_action_responses_1_1_keyboard_pan_and_zoom_ac4af7bddb9c17888aa347c9c26ab49e0} 
+\mbox{\hyperlink{struct_scott_plot_1_1_interactivity_1_1_key}{Key}} Scott\+Plot.\+Interactivity.\+User\+Action\+Responses.\+Keyboard\+Pan\+And\+Zoom.\+Zoom\+Modifier\+Key = Standard\+Keys.\+Control\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+When this key is held, pan actions will zoom instead. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Interactivity/\+User\+Action\+Responses/Keyboard\+Pan\+And\+Zoom.\+cs\end{DoxyCompactItemize}

@@ -1,0 +1,121 @@
+\hypertarget{classCustom}{}\doxysection{Custom Class Reference}
+\label{classCustom}\index{Custom@{Custom}}
+Inheritance diagram for Custom\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classCustom}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classCustom_ae7dea1e8207eeadc7928d875e6284b27}{Custom}} (\mbox{\hyperlink{structColor}{Color}}\mbox{[}$\,$\mbox{]} colors, string name=\char`\"{}custom\char`\"{})
+\item 
+override \mbox{\hyperlink{structColor}{Color}} \mbox{\hyperlink{classCustom_a20e384b053e91b09d068f85a7017502a}{Get\+Color}} (double position)
+\begin{DoxyCompactList}\small\item\em Returns the color of a position on this colormap (from 0 to 1). Returns transparent if NaN. Positions outside the range will be clamped. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classCustom_a6c6f28c38b2ca4a8710f57203b5cfdb3}{Custom}} (\mbox{\hyperlink{structColor}{Color}}\mbox{[}$\,$\mbox{]} colors, string name, string description)
+\item 
+\mbox{\hyperlink{classCustom_ac77d34e7e5de194a5ec9c83a178c3779}{Custom}} (string\mbox{[}$\,$\mbox{]} hex, string name, string description)
+\item 
+\mbox{\hyperlink{structColor}{Color}} \mbox{\hyperlink{classCustom_a8f8816ca4f1902ac768e1bbb45b4d460}{Get\+Color}} (int index)
+\begin{DoxyCompactList}\small\item\em Return the Nth color (wrapping around if N is larger than the number of colors) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+override string \mbox{\hyperlink{classCustom_ac45af1c96849a2ce79ca279411fd5b3a}{Name}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{structColor}{Color}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classCustom_adcff940de5746d19520e64e531440eab}{Colors}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+string \mbox{\hyperlink{classCustom_a341b7c5f07556b0ab85893a905b3a47c}{Name}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+string \mbox{\hyperlink{classCustom_a8aa6f069866c3907f53e2a148e2683e9}{Description}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classCustom_ae7dea1e8207eeadc7928d875e6284b27}\label{classCustom_ae7dea1e8207eeadc7928d875e6284b27}} 
+\index{Custom@{Custom}!Custom@{Custom}}
+\index{Custom@{Custom}!Custom@{Custom}}
+\doxysubsubsection{\texorpdfstring{Custom()}{Custom()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Custom.\+Custom (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structColor}{Color}}\mbox{[}$\,$\mbox{]}}]{colors,  }\item[{string}]{name = {\ttfamily \char`\"{}custom\char`\"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCustom_a6c6f28c38b2ca4a8710f57203b5cfdb3}\label{classCustom_a6c6f28c38b2ca4a8710f57203b5cfdb3}} 
+\index{Custom@{Custom}!Custom@{Custom}}
+\index{Custom@{Custom}!Custom@{Custom}}
+\doxysubsubsection{\texorpdfstring{Custom()}{Custom()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Custom.\+Custom (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structColor}{Color}}\mbox{[}$\,$\mbox{]}}]{colors,  }\item[{string}]{name,  }\item[{string}]{description }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCustom_ac77d34e7e5de194a5ec9c83a178c3779}\label{classCustom_ac77d34e7e5de194a5ec9c83a178c3779}} 
+\index{Custom@{Custom}!Custom@{Custom}}
+\index{Custom@{Custom}!Custom@{Custom}}
+\doxysubsubsection{\texorpdfstring{Custom()}{Custom()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Custom.\+Custom (\begin{DoxyParamCaption}\item[{string\mbox{[}$\,$\mbox{]}}]{hex,  }\item[{string}]{name,  }\item[{string}]{description }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classCustom_a20e384b053e91b09d068f85a7017502a}\label{classCustom_a20e384b053e91b09d068f85a7017502a}} 
+\index{Custom@{Custom}!GetColor@{GetColor}}
+\index{GetColor@{GetColor}!Custom@{Custom}}
+\doxysubsubsection{\texorpdfstring{GetColor()}{GetColor()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily override \mbox{\hyperlink{structColor}{Color}} Custom.\+Get\+Color (\begin{DoxyParamCaption}\item[{double}]{position }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Returns the color of a position on this colormap (from 0 to 1). Returns transparent if NaN. Positions outside the range will be clamped. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & position from 0 (first color) to 1 (last color)\\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classColormapBase_ab3a1449cad768570728205bff7580d28}{Colormap\+Base}}.
+
+\mbox{\Hypertarget{classCustom_a8f8816ca4f1902ac768e1bbb45b4d460}\label{classCustom_a8f8816ca4f1902ac768e1bbb45b4d460}} 
+\index{Custom@{Custom}!GetColor@{GetColor}}
+\index{GetColor@{GetColor}!Custom@{Custom}}
+\doxysubsubsection{\texorpdfstring{GetColor()}{GetColor()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structColor}{Color}} Custom.\+Get\+Color (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return the Nth color (wrapping around if N is larger than the number of colors) 
+
+
+
+Implements \mbox{\hyperlink{interfaceIPalette_ac1513f148558429eb7aff94af2167bb2}{IPalette}}.
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{classCustom_adcff940de5746d19520e64e531440eab}\label{classCustom_adcff940de5746d19520e64e531440eab}} 
+\index{Custom@{Custom}!Colors@{Colors}}
+\index{Colors@{Colors}!Custom@{Custom}}
+\doxysubsubsection{\texorpdfstring{Colors}{Colors}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structColor}{Color}} \mbox{[}$\,$\mbox{]} Custom.\+Colors\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{classCustom_a8aa6f069866c3907f53e2a148e2683e9}\label{classCustom_a8aa6f069866c3907f53e2a148e2683e9}} 
+\index{Custom@{Custom}!Description@{Description}}
+\index{Description@{Description}!Custom@{Custom}}
+\doxysubsubsection{\texorpdfstring{Description}{Description}}
+{\footnotesize\ttfamily string Custom.\+Description\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{classCustom_ac45af1c96849a2ce79ca279411fd5b3a}\label{classCustom_ac45af1c96849a2ce79ca279411fd5b3a}} 
+\index{Custom@{Custom}!Name@{Name}}
+\index{Name@{Name}!Custom@{Custom}}
+\doxysubsubsection{\texorpdfstring{Name}{Name}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily override string Custom.\+Name\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{classCustom_a341b7c5f07556b0ab85893a905b3a47c}\label{classCustom_a341b7c5f07556b0ab85893a905b3a47c}} 
+\index{Custom@{Custom}!Name@{Name}}
+\index{Name@{Name}!Custom@{Custom}}
+\doxysubsubsection{\texorpdfstring{Name}{Name}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily string Custom.\+Name\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Colormaps/Custom.\+cs\end{DoxyCompactItemize}

@@ -1,0 +1,129 @@
+\hypertarget{classSlide}{}\doxysection{Slide Class Reference}
+\label{classSlide}\index{Slide@{Slide}}
+
+
+\mbox{\hyperlink{classSlide}{Slide}} the view to the right to keep the newest data points in view  
+
+
+Inheritance diagram for Slide\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classSlide}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structCoordinateRange}{Coordinate\+Range}} \mbox{\hyperlink{classSlide_ab0a31fabf4f4d5b13143aceff4cc5b3d}{Get\+RangeX}} (\mbox{\hyperlink{structCoordinateRange}{Coordinate\+Range}} view\+RangeX, \mbox{\hyperlink{structCoordinateRange}{Coordinate\+Range}} data\+RangeX)
+\begin{DoxyCompactList}\small\item\em Returns the recommended X axis range given the current view and size of the data \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structCoordinateRange}{Coordinate\+Range}} \mbox{\hyperlink{classSlide_a61f4c2d24f8c6abad958b685e37c7167}{Get\+RangeY}} (\mbox{\hyperlink{structCoordinateRange}{Coordinate\+Range}} view\+RangeY, \mbox{\hyperlink{structCoordinateRange}{Coordinate\+Range}} data\+RangeY)
+\begin{DoxyCompactList}\small\item\em Returns the recommended Y axis range given the current view and size of the data \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{classSlide_ae5297af09498b28e8eea86a9c08b7a88}{Padding\+FractionX}} = 0
+\begin{DoxyCompactList}\small\item\em Defines the amount of whitespace added to the right of the data when data runs outside the current view. 0 for a view that slides every time new data is added 1 for a view that only slides forward when new data runs off the screen \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classSlide_a42d8a7e78e81f981c0c37de6115a54db}{Padding\+FractionY}} = .\+5
+\begin{DoxyCompactList}\small\item\em Defines the amount of whitespace added to the top or bottom of the data when data runs outside the current view. 0 sets axis limits to tightly fit the data height 1 sets axis limits to double the vertical span in the direction of the vertical overflow \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{classSlide_a3201e972be811963639d01c7a0f32008}{Width}} = 1000\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Amount of horizontal area to display (in axis units) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classSlide}{Slide}} the view to the right to keep the newest data points in view 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classSlide_ab0a31fabf4f4d5b13143aceff4cc5b3d}\label{classSlide_ab0a31fabf4f4d5b13143aceff4cc5b3d}} 
+\index{Slide@{Slide}!GetRangeX@{GetRangeX}}
+\index{GetRangeX@{GetRangeX}!Slide@{Slide}}
+\doxysubsubsection{\texorpdfstring{GetRangeX()}{GetRangeX()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structCoordinateRange}{Coordinate\+Range}} Slide.\+Get\+RangeX (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structCoordinateRange}{Coordinate\+Range}}}]{view\+RangeX,  }\item[{\mbox{\hyperlink{structCoordinateRange}{Coordinate\+Range}}}]{data\+RangeX }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the recommended X axis range given the current view and size of the data 
+
+
+\begin{DoxyParams}{Parameters}
+{\em view\+RangeX} & X axis view range\\
+\hline
+{\em data\+RangeX} & X axis data range\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfaceIAxisLimitManager_a7e1fd7dbaa29feede5fecfdafe0849e2}{IAxis\+Limit\+Manager}}.
+
+\mbox{\Hypertarget{classSlide_a61f4c2d24f8c6abad958b685e37c7167}\label{classSlide_a61f4c2d24f8c6abad958b685e37c7167}} 
+\index{Slide@{Slide}!GetRangeY@{GetRangeY}}
+\index{GetRangeY@{GetRangeY}!Slide@{Slide}}
+\doxysubsubsection{\texorpdfstring{GetRangeY()}{GetRangeY()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structCoordinateRange}{Coordinate\+Range}} Slide.\+Get\+RangeY (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structCoordinateRange}{Coordinate\+Range}}}]{view\+RangeY,  }\item[{\mbox{\hyperlink{structCoordinateRange}{Coordinate\+Range}}}]{data\+RangeY }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the recommended Y axis range given the current view and size of the data 
+
+
+\begin{DoxyParams}{Parameters}
+{\em view\+RangeY} & Y axis view range\\
+\hline
+{\em data\+RangeY} & Y axis view range\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfaceIAxisLimitManager_a79dbb73bf902b531071d78adc55c7910}{IAxis\+Limit\+Manager}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classSlide_ae5297af09498b28e8eea86a9c08b7a88}\label{classSlide_ae5297af09498b28e8eea86a9c08b7a88}} 
+\index{Slide@{Slide}!PaddingFractionX@{PaddingFractionX}}
+\index{PaddingFractionX@{PaddingFractionX}!Slide@{Slide}}
+\doxysubsubsection{\texorpdfstring{PaddingFractionX}{PaddingFractionX}}
+{\footnotesize\ttfamily double Slide.\+Padding\+FractionX = 0}
+
+
+
+Defines the amount of whitespace added to the right of the data when data runs outside the current view. 0 for a view that slides every time new data is added 1 for a view that only slides forward when new data runs off the screen 
+
+\mbox{\Hypertarget{classSlide_a42d8a7e78e81f981c0c37de6115a54db}\label{classSlide_a42d8a7e78e81f981c0c37de6115a54db}} 
+\index{Slide@{Slide}!PaddingFractionY@{PaddingFractionY}}
+\index{PaddingFractionY@{PaddingFractionY}!Slide@{Slide}}
+\doxysubsubsection{\texorpdfstring{PaddingFractionY}{PaddingFractionY}}
+{\footnotesize\ttfamily double Slide.\+Padding\+FractionY = .\+5}
+
+
+
+Defines the amount of whitespace added to the top or bottom of the data when data runs outside the current view. 0 sets axis limits to tightly fit the data height 1 sets axis limits to double the vertical span in the direction of the vertical overflow 
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{classSlide_a3201e972be811963639d01c7a0f32008}\label{classSlide_a3201e972be811963639d01c7a0f32008}} 
+\index{Slide@{Slide}!Width@{Width}}
+\index{Width@{Width}!Slide@{Slide}}
+\doxysubsubsection{\texorpdfstring{Width}{Width}}
+{\footnotesize\ttfamily double Slide.\+Width = 1000\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Amount of horizontal area to display (in axis units) 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Axis\+Limit\+Managers/Slide.\+cs\end{DoxyCompactItemize}

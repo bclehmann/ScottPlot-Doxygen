@@ -1,0 +1,207 @@
+\doxysection{Scott\+Plot.\+Plottables.\+Bar\+Plot Class Reference}
+\hypertarget{class_scott_plot_1_1_plottables_1_1_bar_plot}{}\label{class_scott_plot_1_1_plottables_1_1_bar_plot}\index{ScottPlot.Plottables.BarPlot@{ScottPlot.Plottables.BarPlot}}
+
+
+Holds a collection of individually styled bars.  
+
+
+Inheritance diagram for Scott\+Plot.\+Plottables.\+Bar\+Plot\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_scott_plot_1_1_plottables_1_1_bar_plot}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_bar_plot_aed1a073fa22791418e76a22668c53fda}{Bar\+Plot}} (\mbox{\hyperlink{class_scott_plot_1_1_bar}{Bar}} bar)
+\item 
+\mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_bar_plot_a3a649c4154c9d1af84736b0c7063c315}{Bar\+Plot}} (\mbox{\hyperlink{class_i_enumerable}{IEnumerable}}$<$ \mbox{\hyperlink{class_scott_plot_1_1_bar}{Bar}} $>$ bars)
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_bar_plot_a45382143dc6e489211359250e12defc0}{Get\+Axis\+Limits}} ()
+\begin{DoxyCompactList}\small\item\em Return the 2D area (in coordinate space) occupied by the data contained in this plottable. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_bar_plot_a71864dc3f2a27f6e340b67a6c63f6eb6}{Render}} (Render\+Pack rp)
+\begin{DoxyCompactList}\small\item\em Draw the data from this plottable into the data area defined in the \doxylink{class_scott_plot_1_1_axes}{Axes}. By default the surface is already clipped to the data area, but this can be cleared inside the plottable. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable}{Scott\+Plot.\+IPlottable}}}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_bar_plot_a8fb0327fac2a0ec0b9c7431b94969f14}{Label}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+string \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_bar_plot_a0b26e93ba4b7cd2575d2b3f0d2e791c3}{Legend\+Text}} = string.\+Empty\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em If populated, this text appears in the legend. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_bar_plot_aa8b1624e702823329612f3c3639e3227}{Is\+Visible}} = true\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Toggles whether this plottable is shown and contributes to the automatic axis limit detection. The calling method will check this variable (it does not need to be checked inside the Render method). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{interface_scott_plot_1_1_i_axes}{IAxes}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_bar_plot_ac47171296a09eb61853017b2238cb343}{Axes}} = new \mbox{\hyperlink{class_scott_plot_1_1_axes}{Axes}}()\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em This object performs coordinate/pixel translation at render time based on the latest data area. It stores the axes to use for this plottable and also the data area (in pixels) updated just before each render. If this object is null it will be constructed using the default X and Y axes at render time. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_enumerable}{IEnumerable}}$<$ \mbox{\hyperlink{class_scott_plot_1_1_bar}{Bar}} $>$ \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_bar_plot_a21ef6ffd0b6fa91b4f7b6fdadc3ae410}{Bars}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{class_scott_plot_1_1_label_style}{Label\+Style}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_bar_plot_a11cde7f18f065788c5f07709dca4bce0}{Value\+Label\+Style}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_bar_plot_a9ac4c3867bfc28ecae531b32a078beac}{Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Apply a fill color to all bars. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_bar_plot_ac7f05579b13ccf0153ece5df0f595286}{Horizontal}}\hspace{0.3cm}{\ttfamily  \mbox{[}set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Define orientation for all bars. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_enumerable}{IEnumerable}}$<$ \mbox{\hyperlink{class_scott_plot_1_1_legend_item}{Legend\+Item}} $>$ \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_bar_plot_abc37cd7d6ee3c0d2b3b6a5612a297691}{Legend\+Items}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Items which will appear in the legend. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable}{Scott\+Plot.\+IPlottable}}}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{interface_scott_plot_1_1_i_has_legend_text}{Scott\+Plot.\+IHas\+Legend\+Text}}}
+
+
+\doxysubsection{Detailed Description}
+Holds a collection of individually styled bars. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_bar_plot_aed1a073fa22791418e76a22668c53fda}\index{ScottPlot.Plottables.BarPlot@{ScottPlot.Plottables.BarPlot}!BarPlot@{BarPlot}}
+\index{BarPlot@{BarPlot}!ScottPlot.Plottables.BarPlot@{ScottPlot.Plottables.BarPlot}}
+\doxysubsubsection{\texorpdfstring{BarPlot()}{BarPlot()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_bar_plot_aed1a073fa22791418e76a22668c53fda} 
+Scott\+Plot.\+Plottables.\+Bar\+Plot.\+Bar\+Plot (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_scott_plot_1_1_bar}{Bar}}}]{bar}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_bar_plot_a3a649c4154c9d1af84736b0c7063c315}\index{ScottPlot.Plottables.BarPlot@{ScottPlot.Plottables.BarPlot}!BarPlot@{BarPlot}}
+\index{BarPlot@{BarPlot}!ScottPlot.Plottables.BarPlot@{ScottPlot.Plottables.BarPlot}}
+\doxysubsubsection{\texorpdfstring{BarPlot()}{BarPlot()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_bar_plot_a3a649c4154c9d1af84736b0c7063c315} 
+Scott\+Plot.\+Plottables.\+Bar\+Plot.\+Bar\+Plot (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_i_enumerable}{IEnumerable}}$<$ \mbox{\hyperlink{class_scott_plot_1_1_bar}{Bar}} $>$}]{bars}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_bar_plot_a45382143dc6e489211359250e12defc0}\index{ScottPlot.Plottables.BarPlot@{ScottPlot.Plottables.BarPlot}!GetAxisLimits@{GetAxisLimits}}
+\index{GetAxisLimits@{GetAxisLimits}!ScottPlot.Plottables.BarPlot@{ScottPlot.Plottables.BarPlot}}
+\doxysubsubsection{\texorpdfstring{GetAxisLimits()}{GetAxisLimits()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_bar_plot_a45382143dc6e489211359250e12defc0} 
+\mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}} Scott\+Plot.\+Plottables.\+Bar\+Plot.\+Get\+Axis\+Limits (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return the 2D area (in coordinate space) occupied by the data contained in this plottable. 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable_a2e455cf76f9e8bc3187900b1a90487c3}{Scott\+Plot.\+IPlottable}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_bar_plot_a71864dc3f2a27f6e340b67a6c63f6eb6}\index{ScottPlot.Plottables.BarPlot@{ScottPlot.Plottables.BarPlot}!Render@{Render}}
+\index{Render@{Render}!ScottPlot.Plottables.BarPlot@{ScottPlot.Plottables.BarPlot}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_bar_plot_a71864dc3f2a27f6e340b67a6c63f6eb6} 
+virtual void Scott\+Plot.\+Plottables.\+Bar\+Plot.\+Render (\begin{DoxyParamCaption}\item[{Render\+Pack}]{rp}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Draw the data from this plottable into the data area defined in the \doxylink{class_scott_plot_1_1_axes}{Axes}. By default the surface is already clipped to the data area, but this can be cleared inside the plottable. 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable_a11d2487f1d7628e019a09748d876c289}{Scott\+Plot.\+IPlottable}}.
+
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_bar_plot_ac47171296a09eb61853017b2238cb343}\index{ScottPlot.Plottables.BarPlot@{ScottPlot.Plottables.BarPlot}!Axes@{Axes}}
+\index{Axes@{Axes}!ScottPlot.Plottables.BarPlot@{ScottPlot.Plottables.BarPlot}}
+\doxysubsubsection{\texorpdfstring{Axes}{Axes}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_bar_plot_ac47171296a09eb61853017b2238cb343} 
+\mbox{\hyperlink{interface_scott_plot_1_1_i_axes}{IAxes}} Scott\+Plot.\+Plottables.\+Bar\+Plot.\+Axes = new \mbox{\hyperlink{class_scott_plot_1_1_axes}{Axes}}()\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+This object performs coordinate/pixel translation at render time based on the latest data area. It stores the axes to use for this plottable and also the data area (in pixels) updated just before each render. If this object is null it will be constructed using the default X and Y axes at render time. 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable_aa68bc5153a673a7cd4a68f93da377d0a}{Scott\+Plot.\+IPlottable}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_bar_plot_a21ef6ffd0b6fa91b4f7b6fdadc3ae410}\index{ScottPlot.Plottables.BarPlot@{ScottPlot.Plottables.BarPlot}!Bars@{Bars}}
+\index{Bars@{Bars}!ScottPlot.Plottables.BarPlot@{ScottPlot.Plottables.BarPlot}}
+\doxysubsubsection{\texorpdfstring{Bars}{Bars}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_bar_plot_a21ef6ffd0b6fa91b4f7b6fdadc3ae410} 
+\mbox{\hyperlink{class_i_enumerable}{IEnumerable}}$<$\mbox{\hyperlink{class_scott_plot_1_1_bar}{Bar}}$>$ Scott\+Plot.\+Plottables.\+Bar\+Plot.\+Bars\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_bar_plot_a9ac4c3867bfc28ecae531b32a078beac}\index{ScottPlot.Plottables.BarPlot@{ScottPlot.Plottables.BarPlot}!Color@{Color}}
+\index{Color@{Color}!ScottPlot.Plottables.BarPlot@{ScottPlot.Plottables.BarPlot}}
+\doxysubsubsection{\texorpdfstring{Color}{Color}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_bar_plot_a9ac4c3867bfc28ecae531b32a078beac} 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} Scott\+Plot.\+Plottables.\+Bar\+Plot.\+Color\hspace{0.3cm}{\ttfamily [set]}}
+
+
+
+Apply a fill color to all bars. 
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_bar_plot_ac7f05579b13ccf0153ece5df0f595286}\index{ScottPlot.Plottables.BarPlot@{ScottPlot.Plottables.BarPlot}!Horizontal@{Horizontal}}
+\index{Horizontal@{Horizontal}!ScottPlot.Plottables.BarPlot@{ScottPlot.Plottables.BarPlot}}
+\doxysubsubsection{\texorpdfstring{Horizontal}{Horizontal}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_bar_plot_ac7f05579b13ccf0153ece5df0f595286} 
+bool Scott\+Plot.\+Plottables.\+Bar\+Plot.\+Horizontal\hspace{0.3cm}{\ttfamily [set]}}
+
+
+
+Define orientation for all bars. 
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_bar_plot_aa8b1624e702823329612f3c3639e3227}\index{ScottPlot.Plottables.BarPlot@{ScottPlot.Plottables.BarPlot}!IsVisible@{IsVisible}}
+\index{IsVisible@{IsVisible}!ScottPlot.Plottables.BarPlot@{ScottPlot.Plottables.BarPlot}}
+\doxysubsubsection{\texorpdfstring{IsVisible}{IsVisible}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_bar_plot_aa8b1624e702823329612f3c3639e3227} 
+bool Scott\+Plot.\+Plottables.\+Bar\+Plot.\+Is\+Visible = true\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Toggles whether this plottable is shown and contributes to the automatic axis limit detection. The calling method will check this variable (it does not need to be checked inside the Render method). 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable_abbe75ba55a332d695313ccb5dc780923}{Scott\+Plot.\+IPlottable}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_bar_plot_a8fb0327fac2a0ec0b9c7431b94969f14}\index{ScottPlot.Plottables.BarPlot@{ScottPlot.Plottables.BarPlot}!Label@{Label}}
+\index{Label@{Label}!ScottPlot.Plottables.BarPlot@{ScottPlot.Plottables.BarPlot}}
+\doxysubsubsection{\texorpdfstring{Label}{Label}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_bar_plot_a8fb0327fac2a0ec0b9c7431b94969f14} 
+string Scott\+Plot.\+Plottables.\+Bar\+Plot.\+Label\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_bar_plot_abc37cd7d6ee3c0d2b3b6a5612a297691}\index{ScottPlot.Plottables.BarPlot@{ScottPlot.Plottables.BarPlot}!LegendItems@{LegendItems}}
+\index{LegendItems@{LegendItems}!ScottPlot.Plottables.BarPlot@{ScottPlot.Plottables.BarPlot}}
+\doxysubsubsection{\texorpdfstring{LegendItems}{LegendItems}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_bar_plot_abc37cd7d6ee3c0d2b3b6a5612a297691} 
+\mbox{\hyperlink{class_i_enumerable}{IEnumerable}}$<$\mbox{\hyperlink{class_scott_plot_1_1_legend_item}{Legend\+Item}}$>$ Scott\+Plot.\+Plottables.\+Bar\+Plot.\+Legend\+Items\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Items which will appear in the legend. 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable_a4565f96a253f832bd9aa8033c99eff75}{Scott\+Plot.\+IPlottable}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_bar_plot_a0b26e93ba4b7cd2575d2b3f0d2e791c3}\index{ScottPlot.Plottables.BarPlot@{ScottPlot.Plottables.BarPlot}!LegendText@{LegendText}}
+\index{LegendText@{LegendText}!ScottPlot.Plottables.BarPlot@{ScottPlot.Plottables.BarPlot}}
+\doxysubsubsection{\texorpdfstring{LegendText}{LegendText}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_bar_plot_a0b26e93ba4b7cd2575d2b3f0d2e791c3} 
+string Scott\+Plot.\+Plottables.\+Bar\+Plot.\+Legend\+Text = string.\+Empty\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+If populated, this text appears in the legend. 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_has_legend_text_ad89967a734dbda7c02217a19c17d88d8}{Scott\+Plot.\+IHas\+Legend\+Text}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_bar_plot_a11cde7f18f065788c5f07709dca4bce0}\index{ScottPlot.Plottables.BarPlot@{ScottPlot.Plottables.BarPlot}!ValueLabelStyle@{ValueLabelStyle}}
+\index{ValueLabelStyle@{ValueLabelStyle}!ScottPlot.Plottables.BarPlot@{ScottPlot.Plottables.BarPlot}}
+\doxysubsubsection{\texorpdfstring{ValueLabelStyle}{ValueLabelStyle}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_bar_plot_a11cde7f18f065788c5f07709dca4bce0} 
+\mbox{\hyperlink{class_scott_plot_1_1_label_style}{Label\+Style}} Scott\+Plot.\+Plottables.\+Bar\+Plot.\+Value\+Label\+Style\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{new}()}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_scott_plot_a2da000551e02ef1d0af13793cf678abc}{Alignment}}\ =\ \mbox{\hyperlink{namespace_scott_plot_a2da000551e02ef1d0af13793cf678abc}{Alignment}}.LowerCenter,}
+\DoxyCodeLine{\ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Plottables/Bar\+Plot.\+cs\end{DoxyCompactItemize}

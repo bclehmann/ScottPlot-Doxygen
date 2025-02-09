@@ -1,0 +1,148 @@
+\doxysection{Scott\+Plot.\+Auto\+Scalers.\+Fractional\+Auto\+Scaler Class Reference}
+\hypertarget{class_scott_plot_1_1_auto_scalers_1_1_fractional_auto_scaler}{}\label{class_scott_plot_1_1_auto_scalers_1_1_fractional_auto_scaler}\index{ScottPlot.AutoScalers.FractionalAutoScaler@{ScottPlot.AutoScalers.FractionalAutoScaler}}
+Inheritance diagram for Scott\+Plot.\+Auto\+Scalers.\+Fractional\+Auto\+Scaler\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_scott_plot_1_1_auto_scalers_1_1_fractional_auto_scaler}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_scott_plot_1_1_auto_scalers_1_1_fractional_auto_scaler_ae1cc59a184d0209c590e0ea8db455b84}{Fractional\+Auto\+Scaler}} (double horizontal=.\+1, double vertical=.\+15)
+\begin{DoxyCompactList}\small\item\em Pad the data area with the given fractions of whitespace. A value of 0.\+1 means 10\% padding (5\% on each side of the data area). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_scott_plot_1_1_auto_scalers_1_1_fractional_auto_scaler_abafff300fdebb394cf92db63f57dc622}{Fractional\+Auto\+Scaler}} (double left, double right, double bottom, double top)
+\begin{DoxyCompactList}\small\item\em Pad each side of the data area with the exact fraction of whitespace. 0.\+05 means 5\% whitespace on that side of the data area. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_auto_scalers_1_1_fractional_auto_scaler_a55194f2a4a02ab3dab85c974a899f1e9}{Auto\+Scale\+All}} (\mbox{\hyperlink{class_i_enumerable}{IEnumerable}}$<$ \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable}{IPlottable}} $>$ plottables)
+\begin{DoxyCompactList}\small\item\em Autoscale every unset axis used by plottables. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}} \mbox{\hyperlink{class_scott_plot_1_1_auto_scalers_1_1_fractional_auto_scaler_ad8bcf9a33f686306b6586ab925b696c8}{Get\+Axis\+Limits}} (\mbox{\hyperlink{class_scott_plot_1_1_plot}{Plot}} plot, \mbox{\hyperlink{interface_scott_plot_1_1_i_x_axis}{IXAxis}} x\+Axis, \mbox{\hyperlink{interface_scott_plot_1_1_i_y_axis}{IYAxis}} y\+Axis)
+\begin{DoxyCompactList}\small\item\em Return the recommended axis limits for the plottables that use the given axes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_scott_plot_1_1_i_auto_scaler}{Scott\+Plot.\+IAuto\+Scaler}}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+readonly double \mbox{\hyperlink{class_scott_plot_1_1_auto_scalers_1_1_fractional_auto_scaler_a419dc457fa308812352d1b24fd78ca96}{Left\+Fraction}}
+\item 
+readonly double \mbox{\hyperlink{class_scott_plot_1_1_auto_scalers_1_1_fractional_auto_scaler_a776b790a273c3569c31d96d43da3eebf}{Right\+Fraction}}
+\item 
+readonly double \mbox{\hyperlink{class_scott_plot_1_1_auto_scalers_1_1_fractional_auto_scaler_abd9d07d5dc37d06b90d3c745d9b77085}{Bottom\+Fraction}}
+\item 
+readonly double \mbox{\hyperlink{class_scott_plot_1_1_auto_scalers_1_1_fractional_auto_scaler_ac82bc1076197a5ca0743acbde86c4bb9}{Top\+Fraction}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_scott_plot_1_1_auto_scalers_1_1_fractional_auto_scaler_af1ad4916e1f2ad0054f3bf9e884cace4}{InvertedX}} = false\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+bool \mbox{\hyperlink{class_scott_plot_1_1_auto_scalers_1_1_fractional_auto_scaler_ab07ec15c5f4a7457dbf8b6d8c4349f03}{InvertedY}} = false\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{interface_scott_plot_1_1_i_auto_scaler}{Scott\+Plot.\+IAuto\+Scaler}}}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_scott_plot_1_1_auto_scalers_1_1_fractional_auto_scaler_ae1cc59a184d0209c590e0ea8db455b84}\index{ScottPlot.AutoScalers.FractionalAutoScaler@{ScottPlot.AutoScalers.FractionalAutoScaler}!FractionalAutoScaler@{FractionalAutoScaler}}
+\index{FractionalAutoScaler@{FractionalAutoScaler}!ScottPlot.AutoScalers.FractionalAutoScaler@{ScottPlot.AutoScalers.FractionalAutoScaler}}
+\doxysubsubsection{\texorpdfstring{FractionalAutoScaler()}{FractionalAutoScaler()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_auto_scalers_1_1_fractional_auto_scaler_ae1cc59a184d0209c590e0ea8db455b84} 
+Scott\+Plot.\+Auto\+Scalers.\+Fractional\+Auto\+Scaler.\+Fractional\+Auto\+Scaler (\begin{DoxyParamCaption}\item[{double}]{horizontal}{ = {\ttfamily \+:\+:1}, }\item[{double}]{vertical}{ = {\ttfamily \+:\+:15}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Pad the data area with the given fractions of whitespace. A value of 0.\+1 means 10\% padding (5\% on each side of the data area). 
+
+\Hypertarget{class_scott_plot_1_1_auto_scalers_1_1_fractional_auto_scaler_abafff300fdebb394cf92db63f57dc622}\index{ScottPlot.AutoScalers.FractionalAutoScaler@{ScottPlot.AutoScalers.FractionalAutoScaler}!FractionalAutoScaler@{FractionalAutoScaler}}
+\index{FractionalAutoScaler@{FractionalAutoScaler}!ScottPlot.AutoScalers.FractionalAutoScaler@{ScottPlot.AutoScalers.FractionalAutoScaler}}
+\doxysubsubsection{\texorpdfstring{FractionalAutoScaler()}{FractionalAutoScaler()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_auto_scalers_1_1_fractional_auto_scaler_abafff300fdebb394cf92db63f57dc622} 
+Scott\+Plot.\+Auto\+Scalers.\+Fractional\+Auto\+Scaler.\+Fractional\+Auto\+Scaler (\begin{DoxyParamCaption}\item[{double}]{left}{, }\item[{double}]{right}{, }\item[{double}]{bottom}{, }\item[{double}]{top}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Pad each side of the data area with the exact fraction of whitespace. 0.\+05 means 5\% whitespace on that side of the data area. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_scott_plot_1_1_auto_scalers_1_1_fractional_auto_scaler_a55194f2a4a02ab3dab85c974a899f1e9}\index{ScottPlot.AutoScalers.FractionalAutoScaler@{ScottPlot.AutoScalers.FractionalAutoScaler}!AutoScaleAll@{AutoScaleAll}}
+\index{AutoScaleAll@{AutoScaleAll}!ScottPlot.AutoScalers.FractionalAutoScaler@{ScottPlot.AutoScalers.FractionalAutoScaler}}
+\doxysubsubsection{\texorpdfstring{AutoScaleAll()}{AutoScaleAll()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_auto_scalers_1_1_fractional_auto_scaler_a55194f2a4a02ab3dab85c974a899f1e9} 
+void Scott\+Plot.\+Auto\+Scalers.\+Fractional\+Auto\+Scaler.\+Auto\+Scale\+All (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_i_enumerable}{IEnumerable}}$<$ \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable}{IPlottable}} $>$}]{plottables}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Autoscale every unset axis used by plottables. 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_auto_scaler_a6ffd6d1f0b0d7965459a1908f8ec48d5}{Scott\+Plot.\+IAuto\+Scaler}}.
+
+\Hypertarget{class_scott_plot_1_1_auto_scalers_1_1_fractional_auto_scaler_ad8bcf9a33f686306b6586ab925b696c8}\index{ScottPlot.AutoScalers.FractionalAutoScaler@{ScottPlot.AutoScalers.FractionalAutoScaler}!GetAxisLimits@{GetAxisLimits}}
+\index{GetAxisLimits@{GetAxisLimits}!ScottPlot.AutoScalers.FractionalAutoScaler@{ScottPlot.AutoScalers.FractionalAutoScaler}}
+\doxysubsubsection{\texorpdfstring{GetAxisLimits()}{GetAxisLimits()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_auto_scalers_1_1_fractional_auto_scaler_ad8bcf9a33f686306b6586ab925b696c8} 
+\mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}} Scott\+Plot.\+Auto\+Scalers.\+Fractional\+Auto\+Scaler.\+Get\+Axis\+Limits (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_scott_plot_1_1_plot}{Plot}}}]{plot}{, }\item[{\mbox{\hyperlink{interface_scott_plot_1_1_i_x_axis}{IXAxis}}}]{x\+Axis}{, }\item[{\mbox{\hyperlink{interface_scott_plot_1_1_i_y_axis}{IYAxis}}}]{y\+Axis}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return the recommended axis limits for the plottables that use the given axes. 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_auto_scaler_af1830e0130317641478745776a087bcb}{Scott\+Plot.\+IAuto\+Scaler}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_scott_plot_1_1_auto_scalers_1_1_fractional_auto_scaler_abd9d07d5dc37d06b90d3c745d9b77085}\index{ScottPlot.AutoScalers.FractionalAutoScaler@{ScottPlot.AutoScalers.FractionalAutoScaler}!BottomFraction@{BottomFraction}}
+\index{BottomFraction@{BottomFraction}!ScottPlot.AutoScalers.FractionalAutoScaler@{ScottPlot.AutoScalers.FractionalAutoScaler}}
+\doxysubsubsection{\texorpdfstring{BottomFraction}{BottomFraction}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_auto_scalers_1_1_fractional_auto_scaler_abd9d07d5dc37d06b90d3c745d9b77085} 
+readonly double Scott\+Plot.\+Auto\+Scalers.\+Fractional\+Auto\+Scaler.\+Bottom\+Fraction}
+
+\Hypertarget{class_scott_plot_1_1_auto_scalers_1_1_fractional_auto_scaler_a419dc457fa308812352d1b24fd78ca96}\index{ScottPlot.AutoScalers.FractionalAutoScaler@{ScottPlot.AutoScalers.FractionalAutoScaler}!LeftFraction@{LeftFraction}}
+\index{LeftFraction@{LeftFraction}!ScottPlot.AutoScalers.FractionalAutoScaler@{ScottPlot.AutoScalers.FractionalAutoScaler}}
+\doxysubsubsection{\texorpdfstring{LeftFraction}{LeftFraction}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_auto_scalers_1_1_fractional_auto_scaler_a419dc457fa308812352d1b24fd78ca96} 
+readonly double Scott\+Plot.\+Auto\+Scalers.\+Fractional\+Auto\+Scaler.\+Left\+Fraction}
+
+\Hypertarget{class_scott_plot_1_1_auto_scalers_1_1_fractional_auto_scaler_a776b790a273c3569c31d96d43da3eebf}\index{ScottPlot.AutoScalers.FractionalAutoScaler@{ScottPlot.AutoScalers.FractionalAutoScaler}!RightFraction@{RightFraction}}
+\index{RightFraction@{RightFraction}!ScottPlot.AutoScalers.FractionalAutoScaler@{ScottPlot.AutoScalers.FractionalAutoScaler}}
+\doxysubsubsection{\texorpdfstring{RightFraction}{RightFraction}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_auto_scalers_1_1_fractional_auto_scaler_a776b790a273c3569c31d96d43da3eebf} 
+readonly double Scott\+Plot.\+Auto\+Scalers.\+Fractional\+Auto\+Scaler.\+Right\+Fraction}
+
+\Hypertarget{class_scott_plot_1_1_auto_scalers_1_1_fractional_auto_scaler_ac82bc1076197a5ca0743acbde86c4bb9}\index{ScottPlot.AutoScalers.FractionalAutoScaler@{ScottPlot.AutoScalers.FractionalAutoScaler}!TopFraction@{TopFraction}}
+\index{TopFraction@{TopFraction}!ScottPlot.AutoScalers.FractionalAutoScaler@{ScottPlot.AutoScalers.FractionalAutoScaler}}
+\doxysubsubsection{\texorpdfstring{TopFraction}{TopFraction}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_auto_scalers_1_1_fractional_auto_scaler_ac82bc1076197a5ca0743acbde86c4bb9} 
+readonly double Scott\+Plot.\+Auto\+Scalers.\+Fractional\+Auto\+Scaler.\+Top\+Fraction}
+
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{class_scott_plot_1_1_auto_scalers_1_1_fractional_auto_scaler_af1ad4916e1f2ad0054f3bf9e884cace4}\index{ScottPlot.AutoScalers.FractionalAutoScaler@{ScottPlot.AutoScalers.FractionalAutoScaler}!InvertedX@{InvertedX}}
+\index{InvertedX@{InvertedX}!ScottPlot.AutoScalers.FractionalAutoScaler@{ScottPlot.AutoScalers.FractionalAutoScaler}}
+\doxysubsubsection{\texorpdfstring{InvertedX}{InvertedX}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_auto_scalers_1_1_fractional_auto_scaler_af1ad4916e1f2ad0054f3bf9e884cace4} 
+bool Scott\+Plot.\+Auto\+Scalers.\+Fractional\+Auto\+Scaler.\+InvertedX = false\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_auto_scaler_a0a9e468ca59b513d9c6a8d2751353a6d}{Scott\+Plot.\+IAuto\+Scaler}}.
+
+\Hypertarget{class_scott_plot_1_1_auto_scalers_1_1_fractional_auto_scaler_ab07ec15c5f4a7457dbf8b6d8c4349f03}\index{ScottPlot.AutoScalers.FractionalAutoScaler@{ScottPlot.AutoScalers.FractionalAutoScaler}!InvertedY@{InvertedY}}
+\index{InvertedY@{InvertedY}!ScottPlot.AutoScalers.FractionalAutoScaler@{ScottPlot.AutoScalers.FractionalAutoScaler}}
+\doxysubsubsection{\texorpdfstring{InvertedY}{InvertedY}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_auto_scalers_1_1_fractional_auto_scaler_ab07ec15c5f4a7457dbf8b6d8c4349f03} 
+bool Scott\+Plot.\+Auto\+Scalers.\+Fractional\+Auto\+Scaler.\+InvertedY = false\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_auto_scaler_a99e669e8410c7b09f0407bcde22f358b}{Scott\+Plot.\+IAuto\+Scaler}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Auto\+Scalers/Fractional\+Auto\+Scaler.\+cs\end{DoxyCompactItemize}

@@ -1,0 +1,114 @@
+\hypertarget{classVerticalLine}{}\doxysection{Vertical\+Line Class Reference}
+\label{classVerticalLine}\index{VerticalLine@{VerticalLine}}
+
+
+A line at a defined X position that spans the entire vertical space of the data area  
+
+
+Inheritance diagram for Vertical\+Line\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.270073cm]{classVerticalLine}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classVerticalLine_a1ec3190c769dc9f23a8d89e0bffad96b}{Vertical\+Line}} ()
+\item 
+override bool \mbox{\hyperlink{classVerticalLine_a755eaea84631fadaf1da8a3dd04ef555}{Is\+Under\+Mouse}} (\mbox{\hyperlink{structCoordinateRect}{Coordinate\+Rect}} rect)
+\item 
+override \mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} \mbox{\hyperlink{classVerticalLine_a0c23726b6e8dce5e1f76388259d08632}{Get\+Axis\+Limits}} ()
+\begin{DoxyCompactList}\small\item\em Return the 2D area (in coordinate space) occupied by the data contained in this plottable \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{classVerticalLine_ac81672b51699c0d8f305b77ee53aa7b9}{Render}} (\mbox{\hyperlink{classRenderPack}{Render\+Pack}} rp)
+\begin{DoxyCompactList}\small\item\em Draw the data from this plottable into the data area defined in the \mbox{\hyperlink{classAxes}{Axes}}. By default the surface is already clipped to the data area, but this can be cleared inside the plottable. \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{classVerticalLine_abf64de46455b99487f7059990927401d}{Render\+Last}} (\mbox{\hyperlink{classRenderPack}{Render\+Pack}} rp)
+\begin{DoxyCompactList}\small\item\em Plottables that implement this interface have a second render method that runs after the axes are drawn, allowing graphics to be placed on top of the axes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{classVerticalLine_a5c5126ac0336761b89ec084999061cde}{X}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A line at a defined X position that spans the entire vertical space of the data area 
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classVerticalLine_a1ec3190c769dc9f23a8d89e0bffad96b}\label{classVerticalLine_a1ec3190c769dc9f23a8d89e0bffad96b}} 
+\index{VerticalLine@{VerticalLine}!VerticalLine@{VerticalLine}}
+\index{VerticalLine@{VerticalLine}!VerticalLine@{VerticalLine}}
+\doxysubsubsection{\texorpdfstring{VerticalLine()}{VerticalLine()}}
+{\footnotesize\ttfamily Vertical\+Line.\+Vertical\+Line (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classVerticalLine_a0c23726b6e8dce5e1f76388259d08632}\label{classVerticalLine_a0c23726b6e8dce5e1f76388259d08632}} 
+\index{VerticalLine@{VerticalLine}!GetAxisLimits@{GetAxisLimits}}
+\index{GetAxisLimits@{GetAxisLimits}!VerticalLine@{VerticalLine}}
+\doxysubsubsection{\texorpdfstring{GetAxisLimits()}{GetAxisLimits()}}
+{\footnotesize\ttfamily override \mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} Vertical\+Line.\+Get\+Axis\+Limits (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Return the 2D area (in coordinate space) occupied by the data contained in this plottable 
+
+
+
+Implements \mbox{\hyperlink{classAxisLine_a27d4d4b88ed74cecd82ae9830bf33403}{Axis\+Line}}.
+
+\mbox{\Hypertarget{classVerticalLine_a755eaea84631fadaf1da8a3dd04ef555}\label{classVerticalLine_a755eaea84631fadaf1da8a3dd04ef555}} 
+\index{VerticalLine@{VerticalLine}!IsUnderMouse@{IsUnderMouse}}
+\index{IsUnderMouse@{IsUnderMouse}!VerticalLine@{VerticalLine}}
+\doxysubsubsection{\texorpdfstring{IsUnderMouse()}{IsUnderMouse()}}
+{\footnotesize\ttfamily override bool Vertical\+Line.\+Is\+Under\+Mouse (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structCoordinateRect}{Coordinate\+Rect}}}]{rect }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classAxisLine_a9b8ee106a65f97ad00a55dc0117b161d}{Axis\+Line}}.
+
+\mbox{\Hypertarget{classVerticalLine_ac81672b51699c0d8f305b77ee53aa7b9}\label{classVerticalLine_ac81672b51699c0d8f305b77ee53aa7b9}} 
+\index{VerticalLine@{VerticalLine}!Render@{Render}}
+\index{Render@{Render}!VerticalLine@{VerticalLine}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily override void Vertical\+Line.\+Render (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classRenderPack}{Render\+Pack}}}]{rp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Draw the data from this plottable into the data area defined in the \mbox{\hyperlink{classAxes}{Axes}}. By default the surface is already clipped to the data area, but this can be cleared inside the plottable. 
+
+
+
+Implements \mbox{\hyperlink{classAxisLine_aa0cb2f156e29e28f42a41f3488310cc9}{Axis\+Line}}.
+
+\mbox{\Hypertarget{classVerticalLine_abf64de46455b99487f7059990927401d}\label{classVerticalLine_abf64de46455b99487f7059990927401d}} 
+\index{VerticalLine@{VerticalLine}!RenderLast@{RenderLast}}
+\index{RenderLast@{RenderLast}!VerticalLine@{VerticalLine}}
+\doxysubsubsection{\texorpdfstring{RenderLast()}{RenderLast()}}
+{\footnotesize\ttfamily override void Vertical\+Line.\+Render\+Last (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classRenderPack}{Render\+Pack}}}]{rp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Plottables that implement this interface have a second render method that runs after the axes are drawn, allowing graphics to be placed on top of the axes. 
+
+
+
+Implements \mbox{\hyperlink{classAxisLine_af0921fb9295ff2071d60fec430c6e322}{Axis\+Line}}.
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{classVerticalLine_a5c5126ac0336761b89ec084999061cde}\label{classVerticalLine_a5c5126ac0336761b89ec084999061cde}} 
+\index{VerticalLine@{VerticalLine}!X@{X}}
+\index{X@{X}!VerticalLine@{VerticalLine}}
+\doxysubsubsection{\texorpdfstring{X}{X}}
+{\footnotesize\ttfamily double Vertical\+Line.\+X\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Plottables/Vertical\+Line.\+cs\end{DoxyCompactItemize}

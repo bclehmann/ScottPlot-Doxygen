@@ -1,0 +1,277 @@
+\doxysection{Scott\+Plot.\+Plottables.\+Polar\+Axis Class Reference}
+\hypertarget{class_scott_plot_1_1_plottables_1_1_polar_axis}{}\label{class_scott_plot_1_1_plottables_1_1_polar_axis}\index{ScottPlot.Plottables.PolarAxis@{ScottPlot.Plottables.PolarAxis}}
+
+
+A polar axes uses spoke lines and circles to describe a polar coordinate system where points are represented by a radius and angle. This class draws a polar axes and has options to customize spokes and circles.  
+
+
+Inheritance diagram for Scott\+Plot.\+Plottables.\+Polar\+Axis\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_scott_plot_1_1_plottables_1_1_polar_axis}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_polar_axis_a840c7d66f02db8994add3076e17ad2a6}{Regenerate\+Spokes}} (int count=5)
+\begin{DoxyCompactList}\small\item\em Replace spokes with a new collection evenly-\/spaced around the circle. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_polar_axis_aea92591f740477f08f3559bc7830e63d}{Regenerate\+Circles}} (int count=3)
+\begin{DoxyCompactList}\small\item\em Replace circles with a new collection evenly-\/spaced along the maximum radius. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_coordinates}{Coordinates}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_polar_axis_a9d8b9ba76354136da7e65ef9c6b20c34}{Get\+Coordinates}} (double radius, double degrees)
+\begin{DoxyCompactList}\small\item\em Return the X/Y position of a polar point. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_coordinates}{Coordinates}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_polar_axis_a385540587d7df21e15d736f810ee43ef}{Get\+Coordinates}} (\mbox{\hyperlink{namespace_scott_plot_ae0fa916047fded02d6130f4481186cd8}{Polar\+Coordinates}} point)
+\begin{DoxyCompactList}\small\item\em Return the X/Y position of a polar point. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_polar_axis_a3eb50b9d3bb21df6b1cf63eeb280d054}{Get\+Axis\+Limits}} ()
+\begin{DoxyCompactList}\small\item\em Return the 2D area (in coordinate space) occupied by the data contained in this plottable. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_polar_axis_a3a672462d556652f0b664016c60bb793}{Update\+Axis\+Limits}} (\mbox{\hyperlink{class_scott_plot_1_1_plot}{Plot}} plot)
+\item 
+virtual void \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_polar_axis_a7dfef42e7840b479d5cf797ae0090182}{Render}} (Render\+Pack rp)
+\begin{DoxyCompactList}\small\item\em Draw the data from this plottable into the data area defined in the \doxylink{class_scott_plot_1_1_axes}{Axes}. By default the surface is already clipped to the data area, but this can be cleared inside the plottable. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable}{Scott\+Plot.\+IPlottable}}}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_scott_plot_1_1_i_manages_axis_limits}{Scott\+Plot.\+IManages\+Axis\+Limits}}}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_polar_axis_a418ce2cf6c632072ef1b9867b6c966a9}{Is\+Visible}} = true\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Toggles whether this plottable is shown and contributes to the automatic axis limit detection. The calling method will check this variable (it does not need to be checked inside the Render method). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{interface_scott_plot_1_1_i_axes}{IAxes}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_polar_axis_aab6f948ec5d51c90decda30e8545e579}{Axes}} = new \mbox{\hyperlink{class_scott_plot_1_1_axes}{Axes}}()\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em This object performs coordinate/pixel translation at render time based on the latest data area. It stores the axes to use for this plottable and also the data area (in pixels) updated just before each render. If this object is null it will be constructed using the default X and Y axes at render time. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_enumerable}{IEnumerable}}$<$ \mbox{\hyperlink{class_scott_plot_1_1_legend_item}{Legend\+Item}} $>$ \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_polar_axis_a9630cd9b454c878ee06da5aebc4f64e6}{Legend\+Items}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Items which will appear in the legend. \end{DoxyCompactList}\item 
+List$<$ Polar\+Axis\+Spoke $>$ \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_polar_axis_ad19cd86e3bd819927b97e8e0b732011e}{Spokes}} = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Spokes are straight lines that extend outward from the origin. \end{DoxyCompactList}\item 
+List$<$ Polar\+Axis\+Circle $>$ \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_polar_axis_ab6e03205723cdf47a9c88d31e8c257ad}{Circles}} = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Concentric circles centered on the origin. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_polar_axis_a98876688d54b85771d8e6bee047456ea}{Maximum\+Radius}} = 1\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Size of the largest circle or longest spoke. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_polar_axis_a61c7d2d27e733555b00973f507ded19a}{Padding\+Fraction}} = 1.\+1\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Additional padding given to accommodate labels. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_polar_axis_aec4bf570f0701eef905b0051f43996ef}{Manage\+Axis\+Limits}} = true\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Enable this to modify the axis limits at render time to achieve "{}square axes"{} where the units/px values are equal for horizontal and vertical axes, allowing circles to always appear as circles instead of ellipses. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_polar_axis_a18896eba6bd674c21ed39cae9ddb6b31}{Line\+Width}}\hspace{0.3cm}{\ttfamily  \mbox{[}set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Sets line width for all \doxylink{class_scott_plot_1_1_plottables_1_1_polar_axis_ab6e03205723cdf47a9c88d31e8c257ad}{Circles} and \doxylink{class_scott_plot_1_1_plottables_1_1_polar_axis_ad19cd86e3bd819927b97e8e0b732011e}{Spokes} \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_scott_plot_a625917eb44cadb4de90991e525db6ab5}{Line\+Pattern}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_polar_axis_aba6c8becc8e90a3689ecf8c1fdf9e68a}{Line\+Pattern}}\hspace{0.3cm}{\ttfamily  \mbox{[}set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Sets line pattern for all \doxylink{class_scott_plot_1_1_plottables_1_1_polar_axis_ab6e03205723cdf47a9c88d31e8c257ad}{Circles} and \doxylink{class_scott_plot_1_1_plottables_1_1_polar_axis_ad19cd86e3bd819927b97e8e0b732011e}{Spokes} \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_polar_axis_a0fd8f8ba8cc9d6b34864d2c74f775af9}{Line\+Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Sets line color for all \doxylink{class_scott_plot_1_1_plottables_1_1_polar_axis_ab6e03205723cdf47a9c88d31e8c257ad}{Circles} and \doxylink{class_scott_plot_1_1_plottables_1_1_polar_axis_ad19cd86e3bd819927b97e8e0b732011e}{Spokes} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable}{Scott\+Plot.\+IPlottable}}}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{interface_scott_plot_1_1_i_manages_axis_limits}{Scott\+Plot.\+IManages\+Axis\+Limits}}}
+
+
+\doxysubsection{Detailed Description}
+A polar axes uses spoke lines and circles to describe a polar coordinate system where points are represented by a radius and angle. This class draws a polar axes and has options to customize spokes and circles. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_polar_axis_a3eb50b9d3bb21df6b1cf63eeb280d054}\index{ScottPlot.Plottables.PolarAxis@{ScottPlot.Plottables.PolarAxis}!GetAxisLimits@{GetAxisLimits}}
+\index{GetAxisLimits@{GetAxisLimits}!ScottPlot.Plottables.PolarAxis@{ScottPlot.Plottables.PolarAxis}}
+\doxysubsubsection{\texorpdfstring{GetAxisLimits()}{GetAxisLimits()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_polar_axis_a3eb50b9d3bb21df6b1cf63eeb280d054} 
+\mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}} Scott\+Plot.\+Plottables.\+Polar\+Axis.\+Get\+Axis\+Limits (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return the 2D area (in coordinate space) occupied by the data contained in this plottable. 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable_a2e455cf76f9e8bc3187900b1a90487c3}{Scott\+Plot.\+IPlottable}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_polar_axis_a9d8b9ba76354136da7e65ef9c6b20c34}\index{ScottPlot.Plottables.PolarAxis@{ScottPlot.Plottables.PolarAxis}!GetCoordinates@{GetCoordinates}}
+\index{GetCoordinates@{GetCoordinates}!ScottPlot.Plottables.PolarAxis@{ScottPlot.Plottables.PolarAxis}}
+\doxysubsubsection{\texorpdfstring{GetCoordinates()}{GetCoordinates()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_polar_axis_a9d8b9ba76354136da7e65ef9c6b20c34} 
+\mbox{\hyperlink{struct_scott_plot_1_1_coordinates}{Coordinates}} Scott\+Plot.\+Plottables.\+Polar\+Axis.\+Get\+Coordinates (\begin{DoxyParamCaption}\item[{double}]{radius}{, }\item[{double}]{degrees}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return the X/Y position of a polar point. 
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_polar_axis_a385540587d7df21e15d736f810ee43ef}\index{ScottPlot.Plottables.PolarAxis@{ScottPlot.Plottables.PolarAxis}!GetCoordinates@{GetCoordinates}}
+\index{GetCoordinates@{GetCoordinates}!ScottPlot.Plottables.PolarAxis@{ScottPlot.Plottables.PolarAxis}}
+\doxysubsubsection{\texorpdfstring{GetCoordinates()}{GetCoordinates()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_polar_axis_a385540587d7df21e15d736f810ee43ef} 
+\mbox{\hyperlink{struct_scott_plot_1_1_coordinates}{Coordinates}} Scott\+Plot.\+Plottables.\+Polar\+Axis.\+Get\+Coordinates (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_scott_plot_ae0fa916047fded02d6130f4481186cd8}{Polar\+Coordinates}}}]{point}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return the X/Y position of a polar point. 
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_polar_axis_aea92591f740477f08f3559bc7830e63d}\index{ScottPlot.Plottables.PolarAxis@{ScottPlot.Plottables.PolarAxis}!RegenerateCircles@{RegenerateCircles}}
+\index{RegenerateCircles@{RegenerateCircles}!ScottPlot.Plottables.PolarAxis@{ScottPlot.Plottables.PolarAxis}}
+\doxysubsubsection{\texorpdfstring{RegenerateCircles()}{RegenerateCircles()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_polar_axis_aea92591f740477f08f3559bc7830e63d} 
+void Scott\+Plot.\+Plottables.\+Polar\+Axis.\+Regenerate\+Circles (\begin{DoxyParamCaption}\item[{int}]{count}{ = {\ttfamily 3}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Replace circles with a new collection evenly-\/spaced along the maximum radius. 
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_polar_axis_a840c7d66f02db8994add3076e17ad2a6}\index{ScottPlot.Plottables.PolarAxis@{ScottPlot.Plottables.PolarAxis}!RegenerateSpokes@{RegenerateSpokes}}
+\index{RegenerateSpokes@{RegenerateSpokes}!ScottPlot.Plottables.PolarAxis@{ScottPlot.Plottables.PolarAxis}}
+\doxysubsubsection{\texorpdfstring{RegenerateSpokes()}{RegenerateSpokes()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_polar_axis_a840c7d66f02db8994add3076e17ad2a6} 
+void Scott\+Plot.\+Plottables.\+Polar\+Axis.\+Regenerate\+Spokes (\begin{DoxyParamCaption}\item[{int}]{count}{ = {\ttfamily 5}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Replace spokes with a new collection evenly-\/spaced around the circle. 
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_polar_axis_a7dfef42e7840b479d5cf797ae0090182}\index{ScottPlot.Plottables.PolarAxis@{ScottPlot.Plottables.PolarAxis}!Render@{Render}}
+\index{Render@{Render}!ScottPlot.Plottables.PolarAxis@{ScottPlot.Plottables.PolarAxis}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_polar_axis_a7dfef42e7840b479d5cf797ae0090182} 
+virtual void Scott\+Plot.\+Plottables.\+Polar\+Axis.\+Render (\begin{DoxyParamCaption}\item[{Render\+Pack}]{rp}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Draw the data from this plottable into the data area defined in the \doxylink{class_scott_plot_1_1_axes}{Axes}. By default the surface is already clipped to the data area, but this can be cleared inside the plottable. 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable_a11d2487f1d7628e019a09748d876c289}{Scott\+Plot.\+IPlottable}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_polar_axis_a3a672462d556652f0b664016c60bb793}\index{ScottPlot.Plottables.PolarAxis@{ScottPlot.Plottables.PolarAxis}!UpdateAxisLimits@{UpdateAxisLimits}}
+\index{UpdateAxisLimits@{UpdateAxisLimits}!ScottPlot.Plottables.PolarAxis@{ScottPlot.Plottables.PolarAxis}}
+\doxysubsubsection{\texorpdfstring{UpdateAxisLimits()}{UpdateAxisLimits()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_polar_axis_a3a672462d556652f0b664016c60bb793} 
+virtual void Scott\+Plot.\+Plottables.\+Polar\+Axis.\+Update\+Axis\+Limits (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_scott_plot_1_1_plot}{Plot}}}]{plot}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_manages_axis_limits_addd3413b71fa4d351a975724e257ae94}{Scott\+Plot.\+IManages\+Axis\+Limits}}.
+
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_polar_axis_aab6f948ec5d51c90decda30e8545e579}\index{ScottPlot.Plottables.PolarAxis@{ScottPlot.Plottables.PolarAxis}!Axes@{Axes}}
+\index{Axes@{Axes}!ScottPlot.Plottables.PolarAxis@{ScottPlot.Plottables.PolarAxis}}
+\doxysubsubsection{\texorpdfstring{Axes}{Axes}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_polar_axis_aab6f948ec5d51c90decda30e8545e579} 
+\mbox{\hyperlink{interface_scott_plot_1_1_i_axes}{IAxes}} Scott\+Plot.\+Plottables.\+Polar\+Axis.\+Axes = new \mbox{\hyperlink{class_scott_plot_1_1_axes}{Axes}}()\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+This object performs coordinate/pixel translation at render time based on the latest data area. It stores the axes to use for this plottable and also the data area (in pixels) updated just before each render. If this object is null it will be constructed using the default X and Y axes at render time. 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable_aa68bc5153a673a7cd4a68f93da377d0a}{Scott\+Plot.\+IPlottable}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_polar_axis_ab6e03205723cdf47a9c88d31e8c257ad}\index{ScottPlot.Plottables.PolarAxis@{ScottPlot.Plottables.PolarAxis}!Circles@{Circles}}
+\index{Circles@{Circles}!ScottPlot.Plottables.PolarAxis@{ScottPlot.Plottables.PolarAxis}}
+\doxysubsubsection{\texorpdfstring{Circles}{Circles}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_polar_axis_ab6e03205723cdf47a9c88d31e8c257ad} 
+List$<$Polar\+Axis\+Circle$>$ Scott\+Plot.\+Plottables.\+Polar\+Axis.\+Circles = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Concentric circles centered on the origin. 
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_polar_axis_a418ce2cf6c632072ef1b9867b6c966a9}\index{ScottPlot.Plottables.PolarAxis@{ScottPlot.Plottables.PolarAxis}!IsVisible@{IsVisible}}
+\index{IsVisible@{IsVisible}!ScottPlot.Plottables.PolarAxis@{ScottPlot.Plottables.PolarAxis}}
+\doxysubsubsection{\texorpdfstring{IsVisible}{IsVisible}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_polar_axis_a418ce2cf6c632072ef1b9867b6c966a9} 
+bool Scott\+Plot.\+Plottables.\+Polar\+Axis.\+Is\+Visible = true\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Toggles whether this plottable is shown and contributes to the automatic axis limit detection. The calling method will check this variable (it does not need to be checked inside the Render method). 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable_abbe75ba55a332d695313ccb5dc780923}{Scott\+Plot.\+IPlottable}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_polar_axis_a9630cd9b454c878ee06da5aebc4f64e6}\index{ScottPlot.Plottables.PolarAxis@{ScottPlot.Plottables.PolarAxis}!LegendItems@{LegendItems}}
+\index{LegendItems@{LegendItems}!ScottPlot.Plottables.PolarAxis@{ScottPlot.Plottables.PolarAxis}}
+\doxysubsubsection{\texorpdfstring{LegendItems}{LegendItems}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_polar_axis_a9630cd9b454c878ee06da5aebc4f64e6} 
+\mbox{\hyperlink{class_i_enumerable}{IEnumerable}}$<$\mbox{\hyperlink{class_scott_plot_1_1_legend_item}{Legend\+Item}}$>$ Scott\+Plot.\+Plottables.\+Polar\+Axis.\+Legend\+Items\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Items which will appear in the legend. 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable_a4565f96a253f832bd9aa8033c99eff75}{Scott\+Plot.\+IPlottable}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_polar_axis_a0fd8f8ba8cc9d6b34864d2c74f775af9}\index{ScottPlot.Plottables.PolarAxis@{ScottPlot.Plottables.PolarAxis}!LineColor@{LineColor}}
+\index{LineColor@{LineColor}!ScottPlot.Plottables.PolarAxis@{ScottPlot.Plottables.PolarAxis}}
+\doxysubsubsection{\texorpdfstring{LineColor}{LineColor}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_polar_axis_a0fd8f8ba8cc9d6b34864d2c74f775af9} 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} Scott\+Plot.\+Plottables.\+Polar\+Axis.\+Line\+Color\hspace{0.3cm}{\ttfamily [set]}}
+
+
+
+Sets line color for all \doxylink{class_scott_plot_1_1_plottables_1_1_polar_axis_ab6e03205723cdf47a9c88d31e8c257ad}{Circles} and \doxylink{class_scott_plot_1_1_plottables_1_1_polar_axis_ad19cd86e3bd819927b97e8e0b732011e}{Spokes} 
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_polar_axis_aba6c8becc8e90a3689ecf8c1fdf9e68a}\index{ScottPlot.Plottables.PolarAxis@{ScottPlot.Plottables.PolarAxis}!LinePattern@{LinePattern}}
+\index{LinePattern@{LinePattern}!ScottPlot.Plottables.PolarAxis@{ScottPlot.Plottables.PolarAxis}}
+\doxysubsubsection{\texorpdfstring{LinePattern}{LinePattern}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_polar_axis_aba6c8becc8e90a3689ecf8c1fdf9e68a} 
+\mbox{\hyperlink{namespace_scott_plot_a625917eb44cadb4de90991e525db6ab5}{Line\+Pattern}} Scott\+Plot.\+Plottables.\+Polar\+Axis.\+Line\+Pattern\hspace{0.3cm}{\ttfamily [set]}}
+
+
+
+Sets line pattern for all \doxylink{class_scott_plot_1_1_plottables_1_1_polar_axis_ab6e03205723cdf47a9c88d31e8c257ad}{Circles} and \doxylink{class_scott_plot_1_1_plottables_1_1_polar_axis_ad19cd86e3bd819927b97e8e0b732011e}{Spokes} 
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_polar_axis_a18896eba6bd674c21ed39cae9ddb6b31}\index{ScottPlot.Plottables.PolarAxis@{ScottPlot.Plottables.PolarAxis}!LineWidth@{LineWidth}}
+\index{LineWidth@{LineWidth}!ScottPlot.Plottables.PolarAxis@{ScottPlot.Plottables.PolarAxis}}
+\doxysubsubsection{\texorpdfstring{LineWidth}{LineWidth}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_polar_axis_a18896eba6bd674c21ed39cae9ddb6b31} 
+float Scott\+Plot.\+Plottables.\+Polar\+Axis.\+Line\+Width\hspace{0.3cm}{\ttfamily [set]}}
+
+
+
+Sets line width for all \doxylink{class_scott_plot_1_1_plottables_1_1_polar_axis_ab6e03205723cdf47a9c88d31e8c257ad}{Circles} and \doxylink{class_scott_plot_1_1_plottables_1_1_polar_axis_ad19cd86e3bd819927b97e8e0b732011e}{Spokes} 
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_polar_axis_aec4bf570f0701eef905b0051f43996ef}\index{ScottPlot.Plottables.PolarAxis@{ScottPlot.Plottables.PolarAxis}!ManageAxisLimits@{ManageAxisLimits}}
+\index{ManageAxisLimits@{ManageAxisLimits}!ScottPlot.Plottables.PolarAxis@{ScottPlot.Plottables.PolarAxis}}
+\doxysubsubsection{\texorpdfstring{ManageAxisLimits}{ManageAxisLimits}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_polar_axis_aec4bf570f0701eef905b0051f43996ef} 
+bool Scott\+Plot.\+Plottables.\+Polar\+Axis.\+Manage\+Axis\+Limits = true\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Enable this to modify the axis limits at render time to achieve "{}square axes"{} where the units/px values are equal for horizontal and vertical axes, allowing circles to always appear as circles instead of ellipses. 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_manages_axis_limits_ab71dc4df253c248da12bcea01ae8a4e0}{Scott\+Plot.\+IManages\+Axis\+Limits}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_polar_axis_a98876688d54b85771d8e6bee047456ea}\index{ScottPlot.Plottables.PolarAxis@{ScottPlot.Plottables.PolarAxis}!MaximumRadius@{MaximumRadius}}
+\index{MaximumRadius@{MaximumRadius}!ScottPlot.Plottables.PolarAxis@{ScottPlot.Plottables.PolarAxis}}
+\doxysubsubsection{\texorpdfstring{MaximumRadius}{MaximumRadius}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_polar_axis_a98876688d54b85771d8e6bee047456ea} 
+double Scott\+Plot.\+Plottables.\+Polar\+Axis.\+Maximum\+Radius = 1\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Size of the largest circle or longest spoke. 
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_polar_axis_a61c7d2d27e733555b00973f507ded19a}\index{ScottPlot.Plottables.PolarAxis@{ScottPlot.Plottables.PolarAxis}!PaddingFraction@{PaddingFraction}}
+\index{PaddingFraction@{PaddingFraction}!ScottPlot.Plottables.PolarAxis@{ScottPlot.Plottables.PolarAxis}}
+\doxysubsubsection{\texorpdfstring{PaddingFraction}{PaddingFraction}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_polar_axis_a61c7d2d27e733555b00973f507ded19a} 
+double Scott\+Plot.\+Plottables.\+Polar\+Axis.\+Padding\+Fraction = 1.\+1\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Additional padding given to accommodate labels. 
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_polar_axis_ad19cd86e3bd819927b97e8e0b732011e}\index{ScottPlot.Plottables.PolarAxis@{ScottPlot.Plottables.PolarAxis}!Spokes@{Spokes}}
+\index{Spokes@{Spokes}!ScottPlot.Plottables.PolarAxis@{ScottPlot.Plottables.PolarAxis}}
+\doxysubsubsection{\texorpdfstring{Spokes}{Spokes}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_polar_axis_ad19cd86e3bd819927b97e8e0b732011e} 
+List$<$Polar\+Axis\+Spoke$>$ Scott\+Plot.\+Plottables.\+Polar\+Axis.\+Spokes = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Spokes are straight lines that extend outward from the origin. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Plottables/Polar\+Axis.\+cs\end{DoxyCompactItemize}

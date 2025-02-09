@@ -1,0 +1,46 @@
+\doxysection{Scott\+Plot.\+IColormap\+Extensions Class Reference}
+\hypertarget{class_scott_plot_1_1_i_colormap_extensions}{}\label{class_scott_plot_1_1_i_colormap_extensions}\index{ScottPlot.IColormapExtensions@{ScottPlot.IColormapExtensions}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static SKBitmap \mbox{\hyperlink{class_scott_plot_1_1_i_colormap_extensions_ad24559031d55bb59a758d948626689ce}{Get\+SKBitmap}} (this \mbox{\hyperlink{interface_scott_plot_1_1_i_colormap}{IColormap}} colormap, bool vertical)
+\begin{DoxyCompactList}\small\item\em Create a 1 by 256 bitmap displaying all values of a heatmap. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_scott_plot_1_1_i_colormap_extensions_a71d9a0558909d022217dab6264fcc597}{Get\+Colors}} (this \mbox{\hyperlink{interface_scott_plot_1_1_i_colormap}{IColormap}} colormap, int count, double min\+Fraction=0, double max\+Fraction=1)
+\begin{DoxyCompactList}\small\item\em Returns an array of colors evenly spaced along the colormap. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_scott_plot_1_1_i_colormap_extensions_a71d9a0558909d022217dab6264fcc597}\index{ScottPlot.IColormapExtensions@{ScottPlot.IColormapExtensions}!GetColors@{GetColors}}
+\index{GetColors@{GetColors}!ScottPlot.IColormapExtensions@{ScottPlot.IColormapExtensions}}
+\doxysubsubsection{\texorpdfstring{GetColors()}{GetColors()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_i_colormap_extensions_a71d9a0558909d022217dab6264fcc597} 
+static \mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}}\mbox{[}$\,$\mbox{]} Scott\+Plot.\+IColormap\+Extensions.\+Get\+Colors (\begin{DoxyParamCaption}\item[{this \mbox{\hyperlink{interface_scott_plot_1_1_i_colormap}{IColormap}}}]{colormap}{, }\item[{int}]{count}{, }\item[{double}]{min\+Fraction}{ = {\ttfamily 0}, }\item[{double}]{max\+Fraction}{ = {\ttfamily 1}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Returns an array of colors evenly spaced along the colormap. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em count} & The number of colors to get from the colormap.\\
+\hline
+{\em min\+Fraction} & The starting fraction in the colormap range from which to begin extracting colors (normalized to \mbox{[}0, 1\mbox{]}).\\
+\hline
+{\em max\+Fraction} & The ending fraction in the colormap range at which to stop extracting colors (normalized to \mbox{[}0, 1\mbox{]}).\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_scott_plot_1_1_i_colormap_extensions_ad24559031d55bb59a758d948626689ce}\index{ScottPlot.IColormapExtensions@{ScottPlot.IColormapExtensions}!GetSKBitmap@{GetSKBitmap}}
+\index{GetSKBitmap@{GetSKBitmap}!ScottPlot.IColormapExtensions@{ScottPlot.IColormapExtensions}}
+\doxysubsubsection{\texorpdfstring{GetSKBitmap()}{GetSKBitmap()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_i_colormap_extensions_ad24559031d55bb59a758d948626689ce} 
+static SKBitmap Scott\+Plot.\+IColormap\+Extensions.\+Get\+SKBitmap (\begin{DoxyParamCaption}\item[{this \mbox{\hyperlink{interface_scott_plot_1_1_i_colormap}{IColormap}}}]{colormap}{, }\item[{bool}]{vertical}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Create a 1 by 256 bitmap displaying all values of a heatmap. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Interfaces/\mbox{\hyperlink{_i_colormap_8cs}{IColormap.\+cs}}\end{DoxyCompactItemize}

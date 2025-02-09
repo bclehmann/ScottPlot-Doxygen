@@ -1,0 +1,157 @@
+\hypertarget{interfaceIPanel}{}\doxysection{IPanel Interface Reference}
+\label{interfaceIPanel}\index{IPanel@{IPanel}}
+
+
+A panel is a rectangular region outside the data area of a plot. Example panels include axes, colorbars, and titles  
+
+
+Inheritance diagram for IPanel\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=8.000000cm]{interfaceIPanel}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{interfaceIPanel_a974b8efde6b8f1b9e573d4437e18b59d}{Measure}} ()
+\begin{DoxyCompactList}\small\item\em Return the size (in pixels) of the panel in the dimension perpendicular to the edge it lays on \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfaceIPanel_a521381a218c86184b8ea51fa8a45c46d}{Render}} (\mbox{\hyperlink{classRenderPack}{Render\+Pack}} rp, float size, float offset)
+\begin{DoxyCompactList}\small\item\em Draw this panel on a canvas \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structPixelRect}{Pixel\+Rect}} \mbox{\hyperlink{interfaceIPanel_a0e0b911af145b8a7797de86bd6e3d94e}{Get\+Panel\+Rect}} (\mbox{\hyperlink{structPixelRect}{Pixel\+Rect}} data\+Rect, float size, float offset)
+\begin{DoxyCompactList}\small\item\em Return the rectangle for this panel \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{interfaceIPanel_a03c5b3a0e5bf8d74e2f12df71d7ccccb}{Is\+Visible}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em If false, the panel will not be displayed or report any size \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{interfaceIPanel_a2f574bb5cb52f85354761c9d3a0bbb3f}{Minimum\+Size}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Disallow the panel to be smaller than this \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{interfaceIPanel_a34b941a54f8a26d42651619493221341}{Maximum\+Size}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Disallow the panel to be larger than this \end{DoxyCompactList}\item 
+Edge \mbox{\hyperlink{interfaceIPanel_a8fc9c5338cd0c1e48aab2a51e044e7db}{Edge}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Indicates which edge of the data rectangle this panel lays on \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{interfaceIPanel_ac9cbccbcb8458c90dbc3f6bdb56739c2}{Show\+Debug\+Information}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Enable this to display extra information on the axis to facilitate development \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A panel is a rectangular region outside the data area of a plot. Example panels include axes, colorbars, and titles 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{interfaceIPanel_a0e0b911af145b8a7797de86bd6e3d94e}\label{interfaceIPanel_a0e0b911af145b8a7797de86bd6e3d94e}} 
+\index{IPanel@{IPanel}!GetPanelRect@{GetPanelRect}}
+\index{GetPanelRect@{GetPanelRect}!IPanel@{IPanel}}
+\doxysubsubsection{\texorpdfstring{GetPanelRect()}{GetPanelRect()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structPixelRect}{Pixel\+Rect}} IPanel.\+Get\+Panel\+Rect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPixelRect}{Pixel\+Rect}}}]{data\+Rect,  }\item[{float}]{size,  }\item[{float}]{offset }\end{DoxyParamCaption})}
+
+
+
+Return the rectangle for this panel 
+
+
+
+Implemented in \mbox{\hyperlink{classTitlePanel_a7fd65b5879d3abc0fd276825408705a9}{Title\+Panel}}, \mbox{\hyperlink{classPanelBase_ac6e7212ec029bb898aa18635c9445ad9}{Panel\+Base}}, \mbox{\hyperlink{classYAxisBase_a961c548722a3f1cb7664f64774d1634b}{YAxis\+Base}}, and \mbox{\hyperlink{classXAxisBase_a59faf8644be368c3957eeb53f476d7ef}{XAxis\+Base}}.
+
+\mbox{\Hypertarget{interfaceIPanel_a974b8efde6b8f1b9e573d4437e18b59d}\label{interfaceIPanel_a974b8efde6b8f1b9e573d4437e18b59d}} 
+\index{IPanel@{IPanel}!Measure@{Measure}}
+\index{Measure@{Measure}!IPanel@{IPanel}}
+\doxysubsubsection{\texorpdfstring{Measure()}{Measure()}}
+{\footnotesize\ttfamily float IPanel.\+Measure (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Return the size (in pixels) of the panel in the dimension perpendicular to the edge it lays on 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classTitlePanel_a45eab0380c7d1f919dac5a9f0ed13721}{Title\+Panel}}, \mbox{\hyperlink{classPanelBase_a5aa306195e3f7a1fd5a41df159eed8c1}{Panel\+Base}}, \mbox{\hyperlink{classYAxisBase_ab36ecda2cd0efdfa9da154a2cf74c7bb}{YAxis\+Base}}, \mbox{\hyperlink{classXAxisBase_a6aab9fc55986fb22c45405610ef7f9bb}{XAxis\+Base}}, and \mbox{\hyperlink{classLeftAxisWithSubtitle_a24844b55724f8f15a77ab4412afc801a}{Left\+Axis\+With\+Subtitle}}.
+
+\mbox{\Hypertarget{interfaceIPanel_a521381a218c86184b8ea51fa8a45c46d}\label{interfaceIPanel_a521381a218c86184b8ea51fa8a45c46d}} 
+\index{IPanel@{IPanel}!Render@{Render}}
+\index{Render@{Render}!IPanel@{IPanel}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily void IPanel.\+Render (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classRenderPack}{Render\+Pack}}}]{rp,  }\item[{float}]{size,  }\item[{float}]{offset }\end{DoxyParamCaption})}
+
+
+
+Draw this panel on a canvas 
+
+
+\begin{DoxyParams}{Parameters}
+{\em surface} & contains the canvas to draw on\\
+\hline
+{\em data\+Rect} & dimensions of the data area (pixel units)\\
+\hline
+{\em size} & size of this panel (pixel units)\\
+\hline
+{\em offset} & distance from the edge of this panel to the edge of the data area\\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classTitlePanel_a2d7d317a647e0c8348e625921ff41fe2}{Title\+Panel}}, \mbox{\hyperlink{classPanelBase_a2a07daab584d7db2bdab6c9c892e7cf5}{Panel\+Base}}, \mbox{\hyperlink{classYAxisBase_aac42422632b874ee952e6d9cf75d4755}{YAxis\+Base}}, \mbox{\hyperlink{classXAxisBase_a37a0d593722ec854f812083716cd379c}{XAxis\+Base}}, and \mbox{\hyperlink{classLeftAxisWithSubtitle_a2b094860bd10451f0390d334ae80d9a4}{Left\+Axis\+With\+Subtitle}}.
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{interfaceIPanel_a8fc9c5338cd0c1e48aab2a51e044e7db}\label{interfaceIPanel_a8fc9c5338cd0c1e48aab2a51e044e7db}} 
+\index{IPanel@{IPanel}!Edge@{Edge}}
+\index{Edge@{Edge}!IPanel@{IPanel}}
+\doxysubsubsection{\texorpdfstring{Edge}{Edge}}
+{\footnotesize\ttfamily Edge IPanel.\+Edge\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Indicates which edge of the data rectangle this panel lays on 
+
+\mbox{\Hypertarget{interfaceIPanel_a03c5b3a0e5bf8d74e2f12df71d7ccccb}\label{interfaceIPanel_a03c5b3a0e5bf8d74e2f12df71d7ccccb}} 
+\index{IPanel@{IPanel}!IsVisible@{IsVisible}}
+\index{IsVisible@{IsVisible}!IPanel@{IPanel}}
+\doxysubsubsection{\texorpdfstring{IsVisible}{IsVisible}}
+{\footnotesize\ttfamily bool IPanel.\+Is\+Visible\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+If false, the panel will not be displayed or report any size 
+
+\mbox{\Hypertarget{interfaceIPanel_a34b941a54f8a26d42651619493221341}\label{interfaceIPanel_a34b941a54f8a26d42651619493221341}} 
+\index{IPanel@{IPanel}!MaximumSize@{MaximumSize}}
+\index{MaximumSize@{MaximumSize}!IPanel@{IPanel}}
+\doxysubsubsection{\texorpdfstring{MaximumSize}{MaximumSize}}
+{\footnotesize\ttfamily float IPanel.\+Maximum\+Size\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Disallow the panel to be larger than this 
+
+\mbox{\Hypertarget{interfaceIPanel_a2f574bb5cb52f85354761c9d3a0bbb3f}\label{interfaceIPanel_a2f574bb5cb52f85354761c9d3a0bbb3f}} 
+\index{IPanel@{IPanel}!MinimumSize@{MinimumSize}}
+\index{MinimumSize@{MinimumSize}!IPanel@{IPanel}}
+\doxysubsubsection{\texorpdfstring{MinimumSize}{MinimumSize}}
+{\footnotesize\ttfamily float IPanel.\+Minimum\+Size\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Disallow the panel to be smaller than this 
+
+\mbox{\Hypertarget{interfaceIPanel_ac9cbccbcb8458c90dbc3f6bdb56739c2}\label{interfaceIPanel_ac9cbccbcb8458c90dbc3f6bdb56739c2}} 
+\index{IPanel@{IPanel}!ShowDebugInformation@{ShowDebugInformation}}
+\index{ShowDebugInformation@{ShowDebugInformation}!IPanel@{IPanel}}
+\doxysubsubsection{\texorpdfstring{ShowDebugInformation}{ShowDebugInformation}}
+{\footnotesize\ttfamily bool IPanel.\+Show\+Debug\+Information\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Enable this to display extra information on the axis to facilitate development 
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Interfaces/IPanel.\+cs\end{DoxyCompactItemize}

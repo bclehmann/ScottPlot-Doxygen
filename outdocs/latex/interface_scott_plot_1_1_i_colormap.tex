@@ -1,0 +1,85 @@
+\doxysection{Scott\+Plot.\+IColormap Interface Reference}
+\hypertarget{interface_scott_plot_1_1_i_colormap}{}\label{interface_scott_plot_1_1_i_colormap}\index{ScottPlot.IColormap@{ScottPlot.IColormap}}
+Inheritance diagram for Scott\+Plot.\+IColormap\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=8.995985cm]{interface_scott_plot_1_1_i_colormap}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} \mbox{\hyperlink{interface_scott_plot_1_1_i_colormap_a475396e5f91bc5d1581b15acb1fcf773}{Get\+Color}} (double position)
+\begin{DoxyCompactList}\small\item\em Returns the color of a position on this colormap (from 0 to 1). Returns transparent if NaN. Positions outside the range will be clamped. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} \mbox{\hyperlink{interface_scott_plot_1_1_i_colormap_aeca2b0c17c5efcf0ea4e787d72baeb56}{Get\+Color}} (double position, \mbox{\hyperlink{struct_scott_plot_1_1_range}{Range}} range)
+\begin{DoxyCompactList}\small\item\em Returns the color of a position on this colormap (according to the given range). Returns transparent if NaN. Positions outside the range will be clamped. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{interface_scott_plot_1_1_i_colormap_a5ae6cdcc1ce556060b60f22004b709f4}{Name}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Full name for this colormap. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_scott_plot_1_1_i_colormap_a475396e5f91bc5d1581b15acb1fcf773}\index{ScottPlot.IColormap@{ScottPlot.IColormap}!GetColor@{GetColor}}
+\index{GetColor@{GetColor}!ScottPlot.IColormap@{ScottPlot.IColormap}}
+\doxysubsubsection{\texorpdfstring{GetColor()}{GetColor()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{interface_scott_plot_1_1_i_colormap_a475396e5f91bc5d1581b15acb1fcf773} 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} Scott\+Plot.\+IColormap.\+Get\+Color (\begin{DoxyParamCaption}\item[{double}]{position}{}\end{DoxyParamCaption})}
+
+
+
+Returns the color of a position on this colormap (from 0 to 1). Returns transparent if NaN. Positions outside the range will be clamped. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & position from 0 (first color) to 1 (last color)\\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_scott_plot_1_1_colormaps_1_1_argb_colormap_base_accf83d5938fefa88711b4f590431c83a}{Scott\+Plot.\+Colormaps.\+Argb\+Colormap\+Base}}, \mbox{\hyperlink{class_scott_plot_1_1_colormaps_1_1_byte_colormap_base_acc3471d7700db91f4a92c07016874346}{Scott\+Plot.\+Colormaps.\+Byte\+Colormap\+Base}}, \mbox{\hyperlink{class_scott_plot_1_1_colormaps_1_1_colormap_base_ada0268059a3819cdbf9cc605369218b1}{Scott\+Plot.\+Colormaps.\+Colormap\+Base}}, \mbox{\hyperlink{class_scott_plot_1_1_colormaps_1_1_custom_ac2a84123e3f38fa09bc482b2f8dec232}{Scott\+Plot.\+Colormaps.\+Custom}}, \mbox{\hyperlink{class_scott_plot_1_1_colormaps_1_1_grayscale_acbea6f6a8063ae95c89973ea6cda474b}{Scott\+Plot.\+Colormaps.\+Grayscale}}, and \mbox{\hyperlink{class_scott_plot_1_1_colormaps_1_1_grayscale_reversed_a24d2753e8a16cbef17d3a85c9fa8b449}{Scott\+Plot.\+Colormaps.\+Grayscale\+Reversed}}.
+
+\Hypertarget{interface_scott_plot_1_1_i_colormap_aeca2b0c17c5efcf0ea4e787d72baeb56}\index{ScottPlot.IColormap@{ScottPlot.IColormap}!GetColor@{GetColor}}
+\index{GetColor@{GetColor}!ScottPlot.IColormap@{ScottPlot.IColormap}}
+\doxysubsubsection{\texorpdfstring{GetColor()}{GetColor()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{interface_scott_plot_1_1_i_colormap_aeca2b0c17c5efcf0ea4e787d72baeb56} 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} Scott\+Plot.\+IColormap.\+Get\+Color (\begin{DoxyParamCaption}\item[{double}]{position}{, }\item[{\mbox{\hyperlink{struct_scott_plot_1_1_range}{Range}}}]{range}{}\end{DoxyParamCaption})}
+
+
+
+Returns the color of a position on this colormap (according to the given range). Returns transparent if NaN. Positions outside the range will be clamped. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & position relative to the given range\\
+\hline
+{\em range} & range of values spanned by this colormap\\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_scott_plot_1_1_colormaps_1_1_colormap_base_a76c8bb5b009212f250396e4911834029}{Scott\+Plot.\+Colormaps.\+Colormap\+Base}}.
+
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{interface_scott_plot_1_1_i_colormap_a5ae6cdcc1ce556060b60f22004b709f4}\index{ScottPlot.IColormap@{ScottPlot.IColormap}!Name@{Name}}
+\index{Name@{Name}!ScottPlot.IColormap@{ScottPlot.IColormap}}
+\doxysubsubsection{\texorpdfstring{Name}{Name}}
+{\footnotesize\ttfamily \label{interface_scott_plot_1_1_i_colormap_a5ae6cdcc1ce556060b60f22004b709f4} 
+string Scott\+Plot.\+IColormap.\+Name\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Full name for this colormap. 
+
+
+
+Implemented in \mbox{\hyperlink{class_scott_plot_1_1_colormaps_1_1_algae_a5c2734b161cdf0bb61f8d2f7bed4d6dd}{Scott\+Plot.\+Colormaps.\+Algae}}, \mbox{\hyperlink{class_scott_plot_1_1_colormaps_1_1_amp_ac4c6a6854b0dc4683f263bae14c8c311}{Scott\+Plot.\+Colormaps.\+Amp}}, \mbox{\hyperlink{class_scott_plot_1_1_colormaps_1_1_balance_aa21a2bb397a06d96552d4fe7da97fd44}{Scott\+Plot.\+Colormaps.\+Balance}}, \mbox{\hyperlink{class_scott_plot_1_1_colormaps_1_1_blues_acfd08a16f37808942251a6953ab02fcd}{Scott\+Plot.\+Colormaps.\+Blues}}, \mbox{\hyperlink{class_scott_plot_1_1_colormaps_1_1_colormap_base_af1804c8bec0b33d733855eef9234a1f7}{Scott\+Plot.\+Colormaps.\+Colormap\+Base}}, \mbox{\hyperlink{class_scott_plot_1_1_colormaps_1_1_curl_a704d0079ba706ee168978e878ab775bd}{Scott\+Plot.\+Colormaps.\+Curl}}, \mbox{\hyperlink{class_scott_plot_1_1_colormaps_1_1_custom_a5375390ffc91a0f23530a36b49e259d4}{Scott\+Plot.\+Colormaps.\+Custom}}, \mbox{\hyperlink{class_scott_plot_1_1_colormaps_1_1_deep_a4b23f3e4a78990aaa25bd8b442dc2f48}{Scott\+Plot.\+Colormaps.\+Deep}}, \mbox{\hyperlink{class_scott_plot_1_1_colormaps_1_1_delta_a1424621a6425a034f07a681e9339441a}{Scott\+Plot.\+Colormaps.\+Delta}}, \mbox{\hyperlink{class_scott_plot_1_1_colormaps_1_1_dense_a8b93b2506b5fd98509bab3127f1396b8}{Scott\+Plot.\+Colormaps.\+Dense}}, \mbox{\hyperlink{class_scott_plot_1_1_colormaps_1_1_diff_a107aea06f696a4ed9931ac7d531ff5bb}{Scott\+Plot.\+Colormaps.\+Diff}}, \mbox{\hyperlink{class_scott_plot_1_1_colormaps_1_1_grayscale_ac195b98fdebc07a0df060c1dff1de937}{Scott\+Plot.\+Colormaps.\+Grayscale}}, \mbox{\hyperlink{class_scott_plot_1_1_colormaps_1_1_grayscale_reversed_a68f4012d1faafa651f58d8c3fb93a9c4}{Scott\+Plot.\+Colormaps.\+Grayscale\+Reversed}}, \mbox{\hyperlink{class_scott_plot_1_1_colormaps_1_1_greens_a633c7d20d66ccfdf571927b3afb49ed7}{Scott\+Plot.\+Colormaps.\+Greens}}, \mbox{\hyperlink{class_scott_plot_1_1_colormaps_1_1_haline_a6397ac7919a3bea0c9e27b5504a1a494}{Scott\+Plot.\+Colormaps.\+Haline}}, \mbox{\hyperlink{class_scott_plot_1_1_colormaps_1_1_ice_a788147e9c418a1581dffa91cb227eb1e}{Scott\+Plot.\+Colormaps.\+Ice}}, \mbox{\hyperlink{class_scott_plot_1_1_colormaps_1_1_inferno_a6d28419709d09617f8ce92943e224364}{Scott\+Plot.\+Colormaps.\+Inferno}}, \mbox{\hyperlink{class_scott_plot_1_1_colormaps_1_1_jet_a655c12866bc110e1ed8ef724da087fb4}{Scott\+Plot.\+Colormaps.\+Jet}}, \mbox{\hyperlink{class_scott_plot_1_1_colormaps_1_1_magma_aead4069c35749dccdcee08a3b9ba9f94}{Scott\+Plot.\+Colormaps.\+Magma}}, \mbox{\hyperlink{class_scott_plot_1_1_colormaps_1_1_matter_afda4cc4d359f1921650a22c9d13bab6c}{Scott\+Plot.\+Colormaps.\+Matter}}, \mbox{\hyperlink{class_scott_plot_1_1_colormaps_1_1_oxy_a9e7563a9c602e7bb6338e058c9a3c765}{Scott\+Plot.\+Colormaps.\+Oxy}}, \mbox{\hyperlink{class_scott_plot_1_1_colormaps_1_1_phase_ad94786b5b37e9e7bc7c79882f408efa5}{Scott\+Plot.\+Colormaps.\+Phase}}, \mbox{\hyperlink{class_scott_plot_1_1_colormaps_1_1_plasma_a6441ecedd2b5b7dbd26f5b6f00665e67}{Scott\+Plot.\+Colormaps.\+Plasma}}, \mbox{\hyperlink{class_scott_plot_1_1_colormaps_1_1_rain_a159bdcd97affd7949d6fd30d24a78f89}{Scott\+Plot.\+Colormaps.\+Rain}}, \mbox{\hyperlink{class_scott_plot_1_1_colormaps_1_1_solar_a51e02cb74bd8415acc3e5a6a6d089a2d}{Scott\+Plot.\+Colormaps.\+Solar}}, \mbox{\hyperlink{class_scott_plot_1_1_colormaps_1_1_speed_a58519a1c3372ea8e9a6f87ca8d30f98a}{Scott\+Plot.\+Colormaps.\+Speed}}, \mbox{\hyperlink{class_scott_plot_1_1_colormaps_1_1_tarn_a29657b21f69131fc8f90d180d9d79d70}{Scott\+Plot.\+Colormaps.\+Tarn}}, \mbox{\hyperlink{class_scott_plot_1_1_colormaps_1_1_tempo_a4c33aeb86d9e5a094b35c53fe1d4772c}{Scott\+Plot.\+Colormaps.\+Tempo}}, \mbox{\hyperlink{class_scott_plot_1_1_colormaps_1_1_thermal_a33d6afb76771cd0c6a13a78710d4e6ce}{Scott\+Plot.\+Colormaps.\+Thermal}}, \mbox{\hyperlink{class_scott_plot_1_1_colormaps_1_1_topo_aecfda92ad9a28392deb029f1ea71fdb6}{Scott\+Plot.\+Colormaps.\+Topo}}, \mbox{\hyperlink{class_scott_plot_1_1_colormaps_1_1_turbid_a0ae9873021fa3c9833dd0b0dba09ec4b}{Scott\+Plot.\+Colormaps.\+Turbid}}, \mbox{\hyperlink{class_scott_plot_1_1_colormaps_1_1_turbo_a6868fe5a0ccb9f0c1a6fce936b73bed1}{Scott\+Plot.\+Colormaps.\+Turbo}}, and \mbox{\hyperlink{class_scott_plot_1_1_colormaps_1_1_viridis_a3e0eae57a8953c8535701cd668f1b0b4}{Scott\+Plot.\+Colormaps.\+Viridis}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Interfaces/IColormap.\+cs\end{DoxyCompactItemize}

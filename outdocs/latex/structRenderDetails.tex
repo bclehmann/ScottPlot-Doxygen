@@ -1,0 +1,246 @@
+\hypertarget{structRenderDetails}{}\doxysection{Render\+Details Struct Reference}
+\label{structRenderDetails}\index{RenderDetails@{RenderDetails}}
+
+
+Details about a completed render  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structRenderDetails_aae0219ae565f107af3f710193d7253c1}{readonly}} (string, Time\+Span)\mbox{[}$\,$\mbox{]} Timed\+Actions
+\begin{DoxyCompactList}\small\item\em Each step of the render and how long it took to execute \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structRenderDetails_a0344bfc695e50ab6a094e7052c0b19ad}{Render\+Details}} (\mbox{\hyperlink{classRenderPack}{Render\+Pack}} rp,(string, Time\+Span)\mbox{[}$\,$\mbox{]} action\+Times, \mbox{\hyperlink{structRenderDetails}{Render\+Details}} last\+Render)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structRenderDetails_aae0219ae565f107af3f710193d7253c1}{readonly}} \mbox{\hyperlink{structPixelRect}{Pixel\+Rect}} \mbox{\hyperlink{structRenderDetails_a2cfcbe528e0cbf3014d4314be2db3ea7}{Figure\+Rect}}
+\begin{DoxyCompactList}\small\item\em Size of the plot image in pixel units \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structRenderDetails_aae0219ae565f107af3f710193d7253c1}{readonly}} \mbox{\hyperlink{structPixelRect}{Pixel\+Rect}} \mbox{\hyperlink{structRenderDetails_ad7137d67ffb1a726d90214954a14d6f1}{Data\+Rect}}
+\begin{DoxyCompactList}\small\item\em Size of the data area of the plot in pixel units \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structRenderDetails_aae0219ae565f107af3f710193d7253c1}{readonly}} \mbox{\hyperlink{structPixelPadding}{Pixel\+Padding}} \mbox{\hyperlink{structRenderDetails_ad8e682903b1be7ac240de9ce984e48eb}{Padding}}
+\begin{DoxyCompactList}\small\item\em Distance between the data area and the edge of the figure \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structRenderDetails_aae0219ae565f107af3f710193d7253c1}{readonly}} Time\+Span \mbox{\hyperlink{structRenderDetails_add5d04e041b9201ed31dd15e17f50f40}{Elapsed}}
+\begin{DoxyCompactList}\small\item\em Total time required to render this image \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structRenderDetails_aae0219ae565f107af3f710193d7253c1}{readonly}} Date\+Time \mbox{\hyperlink{structRenderDetails_a57edc3c072402bbee3b855f3724a4640}{Timestamp}}
+\begin{DoxyCompactList}\small\item\em Time the render was completed \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structRenderDetails_aae0219ae565f107af3f710193d7253c1}{readonly}} \mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} \mbox{\hyperlink{structRenderDetails_a26a218ba571a215a22cfa277ddb47966}{Axis\+Limits}}
+\begin{DoxyCompactList}\small\item\em Axis limits of the primary axes for this render \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structRenderDetails_aae0219ae565f107af3f710193d7253c1}{readonly}} \mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} \mbox{\hyperlink{structRenderDetails_af70d62e274ac272a4801296899649ed6}{Previous\+Axis\+Limits}}
+\begin{DoxyCompactList}\small\item\em Axis limits of the primary axes for the previous render \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structRenderDetails_aae0219ae565f107af3f710193d7253c1}{readonly}} Dictionary$<$ \mbox{\hyperlink{interfaceIAxis}{IAxis}}, \mbox{\hyperlink{structCoordinateRange}{Coordinate\+Range}} $>$ \mbox{\hyperlink{structRenderDetails_a2552a1e184928b55698282395263024a}{Axis\+Limits\+By\+Axis}}
+\begin{DoxyCompactList}\small\item\em Axis limits for every axis \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structRenderDetails_aae0219ae565f107af3f710193d7253c1}{readonly}} Dictionary$<$ \mbox{\hyperlink{interfaceIAxis}{IAxis}}, \mbox{\hyperlink{structCoordinateRange}{Coordinate\+Range}} $>$ \mbox{\hyperlink{structRenderDetails_a0a68737b8008f4a14d713695ece6a32c}{Previous\+Axis\+Limits\+By\+Axis}}
+\begin{DoxyCompactList}\small\item\em Axis limits of all axes from the previous render \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structRenderDetails_aae0219ae565f107af3f710193d7253c1}{readonly}} \mbox{\hyperlink{structLayout}{Layout}} \mbox{\hyperlink{structRenderDetails_ac61bb3101ef3b5e088cefe320918ef60}{Layout}}
+\begin{DoxyCompactList}\small\item\em Arrangement of all panels \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structRenderDetails_aae0219ae565f107af3f710193d7253c1}{readonly}} int \mbox{\hyperlink{structRenderDetails_acb92f95abb97bf777e7cd51ba8b43093}{Count}}
+\begin{DoxyCompactList}\small\item\em The number of total renders including this one \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structRenderDetails_aae0219ae565f107af3f710193d7253c1}{readonly}} bool \mbox{\hyperlink{structRenderDetails_adec57aa085e86cfdd55111aca1133ffe}{Axis\+Limits\+Changed}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Indicates whether the axis view (coordinate units) of this render differs from the previous \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structRenderDetails_aae0219ae565f107af3f710193d7253c1}{readonly}} bool \mbox{\hyperlink{structRenderDetails_a733f8bd44658b0e435cc959e918c8198}{Size\+Changed}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Indicates whether the size (pixels) of this render differs from the previous \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{structRenderDetails_a6a01ce1f47062c9d165ed5620f05f6b9}{Px\+Per\+UnitX}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+double \mbox{\hyperlink{structRenderDetails_ab219c7bc72c46b433b1f7866650a28ea}{Px\+Per\+UnitY}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+double \mbox{\hyperlink{structRenderDetails_a8676476248c9ecb90c8d0f00fcd2be3b}{Units\+Per\+PxX}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+double \mbox{\hyperlink{structRenderDetails_ae2e145f874358774386d0910ddb3ea54}{Units\+Per\+PxY}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Details about a completed render 
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structRenderDetails_a0344bfc695e50ab6a094e7052c0b19ad}\label{structRenderDetails_a0344bfc695e50ab6a094e7052c0b19ad}} 
+\index{RenderDetails@{RenderDetails}!RenderDetails@{RenderDetails}}
+\index{RenderDetails@{RenderDetails}!RenderDetails@{RenderDetails}}
+\doxysubsubsection{\texorpdfstring{RenderDetails()}{RenderDetails()}}
+{\footnotesize\ttfamily Render\+Details.\+Render\+Details (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classRenderPack}{Render\+Pack}}}]{rp,  }\item[{(string, Time\+Span)\mbox{[}$\,$\mbox{]}}]{action\+Times,  }\item[{\mbox{\hyperlink{structRenderDetails}{Render\+Details}}}]{last\+Render }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{structRenderDetails_aae0219ae565f107af3f710193d7253c1}\label{structRenderDetails_aae0219ae565f107af3f710193d7253c1}} 
+\index{RenderDetails@{RenderDetails}!readonly@{readonly}}
+\index{readonly@{readonly}!RenderDetails@{RenderDetails}}
+\doxysubsubsection{\texorpdfstring{readonly()}{readonly()}}
+{\footnotesize\ttfamily Render\+Details.\+readonly (\begin{DoxyParamCaption}\item[{string}]{,  }\item[{Time\+Span}]{ }\end{DoxyParamCaption})}
+
+
+
+Each step of the render and how long it took to execute 
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structRenderDetails_a26a218ba571a215a22cfa277ddb47966}\label{structRenderDetails_a26a218ba571a215a22cfa277ddb47966}} 
+\index{RenderDetails@{RenderDetails}!AxisLimits@{AxisLimits}}
+\index{AxisLimits@{AxisLimits}!RenderDetails@{RenderDetails}}
+\doxysubsubsection{\texorpdfstring{AxisLimits}{AxisLimits}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structRenderDetails_aae0219ae565f107af3f710193d7253c1}{readonly}} \mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} Render\+Details.\+Axis\+Limits}
+
+
+
+Axis limits of the primary axes for this render 
+
+\mbox{\Hypertarget{structRenderDetails_a2552a1e184928b55698282395263024a}\label{structRenderDetails_a2552a1e184928b55698282395263024a}} 
+\index{RenderDetails@{RenderDetails}!AxisLimitsByAxis@{AxisLimitsByAxis}}
+\index{AxisLimitsByAxis@{AxisLimitsByAxis}!RenderDetails@{RenderDetails}}
+\doxysubsubsection{\texorpdfstring{AxisLimitsByAxis}{AxisLimitsByAxis}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structRenderDetails_aae0219ae565f107af3f710193d7253c1}{readonly}} Dictionary$<$\mbox{\hyperlink{interfaceIAxis}{IAxis}}, \mbox{\hyperlink{structCoordinateRange}{Coordinate\+Range}}$>$ Render\+Details.\+Axis\+Limits\+By\+Axis}
+
+
+
+Axis limits for every axis 
+
+\mbox{\Hypertarget{structRenderDetails_acb92f95abb97bf777e7cd51ba8b43093}\label{structRenderDetails_acb92f95abb97bf777e7cd51ba8b43093}} 
+\index{RenderDetails@{RenderDetails}!Count@{Count}}
+\index{Count@{Count}!RenderDetails@{RenderDetails}}
+\doxysubsubsection{\texorpdfstring{Count}{Count}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structRenderDetails_aae0219ae565f107af3f710193d7253c1}{readonly}} int Render\+Details.\+Count}
+
+
+
+The number of total renders including this one 
+
+\mbox{\Hypertarget{structRenderDetails_ad7137d67ffb1a726d90214954a14d6f1}\label{structRenderDetails_ad7137d67ffb1a726d90214954a14d6f1}} 
+\index{RenderDetails@{RenderDetails}!DataRect@{DataRect}}
+\index{DataRect@{DataRect}!RenderDetails@{RenderDetails}}
+\doxysubsubsection{\texorpdfstring{DataRect}{DataRect}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structRenderDetails_aae0219ae565f107af3f710193d7253c1}{readonly}} \mbox{\hyperlink{structPixelRect}{Pixel\+Rect}} Render\+Details.\+Data\+Rect}
+
+
+
+Size of the data area of the plot in pixel units 
+
+\mbox{\Hypertarget{structRenderDetails_add5d04e041b9201ed31dd15e17f50f40}\label{structRenderDetails_add5d04e041b9201ed31dd15e17f50f40}} 
+\index{RenderDetails@{RenderDetails}!Elapsed@{Elapsed}}
+\index{Elapsed@{Elapsed}!RenderDetails@{RenderDetails}}
+\doxysubsubsection{\texorpdfstring{Elapsed}{Elapsed}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structRenderDetails_aae0219ae565f107af3f710193d7253c1}{readonly}} Time\+Span Render\+Details.\+Elapsed}
+
+
+
+Total time required to render this image 
+
+\mbox{\Hypertarget{structRenderDetails_a2cfcbe528e0cbf3014d4314be2db3ea7}\label{structRenderDetails_a2cfcbe528e0cbf3014d4314be2db3ea7}} 
+\index{RenderDetails@{RenderDetails}!FigureRect@{FigureRect}}
+\index{FigureRect@{FigureRect}!RenderDetails@{RenderDetails}}
+\doxysubsubsection{\texorpdfstring{FigureRect}{FigureRect}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structRenderDetails_aae0219ae565f107af3f710193d7253c1}{readonly}} \mbox{\hyperlink{structPixelRect}{Pixel\+Rect}} Render\+Details.\+Figure\+Rect}
+
+
+
+Size of the plot image in pixel units 
+
+\mbox{\Hypertarget{structRenderDetails_ac61bb3101ef3b5e088cefe320918ef60}\label{structRenderDetails_ac61bb3101ef3b5e088cefe320918ef60}} 
+\index{RenderDetails@{RenderDetails}!Layout@{Layout}}
+\index{Layout@{Layout}!RenderDetails@{RenderDetails}}
+\doxysubsubsection{\texorpdfstring{Layout}{Layout}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structRenderDetails_aae0219ae565f107af3f710193d7253c1}{readonly}} \mbox{\hyperlink{structLayout}{Layout}} Render\+Details.\+Layout}
+
+
+
+Arrangement of all panels 
+
+\mbox{\Hypertarget{structRenderDetails_ad8e682903b1be7ac240de9ce984e48eb}\label{structRenderDetails_ad8e682903b1be7ac240de9ce984e48eb}} 
+\index{RenderDetails@{RenderDetails}!Padding@{Padding}}
+\index{Padding@{Padding}!RenderDetails@{RenderDetails}}
+\doxysubsubsection{\texorpdfstring{Padding}{Padding}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structRenderDetails_aae0219ae565f107af3f710193d7253c1}{readonly}} \mbox{\hyperlink{structPixelPadding}{Pixel\+Padding}} Render\+Details.\+Padding}
+
+
+
+Distance between the data area and the edge of the figure 
+
+\mbox{\Hypertarget{structRenderDetails_af70d62e274ac272a4801296899649ed6}\label{structRenderDetails_af70d62e274ac272a4801296899649ed6}} 
+\index{RenderDetails@{RenderDetails}!PreviousAxisLimits@{PreviousAxisLimits}}
+\index{PreviousAxisLimits@{PreviousAxisLimits}!RenderDetails@{RenderDetails}}
+\doxysubsubsection{\texorpdfstring{PreviousAxisLimits}{PreviousAxisLimits}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structRenderDetails_aae0219ae565f107af3f710193d7253c1}{readonly}} \mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} Render\+Details.\+Previous\+Axis\+Limits}
+
+
+
+Axis limits of the primary axes for the previous render 
+
+\mbox{\Hypertarget{structRenderDetails_a0a68737b8008f4a14d713695ece6a32c}\label{structRenderDetails_a0a68737b8008f4a14d713695ece6a32c}} 
+\index{RenderDetails@{RenderDetails}!PreviousAxisLimitsByAxis@{PreviousAxisLimitsByAxis}}
+\index{PreviousAxisLimitsByAxis@{PreviousAxisLimitsByAxis}!RenderDetails@{RenderDetails}}
+\doxysubsubsection{\texorpdfstring{PreviousAxisLimitsByAxis}{PreviousAxisLimitsByAxis}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structRenderDetails_aae0219ae565f107af3f710193d7253c1}{readonly}} Dictionary$<$\mbox{\hyperlink{interfaceIAxis}{IAxis}}, \mbox{\hyperlink{structCoordinateRange}{Coordinate\+Range}}$>$ Render\+Details.\+Previous\+Axis\+Limits\+By\+Axis}
+
+
+
+Axis limits of all axes from the previous render 
+
+\mbox{\Hypertarget{structRenderDetails_a57edc3c072402bbee3b855f3724a4640}\label{structRenderDetails_a57edc3c072402bbee3b855f3724a4640}} 
+\index{RenderDetails@{RenderDetails}!Timestamp@{Timestamp}}
+\index{Timestamp@{Timestamp}!RenderDetails@{RenderDetails}}
+\doxysubsubsection{\texorpdfstring{Timestamp}{Timestamp}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structRenderDetails_aae0219ae565f107af3f710193d7253c1}{readonly}} Date\+Time Render\+Details.\+Timestamp}
+
+
+
+Time the render was completed 
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{structRenderDetails_adec57aa085e86cfdd55111aca1133ffe}\label{structRenderDetails_adec57aa085e86cfdd55111aca1133ffe}} 
+\index{RenderDetails@{RenderDetails}!AxisLimitsChanged@{AxisLimitsChanged}}
+\index{AxisLimitsChanged@{AxisLimitsChanged}!RenderDetails@{RenderDetails}}
+\doxysubsubsection{\texorpdfstring{AxisLimitsChanged}{AxisLimitsChanged}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structRenderDetails_aae0219ae565f107af3f710193d7253c1}{readonly}} bool Render\+Details.\+Axis\+Limits\+Changed\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Indicates whether the axis view (coordinate units) of this render differs from the previous 
+
+\mbox{\Hypertarget{structRenderDetails_a6a01ce1f47062c9d165ed5620f05f6b9}\label{structRenderDetails_a6a01ce1f47062c9d165ed5620f05f6b9}} 
+\index{RenderDetails@{RenderDetails}!PxPerUnitX@{PxPerUnitX}}
+\index{PxPerUnitX@{PxPerUnitX}!RenderDetails@{RenderDetails}}
+\doxysubsubsection{\texorpdfstring{PxPerUnitX}{PxPerUnitX}}
+{\footnotesize\ttfamily double Render\+Details.\+Px\+Per\+UnitX\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{structRenderDetails_ab219c7bc72c46b433b1f7866650a28ea}\label{structRenderDetails_ab219c7bc72c46b433b1f7866650a28ea}} 
+\index{RenderDetails@{RenderDetails}!PxPerUnitY@{PxPerUnitY}}
+\index{PxPerUnitY@{PxPerUnitY}!RenderDetails@{RenderDetails}}
+\doxysubsubsection{\texorpdfstring{PxPerUnitY}{PxPerUnitY}}
+{\footnotesize\ttfamily double Render\+Details.\+Px\+Per\+UnitY\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{structRenderDetails_a733f8bd44658b0e435cc959e918c8198}\label{structRenderDetails_a733f8bd44658b0e435cc959e918c8198}} 
+\index{RenderDetails@{RenderDetails}!SizeChanged@{SizeChanged}}
+\index{SizeChanged@{SizeChanged}!RenderDetails@{RenderDetails}}
+\doxysubsubsection{\texorpdfstring{SizeChanged}{SizeChanged}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structRenderDetails_aae0219ae565f107af3f710193d7253c1}{readonly}} bool Render\+Details.\+Size\+Changed\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Indicates whether the size (pixels) of this render differs from the previous 
+
+\mbox{\Hypertarget{structRenderDetails_a8676476248c9ecb90c8d0f00fcd2be3b}\label{structRenderDetails_a8676476248c9ecb90c8d0f00fcd2be3b}} 
+\index{RenderDetails@{RenderDetails}!UnitsPerPxX@{UnitsPerPxX}}
+\index{UnitsPerPxX@{UnitsPerPxX}!RenderDetails@{RenderDetails}}
+\doxysubsubsection{\texorpdfstring{UnitsPerPxX}{UnitsPerPxX}}
+{\footnotesize\ttfamily double Render\+Details.\+Units\+Per\+PxX\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{structRenderDetails_ae2e145f874358774386d0910ddb3ea54}\label{structRenderDetails_ae2e145f874358774386d0910ddb3ea54}} 
+\index{RenderDetails@{RenderDetails}!UnitsPerPxY@{UnitsPerPxY}}
+\index{UnitsPerPxY@{UnitsPerPxY}!RenderDetails@{RenderDetails}}
+\doxysubsubsection{\texorpdfstring{UnitsPerPxY}{UnitsPerPxY}}
+{\footnotesize\ttfamily double Render\+Details.\+Units\+Per\+PxY\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Primitives/Render\+Details.\+cs\end{DoxyCompactItemize}

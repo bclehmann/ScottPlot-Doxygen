@@ -1,0 +1,108 @@
+\doxysection{Scott\+Plot.\+Win\+Forms.\+Forms\+Plot Class Reference}
+\hypertarget{class_scott_plot_1_1_win_forms_1_1_forms_plot}{}\label{class_scott_plot_1_1_win_forms_1_1_forms_plot}\index{ScottPlot.WinForms.FormsPlot@{ScottPlot.WinForms.FormsPlot}}
+Inheritance diagram for Scott\+Plot.\+Win\+Forms.\+Forms\+Plot\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_scott_plot_1_1_win_forms_1_1_forms_plot}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_scott_plot_1_1_win_forms_1_1_forms_plot_aeee724886fddcd4746f254fc0f70c2d8}{Forms\+Plot}} ()
+\item 
+override void \mbox{\hyperlink{class_scott_plot_1_1_win_forms_1_1_forms_plot_a97026fac8dfad0875adff5293ee97f1f}{Refresh}} ()
+\begin{DoxyCompactList}\small\item\em Render the plot and update the image. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_scott_plot_1_1_win_forms_1_1_forms_plot_base}{Scott\+Plot.\+Win\+Forms.\+Forms\+Plot\+Base}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_scott_plot_1_1_win_forms_1_1_forms_plot_base_ae43299e58879cb9be8b419cc87c810a9}{Forms\+Plot\+Base}} ()
+\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_win_forms_1_1_forms_plot_base_aa95329be956761b31e5dcad924c01469}{Reset}} ()
+\begin{DoxyCompactList}\small\item\em Disposes the current \doxylink{class_scott_plot_1_1_plot}{Plot} and creates a new one for the control. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_win_forms_1_1_forms_plot_base_a0408a116b353c688745c18d7397deb85}{Reset}} (\mbox{\hyperlink{class_scott_plot_1_1_plot}{Plot}} plot)
+\begin{DoxyCompactList}\small\item\em Loads the given \doxylink{class_scott_plot_1_1_plot}{Plot} into the control. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_win_forms_1_1_forms_plot_base_a01b9fd9947a2c1c1ef96c5d59dfb4a61}{Show\+Context\+Menu}} (\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}} position)
+\begin{DoxyCompactList}\small\item\em Launch the default pop-\/up menu (typically in response to a right-\/click) at the given position in the control. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_scott_plot_1_1_win_forms_1_1_forms_plot_base_a3af5b48bc442c3d58a493de51770d1ed}{Detect\+Display\+Scale}} ()
+\begin{DoxyCompactList}\small\item\em Determine the DPI scaling ratio of the present display. A value of 1.\+0 means no scaling, and 1.\+5 means 150\% scaling. This operation may be costly so do not call it frequently. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_scott_plot_1_1_i_plot_control}{Scott\+Plot.\+IPlot\+Control}}}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+SKControl? \mbox{\hyperlink{class_scott_plot_1_1_win_forms_1_1_forms_plot_a3f06a53b59398606ffd751ba5c68916d}{SKControl}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+override GRContext \mbox{\hyperlink{class_scott_plot_1_1_win_forms_1_1_forms_plot_af3aec15035e56a5f02bf1b300acf2b4b}{GRContext}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Context for hardware-\/accelerated graphics (or null if not available) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{class_scott_plot_1_1_win_forms_1_1_forms_plot_base}{Scott\+Plot.\+Win\+Forms.\+Forms\+Plot\+Base}}}
+\begin{DoxyCompactItemize}
+\item 
+GRContext \mbox{\hyperlink{class_scott_plot_1_1_win_forms_1_1_forms_plot_base_aca2fdc3ba0427b6a0d833035ef84651a}{GRContext}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Context for hardware-\/accelerated graphics (or null if not available) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_scott_plot_1_1_plot}{Plot}} \mbox{\hyperlink{class_scott_plot_1_1_win_forms_1_1_forms_plot_base_aaad79996ebdb13840425e0f12189a957}{Plot}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The \doxylink{class_scott_plot_1_1_plot}{Plot} displayed by this interactive control. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{interface_scott_plot_1_1_i_plot_interaction}{IPlot\+Interaction}} \mbox{\hyperlink{class_scott_plot_1_1_win_forms_1_1_forms_plot_base_a10164994ec6b08732597ac94f5120165}{Interaction}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Options for configuring user inputs. This functionality is being replaced by \doxylink{class_scott_plot_1_1_win_forms_1_1_forms_plot_base_aa8237e4e82b9d0a63c6c14e8e7f2ada4}{User\+Input\+Processor}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{interface_scott_plot_1_1_i_plot_menu}{IPlot\+Menu}} \mbox{\hyperlink{class_scott_plot_1_1_win_forms_1_1_forms_plot_base_ac68363088543b0e875a5780ef8d72f95}{Menu}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Platform-\/specific logic for managing the context menu. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_scott_plot_1_1_interactivity_1_1_user_input_processor}{User\+Input\+Processor}} \mbox{\hyperlink{class_scott_plot_1_1_win_forms_1_1_forms_plot_base_aa8237e4e82b9d0a63c6c14e8e7f2ada4}{User\+Input\+Processor}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em This object takes in UI events and contains logic for how to respond to them. This is a newer alternative to the older \doxylink{class_scott_plot_1_1_win_forms_1_1_forms_plot_base_a10164994ec6b08732597ac94f5120165}{Interaction} system. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_scott_plot_1_1_win_forms_1_1_forms_plot_base_a3321b0e671c7d7ede3a0feb5d6ee4704}{Display\+Scale}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The value of the present display scaling. Mouse positions are multiplied by this value for pixel/coordinate conversions. \end{DoxyCompactList}\item 
+override System.\+Drawing.\+Color \mbox{\hyperlink{class_scott_plot_1_1_win_forms_1_1_forms_plot_base_a421ef6cee2494a2a2368520e6762a274}{Back\+Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{interface_scott_plot_1_1_i_plot_control}{Scott\+Plot.\+IPlot\+Control}}}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_scott_plot_1_1_win_forms_1_1_forms_plot_aeee724886fddcd4746f254fc0f70c2d8}\index{ScottPlot.WinForms.FormsPlot@{ScottPlot.WinForms.FormsPlot}!FormsPlot@{FormsPlot}}
+\index{FormsPlot@{FormsPlot}!ScottPlot.WinForms.FormsPlot@{ScottPlot.WinForms.FormsPlot}}
+\doxysubsubsection{\texorpdfstring{FormsPlot()}{FormsPlot()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_win_forms_1_1_forms_plot_aeee724886fddcd4746f254fc0f70c2d8} 
+Scott\+Plot.\+Win\+Forms.\+Forms\+Plot.\+Forms\+Plot (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_scott_plot_1_1_win_forms_1_1_forms_plot_a97026fac8dfad0875adff5293ee97f1f}\index{ScottPlot.WinForms.FormsPlot@{ScottPlot.WinForms.FormsPlot}!Refresh@{Refresh}}
+\index{Refresh@{Refresh}!ScottPlot.WinForms.FormsPlot@{ScottPlot.WinForms.FormsPlot}}
+\doxysubsubsection{\texorpdfstring{Refresh()}{Refresh()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_win_forms_1_1_forms_plot_a97026fac8dfad0875adff5293ee97f1f} 
+override void Scott\+Plot.\+Win\+Forms.\+Forms\+Plot.\+Refresh (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Render the plot and update the image. 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_plot_control_a06515ebfc38fce1ae2a8dfdaa662c294}{Scott\+Plot.\+IPlot\+Control}}.
+
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{class_scott_plot_1_1_win_forms_1_1_forms_plot_af3aec15035e56a5f02bf1b300acf2b4b}\index{ScottPlot.WinForms.FormsPlot@{ScottPlot.WinForms.FormsPlot}!GRContext@{GRContext}}
+\index{GRContext@{GRContext}!ScottPlot.WinForms.FormsPlot@{ScottPlot.WinForms.FormsPlot}}
+\doxysubsubsection{\texorpdfstring{GRContext}{GRContext}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_win_forms_1_1_forms_plot_af3aec15035e56a5f02bf1b300acf2b4b} 
+override GRContext Scott\+Plot.\+Win\+Forms.\+Forms\+Plot.\+GRContext\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Context for hardware-\/accelerated graphics (or null if not available) 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_plot_control_a34f8c1df93361a966cfe7c4f7e03910b}{Scott\+Plot.\+IPlot\+Control}}.
+
+\Hypertarget{class_scott_plot_1_1_win_forms_1_1_forms_plot_a3f06a53b59398606ffd751ba5c68916d}\index{ScottPlot.WinForms.FormsPlot@{ScottPlot.WinForms.FormsPlot}!SKControl@{SKControl}}
+\index{SKControl@{SKControl}!ScottPlot.WinForms.FormsPlot@{ScottPlot.WinForms.FormsPlot}}
+\doxysubsubsection{\texorpdfstring{SKControl}{SKControl}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_win_forms_1_1_forms_plot_a3f06a53b59398606ffd751ba5c68916d} 
+SKControl? Scott\+Plot.\+Win\+Forms.\+Forms\+Plot.\+SKControl\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5 Controls/\+Scott\+Plot.\+Win\+Forms/Forms\+Plot.\+cs\end{DoxyCompactItemize}

@@ -1,0 +1,217 @@
+\doxysection{Scott\+Plot.\+ISignal\+Source Interface Reference}
+\hypertarget{interface_scott_plot_1_1_i_signal_source}{}\label{interface_scott_plot_1_1_i_signal_source}\index{ScottPlot.ISignalSource@{ScottPlot.ISignalSource}}
+
+
+This interface is used by plottables to access data while rendering. This interface describes Y data sampled along an X axis at a fixed period.  
+
+
+Inheritance diagram for Scott\+Plot.\+ISignal\+Source\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=0.835821cm]{interface_scott_plot_1_1_i_signal_source}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_pixel_column}{Pixel\+Column}} \mbox{\hyperlink{interface_scott_plot_1_1_i_signal_source_a6d91cc4e9584beb349a319cd00e7e47a}{Get\+Pixel\+Column}} (\mbox{\hyperlink{interface_scott_plot_1_1_i_axes}{IAxes}} axes, int x\+Pixel\+Index)
+\begin{DoxyCompactList}\small\item\em Returns range information about the data at a specific pixel location. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{interface_scott_plot_1_1_i_signal_source_af8ac1d0a1f862c7cd99991ba6108b0c3}{Get\+Index}} (double x, bool clamp)
+\begin{DoxyCompactList}\small\item\em Returns the predicted index for the data point nearest a given X position. If clamped, the returned index will be clamped between 0 and Length -\/ 1. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{interface_scott_plot_1_1_i_signal_source_ac5515fe8cb638b11f671066ff7584162}{GetX}} (int index)
+\begin{DoxyCompactList}\small\item\em Returns the X position for a given index. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{interface_scott_plot_1_1_i_signal_source_a08c568fcc2ee907669ebac7d86a7438a}{GetY}} (int index)
+\begin{DoxyCompactList}\small\item\em Returns the Y position for a given index. \end{DoxyCompactList}\item 
+IRead\+Only\+List$<$ double $>$ \mbox{\hyperlink{interface_scott_plot_1_1_i_signal_source_a873b9ba3cdcca6011dbb68ae68f8b387}{Get\+Ys}} ()
+\begin{DoxyCompactList}\small\item\em Return an object for working with all Y values. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_enumerable}{IEnumerable}}$<$ double $>$ \mbox{\hyperlink{interface_scott_plot_1_1_i_signal_source_aa08d7c65ad5d3140f7b520a5284458d8}{Get\+Ys}} (int index1, int index2)
+\begin{DoxyCompactList}\small\item\em Y values between a range of indexes (inclusive). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_scott_plot_a4f8afc1393f89ce60e775705cbf134d1}{Coordinate\+Range}} \mbox{\hyperlink{interface_scott_plot_1_1_i_signal_source_aaea58c304f38773dce5af55f0ef410fc}{Get\+LimitsX}} ()
+\item 
+\mbox{\hyperlink{namespace_scott_plot_a4f8afc1393f89ce60e775705cbf134d1}{Coordinate\+Range}} \mbox{\hyperlink{interface_scott_plot_1_1_i_signal_source_a007bf10c6435f8d8c77d020b4dbad4e9}{Get\+LimitsY}} ()
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}} \mbox{\hyperlink{interface_scott_plot_1_1_i_signal_source_a7396c1bf6658388b073e870e74d9586c}{Get\+Limits}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{interface_scott_plot_1_1_i_signal_source_a7c4c3a7496ec5611e98b0fdc7ac12d8c}{Period}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em X distance between Y points. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{interface_scott_plot_1_1_i_signal_source_af813cb29021913a9de602975eca2e10e}{XOffset}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em X position of the first data point. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{interface_scott_plot_1_1_i_signal_source_a37e18007c5fe969071fc9a03772df726}{YOffset}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Shift Y position of all values by this amount. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{interface_scott_plot_1_1_i_signal_source_ad366a0838b17abb8dc8a23bce7f1a527}{YScale}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Multiply Y values by this scale factor (before applying offset) \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{interface_scott_plot_1_1_i_signal_source_a829456c4998e254dcffe7b1cc8ca8be1}{Maximum\+Index}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Do not display data above this index. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{interface_scott_plot_1_1_i_signal_source_a74732ccff8702ba084a677f748ee121b}{Minimum\+Index}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Do not display data below this index. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This interface is used by plottables to access data while rendering. This interface describes Y data sampled along an X axis at a fixed period. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_scott_plot_1_1_i_signal_source_af8ac1d0a1f862c7cd99991ba6108b0c3}\index{ScottPlot.ISignalSource@{ScottPlot.ISignalSource}!GetIndex@{GetIndex}}
+\index{GetIndex@{GetIndex}!ScottPlot.ISignalSource@{ScottPlot.ISignalSource}}
+\doxysubsubsection{\texorpdfstring{GetIndex()}{GetIndex()}}
+{\footnotesize\ttfamily \label{interface_scott_plot_1_1_i_signal_source_af8ac1d0a1f862c7cd99991ba6108b0c3} 
+int Scott\+Plot.\+ISignal\+Source.\+Get\+Index (\begin{DoxyParamCaption}\item[{double}]{x}{, }\item[{bool}]{clamp}{}\end{DoxyParamCaption})}
+
+
+
+Returns the predicted index for the data point nearest a given X position. If clamped, the returned index will be clamped between 0 and Length -\/ 1. 
+
+\Hypertarget{interface_scott_plot_1_1_i_signal_source_a7396c1bf6658388b073e870e74d9586c}\index{ScottPlot.ISignalSource@{ScottPlot.ISignalSource}!GetLimits@{GetLimits}}
+\index{GetLimits@{GetLimits}!ScottPlot.ISignalSource@{ScottPlot.ISignalSource}}
+\doxysubsubsection{\texorpdfstring{GetLimits()}{GetLimits()}}
+{\footnotesize\ttfamily \label{interface_scott_plot_1_1_i_signal_source_a7396c1bf6658388b073e870e74d9586c} 
+\mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}} Scott\+Plot.\+ISignal\+Source.\+Get\+Limits (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{interface_scott_plot_1_1_i_signal_source_aaea58c304f38773dce5af55f0ef410fc}\index{ScottPlot.ISignalSource@{ScottPlot.ISignalSource}!GetLimitsX@{GetLimitsX}}
+\index{GetLimitsX@{GetLimitsX}!ScottPlot.ISignalSource@{ScottPlot.ISignalSource}}
+\doxysubsubsection{\texorpdfstring{GetLimitsX()}{GetLimitsX()}}
+{\footnotesize\ttfamily \label{interface_scott_plot_1_1_i_signal_source_aaea58c304f38773dce5af55f0ef410fc} 
+\mbox{\hyperlink{namespace_scott_plot_a4f8afc1393f89ce60e775705cbf134d1}{Coordinate\+Range}} Scott\+Plot.\+ISignal\+Source.\+Get\+LimitsX (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{interface_scott_plot_1_1_i_signal_source_a007bf10c6435f8d8c77d020b4dbad4e9}\index{ScottPlot.ISignalSource@{ScottPlot.ISignalSource}!GetLimitsY@{GetLimitsY}}
+\index{GetLimitsY@{GetLimitsY}!ScottPlot.ISignalSource@{ScottPlot.ISignalSource}}
+\doxysubsubsection{\texorpdfstring{GetLimitsY()}{GetLimitsY()}}
+{\footnotesize\ttfamily \label{interface_scott_plot_1_1_i_signal_source_a007bf10c6435f8d8c77d020b4dbad4e9} 
+\mbox{\hyperlink{namespace_scott_plot_a4f8afc1393f89ce60e775705cbf134d1}{Coordinate\+Range}} Scott\+Plot.\+ISignal\+Source.\+Get\+LimitsY (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{interface_scott_plot_1_1_i_signal_source_a6d91cc4e9584beb349a319cd00e7e47a}\index{ScottPlot.ISignalSource@{ScottPlot.ISignalSource}!GetPixelColumn@{GetPixelColumn}}
+\index{GetPixelColumn@{GetPixelColumn}!ScottPlot.ISignalSource@{ScottPlot.ISignalSource}}
+\doxysubsubsection{\texorpdfstring{GetPixelColumn()}{GetPixelColumn()}}
+{\footnotesize\ttfamily \label{interface_scott_plot_1_1_i_signal_source_a6d91cc4e9584beb349a319cd00e7e47a} 
+\mbox{\hyperlink{struct_scott_plot_1_1_pixel_column}{Pixel\+Column}} Scott\+Plot.\+ISignal\+Source.\+Get\+Pixel\+Column (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_scott_plot_1_1_i_axes}{IAxes}}}]{axes}{, }\item[{int}]{x\+Pixel\+Index}{}\end{DoxyParamCaption})}
+
+
+
+Returns range information about the data at a specific pixel location. 
+
+
+
+Implemented in \mbox{\hyperlink{class_scott_plot_1_1_data_sources_1_1_fast_signal_source_double_a42111cb80c4934cb17869cfdb75ee217}{Scott\+Plot.\+Data\+Sources.\+Fast\+Signal\+Source\+Double}}, \mbox{\hyperlink{class_scott_plot_1_1_data_sources_1_1_signal_source_double_aa6142f2a2c4b6470ca19d1f808176650}{Scott\+Plot.\+Data\+Sources.\+Signal\+Source\+Double}}, \mbox{\hyperlink{class_scott_plot_1_1_data_sources_1_1_signal_source_generic_array_afca9f8b66b887e982f86dafbc7342dc1}{Scott\+Plot.\+Data\+Sources.\+Signal\+Source\+Generic\+Array$<$ T $>$}}, and \mbox{\hyperlink{class_scott_plot_1_1_data_sources_1_1_signal_source_generic_list_a7c9bfcbf3c910cfbebe1f6d7fb3ee591}{Scott\+Plot.\+Data\+Sources.\+Signal\+Source\+Generic\+List$<$ T $>$}}.
+
+\Hypertarget{interface_scott_plot_1_1_i_signal_source_ac5515fe8cb638b11f671066ff7584162}\index{ScottPlot.ISignalSource@{ScottPlot.ISignalSource}!GetX@{GetX}}
+\index{GetX@{GetX}!ScottPlot.ISignalSource@{ScottPlot.ISignalSource}}
+\doxysubsubsection{\texorpdfstring{GetX()}{GetX()}}
+{\footnotesize\ttfamily \label{interface_scott_plot_1_1_i_signal_source_ac5515fe8cb638b11f671066ff7584162} 
+double Scott\+Plot.\+ISignal\+Source.\+GetX (\begin{DoxyParamCaption}\item[{int}]{index}{}\end{DoxyParamCaption})}
+
+
+
+Returns the X position for a given index. 
+
+\Hypertarget{interface_scott_plot_1_1_i_signal_source_a08c568fcc2ee907669ebac7d86a7438a}\index{ScottPlot.ISignalSource@{ScottPlot.ISignalSource}!GetY@{GetY}}
+\index{GetY@{GetY}!ScottPlot.ISignalSource@{ScottPlot.ISignalSource}}
+\doxysubsubsection{\texorpdfstring{GetY()}{GetY()}}
+{\footnotesize\ttfamily \label{interface_scott_plot_1_1_i_signal_source_a08c568fcc2ee907669ebac7d86a7438a} 
+double Scott\+Plot.\+ISignal\+Source.\+GetY (\begin{DoxyParamCaption}\item[{int}]{index}{}\end{DoxyParamCaption})}
+
+
+
+Returns the Y position for a given index. 
+
+
+
+Implemented in \mbox{\hyperlink{class_scott_plot_1_1_data_sources_1_1_fast_signal_source_double_a6e01653f5cac2a5a3bc6b7408bcbd9f8}{Scott\+Plot.\+Data\+Sources.\+Fast\+Signal\+Source\+Double}}, \mbox{\hyperlink{class_scott_plot_1_1_data_sources_1_1_signal_source_double_a039a81604ff6df3c9c218caf820c4a02}{Scott\+Plot.\+Data\+Sources.\+Signal\+Source\+Double}}, \mbox{\hyperlink{class_scott_plot_1_1_data_sources_1_1_signal_source_generic_array_accae27b60d2fd141fff244b304038a7a}{Scott\+Plot.\+Data\+Sources.\+Signal\+Source\+Generic\+Array$<$ T $>$}}, and \mbox{\hyperlink{class_scott_plot_1_1_data_sources_1_1_signal_source_generic_list_af205e3c6e1395b7a9655a4ec43aa638f}{Scott\+Plot.\+Data\+Sources.\+Signal\+Source\+Generic\+List$<$ T $>$}}.
+
+\Hypertarget{interface_scott_plot_1_1_i_signal_source_a873b9ba3cdcca6011dbb68ae68f8b387}\index{ScottPlot.ISignalSource@{ScottPlot.ISignalSource}!GetYs@{GetYs}}
+\index{GetYs@{GetYs}!ScottPlot.ISignalSource@{ScottPlot.ISignalSource}}
+\doxysubsubsection{\texorpdfstring{GetYs()}{GetYs()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{interface_scott_plot_1_1_i_signal_source_a873b9ba3cdcca6011dbb68ae68f8b387} 
+IRead\+Only\+List$<$ double $>$ Scott\+Plot.\+ISignal\+Source.\+Get\+Ys (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Return an object for working with all Y values. 
+
+
+
+Implemented in \mbox{\hyperlink{class_scott_plot_1_1_data_sources_1_1_fast_signal_source_double_a4bc783554b7846594e0f1df6b514526c}{Scott\+Plot.\+Data\+Sources.\+Fast\+Signal\+Source\+Double}}, \mbox{\hyperlink{class_scott_plot_1_1_data_sources_1_1_signal_source_double_af5f0c17c02cc7a91f4b41021062b8b9d}{Scott\+Plot.\+Data\+Sources.\+Signal\+Source\+Double}}, \mbox{\hyperlink{class_scott_plot_1_1_data_sources_1_1_signal_source_generic_array_ae77fab69af8a6ab76586f312a1cc40c5}{Scott\+Plot.\+Data\+Sources.\+Signal\+Source\+Generic\+Array$<$ T $>$}}, and \mbox{\hyperlink{class_scott_plot_1_1_data_sources_1_1_signal_source_generic_list_a9b1fca4fed40a087e84acacb91086a67}{Scott\+Plot.\+Data\+Sources.\+Signal\+Source\+Generic\+List$<$ T $>$}}.
+
+\Hypertarget{interface_scott_plot_1_1_i_signal_source_aa08d7c65ad5d3140f7b520a5284458d8}\index{ScottPlot.ISignalSource@{ScottPlot.ISignalSource}!GetYs@{GetYs}}
+\index{GetYs@{GetYs}!ScottPlot.ISignalSource@{ScottPlot.ISignalSource}}
+\doxysubsubsection{\texorpdfstring{GetYs()}{GetYs()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{interface_scott_plot_1_1_i_signal_source_aa08d7c65ad5d3140f7b520a5284458d8} 
+\mbox{\hyperlink{class_i_enumerable}{IEnumerable}}$<$ double $>$ Scott\+Plot.\+ISignal\+Source.\+Get\+Ys (\begin{DoxyParamCaption}\item[{int}]{index1}{, }\item[{int}]{index2}{}\end{DoxyParamCaption})}
+
+
+
+Y values between a range of indexes (inclusive). 
+
+
+
+Implemented in \mbox{\hyperlink{class_scott_plot_1_1_data_sources_1_1_fast_signal_source_double_a8682905f3d89947da5e68afd30ce6735}{Scott\+Plot.\+Data\+Sources.\+Fast\+Signal\+Source\+Double}}, \mbox{\hyperlink{class_scott_plot_1_1_data_sources_1_1_signal_source_double_a5fcdd159cadfc9b7da3d98b307b3e502}{Scott\+Plot.\+Data\+Sources.\+Signal\+Source\+Double}}, \mbox{\hyperlink{class_scott_plot_1_1_data_sources_1_1_signal_source_generic_array_ac4b9534a23356a78a02aa2be36e9dd43}{Scott\+Plot.\+Data\+Sources.\+Signal\+Source\+Generic\+Array$<$ T $>$}}, and \mbox{\hyperlink{class_scott_plot_1_1_data_sources_1_1_signal_source_generic_list_acc53521491cf5bd543fd4caad93bae25}{Scott\+Plot.\+Data\+Sources.\+Signal\+Source\+Generic\+List$<$ T $>$}}.
+
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{interface_scott_plot_1_1_i_signal_source_a829456c4998e254dcffe7b1cc8ca8be1}\index{ScottPlot.ISignalSource@{ScottPlot.ISignalSource}!MaximumIndex@{MaximumIndex}}
+\index{MaximumIndex@{MaximumIndex}!ScottPlot.ISignalSource@{ScottPlot.ISignalSource}}
+\doxysubsubsection{\texorpdfstring{MaximumIndex}{MaximumIndex}}
+{\footnotesize\ttfamily \label{interface_scott_plot_1_1_i_signal_source_a829456c4998e254dcffe7b1cc8ca8be1} 
+int Scott\+Plot.\+ISignal\+Source.\+Maximum\+Index\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Do not display data above this index. 
+
+\Hypertarget{interface_scott_plot_1_1_i_signal_source_a74732ccff8702ba084a677f748ee121b}\index{ScottPlot.ISignalSource@{ScottPlot.ISignalSource}!MinimumIndex@{MinimumIndex}}
+\index{MinimumIndex@{MinimumIndex}!ScottPlot.ISignalSource@{ScottPlot.ISignalSource}}
+\doxysubsubsection{\texorpdfstring{MinimumIndex}{MinimumIndex}}
+{\footnotesize\ttfamily \label{interface_scott_plot_1_1_i_signal_source_a74732ccff8702ba084a677f748ee121b} 
+int Scott\+Plot.\+ISignal\+Source.\+Minimum\+Index\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Do not display data below this index. 
+
+\Hypertarget{interface_scott_plot_1_1_i_signal_source_a7c4c3a7496ec5611e98b0fdc7ac12d8c}\index{ScottPlot.ISignalSource@{ScottPlot.ISignalSource}!Period@{Period}}
+\index{Period@{Period}!ScottPlot.ISignalSource@{ScottPlot.ISignalSource}}
+\doxysubsubsection{\texorpdfstring{Period}{Period}}
+{\footnotesize\ttfamily \label{interface_scott_plot_1_1_i_signal_source_a7c4c3a7496ec5611e98b0fdc7ac12d8c} 
+double Scott\+Plot.\+ISignal\+Source.\+Period\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+X distance between Y points. 
+
+\Hypertarget{interface_scott_plot_1_1_i_signal_source_af813cb29021913a9de602975eca2e10e}\index{ScottPlot.ISignalSource@{ScottPlot.ISignalSource}!XOffset@{XOffset}}
+\index{XOffset@{XOffset}!ScottPlot.ISignalSource@{ScottPlot.ISignalSource}}
+\doxysubsubsection{\texorpdfstring{XOffset}{XOffset}}
+{\footnotesize\ttfamily \label{interface_scott_plot_1_1_i_signal_source_af813cb29021913a9de602975eca2e10e} 
+double Scott\+Plot.\+ISignal\+Source.\+XOffset\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+X position of the first data point. 
+
+\Hypertarget{interface_scott_plot_1_1_i_signal_source_a37e18007c5fe969071fc9a03772df726}\index{ScottPlot.ISignalSource@{ScottPlot.ISignalSource}!YOffset@{YOffset}}
+\index{YOffset@{YOffset}!ScottPlot.ISignalSource@{ScottPlot.ISignalSource}}
+\doxysubsubsection{\texorpdfstring{YOffset}{YOffset}}
+{\footnotesize\ttfamily \label{interface_scott_plot_1_1_i_signal_source_a37e18007c5fe969071fc9a03772df726} 
+double Scott\+Plot.\+ISignal\+Source.\+YOffset\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Shift Y position of all values by this amount. 
+
+\Hypertarget{interface_scott_plot_1_1_i_signal_source_ad366a0838b17abb8dc8a23bce7f1a527}\index{ScottPlot.ISignalSource@{ScottPlot.ISignalSource}!YScale@{YScale}}
+\index{YScale@{YScale}!ScottPlot.ISignalSource@{ScottPlot.ISignalSource}}
+\doxysubsubsection{\texorpdfstring{YScale}{YScale}}
+{\footnotesize\ttfamily \label{interface_scott_plot_1_1_i_signal_source_ad366a0838b17abb8dc8a23bce7f1a527} 
+double Scott\+Plot.\+ISignal\+Source.\+YScale\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Multiply Y values by this scale factor (before applying offset) 
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Interfaces/ISignal\+Source.\+cs\end{DoxyCompactItemize}

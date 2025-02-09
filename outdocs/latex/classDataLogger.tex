@@ -1,0 +1,400 @@
+\hypertarget{classDataLogger}{}\doxysection{Data\+Logger Class Reference}
+\label{classDataLogger}\index{DataLogger@{DataLogger}}
+Inheritance diagram for Data\+Logger\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.723077cm]{classDataLogger}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classDataLogger_ac7fea8ebaff4e16ace49d2221144634a}{Data\+Logger}} (\mbox{\hyperlink{classIList}{IList}}$<$ \mbox{\hyperlink{structCoordinates}{Coordinates}} $>$ coordinates)
+\item 
+\mbox{\hyperlink{classDataLogger_a0987761e04a9e932594d0d7f5c135f0a}{Data\+Logger}} ()
+\item 
+\mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} \mbox{\hyperlink{classDataLogger_ac46def6879551c15d691c4c4ba6a6da2}{Get\+Axis\+Limits}} ()
+\begin{DoxyCompactList}\small\item\em Return the 2D area (in coordinate space) occupied by the data contained in this plottable \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structDataPoint}{Data\+Point}} \mbox{\hyperlink{classDataLogger_ae21aa0a957d6c35eb754c7e44fe7acdb}{Get\+Nearest}} (\mbox{\hyperlink{structCoordinates}{Coordinates}} mouse\+Location, \mbox{\hyperlink{structPixelRect}{Pixel\+Rect}} data\+Rect, float max\+Distance=15)
+\begin{DoxyCompactList}\small\item\em Get the data point nearest to the given mouse location. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structDataPoint}{Data\+Point}} \mbox{\hyperlink{classDataLogger_a534946c9b7b9664e74620da7e9cb0bd5}{Get\+NearestX}} (\mbox{\hyperlink{structCoordinates}{Coordinates}} mouse\+Location, \mbox{\hyperlink{structPixelRect}{Pixel\+Rect}} data\+Rect, float max\+Distance=15)
+\begin{DoxyCompactList}\small\item\em Get the data point nearest to the given mouse location (only considering X values). \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classDataLogger_a4e84320b36b6bef2621d067fe7d25525}{Render}} (\mbox{\hyperlink{classRenderPack}{Render\+Pack}} rp)
+\begin{DoxyCompactList}\small\item\em Draw the data from this plottable into the data area defined in the \mbox{\hyperlink{classAxes}{Axes}}. By default the surface is already clipped to the data area, but this can be cleared inside the plottable. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDataLogger_a1b136c67da72c23f18d4df0650c1f9b5}{Add}} (\mbox{\hyperlink{structCoordinates}{Coordinates}} coordinates)
+\item 
+void \mbox{\hyperlink{classDataLogger_a363ac53c87fc11f85875e8be995484c8}{Add}} (double x, double y)
+\item 
+void \mbox{\hyperlink{classDataLogger_a392433013b1a3643329a5fd8a65f315e}{Add}} (double y)
+\item 
+void \mbox{\hyperlink{classDataLogger_a3f2f8d8d7b563fdb3e7b5cce6c848ad2}{Add}} (\mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$ double $>$ ys)
+\item 
+void \mbox{\hyperlink{classDataLogger_a0c2fec5005c0444d9b8d324bda95cbba}{Update\+Axis\+Limits}} (\mbox{\hyperlink{classPlot}{Plot}} plot)
+\item 
+void \mbox{\hyperlink{classDataLogger_ad6c4437f9a0a3798d08cf11df8c8e6a4}{View\+Full}} ()
+\begin{DoxyCompactList}\small\item\em Automatically expand the axis as needed to ensure the full dataset is visible before each render. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDataLogger_ac516f9bb68b069e0a7d6e9aae30ca312}{View\+Jump}} (double width=1000, double padding\+Fraction=.\+5)
+\begin{DoxyCompactList}\small\item\em Automatically adjust the axis limits to track the newest data as it comes in. The axis limits will appear to \char`\"{}jump\char`\"{} when new data runs off the screen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDataLogger_a2cab4f23ab3b6da1fd47afdb05240dae}{View\+Slide}} (double width=1000)
+\begin{DoxyCompactList}\small\item\em Automatically adjust the axis limits to track the newest data as it comes in. The axis limits will appear to \char`\"{}slide\char`\"{} continuously as new data is added. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classDataLoggerSource}{Data\+Logger\+Source}} \mbox{\hyperlink{classDataLogger_aa8eab0153f8bacfb6fd29547287bd6f7}{Data}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+bool \mbox{\hyperlink{classDataLogger_a9dc69129cbdfededf686a7c7abb25372}{Is\+Visible}} = true\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{interfaceIAxes}{IAxes}} \mbox{\hyperlink{classDataLogger_a22a580dee248f28d9a6e6fd6975fc20b}{Axes}} = new \mbox{\hyperlink{classAxes}{Axes}}()\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{interfaceIAxisLimitManager}{IAxis\+Limit\+Manager}} \mbox{\hyperlink{classDataLogger_aa7644768d7451001f699a020cf7a0631}{Axis\+Manager}} = new \mbox{\hyperlink{classFull}{Full}}()\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+bool \mbox{\hyperlink{classDataLogger_afb7dab5b1264399785a6bf866f065dae}{Rotated}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{classLineStyle}{Line\+Style}} \mbox{\hyperlink{classDataLogger_a392426fea68aee45a367580eb11964d0}{Line\+Style}} = new() \{ Width = 1 \}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{classDataLogger_a02cb14d85abbd24d594776858d8f9a39}{Line\+Width}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+Line\+Pattern \mbox{\hyperlink{classDataLogger_a75fbf95ab7e9ab2548ba520eeaccd65e}{Line\+Pattern}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{structColor}{Color}} \mbox{\hyperlink{classDataLogger_a46c5cd6d8966a14c4a9d347c2194ad50}{Line\+Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{classMarkerStyle}{Marker\+Style}} \mbox{\hyperlink{classDataLogger_ab8857f890ace6d7a899f13be6c385e61}{Marker\+Style}} = new() \{ Size = 0, Shape = Marker\+Shape.\+Filled\+Circle \}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+Marker\+Shape \mbox{\hyperlink{classDataLogger_a54382c401a4fa1b15cbd23ca4771fd5b}{Marker\+Shape}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{classDataLogger_a2fd3d2d9cc8939b6e8835621a477ca11}{Marker\+Size}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{structColor}{Color}} \mbox{\hyperlink{classDataLogger_a3560a6d95d834ad8ba6849bc21b49a5d}{Marker\+Fill\+Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{structColor}{Color}} \mbox{\hyperlink{classDataLogger_a18ae57b82f684ef305bdf9a51ff1a2a4}{Marker\+Line\+Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{structColor}{Color}} \mbox{\hyperlink{classDataLogger_ab101b2bb9e0ad260f4b66057d4223f0c}{Marker\+Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{classDataLogger_aa821eaaf2e5e6a4c52cd13d7f4879bcd}{Marker\+Line\+Width}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+bool \mbox{\hyperlink{classDataLogger_a58abf531402d3a223cbd5c94f263fc4e}{Has\+New\+Data}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+Connect\+Style \mbox{\hyperlink{classDataLogger_a1f49e7ddea4294bba069a10ae54a4633}{Connect\+Style}} = Connect\+Style.\+Straight\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The style of lines to use when connecting points. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structColor}{Color}} \mbox{\hyperlink{classDataLogger_a70175b8e6347b0f423f5092ff2b0ee80}{Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+double \mbox{\hyperlink{classDataLogger_af1f35272103b93b59502aed6acc38c4a}{Period}} = 1.\+0\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+string \mbox{\hyperlink{classDataLogger_a69e4b8c6fc917e1df2cef0d803ee55cc}{Label}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+string \mbox{\hyperlink{classDataLogger_a3a1bc41cfe880a461ce3de43d7b1d93f}{Legend\+Text}} = string.\+Empty\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$ \mbox{\hyperlink{classLegendItem}{Legend\+Item}} $>$ \mbox{\hyperlink{classDataLogger_a34e5f9ad7a6bfbb9a8adbb5457c4c24f}{Legend\+Items}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+bool \mbox{\hyperlink{classDataLogger_aab854f0b86a4bbdde0971c4b50b9d946}{Manage\+Axis\+Limits}} = true\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classDataLogger_ac7fea8ebaff4e16ace49d2221144634a}\label{classDataLogger_ac7fea8ebaff4e16ace49d2221144634a}} 
+\index{DataLogger@{DataLogger}!DataLogger@{DataLogger}}
+\index{DataLogger@{DataLogger}!DataLogger@{DataLogger}}
+\doxysubsubsection{\texorpdfstring{DataLogger()}{DataLogger()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Data\+Logger.\+Data\+Logger (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIList}{IList}}$<$ \mbox{\hyperlink{structCoordinates}{Coordinates}} $>$}]{coordinates }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classDataLogger_a0987761e04a9e932594d0d7f5c135f0a}\label{classDataLogger_a0987761e04a9e932594d0d7f5c135f0a}} 
+\index{DataLogger@{DataLogger}!DataLogger@{DataLogger}}
+\index{DataLogger@{DataLogger}!DataLogger@{DataLogger}}
+\doxysubsubsection{\texorpdfstring{DataLogger()}{DataLogger()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Data\+Logger.\+Data\+Logger (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classDataLogger_a1b136c67da72c23f18d4df0650c1f9b5}\label{classDataLogger_a1b136c67da72c23f18d4df0650c1f9b5}} 
+\index{DataLogger@{DataLogger}!Add@{Add}}
+\index{Add@{Add}!DataLogger@{DataLogger}}
+\doxysubsubsection{\texorpdfstring{Add()}{Add()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily void Data\+Logger.\+Add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structCoordinates}{Coordinates}}}]{coordinates }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classDataLogger_a363ac53c87fc11f85875e8be995484c8}\label{classDataLogger_a363ac53c87fc11f85875e8be995484c8}} 
+\index{DataLogger@{DataLogger}!Add@{Add}}
+\index{Add@{Add}!DataLogger@{DataLogger}}
+\doxysubsubsection{\texorpdfstring{Add()}{Add()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily void Data\+Logger.\+Add (\begin{DoxyParamCaption}\item[{double}]{x,  }\item[{double}]{y }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classDataLogger_a392433013b1a3643329a5fd8a65f315e}\label{classDataLogger_a392433013b1a3643329a5fd8a65f315e}} 
+\index{DataLogger@{DataLogger}!Add@{Add}}
+\index{Add@{Add}!DataLogger@{DataLogger}}
+\doxysubsubsection{\texorpdfstring{Add()}{Add()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily void Data\+Logger.\+Add (\begin{DoxyParamCaption}\item[{double}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classDataLogger_a3f2f8d8d7b563fdb3e7b5cce6c848ad2}\label{classDataLogger_a3f2f8d8d7b563fdb3e7b5cce6c848ad2}} 
+\index{DataLogger@{DataLogger}!Add@{Add}}
+\index{Add@{Add}!DataLogger@{DataLogger}}
+\doxysubsubsection{\texorpdfstring{Add()}{Add()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily void Data\+Logger.\+Add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$ double $>$}]{ys }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classDataLogger_ac46def6879551c15d691c4c4ba6a6da2}\label{classDataLogger_ac46def6879551c15d691c4c4ba6a6da2}} 
+\index{DataLogger@{DataLogger}!GetAxisLimits@{GetAxisLimits}}
+\index{GetAxisLimits@{GetAxisLimits}!DataLogger@{DataLogger}}
+\doxysubsubsection{\texorpdfstring{GetAxisLimits()}{GetAxisLimits()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} Data\+Logger.\+Get\+Axis\+Limits (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return the 2D area (in coordinate space) occupied by the data contained in this plottable 
+
+
+
+Implements \mbox{\hyperlink{interfaceIPlottable_ac98e2f5e56f9f938bbd081c87c7c6f50}{IPlottable}}.
+
+\mbox{\Hypertarget{classDataLogger_ae21aa0a957d6c35eb754c7e44fe7acdb}\label{classDataLogger_ae21aa0a957d6c35eb754c7e44fe7acdb}} 
+\index{DataLogger@{DataLogger}!GetNearest@{GetNearest}}
+\index{GetNearest@{GetNearest}!DataLogger@{DataLogger}}
+\doxysubsubsection{\texorpdfstring{GetNearest()}{GetNearest()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structDataPoint}{Data\+Point}} Data\+Logger.\+Get\+Nearest (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structCoordinates}{Coordinates}}}]{mouse\+Location,  }\item[{\mbox{\hyperlink{structPixelRect}{Pixel\+Rect}}}]{data\+Rect,  }\item[{float}]{max\+Distance = {\ttfamily 15} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the data point nearest to the given mouse location. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mouse\+Location} & Mouse location\\
+\hline
+{\em data\+Rect} & Data rectangle from \mbox{\hyperlink{structRenderDetails}{Render\+Details}}\\
+\hline
+{\em max\+Distance} & Maximum distance to the point\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDataLogger_a534946c9b7b9664e74620da7e9cb0bd5}\label{classDataLogger_a534946c9b7b9664e74620da7e9cb0bd5}} 
+\index{DataLogger@{DataLogger}!GetNearestX@{GetNearestX}}
+\index{GetNearestX@{GetNearestX}!DataLogger@{DataLogger}}
+\doxysubsubsection{\texorpdfstring{GetNearestX()}{GetNearestX()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structDataPoint}{Data\+Point}} Data\+Logger.\+Get\+NearestX (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structCoordinates}{Coordinates}}}]{mouse\+Location,  }\item[{\mbox{\hyperlink{structPixelRect}{Pixel\+Rect}}}]{data\+Rect,  }\item[{float}]{max\+Distance = {\ttfamily 15} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the data point nearest to the given mouse location (only considering X values). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mouse\+Location} & Mouse location\\
+\hline
+{\em data\+Rect} & Data rectangle from \mbox{\hyperlink{structRenderDetails}{Render\+Details}}\\
+\hline
+{\em max\+Distance} & Maximum X distance to the point\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDataLogger_a4e84320b36b6bef2621d067fe7d25525}\label{classDataLogger_a4e84320b36b6bef2621d067fe7d25525}} 
+\index{DataLogger@{DataLogger}!Render@{Render}}
+\index{Render@{Render}!DataLogger@{DataLogger}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily virtual void Data\+Logger.\+Render (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classRenderPack}{Render\+Pack}}}]{rp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Draw the data from this plottable into the data area defined in the \mbox{\hyperlink{classAxes}{Axes}}. By default the surface is already clipped to the data area, but this can be cleared inside the plottable. 
+
+
+
+Implements \mbox{\hyperlink{interfaceIPlottable_a201a1a236dc718eda93db143a5ade9f8}{IPlottable}}.
+
+\mbox{\Hypertarget{classDataLogger_a0c2fec5005c0444d9b8d324bda95cbba}\label{classDataLogger_a0c2fec5005c0444d9b8d324bda95cbba}} 
+\index{DataLogger@{DataLogger}!UpdateAxisLimits@{UpdateAxisLimits}}
+\index{UpdateAxisLimits@{UpdateAxisLimits}!DataLogger@{DataLogger}}
+\doxysubsubsection{\texorpdfstring{UpdateAxisLimits()}{UpdateAxisLimits()}}
+{\footnotesize\ttfamily void Data\+Logger.\+Update\+Axis\+Limits (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPlot}{Plot}}}]{plot }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Implements \mbox{\hyperlink{interfaceIManagesAxisLimits_a89b37ad99b341ad037982a08228265a3}{IManages\+Axis\+Limits}}.
+
+\mbox{\Hypertarget{classDataLogger_ad6c4437f9a0a3798d08cf11df8c8e6a4}\label{classDataLogger_ad6c4437f9a0a3798d08cf11df8c8e6a4}} 
+\index{DataLogger@{DataLogger}!ViewFull@{ViewFull}}
+\index{ViewFull@{ViewFull}!DataLogger@{DataLogger}}
+\doxysubsubsection{\texorpdfstring{ViewFull()}{ViewFull()}}
+{\footnotesize\ttfamily void Data\+Logger.\+View\+Full (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Automatically expand the axis as needed to ensure the full dataset is visible before each render. 
+
+\mbox{\Hypertarget{classDataLogger_ac516f9bb68b069e0a7d6e9aae30ca312}\label{classDataLogger_ac516f9bb68b069e0a7d6e9aae30ca312}} 
+\index{DataLogger@{DataLogger}!ViewJump@{ViewJump}}
+\index{ViewJump@{ViewJump}!DataLogger@{DataLogger}}
+\doxysubsubsection{\texorpdfstring{ViewJump()}{ViewJump()}}
+{\footnotesize\ttfamily void Data\+Logger.\+View\+Jump (\begin{DoxyParamCaption}\item[{double}]{width = {\ttfamily 1000},  }\item[{double}]{padding\+Fraction = {\ttfamily .5} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Automatically adjust the axis limits to track the newest data as it comes in. The axis limits will appear to \char`\"{}jump\char`\"{} when new data runs off the screen. 
+
+\mbox{\Hypertarget{classDataLogger_a2cab4f23ab3b6da1fd47afdb05240dae}\label{classDataLogger_a2cab4f23ab3b6da1fd47afdb05240dae}} 
+\index{DataLogger@{DataLogger}!ViewSlide@{ViewSlide}}
+\index{ViewSlide@{ViewSlide}!DataLogger@{DataLogger}}
+\doxysubsubsection{\texorpdfstring{ViewSlide()}{ViewSlide()}}
+{\footnotesize\ttfamily void Data\+Logger.\+View\+Slide (\begin{DoxyParamCaption}\item[{double}]{width = {\ttfamily 1000} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Automatically adjust the axis limits to track the newest data as it comes in. The axis limits will appear to \char`\"{}slide\char`\"{} continuously as new data is added. 
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{classDataLogger_a22a580dee248f28d9a6e6fd6975fc20b}\label{classDataLogger_a22a580dee248f28d9a6e6fd6975fc20b}} 
+\index{DataLogger@{DataLogger}!Axes@{Axes}}
+\index{Axes@{Axes}!DataLogger@{DataLogger}}
+\doxysubsubsection{\texorpdfstring{Axes}{Axes}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceIAxes}{IAxes}} Data\+Logger.\+Axes = new \mbox{\hyperlink{classAxes}{Axes}}()\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classDataLogger_aa7644768d7451001f699a020cf7a0631}\label{classDataLogger_aa7644768d7451001f699a020cf7a0631}} 
+\index{DataLogger@{DataLogger}!AxisManager@{AxisManager}}
+\index{AxisManager@{AxisManager}!DataLogger@{DataLogger}}
+\doxysubsubsection{\texorpdfstring{AxisManager}{AxisManager}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceIAxisLimitManager}{IAxis\+Limit\+Manager}} Data\+Logger.\+Axis\+Manager = new \mbox{\hyperlink{classFull}{Full}}()\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classDataLogger_a70175b8e6347b0f423f5092ff2b0ee80}\label{classDataLogger_a70175b8e6347b0f423f5092ff2b0ee80}} 
+\index{DataLogger@{DataLogger}!Color@{Color}}
+\index{Color@{Color}!DataLogger@{DataLogger}}
+\doxysubsubsection{\texorpdfstring{Color}{Color}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structColor}{Color}} Data\+Logger.\+Color\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classDataLogger_a1f49e7ddea4294bba069a10ae54a4633}\label{classDataLogger_a1f49e7ddea4294bba069a10ae54a4633}} 
+\index{DataLogger@{DataLogger}!ConnectStyle@{ConnectStyle}}
+\index{ConnectStyle@{ConnectStyle}!DataLogger@{DataLogger}}
+\doxysubsubsection{\texorpdfstring{ConnectStyle}{ConnectStyle}}
+{\footnotesize\ttfamily Connect\+Style Data\+Logger.\+Connect\+Style = Connect\+Style.\+Straight\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The style of lines to use when connecting points. 
+
+\mbox{\Hypertarget{classDataLogger_aa8eab0153f8bacfb6fd29547287bd6f7}\label{classDataLogger_aa8eab0153f8bacfb6fd29547287bd6f7}} 
+\index{DataLogger@{DataLogger}!Data@{Data}}
+\index{Data@{Data}!DataLogger@{DataLogger}}
+\doxysubsubsection{\texorpdfstring{Data}{Data}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classDataLoggerSource}{Data\+Logger\+Source}} Data\+Logger.\+Data\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{classDataLogger_a58abf531402d3a223cbd5c94f263fc4e}\label{classDataLogger_a58abf531402d3a223cbd5c94f263fc4e}} 
+\index{DataLogger@{DataLogger}!HasNewData@{HasNewData}}
+\index{HasNewData@{HasNewData}!DataLogger@{DataLogger}}
+\doxysubsubsection{\texorpdfstring{HasNewData}{HasNewData}}
+{\footnotesize\ttfamily bool Data\+Logger.\+Has\+New\+Data\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{classDataLogger_a9dc69129cbdfededf686a7c7abb25372}\label{classDataLogger_a9dc69129cbdfededf686a7c7abb25372}} 
+\index{DataLogger@{DataLogger}!IsVisible@{IsVisible}}
+\index{IsVisible@{IsVisible}!DataLogger@{DataLogger}}
+\doxysubsubsection{\texorpdfstring{IsVisible}{IsVisible}}
+{\footnotesize\ttfamily bool Data\+Logger.\+Is\+Visible = true\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classDataLogger_a69e4b8c6fc917e1df2cef0d803ee55cc}\label{classDataLogger_a69e4b8c6fc917e1df2cef0d803ee55cc}} 
+\index{DataLogger@{DataLogger}!Label@{Label}}
+\index{Label@{Label}!DataLogger@{DataLogger}}
+\doxysubsubsection{\texorpdfstring{Label}{Label}}
+{\footnotesize\ttfamily string Data\+Logger.\+Label\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classDataLogger_a34e5f9ad7a6bfbb9a8adbb5457c4c24f}\label{classDataLogger_a34e5f9ad7a6bfbb9a8adbb5457c4c24f}} 
+\index{DataLogger@{DataLogger}!LegendItems@{LegendItems}}
+\index{LegendItems@{LegendItems}!DataLogger@{DataLogger}}
+\doxysubsubsection{\texorpdfstring{LegendItems}{LegendItems}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$\mbox{\hyperlink{classLegendItem}{Legend\+Item}}$>$ Data\+Logger.\+Legend\+Items\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{classDataLogger_a3a1bc41cfe880a461ce3de43d7b1d93f}\label{classDataLogger_a3a1bc41cfe880a461ce3de43d7b1d93f}} 
+\index{DataLogger@{DataLogger}!LegendText@{LegendText}}
+\index{LegendText@{LegendText}!DataLogger@{DataLogger}}
+\doxysubsubsection{\texorpdfstring{LegendText}{LegendText}}
+{\footnotesize\ttfamily string Data\+Logger.\+Legend\+Text = string.\+Empty\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classDataLogger_a46c5cd6d8966a14c4a9d347c2194ad50}\label{classDataLogger_a46c5cd6d8966a14c4a9d347c2194ad50}} 
+\index{DataLogger@{DataLogger}!LineColor@{LineColor}}
+\index{LineColor@{LineColor}!DataLogger@{DataLogger}}
+\doxysubsubsection{\texorpdfstring{LineColor}{LineColor}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structColor}{Color}} Data\+Logger.\+Line\+Color\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classDataLogger_a75fbf95ab7e9ab2548ba520eeaccd65e}\label{classDataLogger_a75fbf95ab7e9ab2548ba520eeaccd65e}} 
+\index{DataLogger@{DataLogger}!LinePattern@{LinePattern}}
+\index{LinePattern@{LinePattern}!DataLogger@{DataLogger}}
+\doxysubsubsection{\texorpdfstring{LinePattern}{LinePattern}}
+{\footnotesize\ttfamily Line\+Pattern Data\+Logger.\+Line\+Pattern\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classDataLogger_a392426fea68aee45a367580eb11964d0}\label{classDataLogger_a392426fea68aee45a367580eb11964d0}} 
+\index{DataLogger@{DataLogger}!LineStyle@{LineStyle}}
+\index{LineStyle@{LineStyle}!DataLogger@{DataLogger}}
+\doxysubsubsection{\texorpdfstring{LineStyle}{LineStyle}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classLineStyle}{Line\+Style}} Data\+Logger.\+Line\+Style = new() \{ Width = 1 \}\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classDataLogger_a02cb14d85abbd24d594776858d8f9a39}\label{classDataLogger_a02cb14d85abbd24d594776858d8f9a39}} 
+\index{DataLogger@{DataLogger}!LineWidth@{LineWidth}}
+\index{LineWidth@{LineWidth}!DataLogger@{DataLogger}}
+\doxysubsubsection{\texorpdfstring{LineWidth}{LineWidth}}
+{\footnotesize\ttfamily float Data\+Logger.\+Line\+Width\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classDataLogger_aab854f0b86a4bbdde0971c4b50b9d946}\label{classDataLogger_aab854f0b86a4bbdde0971c4b50b9d946}} 
+\index{DataLogger@{DataLogger}!ManageAxisLimits@{ManageAxisLimits}}
+\index{ManageAxisLimits@{ManageAxisLimits}!DataLogger@{DataLogger}}
+\doxysubsubsection{\texorpdfstring{ManageAxisLimits}{ManageAxisLimits}}
+{\footnotesize\ttfamily bool Data\+Logger.\+Manage\+Axis\+Limits = true\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classDataLogger_ab101b2bb9e0ad260f4b66057d4223f0c}\label{classDataLogger_ab101b2bb9e0ad260f4b66057d4223f0c}} 
+\index{DataLogger@{DataLogger}!MarkerColor@{MarkerColor}}
+\index{MarkerColor@{MarkerColor}!DataLogger@{DataLogger}}
+\doxysubsubsection{\texorpdfstring{MarkerColor}{MarkerColor}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structColor}{Color}} Data\+Logger.\+Marker\+Color\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classDataLogger_a3560a6d95d834ad8ba6849bc21b49a5d}\label{classDataLogger_a3560a6d95d834ad8ba6849bc21b49a5d}} 
+\index{DataLogger@{DataLogger}!MarkerFillColor@{MarkerFillColor}}
+\index{MarkerFillColor@{MarkerFillColor}!DataLogger@{DataLogger}}
+\doxysubsubsection{\texorpdfstring{MarkerFillColor}{MarkerFillColor}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structColor}{Color}} Data\+Logger.\+Marker\+Fill\+Color\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classDataLogger_a18ae57b82f684ef305bdf9a51ff1a2a4}\label{classDataLogger_a18ae57b82f684ef305bdf9a51ff1a2a4}} 
+\index{DataLogger@{DataLogger}!MarkerLineColor@{MarkerLineColor}}
+\index{MarkerLineColor@{MarkerLineColor}!DataLogger@{DataLogger}}
+\doxysubsubsection{\texorpdfstring{MarkerLineColor}{MarkerLineColor}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structColor}{Color}} Data\+Logger.\+Marker\+Line\+Color\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classDataLogger_aa821eaaf2e5e6a4c52cd13d7f4879bcd}\label{classDataLogger_aa821eaaf2e5e6a4c52cd13d7f4879bcd}} 
+\index{DataLogger@{DataLogger}!MarkerLineWidth@{MarkerLineWidth}}
+\index{MarkerLineWidth@{MarkerLineWidth}!DataLogger@{DataLogger}}
+\doxysubsubsection{\texorpdfstring{MarkerLineWidth}{MarkerLineWidth}}
+{\footnotesize\ttfamily float Data\+Logger.\+Marker\+Line\+Width\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classDataLogger_a54382c401a4fa1b15cbd23ca4771fd5b}\label{classDataLogger_a54382c401a4fa1b15cbd23ca4771fd5b}} 
+\index{DataLogger@{DataLogger}!MarkerShape@{MarkerShape}}
+\index{MarkerShape@{MarkerShape}!DataLogger@{DataLogger}}
+\doxysubsubsection{\texorpdfstring{MarkerShape}{MarkerShape}}
+{\footnotesize\ttfamily Marker\+Shape Data\+Logger.\+Marker\+Shape\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classDataLogger_a2fd3d2d9cc8939b6e8835621a477ca11}\label{classDataLogger_a2fd3d2d9cc8939b6e8835621a477ca11}} 
+\index{DataLogger@{DataLogger}!MarkerSize@{MarkerSize}}
+\index{MarkerSize@{MarkerSize}!DataLogger@{DataLogger}}
+\doxysubsubsection{\texorpdfstring{MarkerSize}{MarkerSize}}
+{\footnotesize\ttfamily float Data\+Logger.\+Marker\+Size\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classDataLogger_ab8857f890ace6d7a899f13be6c385e61}\label{classDataLogger_ab8857f890ace6d7a899f13be6c385e61}} 
+\index{DataLogger@{DataLogger}!MarkerStyle@{MarkerStyle}}
+\index{MarkerStyle@{MarkerStyle}!DataLogger@{DataLogger}}
+\doxysubsubsection{\texorpdfstring{MarkerStyle}{MarkerStyle}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classMarkerStyle}{Marker\+Style}} Data\+Logger.\+Marker\+Style = new() \{ Size = 0, Shape = Marker\+Shape.\+Filled\+Circle \}\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classDataLogger_af1f35272103b93b59502aed6acc38c4a}\label{classDataLogger_af1f35272103b93b59502aed6acc38c4a}} 
+\index{DataLogger@{DataLogger}!Period@{Period}}
+\index{Period@{Period}!DataLogger@{DataLogger}}
+\doxysubsubsection{\texorpdfstring{Period}{Period}}
+{\footnotesize\ttfamily double Data\+Logger.\+Period = 1.\+0\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classDataLogger_afb7dab5b1264399785a6bf866f065dae}\label{classDataLogger_afb7dab5b1264399785a6bf866f065dae}} 
+\index{DataLogger@{DataLogger}!Rotated@{Rotated}}
+\index{Rotated@{Rotated}!DataLogger@{DataLogger}}
+\doxysubsubsection{\texorpdfstring{Rotated}{Rotated}}
+{\footnotesize\ttfamily bool Data\+Logger.\+Rotated\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Plottables/Data\+Logger.\+cs\end{DoxyCompactItemize}

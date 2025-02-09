@@ -1,0 +1,223 @@
+\hypertarget{classAvaPlot}{}\doxysection{Ava\+Plot Class Reference}
+\label{classAvaPlot}\index{AvaPlot@{AvaPlot}}
+Inheritance diagram for Ava\+Plot\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classAvaPlot}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classAvaPlot_a4d45ca6faf80039211b66f0b8f894036}{Ava\+Plot}} ()
+\item 
+override void \mbox{\hyperlink{classAvaPlot_a5d8eaab5962783c8a506082764d3f434}{Render}} (Drawing\+Context context)
+\item 
+void \mbox{\hyperlink{classAvaPlot_aeda942d242efc00a0de3ab324e7a90b0}{Reset}} ()
+\begin{DoxyCompactList}\small\item\em Disposes the current \mbox{\hyperlink{classPlot}{Plot}} and creates a new one for the control \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAvaPlot_aa0425dbfa422edb192b2c845a9cb9806}{Reset}} (\mbox{\hyperlink{classPlot}{Plot}} plot)
+\begin{DoxyCompactList}\small\item\em Loads the given \mbox{\hyperlink{classPlot}{Plot}} into the control \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAvaPlot_aac44e4836924ac3fddd68a74f5eaabbe}{Refresh}} ()
+\begin{DoxyCompactList}\small\item\em Render the plot and update the image \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAvaPlot_ac92b6da1a702e49d1154ab92e71a8af5}{Show\+Context\+Menu}} (\mbox{\hyperlink{structPixel}{Pixel}} position)
+\begin{DoxyCompactList}\small\item\em Launch the default pop-\/up menu (typically in response to a right-\/click) at the given position in the control \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classAvaPlot_a1fe9b331b82b7ce37722e59e213829db}{Detect\+Display\+Scale}} ()
+\begin{DoxyCompactList}\small\item\em Determine the DPI scaling ratio of the present display. A value of 1.\+0 means no scaling, and 1.\+5 means 150\% scaling. This operation may be costly so do not call it frequently. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{classAvaPlot_a6dc96abbabfb81562f349ad320a019fe}{On\+Pointer\+Pressed}} (Pointer\+Pressed\+Event\+Args e)
+\item 
+override void \mbox{\hyperlink{classAvaPlot_a8771a0b0047445b45bc32853c9dbe2b2}{On\+Pointer\+Released}} (Pointer\+Released\+Event\+Args e)
+\item 
+override void \mbox{\hyperlink{classAvaPlot_aae6c13e54df0cf9ed0614d29a1bef7a1}{On\+Pointer\+Moved}} (Pointer\+Event\+Args e)
+\item 
+override void \mbox{\hyperlink{classAvaPlot_a3d29f1bcf507b75aecc5b861bfeca107}{On\+Pointer\+Wheel\+Changed}} (Pointer\+Wheel\+Event\+Args e)
+\item 
+override void \mbox{\hyperlink{classAvaPlot_a165718329da713cb8c608c3357f3fbec}{On\+Key\+Down}} (Key\+Event\+Args e)
+\item 
+override void \mbox{\hyperlink{classAvaPlot_a6ae412a336b3bb60f440cfeb1dbfc0cd}{On\+Key\+Up}} (Key\+Event\+Args e)
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPlot}{Plot}} \mbox{\hyperlink{classAvaPlot_a1f220d0d55e6886ae2dfcf8936130067}{Plot}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{interfaceIPlotInteraction}{IPlot\+Interaction}} \mbox{\hyperlink{classAvaPlot_a7ba366422cd017dd61d60b0f0994fc7c}{Interaction}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{interfaceIPlotMenu}{IPlot\+Menu}} \mbox{\hyperlink{classAvaPlot_a9ddbfcd5b554cba476de76ffd9912300}{Menu}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+Interactivity.\+User\+Input\+Processor \mbox{\hyperlink{classAvaPlot_a09562bdc046d041428e73e57c6d9c220}{User\+Input\+Processor}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+GRContext? \mbox{\hyperlink{classAvaPlot_aacdff60b314f4e7de55f7284e5d4928a}{GRContext}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+float \mbox{\hyperlink{classAvaPlot_a09822ca4f89d6f9a84182a415a97f3a8}{Display\+Scale}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classAvaPlot_a4d45ca6faf80039211b66f0b8f894036}\label{classAvaPlot_a4d45ca6faf80039211b66f0b8f894036}} 
+\index{AvaPlot@{AvaPlot}!AvaPlot@{AvaPlot}}
+\index{AvaPlot@{AvaPlot}!AvaPlot@{AvaPlot}}
+\doxysubsubsection{\texorpdfstring{AvaPlot()}{AvaPlot()}}
+{\footnotesize\ttfamily Ava\+Plot.\+Ava\+Plot (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classAvaPlot_a1fe9b331b82b7ce37722e59e213829db}\label{classAvaPlot_a1fe9b331b82b7ce37722e59e213829db}} 
+\index{AvaPlot@{AvaPlot}!DetectDisplayScale@{DetectDisplayScale}}
+\index{DetectDisplayScale@{DetectDisplayScale}!AvaPlot@{AvaPlot}}
+\doxysubsubsection{\texorpdfstring{DetectDisplayScale()}{DetectDisplayScale()}}
+{\footnotesize\ttfamily float Ava\+Plot.\+Detect\+Display\+Scale (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Determine the DPI scaling ratio of the present display. A value of 1.\+0 means no scaling, and 1.\+5 means 150\% scaling. This operation may be costly so do not call it frequently. 
+
+
+
+Implements \mbox{\hyperlink{interfaceIPlotControl_aa091d213054094b8acdc307ceda2db06}{IPlot\+Control}}.
+
+\mbox{\Hypertarget{classAvaPlot_a165718329da713cb8c608c3357f3fbec}\label{classAvaPlot_a165718329da713cb8c608c3357f3fbec}} 
+\index{AvaPlot@{AvaPlot}!OnKeyDown@{OnKeyDown}}
+\index{OnKeyDown@{OnKeyDown}!AvaPlot@{AvaPlot}}
+\doxysubsubsection{\texorpdfstring{OnKeyDown()}{OnKeyDown()}}
+{\footnotesize\ttfamily override void Ava\+Plot.\+On\+Key\+Down (\begin{DoxyParamCaption}\item[{Key\+Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classAvaPlot_a6ae412a336b3bb60f440cfeb1dbfc0cd}\label{classAvaPlot_a6ae412a336b3bb60f440cfeb1dbfc0cd}} 
+\index{AvaPlot@{AvaPlot}!OnKeyUp@{OnKeyUp}}
+\index{OnKeyUp@{OnKeyUp}!AvaPlot@{AvaPlot}}
+\doxysubsubsection{\texorpdfstring{OnKeyUp()}{OnKeyUp()}}
+{\footnotesize\ttfamily override void Ava\+Plot.\+On\+Key\+Up (\begin{DoxyParamCaption}\item[{Key\+Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classAvaPlot_aae6c13e54df0cf9ed0614d29a1bef7a1}\label{classAvaPlot_aae6c13e54df0cf9ed0614d29a1bef7a1}} 
+\index{AvaPlot@{AvaPlot}!OnPointerMoved@{OnPointerMoved}}
+\index{OnPointerMoved@{OnPointerMoved}!AvaPlot@{AvaPlot}}
+\doxysubsubsection{\texorpdfstring{OnPointerMoved()}{OnPointerMoved()}}
+{\footnotesize\ttfamily override void Ava\+Plot.\+On\+Pointer\+Moved (\begin{DoxyParamCaption}\item[{Pointer\+Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classAvaPlot_a6dc96abbabfb81562f349ad320a019fe}\label{classAvaPlot_a6dc96abbabfb81562f349ad320a019fe}} 
+\index{AvaPlot@{AvaPlot}!OnPointerPressed@{OnPointerPressed}}
+\index{OnPointerPressed@{OnPointerPressed}!AvaPlot@{AvaPlot}}
+\doxysubsubsection{\texorpdfstring{OnPointerPressed()}{OnPointerPressed()}}
+{\footnotesize\ttfamily override void Ava\+Plot.\+On\+Pointer\+Pressed (\begin{DoxyParamCaption}\item[{Pointer\+Pressed\+Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classAvaPlot_a8771a0b0047445b45bc32853c9dbe2b2}\label{classAvaPlot_a8771a0b0047445b45bc32853c9dbe2b2}} 
+\index{AvaPlot@{AvaPlot}!OnPointerReleased@{OnPointerReleased}}
+\index{OnPointerReleased@{OnPointerReleased}!AvaPlot@{AvaPlot}}
+\doxysubsubsection{\texorpdfstring{OnPointerReleased()}{OnPointerReleased()}}
+{\footnotesize\ttfamily override void Ava\+Plot.\+On\+Pointer\+Released (\begin{DoxyParamCaption}\item[{Pointer\+Released\+Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classAvaPlot_a3d29f1bcf507b75aecc5b861bfeca107}\label{classAvaPlot_a3d29f1bcf507b75aecc5b861bfeca107}} 
+\index{AvaPlot@{AvaPlot}!OnPointerWheelChanged@{OnPointerWheelChanged}}
+\index{OnPointerWheelChanged@{OnPointerWheelChanged}!AvaPlot@{AvaPlot}}
+\doxysubsubsection{\texorpdfstring{OnPointerWheelChanged()}{OnPointerWheelChanged()}}
+{\footnotesize\ttfamily override void Ava\+Plot.\+On\+Pointer\+Wheel\+Changed (\begin{DoxyParamCaption}\item[{Pointer\+Wheel\+Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classAvaPlot_aac44e4836924ac3fddd68a74f5eaabbe}\label{classAvaPlot_aac44e4836924ac3fddd68a74f5eaabbe}} 
+\index{AvaPlot@{AvaPlot}!Refresh@{Refresh}}
+\index{Refresh@{Refresh}!AvaPlot@{AvaPlot}}
+\doxysubsubsection{\texorpdfstring{Refresh()}{Refresh()}}
+{\footnotesize\ttfamily void Ava\+Plot.\+Refresh (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Render the plot and update the image 
+
+
+
+Implements \mbox{\hyperlink{interfaceIPlotControl_ac5672b6f3e3e2825da1e95f0cd2f4bcb}{IPlot\+Control}}.
+
+\mbox{\Hypertarget{classAvaPlot_a5d8eaab5962783c8a506082764d3f434}\label{classAvaPlot_a5d8eaab5962783c8a506082764d3f434}} 
+\index{AvaPlot@{AvaPlot}!Render@{Render}}
+\index{Render@{Render}!AvaPlot@{AvaPlot}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily override void Ava\+Plot.\+Render (\begin{DoxyParamCaption}\item[{Drawing\+Context}]{context }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classAvaPlot_aeda942d242efc00a0de3ab324e7a90b0}\label{classAvaPlot_aeda942d242efc00a0de3ab324e7a90b0}} 
+\index{AvaPlot@{AvaPlot}!Reset@{Reset}}
+\index{Reset@{Reset}!AvaPlot@{AvaPlot}}
+\doxysubsubsection{\texorpdfstring{Reset()}{Reset()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Ava\+Plot.\+Reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Disposes the current \mbox{\hyperlink{classPlot}{Plot}} and creates a new one for the control 
+
+
+
+Implements \mbox{\hyperlink{interfaceIPlotControl_a3021825d73d2bcf47dfd5f6f562e2cdf}{IPlot\+Control}}.
+
+\mbox{\Hypertarget{classAvaPlot_aa0425dbfa422edb192b2c845a9cb9806}\label{classAvaPlot_aa0425dbfa422edb192b2c845a9cb9806}} 
+\index{AvaPlot@{AvaPlot}!Reset@{Reset}}
+\index{Reset@{Reset}!AvaPlot@{AvaPlot}}
+\doxysubsubsection{\texorpdfstring{Reset()}{Reset()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Ava\+Plot.\+Reset (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPlot}{Plot}}}]{plot }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Loads the given \mbox{\hyperlink{classPlot}{Plot}} into the control 
+
+
+
+Implements \mbox{\hyperlink{interfaceIPlotControl_a3204ee77a937b93563c72a8fbaacd957}{IPlot\+Control}}.
+
+\mbox{\Hypertarget{classAvaPlot_ac92b6da1a702e49d1154ab92e71a8af5}\label{classAvaPlot_ac92b6da1a702e49d1154ab92e71a8af5}} 
+\index{AvaPlot@{AvaPlot}!ShowContextMenu@{ShowContextMenu}}
+\index{ShowContextMenu@{ShowContextMenu}!AvaPlot@{AvaPlot}}
+\doxysubsubsection{\texorpdfstring{ShowContextMenu()}{ShowContextMenu()}}
+{\footnotesize\ttfamily void Ava\+Plot.\+Show\+Context\+Menu (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPixel}{Pixel}}}]{position }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Launch the default pop-\/up menu (typically in response to a right-\/click) at the given position in the control 
+
+
+
+Implements \mbox{\hyperlink{interfaceIPlotControl_aa822894e483df742fb376cd3169eefc4}{IPlot\+Control}}.
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{classAvaPlot_a09822ca4f89d6f9a84182a415a97f3a8}\label{classAvaPlot_a09822ca4f89d6f9a84182a415a97f3a8}} 
+\index{AvaPlot@{AvaPlot}!DisplayScale@{DisplayScale}}
+\index{DisplayScale@{DisplayScale}!AvaPlot@{AvaPlot}}
+\doxysubsubsection{\texorpdfstring{DisplayScale}{DisplayScale}}
+{\footnotesize\ttfamily float Ava\+Plot.\+Display\+Scale\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classAvaPlot_aacdff60b314f4e7de55f7284e5d4928a}\label{classAvaPlot_aacdff60b314f4e7de55f7284e5d4928a}} 
+\index{AvaPlot@{AvaPlot}!GRContext@{GRContext}}
+\index{GRContext@{GRContext}!AvaPlot@{AvaPlot}}
+\doxysubsubsection{\texorpdfstring{GRContext}{GRContext}}
+{\footnotesize\ttfamily GRContext? Ava\+Plot.\+GRContext\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{classAvaPlot_a7ba366422cd017dd61d60b0f0994fc7c}\label{classAvaPlot_a7ba366422cd017dd61d60b0f0994fc7c}} 
+\index{AvaPlot@{AvaPlot}!Interaction@{Interaction}}
+\index{Interaction@{Interaction}!AvaPlot@{AvaPlot}}
+\doxysubsubsection{\texorpdfstring{Interaction}{Interaction}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceIPlotInteraction}{IPlot\+Interaction}} Ava\+Plot.\+Interaction\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classAvaPlot_a9ddbfcd5b554cba476de76ffd9912300}\label{classAvaPlot_a9ddbfcd5b554cba476de76ffd9912300}} 
+\index{AvaPlot@{AvaPlot}!Menu@{Menu}}
+\index{Menu@{Menu}!AvaPlot@{AvaPlot}}
+\doxysubsubsection{\texorpdfstring{Menu}{Menu}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceIPlotMenu}{IPlot\+Menu}} Ava\+Plot.\+Menu\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classAvaPlot_a1f220d0d55e6886ae2dfcf8936130067}\label{classAvaPlot_a1f220d0d55e6886ae2dfcf8936130067}} 
+\index{AvaPlot@{AvaPlot}!Plot@{Plot}}
+\index{Plot@{Plot}!AvaPlot@{AvaPlot}}
+\doxysubsubsection{\texorpdfstring{Plot}{Plot}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPlot}{Plot}} Ava\+Plot.\+Plot\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classAvaPlot_a09562bdc046d041428e73e57c6d9c220}\label{classAvaPlot_a09562bdc046d041428e73e57c6d9c220}} 
+\index{AvaPlot@{AvaPlot}!UserInputProcessor@{UserInputProcessor}}
+\index{UserInputProcessor@{UserInputProcessor}!AvaPlot@{AvaPlot}}
+\doxysubsubsection{\texorpdfstring{UserInputProcessor}{UserInputProcessor}}
+{\footnotesize\ttfamily Interactivity.\+User\+Input\+Processor Ava\+Plot.\+User\+Input\+Processor\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5 Controls/\+Scott\+Plot.\+Avalonia/Ava\+Plot.\+cs\end{DoxyCompactItemize}

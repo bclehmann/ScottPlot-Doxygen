@@ -1,0 +1,343 @@
+\doxysection{Scott\+Plot.\+Plottables.\+Crosshair Class Reference}
+\hypertarget{class_scott_plot_1_1_plottables_1_1_crosshair}{}\label{class_scott_plot_1_1_plottables_1_1_crosshair}\index{ScottPlot.Plottables.Crosshair@{ScottPlot.Plottables.Crosshair}}
+Inheritance diagram for Scott\+Plot.\+Plottables.\+Crosshair\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_scott_plot_1_1_plottables_1_1_crosshair}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_crosshair_a9a058efaffef52b64182c8e753253637}{Get\+Axis\+Limits}} ()
+\begin{DoxyCompactList}\small\item\em Return the 2D area (in coordinate space) occupied by the data contained in this plottable. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_crosshair_a614b3645d629ac62497aa4d6cec3da12}{Render}} (Render\+Pack rp)
+\begin{DoxyCompactList}\small\item\em Draw the data from this plottable into the data area defined in the \doxylink{class_scott_plot_1_1_axes}{Axes}. By default the surface is already clipped to the data area, but this can be cleared inside the plottable. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_crosshair_aae62ac5a206f784ce152b9caf210afcc}{Render\+Last}} (Render\+Pack rp)
+\begin{DoxyCompactList}\small\item\em \doxylink{namespace_scott_plot_1_1_plottables}{Plottables} that implement this interface have a second render method that runs after the axes are drawn, allowing graphics to be placed on top of the axes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable}{Scott\+Plot.\+IPlottable}}}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_scott_plot_1_1_i_render_last}{Scott\+Plot.\+IRender\+Last}}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_crosshair_aac1c714845c6d7b601dda23de9f446a9}{Font\+Color}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_horizontal_line}{Horizontal\+Line}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_crosshair_ac8775db21935e5842b00be4e7448bf4b}{Horizontal\+Line}} = new()\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_vertical_line}{Vertical\+Line}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_crosshair_a2687a0861900948dce99a28cfbac1408}{Vertical\+Line}} = new()\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_coordinates}{Coordinates}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_crosshair_ad73bda1beebfa6d232086e6b36997cdd}{Position}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+double \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_crosshair_a155bf5622f7449d77019763569bc2376}{X}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+double \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_crosshair_a2f00964e29d1568ae78b3af37382ef33}{Y}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_crosshair_a517a8c9dbfb705a3fe4b08e3c566a308}{Font\+Size}}\hspace{0.3cm}{\ttfamily  \mbox{[}set\mbox{]}}
+\item 
+bool \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_crosshair_a96757ad77f24159afef7dc21708c0fc0}{Font\+Bold}}\hspace{0.3cm}{\ttfamily  \mbox{[}set\mbox{]}}
+\item 
+string \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_crosshair_ab6612172090afb67833b68748cd6e183}{Font\+Name}}\hspace{0.3cm}{\ttfamily  \mbox{[}set\mbox{]}}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_crosshair_a075836755f35216be668346a6d8a6b01}{Text\+Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}set\mbox{]}}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_crosshair_a123e6259c9afc9a4f0ef02387423cbf9}{Text\+Background\+Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}set\mbox{]}}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_crosshair_a5bd8e69b2efdb4227d3ba3e458fff703}{Line\+Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}set\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_crosshair_a7a3748fcaf266226323ecf6cbefa1644}{Line\+Width}}\hspace{0.3cm}{\ttfamily  \mbox{[}set\mbox{]}}
+\item 
+\mbox{\hyperlink{namespace_scott_plot_a625917eb44cadb4de90991e525db6ab5}{Line\+Pattern}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_crosshair_aa9bc3f36be0d0b0243330b03fd805925}{Line\+Pattern}}\hspace{0.3cm}{\ttfamily  \mbox{[}set\mbox{]}}
+\item 
+\mbox{\hyperlink{class_scott_plot_1_1_marker_style}{Marker\+Style}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_crosshair_ad314ddc0114ee998f84e3e3faa570070}{Marker\+Style}} = new() \{ \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_crosshair_a7a3748fcaf266226323ecf6cbefa1644}{Line\+Width}} = 1 \}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{namespace_scott_plot_aac856b9cf151418c331a7b848724d1f7}{Marker\+Shape}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_crosshair_a5b302518cb59a045b490841429e2c4de}{Marker\+Shape}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_crosshair_ae2ce2dba948e681c24b700592b59c84a}{Marker\+Size}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_crosshair_a747a4d43a20c0ff5bbcf4be7d571bf9d}{Marker\+Fill\+Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_crosshair_aaf0cca593f20414927f5cc023d5739df}{Marker\+Line\+Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_crosshair_aec2c81b8655e4040080a7ec0dc6a152d}{Marker\+Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_crosshair_a9e4509903db7a8d28d0d5850c701e9d6}{Marker\+Line\+Width}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{class_scott_plot_1_1_line_style}{Line\+Style}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_crosshair_adea583e5e561e1ac90b9a2c416e8b9ea}{Line\+Style}} = new()\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+bool \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_crosshair_a677d1246f1622bc0acbfcd6646e5e5d8}{Enable\+Autoscale}} = false\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+bool \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_crosshair_a7619e51bb913c54fc6ab42a897f614d0}{Is\+Visible}} = true\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Toggles whether this plottable is shown and contributes to the automatic axis limit detection. The calling method will check this variable (it does not need to be checked inside the Render method). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{interface_scott_plot_1_1_i_axes}{IAxes}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_crosshair_a4fa8d4227874d5f0edc721eec71727b6}{Axes}} = new \mbox{\hyperlink{class_scott_plot_1_1_axes}{Axes}}()\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em This object performs coordinate/pixel translation at render time based on the latest data area. It stores the axes to use for this plottable and also the data area (in pixels) updated just before each render. If this object is null it will be constructed using the default X and Y axes at render time. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_enumerable}{IEnumerable}}$<$ \mbox{\hyperlink{class_scott_plot_1_1_legend_item}{Legend\+Item}} $>$ \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_crosshair_aadb4db5827bb9793c6f4a58d17c19046}{Legend\+Items}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Items which will appear in the legend. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable}{Scott\+Plot.\+IPlottable}}}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{interface_scott_plot_1_1_i_has_marker}{Scott\+Plot.\+IHas\+Marker}}}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_crosshair_a9a058efaffef52b64182c8e753253637}\index{ScottPlot.Plottables.Crosshair@{ScottPlot.Plottables.Crosshair}!GetAxisLimits@{GetAxisLimits}}
+\index{GetAxisLimits@{GetAxisLimits}!ScottPlot.Plottables.Crosshair@{ScottPlot.Plottables.Crosshair}}
+\doxysubsubsection{\texorpdfstring{GetAxisLimits()}{GetAxisLimits()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_crosshair_a9a058efaffef52b64182c8e753253637} 
+\mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}} Scott\+Plot.\+Plottables.\+Crosshair.\+Get\+Axis\+Limits (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Return the 2D area (in coordinate space) occupied by the data contained in this plottable. 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable_a2e455cf76f9e8bc3187900b1a90487c3}{Scott\+Plot.\+IPlottable}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_crosshair_a614b3645d629ac62497aa4d6cec3da12}\index{ScottPlot.Plottables.Crosshair@{ScottPlot.Plottables.Crosshair}!Render@{Render}}
+\index{Render@{Render}!ScottPlot.Plottables.Crosshair@{ScottPlot.Plottables.Crosshair}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_crosshair_a614b3645d629ac62497aa4d6cec3da12} 
+virtual void Scott\+Plot.\+Plottables.\+Crosshair.\+Render (\begin{DoxyParamCaption}\item[{Render\+Pack}]{rp}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Draw the data from this plottable into the data area defined in the \doxylink{class_scott_plot_1_1_axes}{Axes}. By default the surface is already clipped to the data area, but this can be cleared inside the plottable. 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable_a11d2487f1d7628e019a09748d876c289}{Scott\+Plot.\+IPlottable}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_crosshair_aae62ac5a206f784ce152b9caf210afcc}\index{ScottPlot.Plottables.Crosshair@{ScottPlot.Plottables.Crosshair}!RenderLast@{RenderLast}}
+\index{RenderLast@{RenderLast}!ScottPlot.Plottables.Crosshair@{ScottPlot.Plottables.Crosshair}}
+\doxysubsubsection{\texorpdfstring{RenderLast()}{RenderLast()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_crosshair_aae62ac5a206f784ce152b9caf210afcc} 
+void Scott\+Plot.\+Plottables.\+Crosshair.\+Render\+Last (\begin{DoxyParamCaption}\item[{Render\+Pack}]{rp}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxylink{namespace_scott_plot_1_1_plottables}{Plottables} that implement this interface have a second render method that runs after the axes are drawn, allowing graphics to be placed on top of the axes. 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_render_last_a769cbb9129f1e1929981857cfb8bfef0}{Scott\+Plot.\+IRender\+Last}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_crosshair_aac1c714845c6d7b601dda23de9f446a9}\index{ScottPlot.Plottables.Crosshair@{ScottPlot.Plottables.Crosshair}!FontColor@{FontColor}}
+\index{FontColor@{FontColor}!ScottPlot.Plottables.Crosshair@{ScottPlot.Plottables.Crosshair}}
+\doxysubsubsection{\texorpdfstring{FontColor}{FontColor}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_crosshair_aac1c714845c6d7b601dda23de9f446a9} 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} Scott\+Plot.\+Plottables.\+Crosshair.\+Font\+Color}
+
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_crosshair_a4fa8d4227874d5f0edc721eec71727b6}\index{ScottPlot.Plottables.Crosshair@{ScottPlot.Plottables.Crosshair}!Axes@{Axes}}
+\index{Axes@{Axes}!ScottPlot.Plottables.Crosshair@{ScottPlot.Plottables.Crosshair}}
+\doxysubsubsection{\texorpdfstring{Axes}{Axes}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_crosshair_a4fa8d4227874d5f0edc721eec71727b6} 
+\mbox{\hyperlink{interface_scott_plot_1_1_i_axes}{IAxes}} Scott\+Plot.\+Plottables.\+Crosshair.\+Axes = new \mbox{\hyperlink{class_scott_plot_1_1_axes}{Axes}}()\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+This object performs coordinate/pixel translation at render time based on the latest data area. It stores the axes to use for this plottable and also the data area (in pixels) updated just before each render. If this object is null it will be constructed using the default X and Y axes at render time. 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable_aa68bc5153a673a7cd4a68f93da377d0a}{Scott\+Plot.\+IPlottable}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_crosshair_a677d1246f1622bc0acbfcd6646e5e5d8}\index{ScottPlot.Plottables.Crosshair@{ScottPlot.Plottables.Crosshair}!EnableAutoscale@{EnableAutoscale}}
+\index{EnableAutoscale@{EnableAutoscale}!ScottPlot.Plottables.Crosshair@{ScottPlot.Plottables.Crosshair}}
+\doxysubsubsection{\texorpdfstring{EnableAutoscale}{EnableAutoscale}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_crosshair_a677d1246f1622bc0acbfcd6646e5e5d8} 
+bool Scott\+Plot.\+Plottables.\+Crosshair.\+Enable\+Autoscale = false\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_crosshair_a96757ad77f24159afef7dc21708c0fc0}\index{ScottPlot.Plottables.Crosshair@{ScottPlot.Plottables.Crosshair}!FontBold@{FontBold}}
+\index{FontBold@{FontBold}!ScottPlot.Plottables.Crosshair@{ScottPlot.Plottables.Crosshair}}
+\doxysubsubsection{\texorpdfstring{FontBold}{FontBold}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_crosshair_a96757ad77f24159afef7dc21708c0fc0} 
+bool Scott\+Plot.\+Plottables.\+Crosshair.\+Font\+Bold\hspace{0.3cm}{\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_crosshair_ab6612172090afb67833b68748cd6e183}\index{ScottPlot.Plottables.Crosshair@{ScottPlot.Plottables.Crosshair}!FontName@{FontName}}
+\index{FontName@{FontName}!ScottPlot.Plottables.Crosshair@{ScottPlot.Plottables.Crosshair}}
+\doxysubsubsection{\texorpdfstring{FontName}{FontName}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_crosshair_ab6612172090afb67833b68748cd6e183} 
+string Scott\+Plot.\+Plottables.\+Crosshair.\+Font\+Name\hspace{0.3cm}{\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_crosshair_a517a8c9dbfb705a3fe4b08e3c566a308}\index{ScottPlot.Plottables.Crosshair@{ScottPlot.Plottables.Crosshair}!FontSize@{FontSize}}
+\index{FontSize@{FontSize}!ScottPlot.Plottables.Crosshair@{ScottPlot.Plottables.Crosshair}}
+\doxysubsubsection{\texorpdfstring{FontSize}{FontSize}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_crosshair_a517a8c9dbfb705a3fe4b08e3c566a308} 
+float Scott\+Plot.\+Plottables.\+Crosshair.\+Font\+Size\hspace{0.3cm}{\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_crosshair_ac8775db21935e5842b00be4e7448bf4b}\index{ScottPlot.Plottables.Crosshair@{ScottPlot.Plottables.Crosshair}!HorizontalLine@{HorizontalLine}}
+\index{HorizontalLine@{HorizontalLine}!ScottPlot.Plottables.Crosshair@{ScottPlot.Plottables.Crosshair}}
+\doxysubsubsection{\texorpdfstring{HorizontalLine}{HorizontalLine}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_crosshair_ac8775db21935e5842b00be4e7448bf4b} 
+\mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_horizontal_line}{Horizontal\+Line}} Scott\+Plot.\+Plottables.\+Crosshair.\+Horizontal\+Line = new()\hspace{0.3cm}{\ttfamily [get]}}
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_crosshair_a7619e51bb913c54fc6ab42a897f614d0}\index{ScottPlot.Plottables.Crosshair@{ScottPlot.Plottables.Crosshair}!IsVisible@{IsVisible}}
+\index{IsVisible@{IsVisible}!ScottPlot.Plottables.Crosshair@{ScottPlot.Plottables.Crosshair}}
+\doxysubsubsection{\texorpdfstring{IsVisible}{IsVisible}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_crosshair_a7619e51bb913c54fc6ab42a897f614d0} 
+bool Scott\+Plot.\+Plottables.\+Crosshair.\+Is\+Visible = true\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Toggles whether this plottable is shown and contributes to the automatic axis limit detection. The calling method will check this variable (it does not need to be checked inside the Render method). 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable_abbe75ba55a332d695313ccb5dc780923}{Scott\+Plot.\+IPlottable}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_crosshair_aadb4db5827bb9793c6f4a58d17c19046}\index{ScottPlot.Plottables.Crosshair@{ScottPlot.Plottables.Crosshair}!LegendItems@{LegendItems}}
+\index{LegendItems@{LegendItems}!ScottPlot.Plottables.Crosshair@{ScottPlot.Plottables.Crosshair}}
+\doxysubsubsection{\texorpdfstring{LegendItems}{LegendItems}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_crosshair_aadb4db5827bb9793c6f4a58d17c19046} 
+\mbox{\hyperlink{class_i_enumerable}{IEnumerable}}$<$\mbox{\hyperlink{class_scott_plot_1_1_legend_item}{Legend\+Item}}$>$ Scott\+Plot.\+Plottables.\+Crosshair.\+Legend\+Items\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Items which will appear in the legend. 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable_a4565f96a253f832bd9aa8033c99eff75}{Scott\+Plot.\+IPlottable}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_crosshair_a5bd8e69b2efdb4227d3ba3e458fff703}\index{ScottPlot.Plottables.Crosshair@{ScottPlot.Plottables.Crosshair}!LineColor@{LineColor}}
+\index{LineColor@{LineColor}!ScottPlot.Plottables.Crosshair@{ScottPlot.Plottables.Crosshair}}
+\doxysubsubsection{\texorpdfstring{LineColor}{LineColor}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_crosshair_a5bd8e69b2efdb4227d3ba3e458fff703} 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} Scott\+Plot.\+Plottables.\+Crosshair.\+Line\+Color\hspace{0.3cm}{\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_crosshair_aa9bc3f36be0d0b0243330b03fd805925}\index{ScottPlot.Plottables.Crosshair@{ScottPlot.Plottables.Crosshair}!LinePattern@{LinePattern}}
+\index{LinePattern@{LinePattern}!ScottPlot.Plottables.Crosshair@{ScottPlot.Plottables.Crosshair}}
+\doxysubsubsection{\texorpdfstring{LinePattern}{LinePattern}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_crosshair_aa9bc3f36be0d0b0243330b03fd805925} 
+\mbox{\hyperlink{namespace_scott_plot_a625917eb44cadb4de90991e525db6ab5}{Line\+Pattern}} Scott\+Plot.\+Plottables.\+Crosshair.\+Line\+Pattern\hspace{0.3cm}{\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_crosshair_adea583e5e561e1ac90b9a2c416e8b9ea}\index{ScottPlot.Plottables.Crosshair@{ScottPlot.Plottables.Crosshair}!LineStyle@{LineStyle}}
+\index{LineStyle@{LineStyle}!ScottPlot.Plottables.Crosshair@{ScottPlot.Plottables.Crosshair}}
+\doxysubsubsection{\texorpdfstring{LineStyle}{LineStyle}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_crosshair_adea583e5e561e1ac90b9a2c416e8b9ea} 
+\mbox{\hyperlink{class_scott_plot_1_1_line_style}{Line\+Style}} Scott\+Plot.\+Plottables.\+Crosshair.\+Line\+Style = new()\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_crosshair_a7a3748fcaf266226323ecf6cbefa1644}\index{ScottPlot.Plottables.Crosshair@{ScottPlot.Plottables.Crosshair}!LineWidth@{LineWidth}}
+\index{LineWidth@{LineWidth}!ScottPlot.Plottables.Crosshair@{ScottPlot.Plottables.Crosshair}}
+\doxysubsubsection{\texorpdfstring{LineWidth}{LineWidth}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_crosshair_a7a3748fcaf266226323ecf6cbefa1644} 
+float Scott\+Plot.\+Plottables.\+Crosshair.\+Line\+Width\hspace{0.3cm}{\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_crosshair_aec2c81b8655e4040080a7ec0dc6a152d}\index{ScottPlot.Plottables.Crosshair@{ScottPlot.Plottables.Crosshair}!MarkerColor@{MarkerColor}}
+\index{MarkerColor@{MarkerColor}!ScottPlot.Plottables.Crosshair@{ScottPlot.Plottables.Crosshair}}
+\doxysubsubsection{\texorpdfstring{MarkerColor}{MarkerColor}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_crosshair_aec2c81b8655e4040080a7ec0dc6a152d} 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} Scott\+Plot.\+Plottables.\+Crosshair.\+Marker\+Color\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_has_marker_a3e1a1b5c22ff67edc1aee2de18a06ea4}{Scott\+Plot.\+IHas\+Marker}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_crosshair_a747a4d43a20c0ff5bbcf4be7d571bf9d}\index{ScottPlot.Plottables.Crosshair@{ScottPlot.Plottables.Crosshair}!MarkerFillColor@{MarkerFillColor}}
+\index{MarkerFillColor@{MarkerFillColor}!ScottPlot.Plottables.Crosshair@{ScottPlot.Plottables.Crosshair}}
+\doxysubsubsection{\texorpdfstring{MarkerFillColor}{MarkerFillColor}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_crosshair_a747a4d43a20c0ff5bbcf4be7d571bf9d} 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} Scott\+Plot.\+Plottables.\+Crosshair.\+Marker\+Fill\+Color\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_has_marker_a6f7de20ca67594f0f69b2edaaa4995fe}{Scott\+Plot.\+IHas\+Marker}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_crosshair_aaf0cca593f20414927f5cc023d5739df}\index{ScottPlot.Plottables.Crosshair@{ScottPlot.Plottables.Crosshair}!MarkerLineColor@{MarkerLineColor}}
+\index{MarkerLineColor@{MarkerLineColor}!ScottPlot.Plottables.Crosshair@{ScottPlot.Plottables.Crosshair}}
+\doxysubsubsection{\texorpdfstring{MarkerLineColor}{MarkerLineColor}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_crosshair_aaf0cca593f20414927f5cc023d5739df} 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} Scott\+Plot.\+Plottables.\+Crosshair.\+Marker\+Line\+Color\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_has_marker_afde846e67ecac2739669b1b63f17fbce}{Scott\+Plot.\+IHas\+Marker}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_crosshair_a9e4509903db7a8d28d0d5850c701e9d6}\index{ScottPlot.Plottables.Crosshair@{ScottPlot.Plottables.Crosshair}!MarkerLineWidth@{MarkerLineWidth}}
+\index{MarkerLineWidth@{MarkerLineWidth}!ScottPlot.Plottables.Crosshair@{ScottPlot.Plottables.Crosshair}}
+\doxysubsubsection{\texorpdfstring{MarkerLineWidth}{MarkerLineWidth}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_crosshair_a9e4509903db7a8d28d0d5850c701e9d6} 
+float Scott\+Plot.\+Plottables.\+Crosshair.\+Marker\+Line\+Width\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_has_marker_a38d9e4be5f01c0cda2730d7ad9fa90ed}{Scott\+Plot.\+IHas\+Marker}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_crosshair_a5b302518cb59a045b490841429e2c4de}\index{ScottPlot.Plottables.Crosshair@{ScottPlot.Plottables.Crosshair}!MarkerShape@{MarkerShape}}
+\index{MarkerShape@{MarkerShape}!ScottPlot.Plottables.Crosshair@{ScottPlot.Plottables.Crosshair}}
+\doxysubsubsection{\texorpdfstring{MarkerShape}{MarkerShape}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_crosshair_a5b302518cb59a045b490841429e2c4de} 
+\mbox{\hyperlink{namespace_scott_plot_aac856b9cf151418c331a7b848724d1f7}{Marker\+Shape}} Scott\+Plot.\+Plottables.\+Crosshair.\+Marker\+Shape\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_has_marker_a17093f6641893022d052dc40e90998f9}{Scott\+Plot.\+IHas\+Marker}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_crosshair_ae2ce2dba948e681c24b700592b59c84a}\index{ScottPlot.Plottables.Crosshair@{ScottPlot.Plottables.Crosshair}!MarkerSize@{MarkerSize}}
+\index{MarkerSize@{MarkerSize}!ScottPlot.Plottables.Crosshair@{ScottPlot.Plottables.Crosshair}}
+\doxysubsubsection{\texorpdfstring{MarkerSize}{MarkerSize}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_crosshair_ae2ce2dba948e681c24b700592b59c84a} 
+float Scott\+Plot.\+Plottables.\+Crosshair.\+Marker\+Size\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_has_marker_a410d2ca405f2b5a7acd50ddb873b614b}{Scott\+Plot.\+IHas\+Marker}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_crosshair_ad314ddc0114ee998f84e3e3faa570070}\index{ScottPlot.Plottables.Crosshair@{ScottPlot.Plottables.Crosshair}!MarkerStyle@{MarkerStyle}}
+\index{MarkerStyle@{MarkerStyle}!ScottPlot.Plottables.Crosshair@{ScottPlot.Plottables.Crosshair}}
+\doxysubsubsection{\texorpdfstring{MarkerStyle}{MarkerStyle}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_crosshair_ad314ddc0114ee998f84e3e3faa570070} 
+\mbox{\hyperlink{class_scott_plot_1_1_marker_style}{Marker\+Style}} Scott\+Plot.\+Plottables.\+Crosshair.\+Marker\+Style = new() \{ \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_crosshair_a7a3748fcaf266226323ecf6cbefa1644}{Line\+Width}} = 1 \}\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_has_marker_a0c763a0a433beea9ce112c14ac481084}{Scott\+Plot.\+IHas\+Marker}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_crosshair_ad73bda1beebfa6d232086e6b36997cdd}\index{ScottPlot.Plottables.Crosshair@{ScottPlot.Plottables.Crosshair}!Position@{Position}}
+\index{Position@{Position}!ScottPlot.Plottables.Crosshair@{ScottPlot.Plottables.Crosshair}}
+\doxysubsubsection{\texorpdfstring{Position}{Position}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_crosshair_ad73bda1beebfa6d232086e6b36997cdd} 
+\mbox{\hyperlink{struct_scott_plot_1_1_coordinates}{Coordinates}} Scott\+Plot.\+Plottables.\+Crosshair.\+Position\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_crosshair_a123e6259c9afc9a4f0ef02387423cbf9}\index{ScottPlot.Plottables.Crosshair@{ScottPlot.Plottables.Crosshair}!TextBackgroundColor@{TextBackgroundColor}}
+\index{TextBackgroundColor@{TextBackgroundColor}!ScottPlot.Plottables.Crosshair@{ScottPlot.Plottables.Crosshair}}
+\doxysubsubsection{\texorpdfstring{TextBackgroundColor}{TextBackgroundColor}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_crosshair_a123e6259c9afc9a4f0ef02387423cbf9} 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} Scott\+Plot.\+Plottables.\+Crosshair.\+Text\+Background\+Color\hspace{0.3cm}{\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_crosshair_a075836755f35216be668346a6d8a6b01}\index{ScottPlot.Plottables.Crosshair@{ScottPlot.Plottables.Crosshair}!TextColor@{TextColor}}
+\index{TextColor@{TextColor}!ScottPlot.Plottables.Crosshair@{ScottPlot.Plottables.Crosshair}}
+\doxysubsubsection{\texorpdfstring{TextColor}{TextColor}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_crosshair_a075836755f35216be668346a6d8a6b01} 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} Scott\+Plot.\+Plottables.\+Crosshair.\+Text\+Color\hspace{0.3cm}{\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_crosshair_a2687a0861900948dce99a28cfbac1408}\index{ScottPlot.Plottables.Crosshair@{ScottPlot.Plottables.Crosshair}!VerticalLine@{VerticalLine}}
+\index{VerticalLine@{VerticalLine}!ScottPlot.Plottables.Crosshair@{ScottPlot.Plottables.Crosshair}}
+\doxysubsubsection{\texorpdfstring{VerticalLine}{VerticalLine}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_crosshair_a2687a0861900948dce99a28cfbac1408} 
+\mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_vertical_line}{Vertical\+Line}} Scott\+Plot.\+Plottables.\+Crosshair.\+Vertical\+Line = new()\hspace{0.3cm}{\ttfamily [get]}}
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_crosshair_a155bf5622f7449d77019763569bc2376}\index{ScottPlot.Plottables.Crosshair@{ScottPlot.Plottables.Crosshair}!X@{X}}
+\index{X@{X}!ScottPlot.Plottables.Crosshair@{ScottPlot.Plottables.Crosshair}}
+\doxysubsubsection{\texorpdfstring{X}{X}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_crosshair_a155bf5622f7449d77019763569bc2376} 
+double Scott\+Plot.\+Plottables.\+Crosshair.\+X\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_crosshair_a2f00964e29d1568ae78b3af37382ef33}\index{ScottPlot.Plottables.Crosshair@{ScottPlot.Plottables.Crosshair}!Y@{Y}}
+\index{Y@{Y}!ScottPlot.Plottables.Crosshair@{ScottPlot.Plottables.Crosshair}}
+\doxysubsubsection{\texorpdfstring{Y}{Y}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_crosshair_a2f00964e29d1568ae78b3af37382ef33} 
+double Scott\+Plot.\+Plottables.\+Crosshair.\+Y\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Plottables/Crosshair.\+cs\end{DoxyCompactItemize}

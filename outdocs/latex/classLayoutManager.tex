@@ -1,0 +1,96 @@
+\hypertarget{classLayoutManager}{}\doxysection{Layout\+Manager Class Reference}
+\label{classLayoutManager}\index{LayoutManager@{LayoutManager}}
+
+
+A collection of methods for making common adjustments to plot layouts  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classLayoutManager_aae9039541f2e8b02d73ccfc520467bb3}{Layout\+Manager}} (\mbox{\hyperlink{classPlot}{Plot}} plot)
+\item 
+void \mbox{\hyperlink{classLayoutManager_a36315eb0df6cd6ca4cb910ea946cedde}{Default}} ()
+\begin{DoxyCompactList}\small\item\em Automatically resize the layout on each render to achieve the best fit \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classLayoutManager_a09cd5f270fe6b8570b9bc50f2f471fa0}{Fixed}} (\mbox{\hyperlink{structPixelRect}{Pixel\+Rect}} data\+Rect)
+\begin{DoxyCompactList}\small\item\em Apply a fixed layout using the given rectangle to define the data area \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classLayoutManager_a2448679547d600831d7c01b12e6a1fec}{Fixed}} (\mbox{\hyperlink{structPixelPadding}{Pixel\+Padding}} padding)
+\begin{DoxyCompactList}\small\item\em Apply a fixed layout using the given padding to define space between the data area and the edge of the figure \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classLayoutManager_ac0fac5f4a014accea256b5507e69ced6}{Frameless}} ()
+\begin{DoxyCompactList}\small\item\em Disable visibility of all axes and titles so the data area fills the entire figure \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interfaceILayoutEngine}{ILayout\+Engine}} \mbox{\hyperlink{classLayoutManager_af2cdf91a95bbd4876baf9bd971932575}{Layout\+Engine}} = new \mbox{\hyperlink{classAutomatic}{Automatic}}()\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A collection of methods for making common adjustments to plot layouts 
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classLayoutManager_aae9039541f2e8b02d73ccfc520467bb3}\label{classLayoutManager_aae9039541f2e8b02d73ccfc520467bb3}} 
+\index{LayoutManager@{LayoutManager}!LayoutManager@{LayoutManager}}
+\index{LayoutManager@{LayoutManager}!LayoutManager@{LayoutManager}}
+\doxysubsubsection{\texorpdfstring{LayoutManager()}{LayoutManager()}}
+{\footnotesize\ttfamily Layout\+Manager.\+Layout\+Manager (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPlot}{Plot}}}]{plot }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classLayoutManager_a36315eb0df6cd6ca4cb910ea946cedde}\label{classLayoutManager_a36315eb0df6cd6ca4cb910ea946cedde}} 
+\index{LayoutManager@{LayoutManager}!Default@{Default}}
+\index{Default@{Default}!LayoutManager@{LayoutManager}}
+\doxysubsubsection{\texorpdfstring{Default()}{Default()}}
+{\footnotesize\ttfamily void Layout\+Manager.\+Default (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Automatically resize the layout on each render to achieve the best fit 
+
+\mbox{\Hypertarget{classLayoutManager_a2448679547d600831d7c01b12e6a1fec}\label{classLayoutManager_a2448679547d600831d7c01b12e6a1fec}} 
+\index{LayoutManager@{LayoutManager}!Fixed@{Fixed}}
+\index{Fixed@{Fixed}!LayoutManager@{LayoutManager}}
+\doxysubsubsection{\texorpdfstring{Fixed()}{Fixed()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Layout\+Manager.\+Fixed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPixelPadding}{Pixel\+Padding}}}]{padding }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Apply a fixed layout using the given padding to define space between the data area and the edge of the figure 
+
+\mbox{\Hypertarget{classLayoutManager_a09cd5f270fe6b8570b9bc50f2f471fa0}\label{classLayoutManager_a09cd5f270fe6b8570b9bc50f2f471fa0}} 
+\index{LayoutManager@{LayoutManager}!Fixed@{Fixed}}
+\index{Fixed@{Fixed}!LayoutManager@{LayoutManager}}
+\doxysubsubsection{\texorpdfstring{Fixed()}{Fixed()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Layout\+Manager.\+Fixed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPixelRect}{Pixel\+Rect}}}]{data\+Rect }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Apply a fixed layout using the given rectangle to define the data area 
+
+\mbox{\Hypertarget{classLayoutManager_ac0fac5f4a014accea256b5507e69ced6}\label{classLayoutManager_ac0fac5f4a014accea256b5507e69ced6}} 
+\index{LayoutManager@{LayoutManager}!Frameless@{Frameless}}
+\index{Frameless@{Frameless}!LayoutManager@{LayoutManager}}
+\doxysubsubsection{\texorpdfstring{Frameless()}{Frameless()}}
+{\footnotesize\ttfamily void Layout\+Manager.\+Frameless (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Disable visibility of all axes and titles so the data area fills the entire figure 
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{classLayoutManager_af2cdf91a95bbd4876baf9bd971932575}\label{classLayoutManager_af2cdf91a95bbd4876baf9bd971932575}} 
+\index{LayoutManager@{LayoutManager}!LayoutEngine@{LayoutEngine}}
+\index{LayoutEngine@{LayoutEngine}!LayoutManager@{LayoutManager}}
+\doxysubsubsection{\texorpdfstring{LayoutEngine}{LayoutEngine}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceILayoutEngine}{ILayout\+Engine}} Layout\+Manager.\+Layout\+Engine = new \mbox{\hyperlink{classAutomatic}{Automatic}}()\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/Layout\+Manager.\+cs\end{DoxyCompactItemize}

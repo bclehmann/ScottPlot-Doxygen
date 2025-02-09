@@ -1,0 +1,44 @@
+\doxysection{Scott\+Plot.\+Tick\+Generators.\+IDate\+Time\+Tick\+Generator Interface Reference}
+\hypertarget{interface_scott_plot_1_1_tick_generators_1_1_i_date_time_tick_generator}{}\label{interface_scott_plot_1_1_tick_generators_1_1_i_date_time_tick_generator}\index{ScottPlot.TickGenerators.IDateTimeTickGenerator@{ScottPlot.TickGenerators.IDateTimeTickGenerator}}
+Inheritance diagram for Scott\+Plot.\+Tick\+Generators.\+IDate\+Time\+Tick\+Generator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.818792cm]{interface_scott_plot_1_1_tick_generators_1_1_i_date_time_tick_generator}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_i_enumerable}{IEnumerable}}$<$ double $>$ \mbox{\hyperlink{interface_scott_plot_1_1_tick_generators_1_1_i_date_time_tick_generator_aaa07f5a0d793da4db98b8e3272efa8ca}{Convert\+To\+Coordinate\+Space}} (\mbox{\hyperlink{class_i_enumerable}{IEnumerable}}$<$ Date\+Time $>$ dates)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_scott_plot_1_1_i_tick_generator}{Scott\+Plot.\+ITick\+Generator}}}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{interface_scott_plot_1_1_i_tick_generator_a370ee9276ff5e75c8831b2709e852871}{Regenerate}} (\mbox{\hyperlink{namespace_scott_plot_a4f8afc1393f89ce60e775705cbf134d1}{Coordinate\+Range}} range, \mbox{\hyperlink{namespace_scott_plot_a33d0346dfdd3d1d7cefc8d769ca98fcc}{Edge}} edge, \mbox{\hyperlink{struct_scott_plot_1_1_pixel_length}{Pixel\+Length}} size, SKPaint paint, \mbox{\hyperlink{class_scott_plot_1_1_label_style}{Label\+Style}} label\+Style)
+\begin{DoxyCompactList}\small\item\em Generate ticks based on the current settings and store the result in \doxylink{interface_scott_plot_1_1_i_tick_generator_a18133091b5172e41c805252f94198466}{Ticks} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{interface_scott_plot_1_1_i_tick_generator}{Scott\+Plot.\+ITick\+Generator}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_tick}{Tick}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{interface_scott_plot_1_1_i_tick_generator_a18133091b5172e41c805252f94198466}{Ticks}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Ticks to display the next time the axis is rendered. This array and its contents should not be modified directly. Call \doxylink{interface_scott_plot_1_1_i_tick_generator_a370ee9276ff5e75c8831b2709e852871}{Regenerate()} to update this array. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{interface_scott_plot_1_1_i_tick_generator_aa40e7d42d15c23601bd6bd569619eff2}{Max\+Tick\+Count}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Do not generate more than this number of ticks. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_scott_plot_1_1_tick_generators_1_1_i_date_time_tick_generator_aaa07f5a0d793da4db98b8e3272efa8ca}\index{ScottPlot.TickGenerators.IDateTimeTickGenerator@{ScottPlot.TickGenerators.IDateTimeTickGenerator}!ConvertToCoordinateSpace@{ConvertToCoordinateSpace}}
+\index{ConvertToCoordinateSpace@{ConvertToCoordinateSpace}!ScottPlot.TickGenerators.IDateTimeTickGenerator@{ScottPlot.TickGenerators.IDateTimeTickGenerator}}
+\doxysubsubsection{\texorpdfstring{ConvertToCoordinateSpace()}{ConvertToCoordinateSpace()}}
+{\footnotesize\ttfamily \label{interface_scott_plot_1_1_tick_generators_1_1_i_date_time_tick_generator_aaa07f5a0d793da4db98b8e3272efa8ca} 
+\mbox{\hyperlink{class_i_enumerable}{IEnumerable}}$<$ double $>$ Scott\+Plot.\+Tick\+Generators.\+IDate\+Time\+Tick\+Generator.\+Convert\+To\+Coordinate\+Space (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_i_enumerable}{IEnumerable}}$<$ Date\+Time $>$}]{dates}{}\end{DoxyParamCaption})}
+
+
+
+Implemented in \mbox{\hyperlink{class_scott_plot_1_1_tick_generators_1_1_date_time_automatic_a69e8584e46c71d2dfcf5db18a7c10b6f}{Scott\+Plot.\+Tick\+Generators.\+Date\+Time\+Automatic}}, and \mbox{\hyperlink{class_scott_plot_1_1_tick_generators_1_1_date_time_fixed_interval_ac56fbe369ed2a0490ec9e89146cd3a67}{Scott\+Plot.\+Tick\+Generators.\+Date\+Time\+Fixed\+Interval}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Tick\+Generators/IDate\+Time\+Tick\+Generator.\+cs\end{DoxyCompactItemize}

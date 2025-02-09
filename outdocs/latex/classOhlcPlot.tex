@@ -1,0 +1,131 @@
+\hypertarget{classOhlcPlot}{}\doxysection{Ohlc\+Plot Class Reference}
+\label{classOhlcPlot}\index{OhlcPlot@{OhlcPlot}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} \mbox{\hyperlink{classOhlcPlot_a490de94da79d0ff95d5bfd7b4c20be98}{Get\+Axis\+Limits}} ()
+\item 
+virtual void \mbox{\hyperlink{classOhlcPlot_a0eacac20b666266e166b7a7308ed82b9}{Render}} (\mbox{\hyperlink{classRenderPack}{Render\+Pack}} rp)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{classOhlcPlot_a0d3413477fc4c82e949804d632da5068}{Symbol\+Width}} = .\+8
+\begin{DoxyCompactList}\small\item\em Fractional width of the \mbox{\hyperlink{structOHLC}{OHLC}} symbol relative to its time span \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interfaceIOHLCSource}{IOHLCSource}} \mbox{\hyperlink{classOhlcPlot_a51a071d6ba154970fc3acf6410dca9ff}{data}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+bool \mbox{\hyperlink{classOhlcPlot_a137adf67a5fe666a237405733036febf}{Is\+Visible}} = true\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{interfaceIAxes}{IAxes}} \mbox{\hyperlink{classOhlcPlot_ae815f714ba461c3af6234d3acb09dfa9}{Axes}} = new \mbox{\hyperlink{classAxes}{Axes}}()\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+bool \mbox{\hyperlink{classOhlcPlot_ab26a0999e6da8d4e093bbaf24224abad}{Sequential}} = false\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em X position of each symbol is sourced from the \mbox{\hyperlink{structOHLC}{OHLC}}\textquotesingle{}s Date\+Time by default. If this option is enabled, X position will be an ascending integers starting at 0 with no gaps. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classLineStyle}{Line\+Style}} \mbox{\hyperlink{classOhlcPlot_a55b4a053fcf9b3208a670d624eed75a4}{Rising\+Style}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{classLineStyle}{Line\+Style}} \mbox{\hyperlink{classOhlcPlot_a495c2fad7544c4ca1985db5147e7c58b}{Falling\+Style}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$ \mbox{\hyperlink{classLegendItem}{Legend\+Item}} $>$ \mbox{\hyperlink{classOhlcPlot_a5a8985029cb0a22492fc48cac687f540}{Legend\+Items}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classOhlcPlot_a490de94da79d0ff95d5bfd7b4c20be98}\label{classOhlcPlot_a490de94da79d0ff95d5bfd7b4c20be98}} 
+\index{OhlcPlot@{OhlcPlot}!GetAxisLimits@{GetAxisLimits}}
+\index{GetAxisLimits@{GetAxisLimits}!OhlcPlot@{OhlcPlot}}
+\doxysubsubsection{\texorpdfstring{GetAxisLimits()}{GetAxisLimits()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} Ohlc\+Plot.\+Get\+Axis\+Limits (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classOhlcPlot_a0eacac20b666266e166b7a7308ed82b9}\label{classOhlcPlot_a0eacac20b666266e166b7a7308ed82b9}} 
+\index{OhlcPlot@{OhlcPlot}!Render@{Render}}
+\index{Render@{Render}!OhlcPlot@{OhlcPlot}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily virtual void Ohlc\+Plot.\+Render (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classRenderPack}{Render\+Pack}}}]{rp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classOhlcPlot_a0d3413477fc4c82e949804d632da5068}\label{classOhlcPlot_a0d3413477fc4c82e949804d632da5068}} 
+\index{OhlcPlot@{OhlcPlot}!SymbolWidth@{SymbolWidth}}
+\index{SymbolWidth@{SymbolWidth}!OhlcPlot@{OhlcPlot}}
+\doxysubsubsection{\texorpdfstring{SymbolWidth}{SymbolWidth}}
+{\footnotesize\ttfamily double Ohlc\+Plot.\+Symbol\+Width = .\+8}
+
+
+
+Fractional width of the \mbox{\hyperlink{structOHLC}{OHLC}} symbol relative to its time span 
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{classOhlcPlot_ae815f714ba461c3af6234d3acb09dfa9}\label{classOhlcPlot_ae815f714ba461c3af6234d3acb09dfa9}} 
+\index{OhlcPlot@{OhlcPlot}!Axes@{Axes}}
+\index{Axes@{Axes}!OhlcPlot@{OhlcPlot}}
+\doxysubsubsection{\texorpdfstring{Axes}{Axes}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceIAxes}{IAxes}} Ohlc\+Plot.\+Axes = new \mbox{\hyperlink{classAxes}{Axes}}()\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classOhlcPlot_a51a071d6ba154970fc3acf6410dca9ff}\label{classOhlcPlot_a51a071d6ba154970fc3acf6410dca9ff}} 
+\index{OhlcPlot@{OhlcPlot}!data@{data}}
+\index{data@{data}!OhlcPlot@{OhlcPlot}}
+\doxysubsubsection{\texorpdfstring{data}{data}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceIOHLCSource}{IOHLCSource}} Ohlc\+Plot.\+data\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classOhlcPlot_a495c2fad7544c4ca1985db5147e7c58b}\label{classOhlcPlot_a495c2fad7544c4ca1985db5147e7c58b}} 
+\index{OhlcPlot@{OhlcPlot}!FallingStyle@{FallingStyle}}
+\index{FallingStyle@{FallingStyle}!OhlcPlot@{OhlcPlot}}
+\doxysubsubsection{\texorpdfstring{FallingStyle}{FallingStyle}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classLineStyle}{Line\+Style}} Ohlc\+Plot.\+Falling\+Style\hspace{0.3cm}{\ttfamily [get]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new}()}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        \mbox{\hyperlink{structColor}{Color}} = \mbox{\hyperlink{structColor}{Color}}.\mbox{\hyperlink{structColor_a89b986561f631e4ee1dc5008aca5174f}{FromHex}}(\textcolor{stringliteral}{"{}\#f23645"{}}),}
+\DoxyCodeLine{        Width = 2,}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classOhlcPlot_a137adf67a5fe666a237405733036febf}\label{classOhlcPlot_a137adf67a5fe666a237405733036febf}} 
+\index{OhlcPlot@{OhlcPlot}!IsVisible@{IsVisible}}
+\index{IsVisible@{IsVisible}!OhlcPlot@{OhlcPlot}}
+\doxysubsubsection{\texorpdfstring{IsVisible}{IsVisible}}
+{\footnotesize\ttfamily bool Ohlc\+Plot.\+Is\+Visible = true\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classOhlcPlot_a5a8985029cb0a22492fc48cac687f540}\label{classOhlcPlot_a5a8985029cb0a22492fc48cac687f540}} 
+\index{OhlcPlot@{OhlcPlot}!LegendItems@{LegendItems}}
+\index{LegendItems@{LegendItems}!OhlcPlot@{OhlcPlot}}
+\doxysubsubsection{\texorpdfstring{LegendItems}{LegendItems}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$\mbox{\hyperlink{classLegendItem}{Legend\+Item}}$>$ Ohlc\+Plot.\+Legend\+Items\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{classOhlcPlot_a55b4a053fcf9b3208a670d624eed75a4}\label{classOhlcPlot_a55b4a053fcf9b3208a670d624eed75a4}} 
+\index{OhlcPlot@{OhlcPlot}!RisingStyle@{RisingStyle}}
+\index{RisingStyle@{RisingStyle}!OhlcPlot@{OhlcPlot}}
+\doxysubsubsection{\texorpdfstring{RisingStyle}{RisingStyle}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classLineStyle}{Line\+Style}} Ohlc\+Plot.\+Rising\+Style\hspace{0.3cm}{\ttfamily [get]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new}()}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        \mbox{\hyperlink{structColor}{Color}} = \mbox{\hyperlink{structColor}{Color}}.\mbox{\hyperlink{structColor_a89b986561f631e4ee1dc5008aca5174f}{FromHex}}(\textcolor{stringliteral}{"{}\#089981"{}}),}
+\DoxyCodeLine{        Width = 2,}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classOhlcPlot_ab26a0999e6da8d4e093bbaf24224abad}\label{classOhlcPlot_ab26a0999e6da8d4e093bbaf24224abad}} 
+\index{OhlcPlot@{OhlcPlot}!Sequential@{Sequential}}
+\index{Sequential@{Sequential}!OhlcPlot@{OhlcPlot}}
+\doxysubsubsection{\texorpdfstring{Sequential}{Sequential}}
+{\footnotesize\ttfamily bool Ohlc\+Plot.\+Sequential = false\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+X position of each symbol is sourced from the \mbox{\hyperlink{structOHLC}{OHLC}}\textquotesingle{}s Date\+Time by default. If this option is enabled, X position will be an ascending integers starting at 0 with no gaps. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Plottables/OHLCPlot.\+cs\end{DoxyCompactItemize}

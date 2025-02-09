@@ -1,0 +1,126 @@
+\doxysection{Scott\+Plot.\+Data\+Sources.\+Signal\+Const\+Source\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>} Class Template Reference}
+\hypertarget{class_scott_plot_1_1_data_sources_1_1_signal_const_source}{}\label{class_scott_plot_1_1_data_sources_1_1_signal_const_source}\index{ScottPlot.DataSources.SignalConstSource$<$ T $>$@{ScottPlot.DataSources.SignalConstSource$<$ T $>$}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_scott_plot_1_1_data_sources_1_1_signal_const_source_ad65a0bcb99814af147b53d9228539607}{Signal\+Const\+Source}} (T\mbox{[}$\,$\mbox{]} ys, double period)
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}} \mbox{\hyperlink{class_scott_plot_1_1_data_sources_1_1_signal_const_source_a6426e2ba8ffdeeed15aae59dbc260c10}{Get\+Axis\+Limits}} ()
+\item 
+int \mbox{\hyperlink{class_scott_plot_1_1_data_sources_1_1_signal_const_source_ada86c7d55e7463f33389ee8d7ad32013}{Get\+Index}} (double x, bool visible\+Data\+Only)
+\item 
+bool \mbox{\hyperlink{class_scott_plot_1_1_data_sources_1_1_signal_const_source_aa05692c5a02d5dc066d30bc278b5709c}{Range\+Contains\+Signal}} (double x\+Min, double x\+Max)
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_data_sources_1_1_signal_range_y}{Signal\+RangeY}} \mbox{\hyperlink{class_scott_plot_1_1_data_sources_1_1_signal_const_source_a35f322aa65c0e9037c2e33d72d50a387}{Get\+LimitsY}} (int first\+Index, int last\+Index)
+\item 
+List$<$ \mbox{\hyperlink{struct_scott_plot_1_1_pixel_column}{Pixel\+Column}} $>$ \mbox{\hyperlink{class_scott_plot_1_1_data_sources_1_1_signal_const_source_a44545c0823a4d1f1ab58957528808def}{Get\+Pixel\+Columns}} (\mbox{\hyperlink{interface_scott_plot_1_1_i_axes}{IAxes}} axes)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+readonly \mbox{\hyperlink{class_scott_plot_1_1_data_sources_1_1_segmented_tree}{Segmented\+Tree}}$<$ T $>$ \mbox{\hyperlink{class_scott_plot_1_1_data_sources_1_1_signal_const_source_ad73e25fed2e1bdc0e7125a8013ee564a}{Segmented\+Tree}} = new()
+\item 
+readonly T\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_scott_plot_1_1_data_sources_1_1_signal_const_source_aec9759a53e31ef2c6ac16cfe868d0005}{Ys}}
+\item 
+readonly double \mbox{\hyperlink{class_scott_plot_1_1_data_sources_1_1_signal_const_source_a744040e7f773b4cd038472f30337580b}{Period}}
+\item 
+double \mbox{\hyperlink{class_scott_plot_1_1_data_sources_1_1_signal_const_source_adb3a24cb462c7bc50a7e817b8e068068}{XOffset}} = 0
+\item 
+double \mbox{\hyperlink{class_scott_plot_1_1_data_sources_1_1_signal_const_source_a23e3765b7e8f1d1f40f93759fd2f021e}{YOffset}} = 0
+\item 
+int \mbox{\hyperlink{class_scott_plot_1_1_data_sources_1_1_signal_const_source_ab00675200a7c1e13dc51fbe57bf813c6}{Min\+Render\+Index}} = 0
+\item 
+int \mbox{\hyperlink{class_scott_plot_1_1_data_sources_1_1_signal_const_source_a060060daa4e490dcc6a4df9b1f378789}{Max\+Render\+Index}} = int.\+Max\+Value
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_scott_plot_1_1_data_sources_1_1_signal_const_source_ad65a0bcb99814af147b53d9228539607}\index{ScottPlot.DataSources.SignalConstSource$<$ T $>$@{ScottPlot.DataSources.SignalConstSource$<$ T $>$}!SignalConstSource@{SignalConstSource}}
+\index{SignalConstSource@{SignalConstSource}!ScottPlot.DataSources.SignalConstSource$<$ T $>$@{ScottPlot.DataSources.SignalConstSource$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{SignalConstSource()}{SignalConstSource()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_data_sources_1_1_signal_const_source_ad65a0bcb99814af147b53d9228539607} 
+\mbox{\hyperlink{class_scott_plot_1_1_data_sources_1_1_signal_const_source}{Scott\+Plot.\+Data\+Sources.\+Signal\+Const\+Source}}$<$ T $>$.\mbox{\hyperlink{class_scott_plot_1_1_data_sources_1_1_signal_const_source}{Signal\+Const\+Source}} (\begin{DoxyParamCaption}\item[{T\mbox{[}$\,$\mbox{]}}]{ys}{, }\item[{double}]{period}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_scott_plot_1_1_data_sources_1_1_signal_const_source_a6426e2ba8ffdeeed15aae59dbc260c10}\index{ScottPlot.DataSources.SignalConstSource$<$ T $>$@{ScottPlot.DataSources.SignalConstSource$<$ T $>$}!GetAxisLimits@{GetAxisLimits}}
+\index{GetAxisLimits@{GetAxisLimits}!ScottPlot.DataSources.SignalConstSource$<$ T $>$@{ScottPlot.DataSources.SignalConstSource$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{GetAxisLimits()}{GetAxisLimits()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_data_sources_1_1_signal_const_source_a6426e2ba8ffdeeed15aae59dbc260c10} 
+\mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}} \mbox{\hyperlink{class_scott_plot_1_1_data_sources_1_1_signal_const_source}{Scott\+Plot.\+Data\+Sources.\+Signal\+Const\+Source}}$<$ T $>$.Get\+Axis\+Limits (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_data_sources_1_1_signal_const_source_ada86c7d55e7463f33389ee8d7ad32013}\index{ScottPlot.DataSources.SignalConstSource$<$ T $>$@{ScottPlot.DataSources.SignalConstSource$<$ T $>$}!GetIndex@{GetIndex}}
+\index{GetIndex@{GetIndex}!ScottPlot.DataSources.SignalConstSource$<$ T $>$@{ScottPlot.DataSources.SignalConstSource$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{GetIndex()}{GetIndex()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_data_sources_1_1_signal_const_source_ada86c7d55e7463f33389ee8d7ad32013} 
+int \mbox{\hyperlink{class_scott_plot_1_1_data_sources_1_1_signal_const_source}{Scott\+Plot.\+Data\+Sources.\+Signal\+Const\+Source}}$<$ T $>$.Get\+Index (\begin{DoxyParamCaption}\item[{double}]{x}{, }\item[{bool}]{visible\+Data\+Only}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_data_sources_1_1_signal_const_source_a35f322aa65c0e9037c2e33d72d50a387}\index{ScottPlot.DataSources.SignalConstSource$<$ T $>$@{ScottPlot.DataSources.SignalConstSource$<$ T $>$}!GetLimitsY@{GetLimitsY}}
+\index{GetLimitsY@{GetLimitsY}!ScottPlot.DataSources.SignalConstSource$<$ T $>$@{ScottPlot.DataSources.SignalConstSource$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{GetLimitsY()}{GetLimitsY()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_data_sources_1_1_signal_const_source_a35f322aa65c0e9037c2e33d72d50a387} 
+\mbox{\hyperlink{struct_scott_plot_1_1_data_sources_1_1_signal_range_y}{Signal\+RangeY}} \mbox{\hyperlink{class_scott_plot_1_1_data_sources_1_1_signal_const_source}{Scott\+Plot.\+Data\+Sources.\+Signal\+Const\+Source}}$<$ T $>$.Get\+LimitsY (\begin{DoxyParamCaption}\item[{int}]{first\+Index}{, }\item[{int}]{last\+Index}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_data_sources_1_1_signal_const_source_a44545c0823a4d1f1ab58957528808def}\index{ScottPlot.DataSources.SignalConstSource$<$ T $>$@{ScottPlot.DataSources.SignalConstSource$<$ T $>$}!GetPixelColumns@{GetPixelColumns}}
+\index{GetPixelColumns@{GetPixelColumns}!ScottPlot.DataSources.SignalConstSource$<$ T $>$@{ScottPlot.DataSources.SignalConstSource$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{GetPixelColumns()}{GetPixelColumns()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_data_sources_1_1_signal_const_source_a44545c0823a4d1f1ab58957528808def} 
+List$<$ \mbox{\hyperlink{struct_scott_plot_1_1_pixel_column}{Pixel\+Column}} $>$ \mbox{\hyperlink{class_scott_plot_1_1_data_sources_1_1_signal_const_source}{Scott\+Plot.\+Data\+Sources.\+Signal\+Const\+Source}}$<$ T $>$.Get\+Pixel\+Columns (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_scott_plot_1_1_i_axes}{IAxes}}}]{axes}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_data_sources_1_1_signal_const_source_aa05692c5a02d5dc066d30bc278b5709c}\index{ScottPlot.DataSources.SignalConstSource$<$ T $>$@{ScottPlot.DataSources.SignalConstSource$<$ T $>$}!RangeContainsSignal@{RangeContainsSignal}}
+\index{RangeContainsSignal@{RangeContainsSignal}!ScottPlot.DataSources.SignalConstSource$<$ T $>$@{ScottPlot.DataSources.SignalConstSource$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{RangeContainsSignal()}{RangeContainsSignal()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_data_sources_1_1_signal_const_source_aa05692c5a02d5dc066d30bc278b5709c} 
+bool \mbox{\hyperlink{class_scott_plot_1_1_data_sources_1_1_signal_const_source}{Scott\+Plot.\+Data\+Sources.\+Signal\+Const\+Source}}$<$ T $>$.Range\+Contains\+Signal (\begin{DoxyParamCaption}\item[{double}]{x\+Min}{, }\item[{double}]{x\+Max}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_scott_plot_1_1_data_sources_1_1_signal_const_source_a060060daa4e490dcc6a4df9b1f378789}\index{ScottPlot.DataSources.SignalConstSource$<$ T $>$@{ScottPlot.DataSources.SignalConstSource$<$ T $>$}!MaxRenderIndex@{MaxRenderIndex}}
+\index{MaxRenderIndex@{MaxRenderIndex}!ScottPlot.DataSources.SignalConstSource$<$ T $>$@{ScottPlot.DataSources.SignalConstSource$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{MaxRenderIndex}{MaxRenderIndex}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_data_sources_1_1_signal_const_source_a060060daa4e490dcc6a4df9b1f378789} 
+int \mbox{\hyperlink{class_scott_plot_1_1_data_sources_1_1_signal_const_source}{Scott\+Plot.\+Data\+Sources.\+Signal\+Const\+Source}}$<$ T $>$.Max\+Render\+Index = int.\+Max\+Value}
+
+\Hypertarget{class_scott_plot_1_1_data_sources_1_1_signal_const_source_ab00675200a7c1e13dc51fbe57bf813c6}\index{ScottPlot.DataSources.SignalConstSource$<$ T $>$@{ScottPlot.DataSources.SignalConstSource$<$ T $>$}!MinRenderIndex@{MinRenderIndex}}
+\index{MinRenderIndex@{MinRenderIndex}!ScottPlot.DataSources.SignalConstSource$<$ T $>$@{ScottPlot.DataSources.SignalConstSource$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{MinRenderIndex}{MinRenderIndex}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_data_sources_1_1_signal_const_source_ab00675200a7c1e13dc51fbe57bf813c6} 
+int \mbox{\hyperlink{class_scott_plot_1_1_data_sources_1_1_signal_const_source}{Scott\+Plot.\+Data\+Sources.\+Signal\+Const\+Source}}$<$ T $>$.Min\+Render\+Index = 0}
+
+\Hypertarget{class_scott_plot_1_1_data_sources_1_1_signal_const_source_a744040e7f773b4cd038472f30337580b}\index{ScottPlot.DataSources.SignalConstSource$<$ T $>$@{ScottPlot.DataSources.SignalConstSource$<$ T $>$}!Period@{Period}}
+\index{Period@{Period}!ScottPlot.DataSources.SignalConstSource$<$ T $>$@{ScottPlot.DataSources.SignalConstSource$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Period}{Period}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_data_sources_1_1_signal_const_source_a744040e7f773b4cd038472f30337580b} 
+readonly double \mbox{\hyperlink{class_scott_plot_1_1_data_sources_1_1_signal_const_source}{Scott\+Plot.\+Data\+Sources.\+Signal\+Const\+Source}}$<$ T $>$.Period}
+
+\Hypertarget{class_scott_plot_1_1_data_sources_1_1_signal_const_source_ad73e25fed2e1bdc0e7125a8013ee564a}\index{ScottPlot.DataSources.SignalConstSource$<$ T $>$@{ScottPlot.DataSources.SignalConstSource$<$ T $>$}!SegmentedTree@{SegmentedTree}}
+\index{SegmentedTree@{SegmentedTree}!ScottPlot.DataSources.SignalConstSource$<$ T $>$@{ScottPlot.DataSources.SignalConstSource$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{SegmentedTree}{SegmentedTree}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_data_sources_1_1_signal_const_source_ad73e25fed2e1bdc0e7125a8013ee564a} 
+readonly \mbox{\hyperlink{class_scott_plot_1_1_data_sources_1_1_segmented_tree}{Segmented\+Tree}}$<$T$>$ \mbox{\hyperlink{class_scott_plot_1_1_data_sources_1_1_signal_const_source}{Scott\+Plot.\+Data\+Sources.\+Signal\+Const\+Source}}$<$ T $>$.\mbox{\hyperlink{class_scott_plot_1_1_data_sources_1_1_segmented_tree}{Segmented\+Tree}} = new()}
+
+\Hypertarget{class_scott_plot_1_1_data_sources_1_1_signal_const_source_adb3a24cb462c7bc50a7e817b8e068068}\index{ScottPlot.DataSources.SignalConstSource$<$ T $>$@{ScottPlot.DataSources.SignalConstSource$<$ T $>$}!XOffset@{XOffset}}
+\index{XOffset@{XOffset}!ScottPlot.DataSources.SignalConstSource$<$ T $>$@{ScottPlot.DataSources.SignalConstSource$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{XOffset}{XOffset}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_data_sources_1_1_signal_const_source_adb3a24cb462c7bc50a7e817b8e068068} 
+double \mbox{\hyperlink{class_scott_plot_1_1_data_sources_1_1_signal_const_source}{Scott\+Plot.\+Data\+Sources.\+Signal\+Const\+Source}}$<$ T $>$.XOffset = 0}
+
+\Hypertarget{class_scott_plot_1_1_data_sources_1_1_signal_const_source_a23e3765b7e8f1d1f40f93759fd2f021e}\index{ScottPlot.DataSources.SignalConstSource$<$ T $>$@{ScottPlot.DataSources.SignalConstSource$<$ T $>$}!YOffset@{YOffset}}
+\index{YOffset@{YOffset}!ScottPlot.DataSources.SignalConstSource$<$ T $>$@{ScottPlot.DataSources.SignalConstSource$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{YOffset}{YOffset}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_data_sources_1_1_signal_const_source_a23e3765b7e8f1d1f40f93759fd2f021e} 
+double \mbox{\hyperlink{class_scott_plot_1_1_data_sources_1_1_signal_const_source}{Scott\+Plot.\+Data\+Sources.\+Signal\+Const\+Source}}$<$ T $>$.YOffset = 0}
+
+\Hypertarget{class_scott_plot_1_1_data_sources_1_1_signal_const_source_aec9759a53e31ef2c6ac16cfe868d0005}\index{ScottPlot.DataSources.SignalConstSource$<$ T $>$@{ScottPlot.DataSources.SignalConstSource$<$ T $>$}!Ys@{Ys}}
+\index{Ys@{Ys}!ScottPlot.DataSources.SignalConstSource$<$ T $>$@{ScottPlot.DataSources.SignalConstSource$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Ys}{Ys}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_data_sources_1_1_signal_const_source_aec9759a53e31ef2c6ac16cfe868d0005} 
+readonly T \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_scott_plot_1_1_data_sources_1_1_signal_const_source}{Scott\+Plot.\+Data\+Sources.\+Signal\+Const\+Source}}$<$ T $>$.Ys}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Data\+Sources/Signal\+Const\+Source.\+cs\end{DoxyCompactItemize}

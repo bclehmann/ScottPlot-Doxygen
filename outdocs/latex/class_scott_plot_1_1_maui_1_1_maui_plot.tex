@@ -1,0 +1,214 @@
+\doxysection{Scott\+Plot.\+Maui.\+Maui\+Plot Class Reference}
+\hypertarget{class_scott_plot_1_1_maui_1_1_maui_plot}{}\label{class_scott_plot_1_1_maui_1_1_maui_plot}\index{ScottPlot.Maui.MauiPlot@{ScottPlot.Maui.MauiPlot}}
+Inheritance diagram for Scott\+Plot.\+Maui.\+Maui\+Plot\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_scott_plot_1_1_maui_1_1_maui_plot}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_scott_plot_1_1_maui_1_1_maui_plot_abc30c39489f679c969fd23c481a8b18a}{Maui\+Plot}} ()
+\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_maui_1_1_maui_plot_a38cb4787edd32d570bcf305b598300d0}{Reset}} ()
+\begin{DoxyCompactList}\small\item\em Disposes the current \doxylink{class_scott_plot_1_1_plot}{Plot} and creates a new one for the control. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_maui_1_1_maui_plot_ac0ae31d67d477be206fd33c7df6d5e43}{Reset}} (\mbox{\hyperlink{class_scott_plot_1_1_plot}{Plot}} plot)
+\begin{DoxyCompactList}\small\item\em Loads the given \doxylink{class_scott_plot_1_1_plot}{Plot} into the control. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_maui_1_1_maui_plot_ae77940c492f0c481c5f9ace80c967f08}{Refresh}} ()
+\begin{DoxyCompactList}\small\item\em Render the plot and update the image. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_maui_1_1_maui_plot_a93e2d3a043b9c3166ef4ed7c0a6cad61}{Show\+Context\+Menu}} (\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}} position)
+\begin{DoxyCompactList}\small\item\em Launch the default pop-\/up menu (typically in response to a right-\/click) at the given position in the control. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_scott_plot_1_1_maui_1_1_maui_plot_a281d5e3416ec090ba9a1dba9f75e0243}{Detect\+Display\+Scale}} ()
+\begin{DoxyCompactList}\small\item\em Determine the DPI scaling ratio of the present display. A value of 1.\+0 means no scaling, and 1.\+5 means 150\% scaling. This operation may be costly so do not call it frequently. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_scott_plot_1_1_i_plot_control}{Scott\+Plot.\+IPlot\+Control}}}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_scott_plot_1_1_plot}{Plot}} \mbox{\hyperlink{class_scott_plot_1_1_maui_1_1_maui_plot_a719d8db3b9317a9e3ad0d4ff29b4416a}{Plot}} = new()\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The \doxylink{class_scott_plot_1_1_plot}{Plot} displayed by this interactive control. \end{DoxyCompactList}\item 
+Skia\+Sharp.? GRContext \mbox{\hyperlink{class_scott_plot_1_1_maui_1_1_maui_plot_a4a0b6d6264fe85afd7d4515b8fb5f110}{GRContext}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Context for hardware-\/accelerated graphics (or null if not available) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{interface_scott_plot_1_1_i_plot_interaction}{IPlot\+Interaction}} \mbox{\hyperlink{class_scott_plot_1_1_maui_1_1_maui_plot_a2287419b8ab092b12975f996c4ecd38a}{Interaction}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Options for configuring user inputs. This functionality is being replaced by \doxylink{class_scott_plot_1_1_maui_1_1_maui_plot_ad4b3f74874fd1193c3ca0993edd64f0a}{User\+Input\+Processor}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{interface_scott_plot_1_1_i_plot_menu}{IPlot\+Menu}} \mbox{\hyperlink{class_scott_plot_1_1_maui_1_1_maui_plot_a8dba40836b41d09128dff194b2702e5f}{Menu}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Platform-\/specific logic for managing the context menu. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_scott_plot_1_1_interactivity_1_1_user_input_processor}{Interactivity.\+User\+Input\+Processor}} \mbox{\hyperlink{class_scott_plot_1_1_maui_1_1_maui_plot_ad4b3f74874fd1193c3ca0993edd64f0a}{User\+Input\+Processor}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em This object takes in UI events and contains logic for how to respond to them. This is a newer alternative to the older \doxylink{class_scott_plot_1_1_maui_1_1_maui_plot_a2287419b8ab092b12975f996c4ecd38a}{Interaction} system. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_scott_plot_1_1_maui_1_1_maui_plot_a3e9866ae1a99b647802a1f269db71fa0}{Display\+Scale}} = 1\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The value of the present display scaling. Mouse positions are multiplied by this value for pixel/coordinate conversions. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{interface_scott_plot_1_1_i_plot_control}{Scott\+Plot.\+IPlot\+Control}}}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_scott_plot_1_1_maui_1_1_maui_plot_abc30c39489f679c969fd23c481a8b18a}\index{ScottPlot.Maui.MauiPlot@{ScottPlot.Maui.MauiPlot}!MauiPlot@{MauiPlot}}
+\index{MauiPlot@{MauiPlot}!ScottPlot.Maui.MauiPlot@{ScottPlot.Maui.MauiPlot}}
+\doxysubsubsection{\texorpdfstring{MauiPlot()}{MauiPlot()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_maui_1_1_maui_plot_abc30c39489f679c969fd23c481a8b18a} 
+Scott\+Plot.\+Maui.\+Maui\+Plot.\+Maui\+Plot (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_scott_plot_1_1_maui_1_1_maui_plot_a281d5e3416ec090ba9a1dba9f75e0243}\index{ScottPlot.Maui.MauiPlot@{ScottPlot.Maui.MauiPlot}!DetectDisplayScale@{DetectDisplayScale}}
+\index{DetectDisplayScale@{DetectDisplayScale}!ScottPlot.Maui.MauiPlot@{ScottPlot.Maui.MauiPlot}}
+\doxysubsubsection{\texorpdfstring{DetectDisplayScale()}{DetectDisplayScale()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_maui_1_1_maui_plot_a281d5e3416ec090ba9a1dba9f75e0243} 
+float Scott\+Plot.\+Maui.\+Maui\+Plot.\+Detect\+Display\+Scale (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Determine the DPI scaling ratio of the present display. A value of 1.\+0 means no scaling, and 1.\+5 means 150\% scaling. This operation may be costly so do not call it frequently. 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_plot_control_aa11515568028768ad0a9a1bf17b34182}{Scott\+Plot.\+IPlot\+Control}}.
+
+\Hypertarget{class_scott_plot_1_1_maui_1_1_maui_plot_ae77940c492f0c481c5f9ace80c967f08}\index{ScottPlot.Maui.MauiPlot@{ScottPlot.Maui.MauiPlot}!Refresh@{Refresh}}
+\index{Refresh@{Refresh}!ScottPlot.Maui.MauiPlot@{ScottPlot.Maui.MauiPlot}}
+\doxysubsubsection{\texorpdfstring{Refresh()}{Refresh()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_maui_1_1_maui_plot_ae77940c492f0c481c5f9ace80c967f08} 
+void Scott\+Plot.\+Maui.\+Maui\+Plot.\+Refresh (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Render the plot and update the image. 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_plot_control_a06515ebfc38fce1ae2a8dfdaa662c294}{Scott\+Plot.\+IPlot\+Control}}.
+
+\Hypertarget{class_scott_plot_1_1_maui_1_1_maui_plot_a38cb4787edd32d570bcf305b598300d0}\index{ScottPlot.Maui.MauiPlot@{ScottPlot.Maui.MauiPlot}!Reset@{Reset}}
+\index{Reset@{Reset}!ScottPlot.Maui.MauiPlot@{ScottPlot.Maui.MauiPlot}}
+\doxysubsubsection{\texorpdfstring{Reset()}{Reset()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_maui_1_1_maui_plot_a38cb4787edd32d570bcf305b598300d0} 
+void Scott\+Plot.\+Maui.\+Maui\+Plot.\+Reset (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Disposes the current \doxylink{class_scott_plot_1_1_plot}{Plot} and creates a new one for the control. 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_plot_control_a3c35aec5502c19eba32a34cb9f7dfd20}{Scott\+Plot.\+IPlot\+Control}}.
+
+\Hypertarget{class_scott_plot_1_1_maui_1_1_maui_plot_ac0ae31d67d477be206fd33c7df6d5e43}\index{ScottPlot.Maui.MauiPlot@{ScottPlot.Maui.MauiPlot}!Reset@{Reset}}
+\index{Reset@{Reset}!ScottPlot.Maui.MauiPlot@{ScottPlot.Maui.MauiPlot}}
+\doxysubsubsection{\texorpdfstring{Reset()}{Reset()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_maui_1_1_maui_plot_ac0ae31d67d477be206fd33c7df6d5e43} 
+void Scott\+Plot.\+Maui.\+Maui\+Plot.\+Reset (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_scott_plot_1_1_plot}{Plot}}}]{plot}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Loads the given \doxylink{class_scott_plot_1_1_plot}{Plot} into the control. 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_plot_control_a7577b50882b1814f3344ab414e24cb44}{Scott\+Plot.\+IPlot\+Control}}.
+
+\Hypertarget{class_scott_plot_1_1_maui_1_1_maui_plot_a93e2d3a043b9c3166ef4ed7c0a6cad61}\index{ScottPlot.Maui.MauiPlot@{ScottPlot.Maui.MauiPlot}!ShowContextMenu@{ShowContextMenu}}
+\index{ShowContextMenu@{ShowContextMenu}!ScottPlot.Maui.MauiPlot@{ScottPlot.Maui.MauiPlot}}
+\doxysubsubsection{\texorpdfstring{ShowContextMenu()}{ShowContextMenu()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_maui_1_1_maui_plot_a93e2d3a043b9c3166ef4ed7c0a6cad61} 
+void Scott\+Plot.\+Maui.\+Maui\+Plot.\+Show\+Context\+Menu (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}}}]{position}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Launch the default pop-\/up menu (typically in response to a right-\/click) at the given position in the control. 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_plot_control_a724dd4f2dbc8eb65dd0d169431b5ed21}{Scott\+Plot.\+IPlot\+Control}}.
+
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{class_scott_plot_1_1_maui_1_1_maui_plot_a3e9866ae1a99b647802a1f269db71fa0}\index{ScottPlot.Maui.MauiPlot@{ScottPlot.Maui.MauiPlot}!DisplayScale@{DisplayScale}}
+\index{DisplayScale@{DisplayScale}!ScottPlot.Maui.MauiPlot@{ScottPlot.Maui.MauiPlot}}
+\doxysubsubsection{\texorpdfstring{DisplayScale}{DisplayScale}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_maui_1_1_maui_plot_a3e9866ae1a99b647802a1f269db71fa0} 
+float Scott\+Plot.\+Maui.\+Maui\+Plot.\+Display\+Scale = 1\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The value of the present display scaling. Mouse positions are multiplied by this value for pixel/coordinate conversions. 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_plot_control_afbe575470185aa2a1f797bbd7a0e75c2}{Scott\+Plot.\+IPlot\+Control}}.
+
+\Hypertarget{class_scott_plot_1_1_maui_1_1_maui_plot_a4a0b6d6264fe85afd7d4515b8fb5f110}\index{ScottPlot.Maui.MauiPlot@{ScottPlot.Maui.MauiPlot}!GRContext@{GRContext}}
+\index{GRContext@{GRContext}!ScottPlot.Maui.MauiPlot@{ScottPlot.Maui.MauiPlot}}
+\doxysubsubsection{\texorpdfstring{GRContext}{GRContext}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_maui_1_1_maui_plot_a4a0b6d6264fe85afd7d4515b8fb5f110} 
+Skia\+Sharp.? GRContext Scott\+Plot.\+Maui.\+Maui\+Plot.\+GRContext\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Context for hardware-\/accelerated graphics (or null if not available) 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_plot_control_a34f8c1df93361a966cfe7c4f7e03910b}{Scott\+Plot.\+IPlot\+Control}}.
+
+\Hypertarget{class_scott_plot_1_1_maui_1_1_maui_plot_a2287419b8ab092b12975f996c4ecd38a}\index{ScottPlot.Maui.MauiPlot@{ScottPlot.Maui.MauiPlot}!Interaction@{Interaction}}
+\index{Interaction@{Interaction}!ScottPlot.Maui.MauiPlot@{ScottPlot.Maui.MauiPlot}}
+\doxysubsubsection{\texorpdfstring{Interaction}{Interaction}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_maui_1_1_maui_plot_a2287419b8ab092b12975f996c4ecd38a} 
+\mbox{\hyperlink{interface_scott_plot_1_1_i_plot_interaction}{IPlot\+Interaction}} Scott\+Plot.\+Maui.\+Maui\+Plot.\+Interaction\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Options for configuring user inputs. This functionality is being replaced by \doxylink{class_scott_plot_1_1_maui_1_1_maui_plot_ad4b3f74874fd1193c3ca0993edd64f0a}{User\+Input\+Processor}. 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_plot_control_ae503734717812d8018497b48c77fd744}{Scott\+Plot.\+IPlot\+Control}}.
+
+\Hypertarget{class_scott_plot_1_1_maui_1_1_maui_plot_a8dba40836b41d09128dff194b2702e5f}\index{ScottPlot.Maui.MauiPlot@{ScottPlot.Maui.MauiPlot}!Menu@{Menu}}
+\index{Menu@{Menu}!ScottPlot.Maui.MauiPlot@{ScottPlot.Maui.MauiPlot}}
+\doxysubsubsection{\texorpdfstring{Menu}{Menu}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_maui_1_1_maui_plot_a8dba40836b41d09128dff194b2702e5f} 
+\mbox{\hyperlink{interface_scott_plot_1_1_i_plot_menu}{IPlot\+Menu}} Scott\+Plot.\+Maui.\+Maui\+Plot.\+Menu\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Platform-\/specific logic for managing the context menu. 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_plot_control_a3c970f5b3b54bbf5796b9a8f8f47ccfc}{Scott\+Plot.\+IPlot\+Control}}.
+
+\Hypertarget{class_scott_plot_1_1_maui_1_1_maui_plot_a719d8db3b9317a9e3ad0d4ff29b4416a}\index{ScottPlot.Maui.MauiPlot@{ScottPlot.Maui.MauiPlot}!Plot@{Plot}}
+\index{Plot@{Plot}!ScottPlot.Maui.MauiPlot@{ScottPlot.Maui.MauiPlot}}
+\doxysubsubsection{\texorpdfstring{Plot}{Plot}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_maui_1_1_maui_plot_a719d8db3b9317a9e3ad0d4ff29b4416a} 
+\mbox{\hyperlink{class_scott_plot_1_1_plot}{Plot}} Scott\+Plot.\+Maui.\+Maui\+Plot.\+Plot = new()\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The \doxylink{class_scott_plot_1_1_plot}{Plot} displayed by this interactive control. 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_plot_control_ac5c49a58b4d8452af92f01ec935139ed}{Scott\+Plot.\+IPlot\+Control}}.
+
+\Hypertarget{class_scott_plot_1_1_maui_1_1_maui_plot_ad4b3f74874fd1193c3ca0993edd64f0a}\index{ScottPlot.Maui.MauiPlot@{ScottPlot.Maui.MauiPlot}!UserInputProcessor@{UserInputProcessor}}
+\index{UserInputProcessor@{UserInputProcessor}!ScottPlot.Maui.MauiPlot@{ScottPlot.Maui.MauiPlot}}
+\doxysubsubsection{\texorpdfstring{UserInputProcessor}{UserInputProcessor}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_maui_1_1_maui_plot_ad4b3f74874fd1193c3ca0993edd64f0a} 
+\mbox{\hyperlink{class_scott_plot_1_1_interactivity_1_1_user_input_processor}{Interactivity.\+User\+Input\+Processor}} Scott\+Plot.\+Maui.\+Maui\+Plot.\+User\+Input\+Processor\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+This object takes in UI events and contains logic for how to respond to them. This is a newer alternative to the older \doxylink{class_scott_plot_1_1_maui_1_1_maui_plot_a2287419b8ab092b12975f996c4ecd38a}{Interaction} system. 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_plot_control_a49c623cd834bd6d6f572ec0b5b24c892}{Scott\+Plot.\+IPlot\+Control}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5 Controls/\+Scott\+Plot.\+Maui/Maui\+Plot.\+cs\end{DoxyCompactItemize}

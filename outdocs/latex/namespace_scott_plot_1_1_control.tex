@@ -1,0 +1,126 @@
+\doxysection{Scott\+Plot.\+Control Namespace Reference}
+\hypertarget{namespace_scott_plot_1_1_control}{}\label{namespace_scott_plot_1_1_control}\index{ScottPlot.Control@{ScottPlot.Control}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_scott_plot_1_1_control_1_1_context_menu_item}{Context\+Menu\+Item}}
+\begin{DoxyCompactList}\small\item\em Represents a single item in a right-\/click pop-\/up menu. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_scott_plot_1_1_control_1_1_input_bindings}{Input\+Bindings}}
+\begin{DoxyCompactList}\small\item\em This class defines which buttons and keys perform which actions to manipulate the plot. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_scott_plot_1_1_control_1_1_keyboard_state}{Keyboard\+State}}
+\item 
+struct \mbox{\hyperlink{struct_scott_plot_1_1_control_1_1_locked_axes}{Locked\+Axes}}
+\item 
+struct \mbox{\hyperlink{struct_scott_plot_1_1_control_1_1_mouse_drag}{Mouse\+Drag}}
+\item 
+class \mbox{\hyperlink{class_scott_plot_1_1_control_1_1_mouse_state}{Mouse\+State}}
+\item 
+class \mbox{\hyperlink{class_scott_plot_1_1_control_1_1_multi_axis_limit_manager}{Multi\+Axis\+Limit\+Manager}}
+\begin{DoxyCompactList}\small\item\em This object remembers limits of all axes so it can restore them later. It is used for mouse interaction to translate pixel distances to coordinate distances based on previous renders. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_scott_plot_1_1_control_1_1_plot_actions}{Plot\+Actions}}
+\begin{DoxyCompactList}\small\item\em This object holds actions which manipulate the plot. To customize plot manipulation behavior, replace these delegates with custom ones. \end{DoxyCompactList}\item 
+class {\bfseries Standard\+Actions}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{namespace_scott_plot_1_1_control_afccfe76da99cb53fbf88864d1e6e66b4}{Key}} \{ \mbox{\hyperlink{namespace_scott_plot_1_1_control_afccfe76da99cb53fbf88864d1e6e66b4a88183b946cc5f0e8c96b2e66e1c74a7e}{Unknown}}
+, \mbox{\hyperlink{namespace_scott_plot_1_1_control_afccfe76da99cb53fbf88864d1e6e66b4a2b61e0d5977f2e38f06e16281c802b47}{Ctrl}}
+, \mbox{\hyperlink{namespace_scott_plot_1_1_control_afccfe76da99cb53fbf88864d1e6e66b4aa2e92861b757ab878312dd57993d60cf}{Alt}}
+, \mbox{\hyperlink{namespace_scott_plot_1_1_control_afccfe76da99cb53fbf88864d1e6e66b4a825a3d98017bab11815ad2817201324c}{Shift}}
+ \}
+\item 
+enum \mbox{\hyperlink{namespace_scott_plot_1_1_control_a1ce2192b1e04dba3b2c4e0ff10f1ab3b}{Mouse\+Button}} \{ \mbox{\hyperlink{namespace_scott_plot_1_1_control_a1ce2192b1e04dba3b2c4e0ff10f1ab3ba88183b946cc5f0e8c96b2e66e1c74a7e}{Unknown}}
+, \mbox{\hyperlink{namespace_scott_plot_1_1_control_a1ce2192b1e04dba3b2c4e0ff10f1ab3ba945d5e233cf7d6240f6b783b36a374ff}{Left}}
+, \mbox{\hyperlink{namespace_scott_plot_1_1_control_a1ce2192b1e04dba3b2c4e0ff10f1ab3ba92b09c7c48c520c3c55e497875da437c}{Right}}
+, \mbox{\hyperlink{namespace_scott_plot_1_1_control_a1ce2192b1e04dba3b2c4e0ff10f1ab3bab1ca34f82e83c52b010f86955f264e05}{Middle}}
+ \}
+\item 
+enum \mbox{\hyperlink{namespace_scott_plot_1_1_control_a9b32e7e9b9ccc6ff1d01cfcba13216ed}{Mouse\+Wheel\+Direction}} \{ \newline
+\mbox{\hyperlink{namespace_scott_plot_1_1_control_a9b32e7e9b9ccc6ff1d01cfcba13216eda88183b946cc5f0e8c96b2e66e1c74a7e}{Unknown}}
+, \mbox{\hyperlink{namespace_scott_plot_1_1_control_a9b32e7e9b9ccc6ff1d01cfcba13216eda258f49887ef8d14ac268c92b02503aaa}{Up}}
+, \mbox{\hyperlink{namespace_scott_plot_1_1_control_a9b32e7e9b9ccc6ff1d01cfcba13216eda08a38277b0309070706f6652eeae9a53}{Down}}
+, \mbox{\hyperlink{namespace_scott_plot_1_1_control_a9b32e7e9b9ccc6ff1d01cfcba13216eda945d5e233cf7d6240f6b783b36a374ff}{Left}}
+, \newline
+\mbox{\hyperlink{namespace_scott_plot_1_1_control_a9b32e7e9b9ccc6ff1d01cfcba13216eda92b09c7c48c520c3c55e497875da437c}{Right}}
+ \}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Enumeration Type Documentation}
+\Hypertarget{namespace_scott_plot_1_1_control_afccfe76da99cb53fbf88864d1e6e66b4}\index{ScottPlot.Control@{ScottPlot.Control}!Key@{Key}}
+\index{Key@{Key}!ScottPlot.Control@{ScottPlot.Control}}
+\doxysubsubsection{\texorpdfstring{Key}{Key}}
+{\footnotesize\ttfamily \label{namespace_scott_plot_1_1_control_afccfe76da99cb53fbf88864d1e6e66b4} 
+enum \mbox{\hyperlink{namespace_scott_plot_1_1_control_afccfe76da99cb53fbf88864d1e6e66b4}{Scott\+Plot.\+Control.\+Key}}}
+
+\begin{DoxyEnumFields}[2]{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Unknown@{Unknown}!ScottPlot.Control@{ScottPlot.Control}}\index{ScottPlot.Control@{ScottPlot.Control}!Unknown@{Unknown}}}\Hypertarget{namespace_scott_plot_1_1_control_afccfe76da99cb53fbf88864d1e6e66b4a88183b946cc5f0e8c96b2e66e1c74a7e}\label{namespace_scott_plot_1_1_control_afccfe76da99cb53fbf88864d1e6e66b4} 
+Unknown&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Ctrl@{Ctrl}!ScottPlot.Control@{ScottPlot.Control}}\index{ScottPlot.Control@{ScottPlot.Control}!Ctrl@{Ctrl}}}\Hypertarget{namespace_scott_plot_1_1_control_afccfe76da99cb53fbf88864d1e6e66b4a2b61e0d5977f2e38f06e16281c802b47}\label{namespace_scott_plot_1_1_control_afccfe76da99cb53fbf88864d1e6e66b4} 
+Ctrl&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Alt@{Alt}!ScottPlot.Control@{ScottPlot.Control}}\index{ScottPlot.Control@{ScottPlot.Control}!Alt@{Alt}}}\Hypertarget{namespace_scott_plot_1_1_control_afccfe76da99cb53fbf88864d1e6e66b4aa2e92861b757ab878312dd57993d60cf}\label{namespace_scott_plot_1_1_control_afccfe76da99cb53fbf88864d1e6e66b4} 
+Alt&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Shift@{Shift}!ScottPlot.Control@{ScottPlot.Control}}\index{ScottPlot.Control@{ScottPlot.Control}!Shift@{Shift}}}\Hypertarget{namespace_scott_plot_1_1_control_afccfe76da99cb53fbf88864d1e6e66b4a825a3d98017bab11815ad2817201324c}\label{namespace_scott_plot_1_1_control_afccfe76da99cb53fbf88864d1e6e66b4} 
+Shift&\\
+\hline
+
+\end{DoxyEnumFields}
+\Hypertarget{namespace_scott_plot_1_1_control_a1ce2192b1e04dba3b2c4e0ff10f1ab3b}\index{ScottPlot.Control@{ScottPlot.Control}!MouseButton@{MouseButton}}
+\index{MouseButton@{MouseButton}!ScottPlot.Control@{ScottPlot.Control}}
+\doxysubsubsection{\texorpdfstring{MouseButton}{MouseButton}}
+{\footnotesize\ttfamily \label{namespace_scott_plot_1_1_control_a1ce2192b1e04dba3b2c4e0ff10f1ab3b} 
+enum \mbox{\hyperlink{namespace_scott_plot_1_1_control_a1ce2192b1e04dba3b2c4e0ff10f1ab3b}{Scott\+Plot.\+Control.\+Mouse\+Button}}}
+
+\begin{DoxyEnumFields}[2]{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Unknown@{Unknown}!ScottPlot.Control@{ScottPlot.Control}}\index{ScottPlot.Control@{ScottPlot.Control}!Unknown@{Unknown}}}\Hypertarget{namespace_scott_plot_1_1_control_a1ce2192b1e04dba3b2c4e0ff10f1ab3ba88183b946cc5f0e8c96b2e66e1c74a7e}\label{namespace_scott_plot_1_1_control_a1ce2192b1e04dba3b2c4e0ff10f1ab3b} 
+Unknown&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Left@{Left}!ScottPlot.Control@{ScottPlot.Control}}\index{ScottPlot.Control@{ScottPlot.Control}!Left@{Left}}}\Hypertarget{namespace_scott_plot_1_1_control_a1ce2192b1e04dba3b2c4e0ff10f1ab3ba945d5e233cf7d6240f6b783b36a374ff}\label{namespace_scott_plot_1_1_control_a1ce2192b1e04dba3b2c4e0ff10f1ab3b} 
+Left&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Right@{Right}!ScottPlot.Control@{ScottPlot.Control}}\index{ScottPlot.Control@{ScottPlot.Control}!Right@{Right}}}\Hypertarget{namespace_scott_plot_1_1_control_a1ce2192b1e04dba3b2c4e0ff10f1ab3ba92b09c7c48c520c3c55e497875da437c}\label{namespace_scott_plot_1_1_control_a1ce2192b1e04dba3b2c4e0ff10f1ab3b} 
+Right&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Middle@{Middle}!ScottPlot.Control@{ScottPlot.Control}}\index{ScottPlot.Control@{ScottPlot.Control}!Middle@{Middle}}}\Hypertarget{namespace_scott_plot_1_1_control_a1ce2192b1e04dba3b2c4e0ff10f1ab3bab1ca34f82e83c52b010f86955f264e05}\label{namespace_scott_plot_1_1_control_a1ce2192b1e04dba3b2c4e0ff10f1ab3b} 
+Middle&\\
+\hline
+
+\end{DoxyEnumFields}
+\Hypertarget{namespace_scott_plot_1_1_control_a9b32e7e9b9ccc6ff1d01cfcba13216ed}\index{ScottPlot.Control@{ScottPlot.Control}!MouseWheelDirection@{MouseWheelDirection}}
+\index{MouseWheelDirection@{MouseWheelDirection}!ScottPlot.Control@{ScottPlot.Control}}
+\doxysubsubsection{\texorpdfstring{MouseWheelDirection}{MouseWheelDirection}}
+{\footnotesize\ttfamily \label{namespace_scott_plot_1_1_control_a9b32e7e9b9ccc6ff1d01cfcba13216ed} 
+enum \mbox{\hyperlink{namespace_scott_plot_1_1_control_a9b32e7e9b9ccc6ff1d01cfcba13216ed}{Scott\+Plot.\+Control.\+Mouse\+Wheel\+Direction}}}
+
+\begin{DoxyEnumFields}[2]{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Unknown@{Unknown}!ScottPlot.Control@{ScottPlot.Control}}\index{ScottPlot.Control@{ScottPlot.Control}!Unknown@{Unknown}}}\Hypertarget{namespace_scott_plot_1_1_control_a9b32e7e9b9ccc6ff1d01cfcba13216eda88183b946cc5f0e8c96b2e66e1c74a7e}\label{namespace_scott_plot_1_1_control_a9b32e7e9b9ccc6ff1d01cfcba13216ed} 
+Unknown&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Up@{Up}!ScottPlot.Control@{ScottPlot.Control}}\index{ScottPlot.Control@{ScottPlot.Control}!Up@{Up}}}\Hypertarget{namespace_scott_plot_1_1_control_a9b32e7e9b9ccc6ff1d01cfcba13216eda258f49887ef8d14ac268c92b02503aaa}\label{namespace_scott_plot_1_1_control_a9b32e7e9b9ccc6ff1d01cfcba13216ed} 
+Up&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Down@{Down}!ScottPlot.Control@{ScottPlot.Control}}\index{ScottPlot.Control@{ScottPlot.Control}!Down@{Down}}}\Hypertarget{namespace_scott_plot_1_1_control_a9b32e7e9b9ccc6ff1d01cfcba13216eda08a38277b0309070706f6652eeae9a53}\label{namespace_scott_plot_1_1_control_a9b32e7e9b9ccc6ff1d01cfcba13216ed} 
+Down&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Left@{Left}!ScottPlot.Control@{ScottPlot.Control}}\index{ScottPlot.Control@{ScottPlot.Control}!Left@{Left}}}\Hypertarget{namespace_scott_plot_1_1_control_a9b32e7e9b9ccc6ff1d01cfcba13216eda945d5e233cf7d6240f6b783b36a374ff}\label{namespace_scott_plot_1_1_control_a9b32e7e9b9ccc6ff1d01cfcba13216ed} 
+Left&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Right@{Right}!ScottPlot.Control@{ScottPlot.Control}}\index{ScottPlot.Control@{ScottPlot.Control}!Right@{Right}}}\Hypertarget{namespace_scott_plot_1_1_control_a9b32e7e9b9ccc6ff1d01cfcba13216eda92b09c7c48c520c3c55e497875da437c}\label{namespace_scott_plot_1_1_control_a9b32e7e9b9ccc6ff1d01cfcba13216ed} 
+Right&\\
+\hline
+
+\end{DoxyEnumFields}

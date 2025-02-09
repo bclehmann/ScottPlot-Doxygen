@@ -1,0 +1,880 @@
+\hypertarget{classPlottableAdder}{}\doxysection{Plottable\+Adder Class Reference}
+\label{classPlottableAdder}\index{PlottableAdder@{PlottableAdder}}
+
+
+Helper methods to create plottable objects and add them to the plot  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structColor}{Color}} \mbox{\hyperlink{classPlottableAdder_aa25723d36173524ac83980b3d9f42f3b}{Get\+Next\+Color}} ()
+\item 
+Annotation \mbox{\hyperlink{classPlottableAdder_a83a2a5e3feb14a0868379681d80b1128}{Annotation}} (string text, Alignment alignment=Alignment.\+Upper\+Left)
+\item 
+\mbox{\hyperlink{classArrow}{Arrow}} \mbox{\hyperlink{classPlottableAdder_a0520f7cce21693373c32612677386175}{Arrow}} (\mbox{\hyperlink{structCoordinates}{Coordinates}} arrow\+Base, \mbox{\hyperlink{structCoordinates}{Coordinates}} arrow\+Tip)
+\item 
+\mbox{\hyperlink{classArrow}{Arrow}} \mbox{\hyperlink{classPlottableAdder_ade24aa84f48c009c734d633b85be2441}{Arrow}} (double x\+Base, double y\+Base, double x\+Tip, double y\+Tip)
+\item 
+\mbox{\hyperlink{classArrow}{Arrow}} \mbox{\hyperlink{classPlottableAdder_aa2e366f56bf867824196c4e44936b530}{Arrow}} (\mbox{\hyperlink{structCoordinateLine}{Coordinate\+Line}} line)
+\item 
+\mbox{\hyperlink{classBarPlot}{Bar\+Plot}} \mbox{\hyperlink{classPlottableAdder_ad8c34a8a5b292a7d5be0ec64a6f36de8}{Bar}} (\mbox{\hyperlink{classBar}{Bar}} bar)
+\item 
+\mbox{\hyperlink{classBarPlot}{Bar\+Plot}} \mbox{\hyperlink{classPlottableAdder_ac9694d5bf7c636e41366627c8bee2202}{Bar}} (double position, double value, double error=0)
+\item 
+\mbox{\hyperlink{classBarPlot}{Bar\+Plot}} \mbox{\hyperlink{classPlottableAdder_a30c58cb93458d8f19173820c5e983011}{Bars}} (\mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$ \mbox{\hyperlink{classBar}{Bar}} $>$ bars)
+\item 
+\mbox{\hyperlink{classBarPlot}{Bar\+Plot}} \mbox{\hyperlink{classPlottableAdder_a6dae3e3ae56957f352008dcc28f00d92}{Bars}} (double\mbox{[}$\,$\mbox{]} values)
+\item 
+\mbox{\hyperlink{classBarPlot}{Bar\+Plot}} \mbox{\hyperlink{classPlottableAdder_a3b487ed9840aa686c75e1e15c3c7f1ed}{Bars}} (\mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$ double $>$ positions, \mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$ double $>$ values)
+\item 
+\mbox{\hyperlink{classBoxPlot}{Box\+Plot}} \mbox{\hyperlink{classPlottableAdder_addaf0c1496a422786e72c9c3ada4729e}{Box}} (\mbox{\hyperlink{classBox}{Box}} box)
+\item 
+\mbox{\hyperlink{classBoxPlot}{Box\+Plot}} \mbox{\hyperlink{classPlottableAdder_a1fec0fa3b0d1ef4d588c2ad7e08b2900}{Boxes}} (\mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$ \mbox{\hyperlink{classBox}{Box}} $>$ boxes)
+\item 
+\mbox{\hyperlink{classCallout}{Callout}} \mbox{\hyperlink{classPlottableAdder_ace20ea170bb3545f064c67071e11b727}{Callout}} (string text, double textX, double textY, double tipX, double tipY)
+\item 
+\mbox{\hyperlink{classCallout}{Callout}} \mbox{\hyperlink{classPlottableAdder_a87efc00a6c616f4a13f314acf17ceb30}{Callout}} (string text, \mbox{\hyperlink{structCoordinates}{Coordinates}} text\+Location, \mbox{\hyperlink{structCoordinates}{Coordinates}} tip\+Location)
+\item 
+\mbox{\hyperlink{classCandlestickPlot}{Candlestick\+Plot}} \mbox{\hyperlink{classPlottableAdder_ad791bc064c3dbaeff535eb5d00680cb4}{Candlestick}} (List$<$ \mbox{\hyperlink{structOHLC}{OHLC}} $>$ ohlcs)
+\item 
+\mbox{\hyperlink{classEllipse}{Ellipse}} \mbox{\hyperlink{classPlottableAdder_a8b7fe0038da1b1704137605d0da865d4}{Circle}} (\mbox{\hyperlink{structCoordinates}{Coordinates}} center, double radius)
+\item 
+\mbox{\hyperlink{classEllipse}{Ellipse}} \mbox{\hyperlink{classPlottableAdder_a17d5db5ca03242767b5f7c3e4e553427}{Circle}} (double x\+Center, double y\+Center, double radius)
+\item 
+\mbox{\hyperlink{classColorBar}{Color\+Bar}} \mbox{\hyperlink{classPlottableAdder_a7c8a306537ff4a19350a400040384cbd}{Color\+Bar}} (\mbox{\hyperlink{interfaceIHasColorAxis}{IHas\+Color\+Axis}} source, Edge edge=Edge.\+Right)
+\item 
+\mbox{\hyperlink{classCoxcomb}{Coxcomb}} \mbox{\hyperlink{classPlottableAdder_a2297a7b19bb9155b67eda5982a7bee52}{Coxcomb}} (\mbox{\hyperlink{classIList}{IList}}$<$ \mbox{\hyperlink{classPieSlice}{Pie\+Slice}} $>$ slices)
+\item 
+\mbox{\hyperlink{classCoxcomb}{Coxcomb}} \mbox{\hyperlink{classPlottableAdder_abfb3e20490beeeb1a4a421da5402b6c6}{Coxcomb}} (\mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$ double $>$ values)
+\item 
+\mbox{\hyperlink{classCrosshair}{Crosshair}} \mbox{\hyperlink{classPlottableAdder_a05113bdbb89c5b2c7cd8d30e2d8ae832}{Crosshair}} (double x, double y)
+\item 
+\mbox{\hyperlink{classDataLogger}{Data\+Logger}} \mbox{\hyperlink{classPlottableAdder_a818f743a6fd5a9a7791a891dc04e47a0}{Data\+Logger}} ()
+\item 
+\mbox{\hyperlink{classDataStreamer}{Data\+Streamer}} \mbox{\hyperlink{classPlottableAdder_afcac096fde22a533cf3852d39d0d3cfd}{Data\+Streamer}} (int points, double period=1)
+\item 
+\mbox{\hyperlink{classEllipse}{Ellipse}} \mbox{\hyperlink{classPlottableAdder_a54e932ccbe34b8a6ac2e814678c8002b}{Ellipse}} (\mbox{\hyperlink{structCoordinates}{Coordinates}} center, double radiusX, double radiusY, float rotation=0)
+\item 
+\mbox{\hyperlink{classEllipse}{Ellipse}} \mbox{\hyperlink{classPlottableAdder_ab2782f94f3fc28554de812b174de4a9c}{Ellipse}} (double x\+Center, double y\+Center, double radiusX, double radiusY, float rotation=0)
+\item 
+\mbox{\hyperlink{classScottPlot_1_1Plottables_1_1ErrorBar}{Error\+Bar}} \mbox{\hyperlink{classPlottableAdder_aa61a39faa8a5b1cea0a779ba81fc952d}{Error\+Bar}} (IRead\+Only\+List$<$ double $>$ xs, IRead\+Only\+List$<$ double $>$ ys, IRead\+Only\+List$<$ double $>$ y\+Errors)
+\item 
+\mbox{\hyperlink{classFillY}{FillY}} \mbox{\hyperlink{classPlottableAdder_ac9f8e0f1bf7583628511b7bde65720d2}{FillY}} (double\mbox{[}$\,$\mbox{]} xs, double\mbox{[}$\,$\mbox{]} ys1, double\mbox{[}$\,$\mbox{]} ys2)
+\begin{DoxyCompactList}\small\item\em Fill the vertical range between two Y points for each X point \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classFillY}{FillY}} \mbox{\hyperlink{classPlottableAdder_a1702f7f045cb851ea27671d78eaea014}{FillY}} (\mbox{\hyperlink{classScatter}{Scatter}} scatter1, \mbox{\hyperlink{classScatter}{Scatter}} scatter2)
+\begin{DoxyCompactList}\small\item\em Fill the vertical range between two Y points for each X point \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classFillY}{FillY}} \mbox{\hyperlink{classPlottableAdder_afbdc061c443a93f46f159a1bed9592b4}{FillY}} (\mbox{\hyperlink{classICollection}{ICollection}}$<$(double X, double Top, double Bottom)$>$ data)
+\begin{DoxyCompactList}\small\item\em Fill the vertical range between two Y points for each X point \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classFillY}{FillY}} \mbox{\hyperlink{classPlottableAdder_a012491f91c298f3c71e7eb9253e699f0}{Fill\+Y$<$ T $>$}} (\mbox{\hyperlink{classICollection}{ICollection}}$<$ T $>$ data, Func$<$ T,(double X, double Top, double Bottom)$>$ function)
+\begin{DoxyCompactList}\small\item\em Fill the vertical range between two Y points for each X point This overload uses a custom function to calculate X, Y1, and Y2 values \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classFunctionPlot}{Function\+Plot}} \mbox{\hyperlink{classPlottableAdder_afe694615a02585b76cb93c5d335fbe4e}{Function}} (\mbox{\hyperlink{interfaceIFunctionSource}{IFunction\+Source}} function\+Source)
+\item 
+\mbox{\hyperlink{classFunctionPlot}{Function\+Plot}} \mbox{\hyperlink{classPlottableAdder_a717647c0890027fa8b381eb00449b0af}{Function}} (Func$<$ double, double $>$ func)
+\item 
+\mbox{\hyperlink{classHeatmap}{Heatmap}} \mbox{\hyperlink{classPlottableAdder_a00602e7b9fd4fdc16d2d42ab3f059c2a}{Heatmap}} (double\mbox{[},\mbox{]} intensities)
+\item 
+\mbox{\hyperlink{classHorizontalLine}{Horizontal\+Line}} \mbox{\hyperlink{classPlottableAdder_a205cf174ee95930f7bf78eb67b2d1966}{Horizontal\+Line}} (double y, float width=2, \mbox{\hyperlink{structColor}{Color}}? color=null, Line\+Pattern pattern=Line\+Pattern.\+Solid)
+\item 
+\mbox{\hyperlink{classHorizontalSpan}{Horizontal\+Span}} \mbox{\hyperlink{classPlottableAdder_a09b69ad117eb0be9aeb2250d6af27126}{Horizontal\+Span}} (double x1, double x2, \mbox{\hyperlink{structColor}{Color}}? color=null)
+\item 
+\mbox{\hyperlink{classImageMarker}{Image\+Marker}} \mbox{\hyperlink{classPlottableAdder_a377e1b4e559052e10dc535492bf61089}{Image\+Marker}} (\mbox{\hyperlink{structCoordinates}{Coordinates}} location, \mbox{\hyperlink{classImage}{Image}} image, float scale=1)
+\item 
+Image\+Rect \mbox{\hyperlink{classPlottableAdder_a94db246f9ff189171449253cabeeb39b}{Image\+Rect}} (\mbox{\hyperlink{classImage}{Image}} image, \mbox{\hyperlink{structCoordinateRect}{Coordinate\+Rect}} rect)
+\item 
+\mbox{\hyperlink{classLegend}{Legend}} \mbox{\hyperlink{classPlottableAdder_a480ebe6c44b6d0988d31e2bb23f34dab}{Legend}} ()
+\item 
+\mbox{\hyperlink{classLinePlot}{Line\+Plot}} \mbox{\hyperlink{classPlottableAdder_a658082c5cb0559a7fd7aefc474b9bfe6}{Line}} (\mbox{\hyperlink{structCoordinates}{Coordinates}} start, \mbox{\hyperlink{structCoordinates}{Coordinates}} end)
+\item 
+\mbox{\hyperlink{classLinePlot}{Line\+Plot}} \mbox{\hyperlink{classPlottableAdder_a6c134ad60773d125c1a110e4273b1803}{Line}} (\mbox{\hyperlink{structCoordinateLine}{Coordinate\+Line}} line)
+\item 
+\mbox{\hyperlink{classLinePlot}{Line\+Plot}} \mbox{\hyperlink{classPlottableAdder_ad1bb60da01dfc62f6e8ad5e79d0c6035}{Line}} (double x1, double y1, double x2, double y2)
+\item 
+\mbox{\hyperlink{classMarker}{Marker}} \mbox{\hyperlink{classPlottableAdder_a0c8caf714eeafe5696a6c9df65c834fa}{Marker}} (double x, double y, Marker\+Shape shape=Marker\+Shape.\+Filled\+Circle, float size=10, \mbox{\hyperlink{structColor}{Color}}? color=null)
+\item 
+\mbox{\hyperlink{classMarker}{Marker}} \mbox{\hyperlink{classPlottableAdder_aed3aa55282a5cd470d01148acbf37910}{Marker}} (\mbox{\hyperlink{structCoordinates}{Coordinates}} location, Marker\+Shape shape=Marker\+Shape.\+Filled\+Circle, float size=10, \mbox{\hyperlink{structColor}{Color}}? color=null)
+\item 
+Plottables.\+Markers \mbox{\hyperlink{classPlottableAdder_ad1e1d11dc6a5f22cce7e466ddee6fb1c}{Markers}} (double\mbox{[}$\,$\mbox{]} xs, double\mbox{[}$\,$\mbox{]} ys, Marker\+Shape shape=Marker\+Shape.\+Filled\+Circle, float size=10, \mbox{\hyperlink{structColor}{Color}}? color=null)
+\item 
+Plottables.\+Markers \mbox{\hyperlink{classPlottableAdder_a533bb81769e723cfe6377c349ba56695}{Markers}} (\mbox{\hyperlink{structCoordinates}{Coordinates}}\mbox{[}$\,$\mbox{]} coordinates, Marker\+Shape shape=Marker\+Shape.\+Filled\+Circle, float size=10, \mbox{\hyperlink{structColor}{Color}}? color=null)
+\item 
+Plottables.\+Markers \mbox{\hyperlink{classPlottableAdder_a69bcadb5b2018e5af56988e0989da7c5}{Markers}} (List$<$ \mbox{\hyperlink{structCoordinates}{Coordinates}} $>$ coordinates, Marker\+Shape shape=Marker\+Shape.\+Filled\+Circle, float size=10, \mbox{\hyperlink{structColor}{Color}}? color=null)
+\item 
+Plottables.\+Markers \mbox{\hyperlink{classPlottableAdder_af57b13ffb45ac6c6382789aeb474aee7}{Markers$<$ TX, TY $>$}} (TX\mbox{[}$\,$\mbox{]} xs, TY\mbox{[}$\,$\mbox{]} ys, Marker\+Shape shape=Marker\+Shape.\+Filled\+Circle, float size=10, \mbox{\hyperlink{structColor}{Color}}? color=null)
+\item 
+Plottables.\+Markers \mbox{\hyperlink{classPlottableAdder_ae40ce3019ed8ecde7c1de4870506ec32}{Markers$<$ TX, TY $>$}} (List$<$ TX $>$ xs, List$<$ TY $>$ ys, Marker\+Shape shape=Marker\+Shape.\+Filled\+Circle, float size=10, \mbox{\hyperlink{structColor}{Color}}? color=null)
+\item 
+\mbox{\hyperlink{classOhlcPlot}{Ohlc\+Plot}} \mbox{\hyperlink{classPlottableAdder_ab9b387828024c9bb4b6ca8b824f05b18}{OHLC}} (List$<$ \mbox{\hyperlink{structOHLC}{OHLC}} $>$ ohlcs)
+\item 
+\mbox{\hyperlink{classPhasor}{Phasor}} \mbox{\hyperlink{classPlottableAdder_ab8dd5ee45b751555bb848997b7219790}{Phasor}} ()
+\item 
+\mbox{\hyperlink{classPhasor}{Phasor}} \mbox{\hyperlink{classPlottableAdder_afec087d8b5e4453cf6f8f6b20ce8a8e8}{Phasor}} (\mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$ \mbox{\hyperlink{structPolarCoordinates}{Polar\+Coordinates}} $>$ points)
+\item 
+\mbox{\hyperlink{classPie}{Pie}} \mbox{\hyperlink{classPlottableAdder_ae55fef3d41f7ec85a271d8c162cfe052}{Pie}} (\mbox{\hyperlink{classIList}{IList}}$<$ \mbox{\hyperlink{classPieSlice}{Pie\+Slice}} $>$ slices)
+\item 
+\mbox{\hyperlink{classPie}{Pie}} \mbox{\hyperlink{classPlottableAdder_a37ea6b58bf2814d77b413c81b04b14c9}{Pie}} (\mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$ double $>$ values)
+\item 
+\mbox{\hyperlink{interfaceIPlottable}{IPlottable}} \mbox{\hyperlink{classPlottableAdder_a041a26dfb78322059fcb5732a2ecfc6f}{Plottable}} (\mbox{\hyperlink{interfaceIPlottable}{IPlottable}} plottable)
+\item 
+\mbox{\hyperlink{classPolarAxis}{Polar\+Axis}} \mbox{\hyperlink{classPlottableAdder_a6daf21edb1f49229b0aa7f52e90e27fc}{Polar\+Axis}} (double maximum\+Radius=1, bool hide\+Cartesian\+Axes\+And\+Grids=true)
+\item 
+\mbox{\hyperlink{classPolygon}{Polygon}} \mbox{\hyperlink{classPlottableAdder_adc5aa6eaba34616eb35fbb58f1fa1128}{Polygon}} (\mbox{\hyperlink{structCoordinates}{Coordinates}}\mbox{[}$\,$\mbox{]} coordinates)
+\item 
+\mbox{\hyperlink{classPolygon}{Polygon}} \mbox{\hyperlink{classPlottableAdder_a6e045807058c3c6ca0c6d58805362e40}{Polygon$<$ TX, TY $>$}} (\mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$ TX $>$ xs, \mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$ TY $>$ ys)
+\item 
+\mbox{\hyperlink{classPopulationSymbol}{Population\+Symbol}} \mbox{\hyperlink{classPlottableAdder_a1b85e9582642acb405814f43b1c1be5c}{Population}} (double\mbox{[}$\,$\mbox{]} values, double x=0)
+\item 
+\mbox{\hyperlink{classRadar}{Radar}} \mbox{\hyperlink{classPlottableAdder_a0e21c9c761d51ef22b0e1dd69960153c}{Radar}} (IRead\+Only\+List$<$ \mbox{\hyperlink{classRadarSeries}{Radar\+Series}} $>$ series)
+\item 
+\mbox{\hyperlink{classRadar}{Radar}} \mbox{\hyperlink{classPlottableAdder_ace5f2a85f358eb2661f871b70810af1c}{Radar}} (\mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$ \mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$ double $>$$>$ series)
+\item 
+\mbox{\hyperlink{classRadialGaugePlot}{Radial\+Gauge\+Plot}} \mbox{\hyperlink{classPlottableAdder_a2f2be865bb239fdcbe9afa4c2945fda9}{Radial\+Gauge\+Plot}} (\mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$ double $>$ values)
+\item 
+\mbox{\hyperlink{classRectangle}{Rectangle}} \mbox{\hyperlink{classPlottableAdder_adfa10e4ed927d10a04a90af2cd3a300d}{Rectangle}} (\mbox{\hyperlink{structCoordinateRect}{Coordinate\+Rect}} rect)
+\item 
+\mbox{\hyperlink{classRectangle}{Rectangle}} \mbox{\hyperlink{classPlottableAdder_a8891624a4b9cfef692d284b01e74ee6c}{Rectangle}} (double left, double right, double bottom, double top)
+\item 
+\mbox{\hyperlink{classScatter}{Scatter}} \mbox{\hyperlink{classPlottableAdder_a28d185799608e5bdcbbfe490d3c360ea}{Scatter}} (\mbox{\hyperlink{interfaceIScatterSource}{IScatter\+Source}} source, \mbox{\hyperlink{structColor}{Color}}? color=null)
+\item 
+\mbox{\hyperlink{classScatter}{Scatter}} \mbox{\hyperlink{classPlottableAdder_a335c282ec6b8712558d418bb553d18a0}{Scatter}} (double x, double y, \mbox{\hyperlink{structColor}{Color}}? color=null)
+\item 
+\mbox{\hyperlink{classScatter}{Scatter}} \mbox{\hyperlink{classPlottableAdder_a6104f38acca2960c6b8bb5f982bcb614}{Scatter}} (double\mbox{[}$\,$\mbox{]} xs, double\mbox{[}$\,$\mbox{]} ys, \mbox{\hyperlink{structColor}{Color}}? color=null)
+\item 
+\mbox{\hyperlink{classScatter}{Scatter}} \mbox{\hyperlink{classPlottableAdder_a3b1e4259e9509215ea4d54c37ac5a6a8}{Scatter}} (\mbox{\hyperlink{structCoordinates}{Coordinates}} point, \mbox{\hyperlink{structColor}{Color}}? color=null)
+\item 
+\mbox{\hyperlink{classScatter}{Scatter}} \mbox{\hyperlink{classPlottableAdder_a4e42c94348b130931324835bb109fe61}{Scatter}} (\mbox{\hyperlink{structCoordinates}{Coordinates}}\mbox{[}$\,$\mbox{]} coordinates, \mbox{\hyperlink{structColor}{Color}}? color=null)
+\item 
+\mbox{\hyperlink{classScatter}{Scatter}} \mbox{\hyperlink{classPlottableAdder_ac98f24e1f562623dc72957918f80a425}{Scatter}} (List$<$ \mbox{\hyperlink{structCoordinates}{Coordinates}} $>$ coordinates, \mbox{\hyperlink{structColor}{Color}}? color=null)
+\item 
+\mbox{\hyperlink{classScatter}{Scatter}} \mbox{\hyperlink{classPlottableAdder_a4a66c383649a3e5cf03e9620476dd604}{Scatter$<$ T1, T2 $>$}} (T1\mbox{[}$\,$\mbox{]} xs, T2\mbox{[}$\,$\mbox{]} ys, \mbox{\hyperlink{structColor}{Color}}? color=null)
+\item 
+\mbox{\hyperlink{classScatter}{Scatter}} \mbox{\hyperlink{classPlottableAdder_a1c29b4dfb398ff8c41afbc70a803a7b1}{Scatter$<$ T1, T2 $>$}} (List$<$ T1 $>$ xs, List$<$ T2 $>$ ys, \mbox{\hyperlink{structColor}{Color}}? color=null)
+\item 
+\mbox{\hyperlink{classScatter}{Scatter}} \mbox{\hyperlink{classPlottableAdder_aecd80c0a8a8300e986d13a88a392a477}{Scatter\+Line}} (\mbox{\hyperlink{interfaceIScatterSource}{IScatter\+Source}} source, \mbox{\hyperlink{structColor}{Color}}? color=null)
+\item 
+\mbox{\hyperlink{classScatter}{Scatter}} \mbox{\hyperlink{classPlottableAdder_a5dad1f2ce1416ba9e3335795a796f9d9}{Scatter\+Line}} (double\mbox{[}$\,$\mbox{]} xs, double\mbox{[}$\,$\mbox{]} ys, \mbox{\hyperlink{structColor}{Color}}? color=null)
+\item 
+\mbox{\hyperlink{classScatter}{Scatter}} \mbox{\hyperlink{classPlottableAdder_a8134a100c45714543eefb335bc8d0daa}{Scatter\+Line}} (\mbox{\hyperlink{structCoordinates}{Coordinates}}\mbox{[}$\,$\mbox{]} coordinates, \mbox{\hyperlink{structColor}{Color}}? color=null)
+\item 
+\mbox{\hyperlink{classScatter}{Scatter}} \mbox{\hyperlink{classPlottableAdder_a556b7cc54502f330e5cec3bd01dcc6e7}{Scatter\+Line}} (List$<$ \mbox{\hyperlink{structCoordinates}{Coordinates}} $>$ coordinates, \mbox{\hyperlink{structColor}{Color}}? color=null)
+\item 
+\mbox{\hyperlink{classScatter}{Scatter}} \mbox{\hyperlink{classPlottableAdder_acbba75d988993710b55eeefa13f46a69}{Scatter\+Line$<$ T1, T2 $>$}} (T1\mbox{[}$\,$\mbox{]} xs, T2\mbox{[}$\,$\mbox{]} ys, \mbox{\hyperlink{structColor}{Color}}? color=null)
+\item 
+\mbox{\hyperlink{classScatter}{Scatter}} \mbox{\hyperlink{classPlottableAdder_a8a44323b1b7adf05e211f683af90bfb3}{Scatter\+Line$<$ T1, T2 $>$}} (List$<$ T1 $>$ xs, List$<$ T2 $>$ ys, \mbox{\hyperlink{structColor}{Color}}? color=null)
+\item 
+\mbox{\hyperlink{classScatter}{Scatter}} \mbox{\hyperlink{classPlottableAdder_a968196303f943e6ad070fa1b49d629b7}{Scatter\+Points}} (\mbox{\hyperlink{interfaceIScatterSource}{IScatter\+Source}} source, \mbox{\hyperlink{structColor}{Color}}? color=null)
+\item 
+\mbox{\hyperlink{classScatter}{Scatter}} \mbox{\hyperlink{classPlottableAdder_a1e06f11072b0dc81fb3f34514edab196}{Scatter\+Points}} (double\mbox{[}$\,$\mbox{]} xs, double\mbox{[}$\,$\mbox{]} ys, \mbox{\hyperlink{structColor}{Color}}? color=null)
+\item 
+\mbox{\hyperlink{classScatter}{Scatter}} \mbox{\hyperlink{classPlottableAdder_ad248c82f921e71db6dece4a6ec6ea0f5}{Scatter\+Points}} (\mbox{\hyperlink{structCoordinates}{Coordinates}}\mbox{[}$\,$\mbox{]} coordinates, \mbox{\hyperlink{structColor}{Color}}? color=null)
+\item 
+\mbox{\hyperlink{classScatter}{Scatter}} \mbox{\hyperlink{classPlottableAdder_a0cdbd56a1610673f0aad4fabd1fa12b9}{Scatter\+Points}} (List$<$ \mbox{\hyperlink{structCoordinates}{Coordinates}} $>$ coordinates, \mbox{\hyperlink{structColor}{Color}}? color=null)
+\item 
+\mbox{\hyperlink{classScatter}{Scatter}} \mbox{\hyperlink{classPlottableAdder_a40d3d5cbf54ae40613e289302e54a999}{Scatter\+Points$<$ T1, T2 $>$}} (T1\mbox{[}$\,$\mbox{]} xs, T2\mbox{[}$\,$\mbox{]} ys, \mbox{\hyperlink{structColor}{Color}}? color=null)
+\item 
+\mbox{\hyperlink{classScatter}{Scatter}} \mbox{\hyperlink{classPlottableAdder_a6474b1d803cc1df902f9216cfde5ead6}{Scatter\+Points$<$ T1, T2 $>$}} (List$<$ T1 $>$ xs, List$<$ T2 $>$ ys, \mbox{\hyperlink{structColor}{Color}}? color=null)
+\item 
+\mbox{\hyperlink{classSignal}{Signal}} \mbox{\hyperlink{classPlottableAdder_a2672554b86019eadc5021b681bc3e8dd}{Signal}} (\mbox{\hyperlink{interfaceISignalSource}{ISignal\+Source}} source, \mbox{\hyperlink{structColor}{Color}}? color=null)
+\item 
+\mbox{\hyperlink{classSignal}{Signal}} \mbox{\hyperlink{classPlottableAdder_ad76189165e6063f168ad6371dc549bf6}{Signal}} (double\mbox{[}$\,$\mbox{]} ys, double period=1, \mbox{\hyperlink{structColor}{Color}}? color=null)
+\item 
+\mbox{\hyperlink{classSignal}{Signal}} \mbox{\hyperlink{classPlottableAdder_a3326fb842455e471815800f8c565f5f7}{Signal$<$ T $>$}} (T\mbox{[}$\,$\mbox{]} ys, double period=1, \mbox{\hyperlink{structColor}{Color}}? color=null)
+\item 
+\mbox{\hyperlink{classSignal}{Signal}} \mbox{\hyperlink{classPlottableAdder_ad27818ad41ba7a0c1e70a120f7d0f77f}{Signal$<$ T $>$}} (IRead\+Only\+List$<$ T $>$ ys, double period=1, \mbox{\hyperlink{structColor}{Color}}? color=null)
+\item 
+Signal\+Const$<$ T $>$ \mbox{\hyperlink{classPlottableAdder_a0e5bd9ccc24a9c0c3cd66b565a688c22}{Signal\+Const$<$ T $>$}} (T\mbox{[}$\,$\mbox{]} ys, double period=1, \mbox{\hyperlink{structColor}{Color}}? color=null)
+\item 
+\mbox{\hyperlink{classSignalXY}{Signal\+XY}} \mbox{\hyperlink{classPlottableAdder_a05d5829ec9f897e0807130736689b70f}{Signal\+XY}} (\mbox{\hyperlink{interfaceISignalXYSource}{ISignal\+XYSource}} source, \mbox{\hyperlink{structColor}{Color}}? color=null)
+\item 
+\mbox{\hyperlink{classSignalXY}{Signal\+XY}} \mbox{\hyperlink{classPlottableAdder_a9018504070f8f2a0f5049c85d10814cc}{Signal\+XY}} (double\mbox{[}$\,$\mbox{]} xs, double\mbox{[}$\,$\mbox{]} ys, \mbox{\hyperlink{structColor}{Color}}? color=null)
+\item 
+\mbox{\hyperlink{classSignalXY}{Signal\+XY}} \mbox{\hyperlink{classPlottableAdder_ab3497bf8717b256229dc06e0074c2a50}{Signal\+XY$<$ TX, TY $>$}} (TX\mbox{[}$\,$\mbox{]} xs, TY\mbox{[}$\,$\mbox{]} ys, \mbox{\hyperlink{structColor}{Color}}? color=null)
+\item 
+Text \mbox{\hyperlink{classPlottableAdder_aa236d6bc2122afe114daa79c222bf423}{Text}} (string text, \mbox{\hyperlink{structCoordinates}{Coordinates}} location)
+\item 
+Text \mbox{\hyperlink{classPlottableAdder_a252a8215da596aedd80d63cd6ef7fa7d}{Text}} (string text, double x, double y)
+\item 
+\mbox{\hyperlink{classVectorField}{Vector\+Field}} \mbox{\hyperlink{classPlottableAdder_a56898edca8fdb077e849d15b4704805d}{Vector\+Field}} (\mbox{\hyperlink{classIList}{IList}}$<$ \mbox{\hyperlink{structRootedCoordinateVector}{Rooted\+Coordinate\+Vector}} $>$ vectors, \mbox{\hyperlink{structColor}{Color}}? color=null)
+\item 
+\mbox{\hyperlink{classVerticalLine}{Vertical\+Line}} \mbox{\hyperlink{classPlottableAdder_a766fe4449c195735811031319bc214e8}{Vertical\+Line}} (double x, float width=2, \mbox{\hyperlink{structColor}{Color}}? color=null, Line\+Pattern pattern=Line\+Pattern.\+Solid)
+\item 
+\mbox{\hyperlink{classVerticalSpan}{Vertical\+Span}} \mbox{\hyperlink{classPlottableAdder_a693058923d3b425251da4c3495b0fc0a}{Vertical\+Span}} (double y1, double y2, \mbox{\hyperlink{structColor}{Color}}? color=null)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ Type $>$ \mbox{\hyperlink{classPlottableAdder_a53406cc40bc0bb824401c2f31dd0f9d4}{Plottables\+That\+Do\+Not\+Get\+Colors}}
+\begin{DoxyCompactList}\small\item\em Plottables of these types are ignored when assigning colors according to new plottables according to the \mbox{\hyperlink{classPlottableAdder_a9c3fb2b2022f180f5febc0ab05a79bee}{Palette}} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPlot}{Plot}} \mbox{\hyperlink{classPlottableAdder_a259a0b4b8eef9360a8245ed30cfab9b1}{plot}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{classPlot}{Plot}} \mbox{\hyperlink{classPlottableAdder_ac82dad31b217ea1569367d89c1f80ab9}{Plot}} = \mbox{\hyperlink{classPlottableAdder_a259a0b4b8eef9360a8245ed30cfab9b1}{plot}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{interfaceIPalette}{IPalette}} \mbox{\hyperlink{classPlottableAdder_a9c3fb2b2022f180f5febc0ab05a79bee}{Palette}} = new Palettes.\+Category10()\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{structColor}{Color}} set used for adding new plottables \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Helper methods to create plottable objects and add them to the plot 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPlottableAdder_a83a2a5e3feb14a0868379681d80b1128}\label{classPlottableAdder_a83a2a5e3feb14a0868379681d80b1128}} 
+\index{PlottableAdder@{PlottableAdder}!Annotation@{Annotation}}
+\index{Annotation@{Annotation}!PlottableAdder@{PlottableAdder}}
+\doxysubsubsection{\texorpdfstring{Annotation()}{Annotation()}}
+{\footnotesize\ttfamily Annotation Plottable\+Adder.\+Annotation (\begin{DoxyParamCaption}\item[{string}]{text,  }\item[{Alignment}]{alignment = {\ttfamily Alignment.UpperLeft} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classPlottableAdder_aa2e366f56bf867824196c4e44936b530}\label{classPlottableAdder_aa2e366f56bf867824196c4e44936b530}} 
+\index{PlottableAdder@{PlottableAdder}!Arrow@{Arrow}}
+\index{Arrow@{Arrow}!PlottableAdder@{PlottableAdder}}
+\doxysubsubsection{\texorpdfstring{Arrow()}{Arrow()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classArrow}{Arrow}} Plottable\+Adder.\+Arrow (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structCoordinateLine}{Coordinate\+Line}}}]{line }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classPlottableAdder_a0520f7cce21693373c32612677386175}\label{classPlottableAdder_a0520f7cce21693373c32612677386175}} 
+\index{PlottableAdder@{PlottableAdder}!Arrow@{Arrow}}
+\index{Arrow@{Arrow}!PlottableAdder@{PlottableAdder}}
+\doxysubsubsection{\texorpdfstring{Arrow()}{Arrow()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classArrow}{Arrow}} Plottable\+Adder.\+Arrow (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structCoordinates}{Coordinates}}}]{arrow\+Base,  }\item[{\mbox{\hyperlink{structCoordinates}{Coordinates}}}]{arrow\+Tip }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classPlottableAdder_ade24aa84f48c009c734d633b85be2441}\label{classPlottableAdder_ade24aa84f48c009c734d633b85be2441}} 
+\index{PlottableAdder@{PlottableAdder}!Arrow@{Arrow}}
+\index{Arrow@{Arrow}!PlottableAdder@{PlottableAdder}}
+\doxysubsubsection{\texorpdfstring{Arrow()}{Arrow()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classArrow}{Arrow}} Plottable\+Adder.\+Arrow (\begin{DoxyParamCaption}\item[{double}]{x\+Base,  }\item[{double}]{y\+Base,  }\item[{double}]{x\+Tip,  }\item[{double}]{y\+Tip }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classPlottableAdder_ad8c34a8a5b292a7d5be0ec64a6f36de8}\label{classPlottableAdder_ad8c34a8a5b292a7d5be0ec64a6f36de8}} 
+\index{PlottableAdder@{PlottableAdder}!Bar@{Bar}}
+\index{Bar@{Bar}!PlottableAdder@{PlottableAdder}}
+\doxysubsubsection{\texorpdfstring{Bar()}{Bar()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classBarPlot}{Bar\+Plot}} Plottable\+Adder.\+Bar (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classBar}{Bar}}}]{bar }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classPlottableAdder_ac9694d5bf7c636e41366627c8bee2202}\label{classPlottableAdder_ac9694d5bf7c636e41366627c8bee2202}} 
+\index{PlottableAdder@{PlottableAdder}!Bar@{Bar}}
+\index{Bar@{Bar}!PlottableAdder@{PlottableAdder}}
+\doxysubsubsection{\texorpdfstring{Bar()}{Bar()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classBarPlot}{Bar\+Plot}} Plottable\+Adder.\+Bar (\begin{DoxyParamCaption}\item[{double}]{position,  }\item[{double}]{value,  }\item[{double}]{error = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classPlottableAdder_a6dae3e3ae56957f352008dcc28f00d92}\label{classPlottableAdder_a6dae3e3ae56957f352008dcc28f00d92}} 
+\index{PlottableAdder@{PlottableAdder}!Bars@{Bars}}
+\index{Bars@{Bars}!PlottableAdder@{PlottableAdder}}
+\doxysubsubsection{\texorpdfstring{Bars()}{Bars()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classBarPlot}{Bar\+Plot}} Plottable\+Adder.\+Bars (\begin{DoxyParamCaption}\item[{double\mbox{[}$\,$\mbox{]}}]{values }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classPlottableAdder_a30c58cb93458d8f19173820c5e983011}\label{classPlottableAdder_a30c58cb93458d8f19173820c5e983011}} 
+\index{PlottableAdder@{PlottableAdder}!Bars@{Bars}}
+\index{Bars@{Bars}!PlottableAdder@{PlottableAdder}}
+\doxysubsubsection{\texorpdfstring{Bars()}{Bars()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classBarPlot}{Bar\+Plot}} Plottable\+Adder.\+Bars (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$ \mbox{\hyperlink{classBar}{Bar}} $>$}]{bars }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classPlottableAdder_a3b487ed9840aa686c75e1e15c3c7f1ed}\label{classPlottableAdder_a3b487ed9840aa686c75e1e15c3c7f1ed}} 
+\index{PlottableAdder@{PlottableAdder}!Bars@{Bars}}
+\index{Bars@{Bars}!PlottableAdder@{PlottableAdder}}
+\doxysubsubsection{\texorpdfstring{Bars()}{Bars()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classBarPlot}{Bar\+Plot}} Plottable\+Adder.\+Bars (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$ double $>$}]{positions,  }\item[{\mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$ double $>$}]{values }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classPlottableAdder_addaf0c1496a422786e72c9c3ada4729e}\label{classPlottableAdder_addaf0c1496a422786e72c9c3ada4729e}} 
+\index{PlottableAdder@{PlottableAdder}!Box@{Box}}
+\index{Box@{Box}!PlottableAdder@{PlottableAdder}}
+\doxysubsubsection{\texorpdfstring{Box()}{Box()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classBoxPlot}{Box\+Plot}} Plottable\+Adder.\+Box (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classBox}{Box}}}]{box }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classPlottableAdder_a1fec0fa3b0d1ef4d588c2ad7e08b2900}\label{classPlottableAdder_a1fec0fa3b0d1ef4d588c2ad7e08b2900}} 
+\index{PlottableAdder@{PlottableAdder}!Boxes@{Boxes}}
+\index{Boxes@{Boxes}!PlottableAdder@{PlottableAdder}}
+\doxysubsubsection{\texorpdfstring{Boxes()}{Boxes()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classBoxPlot}{Box\+Plot}} Plottable\+Adder.\+Boxes (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$ \mbox{\hyperlink{classBox}{Box}} $>$}]{boxes }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classPlottableAdder_a87efc00a6c616f4a13f314acf17ceb30}\label{classPlottableAdder_a87efc00a6c616f4a13f314acf17ceb30}} 
+\index{PlottableAdder@{PlottableAdder}!Callout@{Callout}}
+\index{Callout@{Callout}!PlottableAdder@{PlottableAdder}}
+\doxysubsubsection{\texorpdfstring{Callout()}{Callout()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCallout}{Callout}} Plottable\+Adder.\+Callout (\begin{DoxyParamCaption}\item[{string}]{text,  }\item[{\mbox{\hyperlink{structCoordinates}{Coordinates}}}]{text\+Location,  }\item[{\mbox{\hyperlink{structCoordinates}{Coordinates}}}]{tip\+Location }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classPlottableAdder_ace20ea170bb3545f064c67071e11b727}\label{classPlottableAdder_ace20ea170bb3545f064c67071e11b727}} 
+\index{PlottableAdder@{PlottableAdder}!Callout@{Callout}}
+\index{Callout@{Callout}!PlottableAdder@{PlottableAdder}}
+\doxysubsubsection{\texorpdfstring{Callout()}{Callout()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCallout}{Callout}} Plottable\+Adder.\+Callout (\begin{DoxyParamCaption}\item[{string}]{text,  }\item[{double}]{textX,  }\item[{double}]{textY,  }\item[{double}]{tipX,  }\item[{double}]{tipY }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classPlottableAdder_ad791bc064c3dbaeff535eb5d00680cb4}\label{classPlottableAdder_ad791bc064c3dbaeff535eb5d00680cb4}} 
+\index{PlottableAdder@{PlottableAdder}!Candlestick@{Candlestick}}
+\index{Candlestick@{Candlestick}!PlottableAdder@{PlottableAdder}}
+\doxysubsubsection{\texorpdfstring{Candlestick()}{Candlestick()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCandlestickPlot}{Candlestick\+Plot}} Plottable\+Adder.\+Candlestick (\begin{DoxyParamCaption}\item[{List$<$ \mbox{\hyperlink{structOHLC}{OHLC}} $>$}]{ohlcs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classPlottableAdder_a8b7fe0038da1b1704137605d0da865d4}\label{classPlottableAdder_a8b7fe0038da1b1704137605d0da865d4}} 
+\index{PlottableAdder@{PlottableAdder}!Circle@{Circle}}
+\index{Circle@{Circle}!PlottableAdder@{PlottableAdder}}
+\doxysubsubsection{\texorpdfstring{Circle()}{Circle()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classEllipse}{Ellipse}} Plottable\+Adder.\+Circle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structCoordinates}{Coordinates}}}]{center,  }\item[{double}]{radius }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classPlottableAdder_a17d5db5ca03242767b5f7c3e4e553427}\label{classPlottableAdder_a17d5db5ca03242767b5f7c3e4e553427}} 
+\index{PlottableAdder@{PlottableAdder}!Circle@{Circle}}
+\index{Circle@{Circle}!PlottableAdder@{PlottableAdder}}
+\doxysubsubsection{\texorpdfstring{Circle()}{Circle()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classEllipse}{Ellipse}} Plottable\+Adder.\+Circle (\begin{DoxyParamCaption}\item[{double}]{x\+Center,  }\item[{double}]{y\+Center,  }\item[{double}]{radius }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classPlottableAdder_a7c8a306537ff4a19350a400040384cbd}\label{classPlottableAdder_a7c8a306537ff4a19350a400040384cbd}} 
+\index{PlottableAdder@{PlottableAdder}!ColorBar@{ColorBar}}
+\index{ColorBar@{ColorBar}!PlottableAdder@{PlottableAdder}}
+\doxysubsubsection{\texorpdfstring{ColorBar()}{ColorBar()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classColorBar}{Color\+Bar}} Plottable\+Adder.\+Color\+Bar (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceIHasColorAxis}{IHas\+Color\+Axis}}}]{source,  }\item[{Edge}]{edge = {\ttfamily Edge.Right} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classPlottableAdder_abfb3e20490beeeb1a4a421da5402b6c6}\label{classPlottableAdder_abfb3e20490beeeb1a4a421da5402b6c6}} 
+\index{PlottableAdder@{PlottableAdder}!Coxcomb@{Coxcomb}}
+\index{Coxcomb@{Coxcomb}!PlottableAdder@{PlottableAdder}}
+\doxysubsubsection{\texorpdfstring{Coxcomb()}{Coxcomb()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCoxcomb}{Coxcomb}} Plottable\+Adder.\+Coxcomb (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$ double $>$}]{values }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classPlottableAdder_a2297a7b19bb9155b67eda5982a7bee52}\label{classPlottableAdder_a2297a7b19bb9155b67eda5982a7bee52}} 
+\index{PlottableAdder@{PlottableAdder}!Coxcomb@{Coxcomb}}
+\index{Coxcomb@{Coxcomb}!PlottableAdder@{PlottableAdder}}
+\doxysubsubsection{\texorpdfstring{Coxcomb()}{Coxcomb()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCoxcomb}{Coxcomb}} Plottable\+Adder.\+Coxcomb (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIList}{IList}}$<$ \mbox{\hyperlink{classPieSlice}{Pie\+Slice}} $>$}]{slices }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classPlottableAdder_a05113bdbb89c5b2c7cd8d30e2d8ae832}\label{classPlottableAdder_a05113bdbb89c5b2c7cd8d30e2d8ae832}} 
+\index{PlottableAdder@{PlottableAdder}!Crosshair@{Crosshair}}
+\index{Crosshair@{Crosshair}!PlottableAdder@{PlottableAdder}}
+\doxysubsubsection{\texorpdfstring{Crosshair()}{Crosshair()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCrosshair}{Crosshair}} Plottable\+Adder.\+Crosshair (\begin{DoxyParamCaption}\item[{double}]{x,  }\item[{double}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classPlottableAdder_a818f743a6fd5a9a7791a891dc04e47a0}\label{classPlottableAdder_a818f743a6fd5a9a7791a891dc04e47a0}} 
+\index{PlottableAdder@{PlottableAdder}!DataLogger@{DataLogger}}
+\index{DataLogger@{DataLogger}!PlottableAdder@{PlottableAdder}}
+\doxysubsubsection{\texorpdfstring{DataLogger()}{DataLogger()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classDataLogger}{Data\+Logger}} Plottable\+Adder.\+Data\+Logger (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classPlottableAdder_afcac096fde22a533cf3852d39d0d3cfd}\label{classPlottableAdder_afcac096fde22a533cf3852d39d0d3cfd}} 
+\index{PlottableAdder@{PlottableAdder}!DataStreamer@{DataStreamer}}
+\index{DataStreamer@{DataStreamer}!PlottableAdder@{PlottableAdder}}
+\doxysubsubsection{\texorpdfstring{DataStreamer()}{DataStreamer()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classDataStreamer}{Data\+Streamer}} Plottable\+Adder.\+Data\+Streamer (\begin{DoxyParamCaption}\item[{int}]{points,  }\item[{double}]{period = {\ttfamily 1} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classPlottableAdder_a54e932ccbe34b8a6ac2e814678c8002b}\label{classPlottableAdder_a54e932ccbe34b8a6ac2e814678c8002b}} 
+\index{PlottableAdder@{PlottableAdder}!Ellipse@{Ellipse}}
+\index{Ellipse@{Ellipse}!PlottableAdder@{PlottableAdder}}
+\doxysubsubsection{\texorpdfstring{Ellipse()}{Ellipse()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classEllipse}{Ellipse}} Plottable\+Adder.\+Ellipse (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structCoordinates}{Coordinates}}}]{center,  }\item[{double}]{radiusX,  }\item[{double}]{radiusY,  }\item[{float}]{rotation = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classPlottableAdder_ab2782f94f3fc28554de812b174de4a9c}\label{classPlottableAdder_ab2782f94f3fc28554de812b174de4a9c}} 
+\index{PlottableAdder@{PlottableAdder}!Ellipse@{Ellipse}}
+\index{Ellipse@{Ellipse}!PlottableAdder@{PlottableAdder}}
+\doxysubsubsection{\texorpdfstring{Ellipse()}{Ellipse()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classEllipse}{Ellipse}} Plottable\+Adder.\+Ellipse (\begin{DoxyParamCaption}\item[{double}]{x\+Center,  }\item[{double}]{y\+Center,  }\item[{double}]{radiusX,  }\item[{double}]{radiusY,  }\item[{float}]{rotation = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classPlottableAdder_aa61a39faa8a5b1cea0a779ba81fc952d}\label{classPlottableAdder_aa61a39faa8a5b1cea0a779ba81fc952d}} 
+\index{PlottableAdder@{PlottableAdder}!ErrorBar@{ErrorBar}}
+\index{ErrorBar@{ErrorBar}!PlottableAdder@{PlottableAdder}}
+\doxysubsubsection{\texorpdfstring{ErrorBar()}{ErrorBar()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classScottPlot_1_1Plottables_1_1ErrorBar}{Error\+Bar}} Plottable\+Adder.\+Error\+Bar (\begin{DoxyParamCaption}\item[{IRead\+Only\+List$<$ double $>$}]{xs,  }\item[{IRead\+Only\+List$<$ double $>$}]{ys,  }\item[{IRead\+Only\+List$<$ double $>$}]{y\+Errors }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classPlottableAdder_ac9f8e0f1bf7583628511b7bde65720d2}\label{classPlottableAdder_ac9f8e0f1bf7583628511b7bde65720d2}} 
+\index{PlottableAdder@{PlottableAdder}!FillY@{FillY}}
+\index{FillY@{FillY}!PlottableAdder@{PlottableAdder}}
+\doxysubsubsection{\texorpdfstring{FillY()}{FillY()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classFillY}{FillY}} Plottable\+Adder.\+FillY (\begin{DoxyParamCaption}\item[{double\mbox{[}$\,$\mbox{]}}]{xs,  }\item[{double\mbox{[}$\,$\mbox{]}}]{ys1,  }\item[{double\mbox{[}$\,$\mbox{]}}]{ys2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Fill the vertical range between two Y points for each X point 
+
+\mbox{\Hypertarget{classPlottableAdder_afbdc061c443a93f46f159a1bed9592b4}\label{classPlottableAdder_afbdc061c443a93f46f159a1bed9592b4}} 
+\index{PlottableAdder@{PlottableAdder}!FillY@{FillY}}
+\index{FillY@{FillY}!PlottableAdder@{PlottableAdder}}
+\doxysubsubsection{\texorpdfstring{FillY()}{FillY()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classFillY}{FillY}} Plottable\+Adder.\+FillY (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classICollection}{ICollection}}$<$(double X, double Top, double Bottom)$>$}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Fill the vertical range between two Y points for each X point 
+
+\mbox{\Hypertarget{classPlottableAdder_a1702f7f045cb851ea27671d78eaea014}\label{classPlottableAdder_a1702f7f045cb851ea27671d78eaea014}} 
+\index{PlottableAdder@{PlottableAdder}!FillY@{FillY}}
+\index{FillY@{FillY}!PlottableAdder@{PlottableAdder}}
+\doxysubsubsection{\texorpdfstring{FillY()}{FillY()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classFillY}{FillY}} Plottable\+Adder.\+FillY (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classScatter}{Scatter}}}]{scatter1,  }\item[{\mbox{\hyperlink{classScatter}{Scatter}}}]{scatter2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Fill the vertical range between two Y points for each X point 
+
+\mbox{\Hypertarget{classPlottableAdder_a012491f91c298f3c71e7eb9253e699f0}\label{classPlottableAdder_a012491f91c298f3c71e7eb9253e699f0}} 
+\index{PlottableAdder@{PlottableAdder}!FillY$<$ T $>$@{FillY$<$ T $>$}}
+\index{FillY$<$ T $>$@{FillY$<$ T $>$}!PlottableAdder@{PlottableAdder}}
+\doxysubsubsection{\texorpdfstring{FillY$<$ T $>$()}{FillY< T >()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classFillY}{FillY}} \mbox{\hyperlink{classPlottableAdder_ac9f8e0f1bf7583628511b7bde65720d2}{Plottable\+Adder.\+FillY}}$<$ T $>$ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classICollection}{ICollection}}$<$ T $>$}]{data,  }\item[{Func$<$ T,(double X, double Top, double Bottom)$>$}]{function }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Fill the vertical range between two Y points for each X point This overload uses a custom function to calculate X, Y1, and Y2 values 
+
+\mbox{\Hypertarget{classPlottableAdder_a717647c0890027fa8b381eb00449b0af}\label{classPlottableAdder_a717647c0890027fa8b381eb00449b0af}} 
+\index{PlottableAdder@{PlottableAdder}!Function@{Function}}
+\index{Function@{Function}!PlottableAdder@{PlottableAdder}}
+\doxysubsubsection{\texorpdfstring{Function()}{Function()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classFunctionPlot}{Function\+Plot}} Plottable\+Adder.\+Function (\begin{DoxyParamCaption}\item[{Func$<$ double, double $>$}]{func }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classPlottableAdder_afe694615a02585b76cb93c5d335fbe4e}\label{classPlottableAdder_afe694615a02585b76cb93c5d335fbe4e}} 
+\index{PlottableAdder@{PlottableAdder}!Function@{Function}}
+\index{Function@{Function}!PlottableAdder@{PlottableAdder}}
+\doxysubsubsection{\texorpdfstring{Function()}{Function()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classFunctionPlot}{Function\+Plot}} Plottable\+Adder.\+Function (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceIFunctionSource}{IFunction\+Source}}}]{function\+Source }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classPlottableAdder_aa25723d36173524ac83980b3d9f42f3b}\label{classPlottableAdder_aa25723d36173524ac83980b3d9f42f3b}} 
+\index{PlottableAdder@{PlottableAdder}!GetNextColor@{GetNextColor}}
+\index{GetNextColor@{GetNextColor}!PlottableAdder@{PlottableAdder}}
+\doxysubsubsection{\texorpdfstring{GetNextColor()}{GetNextColor()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structColor}{Color}} Plottable\+Adder.\+Get\+Next\+Color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classPlottableAdder_a00602e7b9fd4fdc16d2d42ab3f059c2a}\label{classPlottableAdder_a00602e7b9fd4fdc16d2d42ab3f059c2a}} 
+\index{PlottableAdder@{PlottableAdder}!Heatmap@{Heatmap}}
+\index{Heatmap@{Heatmap}!PlottableAdder@{PlottableAdder}}
+\doxysubsubsection{\texorpdfstring{Heatmap()}{Heatmap()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classHeatmap}{Heatmap}} Plottable\+Adder.\+Heatmap (\begin{DoxyParamCaption}\item[{double}]{intensities\mbox{[},\mbox{]} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classPlottableAdder_a205cf174ee95930f7bf78eb67b2d1966}\label{classPlottableAdder_a205cf174ee95930f7bf78eb67b2d1966}} 
+\index{PlottableAdder@{PlottableAdder}!HorizontalLine@{HorizontalLine}}
+\index{HorizontalLine@{HorizontalLine}!PlottableAdder@{PlottableAdder}}
+\doxysubsubsection{\texorpdfstring{HorizontalLine()}{HorizontalLine()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classHorizontalLine}{Horizontal\+Line}} Plottable\+Adder.\+Horizontal\+Line (\begin{DoxyParamCaption}\item[{double}]{y,  }\item[{float}]{width = {\ttfamily 2},  }\item[{\mbox{\hyperlink{structColor}{Color}}?}]{color = {\ttfamily null},  }\item[{Line\+Pattern}]{pattern = {\ttfamily LinePattern.Solid} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classPlottableAdder_a09b69ad117eb0be9aeb2250d6af27126}\label{classPlottableAdder_a09b69ad117eb0be9aeb2250d6af27126}} 
+\index{PlottableAdder@{PlottableAdder}!HorizontalSpan@{HorizontalSpan}}
+\index{HorizontalSpan@{HorizontalSpan}!PlottableAdder@{PlottableAdder}}
+\doxysubsubsection{\texorpdfstring{HorizontalSpan()}{HorizontalSpan()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classHorizontalSpan}{Horizontal\+Span}} Plottable\+Adder.\+Horizontal\+Span (\begin{DoxyParamCaption}\item[{double}]{x1,  }\item[{double}]{x2,  }\item[{\mbox{\hyperlink{structColor}{Color}}?}]{color = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classPlottableAdder_a377e1b4e559052e10dc535492bf61089}\label{classPlottableAdder_a377e1b4e559052e10dc535492bf61089}} 
+\index{PlottableAdder@{PlottableAdder}!ImageMarker@{ImageMarker}}
+\index{ImageMarker@{ImageMarker}!PlottableAdder@{PlottableAdder}}
+\doxysubsubsection{\texorpdfstring{ImageMarker()}{ImageMarker()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classImageMarker}{Image\+Marker}} Plottable\+Adder.\+Image\+Marker (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structCoordinates}{Coordinates}}}]{location,  }\item[{\mbox{\hyperlink{classImage}{Image}}}]{image,  }\item[{float}]{scale = {\ttfamily 1} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classPlottableAdder_a94db246f9ff189171449253cabeeb39b}\label{classPlottableAdder_a94db246f9ff189171449253cabeeb39b}} 
+\index{PlottableAdder@{PlottableAdder}!ImageRect@{ImageRect}}
+\index{ImageRect@{ImageRect}!PlottableAdder@{PlottableAdder}}
+\doxysubsubsection{\texorpdfstring{ImageRect()}{ImageRect()}}
+{\footnotesize\ttfamily Image\+Rect Plottable\+Adder.\+Image\+Rect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classImage}{Image}}}]{image,  }\item[{\mbox{\hyperlink{structCoordinateRect}{Coordinate\+Rect}}}]{rect }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classPlottableAdder_a480ebe6c44b6d0988d31e2bb23f34dab}\label{classPlottableAdder_a480ebe6c44b6d0988d31e2bb23f34dab}} 
+\index{PlottableAdder@{PlottableAdder}!Legend@{Legend}}
+\index{Legend@{Legend}!PlottableAdder@{PlottableAdder}}
+\doxysubsubsection{\texorpdfstring{Legend()}{Legend()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classLegend}{Legend}} Plottable\+Adder.\+Legend (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classPlottableAdder_a6c134ad60773d125c1a110e4273b1803}\label{classPlottableAdder_a6c134ad60773d125c1a110e4273b1803}} 
+\index{PlottableAdder@{PlottableAdder}!Line@{Line}}
+\index{Line@{Line}!PlottableAdder@{PlottableAdder}}
+\doxysubsubsection{\texorpdfstring{Line()}{Line()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classLinePlot}{Line\+Plot}} Plottable\+Adder.\+Line (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structCoordinateLine}{Coordinate\+Line}}}]{line }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classPlottableAdder_a658082c5cb0559a7fd7aefc474b9bfe6}\label{classPlottableAdder_a658082c5cb0559a7fd7aefc474b9bfe6}} 
+\index{PlottableAdder@{PlottableAdder}!Line@{Line}}
+\index{Line@{Line}!PlottableAdder@{PlottableAdder}}
+\doxysubsubsection{\texorpdfstring{Line()}{Line()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classLinePlot}{Line\+Plot}} Plottable\+Adder.\+Line (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structCoordinates}{Coordinates}}}]{start,  }\item[{\mbox{\hyperlink{structCoordinates}{Coordinates}}}]{end }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classPlottableAdder_ad1bb60da01dfc62f6e8ad5e79d0c6035}\label{classPlottableAdder_ad1bb60da01dfc62f6e8ad5e79d0c6035}} 
+\index{PlottableAdder@{PlottableAdder}!Line@{Line}}
+\index{Line@{Line}!PlottableAdder@{PlottableAdder}}
+\doxysubsubsection{\texorpdfstring{Line()}{Line()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classLinePlot}{Line\+Plot}} Plottable\+Adder.\+Line (\begin{DoxyParamCaption}\item[{double}]{x1,  }\item[{double}]{y1,  }\item[{double}]{x2,  }\item[{double}]{y2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classPlottableAdder_aed3aa55282a5cd470d01148acbf37910}\label{classPlottableAdder_aed3aa55282a5cd470d01148acbf37910}} 
+\index{PlottableAdder@{PlottableAdder}!Marker@{Marker}}
+\index{Marker@{Marker}!PlottableAdder@{PlottableAdder}}
+\doxysubsubsection{\texorpdfstring{Marker()}{Marker()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classMarker}{Marker}} Plottable\+Adder.\+Marker (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structCoordinates}{Coordinates}}}]{location,  }\item[{Marker\+Shape}]{shape = {\ttfamily MarkerShape.FilledCircle},  }\item[{float}]{size = {\ttfamily 10},  }\item[{\mbox{\hyperlink{structColor}{Color}}?}]{color = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classPlottableAdder_a0c8caf714eeafe5696a6c9df65c834fa}\label{classPlottableAdder_a0c8caf714eeafe5696a6c9df65c834fa}} 
+\index{PlottableAdder@{PlottableAdder}!Marker@{Marker}}
+\index{Marker@{Marker}!PlottableAdder@{PlottableAdder}}
+\doxysubsubsection{\texorpdfstring{Marker()}{Marker()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classMarker}{Marker}} Plottable\+Adder.\+Marker (\begin{DoxyParamCaption}\item[{double}]{x,  }\item[{double}]{y,  }\item[{Marker\+Shape}]{shape = {\ttfamily MarkerShape.FilledCircle},  }\item[{float}]{size = {\ttfamily 10},  }\item[{\mbox{\hyperlink{structColor}{Color}}?}]{color = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classPlottableAdder_a533bb81769e723cfe6377c349ba56695}\label{classPlottableAdder_a533bb81769e723cfe6377c349ba56695}} 
+\index{PlottableAdder@{PlottableAdder}!Markers@{Markers}}
+\index{Markers@{Markers}!PlottableAdder@{PlottableAdder}}
+\doxysubsubsection{\texorpdfstring{Markers()}{Markers()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Plottables.\+Markers Plottable\+Adder.\+Markers (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structCoordinates}{Coordinates}}\mbox{[}$\,$\mbox{]}}]{coordinates,  }\item[{Marker\+Shape}]{shape = {\ttfamily MarkerShape.FilledCircle},  }\item[{float}]{size = {\ttfamily 10},  }\item[{\mbox{\hyperlink{structColor}{Color}}?}]{color = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classPlottableAdder_ad1e1d11dc6a5f22cce7e466ddee6fb1c}\label{classPlottableAdder_ad1e1d11dc6a5f22cce7e466ddee6fb1c}} 
+\index{PlottableAdder@{PlottableAdder}!Markers@{Markers}}
+\index{Markers@{Markers}!PlottableAdder@{PlottableAdder}}
+\doxysubsubsection{\texorpdfstring{Markers()}{Markers()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Plottables.\+Markers Plottable\+Adder.\+Markers (\begin{DoxyParamCaption}\item[{double\mbox{[}$\,$\mbox{]}}]{xs,  }\item[{double\mbox{[}$\,$\mbox{]}}]{ys,  }\item[{Marker\+Shape}]{shape = {\ttfamily MarkerShape.FilledCircle},  }\item[{float}]{size = {\ttfamily 10},  }\item[{\mbox{\hyperlink{structColor}{Color}}?}]{color = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classPlottableAdder_a69bcadb5b2018e5af56988e0989da7c5}\label{classPlottableAdder_a69bcadb5b2018e5af56988e0989da7c5}} 
+\index{PlottableAdder@{PlottableAdder}!Markers@{Markers}}
+\index{Markers@{Markers}!PlottableAdder@{PlottableAdder}}
+\doxysubsubsection{\texorpdfstring{Markers()}{Markers()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Plottables.\+Markers Plottable\+Adder.\+Markers (\begin{DoxyParamCaption}\item[{List$<$ \mbox{\hyperlink{structCoordinates}{Coordinates}} $>$}]{coordinates,  }\item[{Marker\+Shape}]{shape = {\ttfamily MarkerShape.FilledCircle},  }\item[{float}]{size = {\ttfamily 10},  }\item[{\mbox{\hyperlink{structColor}{Color}}?}]{color = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classPlottableAdder_ae40ce3019ed8ecde7c1de4870506ec32}\label{classPlottableAdder_ae40ce3019ed8ecde7c1de4870506ec32}} 
+\index{PlottableAdder@{PlottableAdder}!Markers$<$ TX, TY $>$@{Markers$<$ TX, TY $>$}}
+\index{Markers$<$ TX, TY $>$@{Markers$<$ TX, TY $>$}!PlottableAdder@{PlottableAdder}}
+\doxysubsubsection{\texorpdfstring{Markers$<$ TX, TY $>$()}{Markers< TX, TY >()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Plottables.\+Markers \mbox{\hyperlink{classPlottableAdder_ad1e1d11dc6a5f22cce7e466ddee6fb1c}{Plottable\+Adder.\+Markers}}$<$ TX, TY $>$ (\begin{DoxyParamCaption}\item[{List$<$ TX $>$}]{xs,  }\item[{List$<$ TY $>$}]{ys,  }\item[{Marker\+Shape}]{shape = {\ttfamily MarkerShape.FilledCircle},  }\item[{float}]{size = {\ttfamily 10},  }\item[{\mbox{\hyperlink{structColor}{Color}}?}]{color = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classPlottableAdder_af57b13ffb45ac6c6382789aeb474aee7}\label{classPlottableAdder_af57b13ffb45ac6c6382789aeb474aee7}} 
+\index{PlottableAdder@{PlottableAdder}!Markers$<$ TX, TY $>$@{Markers$<$ TX, TY $>$}}
+\index{Markers$<$ TX, TY $>$@{Markers$<$ TX, TY $>$}!PlottableAdder@{PlottableAdder}}
+\doxysubsubsection{\texorpdfstring{Markers$<$ TX, TY $>$()}{Markers< TX, TY >()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Plottables.\+Markers \mbox{\hyperlink{classPlottableAdder_ad1e1d11dc6a5f22cce7e466ddee6fb1c}{Plottable\+Adder.\+Markers}}$<$ TX, TY $>$ (\begin{DoxyParamCaption}\item[{TX\mbox{[}$\,$\mbox{]}}]{xs,  }\item[{TY\mbox{[}$\,$\mbox{]}}]{ys,  }\item[{Marker\+Shape}]{shape = {\ttfamily MarkerShape.FilledCircle},  }\item[{float}]{size = {\ttfamily 10},  }\item[{\mbox{\hyperlink{structColor}{Color}}?}]{color = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classPlottableAdder_ab9b387828024c9bb4b6ca8b824f05b18}\label{classPlottableAdder_ab9b387828024c9bb4b6ca8b824f05b18}} 
+\index{PlottableAdder@{PlottableAdder}!OHLC@{OHLC}}
+\index{OHLC@{OHLC}!PlottableAdder@{PlottableAdder}}
+\doxysubsubsection{\texorpdfstring{OHLC()}{OHLC()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classOhlcPlot}{Ohlc\+Plot}} Plottable\+Adder.\+OHLC (\begin{DoxyParamCaption}\item[{List$<$ \mbox{\hyperlink{structOHLC}{OHLC}} $>$}]{ohlcs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classPlottableAdder_ab8dd5ee45b751555bb848997b7219790}\label{classPlottableAdder_ab8dd5ee45b751555bb848997b7219790}} 
+\index{PlottableAdder@{PlottableAdder}!Phasor@{Phasor}}
+\index{Phasor@{Phasor}!PlottableAdder@{PlottableAdder}}
+\doxysubsubsection{\texorpdfstring{Phasor()}{Phasor()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPhasor}{Phasor}} Plottable\+Adder.\+Phasor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classPlottableAdder_afec087d8b5e4453cf6f8f6b20ce8a8e8}\label{classPlottableAdder_afec087d8b5e4453cf6f8f6b20ce8a8e8}} 
+\index{PlottableAdder@{PlottableAdder}!Phasor@{Phasor}}
+\index{Phasor@{Phasor}!PlottableAdder@{PlottableAdder}}
+\doxysubsubsection{\texorpdfstring{Phasor()}{Phasor()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPhasor}{Phasor}} Plottable\+Adder.\+Phasor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$ \mbox{\hyperlink{structPolarCoordinates}{Polar\+Coordinates}} $>$}]{points }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classPlottableAdder_a37ea6b58bf2814d77b413c81b04b14c9}\label{classPlottableAdder_a37ea6b58bf2814d77b413c81b04b14c9}} 
+\index{PlottableAdder@{PlottableAdder}!Pie@{Pie}}
+\index{Pie@{Pie}!PlottableAdder@{PlottableAdder}}
+\doxysubsubsection{\texorpdfstring{Pie()}{Pie()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPie}{Pie}} Plottable\+Adder.\+Pie (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$ double $>$}]{values }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classPlottableAdder_ae55fef3d41f7ec85a271d8c162cfe052}\label{classPlottableAdder_ae55fef3d41f7ec85a271d8c162cfe052}} 
+\index{PlottableAdder@{PlottableAdder}!Pie@{Pie}}
+\index{Pie@{Pie}!PlottableAdder@{PlottableAdder}}
+\doxysubsubsection{\texorpdfstring{Pie()}{Pie()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPie}{Pie}} Plottable\+Adder.\+Pie (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIList}{IList}}$<$ \mbox{\hyperlink{classPieSlice}{Pie\+Slice}} $>$}]{slices }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classPlottableAdder_a041a26dfb78322059fcb5732a2ecfc6f}\label{classPlottableAdder_a041a26dfb78322059fcb5732a2ecfc6f}} 
+\index{PlottableAdder@{PlottableAdder}!Plottable@{Plottable}}
+\index{Plottable@{Plottable}!PlottableAdder@{PlottableAdder}}
+\doxysubsubsection{\texorpdfstring{Plottable()}{Plottable()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceIPlottable}{IPlottable}} Plottable\+Adder.\+Plottable (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceIPlottable}{IPlottable}}}]{plottable }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classPlottableAdder_a6daf21edb1f49229b0aa7f52e90e27fc}\label{classPlottableAdder_a6daf21edb1f49229b0aa7f52e90e27fc}} 
+\index{PlottableAdder@{PlottableAdder}!PolarAxis@{PolarAxis}}
+\index{PolarAxis@{PolarAxis}!PlottableAdder@{PlottableAdder}}
+\doxysubsubsection{\texorpdfstring{PolarAxis()}{PolarAxis()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPolarAxis}{Polar\+Axis}} Plottable\+Adder.\+Polar\+Axis (\begin{DoxyParamCaption}\item[{double}]{maximum\+Radius = {\ttfamily 1},  }\item[{bool}]{hide\+Cartesian\+Axes\+And\+Grids = {\ttfamily true} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classPlottableAdder_adc5aa6eaba34616eb35fbb58f1fa1128}\label{classPlottableAdder_adc5aa6eaba34616eb35fbb58f1fa1128}} 
+\index{PlottableAdder@{PlottableAdder}!Polygon@{Polygon}}
+\index{Polygon@{Polygon}!PlottableAdder@{PlottableAdder}}
+\doxysubsubsection{\texorpdfstring{Polygon()}{Polygon()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPolygon}{Polygon}} Plottable\+Adder.\+Polygon (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structCoordinates}{Coordinates}}\mbox{[}$\,$\mbox{]}}]{coordinates }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classPlottableAdder_a6e045807058c3c6ca0c6d58805362e40}\label{classPlottableAdder_a6e045807058c3c6ca0c6d58805362e40}} 
+\index{PlottableAdder@{PlottableAdder}!Polygon$<$ TX, TY $>$@{Polygon$<$ TX, TY $>$}}
+\index{Polygon$<$ TX, TY $>$@{Polygon$<$ TX, TY $>$}!PlottableAdder@{PlottableAdder}}
+\doxysubsubsection{\texorpdfstring{Polygon$<$ TX, TY $>$()}{Polygon< TX, TY >()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPolygon}{Polygon}} \mbox{\hyperlink{classPlottableAdder_adc5aa6eaba34616eb35fbb58f1fa1128}{Plottable\+Adder.\+Polygon}}$<$ TX, TY $>$ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$ TX $>$}]{xs,  }\item[{\mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$ TY $>$}]{ys }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classPlottableAdder_a1b85e9582642acb405814f43b1c1be5c}\label{classPlottableAdder_a1b85e9582642acb405814f43b1c1be5c}} 
+\index{PlottableAdder@{PlottableAdder}!Population@{Population}}
+\index{Population@{Population}!PlottableAdder@{PlottableAdder}}
+\doxysubsubsection{\texorpdfstring{Population()}{Population()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPopulationSymbol}{Population\+Symbol}} Plottable\+Adder.\+Population (\begin{DoxyParamCaption}\item[{double\mbox{[}$\,$\mbox{]}}]{values,  }\item[{double}]{x = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classPlottableAdder_ace5f2a85f358eb2661f871b70810af1c}\label{classPlottableAdder_ace5f2a85f358eb2661f871b70810af1c}} 
+\index{PlottableAdder@{PlottableAdder}!Radar@{Radar}}
+\index{Radar@{Radar}!PlottableAdder@{PlottableAdder}}
+\doxysubsubsection{\texorpdfstring{Radar()}{Radar()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classRadar}{Radar}} Plottable\+Adder.\+Radar (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$ \mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$ double $>$$>$}]{series }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classPlottableAdder_a0e21c9c761d51ef22b0e1dd69960153c}\label{classPlottableAdder_a0e21c9c761d51ef22b0e1dd69960153c}} 
+\index{PlottableAdder@{PlottableAdder}!Radar@{Radar}}
+\index{Radar@{Radar}!PlottableAdder@{PlottableAdder}}
+\doxysubsubsection{\texorpdfstring{Radar()}{Radar()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classRadar}{Radar}} Plottable\+Adder.\+Radar (\begin{DoxyParamCaption}\item[{IRead\+Only\+List$<$ \mbox{\hyperlink{classRadarSeries}{Radar\+Series}} $>$}]{series }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classPlottableAdder_a2f2be865bb239fdcbe9afa4c2945fda9}\label{classPlottableAdder_a2f2be865bb239fdcbe9afa4c2945fda9}} 
+\index{PlottableAdder@{PlottableAdder}!RadialGaugePlot@{RadialGaugePlot}}
+\index{RadialGaugePlot@{RadialGaugePlot}!PlottableAdder@{PlottableAdder}}
+\doxysubsubsection{\texorpdfstring{RadialGaugePlot()}{RadialGaugePlot()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classRadialGaugePlot}{Radial\+Gauge\+Plot}} Plottable\+Adder.\+Radial\+Gauge\+Plot (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$ double $>$}]{values }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classPlottableAdder_adfa10e4ed927d10a04a90af2cd3a300d}\label{classPlottableAdder_adfa10e4ed927d10a04a90af2cd3a300d}} 
+\index{PlottableAdder@{PlottableAdder}!Rectangle@{Rectangle}}
+\index{Rectangle@{Rectangle}!PlottableAdder@{PlottableAdder}}
+\doxysubsubsection{\texorpdfstring{Rectangle()}{Rectangle()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classRectangle}{Rectangle}} Plottable\+Adder.\+Rectangle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structCoordinateRect}{Coordinate\+Rect}}}]{rect }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classPlottableAdder_a8891624a4b9cfef692d284b01e74ee6c}\label{classPlottableAdder_a8891624a4b9cfef692d284b01e74ee6c}} 
+\index{PlottableAdder@{PlottableAdder}!Rectangle@{Rectangle}}
+\index{Rectangle@{Rectangle}!PlottableAdder@{PlottableAdder}}
+\doxysubsubsection{\texorpdfstring{Rectangle()}{Rectangle()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classRectangle}{Rectangle}} Plottable\+Adder.\+Rectangle (\begin{DoxyParamCaption}\item[{double}]{left,  }\item[{double}]{right,  }\item[{double}]{bottom,  }\item[{double}]{top }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classPlottableAdder_a3b1e4259e9509215ea4d54c37ac5a6a8}\label{classPlottableAdder_a3b1e4259e9509215ea4d54c37ac5a6a8}} 
+\index{PlottableAdder@{PlottableAdder}!Scatter@{Scatter}}
+\index{Scatter@{Scatter}!PlottableAdder@{PlottableAdder}}
+\doxysubsubsection{\texorpdfstring{Scatter()}{Scatter()}\hspace{0.1cm}{\footnotesize\ttfamily [1/6]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classScatter}{Scatter}} Plottable\+Adder.\+Scatter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structCoordinates}{Coordinates}}}]{point,  }\item[{\mbox{\hyperlink{structColor}{Color}}?}]{color = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classPlottableAdder_a4e42c94348b130931324835bb109fe61}\label{classPlottableAdder_a4e42c94348b130931324835bb109fe61}} 
+\index{PlottableAdder@{PlottableAdder}!Scatter@{Scatter}}
+\index{Scatter@{Scatter}!PlottableAdder@{PlottableAdder}}
+\doxysubsubsection{\texorpdfstring{Scatter()}{Scatter()}\hspace{0.1cm}{\footnotesize\ttfamily [2/6]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classScatter}{Scatter}} Plottable\+Adder.\+Scatter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structCoordinates}{Coordinates}}\mbox{[}$\,$\mbox{]}}]{coordinates,  }\item[{\mbox{\hyperlink{structColor}{Color}}?}]{color = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classPlottableAdder_a335c282ec6b8712558d418bb553d18a0}\label{classPlottableAdder_a335c282ec6b8712558d418bb553d18a0}} 
+\index{PlottableAdder@{PlottableAdder}!Scatter@{Scatter}}
+\index{Scatter@{Scatter}!PlottableAdder@{PlottableAdder}}
+\doxysubsubsection{\texorpdfstring{Scatter()}{Scatter()}\hspace{0.1cm}{\footnotesize\ttfamily [3/6]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classScatter}{Scatter}} Plottable\+Adder.\+Scatter (\begin{DoxyParamCaption}\item[{double}]{x,  }\item[{double}]{y,  }\item[{\mbox{\hyperlink{structColor}{Color}}?}]{color = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classPlottableAdder_a6104f38acca2960c6b8bb5f982bcb614}\label{classPlottableAdder_a6104f38acca2960c6b8bb5f982bcb614}} 
+\index{PlottableAdder@{PlottableAdder}!Scatter@{Scatter}}
+\index{Scatter@{Scatter}!PlottableAdder@{PlottableAdder}}
+\doxysubsubsection{\texorpdfstring{Scatter()}{Scatter()}\hspace{0.1cm}{\footnotesize\ttfamily [4/6]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classScatter}{Scatter}} Plottable\+Adder.\+Scatter (\begin{DoxyParamCaption}\item[{double\mbox{[}$\,$\mbox{]}}]{xs,  }\item[{double\mbox{[}$\,$\mbox{]}}]{ys,  }\item[{\mbox{\hyperlink{structColor}{Color}}?}]{color = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classPlottableAdder_a28d185799608e5bdcbbfe490d3c360ea}\label{classPlottableAdder_a28d185799608e5bdcbbfe490d3c360ea}} 
+\index{PlottableAdder@{PlottableAdder}!Scatter@{Scatter}}
+\index{Scatter@{Scatter}!PlottableAdder@{PlottableAdder}}
+\doxysubsubsection{\texorpdfstring{Scatter()}{Scatter()}\hspace{0.1cm}{\footnotesize\ttfamily [5/6]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classScatter}{Scatter}} Plottable\+Adder.\+Scatter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceIScatterSource}{IScatter\+Source}}}]{source,  }\item[{\mbox{\hyperlink{structColor}{Color}}?}]{color = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classPlottableAdder_ac98f24e1f562623dc72957918f80a425}\label{classPlottableAdder_ac98f24e1f562623dc72957918f80a425}} 
+\index{PlottableAdder@{PlottableAdder}!Scatter@{Scatter}}
+\index{Scatter@{Scatter}!PlottableAdder@{PlottableAdder}}
+\doxysubsubsection{\texorpdfstring{Scatter()}{Scatter()}\hspace{0.1cm}{\footnotesize\ttfamily [6/6]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classScatter}{Scatter}} Plottable\+Adder.\+Scatter (\begin{DoxyParamCaption}\item[{List$<$ \mbox{\hyperlink{structCoordinates}{Coordinates}} $>$}]{coordinates,  }\item[{\mbox{\hyperlink{structColor}{Color}}?}]{color = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classPlottableAdder_a1c29b4dfb398ff8c41afbc70a803a7b1}\label{classPlottableAdder_a1c29b4dfb398ff8c41afbc70a803a7b1}} 
+\index{PlottableAdder@{PlottableAdder}!Scatter$<$ T1, T2 $>$@{Scatter$<$ T1, T2 $>$}}
+\index{Scatter$<$ T1, T2 $>$@{Scatter$<$ T1, T2 $>$}!PlottableAdder@{PlottableAdder}}
+\doxysubsubsection{\texorpdfstring{Scatter$<$ T1, T2 $>$()}{Scatter< T1, T2 >()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classScatter}{Scatter}} \mbox{\hyperlink{classPlottableAdder_a28d185799608e5bdcbbfe490d3c360ea}{Plottable\+Adder.\+Scatter}}$<$ T1, T2 $>$ (\begin{DoxyParamCaption}\item[{List$<$ T1 $>$}]{xs,  }\item[{List$<$ T2 $>$}]{ys,  }\item[{\mbox{\hyperlink{structColor}{Color}}?}]{color = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classPlottableAdder_a4a66c383649a3e5cf03e9620476dd604}\label{classPlottableAdder_a4a66c383649a3e5cf03e9620476dd604}} 
+\index{PlottableAdder@{PlottableAdder}!Scatter$<$ T1, T2 $>$@{Scatter$<$ T1, T2 $>$}}
+\index{Scatter$<$ T1, T2 $>$@{Scatter$<$ T1, T2 $>$}!PlottableAdder@{PlottableAdder}}
+\doxysubsubsection{\texorpdfstring{Scatter$<$ T1, T2 $>$()}{Scatter< T1, T2 >()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classScatter}{Scatter}} \mbox{\hyperlink{classPlottableAdder_a28d185799608e5bdcbbfe490d3c360ea}{Plottable\+Adder.\+Scatter}}$<$ T1, T2 $>$ (\begin{DoxyParamCaption}\item[{T1\mbox{[}$\,$\mbox{]}}]{xs,  }\item[{T2\mbox{[}$\,$\mbox{]}}]{ys,  }\item[{\mbox{\hyperlink{structColor}{Color}}?}]{color = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classPlottableAdder_a8134a100c45714543eefb335bc8d0daa}\label{classPlottableAdder_a8134a100c45714543eefb335bc8d0daa}} 
+\index{PlottableAdder@{PlottableAdder}!ScatterLine@{ScatterLine}}
+\index{ScatterLine@{ScatterLine}!PlottableAdder@{PlottableAdder}}
+\doxysubsubsection{\texorpdfstring{ScatterLine()}{ScatterLine()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classScatter}{Scatter}} Plottable\+Adder.\+Scatter\+Line (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structCoordinates}{Coordinates}}\mbox{[}$\,$\mbox{]}}]{coordinates,  }\item[{\mbox{\hyperlink{structColor}{Color}}?}]{color = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classPlottableAdder_a5dad1f2ce1416ba9e3335795a796f9d9}\label{classPlottableAdder_a5dad1f2ce1416ba9e3335795a796f9d9}} 
+\index{PlottableAdder@{PlottableAdder}!ScatterLine@{ScatterLine}}
+\index{ScatterLine@{ScatterLine}!PlottableAdder@{PlottableAdder}}
+\doxysubsubsection{\texorpdfstring{ScatterLine()}{ScatterLine()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classScatter}{Scatter}} Plottable\+Adder.\+Scatter\+Line (\begin{DoxyParamCaption}\item[{double\mbox{[}$\,$\mbox{]}}]{xs,  }\item[{double\mbox{[}$\,$\mbox{]}}]{ys,  }\item[{\mbox{\hyperlink{structColor}{Color}}?}]{color = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classPlottableAdder_aecd80c0a8a8300e986d13a88a392a477}\label{classPlottableAdder_aecd80c0a8a8300e986d13a88a392a477}} 
+\index{PlottableAdder@{PlottableAdder}!ScatterLine@{ScatterLine}}
+\index{ScatterLine@{ScatterLine}!PlottableAdder@{PlottableAdder}}
+\doxysubsubsection{\texorpdfstring{ScatterLine()}{ScatterLine()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classScatter}{Scatter}} Plottable\+Adder.\+Scatter\+Line (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceIScatterSource}{IScatter\+Source}}}]{source,  }\item[{\mbox{\hyperlink{structColor}{Color}}?}]{color = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classPlottableAdder_a556b7cc54502f330e5cec3bd01dcc6e7}\label{classPlottableAdder_a556b7cc54502f330e5cec3bd01dcc6e7}} 
+\index{PlottableAdder@{PlottableAdder}!ScatterLine@{ScatterLine}}
+\index{ScatterLine@{ScatterLine}!PlottableAdder@{PlottableAdder}}
+\doxysubsubsection{\texorpdfstring{ScatterLine()}{ScatterLine()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classScatter}{Scatter}} Plottable\+Adder.\+Scatter\+Line (\begin{DoxyParamCaption}\item[{List$<$ \mbox{\hyperlink{structCoordinates}{Coordinates}} $>$}]{coordinates,  }\item[{\mbox{\hyperlink{structColor}{Color}}?}]{color = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classPlottableAdder_a8a44323b1b7adf05e211f683af90bfb3}\label{classPlottableAdder_a8a44323b1b7adf05e211f683af90bfb3}} 
+\index{PlottableAdder@{PlottableAdder}!ScatterLine$<$ T1, T2 $>$@{ScatterLine$<$ T1, T2 $>$}}
+\index{ScatterLine$<$ T1, T2 $>$@{ScatterLine$<$ T1, T2 $>$}!PlottableAdder@{PlottableAdder}}
+\doxysubsubsection{\texorpdfstring{ScatterLine$<$ T1, T2 $>$()}{ScatterLine< T1, T2 >()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classScatter}{Scatter}} \mbox{\hyperlink{classPlottableAdder_aecd80c0a8a8300e986d13a88a392a477}{Plottable\+Adder.\+Scatter\+Line}}$<$ T1, T2 $>$ (\begin{DoxyParamCaption}\item[{List$<$ T1 $>$}]{xs,  }\item[{List$<$ T2 $>$}]{ys,  }\item[{\mbox{\hyperlink{structColor}{Color}}?}]{color = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classPlottableAdder_acbba75d988993710b55eeefa13f46a69}\label{classPlottableAdder_acbba75d988993710b55eeefa13f46a69}} 
+\index{PlottableAdder@{PlottableAdder}!ScatterLine$<$ T1, T2 $>$@{ScatterLine$<$ T1, T2 $>$}}
+\index{ScatterLine$<$ T1, T2 $>$@{ScatterLine$<$ T1, T2 $>$}!PlottableAdder@{PlottableAdder}}
+\doxysubsubsection{\texorpdfstring{ScatterLine$<$ T1, T2 $>$()}{ScatterLine< T1, T2 >()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classScatter}{Scatter}} \mbox{\hyperlink{classPlottableAdder_aecd80c0a8a8300e986d13a88a392a477}{Plottable\+Adder.\+Scatter\+Line}}$<$ T1, T2 $>$ (\begin{DoxyParamCaption}\item[{T1\mbox{[}$\,$\mbox{]}}]{xs,  }\item[{T2\mbox{[}$\,$\mbox{]}}]{ys,  }\item[{\mbox{\hyperlink{structColor}{Color}}?}]{color = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classPlottableAdder_ad248c82f921e71db6dece4a6ec6ea0f5}\label{classPlottableAdder_ad248c82f921e71db6dece4a6ec6ea0f5}} 
+\index{PlottableAdder@{PlottableAdder}!ScatterPoints@{ScatterPoints}}
+\index{ScatterPoints@{ScatterPoints}!PlottableAdder@{PlottableAdder}}
+\doxysubsubsection{\texorpdfstring{ScatterPoints()}{ScatterPoints()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classScatter}{Scatter}} Plottable\+Adder.\+Scatter\+Points (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structCoordinates}{Coordinates}}\mbox{[}$\,$\mbox{]}}]{coordinates,  }\item[{\mbox{\hyperlink{structColor}{Color}}?}]{color = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classPlottableAdder_a1e06f11072b0dc81fb3f34514edab196}\label{classPlottableAdder_a1e06f11072b0dc81fb3f34514edab196}} 
+\index{PlottableAdder@{PlottableAdder}!ScatterPoints@{ScatterPoints}}
+\index{ScatterPoints@{ScatterPoints}!PlottableAdder@{PlottableAdder}}
+\doxysubsubsection{\texorpdfstring{ScatterPoints()}{ScatterPoints()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classScatter}{Scatter}} Plottable\+Adder.\+Scatter\+Points (\begin{DoxyParamCaption}\item[{double\mbox{[}$\,$\mbox{]}}]{xs,  }\item[{double\mbox{[}$\,$\mbox{]}}]{ys,  }\item[{\mbox{\hyperlink{structColor}{Color}}?}]{color = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classPlottableAdder_a968196303f943e6ad070fa1b49d629b7}\label{classPlottableAdder_a968196303f943e6ad070fa1b49d629b7}} 
+\index{PlottableAdder@{PlottableAdder}!ScatterPoints@{ScatterPoints}}
+\index{ScatterPoints@{ScatterPoints}!PlottableAdder@{PlottableAdder}}
+\doxysubsubsection{\texorpdfstring{ScatterPoints()}{ScatterPoints()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classScatter}{Scatter}} Plottable\+Adder.\+Scatter\+Points (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceIScatterSource}{IScatter\+Source}}}]{source,  }\item[{\mbox{\hyperlink{structColor}{Color}}?}]{color = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classPlottableAdder_a0cdbd56a1610673f0aad4fabd1fa12b9}\label{classPlottableAdder_a0cdbd56a1610673f0aad4fabd1fa12b9}} 
+\index{PlottableAdder@{PlottableAdder}!ScatterPoints@{ScatterPoints}}
+\index{ScatterPoints@{ScatterPoints}!PlottableAdder@{PlottableAdder}}
+\doxysubsubsection{\texorpdfstring{ScatterPoints()}{ScatterPoints()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classScatter}{Scatter}} Plottable\+Adder.\+Scatter\+Points (\begin{DoxyParamCaption}\item[{List$<$ \mbox{\hyperlink{structCoordinates}{Coordinates}} $>$}]{coordinates,  }\item[{\mbox{\hyperlink{structColor}{Color}}?}]{color = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classPlottableAdder_a6474b1d803cc1df902f9216cfde5ead6}\label{classPlottableAdder_a6474b1d803cc1df902f9216cfde5ead6}} 
+\index{PlottableAdder@{PlottableAdder}!ScatterPoints$<$ T1, T2 $>$@{ScatterPoints$<$ T1, T2 $>$}}
+\index{ScatterPoints$<$ T1, T2 $>$@{ScatterPoints$<$ T1, T2 $>$}!PlottableAdder@{PlottableAdder}}
+\doxysubsubsection{\texorpdfstring{ScatterPoints$<$ T1, T2 $>$()}{ScatterPoints< T1, T2 >()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classScatter}{Scatter}} \mbox{\hyperlink{classPlottableAdder_a968196303f943e6ad070fa1b49d629b7}{Plottable\+Adder.\+Scatter\+Points}}$<$ T1, T2 $>$ (\begin{DoxyParamCaption}\item[{List$<$ T1 $>$}]{xs,  }\item[{List$<$ T2 $>$}]{ys,  }\item[{\mbox{\hyperlink{structColor}{Color}}?}]{color = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classPlottableAdder_a40d3d5cbf54ae40613e289302e54a999}\label{classPlottableAdder_a40d3d5cbf54ae40613e289302e54a999}} 
+\index{PlottableAdder@{PlottableAdder}!ScatterPoints$<$ T1, T2 $>$@{ScatterPoints$<$ T1, T2 $>$}}
+\index{ScatterPoints$<$ T1, T2 $>$@{ScatterPoints$<$ T1, T2 $>$}!PlottableAdder@{PlottableAdder}}
+\doxysubsubsection{\texorpdfstring{ScatterPoints$<$ T1, T2 $>$()}{ScatterPoints< T1, T2 >()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classScatter}{Scatter}} \mbox{\hyperlink{classPlottableAdder_a968196303f943e6ad070fa1b49d629b7}{Plottable\+Adder.\+Scatter\+Points}}$<$ T1, T2 $>$ (\begin{DoxyParamCaption}\item[{T1\mbox{[}$\,$\mbox{]}}]{xs,  }\item[{T2\mbox{[}$\,$\mbox{]}}]{ys,  }\item[{\mbox{\hyperlink{structColor}{Color}}?}]{color = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classPlottableAdder_ad76189165e6063f168ad6371dc549bf6}\label{classPlottableAdder_ad76189165e6063f168ad6371dc549bf6}} 
+\index{PlottableAdder@{PlottableAdder}!Signal@{Signal}}
+\index{Signal@{Signal}!PlottableAdder@{PlottableAdder}}
+\doxysubsubsection{\texorpdfstring{Signal()}{Signal()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classSignal}{Signal}} Plottable\+Adder.\+Signal (\begin{DoxyParamCaption}\item[{double\mbox{[}$\,$\mbox{]}}]{ys,  }\item[{double}]{period = {\ttfamily 1},  }\item[{\mbox{\hyperlink{structColor}{Color}}?}]{color = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classPlottableAdder_a2672554b86019eadc5021b681bc3e8dd}\label{classPlottableAdder_a2672554b86019eadc5021b681bc3e8dd}} 
+\index{PlottableAdder@{PlottableAdder}!Signal@{Signal}}
+\index{Signal@{Signal}!PlottableAdder@{PlottableAdder}}
+\doxysubsubsection{\texorpdfstring{Signal()}{Signal()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classSignal}{Signal}} Plottable\+Adder.\+Signal (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceISignalSource}{ISignal\+Source}}}]{source,  }\item[{\mbox{\hyperlink{structColor}{Color}}?}]{color = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classPlottableAdder_ad27818ad41ba7a0c1e70a120f7d0f77f}\label{classPlottableAdder_ad27818ad41ba7a0c1e70a120f7d0f77f}} 
+\index{PlottableAdder@{PlottableAdder}!Signal$<$ T $>$@{Signal$<$ T $>$}}
+\index{Signal$<$ T $>$@{Signal$<$ T $>$}!PlottableAdder@{PlottableAdder}}
+\doxysubsubsection{\texorpdfstring{Signal$<$ T $>$()}{Signal< T >()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classSignal}{Signal}} \mbox{\hyperlink{classPlottableAdder_a2672554b86019eadc5021b681bc3e8dd}{Plottable\+Adder.\+Signal}}$<$ T $>$ (\begin{DoxyParamCaption}\item[{IRead\+Only\+List$<$ T $>$}]{ys,  }\item[{double}]{period = {\ttfamily 1},  }\item[{\mbox{\hyperlink{structColor}{Color}}?}]{color = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classPlottableAdder_a3326fb842455e471815800f8c565f5f7}\label{classPlottableAdder_a3326fb842455e471815800f8c565f5f7}} 
+\index{PlottableAdder@{PlottableAdder}!Signal$<$ T $>$@{Signal$<$ T $>$}}
+\index{Signal$<$ T $>$@{Signal$<$ T $>$}!PlottableAdder@{PlottableAdder}}
+\doxysubsubsection{\texorpdfstring{Signal$<$ T $>$()}{Signal< T >()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classSignal}{Signal}} \mbox{\hyperlink{classPlottableAdder_a2672554b86019eadc5021b681bc3e8dd}{Plottable\+Adder.\+Signal}}$<$ T $>$ (\begin{DoxyParamCaption}\item[{T\mbox{[}$\,$\mbox{]}}]{ys,  }\item[{double}]{period = {\ttfamily 1},  }\item[{\mbox{\hyperlink{structColor}{Color}}?}]{color = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classPlottableAdder_a0e5bd9ccc24a9c0c3cd66b565a688c22}\label{classPlottableAdder_a0e5bd9ccc24a9c0c3cd66b565a688c22}} 
+\index{PlottableAdder@{PlottableAdder}!SignalConst$<$ T $>$@{SignalConst$<$ T $>$}}
+\index{SignalConst$<$ T $>$@{SignalConst$<$ T $>$}!PlottableAdder@{PlottableAdder}}
+\doxysubsubsection{\texorpdfstring{SignalConst$<$ T $>$()}{SignalConst< T >()}}
+{\footnotesize\ttfamily Signal\+Const$<$T$>$ Plottable\+Adder.\+Signal\+Const$<$ T $>$ (\begin{DoxyParamCaption}\item[{T\mbox{[}$\,$\mbox{]}}]{ys,  }\item[{double}]{period = {\ttfamily 1},  }\item[{\mbox{\hyperlink{structColor}{Color}}?}]{color = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{Desc}
+\item[Type Constraints]\begin{description}
+\item[{\em T} : {\em struct}]\item[{\em T} : {\em IComparable}]\end{description}
+\end{Desc}
+\mbox{\Hypertarget{classPlottableAdder_a9018504070f8f2a0f5049c85d10814cc}\label{classPlottableAdder_a9018504070f8f2a0f5049c85d10814cc}} 
+\index{PlottableAdder@{PlottableAdder}!SignalXY@{SignalXY}}
+\index{SignalXY@{SignalXY}!PlottableAdder@{PlottableAdder}}
+\doxysubsubsection{\texorpdfstring{SignalXY()}{SignalXY()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classSignalXY}{Signal\+XY}} Plottable\+Adder.\+Signal\+XY (\begin{DoxyParamCaption}\item[{double\mbox{[}$\,$\mbox{]}}]{xs,  }\item[{double\mbox{[}$\,$\mbox{]}}]{ys,  }\item[{\mbox{\hyperlink{structColor}{Color}}?}]{color = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classPlottableAdder_a05d5829ec9f897e0807130736689b70f}\label{classPlottableAdder_a05d5829ec9f897e0807130736689b70f}} 
+\index{PlottableAdder@{PlottableAdder}!SignalXY@{SignalXY}}
+\index{SignalXY@{SignalXY}!PlottableAdder@{PlottableAdder}}
+\doxysubsubsection{\texorpdfstring{SignalXY()}{SignalXY()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classSignalXY}{Signal\+XY}} Plottable\+Adder.\+Signal\+XY (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceISignalXYSource}{ISignal\+XYSource}}}]{source,  }\item[{\mbox{\hyperlink{structColor}{Color}}?}]{color = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classPlottableAdder_ab3497bf8717b256229dc06e0074c2a50}\label{classPlottableAdder_ab3497bf8717b256229dc06e0074c2a50}} 
+\index{PlottableAdder@{PlottableAdder}!SignalXY$<$ TX, TY $>$@{SignalXY$<$ TX, TY $>$}}
+\index{SignalXY$<$ TX, TY $>$@{SignalXY$<$ TX, TY $>$}!PlottableAdder@{PlottableAdder}}
+\doxysubsubsection{\texorpdfstring{SignalXY$<$ TX, TY $>$()}{SignalXY< TX, TY >()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classSignalXY}{Signal\+XY}} \mbox{\hyperlink{classPlottableAdder_a05d5829ec9f897e0807130736689b70f}{Plottable\+Adder.\+Signal\+XY}}$<$ TX, TY $>$ (\begin{DoxyParamCaption}\item[{TX\mbox{[}$\,$\mbox{]}}]{xs,  }\item[{TY\mbox{[}$\,$\mbox{]}}]{ys,  }\item[{\mbox{\hyperlink{structColor}{Color}}?}]{color = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classPlottableAdder_aa236d6bc2122afe114daa79c222bf423}\label{classPlottableAdder_aa236d6bc2122afe114daa79c222bf423}} 
+\index{PlottableAdder@{PlottableAdder}!Text@{Text}}
+\index{Text@{Text}!PlottableAdder@{PlottableAdder}}
+\doxysubsubsection{\texorpdfstring{Text()}{Text()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Text Plottable\+Adder.\+Text (\begin{DoxyParamCaption}\item[{string}]{text,  }\item[{\mbox{\hyperlink{structCoordinates}{Coordinates}}}]{location }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classPlottableAdder_a252a8215da596aedd80d63cd6ef7fa7d}\label{classPlottableAdder_a252a8215da596aedd80d63cd6ef7fa7d}} 
+\index{PlottableAdder@{PlottableAdder}!Text@{Text}}
+\index{Text@{Text}!PlottableAdder@{PlottableAdder}}
+\doxysubsubsection{\texorpdfstring{Text()}{Text()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Text Plottable\+Adder.\+Text (\begin{DoxyParamCaption}\item[{string}]{text,  }\item[{double}]{x,  }\item[{double}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classPlottableAdder_a56898edca8fdb077e849d15b4704805d}\label{classPlottableAdder_a56898edca8fdb077e849d15b4704805d}} 
+\index{PlottableAdder@{PlottableAdder}!VectorField@{VectorField}}
+\index{VectorField@{VectorField}!PlottableAdder@{PlottableAdder}}
+\doxysubsubsection{\texorpdfstring{VectorField()}{VectorField()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVectorField}{Vector\+Field}} Plottable\+Adder.\+Vector\+Field (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIList}{IList}}$<$ \mbox{\hyperlink{structRootedCoordinateVector}{Rooted\+Coordinate\+Vector}} $>$}]{vectors,  }\item[{\mbox{\hyperlink{structColor}{Color}}?}]{color = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classPlottableAdder_a766fe4449c195735811031319bc214e8}\label{classPlottableAdder_a766fe4449c195735811031319bc214e8}} 
+\index{PlottableAdder@{PlottableAdder}!VerticalLine@{VerticalLine}}
+\index{VerticalLine@{VerticalLine}!PlottableAdder@{PlottableAdder}}
+\doxysubsubsection{\texorpdfstring{VerticalLine()}{VerticalLine()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVerticalLine}{Vertical\+Line}} Plottable\+Adder.\+Vertical\+Line (\begin{DoxyParamCaption}\item[{double}]{x,  }\item[{float}]{width = {\ttfamily 2},  }\item[{\mbox{\hyperlink{structColor}{Color}}?}]{color = {\ttfamily null},  }\item[{Line\+Pattern}]{pattern = {\ttfamily LinePattern.Solid} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classPlottableAdder_a693058923d3b425251da4c3495b0fc0a}\label{classPlottableAdder_a693058923d3b425251da4c3495b0fc0a}} 
+\index{PlottableAdder@{PlottableAdder}!VerticalSpan@{VerticalSpan}}
+\index{VerticalSpan@{VerticalSpan}!PlottableAdder@{PlottableAdder}}
+\doxysubsubsection{\texorpdfstring{VerticalSpan()}{VerticalSpan()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVerticalSpan}{Vertical\+Span}} Plottable\+Adder.\+Vertical\+Span (\begin{DoxyParamCaption}\item[{double}]{y1,  }\item[{double}]{y2,  }\item[{\mbox{\hyperlink{structColor}{Color}}?}]{color = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classPlottableAdder_a53406cc40bc0bb824401c2f31dd0f9d4}\label{classPlottableAdder_a53406cc40bc0bb824401c2f31dd0f9d4}} 
+\index{PlottableAdder@{PlottableAdder}!PlottablesThatDoNotGetColors@{PlottablesThatDoNotGetColors}}
+\index{PlottablesThatDoNotGetColors@{PlottablesThatDoNotGetColors}!PlottableAdder@{PlottableAdder}}
+\doxysubsubsection{\texorpdfstring{PlottablesThatDoNotGetColors}{PlottablesThatDoNotGetColors}}
+{\footnotesize\ttfamily List$<$Type$>$ Plottable\+Adder.\+Plottables\+That\+Do\+Not\+Get\+Colors}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= [}
+\DoxyCodeLine{            typeof(Plottables.PolarAxis),}
+\DoxyCodeLine{        typeof(Plottables.Annotation),}
+\DoxyCodeLine{        typeof(Plottables.Benchmark),}
+\DoxyCodeLine{        typeof(Plottables.CandlestickPlot),}
+\DoxyCodeLine{        typeof(Plottables.OhlcPlot),}
+\DoxyCodeLine{        typeof(Plottables.Heatmap),}
+\DoxyCodeLine{        typeof(Plottables.ImageMarker),}
+\DoxyCodeLine{        typeof(Plottables.ImageRect),}
+\DoxyCodeLine{        typeof(Plottables.IsoLines),}
+\DoxyCodeLine{        typeof(Plottables.Pie),}
+\DoxyCodeLine{        typeof(Plottables.Text),}
+\DoxyCodeLine{    ]}
+
+\end{DoxyCode}
+
+
+Plottables of these types are ignored when assigning colors according to new plottables according to the \mbox{\hyperlink{classPlottableAdder_a9c3fb2b2022f180f5febc0ab05a79bee}{Palette}} 
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{classPlottableAdder_a9c3fb2b2022f180f5febc0ab05a79bee}\label{classPlottableAdder_a9c3fb2b2022f180f5febc0ab05a79bee}} 
+\index{PlottableAdder@{PlottableAdder}!Palette@{Palette}}
+\index{Palette@{Palette}!PlottableAdder@{PlottableAdder}}
+\doxysubsubsection{\texorpdfstring{Palette}{Palette}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceIPalette}{IPalette}} Plottable\+Adder.\+Palette = new Palettes.\+Category10()\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+\mbox{\hyperlink{structColor}{Color}} set used for adding new plottables 
+
+\mbox{\Hypertarget{classPlottableAdder_a259a0b4b8eef9360a8245ed30cfab9b1}\label{classPlottableAdder_a259a0b4b8eef9360a8245ed30cfab9b1}} 
+\index{PlottableAdder@{PlottableAdder}!plot@{plot}}
+\index{plot@{plot}!PlottableAdder@{PlottableAdder}}
+\doxysubsubsection{\texorpdfstring{plot}{plot}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPlot}{Plot}} Plottable\+Adder.\+plot\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classPlottableAdder_ac82dad31b217ea1569367d89c1f80ab9}\label{classPlottableAdder_ac82dad31b217ea1569367d89c1f80ab9}} 
+\index{PlottableAdder@{PlottableAdder}!Plot@{Plot}}
+\index{Plot@{Plot}!PlottableAdder@{PlottableAdder}}
+\doxysubsubsection{\texorpdfstring{Plot}{Plot}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPlot}{Plot}} Plottable\+Adder.\+Plot = \mbox{\hyperlink{classPlottableAdder_a259a0b4b8eef9360a8245ed30cfab9b1}{plot}}\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/Plottable\+Adder.\+cs\end{DoxyCompactItemize}

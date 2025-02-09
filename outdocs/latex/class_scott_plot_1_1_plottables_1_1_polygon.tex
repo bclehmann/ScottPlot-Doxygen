@@ -1,0 +1,391 @@
+\doxysection{Scott\+Plot.\+Plottables.\+Polygon Class Reference}
+\hypertarget{class_scott_plot_1_1_plottables_1_1_polygon}{}\label{class_scott_plot_1_1_plottables_1_1_polygon}\index{ScottPlot.Plottables.Polygon@{ScottPlot.Plottables.Polygon}}
+
+
+A polygon is a collection of X/Y points that are all connected to form a closed shape. Polygons can be optionally filled with a color or a gradient.  
+
+
+Inheritance diagram for Scott\+Plot.\+Plottables.\+Polygon\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.265537cm]{class_scott_plot_1_1_plottables_1_1_polygon}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_polygon_aceb619b5b97979b0adde4972e5760c14}{Polygon}} (\mbox{\hyperlink{struct_scott_plot_1_1_coordinates}{Coordinates}}\mbox{[}$\,$\mbox{]} coords)
+\begin{DoxyCompactList}\small\item\em Creates a new polygon. \end{DoxyCompactList}\item 
+override string \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_polygon_a3c9a80346e0b283ec9aef75cd3e50ec3}{To\+String}} ()
+\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_polygon_ae1ffa7dbf2deb5cc864c3a069b463259}{Update\+Coordinates}} (\mbox{\hyperlink{struct_scott_plot_1_1_coordinates}{Coordinates}}\mbox{[}$\,$\mbox{]} new\+Coordinates)
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_polygon_a767b9becb39afd85370836f3b7820987}{Get\+Axis\+Limits}} ()
+\begin{DoxyCompactList}\small\item\em Return the 2D area (in coordinate space) occupied by the data contained in this plottable. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_polygon_a29ee8704d0c977595da09c21910091ae}{Render}} (Render\+Pack rp)
+\begin{DoxyCompactList}\small\item\em Draw the data from this plottable into the data area defined in the \doxylink{class_scott_plot_1_1_axes}{Axes}. By default the surface is already clipped to the data area, but this can be cleared inside the plottable. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable}{Scott\+Plot.\+IPlottable}}}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_polygon}{Polygon}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_polygon_af4a041518ba8930fbd22f8e734d8229a}{Empty}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+bool \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_polygon_a4cf998cbd2691deacad2782071563e84}{Is\+Empty}} = false\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_coordinates}{Coordinates}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_polygon_a8a37503b570efc5dfa59d50e56ddb7cc}{Coordinates}} = Array.\+Empty$<$\mbox{\hyperlink{struct_scott_plot_1_1_coordinates}{Coordinates}}$>$()\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+string \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_polygon_a32316e698275f352705bce8601b8ef06}{Label}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+string \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_polygon_a93f988aaa9c82a471a7cea33020c16cc}{Legend\+Text}} = string.\+Empty\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em If populated, this text appears in the legend. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_polygon_a0eeff2f71b2b9414c8342eb951e9e973}{Is\+Visible}} = true\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Toggles whether this plottable is shown and contributes to the automatic axis limit detection. The calling method will check this variable (it does not need to be checked inside the Render method). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_scott_plot_1_1_line_style}{Line\+Style}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_polygon_abfb5b5966187316bcc6bac42352d6228}{Line\+Style}} = new() \{ Width = 1 \}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_polygon_adf27b3984b2e9b5e9de460b7173fe7d7}{Line\+Width}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{namespace_scott_plot_a625917eb44cadb4de90991e525db6ab5}{Line\+Pattern}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_polygon_a71daa05320c151c7b04d9aacd3d5f261}{Line\+Pattern}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_polygon_a81900d12eabc79452783197ad9acfbef}{Line\+Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{class_scott_plot_1_1_fill_style}{Fill\+Style}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_polygon_a6d546ba91d8598e885a7bf0153df1e55}{Fill\+Style}} = new()\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_polygon_afebd7aa6d7c7492439496bfad9a2aeee}{Fill\+Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_polygon_ae5284026b0b4f17798c9a211ff90705e}{Fill\+Hatch\+Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{interface_scott_plot_1_1_i_hatch}{IHatch}}? \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_polygon_a7dea40d017efb9a39c728476d2a341d1}{Fill\+Hatch}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{class_scott_plot_1_1_marker_style}{Marker\+Style}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_polygon_a33371ecc56a2dc72e352871e5c2d56b0}{Marker\+Style}} = new()\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{namespace_scott_plot_aac856b9cf151418c331a7b848724d1f7}{Marker\+Shape}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_polygon_a99eeabc7ae562331dde0702896ad2af6}{Marker\+Shape}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_polygon_ab1cda2868c45cbc50d960e09d2914cb2}{Marker\+Size}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_polygon_a7f0ef0ec4373b18cc51436000bb88e31}{Marker\+Fill\+Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_polygon_ad2c85df6e23afbc59426e87d299658f0}{Marker\+Line\+Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_polygon_a3164572f575e3b5bfed957e5afbbd295}{Marker\+Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_polygon_a3bbea03cff9263d1a23908b5b780c693}{Marker\+Line\+Width}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+int \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_polygon_af0b29338261a9ba8d239d9b0bd48d8b4}{Point\+Count}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{interface_scott_plot_1_1_i_axes}{IAxes}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_polygon_a6d84e63b934183920e1f1181224f0af2}{Axes}} = new \mbox{\hyperlink{class_scott_plot_1_1_axes}{Axes}}()\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em This object performs coordinate/pixel translation at render time based on the latest data area. It stores the axes to use for this plottable and also the data area (in pixels) updated just before each render. If this object is null it will be constructed using the default X and Y axes at render time. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_enumerable}{IEnumerable}}$<$ \mbox{\hyperlink{class_scott_plot_1_1_legend_item}{Legend\+Item}} $>$ \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_polygon_a26dde2a2706d444081b7aa66cd019ab8}{Legend\+Items}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Items which will appear in the legend. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable}{Scott\+Plot.\+IPlottable}}}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{interface_scott_plot_1_1_i_has_line}{Scott\+Plot.\+IHas\+Line}}}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{interface_scott_plot_1_1_i_has_fill}{Scott\+Plot.\+IHas\+Fill}}}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{interface_scott_plot_1_1_i_has_marker}{Scott\+Plot.\+IHas\+Marker}}}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{interface_scott_plot_1_1_i_has_legend_text}{Scott\+Plot.\+IHas\+Legend\+Text}}}
+
+
+\doxysubsection{Detailed Description}
+A polygon is a collection of X/Y points that are all connected to form a closed shape. Polygons can be optionally filled with a color or a gradient. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_polygon_aceb619b5b97979b0adde4972e5760c14}\index{ScottPlot.Plottables.Polygon@{ScottPlot.Plottables.Polygon}!Polygon@{Polygon}}
+\index{Polygon@{Polygon}!ScottPlot.Plottables.Polygon@{ScottPlot.Plottables.Polygon}}
+\doxysubsubsection{\texorpdfstring{Polygon()}{Polygon()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_polygon_aceb619b5b97979b0adde4972e5760c14} 
+Scott\+Plot.\+Plottables.\+Polygon.\+Polygon (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_scott_plot_1_1_coordinates}{Coordinates}}\mbox{[}$\,$\mbox{]}}]{coords}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Creates a new polygon. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em coords} & The axis dependant vertex coordinates.\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_polygon_a767b9becb39afd85370836f3b7820987}\index{ScottPlot.Plottables.Polygon@{ScottPlot.Plottables.Polygon}!GetAxisLimits@{GetAxisLimits}}
+\index{GetAxisLimits@{GetAxisLimits}!ScottPlot.Plottables.Polygon@{ScottPlot.Plottables.Polygon}}
+\doxysubsubsection{\texorpdfstring{GetAxisLimits()}{GetAxisLimits()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_polygon_a767b9becb39afd85370836f3b7820987} 
+\mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}} Scott\+Plot.\+Plottables.\+Polygon.\+Get\+Axis\+Limits (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return the 2D area (in coordinate space) occupied by the data contained in this plottable. 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable_a2e455cf76f9e8bc3187900b1a90487c3}{Scott\+Plot.\+IPlottable}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_polygon_a29ee8704d0c977595da09c21910091ae}\index{ScottPlot.Plottables.Polygon@{ScottPlot.Plottables.Polygon}!Render@{Render}}
+\index{Render@{Render}!ScottPlot.Plottables.Polygon@{ScottPlot.Plottables.Polygon}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_polygon_a29ee8704d0c977595da09c21910091ae} 
+virtual void Scott\+Plot.\+Plottables.\+Polygon.\+Render (\begin{DoxyParamCaption}\item[{Render\+Pack}]{rp}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Draw the data from this plottable into the data area defined in the \doxylink{class_scott_plot_1_1_axes}{Axes}. By default the surface is already clipped to the data area, but this can be cleared inside the plottable. 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable_a11d2487f1d7628e019a09748d876c289}{Scott\+Plot.\+IPlottable}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_polygon_a3c9a80346e0b283ec9aef75cd3e50ec3}\index{ScottPlot.Plottables.Polygon@{ScottPlot.Plottables.Polygon}!ToString@{ToString}}
+\index{ToString@{ToString}!ScottPlot.Plottables.Polygon@{ScottPlot.Plottables.Polygon}}
+\doxysubsubsection{\texorpdfstring{ToString()}{ToString()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_polygon_a3c9a80346e0b283ec9aef75cd3e50ec3} 
+override string Scott\+Plot.\+Plottables.\+Polygon.\+To\+String (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_polygon_ae1ffa7dbf2deb5cc864c3a069b463259}\index{ScottPlot.Plottables.Polygon@{ScottPlot.Plottables.Polygon}!UpdateCoordinates@{UpdateCoordinates}}
+\index{UpdateCoordinates@{UpdateCoordinates}!ScottPlot.Plottables.Polygon@{ScottPlot.Plottables.Polygon}}
+\doxysubsubsection{\texorpdfstring{UpdateCoordinates()}{UpdateCoordinates()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_polygon_ae1ffa7dbf2deb5cc864c3a069b463259} 
+void Scott\+Plot.\+Plottables.\+Polygon.\+Update\+Coordinates (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_scott_plot_1_1_coordinates}{Coordinates}}\mbox{[}$\,$\mbox{]}}]{new\+Coordinates}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_polygon_a6d84e63b934183920e1f1181224f0af2}\index{ScottPlot.Plottables.Polygon@{ScottPlot.Plottables.Polygon}!Axes@{Axes}}
+\index{Axes@{Axes}!ScottPlot.Plottables.Polygon@{ScottPlot.Plottables.Polygon}}
+\doxysubsubsection{\texorpdfstring{Axes}{Axes}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_polygon_a6d84e63b934183920e1f1181224f0af2} 
+\mbox{\hyperlink{interface_scott_plot_1_1_i_axes}{IAxes}} Scott\+Plot.\+Plottables.\+Polygon.\+Axes = new \mbox{\hyperlink{class_scott_plot_1_1_axes}{Axes}}()\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+This object performs coordinate/pixel translation at render time based on the latest data area. It stores the axes to use for this plottable and also the data area (in pixels) updated just before each render. If this object is null it will be constructed using the default X and Y axes at render time. 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable_aa68bc5153a673a7cd4a68f93da377d0a}{Scott\+Plot.\+IPlottable}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_polygon_a8a37503b570efc5dfa59d50e56ddb7cc}\index{ScottPlot.Plottables.Polygon@{ScottPlot.Plottables.Polygon}!Coordinates@{Coordinates}}
+\index{Coordinates@{Coordinates}!ScottPlot.Plottables.Polygon@{ScottPlot.Plottables.Polygon}}
+\doxysubsubsection{\texorpdfstring{Coordinates}{Coordinates}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_polygon_a8a37503b570efc5dfa59d50e56ddb7cc} 
+\mbox{\hyperlink{struct_scott_plot_1_1_coordinates}{Coordinates}} \mbox{[}$\,$\mbox{]} Scott\+Plot.\+Plottables.\+Polygon.\+Coordinates = Array.\+Empty$<$\mbox{\hyperlink{struct_scott_plot_1_1_coordinates}{Coordinates}}$>$()\hspace{0.3cm}{\ttfamily [get]}}
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_polygon_af4a041518ba8930fbd22f8e734d8229a}\index{ScottPlot.Plottables.Polygon@{ScottPlot.Plottables.Polygon}!Empty@{Empty}}
+\index{Empty@{Empty}!ScottPlot.Plottables.Polygon@{ScottPlot.Plottables.Polygon}}
+\doxysubsubsection{\texorpdfstring{Empty}{Empty}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_polygon_af4a041518ba8930fbd22f8e734d8229a} 
+\mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_polygon}{Polygon}} Scott\+Plot.\+Plottables.\+Polygon.\+Empty\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_polygon_afebd7aa6d7c7492439496bfad9a2aeee}\index{ScottPlot.Plottables.Polygon@{ScottPlot.Plottables.Polygon}!FillColor@{FillColor}}
+\index{FillColor@{FillColor}!ScottPlot.Plottables.Polygon@{ScottPlot.Plottables.Polygon}}
+\doxysubsubsection{\texorpdfstring{FillColor}{FillColor}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_polygon_afebd7aa6d7c7492439496bfad9a2aeee} 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} Scott\+Plot.\+Plottables.\+Polygon.\+Fill\+Color\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_has_fill_a22e0a80821a7ed97ea4af9f5f5614f0e}{Scott\+Plot.\+IHas\+Fill}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_polygon_a7dea40d017efb9a39c728476d2a341d1}\index{ScottPlot.Plottables.Polygon@{ScottPlot.Plottables.Polygon}!FillHatch@{FillHatch}}
+\index{FillHatch@{FillHatch}!ScottPlot.Plottables.Polygon@{ScottPlot.Plottables.Polygon}}
+\doxysubsubsection{\texorpdfstring{FillHatch}{FillHatch}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_polygon_a7dea40d017efb9a39c728476d2a341d1} 
+\mbox{\hyperlink{interface_scott_plot_1_1_i_hatch}{IHatch}}? Scott\+Plot.\+Plottables.\+Polygon.\+Fill\+Hatch\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_has_fill_a681a7efc565989ffe28dc38f6bf42d9e}{Scott\+Plot.\+IHas\+Fill}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_polygon_ae5284026b0b4f17798c9a211ff90705e}\index{ScottPlot.Plottables.Polygon@{ScottPlot.Plottables.Polygon}!FillHatchColor@{FillHatchColor}}
+\index{FillHatchColor@{FillHatchColor}!ScottPlot.Plottables.Polygon@{ScottPlot.Plottables.Polygon}}
+\doxysubsubsection{\texorpdfstring{FillHatchColor}{FillHatchColor}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_polygon_ae5284026b0b4f17798c9a211ff90705e} 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} Scott\+Plot.\+Plottables.\+Polygon.\+Fill\+Hatch\+Color\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_has_fill_a677a670c4b6c9718d48c8556d93f7094}{Scott\+Plot.\+IHas\+Fill}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_polygon_a6d546ba91d8598e885a7bf0153df1e55}\index{ScottPlot.Plottables.Polygon@{ScottPlot.Plottables.Polygon}!FillStyle@{FillStyle}}
+\index{FillStyle@{FillStyle}!ScottPlot.Plottables.Polygon@{ScottPlot.Plottables.Polygon}}
+\doxysubsubsection{\texorpdfstring{FillStyle}{FillStyle}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_polygon_a6d546ba91d8598e885a7bf0153df1e55} 
+\mbox{\hyperlink{class_scott_plot_1_1_fill_style}{Fill\+Style}} Scott\+Plot.\+Plottables.\+Polygon.\+Fill\+Style = new()\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_has_fill_aceaa90166768f5edc0e81d89b6165b0a}{Scott\+Plot.\+IHas\+Fill}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_polygon_a4cf998cbd2691deacad2782071563e84}\index{ScottPlot.Plottables.Polygon@{ScottPlot.Plottables.Polygon}!IsEmpty@{IsEmpty}}
+\index{IsEmpty@{IsEmpty}!ScottPlot.Plottables.Polygon@{ScottPlot.Plottables.Polygon}}
+\doxysubsubsection{\texorpdfstring{IsEmpty}{IsEmpty}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_polygon_a4cf998cbd2691deacad2782071563e84} 
+bool Scott\+Plot.\+Plottables.\+Polygon.\+Is\+Empty = false\hspace{0.3cm}{\ttfamily [get]}}
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_polygon_a0eeff2f71b2b9414c8342eb951e9e973}\index{ScottPlot.Plottables.Polygon@{ScottPlot.Plottables.Polygon}!IsVisible@{IsVisible}}
+\index{IsVisible@{IsVisible}!ScottPlot.Plottables.Polygon@{ScottPlot.Plottables.Polygon}}
+\doxysubsubsection{\texorpdfstring{IsVisible}{IsVisible}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_polygon_a0eeff2f71b2b9414c8342eb951e9e973} 
+bool Scott\+Plot.\+Plottables.\+Polygon.\+Is\+Visible = true\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Toggles whether this plottable is shown and contributes to the automatic axis limit detection. The calling method will check this variable (it does not need to be checked inside the Render method). 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable_abbe75ba55a332d695313ccb5dc780923}{Scott\+Plot.\+IPlottable}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_polygon_a32316e698275f352705bce8601b8ef06}\index{ScottPlot.Plottables.Polygon@{ScottPlot.Plottables.Polygon}!Label@{Label}}
+\index{Label@{Label}!ScottPlot.Plottables.Polygon@{ScottPlot.Plottables.Polygon}}
+\doxysubsubsection{\texorpdfstring{Label}{Label}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_polygon_a32316e698275f352705bce8601b8ef06} 
+string Scott\+Plot.\+Plottables.\+Polygon.\+Label\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_polygon_a26dde2a2706d444081b7aa66cd019ab8}\index{ScottPlot.Plottables.Polygon@{ScottPlot.Plottables.Polygon}!LegendItems@{LegendItems}}
+\index{LegendItems@{LegendItems}!ScottPlot.Plottables.Polygon@{ScottPlot.Plottables.Polygon}}
+\doxysubsubsection{\texorpdfstring{LegendItems}{LegendItems}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_polygon_a26dde2a2706d444081b7aa66cd019ab8} 
+\mbox{\hyperlink{class_i_enumerable}{IEnumerable}}$<$\mbox{\hyperlink{class_scott_plot_1_1_legend_item}{Legend\+Item}}$>$ Scott\+Plot.\+Plottables.\+Polygon.\+Legend\+Items\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Items which will appear in the legend. 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable_a4565f96a253f832bd9aa8033c99eff75}{Scott\+Plot.\+IPlottable}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_polygon_a93f988aaa9c82a471a7cea33020c16cc}\index{ScottPlot.Plottables.Polygon@{ScottPlot.Plottables.Polygon}!LegendText@{LegendText}}
+\index{LegendText@{LegendText}!ScottPlot.Plottables.Polygon@{ScottPlot.Plottables.Polygon}}
+\doxysubsubsection{\texorpdfstring{LegendText}{LegendText}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_polygon_a93f988aaa9c82a471a7cea33020c16cc} 
+string Scott\+Plot.\+Plottables.\+Polygon.\+Legend\+Text = string.\+Empty\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+If populated, this text appears in the legend. 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_has_legend_text_ad89967a734dbda7c02217a19c17d88d8}{Scott\+Plot.\+IHas\+Legend\+Text}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_polygon_a81900d12eabc79452783197ad9acfbef}\index{ScottPlot.Plottables.Polygon@{ScottPlot.Plottables.Polygon}!LineColor@{LineColor}}
+\index{LineColor@{LineColor}!ScottPlot.Plottables.Polygon@{ScottPlot.Plottables.Polygon}}
+\doxysubsubsection{\texorpdfstring{LineColor}{LineColor}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_polygon_a81900d12eabc79452783197ad9acfbef} 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} Scott\+Plot.\+Plottables.\+Polygon.\+Line\+Color\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_has_line_aa6dfc6fced8c40566cc6fdf237b66175}{Scott\+Plot.\+IHas\+Line}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_polygon_a71daa05320c151c7b04d9aacd3d5f261}\index{ScottPlot.Plottables.Polygon@{ScottPlot.Plottables.Polygon}!LinePattern@{LinePattern}}
+\index{LinePattern@{LinePattern}!ScottPlot.Plottables.Polygon@{ScottPlot.Plottables.Polygon}}
+\doxysubsubsection{\texorpdfstring{LinePattern}{LinePattern}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_polygon_a71daa05320c151c7b04d9aacd3d5f261} 
+\mbox{\hyperlink{namespace_scott_plot_a625917eb44cadb4de90991e525db6ab5}{Line\+Pattern}} Scott\+Plot.\+Plottables.\+Polygon.\+Line\+Pattern\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_has_line_a36a31df15a64944ab9108d98574a5ada}{Scott\+Plot.\+IHas\+Line}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_polygon_abfb5b5966187316bcc6bac42352d6228}\index{ScottPlot.Plottables.Polygon@{ScottPlot.Plottables.Polygon}!LineStyle@{LineStyle}}
+\index{LineStyle@{LineStyle}!ScottPlot.Plottables.Polygon@{ScottPlot.Plottables.Polygon}}
+\doxysubsubsection{\texorpdfstring{LineStyle}{LineStyle}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_polygon_abfb5b5966187316bcc6bac42352d6228} 
+\mbox{\hyperlink{class_scott_plot_1_1_line_style}{Line\+Style}} Scott\+Plot.\+Plottables.\+Polygon.\+Line\+Style = new() \{ Width = 1 \}\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_has_line_a1a04ccd6d040be2e80338c8af04ea291}{Scott\+Plot.\+IHas\+Line}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_polygon_adf27b3984b2e9b5e9de460b7173fe7d7}\index{ScottPlot.Plottables.Polygon@{ScottPlot.Plottables.Polygon}!LineWidth@{LineWidth}}
+\index{LineWidth@{LineWidth}!ScottPlot.Plottables.Polygon@{ScottPlot.Plottables.Polygon}}
+\doxysubsubsection{\texorpdfstring{LineWidth}{LineWidth}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_polygon_adf27b3984b2e9b5e9de460b7173fe7d7} 
+float Scott\+Plot.\+Plottables.\+Polygon.\+Line\+Width\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_has_line_aa5f2d70e52466770207ed3547ffeecb3}{Scott\+Plot.\+IHas\+Line}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_polygon_a3164572f575e3b5bfed957e5afbbd295}\index{ScottPlot.Plottables.Polygon@{ScottPlot.Plottables.Polygon}!MarkerColor@{MarkerColor}}
+\index{MarkerColor@{MarkerColor}!ScottPlot.Plottables.Polygon@{ScottPlot.Plottables.Polygon}}
+\doxysubsubsection{\texorpdfstring{MarkerColor}{MarkerColor}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_polygon_a3164572f575e3b5bfed957e5afbbd295} 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} Scott\+Plot.\+Plottables.\+Polygon.\+Marker\+Color\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_has_marker_a3e1a1b5c22ff67edc1aee2de18a06ea4}{Scott\+Plot.\+IHas\+Marker}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_polygon_a7f0ef0ec4373b18cc51436000bb88e31}\index{ScottPlot.Plottables.Polygon@{ScottPlot.Plottables.Polygon}!MarkerFillColor@{MarkerFillColor}}
+\index{MarkerFillColor@{MarkerFillColor}!ScottPlot.Plottables.Polygon@{ScottPlot.Plottables.Polygon}}
+\doxysubsubsection{\texorpdfstring{MarkerFillColor}{MarkerFillColor}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_polygon_a7f0ef0ec4373b18cc51436000bb88e31} 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} Scott\+Plot.\+Plottables.\+Polygon.\+Marker\+Fill\+Color\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_has_marker_a6f7de20ca67594f0f69b2edaaa4995fe}{Scott\+Plot.\+IHas\+Marker}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_polygon_ad2c85df6e23afbc59426e87d299658f0}\index{ScottPlot.Plottables.Polygon@{ScottPlot.Plottables.Polygon}!MarkerLineColor@{MarkerLineColor}}
+\index{MarkerLineColor@{MarkerLineColor}!ScottPlot.Plottables.Polygon@{ScottPlot.Plottables.Polygon}}
+\doxysubsubsection{\texorpdfstring{MarkerLineColor}{MarkerLineColor}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_polygon_ad2c85df6e23afbc59426e87d299658f0} 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} Scott\+Plot.\+Plottables.\+Polygon.\+Marker\+Line\+Color\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_has_marker_afde846e67ecac2739669b1b63f17fbce}{Scott\+Plot.\+IHas\+Marker}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_polygon_a3bbea03cff9263d1a23908b5b780c693}\index{ScottPlot.Plottables.Polygon@{ScottPlot.Plottables.Polygon}!MarkerLineWidth@{MarkerLineWidth}}
+\index{MarkerLineWidth@{MarkerLineWidth}!ScottPlot.Plottables.Polygon@{ScottPlot.Plottables.Polygon}}
+\doxysubsubsection{\texorpdfstring{MarkerLineWidth}{MarkerLineWidth}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_polygon_a3bbea03cff9263d1a23908b5b780c693} 
+float Scott\+Plot.\+Plottables.\+Polygon.\+Marker\+Line\+Width\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_has_marker_a38d9e4be5f01c0cda2730d7ad9fa90ed}{Scott\+Plot.\+IHas\+Marker}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_polygon_a99eeabc7ae562331dde0702896ad2af6}\index{ScottPlot.Plottables.Polygon@{ScottPlot.Plottables.Polygon}!MarkerShape@{MarkerShape}}
+\index{MarkerShape@{MarkerShape}!ScottPlot.Plottables.Polygon@{ScottPlot.Plottables.Polygon}}
+\doxysubsubsection{\texorpdfstring{MarkerShape}{MarkerShape}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_polygon_a99eeabc7ae562331dde0702896ad2af6} 
+\mbox{\hyperlink{namespace_scott_plot_aac856b9cf151418c331a7b848724d1f7}{Marker\+Shape}} Scott\+Plot.\+Plottables.\+Polygon.\+Marker\+Shape\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_has_marker_a17093f6641893022d052dc40e90998f9}{Scott\+Plot.\+IHas\+Marker}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_polygon_ab1cda2868c45cbc50d960e09d2914cb2}\index{ScottPlot.Plottables.Polygon@{ScottPlot.Plottables.Polygon}!MarkerSize@{MarkerSize}}
+\index{MarkerSize@{MarkerSize}!ScottPlot.Plottables.Polygon@{ScottPlot.Plottables.Polygon}}
+\doxysubsubsection{\texorpdfstring{MarkerSize}{MarkerSize}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_polygon_ab1cda2868c45cbc50d960e09d2914cb2} 
+float Scott\+Plot.\+Plottables.\+Polygon.\+Marker\+Size\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_has_marker_a410d2ca405f2b5a7acd50ddb873b614b}{Scott\+Plot.\+IHas\+Marker}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_polygon_a33371ecc56a2dc72e352871e5c2d56b0}\index{ScottPlot.Plottables.Polygon@{ScottPlot.Plottables.Polygon}!MarkerStyle@{MarkerStyle}}
+\index{MarkerStyle@{MarkerStyle}!ScottPlot.Plottables.Polygon@{ScottPlot.Plottables.Polygon}}
+\doxysubsubsection{\texorpdfstring{MarkerStyle}{MarkerStyle}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_polygon_a33371ecc56a2dc72e352871e5c2d56b0} 
+\mbox{\hyperlink{class_scott_plot_1_1_marker_style}{Marker\+Style}} Scott\+Plot.\+Plottables.\+Polygon.\+Marker\+Style = new()\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_has_marker_a0c763a0a433beea9ce112c14ac481084}{Scott\+Plot.\+IHas\+Marker}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_polygon_af0b29338261a9ba8d239d9b0bd48d8b4}\index{ScottPlot.Plottables.Polygon@{ScottPlot.Plottables.Polygon}!PointCount@{PointCount}}
+\index{PointCount@{PointCount}!ScottPlot.Plottables.Polygon@{ScottPlot.Plottables.Polygon}}
+\doxysubsubsection{\texorpdfstring{PointCount}{PointCount}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_polygon_af0b29338261a9ba8d239d9b0bd48d8b4} 
+int Scott\+Plot.\+Plottables.\+Polygon.\+Point\+Count\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Plottables/Polygon.\+cs\end{DoxyCompactItemize}

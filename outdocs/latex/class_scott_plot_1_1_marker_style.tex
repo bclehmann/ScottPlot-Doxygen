@@ -1,0 +1,299 @@
+\doxysection{Scott\+Plot.\+Marker\+Style Class Reference}
+\hypertarget{class_scott_plot_1_1_marker_style}{}\label{class_scott_plot_1_1_marker_style}\index{ScottPlot.MarkerStyle@{ScottPlot.MarkerStyle}}
+
+
+This configuration object (reference type) permanently lives inside objects which require styling. It is recommended to use this object as an init-\/only property.  
+
+
+Inheritance diagram for Scott\+Plot.\+Marker\+Style\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_scott_plot_1_1_marker_style}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_scott_plot_1_1_marker_style_a5a637abb0fadcba5733c13d5cddbc563}{Marker\+Style}} ()
+\item 
+\mbox{\hyperlink{class_scott_plot_1_1_marker_style_a1afdcc39b6aee824544aa66c27733820}{Marker\+Style}} (\mbox{\hyperlink{namespace_scott_plot_aac856b9cf151418c331a7b848724d1f7}{Marker\+Shape}} shape, float size)
+\item 
+\mbox{\hyperlink{class_scott_plot_1_1_marker_style_aec751911d7749fd2940e2e219b9a1326}{Marker\+Style}} (\mbox{\hyperlink{namespace_scott_plot_aac856b9cf151418c331a7b848724d1f7}{Marker\+Shape}} shape, float size, \mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} color)
+\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_marker_style_a104ea19043288cc4268346ce745bb28c}{Render}} (SKCanvas canvas, \mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}} px, SKPaint paint)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_scott_plot_1_1_marker_style_a85c9a2e839b6e959415f5d1b275b698a}{Is\+Visible}} = true\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{namespace_scott_plot_aac856b9cf151418c331a7b848724d1f7}{Marker\+Shape}} \mbox{\hyperlink{class_scott_plot_1_1_marker_style_a2644354e55184b52e05d0e668a02c9f3}{Shape}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_scott_plot_1_1_marker_style_adf9fb2427acf6155effd8b598381d5f6}{Size}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Diameter of the marker (in pixels) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} \mbox{\hyperlink{class_scott_plot_1_1_marker_style_a9a8b4c3236d1a9078a95f78e3b01d2fe}{Marker\+Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{class_scott_plot_1_1_line_style}{Line\+Style}} \mbox{\hyperlink{class_scott_plot_1_1_marker_style_af7a0a4191b0c3552ec97f903f0013f74}{Line\+Style}} = new() \{ Width = 1 \}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_scott_plot_1_1_marker_style_a8152289729e2184b13e8f5385239ce94}{Line\+Width}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{namespace_scott_plot_a625917eb44cadb4de90991e525db6ab5}{Line\+Pattern}} \mbox{\hyperlink{class_scott_plot_1_1_marker_style_a1e74f138f21b94600c3d021aeeb61fdf}{Line\+Pattern}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} \mbox{\hyperlink{class_scott_plot_1_1_marker_style_ab4097ab79e4922868ae40a56159b82f7}{Line\+Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{class_scott_plot_1_1_fill_style}{Fill\+Style}} \mbox{\hyperlink{class_scott_plot_1_1_marker_style_aeb4a898368361b79eba2e7a8a0c8b8c7}{Fill\+Style}} = new()\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} \mbox{\hyperlink{class_scott_plot_1_1_marker_style_a0afab06473319fb6adca859810414d0d}{Fill\+Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} \mbox{\hyperlink{class_scott_plot_1_1_marker_style_aec9b6cb63d0743265249e6828a5d19d2}{Fill\+Hatch\+Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{interface_scott_plot_1_1_i_hatch}{IHatch}}? \mbox{\hyperlink{class_scott_plot_1_1_marker_style_a006a092330e1be7ffc2a904bceb4962b}{Fill\+Hatch}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{interface_scott_plot_1_1_i_marker}{IMarker}}? \mbox{\hyperlink{class_scott_plot_1_1_marker_style_a9df93c39d74e142b8f630dd315842c9b}{Custom\+Renderer}} = null\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+bool \mbox{\hyperlink{class_scott_plot_1_1_marker_style_a6ff2e93a383b70af66335e209776ac18}{Fill\+Outline}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{class_scott_plot_1_1_line_style}{Line\+Style}} \mbox{\hyperlink{class_scott_plot_1_1_marker_style_aef8a17ab59804270ce3cd1baa0a0dcf9}{Outline}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{class_scott_plot_1_1_line_style}{Line\+Style}} \mbox{\hyperlink{class_scott_plot_1_1_marker_style_aea0f4a0dba05f1029b6c1e3744f6b9a9}{Outline\+Style}} = new() \{ \mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} = \mbox{\hyperlink{struct_scott_plot_1_1_colors_a2aafa2dc613a50b4fa1699a09fe003b1}{Colors.\+Black}}, Width = 0 \}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_scott_plot_1_1_marker_style_af1677f4a850bf66f9d0c64673101c090}{Outline\+Width}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{namespace_scott_plot_a625917eb44cadb4de90991e525db6ab5}{Line\+Pattern}} \mbox{\hyperlink{class_scott_plot_1_1_marker_style_a8f019bb02f0c4672387521e045ab7930}{Outline\+Pattern}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} \mbox{\hyperlink{class_scott_plot_1_1_marker_style_ae72bbc68d69da4f4e9eed859b834ad33}{Outline\+Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{class_scott_plot_1_1_fill_style}{Fill\+Style}} \mbox{\hyperlink{class_scott_plot_1_1_marker_style_a22af29ea9e41822bf914b4abf9ac6786}{Fill}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+static \mbox{\hyperlink{class_scott_plot_1_1_marker_style}{Marker\+Style}} \mbox{\hyperlink{class_scott_plot_1_1_marker_style_ae53d4aa2933865eedd301d12aadaffb7}{Default}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+static \mbox{\hyperlink{class_scott_plot_1_1_marker_style}{Marker\+Style}} \mbox{\hyperlink{class_scott_plot_1_1_marker_style_a9c98fef68ea2053f46734529e521e0db}{None}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{interface_scott_plot_1_1_i_has_line}{Scott\+Plot.\+IHas\+Line}}}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{interface_scott_plot_1_1_i_has_fill}{Scott\+Plot.\+IHas\+Fill}}}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{interface_scott_plot_1_1_i_has_outline}{Scott\+Plot.\+IHas\+Outline}}}
+
+
+\doxysubsection{Detailed Description}
+This configuration object (reference type) permanently lives inside objects which require styling. It is recommended to use this object as an init-\/only property. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_scott_plot_1_1_marker_style_a5a637abb0fadcba5733c13d5cddbc563}\index{ScottPlot.MarkerStyle@{ScottPlot.MarkerStyle}!MarkerStyle@{MarkerStyle}}
+\index{MarkerStyle@{MarkerStyle}!ScottPlot.MarkerStyle@{ScottPlot.MarkerStyle}}
+\doxysubsubsection{\texorpdfstring{MarkerStyle()}{MarkerStyle()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_marker_style_a5a637abb0fadcba5733c13d5cddbc563} 
+Scott\+Plot.\+Marker\+Style.\+Marker\+Style (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_marker_style_a1afdcc39b6aee824544aa66c27733820}\index{ScottPlot.MarkerStyle@{ScottPlot.MarkerStyle}!MarkerStyle@{MarkerStyle}}
+\index{MarkerStyle@{MarkerStyle}!ScottPlot.MarkerStyle@{ScottPlot.MarkerStyle}}
+\doxysubsubsection{\texorpdfstring{MarkerStyle()}{MarkerStyle()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_marker_style_a1afdcc39b6aee824544aa66c27733820} 
+Scott\+Plot.\+Marker\+Style.\+Marker\+Style (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_scott_plot_aac856b9cf151418c331a7b848724d1f7}{Marker\+Shape}}}]{shape}{, }\item[{float}]{size}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_marker_style_aec751911d7749fd2940e2e219b9a1326}\index{ScottPlot.MarkerStyle@{ScottPlot.MarkerStyle}!MarkerStyle@{MarkerStyle}}
+\index{MarkerStyle@{MarkerStyle}!ScottPlot.MarkerStyle@{ScottPlot.MarkerStyle}}
+\doxysubsubsection{\texorpdfstring{MarkerStyle()}{MarkerStyle()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_marker_style_aec751911d7749fd2940e2e219b9a1326} 
+Scott\+Plot.\+Marker\+Style.\+Marker\+Style (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_scott_plot_aac856b9cf151418c331a7b848724d1f7}{Marker\+Shape}}}]{shape}{, }\item[{float}]{size}{, }\item[{\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}}}]{color}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_scott_plot_1_1_marker_style_a104ea19043288cc4268346ce745bb28c}\index{ScottPlot.MarkerStyle@{ScottPlot.MarkerStyle}!Render@{Render}}
+\index{Render@{Render}!ScottPlot.MarkerStyle@{ScottPlot.MarkerStyle}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_marker_style_a104ea19043288cc4268346ce745bb28c} 
+void Scott\+Plot.\+Marker\+Style.\+Render (\begin{DoxyParamCaption}\item[{SKCanvas}]{canvas}{, }\item[{\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}}}]{px}{, }\item[{SKPaint}]{paint}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{class_scott_plot_1_1_marker_style_a9df93c39d74e142b8f630dd315842c9b}\index{ScottPlot.MarkerStyle@{ScottPlot.MarkerStyle}!CustomRenderer@{CustomRenderer}}
+\index{CustomRenderer@{CustomRenderer}!ScottPlot.MarkerStyle@{ScottPlot.MarkerStyle}}
+\doxysubsubsection{\texorpdfstring{CustomRenderer}{CustomRenderer}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_marker_style_a9df93c39d74e142b8f630dd315842c9b} 
+\mbox{\hyperlink{interface_scott_plot_1_1_i_marker}{IMarker}}? Scott\+Plot.\+Marker\+Style.\+Custom\+Renderer = null\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_marker_style_ae53d4aa2933865eedd301d12aadaffb7}\index{ScottPlot.MarkerStyle@{ScottPlot.MarkerStyle}!Default@{Default}}
+\index{Default@{Default}!ScottPlot.MarkerStyle@{ScottPlot.MarkerStyle}}
+\doxysubsubsection{\texorpdfstring{Default}{Default}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_marker_style_ae53d4aa2933865eedd301d12aadaffb7} 
+\mbox{\hyperlink{class_scott_plot_1_1_marker_style}{Marker\+Style}} Scott\+Plot.\+Marker\+Style.\+Default\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+\Hypertarget{class_scott_plot_1_1_marker_style_a22af29ea9e41822bf914b4abf9ac6786}\index{ScottPlot.MarkerStyle@{ScottPlot.MarkerStyle}!Fill@{Fill}}
+\index{Fill@{Fill}!ScottPlot.MarkerStyle@{ScottPlot.MarkerStyle}}
+\doxysubsubsection{\texorpdfstring{Fill}{Fill}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_marker_style_a22af29ea9e41822bf914b4abf9ac6786} 
+\mbox{\hyperlink{class_scott_plot_1_1_fill_style}{Fill\+Style}} Scott\+Plot.\+Marker\+Style.\+Fill\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_marker_style_a0afab06473319fb6adca859810414d0d}\index{ScottPlot.MarkerStyle@{ScottPlot.MarkerStyle}!FillColor@{FillColor}}
+\index{FillColor@{FillColor}!ScottPlot.MarkerStyle@{ScottPlot.MarkerStyle}}
+\doxysubsubsection{\texorpdfstring{FillColor}{FillColor}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_marker_style_a0afab06473319fb6adca859810414d0d} 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} Scott\+Plot.\+Marker\+Style.\+Fill\+Color\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_has_fill_a22e0a80821a7ed97ea4af9f5f5614f0e}{Scott\+Plot.\+IHas\+Fill}}.
+
+\Hypertarget{class_scott_plot_1_1_marker_style_a006a092330e1be7ffc2a904bceb4962b}\index{ScottPlot.MarkerStyle@{ScottPlot.MarkerStyle}!FillHatch@{FillHatch}}
+\index{FillHatch@{FillHatch}!ScottPlot.MarkerStyle@{ScottPlot.MarkerStyle}}
+\doxysubsubsection{\texorpdfstring{FillHatch}{FillHatch}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_marker_style_a006a092330e1be7ffc2a904bceb4962b} 
+\mbox{\hyperlink{interface_scott_plot_1_1_i_hatch}{IHatch}}? Scott\+Plot.\+Marker\+Style.\+Fill\+Hatch\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_has_fill_a681a7efc565989ffe28dc38f6bf42d9e}{Scott\+Plot.\+IHas\+Fill}}.
+
+\Hypertarget{class_scott_plot_1_1_marker_style_aec9b6cb63d0743265249e6828a5d19d2}\index{ScottPlot.MarkerStyle@{ScottPlot.MarkerStyle}!FillHatchColor@{FillHatchColor}}
+\index{FillHatchColor@{FillHatchColor}!ScottPlot.MarkerStyle@{ScottPlot.MarkerStyle}}
+\doxysubsubsection{\texorpdfstring{FillHatchColor}{FillHatchColor}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_marker_style_aec9b6cb63d0743265249e6828a5d19d2} 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} Scott\+Plot.\+Marker\+Style.\+Fill\+Hatch\+Color\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_has_fill_a677a670c4b6c9718d48c8556d93f7094}{Scott\+Plot.\+IHas\+Fill}}.
+
+\Hypertarget{class_scott_plot_1_1_marker_style_a6ff2e93a383b70af66335e209776ac18}\index{ScottPlot.MarkerStyle@{ScottPlot.MarkerStyle}!FillOutline@{FillOutline}}
+\index{FillOutline@{FillOutline}!ScottPlot.MarkerStyle@{ScottPlot.MarkerStyle}}
+\doxysubsubsection{\texorpdfstring{FillOutline}{FillOutline}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_marker_style_a6ff2e93a383b70af66335e209776ac18} 
+bool Scott\+Plot.\+Marker\+Style.\+Fill\+Outline\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_marker_style_aeb4a898368361b79eba2e7a8a0c8b8c7}\index{ScottPlot.MarkerStyle@{ScottPlot.MarkerStyle}!FillStyle@{FillStyle}}
+\index{FillStyle@{FillStyle}!ScottPlot.MarkerStyle@{ScottPlot.MarkerStyle}}
+\doxysubsubsection{\texorpdfstring{FillStyle}{FillStyle}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_marker_style_aeb4a898368361b79eba2e7a8a0c8b8c7} 
+\mbox{\hyperlink{class_scott_plot_1_1_fill_style}{Fill\+Style}} Scott\+Plot.\+Marker\+Style.\+Fill\+Style = new()\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_has_fill_aceaa90166768f5edc0e81d89b6165b0a}{Scott\+Plot.\+IHas\+Fill}}.
+
+\Hypertarget{class_scott_plot_1_1_marker_style_a85c9a2e839b6e959415f5d1b275b698a}\index{ScottPlot.MarkerStyle@{ScottPlot.MarkerStyle}!IsVisible@{IsVisible}}
+\index{IsVisible@{IsVisible}!ScottPlot.MarkerStyle@{ScottPlot.MarkerStyle}}
+\doxysubsubsection{\texorpdfstring{IsVisible}{IsVisible}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_marker_style_a85c9a2e839b6e959415f5d1b275b698a} 
+bool Scott\+Plot.\+Marker\+Style.\+Is\+Visible = true\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_marker_style_ab4097ab79e4922868ae40a56159b82f7}\index{ScottPlot.MarkerStyle@{ScottPlot.MarkerStyle}!LineColor@{LineColor}}
+\index{LineColor@{LineColor}!ScottPlot.MarkerStyle@{ScottPlot.MarkerStyle}}
+\doxysubsubsection{\texorpdfstring{LineColor}{LineColor}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_marker_style_ab4097ab79e4922868ae40a56159b82f7} 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} Scott\+Plot.\+Marker\+Style.\+Line\+Color\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_has_line_aa6dfc6fced8c40566cc6fdf237b66175}{Scott\+Plot.\+IHas\+Line}}.
+
+\Hypertarget{class_scott_plot_1_1_marker_style_a1e74f138f21b94600c3d021aeeb61fdf}\index{ScottPlot.MarkerStyle@{ScottPlot.MarkerStyle}!LinePattern@{LinePattern}}
+\index{LinePattern@{LinePattern}!ScottPlot.MarkerStyle@{ScottPlot.MarkerStyle}}
+\doxysubsubsection{\texorpdfstring{LinePattern}{LinePattern}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_marker_style_a1e74f138f21b94600c3d021aeeb61fdf} 
+\mbox{\hyperlink{namespace_scott_plot_a625917eb44cadb4de90991e525db6ab5}{Line\+Pattern}} Scott\+Plot.\+Marker\+Style.\+Line\+Pattern\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_has_line_a36a31df15a64944ab9108d98574a5ada}{Scott\+Plot.\+IHas\+Line}}.
+
+\Hypertarget{class_scott_plot_1_1_marker_style_af7a0a4191b0c3552ec97f903f0013f74}\index{ScottPlot.MarkerStyle@{ScottPlot.MarkerStyle}!LineStyle@{LineStyle}}
+\index{LineStyle@{LineStyle}!ScottPlot.MarkerStyle@{ScottPlot.MarkerStyle}}
+\doxysubsubsection{\texorpdfstring{LineStyle}{LineStyle}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_marker_style_af7a0a4191b0c3552ec97f903f0013f74} 
+\mbox{\hyperlink{class_scott_plot_1_1_line_style}{Line\+Style}} Scott\+Plot.\+Marker\+Style.\+Line\+Style = new() \{ Width = 1 \}\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_has_line_a1a04ccd6d040be2e80338c8af04ea291}{Scott\+Plot.\+IHas\+Line}}.
+
+\Hypertarget{class_scott_plot_1_1_marker_style_a8152289729e2184b13e8f5385239ce94}\index{ScottPlot.MarkerStyle@{ScottPlot.MarkerStyle}!LineWidth@{LineWidth}}
+\index{LineWidth@{LineWidth}!ScottPlot.MarkerStyle@{ScottPlot.MarkerStyle}}
+\doxysubsubsection{\texorpdfstring{LineWidth}{LineWidth}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_marker_style_a8152289729e2184b13e8f5385239ce94} 
+float Scott\+Plot.\+Marker\+Style.\+Line\+Width\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_has_line_aa5f2d70e52466770207ed3547ffeecb3}{Scott\+Plot.\+IHas\+Line}}.
+
+\Hypertarget{class_scott_plot_1_1_marker_style_a9a8b4c3236d1a9078a95f78e3b01d2fe}\index{ScottPlot.MarkerStyle@{ScottPlot.MarkerStyle}!MarkerColor@{MarkerColor}}
+\index{MarkerColor@{MarkerColor}!ScottPlot.MarkerStyle@{ScottPlot.MarkerStyle}}
+\doxysubsubsection{\texorpdfstring{MarkerColor}{MarkerColor}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_marker_style_a9a8b4c3236d1a9078a95f78e3b01d2fe} 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} Scott\+Plot.\+Marker\+Style.\+Marker\+Color\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_marker_style_a9c98fef68ea2053f46734529e521e0db}\index{ScottPlot.MarkerStyle@{ScottPlot.MarkerStyle}!None@{None}}
+\index{None@{None}!ScottPlot.MarkerStyle@{ScottPlot.MarkerStyle}}
+\doxysubsubsection{\texorpdfstring{None}{None}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_marker_style_a9c98fef68ea2053f46734529e521e0db} 
+\mbox{\hyperlink{class_scott_plot_1_1_marker_style}{Marker\+Style}} Scott\+Plot.\+Marker\+Style.\+None\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+\Hypertarget{class_scott_plot_1_1_marker_style_aef8a17ab59804270ce3cd1baa0a0dcf9}\index{ScottPlot.MarkerStyle@{ScottPlot.MarkerStyle}!Outline@{Outline}}
+\index{Outline@{Outline}!ScottPlot.MarkerStyle@{ScottPlot.MarkerStyle}}
+\doxysubsubsection{\texorpdfstring{Outline}{Outline}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_marker_style_aef8a17ab59804270ce3cd1baa0a0dcf9} 
+\mbox{\hyperlink{class_scott_plot_1_1_line_style}{Line\+Style}} Scott\+Plot.\+Marker\+Style.\+Outline\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_marker_style_ae72bbc68d69da4f4e9eed859b834ad33}\index{ScottPlot.MarkerStyle@{ScottPlot.MarkerStyle}!OutlineColor@{OutlineColor}}
+\index{OutlineColor@{OutlineColor}!ScottPlot.MarkerStyle@{ScottPlot.MarkerStyle}}
+\doxysubsubsection{\texorpdfstring{OutlineColor}{OutlineColor}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_marker_style_ae72bbc68d69da4f4e9eed859b834ad33} 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} Scott\+Plot.\+Marker\+Style.\+Outline\+Color\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_has_outline_ae67c2619f359a44310158f13f5dc1a53}{Scott\+Plot.\+IHas\+Outline}}.
+
+\Hypertarget{class_scott_plot_1_1_marker_style_a8f019bb02f0c4672387521e045ab7930}\index{ScottPlot.MarkerStyle@{ScottPlot.MarkerStyle}!OutlinePattern@{OutlinePattern}}
+\index{OutlinePattern@{OutlinePattern}!ScottPlot.MarkerStyle@{ScottPlot.MarkerStyle}}
+\doxysubsubsection{\texorpdfstring{OutlinePattern}{OutlinePattern}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_marker_style_a8f019bb02f0c4672387521e045ab7930} 
+\mbox{\hyperlink{namespace_scott_plot_a625917eb44cadb4de90991e525db6ab5}{Line\+Pattern}} Scott\+Plot.\+Marker\+Style.\+Outline\+Pattern\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_has_outline_a8e2a060ac2e62341699e822b3b4e4087}{Scott\+Plot.\+IHas\+Outline}}.
+
+\Hypertarget{class_scott_plot_1_1_marker_style_aea0f4a0dba05f1029b6c1e3744f6b9a9}\index{ScottPlot.MarkerStyle@{ScottPlot.MarkerStyle}!OutlineStyle@{OutlineStyle}}
+\index{OutlineStyle@{OutlineStyle}!ScottPlot.MarkerStyle@{ScottPlot.MarkerStyle}}
+\doxysubsubsection{\texorpdfstring{OutlineStyle}{OutlineStyle}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_marker_style_aea0f4a0dba05f1029b6c1e3744f6b9a9} 
+\mbox{\hyperlink{class_scott_plot_1_1_line_style}{Line\+Style}} Scott\+Plot.\+Marker\+Style.\+Outline\+Style = new() \{ \mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} = \mbox{\hyperlink{struct_scott_plot_1_1_colors_a2aafa2dc613a50b4fa1699a09fe003b1}{Colors.\+Black}}, Width = 0 \}\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_has_outline_a9a8e3dc3a70cf29370b666f23a6faa4f}{Scott\+Plot.\+IHas\+Outline}}.
+
+\Hypertarget{class_scott_plot_1_1_marker_style_af1677f4a850bf66f9d0c64673101c090}\index{ScottPlot.MarkerStyle@{ScottPlot.MarkerStyle}!OutlineWidth@{OutlineWidth}}
+\index{OutlineWidth@{OutlineWidth}!ScottPlot.MarkerStyle@{ScottPlot.MarkerStyle}}
+\doxysubsubsection{\texorpdfstring{OutlineWidth}{OutlineWidth}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_marker_style_af1677f4a850bf66f9d0c64673101c090} 
+float Scott\+Plot.\+Marker\+Style.\+Outline\+Width\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_has_outline_a89adbee9ea06b9e48666c17f98d943aa}{Scott\+Plot.\+IHas\+Outline}}.
+
+\Hypertarget{class_scott_plot_1_1_marker_style_a2644354e55184b52e05d0e668a02c9f3}\index{ScottPlot.MarkerStyle@{ScottPlot.MarkerStyle}!Shape@{Shape}}
+\index{Shape@{Shape}!ScottPlot.MarkerStyle@{ScottPlot.MarkerStyle}}
+\doxysubsubsection{\texorpdfstring{Shape}{Shape}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_marker_style_a2644354e55184b52e05d0e668a02c9f3} 
+\mbox{\hyperlink{namespace_scott_plot_aac856b9cf151418c331a7b848724d1f7}{Marker\+Shape}} Scott\+Plot.\+Marker\+Style.\+Shape\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_marker_style_adf9fb2427acf6155effd8b598381d5f6}\index{ScottPlot.MarkerStyle@{ScottPlot.MarkerStyle}!Size@{Size}}
+\index{Size@{Size}!ScottPlot.MarkerStyle@{ScottPlot.MarkerStyle}}
+\doxysubsubsection{\texorpdfstring{Size}{Size}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_marker_style_adf9fb2427acf6155effd8b598381d5f6} 
+float Scott\+Plot.\+Marker\+Style.\+Size\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Diameter of the marker (in pixels) 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Primitives/Marker\+Style.\+cs\end{DoxyCompactItemize}

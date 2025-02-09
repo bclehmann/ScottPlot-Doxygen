@@ -1,0 +1,322 @@
+\doxysection{Scott\+Plot.\+Statistics.\+Histogram Class Reference}
+\hypertarget{class_scott_plot_1_1_statistics_1_1_histogram}{}\label{class_scott_plot_1_1_statistics_1_1_histogram}\index{ScottPlot.Statistics.Histogram@{ScottPlot.Statistics.Histogram}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_scott_plot_1_1_statistics_1_1_histogram_ad6bf4590337e0e1861d305abc84e22fb}{Histogram}} (double min, double max, int bin\+Count, bool add\+Outliers\+To\+Edge\+Bins=false, bool add\+Final\+Bin=true)
+\begin{DoxyCompactList}\small\item\em Create a histogram which will count values supplied by \doxylink{class_scott_plot_1_1_statistics_1_1_histogram_aa02d8f93c7496a38ecd479f004988b7f}{Add(double)} and \doxylink{class_scott_plot_1_1_statistics_1_1_histogram_aaf4bf1d568206c91a1a3f490eac8c1f7}{Add\+Range(\+IEnumerable$<$double$>$)} \end{DoxyCompactList}\item 
+double\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_scott_plot_1_1_statistics_1_1_histogram_a63adeb190366e9b896e6fbeaabb7499d}{Get\+Probability}} ()
+\begin{DoxyCompactList}\small\item\em Return counts normalized so the sum of all counts equals 1. \end{DoxyCompactList}\item 
+Func$<$ double, double?$>$ \mbox{\hyperlink{class_scott_plot_1_1_statistics_1_1_histogram_a22d0d99f3c3a317fdf80d6388338107b}{Get\+Probability\+Curve}} (double\mbox{[}$\,$\mbox{]} values, bool scale\+To\+Binned\+Probability=false)
+\begin{DoxyCompactList}\small\item\em Return a function describing the probability function (a Gaussian curve fitted to the histogram probabilities). \end{DoxyCompactList}\item 
+double\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_scott_plot_1_1_statistics_1_1_histogram_a4524d0702b5fd75a10feec22fd97e994}{Get\+Normalized}} (double max\+Value=1)
+\begin{DoxyCompactList}\small\item\em Return counts normalized so the maximum value equals the given value. \end{DoxyCompactList}\item 
+double\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_scott_plot_1_1_statistics_1_1_histogram_ab0f5b2f05b07f3490f0307669c9c3dfa}{Get\+Cumulative}} ()
+\begin{DoxyCompactList}\small\item\em Return the cumulative histogram counts. Each value is the number of counts in that bin and all bins below it. \end{DoxyCompactList}\item 
+double\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_scott_plot_1_1_statistics_1_1_histogram_a97c72bba420414daca8424d117c50d84}{Get\+Cumulative\+Probability}} ()
+\begin{DoxyCompactList}\small\item\em Return the cumulative probability histogram. Each value is the fraction of counts in that bin and all bins below it. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_statistics_1_1_histogram_aa02d8f93c7496a38ecd479f004988b7f}{Add}} (double value)
+\begin{DoxyCompactList}\small\item\em Add a single value to the histogram. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_statistics_1_1_histogram_aaf4bf1d568206c91a1a3f490eac8c1f7}{Add\+Range}} (\mbox{\hyperlink{class_i_enumerable}{IEnumerable}}$<$ double $>$ values)
+\begin{DoxyCompactList}\small\item\em Add multiple values to the histogram. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_statistics_1_1_histogram_acad50f69efef49416e8774d6f8d47b9d}{Clear}} ()
+\begin{DoxyCompactList}\small\item\em Reset the histogram, setting all counts and values to zero. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_scott_plot_1_1_statistics_1_1_histogram}{Histogram}} \mbox{\hyperlink{class_scott_plot_1_1_statistics_1_1_histogram_adbed4fb02ee9f81c0a520d95f67cf2af}{With\+Fixed\+Bin\+Size}} (double min, double max, double bin\+Size, bool add\+Outliers\+To\+Edge\+Bins=false)
+\begin{DoxyCompactList}\small\item\em Create a histogram with bins that can count data from {\itshape min}  to {\itshape max}  (inclusive) \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_scott_plot_1_1_statistics_1_1_histogram}{Histogram}} \mbox{\hyperlink{class_scott_plot_1_1_statistics_1_1_histogram_a20f32c8cdcc13d9171f4e75600dfadb9}{With\+Fixed\+Bin\+Count}} (double min, double max, int bin\+Count, bool add\+Outliers\+To\+Edge\+Bins=false)
+\begin{DoxyCompactList}\small\item\em Create a histogram with bins that can count data from {\itshape min}  to {\itshape max}  (inclusive) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+readonly double\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_scott_plot_1_1_statistics_1_1_histogram_a6b92760b8dc7b03902894b8e175a33d9}{Counts}}
+\begin{DoxyCompactList}\small\item\em Number of values counted for each bin. \end{DoxyCompactList}\item 
+readonly int \mbox{\hyperlink{class_scott_plot_1_1_statistics_1_1_histogram_a153b8a9ab6ec5792a73077883e4ae957}{Bin\+Count}}
+\begin{DoxyCompactList}\small\item\em Number of bins. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{class_scott_plot_1_1_statistics_1_1_histogram_a1badf650cb1176884de316db045fce6d}{Sum}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Running total of all values counted. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_scott_plot_1_1_statistics_1_1_histogram_a35dbaa1ee2ca2ea1c551a92648c29bc5}{Values\+Counted}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Total number of values accumulated. \end{DoxyCompactList}\item 
+double\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_scott_plot_1_1_statistics_1_1_histogram_affb3706b525873a1035a142380085591}{Bins}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Lower edge for each bin. \end{DoxyCompactList}\item 
+double\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_scott_plot_1_1_statistics_1_1_histogram_a0a22b770c5fdd940371658b861da2fd1}{Bin\+Centers}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Center of each bin. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_scott_plot_1_1_statistics_1_1_histogram_af01895bccd16da403f9f8291df208ea7}{Add\+Outliers\+To\+Edge\+Bins}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Default behavior is that outlier values are not counted. If this is enabled, min/max outliers will be counted in the first/last bin. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_scott_plot_1_1_statistics_1_1_histogram_a54ff67cdc065fbec4c662fe68bca9a20}{Min}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Lower edge of the first bin. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_scott_plot_1_1_statistics_1_1_histogram_ae772269457aeb5a77e02e27e4bbc9583}{Max}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Upper edge of the last bin. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_scott_plot_1_1_statistics_1_1_histogram_a57ded577ff9ebd826b50af9bb426ce6b}{Bin\+Size}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The calculated bin size. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_scott_plot_1_1_statistics_1_1_histogram_a28c61adcf374d4e086682dcd26b8ae5d}{Min\+Outlier\+Count}} = 0\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Number of values that were smaller than the lower edge of the first bin. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_scott_plot_1_1_statistics_1_1_histogram_a1be331f9eb7936380d5620ce1805a9f8}{Max\+Outlier\+Count}} = 0\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Number of values that were greater than the upper edge of the last bin. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_scott_plot_1_1_statistics_1_1_histogram_ad6bf4590337e0e1861d305abc84e22fb}\index{ScottPlot.Statistics.Histogram@{ScottPlot.Statistics.Histogram}!Histogram@{Histogram}}
+\index{Histogram@{Histogram}!ScottPlot.Statistics.Histogram@{ScottPlot.Statistics.Histogram}}
+\doxysubsubsection{\texorpdfstring{Histogram()}{Histogram()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_statistics_1_1_histogram_ad6bf4590337e0e1861d305abc84e22fb} 
+Scott\+Plot.\+Statistics.\+Histogram.\+Histogram (\begin{DoxyParamCaption}\item[{double}]{min}{, }\item[{double}]{max}{, }\item[{int}]{bin\+Count}{, }\item[{bool}]{add\+Outliers\+To\+Edge\+Bins}{ = {\ttfamily false}, }\item[{bool}]{add\+Final\+Bin}{ = {\ttfamily true}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Create a histogram which will count values supplied by \doxylink{class_scott_plot_1_1_statistics_1_1_histogram_aa02d8f93c7496a38ecd479f004988b7f}{Add(double)} and \doxylink{class_scott_plot_1_1_statistics_1_1_histogram_aaf4bf1d568206c91a1a3f490eac8c1f7}{Add\+Range(\+IEnumerable$<$double$>$)} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em min} & minimum value to be counted\\
+\hline
+{\em max} & maximum value to be counted\\
+\hline
+{\em bin\+Count} & number of bins between {\itshape min}  and {\itshape max} \\
+\hline
+{\em add\+Outliers\+To\+Edge\+Bins} & if false, outliers will not be counted\\
+\hline
+{\em add\+Final\+Bin} & if true, one more bin will be added so values equal to {\itshape max}  can be counted too\\
+\hline
+\end{DoxyParams}
+
+
+If {\itshape min}  and {\itshape max}  are the same value, the {\itshape min}  and {\itshape max}  properties will be {\itshape min}  -\/ 0.\+5 and {\itshape max}  + 0.\+5, respectively. This is to handle an edge case where all values of an array are exactly the same, producing an identical min and max. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_scott_plot_1_1_statistics_1_1_histogram_aa02d8f93c7496a38ecd479f004988b7f}\index{ScottPlot.Statistics.Histogram@{ScottPlot.Statistics.Histogram}!Add@{Add}}
+\index{Add@{Add}!ScottPlot.Statistics.Histogram@{ScottPlot.Statistics.Histogram}}
+\doxysubsubsection{\texorpdfstring{Add()}{Add()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_statistics_1_1_histogram_aa02d8f93c7496a38ecd479f004988b7f} 
+void Scott\+Plot.\+Statistics.\+Histogram.\+Add (\begin{DoxyParamCaption}\item[{double}]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Add a single value to the histogram. 
+
+\Hypertarget{class_scott_plot_1_1_statistics_1_1_histogram_aaf4bf1d568206c91a1a3f490eac8c1f7}\index{ScottPlot.Statistics.Histogram@{ScottPlot.Statistics.Histogram}!AddRange@{AddRange}}
+\index{AddRange@{AddRange}!ScottPlot.Statistics.Histogram@{ScottPlot.Statistics.Histogram}}
+\doxysubsubsection{\texorpdfstring{AddRange()}{AddRange()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_statistics_1_1_histogram_aaf4bf1d568206c91a1a3f490eac8c1f7} 
+void Scott\+Plot.\+Statistics.\+Histogram.\+Add\+Range (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_i_enumerable}{IEnumerable}}$<$ double $>$}]{values}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Add multiple values to the histogram. 
+
+\Hypertarget{class_scott_plot_1_1_statistics_1_1_histogram_acad50f69efef49416e8774d6f8d47b9d}\index{ScottPlot.Statistics.Histogram@{ScottPlot.Statistics.Histogram}!Clear@{Clear}}
+\index{Clear@{Clear}!ScottPlot.Statistics.Histogram@{ScottPlot.Statistics.Histogram}}
+\doxysubsubsection{\texorpdfstring{Clear()}{Clear()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_statistics_1_1_histogram_acad50f69efef49416e8774d6f8d47b9d} 
+void Scott\+Plot.\+Statistics.\+Histogram.\+Clear (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Reset the histogram, setting all counts and values to zero. 
+
+\Hypertarget{class_scott_plot_1_1_statistics_1_1_histogram_ab0f5b2f05b07f3490f0307669c9c3dfa}\index{ScottPlot.Statistics.Histogram@{ScottPlot.Statistics.Histogram}!GetCumulative@{GetCumulative}}
+\index{GetCumulative@{GetCumulative}!ScottPlot.Statistics.Histogram@{ScottPlot.Statistics.Histogram}}
+\doxysubsubsection{\texorpdfstring{GetCumulative()}{GetCumulative()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_statistics_1_1_histogram_ab0f5b2f05b07f3490f0307669c9c3dfa} 
+double\mbox{[}$\,$\mbox{]} Scott\+Plot.\+Statistics.\+Histogram.\+Get\+Cumulative (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return the cumulative histogram counts. Each value is the number of counts in that bin and all bins below it. 
+
+\Hypertarget{class_scott_plot_1_1_statistics_1_1_histogram_a97c72bba420414daca8424d117c50d84}\index{ScottPlot.Statistics.Histogram@{ScottPlot.Statistics.Histogram}!GetCumulativeProbability@{GetCumulativeProbability}}
+\index{GetCumulativeProbability@{GetCumulativeProbability}!ScottPlot.Statistics.Histogram@{ScottPlot.Statistics.Histogram}}
+\doxysubsubsection{\texorpdfstring{GetCumulativeProbability()}{GetCumulativeProbability()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_statistics_1_1_histogram_a97c72bba420414daca8424d117c50d84} 
+double\mbox{[}$\,$\mbox{]} Scott\+Plot.\+Statistics.\+Histogram.\+Get\+Cumulative\+Probability (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return the cumulative probability histogram. Each value is the fraction of counts in that bin and all bins below it. 
+
+\Hypertarget{class_scott_plot_1_1_statistics_1_1_histogram_a4524d0702b5fd75a10feec22fd97e994}\index{ScottPlot.Statistics.Histogram@{ScottPlot.Statistics.Histogram}!GetNormalized@{GetNormalized}}
+\index{GetNormalized@{GetNormalized}!ScottPlot.Statistics.Histogram@{ScottPlot.Statistics.Histogram}}
+\doxysubsubsection{\texorpdfstring{GetNormalized()}{GetNormalized()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_statistics_1_1_histogram_a4524d0702b5fd75a10feec22fd97e994} 
+double\mbox{[}$\,$\mbox{]} Scott\+Plot.\+Statistics.\+Histogram.\+Get\+Normalized (\begin{DoxyParamCaption}\item[{double}]{max\+Value}{ = {\ttfamily 1}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return counts normalized so the maximum value equals the given value. 
+
+\Hypertarget{class_scott_plot_1_1_statistics_1_1_histogram_a63adeb190366e9b896e6fbeaabb7499d}\index{ScottPlot.Statistics.Histogram@{ScottPlot.Statistics.Histogram}!GetProbability@{GetProbability}}
+\index{GetProbability@{GetProbability}!ScottPlot.Statistics.Histogram@{ScottPlot.Statistics.Histogram}}
+\doxysubsubsection{\texorpdfstring{GetProbability()}{GetProbability()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_statistics_1_1_histogram_a63adeb190366e9b896e6fbeaabb7499d} 
+double\mbox{[}$\,$\mbox{]} Scott\+Plot.\+Statistics.\+Histogram.\+Get\+Probability (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return counts normalized so the sum of all counts equals 1. 
+
+\Hypertarget{class_scott_plot_1_1_statistics_1_1_histogram_a22d0d99f3c3a317fdf80d6388338107b}\index{ScottPlot.Statistics.Histogram@{ScottPlot.Statistics.Histogram}!GetProbabilityCurve@{GetProbabilityCurve}}
+\index{GetProbabilityCurve@{GetProbabilityCurve}!ScottPlot.Statistics.Histogram@{ScottPlot.Statistics.Histogram}}
+\doxysubsubsection{\texorpdfstring{GetProbabilityCurve()}{GetProbabilityCurve()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_statistics_1_1_histogram_a22d0d99f3c3a317fdf80d6388338107b} 
+Func$<$ double, double?$>$ Scott\+Plot.\+Statistics.\+Histogram.\+Get\+Probability\+Curve (\begin{DoxyParamCaption}\item[{double\mbox{[}$\,$\mbox{]}}]{values}{, }\item[{bool}]{scale\+To\+Binned\+Probability}{ = {\ttfamily false}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return a function describing the probability function (a Gaussian curve fitted to the histogram probabilities). 
+
+\Hypertarget{class_scott_plot_1_1_statistics_1_1_histogram_a20f32c8cdcc13d9171f4e75600dfadb9}\index{ScottPlot.Statistics.Histogram@{ScottPlot.Statistics.Histogram}!WithFixedBinCount@{WithFixedBinCount}}
+\index{WithFixedBinCount@{WithFixedBinCount}!ScottPlot.Statistics.Histogram@{ScottPlot.Statistics.Histogram}}
+\doxysubsubsection{\texorpdfstring{WithFixedBinCount()}{WithFixedBinCount()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_statistics_1_1_histogram_a20f32c8cdcc13d9171f4e75600dfadb9} 
+static \mbox{\hyperlink{class_scott_plot_1_1_statistics_1_1_histogram}{Histogram}} Scott\+Plot.\+Statistics.\+Histogram.\+With\+Fixed\+Bin\+Count (\begin{DoxyParamCaption}\item[{double}]{min}{, }\item[{double}]{max}{, }\item[{int}]{bin\+Count}{, }\item[{bool}]{add\+Outliers\+To\+Edge\+Bins}{ = {\ttfamily false}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Create a histogram with bins that can count data from {\itshape min}  to {\itshape max}  (inclusive) 
+
+\Hypertarget{class_scott_plot_1_1_statistics_1_1_histogram_adbed4fb02ee9f81c0a520d95f67cf2af}\index{ScottPlot.Statistics.Histogram@{ScottPlot.Statistics.Histogram}!WithFixedBinSize@{WithFixedBinSize}}
+\index{WithFixedBinSize@{WithFixedBinSize}!ScottPlot.Statistics.Histogram@{ScottPlot.Statistics.Histogram}}
+\doxysubsubsection{\texorpdfstring{WithFixedBinSize()}{WithFixedBinSize()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_statistics_1_1_histogram_adbed4fb02ee9f81c0a520d95f67cf2af} 
+static \mbox{\hyperlink{class_scott_plot_1_1_statistics_1_1_histogram}{Histogram}} Scott\+Plot.\+Statistics.\+Histogram.\+With\+Fixed\+Bin\+Size (\begin{DoxyParamCaption}\item[{double}]{min}{, }\item[{double}]{max}{, }\item[{double}]{bin\+Size}{, }\item[{bool}]{add\+Outliers\+To\+Edge\+Bins}{ = {\ttfamily false}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Create a histogram with bins that can count data from {\itshape min}  to {\itshape max}  (inclusive) 
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_scott_plot_1_1_statistics_1_1_histogram_a153b8a9ab6ec5792a73077883e4ae957}\index{ScottPlot.Statistics.Histogram@{ScottPlot.Statistics.Histogram}!BinCount@{BinCount}}
+\index{BinCount@{BinCount}!ScottPlot.Statistics.Histogram@{ScottPlot.Statistics.Histogram}}
+\doxysubsubsection{\texorpdfstring{BinCount}{BinCount}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_statistics_1_1_histogram_a153b8a9ab6ec5792a73077883e4ae957} 
+readonly int Scott\+Plot.\+Statistics.\+Histogram.\+Bin\+Count}
+
+
+
+Number of bins. 
+
+\Hypertarget{class_scott_plot_1_1_statistics_1_1_histogram_a6b92760b8dc7b03902894b8e175a33d9}\index{ScottPlot.Statistics.Histogram@{ScottPlot.Statistics.Histogram}!Counts@{Counts}}
+\index{Counts@{Counts}!ScottPlot.Statistics.Histogram@{ScottPlot.Statistics.Histogram}}
+\doxysubsubsection{\texorpdfstring{Counts}{Counts}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_statistics_1_1_histogram_a6b92760b8dc7b03902894b8e175a33d9} 
+readonly double \mbox{[}$\,$\mbox{]} Scott\+Plot.\+Statistics.\+Histogram.\+Counts}
+
+
+
+Number of values counted for each bin. 
+
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{class_scott_plot_1_1_statistics_1_1_histogram_af01895bccd16da403f9f8291df208ea7}\index{ScottPlot.Statistics.Histogram@{ScottPlot.Statistics.Histogram}!AddOutliersToEdgeBins@{AddOutliersToEdgeBins}}
+\index{AddOutliersToEdgeBins@{AddOutliersToEdgeBins}!ScottPlot.Statistics.Histogram@{ScottPlot.Statistics.Histogram}}
+\doxysubsubsection{\texorpdfstring{AddOutliersToEdgeBins}{AddOutliersToEdgeBins}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_statistics_1_1_histogram_af01895bccd16da403f9f8291df208ea7} 
+bool Scott\+Plot.\+Statistics.\+Histogram.\+Add\+Outliers\+To\+Edge\+Bins\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Default behavior is that outlier values are not counted. If this is enabled, min/max outliers will be counted in the first/last bin. 
+
+\Hypertarget{class_scott_plot_1_1_statistics_1_1_histogram_a0a22b770c5fdd940371658b861da2fd1}\index{ScottPlot.Statistics.Histogram@{ScottPlot.Statistics.Histogram}!BinCenters@{BinCenters}}
+\index{BinCenters@{BinCenters}!ScottPlot.Statistics.Histogram@{ScottPlot.Statistics.Histogram}}
+\doxysubsubsection{\texorpdfstring{BinCenters}{BinCenters}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_statistics_1_1_histogram_a0a22b770c5fdd940371658b861da2fd1} 
+double \mbox{[}$\,$\mbox{]} Scott\+Plot.\+Statistics.\+Histogram.\+Bin\+Centers\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Center of each bin. 
+
+\Hypertarget{class_scott_plot_1_1_statistics_1_1_histogram_affb3706b525873a1035a142380085591}\index{ScottPlot.Statistics.Histogram@{ScottPlot.Statistics.Histogram}!Bins@{Bins}}
+\index{Bins@{Bins}!ScottPlot.Statistics.Histogram@{ScottPlot.Statistics.Histogram}}
+\doxysubsubsection{\texorpdfstring{Bins}{Bins}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_statistics_1_1_histogram_affb3706b525873a1035a142380085591} 
+double \mbox{[}$\,$\mbox{]} Scott\+Plot.\+Statistics.\+Histogram.\+Bins\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Lower edge for each bin. 
+
+\Hypertarget{class_scott_plot_1_1_statistics_1_1_histogram_a57ded577ff9ebd826b50af9bb426ce6b}\index{ScottPlot.Statistics.Histogram@{ScottPlot.Statistics.Histogram}!BinSize@{BinSize}}
+\index{BinSize@{BinSize}!ScottPlot.Statistics.Histogram@{ScottPlot.Statistics.Histogram}}
+\doxysubsubsection{\texorpdfstring{BinSize}{BinSize}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_statistics_1_1_histogram_a57ded577ff9ebd826b50af9bb426ce6b} 
+double Scott\+Plot.\+Statistics.\+Histogram.\+Bin\+Size\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The calculated bin size. 
+
+\Hypertarget{class_scott_plot_1_1_statistics_1_1_histogram_ae772269457aeb5a77e02e27e4bbc9583}\index{ScottPlot.Statistics.Histogram@{ScottPlot.Statistics.Histogram}!Max@{Max}}
+\index{Max@{Max}!ScottPlot.Statistics.Histogram@{ScottPlot.Statistics.Histogram}}
+\doxysubsubsection{\texorpdfstring{Max}{Max}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_statistics_1_1_histogram_ae772269457aeb5a77e02e27e4bbc9583} 
+double Scott\+Plot.\+Statistics.\+Histogram.\+Max\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Upper edge of the last bin. 
+
+\Hypertarget{class_scott_plot_1_1_statistics_1_1_histogram_a1be331f9eb7936380d5620ce1805a9f8}\index{ScottPlot.Statistics.Histogram@{ScottPlot.Statistics.Histogram}!MaxOutlierCount@{MaxOutlierCount}}
+\index{MaxOutlierCount@{MaxOutlierCount}!ScottPlot.Statistics.Histogram@{ScottPlot.Statistics.Histogram}}
+\doxysubsubsection{\texorpdfstring{MaxOutlierCount}{MaxOutlierCount}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_statistics_1_1_histogram_a1be331f9eb7936380d5620ce1805a9f8} 
+int Scott\+Plot.\+Statistics.\+Histogram.\+Max\+Outlier\+Count = 0\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Number of values that were greater than the upper edge of the last bin. 
+
+\Hypertarget{class_scott_plot_1_1_statistics_1_1_histogram_a54ff67cdc065fbec4c662fe68bca9a20}\index{ScottPlot.Statistics.Histogram@{ScottPlot.Statistics.Histogram}!Min@{Min}}
+\index{Min@{Min}!ScottPlot.Statistics.Histogram@{ScottPlot.Statistics.Histogram}}
+\doxysubsubsection{\texorpdfstring{Min}{Min}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_statistics_1_1_histogram_a54ff67cdc065fbec4c662fe68bca9a20} 
+double Scott\+Plot.\+Statistics.\+Histogram.\+Min\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Lower edge of the first bin. 
+
+\Hypertarget{class_scott_plot_1_1_statistics_1_1_histogram_a28c61adcf374d4e086682dcd26b8ae5d}\index{ScottPlot.Statistics.Histogram@{ScottPlot.Statistics.Histogram}!MinOutlierCount@{MinOutlierCount}}
+\index{MinOutlierCount@{MinOutlierCount}!ScottPlot.Statistics.Histogram@{ScottPlot.Statistics.Histogram}}
+\doxysubsubsection{\texorpdfstring{MinOutlierCount}{MinOutlierCount}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_statistics_1_1_histogram_a28c61adcf374d4e086682dcd26b8ae5d} 
+int Scott\+Plot.\+Statistics.\+Histogram.\+Min\+Outlier\+Count = 0\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Number of values that were smaller than the lower edge of the first bin. 
+
+\Hypertarget{class_scott_plot_1_1_statistics_1_1_histogram_a1badf650cb1176884de316db045fce6d}\index{ScottPlot.Statistics.Histogram@{ScottPlot.Statistics.Histogram}!Sum@{Sum}}
+\index{Sum@{Sum}!ScottPlot.Statistics.Histogram@{ScottPlot.Statistics.Histogram}}
+\doxysubsubsection{\texorpdfstring{Sum}{Sum}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_statistics_1_1_histogram_a1badf650cb1176884de316db045fce6d} 
+double Scott\+Plot.\+Statistics.\+Histogram.\+Sum\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Running total of all values counted. 
+
+\Hypertarget{class_scott_plot_1_1_statistics_1_1_histogram_a35dbaa1ee2ca2ea1c551a92648c29bc5}\index{ScottPlot.Statistics.Histogram@{ScottPlot.Statistics.Histogram}!ValuesCounted@{ValuesCounted}}
+\index{ValuesCounted@{ValuesCounted}!ScottPlot.Statistics.Histogram@{ScottPlot.Statistics.Histogram}}
+\doxysubsubsection{\texorpdfstring{ValuesCounted}{ValuesCounted}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_statistics_1_1_histogram_a35dbaa1ee2ca2ea1c551a92648c29bc5} 
+int Scott\+Plot.\+Statistics.\+Histogram.\+Values\+Counted\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Total number of values accumulated. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Statistics/Histogram.\+cs\end{DoxyCompactItemize}

@@ -1,0 +1,267 @@
+\hypertarget{classFillY}{}\doxysection{FillY Class Reference}
+\label{classFillY}\index{FillY@{FillY}}
+Inheritance diagram for FillY\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classFillY}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classFillY_a981e11c34ab7783998cb2bbb93c62ce2}{FillY}} ()
+\begin{DoxyCompactList}\small\item\em Creates an empty Range\+Plot plot, call \mbox{\hyperlink{classFillY_ac2fedb088e13763f0c91010ef33c2492}{Set\+Data\+Source()}} to set the coordinates. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classFillY_a4069b84dfd24eb9e78ff68d9560c522a}{FillY}} (\mbox{\hyperlink{classScatter}{Scatter}} scatter1, \mbox{\hyperlink{classScatter}{Scatter}} scatter2)
+\begin{DoxyCompactList}\small\item\em Creates a Range\+Plot plot from two scatter plots. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classFillY_ac2fedb088e13763f0c91010ef33c2492}{Set\+Data\+Source}} (\mbox{\hyperlink{classICollection}{ICollection}}$<$(double X, double Top, double Bottom)$>$ items)
+\item 
+void \mbox{\hyperlink{classFillY_ab90f5ea87a80c90acda99d804f42f714}{Set\+Data\+Source$<$ T $>$}} (\mbox{\hyperlink{classICollection}{ICollection}}$<$ T $>$ items, Func$<$ T,(double X, double Top, double Bottom)$>$ coordinate\+Solver)
+\item 
+\mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} \mbox{\hyperlink{classFillY_a80da7d455210df23f7f3af9ecfc1ec8b}{Get\+Axis\+Limits}} ()
+\begin{DoxyCompactList}\small\item\em Return the 2D area (in coordinate space) occupied by the data contained in this plottable \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classFillY_a24b2696aaca23b8a3ca1d2e20248b2c0}{Render}} (\mbox{\hyperlink{classRenderPack}{Render\+Pack}} rp)
+\begin{DoxyCompactList}\small\item\em Draw the data from this plottable into the data area defined in the \mbox{\hyperlink{classAxes}{Axes}}. By default the surface is already clipped to the data area, but this can be cleared inside the plottable. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{classFillY_acc7bfda443300fb6d409f90b143e688a}{Label}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+string \mbox{\hyperlink{classFillY_a642ba60c3fe187a9dc0a043ba65a2753}{Legend\+Text}} = string.\+Empty\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+bool \mbox{\hyperlink{classFillY_a79fca905c3db1f25c320fd6572a6fb3e}{Is\+Visible}} = true\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{interfaceIAxes}{IAxes}} \mbox{\hyperlink{classFillY_a06aa72a984104f9c7ef2187729604efe}{Axes}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$ \mbox{\hyperlink{classLegendItem}{Legend\+Item}} $>$ \mbox{\hyperlink{classFillY_a9dbd62fa4703d861c87818d9d4a1a2b7}{Legend\+Items}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{classFillStyle}{Fill\+Style}} \mbox{\hyperlink{classFillY_a5199132b7e151d9d68983a119db544f4}{Fill\+Style}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{structColor}{Color}} \mbox{\hyperlink{classFillY_a0b744db319293a902d28980bf8f4cb1d}{Fill\+Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{structColor}{Color}} \mbox{\hyperlink{classFillY_abe146245100393ac1b3a09ee762e60d7}{Fill\+Hatch\+Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{interfaceIHatch}{IHatch}}? \mbox{\hyperlink{classFillY_aeed16991aa8d7eda086f5675f8019c24}{Fill\+Hatch}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{classLineStyle}{Line\+Style}} \mbox{\hyperlink{classFillY_a6fa21f48c428dfb26e7fa71d686759ae}{Line\+Style}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{classFillY_a7ab2f1b7989eef91c54c0c405e0ae072}{Line\+Width}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+Line\+Pattern \mbox{\hyperlink{classFillY_a018898322f16f608bdaedf9f7082b8e3}{Line\+Pattern}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{structColor}{Color}} \mbox{\hyperlink{classFillY_a1b579f6b6cfe02b4ea74b3d3b589a112}{Line\+Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{classMarkerStyle}{Marker\+Style}} \mbox{\hyperlink{classFillY_a9a6bbb16a6564d6fca1c313c9b06375e}{Marker\+Style}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+Marker\+Shape \mbox{\hyperlink{classFillY_a5a2cc0a5861093bb2339052e6a8ada28}{Marker\+Shape}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{classFillY_a9b31f8a83aa6b1c99f74e7842ffdb679}{Marker\+Size}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{structColor}{Color}} \mbox{\hyperlink{classFillY_a1eb10d6dbc32ed96dea3dc70474c11ed}{Marker\+Fill\+Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{structColor}{Color}} \mbox{\hyperlink{classFillY_a33625f0ec0f37cf296c4520558974b45}{Marker\+Line\+Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{structColor}{Color}} \mbox{\hyperlink{classFillY_a67da810474f1daf262e10205fbb5cfd7}{Marker\+Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{classFillY_a7f591e96e6ba1580a1c328214f5c18aa}{Marker\+Line\+Width}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classFillY_a981e11c34ab7783998cb2bbb93c62ce2}\label{classFillY_a981e11c34ab7783998cb2bbb93c62ce2}} 
+\index{FillY@{FillY}!FillY@{FillY}}
+\index{FillY@{FillY}!FillY@{FillY}}
+\doxysubsubsection{\texorpdfstring{FillY()}{FillY()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Fill\+Y.\+FillY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Creates an empty Range\+Plot plot, call \mbox{\hyperlink{classFillY_ac2fedb088e13763f0c91010ef33c2492}{Set\+Data\+Source()}} to set the coordinates. 
+
+\mbox{\Hypertarget{classFillY_a4069b84dfd24eb9e78ff68d9560c522a}\label{classFillY_a4069b84dfd24eb9e78ff68d9560c522a}} 
+\index{FillY@{FillY}!FillY@{FillY}}
+\index{FillY@{FillY}!FillY@{FillY}}
+\doxysubsubsection{\texorpdfstring{FillY()}{FillY()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Fill\+Y.\+FillY (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classScatter}{Scatter}}}]{scatter1,  }\item[{\mbox{\hyperlink{classScatter}{Scatter}}}]{scatter2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Creates a Range\+Plot plot from two scatter plots. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em scatter1} & \\
+\hline
+{\em scatter2} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classFillY_a80da7d455210df23f7f3af9ecfc1ec8b}\label{classFillY_a80da7d455210df23f7f3af9ecfc1ec8b}} 
+\index{FillY@{FillY}!GetAxisLimits@{GetAxisLimits}}
+\index{GetAxisLimits@{GetAxisLimits}!FillY@{FillY}}
+\doxysubsubsection{\texorpdfstring{GetAxisLimits()}{GetAxisLimits()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} Fill\+Y.\+Get\+Axis\+Limits (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return the 2D area (in coordinate space) occupied by the data contained in this plottable 
+
+
+
+Implements \mbox{\hyperlink{interfaceIPlottable_ac98e2f5e56f9f938bbd081c87c7c6f50}{IPlottable}}.
+
+\mbox{\Hypertarget{classFillY_a24b2696aaca23b8a3ca1d2e20248b2c0}\label{classFillY_a24b2696aaca23b8a3ca1d2e20248b2c0}} 
+\index{FillY@{FillY}!Render@{Render}}
+\index{Render@{Render}!FillY@{FillY}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily virtual void Fill\+Y.\+Render (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classRenderPack}{Render\+Pack}}}]{rp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Draw the data from this plottable into the data area defined in the \mbox{\hyperlink{classAxes}{Axes}}. By default the surface is already clipped to the data area, but this can be cleared inside the plottable. 
+
+
+
+Implements \mbox{\hyperlink{interfaceIPlottable_a201a1a236dc718eda93db143a5ade9f8}{IPlottable}}.
+
+\mbox{\Hypertarget{classFillY_ac2fedb088e13763f0c91010ef33c2492}\label{classFillY_ac2fedb088e13763f0c91010ef33c2492}} 
+\index{FillY@{FillY}!SetDataSource@{SetDataSource}}
+\index{SetDataSource@{SetDataSource}!FillY@{FillY}}
+\doxysubsubsection{\texorpdfstring{SetDataSource()}{SetDataSource()}}
+{\footnotesize\ttfamily void Fill\+Y.\+Set\+Data\+Source (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classICollection}{ICollection}}$<$(double X, double Top, double Bottom)$>$}]{items }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classFillY_ab90f5ea87a80c90acda99d804f42f714}\label{classFillY_ab90f5ea87a80c90acda99d804f42f714}} 
+\index{FillY@{FillY}!SetDataSource$<$ T $>$@{SetDataSource$<$ T $>$}}
+\index{SetDataSource$<$ T $>$@{SetDataSource$<$ T $>$}!FillY@{FillY}}
+\doxysubsubsection{\texorpdfstring{SetDataSource$<$ T $>$()}{SetDataSource< T >()}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{classFillY_ac2fedb088e13763f0c91010ef33c2492}{Fill\+Y.\+Set\+Data\+Source}}$<$ T $>$ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classICollection}{ICollection}}$<$ T $>$}]{items,  }\item[{Func$<$ T,(double X, double Top, double Bottom)$>$}]{coordinate\+Solver }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{classFillY_a06aa72a984104f9c7ef2187729604efe}\label{classFillY_a06aa72a984104f9c7ef2187729604efe}} 
+\index{FillY@{FillY}!Axes@{Axes}}
+\index{Axes@{Axes}!FillY@{FillY}}
+\doxysubsubsection{\texorpdfstring{Axes}{Axes}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceIAxes}{IAxes}} Fill\+Y.\+Axes\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classFillY_a0b744db319293a902d28980bf8f4cb1d}\label{classFillY_a0b744db319293a902d28980bf8f4cb1d}} 
+\index{FillY@{FillY}!FillColor@{FillColor}}
+\index{FillColor@{FillColor}!FillY@{FillY}}
+\doxysubsubsection{\texorpdfstring{FillColor}{FillColor}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structColor}{Color}} Fill\+Y.\+Fill\+Color\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classFillY_aeed16991aa8d7eda086f5675f8019c24}\label{classFillY_aeed16991aa8d7eda086f5675f8019c24}} 
+\index{FillY@{FillY}!FillHatch@{FillHatch}}
+\index{FillHatch@{FillHatch}!FillY@{FillY}}
+\doxysubsubsection{\texorpdfstring{FillHatch}{FillHatch}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceIHatch}{IHatch}}? Fill\+Y.\+Fill\+Hatch\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classFillY_abe146245100393ac1b3a09ee762e60d7}\label{classFillY_abe146245100393ac1b3a09ee762e60d7}} 
+\index{FillY@{FillY}!FillHatchColor@{FillHatchColor}}
+\index{FillHatchColor@{FillHatchColor}!FillY@{FillY}}
+\doxysubsubsection{\texorpdfstring{FillHatchColor}{FillHatchColor}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structColor}{Color}} Fill\+Y.\+Fill\+Hatch\+Color\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classFillY_a5199132b7e151d9d68983a119db544f4}\label{classFillY_a5199132b7e151d9d68983a119db544f4}} 
+\index{FillY@{FillY}!FillStyle@{FillStyle}}
+\index{FillStyle@{FillStyle}!FillY@{FillY}}
+\doxysubsubsection{\texorpdfstring{FillStyle}{FillStyle}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classFillStyle}{Fill\+Style}} Fill\+Y.\+Fill\+Style\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classFillY_a79fca905c3db1f25c320fd6572a6fb3e}\label{classFillY_a79fca905c3db1f25c320fd6572a6fb3e}} 
+\index{FillY@{FillY}!IsVisible@{IsVisible}}
+\index{IsVisible@{IsVisible}!FillY@{FillY}}
+\doxysubsubsection{\texorpdfstring{IsVisible}{IsVisible}}
+{\footnotesize\ttfamily bool Fill\+Y.\+Is\+Visible = true\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classFillY_acc7bfda443300fb6d409f90b143e688a}\label{classFillY_acc7bfda443300fb6d409f90b143e688a}} 
+\index{FillY@{FillY}!Label@{Label}}
+\index{Label@{Label}!FillY@{FillY}}
+\doxysubsubsection{\texorpdfstring{Label}{Label}}
+{\footnotesize\ttfamily string Fill\+Y.\+Label\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classFillY_a9dbd62fa4703d861c87818d9d4a1a2b7}\label{classFillY_a9dbd62fa4703d861c87818d9d4a1a2b7}} 
+\index{FillY@{FillY}!LegendItems@{LegendItems}}
+\index{LegendItems@{LegendItems}!FillY@{FillY}}
+\doxysubsubsection{\texorpdfstring{LegendItems}{LegendItems}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$\mbox{\hyperlink{classLegendItem}{Legend\+Item}}$>$ Fill\+Y.\+Legend\+Items\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{classFillY_a642ba60c3fe187a9dc0a043ba65a2753}\label{classFillY_a642ba60c3fe187a9dc0a043ba65a2753}} 
+\index{FillY@{FillY}!LegendText@{LegendText}}
+\index{LegendText@{LegendText}!FillY@{FillY}}
+\doxysubsubsection{\texorpdfstring{LegendText}{LegendText}}
+{\footnotesize\ttfamily string Fill\+Y.\+Legend\+Text = string.\+Empty\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classFillY_a1b579f6b6cfe02b4ea74b3d3b589a112}\label{classFillY_a1b579f6b6cfe02b4ea74b3d3b589a112}} 
+\index{FillY@{FillY}!LineColor@{LineColor}}
+\index{LineColor@{LineColor}!FillY@{FillY}}
+\doxysubsubsection{\texorpdfstring{LineColor}{LineColor}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structColor}{Color}} Fill\+Y.\+Line\+Color\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classFillY_a018898322f16f608bdaedf9f7082b8e3}\label{classFillY_a018898322f16f608bdaedf9f7082b8e3}} 
+\index{FillY@{FillY}!LinePattern@{LinePattern}}
+\index{LinePattern@{LinePattern}!FillY@{FillY}}
+\doxysubsubsection{\texorpdfstring{LinePattern}{LinePattern}}
+{\footnotesize\ttfamily Line\+Pattern Fill\+Y.\+Line\+Pattern\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classFillY_a6fa21f48c428dfb26e7fa71d686759ae}\label{classFillY_a6fa21f48c428dfb26e7fa71d686759ae}} 
+\index{FillY@{FillY}!LineStyle@{LineStyle}}
+\index{LineStyle@{LineStyle}!FillY@{FillY}}
+\doxysubsubsection{\texorpdfstring{LineStyle}{LineStyle}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classLineStyle}{Line\+Style}} Fill\+Y.\+Line\+Style\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classFillY_a7ab2f1b7989eef91c54c0c405e0ae072}\label{classFillY_a7ab2f1b7989eef91c54c0c405e0ae072}} 
+\index{FillY@{FillY}!LineWidth@{LineWidth}}
+\index{LineWidth@{LineWidth}!FillY@{FillY}}
+\doxysubsubsection{\texorpdfstring{LineWidth}{LineWidth}}
+{\footnotesize\ttfamily float Fill\+Y.\+Line\+Width\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classFillY_a67da810474f1daf262e10205fbb5cfd7}\label{classFillY_a67da810474f1daf262e10205fbb5cfd7}} 
+\index{FillY@{FillY}!MarkerColor@{MarkerColor}}
+\index{MarkerColor@{MarkerColor}!FillY@{FillY}}
+\doxysubsubsection{\texorpdfstring{MarkerColor}{MarkerColor}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structColor}{Color}} Fill\+Y.\+Marker\+Color\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classFillY_a1eb10d6dbc32ed96dea3dc70474c11ed}\label{classFillY_a1eb10d6dbc32ed96dea3dc70474c11ed}} 
+\index{FillY@{FillY}!MarkerFillColor@{MarkerFillColor}}
+\index{MarkerFillColor@{MarkerFillColor}!FillY@{FillY}}
+\doxysubsubsection{\texorpdfstring{MarkerFillColor}{MarkerFillColor}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structColor}{Color}} Fill\+Y.\+Marker\+Fill\+Color\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classFillY_a33625f0ec0f37cf296c4520558974b45}\label{classFillY_a33625f0ec0f37cf296c4520558974b45}} 
+\index{FillY@{FillY}!MarkerLineColor@{MarkerLineColor}}
+\index{MarkerLineColor@{MarkerLineColor}!FillY@{FillY}}
+\doxysubsubsection{\texorpdfstring{MarkerLineColor}{MarkerLineColor}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structColor}{Color}} Fill\+Y.\+Marker\+Line\+Color\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classFillY_a7f591e96e6ba1580a1c328214f5c18aa}\label{classFillY_a7f591e96e6ba1580a1c328214f5c18aa}} 
+\index{FillY@{FillY}!MarkerLineWidth@{MarkerLineWidth}}
+\index{MarkerLineWidth@{MarkerLineWidth}!FillY@{FillY}}
+\doxysubsubsection{\texorpdfstring{MarkerLineWidth}{MarkerLineWidth}}
+{\footnotesize\ttfamily float Fill\+Y.\+Marker\+Line\+Width\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classFillY_a5a2cc0a5861093bb2339052e6a8ada28}\label{classFillY_a5a2cc0a5861093bb2339052e6a8ada28}} 
+\index{FillY@{FillY}!MarkerShape@{MarkerShape}}
+\index{MarkerShape@{MarkerShape}!FillY@{FillY}}
+\doxysubsubsection{\texorpdfstring{MarkerShape}{MarkerShape}}
+{\footnotesize\ttfamily Marker\+Shape Fill\+Y.\+Marker\+Shape\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classFillY_a9b31f8a83aa6b1c99f74e7842ffdb679}\label{classFillY_a9b31f8a83aa6b1c99f74e7842ffdb679}} 
+\index{FillY@{FillY}!MarkerSize@{MarkerSize}}
+\index{MarkerSize@{MarkerSize}!FillY@{FillY}}
+\doxysubsubsection{\texorpdfstring{MarkerSize}{MarkerSize}}
+{\footnotesize\ttfamily float Fill\+Y.\+Marker\+Size\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classFillY_a9a6bbb16a6564d6fca1c313c9b06375e}\label{classFillY_a9a6bbb16a6564d6fca1c313c9b06375e}} 
+\index{FillY@{FillY}!MarkerStyle@{MarkerStyle}}
+\index{MarkerStyle@{MarkerStyle}!FillY@{FillY}}
+\doxysubsubsection{\texorpdfstring{MarkerStyle}{MarkerStyle}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classMarkerStyle}{Marker\+Style}} Fill\+Y.\+Marker\+Style\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Plottables/Fill\+Y.\+cs\end{DoxyCompactItemize}

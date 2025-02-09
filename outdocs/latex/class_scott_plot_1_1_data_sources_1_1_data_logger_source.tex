@@ -1,0 +1,138 @@
+\doxysection{Scott\+Plot.\+Data\+Sources.\+Data\+Logger\+Source Class Reference}
+\hypertarget{class_scott_plot_1_1_data_sources_1_1_data_logger_source}{}\label{class_scott_plot_1_1_data_sources_1_1_data_logger_source}\index{ScottPlot.DataSources.DataLoggerSource@{ScottPlot.DataSources.DataLoggerSource}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_scott_plot_1_1_data_sources_1_1_data_logger_source_aaea8d1e6d028edf3ee3e1bcdac5f8f15}{Data\+Logger\+Source}} (\mbox{\hyperlink{class_i_list}{IList}}$<$ \mbox{\hyperlink{struct_scott_plot_1_1_coordinates}{Coordinates}} $>$ coordinates)
+\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_data_sources_1_1_data_logger_source_a78cbf3f7e5f3090b6d7451da92371d12}{Add}} (\mbox{\hyperlink{struct_scott_plot_1_1_coordinates}{Coordinates}} coordinates)
+\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_data_sources_1_1_data_logger_source_ab27ab5fa93b7ab8cfe06150051aff85d}{On\+Rendered}} ()
+\item 
+\mbox{\hyperlink{namespace_scott_plot_a4f8afc1393f89ce60e775705cbf134d1}{Coordinate\+Range}} \mbox{\hyperlink{class_scott_plot_1_1_data_sources_1_1_data_logger_source_ac134f828ea76e67883fb9edbc5676c2c}{Get\+RangeX}} ()
+\item 
+\mbox{\hyperlink{namespace_scott_plot_a4f8afc1393f89ce60e775705cbf134d1}{Coordinate\+Range}} \mbox{\hyperlink{class_scott_plot_1_1_data_sources_1_1_data_logger_source_af736a4b0e36a0f64f3109cf2b03835d5}{Get\+RangeY}} (\mbox{\hyperlink{namespace_scott_plot_a4f8afc1393f89ce60e775705cbf134d1}{Coordinate\+Range}} new\+RangeX)
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_scott_plot_1_1_data_sources_1_1_data_logger_source_a8c776fb287df8e7e86c78d57463eaac8}{Get\+Pixels\+To\+Draw\+Horizontally}} (Render\+Pack rp, \mbox{\hyperlink{interface_scott_plot_1_1_i_axes}{IAxes}} axes, \mbox{\hyperlink{namespace_scott_plot_aa42f072dac0344ddc25e4f2c253b3a6b}{Connect\+Style}} connect\+Style)
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_scott_plot_1_1_data_sources_1_1_data_logger_source_a48fe317a91540d70ff40eda40066159a}{Get\+Pixels\+To\+Draw\+Vertically}} (Render\+Pack rp, \mbox{\hyperlink{interface_scott_plot_1_1_i_axes}{IAxes}} axes, \mbox{\hyperlink{namespace_scott_plot_aa42f072dac0344ddc25e4f2c253b3a6b}{Connect\+Style}} connect\+Style)
+\item 
+int \mbox{\hyperlink{class_scott_plot_1_1_data_sources_1_1_data_logger_source_a14ec2542b44e0367658a115fad30f47a}{Get\+Index}} (double x)
+\begin{DoxyCompactList}\small\item\em Get the index associated with the given X position. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_i_list}{IList}}$<$ \mbox{\hyperlink{struct_scott_plot_1_1_coordinates}{Coordinates}} $>$ \mbox{\hyperlink{class_scott_plot_1_1_data_sources_1_1_data_logger_source_a6694ebc8de186d1a17c9d1ca542d5edd}{Coordinates}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+double \mbox{\hyperlink{class_scott_plot_1_1_data_sources_1_1_data_logger_source_a6a094de57a5484d916aadf6e64f4e3e8}{XOffset}} = 0\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+double \mbox{\hyperlink{class_scott_plot_1_1_data_sources_1_1_data_logger_source_ad662a98e49e10fdbdf26450998d3a164}{YOffset}} = 0\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+double \mbox{\hyperlink{class_scott_plot_1_1_data_sources_1_1_data_logger_source_a2760266627ff163b88f55151d175669f}{YScale}} = 1\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+bool \mbox{\hyperlink{class_scott_plot_1_1_data_sources_1_1_data_logger_source_acba50fd16e82bf104a2cf477825f6701}{Has\+New\+Data}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+bool \mbox{\hyperlink{class_scott_plot_1_1_data_sources_1_1_data_logger_source_a162feba03d7c9b004db7b8d5038d19ab}{Was\+Rendered}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_scott_plot_1_1_data_sources_1_1_data_logger_source_aaea8d1e6d028edf3ee3e1bcdac5f8f15}\index{ScottPlot.DataSources.DataLoggerSource@{ScottPlot.DataSources.DataLoggerSource}!DataLoggerSource@{DataLoggerSource}}
+\index{DataLoggerSource@{DataLoggerSource}!ScottPlot.DataSources.DataLoggerSource@{ScottPlot.DataSources.DataLoggerSource}}
+\doxysubsubsection{\texorpdfstring{DataLoggerSource()}{DataLoggerSource()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_data_sources_1_1_data_logger_source_aaea8d1e6d028edf3ee3e1bcdac5f8f15} 
+Scott\+Plot.\+Data\+Sources.\+Data\+Logger\+Source.\+Data\+Logger\+Source (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_i_list}{IList}}$<$ \mbox{\hyperlink{struct_scott_plot_1_1_coordinates}{Coordinates}} $>$}]{coordinates}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_scott_plot_1_1_data_sources_1_1_data_logger_source_a78cbf3f7e5f3090b6d7451da92371d12}\index{ScottPlot.DataSources.DataLoggerSource@{ScottPlot.DataSources.DataLoggerSource}!Add@{Add}}
+\index{Add@{Add}!ScottPlot.DataSources.DataLoggerSource@{ScottPlot.DataSources.DataLoggerSource}}
+\doxysubsubsection{\texorpdfstring{Add()}{Add()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_data_sources_1_1_data_logger_source_a78cbf3f7e5f3090b6d7451da92371d12} 
+void Scott\+Plot.\+Data\+Sources.\+Data\+Logger\+Source.\+Add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_scott_plot_1_1_coordinates}{Coordinates}}}]{coordinates}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_data_sources_1_1_data_logger_source_a14ec2542b44e0367658a115fad30f47a}\index{ScottPlot.DataSources.DataLoggerSource@{ScottPlot.DataSources.DataLoggerSource}!GetIndex@{GetIndex}}
+\index{GetIndex@{GetIndex}!ScottPlot.DataSources.DataLoggerSource@{ScottPlot.DataSources.DataLoggerSource}}
+\doxysubsubsection{\texorpdfstring{GetIndex()}{GetIndex()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_data_sources_1_1_data_logger_source_a14ec2542b44e0367658a115fad30f47a} 
+int Scott\+Plot.\+Data\+Sources.\+Data\+Logger\+Source.\+Get\+Index (\begin{DoxyParamCaption}\item[{double}]{x}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the index associated with the given X position. 
+
+\Hypertarget{class_scott_plot_1_1_data_sources_1_1_data_logger_source_a8c776fb287df8e7e86c78d57463eaac8}\index{ScottPlot.DataSources.DataLoggerSource@{ScottPlot.DataSources.DataLoggerSource}!GetPixelsToDrawHorizontally@{GetPixelsToDrawHorizontally}}
+\index{GetPixelsToDrawHorizontally@{GetPixelsToDrawHorizontally}!ScottPlot.DataSources.DataLoggerSource@{ScottPlot.DataSources.DataLoggerSource}}
+\doxysubsubsection{\texorpdfstring{GetPixelsToDrawHorizontally()}{GetPixelsToDrawHorizontally()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_data_sources_1_1_data_logger_source_a8c776fb287df8e7e86c78d57463eaac8} 
+\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}}\mbox{[}$\,$\mbox{]} Scott\+Plot.\+Data\+Sources.\+Data\+Logger\+Source.\+Get\+Pixels\+To\+Draw\+Horizontally (\begin{DoxyParamCaption}\item[{Render\+Pack}]{rp}{, }\item[{\mbox{\hyperlink{interface_scott_plot_1_1_i_axes}{IAxes}}}]{axes}{, }\item[{\mbox{\hyperlink{namespace_scott_plot_aa42f072dac0344ddc25e4f2c253b3a6b}{Connect\+Style}}}]{connect\+Style}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_data_sources_1_1_data_logger_source_a48fe317a91540d70ff40eda40066159a}\index{ScottPlot.DataSources.DataLoggerSource@{ScottPlot.DataSources.DataLoggerSource}!GetPixelsToDrawVertically@{GetPixelsToDrawVertically}}
+\index{GetPixelsToDrawVertically@{GetPixelsToDrawVertically}!ScottPlot.DataSources.DataLoggerSource@{ScottPlot.DataSources.DataLoggerSource}}
+\doxysubsubsection{\texorpdfstring{GetPixelsToDrawVertically()}{GetPixelsToDrawVertically()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_data_sources_1_1_data_logger_source_a48fe317a91540d70ff40eda40066159a} 
+\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}}\mbox{[}$\,$\mbox{]} Scott\+Plot.\+Data\+Sources.\+Data\+Logger\+Source.\+Get\+Pixels\+To\+Draw\+Vertically (\begin{DoxyParamCaption}\item[{Render\+Pack}]{rp}{, }\item[{\mbox{\hyperlink{interface_scott_plot_1_1_i_axes}{IAxes}}}]{axes}{, }\item[{\mbox{\hyperlink{namespace_scott_plot_aa42f072dac0344ddc25e4f2c253b3a6b}{Connect\+Style}}}]{connect\+Style}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_data_sources_1_1_data_logger_source_ac134f828ea76e67883fb9edbc5676c2c}\index{ScottPlot.DataSources.DataLoggerSource@{ScottPlot.DataSources.DataLoggerSource}!GetRangeX@{GetRangeX}}
+\index{GetRangeX@{GetRangeX}!ScottPlot.DataSources.DataLoggerSource@{ScottPlot.DataSources.DataLoggerSource}}
+\doxysubsubsection{\texorpdfstring{GetRangeX()}{GetRangeX()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_data_sources_1_1_data_logger_source_ac134f828ea76e67883fb9edbc5676c2c} 
+\mbox{\hyperlink{namespace_scott_plot_a4f8afc1393f89ce60e775705cbf134d1}{Coordinate\+Range}} Scott\+Plot.\+Data\+Sources.\+Data\+Logger\+Source.\+Get\+RangeX (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_scott_plot_1_1_data_sources_1_1_data_logger_source_af736a4b0e36a0f64f3109cf2b03835d5}\index{ScottPlot.DataSources.DataLoggerSource@{ScottPlot.DataSources.DataLoggerSource}!GetRangeY@{GetRangeY}}
+\index{GetRangeY@{GetRangeY}!ScottPlot.DataSources.DataLoggerSource@{ScottPlot.DataSources.DataLoggerSource}}
+\doxysubsubsection{\texorpdfstring{GetRangeY()}{GetRangeY()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_data_sources_1_1_data_logger_source_af736a4b0e36a0f64f3109cf2b03835d5} 
+\mbox{\hyperlink{namespace_scott_plot_a4f8afc1393f89ce60e775705cbf134d1}{Coordinate\+Range}} Scott\+Plot.\+Data\+Sources.\+Data\+Logger\+Source.\+Get\+RangeY (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_scott_plot_a4f8afc1393f89ce60e775705cbf134d1}{Coordinate\+Range}}}]{new\+RangeX}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_data_sources_1_1_data_logger_source_ab27ab5fa93b7ab8cfe06150051aff85d}\index{ScottPlot.DataSources.DataLoggerSource@{ScottPlot.DataSources.DataLoggerSource}!OnRendered@{OnRendered}}
+\index{OnRendered@{OnRendered}!ScottPlot.DataSources.DataLoggerSource@{ScottPlot.DataSources.DataLoggerSource}}
+\doxysubsubsection{\texorpdfstring{OnRendered()}{OnRendered()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_data_sources_1_1_data_logger_source_ab27ab5fa93b7ab8cfe06150051aff85d} 
+void Scott\+Plot.\+Data\+Sources.\+Data\+Logger\+Source.\+On\+Rendered (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{class_scott_plot_1_1_data_sources_1_1_data_logger_source_a6694ebc8de186d1a17c9d1ca542d5edd}\index{ScottPlot.DataSources.DataLoggerSource@{ScottPlot.DataSources.DataLoggerSource}!Coordinates@{Coordinates}}
+\index{Coordinates@{Coordinates}!ScottPlot.DataSources.DataLoggerSource@{ScottPlot.DataSources.DataLoggerSource}}
+\doxysubsubsection{\texorpdfstring{Coordinates}{Coordinates}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_data_sources_1_1_data_logger_source_a6694ebc8de186d1a17c9d1ca542d5edd} 
+\mbox{\hyperlink{class_i_list}{IList}}$<$\mbox{\hyperlink{struct_scott_plot_1_1_coordinates}{Coordinates}}$>$ Scott\+Plot.\+Data\+Sources.\+Data\+Logger\+Source.\+Coordinates\hspace{0.3cm}{\ttfamily [get]}}
+
+\Hypertarget{class_scott_plot_1_1_data_sources_1_1_data_logger_source_acba50fd16e82bf104a2cf477825f6701}\index{ScottPlot.DataSources.DataLoggerSource@{ScottPlot.DataSources.DataLoggerSource}!HasNewData@{HasNewData}}
+\index{HasNewData@{HasNewData}!ScottPlot.DataSources.DataLoggerSource@{ScottPlot.DataSources.DataLoggerSource}}
+\doxysubsubsection{\texorpdfstring{HasNewData}{HasNewData}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_data_sources_1_1_data_logger_source_acba50fd16e82bf104a2cf477825f6701} 
+bool Scott\+Plot.\+Data\+Sources.\+Data\+Logger\+Source.\+Has\+New\+Data\hspace{0.3cm}{\ttfamily [get]}}
+
+\Hypertarget{class_scott_plot_1_1_data_sources_1_1_data_logger_source_a162feba03d7c9b004db7b8d5038d19ab}\index{ScottPlot.DataSources.DataLoggerSource@{ScottPlot.DataSources.DataLoggerSource}!WasRendered@{WasRendered}}
+\index{WasRendered@{WasRendered}!ScottPlot.DataSources.DataLoggerSource@{ScottPlot.DataSources.DataLoggerSource}}
+\doxysubsubsection{\texorpdfstring{WasRendered}{WasRendered}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_data_sources_1_1_data_logger_source_a162feba03d7c9b004db7b8d5038d19ab} 
+bool Scott\+Plot.\+Data\+Sources.\+Data\+Logger\+Source.\+Was\+Rendered\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_data_sources_1_1_data_logger_source_a6a094de57a5484d916aadf6e64f4e3e8}\index{ScottPlot.DataSources.DataLoggerSource@{ScottPlot.DataSources.DataLoggerSource}!XOffset@{XOffset}}
+\index{XOffset@{XOffset}!ScottPlot.DataSources.DataLoggerSource@{ScottPlot.DataSources.DataLoggerSource}}
+\doxysubsubsection{\texorpdfstring{XOffset}{XOffset}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_data_sources_1_1_data_logger_source_a6a094de57a5484d916aadf6e64f4e3e8} 
+double Scott\+Plot.\+Data\+Sources.\+Data\+Logger\+Source.\+XOffset = 0\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_data_sources_1_1_data_logger_source_ad662a98e49e10fdbdf26450998d3a164}\index{ScottPlot.DataSources.DataLoggerSource@{ScottPlot.DataSources.DataLoggerSource}!YOffset@{YOffset}}
+\index{YOffset@{YOffset}!ScottPlot.DataSources.DataLoggerSource@{ScottPlot.DataSources.DataLoggerSource}}
+\doxysubsubsection{\texorpdfstring{YOffset}{YOffset}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_data_sources_1_1_data_logger_source_ad662a98e49e10fdbdf26450998d3a164} 
+double Scott\+Plot.\+Data\+Sources.\+Data\+Logger\+Source.\+YOffset = 0\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_data_sources_1_1_data_logger_source_a2760266627ff163b88f55151d175669f}\index{ScottPlot.DataSources.DataLoggerSource@{ScottPlot.DataSources.DataLoggerSource}!YScale@{YScale}}
+\index{YScale@{YScale}!ScottPlot.DataSources.DataLoggerSource@{ScottPlot.DataSources.DataLoggerSource}}
+\doxysubsubsection{\texorpdfstring{YScale}{YScale}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_data_sources_1_1_data_logger_source_a2760266627ff163b88f55151d175669f} 
+double Scott\+Plot.\+Data\+Sources.\+Data\+Logger\+Source.\+YScale = 1\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Data\+Sources/Data\+Logger\+Source.\+cs\end{DoxyCompactItemize}

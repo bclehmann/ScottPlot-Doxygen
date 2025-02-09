@@ -1,0 +1,138 @@
+\hypertarget{classFractionalAutoScaler}{}\doxysection{Fractional\+Auto\+Scaler Class Reference}
+\label{classFractionalAutoScaler}\index{FractionalAutoScaler@{FractionalAutoScaler}}
+Inheritance diagram for Fractional\+Auto\+Scaler\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classFractionalAutoScaler}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classFractionalAutoScaler_af32f434208e6c15b5f762f95b9c78a46}{Fractional\+Auto\+Scaler}} (double horizontal=.\+1, double vertical=.\+15)
+\begin{DoxyCompactList}\small\item\em Pad the data area with the given fractions of whitespace. A value of 0.\+1 means 10\% padding (5\% on each side of the data area). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classFractionalAutoScaler_aff708c44cf262bf3f25b5485c25efc8d}{Fractional\+Auto\+Scaler}} (double left, double right, double bottom, double top)
+\begin{DoxyCompactList}\small\item\em Pad each side of the data area with the exact fraction of whitespace. 0.\+05 means 5\% whitespace on that side of the data area. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classFractionalAutoScaler_a43da450fa582f169a600800ceec895bb}{Auto\+Scale\+All}} (\mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$ \mbox{\hyperlink{interfaceIPlottable}{IPlottable}} $>$ plottables)
+\begin{DoxyCompactList}\small\item\em Autoscale every unset axis used by plottables. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} \mbox{\hyperlink{classFractionalAutoScaler_a7fbf6603f12b08451cb00afc8da54592}{Get\+Axis\+Limits}} (\mbox{\hyperlink{classPlot}{Plot}} plot, \mbox{\hyperlink{interfaceIXAxis}{IXAxis}} x\+Axis, \mbox{\hyperlink{interfaceIYAxis}{IYAxis}} y\+Axis)
+\begin{DoxyCompactList}\small\item\em Return the recommended axis limits for the plottables that use the given axes \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+readonly double \mbox{\hyperlink{classFractionalAutoScaler_abb3f393e240c211d114e42f7af83d35d}{Left\+Fraction}}
+\item 
+readonly double \mbox{\hyperlink{classFractionalAutoScaler_abeb7ff9be24816d069db95d11a7e4933}{Right\+Fraction}}
+\item 
+readonly double \mbox{\hyperlink{classFractionalAutoScaler_a078b1f2cc9a28ae6b18e7ea6a002ca91}{Bottom\+Fraction}}
+\item 
+readonly double \mbox{\hyperlink{classFractionalAutoScaler_a99370c6ca054c8fea9d68538b06df903}{Top\+Fraction}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classFractionalAutoScaler_ae57a34ce3a04b85d9d139920255e20ca}{InvertedX}} = false\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+bool \mbox{\hyperlink{classFractionalAutoScaler_a755b5a5c4e2eb6c992386b32fc8c743d}{InvertedY}} = false\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classFractionalAutoScaler_af32f434208e6c15b5f762f95b9c78a46}\label{classFractionalAutoScaler_af32f434208e6c15b5f762f95b9c78a46}} 
+\index{FractionalAutoScaler@{FractionalAutoScaler}!FractionalAutoScaler@{FractionalAutoScaler}}
+\index{FractionalAutoScaler@{FractionalAutoScaler}!FractionalAutoScaler@{FractionalAutoScaler}}
+\doxysubsubsection{\texorpdfstring{FractionalAutoScaler()}{FractionalAutoScaler()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Fractional\+Auto\+Scaler.\+Fractional\+Auto\+Scaler (\begin{DoxyParamCaption}\item[{double}]{horizontal = {\ttfamily .1},  }\item[{double}]{vertical = {\ttfamily .15} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Pad the data area with the given fractions of whitespace. A value of 0.\+1 means 10\% padding (5\% on each side of the data area). 
+
+\mbox{\Hypertarget{classFractionalAutoScaler_aff708c44cf262bf3f25b5485c25efc8d}\label{classFractionalAutoScaler_aff708c44cf262bf3f25b5485c25efc8d}} 
+\index{FractionalAutoScaler@{FractionalAutoScaler}!FractionalAutoScaler@{FractionalAutoScaler}}
+\index{FractionalAutoScaler@{FractionalAutoScaler}!FractionalAutoScaler@{FractionalAutoScaler}}
+\doxysubsubsection{\texorpdfstring{FractionalAutoScaler()}{FractionalAutoScaler()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Fractional\+Auto\+Scaler.\+Fractional\+Auto\+Scaler (\begin{DoxyParamCaption}\item[{double}]{left,  }\item[{double}]{right,  }\item[{double}]{bottom,  }\item[{double}]{top }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Pad each side of the data area with the exact fraction of whitespace. 0.\+05 means 5\% whitespace on that side of the data area. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classFractionalAutoScaler_a43da450fa582f169a600800ceec895bb}\label{classFractionalAutoScaler_a43da450fa582f169a600800ceec895bb}} 
+\index{FractionalAutoScaler@{FractionalAutoScaler}!AutoScaleAll@{AutoScaleAll}}
+\index{AutoScaleAll@{AutoScaleAll}!FractionalAutoScaler@{FractionalAutoScaler}}
+\doxysubsubsection{\texorpdfstring{AutoScaleAll()}{AutoScaleAll()}}
+{\footnotesize\ttfamily void Fractional\+Auto\+Scaler.\+Auto\+Scale\+All (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$ \mbox{\hyperlink{interfaceIPlottable}{IPlottable}} $>$}]{plottables }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Autoscale every unset axis used by plottables. 
+
+
+
+Implements \mbox{\hyperlink{interfaceIAutoScaler_ac17dbf271f1de3cef623dcfe60fd45ef}{IAuto\+Scaler}}.
+
+\mbox{\Hypertarget{classFractionalAutoScaler_a7fbf6603f12b08451cb00afc8da54592}\label{classFractionalAutoScaler_a7fbf6603f12b08451cb00afc8da54592}} 
+\index{FractionalAutoScaler@{FractionalAutoScaler}!GetAxisLimits@{GetAxisLimits}}
+\index{GetAxisLimits@{GetAxisLimits}!FractionalAutoScaler@{FractionalAutoScaler}}
+\doxysubsubsection{\texorpdfstring{GetAxisLimits()}{GetAxisLimits()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} Fractional\+Auto\+Scaler.\+Get\+Axis\+Limits (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPlot}{Plot}}}]{plot,  }\item[{\mbox{\hyperlink{interfaceIXAxis}{IXAxis}}}]{x\+Axis,  }\item[{\mbox{\hyperlink{interfaceIYAxis}{IYAxis}}}]{y\+Axis }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return the recommended axis limits for the plottables that use the given axes 
+
+
+
+Implements \mbox{\hyperlink{interfaceIAutoScaler_a22e68b24596e4bfa94498668dff39219}{IAuto\+Scaler}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classFractionalAutoScaler_a078b1f2cc9a28ae6b18e7ea6a002ca91}\label{classFractionalAutoScaler_a078b1f2cc9a28ae6b18e7ea6a002ca91}} 
+\index{FractionalAutoScaler@{FractionalAutoScaler}!BottomFraction@{BottomFraction}}
+\index{BottomFraction@{BottomFraction}!FractionalAutoScaler@{FractionalAutoScaler}}
+\doxysubsubsection{\texorpdfstring{BottomFraction}{BottomFraction}}
+{\footnotesize\ttfamily readonly double Fractional\+Auto\+Scaler.\+Bottom\+Fraction}
+
+\mbox{\Hypertarget{classFractionalAutoScaler_abb3f393e240c211d114e42f7af83d35d}\label{classFractionalAutoScaler_abb3f393e240c211d114e42f7af83d35d}} 
+\index{FractionalAutoScaler@{FractionalAutoScaler}!LeftFraction@{LeftFraction}}
+\index{LeftFraction@{LeftFraction}!FractionalAutoScaler@{FractionalAutoScaler}}
+\doxysubsubsection{\texorpdfstring{LeftFraction}{LeftFraction}}
+{\footnotesize\ttfamily readonly double Fractional\+Auto\+Scaler.\+Left\+Fraction}
+
+\mbox{\Hypertarget{classFractionalAutoScaler_abeb7ff9be24816d069db95d11a7e4933}\label{classFractionalAutoScaler_abeb7ff9be24816d069db95d11a7e4933}} 
+\index{FractionalAutoScaler@{FractionalAutoScaler}!RightFraction@{RightFraction}}
+\index{RightFraction@{RightFraction}!FractionalAutoScaler@{FractionalAutoScaler}}
+\doxysubsubsection{\texorpdfstring{RightFraction}{RightFraction}}
+{\footnotesize\ttfamily readonly double Fractional\+Auto\+Scaler.\+Right\+Fraction}
+
+\mbox{\Hypertarget{classFractionalAutoScaler_a99370c6ca054c8fea9d68538b06df903}\label{classFractionalAutoScaler_a99370c6ca054c8fea9d68538b06df903}} 
+\index{FractionalAutoScaler@{FractionalAutoScaler}!TopFraction@{TopFraction}}
+\index{TopFraction@{TopFraction}!FractionalAutoScaler@{FractionalAutoScaler}}
+\doxysubsubsection{\texorpdfstring{TopFraction}{TopFraction}}
+{\footnotesize\ttfamily readonly double Fractional\+Auto\+Scaler.\+Top\+Fraction}
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{classFractionalAutoScaler_ae57a34ce3a04b85d9d139920255e20ca}\label{classFractionalAutoScaler_ae57a34ce3a04b85d9d139920255e20ca}} 
+\index{FractionalAutoScaler@{FractionalAutoScaler}!InvertedX@{InvertedX}}
+\index{InvertedX@{InvertedX}!FractionalAutoScaler@{FractionalAutoScaler}}
+\doxysubsubsection{\texorpdfstring{InvertedX}{InvertedX}}
+{\footnotesize\ttfamily bool Fractional\+Auto\+Scaler.\+InvertedX = false\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classFractionalAutoScaler_a755b5a5c4e2eb6c992386b32fc8c743d}\label{classFractionalAutoScaler_a755b5a5c4e2eb6c992386b32fc8c743d}} 
+\index{FractionalAutoScaler@{FractionalAutoScaler}!InvertedY@{InvertedY}}
+\index{InvertedY@{InvertedY}!FractionalAutoScaler@{FractionalAutoScaler}}
+\doxysubsubsection{\texorpdfstring{InvertedY}{InvertedY}}
+{\footnotesize\ttfamily bool Fractional\+Auto\+Scaler.\+InvertedY = false\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Auto\+Scalers/Fractional\+Auto\+Scaler.\+cs\end{DoxyCompactItemize}

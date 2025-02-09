@@ -1,0 +1,109 @@
+\hypertarget{classMouseState}{}\doxysection{Mouse\+State Class Reference}
+\label{classMouseState}\index{MouseState@{MouseState}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classMouseState_a915b2e1cea0a11da534a9ac9f11a632b}{Down}} (\mbox{\hyperlink{structMouseButton}{Mouse\+Button}} button)
+\item 
+bool \mbox{\hyperlink{classMouseState_ac8aa16377fa15dab6d0c7f188019e3d0}{Is\+Down}} (\mbox{\hyperlink{structMouseButton}{Mouse\+Button}} button)
+\item 
+void \mbox{\hyperlink{classMouseState_a42cb22cc1eb34f15c35595b3a82b929c}{Up}} (\mbox{\hyperlink{structMouseButton}{Mouse\+Button}} button)
+\item 
+void \mbox{\hyperlink{classMouseState_a95926943590704aefc14d210a568d59d}{Down}} (\mbox{\hyperlink{structPixel}{Pixel}} position, \mbox{\hyperlink{structMouseButton}{Mouse\+Button}} button, \mbox{\hyperlink{classMultiAxisLimitManager}{Multi\+Axis\+Limit\+Manager}} limits)
+\item 
+bool \mbox{\hyperlink{classMouseState_a9bcf4ee99b20c07647890629a3f9aa3b}{Is\+Dragging}} (\mbox{\hyperlink{structPixel}{Pixel}} position)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{classMouseState_a6b7706b6d1cc2877563f24c4fd7ee13f}{Minimum\+Drag\+Distance}} = 5
+\begin{DoxyCompactList}\small\item\em A click-\/drag must exceed this number of pixels before it is considered a drag. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structPixel}{Pixel}} \mbox{\hyperlink{classMouseState_aea7264bc43ee386f0d695e87b5e47796}{Last\+Position}} = new(float.\+NaN, float.\+NaN)
+\item 
+\mbox{\hyperlink{classMultiAxisLimitManager}{Multi\+Axis\+Limit\+Manager}} \mbox{\hyperlink{classMouseState_ab1f8d1b6dd806db6949b638dee118b7d}{Mouse\+Down\+Axis\+Limits}} = new()
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+IRead\+Only\+Collection$<$ \mbox{\hyperlink{structMouseButton}{Mouse\+Button}} $>$ \mbox{\hyperlink{classMouseState_a9a0494ff916ec85fb94d20a412d6f49f}{Pressed\+Buttons}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{structPixel}{Pixel}} \mbox{\hyperlink{classMouseState_acb7f434f6573ae9aaf65867797af1582}{Mouse\+Down\+Position}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classMouseState_a915b2e1cea0a11da534a9ac9f11a632b}\label{classMouseState_a915b2e1cea0a11da534a9ac9f11a632b}} 
+\index{MouseState@{MouseState}!Down@{Down}}
+\index{Down@{Down}!MouseState@{MouseState}}
+\doxysubsubsection{\texorpdfstring{Down()}{Down()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Mouse\+State.\+Down (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structMouseButton}{Mouse\+Button}}}]{button }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classMouseState_a95926943590704aefc14d210a568d59d}\label{classMouseState_a95926943590704aefc14d210a568d59d}} 
+\index{MouseState@{MouseState}!Down@{Down}}
+\index{Down@{Down}!MouseState@{MouseState}}
+\doxysubsubsection{\texorpdfstring{Down()}{Down()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Mouse\+State.\+Down (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPixel}{Pixel}}}]{position,  }\item[{\mbox{\hyperlink{structMouseButton}{Mouse\+Button}}}]{button,  }\item[{\mbox{\hyperlink{classMultiAxisLimitManager}{Multi\+Axis\+Limit\+Manager}}}]{limits }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classMouseState_ac8aa16377fa15dab6d0c7f188019e3d0}\label{classMouseState_ac8aa16377fa15dab6d0c7f188019e3d0}} 
+\index{MouseState@{MouseState}!IsDown@{IsDown}}
+\index{IsDown@{IsDown}!MouseState@{MouseState}}
+\doxysubsubsection{\texorpdfstring{IsDown()}{IsDown()}}
+{\footnotesize\ttfamily bool Mouse\+State.\+Is\+Down (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structMouseButton}{Mouse\+Button}}}]{button }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classMouseState_a9bcf4ee99b20c07647890629a3f9aa3b}\label{classMouseState_a9bcf4ee99b20c07647890629a3f9aa3b}} 
+\index{MouseState@{MouseState}!IsDragging@{IsDragging}}
+\index{IsDragging@{IsDragging}!MouseState@{MouseState}}
+\doxysubsubsection{\texorpdfstring{IsDragging()}{IsDragging()}}
+{\footnotesize\ttfamily bool Mouse\+State.\+Is\+Dragging (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPixel}{Pixel}}}]{position }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classMouseState_a42cb22cc1eb34f15c35595b3a82b929c}\label{classMouseState_a42cb22cc1eb34f15c35595b3a82b929c}} 
+\index{MouseState@{MouseState}!Up@{Up}}
+\index{Up@{Up}!MouseState@{MouseState}}
+\doxysubsubsection{\texorpdfstring{Up()}{Up()}}
+{\footnotesize\ttfamily void Mouse\+State.\+Up (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structMouseButton}{Mouse\+Button}}}]{button }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classMouseState_aea7264bc43ee386f0d695e87b5e47796}\label{classMouseState_aea7264bc43ee386f0d695e87b5e47796}} 
+\index{MouseState@{MouseState}!LastPosition@{LastPosition}}
+\index{LastPosition@{LastPosition}!MouseState@{MouseState}}
+\doxysubsubsection{\texorpdfstring{LastPosition}{LastPosition}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structPixel}{Pixel}} Mouse\+State.\+Last\+Position = new(float.\+NaN, float.\+NaN)}
+
+\mbox{\Hypertarget{classMouseState_a6b7706b6d1cc2877563f24c4fd7ee13f}\label{classMouseState_a6b7706b6d1cc2877563f24c4fd7ee13f}} 
+\index{MouseState@{MouseState}!MinimumDragDistance@{MinimumDragDistance}}
+\index{MinimumDragDistance@{MinimumDragDistance}!MouseState@{MouseState}}
+\doxysubsubsection{\texorpdfstring{MinimumDragDistance}{MinimumDragDistance}}
+{\footnotesize\ttfamily float Mouse\+State.\+Minimum\+Drag\+Distance = 5}
+
+
+
+A click-\/drag must exceed this number of pixels before it is considered a drag. 
+
+\mbox{\Hypertarget{classMouseState_ab1f8d1b6dd806db6949b638dee118b7d}\label{classMouseState_ab1f8d1b6dd806db6949b638dee118b7d}} 
+\index{MouseState@{MouseState}!MouseDownAxisLimits@{MouseDownAxisLimits}}
+\index{MouseDownAxisLimits@{MouseDownAxisLimits}!MouseState@{MouseState}}
+\doxysubsubsection{\texorpdfstring{MouseDownAxisLimits}{MouseDownAxisLimits}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classMultiAxisLimitManager}{Multi\+Axis\+Limit\+Manager}} Mouse\+State.\+Mouse\+Down\+Axis\+Limits = new()}
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{classMouseState_acb7f434f6573ae9aaf65867797af1582}\label{classMouseState_acb7f434f6573ae9aaf65867797af1582}} 
+\index{MouseState@{MouseState}!MouseDownPosition@{MouseDownPosition}}
+\index{MouseDownPosition@{MouseDownPosition}!MouseState@{MouseState}}
+\doxysubsubsection{\texorpdfstring{MouseDownPosition}{MouseDownPosition}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structPixel}{Pixel}} Mouse\+State.\+Mouse\+Down\+Position\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{classMouseState_a9a0494ff916ec85fb94d20a412d6f49f}\label{classMouseState_a9a0494ff916ec85fb94d20a412d6f49f}} 
+\index{MouseState@{MouseState}!PressedButtons@{PressedButtons}}
+\index{PressedButtons@{PressedButtons}!MouseState@{MouseState}}
+\doxysubsubsection{\texorpdfstring{PressedButtons}{PressedButtons}}
+{\footnotesize\ttfamily IRead\+Only\+Collection$<$\mbox{\hyperlink{structMouseButton}{Mouse\+Button}}$>$ Mouse\+State.\+Pressed\+Buttons\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Control/Mouse\+State.\+cs\end{DoxyCompactItemize}

@@ -1,0 +1,164 @@
+\hypertarget{classPieBase}{}\doxysection{Pie\+Base Class Reference}
+\label{classPieBase}\index{PieBase@{PieBase}}
+Inheritance diagram for Pie\+Base\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classPieBase}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+abstract \mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} \mbox{\hyperlink{classPieBase_af20476894681ad7c6f2c839ac17d981f}{Get\+Axis\+Limits}} ()
+\begin{DoxyCompactList}\small\item\em Return the 2D area (in coordinate space) occupied by the data contained in this plottable \end{DoxyCompactList}\item 
+abstract void \mbox{\hyperlink{classPieBase_a9d91f1e76e5cfbb3b4109057884e905d}{Render}} (\mbox{\hyperlink{classRenderPack}{Render\+Pack}} rp)
+\begin{DoxyCompactList}\small\item\em Draw the data from this plottable into the data area defined in the \mbox{\hyperlink{classAxes}{Axes}}. By default the surface is already clipped to the data area, but this can be cleared inside the plottable. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static SKPoint \mbox{\hyperlink{classPieBase_a1dd256a2c2836b38edfd3112c5d40364}{Get\+Rotated\+Point}} (double radius, double angle\+In\+Degrees)
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interfaceIAxes}{IAxes}} \mbox{\hyperlink{classPieBase_ac0faa16d6805e5b46956c666003f4f5a}{Axes}} = new \mbox{\hyperlink{classAxes}{Axes}}()\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+bool \mbox{\hyperlink{classPieBase_a2d3c292c0ead642abb5e08c807e5782f}{Is\+Visible}} = true\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$ \mbox{\hyperlink{classLegendItem}{Legend\+Item}} $>$ \mbox{\hyperlink{classPieBase_adbf14f09a4149857d3c7e979adb072f5}{Legend\+Items}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{structColor}{Color}} \mbox{\hyperlink{classPieBase_aa6d6e604378028775b94f0ad8596ecb7}{Line\+Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+Line\+Pattern \mbox{\hyperlink{classPieBase_a06c61099db8986e0d59bd8fdedaf1715}{Line\+Pattern}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{classLineStyle}{Line\+Style}} \mbox{\hyperlink{classPieBase_afc6fd964f56077bd86e0c34d58294630}{Line\+Style}} = new() \{ Width = 0 \}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{classPieBase_a3ac151e008f6aa68224576422abcbfd8}{Line\+Width}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+double \mbox{\hyperlink{classPieBase_aeb3068d6bb31a50fe637b2ab2d155322}{Padding}} = 0.\+2\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+bool \mbox{\hyperlink{classPieBase_ac44769840b7250891db464982641650e}{Show\+Slice\+Labels}} = false\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+double \mbox{\hyperlink{classPieBase_a8ec02ebe3a0981b603a6da8605bdb1d8}{Slice\+Label\+Distance}} = 1.\+2\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{classIList}{IList}}$<$ \mbox{\hyperlink{classPieSlice}{Pie\+Slice}} $>$ \mbox{\hyperlink{classPieBase_a9d32c2991e9da67db5adfb7c419be405}{Slices}} = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPieBase_af20476894681ad7c6f2c839ac17d981f}\label{classPieBase_af20476894681ad7c6f2c839ac17d981f}} 
+\index{PieBase@{PieBase}!GetAxisLimits@{GetAxisLimits}}
+\index{GetAxisLimits@{GetAxisLimits}!PieBase@{PieBase}}
+\doxysubsubsection{\texorpdfstring{GetAxisLimits()}{GetAxisLimits()}}
+{\footnotesize\ttfamily abstract \mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} Pie\+Base.\+Get\+Axis\+Limits (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Return the 2D area (in coordinate space) occupied by the data contained in this plottable 
+
+
+
+Implements \mbox{\hyperlink{interfaceIPlottable_ac98e2f5e56f9f938bbd081c87c7c6f50}{IPlottable}}.
+
+
+
+Implemented in \mbox{\hyperlink{classPie_ae67f304b17cc44695ae32721e4e79c25}{Pie}}, and \mbox{\hyperlink{classCoxcomb_a4dacd1192ff1eaa73be8e1c6a1d0f09c}{Coxcomb}}.
+
+\mbox{\Hypertarget{classPieBase_a1dd256a2c2836b38edfd3112c5d40364}\label{classPieBase_a1dd256a2c2836b38edfd3112c5d40364}} 
+\index{PieBase@{PieBase}!GetRotatedPoint@{GetRotatedPoint}}
+\index{GetRotatedPoint@{GetRotatedPoint}!PieBase@{PieBase}}
+\doxysubsubsection{\texorpdfstring{GetRotatedPoint()}{GetRotatedPoint()}}
+{\footnotesize\ttfamily static SKPoint Pie\+Base.\+Get\+Rotated\+Point (\begin{DoxyParamCaption}\item[{double}]{radius,  }\item[{double}]{angle\+In\+Degrees }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classPieBase_a9d91f1e76e5cfbb3b4109057884e905d}\label{classPieBase_a9d91f1e76e5cfbb3b4109057884e905d}} 
+\index{PieBase@{PieBase}!Render@{Render}}
+\index{Render@{Render}!PieBase@{PieBase}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily abstract void Pie\+Base.\+Render (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classRenderPack}{Render\+Pack}}}]{rp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Draw the data from this plottable into the data area defined in the \mbox{\hyperlink{classAxes}{Axes}}. By default the surface is already clipped to the data area, but this can be cleared inside the plottable. 
+
+
+
+Implements \mbox{\hyperlink{interfaceIPlottable_a201a1a236dc718eda93db143a5ade9f8}{IPlottable}}.
+
+
+
+Implemented in \mbox{\hyperlink{classPie_a9cdff33c544771a223bb7cc2638ce17f}{Pie}}, and \mbox{\hyperlink{classCoxcomb_a69d2e3839eec22471a42f13417fe923f}{Coxcomb}}.
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{classPieBase_ac0faa16d6805e5b46956c666003f4f5a}\label{classPieBase_ac0faa16d6805e5b46956c666003f4f5a}} 
+\index{PieBase@{PieBase}!Axes@{Axes}}
+\index{Axes@{Axes}!PieBase@{PieBase}}
+\doxysubsubsection{\texorpdfstring{Axes}{Axes}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceIAxes}{IAxes}} Pie\+Base.\+Axes = new \mbox{\hyperlink{classAxes}{Axes}}()\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classPieBase_a2d3c292c0ead642abb5e08c807e5782f}\label{classPieBase_a2d3c292c0ead642abb5e08c807e5782f}} 
+\index{PieBase@{PieBase}!IsVisible@{IsVisible}}
+\index{IsVisible@{IsVisible}!PieBase@{PieBase}}
+\doxysubsubsection{\texorpdfstring{IsVisible}{IsVisible}}
+{\footnotesize\ttfamily bool Pie\+Base.\+Is\+Visible = true\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classPieBase_adbf14f09a4149857d3c7e979adb072f5}\label{classPieBase_adbf14f09a4149857d3c7e979adb072f5}} 
+\index{PieBase@{PieBase}!LegendItems@{LegendItems}}
+\index{LegendItems@{LegendItems}!PieBase@{PieBase}}
+\doxysubsubsection{\texorpdfstring{LegendItems}{LegendItems}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$\mbox{\hyperlink{classLegendItem}{Legend\+Item}}$>$ Pie\+Base.\+Legend\+Items\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{classPieBase_aa6d6e604378028775b94f0ad8596ecb7}\label{classPieBase_aa6d6e604378028775b94f0ad8596ecb7}} 
+\index{PieBase@{PieBase}!LineColor@{LineColor}}
+\index{LineColor@{LineColor}!PieBase@{PieBase}}
+\doxysubsubsection{\texorpdfstring{LineColor}{LineColor}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structColor}{Color}} Pie\+Base.\+Line\+Color\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classPieBase_a06c61099db8986e0d59bd8fdedaf1715}\label{classPieBase_a06c61099db8986e0d59bd8fdedaf1715}} 
+\index{PieBase@{PieBase}!LinePattern@{LinePattern}}
+\index{LinePattern@{LinePattern}!PieBase@{PieBase}}
+\doxysubsubsection{\texorpdfstring{LinePattern}{LinePattern}}
+{\footnotesize\ttfamily Line\+Pattern Pie\+Base.\+Line\+Pattern\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classPieBase_afc6fd964f56077bd86e0c34d58294630}\label{classPieBase_afc6fd964f56077bd86e0c34d58294630}} 
+\index{PieBase@{PieBase}!LineStyle@{LineStyle}}
+\index{LineStyle@{LineStyle}!PieBase@{PieBase}}
+\doxysubsubsection{\texorpdfstring{LineStyle}{LineStyle}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classLineStyle}{Line\+Style}} Pie\+Base.\+Line\+Style = new() \{ Width = 0 \}\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classPieBase_a3ac151e008f6aa68224576422abcbfd8}\label{classPieBase_a3ac151e008f6aa68224576422abcbfd8}} 
+\index{PieBase@{PieBase}!LineWidth@{LineWidth}}
+\index{LineWidth@{LineWidth}!PieBase@{PieBase}}
+\doxysubsubsection{\texorpdfstring{LineWidth}{LineWidth}}
+{\footnotesize\ttfamily float Pie\+Base.\+Line\+Width\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classPieBase_aeb3068d6bb31a50fe637b2ab2d155322}\label{classPieBase_aeb3068d6bb31a50fe637b2ab2d155322}} 
+\index{PieBase@{PieBase}!Padding@{Padding}}
+\index{Padding@{Padding}!PieBase@{PieBase}}
+\doxysubsubsection{\texorpdfstring{Padding}{Padding}}
+{\footnotesize\ttfamily double Pie\+Base.\+Padding = 0.\+2\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classPieBase_ac44769840b7250891db464982641650e}\label{classPieBase_ac44769840b7250891db464982641650e}} 
+\index{PieBase@{PieBase}!ShowSliceLabels@{ShowSliceLabels}}
+\index{ShowSliceLabels@{ShowSliceLabels}!PieBase@{PieBase}}
+\doxysubsubsection{\texorpdfstring{ShowSliceLabels}{ShowSliceLabels}}
+{\footnotesize\ttfamily bool Pie\+Base.\+Show\+Slice\+Labels = false\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classPieBase_a8ec02ebe3a0981b603a6da8605bdb1d8}\label{classPieBase_a8ec02ebe3a0981b603a6da8605bdb1d8}} 
+\index{PieBase@{PieBase}!SliceLabelDistance@{SliceLabelDistance}}
+\index{SliceLabelDistance@{SliceLabelDistance}!PieBase@{PieBase}}
+\doxysubsubsection{\texorpdfstring{SliceLabelDistance}{SliceLabelDistance}}
+{\footnotesize\ttfamily double Pie\+Base.\+Slice\+Label\+Distance = 1.\+2\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classPieBase_a9d32c2991e9da67db5adfb7c419be405}\label{classPieBase_a9d32c2991e9da67db5adfb7c419be405}} 
+\index{PieBase@{PieBase}!Slices@{Slices}}
+\index{Slices@{Slices}!PieBase@{PieBase}}
+\doxysubsubsection{\texorpdfstring{Slices}{Slices}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classIList}{IList}}$<$\mbox{\hyperlink{classPieSlice}{Pie\+Slice}}$>$ Pie\+Base.\+Slices = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Plottables/Pie\+Base.\+cs\end{DoxyCompactItemize}

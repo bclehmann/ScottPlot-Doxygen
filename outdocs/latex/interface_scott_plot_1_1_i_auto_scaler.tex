@@ -1,0 +1,89 @@
+\doxysection{Scott\+Plot.\+IAuto\+Scaler Interface Reference}
+\hypertarget{interface_scott_plot_1_1_i_auto_scaler}{}\label{interface_scott_plot_1_1_i_auto_scaler}\index{ScottPlot.IAutoScaler@{ScottPlot.IAutoScaler}}
+
+
+Contains logic for determining new axis limits when Autoscale() is called.  
+
+
+Inheritance diagram for Scott\+Plot.\+IAuto\+Scaler\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_scott_plot_1_1_i_auto_scaler}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}} \mbox{\hyperlink{interface_scott_plot_1_1_i_auto_scaler_af1830e0130317641478745776a087bcb}{Get\+Axis\+Limits}} (\mbox{\hyperlink{class_scott_plot_1_1_plot}{Plot}} plot, \mbox{\hyperlink{interface_scott_plot_1_1_i_x_axis}{IXAxis}} x\+Axis, \mbox{\hyperlink{interface_scott_plot_1_1_i_y_axis}{IYAxis}} y\+Axis)
+\begin{DoxyCompactList}\small\item\em Return the recommended axis limits for the plottables that use the given axes. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interface_scott_plot_1_1_i_auto_scaler_a6ffd6d1f0b0d7965459a1908f8ec48d5}{Auto\+Scale\+All}} (\mbox{\hyperlink{class_i_enumerable}{IEnumerable}}$<$ \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable}{IPlottable}} $>$ plottables)
+\begin{DoxyCompactList}\small\item\em Autoscale every unset axis used by plottables. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{interface_scott_plot_1_1_i_auto_scaler_a0a9e468ca59b513d9c6a8d2751353a6d}{InvertedX}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+bool \mbox{\hyperlink{interface_scott_plot_1_1_i_auto_scaler_a99e669e8410c7b09f0407bcde22f358b}{InvertedY}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Contains logic for determining new axis limits when Autoscale() is called. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_scott_plot_1_1_i_auto_scaler_a6ffd6d1f0b0d7965459a1908f8ec48d5}\index{ScottPlot.IAutoScaler@{ScottPlot.IAutoScaler}!AutoScaleAll@{AutoScaleAll}}
+\index{AutoScaleAll@{AutoScaleAll}!ScottPlot.IAutoScaler@{ScottPlot.IAutoScaler}}
+\doxysubsubsection{\texorpdfstring{AutoScaleAll()}{AutoScaleAll()}}
+{\footnotesize\ttfamily \label{interface_scott_plot_1_1_i_auto_scaler_a6ffd6d1f0b0d7965459a1908f8ec48d5} 
+void Scott\+Plot.\+IAuto\+Scaler.\+Auto\+Scale\+All (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_i_enumerable}{IEnumerable}}$<$ \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable}{IPlottable}} $>$}]{plottables}{}\end{DoxyParamCaption})}
+
+
+
+Autoscale every unset axis used by plottables. 
+
+
+
+Implemented in \mbox{\hyperlink{class_scott_plot_1_1_auto_scalers_1_1_fractional_auto_scaler_a55194f2a4a02ab3dab85c974a899f1e9}{Scott\+Plot.\+Auto\+Scalers.\+Fractional\+Auto\+Scaler}}.
+
+\Hypertarget{interface_scott_plot_1_1_i_auto_scaler_af1830e0130317641478745776a087bcb}\index{ScottPlot.IAutoScaler@{ScottPlot.IAutoScaler}!GetAxisLimits@{GetAxisLimits}}
+\index{GetAxisLimits@{GetAxisLimits}!ScottPlot.IAutoScaler@{ScottPlot.IAutoScaler}}
+\doxysubsubsection{\texorpdfstring{GetAxisLimits()}{GetAxisLimits()}}
+{\footnotesize\ttfamily \label{interface_scott_plot_1_1_i_auto_scaler_af1830e0130317641478745776a087bcb} 
+\mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}} Scott\+Plot.\+IAuto\+Scaler.\+Get\+Axis\+Limits (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_scott_plot_1_1_plot}{Plot}}}]{plot}{, }\item[{\mbox{\hyperlink{interface_scott_plot_1_1_i_x_axis}{IXAxis}}}]{x\+Axis}{, }\item[{\mbox{\hyperlink{interface_scott_plot_1_1_i_y_axis}{IYAxis}}}]{y\+Axis}{}\end{DoxyParamCaption})}
+
+
+
+Return the recommended axis limits for the plottables that use the given axes. 
+
+
+
+Implemented in \mbox{\hyperlink{class_scott_plot_1_1_auto_scalers_1_1_fractional_auto_scaler_ad8bcf9a33f686306b6586ab925b696c8}{Scott\+Plot.\+Auto\+Scalers.\+Fractional\+Auto\+Scaler}}.
+
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{interface_scott_plot_1_1_i_auto_scaler_a0a9e468ca59b513d9c6a8d2751353a6d}\index{ScottPlot.IAutoScaler@{ScottPlot.IAutoScaler}!InvertedX@{InvertedX}}
+\index{InvertedX@{InvertedX}!ScottPlot.IAutoScaler@{ScottPlot.IAutoScaler}}
+\doxysubsubsection{\texorpdfstring{InvertedX}{InvertedX}}
+{\footnotesize\ttfamily \label{interface_scott_plot_1_1_i_auto_scaler_a0a9e468ca59b513d9c6a8d2751353a6d} 
+bool Scott\+Plot.\+IAuto\+Scaler.\+InvertedX\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_scott_plot_1_1_auto_scalers_1_1_fractional_auto_scaler_af1ad4916e1f2ad0054f3bf9e884cace4}{Scott\+Plot.\+Auto\+Scalers.\+Fractional\+Auto\+Scaler}}.
+
+\Hypertarget{interface_scott_plot_1_1_i_auto_scaler_a99e669e8410c7b09f0407bcde22f358b}\index{ScottPlot.IAutoScaler@{ScottPlot.IAutoScaler}!InvertedY@{InvertedY}}
+\index{InvertedY@{InvertedY}!ScottPlot.IAutoScaler@{ScottPlot.IAutoScaler}}
+\doxysubsubsection{\texorpdfstring{InvertedY}{InvertedY}}
+{\footnotesize\ttfamily \label{interface_scott_plot_1_1_i_auto_scaler_a99e669e8410c7b09f0407bcde22f358b} 
+bool Scott\+Plot.\+IAuto\+Scaler.\+InvertedY\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_scott_plot_1_1_auto_scalers_1_1_fractional_auto_scaler_ab07ec15c5f4a7457dbf8b6d8c4349f03}{Scott\+Plot.\+Auto\+Scalers.\+Fractional\+Auto\+Scaler}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Primitives/IAuto\+Scaler.\+cs\end{DoxyCompactItemize}

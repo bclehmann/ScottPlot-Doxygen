@@ -1,0 +1,143 @@
+\hypertarget{interfaceIPlotInteraction}{}\doxysection{IPlot\+Interaction Interface Reference}
+\label{interfaceIPlotInteraction}\index{IPlotInteraction@{IPlotInteraction}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{interfaceIPlotInteraction_add927310ff69b43168d3df0e5bbe42d0}{Disable}} ()
+\begin{DoxyCompactList}\small\item\em Disable all mouse interactivity \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfaceIPlotInteraction_af784cc9e251ee784dafdda65f0932624}{Enable}} ()
+\begin{DoxyCompactList}\small\item\em Enable mouse interactivity using the default mouse actions. Enabling this disables the newer \mbox{\hyperlink{interfaceIPlotControl_a21049e00d17f6a449c20fa2dad6082e4}{IPlot\+Control.\+User\+Input\+Processor}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfaceIPlotInteraction_a78216739068ddd883719943893414f75}{Enable}} (\mbox{\hyperlink{classPlotActions}{Plot\+Actions}} custom\+Actions)
+\begin{DoxyCompactList}\small\item\em Enable mouse interactivity using custom mouse actions \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfaceIPlotInteraction_ae3cb4b3b1925249400664f8dbcdb87ab}{On\+Mouse\+Move}} (\mbox{\hyperlink{structPixel}{Pixel}} new\+Position)
+\item 
+void \mbox{\hyperlink{interfaceIPlotInteraction_af0d3ffb04d3185d82337ed7fff1cc82c}{Key\+Up}} (\mbox{\hyperlink{structKey}{Key}} key)
+\item 
+void \mbox{\hyperlink{interfaceIPlotInteraction_a57fdd3ad7b2b08934ea1057d30a04c6c}{Key\+Down}} (\mbox{\hyperlink{structKey}{Key}} key)
+\item 
+void \mbox{\hyperlink{interfaceIPlotInteraction_afc8c028a2b0c8c61a297da74f4db4de1}{Mouse\+Down}} (\mbox{\hyperlink{structPixel}{Pixel}} position, \mbox{\hyperlink{structMouseButton}{Mouse\+Button}} button)
+\item 
+void \mbox{\hyperlink{interfaceIPlotInteraction_a06398fb0c421726e78856e5c4e66921a}{Mouse\+Up}} (\mbox{\hyperlink{structPixel}{Pixel}} position, \mbox{\hyperlink{structMouseButton}{Mouse\+Button}} button)
+\item 
+void \mbox{\hyperlink{interfaceIPlotInteraction_a961e3ad0833355e0009bd7e9e3ac8d78}{Double\+Click}} ()
+\item 
+void \mbox{\hyperlink{interfaceIPlotInteraction_a4284a2b1ad7e83af049020e5ba41b2c7}{Mouse\+Wheel\+Vertical}} (\mbox{\hyperlink{structPixel}{Pixel}} pixel, float delta)
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{interfaceIPlotInteraction_a306db96810fd9ea7819c006b2f1567fa}{Is\+Enabled}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Controls whether this event processor processes new events. Enabling this disables the newer \mbox{\hyperlink{interfaceIPlotControl_a21049e00d17f6a449c20fa2dad6082e4}{IPlot\+Control.\+User\+Input\+Processor}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{interfaceIPlotControl}{IPlot\+Control}} \mbox{\hyperlink{interfaceIPlotInteraction_aefdceef177592f2e387ec06d69f42a07}{Plot\+Control}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+bool \mbox{\hyperlink{interfaceIPlotInteraction_a1255120f0b6ae0a200cf65c08ecbfeed}{Change\+Opposing\+Axes\+Together}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em If enabled, mouse interactions over a single axis will be applied to all axes with the same orientation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{interfaceIPlotInteraction_add927310ff69b43168d3df0e5bbe42d0}\label{interfaceIPlotInteraction_add927310ff69b43168d3df0e5bbe42d0}} 
+\index{IPlotInteraction@{IPlotInteraction}!Disable@{Disable}}
+\index{Disable@{Disable}!IPlotInteraction@{IPlotInteraction}}
+\doxysubsubsection{\texorpdfstring{Disable()}{Disable()}}
+{\footnotesize\ttfamily void IPlot\+Interaction.\+Disable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Disable all mouse interactivity 
+
+\mbox{\Hypertarget{interfaceIPlotInteraction_a961e3ad0833355e0009bd7e9e3ac8d78}\label{interfaceIPlotInteraction_a961e3ad0833355e0009bd7e9e3ac8d78}} 
+\index{IPlotInteraction@{IPlotInteraction}!DoubleClick@{DoubleClick}}
+\index{DoubleClick@{DoubleClick}!IPlotInteraction@{IPlotInteraction}}
+\doxysubsubsection{\texorpdfstring{DoubleClick()}{DoubleClick()}}
+{\footnotesize\ttfamily void IPlot\+Interaction.\+Double\+Click (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{interfaceIPlotInteraction_af784cc9e251ee784dafdda65f0932624}\label{interfaceIPlotInteraction_af784cc9e251ee784dafdda65f0932624}} 
+\index{IPlotInteraction@{IPlotInteraction}!Enable@{Enable}}
+\index{Enable@{Enable}!IPlotInteraction@{IPlotInteraction}}
+\doxysubsubsection{\texorpdfstring{Enable()}{Enable()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void IPlot\+Interaction.\+Enable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Enable mouse interactivity using the default mouse actions. Enabling this disables the newer \mbox{\hyperlink{interfaceIPlotControl_a21049e00d17f6a449c20fa2dad6082e4}{IPlot\+Control.\+User\+Input\+Processor}}. 
+
+\mbox{\Hypertarget{interfaceIPlotInteraction_a78216739068ddd883719943893414f75}\label{interfaceIPlotInteraction_a78216739068ddd883719943893414f75}} 
+\index{IPlotInteraction@{IPlotInteraction}!Enable@{Enable}}
+\index{Enable@{Enable}!IPlotInteraction@{IPlotInteraction}}
+\doxysubsubsection{\texorpdfstring{Enable()}{Enable()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void IPlot\+Interaction.\+Enable (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPlotActions}{Plot\+Actions}}}]{custom\+Actions }\end{DoxyParamCaption})}
+
+
+
+Enable mouse interactivity using custom mouse actions 
+
+\mbox{\Hypertarget{interfaceIPlotInteraction_a57fdd3ad7b2b08934ea1057d30a04c6c}\label{interfaceIPlotInteraction_a57fdd3ad7b2b08934ea1057d30a04c6c}} 
+\index{IPlotInteraction@{IPlotInteraction}!KeyDown@{KeyDown}}
+\index{KeyDown@{KeyDown}!IPlotInteraction@{IPlotInteraction}}
+\doxysubsubsection{\texorpdfstring{KeyDown()}{KeyDown()}}
+{\footnotesize\ttfamily void IPlot\+Interaction.\+Key\+Down (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structKey}{Key}}}]{key }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{interfaceIPlotInteraction_af0d3ffb04d3185d82337ed7fff1cc82c}\label{interfaceIPlotInteraction_af0d3ffb04d3185d82337ed7fff1cc82c}} 
+\index{IPlotInteraction@{IPlotInteraction}!KeyUp@{KeyUp}}
+\index{KeyUp@{KeyUp}!IPlotInteraction@{IPlotInteraction}}
+\doxysubsubsection{\texorpdfstring{KeyUp()}{KeyUp()}}
+{\footnotesize\ttfamily void IPlot\+Interaction.\+Key\+Up (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structKey}{Key}}}]{key }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{interfaceIPlotInteraction_afc8c028a2b0c8c61a297da74f4db4de1}\label{interfaceIPlotInteraction_afc8c028a2b0c8c61a297da74f4db4de1}} 
+\index{IPlotInteraction@{IPlotInteraction}!MouseDown@{MouseDown}}
+\index{MouseDown@{MouseDown}!IPlotInteraction@{IPlotInteraction}}
+\doxysubsubsection{\texorpdfstring{MouseDown()}{MouseDown()}}
+{\footnotesize\ttfamily void IPlot\+Interaction.\+Mouse\+Down (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPixel}{Pixel}}}]{position,  }\item[{\mbox{\hyperlink{structMouseButton}{Mouse\+Button}}}]{button }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{interfaceIPlotInteraction_a06398fb0c421726e78856e5c4e66921a}\label{interfaceIPlotInteraction_a06398fb0c421726e78856e5c4e66921a}} 
+\index{IPlotInteraction@{IPlotInteraction}!MouseUp@{MouseUp}}
+\index{MouseUp@{MouseUp}!IPlotInteraction@{IPlotInteraction}}
+\doxysubsubsection{\texorpdfstring{MouseUp()}{MouseUp()}}
+{\footnotesize\ttfamily void IPlot\+Interaction.\+Mouse\+Up (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPixel}{Pixel}}}]{position,  }\item[{\mbox{\hyperlink{structMouseButton}{Mouse\+Button}}}]{button }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{interfaceIPlotInteraction_a4284a2b1ad7e83af049020e5ba41b2c7}\label{interfaceIPlotInteraction_a4284a2b1ad7e83af049020e5ba41b2c7}} 
+\index{IPlotInteraction@{IPlotInteraction}!MouseWheelVertical@{MouseWheelVertical}}
+\index{MouseWheelVertical@{MouseWheelVertical}!IPlotInteraction@{IPlotInteraction}}
+\doxysubsubsection{\texorpdfstring{MouseWheelVertical()}{MouseWheelVertical()}}
+{\footnotesize\ttfamily void IPlot\+Interaction.\+Mouse\+Wheel\+Vertical (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPixel}{Pixel}}}]{pixel,  }\item[{float}]{delta }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{interfaceIPlotInteraction_ae3cb4b3b1925249400664f8dbcdb87ab}\label{interfaceIPlotInteraction_ae3cb4b3b1925249400664f8dbcdb87ab}} 
+\index{IPlotInteraction@{IPlotInteraction}!OnMouseMove@{OnMouseMove}}
+\index{OnMouseMove@{OnMouseMove}!IPlotInteraction@{IPlotInteraction}}
+\doxysubsubsection{\texorpdfstring{OnMouseMove()}{OnMouseMove()}}
+{\footnotesize\ttfamily void IPlot\+Interaction.\+On\+Mouse\+Move (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPixel}{Pixel}}}]{new\+Position }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{interfaceIPlotInteraction_a1255120f0b6ae0a200cf65c08ecbfeed}\label{interfaceIPlotInteraction_a1255120f0b6ae0a200cf65c08ecbfeed}} 
+\index{IPlotInteraction@{IPlotInteraction}!ChangeOpposingAxesTogether@{ChangeOpposingAxesTogether}}
+\index{ChangeOpposingAxesTogether@{ChangeOpposingAxesTogether}!IPlotInteraction@{IPlotInteraction}}
+\doxysubsubsection{\texorpdfstring{ChangeOpposingAxesTogether}{ChangeOpposingAxesTogether}}
+{\footnotesize\ttfamily bool IPlot\+Interaction.\+Change\+Opposing\+Axes\+Together\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+If enabled, mouse interactions over a single axis will be applied to all axes with the same orientation. 
+
+\mbox{\Hypertarget{interfaceIPlotInteraction_a306db96810fd9ea7819c006b2f1567fa}\label{interfaceIPlotInteraction_a306db96810fd9ea7819c006b2f1567fa}} 
+\index{IPlotInteraction@{IPlotInteraction}!IsEnabled@{IsEnabled}}
+\index{IsEnabled@{IsEnabled}!IPlotInteraction@{IPlotInteraction}}
+\doxysubsubsection{\texorpdfstring{IsEnabled}{IsEnabled}}
+{\footnotesize\ttfamily bool IPlot\+Interaction.\+Is\+Enabled\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Controls whether this event processor processes new events. Enabling this disables the newer \mbox{\hyperlink{interfaceIPlotControl_a21049e00d17f6a449c20fa2dad6082e4}{IPlot\+Control.\+User\+Input\+Processor}}. 
+
+\mbox{\Hypertarget{interfaceIPlotInteraction_aefdceef177592f2e387ec06d69f42a07}\label{interfaceIPlotInteraction_aefdceef177592f2e387ec06d69f42a07}} 
+\index{IPlotInteraction@{IPlotInteraction}!PlotControl@{PlotControl}}
+\index{PlotControl@{PlotControl}!IPlotInteraction@{IPlotInteraction}}
+\doxysubsubsection{\texorpdfstring{PlotControl}{PlotControl}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceIPlotControl}{IPlot\+Control}} IPlot\+Interaction.\+Plot\+Control\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Interfaces/IPlot\+Interaction.\+cs\end{DoxyCompactItemize}

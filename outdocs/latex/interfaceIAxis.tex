@@ -1,0 +1,231 @@
+\hypertarget{interfaceIAxis}{}\doxysection{IAxis Interface Reference}
+\label{interfaceIAxis}\index{IAxis@{IAxis}}
+
+
+This interface describes a 1D axis (horizontal or vertical). Responsibilities include\+: min/max management, unit/pixel conversion, tick generation (and rendering), axis label rendering, and self-\/measurement for layout purposes.  
+
+
+Inheritance diagram for IAxis\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=8.000000cm]{interfaceIAxis}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{interfaceIAxis_aeb617694defc22d1c88db1b9f49b189b}{Get\+Pixel}} (double position, \mbox{\hyperlink{structPixelRect}{Pixel\+Rect}} data\+Area)
+\begin{DoxyCompactList}\small\item\em Get the pixel position of a coordinate given the location and size of the data area \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{interfaceIAxis_a6f1fba5166f44b3d5d3a49d9d4fa8767}{Get\+Coordinate}} (float pixel, \mbox{\hyperlink{structPixelRect}{Pixel\+Rect}} data\+Area)
+\begin{DoxyCompactList}\small\item\em Get the coordinate of a pixel position given the location and size of the data area \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{interfaceIAxis_a59389a04e3af51f1f1fd82ffd5f9f6af}{Get\+Pixel\+Distance}} (double coordinate\+Distance, \mbox{\hyperlink{structPixelRect}{Pixel\+Rect}} data\+Area)
+\begin{DoxyCompactList}\small\item\em Given a distance in coordinate space, converts to pixel space \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{interfaceIAxis_a53f51e0020af0aff3b28e1420bc251ce}{Get\+Coordinate\+Distance}} (float pixel\+Distance, \mbox{\hyperlink{structPixelRect}{Pixel\+Rect}} data\+Area)
+\begin{DoxyCompactList}\small\item\em Given a distance in pixel space, converts to coordinate space \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfaceIAxis_a1cc8a82fcf52a5faf9eaf7f5a11a882f}{Set\+Ticks}} (double\mbox{[}$\,$\mbox{]} xs, string\mbox{[}$\,$\mbox{]} labels)
+\begin{DoxyCompactList}\small\item\em Replace the \mbox{\hyperlink{interfaceIAxis_a7d3a4e8e2555befe267f4c2e0994c0f6}{Tick\+Generator}} with a \mbox{\hyperlink{classNumericManual}{Numeric\+Manual}} pre-\/loaded with the given ticks. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfaceIAxis_a0b1fb76ab306fb3ea8d234f4a1053be3}{Regenerate\+Ticks}} (\mbox{\hyperlink{structPixelLength}{Pixel\+Length}} size)
+\begin{DoxyCompactList}\small\item\em Use the \mbox{\hyperlink{interfaceIAxis_a7cab04aee80bbf49d83cea94189fa0c6}{Tick\+Label\+Style}} to generate ticks with ideal spacing. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classCoordinateRangeMutable}{Coordinate\+Range\+Mutable}} \mbox{\hyperlink{interfaceIAxis_a27406c4846d02f657bdbc2d31602e3bd}{Range}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Min/\+Max range currently displayed by this axis \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{interfaceIAxis_a6373d03803f9fbb3b9336b257ddc3c74}{Min}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+double \mbox{\hyperlink{interfaceIAxis_a8853bfcdd709786877599d878a3dc89a}{Max}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{interfaceITickGenerator}{ITick\+Generator}} \mbox{\hyperlink{interfaceIAxis_a7d3a4e8e2555befe267f4c2e0994c0f6}{Tick\+Generator}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Logic for determining tick positions and formatting tick labels \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classLabelStyle}{Label\+Style}} \mbox{\hyperlink{interfaceIAxis_a6e31f2c89c5aa3bbd9f26108d8f40068}{Label}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The label is the text displayed distal to the ticks \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classTickMarkStyle}{Tick\+Mark\+Style}} \mbox{\hyperlink{interfaceIAxis_a6b13199b3b6d89d5c26b70a77af84e9b}{Major\+Tick\+Style}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{classTickMarkStyle}{Tick\+Mark\+Style}} \mbox{\hyperlink{interfaceIAxis_a1b6c12b531b809c4da7aee3046b54632}{Minor\+Tick\+Style}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{classLabelStyle}{Label\+Style}} \mbox{\hyperlink{interfaceIAxis_a7cab04aee80bbf49d83cea94189fa0c6}{Tick\+Label\+Style}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{classLineStyle}{Line\+Style}} \mbox{\hyperlink{interfaceIAxis_a58679b685f4ffe5ad8dbafb62355d533}{Frame\+Line\+Style}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This interface describes a 1D axis (horizontal or vertical). Responsibilities include\+: min/max management, unit/pixel conversion, tick generation (and rendering), axis label rendering, and self-\/measurement for layout purposes. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{interfaceIAxis_a6f1fba5166f44b3d5d3a49d9d4fa8767}\label{interfaceIAxis_a6f1fba5166f44b3d5d3a49d9d4fa8767}} 
+\index{IAxis@{IAxis}!GetCoordinate@{GetCoordinate}}
+\index{GetCoordinate@{GetCoordinate}!IAxis@{IAxis}}
+\doxysubsubsection{\texorpdfstring{GetCoordinate()}{GetCoordinate()}}
+{\footnotesize\ttfamily double IAxis.\+Get\+Coordinate (\begin{DoxyParamCaption}\item[{float}]{pixel,  }\item[{\mbox{\hyperlink{structPixelRect}{Pixel\+Rect}}}]{data\+Area }\end{DoxyParamCaption})}
+
+
+
+Get the coordinate of a pixel position given the location and size of the data area 
+
+
+
+Implemented in \mbox{\hyperlink{classYAxisBase_af216fb4afa59e6284d72a8573ebd4f5b}{YAxis\+Base}}, and \mbox{\hyperlink{classXAxisBase_ac6129478abafc8deeaa2e962c711f9c5}{XAxis\+Base}}.
+
+\mbox{\Hypertarget{interfaceIAxis_a53f51e0020af0aff3b28e1420bc251ce}\label{interfaceIAxis_a53f51e0020af0aff3b28e1420bc251ce}} 
+\index{IAxis@{IAxis}!GetCoordinateDistance@{GetCoordinateDistance}}
+\index{GetCoordinateDistance@{GetCoordinateDistance}!IAxis@{IAxis}}
+\doxysubsubsection{\texorpdfstring{GetCoordinateDistance()}{GetCoordinateDistance()}}
+{\footnotesize\ttfamily double IAxis.\+Get\+Coordinate\+Distance (\begin{DoxyParamCaption}\item[{float}]{pixel\+Distance,  }\item[{\mbox{\hyperlink{structPixelRect}{Pixel\+Rect}}}]{data\+Area }\end{DoxyParamCaption})}
+
+
+
+Given a distance in pixel space, converts to coordinate space 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pixel\+Distance} & A distance in pixel units\\
+\hline
+{\em data\+Area} & The rectangle onto which the coordinates are mapped\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The same distance in coordinate units
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classYAxisBase_ac875ee8426e2a275e13088dc8b4a8e17}{YAxis\+Base}}, and \mbox{\hyperlink{classXAxisBase_ae5528b70b5d693237ca8b9807501c5b4}{XAxis\+Base}}.
+
+\mbox{\Hypertarget{interfaceIAxis_aeb617694defc22d1c88db1b9f49b189b}\label{interfaceIAxis_aeb617694defc22d1c88db1b9f49b189b}} 
+\index{IAxis@{IAxis}!GetPixel@{GetPixel}}
+\index{GetPixel@{GetPixel}!IAxis@{IAxis}}
+\doxysubsubsection{\texorpdfstring{GetPixel()}{GetPixel()}}
+{\footnotesize\ttfamily float IAxis.\+Get\+Pixel (\begin{DoxyParamCaption}\item[{double}]{position,  }\item[{\mbox{\hyperlink{structPixelRect}{Pixel\+Rect}}}]{data\+Area }\end{DoxyParamCaption})}
+
+
+
+Get the pixel position of a coordinate given the location and size of the data area 
+
+
+
+Implemented in \mbox{\hyperlink{classYAxisBase_aef887441b4929a1d1e62d6f94333505b}{YAxis\+Base}}, and \mbox{\hyperlink{classXAxisBase_acff2c5dd5d20cfa1dbe642d9ab00e2d1}{XAxis\+Base}}.
+
+\mbox{\Hypertarget{interfaceIAxis_a59389a04e3af51f1f1fd82ffd5f9f6af}\label{interfaceIAxis_a59389a04e3af51f1f1fd82ffd5f9f6af}} 
+\index{IAxis@{IAxis}!GetPixelDistance@{GetPixelDistance}}
+\index{GetPixelDistance@{GetPixelDistance}!IAxis@{IAxis}}
+\doxysubsubsection{\texorpdfstring{GetPixelDistance()}{GetPixelDistance()}}
+{\footnotesize\ttfamily double IAxis.\+Get\+Pixel\+Distance (\begin{DoxyParamCaption}\item[{double}]{coordinate\+Distance,  }\item[{\mbox{\hyperlink{structPixelRect}{Pixel\+Rect}}}]{data\+Area }\end{DoxyParamCaption})}
+
+
+
+Given a distance in coordinate space, converts to pixel space 
+
+
+\begin{DoxyParams}{Parameters}
+{\em coordinate\+Distance} & A distance in coordinate units\\
+\hline
+{\em data\+Area} & The rectangle onto which the coordinates are mapped\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The same distance in pixel units
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classYAxisBase_ae4869aa38f9a8a1d1f893c7eedbe079e}{YAxis\+Base}}, and \mbox{\hyperlink{classXAxisBase_aae0c154c4cb504680d966a9c6ea4a149}{XAxis\+Base}}.
+
+\mbox{\Hypertarget{interfaceIAxis_a0b1fb76ab306fb3ea8d234f4a1053be3}\label{interfaceIAxis_a0b1fb76ab306fb3ea8d234f4a1053be3}} 
+\index{IAxis@{IAxis}!RegenerateTicks@{RegenerateTicks}}
+\index{RegenerateTicks@{RegenerateTicks}!IAxis@{IAxis}}
+\doxysubsubsection{\texorpdfstring{RegenerateTicks()}{RegenerateTicks()}}
+{\footnotesize\ttfamily void IAxis.\+Regenerate\+Ticks (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPixelLength}{Pixel\+Length}}}]{size }\end{DoxyParamCaption})}
+
+
+
+Use the \mbox{\hyperlink{interfaceIAxis_a7cab04aee80bbf49d83cea94189fa0c6}{Tick\+Label\+Style}} to generate ticks with ideal spacing. 
+
+
+
+Implemented in \mbox{\hyperlink{classYAxisBase_a1575814b1a5b4b01beabbe6529670df5}{YAxis\+Base}}, and \mbox{\hyperlink{classXAxisBase_ac4eb17b025706979e3dbafb828baeb5e}{XAxis\+Base}}.
+
+\mbox{\Hypertarget{interfaceIAxis_a1cc8a82fcf52a5faf9eaf7f5a11a882f}\label{interfaceIAxis_a1cc8a82fcf52a5faf9eaf7f5a11a882f}} 
+\index{IAxis@{IAxis}!SetTicks@{SetTicks}}
+\index{SetTicks@{SetTicks}!IAxis@{IAxis}}
+\doxysubsubsection{\texorpdfstring{SetTicks()}{SetTicks()}}
+{\footnotesize\ttfamily void IAxis.\+Set\+Ticks (\begin{DoxyParamCaption}\item[{double\mbox{[}$\,$\mbox{]}}]{xs,  }\item[{string\mbox{[}$\,$\mbox{]}}]{labels }\end{DoxyParamCaption})}
+
+
+
+Replace the \mbox{\hyperlink{interfaceIAxis_a7d3a4e8e2555befe267f4c2e0994c0f6}{Tick\+Generator}} with a \mbox{\hyperlink{classNumericManual}{Numeric\+Manual}} pre-\/loaded with the given ticks. 
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{interfaceIAxis_a58679b685f4ffe5ad8dbafb62355d533}\label{interfaceIAxis_a58679b685f4ffe5ad8dbafb62355d533}} 
+\index{IAxis@{IAxis}!FrameLineStyle@{FrameLineStyle}}
+\index{FrameLineStyle@{FrameLineStyle}!IAxis@{IAxis}}
+\doxysubsubsection{\texorpdfstring{FrameLineStyle}{FrameLineStyle}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classLineStyle}{Line\+Style}} IAxis.\+Frame\+Line\+Style\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{interfaceIAxis_a6e31f2c89c5aa3bbd9f26108d8f40068}\label{interfaceIAxis_a6e31f2c89c5aa3bbd9f26108d8f40068}} 
+\index{IAxis@{IAxis}!Label@{Label}}
+\index{Label@{Label}!IAxis@{IAxis}}
+\doxysubsubsection{\texorpdfstring{Label}{Label}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classLabelStyle}{Label\+Style}} IAxis.\+Label\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The label is the text displayed distal to the ticks 
+
+\mbox{\Hypertarget{interfaceIAxis_a6b13199b3b6d89d5c26b70a77af84e9b}\label{interfaceIAxis_a6b13199b3b6d89d5c26b70a77af84e9b}} 
+\index{IAxis@{IAxis}!MajorTickStyle@{MajorTickStyle}}
+\index{MajorTickStyle@{MajorTickStyle}!IAxis@{IAxis}}
+\doxysubsubsection{\texorpdfstring{MajorTickStyle}{MajorTickStyle}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classTickMarkStyle}{Tick\+Mark\+Style}} IAxis.\+Major\+Tick\+Style\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{interfaceIAxis_a8853bfcdd709786877599d878a3dc89a}\label{interfaceIAxis_a8853bfcdd709786877599d878a3dc89a}} 
+\index{IAxis@{IAxis}!Max@{Max}}
+\index{Max@{Max}!IAxis@{IAxis}}
+\doxysubsubsection{\texorpdfstring{Max}{Max}}
+{\footnotesize\ttfamily double IAxis.\+Max\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{interfaceIAxis_a6373d03803f9fbb3b9336b257ddc3c74}\label{interfaceIAxis_a6373d03803f9fbb3b9336b257ddc3c74}} 
+\index{IAxis@{IAxis}!Min@{Min}}
+\index{Min@{Min}!IAxis@{IAxis}}
+\doxysubsubsection{\texorpdfstring{Min}{Min}}
+{\footnotesize\ttfamily double IAxis.\+Min\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{interfaceIAxis_a1b6c12b531b809c4da7aee3046b54632}\label{interfaceIAxis_a1b6c12b531b809c4da7aee3046b54632}} 
+\index{IAxis@{IAxis}!MinorTickStyle@{MinorTickStyle}}
+\index{MinorTickStyle@{MinorTickStyle}!IAxis@{IAxis}}
+\doxysubsubsection{\texorpdfstring{MinorTickStyle}{MinorTickStyle}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classTickMarkStyle}{Tick\+Mark\+Style}} IAxis.\+Minor\+Tick\+Style\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{interfaceIAxis_a27406c4846d02f657bdbc2d31602e3bd}\label{interfaceIAxis_a27406c4846d02f657bdbc2d31602e3bd}} 
+\index{IAxis@{IAxis}!Range@{Range}}
+\index{Range@{Range}!IAxis@{IAxis}}
+\doxysubsubsection{\texorpdfstring{Range}{Range}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCoordinateRangeMutable}{Coordinate\+Range\+Mutable}} IAxis.\+Range\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Min/\+Max range currently displayed by this axis 
+
+\mbox{\Hypertarget{interfaceIAxis_a7d3a4e8e2555befe267f4c2e0994c0f6}\label{interfaceIAxis_a7d3a4e8e2555befe267f4c2e0994c0f6}} 
+\index{IAxis@{IAxis}!TickGenerator@{TickGenerator}}
+\index{TickGenerator@{TickGenerator}!IAxis@{IAxis}}
+\doxysubsubsection{\texorpdfstring{TickGenerator}{TickGenerator}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceITickGenerator}{ITick\+Generator}} IAxis.\+Tick\+Generator\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Logic for determining tick positions and formatting tick labels 
+
+\mbox{\Hypertarget{interfaceIAxis_a7cab04aee80bbf49d83cea94189fa0c6}\label{interfaceIAxis_a7cab04aee80bbf49d83cea94189fa0c6}} 
+\index{IAxis@{IAxis}!TickLabelStyle@{TickLabelStyle}}
+\index{TickLabelStyle@{TickLabelStyle}!IAxis@{IAxis}}
+\doxysubsubsection{\texorpdfstring{TickLabelStyle}{TickLabelStyle}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classLabelStyle}{Label\+Style}} IAxis.\+Tick\+Label\+Style\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Interfaces/IAxis.\+cs\end{DoxyCompactItemize}

@@ -1,0 +1,88 @@
+\doxysection{Scott\+Plot.\+Grid\+Style Class Reference}
+\hypertarget{class_scott_plot_1_1_grid_style}{}\label{class_scott_plot_1_1_grid_style}\index{ScottPlot.GridStyle@{ScottPlot.GridStyle}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_grid_style_a2f420b72303624c1e77f7a744b53ed9e}{Render}} (Render\+Pack rp, \mbox{\hyperlink{interface_scott_plot_1_1_i_axis}{IAxis}} axis, \mbox{\hyperlink{class_i_enumerable}{IEnumerable}}$<$ \mbox{\hyperlink{struct_scott_plot_1_1_tick}{Tick}} $>$ ticks)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_scott_plot_1_1_grid_style_a37bff32f301491c5fc6a2c086e2f72ee}{Is\+Visible}} = true\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{class_scott_plot_1_1_line_style}{Line\+Style}} \mbox{\hyperlink{class_scott_plot_1_1_grid_style_ae22580610ebc3a62b8f1521953cb87a1}{Major\+Line\+Style}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{class_scott_plot_1_1_line_style}{Line\+Style}} \mbox{\hyperlink{class_scott_plot_1_1_grid_style_a7f124b89d00a186f03e85da9124229ae}{Minor\+Line\+Style}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+int \mbox{\hyperlink{class_scott_plot_1_1_grid_style_acdf020738dc9c7422d12fc064ff610e2}{Maximum\+Number\+Of\+Grid\+Lines}} = 1\+\_\+000\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+bool \mbox{\hyperlink{class_scott_plot_1_1_grid_style_a1db0a6959413a6336a470c5d43a51e72}{Is\+Beneath\+Plottables}} = true\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_scott_plot_1_1_grid_style_a2f420b72303624c1e77f7a744b53ed9e}\index{ScottPlot.GridStyle@{ScottPlot.GridStyle}!Render@{Render}}
+\index{Render@{Render}!ScottPlot.GridStyle@{ScottPlot.GridStyle}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_grid_style_a2f420b72303624c1e77f7a744b53ed9e} 
+void Scott\+Plot.\+Grid\+Style.\+Render (\begin{DoxyParamCaption}\item[{Render\+Pack}]{rp}{, }\item[{\mbox{\hyperlink{interface_scott_plot_1_1_i_axis}{IAxis}}}]{axis}{, }\item[{\mbox{\hyperlink{class_i_enumerable}{IEnumerable}}$<$ \mbox{\hyperlink{struct_scott_plot_1_1_tick}{Tick}} $>$}]{ticks}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{class_scott_plot_1_1_grid_style_a1db0a6959413a6336a470c5d43a51e72}\index{ScottPlot.GridStyle@{ScottPlot.GridStyle}!IsBeneathPlottables@{IsBeneathPlottables}}
+\index{IsBeneathPlottables@{IsBeneathPlottables}!ScottPlot.GridStyle@{ScottPlot.GridStyle}}
+\doxysubsubsection{\texorpdfstring{IsBeneathPlottables}{IsBeneathPlottables}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_grid_style_a1db0a6959413a6336a470c5d43a51e72} 
+bool Scott\+Plot.\+Grid\+Style.\+Is\+Beneath\+Plottables = true\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_grid_style_a37bff32f301491c5fc6a2c086e2f72ee}\index{ScottPlot.GridStyle@{ScottPlot.GridStyle}!IsVisible@{IsVisible}}
+\index{IsVisible@{IsVisible}!ScottPlot.GridStyle@{ScottPlot.GridStyle}}
+\doxysubsubsection{\texorpdfstring{IsVisible}{IsVisible}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_grid_style_a37bff32f301491c5fc6a2c086e2f72ee} 
+bool Scott\+Plot.\+Grid\+Style.\+Is\+Visible = true\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_grid_style_ae22580610ebc3a62b8f1521953cb87a1}\index{ScottPlot.GridStyle@{ScottPlot.GridStyle}!MajorLineStyle@{MajorLineStyle}}
+\index{MajorLineStyle@{MajorLineStyle}!ScottPlot.GridStyle@{ScottPlot.GridStyle}}
+\doxysubsubsection{\texorpdfstring{MajorLineStyle}{MajorLineStyle}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_grid_style_ae22580610ebc3a62b8f1521953cb87a1} 
+\mbox{\hyperlink{class_scott_plot_1_1_line_style}{Line\+Style}} Scott\+Plot.\+Grid\+Style.\+Major\+Line\+Style\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{new}()}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ Width\ =\ 1,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ Color\ =\ Colors.Black.WithOpacity(.1),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ AntiAlias\ =\ \textcolor{keyword}{false},}
+\DoxyCodeLine{\ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_scott_plot_1_1_grid_style_acdf020738dc9c7422d12fc064ff610e2}\index{ScottPlot.GridStyle@{ScottPlot.GridStyle}!MaximumNumberOfGridLines@{MaximumNumberOfGridLines}}
+\index{MaximumNumberOfGridLines@{MaximumNumberOfGridLines}!ScottPlot.GridStyle@{ScottPlot.GridStyle}}
+\doxysubsubsection{\texorpdfstring{MaximumNumberOfGridLines}{MaximumNumberOfGridLines}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_grid_style_acdf020738dc9c7422d12fc064ff610e2} 
+int Scott\+Plot.\+Grid\+Style.\+Maximum\+Number\+Of\+Grid\+Lines = 1\+\_\+000\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_grid_style_a7f124b89d00a186f03e85da9124229ae}\index{ScottPlot.GridStyle@{ScottPlot.GridStyle}!MinorLineStyle@{MinorLineStyle}}
+\index{MinorLineStyle@{MinorLineStyle}!ScottPlot.GridStyle@{ScottPlot.GridStyle}}
+\doxysubsubsection{\texorpdfstring{MinorLineStyle}{MinorLineStyle}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_grid_style_a7f124b89d00a186f03e85da9124229ae} 
+\mbox{\hyperlink{class_scott_plot_1_1_line_style}{Line\+Style}} Scott\+Plot.\+Grid\+Style.\+Minor\+Line\+Style\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{new}()}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ Width\ =\ 0,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{class_scott_plot_1_1_grid_style_a37bff32f301491c5fc6a2c086e2f72ee}{IsVisible}}\ =\ \textcolor{keyword}{true},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ Color\ =\ Colors.Black.WithOpacity(.05),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ AntiAlias\ =\ \textcolor{keyword}{false},}
+\DoxyCodeLine{\ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Primitives/Grid\+Style.\+cs\end{DoxyCompactItemize}

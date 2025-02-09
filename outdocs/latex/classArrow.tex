@@ -1,0 +1,265 @@
+\hypertarget{classArrow}{}\doxysection{Arrow Class Reference}
+\label{classArrow}\index{Arrow@{Arrow}}
+Inheritance diagram for Arrow\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classArrow}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} \mbox{\hyperlink{classArrow_a4fe24c9eb8a1dbfbe27f025d05a06610}{Get\+Axis\+Limits}} ()
+\begin{DoxyCompactList}\small\item\em Return the 2D area (in coordinate space) occupied by the data contained in this plottable \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classArrow_aea23dd076b0ab728c21940cf65b96518}{Render}} (\mbox{\hyperlink{classRenderPack}{Render\+Pack}} rp)
+\begin{DoxyCompactList}\small\item\em Draw the data from this plottable into the data area defined in the \mbox{\hyperlink{classAxes}{Axes}}. By default the surface is already clipped to the data area, but this can be cleared inside the plottable. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structCoordinates}{Coordinates}} \mbox{\hyperlink{classArrow_aa31cede8413579f9f16c2e38e03549cc}{Base}} = \mbox{\hyperlink{structCoordinates_a49615b3291051896655c15edc575154f}{Coordinates.\+Origin}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{structCoordinates}{Coordinates}} \mbox{\hyperlink{classArrow_a2985aa3cbb0112171d27a6bf36c23815}{Tip}} = \mbox{\hyperlink{structCoordinates_a49615b3291051896655c15edc575154f}{Coordinates.\+Origin}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+bool \mbox{\hyperlink{classArrow_a795c7e54c63610cbfd9ed5fa6e825b48}{Is\+Visible}} = true\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{interfaceIAxes}{IAxes}} \mbox{\hyperlink{classArrow_aaba99248dcadb6650b94bfd7d6374462}{Axes}} = new \mbox{\hyperlink{classAxes}{Axes}}()\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$ \mbox{\hyperlink{classLegendItem}{Legend\+Item}} $>$ \mbox{\hyperlink{classArrow_a20943a1e5875e589452d6e0ff305b0c6}{Legend\+Items}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+string \mbox{\hyperlink{classArrow_a2cc3b96381af990560187a6da1df524b}{Legend\+Text}} = string.\+Empty\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{classArrowStyle}{Arrow\+Style}} \mbox{\hyperlink{classArrow_a08baa58de180d9d96bb7cb0633c68416}{Arrow\+Style}} = new() \{ \mbox{\hyperlink{classArrow_a6d5e30cca8aeac6c5a486c982408f378}{Line\+Width}} = 2, Line\+Color = \mbox{\hyperlink{structColors_a6a4f09e77ec6d0ef4c08348eb2e21714}{Colors.\+Black}} \}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{structColor}{Color}} \mbox{\hyperlink{classArrow_af41cefe5348636e89caf8bfe293efc72}{Arrow\+Line\+Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{classArrow_a4a2ceeaf37971e4182415e14973d0c9a}{Arrow\+Line\+Width}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{structColor}{Color}} \mbox{\hyperlink{classArrow_a68de40df10472b1f872f61448c581963}{Arrow\+Fill\+Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{classArrow_aa052617cb7f27e39143330a2f2acc6ab}{Arrow\+Minimum\+Length}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{classArrow_a1b4ea05418f96f8bbaec56f2cb654e83}{Arrow\+Maximum\+Length}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{classArrow_a626db3854e1ac0602aa03b2683bffa67}{Arrow\+Offset}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+Arrow\+Anchor \mbox{\hyperlink{classArrow_a5330181b6643306b8309c317c893e698}{Arrow\+Anchor}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{classArrow_a3dbd4f5616d43ec84da34ce9c1b51e17}{Arrow\+Width}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{classArrow_a90a531c5db10e0b9d00a5f5389cf45f7}{Arrowhead\+Axis\+Length}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{classArrow_a4fc7b69710daea40d81d4193906b97b2}{Arrowhead\+Length}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{classArrow_a75343e0b44a2c5a4c0e5f1700d82941c}{Arrowhead\+Width}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+string \mbox{\hyperlink{classArrow_a97db3c10e6ba2445a9056ef0e6c75008}{Label}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{structColor}{Color}} \mbox{\hyperlink{classArrow_a9f76d5cc22fcaf93a872f93386219d66}{Arrow\+Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{structColor}{Color}} \mbox{\hyperlink{classArrow_ac7bb4169f480a9bea6f37faecd50a403}{Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{classArrow_ad89c96ef4312e81218e27326e8969b9d}{Offset}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{classArrow_a6dcb4601507bb91e9eeac7beed7f59b2}{Minimum\+Length}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{classArrow_a6d5e30cca8aeac6c5a486c982408f378}{Line\+Width}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{classLineStyle}{Line\+Style}} \mbox{\hyperlink{classArrow_ac2f943a88232e34b3359d35766c9ad63}{Line\+Style}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{interfaceIArrowShape}{IArrow\+Shape}} \mbox{\hyperlink{classArrow_aaff3378da3e0ea08ef6dcb4aff0f9ab8}{Arrow\+Shape}} = new Arrow\+Shapes.\+Single()\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classArrow_a4fe24c9eb8a1dbfbe27f025d05a06610}\label{classArrow_a4fe24c9eb8a1dbfbe27f025d05a06610}} 
+\index{Arrow@{Arrow}!GetAxisLimits@{GetAxisLimits}}
+\index{GetAxisLimits@{GetAxisLimits}!Arrow@{Arrow}}
+\doxysubsubsection{\texorpdfstring{GetAxisLimits()}{GetAxisLimits()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} Arrow.\+Get\+Axis\+Limits (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Return the 2D area (in coordinate space) occupied by the data contained in this plottable 
+
+
+
+Implements \mbox{\hyperlink{interfaceIPlottable_ac98e2f5e56f9f938bbd081c87c7c6f50}{IPlottable}}.
+
+\mbox{\Hypertarget{classArrow_aea23dd076b0ab728c21940cf65b96518}\label{classArrow_aea23dd076b0ab728c21940cf65b96518}} 
+\index{Arrow@{Arrow}!Render@{Render}}
+\index{Render@{Render}!Arrow@{Arrow}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily virtual void Arrow.\+Render (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classRenderPack}{Render\+Pack}}}]{rp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Draw the data from this plottable into the data area defined in the \mbox{\hyperlink{classAxes}{Axes}}. By default the surface is already clipped to the data area, but this can be cleared inside the plottable. 
+
+
+
+Implements \mbox{\hyperlink{interfaceIPlottable_a201a1a236dc718eda93db143a5ade9f8}{IPlottable}}.
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{classArrow_a5330181b6643306b8309c317c893e698}\label{classArrow_a5330181b6643306b8309c317c893e698}} 
+\index{Arrow@{Arrow}!ArrowAnchor@{ArrowAnchor}}
+\index{ArrowAnchor@{ArrowAnchor}!Arrow@{Arrow}}
+\doxysubsubsection{\texorpdfstring{ArrowAnchor}{ArrowAnchor}}
+{\footnotesize\ttfamily Arrow\+Anchor Arrow.\+Arrow\+Anchor\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classArrow_a9f76d5cc22fcaf93a872f93386219d66}\label{classArrow_a9f76d5cc22fcaf93a872f93386219d66}} 
+\index{Arrow@{Arrow}!ArrowColor@{ArrowColor}}
+\index{ArrowColor@{ArrowColor}!Arrow@{Arrow}}
+\doxysubsubsection{\texorpdfstring{ArrowColor}{ArrowColor}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structColor}{Color}} Arrow.\+Arrow\+Color\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classArrow_a68de40df10472b1f872f61448c581963}\label{classArrow_a68de40df10472b1f872f61448c581963}} 
+\index{Arrow@{Arrow}!ArrowFillColor@{ArrowFillColor}}
+\index{ArrowFillColor@{ArrowFillColor}!Arrow@{Arrow}}
+\doxysubsubsection{\texorpdfstring{ArrowFillColor}{ArrowFillColor}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structColor}{Color}} Arrow.\+Arrow\+Fill\+Color\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classArrow_a90a531c5db10e0b9d00a5f5389cf45f7}\label{classArrow_a90a531c5db10e0b9d00a5f5389cf45f7}} 
+\index{Arrow@{Arrow}!ArrowheadAxisLength@{ArrowheadAxisLength}}
+\index{ArrowheadAxisLength@{ArrowheadAxisLength}!Arrow@{Arrow}}
+\doxysubsubsection{\texorpdfstring{ArrowheadAxisLength}{ArrowheadAxisLength}}
+{\footnotesize\ttfamily float Arrow.\+Arrowhead\+Axis\+Length\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classArrow_a4fc7b69710daea40d81d4193906b97b2}\label{classArrow_a4fc7b69710daea40d81d4193906b97b2}} 
+\index{Arrow@{Arrow}!ArrowheadLength@{ArrowheadLength}}
+\index{ArrowheadLength@{ArrowheadLength}!Arrow@{Arrow}}
+\doxysubsubsection{\texorpdfstring{ArrowheadLength}{ArrowheadLength}}
+{\footnotesize\ttfamily float Arrow.\+Arrowhead\+Length\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classArrow_a75343e0b44a2c5a4c0e5f1700d82941c}\label{classArrow_a75343e0b44a2c5a4c0e5f1700d82941c}} 
+\index{Arrow@{Arrow}!ArrowheadWidth@{ArrowheadWidth}}
+\index{ArrowheadWidth@{ArrowheadWidth}!Arrow@{Arrow}}
+\doxysubsubsection{\texorpdfstring{ArrowheadWidth}{ArrowheadWidth}}
+{\footnotesize\ttfamily float Arrow.\+Arrowhead\+Width\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classArrow_af41cefe5348636e89caf8bfe293efc72}\label{classArrow_af41cefe5348636e89caf8bfe293efc72}} 
+\index{Arrow@{Arrow}!ArrowLineColor@{ArrowLineColor}}
+\index{ArrowLineColor@{ArrowLineColor}!Arrow@{Arrow}}
+\doxysubsubsection{\texorpdfstring{ArrowLineColor}{ArrowLineColor}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structColor}{Color}} Arrow.\+Arrow\+Line\+Color\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classArrow_a4a2ceeaf37971e4182415e14973d0c9a}\label{classArrow_a4a2ceeaf37971e4182415e14973d0c9a}} 
+\index{Arrow@{Arrow}!ArrowLineWidth@{ArrowLineWidth}}
+\index{ArrowLineWidth@{ArrowLineWidth}!Arrow@{Arrow}}
+\doxysubsubsection{\texorpdfstring{ArrowLineWidth}{ArrowLineWidth}}
+{\footnotesize\ttfamily float Arrow.\+Arrow\+Line\+Width\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classArrow_a1b4ea05418f96f8bbaec56f2cb654e83}\label{classArrow_a1b4ea05418f96f8bbaec56f2cb654e83}} 
+\index{Arrow@{Arrow}!ArrowMaximumLength@{ArrowMaximumLength}}
+\index{ArrowMaximumLength@{ArrowMaximumLength}!Arrow@{Arrow}}
+\doxysubsubsection{\texorpdfstring{ArrowMaximumLength}{ArrowMaximumLength}}
+{\footnotesize\ttfamily float Arrow.\+Arrow\+Maximum\+Length\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classArrow_aa052617cb7f27e39143330a2f2acc6ab}\label{classArrow_aa052617cb7f27e39143330a2f2acc6ab}} 
+\index{Arrow@{Arrow}!ArrowMinimumLength@{ArrowMinimumLength}}
+\index{ArrowMinimumLength@{ArrowMinimumLength}!Arrow@{Arrow}}
+\doxysubsubsection{\texorpdfstring{ArrowMinimumLength}{ArrowMinimumLength}}
+{\footnotesize\ttfamily float Arrow.\+Arrow\+Minimum\+Length\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classArrow_a626db3854e1ac0602aa03b2683bffa67}\label{classArrow_a626db3854e1ac0602aa03b2683bffa67}} 
+\index{Arrow@{Arrow}!ArrowOffset@{ArrowOffset}}
+\index{ArrowOffset@{ArrowOffset}!Arrow@{Arrow}}
+\doxysubsubsection{\texorpdfstring{ArrowOffset}{ArrowOffset}}
+{\footnotesize\ttfamily float Arrow.\+Arrow\+Offset\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classArrow_aaff3378da3e0ea08ef6dcb4aff0f9ab8}\label{classArrow_aaff3378da3e0ea08ef6dcb4aff0f9ab8}} 
+\index{Arrow@{Arrow}!ArrowShape@{ArrowShape}}
+\index{ArrowShape@{ArrowShape}!Arrow@{Arrow}}
+\doxysubsubsection{\texorpdfstring{ArrowShape}{ArrowShape}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceIArrowShape}{IArrow\+Shape}} Arrow.\+Arrow\+Shape = new Arrow\+Shapes.\+Single()\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classArrow_a08baa58de180d9d96bb7cb0633c68416}\label{classArrow_a08baa58de180d9d96bb7cb0633c68416}} 
+\index{Arrow@{Arrow}!ArrowStyle@{ArrowStyle}}
+\index{ArrowStyle@{ArrowStyle}!Arrow@{Arrow}}
+\doxysubsubsection{\texorpdfstring{ArrowStyle}{ArrowStyle}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classArrowStyle}{Arrow\+Style}} Arrow.\+Arrow\+Style = new() \{ \mbox{\hyperlink{classArrow_a6d5e30cca8aeac6c5a486c982408f378}{Line\+Width}} = 2, Line\+Color = \mbox{\hyperlink{structColors_a6a4f09e77ec6d0ef4c08348eb2e21714}{Colors.\+Black}} \}\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classArrow_a3dbd4f5616d43ec84da34ce9c1b51e17}\label{classArrow_a3dbd4f5616d43ec84da34ce9c1b51e17}} 
+\index{Arrow@{Arrow}!ArrowWidth@{ArrowWidth}}
+\index{ArrowWidth@{ArrowWidth}!Arrow@{Arrow}}
+\doxysubsubsection{\texorpdfstring{ArrowWidth}{ArrowWidth}}
+{\footnotesize\ttfamily float Arrow.\+Arrow\+Width\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classArrow_aaba99248dcadb6650b94bfd7d6374462}\label{classArrow_aaba99248dcadb6650b94bfd7d6374462}} 
+\index{Arrow@{Arrow}!Axes@{Axes}}
+\index{Axes@{Axes}!Arrow@{Arrow}}
+\doxysubsubsection{\texorpdfstring{Axes}{Axes}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceIAxes}{IAxes}} Arrow.\+Axes = new \mbox{\hyperlink{classAxes}{Axes}}()\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classArrow_aa31cede8413579f9f16c2e38e03549cc}\label{classArrow_aa31cede8413579f9f16c2e38e03549cc}} 
+\index{Arrow@{Arrow}!Base@{Base}}
+\index{Base@{Base}!Arrow@{Arrow}}
+\doxysubsubsection{\texorpdfstring{Base}{Base}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structCoordinates}{Coordinates}} Arrow.\+Base = \mbox{\hyperlink{structCoordinates_a49615b3291051896655c15edc575154f}{Coordinates.\+Origin}}\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classArrow_ac7bb4169f480a9bea6f37faecd50a403}\label{classArrow_ac7bb4169f480a9bea6f37faecd50a403}} 
+\index{Arrow@{Arrow}!Color@{Color}}
+\index{Color@{Color}!Arrow@{Arrow}}
+\doxysubsubsection{\texorpdfstring{Color}{Color}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structColor}{Color}} Arrow.\+Color\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classArrow_a795c7e54c63610cbfd9ed5fa6e825b48}\label{classArrow_a795c7e54c63610cbfd9ed5fa6e825b48}} 
+\index{Arrow@{Arrow}!IsVisible@{IsVisible}}
+\index{IsVisible@{IsVisible}!Arrow@{Arrow}}
+\doxysubsubsection{\texorpdfstring{IsVisible}{IsVisible}}
+{\footnotesize\ttfamily bool Arrow.\+Is\+Visible = true\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classArrow_a97db3c10e6ba2445a9056ef0e6c75008}\label{classArrow_a97db3c10e6ba2445a9056ef0e6c75008}} 
+\index{Arrow@{Arrow}!Label@{Label}}
+\index{Label@{Label}!Arrow@{Arrow}}
+\doxysubsubsection{\texorpdfstring{Label}{Label}}
+{\footnotesize\ttfamily string Arrow.\+Label\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classArrow_a20943a1e5875e589452d6e0ff305b0c6}\label{classArrow_a20943a1e5875e589452d6e0ff305b0c6}} 
+\index{Arrow@{Arrow}!LegendItems@{LegendItems}}
+\index{LegendItems@{LegendItems}!Arrow@{Arrow}}
+\doxysubsubsection{\texorpdfstring{LegendItems}{LegendItems}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$\mbox{\hyperlink{classLegendItem}{Legend\+Item}}$>$ Arrow.\+Legend\+Items\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{classArrow_a2cc3b96381af990560187a6da1df524b}\label{classArrow_a2cc3b96381af990560187a6da1df524b}} 
+\index{Arrow@{Arrow}!LegendText@{LegendText}}
+\index{LegendText@{LegendText}!Arrow@{Arrow}}
+\doxysubsubsection{\texorpdfstring{LegendText}{LegendText}}
+{\footnotesize\ttfamily string Arrow.\+Legend\+Text = string.\+Empty\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classArrow_ac2f943a88232e34b3359d35766c9ad63}\label{classArrow_ac2f943a88232e34b3359d35766c9ad63}} 
+\index{Arrow@{Arrow}!LineStyle@{LineStyle}}
+\index{LineStyle@{LineStyle}!Arrow@{Arrow}}
+\doxysubsubsection{\texorpdfstring{LineStyle}{LineStyle}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classLineStyle}{Line\+Style}} Arrow.\+Line\+Style\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classArrow_a6d5e30cca8aeac6c5a486c982408f378}\label{classArrow_a6d5e30cca8aeac6c5a486c982408f378}} 
+\index{Arrow@{Arrow}!LineWidth@{LineWidth}}
+\index{LineWidth@{LineWidth}!Arrow@{Arrow}}
+\doxysubsubsection{\texorpdfstring{LineWidth}{LineWidth}}
+{\footnotesize\ttfamily float Arrow.\+Line\+Width\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classArrow_a6dcb4601507bb91e9eeac7beed7f59b2}\label{classArrow_a6dcb4601507bb91e9eeac7beed7f59b2}} 
+\index{Arrow@{Arrow}!MinimumLength@{MinimumLength}}
+\index{MinimumLength@{MinimumLength}!Arrow@{Arrow}}
+\doxysubsubsection{\texorpdfstring{MinimumLength}{MinimumLength}}
+{\footnotesize\ttfamily float Arrow.\+Minimum\+Length\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classArrow_ad89c96ef4312e81218e27326e8969b9d}\label{classArrow_ad89c96ef4312e81218e27326e8969b9d}} 
+\index{Arrow@{Arrow}!Offset@{Offset}}
+\index{Offset@{Offset}!Arrow@{Arrow}}
+\doxysubsubsection{\texorpdfstring{Offset}{Offset}}
+{\footnotesize\ttfamily float Arrow.\+Offset\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classArrow_a2985aa3cbb0112171d27a6bf36c23815}\label{classArrow_a2985aa3cbb0112171d27a6bf36c23815}} 
+\index{Arrow@{Arrow}!Tip@{Tip}}
+\index{Tip@{Tip}!Arrow@{Arrow}}
+\doxysubsubsection{\texorpdfstring{Tip}{Tip}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structCoordinates}{Coordinates}} Arrow.\+Tip = \mbox{\hyperlink{structCoordinates_a49615b3291051896655c15edc575154f}{Coordinates.\+Origin}}\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Plottables/Arrow.\+cs\end{DoxyCompactItemize}

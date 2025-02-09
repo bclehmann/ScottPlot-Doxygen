@@ -1,0 +1,107 @@
+\doxysection{Scott\+Plot.\+Tick\+Generators.\+Time\+Units.\+Year Class Reference}
+\hypertarget{class_scott_plot_1_1_tick_generators_1_1_time_units_1_1_year}{}\label{class_scott_plot_1_1_tick_generators_1_1_time_units_1_1_year}\index{ScottPlot.TickGenerators.TimeUnits.Year@{ScottPlot.TickGenerators.TimeUnits.Year}}
+Inheritance diagram for Scott\+Plot.\+Tick\+Generators.\+Time\+Units.\+Year\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_scott_plot_1_1_tick_generators_1_1_time_units_1_1_year}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Date\+Time \mbox{\hyperlink{class_scott_plot_1_1_tick_generators_1_1_time_units_1_1_year_aa6826468f4a271b635f550631570b5f8}{Snap}} (Date\+Time dt)
+\begin{DoxyCompactList}\small\item\em Return a given date "{}snapped"{} back to the nearest nice tick position. Use this to find a good tick position for a given Date\+Time. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_scott_plot_1_1_tick_generators_1_1_time_units_1_1_year_a9f78a6e275ffea41a0adae47209831f2}{Get\+Date\+Time\+Format\+String}} ()
+\begin{DoxyCompactList}\small\item\em Returns the format string used to display tick labels of this time unit. \href{https://learn.microsoft.com/en-us/dotnet/api/system.datetime.tostring}{\texttt{ https\+://learn.\+microsoft.\+com/en-\/us/dotnet/api/system.\+datetime.\+tostring}}. \end{DoxyCompactList}\item 
+Date\+Time \mbox{\hyperlink{class_scott_plot_1_1_tick_generators_1_1_time_units_1_1_year_a7c76387c49e3335d413d3ac9417b8f32}{Next}} (Date\+Time date\+Time, int increment=1)
+\begin{DoxyCompactList}\small\item\em Return the Date\+Time N units relative to this one. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_scott_plot_1_1_tick_generators_1_1_i_time_unit}{Scott\+Plot.\+Tick\+Generators.\+ITime\+Unit}}}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+IRead\+Only\+List$<$ int $>$ \mbox{\hyperlink{class_scott_plot_1_1_tick_generators_1_1_time_units_1_1_year_a256f203d4ff493889592f3cfe9a1d5dc}{Divisors}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em An array of integers that serve as good divisors to subdivide this time unit. \end{DoxyCompactList}\item 
+Time\+Span \mbox{\hyperlink{class_scott_plot_1_1_tick_generators_1_1_time_units_1_1_year_a6191128fe7db2316770a73f4ae657240}{Min\+Size}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Minimum span this time unit can represent. To represent spans smaller than this, try the next smaller unit. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{interface_scott_plot_1_1_tick_generators_1_1_i_time_unit}{Scott\+Plot.\+Tick\+Generators.\+ITime\+Unit}}}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_scott_plot_1_1_tick_generators_1_1_time_units_1_1_year_a9f78a6e275ffea41a0adae47209831f2}\index{ScottPlot.TickGenerators.TimeUnits.Year@{ScottPlot.TickGenerators.TimeUnits.Year}!GetDateTimeFormatString@{GetDateTimeFormatString}}
+\index{GetDateTimeFormatString@{GetDateTimeFormatString}!ScottPlot.TickGenerators.TimeUnits.Year@{ScottPlot.TickGenerators.TimeUnits.Year}}
+\doxysubsubsection{\texorpdfstring{GetDateTimeFormatString()}{GetDateTimeFormatString()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_tick_generators_1_1_time_units_1_1_year_a9f78a6e275ffea41a0adae47209831f2} 
+string Scott\+Plot.\+Tick\+Generators.\+Time\+Units.\+Year.\+Get\+Date\+Time\+Format\+String (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the format string used to display tick labels of this time unit. \href{https://learn.microsoft.com/en-us/dotnet/api/system.datetime.tostring}{\texttt{ https\+://learn.\+microsoft.\+com/en-\/us/dotnet/api/system.\+datetime.\+tostring}}. 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_tick_generators_1_1_i_time_unit_a611fef45d432851c6d12eeb90ed50d0b}{Scott\+Plot.\+Tick\+Generators.\+ITime\+Unit}}.
+
+\Hypertarget{class_scott_plot_1_1_tick_generators_1_1_time_units_1_1_year_a7c76387c49e3335d413d3ac9417b8f32}\index{ScottPlot.TickGenerators.TimeUnits.Year@{ScottPlot.TickGenerators.TimeUnits.Year}!Next@{Next}}
+\index{Next@{Next}!ScottPlot.TickGenerators.TimeUnits.Year@{ScottPlot.TickGenerators.TimeUnits.Year}}
+\doxysubsubsection{\texorpdfstring{Next()}{Next()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_tick_generators_1_1_time_units_1_1_year_a7c76387c49e3335d413d3ac9417b8f32} 
+Date\+Time Scott\+Plot.\+Tick\+Generators.\+Time\+Units.\+Year.\+Next (\begin{DoxyParamCaption}\item[{Date\+Time}]{date\+Time}{, }\item[{int}]{increment}{ = {\ttfamily 1}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return the Date\+Time N units relative to this one. 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_tick_generators_1_1_i_time_unit_a188992aa82e24d6521dcd5110dbd82ef}{Scott\+Plot.\+Tick\+Generators.\+ITime\+Unit}}.
+
+\Hypertarget{class_scott_plot_1_1_tick_generators_1_1_time_units_1_1_year_aa6826468f4a271b635f550631570b5f8}\index{ScottPlot.TickGenerators.TimeUnits.Year@{ScottPlot.TickGenerators.TimeUnits.Year}!Snap@{Snap}}
+\index{Snap@{Snap}!ScottPlot.TickGenerators.TimeUnits.Year@{ScottPlot.TickGenerators.TimeUnits.Year}}
+\doxysubsubsection{\texorpdfstring{Snap()}{Snap()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_tick_generators_1_1_time_units_1_1_year_aa6826468f4a271b635f550631570b5f8} 
+Date\+Time Scott\+Plot.\+Tick\+Generators.\+Time\+Units.\+Year.\+Snap (\begin{DoxyParamCaption}\item[{Date\+Time}]{date\+Time}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return a given date "{}snapped"{} back to the nearest nice tick position. Use this to find a good tick position for a given Date\+Time. 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_tick_generators_1_1_i_time_unit_ae5f4159b5b27f89e2ed695964b8dee94}{Scott\+Plot.\+Tick\+Generators.\+ITime\+Unit}}.
+
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{class_scott_plot_1_1_tick_generators_1_1_time_units_1_1_year_a256f203d4ff493889592f3cfe9a1d5dc}\index{ScottPlot.TickGenerators.TimeUnits.Year@{ScottPlot.TickGenerators.TimeUnits.Year}!Divisors@{Divisors}}
+\index{Divisors@{Divisors}!ScottPlot.TickGenerators.TimeUnits.Year@{ScottPlot.TickGenerators.TimeUnits.Year}}
+\doxysubsubsection{\texorpdfstring{Divisors}{Divisors}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_tick_generators_1_1_time_units_1_1_year_a256f203d4ff493889592f3cfe9a1d5dc} 
+IRead\+Only\+List$<$int$>$ Scott\+Plot.\+Tick\+Generators.\+Time\+Units.\+Year.\+Divisors\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+An array of integers that serve as good divisors to subdivide this time unit. 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_tick_generators_1_1_i_time_unit_a994ceae8a4910c48015bf4a744780c91}{Scott\+Plot.\+Tick\+Generators.\+ITime\+Unit}}.
+
+\Hypertarget{class_scott_plot_1_1_tick_generators_1_1_time_units_1_1_year_a6191128fe7db2316770a73f4ae657240}\index{ScottPlot.TickGenerators.TimeUnits.Year@{ScottPlot.TickGenerators.TimeUnits.Year}!MinSize@{MinSize}}
+\index{MinSize@{MinSize}!ScottPlot.TickGenerators.TimeUnits.Year@{ScottPlot.TickGenerators.TimeUnits.Year}}
+\doxysubsubsection{\texorpdfstring{MinSize}{MinSize}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_tick_generators_1_1_time_units_1_1_year_a6191128fe7db2316770a73f4ae657240} 
+Time\+Span Scott\+Plot.\+Tick\+Generators.\+Time\+Units.\+Year.\+Min\+Size\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Minimum span this time unit can represent. To represent spans smaller than this, try the next smaller unit. 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_tick_generators_1_1_i_time_unit_a3d07fc9f990862efe5eec6342479e182}{Scott\+Plot.\+Tick\+Generators.\+ITime\+Unit}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Tick\+Generators/\+Time\+Units/Year.\+cs\end{DoxyCompactItemize}

@@ -1,0 +1,229 @@
+\doxysection{Scott\+Plot.\+Plottables.\+Scatter\+GL Class Reference}
+\hypertarget{class_scott_plot_1_1_plottables_1_1_scatter_g_l}{}\label{class_scott_plot_1_1_plottables_1_1_scatter_g_l}\index{ScottPlot.Plottables.ScatterGL@{ScottPlot.Plottables.ScatterGL}}
+
+
+This plot type uses an \doxylink{namespace_scott_plot_1_1_open_g_l}{Open\+GL} shader for rendering.  
+
+
+Inheritance diagram for Scott\+Plot.\+Plottables.\+Scatter\+GL\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_scott_plot_1_1_plottables_1_1_scatter_g_l}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_scatter_g_l_a6232b77bffb3b9bef718bd1f491131a7}{Scatter\+GL}} (\mbox{\hyperlink{interface_scott_plot_1_1_i_scatter_source}{IScatter\+Source}} data, \mbox{\hyperlink{interface_scott_plot_1_1_i_plot_control}{IPlot\+Control}} control)
+\item 
+new void \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_scatter_g_l_ad0aa1aabefe8e973dcebd5c4bce4030b}{Render}} (Render\+Pack rp)
+\begin{DoxyCompactList}\small\item\em Draw the data from this plottable into the data area defined in the \doxylink{class_scott_plot_1_1_axes}{Axes}. By default the surface is already clipped to the data area, but this can be cleared inside the plottable. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_scatter_g_l_a0b938d494d7719fb586d7e43ec48de04}{Render}} (SKSurface surface)
+\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_scatter_g_l_a9cafa2520c7ea78b69f8440d0416845e}{GLFinish}} ()
+\begin{DoxyCompactList}\small\item\em Used to manually synchronize rendering. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable_g_l}{Scott\+Plot.\+IPlottable\+GL}}}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable}{Scott\+Plot.\+IPlottable}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}} \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable_a2e455cf76f9e8bc3187900b1a90487c3}{Get\+Axis\+Limits}} ()
+\begin{DoxyCompactList}\small\item\em Return the 2D area (in coordinate space) occupied by the data contained in this plottable. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_scatter_g_l_a7b035098a3db8bc3c884f16ccc97d13d}{Initialize\+GL}} ()
+\item 
+Matrix4d \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_scatter_g_l_af9bbf9e7ff91f5049801c0929f4f6ae0}{Calc\+Transform}} ()
+\item 
+virtual void \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_scatter_g_l_ab32cb8e93be71cd966d6b1b2b10a5ec3}{Render\+With\+Open\+GL}} (SKSurface surface, GRContext context)
+\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_scatter_g_l_a6651d43d64867950bce9c6dc634482dc}{Render\+Markers}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_scatter_g_l_aafb547a94130f5f08af4e4dfdeb72587}{Vertex\+Buffer\+Object}}
+\item 
+int \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_scatter_g_l_ad0bff78b00ff3af109aea090478f0542}{Vertex\+Array\+Object}}
+\item 
+\mbox{\hyperlink{interface_scott_plot_1_1_open_g_l_1_1_g_l_programs_1_1_i_lines_draw_program}{ILines\+Draw\+Program}}? \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_scatter_g_l_a5ec31583bf95623a3f32a70cce92ec8e}{Lines\+Program}}
+\item 
+\mbox{\hyperlink{interface_scott_plot_1_1_open_g_l_1_1_g_l_programs_1_1_i_markers_draw_program}{IMarkers\+Draw\+Program}}? \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_scatter_g_l_ad981228a2c651215846afcf9aa8c4c42}{Marker\+Program}}
+\item 
+double\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_scatter_g_l_a227257b18bc143589a8d9dd39ea21a1d}{Vertices}}
+\item 
+readonly int \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_scatter_g_l_accec38f167ef92ed811c3597607f5fe2}{Vertices\+Count}}
+\item 
+bool \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_scatter_g_l_a060c7b705f67d98dbf0c0f74d5d8d48d}{GLHas\+Been\+Initialized}} = false
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_scott_plot_1_1_i_plot_control}{IPlot\+Control}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_scatter_g_l_a539cc077da34b20328914ac6799293c4}{Plot\+Control}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The control used to display this plottable. It is used to access the GRContext at render time. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_scott_plot_1_1_open_g_l_a2bc9d91a96127301367863989863aeaf}{GLFallback\+Render\+Strategy}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_scatter_g_l_ac64c4f28a39fbbf6ff52555121eee0d3}{Fallback}} = GLFallback\+Render\+Strategy.\+Software\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable_g_l}{Scott\+Plot.\+IPlottable\+GL}}}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable}{Scott\+Plot.\+IPlottable}}}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable_abbe75ba55a332d695313ccb5dc780923}{Is\+Visible}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Toggles whether this plottable is shown and contributes to the automatic axis limit detection. The calling method will check this variable (it does not need to be checked inside the Render method). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{interface_scott_plot_1_1_i_axes}{IAxes}} \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable_aa68bc5153a673a7cd4a68f93da377d0a}{Axes}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em This object performs coordinate/pixel translation at render time based on the latest data area. It stores the axes to use for this plottable and also the data area (in pixels) updated just before each render. If this object is null it will be constructed using the default X and Y axes at render time. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_enumerable}{IEnumerable}}$<$ \mbox{\hyperlink{class_scott_plot_1_1_legend_item}{Legend\+Item}} $>$ \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable_a4565f96a253f832bd9aa8033c99eff75}{Legend\+Items}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Items which will appear in the legend. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This plot type uses an \doxylink{namespace_scott_plot_1_1_open_g_l}{Open\+GL} shader for rendering. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_scatter_g_l_a6232b77bffb3b9bef718bd1f491131a7}\index{ScottPlot.Plottables.ScatterGL@{ScottPlot.Plottables.ScatterGL}!ScatterGL@{ScatterGL}}
+\index{ScatterGL@{ScatterGL}!ScottPlot.Plottables.ScatterGL@{ScottPlot.Plottables.ScatterGL}}
+\doxysubsubsection{\texorpdfstring{ScatterGL()}{ScatterGL()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_scatter_g_l_a6232b77bffb3b9bef718bd1f491131a7} 
+Scott\+Plot.\+Plottables.\+Scatter\+GL.\+Scatter\+GL (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_scott_plot_1_1_i_scatter_source}{IScatter\+Source}}}]{data}{, }\item[{\mbox{\hyperlink{interface_scott_plot_1_1_i_plot_control}{IPlot\+Control}}}]{control}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_scatter_g_l_af9bbf9e7ff91f5049801c0929f4f6ae0}\index{ScottPlot.Plottables.ScatterGL@{ScottPlot.Plottables.ScatterGL}!CalcTransform@{CalcTransform}}
+\index{CalcTransform@{CalcTransform}!ScottPlot.Plottables.ScatterGL@{ScottPlot.Plottables.ScatterGL}}
+\doxysubsubsection{\texorpdfstring{CalcTransform()}{CalcTransform()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_scatter_g_l_af9bbf9e7ff91f5049801c0929f4f6ae0} 
+Matrix4d Scott\+Plot.\+Plottables.\+Scatter\+GL.\+Calc\+Transform (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_scatter_g_l_a9cafa2520c7ea78b69f8440d0416845e}\index{ScottPlot.Plottables.ScatterGL@{ScottPlot.Plottables.ScatterGL}!GLFinish@{GLFinish}}
+\index{GLFinish@{GLFinish}!ScottPlot.Plottables.ScatterGL@{ScottPlot.Plottables.ScatterGL}}
+\doxysubsubsection{\texorpdfstring{GLFinish()}{GLFinish()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_scatter_g_l_a9cafa2520c7ea78b69f8440d0416845e} 
+void Scott\+Plot.\+Plottables.\+Scatter\+GL.\+GLFinish (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Used to manually synchronize rendering. 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable_g_l_aeaf982ac196a96b6ea7b537b37404026}{Scott\+Plot.\+IPlottable\+GL}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_scatter_g_l_a7b035098a3db8bc3c884f16ccc97d13d}\index{ScottPlot.Plottables.ScatterGL@{ScottPlot.Plottables.ScatterGL}!InitializeGL@{InitializeGL}}
+\index{InitializeGL@{InitializeGL}!ScottPlot.Plottables.ScatterGL@{ScottPlot.Plottables.ScatterGL}}
+\doxysubsubsection{\texorpdfstring{InitializeGL()}{InitializeGL()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_scatter_g_l_a7b035098a3db8bc3c884f16ccc97d13d} 
+virtual void Scott\+Plot.\+Plottables.\+Scatter\+GL.\+Initialize\+GL (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_scatter_g_l_custom_aabd0353fa3f7f666cd1a30cb66cc7c30}{Scott\+Plot.\+Plottables.\+Scatter\+GLCustom}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_scatter_g_l_ad0aa1aabefe8e973dcebd5c4bce4030b}\index{ScottPlot.Plottables.ScatterGL@{ScottPlot.Plottables.ScatterGL}!Render@{Render}}
+\index{Render@{Render}!ScottPlot.Plottables.ScatterGL@{ScottPlot.Plottables.ScatterGL}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_scatter_g_l_ad0aa1aabefe8e973dcebd5c4bce4030b} 
+new void Scott\+Plot.\+Plottables.\+Scatter\+GL.\+Render (\begin{DoxyParamCaption}\item[{Render\+Pack}]{rp}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Draw the data from this plottable into the data area defined in the \doxylink{class_scott_plot_1_1_axes}{Axes}. By default the surface is already clipped to the data area, but this can be cleared inside the plottable. 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable_a11d2487f1d7628e019a09748d876c289}{Scott\+Plot.\+IPlottable}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_scatter_g_l_a0b938d494d7719fb586d7e43ec48de04}\index{ScottPlot.Plottables.ScatterGL@{ScottPlot.Plottables.ScatterGL}!Render@{Render}}
+\index{Render@{Render}!ScottPlot.Plottables.ScatterGL@{ScottPlot.Plottables.ScatterGL}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_scatter_g_l_a0b938d494d7719fb586d7e43ec48de04} 
+void Scott\+Plot.\+Plottables.\+Scatter\+GL.\+Render (\begin{DoxyParamCaption}\item[{SKSurface}]{surface}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_scatter_g_l_a6651d43d64867950bce9c6dc634482dc}\index{ScottPlot.Plottables.ScatterGL@{ScottPlot.Plottables.ScatterGL}!RenderMarkers@{RenderMarkers}}
+\index{RenderMarkers@{RenderMarkers}!ScottPlot.Plottables.ScatterGL@{ScottPlot.Plottables.ScatterGL}}
+\doxysubsubsection{\texorpdfstring{RenderMarkers()}{RenderMarkers()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_scatter_g_l_a6651d43d64867950bce9c6dc634482dc} 
+void Scott\+Plot.\+Plottables.\+Scatter\+GL.\+Render\+Markers (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_scatter_g_l_ab32cb8e93be71cd966d6b1b2b10a5ec3}\index{ScottPlot.Plottables.ScatterGL@{ScottPlot.Plottables.ScatterGL}!RenderWithOpenGL@{RenderWithOpenGL}}
+\index{RenderWithOpenGL@{RenderWithOpenGL}!ScottPlot.Plottables.ScatterGL@{ScottPlot.Plottables.ScatterGL}}
+\doxysubsubsection{\texorpdfstring{RenderWithOpenGL()}{RenderWithOpenGL()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_scatter_g_l_ab32cb8e93be71cd966d6b1b2b10a5ec3} 
+virtual void Scott\+Plot.\+Plottables.\+Scatter\+GL.\+Render\+With\+Open\+GL (\begin{DoxyParamCaption}\item[{SKSurface}]{surface}{, }\item[{GRContext}]{context}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_scatter_g_l_custom_afac89b9b696aae0954a7ed5b64af8465}{Scott\+Plot.\+Plottables.\+Scatter\+GLCustom}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_scatter_g_l_a060c7b705f67d98dbf0c0f74d5d8d48d}\index{ScottPlot.Plottables.ScatterGL@{ScottPlot.Plottables.ScatterGL}!GLHasBeenInitialized@{GLHasBeenInitialized}}
+\index{GLHasBeenInitialized@{GLHasBeenInitialized}!ScottPlot.Plottables.ScatterGL@{ScottPlot.Plottables.ScatterGL}}
+\doxysubsubsection{\texorpdfstring{GLHasBeenInitialized}{GLHasBeenInitialized}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_scatter_g_l_a060c7b705f67d98dbf0c0f74d5d8d48d} 
+bool Scott\+Plot.\+Plottables.\+Scatter\+GL.\+GLHas\+Been\+Initialized = false\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_scatter_g_l_a5ec31583bf95623a3f32a70cce92ec8e}\index{ScottPlot.Plottables.ScatterGL@{ScottPlot.Plottables.ScatterGL}!LinesProgram@{LinesProgram}}
+\index{LinesProgram@{LinesProgram}!ScottPlot.Plottables.ScatterGL@{ScottPlot.Plottables.ScatterGL}}
+\doxysubsubsection{\texorpdfstring{LinesProgram}{LinesProgram}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_scatter_g_l_a5ec31583bf95623a3f32a70cce92ec8e} 
+\mbox{\hyperlink{interface_scott_plot_1_1_open_g_l_1_1_g_l_programs_1_1_i_lines_draw_program}{ILines\+Draw\+Program}}? Scott\+Plot.\+Plottables.\+Scatter\+GL.\+Lines\+Program\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_scatter_g_l_ad981228a2c651215846afcf9aa8c4c42}\index{ScottPlot.Plottables.ScatterGL@{ScottPlot.Plottables.ScatterGL}!MarkerProgram@{MarkerProgram}}
+\index{MarkerProgram@{MarkerProgram}!ScottPlot.Plottables.ScatterGL@{ScottPlot.Plottables.ScatterGL}}
+\doxysubsubsection{\texorpdfstring{MarkerProgram}{MarkerProgram}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_scatter_g_l_ad981228a2c651215846afcf9aa8c4c42} 
+\mbox{\hyperlink{interface_scott_plot_1_1_open_g_l_1_1_g_l_programs_1_1_i_markers_draw_program}{IMarkers\+Draw\+Program}}? Scott\+Plot.\+Plottables.\+Scatter\+GL.\+Marker\+Program\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_scatter_g_l_ad0bff78b00ff3af109aea090478f0542}\index{ScottPlot.Plottables.ScatterGL@{ScottPlot.Plottables.ScatterGL}!VertexArrayObject@{VertexArrayObject}}
+\index{VertexArrayObject@{VertexArrayObject}!ScottPlot.Plottables.ScatterGL@{ScottPlot.Plottables.ScatterGL}}
+\doxysubsubsection{\texorpdfstring{VertexArrayObject}{VertexArrayObject}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_scatter_g_l_ad0bff78b00ff3af109aea090478f0542} 
+int Scott\+Plot.\+Plottables.\+Scatter\+GL.\+Vertex\+Array\+Object\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_scatter_g_l_aafb547a94130f5f08af4e4dfdeb72587}\index{ScottPlot.Plottables.ScatterGL@{ScottPlot.Plottables.ScatterGL}!VertexBufferObject@{VertexBufferObject}}
+\index{VertexBufferObject@{VertexBufferObject}!ScottPlot.Plottables.ScatterGL@{ScottPlot.Plottables.ScatterGL}}
+\doxysubsubsection{\texorpdfstring{VertexBufferObject}{VertexBufferObject}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_scatter_g_l_aafb547a94130f5f08af4e4dfdeb72587} 
+int Scott\+Plot.\+Plottables.\+Scatter\+GL.\+Vertex\+Buffer\+Object\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_scatter_g_l_a227257b18bc143589a8d9dd39ea21a1d}\index{ScottPlot.Plottables.ScatterGL@{ScottPlot.Plottables.ScatterGL}!Vertices@{Vertices}}
+\index{Vertices@{Vertices}!ScottPlot.Plottables.ScatterGL@{ScottPlot.Plottables.ScatterGL}}
+\doxysubsubsection{\texorpdfstring{Vertices}{Vertices}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_scatter_g_l_a227257b18bc143589a8d9dd39ea21a1d} 
+double \mbox{[}$\,$\mbox{]} Scott\+Plot.\+Plottables.\+Scatter\+GL.\+Vertices\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_scatter_g_l_accec38f167ef92ed811c3597607f5fe2}\index{ScottPlot.Plottables.ScatterGL@{ScottPlot.Plottables.ScatterGL}!VerticesCount@{VerticesCount}}
+\index{VerticesCount@{VerticesCount}!ScottPlot.Plottables.ScatterGL@{ScottPlot.Plottables.ScatterGL}}
+\doxysubsubsection{\texorpdfstring{VerticesCount}{VerticesCount}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_scatter_g_l_accec38f167ef92ed811c3597607f5fe2} 
+readonly int Scott\+Plot.\+Plottables.\+Scatter\+GL.\+Vertices\+Count\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_scatter_g_l_ac64c4f28a39fbbf6ff52555121eee0d3}\index{ScottPlot.Plottables.ScatterGL@{ScottPlot.Plottables.ScatterGL}!Fallback@{Fallback}}
+\index{Fallback@{Fallback}!ScottPlot.Plottables.ScatterGL@{ScottPlot.Plottables.ScatterGL}}
+\doxysubsubsection{\texorpdfstring{Fallback}{Fallback}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_scatter_g_l_ac64c4f28a39fbbf6ff52555121eee0d3} 
+\mbox{\hyperlink{namespace_scott_plot_1_1_open_g_l_a2bc9d91a96127301367863989863aeaf}{GLFallback\+Render\+Strategy}} Scott\+Plot.\+Plottables.\+Scatter\+GL.\+Fallback = GLFallback\+Render\+Strategy.\+Software\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_scatter_g_l_a539cc077da34b20328914ac6799293c4}\index{ScottPlot.Plottables.ScatterGL@{ScottPlot.Plottables.ScatterGL}!PlotControl@{PlotControl}}
+\index{PlotControl@{PlotControl}!ScottPlot.Plottables.ScatterGL@{ScottPlot.Plottables.ScatterGL}}
+\doxysubsubsection{\texorpdfstring{PlotControl}{PlotControl}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_scatter_g_l_a539cc077da34b20328914ac6799293c4} 
+\mbox{\hyperlink{interface_scott_plot_1_1_i_plot_control}{IPlot\+Control}} Scott\+Plot.\+Plottables.\+Scatter\+GL.\+Plot\+Control\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The control used to display this plottable. It is used to access the GRContext at render time. 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable_g_l_a3f18f37b969da7e2a44723845b429e74}{Scott\+Plot.\+IPlottable\+GL}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5 Controls/\+Scott\+Plot.\+Open\+GL/\+Plottables/Scatter\+GL.\+cs\end{DoxyCompactItemize}

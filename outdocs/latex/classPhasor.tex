@@ -1,0 +1,263 @@
+\hypertarget{classPhasor}{}\doxysection{Phasor Class Reference}
+\label{classPhasor}\index{Phasor@{Phasor}}
+
+
+A \mbox{\hyperlink{classPhasor}{Phasor}} plot marks a collection of points in polar space using an arrow with its base centered at the origin.  
+
+
+Inheritance diagram for Phasor\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classPhasor}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} \mbox{\hyperlink{classPhasor_ab4e5338e5943bee0de2cfca53b79e377}{Get\+Axis\+Limits}} ()
+\begin{DoxyCompactList}\small\item\em Return the 2D area (in coordinate space) occupied by the data contained in this plottable \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classPhasor_afedc5cace9a379a5e8c71d28b35cf579}{Render}} (\mbox{\hyperlink{classRenderPack}{Render\+Pack}} rp)
+\begin{DoxyCompactList}\small\item\em Draw the data from this plottable into the data area defined in the \mbox{\hyperlink{classAxes}{Axes}}. By default the surface is already clipped to the data area, but this can be cleared inside the plottable. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ \mbox{\hyperlink{structPolarCoordinates}{Polar\+Coordinates}} $>$ \mbox{\hyperlink{classPhasor_ab6460b1ad433ba13224a3a9ca55a1911}{Points}} = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em A collection of points in polar space \end{DoxyCompactList}\item 
+List$<$ string $>$ \mbox{\hyperlink{classPhasor_a24f62e4255550234c2ea8bbc6fd2d8d2}{Labels}} = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em If populated, \mbox{\hyperlink{classPhasor_ab6460b1ad433ba13224a3a9ca55a1911}{Points}} will be labeled with these strings \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classLabelStyle}{Label\+Style}} \mbox{\hyperlink{classPhasor_a63242b95d31f1337a53651fbde29264d}{Label\+Style}} = new()\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Style for arrow labels defined in \mbox{\hyperlink{classPhasor_a24f62e4255550234c2ea8bbc6fd2d8d2}{Labels}} \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classPhasor_aba2226fe2f40c41a883cab5ef531497d}{Padding\+Fraction}} = 0.\+01\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Additional padding given to accommodate spoke labels \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classPhasor_a3322ee0e6db455fa7bc1c797cd43e240}{Padding\+Arc}} = 5\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Additional padding given to accommodate labels \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPhasor_aed9f1b818d0ff3ff19fb58db58b4153e}{Is\+Visible}} = true\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{interfaceIAxes}{IAxes}} \mbox{\hyperlink{classPhasor_a66595666e85e082d5349fec2e75ddb51}{Axes}} = new \mbox{\hyperlink{classAxes}{Axes}}()\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$ \mbox{\hyperlink{classLegendItem}{Legend\+Item}} $>$ \mbox{\hyperlink{classPhasor_a277be4b607cbe7298ea2d303056f8a15}{Legend\+Items}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+string \mbox{\hyperlink{classPhasor_a655211b10655fb1fe8aea8c09d3b8177}{Legend\+Text}} = string.\+Empty\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{classArrowStyle}{Arrow\+Style}} \mbox{\hyperlink{classPhasor_ab4c1e6a870613878d8041f6510a82976}{Arrow\+Style}} = new() \{ Line\+Width = 2, \mbox{\hyperlink{classPhasor_af5c12d35bc0263dc3dff434583f700a5}{Arrow\+Width}} = 3 \}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{structColor}{Color}} \mbox{\hyperlink{classPhasor_ad1f713d71b56083dbcaee82bbcff1cee}{Arrow\+Line\+Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{classPhasor_a9b36cdd54556e3c5c7aeba3504f633a0}{Arrow\+Line\+Width}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{structColor}{Color}} \mbox{\hyperlink{classPhasor_a018b03a760d4eb3d5bee495b47f08d15}{Arrow\+Fill\+Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{classPhasor_acd09d295adb64c01564ce0fdeb8a87eb}{Arrow\+Minimum\+Length}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{classPhasor_a54b2de0fedf3796b50a76c32b87b81d6}{Arrow\+Maximum\+Length}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{classPhasor_a8b35d760fd89cee49986880da6a73194}{Arrow\+Offset}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+Arrow\+Anchor \mbox{\hyperlink{classPhasor_aa66ff025f1a851f7ee03015718c55d07}{Arrow\+Anchor}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{classPhasor_af5c12d35bc0263dc3dff434583f700a5}{Arrow\+Width}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{classPhasor_afdca03b9cf9a08c5843b53111bc5e216}{Arrowhead\+Axis\+Length}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{classPhasor_a9a97b5706e44a268e2592f0994e5c6de}{Arrowhead\+Length}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{classPhasor_a25a17869d6be11a029f66f681586876a}{Arrowhead\+Width}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{interfaceIArrowShape}{IArrow\+Shape}} \mbox{\hyperlink{classPhasor_aad83aeecea339784a0d8c402b8dd9c3f}{Arrow\+Shape}} = new Arrow\+Shapes.\+Single()\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A \mbox{\hyperlink{classPhasor}{Phasor}} plot marks a collection of points in polar space using an arrow with its base centered at the origin. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPhasor_ab4e5338e5943bee0de2cfca53b79e377}\label{classPhasor_ab4e5338e5943bee0de2cfca53b79e377}} 
+\index{Phasor@{Phasor}!GetAxisLimits@{GetAxisLimits}}
+\index{GetAxisLimits@{GetAxisLimits}!Phasor@{Phasor}}
+\doxysubsubsection{\texorpdfstring{GetAxisLimits()}{GetAxisLimits()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} Phasor.\+Get\+Axis\+Limits (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return the 2D area (in coordinate space) occupied by the data contained in this plottable 
+
+
+
+Implements \mbox{\hyperlink{interfaceIPlottable_ac98e2f5e56f9f938bbd081c87c7c6f50}{IPlottable}}.
+
+\mbox{\Hypertarget{classPhasor_afedc5cace9a379a5e8c71d28b35cf579}\label{classPhasor_afedc5cace9a379a5e8c71d28b35cf579}} 
+\index{Phasor@{Phasor}!Render@{Render}}
+\index{Render@{Render}!Phasor@{Phasor}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily virtual void Phasor.\+Render (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classRenderPack}{Render\+Pack}}}]{rp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Draw the data from this plottable into the data area defined in the \mbox{\hyperlink{classAxes}{Axes}}. By default the surface is already clipped to the data area, but this can be cleared inside the plottable. 
+
+
+
+Implements \mbox{\hyperlink{interfaceIPlottable_a201a1a236dc718eda93db143a5ade9f8}{IPlottable}}.
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{classPhasor_aa66ff025f1a851f7ee03015718c55d07}\label{classPhasor_aa66ff025f1a851f7ee03015718c55d07}} 
+\index{Phasor@{Phasor}!ArrowAnchor@{ArrowAnchor}}
+\index{ArrowAnchor@{ArrowAnchor}!Phasor@{Phasor}}
+\doxysubsubsection{\texorpdfstring{ArrowAnchor}{ArrowAnchor}}
+{\footnotesize\ttfamily Arrow\+Anchor Phasor.\+Arrow\+Anchor\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classPhasor_a018b03a760d4eb3d5bee495b47f08d15}\label{classPhasor_a018b03a760d4eb3d5bee495b47f08d15}} 
+\index{Phasor@{Phasor}!ArrowFillColor@{ArrowFillColor}}
+\index{ArrowFillColor@{ArrowFillColor}!Phasor@{Phasor}}
+\doxysubsubsection{\texorpdfstring{ArrowFillColor}{ArrowFillColor}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structColor}{Color}} Phasor.\+Arrow\+Fill\+Color\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classPhasor_afdca03b9cf9a08c5843b53111bc5e216}\label{classPhasor_afdca03b9cf9a08c5843b53111bc5e216}} 
+\index{Phasor@{Phasor}!ArrowheadAxisLength@{ArrowheadAxisLength}}
+\index{ArrowheadAxisLength@{ArrowheadAxisLength}!Phasor@{Phasor}}
+\doxysubsubsection{\texorpdfstring{ArrowheadAxisLength}{ArrowheadAxisLength}}
+{\footnotesize\ttfamily float Phasor.\+Arrowhead\+Axis\+Length\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classPhasor_a9a97b5706e44a268e2592f0994e5c6de}\label{classPhasor_a9a97b5706e44a268e2592f0994e5c6de}} 
+\index{Phasor@{Phasor}!ArrowheadLength@{ArrowheadLength}}
+\index{ArrowheadLength@{ArrowheadLength}!Phasor@{Phasor}}
+\doxysubsubsection{\texorpdfstring{ArrowheadLength}{ArrowheadLength}}
+{\footnotesize\ttfamily float Phasor.\+Arrowhead\+Length\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classPhasor_a25a17869d6be11a029f66f681586876a}\label{classPhasor_a25a17869d6be11a029f66f681586876a}} 
+\index{Phasor@{Phasor}!ArrowheadWidth@{ArrowheadWidth}}
+\index{ArrowheadWidth@{ArrowheadWidth}!Phasor@{Phasor}}
+\doxysubsubsection{\texorpdfstring{ArrowheadWidth}{ArrowheadWidth}}
+{\footnotesize\ttfamily float Phasor.\+Arrowhead\+Width\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classPhasor_ad1f713d71b56083dbcaee82bbcff1cee}\label{classPhasor_ad1f713d71b56083dbcaee82bbcff1cee}} 
+\index{Phasor@{Phasor}!ArrowLineColor@{ArrowLineColor}}
+\index{ArrowLineColor@{ArrowLineColor}!Phasor@{Phasor}}
+\doxysubsubsection{\texorpdfstring{ArrowLineColor}{ArrowLineColor}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structColor}{Color}} Phasor.\+Arrow\+Line\+Color\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classPhasor_a9b36cdd54556e3c5c7aeba3504f633a0}\label{classPhasor_a9b36cdd54556e3c5c7aeba3504f633a0}} 
+\index{Phasor@{Phasor}!ArrowLineWidth@{ArrowLineWidth}}
+\index{ArrowLineWidth@{ArrowLineWidth}!Phasor@{Phasor}}
+\doxysubsubsection{\texorpdfstring{ArrowLineWidth}{ArrowLineWidth}}
+{\footnotesize\ttfamily float Phasor.\+Arrow\+Line\+Width\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classPhasor_a54b2de0fedf3796b50a76c32b87b81d6}\label{classPhasor_a54b2de0fedf3796b50a76c32b87b81d6}} 
+\index{Phasor@{Phasor}!ArrowMaximumLength@{ArrowMaximumLength}}
+\index{ArrowMaximumLength@{ArrowMaximumLength}!Phasor@{Phasor}}
+\doxysubsubsection{\texorpdfstring{ArrowMaximumLength}{ArrowMaximumLength}}
+{\footnotesize\ttfamily float Phasor.\+Arrow\+Maximum\+Length\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classPhasor_acd09d295adb64c01564ce0fdeb8a87eb}\label{classPhasor_acd09d295adb64c01564ce0fdeb8a87eb}} 
+\index{Phasor@{Phasor}!ArrowMinimumLength@{ArrowMinimumLength}}
+\index{ArrowMinimumLength@{ArrowMinimumLength}!Phasor@{Phasor}}
+\doxysubsubsection{\texorpdfstring{ArrowMinimumLength}{ArrowMinimumLength}}
+{\footnotesize\ttfamily float Phasor.\+Arrow\+Minimum\+Length\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classPhasor_a8b35d760fd89cee49986880da6a73194}\label{classPhasor_a8b35d760fd89cee49986880da6a73194}} 
+\index{Phasor@{Phasor}!ArrowOffset@{ArrowOffset}}
+\index{ArrowOffset@{ArrowOffset}!Phasor@{Phasor}}
+\doxysubsubsection{\texorpdfstring{ArrowOffset}{ArrowOffset}}
+{\footnotesize\ttfamily float Phasor.\+Arrow\+Offset\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classPhasor_aad83aeecea339784a0d8c402b8dd9c3f}\label{classPhasor_aad83aeecea339784a0d8c402b8dd9c3f}} 
+\index{Phasor@{Phasor}!ArrowShape@{ArrowShape}}
+\index{ArrowShape@{ArrowShape}!Phasor@{Phasor}}
+\doxysubsubsection{\texorpdfstring{ArrowShape}{ArrowShape}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceIArrowShape}{IArrow\+Shape}} Phasor.\+Arrow\+Shape = new Arrow\+Shapes.\+Single()\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classPhasor_ab4c1e6a870613878d8041f6510a82976}\label{classPhasor_ab4c1e6a870613878d8041f6510a82976}} 
+\index{Phasor@{Phasor}!ArrowStyle@{ArrowStyle}}
+\index{ArrowStyle@{ArrowStyle}!Phasor@{Phasor}}
+\doxysubsubsection{\texorpdfstring{ArrowStyle}{ArrowStyle}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classArrowStyle}{Arrow\+Style}} Phasor.\+Arrow\+Style = new() \{ Line\+Width = 2, \mbox{\hyperlink{classPhasor_af5c12d35bc0263dc3dff434583f700a5}{Arrow\+Width}} = 3 \}\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classPhasor_af5c12d35bc0263dc3dff434583f700a5}\label{classPhasor_af5c12d35bc0263dc3dff434583f700a5}} 
+\index{Phasor@{Phasor}!ArrowWidth@{ArrowWidth}}
+\index{ArrowWidth@{ArrowWidth}!Phasor@{Phasor}}
+\doxysubsubsection{\texorpdfstring{ArrowWidth}{ArrowWidth}}
+{\footnotesize\ttfamily float Phasor.\+Arrow\+Width\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classPhasor_a66595666e85e082d5349fec2e75ddb51}\label{classPhasor_a66595666e85e082d5349fec2e75ddb51}} 
+\index{Phasor@{Phasor}!Axes@{Axes}}
+\index{Axes@{Axes}!Phasor@{Phasor}}
+\doxysubsubsection{\texorpdfstring{Axes}{Axes}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceIAxes}{IAxes}} Phasor.\+Axes = new \mbox{\hyperlink{classAxes}{Axes}}()\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classPhasor_aed9f1b818d0ff3ff19fb58db58b4153e}\label{classPhasor_aed9f1b818d0ff3ff19fb58db58b4153e}} 
+\index{Phasor@{Phasor}!IsVisible@{IsVisible}}
+\index{IsVisible@{IsVisible}!Phasor@{Phasor}}
+\doxysubsubsection{\texorpdfstring{IsVisible}{IsVisible}}
+{\footnotesize\ttfamily bool Phasor.\+Is\+Visible = true\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classPhasor_a24f62e4255550234c2ea8bbc6fd2d8d2}\label{classPhasor_a24f62e4255550234c2ea8bbc6fd2d8d2}} 
+\index{Phasor@{Phasor}!Labels@{Labels}}
+\index{Labels@{Labels}!Phasor@{Phasor}}
+\doxysubsubsection{\texorpdfstring{Labels}{Labels}}
+{\footnotesize\ttfamily List$<$string$>$ Phasor.\+Labels = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+If populated, \mbox{\hyperlink{classPhasor_ab6460b1ad433ba13224a3a9ca55a1911}{Points}} will be labeled with these strings 
+
+\mbox{\Hypertarget{classPhasor_a63242b95d31f1337a53651fbde29264d}\label{classPhasor_a63242b95d31f1337a53651fbde29264d}} 
+\index{Phasor@{Phasor}!LabelStyle@{LabelStyle}}
+\index{LabelStyle@{LabelStyle}!Phasor@{Phasor}}
+\doxysubsubsection{\texorpdfstring{LabelStyle}{LabelStyle}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classLabelStyle}{Label\+Style}} Phasor.\+Label\+Style = new()\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Style for arrow labels defined in \mbox{\hyperlink{classPhasor_a24f62e4255550234c2ea8bbc6fd2d8d2}{Labels}} 
+
+\mbox{\Hypertarget{classPhasor_a277be4b607cbe7298ea2d303056f8a15}\label{classPhasor_a277be4b607cbe7298ea2d303056f8a15}} 
+\index{Phasor@{Phasor}!LegendItems@{LegendItems}}
+\index{LegendItems@{LegendItems}!Phasor@{Phasor}}
+\doxysubsubsection{\texorpdfstring{LegendItems}{LegendItems}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$\mbox{\hyperlink{classLegendItem}{Legend\+Item}}$>$ Phasor.\+Legend\+Items\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{classPhasor_a655211b10655fb1fe8aea8c09d3b8177}\label{classPhasor_a655211b10655fb1fe8aea8c09d3b8177}} 
+\index{Phasor@{Phasor}!LegendText@{LegendText}}
+\index{LegendText@{LegendText}!Phasor@{Phasor}}
+\doxysubsubsection{\texorpdfstring{LegendText}{LegendText}}
+{\footnotesize\ttfamily string Phasor.\+Legend\+Text = string.\+Empty\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classPhasor_a3322ee0e6db455fa7bc1c797cd43e240}\label{classPhasor_a3322ee0e6db455fa7bc1c797cd43e240}} 
+\index{Phasor@{Phasor}!PaddingArc@{PaddingArc}}
+\index{PaddingArc@{PaddingArc}!Phasor@{Phasor}}
+\doxysubsubsection{\texorpdfstring{PaddingArc}{PaddingArc}}
+{\footnotesize\ttfamily double Phasor.\+Padding\+Arc = 5\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Additional padding given to accommodate labels 
+
+\mbox{\Hypertarget{classPhasor_aba2226fe2f40c41a883cab5ef531497d}\label{classPhasor_aba2226fe2f40c41a883cab5ef531497d}} 
+\index{Phasor@{Phasor}!PaddingFraction@{PaddingFraction}}
+\index{PaddingFraction@{PaddingFraction}!Phasor@{Phasor}}
+\doxysubsubsection{\texorpdfstring{PaddingFraction}{PaddingFraction}}
+{\footnotesize\ttfamily double Phasor.\+Padding\+Fraction = 0.\+01\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Additional padding given to accommodate spoke labels 
+
+\mbox{\Hypertarget{classPhasor_ab6460b1ad433ba13224a3a9ca55a1911}\label{classPhasor_ab6460b1ad433ba13224a3a9ca55a1911}} 
+\index{Phasor@{Phasor}!Points@{Points}}
+\index{Points@{Points}!Phasor@{Phasor}}
+\doxysubsubsection{\texorpdfstring{Points}{Points}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{structPolarCoordinates}{Polar\+Coordinates}}$>$ Phasor.\+Points = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+A collection of points in polar space 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Plottables/Phasor.\+cs\end{DoxyCompactItemize}

@@ -1,0 +1,20 @@
+var searchData=
+[
+  ['backgroundstyle_2ecs_0',['BackgroundStyle.cs',['../_background_style_8cs.html',1,'']]],
+  ['balance_2ecs_1',['Balance.cs',['../_balance_8cs.html',1,'']]],
+  ['bar_2ecs_2',['Bar.cs',['../_bar_8cs.html',1,'']]],
+  ['barplot_2ecs_3',['BarPlot.cs',['../_bar_plot_8cs.html',1,'']]],
+  ['barseries_2ecs_4',['BarSeries.cs',['../_bar_series_8cs.html',1,'']]],
+  ['benchmark_2ecs_5',['Benchmark.cs',['../_benchmark_8cs.html',1,'']]],
+  ['bitmapheader_2ecs_6',['BitmapHeader.cs',['../_bitmap_header_8cs.html',1,'']]],
+  ['blazorplotbase_2ecs_7',['BlazorPlotBase.cs',['../_blazor_plot_base_8cs.html',1,'']]],
+  ['blazorplotextensions_2ecs_8',['BlazorPlotExtensions.cs',['../_blazor_plot_extensions_8cs.html',1,'']]],
+  ['blazorplotmenu_2ecs_9',['BlazorPlotMenu.cs',['../_blazor_plot_menu_8cs.html',1,'']]],
+  ['blues_2ecs_10',['Blues.cs',['../_blues_8cs.html',1,'']]],
+  ['bollingerbands_2ecs_11',['BollingerBands.cs',['../_bollinger_bands_8cs.html',1,'']]],
+  ['bottomaxis_2ecs_12',['BottomAxis.cs',['../_bottom_axis_8cs.html',1,'']]],
+  ['box_2ecs_13',['Box.cs',['../_box_8cs.html',1,'']]],
+  ['boxplot_2ecs_14',['BoxPlot.cs',['../_box_plot_8cs.html',1,'']]],
+  ['building_2ecs_15',['Building.cs',['../_building_8cs.html',1,'']]],
+  ['bytecolormapbase_2ecs_16',['ByteColormapBase.cs',['../_byte_colormap_base_8cs.html',1,'']]]
+];

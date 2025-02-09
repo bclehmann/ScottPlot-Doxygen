@@ -1,0 +1,94 @@
+\doxysection{Scott\+Plot.\+Layout\+Manager Class Reference}
+\hypertarget{class_scott_plot_1_1_layout_manager}{}\label{class_scott_plot_1_1_layout_manager}\index{ScottPlot.LayoutManager@{ScottPlot.LayoutManager}}
+
+
+A collection of methods for making common adjustments to plot layouts.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_scott_plot_1_1_layout_manager_a911d671b37f3eaa6c2646aae0ac1f32d}{Layout\+Manager}} (\mbox{\hyperlink{class_scott_plot_1_1_plot}{Plot}} plot)
+\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_layout_manager_a37ee74e7903de0a785d9ef3ab2d76075}{Default}} ()
+\begin{DoxyCompactList}\small\item\em Automatically resize the layout on each render to achieve the best fit. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_layout_manager_ad0eb662e55f4c99933d18731fdd7ceae}{Fixed}} (\mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect}{Pixel\+Rect}} data\+Rect)
+\begin{DoxyCompactList}\small\item\em Apply a fixed layout using the given rectangle to define the data area. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_layout_manager_a9e6edfa788d476ef00538f65a85c2723}{Fixed}} (\mbox{\hyperlink{struct_scott_plot_1_1_pixel_padding}{Pixel\+Padding}} padding)
+\begin{DoxyCompactList}\small\item\em Apply a fixed layout using the given padding to define space between the data area and the edge of the figure. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_layout_manager_ade3a8002637670413226bb3a2c51448a}{Frameless}} ()
+\begin{DoxyCompactList}\small\item\em Disable visibility of all axes and titles so the data area fills the entire figure. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_scott_plot_1_1_i_layout_engine}{ILayout\+Engine}} \mbox{\hyperlink{class_scott_plot_1_1_layout_manager_ac5fb631503038c9538255543842cb0b4}{Layout\+Engine}} = new \mbox{\hyperlink{class_scott_plot_1_1_layout_engines_1_1_automatic}{Automatic}}()\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A collection of methods for making common adjustments to plot layouts. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_scott_plot_1_1_layout_manager_a911d671b37f3eaa6c2646aae0ac1f32d}\index{ScottPlot.LayoutManager@{ScottPlot.LayoutManager}!LayoutManager@{LayoutManager}}
+\index{LayoutManager@{LayoutManager}!ScottPlot.LayoutManager@{ScottPlot.LayoutManager}}
+\doxysubsubsection{\texorpdfstring{LayoutManager()}{LayoutManager()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_layout_manager_a911d671b37f3eaa6c2646aae0ac1f32d} 
+Scott\+Plot.\+Layout\+Manager.\+Layout\+Manager (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_scott_plot_1_1_plot}{Plot}}}]{plot}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_scott_plot_1_1_layout_manager_a37ee74e7903de0a785d9ef3ab2d76075}\index{ScottPlot.LayoutManager@{ScottPlot.LayoutManager}!Default@{Default}}
+\index{Default@{Default}!ScottPlot.LayoutManager@{ScottPlot.LayoutManager}}
+\doxysubsubsection{\texorpdfstring{Default()}{Default()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_layout_manager_a37ee74e7903de0a785d9ef3ab2d76075} 
+void Scott\+Plot.\+Layout\+Manager.\+Default (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Automatically resize the layout on each render to achieve the best fit. 
+
+\Hypertarget{class_scott_plot_1_1_layout_manager_a9e6edfa788d476ef00538f65a85c2723}\index{ScottPlot.LayoutManager@{ScottPlot.LayoutManager}!Fixed@{Fixed}}
+\index{Fixed@{Fixed}!ScottPlot.LayoutManager@{ScottPlot.LayoutManager}}
+\doxysubsubsection{\texorpdfstring{Fixed()}{Fixed()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_layout_manager_a9e6edfa788d476ef00538f65a85c2723} 
+void Scott\+Plot.\+Layout\+Manager.\+Fixed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_scott_plot_1_1_pixel_padding}{Pixel\+Padding}}}]{padding}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Apply a fixed layout using the given padding to define space between the data area and the edge of the figure. 
+
+\Hypertarget{class_scott_plot_1_1_layout_manager_ad0eb662e55f4c99933d18731fdd7ceae}\index{ScottPlot.LayoutManager@{ScottPlot.LayoutManager}!Fixed@{Fixed}}
+\index{Fixed@{Fixed}!ScottPlot.LayoutManager@{ScottPlot.LayoutManager}}
+\doxysubsubsection{\texorpdfstring{Fixed()}{Fixed()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_layout_manager_ad0eb662e55f4c99933d18731fdd7ceae} 
+void Scott\+Plot.\+Layout\+Manager.\+Fixed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect}{Pixel\+Rect}}}]{data\+Rect}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Apply a fixed layout using the given rectangle to define the data area. 
+
+\Hypertarget{class_scott_plot_1_1_layout_manager_ade3a8002637670413226bb3a2c51448a}\index{ScottPlot.LayoutManager@{ScottPlot.LayoutManager}!Frameless@{Frameless}}
+\index{Frameless@{Frameless}!ScottPlot.LayoutManager@{ScottPlot.LayoutManager}}
+\doxysubsubsection{\texorpdfstring{Frameless()}{Frameless()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_layout_manager_ade3a8002637670413226bb3a2c51448a} 
+void Scott\+Plot.\+Layout\+Manager.\+Frameless (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Disable visibility of all axes and titles so the data area fills the entire figure. 
+
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{class_scott_plot_1_1_layout_manager_ac5fb631503038c9538255543842cb0b4}\index{ScottPlot.LayoutManager@{ScottPlot.LayoutManager}!LayoutEngine@{LayoutEngine}}
+\index{LayoutEngine@{LayoutEngine}!ScottPlot.LayoutManager@{ScottPlot.LayoutManager}}
+\doxysubsubsection{\texorpdfstring{LayoutEngine}{LayoutEngine}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_layout_manager_ac5fb631503038c9538255543842cb0b4} 
+\mbox{\hyperlink{interface_scott_plot_1_1_i_layout_engine}{ILayout\+Engine}} Scott\+Plot.\+Layout\+Manager.\+Layout\+Engine = new \mbox{\hyperlink{class_scott_plot_1_1_layout_engines_1_1_automatic}{Automatic}}()\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/Layout\+Manager.\+cs\end{DoxyCompactItemize}

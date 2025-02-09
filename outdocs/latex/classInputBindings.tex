@@ -1,0 +1,204 @@
+\hypertarget{classInputBindings}{}\doxysection{Input\+Bindings Class Reference}
+\label{classInputBindings}\index{InputBindings@{InputBindings}}
+
+
+This class defines which buttons and keys perform which actions to manipulate the plot.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \mbox{\hyperlink{classInputBindings_a0c8dd4814a39a3ca9a462ffa38200861}{Should\+LockX}} (\mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$ \mbox{\hyperlink{structKey}{Key}} $>$ keys, \mbox{\hyperlink{structMouseButton}{Mouse\+Button}}? button=null)
+\begin{DoxyCompactList}\small\item\em Returns {\ttfamily true} if {\itshape keys}  contains the key which locks the X axis \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classInputBindings_a5ecd62287728b5e40a9e7b0e929ac9c2}{Should\+LockY}} (\mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$ \mbox{\hyperlink{structKey}{Key}} $>$ keys, \mbox{\hyperlink{structMouseButton}{Mouse\+Button}}? button=null)
+\begin{DoxyCompactList}\small\item\em Returns {\ttfamily true} if {\itshape keys}  contains the key which locks the Y axis \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classInputBindings_a41cc9c4fe19c96e6d6ccc43b40846ecd}{Should\+Zoom\+Rectangle}} (\mbox{\hyperlink{structMouseButton}{Mouse\+Button}} button, \mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$ \mbox{\hyperlink{structKey}{Key}} $>$ keys)
+\begin{DoxyCompactList}\small\item\em Returns {\ttfamily true} if the combination of pressed buttons and keys results in a click-\/drag zoom rectangle \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classInputBindings}{Input\+Bindings}} \mbox{\hyperlink{classInputBindings_a1a8dab71e0095da799d012c8e5da3df0}{Standard}} ()
+\item 
+static \mbox{\hyperlink{classInputBindings}{Input\+Bindings}} \mbox{\hyperlink{classInputBindings_a6fbc1fc5c56fee925afb9734f58e14bd}{Non\+Interactive}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structMouseButton}{Mouse\+Button}}? \mbox{\hyperlink{classInputBindings_a68f4d7e57816026c2d90addc5ed9e123}{Drag\+Pan\+Button}} = null
+\item 
+\mbox{\hyperlink{structMouseButton}{Mouse\+Button}}? \mbox{\hyperlink{classInputBindings_ad545a3df5059fc642d0046a641f43464}{Drag\+Zoom\+Button}} = null
+\item 
+\mbox{\hyperlink{structMouseButton}{Mouse\+Button}}? \mbox{\hyperlink{classInputBindings_a7a9048ef6d069299e8c82c0a67f413e3}{Drag\+Zoom\+Rectangle\+Button}} = null
+\item 
+\mbox{\hyperlink{structMouseButton}{Mouse\+Button}}? \mbox{\hyperlink{classInputBindings_aaeb86fc1ffda0bb361d9ca185bf07a34}{Double\+Click\+Button}} = null
+\item 
+\mbox{\hyperlink{structMouseButton}{Mouse\+Button}}? \mbox{\hyperlink{classInputBindings_a376be6320ce04ad40fc09c8afdfe4531}{Click\+Auto\+Axis\+Button}} = null
+\item 
+\mbox{\hyperlink{structMouseButton}{Mouse\+Button}}? \mbox{\hyperlink{classInputBindings_a5e8c75c7dc86825d7ae54ddff14f1fca}{Click\+Context\+Menu\+Button}} = null
+\item 
+Mouse\+Wheel\+Direction? \mbox{\hyperlink{classInputBindings_a80a7c6a472c03a61251283b413975bcd}{Zoom\+In\+Wheel\+Direction}} = null
+\item 
+Mouse\+Wheel\+Direction? \mbox{\hyperlink{classInputBindings_a2aa8af0da1ed62071475ef9868d2d20b}{Zoom\+Out\+Wheel\+Direction}} = null
+\item 
+Mouse\+Wheel\+Direction? \mbox{\hyperlink{classInputBindings_a4c02edd606e9e65e988f272d1c1ef78a}{Pan\+Up\+Wheel\+Direction}} = null
+\item 
+Mouse\+Wheel\+Direction? \mbox{\hyperlink{classInputBindings_a94b99333507947fe2b31f1f505489588}{Pan\+Down\+Wheel\+Direction}} = null
+\item 
+Mouse\+Wheel\+Direction? \mbox{\hyperlink{classInputBindings_ae4b40a16ab65b182d81e70c86410e8dd}{Pan\+Left\+Wheel\+Direction}} = null
+\item 
+Mouse\+Wheel\+Direction? \mbox{\hyperlink{classInputBindings_ad36a2147df30b47db0f6aaf7e218a210}{Pan\+Right\+Wheel\+Direction}} = null
+\item 
+\mbox{\hyperlink{structKey}{Key}}? \mbox{\hyperlink{classInputBindings_a16b7fa687497679e41e35db665e8c9af}{Lock\+Horizontal\+Axis\+Key}} = null
+\item 
+\mbox{\hyperlink{structKey}{Key}}? \mbox{\hyperlink{classInputBindings_af551a0b07dc6f6565cab611481999a95}{Lock\+Vertical\+Axis\+Key}} = null
+\item 
+\mbox{\hyperlink{structKey}{Key}}? \mbox{\hyperlink{classInputBindings_a5eb4b2c760e97e3e9c6d2a1e0a9a8ebe}{Pan\+Zoom\+Rectangle\+Key}} = null
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class defines which buttons and keys perform which actions to manipulate the plot. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classInputBindings_a6fbc1fc5c56fee925afb9734f58e14bd}\label{classInputBindings_a6fbc1fc5c56fee925afb9734f58e14bd}} 
+\index{InputBindings@{InputBindings}!NonInteractive@{NonInteractive}}
+\index{NonInteractive@{NonInteractive}!InputBindings@{InputBindings}}
+\doxysubsubsection{\texorpdfstring{NonInteractive()}{NonInteractive()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classInputBindings}{Input\+Bindings}} Input\+Bindings.\+Non\+Interactive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classInputBindings_a0c8dd4814a39a3ca9a462ffa38200861}\label{classInputBindings_a0c8dd4814a39a3ca9a462ffa38200861}} 
+\index{InputBindings@{InputBindings}!ShouldLockX@{ShouldLockX}}
+\index{ShouldLockX@{ShouldLockX}!InputBindings@{InputBindings}}
+\doxysubsubsection{\texorpdfstring{ShouldLockX()}{ShouldLockX()}}
+{\footnotesize\ttfamily virtual bool Input\+Bindings.\+Should\+LockX (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$ \mbox{\hyperlink{structKey}{Key}} $>$}]{keys,  }\item[{\mbox{\hyperlink{structMouseButton}{Mouse\+Button}}?}]{button = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Returns {\ttfamily true} if {\itshape keys}  contains the key which locks the X axis 
+
+\mbox{\Hypertarget{classInputBindings_a5ecd62287728b5e40a9e7b0e929ac9c2}\label{classInputBindings_a5ecd62287728b5e40a9e7b0e929ac9c2}} 
+\index{InputBindings@{InputBindings}!ShouldLockY@{ShouldLockY}}
+\index{ShouldLockY@{ShouldLockY}!InputBindings@{InputBindings}}
+\doxysubsubsection{\texorpdfstring{ShouldLockY()}{ShouldLockY()}}
+{\footnotesize\ttfamily virtual bool Input\+Bindings.\+Should\+LockY (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$ \mbox{\hyperlink{structKey}{Key}} $>$}]{keys,  }\item[{\mbox{\hyperlink{structMouseButton}{Mouse\+Button}}?}]{button = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Returns {\ttfamily true} if {\itshape keys}  contains the key which locks the Y axis 
+
+\mbox{\Hypertarget{classInputBindings_a41cc9c4fe19c96e6d6ccc43b40846ecd}\label{classInputBindings_a41cc9c4fe19c96e6d6ccc43b40846ecd}} 
+\index{InputBindings@{InputBindings}!ShouldZoomRectangle@{ShouldZoomRectangle}}
+\index{ShouldZoomRectangle@{ShouldZoomRectangle}!InputBindings@{InputBindings}}
+\doxysubsubsection{\texorpdfstring{ShouldZoomRectangle()}{ShouldZoomRectangle()}}
+{\footnotesize\ttfamily virtual bool Input\+Bindings.\+Should\+Zoom\+Rectangle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structMouseButton}{Mouse\+Button}}}]{button,  }\item[{\mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$ \mbox{\hyperlink{structKey}{Key}} $>$}]{keys }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Returns {\ttfamily true} if the combination of pressed buttons and keys results in a click-\/drag zoom rectangle 
+
+\mbox{\Hypertarget{classInputBindings_a1a8dab71e0095da799d012c8e5da3df0}\label{classInputBindings_a1a8dab71e0095da799d012c8e5da3df0}} 
+\index{InputBindings@{InputBindings}!Standard@{Standard}}
+\index{Standard@{Standard}!InputBindings@{InputBindings}}
+\doxysubsubsection{\texorpdfstring{Standard()}{Standard()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classInputBindings}{Input\+Bindings}} Input\+Bindings.\+Standard (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classInputBindings_a376be6320ce04ad40fc09c8afdfe4531}\label{classInputBindings_a376be6320ce04ad40fc09c8afdfe4531}} 
+\index{InputBindings@{InputBindings}!ClickAutoAxisButton@{ClickAutoAxisButton}}
+\index{ClickAutoAxisButton@{ClickAutoAxisButton}!InputBindings@{InputBindings}}
+\doxysubsubsection{\texorpdfstring{ClickAutoAxisButton}{ClickAutoAxisButton}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structMouseButton}{Mouse\+Button}}? Input\+Bindings.\+Click\+Auto\+Axis\+Button = null}
+
+\mbox{\Hypertarget{classInputBindings_a5e8c75c7dc86825d7ae54ddff14f1fca}\label{classInputBindings_a5e8c75c7dc86825d7ae54ddff14f1fca}} 
+\index{InputBindings@{InputBindings}!ClickContextMenuButton@{ClickContextMenuButton}}
+\index{ClickContextMenuButton@{ClickContextMenuButton}!InputBindings@{InputBindings}}
+\doxysubsubsection{\texorpdfstring{ClickContextMenuButton}{ClickContextMenuButton}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structMouseButton}{Mouse\+Button}}? Input\+Bindings.\+Click\+Context\+Menu\+Button = null}
+
+\mbox{\Hypertarget{classInputBindings_aaeb86fc1ffda0bb361d9ca185bf07a34}\label{classInputBindings_aaeb86fc1ffda0bb361d9ca185bf07a34}} 
+\index{InputBindings@{InputBindings}!DoubleClickButton@{DoubleClickButton}}
+\index{DoubleClickButton@{DoubleClickButton}!InputBindings@{InputBindings}}
+\doxysubsubsection{\texorpdfstring{DoubleClickButton}{DoubleClickButton}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structMouseButton}{Mouse\+Button}}? Input\+Bindings.\+Double\+Click\+Button = null}
+
+\mbox{\Hypertarget{classInputBindings_a68f4d7e57816026c2d90addc5ed9e123}\label{classInputBindings_a68f4d7e57816026c2d90addc5ed9e123}} 
+\index{InputBindings@{InputBindings}!DragPanButton@{DragPanButton}}
+\index{DragPanButton@{DragPanButton}!InputBindings@{InputBindings}}
+\doxysubsubsection{\texorpdfstring{DragPanButton}{DragPanButton}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structMouseButton}{Mouse\+Button}}? Input\+Bindings.\+Drag\+Pan\+Button = null}
+
+\mbox{\Hypertarget{classInputBindings_ad545a3df5059fc642d0046a641f43464}\label{classInputBindings_ad545a3df5059fc642d0046a641f43464}} 
+\index{InputBindings@{InputBindings}!DragZoomButton@{DragZoomButton}}
+\index{DragZoomButton@{DragZoomButton}!InputBindings@{InputBindings}}
+\doxysubsubsection{\texorpdfstring{DragZoomButton}{DragZoomButton}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structMouseButton}{Mouse\+Button}}? Input\+Bindings.\+Drag\+Zoom\+Button = null}
+
+\mbox{\Hypertarget{classInputBindings_a7a9048ef6d069299e8c82c0a67f413e3}\label{classInputBindings_a7a9048ef6d069299e8c82c0a67f413e3}} 
+\index{InputBindings@{InputBindings}!DragZoomRectangleButton@{DragZoomRectangleButton}}
+\index{DragZoomRectangleButton@{DragZoomRectangleButton}!InputBindings@{InputBindings}}
+\doxysubsubsection{\texorpdfstring{DragZoomRectangleButton}{DragZoomRectangleButton}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structMouseButton}{Mouse\+Button}}? Input\+Bindings.\+Drag\+Zoom\+Rectangle\+Button = null}
+
+\mbox{\Hypertarget{classInputBindings_a16b7fa687497679e41e35db665e8c9af}\label{classInputBindings_a16b7fa687497679e41e35db665e8c9af}} 
+\index{InputBindings@{InputBindings}!LockHorizontalAxisKey@{LockHorizontalAxisKey}}
+\index{LockHorizontalAxisKey@{LockHorizontalAxisKey}!InputBindings@{InputBindings}}
+\doxysubsubsection{\texorpdfstring{LockHorizontalAxisKey}{LockHorizontalAxisKey}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structKey}{Key}}? Input\+Bindings.\+Lock\+Horizontal\+Axis\+Key = null}
+
+\mbox{\Hypertarget{classInputBindings_af551a0b07dc6f6565cab611481999a95}\label{classInputBindings_af551a0b07dc6f6565cab611481999a95}} 
+\index{InputBindings@{InputBindings}!LockVerticalAxisKey@{LockVerticalAxisKey}}
+\index{LockVerticalAxisKey@{LockVerticalAxisKey}!InputBindings@{InputBindings}}
+\doxysubsubsection{\texorpdfstring{LockVerticalAxisKey}{LockVerticalAxisKey}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structKey}{Key}}? Input\+Bindings.\+Lock\+Vertical\+Axis\+Key = null}
+
+\mbox{\Hypertarget{classInputBindings_a94b99333507947fe2b31f1f505489588}\label{classInputBindings_a94b99333507947fe2b31f1f505489588}} 
+\index{InputBindings@{InputBindings}!PanDownWheelDirection@{PanDownWheelDirection}}
+\index{PanDownWheelDirection@{PanDownWheelDirection}!InputBindings@{InputBindings}}
+\doxysubsubsection{\texorpdfstring{PanDownWheelDirection}{PanDownWheelDirection}}
+{\footnotesize\ttfamily Mouse\+Wheel\+Direction? Input\+Bindings.\+Pan\+Down\+Wheel\+Direction = null}
+
+\mbox{\Hypertarget{classInputBindings_ae4b40a16ab65b182d81e70c86410e8dd}\label{classInputBindings_ae4b40a16ab65b182d81e70c86410e8dd}} 
+\index{InputBindings@{InputBindings}!PanLeftWheelDirection@{PanLeftWheelDirection}}
+\index{PanLeftWheelDirection@{PanLeftWheelDirection}!InputBindings@{InputBindings}}
+\doxysubsubsection{\texorpdfstring{PanLeftWheelDirection}{PanLeftWheelDirection}}
+{\footnotesize\ttfamily Mouse\+Wheel\+Direction? Input\+Bindings.\+Pan\+Left\+Wheel\+Direction = null}
+
+\mbox{\Hypertarget{classInputBindings_ad36a2147df30b47db0f6aaf7e218a210}\label{classInputBindings_ad36a2147df30b47db0f6aaf7e218a210}} 
+\index{InputBindings@{InputBindings}!PanRightWheelDirection@{PanRightWheelDirection}}
+\index{PanRightWheelDirection@{PanRightWheelDirection}!InputBindings@{InputBindings}}
+\doxysubsubsection{\texorpdfstring{PanRightWheelDirection}{PanRightWheelDirection}}
+{\footnotesize\ttfamily Mouse\+Wheel\+Direction? Input\+Bindings.\+Pan\+Right\+Wheel\+Direction = null}
+
+\mbox{\Hypertarget{classInputBindings_a4c02edd606e9e65e988f272d1c1ef78a}\label{classInputBindings_a4c02edd606e9e65e988f272d1c1ef78a}} 
+\index{InputBindings@{InputBindings}!PanUpWheelDirection@{PanUpWheelDirection}}
+\index{PanUpWheelDirection@{PanUpWheelDirection}!InputBindings@{InputBindings}}
+\doxysubsubsection{\texorpdfstring{PanUpWheelDirection}{PanUpWheelDirection}}
+{\footnotesize\ttfamily Mouse\+Wheel\+Direction? Input\+Bindings.\+Pan\+Up\+Wheel\+Direction = null}
+
+\mbox{\Hypertarget{classInputBindings_a5eb4b2c760e97e3e9c6d2a1e0a9a8ebe}\label{classInputBindings_a5eb4b2c760e97e3e9c6d2a1e0a9a8ebe}} 
+\index{InputBindings@{InputBindings}!PanZoomRectangleKey@{PanZoomRectangleKey}}
+\index{PanZoomRectangleKey@{PanZoomRectangleKey}!InputBindings@{InputBindings}}
+\doxysubsubsection{\texorpdfstring{PanZoomRectangleKey}{PanZoomRectangleKey}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structKey}{Key}}? Input\+Bindings.\+Pan\+Zoom\+Rectangle\+Key = null}
+
+\mbox{\Hypertarget{classInputBindings_a80a7c6a472c03a61251283b413975bcd}\label{classInputBindings_a80a7c6a472c03a61251283b413975bcd}} 
+\index{InputBindings@{InputBindings}!ZoomInWheelDirection@{ZoomInWheelDirection}}
+\index{ZoomInWheelDirection@{ZoomInWheelDirection}!InputBindings@{InputBindings}}
+\doxysubsubsection{\texorpdfstring{ZoomInWheelDirection}{ZoomInWheelDirection}}
+{\footnotesize\ttfamily Mouse\+Wheel\+Direction? Input\+Bindings.\+Zoom\+In\+Wheel\+Direction = null}
+
+\mbox{\Hypertarget{classInputBindings_a2aa8af0da1ed62071475ef9868d2d20b}\label{classInputBindings_a2aa8af0da1ed62071475ef9868d2d20b}} 
+\index{InputBindings@{InputBindings}!ZoomOutWheelDirection@{ZoomOutWheelDirection}}
+\index{ZoomOutWheelDirection@{ZoomOutWheelDirection}!InputBindings@{InputBindings}}
+\doxysubsubsection{\texorpdfstring{ZoomOutWheelDirection}{ZoomOutWheelDirection}}
+{\footnotesize\ttfamily Mouse\+Wheel\+Direction? Input\+Bindings.\+Zoom\+Out\+Wheel\+Direction = null}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Control/Input\+Bindings.\+cs\end{DoxyCompactItemize}

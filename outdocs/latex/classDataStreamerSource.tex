@@ -1,0 +1,206 @@
+\hypertarget{classDataStreamerSource}{}\doxysection{Data\+Streamer\+Source Class Reference}
+\label{classDataStreamerSource}\index{DataStreamerSource@{DataStreamerSource}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classDataStreamerSource_a69dd73d152a1807a958059bb24eb59d2}{Data\+Streamer\+Source}} (double\mbox{[}$\,$\mbox{]} data)
+\item 
+void \mbox{\hyperlink{classDataStreamerSource_a7928dc2daeed24387833a21f4a59765f}{Add}} (double value)
+\begin{DoxyCompactList}\small\item\em Shift in a new Y value \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDataStreamerSource_a565a3cc67d7d4686e71bd67a5b34875e}{Add\+Range}} (\mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$ double $>$ values)
+\begin{DoxyCompactList}\small\item\em Shift in a collection of new Y values \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDataStreamerSource_a399953f70524ae110402e6dae7f3e728}{Clear}} (double value=0)
+\begin{DoxyCompactList}\small\item\em Clear the buffer by setting all Y points to the given value \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} \mbox{\hyperlink{classDataStreamerSource_ae01c489aabdf3f4102771064a5ab91a3}{Get\+Axis\+Limits}} (bool tight=true)
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+double\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classDataStreamerSource_ad2ea2f62c990a66a95e52e02dbff395f}{Data}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Fixed-\/length array used as a circular buffer to shift data in at the position defined by \mbox{\hyperlink{classDataStreamerSource_af6ed3372cbc360a89739d1509963ebd3}{Next\+Index}}. Values in this array should not be modified externally if Manage\+Axis\+Limits is enabled. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classDataStreamerSource_af6ed3372cbc360a89739d1509963ebd3}{Next\+Index}} = 0\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Index in \mbox{\hyperlink{classDataStreamerSource_ad2ea2f62c990a66a95e52e02dbff395f}{Data}} where the next point will be added \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classDataStreamerSource_a2804b50125af003a311dd47a8d07a6a4}{Newest\+Index}} = 0\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Index in \mbox{\hyperlink{classDataStreamerSource_ad2ea2f62c990a66a95e52e02dbff395f}{Data}} holding the newest data point \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classDataStreamerSource_a7080518a979af9a5cdf37d828dd48f66}{Newest\+Point}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Value of the most recently added data point \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classDataStreamerSource_af6840200f70907a18510f3ce6c983199}{Length}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The number of visible data points to display \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classDataStreamerSource_aa2fdb095076843dcb61774b17e021e59}{Count\+Total}} = 0\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The total number of data points added \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classDataStreamerSource_a9a74fc432b46b440adf30791a91daa56}{Count\+Total\+On\+Last\+Render}} = -\/1\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Total of data points added the last time this plottable was rendered. This can be compared with \mbox{\hyperlink{classDataStreamerSource_aa2fdb095076843dcb61774b17e021e59}{Count\+Total}} to determine if a new render is required. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classDataStreamerSource_ac4b7c84940a86295b426512bc6cd7ef8}{Data\+Min}} = double.\+Positive\+Infinity\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Minimum value of all known data (not just the data in view) \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classDataStreamerSource_af63b628e7bf5d3bfc74677d3ecabb604}{Data\+Max}} = double.\+Negative\+Infinity\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Maximum value of all known data (not just the data in view) \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classDataStreamerSource_afcbd006ee4fc8d402d6c75930ddd9d97}{OffsetX}} = 0\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+double \mbox{\hyperlink{classDataStreamerSource_a5bd91d7cc049cb2d67299a9e16215f60}{OffsetY}} = 0\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+double \mbox{\hyperlink{classDataStreamerSource_af43fea709a847d06653bb4074c451458}{Sample\+Period}} = 1\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classDataStreamerSource_a69dd73d152a1807a958059bb24eb59d2}\label{classDataStreamerSource_a69dd73d152a1807a958059bb24eb59d2}} 
+\index{DataStreamerSource@{DataStreamerSource}!DataStreamerSource@{DataStreamerSource}}
+\index{DataStreamerSource@{DataStreamerSource}!DataStreamerSource@{DataStreamerSource}}
+\doxysubsubsection{\texorpdfstring{DataStreamerSource()}{DataStreamerSource()}}
+{\footnotesize\ttfamily Data\+Streamer\+Source.\+Data\+Streamer\+Source (\begin{DoxyParamCaption}\item[{double\mbox{[}$\,$\mbox{]}}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classDataStreamerSource_a7928dc2daeed24387833a21f4a59765f}\label{classDataStreamerSource_a7928dc2daeed24387833a21f4a59765f}} 
+\index{DataStreamerSource@{DataStreamerSource}!Add@{Add}}
+\index{Add@{Add}!DataStreamerSource@{DataStreamerSource}}
+\doxysubsubsection{\texorpdfstring{Add()}{Add()}}
+{\footnotesize\ttfamily void Data\+Streamer\+Source.\+Add (\begin{DoxyParamCaption}\item[{double}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Shift in a new Y value 
+
+\mbox{\Hypertarget{classDataStreamerSource_a565a3cc67d7d4686e71bd67a5b34875e}\label{classDataStreamerSource_a565a3cc67d7d4686e71bd67a5b34875e}} 
+\index{DataStreamerSource@{DataStreamerSource}!AddRange@{AddRange}}
+\index{AddRange@{AddRange}!DataStreamerSource@{DataStreamerSource}}
+\doxysubsubsection{\texorpdfstring{AddRange()}{AddRange()}}
+{\footnotesize\ttfamily void Data\+Streamer\+Source.\+Add\+Range (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$ double $>$}]{values }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Shift in a collection of new Y values 
+
+\mbox{\Hypertarget{classDataStreamerSource_a399953f70524ae110402e6dae7f3e728}\label{classDataStreamerSource_a399953f70524ae110402e6dae7f3e728}} 
+\index{DataStreamerSource@{DataStreamerSource}!Clear@{Clear}}
+\index{Clear@{Clear}!DataStreamerSource@{DataStreamerSource}}
+\doxysubsubsection{\texorpdfstring{Clear()}{Clear()}}
+{\footnotesize\ttfamily void Data\+Streamer\+Source.\+Clear (\begin{DoxyParamCaption}\item[{double}]{value = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Clear the buffer by setting all Y points to the given value 
+
+\mbox{\Hypertarget{classDataStreamerSource_ae01c489aabdf3f4102771064a5ab91a3}\label{classDataStreamerSource_ae01c489aabdf3f4102771064a5ab91a3}} 
+\index{DataStreamerSource@{DataStreamerSource}!GetAxisLimits@{GetAxisLimits}}
+\index{GetAxisLimits@{GetAxisLimits}!DataStreamerSource@{DataStreamerSource}}
+\doxysubsubsection{\texorpdfstring{GetAxisLimits()}{GetAxisLimits()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} Data\+Streamer\+Source.\+Get\+Axis\+Limits (\begin{DoxyParamCaption}\item[{bool}]{tight = {\ttfamily true} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{classDataStreamerSource_aa2fdb095076843dcb61774b17e021e59}\label{classDataStreamerSource_aa2fdb095076843dcb61774b17e021e59}} 
+\index{DataStreamerSource@{DataStreamerSource}!CountTotal@{CountTotal}}
+\index{CountTotal@{CountTotal}!DataStreamerSource@{DataStreamerSource}}
+\doxysubsubsection{\texorpdfstring{CountTotal}{CountTotal}}
+{\footnotesize\ttfamily int Data\+Streamer\+Source.\+Count\+Total = 0\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The total number of data points added 
+
+\mbox{\Hypertarget{classDataStreamerSource_a9a74fc432b46b440adf30791a91daa56}\label{classDataStreamerSource_a9a74fc432b46b440adf30791a91daa56}} 
+\index{DataStreamerSource@{DataStreamerSource}!CountTotalOnLastRender@{CountTotalOnLastRender}}
+\index{CountTotalOnLastRender@{CountTotalOnLastRender}!DataStreamerSource@{DataStreamerSource}}
+\doxysubsubsection{\texorpdfstring{CountTotalOnLastRender}{CountTotalOnLastRender}}
+{\footnotesize\ttfamily int Data\+Streamer\+Source.\+Count\+Total\+On\+Last\+Render = -\/1\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Total of data points added the last time this plottable was rendered. This can be compared with \mbox{\hyperlink{classDataStreamerSource_aa2fdb095076843dcb61774b17e021e59}{Count\+Total}} to determine if a new render is required. 
+
+\mbox{\Hypertarget{classDataStreamerSource_ad2ea2f62c990a66a95e52e02dbff395f}\label{classDataStreamerSource_ad2ea2f62c990a66a95e52e02dbff395f}} 
+\index{DataStreamerSource@{DataStreamerSource}!Data@{Data}}
+\index{Data@{Data}!DataStreamerSource@{DataStreamerSource}}
+\doxysubsubsection{\texorpdfstring{Data}{Data}}
+{\footnotesize\ttfamily double \mbox{[}$\,$\mbox{]} Data\+Streamer\+Source.\+Data\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Fixed-\/length array used as a circular buffer to shift data in at the position defined by \mbox{\hyperlink{classDataStreamerSource_af6ed3372cbc360a89739d1509963ebd3}{Next\+Index}}. Values in this array should not be modified externally if Manage\+Axis\+Limits is enabled. 
+
+\mbox{\Hypertarget{classDataStreamerSource_af63b628e7bf5d3bfc74677d3ecabb604}\label{classDataStreamerSource_af63b628e7bf5d3bfc74677d3ecabb604}} 
+\index{DataStreamerSource@{DataStreamerSource}!DataMax@{DataMax}}
+\index{DataMax@{DataMax}!DataStreamerSource@{DataStreamerSource}}
+\doxysubsubsection{\texorpdfstring{DataMax}{DataMax}}
+{\footnotesize\ttfamily double Data\+Streamer\+Source.\+Data\+Max = double.\+Negative\+Infinity\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Maximum value of all known data (not just the data in view) 
+
+\mbox{\Hypertarget{classDataStreamerSource_ac4b7c84940a86295b426512bc6cd7ef8}\label{classDataStreamerSource_ac4b7c84940a86295b426512bc6cd7ef8}} 
+\index{DataStreamerSource@{DataStreamerSource}!DataMin@{DataMin}}
+\index{DataMin@{DataMin}!DataStreamerSource@{DataStreamerSource}}
+\doxysubsubsection{\texorpdfstring{DataMin}{DataMin}}
+{\footnotesize\ttfamily double Data\+Streamer\+Source.\+Data\+Min = double.\+Positive\+Infinity\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Minimum value of all known data (not just the data in view) 
+
+\mbox{\Hypertarget{classDataStreamerSource_af6840200f70907a18510f3ce6c983199}\label{classDataStreamerSource_af6840200f70907a18510f3ce6c983199}} 
+\index{DataStreamerSource@{DataStreamerSource}!Length@{Length}}
+\index{Length@{Length}!DataStreamerSource@{DataStreamerSource}}
+\doxysubsubsection{\texorpdfstring{Length}{Length}}
+{\footnotesize\ttfamily int Data\+Streamer\+Source.\+Length\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The number of visible data points to display 
+
+\mbox{\Hypertarget{classDataStreamerSource_a2804b50125af003a311dd47a8d07a6a4}\label{classDataStreamerSource_a2804b50125af003a311dd47a8d07a6a4}} 
+\index{DataStreamerSource@{DataStreamerSource}!NewestIndex@{NewestIndex}}
+\index{NewestIndex@{NewestIndex}!DataStreamerSource@{DataStreamerSource}}
+\doxysubsubsection{\texorpdfstring{NewestIndex}{NewestIndex}}
+{\footnotesize\ttfamily int Data\+Streamer\+Source.\+Newest\+Index = 0\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Index in \mbox{\hyperlink{classDataStreamerSource_ad2ea2f62c990a66a95e52e02dbff395f}{Data}} holding the newest data point 
+
+\mbox{\Hypertarget{classDataStreamerSource_a7080518a979af9a5cdf37d828dd48f66}\label{classDataStreamerSource_a7080518a979af9a5cdf37d828dd48f66}} 
+\index{DataStreamerSource@{DataStreamerSource}!NewestPoint@{NewestPoint}}
+\index{NewestPoint@{NewestPoint}!DataStreamerSource@{DataStreamerSource}}
+\doxysubsubsection{\texorpdfstring{NewestPoint}{NewestPoint}}
+{\footnotesize\ttfamily double Data\+Streamer\+Source.\+Newest\+Point\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Value of the most recently added data point 
+
+\mbox{\Hypertarget{classDataStreamerSource_af6ed3372cbc360a89739d1509963ebd3}\label{classDataStreamerSource_af6ed3372cbc360a89739d1509963ebd3}} 
+\index{DataStreamerSource@{DataStreamerSource}!NextIndex@{NextIndex}}
+\index{NextIndex@{NextIndex}!DataStreamerSource@{DataStreamerSource}}
+\doxysubsubsection{\texorpdfstring{NextIndex}{NextIndex}}
+{\footnotesize\ttfamily int Data\+Streamer\+Source.\+Next\+Index = 0\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Index in \mbox{\hyperlink{classDataStreamerSource_ad2ea2f62c990a66a95e52e02dbff395f}{Data}} where the next point will be added 
+
+\mbox{\Hypertarget{classDataStreamerSource_afcbd006ee4fc8d402d6c75930ddd9d97}\label{classDataStreamerSource_afcbd006ee4fc8d402d6c75930ddd9d97}} 
+\index{DataStreamerSource@{DataStreamerSource}!OffsetX@{OffsetX}}
+\index{OffsetX@{OffsetX}!DataStreamerSource@{DataStreamerSource}}
+\doxysubsubsection{\texorpdfstring{OffsetX}{OffsetX}}
+{\footnotesize\ttfamily double Data\+Streamer\+Source.\+OffsetX = 0\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classDataStreamerSource_a5bd91d7cc049cb2d67299a9e16215f60}\label{classDataStreamerSource_a5bd91d7cc049cb2d67299a9e16215f60}} 
+\index{DataStreamerSource@{DataStreamerSource}!OffsetY@{OffsetY}}
+\index{OffsetY@{OffsetY}!DataStreamerSource@{DataStreamerSource}}
+\doxysubsubsection{\texorpdfstring{OffsetY}{OffsetY}}
+{\footnotesize\ttfamily double Data\+Streamer\+Source.\+OffsetY = 0\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classDataStreamerSource_af43fea709a847d06653bb4074c451458}\label{classDataStreamerSource_af43fea709a847d06653bb4074c451458}} 
+\index{DataStreamerSource@{DataStreamerSource}!SamplePeriod@{SamplePeriod}}
+\index{SamplePeriod@{SamplePeriod}!DataStreamerSource@{DataStreamerSource}}
+\doxysubsubsection{\texorpdfstring{SamplePeriod}{SamplePeriod}}
+{\footnotesize\ttfamily double Data\+Streamer\+Source.\+Sample\+Period = 1\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Data\+Sources/Data\+Streamer\+Source.\+cs\end{DoxyCompactItemize}

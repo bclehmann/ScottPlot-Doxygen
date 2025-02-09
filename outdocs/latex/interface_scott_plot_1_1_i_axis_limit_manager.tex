@@ -1,0 +1,79 @@
+\doxysection{Scott\+Plot.\+IAxis\+Limit\+Manager Interface Reference}
+\hypertarget{interface_scott_plot_1_1_i_axis_limit_manager}{}\label{interface_scott_plot_1_1_i_axis_limit_manager}\index{ScottPlot.IAxisLimitManager@{ScottPlot.IAxisLimitManager}}
+
+
+An axis manager contains logic to suggest axis limits given the current view and size of the data.  
+
+
+Inheritance diagram for Scott\+Plot.\+IAxis\+Limit\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.523810cm]{interface_scott_plot_1_1_i_axis_limit_manager}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespace_scott_plot_a4f8afc1393f89ce60e775705cbf134d1}{Coordinate\+Range}} \mbox{\hyperlink{interface_scott_plot_1_1_i_axis_limit_manager_adf6fe892995462ad4ea7c75fe1609f50}{Get\+RangeX}} (\mbox{\hyperlink{namespace_scott_plot_a4f8afc1393f89ce60e775705cbf134d1}{Coordinate\+Range}} view\+RangeX, \mbox{\hyperlink{namespace_scott_plot_a4f8afc1393f89ce60e775705cbf134d1}{Coordinate\+Range}} data\+RangeX)
+\begin{DoxyCompactList}\small\item\em Returns the recommended X axis range given the current view and size of the data. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_scott_plot_a4f8afc1393f89ce60e775705cbf134d1}{Coordinate\+Range}} \mbox{\hyperlink{interface_scott_plot_1_1_i_axis_limit_manager_af322da7af1ab81ab81cbaad45ffce3de}{Get\+RangeY}} (\mbox{\hyperlink{namespace_scott_plot_a4f8afc1393f89ce60e775705cbf134d1}{Coordinate\+Range}} view\+RangeY, \mbox{\hyperlink{namespace_scott_plot_a4f8afc1393f89ce60e775705cbf134d1}{Coordinate\+Range}} data\+RangeY)
+\begin{DoxyCompactList}\small\item\em Returns the recommended Y axis range given the current view and size of the data. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+An axis manager contains logic to suggest axis limits given the current view and size of the data. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_scott_plot_1_1_i_axis_limit_manager_adf6fe892995462ad4ea7c75fe1609f50}\index{ScottPlot.IAxisLimitManager@{ScottPlot.IAxisLimitManager}!GetRangeX@{GetRangeX}}
+\index{GetRangeX@{GetRangeX}!ScottPlot.IAxisLimitManager@{ScottPlot.IAxisLimitManager}}
+\doxysubsubsection{\texorpdfstring{GetRangeX()}{GetRangeX()}}
+{\footnotesize\ttfamily \label{interface_scott_plot_1_1_i_axis_limit_manager_adf6fe892995462ad4ea7c75fe1609f50} 
+\mbox{\hyperlink{namespace_scott_plot_a4f8afc1393f89ce60e775705cbf134d1}{Coordinate\+Range}} Scott\+Plot.\+IAxis\+Limit\+Manager.\+Get\+RangeX (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_scott_plot_a4f8afc1393f89ce60e775705cbf134d1}{Coordinate\+Range}}}]{view\+RangeX}{, }\item[{\mbox{\hyperlink{namespace_scott_plot_a4f8afc1393f89ce60e775705cbf134d1}{Coordinate\+Range}}}]{data\+RangeX}{}\end{DoxyParamCaption})}
+
+
+
+Returns the recommended X axis range given the current view and size of the data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em view\+RangeX} & X axis view range\\
+\hline
+{\em data\+RangeX} & X axis data range\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_scott_plot_1_1_axis_limit_managers_1_1_fixed_width_aa67910f79bc5b95528d56d1935af8ee8}{Scott\+Plot.\+Axis\+Limit\+Managers.\+Fixed\+Width}}, \mbox{\hyperlink{class_scott_plot_1_1_axis_limit_managers_1_1_full_a986bc0f10fde472690f96300ea4d5dc5}{Scott\+Plot.\+Axis\+Limit\+Managers.\+Full}}, and \mbox{\hyperlink{class_scott_plot_1_1_axis_limit_managers_1_1_slide_ac2fe4eaf57124cd7e1adf047c3e22072}{Scott\+Plot.\+Axis\+Limit\+Managers.\+Slide}}.
+
+\Hypertarget{interface_scott_plot_1_1_i_axis_limit_manager_af322da7af1ab81ab81cbaad45ffce3de}\index{ScottPlot.IAxisLimitManager@{ScottPlot.IAxisLimitManager}!GetRangeY@{GetRangeY}}
+\index{GetRangeY@{GetRangeY}!ScottPlot.IAxisLimitManager@{ScottPlot.IAxisLimitManager}}
+\doxysubsubsection{\texorpdfstring{GetRangeY()}{GetRangeY()}}
+{\footnotesize\ttfamily \label{interface_scott_plot_1_1_i_axis_limit_manager_af322da7af1ab81ab81cbaad45ffce3de} 
+\mbox{\hyperlink{namespace_scott_plot_a4f8afc1393f89ce60e775705cbf134d1}{Coordinate\+Range}} Scott\+Plot.\+IAxis\+Limit\+Manager.\+Get\+RangeY (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_scott_plot_a4f8afc1393f89ce60e775705cbf134d1}{Coordinate\+Range}}}]{view\+RangeY}{, }\item[{\mbox{\hyperlink{namespace_scott_plot_a4f8afc1393f89ce60e775705cbf134d1}{Coordinate\+Range}}}]{data\+RangeY}{}\end{DoxyParamCaption})}
+
+
+
+Returns the recommended Y axis range given the current view and size of the data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em view\+RangeY} & Y axis view range\\
+\hline
+{\em data\+RangeY} & Y axis view range\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_scott_plot_1_1_axis_limit_managers_1_1_fixed_width_a9c6c1a87f8f04419e68e3da0013a3447}{Scott\+Plot.\+Axis\+Limit\+Managers.\+Fixed\+Width}}, \mbox{\hyperlink{class_scott_plot_1_1_axis_limit_managers_1_1_full_a2faa6e7c33cef626948e216aeb4891a1}{Scott\+Plot.\+Axis\+Limit\+Managers.\+Full}}, and \mbox{\hyperlink{class_scott_plot_1_1_axis_limit_managers_1_1_slide_aefec52f7cf1ba2a411a2931b5c998a7b}{Scott\+Plot.\+Axis\+Limit\+Managers.\+Slide}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Primitives/IAxis\+Limit\+Manager.\+cs\end{DoxyCompactItemize}

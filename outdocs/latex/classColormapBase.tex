@@ -1,0 +1,89 @@
+\hypertarget{classColormapBase}{}\doxysection{Colormap\+Base Class Reference}
+\label{classColormapBase}\index{ColormapBase@{ColormapBase}}
+Inheritance diagram for Colormap\+Base\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=10.795181cm]{classColormapBase}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+abstract \mbox{\hyperlink{structColor}{Color}} \mbox{\hyperlink{classColormapBase_ab3a1449cad768570728205bff7580d28}{Get\+Color}} (double position)
+\begin{DoxyCompactList}\small\item\em Returns the color of a position on this colormap (from 0 to 1). Returns transparent if NaN. Positions outside the range will be clamped. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structColor}{Color}} \mbox{\hyperlink{classColormapBase_afd9294f61d64b383909e617b76b9f2e6}{Get\+Color}} (double position, \mbox{\hyperlink{structRange}{Range}} range)
+\begin{DoxyCompactList}\small\item\em Returns the color of a position on this colormap (according to the given range). Returns transparent if NaN. Positions outside the range will be clamped. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{interfaceIColormap}{IColormap}} \mbox{\hyperlink{classColormapBase_af109a3a62c43a51c91df82ac29f1f6f3}{Reversed}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+abstract string \mbox{\hyperlink{classColormapBase_a8efbc979ed7a05fe0044050762432b10}{Name}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classColormapBase_ab3a1449cad768570728205bff7580d28}\label{classColormapBase_ab3a1449cad768570728205bff7580d28}} 
+\index{ColormapBase@{ColormapBase}!GetColor@{GetColor}}
+\index{GetColor@{GetColor}!ColormapBase@{ColormapBase}}
+\doxysubsubsection{\texorpdfstring{GetColor()}{GetColor()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily abstract \mbox{\hyperlink{structColor}{Color}} Colormap\+Base.\+Get\+Color (\begin{DoxyParamCaption}\item[{double}]{position }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Returns the color of a position on this colormap (from 0 to 1). Returns transparent if NaN. Positions outside the range will be clamped. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & position from 0 (first color) to 1 (last color)\\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interfaceIColormap_ab3ec7b5e6319bac0e497e578ab42799d}{IColormap}}.
+
+
+
+Implemented in \mbox{\hyperlink{classCustom_a20e384b053e91b09d068f85a7017502a}{Custom}}, \mbox{\hyperlink{classScottPlot_1_1Colormaps_1_1GrayscaleReversed_a24d2753e8a16cbef17d3a85c9fa8b449}{Scott\+Plot.\+Colormaps.\+Grayscale\+Reversed}}, \mbox{\hyperlink{classScottPlot_1_1Colormaps_1_1Grayscale_acbea6f6a8063ae95c89973ea6cda474b}{Scott\+Plot.\+Colormaps.\+Grayscale}}, \mbox{\hyperlink{classScottPlot_1_1Colormaps_1_1ByteColormapBase_acc3471d7700db91f4a92c07016874346}{Scott\+Plot.\+Colormaps.\+Byte\+Colormap\+Base}}, and \mbox{\hyperlink{classArgbColormapBase_a09d250baaff2242414229cefd7cc41a7}{Argb\+Colormap\+Base}}.
+
+\mbox{\Hypertarget{classColormapBase_afd9294f61d64b383909e617b76b9f2e6}\label{classColormapBase_afd9294f61d64b383909e617b76b9f2e6}} 
+\index{ColormapBase@{ColormapBase}!GetColor@{GetColor}}
+\index{GetColor@{GetColor}!ColormapBase@{ColormapBase}}
+\doxysubsubsection{\texorpdfstring{GetColor()}{GetColor()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structColor}{Color}} Colormap\+Base.\+Get\+Color (\begin{DoxyParamCaption}\item[{double}]{position,  }\item[{\mbox{\hyperlink{structRange}{Range}}}]{range }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the color of a position on this colormap (according to the given range). Returns transparent if NaN. Positions outside the range will be clamped. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & position relative to the given range\\
+\hline
+{\em range} & range of values spanned by this colormap\\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interfaceIColormap_a488cfd5f5f822edd60308fff64707699}{IColormap}}.
+
+\mbox{\Hypertarget{classColormapBase_af109a3a62c43a51c91df82ac29f1f6f3}\label{classColormapBase_af109a3a62c43a51c91df82ac29f1f6f3}} 
+\index{ColormapBase@{ColormapBase}!Reversed@{Reversed}}
+\index{Reversed@{Reversed}!ColormapBase@{ColormapBase}}
+\doxysubsubsection{\texorpdfstring{Reversed()}{Reversed()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceIColormap}{IColormap}} Colormap\+Base.\+Reversed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{classColormapBase_a8efbc979ed7a05fe0044050762432b10}\label{classColormapBase_a8efbc979ed7a05fe0044050762432b10}} 
+\index{ColormapBase@{ColormapBase}!Name@{Name}}
+\index{Name@{Name}!ColormapBase@{ColormapBase}}
+\doxysubsubsection{\texorpdfstring{Name}{Name}}
+{\footnotesize\ttfamily abstract string Colormap\+Base.\+Name\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Colormaps/Colormap\+Base.\+cs\end{DoxyCompactItemize}

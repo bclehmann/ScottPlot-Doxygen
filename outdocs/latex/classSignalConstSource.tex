@@ -1,0 +1,126 @@
+\hypertarget{classSignalConstSource}{}\doxysection{Signal\+Const\+Source$<$ T $>$ Class Template Reference}
+\label{classSignalConstSource}\index{SignalConstSource$<$ T $>$@{SignalConstSource$<$ T $>$}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classSignalConstSource_a039f632c172ddfc1c2ed14f9a87f6323}{Signal\+Const\+Source}} (T\mbox{[}$\,$\mbox{]} ys, double period)
+\item 
+\mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} \mbox{\hyperlink{classSignalConstSource_accdccdbd5dd3eeac41202ae180de6d79}{Get\+Axis\+Limits}} ()
+\item 
+int \mbox{\hyperlink{classSignalConstSource_aae7a589c8445e9b2a9e1ff4b7d7cf265}{Get\+Index}} (double x, bool visible\+Data\+Only)
+\item 
+bool \mbox{\hyperlink{classSignalConstSource_abea8be56ad69b3bc55f468201c27634d}{Range\+Contains\+Signal}} (double x\+Min, double x\+Max)
+\item 
+\mbox{\hyperlink{structSignalRangeY}{Signal\+RangeY}} \mbox{\hyperlink{classSignalConstSource_a835a08dc57bfc402455a873b757e0035}{Get\+LimitsY}} (int first\+Index, int last\+Index)
+\item 
+List$<$ \mbox{\hyperlink{structPixelColumn}{Pixel\+Column}} $>$ \mbox{\hyperlink{classSignalConstSource_aedf1874364afb31a39d4c5cd913a6c49}{Get\+Pixel\+Columns}} (\mbox{\hyperlink{interfaceIAxes}{IAxes}} axes)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+readonly \mbox{\hyperlink{classSegmentedTree}{Segmented\+Tree}}$<$ T $>$ \mbox{\hyperlink{classSignalConstSource_aea5aea0fbe20019482753efa1c76f05a}{Segmented\+Tree}} = new()
+\item 
+readonly T\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classSignalConstSource_aa36de32abfbfd165675d6f2ce8658708}{Ys}}
+\item 
+readonly double \mbox{\hyperlink{classSignalConstSource_a0b82f9863665cf839b95a56f8da5ae71}{Period}}
+\item 
+double \mbox{\hyperlink{classSignalConstSource_abc127202973825561f98c9e1ffc62d05}{XOffset}} = 0
+\item 
+double \mbox{\hyperlink{classSignalConstSource_a156942963ccbe43a4f874b1f37e26c72}{YOffset}} = 0
+\item 
+int \mbox{\hyperlink{classSignalConstSource_a395150a94a66b8ef8691cdad09e6f214}{Min\+Render\+Index}} = 0
+\item 
+int \mbox{\hyperlink{classSignalConstSource_a8a822b9648051d7be64d010b2e822fe5}{Max\+Render\+Index}} = int.\+Max\+Value
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classSignalConstSource_a039f632c172ddfc1c2ed14f9a87f6323}\label{classSignalConstSource_a039f632c172ddfc1c2ed14f9a87f6323}} 
+\index{SignalConstSource$<$ T $>$@{SignalConstSource$<$ T $>$}!SignalConstSource@{SignalConstSource}}
+\index{SignalConstSource@{SignalConstSource}!SignalConstSource$<$ T $>$@{SignalConstSource$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{SignalConstSource()}{SignalConstSource()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classSignalConstSource}{Signal\+Const\+Source}}$<$ T $>$.\mbox{\hyperlink{classSignalConstSource}{Signal\+Const\+Source}} (\begin{DoxyParamCaption}\item[{T\mbox{[}$\,$\mbox{]}}]{ys,  }\item[{double}]{period }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classSignalConstSource_accdccdbd5dd3eeac41202ae180de6d79}\label{classSignalConstSource_accdccdbd5dd3eeac41202ae180de6d79}} 
+\index{SignalConstSource$<$ T $>$@{SignalConstSource$<$ T $>$}!GetAxisLimits@{GetAxisLimits}}
+\index{GetAxisLimits@{GetAxisLimits}!SignalConstSource$<$ T $>$@{SignalConstSource$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{GetAxisLimits()}{GetAxisLimits()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} \mbox{\hyperlink{classSignalConstSource}{Signal\+Const\+Source}}$<$ T $>$.Get\+Axis\+Limits (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classSignalConstSource_aae7a589c8445e9b2a9e1ff4b7d7cf265}\label{classSignalConstSource_aae7a589c8445e9b2a9e1ff4b7d7cf265}} 
+\index{SignalConstSource$<$ T $>$@{SignalConstSource$<$ T $>$}!GetIndex@{GetIndex}}
+\index{GetIndex@{GetIndex}!SignalConstSource$<$ T $>$@{SignalConstSource$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{GetIndex()}{GetIndex()}}
+{\footnotesize\ttfamily int \mbox{\hyperlink{classSignalConstSource}{Signal\+Const\+Source}}$<$ T $>$.Get\+Index (\begin{DoxyParamCaption}\item[{double}]{x,  }\item[{bool}]{visible\+Data\+Only }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classSignalConstSource_a835a08dc57bfc402455a873b757e0035}\label{classSignalConstSource_a835a08dc57bfc402455a873b757e0035}} 
+\index{SignalConstSource$<$ T $>$@{SignalConstSource$<$ T $>$}!GetLimitsY@{GetLimitsY}}
+\index{GetLimitsY@{GetLimitsY}!SignalConstSource$<$ T $>$@{SignalConstSource$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{GetLimitsY()}{GetLimitsY()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSignalRangeY}{Signal\+RangeY}} \mbox{\hyperlink{classSignalConstSource}{Signal\+Const\+Source}}$<$ T $>$.Get\+LimitsY (\begin{DoxyParamCaption}\item[{int}]{first\+Index,  }\item[{int}]{last\+Index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classSignalConstSource_aedf1874364afb31a39d4c5cd913a6c49}\label{classSignalConstSource_aedf1874364afb31a39d4c5cd913a6c49}} 
+\index{SignalConstSource$<$ T $>$@{SignalConstSource$<$ T $>$}!GetPixelColumns@{GetPixelColumns}}
+\index{GetPixelColumns@{GetPixelColumns}!SignalConstSource$<$ T $>$@{SignalConstSource$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{GetPixelColumns()}{GetPixelColumns()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{structPixelColumn}{Pixel\+Column}}$>$ \mbox{\hyperlink{classSignalConstSource}{Signal\+Const\+Source}}$<$ T $>$.Get\+Pixel\+Columns (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceIAxes}{IAxes}}}]{axes }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classSignalConstSource_abea8be56ad69b3bc55f468201c27634d}\label{classSignalConstSource_abea8be56ad69b3bc55f468201c27634d}} 
+\index{SignalConstSource$<$ T $>$@{SignalConstSource$<$ T $>$}!RangeContainsSignal@{RangeContainsSignal}}
+\index{RangeContainsSignal@{RangeContainsSignal}!SignalConstSource$<$ T $>$@{SignalConstSource$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{RangeContainsSignal()}{RangeContainsSignal()}}
+{\footnotesize\ttfamily bool \mbox{\hyperlink{classSignalConstSource}{Signal\+Const\+Source}}$<$ T $>$.Range\+Contains\+Signal (\begin{DoxyParamCaption}\item[{double}]{x\+Min,  }\item[{double}]{x\+Max }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classSignalConstSource_a8a822b9648051d7be64d010b2e822fe5}\label{classSignalConstSource_a8a822b9648051d7be64d010b2e822fe5}} 
+\index{SignalConstSource$<$ T $>$@{SignalConstSource$<$ T $>$}!MaxRenderIndex@{MaxRenderIndex}}
+\index{MaxRenderIndex@{MaxRenderIndex}!SignalConstSource$<$ T $>$@{SignalConstSource$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{MaxRenderIndex}{MaxRenderIndex}}
+{\footnotesize\ttfamily int \mbox{\hyperlink{classSignalConstSource}{Signal\+Const\+Source}}$<$ T $>$.Max\+Render\+Index = int.\+Max\+Value}
+
+\mbox{\Hypertarget{classSignalConstSource_a395150a94a66b8ef8691cdad09e6f214}\label{classSignalConstSource_a395150a94a66b8ef8691cdad09e6f214}} 
+\index{SignalConstSource$<$ T $>$@{SignalConstSource$<$ T $>$}!MinRenderIndex@{MinRenderIndex}}
+\index{MinRenderIndex@{MinRenderIndex}!SignalConstSource$<$ T $>$@{SignalConstSource$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{MinRenderIndex}{MinRenderIndex}}
+{\footnotesize\ttfamily int \mbox{\hyperlink{classSignalConstSource}{Signal\+Const\+Source}}$<$ T $>$.Min\+Render\+Index = 0}
+
+\mbox{\Hypertarget{classSignalConstSource_a0b82f9863665cf839b95a56f8da5ae71}\label{classSignalConstSource_a0b82f9863665cf839b95a56f8da5ae71}} 
+\index{SignalConstSource$<$ T $>$@{SignalConstSource$<$ T $>$}!Period@{Period}}
+\index{Period@{Period}!SignalConstSource$<$ T $>$@{SignalConstSource$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Period}{Period}}
+{\footnotesize\ttfamily readonly double \mbox{\hyperlink{classSignalConstSource}{Signal\+Const\+Source}}$<$ T $>$.Period}
+
+\mbox{\Hypertarget{classSignalConstSource_aea5aea0fbe20019482753efa1c76f05a}\label{classSignalConstSource_aea5aea0fbe20019482753efa1c76f05a}} 
+\index{SignalConstSource$<$ T $>$@{SignalConstSource$<$ T $>$}!SegmentedTree@{SegmentedTree}}
+\index{SegmentedTree@{SegmentedTree}!SignalConstSource$<$ T $>$@{SignalConstSource$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{SegmentedTree}{SegmentedTree}}
+{\footnotesize\ttfamily readonly \mbox{\hyperlink{classSegmentedTree}{Segmented\+Tree}}$<$T$>$ \mbox{\hyperlink{classSignalConstSource}{Signal\+Const\+Source}}$<$ T $>$.\mbox{\hyperlink{classSegmentedTree}{Segmented\+Tree}} = new()}
+
+\mbox{\Hypertarget{classSignalConstSource_abc127202973825561f98c9e1ffc62d05}\label{classSignalConstSource_abc127202973825561f98c9e1ffc62d05}} 
+\index{SignalConstSource$<$ T $>$@{SignalConstSource$<$ T $>$}!XOffset@{XOffset}}
+\index{XOffset@{XOffset}!SignalConstSource$<$ T $>$@{SignalConstSource$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{XOffset}{XOffset}}
+{\footnotesize\ttfamily double \mbox{\hyperlink{classSignalConstSource}{Signal\+Const\+Source}}$<$ T $>$.XOffset = 0}
+
+\mbox{\Hypertarget{classSignalConstSource_a156942963ccbe43a4f874b1f37e26c72}\label{classSignalConstSource_a156942963ccbe43a4f874b1f37e26c72}} 
+\index{SignalConstSource$<$ T $>$@{SignalConstSource$<$ T $>$}!YOffset@{YOffset}}
+\index{YOffset@{YOffset}!SignalConstSource$<$ T $>$@{SignalConstSource$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{YOffset}{YOffset}}
+{\footnotesize\ttfamily double \mbox{\hyperlink{classSignalConstSource}{Signal\+Const\+Source}}$<$ T $>$.YOffset = 0}
+
+\mbox{\Hypertarget{classSignalConstSource_aa36de32abfbfd165675d6f2ce8658708}\label{classSignalConstSource_aa36de32abfbfd165675d6f2ce8658708}} 
+\index{SignalConstSource$<$ T $>$@{SignalConstSource$<$ T $>$}!Ys@{Ys}}
+\index{Ys@{Ys}!SignalConstSource$<$ T $>$@{SignalConstSource$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Ys}{Ys}}
+{\footnotesize\ttfamily readonly T \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classSignalConstSource}{Signal\+Const\+Source}}$<$ T $>$.Ys}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Data\+Sources/Signal\+Const\+Source.\+cs\end{DoxyCompactItemize}

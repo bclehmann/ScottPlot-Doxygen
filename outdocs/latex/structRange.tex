@@ -1,0 +1,106 @@
+\hypertarget{structRange}{}\doxysection{Range Struct Reference}
+\label{structRange}\index{Range@{Range}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structRange_a3e88c8b37e3cdf1e4c46e5a749246fb5}{Range}} (double min, double max)
+\item 
+override string \mbox{\hyperlink{structRange_a4d95429c3496a59a8e691f7c9fb510ad}{To\+String}} ()
+\item 
+double \mbox{\hyperlink{structRange_aa5b5c0a36a7345b5764231b9a9dc0c09}{Normalize}} (double value, bool clamp=false)
+\begin{DoxyCompactList}\small\item\em Returns the given value as a fraction of the difference between Min and Max. This is a min-\/max feature scaling. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{structRange_ac96c15040eee9fad8f081d6beac529c6}{Clamp}} (double value)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{structRange}{Range}} \mbox{\hyperlink{structRange_ac8b59976ce1c236abf9ea84b15745019}{Get\+Range}} (double\mbox{[},\mbox{]} input)
+\item 
+static \mbox{\hyperlink{structRange}{Range}} \mbox{\hyperlink{structRange_a764c510f28ff98284a42ce8822fdd573}{Get\+Range}} (\mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$ double $>$ input)
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{structRange_a745cf8f44ab030ff580ec374c8a8a845}{Min}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+double \mbox{\hyperlink{structRange_aadc143778d6f68bcee483e2957e13721}{Max}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+summary$>$ Represents a range between any two finite values (inclusive) /summary$>$ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structRange_a3e88c8b37e3cdf1e4c46e5a749246fb5}\label{structRange_a3e88c8b37e3cdf1e4c46e5a749246fb5}} 
+\index{Range@{Range}!Range@{Range}}
+\index{Range@{Range}!Range@{Range}}
+\doxysubsubsection{\texorpdfstring{Range()}{Range()}}
+{\footnotesize\ttfamily Range.\+Range (\begin{DoxyParamCaption}\item[{double}]{min,  }\item[{double}]{max }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{structRange_ac96c15040eee9fad8f081d6beac529c6}\label{structRange_ac96c15040eee9fad8f081d6beac529c6}} 
+\index{Range@{Range}!Clamp@{Clamp}}
+\index{Clamp@{Clamp}!Range@{Range}}
+\doxysubsubsection{\texorpdfstring{Clamp()}{Clamp()}}
+{\footnotesize\ttfamily double Range.\+Clamp (\begin{DoxyParamCaption}\item[{double}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structRange_ac8b59976ce1c236abf9ea84b15745019}\label{structRange_ac8b59976ce1c236abf9ea84b15745019}} 
+\index{Range@{Range}!GetRange@{GetRange}}
+\index{GetRange@{GetRange}!Range@{Range}}
+\doxysubsubsection{\texorpdfstring{GetRange()}{GetRange()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{structRange}{Range}} Range.\+Get\+Range (\begin{DoxyParamCaption}\item[{double}]{input\mbox{[},\mbox{]} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{structRange_a764c510f28ff98284a42ce8822fdd573}\label{structRange_a764c510f28ff98284a42ce8822fdd573}} 
+\index{Range@{Range}!GetRange@{GetRange}}
+\index{GetRange@{GetRange}!Range@{Range}}
+\doxysubsubsection{\texorpdfstring{GetRange()}{GetRange()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{structRange}{Range}} Range.\+Get\+Range (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$ double $>$}]{input }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{structRange_aa5b5c0a36a7345b5764231b9a9dc0c09}\label{structRange_aa5b5c0a36a7345b5764231b9a9dc0c09}} 
+\index{Range@{Range}!Normalize@{Normalize}}
+\index{Normalize@{Normalize}!Range@{Range}}
+\doxysubsubsection{\texorpdfstring{Normalize()}{Normalize()}}
+{\footnotesize\ttfamily double Range.\+Normalize (\begin{DoxyParamCaption}\item[{double}]{value,  }\item[{bool}]{clamp = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the given value as a fraction of the difference between Min and Max. This is a min-\/max feature scaling. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The value to normalize\\
+\hline
+{\em clamp} & If true, values outside of the range will be clamped onto the interval \mbox{[}0, 1\mbox{]}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The normalized value
+\end{DoxyReturn}
+summary$>$ Returns the given value clamped to the range (inclusive). /summary$>$ \mbox{\Hypertarget{structRange_a4d95429c3496a59a8e691f7c9fb510ad}\label{structRange_a4d95429c3496a59a8e691f7c9fb510ad}} 
+\index{Range@{Range}!ToString@{ToString}}
+\index{ToString@{ToString}!Range@{Range}}
+\doxysubsubsection{\texorpdfstring{ToString()}{ToString()}}
+{\footnotesize\ttfamily override string Range.\+To\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{structRange_aadc143778d6f68bcee483e2957e13721}\label{structRange_aadc143778d6f68bcee483e2957e13721}} 
+\index{Range@{Range}!Max@{Max}}
+\index{Max@{Max}!Range@{Range}}
+\doxysubsubsection{\texorpdfstring{Max}{Max}}
+{\footnotesize\ttfamily double Range.\+Max\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{structRange_a745cf8f44ab030ff580ec374c8a8a845}\label{structRange_a745cf8f44ab030ff580ec374c8a8a845}} 
+\index{Range@{Range}!Min@{Min}}
+\index{Min@{Min}!Range@{Range}}
+\doxysubsubsection{\texorpdfstring{Min}{Min}}
+{\footnotesize\ttfamily double Range.\+Min\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Primitives/Range.\+cs\end{DoxyCompactItemize}

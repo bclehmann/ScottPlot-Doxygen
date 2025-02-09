@@ -1,0 +1,322 @@
+\hypertarget{classHistogram}{}\doxysection{Histogram Class Reference}
+\label{classHistogram}\index{Histogram@{Histogram}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classHistogram_af822ae3bc1ff131f88263a89862dd18f}{Histogram}} (double min, double max, int bin\+Count, bool add\+Outliers\+To\+Edge\+Bins=false, bool add\+Final\+Bin=true)
+\begin{DoxyCompactList}\small\item\em Create a histogram which will count values supplied by \mbox{\hyperlink{classHistogram_aea23bf8724d9925e52cce6f40c4ae563}{Add(double)}} and \mbox{\hyperlink{classHistogram_a3e8b4fb9419a8c0dd90ec325e6ac490a}{Add\+Range(\+IEnumerable$<$double$>$)}} \end{DoxyCompactList}\item 
+double\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classHistogram_a3282d26e1eab33d166cf546d6aa60966}{Get\+Probability}} ()
+\begin{DoxyCompactList}\small\item\em Return counts normalized so the sum of all counts equals 1 \end{DoxyCompactList}\item 
+Func$<$ double, double?$>$ \mbox{\hyperlink{classHistogram_a3d8dbf5475cc7ecb51ae0159d8e0807b}{Get\+Probability\+Curve}} (double\mbox{[}$\,$\mbox{]} values, bool scale\+To\+Binned\+Probability=false)
+\begin{DoxyCompactList}\small\item\em Return a function describing the probability function (a Gaussian curve fitted to the histogram probabilities). \end{DoxyCompactList}\item 
+double\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classHistogram_ad75c3967be7fd8570b3a23181d13b696}{Get\+Normalized}} (double max\+Value=1)
+\begin{DoxyCompactList}\small\item\em Return counts normalized so the maximum value equals the given value \end{DoxyCompactList}\item 
+double\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classHistogram_a1ed9681aa73a221071b2c5c860406e02}{Get\+Cumulative}} ()
+\begin{DoxyCompactList}\small\item\em Return the cumulative histogram counts. Each value is the number of counts in that bin and all bins below it. \end{DoxyCompactList}\item 
+double\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classHistogram_a0460cec373290e841c1f19bb2fd3c035}{Get\+Cumulative\+Probability}} ()
+\begin{DoxyCompactList}\small\item\em Return the cumulative probability histogram. Each value is the fraction of counts in that bin and all bins below it. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classHistogram_aea23bf8724d9925e52cce6f40c4ae563}{Add}} (double value)
+\begin{DoxyCompactList}\small\item\em Add a single value to the histogram \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classHistogram_a3e8b4fb9419a8c0dd90ec325e6ac490a}{Add\+Range}} (\mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$ double $>$ values)
+\begin{DoxyCompactList}\small\item\em Add multiple values to the histogram \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classHistogram_a5a668e77fbe07d27080868aac0289737}{Clear}} ()
+\begin{DoxyCompactList}\small\item\em Reset the histogram, setting all counts and values to zero \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classHistogram}{Histogram}} \mbox{\hyperlink{classHistogram_a7ec369bf0338b8f9cc8a30202c6b5753}{With\+Fixed\+Bin\+Size}} (double min, double max, double bin\+Size, bool add\+Outliers\+To\+Edge\+Bins=false)
+\begin{DoxyCompactList}\small\item\em Create a histogram with bins that can count data from {\itshape min}  to {\itshape max}  (inclusive) \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{classHistogram}{Histogram}} \mbox{\hyperlink{classHistogram_aefd6271eff3470cde7a41945a329646d}{With\+Fixed\+Bin\+Count}} (double min, double max, int bin\+Count, bool add\+Outliers\+To\+Edge\+Bins=false)
+\begin{DoxyCompactList}\small\item\em Create a histogram with bins that can count data from {\itshape min}  to {\itshape max}  (inclusive) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+readonly double\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classHistogram_ad8b96e7ee4d105678ed34ca025696e29}{Counts}}
+\begin{DoxyCompactList}\small\item\em Number of values counted for each bin. \end{DoxyCompactList}\item 
+readonly int \mbox{\hyperlink{classHistogram_af5fe1dda05e11cd8176bc67560bf4c94}{Bin\+Count}}
+\begin{DoxyCompactList}\small\item\em Number of bins. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{classHistogram_aaa73f045037a7872ff7304d1e5f91cc9}{Sum}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Running total of all values counted. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classHistogram_a0901de6e80c127b420f3793d6f2e9937}{Values\+Counted}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Total number of values accumulated. \end{DoxyCompactList}\item 
+double\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classHistogram_ac09f05cd5db7c91e1ce40e3ef0f53692}{Bins}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Lower edge for each bin. \end{DoxyCompactList}\item 
+double\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classHistogram_ac480e3ed05215711f320db7c9179174a}{Bin\+Centers}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Center of each bin. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classHistogram_ad93ff853c7df3092a1d2d6a5edd0f4d5}{Add\+Outliers\+To\+Edge\+Bins}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Default behavior is that outlier values are not counted. If this is enabled, min/max outliers will be counted in the first/last bin. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classHistogram_a587e098bd63b0d90bb751c638d2ad37c}{Min}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Lower edge of the first bin \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classHistogram_a0fcb9e2f2dfaae41ba3a83a0b7ed5306}{Max}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Upper edge of the last bin \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classHistogram_a9191fd0895b3043cfdd812c348cc350b}{Bin\+Size}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The calculated bin size. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classHistogram_ac3974e29327b94571cfbaaf168f62f0c}{Min\+Outlier\+Count}} = 0\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Number of values that were smaller than the lower edge of the first bin. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classHistogram_a2c096c0570b51fcb934c11dd1b70fc0b}{Max\+Outlier\+Count}} = 0\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Number of values that were greater than the upper edge of the last bin. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classHistogram_af822ae3bc1ff131f88263a89862dd18f}\label{classHistogram_af822ae3bc1ff131f88263a89862dd18f}} 
+\index{Histogram@{Histogram}!Histogram@{Histogram}}
+\index{Histogram@{Histogram}!Histogram@{Histogram}}
+\doxysubsubsection{\texorpdfstring{Histogram()}{Histogram()}}
+{\footnotesize\ttfamily Histogram.\+Histogram (\begin{DoxyParamCaption}\item[{double}]{min,  }\item[{double}]{max,  }\item[{int}]{bin\+Count,  }\item[{bool}]{add\+Outliers\+To\+Edge\+Bins = {\ttfamily false},  }\item[{bool}]{add\+Final\+Bin = {\ttfamily true} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Create a histogram which will count values supplied by \mbox{\hyperlink{classHistogram_aea23bf8724d9925e52cce6f40c4ae563}{Add(double)}} and \mbox{\hyperlink{classHistogram_a3e8b4fb9419a8c0dd90ec325e6ac490a}{Add\+Range(\+IEnumerable$<$double$>$)}} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em min} & minimum value to be counted\\
+\hline
+{\em max} & maximum value to be counted\\
+\hline
+{\em bin\+Count} & number of bins between {\itshape min}  and {\itshape max} \\
+\hline
+{\em add\+Outliers\+To\+Edge\+Bins} & if false, outliers will not be counted\\
+\hline
+{\em add\+Final\+Bin} & if true, one more bin will be added so values equal to {\itshape max}  can be counted too\\
+\hline
+\end{DoxyParams}
+
+
+If {\itshape min}  and {\itshape max}  are the same value, the {\itshape min}  and {\itshape max}  properties will be {\itshape min}  -\/ 0.\+5 and {\itshape max}  + 0.\+5, respectively. This is to handle an edge case where all values of an array are exactly the same, producing an identical min and max. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classHistogram_aea23bf8724d9925e52cce6f40c4ae563}\label{classHistogram_aea23bf8724d9925e52cce6f40c4ae563}} 
+\index{Histogram@{Histogram}!Add@{Add}}
+\index{Add@{Add}!Histogram@{Histogram}}
+\doxysubsubsection{\texorpdfstring{Add()}{Add()}}
+{\footnotesize\ttfamily void Histogram.\+Add (\begin{DoxyParamCaption}\item[{double}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Add a single value to the histogram 
+
+\mbox{\Hypertarget{classHistogram_a3e8b4fb9419a8c0dd90ec325e6ac490a}\label{classHistogram_a3e8b4fb9419a8c0dd90ec325e6ac490a}} 
+\index{Histogram@{Histogram}!AddRange@{AddRange}}
+\index{AddRange@{AddRange}!Histogram@{Histogram}}
+\doxysubsubsection{\texorpdfstring{AddRange()}{AddRange()}}
+{\footnotesize\ttfamily void Histogram.\+Add\+Range (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$ double $>$}]{values }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Add multiple values to the histogram 
+
+\mbox{\Hypertarget{classHistogram_a5a668e77fbe07d27080868aac0289737}\label{classHistogram_a5a668e77fbe07d27080868aac0289737}} 
+\index{Histogram@{Histogram}!Clear@{Clear}}
+\index{Clear@{Clear}!Histogram@{Histogram}}
+\doxysubsubsection{\texorpdfstring{Clear()}{Clear()}}
+{\footnotesize\ttfamily void Histogram.\+Clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Reset the histogram, setting all counts and values to zero 
+
+\mbox{\Hypertarget{classHistogram_a1ed9681aa73a221071b2c5c860406e02}\label{classHistogram_a1ed9681aa73a221071b2c5c860406e02}} 
+\index{Histogram@{Histogram}!GetCumulative@{GetCumulative}}
+\index{GetCumulative@{GetCumulative}!Histogram@{Histogram}}
+\doxysubsubsection{\texorpdfstring{GetCumulative()}{GetCumulative()}}
+{\footnotesize\ttfamily double \mbox{[}$\,$\mbox{]} Histogram.\+Get\+Cumulative (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return the cumulative histogram counts. Each value is the number of counts in that bin and all bins below it. 
+
+\mbox{\Hypertarget{classHistogram_a0460cec373290e841c1f19bb2fd3c035}\label{classHistogram_a0460cec373290e841c1f19bb2fd3c035}} 
+\index{Histogram@{Histogram}!GetCumulativeProbability@{GetCumulativeProbability}}
+\index{GetCumulativeProbability@{GetCumulativeProbability}!Histogram@{Histogram}}
+\doxysubsubsection{\texorpdfstring{GetCumulativeProbability()}{GetCumulativeProbability()}}
+{\footnotesize\ttfamily double \mbox{[}$\,$\mbox{]} Histogram.\+Get\+Cumulative\+Probability (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return the cumulative probability histogram. Each value is the fraction of counts in that bin and all bins below it. 
+
+\mbox{\Hypertarget{classHistogram_ad75c3967be7fd8570b3a23181d13b696}\label{classHistogram_ad75c3967be7fd8570b3a23181d13b696}} 
+\index{Histogram@{Histogram}!GetNormalized@{GetNormalized}}
+\index{GetNormalized@{GetNormalized}!Histogram@{Histogram}}
+\doxysubsubsection{\texorpdfstring{GetNormalized()}{GetNormalized()}}
+{\footnotesize\ttfamily double \mbox{[}$\,$\mbox{]} Histogram.\+Get\+Normalized (\begin{DoxyParamCaption}\item[{double}]{max\+Value = {\ttfamily 1} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return counts normalized so the maximum value equals the given value 
+
+\mbox{\Hypertarget{classHistogram_a3282d26e1eab33d166cf546d6aa60966}\label{classHistogram_a3282d26e1eab33d166cf546d6aa60966}} 
+\index{Histogram@{Histogram}!GetProbability@{GetProbability}}
+\index{GetProbability@{GetProbability}!Histogram@{Histogram}}
+\doxysubsubsection{\texorpdfstring{GetProbability()}{GetProbability()}}
+{\footnotesize\ttfamily double \mbox{[}$\,$\mbox{]} Histogram.\+Get\+Probability (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return counts normalized so the sum of all counts equals 1 
+
+\mbox{\Hypertarget{classHistogram_a3d8dbf5475cc7ecb51ae0159d8e0807b}\label{classHistogram_a3d8dbf5475cc7ecb51ae0159d8e0807b}} 
+\index{Histogram@{Histogram}!GetProbabilityCurve@{GetProbabilityCurve}}
+\index{GetProbabilityCurve@{GetProbabilityCurve}!Histogram@{Histogram}}
+\doxysubsubsection{\texorpdfstring{GetProbabilityCurve()}{GetProbabilityCurve()}}
+{\footnotesize\ttfamily Func$<$double, double?$>$ Histogram.\+Get\+Probability\+Curve (\begin{DoxyParamCaption}\item[{double\mbox{[}$\,$\mbox{]}}]{values,  }\item[{bool}]{scale\+To\+Binned\+Probability = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return a function describing the probability function (a Gaussian curve fitted to the histogram probabilities). 
+
+\mbox{\Hypertarget{classHistogram_aefd6271eff3470cde7a41945a329646d}\label{classHistogram_aefd6271eff3470cde7a41945a329646d}} 
+\index{Histogram@{Histogram}!WithFixedBinCount@{WithFixedBinCount}}
+\index{WithFixedBinCount@{WithFixedBinCount}!Histogram@{Histogram}}
+\doxysubsubsection{\texorpdfstring{WithFixedBinCount()}{WithFixedBinCount()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classHistogram}{Histogram}} Histogram.\+With\+Fixed\+Bin\+Count (\begin{DoxyParamCaption}\item[{double}]{min,  }\item[{double}]{max,  }\item[{int}]{bin\+Count,  }\item[{bool}]{add\+Outliers\+To\+Edge\+Bins = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Create a histogram with bins that can count data from {\itshape min}  to {\itshape max}  (inclusive) 
+
+\mbox{\Hypertarget{classHistogram_a7ec369bf0338b8f9cc8a30202c6b5753}\label{classHistogram_a7ec369bf0338b8f9cc8a30202c6b5753}} 
+\index{Histogram@{Histogram}!WithFixedBinSize@{WithFixedBinSize}}
+\index{WithFixedBinSize@{WithFixedBinSize}!Histogram@{Histogram}}
+\doxysubsubsection{\texorpdfstring{WithFixedBinSize()}{WithFixedBinSize()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classHistogram}{Histogram}} Histogram.\+With\+Fixed\+Bin\+Size (\begin{DoxyParamCaption}\item[{double}]{min,  }\item[{double}]{max,  }\item[{double}]{bin\+Size,  }\item[{bool}]{add\+Outliers\+To\+Edge\+Bins = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Create a histogram with bins that can count data from {\itshape min}  to {\itshape max}  (inclusive) 
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classHistogram_af5fe1dda05e11cd8176bc67560bf4c94}\label{classHistogram_af5fe1dda05e11cd8176bc67560bf4c94}} 
+\index{Histogram@{Histogram}!BinCount@{BinCount}}
+\index{BinCount@{BinCount}!Histogram@{Histogram}}
+\doxysubsubsection{\texorpdfstring{BinCount}{BinCount}}
+{\footnotesize\ttfamily readonly int Histogram.\+Bin\+Count}
+
+
+
+Number of bins. 
+
+\mbox{\Hypertarget{classHistogram_ad8b96e7ee4d105678ed34ca025696e29}\label{classHistogram_ad8b96e7ee4d105678ed34ca025696e29}} 
+\index{Histogram@{Histogram}!Counts@{Counts}}
+\index{Counts@{Counts}!Histogram@{Histogram}}
+\doxysubsubsection{\texorpdfstring{Counts}{Counts}}
+{\footnotesize\ttfamily readonly double \mbox{[}$\,$\mbox{]} Histogram.\+Counts}
+
+
+
+Number of values counted for each bin. 
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{classHistogram_ad93ff853c7df3092a1d2d6a5edd0f4d5}\label{classHistogram_ad93ff853c7df3092a1d2d6a5edd0f4d5}} 
+\index{Histogram@{Histogram}!AddOutliersToEdgeBins@{AddOutliersToEdgeBins}}
+\index{AddOutliersToEdgeBins@{AddOutliersToEdgeBins}!Histogram@{Histogram}}
+\doxysubsubsection{\texorpdfstring{AddOutliersToEdgeBins}{AddOutliersToEdgeBins}}
+{\footnotesize\ttfamily bool Histogram.\+Add\+Outliers\+To\+Edge\+Bins\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Default behavior is that outlier values are not counted. If this is enabled, min/max outliers will be counted in the first/last bin. 
+
+\mbox{\Hypertarget{classHistogram_ac480e3ed05215711f320db7c9179174a}\label{classHistogram_ac480e3ed05215711f320db7c9179174a}} 
+\index{Histogram@{Histogram}!BinCenters@{BinCenters}}
+\index{BinCenters@{BinCenters}!Histogram@{Histogram}}
+\doxysubsubsection{\texorpdfstring{BinCenters}{BinCenters}}
+{\footnotesize\ttfamily double \mbox{[}$\,$\mbox{]} Histogram.\+Bin\+Centers\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Center of each bin. 
+
+\mbox{\Hypertarget{classHistogram_ac09f05cd5db7c91e1ce40e3ef0f53692}\label{classHistogram_ac09f05cd5db7c91e1ce40e3ef0f53692}} 
+\index{Histogram@{Histogram}!Bins@{Bins}}
+\index{Bins@{Bins}!Histogram@{Histogram}}
+\doxysubsubsection{\texorpdfstring{Bins}{Bins}}
+{\footnotesize\ttfamily double \mbox{[}$\,$\mbox{]} Histogram.\+Bins\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Lower edge for each bin. 
+
+\mbox{\Hypertarget{classHistogram_a9191fd0895b3043cfdd812c348cc350b}\label{classHistogram_a9191fd0895b3043cfdd812c348cc350b}} 
+\index{Histogram@{Histogram}!BinSize@{BinSize}}
+\index{BinSize@{BinSize}!Histogram@{Histogram}}
+\doxysubsubsection{\texorpdfstring{BinSize}{BinSize}}
+{\footnotesize\ttfamily double Histogram.\+Bin\+Size\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The calculated bin size. 
+
+\mbox{\Hypertarget{classHistogram_a0fcb9e2f2dfaae41ba3a83a0b7ed5306}\label{classHistogram_a0fcb9e2f2dfaae41ba3a83a0b7ed5306}} 
+\index{Histogram@{Histogram}!Max@{Max}}
+\index{Max@{Max}!Histogram@{Histogram}}
+\doxysubsubsection{\texorpdfstring{Max}{Max}}
+{\footnotesize\ttfamily double Histogram.\+Max\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Upper edge of the last bin 
+
+\mbox{\Hypertarget{classHistogram_a2c096c0570b51fcb934c11dd1b70fc0b}\label{classHistogram_a2c096c0570b51fcb934c11dd1b70fc0b}} 
+\index{Histogram@{Histogram}!MaxOutlierCount@{MaxOutlierCount}}
+\index{MaxOutlierCount@{MaxOutlierCount}!Histogram@{Histogram}}
+\doxysubsubsection{\texorpdfstring{MaxOutlierCount}{MaxOutlierCount}}
+{\footnotesize\ttfamily int Histogram.\+Max\+Outlier\+Count = 0\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Number of values that were greater than the upper edge of the last bin. 
+
+\mbox{\Hypertarget{classHistogram_a587e098bd63b0d90bb751c638d2ad37c}\label{classHistogram_a587e098bd63b0d90bb751c638d2ad37c}} 
+\index{Histogram@{Histogram}!Min@{Min}}
+\index{Min@{Min}!Histogram@{Histogram}}
+\doxysubsubsection{\texorpdfstring{Min}{Min}}
+{\footnotesize\ttfamily double Histogram.\+Min\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Lower edge of the first bin 
+
+\mbox{\Hypertarget{classHistogram_ac3974e29327b94571cfbaaf168f62f0c}\label{classHistogram_ac3974e29327b94571cfbaaf168f62f0c}} 
+\index{Histogram@{Histogram}!MinOutlierCount@{MinOutlierCount}}
+\index{MinOutlierCount@{MinOutlierCount}!Histogram@{Histogram}}
+\doxysubsubsection{\texorpdfstring{MinOutlierCount}{MinOutlierCount}}
+{\footnotesize\ttfamily int Histogram.\+Min\+Outlier\+Count = 0\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Number of values that were smaller than the lower edge of the first bin. 
+
+\mbox{\Hypertarget{classHistogram_aaa73f045037a7872ff7304d1e5f91cc9}\label{classHistogram_aaa73f045037a7872ff7304d1e5f91cc9}} 
+\index{Histogram@{Histogram}!Sum@{Sum}}
+\index{Sum@{Sum}!Histogram@{Histogram}}
+\doxysubsubsection{\texorpdfstring{Sum}{Sum}}
+{\footnotesize\ttfamily double Histogram.\+Sum\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Running total of all values counted. 
+
+\mbox{\Hypertarget{classHistogram_a0901de6e80c127b420f3793d6f2e9937}\label{classHistogram_a0901de6e80c127b420f3793d6f2e9937}} 
+\index{Histogram@{Histogram}!ValuesCounted@{ValuesCounted}}
+\index{ValuesCounted@{ValuesCounted}!Histogram@{Histogram}}
+\doxysubsubsection{\texorpdfstring{ValuesCounted}{ValuesCounted}}
+{\footnotesize\ttfamily int Histogram.\+Values\+Counted\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Total number of values accumulated. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Statistics/Histogram.\+cs\end{DoxyCompactItemize}

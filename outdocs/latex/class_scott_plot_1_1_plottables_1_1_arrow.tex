@@ -1,0 +1,349 @@
+\doxysection{Scott\+Plot.\+Plottables.\+Arrow Class Reference}
+\hypertarget{class_scott_plot_1_1_plottables_1_1_arrow}{}\label{class_scott_plot_1_1_plottables_1_1_arrow}\index{ScottPlot.Plottables.Arrow@{ScottPlot.Plottables.Arrow}}
+Inheritance diagram for Scott\+Plot.\+Plottables.\+Arrow\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_scott_plot_1_1_plottables_1_1_arrow}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_arrow_ab78d5c4b09d893f2f8203f6d1aa1a4d7}{Get\+Axis\+Limits}} ()
+\begin{DoxyCompactList}\small\item\em Return the 2D area (in coordinate space) occupied by the data contained in this plottable. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_arrow_abeac5a074e8e2157126e9eb0f493537e}{Render}} (Render\+Pack rp)
+\begin{DoxyCompactList}\small\item\em Draw the data from this plottable into the data area defined in the \doxylink{class_scott_plot_1_1_axes}{Axes}. By default the surface is already clipped to the data area, but this can be cleared inside the plottable. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable}{Scott\+Plot.\+IPlottable}}}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_coordinates}{Coordinates}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_arrow_a99b8c0811f0add18ca1e8b81126b385f}{Base}} = \mbox{\hyperlink{struct_scott_plot_1_1_coordinates_a65ad3bb5090748c7a8ad103862559c4f}{Coordinates.\+Origin}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_coordinates}{Coordinates}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_arrow_af70414c3e5d7974b13778435624bac3f}{Tip}} = \mbox{\hyperlink{struct_scott_plot_1_1_coordinates_a65ad3bb5090748c7a8ad103862559c4f}{Coordinates.\+Origin}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+bool \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_arrow_aecd6ebfacd3d98e245c44d2ea12f5ddb}{Is\+Visible}} = true\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Toggles whether this plottable is shown and contributes to the automatic axis limit detection. The calling method will check this variable (it does not need to be checked inside the Render method). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{interface_scott_plot_1_1_i_axes}{IAxes}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_arrow_a18202d3a715af93163cef7301eeda872}{Axes}} = new \mbox{\hyperlink{class_scott_plot_1_1_axes}{Axes}}()\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em This object performs coordinate/pixel translation at render time based on the latest data area. It stores the axes to use for this plottable and also the data area (in pixels) updated just before each render. If this object is null it will be constructed using the default X and Y axes at render time. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_enumerable}{IEnumerable}}$<$ \mbox{\hyperlink{class_scott_plot_1_1_legend_item}{Legend\+Item}} $>$ \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_arrow_acb1ce89c8cd0c05d2fe8e82036f74606}{Legend\+Items}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Items which will appear in the legend. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_arrow_a16a6aad46cfa2dd527bb7c6e2624391e}{Legend\+Text}} = string.\+Empty\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em If populated, this text appears in the legend. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_scott_plot_1_1_arrow_style}{Arrow\+Style}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_arrow_a6fcb67716663b1e73a21955884d4eed3}{Arrow\+Style}} = new() \{ \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_arrow_a49426797e34599bd7b364618e899c5da}{Line\+Width}} = 2, Line\+Color = \mbox{\hyperlink{struct_scott_plot_1_1_colors_a2aafa2dc613a50b4fa1699a09fe003b1}{Colors.\+Black}} \}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_arrow_a76861cea1920d8f2bb21bcb7848ddca6}{Arrow\+Line\+Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_arrow_a889a317a61de661c57573b49da8154b2}{Arrow\+Line\+Width}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_arrow_a00419d3f8173e7c4ac91092f62818178}{Arrow\+Fill\+Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_arrow_a99d2fcf0421c1f8d673ca856ee2cc6c0}{Arrow\+Minimum\+Length}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_arrow_a5ab04e75770e0670a46b1938a91c8e0a}{Arrow\+Maximum\+Length}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_arrow_aa0f9c40cb767445c8b8b4a3f9e946853}{Arrow\+Offset}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{namespace_scott_plot_a99914e2b3acef11b617d1be2720092c9}{Arrow\+Anchor}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_arrow_ae77045bdd7500a84e936c046c9ef9182}{Arrow\+Anchor}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_arrow_adf014157e89a4b67e2ee0f521f8c63d3}{Arrow\+Width}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_arrow_af35b82e1f56cb0a8902bf5ca43567aca}{Arrowhead\+Axis\+Length}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_arrow_a7fc78ebc5c4c3f0bbd0cd1c08eb112f8}{Arrowhead\+Length}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_arrow_abe1020e269aa3a843c57f354850288a4}{Arrowhead\+Width}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+string \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_arrow_a515aeca9c7df30930d9a6f267a194711}{Label}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_arrow_a134b3d693e70be2b27aef220885aa0c3}{Arrow\+Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_arrow_a62b0efadcf726d88b58f772ebac567ad}{Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_arrow_aca062ec8792c3ac6757e4dadde8e8f98}{Offset}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_arrow_a82c5076c8be9da33c54a41d64a655323}{Minimum\+Length}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_arrow_a49426797e34599bd7b364618e899c5da}{Line\+Width}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{class_scott_plot_1_1_line_style}{Line\+Style}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_arrow_a09b99d6a9f0272f794df30d97aaac8a5}{Line\+Style}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{interface_scott_plot_1_1_i_arrow_shape}{IArrow\+Shape}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_arrow_aa80c6d2d2d4726de3dbd37cc07cac7b8}{Arrow\+Shape}} = new \mbox{\hyperlink{class_scott_plot_1_1_arrow_shapes_1_1_single}{Arrow\+Shapes.\+Single}}()\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable}{Scott\+Plot.\+IPlottable}}}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{interface_scott_plot_1_1_i_has_arrow}{Scott\+Plot.\+IHas\+Arrow}}}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{interface_scott_plot_1_1_i_has_legend_text}{Scott\+Plot.\+IHas\+Legend\+Text}}}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_arrow_ab78d5c4b09d893f2f8203f6d1aa1a4d7}\index{ScottPlot.Plottables.Arrow@{ScottPlot.Plottables.Arrow}!GetAxisLimits@{GetAxisLimits}}
+\index{GetAxisLimits@{GetAxisLimits}!ScottPlot.Plottables.Arrow@{ScottPlot.Plottables.Arrow}}
+\doxysubsubsection{\texorpdfstring{GetAxisLimits()}{GetAxisLimits()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_arrow_ab78d5c4b09d893f2f8203f6d1aa1a4d7} 
+\mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}} Scott\+Plot.\+Plottables.\+Arrow.\+Get\+Axis\+Limits (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Return the 2D area (in coordinate space) occupied by the data contained in this plottable. 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable_a2e455cf76f9e8bc3187900b1a90487c3}{Scott\+Plot.\+IPlottable}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_arrow_abeac5a074e8e2157126e9eb0f493537e}\index{ScottPlot.Plottables.Arrow@{ScottPlot.Plottables.Arrow}!Render@{Render}}
+\index{Render@{Render}!ScottPlot.Plottables.Arrow@{ScottPlot.Plottables.Arrow}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_arrow_abeac5a074e8e2157126e9eb0f493537e} 
+virtual void Scott\+Plot.\+Plottables.\+Arrow.\+Render (\begin{DoxyParamCaption}\item[{Render\+Pack}]{rp}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Draw the data from this plottable into the data area defined in the \doxylink{class_scott_plot_1_1_axes}{Axes}. By default the surface is already clipped to the data area, but this can be cleared inside the plottable. 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable_a11d2487f1d7628e019a09748d876c289}{Scott\+Plot.\+IPlottable}}.
+
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_arrow_ae77045bdd7500a84e936c046c9ef9182}\index{ScottPlot.Plottables.Arrow@{ScottPlot.Plottables.Arrow}!ArrowAnchor@{ArrowAnchor}}
+\index{ArrowAnchor@{ArrowAnchor}!ScottPlot.Plottables.Arrow@{ScottPlot.Plottables.Arrow}}
+\doxysubsubsection{\texorpdfstring{ArrowAnchor}{ArrowAnchor}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_arrow_ae77045bdd7500a84e936c046c9ef9182} 
+\mbox{\hyperlink{namespace_scott_plot_a99914e2b3acef11b617d1be2720092c9}{Arrow\+Anchor}} Scott\+Plot.\+Plottables.\+Arrow.\+Arrow\+Anchor\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_has_arrow_a0ba8bad0b6a7769391fe268b00436ee6}{Scott\+Plot.\+IHas\+Arrow}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_arrow_a134b3d693e70be2b27aef220885aa0c3}\index{ScottPlot.Plottables.Arrow@{ScottPlot.Plottables.Arrow}!ArrowColor@{ArrowColor}}
+\index{ArrowColor@{ArrowColor}!ScottPlot.Plottables.Arrow@{ScottPlot.Plottables.Arrow}}
+\doxysubsubsection{\texorpdfstring{ArrowColor}{ArrowColor}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_arrow_a134b3d693e70be2b27aef220885aa0c3} 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} Scott\+Plot.\+Plottables.\+Arrow.\+Arrow\+Color\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_arrow_a00419d3f8173e7c4ac91092f62818178}\index{ScottPlot.Plottables.Arrow@{ScottPlot.Plottables.Arrow}!ArrowFillColor@{ArrowFillColor}}
+\index{ArrowFillColor@{ArrowFillColor}!ScottPlot.Plottables.Arrow@{ScottPlot.Plottables.Arrow}}
+\doxysubsubsection{\texorpdfstring{ArrowFillColor}{ArrowFillColor}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_arrow_a00419d3f8173e7c4ac91092f62818178} 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} Scott\+Plot.\+Plottables.\+Arrow.\+Arrow\+Fill\+Color\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_has_arrow_ae61f4d4b076fa24a28bb21d8e667a147}{Scott\+Plot.\+IHas\+Arrow}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_arrow_af35b82e1f56cb0a8902bf5ca43567aca}\index{ScottPlot.Plottables.Arrow@{ScottPlot.Plottables.Arrow}!ArrowheadAxisLength@{ArrowheadAxisLength}}
+\index{ArrowheadAxisLength@{ArrowheadAxisLength}!ScottPlot.Plottables.Arrow@{ScottPlot.Plottables.Arrow}}
+\doxysubsubsection{\texorpdfstring{ArrowheadAxisLength}{ArrowheadAxisLength}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_arrow_af35b82e1f56cb0a8902bf5ca43567aca} 
+float Scott\+Plot.\+Plottables.\+Arrow.\+Arrowhead\+Axis\+Length\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_has_arrow_abe24f4619a518f63830943d31d7506a8}{Scott\+Plot.\+IHas\+Arrow}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_arrow_a7fc78ebc5c4c3f0bbd0cd1c08eb112f8}\index{ScottPlot.Plottables.Arrow@{ScottPlot.Plottables.Arrow}!ArrowheadLength@{ArrowheadLength}}
+\index{ArrowheadLength@{ArrowheadLength}!ScottPlot.Plottables.Arrow@{ScottPlot.Plottables.Arrow}}
+\doxysubsubsection{\texorpdfstring{ArrowheadLength}{ArrowheadLength}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_arrow_a7fc78ebc5c4c3f0bbd0cd1c08eb112f8} 
+float Scott\+Plot.\+Plottables.\+Arrow.\+Arrowhead\+Length\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_has_arrow_a68cf16978113c2fd991084caddd3b580}{Scott\+Plot.\+IHas\+Arrow}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_arrow_abe1020e269aa3a843c57f354850288a4}\index{ScottPlot.Plottables.Arrow@{ScottPlot.Plottables.Arrow}!ArrowheadWidth@{ArrowheadWidth}}
+\index{ArrowheadWidth@{ArrowheadWidth}!ScottPlot.Plottables.Arrow@{ScottPlot.Plottables.Arrow}}
+\doxysubsubsection{\texorpdfstring{ArrowheadWidth}{ArrowheadWidth}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_arrow_abe1020e269aa3a843c57f354850288a4} 
+float Scott\+Plot.\+Plottables.\+Arrow.\+Arrowhead\+Width\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_has_arrow_ae79a48f17f74f26498c9c7b410973f7d}{Scott\+Plot.\+IHas\+Arrow}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_arrow_a76861cea1920d8f2bb21bcb7848ddca6}\index{ScottPlot.Plottables.Arrow@{ScottPlot.Plottables.Arrow}!ArrowLineColor@{ArrowLineColor}}
+\index{ArrowLineColor@{ArrowLineColor}!ScottPlot.Plottables.Arrow@{ScottPlot.Plottables.Arrow}}
+\doxysubsubsection{\texorpdfstring{ArrowLineColor}{ArrowLineColor}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_arrow_a76861cea1920d8f2bb21bcb7848ddca6} 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} Scott\+Plot.\+Plottables.\+Arrow.\+Arrow\+Line\+Color\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_has_arrow_aa9903bbc04743c5c8649157a63574675}{Scott\+Plot.\+IHas\+Arrow}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_arrow_a889a317a61de661c57573b49da8154b2}\index{ScottPlot.Plottables.Arrow@{ScottPlot.Plottables.Arrow}!ArrowLineWidth@{ArrowLineWidth}}
+\index{ArrowLineWidth@{ArrowLineWidth}!ScottPlot.Plottables.Arrow@{ScottPlot.Plottables.Arrow}}
+\doxysubsubsection{\texorpdfstring{ArrowLineWidth}{ArrowLineWidth}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_arrow_a889a317a61de661c57573b49da8154b2} 
+float Scott\+Plot.\+Plottables.\+Arrow.\+Arrow\+Line\+Width\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_has_arrow_a5d5484cea564f6910bddb0a3cb38ce0b}{Scott\+Plot.\+IHas\+Arrow}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_arrow_a5ab04e75770e0670a46b1938a91c8e0a}\index{ScottPlot.Plottables.Arrow@{ScottPlot.Plottables.Arrow}!ArrowMaximumLength@{ArrowMaximumLength}}
+\index{ArrowMaximumLength@{ArrowMaximumLength}!ScottPlot.Plottables.Arrow@{ScottPlot.Plottables.Arrow}}
+\doxysubsubsection{\texorpdfstring{ArrowMaximumLength}{ArrowMaximumLength}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_arrow_a5ab04e75770e0670a46b1938a91c8e0a} 
+float Scott\+Plot.\+Plottables.\+Arrow.\+Arrow\+Maximum\+Length\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_has_arrow_a9ce522ea7ea10129a6bfb7ffbf4155ff}{Scott\+Plot.\+IHas\+Arrow}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_arrow_a99d2fcf0421c1f8d673ca856ee2cc6c0}\index{ScottPlot.Plottables.Arrow@{ScottPlot.Plottables.Arrow}!ArrowMinimumLength@{ArrowMinimumLength}}
+\index{ArrowMinimumLength@{ArrowMinimumLength}!ScottPlot.Plottables.Arrow@{ScottPlot.Plottables.Arrow}}
+\doxysubsubsection{\texorpdfstring{ArrowMinimumLength}{ArrowMinimumLength}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_arrow_a99d2fcf0421c1f8d673ca856ee2cc6c0} 
+float Scott\+Plot.\+Plottables.\+Arrow.\+Arrow\+Minimum\+Length\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_has_arrow_ab82748454fcb26f1a9384dda2966d28d}{Scott\+Plot.\+IHas\+Arrow}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_arrow_aa0f9c40cb767445c8b8b4a3f9e946853}\index{ScottPlot.Plottables.Arrow@{ScottPlot.Plottables.Arrow}!ArrowOffset@{ArrowOffset}}
+\index{ArrowOffset@{ArrowOffset}!ScottPlot.Plottables.Arrow@{ScottPlot.Plottables.Arrow}}
+\doxysubsubsection{\texorpdfstring{ArrowOffset}{ArrowOffset}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_arrow_aa0f9c40cb767445c8b8b4a3f9e946853} 
+float Scott\+Plot.\+Plottables.\+Arrow.\+Arrow\+Offset\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_has_arrow_aa1f38fdbf66c0d8183ec2449798be361}{Scott\+Plot.\+IHas\+Arrow}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_arrow_aa80c6d2d2d4726de3dbd37cc07cac7b8}\index{ScottPlot.Plottables.Arrow@{ScottPlot.Plottables.Arrow}!ArrowShape@{ArrowShape}}
+\index{ArrowShape@{ArrowShape}!ScottPlot.Plottables.Arrow@{ScottPlot.Plottables.Arrow}}
+\doxysubsubsection{\texorpdfstring{ArrowShape}{ArrowShape}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_arrow_aa80c6d2d2d4726de3dbd37cc07cac7b8} 
+\mbox{\hyperlink{interface_scott_plot_1_1_i_arrow_shape}{IArrow\+Shape}} Scott\+Plot.\+Plottables.\+Arrow.\+Arrow\+Shape = new \mbox{\hyperlink{class_scott_plot_1_1_arrow_shapes_1_1_single}{Arrow\+Shapes.\+Single}}()\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_arrow_a6fcb67716663b1e73a21955884d4eed3}\index{ScottPlot.Plottables.Arrow@{ScottPlot.Plottables.Arrow}!ArrowStyle@{ArrowStyle}}
+\index{ArrowStyle@{ArrowStyle}!ScottPlot.Plottables.Arrow@{ScottPlot.Plottables.Arrow}}
+\doxysubsubsection{\texorpdfstring{ArrowStyle}{ArrowStyle}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_arrow_a6fcb67716663b1e73a21955884d4eed3} 
+\mbox{\hyperlink{class_scott_plot_1_1_arrow_style}{Arrow\+Style}} Scott\+Plot.\+Plottables.\+Arrow.\+Arrow\+Style = new() \{ \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_arrow_a49426797e34599bd7b364618e899c5da}{Line\+Width}} = 2, Line\+Color = \mbox{\hyperlink{struct_scott_plot_1_1_colors_a2aafa2dc613a50b4fa1699a09fe003b1}{Colors.\+Black}} \}\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_has_arrow_a7a823dbf482cd878c6aec9b82a11b890}{Scott\+Plot.\+IHas\+Arrow}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_arrow_adf014157e89a4b67e2ee0f521f8c63d3}\index{ScottPlot.Plottables.Arrow@{ScottPlot.Plottables.Arrow}!ArrowWidth@{ArrowWidth}}
+\index{ArrowWidth@{ArrowWidth}!ScottPlot.Plottables.Arrow@{ScottPlot.Plottables.Arrow}}
+\doxysubsubsection{\texorpdfstring{ArrowWidth}{ArrowWidth}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_arrow_adf014157e89a4b67e2ee0f521f8c63d3} 
+float Scott\+Plot.\+Plottables.\+Arrow.\+Arrow\+Width\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_has_arrow_ae7af278d72f3288b00612094f773455e}{Scott\+Plot.\+IHas\+Arrow}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_arrow_a18202d3a715af93163cef7301eeda872}\index{ScottPlot.Plottables.Arrow@{ScottPlot.Plottables.Arrow}!Axes@{Axes}}
+\index{Axes@{Axes}!ScottPlot.Plottables.Arrow@{ScottPlot.Plottables.Arrow}}
+\doxysubsubsection{\texorpdfstring{Axes}{Axes}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_arrow_a18202d3a715af93163cef7301eeda872} 
+\mbox{\hyperlink{interface_scott_plot_1_1_i_axes}{IAxes}} Scott\+Plot.\+Plottables.\+Arrow.\+Axes = new \mbox{\hyperlink{class_scott_plot_1_1_axes}{Axes}}()\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+This object performs coordinate/pixel translation at render time based on the latest data area. It stores the axes to use for this plottable and also the data area (in pixels) updated just before each render. If this object is null it will be constructed using the default X and Y axes at render time. 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable_aa68bc5153a673a7cd4a68f93da377d0a}{Scott\+Plot.\+IPlottable}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_arrow_a99b8c0811f0add18ca1e8b81126b385f}\index{ScottPlot.Plottables.Arrow@{ScottPlot.Plottables.Arrow}!Base@{Base}}
+\index{Base@{Base}!ScottPlot.Plottables.Arrow@{ScottPlot.Plottables.Arrow}}
+\doxysubsubsection{\texorpdfstring{Base}{Base}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_arrow_a99b8c0811f0add18ca1e8b81126b385f} 
+\mbox{\hyperlink{struct_scott_plot_1_1_coordinates}{Coordinates}} Scott\+Plot.\+Plottables.\+Arrow.\+Base = \mbox{\hyperlink{struct_scott_plot_1_1_coordinates_a65ad3bb5090748c7a8ad103862559c4f}{Coordinates.\+Origin}}\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_arrow_a62b0efadcf726d88b58f772ebac567ad}\index{ScottPlot.Plottables.Arrow@{ScottPlot.Plottables.Arrow}!Color@{Color}}
+\index{Color@{Color}!ScottPlot.Plottables.Arrow@{ScottPlot.Plottables.Arrow}}
+\doxysubsubsection{\texorpdfstring{Color}{Color}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_arrow_a62b0efadcf726d88b58f772ebac567ad} 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} Scott\+Plot.\+Plottables.\+Arrow.\+Color\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_arrow_aecd6ebfacd3d98e245c44d2ea12f5ddb}\index{ScottPlot.Plottables.Arrow@{ScottPlot.Plottables.Arrow}!IsVisible@{IsVisible}}
+\index{IsVisible@{IsVisible}!ScottPlot.Plottables.Arrow@{ScottPlot.Plottables.Arrow}}
+\doxysubsubsection{\texorpdfstring{IsVisible}{IsVisible}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_arrow_aecd6ebfacd3d98e245c44d2ea12f5ddb} 
+bool Scott\+Plot.\+Plottables.\+Arrow.\+Is\+Visible = true\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Toggles whether this plottable is shown and contributes to the automatic axis limit detection. The calling method will check this variable (it does not need to be checked inside the Render method). 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable_abbe75ba55a332d695313ccb5dc780923}{Scott\+Plot.\+IPlottable}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_arrow_a515aeca9c7df30930d9a6f267a194711}\index{ScottPlot.Plottables.Arrow@{ScottPlot.Plottables.Arrow}!Label@{Label}}
+\index{Label@{Label}!ScottPlot.Plottables.Arrow@{ScottPlot.Plottables.Arrow}}
+\doxysubsubsection{\texorpdfstring{Label}{Label}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_arrow_a515aeca9c7df30930d9a6f267a194711} 
+string Scott\+Plot.\+Plottables.\+Arrow.\+Label\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_arrow_acb1ce89c8cd0c05d2fe8e82036f74606}\index{ScottPlot.Plottables.Arrow@{ScottPlot.Plottables.Arrow}!LegendItems@{LegendItems}}
+\index{LegendItems@{LegendItems}!ScottPlot.Plottables.Arrow@{ScottPlot.Plottables.Arrow}}
+\doxysubsubsection{\texorpdfstring{LegendItems}{LegendItems}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_arrow_acb1ce89c8cd0c05d2fe8e82036f74606} 
+\mbox{\hyperlink{class_i_enumerable}{IEnumerable}}$<$\mbox{\hyperlink{class_scott_plot_1_1_legend_item}{Legend\+Item}}$>$ Scott\+Plot.\+Plottables.\+Arrow.\+Legend\+Items\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Items which will appear in the legend. 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable_a4565f96a253f832bd9aa8033c99eff75}{Scott\+Plot.\+IPlottable}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_arrow_a16a6aad46cfa2dd527bb7c6e2624391e}\index{ScottPlot.Plottables.Arrow@{ScottPlot.Plottables.Arrow}!LegendText@{LegendText}}
+\index{LegendText@{LegendText}!ScottPlot.Plottables.Arrow@{ScottPlot.Plottables.Arrow}}
+\doxysubsubsection{\texorpdfstring{LegendText}{LegendText}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_arrow_a16a6aad46cfa2dd527bb7c6e2624391e} 
+string Scott\+Plot.\+Plottables.\+Arrow.\+Legend\+Text = string.\+Empty\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+If populated, this text appears in the legend. 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_has_legend_text_ad89967a734dbda7c02217a19c17d88d8}{Scott\+Plot.\+IHas\+Legend\+Text}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_arrow_a09b99d6a9f0272f794df30d97aaac8a5}\index{ScottPlot.Plottables.Arrow@{ScottPlot.Plottables.Arrow}!LineStyle@{LineStyle}}
+\index{LineStyle@{LineStyle}!ScottPlot.Plottables.Arrow@{ScottPlot.Plottables.Arrow}}
+\doxysubsubsection{\texorpdfstring{LineStyle}{LineStyle}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_arrow_a09b99d6a9f0272f794df30d97aaac8a5} 
+\mbox{\hyperlink{class_scott_plot_1_1_line_style}{Line\+Style}} Scott\+Plot.\+Plottables.\+Arrow.\+Line\+Style\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_arrow_a49426797e34599bd7b364618e899c5da}\index{ScottPlot.Plottables.Arrow@{ScottPlot.Plottables.Arrow}!LineWidth@{LineWidth}}
+\index{LineWidth@{LineWidth}!ScottPlot.Plottables.Arrow@{ScottPlot.Plottables.Arrow}}
+\doxysubsubsection{\texorpdfstring{LineWidth}{LineWidth}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_arrow_a49426797e34599bd7b364618e899c5da} 
+float Scott\+Plot.\+Plottables.\+Arrow.\+Line\+Width\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_arrow_a82c5076c8be9da33c54a41d64a655323}\index{ScottPlot.Plottables.Arrow@{ScottPlot.Plottables.Arrow}!MinimumLength@{MinimumLength}}
+\index{MinimumLength@{MinimumLength}!ScottPlot.Plottables.Arrow@{ScottPlot.Plottables.Arrow}}
+\doxysubsubsection{\texorpdfstring{MinimumLength}{MinimumLength}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_arrow_a82c5076c8be9da33c54a41d64a655323} 
+float Scott\+Plot.\+Plottables.\+Arrow.\+Minimum\+Length\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_arrow_aca062ec8792c3ac6757e4dadde8e8f98}\index{ScottPlot.Plottables.Arrow@{ScottPlot.Plottables.Arrow}!Offset@{Offset}}
+\index{Offset@{Offset}!ScottPlot.Plottables.Arrow@{ScottPlot.Plottables.Arrow}}
+\doxysubsubsection{\texorpdfstring{Offset}{Offset}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_arrow_aca062ec8792c3ac6757e4dadde8e8f98} 
+float Scott\+Plot.\+Plottables.\+Arrow.\+Offset\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_arrow_af70414c3e5d7974b13778435624bac3f}\index{ScottPlot.Plottables.Arrow@{ScottPlot.Plottables.Arrow}!Tip@{Tip}}
+\index{Tip@{Tip}!ScottPlot.Plottables.Arrow@{ScottPlot.Plottables.Arrow}}
+\doxysubsubsection{\texorpdfstring{Tip}{Tip}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_arrow_af70414c3e5d7974b13778435624bac3f} 
+\mbox{\hyperlink{struct_scott_plot_1_1_coordinates}{Coordinates}} Scott\+Plot.\+Plottables.\+Arrow.\+Tip = \mbox{\hyperlink{struct_scott_plot_1_1_coordinates_a65ad3bb5090748c7a8ad103862559c4f}{Coordinates.\+Origin}}\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Plottables/Arrow.\+cs\end{DoxyCompactItemize}

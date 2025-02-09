@@ -1,0 +1,157 @@
+\hypertarget{classSignalSourceBase}{}\doxysection{Signal\+Source\+Base Class Reference}
+\label{classSignalSourceBase}\index{SignalSourceBase@{SignalSourceBase}}
+Inheritance diagram for Signal\+Source\+Base\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.365854cm]{classSignalSourceBase}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classSignalSourceBase_ac6087b083f3fece788e3a0e2a220394d}{Get\+Index}} (double x, bool visible\+Data\+Only)
+\item 
+bool \mbox{\hyperlink{classSignalSourceBase_a52b16c0de6f572541f62f5d2adab1b65}{Range\+Contains\+Signal}} (double x\+Min, double x\+Max)
+\item 
+double \mbox{\hyperlink{classSignalSourceBase_a8e5222fe9de0ceaaa1ffdc2cf91f2e10}{GetX}} (int index)
+\item 
+\mbox{\hyperlink{structCoordinateRange}{Coordinate\+Range}} \mbox{\hyperlink{classSignalSourceBase_a7ec95500e2ea896d6f5fb9a6d1d28265}{Get\+LimitsX}} ()
+\item 
+\mbox{\hyperlink{structCoordinateRange}{Coordinate\+Range}} \mbox{\hyperlink{classSignalSourceBase_af65bcd6dbb3fec2fa4cb9cdbcbb24529}{Get\+LimitsY}} ()
+\item 
+abstract \mbox{\hyperlink{structSignalRangeY}{Signal\+RangeY}} \mbox{\hyperlink{classSignalSourceBase_a0a564c250ebe10f5dbf24c923c9e6eee}{Get\+LimitsY}} (int first\+Index, int last\+Index)
+\item 
+\mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} \mbox{\hyperlink{classSignalSourceBase_a3cf51f1b8efb37671415f69edcfabe5d}{Get\+Limits}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{classSignalSourceBase_aa201834c3619451d487e47b1011b9635}{Period}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+abstract int \mbox{\hyperlink{classSignalSourceBase_a32a0e354ef4811e390cbee7dacb663a7}{Length}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+int \mbox{\hyperlink{classSignalSourceBase_a4eee3c4a4cce59acb41de4b15efc1b2a}{Minimum\+Index}} = 0\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+int \mbox{\hyperlink{classSignalSourceBase_a0d5ad5befff23a37765aa5a0a3294865}{Maximum\+Index}} = int.\+Max\+Value\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+int \mbox{\hyperlink{classSignalSourceBase_aa28e1a67112abc5b5aa5906356cf2d49}{Min\+Render\+Index}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+int \mbox{\hyperlink{classSignalSourceBase_aea73c324795d0b8975bbe96650f057d5}{Max\+Render\+Index}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+double \mbox{\hyperlink{classSignalSourceBase_a12dbb78958f577b9080559c27198f365}{XOffset}} = 0\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+double \mbox{\hyperlink{classSignalSourceBase_aeeaa34dfe0330fd14e52ea7998a57a87}{YOffset}} = 0\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+double \mbox{\hyperlink{classSignalSourceBase_a628b6a0cfd5c70c884e104692481befc}{YScale}} = 1\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classSignalSourceBase_ac6087b083f3fece788e3a0e2a220394d}\label{classSignalSourceBase_ac6087b083f3fece788e3a0e2a220394d}} 
+\index{SignalSourceBase@{SignalSourceBase}!GetIndex@{GetIndex}}
+\index{GetIndex@{GetIndex}!SignalSourceBase@{SignalSourceBase}}
+\doxysubsubsection{\texorpdfstring{GetIndex()}{GetIndex()}}
+{\footnotesize\ttfamily int Signal\+Source\+Base.\+Get\+Index (\begin{DoxyParamCaption}\item[{double}]{x,  }\item[{bool}]{visible\+Data\+Only }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classSignalSourceBase_a3cf51f1b8efb37671415f69edcfabe5d}\label{classSignalSourceBase_a3cf51f1b8efb37671415f69edcfabe5d}} 
+\index{SignalSourceBase@{SignalSourceBase}!GetLimits@{GetLimits}}
+\index{GetLimits@{GetLimits}!SignalSourceBase@{SignalSourceBase}}
+\doxysubsubsection{\texorpdfstring{GetLimits()}{GetLimits()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} Signal\+Source\+Base.\+Get\+Limits (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classSignalSourceBase_a7ec95500e2ea896d6f5fb9a6d1d28265}\label{classSignalSourceBase_a7ec95500e2ea896d6f5fb9a6d1d28265}} 
+\index{SignalSourceBase@{SignalSourceBase}!GetLimitsX@{GetLimitsX}}
+\index{GetLimitsX@{GetLimitsX}!SignalSourceBase@{SignalSourceBase}}
+\doxysubsubsection{\texorpdfstring{GetLimitsX()}{GetLimitsX()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structCoordinateRange}{Coordinate\+Range}} Signal\+Source\+Base.\+Get\+LimitsX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classSignalSourceBase_af65bcd6dbb3fec2fa4cb9cdbcbb24529}\label{classSignalSourceBase_af65bcd6dbb3fec2fa4cb9cdbcbb24529}} 
+\index{SignalSourceBase@{SignalSourceBase}!GetLimitsY@{GetLimitsY}}
+\index{GetLimitsY@{GetLimitsY}!SignalSourceBase@{SignalSourceBase}}
+\doxysubsubsection{\texorpdfstring{GetLimitsY()}{GetLimitsY()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structCoordinateRange}{Coordinate\+Range}} Signal\+Source\+Base.\+Get\+LimitsY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classSignalSourceBase_a0a564c250ebe10f5dbf24c923c9e6eee}\label{classSignalSourceBase_a0a564c250ebe10f5dbf24c923c9e6eee}} 
+\index{SignalSourceBase@{SignalSourceBase}!GetLimitsY@{GetLimitsY}}
+\index{GetLimitsY@{GetLimitsY}!SignalSourceBase@{SignalSourceBase}}
+\doxysubsubsection{\texorpdfstring{GetLimitsY()}{GetLimitsY()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily abstract \mbox{\hyperlink{structSignalRangeY}{Signal\+RangeY}} Signal\+Source\+Base.\+Get\+LimitsY (\begin{DoxyParamCaption}\item[{int}]{first\+Index,  }\item[{int}]{last\+Index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classSignalSourceGenericList_a371028df0b1d46ba5164d922a1195152}{Signal\+Source\+Generic\+List$<$ T $>$}}, \mbox{\hyperlink{classSignalSourceGenericArray_a4b31b739ef867775d58621d19772c280}{Signal\+Source\+Generic\+Array$<$ T $>$}}, \mbox{\hyperlink{classSignalSourceDouble_a667896cf857bb311fac8b9df8bd2422a}{Signal\+Source\+Double}}, and \mbox{\hyperlink{classFastSignalSourceDouble_ac32b41178482a0b761fd93c881f4ad51}{Fast\+Signal\+Source\+Double}}.
+
+\mbox{\Hypertarget{classSignalSourceBase_a8e5222fe9de0ceaaa1ffdc2cf91f2e10}\label{classSignalSourceBase_a8e5222fe9de0ceaaa1ffdc2cf91f2e10}} 
+\index{SignalSourceBase@{SignalSourceBase}!GetX@{GetX}}
+\index{GetX@{GetX}!SignalSourceBase@{SignalSourceBase}}
+\doxysubsubsection{\texorpdfstring{GetX()}{GetX()}}
+{\footnotesize\ttfamily double Signal\+Source\+Base.\+GetX (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classSignalSourceBase_a52b16c0de6f572541f62f5d2adab1b65}\label{classSignalSourceBase_a52b16c0de6f572541f62f5d2adab1b65}} 
+\index{SignalSourceBase@{SignalSourceBase}!RangeContainsSignal@{RangeContainsSignal}}
+\index{RangeContainsSignal@{RangeContainsSignal}!SignalSourceBase@{SignalSourceBase}}
+\doxysubsubsection{\texorpdfstring{RangeContainsSignal()}{RangeContainsSignal()}}
+{\footnotesize\ttfamily bool Signal\+Source\+Base.\+Range\+Contains\+Signal (\begin{DoxyParamCaption}\item[{double}]{x\+Min,  }\item[{double}]{x\+Max }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{classSignalSourceBase_a32a0e354ef4811e390cbee7dacb663a7}\label{classSignalSourceBase_a32a0e354ef4811e390cbee7dacb663a7}} 
+\index{SignalSourceBase@{SignalSourceBase}!Length@{Length}}
+\index{Length@{Length}!SignalSourceBase@{SignalSourceBase}}
+\doxysubsubsection{\texorpdfstring{Length}{Length}}
+{\footnotesize\ttfamily abstract int Signal\+Source\+Base.\+Length\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{classSignalSourceBase_a0d5ad5befff23a37765aa5a0a3294865}\label{classSignalSourceBase_a0d5ad5befff23a37765aa5a0a3294865}} 
+\index{SignalSourceBase@{SignalSourceBase}!MaximumIndex@{MaximumIndex}}
+\index{MaximumIndex@{MaximumIndex}!SignalSourceBase@{SignalSourceBase}}
+\doxysubsubsection{\texorpdfstring{MaximumIndex}{MaximumIndex}}
+{\footnotesize\ttfamily int Signal\+Source\+Base.\+Maximum\+Index = int.\+Max\+Value\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classSignalSourceBase_aea73c324795d0b8975bbe96650f057d5}\label{classSignalSourceBase_aea73c324795d0b8975bbe96650f057d5}} 
+\index{SignalSourceBase@{SignalSourceBase}!MaxRenderIndex@{MaxRenderIndex}}
+\index{MaxRenderIndex@{MaxRenderIndex}!SignalSourceBase@{SignalSourceBase}}
+\doxysubsubsection{\texorpdfstring{MaxRenderIndex}{MaxRenderIndex}}
+{\footnotesize\ttfamily int Signal\+Source\+Base.\+Max\+Render\+Index\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{classSignalSourceBase_a4eee3c4a4cce59acb41de4b15efc1b2a}\label{classSignalSourceBase_a4eee3c4a4cce59acb41de4b15efc1b2a}} 
+\index{SignalSourceBase@{SignalSourceBase}!MinimumIndex@{MinimumIndex}}
+\index{MinimumIndex@{MinimumIndex}!SignalSourceBase@{SignalSourceBase}}
+\doxysubsubsection{\texorpdfstring{MinimumIndex}{MinimumIndex}}
+{\footnotesize\ttfamily int Signal\+Source\+Base.\+Minimum\+Index = 0\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classSignalSourceBase_aa28e1a67112abc5b5aa5906356cf2d49}\label{classSignalSourceBase_aa28e1a67112abc5b5aa5906356cf2d49}} 
+\index{SignalSourceBase@{SignalSourceBase}!MinRenderIndex@{MinRenderIndex}}
+\index{MinRenderIndex@{MinRenderIndex}!SignalSourceBase@{SignalSourceBase}}
+\doxysubsubsection{\texorpdfstring{MinRenderIndex}{MinRenderIndex}}
+{\footnotesize\ttfamily int Signal\+Source\+Base.\+Min\+Render\+Index\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{classSignalSourceBase_aa201834c3619451d487e47b1011b9635}\label{classSignalSourceBase_aa201834c3619451d487e47b1011b9635}} 
+\index{SignalSourceBase@{SignalSourceBase}!Period@{Period}}
+\index{Period@{Period}!SignalSourceBase@{SignalSourceBase}}
+\doxysubsubsection{\texorpdfstring{Period}{Period}}
+{\footnotesize\ttfamily double Signal\+Source\+Base.\+Period\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classSignalSourceBase_a12dbb78958f577b9080559c27198f365}\label{classSignalSourceBase_a12dbb78958f577b9080559c27198f365}} 
+\index{SignalSourceBase@{SignalSourceBase}!XOffset@{XOffset}}
+\index{XOffset@{XOffset}!SignalSourceBase@{SignalSourceBase}}
+\doxysubsubsection{\texorpdfstring{XOffset}{XOffset}}
+{\footnotesize\ttfamily double Signal\+Source\+Base.\+XOffset = 0\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classSignalSourceBase_aeeaa34dfe0330fd14e52ea7998a57a87}\label{classSignalSourceBase_aeeaa34dfe0330fd14e52ea7998a57a87}} 
+\index{SignalSourceBase@{SignalSourceBase}!YOffset@{YOffset}}
+\index{YOffset@{YOffset}!SignalSourceBase@{SignalSourceBase}}
+\doxysubsubsection{\texorpdfstring{YOffset}{YOffset}}
+{\footnotesize\ttfamily double Signal\+Source\+Base.\+YOffset = 0\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classSignalSourceBase_a628b6a0cfd5c70c884e104692481befc}\label{classSignalSourceBase_a628b6a0cfd5c70c884e104692481befc}} 
+\index{SignalSourceBase@{SignalSourceBase}!YScale@{YScale}}
+\index{YScale@{YScale}!SignalSourceBase@{SignalSourceBase}}
+\doxysubsubsection{\texorpdfstring{YScale}{YScale}}
+{\footnotesize\ttfamily double Signal\+Source\+Base.\+YScale = 1\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Data\+Sources/Signal\+Source\+Base.\+cs\end{DoxyCompactItemize}

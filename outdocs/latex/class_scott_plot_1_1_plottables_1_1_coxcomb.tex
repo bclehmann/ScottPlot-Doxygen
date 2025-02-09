@@ -1,0 +1,117 @@
+\doxysection{Scott\+Plot.\+Plottables.\+Coxcomb Class Reference}
+\hypertarget{class_scott_plot_1_1_plottables_1_1_coxcomb}{}\label{class_scott_plot_1_1_plottables_1_1_coxcomb}\index{ScottPlot.Plottables.Coxcomb@{ScottPlot.Plottables.Coxcomb}}
+Inheritance diagram for Scott\+Plot.\+Plottables.\+Coxcomb\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_scott_plot_1_1_plottables_1_1_coxcomb}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_coxcomb_aa7804831140698bd06398ddfe894fb31}{Coxcomb}} (\mbox{\hyperlink{class_i_list}{IList}}$<$ \mbox{\hyperlink{class_scott_plot_1_1_pie_slice}{Pie\+Slice}} $>$ slices)
+\item 
+override \mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_coxcomb_aeff56a376867cb2f53f059669522b141}{Get\+Axis\+Limits}} ()
+\begin{DoxyCompactList}\small\item\em Return the 2D area (in coordinate space) occupied by the data contained in this plottable. \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_coxcomb_abec8746dca21448866bacc4ead70c1c9}{Render}} (Render\+Pack rp)
+\begin{DoxyCompactList}\small\item\em Draw the data from this plottable into the data area defined in the \doxylink{class_scott_plot_1_1_axes}{Axes}. By default the surface is already clipped to the data area, but this can be cleared inside the plottable. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_pie_base}{Scott\+Plot.\+Plottables.\+Pie\+Base}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_pie_base_a8a06cf6f18e971beb7ddf4235c381c47}{Get\+Axis\+Limits}} ()
+\begin{DoxyCompactList}\small\item\em Return the 2D area (in coordinate space) occupied by the data contained in this plottable. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_pie_base_a432880e4bf9f029575438927ce8a947a}{Render}} (Render\+Pack rp)
+\begin{DoxyCompactList}\small\item\em Draw the data from this plottable into the data area defined in the \doxylink{class_scott_plot_1_1_axes}{Axes}. By default the surface is already clipped to the data area, but this can be cleared inside the plottable. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable}{Scott\+Plot.\+IPlottable}}}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_scott_plot_1_1_i_star_axis}{IStar\+Axis}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_coxcomb_a6ea5edfd17631d32cfc84b235e1bbe46}{Star\+Axis}} = new \mbox{\hyperlink{class_scott_plot_1_1_star_axes_1_1_circular_star_axis}{Star\+Axes.\+Circular\+Star\+Axis}}()\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_pie_base}{Scott\+Plot.\+Plottables.\+Pie\+Base}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_scott_plot_1_1_i_axes}{IAxes}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_pie_base_a201fdbfd70ecb5939f8892ff64d5728d}{Axes}} = new \mbox{\hyperlink{class_scott_plot_1_1_axes}{Axes}}()\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em This object performs coordinate/pixel translation at render time based on the latest data area. It stores the axes to use for this plottable and also the data area (in pixels) updated just before each render. If this object is null it will be constructed using the default X and Y axes at render time. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_pie_base_a122c80183b708fd543fdc0bf549cf22c}{Is\+Visible}} = true\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Toggles whether this plottable is shown and contributes to the automatic axis limit detection. The calling method will check this variable (it does not need to be checked inside the Render method). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_enumerable}{IEnumerable}}$<$ \mbox{\hyperlink{class_scott_plot_1_1_legend_item}{Legend\+Item}} $>$ \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_pie_base_ad36c893cfcb0f920ff6252a756e805ca}{Legend\+Items}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Items which will appear in the legend. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_pie_base_af01c7991486ce87aa3dd51c018a34022}{Line\+Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{namespace_scott_plot_a625917eb44cadb4de90991e525db6ab5}{Line\+Pattern}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_pie_base_a1ddf631b7b6e2db600684868879f4849}{Line\+Pattern}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{class_scott_plot_1_1_line_style}{Line\+Style}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_pie_base_abcb1e82f8a6c0894cb8dd42a81d53152}{Line\+Style}} = new() \{ Width = 0 \}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_pie_base_a7722b8f66b58a08d4d710c722e4662c5}{Line\+Width}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+double \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_pie_base_a28d09b7170847eafa81493739c620ad1}{Padding}} = 0.\+2\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+bool \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_pie_base_a4c4004fbae13945d5e52da01d5fea0a1}{Show\+Slice\+Labels}} = false\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+double \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_pie_base_a7e8b567bb9355ddee999b1999c954514}{Slice\+Label\+Distance}} = 1.\+2\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{class_i_list}{IList}}$<$ \mbox{\hyperlink{class_scott_plot_1_1_pie_slice}{Pie\+Slice}} $>$ \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_pie_base_ab7cbbd4ea743bbde88d30e050320ff84}{Slices}} = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable}{Scott\+Plot.\+IPlottable}}}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{interface_scott_plot_1_1_i_has_line}{Scott\+Plot.\+IHas\+Line}}}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Static Protected Member Functions inherited from \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_pie_base}{Scott\+Plot.\+Plottables.\+Pie\+Base}}}
+\begin{DoxyCompactItemize}
+\item 
+static SKPoint \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_pie_base_a1bde2d4d68b30f3421cacaa5e7e528df}{Get\+Rotated\+Point}} (double radius, double angle\+In\+Degrees)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_coxcomb_aa7804831140698bd06398ddfe894fb31}\index{ScottPlot.Plottables.Coxcomb@{ScottPlot.Plottables.Coxcomb}!Coxcomb@{Coxcomb}}
+\index{Coxcomb@{Coxcomb}!ScottPlot.Plottables.Coxcomb@{ScottPlot.Plottables.Coxcomb}}
+\doxysubsubsection{\texorpdfstring{Coxcomb()}{Coxcomb()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_coxcomb_aa7804831140698bd06398ddfe894fb31} 
+Scott\+Plot.\+Plottables.\+Coxcomb.\+Coxcomb (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_i_list}{IList}}$<$ \mbox{\hyperlink{class_scott_plot_1_1_pie_slice}{Pie\+Slice}} $>$}]{slices}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_coxcomb_aeff56a376867cb2f53f059669522b141}\index{ScottPlot.Plottables.Coxcomb@{ScottPlot.Plottables.Coxcomb}!GetAxisLimits@{GetAxisLimits}}
+\index{GetAxisLimits@{GetAxisLimits}!ScottPlot.Plottables.Coxcomb@{ScottPlot.Plottables.Coxcomb}}
+\doxysubsubsection{\texorpdfstring{GetAxisLimits()}{GetAxisLimits()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_coxcomb_aeff56a376867cb2f53f059669522b141} 
+override \mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}} Scott\+Plot.\+Plottables.\+Coxcomb.\+Get\+Axis\+Limits (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return the 2D area (in coordinate space) occupied by the data contained in this plottable. 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable_a2e455cf76f9e8bc3187900b1a90487c3}{Scott\+Plot.\+IPlottable}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_coxcomb_abec8746dca21448866bacc4ead70c1c9}\index{ScottPlot.Plottables.Coxcomb@{ScottPlot.Plottables.Coxcomb}!Render@{Render}}
+\index{Render@{Render}!ScottPlot.Plottables.Coxcomb@{ScottPlot.Plottables.Coxcomb}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_coxcomb_abec8746dca21448866bacc4ead70c1c9} 
+override void Scott\+Plot.\+Plottables.\+Coxcomb.\+Render (\begin{DoxyParamCaption}\item[{Render\+Pack}]{rp}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Draw the data from this plottable into the data area defined in the \doxylink{class_scott_plot_1_1_axes}{Axes}. By default the surface is already clipped to the data area, but this can be cleared inside the plottable. 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable_a11d2487f1d7628e019a09748d876c289}{Scott\+Plot.\+IPlottable}}.
+
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_coxcomb_a6ea5edfd17631d32cfc84b235e1bbe46}\index{ScottPlot.Plottables.Coxcomb@{ScottPlot.Plottables.Coxcomb}!StarAxis@{StarAxis}}
+\index{StarAxis@{StarAxis}!ScottPlot.Plottables.Coxcomb@{ScottPlot.Plottables.Coxcomb}}
+\doxysubsubsection{\texorpdfstring{StarAxis}{StarAxis}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_coxcomb_a6ea5edfd17631d32cfc84b235e1bbe46} 
+\mbox{\hyperlink{interface_scott_plot_1_1_i_star_axis}{IStar\+Axis}} Scott\+Plot.\+Plottables.\+Coxcomb.\+Star\+Axis = new \mbox{\hyperlink{class_scott_plot_1_1_star_axes_1_1_circular_star_axis}{Star\+Axes.\+Circular\+Star\+Axis}}()\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Plottables/Coxcomb.\+cs\end{DoxyCompactItemize}

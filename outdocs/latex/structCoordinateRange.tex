@@ -1,0 +1,174 @@
+\hypertarget{structCoordinateRange}{}\doxysection{Coordinate\+Range Struct Reference}
+\label{structCoordinateRange}\index{CoordinateRange@{CoordinateRange}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{structCoordinateRange_a81cfdef5aa2c00bcd2e7bfca2ed3b687}{Contains}} (double value)
+\item 
+bool \mbox{\hyperlink{structCoordinateRange_a6c358afcbc7717cb39d8f64c654c0636}{Intersects}} (\mbox{\hyperlink{structCoordinateRange}{Coordinate\+Range}} other)
+\item 
+\mbox{\hyperlink{structCoordinateRange}{Coordinate\+Range}} \mbox{\hyperlink{structCoordinateRange_a26878eeb102ae1f437d8829e302b4b5f}{Expanded}} (double value)
+\begin{DoxyCompactList}\small\item\em Return a new range expanded to include the given point \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structCoordinateRange}{Coordinate\+Range}} \mbox{\hyperlink{structCoordinateRange_af114147ccef1d09830455af1c80903e6}{Rectified}} ()
+\begin{DoxyCompactList}\small\item\em Return a copy of this range where \mbox{\hyperlink{structCoordinateRange_acee85aad01b677f361ce690ffd903f9c}{Max}} is never less than \mbox{\hyperlink{structCoordinateRange_a4d41cbb8fb3e91a012ba93b2850d2956}{Min}} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{structCoordinateRange}{Coordinate\+Range}} \mbox{\hyperlink{structCoordinateRange_a2ae0648551917a4b960a2e962d38cb39}{Min\+Max}} (\mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$ double $>$ values)
+\begin{DoxyCompactList}\small\item\em Return the range of values spanned by the given collection \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{structCoordinateRange}{Coordinate\+Range}} \mbox{\hyperlink{structCoordinateRange_a49d44bcf79a4bb282f0ff99ae7cb1937}{Min\+Max\+Nan}} (\mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$ double $>$ values)
+\begin{DoxyCompactList}\small\item\em Return the range of values spanned by the given collection (ignoring NaN) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{structCoordinateRange_a4d41cbb8fb3e91a012ba93b2850d2956}{Min}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+double \mbox{\hyperlink{structCoordinateRange_acee85aad01b677f361ce690ffd903f9c}{Max}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+double \mbox{\hyperlink{structCoordinateRange_a3d75543d380c6b8e3e6f547d1da6dc2a}{Span}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+double \mbox{\hyperlink{structCoordinateRange_a5fcc3310c08ca9d21fb0e63a9d7753bb}{Center}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+static \mbox{\hyperlink{structCoordinateRange}{Coordinate\+Range}} \mbox{\hyperlink{structCoordinateRange_ad5dbda1ca64d2ca0ddeefe4f51a0f2dd}{Infinity}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+static \mbox{\hyperlink{structCoordinateRange}{Coordinate\+Range}} \mbox{\hyperlink{structCoordinateRange_a44679de4899c66258305fd6dd0a260ca}{Not\+Set}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+static \mbox{\hyperlink{structCoordinateRange}{Coordinate\+Range}} \mbox{\hyperlink{structCoordinateRange_a545103c44c770351134275d97d6319d9}{No\+Limits}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+bool \mbox{\hyperlink{structCoordinateRange_a6ec2a20b8b43e9bad8839925c81513bc}{Is\+Real}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+bool \mbox{\hyperlink{structCoordinateRange_aa15175d8b3a7672c0bbe27beb913f135}{Is\+Inverted}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+double \mbox{\hyperlink{structCoordinateRange_a42190d4b3373a15c612dfb97f9eec7b6}{True\+Min}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+double \mbox{\hyperlink{structCoordinateRange_abe4a3b6dbed6486cec7d300384bc5545}{True\+Max}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{structCoordinateRange_a81cfdef5aa2c00bcd2e7bfca2ed3b687}\label{structCoordinateRange_a81cfdef5aa2c00bcd2e7bfca2ed3b687}} 
+\index{CoordinateRange@{CoordinateRange}!Contains@{Contains}}
+\index{Contains@{Contains}!CoordinateRange@{CoordinateRange}}
+\doxysubsubsection{\texorpdfstring{Contains()}{Contains()}}
+{\footnotesize\ttfamily bool Coordinate\+Range.\+Contains (\begin{DoxyParamCaption}\item[{double}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structCoordinateRange_a26878eeb102ae1f437d8829e302b4b5f}\label{structCoordinateRange_a26878eeb102ae1f437d8829e302b4b5f}} 
+\index{CoordinateRange@{CoordinateRange}!Expanded@{Expanded}}
+\index{Expanded@{Expanded}!CoordinateRange@{CoordinateRange}}
+\doxysubsubsection{\texorpdfstring{Expanded()}{Expanded()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structCoordinateRange}{Coordinate\+Range}} Coordinate\+Range.\+Expanded (\begin{DoxyParamCaption}\item[{double}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return a new range expanded to include the given point 
+
+\mbox{\Hypertarget{structCoordinateRange_a6c358afcbc7717cb39d8f64c654c0636}\label{structCoordinateRange_a6c358afcbc7717cb39d8f64c654c0636}} 
+\index{CoordinateRange@{CoordinateRange}!Intersects@{Intersects}}
+\index{Intersects@{Intersects}!CoordinateRange@{CoordinateRange}}
+\doxysubsubsection{\texorpdfstring{Intersects()}{Intersects()}}
+{\footnotesize\ttfamily bool Coordinate\+Range.\+Intersects (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structCoordinateRange}{Coordinate\+Range}}}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structCoordinateRange_a2ae0648551917a4b960a2e962d38cb39}\label{structCoordinateRange_a2ae0648551917a4b960a2e962d38cb39}} 
+\index{CoordinateRange@{CoordinateRange}!MinMax@{MinMax}}
+\index{MinMax@{MinMax}!CoordinateRange@{CoordinateRange}}
+\doxysubsubsection{\texorpdfstring{MinMax()}{MinMax()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{structCoordinateRange}{Coordinate\+Range}} Coordinate\+Range.\+Min\+Max (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$ double $>$}]{values }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Return the range of values spanned by the given collection 
+
+\mbox{\Hypertarget{structCoordinateRange_a49d44bcf79a4bb282f0ff99ae7cb1937}\label{structCoordinateRange_a49d44bcf79a4bb282f0ff99ae7cb1937}} 
+\index{CoordinateRange@{CoordinateRange}!MinMaxNan@{MinMaxNan}}
+\index{MinMaxNan@{MinMaxNan}!CoordinateRange@{CoordinateRange}}
+\doxysubsubsection{\texorpdfstring{MinMaxNan()}{MinMaxNan()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{structCoordinateRange}{Coordinate\+Range}} Coordinate\+Range.\+Min\+Max\+Nan (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$ double $>$}]{values }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Return the range of values spanned by the given collection (ignoring NaN) 
+
+\mbox{\Hypertarget{structCoordinateRange_af114147ccef1d09830455af1c80903e6}\label{structCoordinateRange_af114147ccef1d09830455af1c80903e6}} 
+\index{CoordinateRange@{CoordinateRange}!Rectified@{Rectified}}
+\index{Rectified@{Rectified}!CoordinateRange@{CoordinateRange}}
+\doxysubsubsection{\texorpdfstring{Rectified()}{Rectified()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structCoordinateRange}{Coordinate\+Range}} Coordinate\+Range.\+Rectified (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return a copy of this range where \mbox{\hyperlink{structCoordinateRange_acee85aad01b677f361ce690ffd903f9c}{Max}} is never less than \mbox{\hyperlink{structCoordinateRange_a4d41cbb8fb3e91a012ba93b2850d2956}{Min}} 
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{structCoordinateRange_a5fcc3310c08ca9d21fb0e63a9d7753bb}\label{structCoordinateRange_a5fcc3310c08ca9d21fb0e63a9d7753bb}} 
+\index{CoordinateRange@{CoordinateRange}!Center@{Center}}
+\index{Center@{Center}!CoordinateRange@{CoordinateRange}}
+\doxysubsubsection{\texorpdfstring{Center}{Center}}
+{\footnotesize\ttfamily double Coordinate\+Range.\+Center\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{structCoordinateRange_ad5dbda1ca64d2ca0ddeefe4f51a0f2dd}\label{structCoordinateRange_ad5dbda1ca64d2ca0ddeefe4f51a0f2dd}} 
+\index{CoordinateRange@{CoordinateRange}!Infinity@{Infinity}}
+\index{Infinity@{Infinity}!CoordinateRange@{CoordinateRange}}
+\doxysubsubsection{\texorpdfstring{Infinity}{Infinity}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structCoordinateRange}{Coordinate\+Range}} Coordinate\+Range.\+Infinity\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+\mbox{\Hypertarget{structCoordinateRange_aa15175d8b3a7672c0bbe27beb913f135}\label{structCoordinateRange_aa15175d8b3a7672c0bbe27beb913f135}} 
+\index{CoordinateRange@{CoordinateRange}!IsInverted@{IsInverted}}
+\index{IsInverted@{IsInverted}!CoordinateRange@{CoordinateRange}}
+\doxysubsubsection{\texorpdfstring{IsInverted}{IsInverted}}
+{\footnotesize\ttfamily bool Coordinate\+Range.\+Is\+Inverted\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{structCoordinateRange_a6ec2a20b8b43e9bad8839925c81513bc}\label{structCoordinateRange_a6ec2a20b8b43e9bad8839925c81513bc}} 
+\index{CoordinateRange@{CoordinateRange}!IsReal@{IsReal}}
+\index{IsReal@{IsReal}!CoordinateRange@{CoordinateRange}}
+\doxysubsubsection{\texorpdfstring{IsReal}{IsReal}}
+{\footnotesize\ttfamily bool Coordinate\+Range.\+Is\+Real\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{structCoordinateRange_acee85aad01b677f361ce690ffd903f9c}\label{structCoordinateRange_acee85aad01b677f361ce690ffd903f9c}} 
+\index{CoordinateRange@{CoordinateRange}!Max@{Max}}
+\index{Max@{Max}!CoordinateRange@{CoordinateRange}}
+\doxysubsubsection{\texorpdfstring{Max}{Max}}
+{\footnotesize\ttfamily double Coordinate\+Range.\+Max\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{structCoordinateRange_a4d41cbb8fb3e91a012ba93b2850d2956}\label{structCoordinateRange_a4d41cbb8fb3e91a012ba93b2850d2956}} 
+\index{CoordinateRange@{CoordinateRange}!Min@{Min}}
+\index{Min@{Min}!CoordinateRange@{CoordinateRange}}
+\doxysubsubsection{\texorpdfstring{Min}{Min}}
+{\footnotesize\ttfamily double Coordinate\+Range.\+Min\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{structCoordinateRange_a545103c44c770351134275d97d6319d9}\label{structCoordinateRange_a545103c44c770351134275d97d6319d9}} 
+\index{CoordinateRange@{CoordinateRange}!NoLimits@{NoLimits}}
+\index{NoLimits@{NoLimits}!CoordinateRange@{CoordinateRange}}
+\doxysubsubsection{\texorpdfstring{NoLimits}{NoLimits}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structCoordinateRange}{Coordinate\+Range}} Coordinate\+Range.\+No\+Limits\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+\mbox{\Hypertarget{structCoordinateRange_a44679de4899c66258305fd6dd0a260ca}\label{structCoordinateRange_a44679de4899c66258305fd6dd0a260ca}} 
+\index{CoordinateRange@{CoordinateRange}!NotSet@{NotSet}}
+\index{NotSet@{NotSet}!CoordinateRange@{CoordinateRange}}
+\doxysubsubsection{\texorpdfstring{NotSet}{NotSet}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structCoordinateRange}{Coordinate\+Range}} Coordinate\+Range.\+Not\+Set\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+\mbox{\Hypertarget{structCoordinateRange_a3d75543d380c6b8e3e6f547d1da6dc2a}\label{structCoordinateRange_a3d75543d380c6b8e3e6f547d1da6dc2a}} 
+\index{CoordinateRange@{CoordinateRange}!Span@{Span}}
+\index{Span@{Span}!CoordinateRange@{CoordinateRange}}
+\doxysubsubsection{\texorpdfstring{Span}{Span}}
+{\footnotesize\ttfamily double Coordinate\+Range.\+Span\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{structCoordinateRange_abe4a3b6dbed6486cec7d300384bc5545}\label{structCoordinateRange_abe4a3b6dbed6486cec7d300384bc5545}} 
+\index{CoordinateRange@{CoordinateRange}!TrueMax@{TrueMax}}
+\index{TrueMax@{TrueMax}!CoordinateRange@{CoordinateRange}}
+\doxysubsubsection{\texorpdfstring{TrueMax}{TrueMax}}
+{\footnotesize\ttfamily double Coordinate\+Range.\+True\+Max\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{structCoordinateRange_a42190d4b3373a15c612dfb97f9eec7b6}\label{structCoordinateRange_a42190d4b3373a15c612dfb97f9eec7b6}} 
+\index{CoordinateRange@{CoordinateRange}!TrueMin@{TrueMin}}
+\index{TrueMin@{TrueMin}!CoordinateRange@{CoordinateRange}}
+\doxysubsubsection{\texorpdfstring{TrueMin}{TrueMin}}
+{\footnotesize\ttfamily double Coordinate\+Range.\+True\+Min\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Primitives/Coordinate\+Range.\+cs\end{DoxyCompactItemize}

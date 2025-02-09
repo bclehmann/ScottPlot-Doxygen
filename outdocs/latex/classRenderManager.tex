@@ -1,0 +1,227 @@
+\hypertarget{classRenderManager}{}\doxysection{Render\+Manager Class Reference}
+\label{classRenderManager}\index{RenderManager@{RenderManager}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classRenderManager_a903c6fe599c3a64926271cbf0dc3690f}{Remove$<$ T $>$}} ()
+\begin{DoxyCompactList}\small\item\em Remove all render actions of the given type \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classRenderManager_a429cf3ddb4e728dcb178ca27cdce14dd}{Render}} (SKCanvas canvas, \mbox{\hyperlink{structPixelRect}{Pixel\+Rect}} rect)
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPlot}{Plot}} \mbox{\hyperlink{classRenderManager_a909e6b33f8af5b5c85f6d3c9b9339c6f}{plot}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+List$<$ \mbox{\hyperlink{interfaceIRenderAction}{IRender\+Action}} $>$ \mbox{\hyperlink{classRenderManager_a520c46d206d230e2c67a49e7660a9377}{Render\+Actions}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em This list of actions is performed in sequence to render a plot. It may be modified externally to inject custom functionality. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structRenderDetails}{Render\+Details}} \mbox{\hyperlink{classRenderManager_aa6dd7f9f5a909fe53fe0ae7bb3426a8b}{Last\+Render}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Information about the previous render \end{DoxyCompactList}\item 
+Event\+Handler \mbox{\hyperlink{classRenderManager_a6b48d08a663922dd28922073d9a391c3}{Pre\+Render\+Lock}} = delegate \{ \}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em These events are invoked before any render action. Users can add blocking code to this event to ensure processes that modify plottables are complete before rendering begins. Alternatively, lock the \mbox{\hyperlink{classPlot_aae98113eaa510db9460a35e298aa27a4}{Plot.\+Sync}} object. \end{DoxyCompactList}\item 
+Event\+Handler$<$ \mbox{\hyperlink{classRenderPack}{Render\+Pack}} $>$ \mbox{\hyperlink{classRenderManager_aa2502e4e1abd0d252f923190644e4340}{Render\+Starting}} = delegate \{ \}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em This event is invoked just before each render, after axis limits are determined and axis limits are set \end{DoxyCompactList}\item 
+Event\+Handler$<$ \mbox{\hyperlink{structRenderDetails}{Render\+Details}} $>$ \mbox{\hyperlink{classRenderManager_a064fc56a887ae87fb86e2d81c1e49c69}{Render\+Finished}} = delegate \{ \}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em This event is invoked after each render \end{DoxyCompactList}\item 
+Event\+Handler$<$ \mbox{\hyperlink{structRenderDetails}{Render\+Details}} $>$ \mbox{\hyperlink{classRenderManager_a3e1b92ed4befc75320a02befec4b6f33}{Size\+Changed}} = delegate \{ \}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em This event a render where the figure size (in pixels) changed from the previous render \end{DoxyCompactList}\item 
+Event\+Handler$<$ \mbox{\hyperlink{structRenderDetails}{Render\+Details}} $>$ \mbox{\hyperlink{classRenderManager_ae6d65e6f4b5e98220e9b3a4d6c97fe05}{Axis\+Limits\+Changed}} = delegate \{ \}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em This event is invoked during a render where the axis limits (in coordinate units) changed from the previous render This event occurs after render actions are performed. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classRenderManager_a966a0d678d05e52a18926fd8e12d2fe2}{Disable\+Axis\+Limits\+Changed\+Event\+On\+Next\+Render}} = false\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Prevents \mbox{\hyperlink{classRenderManager_ae6d65e6f4b5e98220e9b3a4d6c97fe05}{Axis\+Limits\+Changed}} from being invoked in situations that may cause infinite loops \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classRenderManager_ab79dcdc87579164b12dabb3802c4b124}{Is\+Rendering}} = false\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Indicates whether this plot is in the process of executing a render \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classRenderManager_a3d9f4483dd0f95e54ce1db4782920212}{Enable\+Rendering}} = true\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em If false, any calls to \mbox{\hyperlink{classRenderManager_a429cf3ddb4e728dcb178ca27cdce14dd}{Render()}} return immediately \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classRenderManager_aa1a30cf83ff6aeaf304a5d9e201a8a9c}{Enable\+Events}} = true\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+bool \mbox{\hyperlink{classRenderManager_aed0a2fdd2ab238c022bf5e54f32e6a90}{Clear\+Canvas\+Before\+Each\+Render}} = true\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+int \mbox{\hyperlink{classRenderManager_a7bdb6c68add29c2d992ed4141b440f88}{Render\+Count}} = 0\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Total number of renders completed \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classRenderManager_a903c6fe599c3a64926271cbf0dc3690f}\label{classRenderManager_a903c6fe599c3a64926271cbf0dc3690f}} 
+\index{RenderManager@{RenderManager}!Remove$<$ T $>$@{Remove$<$ T $>$}}
+\index{Remove$<$ T $>$@{Remove$<$ T $>$}!RenderManager@{RenderManager}}
+\doxysubsubsection{\texorpdfstring{Remove$<$ T $>$()}{Remove< T >()}}
+{\footnotesize\ttfamily void Render\+Manager.\+Remove$<$ T $>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Remove all render actions of the given type 
+
+\begin{Desc}
+\item[Type Constraints]\begin{description}
+\item[{\em T} : {\em \mbox{\hyperlink{interfaceIRenderAction}{IRender\+Action}}}]\end{description}
+\end{Desc}
+\mbox{\Hypertarget{classRenderManager_a429cf3ddb4e728dcb178ca27cdce14dd}\label{classRenderManager_a429cf3ddb4e728dcb178ca27cdce14dd}} 
+\index{RenderManager@{RenderManager}!Render@{Render}}
+\index{Render@{Render}!RenderManager@{RenderManager}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily void Render\+Manager.\+Render (\begin{DoxyParamCaption}\item[{SKCanvas}]{canvas,  }\item[{\mbox{\hyperlink{structPixelRect}{Pixel\+Rect}}}]{rect }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{classRenderManager_ae6d65e6f4b5e98220e9b3a4d6c97fe05}\label{classRenderManager_ae6d65e6f4b5e98220e9b3a4d6c97fe05}} 
+\index{RenderManager@{RenderManager}!AxisLimitsChanged@{AxisLimitsChanged}}
+\index{AxisLimitsChanged@{AxisLimitsChanged}!RenderManager@{RenderManager}}
+\doxysubsubsection{\texorpdfstring{AxisLimitsChanged}{AxisLimitsChanged}}
+{\footnotesize\ttfamily Event\+Handler$<$\mbox{\hyperlink{structRenderDetails}{Render\+Details}}$>$ Render\+Manager.\+Axis\+Limits\+Changed = delegate \{ \}\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+This event is invoked during a render where the axis limits (in coordinate units) changed from the previous render This event occurs after render actions are performed. 
+
+\mbox{\Hypertarget{classRenderManager_aed0a2fdd2ab238c022bf5e54f32e6a90}\label{classRenderManager_aed0a2fdd2ab238c022bf5e54f32e6a90}} 
+\index{RenderManager@{RenderManager}!ClearCanvasBeforeEachRender@{ClearCanvasBeforeEachRender}}
+\index{ClearCanvasBeforeEachRender@{ClearCanvasBeforeEachRender}!RenderManager@{RenderManager}}
+\doxysubsubsection{\texorpdfstring{ClearCanvasBeforeEachRender}{ClearCanvasBeforeEachRender}}
+{\footnotesize\ttfamily bool Render\+Manager.\+Clear\+Canvas\+Before\+Each\+Render = true\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classRenderManager_a966a0d678d05e52a18926fd8e12d2fe2}\label{classRenderManager_a966a0d678d05e52a18926fd8e12d2fe2}} 
+\index{RenderManager@{RenderManager}!DisableAxisLimitsChangedEventOnNextRender@{DisableAxisLimitsChangedEventOnNextRender}}
+\index{DisableAxisLimitsChangedEventOnNextRender@{DisableAxisLimitsChangedEventOnNextRender}!RenderManager@{RenderManager}}
+\doxysubsubsection{\texorpdfstring{DisableAxisLimitsChangedEventOnNextRender}{DisableAxisLimitsChangedEventOnNextRender}}
+{\footnotesize\ttfamily bool Render\+Manager.\+Disable\+Axis\+Limits\+Changed\+Event\+On\+Next\+Render = false\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Prevents \mbox{\hyperlink{classRenderManager_ae6d65e6f4b5e98220e9b3a4d6c97fe05}{Axis\+Limits\+Changed}} from being invoked in situations that may cause infinite loops 
+
+\mbox{\Hypertarget{classRenderManager_aa1a30cf83ff6aeaf304a5d9e201a8a9c}\label{classRenderManager_aa1a30cf83ff6aeaf304a5d9e201a8a9c}} 
+\index{RenderManager@{RenderManager}!EnableEvents@{EnableEvents}}
+\index{EnableEvents@{EnableEvents}!RenderManager@{RenderManager}}
+\doxysubsubsection{\texorpdfstring{EnableEvents}{EnableEvents}}
+{\footnotesize\ttfamily bool Render\+Manager.\+Enable\+Events = true\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classRenderManager_a3d9f4483dd0f95e54ce1db4782920212}\label{classRenderManager_a3d9f4483dd0f95e54ce1db4782920212}} 
+\index{RenderManager@{RenderManager}!EnableRendering@{EnableRendering}}
+\index{EnableRendering@{EnableRendering}!RenderManager@{RenderManager}}
+\doxysubsubsection{\texorpdfstring{EnableRendering}{EnableRendering}}
+{\footnotesize\ttfamily bool Render\+Manager.\+Enable\+Rendering = true\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+If false, any calls to \mbox{\hyperlink{classRenderManager_a429cf3ddb4e728dcb178ca27cdce14dd}{Render()}} return immediately 
+
+\mbox{\Hypertarget{classRenderManager_ab79dcdc87579164b12dabb3802c4b124}\label{classRenderManager_ab79dcdc87579164b12dabb3802c4b124}} 
+\index{RenderManager@{RenderManager}!IsRendering@{IsRendering}}
+\index{IsRendering@{IsRendering}!RenderManager@{RenderManager}}
+\doxysubsubsection{\texorpdfstring{IsRendering}{IsRendering}}
+{\footnotesize\ttfamily bool Render\+Manager.\+Is\+Rendering = false\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Indicates whether this plot is in the process of executing a render 
+
+\mbox{\Hypertarget{classRenderManager_aa6dd7f9f5a909fe53fe0ae7bb3426a8b}\label{classRenderManager_aa6dd7f9f5a909fe53fe0ae7bb3426a8b}} 
+\index{RenderManager@{RenderManager}!LastRender@{LastRender}}
+\index{LastRender@{LastRender}!RenderManager@{RenderManager}}
+\doxysubsubsection{\texorpdfstring{LastRender}{LastRender}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structRenderDetails}{Render\+Details}} Render\+Manager.\+Last\+Render\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Information about the previous render 
+
+\mbox{\Hypertarget{classRenderManager_a909e6b33f8af5b5c85f6d3c9b9339c6f}\label{classRenderManager_a909e6b33f8af5b5c85f6d3c9b9339c6f}} 
+\index{RenderManager@{RenderManager}!plot@{plot}}
+\index{plot@{plot}!RenderManager@{RenderManager}}
+\doxysubsubsection{\texorpdfstring{plot}{plot}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPlot}{Plot}} Render\+Manager.\+plot\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classRenderManager_a6b48d08a663922dd28922073d9a391c3}\label{classRenderManager_a6b48d08a663922dd28922073d9a391c3}} 
+\index{RenderManager@{RenderManager}!PreRenderLock@{PreRenderLock}}
+\index{PreRenderLock@{PreRenderLock}!RenderManager@{RenderManager}}
+\doxysubsubsection{\texorpdfstring{PreRenderLock}{PreRenderLock}}
+{\footnotesize\ttfamily Event\+Handler Render\+Manager.\+Pre\+Render\+Lock = delegate \{ \}\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+These events are invoked before any render action. Users can add blocking code to this event to ensure processes that modify plottables are complete before rendering begins. Alternatively, lock the \mbox{\hyperlink{classPlot_aae98113eaa510db9460a35e298aa27a4}{Plot.\+Sync}} object. 
+
+\mbox{\Hypertarget{classRenderManager_a520c46d206d230e2c67a49e7660a9377}\label{classRenderManager_a520c46d206d230e2c67a49e7660a9377}} 
+\index{RenderManager@{RenderManager}!RenderActions@{RenderActions}}
+\index{RenderActions@{RenderActions}!RenderManager@{RenderManager}}
+\doxysubsubsection{\texorpdfstring{RenderActions}{RenderActions}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{interfaceIRenderAction}{IRender\+Action}}$>$ Render\+Manager.\+Render\+Actions\hspace{0.3cm}{\ttfamily [get]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= [}
+\DoxyCodeLine{        \textcolor{keyword}{new} \mbox{\hyperlink{classRenderManager_a520c46d206d230e2c67a49e7660a9377}{RenderActions}}.PreRenderLock(),}
+\DoxyCodeLine{        \textcolor{keyword}{new} \mbox{\hyperlink{classRenderManager_a520c46d206d230e2c67a49e7660a9377}{RenderActions}}.ClearCanvas(),}
+\DoxyCodeLine{        \textcolor{keyword}{new} \mbox{\hyperlink{classRenderManager_a520c46d206d230e2c67a49e7660a9377}{RenderActions}}.ReplaceNullAxesWithDefaults(),}
+\DoxyCodeLine{        \textcolor{keyword}{new} \mbox{\hyperlink{classRenderManager_a520c46d206d230e2c67a49e7660a9377}{RenderActions}}.AutoScaleUnsetAxes(),}
+\DoxyCodeLine{        \textcolor{keyword}{new} \mbox{\hyperlink{classRenderManager_a520c46d206d230e2c67a49e7660a9377}{RenderActions}}.ContinuouslyAutoscale(),}
+\DoxyCodeLine{        \textcolor{keyword}{new} \mbox{\hyperlink{classRenderManager_a520c46d206d230e2c67a49e7660a9377}{RenderActions}}.ExecutePlottableAxisManagers(),}
+\DoxyCodeLine{        \textcolor{keyword}{new} \mbox{\hyperlink{classRenderManager_a520c46d206d230e2c67a49e7660a9377}{RenderActions}}.ApplyAxisRulesBeforeLayout(),}
+\DoxyCodeLine{        \textcolor{keyword}{new} \mbox{\hyperlink{classRenderManager_a520c46d206d230e2c67a49e7660a9377}{RenderActions}}.CalculateLayout(),}
+\DoxyCodeLine{        \textcolor{keyword}{new} \mbox{\hyperlink{classRenderManager_a520c46d206d230e2c67a49e7660a9377}{RenderActions}}.RenderFigureBackground(),}
+\DoxyCodeLine{        \textcolor{keyword}{new} \mbox{\hyperlink{classRenderManager_a520c46d206d230e2c67a49e7660a9377}{RenderActions}}.ApplyAxisRulesAfterLayout(),}
+\DoxyCodeLine{        \textcolor{keyword}{new} \mbox{\hyperlink{classRenderManager_a520c46d206d230e2c67a49e7660a9377}{RenderActions}}.RegenerateTicks(),}
+\DoxyCodeLine{        \textcolor{keyword}{new} \mbox{\hyperlink{classRenderManager_a520c46d206d230e2c67a49e7660a9377}{RenderActions}}.RenderStartingEvent(),}
+\DoxyCodeLine{        \textcolor{keyword}{new} \mbox{\hyperlink{classRenderManager_a520c46d206d230e2c67a49e7660a9377}{RenderActions}}.RenderDataBackground(),}
+\DoxyCodeLine{        \textcolor{keyword}{new} \mbox{\hyperlink{classRenderManager_a520c46d206d230e2c67a49e7660a9377}{RenderActions}}.RenderGridsBelowPlottables(),}
+\DoxyCodeLine{        \textcolor{keyword}{new} \mbox{\hyperlink{classRenderManager_a520c46d206d230e2c67a49e7660a9377}{RenderActions}}.RenderPlottables(),}
+\DoxyCodeLine{        \textcolor{keyword}{new} \mbox{\hyperlink{classRenderManager_a520c46d206d230e2c67a49e7660a9377}{RenderActions}}.RenderGridsAbovePlottables(),}
+\DoxyCodeLine{        \textcolor{keyword}{new} \mbox{\hyperlink{classRenderManager_a520c46d206d230e2c67a49e7660a9377}{RenderActions}}.RenderLegends(),}
+\DoxyCodeLine{        \textcolor{keyword}{new} \mbox{\hyperlink{classRenderManager_a520c46d206d230e2c67a49e7660a9377}{RenderActions}}.RenderPanels(),}
+\DoxyCodeLine{        \textcolor{keyword}{new} \mbox{\hyperlink{classRenderManager_a520c46d206d230e2c67a49e7660a9377}{RenderActions}}.RenderZoomRectangle(),}
+\DoxyCodeLine{        \textcolor{keyword}{new} \mbox{\hyperlink{classRenderManager_a520c46d206d230e2c67a49e7660a9377}{RenderActions}}.SyncGLPlottables(),}
+\DoxyCodeLine{        \textcolor{keyword}{new} \mbox{\hyperlink{classRenderManager_a520c46d206d230e2c67a49e7660a9377}{RenderActions}}.RenderPlottablesLast(),}
+\DoxyCodeLine{        \textcolor{keyword}{new} \mbox{\hyperlink{classRenderManager_a520c46d206d230e2c67a49e7660a9377}{RenderActions}}.RenderBenchmark(),}
+\DoxyCodeLine{    ]}
+
+\end{DoxyCode}
+
+
+This list of actions is performed in sequence to render a plot. It may be modified externally to inject custom functionality. 
+
+\mbox{\Hypertarget{classRenderManager_a7bdb6c68add29c2d992ed4141b440f88}\label{classRenderManager_a7bdb6c68add29c2d992ed4141b440f88}} 
+\index{RenderManager@{RenderManager}!RenderCount@{RenderCount}}
+\index{RenderCount@{RenderCount}!RenderManager@{RenderManager}}
+\doxysubsubsection{\texorpdfstring{RenderCount}{RenderCount}}
+{\footnotesize\ttfamily int Render\+Manager.\+Render\+Count = 0\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Total number of renders completed 
+
+\mbox{\Hypertarget{classRenderManager_a064fc56a887ae87fb86e2d81c1e49c69}\label{classRenderManager_a064fc56a887ae87fb86e2d81c1e49c69}} 
+\index{RenderManager@{RenderManager}!RenderFinished@{RenderFinished}}
+\index{RenderFinished@{RenderFinished}!RenderManager@{RenderManager}}
+\doxysubsubsection{\texorpdfstring{RenderFinished}{RenderFinished}}
+{\footnotesize\ttfamily Event\+Handler$<$\mbox{\hyperlink{structRenderDetails}{Render\+Details}}$>$ Render\+Manager.\+Render\+Finished = delegate \{ \}\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+This event is invoked after each render 
+
+\mbox{\Hypertarget{classRenderManager_aa2502e4e1abd0d252f923190644e4340}\label{classRenderManager_aa2502e4e1abd0d252f923190644e4340}} 
+\index{RenderManager@{RenderManager}!RenderStarting@{RenderStarting}}
+\index{RenderStarting@{RenderStarting}!RenderManager@{RenderManager}}
+\doxysubsubsection{\texorpdfstring{RenderStarting}{RenderStarting}}
+{\footnotesize\ttfamily Event\+Handler$<$\mbox{\hyperlink{classRenderPack}{Render\+Pack}}$>$ Render\+Manager.\+Render\+Starting = delegate \{ \}\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+This event is invoked just before each render, after axis limits are determined and axis limits are set 
+
+\mbox{\Hypertarget{classRenderManager_a3e1b92ed4befc75320a02befec4b6f33}\label{classRenderManager_a3e1b92ed4befc75320a02befec4b6f33}} 
+\index{RenderManager@{RenderManager}!SizeChanged@{SizeChanged}}
+\index{SizeChanged@{SizeChanged}!RenderManager@{RenderManager}}
+\doxysubsubsection{\texorpdfstring{SizeChanged}{SizeChanged}}
+{\footnotesize\ttfamily Event\+Handler$<$\mbox{\hyperlink{structRenderDetails}{Render\+Details}}$>$ Render\+Manager.\+Size\+Changed = delegate \{ \}\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+This event a render where the figure size (in pixels) changed from the previous render 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Rendering/Render\+Manager.\+cs\end{DoxyCompactItemize}

@@ -1,0 +1,117 @@
+\hypertarget{classKeyboardState}{}\doxysection{Keyboard\+State Class Reference}
+\label{classKeyboardState}\index{KeyboardState@{KeyboardState}}
+
+
+Tracks which keyboard keys are currently pressed.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classKeyboardState_a0f4c2905a62855d565632ce18e36b8c9}{Down}} (\mbox{\hyperlink{structKey}{Key}} key)
+\item 
+void \mbox{\hyperlink{classKeyboardState_a9f3f972d2c1167a12980053ce9b285d4}{Up}} (\mbox{\hyperlink{structKey}{Key}} key)
+\item 
+void \mbox{\hyperlink{classKeyboardState_a32587f9b739e7c4b2077cb2eb4936ff7}{Reset}} ()
+\item 
+void \mbox{\hyperlink{classKeyboardState_ae6334df41ade45875ac588139a6f77dc}{Add}} (\mbox{\hyperlink{structKey}{Key}} key)
+\item 
+void \mbox{\hyperlink{classKeyboardState_a822c0c9255056c44294f5d5c74848cb9}{Remove}} (\mbox{\hyperlink{structKey}{Key}} key)
+\item 
+bool \mbox{\hyperlink{classKeyboardState_a42d87b1a4d015e30d66345b592d1b30d}{Is\+Pressed}} (\mbox{\hyperlink{structKey}{Key}} key)
+\item 
+bool \mbox{\hyperlink{classKeyboardState_a561a79aa6bfefaca0c0bec871dddc4b8}{Is\+Pressed}} (string key\+Name)
+\item 
+override string \mbox{\hyperlink{classKeyboardState_af6309ad0c99ba706134e8c89ebcd520d}{To\+String}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+IRead\+Only\+Collection$<$ \mbox{\hyperlink{structKey}{Key}} $>$ \mbox{\hyperlink{classKeyboardState_a754062eacbf8160330c2be9cb19fb4dd}{Pressed\+Keys}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+int \mbox{\hyperlink{classKeyboardState_a73cbb941111e8284ece10448784c8f51}{Pressed\+Key\+Count}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+string\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classKeyboardState_a6204d6983b8c0f7968c24158580f4093}{Get\+Pressed\+Key\+Names}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Tracks which keyboard keys are currently pressed. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classKeyboardState_ae6334df41ade45875ac588139a6f77dc}\label{classKeyboardState_ae6334df41ade45875ac588139a6f77dc}} 
+\index{KeyboardState@{KeyboardState}!Add@{Add}}
+\index{Add@{Add}!KeyboardState@{KeyboardState}}
+\doxysubsubsection{\texorpdfstring{Add()}{Add()}}
+{\footnotesize\ttfamily void Keyboard\+State.\+Add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structKey}{Key}}}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classKeyboardState_a0f4c2905a62855d565632ce18e36b8c9}\label{classKeyboardState_a0f4c2905a62855d565632ce18e36b8c9}} 
+\index{KeyboardState@{KeyboardState}!Down@{Down}}
+\index{Down@{Down}!KeyboardState@{KeyboardState}}
+\doxysubsubsection{\texorpdfstring{Down()}{Down()}}
+{\footnotesize\ttfamily void Keyboard\+State.\+Down (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structKey}{Key}}}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classKeyboardState_a42d87b1a4d015e30d66345b592d1b30d}\label{classKeyboardState_a42d87b1a4d015e30d66345b592d1b30d}} 
+\index{KeyboardState@{KeyboardState}!IsPressed@{IsPressed}}
+\index{IsPressed@{IsPressed}!KeyboardState@{KeyboardState}}
+\doxysubsubsection{\texorpdfstring{IsPressed()}{IsPressed()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool Keyboard\+State.\+Is\+Pressed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structKey}{Key}}}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classKeyboardState_a561a79aa6bfefaca0c0bec871dddc4b8}\label{classKeyboardState_a561a79aa6bfefaca0c0bec871dddc4b8}} 
+\index{KeyboardState@{KeyboardState}!IsPressed@{IsPressed}}
+\index{IsPressed@{IsPressed}!KeyboardState@{KeyboardState}}
+\doxysubsubsection{\texorpdfstring{IsPressed()}{IsPressed()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool Keyboard\+State.\+Is\+Pressed (\begin{DoxyParamCaption}\item[{string}]{key\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classKeyboardState_a822c0c9255056c44294f5d5c74848cb9}\label{classKeyboardState_a822c0c9255056c44294f5d5c74848cb9}} 
+\index{KeyboardState@{KeyboardState}!Remove@{Remove}}
+\index{Remove@{Remove}!KeyboardState@{KeyboardState}}
+\doxysubsubsection{\texorpdfstring{Remove()}{Remove()}}
+{\footnotesize\ttfamily void Keyboard\+State.\+Remove (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structKey}{Key}}}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classKeyboardState_a32587f9b739e7c4b2077cb2eb4936ff7}\label{classKeyboardState_a32587f9b739e7c4b2077cb2eb4936ff7}} 
+\index{KeyboardState@{KeyboardState}!Reset@{Reset}}
+\index{Reset@{Reset}!KeyboardState@{KeyboardState}}
+\doxysubsubsection{\texorpdfstring{Reset()}{Reset()}}
+{\footnotesize\ttfamily void Keyboard\+State.\+Reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classKeyboardState_af6309ad0c99ba706134e8c89ebcd520d}\label{classKeyboardState_af6309ad0c99ba706134e8c89ebcd520d}} 
+\index{KeyboardState@{KeyboardState}!ToString@{ToString}}
+\index{ToString@{ToString}!KeyboardState@{KeyboardState}}
+\doxysubsubsection{\texorpdfstring{ToString()}{ToString()}}
+{\footnotesize\ttfamily override string Keyboard\+State.\+To\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classKeyboardState_a9f3f972d2c1167a12980053ce9b285d4}\label{classKeyboardState_a9f3f972d2c1167a12980053ce9b285d4}} 
+\index{KeyboardState@{KeyboardState}!Up@{Up}}
+\index{Up@{Up}!KeyboardState@{KeyboardState}}
+\doxysubsubsection{\texorpdfstring{Up()}{Up()}}
+{\footnotesize\ttfamily void Keyboard\+State.\+Up (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structKey}{Key}}}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{classKeyboardState_a6204d6983b8c0f7968c24158580f4093}\label{classKeyboardState_a6204d6983b8c0f7968c24158580f4093}} 
+\index{KeyboardState@{KeyboardState}!GetPressedKeyNames@{GetPressedKeyNames}}
+\index{GetPressedKeyNames@{GetPressedKeyNames}!KeyboardState@{KeyboardState}}
+\doxysubsubsection{\texorpdfstring{GetPressedKeyNames}{GetPressedKeyNames}}
+{\footnotesize\ttfamily string \mbox{[}$\,$\mbox{]} Keyboard\+State.\+Get\+Pressed\+Key\+Names\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{classKeyboardState_a73cbb941111e8284ece10448784c8f51}\label{classKeyboardState_a73cbb941111e8284ece10448784c8f51}} 
+\index{KeyboardState@{KeyboardState}!PressedKeyCount@{PressedKeyCount}}
+\index{PressedKeyCount@{PressedKeyCount}!KeyboardState@{KeyboardState}}
+\doxysubsubsection{\texorpdfstring{PressedKeyCount}{PressedKeyCount}}
+{\footnotesize\ttfamily int Keyboard\+State.\+Pressed\+Key\+Count\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{classKeyboardState_a754062eacbf8160330c2be9cb19fb4dd}\label{classKeyboardState_a754062eacbf8160330c2be9cb19fb4dd}} 
+\index{KeyboardState@{KeyboardState}!PressedKeys@{PressedKeys}}
+\index{PressedKeys@{PressedKeys}!KeyboardState@{KeyboardState}}
+\doxysubsubsection{\texorpdfstring{PressedKeys}{PressedKeys}}
+{\footnotesize\ttfamily IRead\+Only\+Collection$<$\mbox{\hyperlink{structKey}{Key}}$>$ Keyboard\+State.\+Pressed\+Keys\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Control/Keyboard\+State.\+cs\end{DoxyCompactItemize}

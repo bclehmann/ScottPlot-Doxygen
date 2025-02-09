@@ -1,0 +1,101 @@
+\hypertarget{classScatterSourceCoordinatesList}{}\doxysection{Scatter\+Source\+Coordinates\+List Class Reference}
+\label{classScatterSourceCoordinatesList}\index{ScatterSourceCoordinatesList@{ScatterSourceCoordinatesList}}
+
+
+This data source manages X/Y points as a collection of coordinates  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+IRead\+Only\+List$<$ \mbox{\hyperlink{structCoordinates}{Coordinates}} $>$ \mbox{\hyperlink{classScatterSourceCoordinatesList_ac51e3cbbb165e04712f3c61c514e6734}{Get\+Scatter\+Points}} ()
+\item 
+\mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} \mbox{\hyperlink{classScatterSourceCoordinatesList_ab616f3afa0891f0f749409f3133c7bc9}{Get\+Limits}} ()
+\item 
+\mbox{\hyperlink{structCoordinateRange}{Coordinate\+Range}} \mbox{\hyperlink{classScatterSourceCoordinatesList_a8c63b9f5c690722eccafae61a86ad65c}{Get\+LimitsX}} ()
+\item 
+\mbox{\hyperlink{structCoordinateRange}{Coordinate\+Range}} \mbox{\hyperlink{classScatterSourceCoordinatesList_aa6ca8c569e36fa2c1e685f807576f568}{Get\+LimitsY}} ()
+\item 
+\mbox{\hyperlink{structDataPoint}{Data\+Point}} \mbox{\hyperlink{classScatterSourceCoordinatesList_a0edbfb8d29993dcbd62e3e8fec953d2d}{Get\+Nearest}} (\mbox{\hyperlink{structCoordinates}{Coordinates}} mouse\+Location, \mbox{\hyperlink{structRenderDetails}{Render\+Details}} render\+Info, float max\+Distance=15)
+\item 
+\mbox{\hyperlink{structDataPoint}{Data\+Point}} \mbox{\hyperlink{classScatterSourceCoordinatesList_adbbcdc1c47f76a676828dcfdd8f93a52}{Get\+NearestX}} (\mbox{\hyperlink{structCoordinates}{Coordinates}} mouse\+Location, \mbox{\hyperlink{structRenderDetails}{Render\+Details}} render\+Info, float max\+Distance=15)
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ \mbox{\hyperlink{structCoordinates}{Coordinates}} $>$ \mbox{\hyperlink{classScatterSourceCoordinatesList_ac9e3dd6a7c3cc36b548ebfce82adc1b7}{coordinates}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+int \mbox{\hyperlink{classScatterSourceCoordinatesList_a26050488b51dcdd46c76b865b9182bac}{Min\+Render\+Index}} = 0\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+int \mbox{\hyperlink{classScatterSourceCoordinatesList_a2ccc09e39bb8ff03f94c3ed1f91fdc8e}{Max\+Render\+Index}} = int.\+Max\+Value\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This data source manages X/Y points as a collection of coordinates 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classScatterSourceCoordinatesList_ab616f3afa0891f0f749409f3133c7bc9}\label{classScatterSourceCoordinatesList_ab616f3afa0891f0f749409f3133c7bc9}} 
+\index{ScatterSourceCoordinatesList@{ScatterSourceCoordinatesList}!GetLimits@{GetLimits}}
+\index{GetLimits@{GetLimits}!ScatterSourceCoordinatesList@{ScatterSourceCoordinatesList}}
+\doxysubsubsection{\texorpdfstring{GetLimits()}{GetLimits()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} Scatter\+Source\+Coordinates\+List.\+Get\+Limits (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classScatterSourceCoordinatesList_a8c63b9f5c690722eccafae61a86ad65c}\label{classScatterSourceCoordinatesList_a8c63b9f5c690722eccafae61a86ad65c}} 
+\index{ScatterSourceCoordinatesList@{ScatterSourceCoordinatesList}!GetLimitsX@{GetLimitsX}}
+\index{GetLimitsX@{GetLimitsX}!ScatterSourceCoordinatesList@{ScatterSourceCoordinatesList}}
+\doxysubsubsection{\texorpdfstring{GetLimitsX()}{GetLimitsX()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structCoordinateRange}{Coordinate\+Range}} Scatter\+Source\+Coordinates\+List.\+Get\+LimitsX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classScatterSourceCoordinatesList_aa6ca8c569e36fa2c1e685f807576f568}\label{classScatterSourceCoordinatesList_aa6ca8c569e36fa2c1e685f807576f568}} 
+\index{ScatterSourceCoordinatesList@{ScatterSourceCoordinatesList}!GetLimitsY@{GetLimitsY}}
+\index{GetLimitsY@{GetLimitsY}!ScatterSourceCoordinatesList@{ScatterSourceCoordinatesList}}
+\doxysubsubsection{\texorpdfstring{GetLimitsY()}{GetLimitsY()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structCoordinateRange}{Coordinate\+Range}} Scatter\+Source\+Coordinates\+List.\+Get\+LimitsY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classScatterSourceCoordinatesList_a0edbfb8d29993dcbd62e3e8fec953d2d}\label{classScatterSourceCoordinatesList_a0edbfb8d29993dcbd62e3e8fec953d2d}} 
+\index{ScatterSourceCoordinatesList@{ScatterSourceCoordinatesList}!GetNearest@{GetNearest}}
+\index{GetNearest@{GetNearest}!ScatterSourceCoordinatesList@{ScatterSourceCoordinatesList}}
+\doxysubsubsection{\texorpdfstring{GetNearest()}{GetNearest()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structDataPoint}{Data\+Point}} Scatter\+Source\+Coordinates\+List.\+Get\+Nearest (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structCoordinates}{Coordinates}}}]{mouse\+Location,  }\item[{\mbox{\hyperlink{structRenderDetails}{Render\+Details}}}]{render\+Info,  }\item[{float}]{max\+Distance = {\ttfamily 15} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classScatterSourceCoordinatesList_adbbcdc1c47f76a676828dcfdd8f93a52}\label{classScatterSourceCoordinatesList_adbbcdc1c47f76a676828dcfdd8f93a52}} 
+\index{ScatterSourceCoordinatesList@{ScatterSourceCoordinatesList}!GetNearestX@{GetNearestX}}
+\index{GetNearestX@{GetNearestX}!ScatterSourceCoordinatesList@{ScatterSourceCoordinatesList}}
+\doxysubsubsection{\texorpdfstring{GetNearestX()}{GetNearestX()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structDataPoint}{Data\+Point}} Scatter\+Source\+Coordinates\+List.\+Get\+NearestX (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structCoordinates}{Coordinates}}}]{mouse\+Location,  }\item[{\mbox{\hyperlink{structRenderDetails}{Render\+Details}}}]{render\+Info,  }\item[{float}]{max\+Distance = {\ttfamily 15} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classScatterSourceCoordinatesList_ac51e3cbbb165e04712f3c61c514e6734}\label{classScatterSourceCoordinatesList_ac51e3cbbb165e04712f3c61c514e6734}} 
+\index{ScatterSourceCoordinatesList@{ScatterSourceCoordinatesList}!GetScatterPoints@{GetScatterPoints}}
+\index{GetScatterPoints@{GetScatterPoints}!ScatterSourceCoordinatesList@{ScatterSourceCoordinatesList}}
+\doxysubsubsection{\texorpdfstring{GetScatterPoints()}{GetScatterPoints()}}
+{\footnotesize\ttfamily IRead\+Only\+List$<$\mbox{\hyperlink{structCoordinates}{Coordinates}}$>$ Scatter\+Source\+Coordinates\+List.\+Get\+Scatter\+Points (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{classScatterSourceCoordinatesList_ac9e3dd6a7c3cc36b548ebfce82adc1b7}\label{classScatterSourceCoordinatesList_ac9e3dd6a7c3cc36b548ebfce82adc1b7}} 
+\index{ScatterSourceCoordinatesList@{ScatterSourceCoordinatesList}!coordinates@{coordinates}}
+\index{coordinates@{coordinates}!ScatterSourceCoordinatesList@{ScatterSourceCoordinatesList}}
+\doxysubsubsection{\texorpdfstring{coordinates}{coordinates}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{structCoordinates}{Coordinates}}$>$ Scatter\+Source\+Coordinates\+List.\+coordinates\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classScatterSourceCoordinatesList_a2ccc09e39bb8ff03f94c3ed1f91fdc8e}\label{classScatterSourceCoordinatesList_a2ccc09e39bb8ff03f94c3ed1f91fdc8e}} 
+\index{ScatterSourceCoordinatesList@{ScatterSourceCoordinatesList}!MaxRenderIndex@{MaxRenderIndex}}
+\index{MaxRenderIndex@{MaxRenderIndex}!ScatterSourceCoordinatesList@{ScatterSourceCoordinatesList}}
+\doxysubsubsection{\texorpdfstring{MaxRenderIndex}{MaxRenderIndex}}
+{\footnotesize\ttfamily int Scatter\+Source\+Coordinates\+List.\+Max\+Render\+Index = int.\+Max\+Value\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classScatterSourceCoordinatesList_a26050488b51dcdd46c76b865b9182bac}\label{classScatterSourceCoordinatesList_a26050488b51dcdd46c76b865b9182bac}} 
+\index{ScatterSourceCoordinatesList@{ScatterSourceCoordinatesList}!MinRenderIndex@{MinRenderIndex}}
+\index{MinRenderIndex@{MinRenderIndex}!ScatterSourceCoordinatesList@{ScatterSourceCoordinatesList}}
+\doxysubsubsection{\texorpdfstring{MinRenderIndex}{MinRenderIndex}}
+{\footnotesize\ttfamily int Scatter\+Source\+Coordinates\+List.\+Min\+Render\+Index = 0\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Data\+Sources/Scatter\+Source\+Coordinates\+List.\+cs\end{DoxyCompactItemize}

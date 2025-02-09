@@ -1,0 +1,132 @@
+\hypertarget{classVerticalSpan}{}\doxysection{Vertical\+Span Class Reference}
+\label{classVerticalSpan}\index{VerticalSpan@{VerticalSpan}}
+
+
+A vertical span marks the full horizontal range between two vertical values  
+
+
+Inheritance diagram for Vertical\+Span\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classVerticalSpan}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override \mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} \mbox{\hyperlink{classVerticalSpan_a8fe95861383953074076d57e7d957168}{Get\+Axis\+Limits}} ()
+\begin{DoxyCompactList}\small\item\em Return the 2D area (in coordinate space) occupied by the data contained in this plottable \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{classVerticalSpan_a3bb6606f608859f038957ea112fe2e96}{Render}} (\mbox{\hyperlink{classRenderPack}{Render\+Pack}} rp)
+\begin{DoxyCompactList}\small\item\em Draw the data from this plottable into the data area defined in the \mbox{\hyperlink{classAxes}{Axes}}. By default the surface is already clipped to the data area, but this can be cleared inside the plottable. \end{DoxyCompactList}\item 
+override? \mbox{\hyperlink{classAxisSpanUnderMouse}{Axis\+Span\+Under\+Mouse}} \mbox{\hyperlink{classVerticalSpan_a194cb6c1c06736b3d961332d36c26763}{Under\+Mouse}} (\mbox{\hyperlink{structCoordinateRect}{Coordinate\+Rect}} rect)
+\item 
+override void \mbox{\hyperlink{classVerticalSpan_a31726fb150e6fa1b442df66e5275af61}{Drag\+To}} (\mbox{\hyperlink{classAxisSpanUnderMouse}{Axis\+Span\+Under\+Mouse}} span\+Under\+Mouse, \mbox{\hyperlink{structCoordinates}{Coordinates}} mouse\+Now)
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{classVerticalSpan_ae22823523cbba13c4400e91cc3552ecc}{Y1}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+double \mbox{\hyperlink{classVerticalSpan_a64ab4212cc5be6d49e29a77c2ed43b73}{Y2}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{structCoordinateRange}{Coordinate\+Range}} \mbox{\hyperlink{classVerticalSpan_a3b84c9db4ef230d26123020ae9e07deb}{YRange}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+double \mbox{\hyperlink{classVerticalSpan_a5cf8dee0852eda91948f89cf3efe489b}{Bottom}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+double \mbox{\hyperlink{classVerticalSpan_af688c77ac023b7d68f8f5f15942890f4}{Top}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A vertical span marks the full horizontal range between two vertical values 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classVerticalSpan_a31726fb150e6fa1b442df66e5275af61}\label{classVerticalSpan_a31726fb150e6fa1b442df66e5275af61}} 
+\index{VerticalSpan@{VerticalSpan}!DragTo@{DragTo}}
+\index{DragTo@{DragTo}!VerticalSpan@{VerticalSpan}}
+\doxysubsubsection{\texorpdfstring{DragTo()}{DragTo()}}
+{\footnotesize\ttfamily override void Vertical\+Span.\+Drag\+To (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classAxisSpanUnderMouse}{Axis\+Span\+Under\+Mouse}}}]{span\+Under\+Mouse,  }\item[{\mbox{\hyperlink{structCoordinates}{Coordinates}}}]{mouse\+Now }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classAxisSpan_aceeba7d9a3f00b3cfdd6e0a1ed9a2909}{Axis\+Span}}.
+
+\mbox{\Hypertarget{classVerticalSpan_a8fe95861383953074076d57e7d957168}\label{classVerticalSpan_a8fe95861383953074076d57e7d957168}} 
+\index{VerticalSpan@{VerticalSpan}!GetAxisLimits@{GetAxisLimits}}
+\index{GetAxisLimits@{GetAxisLimits}!VerticalSpan@{VerticalSpan}}
+\doxysubsubsection{\texorpdfstring{GetAxisLimits()}{GetAxisLimits()}}
+{\footnotesize\ttfamily override \mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} Vertical\+Span.\+Get\+Axis\+Limits (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return the 2D area (in coordinate space) occupied by the data contained in this plottable 
+
+
+
+Implements \mbox{\hyperlink{interfaceIPlottable_ac98e2f5e56f9f938bbd081c87c7c6f50}{IPlottable}}.
+
+\mbox{\Hypertarget{classVerticalSpan_a3bb6606f608859f038957ea112fe2e96}\label{classVerticalSpan_a3bb6606f608859f038957ea112fe2e96}} 
+\index{VerticalSpan@{VerticalSpan}!Render@{Render}}
+\index{Render@{Render}!VerticalSpan@{VerticalSpan}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily override void Vertical\+Span.\+Render (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classRenderPack}{Render\+Pack}}}]{rp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Draw the data from this plottable into the data area defined in the \mbox{\hyperlink{classAxes}{Axes}}. By default the surface is already clipped to the data area, but this can be cleared inside the plottable. 
+
+
+
+Implements \mbox{\hyperlink{interfaceIPlottable_a201a1a236dc718eda93db143a5ade9f8}{IPlottable}}.
+
+\mbox{\Hypertarget{classVerticalSpan_a194cb6c1c06736b3d961332d36c26763}\label{classVerticalSpan_a194cb6c1c06736b3d961332d36c26763}} 
+\index{VerticalSpan@{VerticalSpan}!UnderMouse@{UnderMouse}}
+\index{UnderMouse@{UnderMouse}!VerticalSpan@{VerticalSpan}}
+\doxysubsubsection{\texorpdfstring{UnderMouse()}{UnderMouse()}}
+{\footnotesize\ttfamily override? \mbox{\hyperlink{classAxisSpanUnderMouse}{Axis\+Span\+Under\+Mouse}} Vertical\+Span.\+Under\+Mouse (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structCoordinateRect}{Coordinate\+Rect}}}]{rect }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classAxisSpan_ab029998dabe75fa807cdd10ccb1ca554}{Axis\+Span}}.
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{classVerticalSpan_a5cf8dee0852eda91948f89cf3efe489b}\label{classVerticalSpan_a5cf8dee0852eda91948f89cf3efe489b}} 
+\index{VerticalSpan@{VerticalSpan}!Bottom@{Bottom}}
+\index{Bottom@{Bottom}!VerticalSpan@{VerticalSpan}}
+\doxysubsubsection{\texorpdfstring{Bottom}{Bottom}}
+{\footnotesize\ttfamily double Vertical\+Span.\+Bottom\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classVerticalSpan_af688c77ac023b7d68f8f5f15942890f4}\label{classVerticalSpan_af688c77ac023b7d68f8f5f15942890f4}} 
+\index{VerticalSpan@{VerticalSpan}!Top@{Top}}
+\index{Top@{Top}!VerticalSpan@{VerticalSpan}}
+\doxysubsubsection{\texorpdfstring{Top}{Top}}
+{\footnotesize\ttfamily double Vertical\+Span.\+Top\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classVerticalSpan_ae22823523cbba13c4400e91cc3552ecc}\label{classVerticalSpan_ae22823523cbba13c4400e91cc3552ecc}} 
+\index{VerticalSpan@{VerticalSpan}!Y1@{Y1}}
+\index{Y1@{Y1}!VerticalSpan@{VerticalSpan}}
+\doxysubsubsection{\texorpdfstring{Y1}{Y1}}
+{\footnotesize\ttfamily double Vertical\+Span.\+Y1\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classVerticalSpan_a64ab4212cc5be6d49e29a77c2ed43b73}\label{classVerticalSpan_a64ab4212cc5be6d49e29a77c2ed43b73}} 
+\index{VerticalSpan@{VerticalSpan}!Y2@{Y2}}
+\index{Y2@{Y2}!VerticalSpan@{VerticalSpan}}
+\doxysubsubsection{\texorpdfstring{Y2}{Y2}}
+{\footnotesize\ttfamily double Vertical\+Span.\+Y2\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classVerticalSpan_a3b84c9db4ef230d26123020ae9e07deb}\label{classVerticalSpan_a3b84c9db4ef230d26123020ae9e07deb}} 
+\index{VerticalSpan@{VerticalSpan}!YRange@{YRange}}
+\index{YRange@{YRange}!VerticalSpan@{VerticalSpan}}
+\doxysubsubsection{\texorpdfstring{YRange}{YRange}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structCoordinateRange}{Coordinate\+Range}} Vertical\+Span.\+YRange\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Plottables/Vertical\+Span.\+cs\end{DoxyCompactItemize}

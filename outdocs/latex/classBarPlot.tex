@@ -1,0 +1,174 @@
+\hypertarget{classBarPlot}{}\doxysection{Bar\+Plot Class Reference}
+\label{classBarPlot}\index{BarPlot@{BarPlot}}
+
+
+Holds a collection of individually styled bars  
+
+
+Inheritance diagram for Bar\+Plot\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classBarPlot}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classBarPlot_ac4ca8aff86d2dff23589973f8108ac56}{Bar\+Plot}} (\mbox{\hyperlink{classBar}{Bar}} bar)
+\item 
+\mbox{\hyperlink{classBarPlot_a819efa51f5759febb12dac67acfe613e}{Bar\+Plot}} (\mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$ \mbox{\hyperlink{classBar}{Bar}} $>$ bars)
+\item 
+\mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} \mbox{\hyperlink{classBarPlot_a0d3aa08fd44757fd80f281b6d613fb53}{Get\+Axis\+Limits}} ()
+\begin{DoxyCompactList}\small\item\em Return the 2D area (in coordinate space) occupied by the data contained in this plottable \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classBarPlot_a79dc580cc0593d0a7f7d1162c57537cc}{Render}} (\mbox{\hyperlink{classRenderPack}{Render\+Pack}} rp)
+\begin{DoxyCompactList}\small\item\em Draw the data from this plottable into the data area defined in the \mbox{\hyperlink{classAxes}{Axes}}. By default the surface is already clipped to the data area, but this can be cleared inside the plottable. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{classBarPlot_a59f1a9447e726b2189b91d82be38d715}{Label}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+string \mbox{\hyperlink{classBarPlot_a0928b9dc690df00a0b7798f89dabd825}{Legend\+Text}} = string.\+Empty\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+bool \mbox{\hyperlink{classBarPlot_a348e420ce234229aab66fc456305832e}{Is\+Visible}} = true\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{interfaceIAxes}{IAxes}} \mbox{\hyperlink{classBarPlot_a86fe965935dabd880504f793e53db8d3}{Axes}} = new \mbox{\hyperlink{classAxes}{Axes}}()\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$ \mbox{\hyperlink{classBar}{Bar}} $>$ \mbox{\hyperlink{classBarPlot_a9f721b9b10579b1ba2ec049adde2ddc7}{Bars}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{classLabelStyle}{Label\+Style}} \mbox{\hyperlink{classBarPlot_abe4b355dd81a188013c7b8e39badde78}{Value\+Label\+Style}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{structColor}{Color}} \mbox{\hyperlink{classBarPlot_a648286ec506b93bc2bf11b4a0823b2af}{Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Apply a fill color to all bars \end{DoxyCompactList}\item 
+bool? \mbox{\hyperlink{classBarPlot_a11b24251ffa87c3ae8d67acbf42683a9}{Horizontal}}\hspace{0.3cm}{\ttfamily  \mbox{[}set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Define orientation for all bars \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$ \mbox{\hyperlink{classLegendItem}{Legend\+Item}} $>$ \mbox{\hyperlink{classBarPlot_a050352c0335a2e41a8ec44d349838a2b}{Legend\+Items}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Holds a collection of individually styled bars 
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classBarPlot_ac4ca8aff86d2dff23589973f8108ac56}\label{classBarPlot_ac4ca8aff86d2dff23589973f8108ac56}} 
+\index{BarPlot@{BarPlot}!BarPlot@{BarPlot}}
+\index{BarPlot@{BarPlot}!BarPlot@{BarPlot}}
+\doxysubsubsection{\texorpdfstring{BarPlot()}{BarPlot()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Bar\+Plot.\+Bar\+Plot (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classBar}{Bar}}}]{bar }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classBarPlot_a819efa51f5759febb12dac67acfe613e}\label{classBarPlot_a819efa51f5759febb12dac67acfe613e}} 
+\index{BarPlot@{BarPlot}!BarPlot@{BarPlot}}
+\index{BarPlot@{BarPlot}!BarPlot@{BarPlot}}
+\doxysubsubsection{\texorpdfstring{BarPlot()}{BarPlot()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Bar\+Plot.\+Bar\+Plot (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$ \mbox{\hyperlink{classBar}{Bar}} $>$}]{bars }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classBarPlot_a0d3aa08fd44757fd80f281b6d613fb53}\label{classBarPlot_a0d3aa08fd44757fd80f281b6d613fb53}} 
+\index{BarPlot@{BarPlot}!GetAxisLimits@{GetAxisLimits}}
+\index{GetAxisLimits@{GetAxisLimits}!BarPlot@{BarPlot}}
+\doxysubsubsection{\texorpdfstring{GetAxisLimits()}{GetAxisLimits()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} Bar\+Plot.\+Get\+Axis\+Limits (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return the 2D area (in coordinate space) occupied by the data contained in this plottable 
+
+
+
+Implements \mbox{\hyperlink{interfaceIPlottable_ac98e2f5e56f9f938bbd081c87c7c6f50}{IPlottable}}.
+
+\mbox{\Hypertarget{classBarPlot_a79dc580cc0593d0a7f7d1162c57537cc}\label{classBarPlot_a79dc580cc0593d0a7f7d1162c57537cc}} 
+\index{BarPlot@{BarPlot}!Render@{Render}}
+\index{Render@{Render}!BarPlot@{BarPlot}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily virtual void Bar\+Plot.\+Render (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classRenderPack}{Render\+Pack}}}]{rp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Draw the data from this plottable into the data area defined in the \mbox{\hyperlink{classAxes}{Axes}}. By default the surface is already clipped to the data area, but this can be cleared inside the plottable. 
+
+
+
+Implements \mbox{\hyperlink{interfaceIPlottable_a201a1a236dc718eda93db143a5ade9f8}{IPlottable}}.
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{classBarPlot_a86fe965935dabd880504f793e53db8d3}\label{classBarPlot_a86fe965935dabd880504f793e53db8d3}} 
+\index{BarPlot@{BarPlot}!Axes@{Axes}}
+\index{Axes@{Axes}!BarPlot@{BarPlot}}
+\doxysubsubsection{\texorpdfstring{Axes}{Axes}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceIAxes}{IAxes}} Bar\+Plot.\+Axes = new \mbox{\hyperlink{classAxes}{Axes}}()\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classBarPlot_a9f721b9b10579b1ba2ec049adde2ddc7}\label{classBarPlot_a9f721b9b10579b1ba2ec049adde2ddc7}} 
+\index{BarPlot@{BarPlot}!Bars@{Bars}}
+\index{Bars@{Bars}!BarPlot@{BarPlot}}
+\doxysubsubsection{\texorpdfstring{Bars}{Bars}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$\mbox{\hyperlink{classBar}{Bar}}$>$ Bar\+Plot.\+Bars\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classBarPlot_a648286ec506b93bc2bf11b4a0823b2af}\label{classBarPlot_a648286ec506b93bc2bf11b4a0823b2af}} 
+\index{BarPlot@{BarPlot}!Color@{Color}}
+\index{Color@{Color}!BarPlot@{BarPlot}}
+\doxysubsubsection{\texorpdfstring{Color}{Color}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structColor}{Color}} Bar\+Plot.\+Color\hspace{0.3cm}{\ttfamily [set]}}
+
+
+
+Apply a fill color to all bars 
+
+\mbox{\Hypertarget{classBarPlot_a11b24251ffa87c3ae8d67acbf42683a9}\label{classBarPlot_a11b24251ffa87c3ae8d67acbf42683a9}} 
+\index{BarPlot@{BarPlot}!Horizontal@{Horizontal}}
+\index{Horizontal@{Horizontal}!BarPlot@{BarPlot}}
+\doxysubsubsection{\texorpdfstring{Horizontal}{Horizontal}}
+{\footnotesize\ttfamily bool? Bar\+Plot.\+Horizontal\hspace{0.3cm}{\ttfamily [set]}}
+
+
+
+Define orientation for all bars 
+
+\mbox{\Hypertarget{classBarPlot_a348e420ce234229aab66fc456305832e}\label{classBarPlot_a348e420ce234229aab66fc456305832e}} 
+\index{BarPlot@{BarPlot}!IsVisible@{IsVisible}}
+\index{IsVisible@{IsVisible}!BarPlot@{BarPlot}}
+\doxysubsubsection{\texorpdfstring{IsVisible}{IsVisible}}
+{\footnotesize\ttfamily bool Bar\+Plot.\+Is\+Visible = true\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classBarPlot_a59f1a9447e726b2189b91d82be38d715}\label{classBarPlot_a59f1a9447e726b2189b91d82be38d715}} 
+\index{BarPlot@{BarPlot}!Label@{Label}}
+\index{Label@{Label}!BarPlot@{BarPlot}}
+\doxysubsubsection{\texorpdfstring{Label}{Label}}
+{\footnotesize\ttfamily string Bar\+Plot.\+Label\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classBarPlot_a050352c0335a2e41a8ec44d349838a2b}\label{classBarPlot_a050352c0335a2e41a8ec44d349838a2b}} 
+\index{BarPlot@{BarPlot}!LegendItems@{LegendItems}}
+\index{LegendItems@{LegendItems}!BarPlot@{BarPlot}}
+\doxysubsubsection{\texorpdfstring{LegendItems}{LegendItems}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$\mbox{\hyperlink{classLegendItem}{Legend\+Item}}$>$ Bar\+Plot.\+Legend\+Items\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{classBarPlot_a0928b9dc690df00a0b7798f89dabd825}\label{classBarPlot_a0928b9dc690df00a0b7798f89dabd825}} 
+\index{BarPlot@{BarPlot}!LegendText@{LegendText}}
+\index{LegendText@{LegendText}!BarPlot@{BarPlot}}
+\doxysubsubsection{\texorpdfstring{LegendText}{LegendText}}
+{\footnotesize\ttfamily string Bar\+Plot.\+Legend\+Text = string.\+Empty\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classBarPlot_abe4b355dd81a188013c7b8e39badde78}\label{classBarPlot_abe4b355dd81a188013c7b8e39badde78}} 
+\index{BarPlot@{BarPlot}!ValueLabelStyle@{ValueLabelStyle}}
+\index{ValueLabelStyle@{ValueLabelStyle}!BarPlot@{BarPlot}}
+\doxysubsubsection{\texorpdfstring{ValueLabelStyle}{ValueLabelStyle}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classLabelStyle}{Label\+Style}} Bar\+Plot.\+Value\+Label\+Style\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new}()}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        Alignment = Alignment.LowerCenter,}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Plottables/Bar\+Plot.\+cs\end{DoxyCompactItemize}

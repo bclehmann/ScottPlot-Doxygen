@@ -1,0 +1,226 @@
+\hypertarget{structCoordinateLine}{}\doxysection{Coordinate\+Line Struct Reference}
+\label{structCoordinateLine}\index{CoordinateLine@{CoordinateLine}}
+
+
+Represents a straight line in coordinate space  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structCoordinateLine_aa13a8450ab4344af02f5f410e3aec4e1}{Coordinate\+Line}} (double x1, double y1, double x2, double y2)
+\item 
+\mbox{\hyperlink{structCoordinateLine_afd572f5171675df65a949fdb077f687b}{Coordinate\+Line}} (\mbox{\hyperlink{structCoordinates}{Coordinates}} pt1, \mbox{\hyperlink{structCoordinates}{Coordinates}} pt2)
+\item 
+\mbox{\hyperlink{structCoordinateLine_a4f4f168a7a392189319e002d55f0c4a1}{Coordinate\+Line}} (double x, double y, double slope)
+\item 
+\mbox{\hyperlink{structCoordinateLine_a14e974079dbae3f4bd8601a23e8075ba}{Coordinate\+Line}} (\mbox{\hyperlink{structCoordinates}{Coordinates}} point, double slope)
+\item 
+override string \mbox{\hyperlink{structCoordinateLine_ae1c0e057c97296c8307ac1b4c5e0ddf2}{To\+String}} ()
+\item 
+\mbox{\hyperlink{structCoordinateLine}{Coordinate\+Line}} \mbox{\hyperlink{structCoordinateLine_a54c78b364621137d4f92621dae138141}{Extend\+To}} (\mbox{\hyperlink{structCoordinateRect}{Coordinate\+Rect}} rect)
+\begin{DoxyCompactList}\small\item\em Adjust the line to fit within the boundaries of the given rectangle. The slope and Y intercept will not be changed. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{structCoordinateLine_a207d56f07cb2db9c72a5aa940d317175}{X}} (double y=0)
+\begin{DoxyCompactList}\small\item\em Return the X position on the line at the given Y \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{structCoordinateLine_a5997a9efb4201e40ec825ff242b8ebe7}{Y}} (double x=0)
+\begin{DoxyCompactList}\small\item\em Return the Y position on the line at the given X \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structCoordinateLine}{Coordinate\+Line}} \mbox{\hyperlink{structCoordinateLine_a5f91b85e577509725b48f492aafb378f}{With\+Delta}} (double dX, double dY)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+readonly double \mbox{\hyperlink{structCoordinateLine_a2bac186507439dafc1fbf130c111fa2a}{X1}}
+\item 
+readonly double \mbox{\hyperlink{structCoordinateLine_ab655d935c24dc698f4af60999d8fb9f2}{X2}}
+\item 
+readonly double \mbox{\hyperlink{structCoordinateLine_aa11c3f58fab5d892fb667236fcde9127}{Y1}}
+\item 
+readonly double \mbox{\hyperlink{structCoordinateLine_a3f97bcfd64c95b40898fb9c2655e7d54}{Y2}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{structCoordinateLine_a95f5c9021b10a787145cb39d8cc0871b}{XSpan}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+double \mbox{\hyperlink{structCoordinateLine_afc44713f1d6f600a72444c9ac8bea6ae}{YSpan}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+double \mbox{\hyperlink{structCoordinateLine_abddcdfb3d13f88c0312dcbf48daecb65}{Slope}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+double \mbox{\hyperlink{structCoordinateLine_a775942b4cb80430174f774e500ccc44d}{Slope\+Radians}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+double \mbox{\hyperlink{structCoordinateLine_a40cf027e78eef2a4cb554c05a735ebf4}{Slope\+Degrees}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+double \mbox{\hyperlink{structCoordinateLine_a3d1cdedf7e8e00ef328be5ff1dfa558b}{YIntercept}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+float \mbox{\hyperlink{structCoordinateLine_a0ee33f17e02aabc5c50ba49abde3b953}{Length}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{structCoordinates}{Coordinates}} \mbox{\hyperlink{structCoordinateLine_a13bdc371a06b7d4dd0b4fa045b5f46a3}{Start}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{structCoordinates}{Coordinates}} \mbox{\hyperlink{structCoordinateLine_a913c54df2d0406354b7b34b7d0d4cad5}{End}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a straight line in coordinate space 
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structCoordinateLine_aa13a8450ab4344af02f5f410e3aec4e1}\label{structCoordinateLine_aa13a8450ab4344af02f5f410e3aec4e1}} 
+\index{CoordinateLine@{CoordinateLine}!CoordinateLine@{CoordinateLine}}
+\index{CoordinateLine@{CoordinateLine}!CoordinateLine@{CoordinateLine}}
+\doxysubsubsection{\texorpdfstring{CoordinateLine()}{CoordinateLine()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily Coordinate\+Line.\+Coordinate\+Line (\begin{DoxyParamCaption}\item[{double}]{x1,  }\item[{double}]{y1,  }\item[{double}]{x2,  }\item[{double}]{y2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structCoordinateLine_afd572f5171675df65a949fdb077f687b}\label{structCoordinateLine_afd572f5171675df65a949fdb077f687b}} 
+\index{CoordinateLine@{CoordinateLine}!CoordinateLine@{CoordinateLine}}
+\index{CoordinateLine@{CoordinateLine}!CoordinateLine@{CoordinateLine}}
+\doxysubsubsection{\texorpdfstring{CoordinateLine()}{CoordinateLine()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily Coordinate\+Line.\+Coordinate\+Line (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structCoordinates}{Coordinates}}}]{pt1,  }\item[{\mbox{\hyperlink{structCoordinates}{Coordinates}}}]{pt2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structCoordinateLine_a4f4f168a7a392189319e002d55f0c4a1}\label{structCoordinateLine_a4f4f168a7a392189319e002d55f0c4a1}} 
+\index{CoordinateLine@{CoordinateLine}!CoordinateLine@{CoordinateLine}}
+\index{CoordinateLine@{CoordinateLine}!CoordinateLine@{CoordinateLine}}
+\doxysubsubsection{\texorpdfstring{CoordinateLine()}{CoordinateLine()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily Coordinate\+Line.\+Coordinate\+Line (\begin{DoxyParamCaption}\item[{double}]{x,  }\item[{double}]{y,  }\item[{double}]{slope }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structCoordinateLine_a14e974079dbae3f4bd8601a23e8075ba}\label{structCoordinateLine_a14e974079dbae3f4bd8601a23e8075ba}} 
+\index{CoordinateLine@{CoordinateLine}!CoordinateLine@{CoordinateLine}}
+\index{CoordinateLine@{CoordinateLine}!CoordinateLine@{CoordinateLine}}
+\doxysubsubsection{\texorpdfstring{CoordinateLine()}{CoordinateLine()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily Coordinate\+Line.\+Coordinate\+Line (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structCoordinates}{Coordinates}}}]{point,  }\item[{double}]{slope }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{structCoordinateLine_a54c78b364621137d4f92621dae138141}\label{structCoordinateLine_a54c78b364621137d4f92621dae138141}} 
+\index{CoordinateLine@{CoordinateLine}!ExtendTo@{ExtendTo}}
+\index{ExtendTo@{ExtendTo}!CoordinateLine@{CoordinateLine}}
+\doxysubsubsection{\texorpdfstring{ExtendTo()}{ExtendTo()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structCoordinateLine}{Coordinate\+Line}} Coordinate\+Line.\+Extend\+To (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structCoordinateRect}{Coordinate\+Rect}}}]{rect }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Adjust the line to fit within the boundaries of the given rectangle. The slope and Y intercept will not be changed. 
+
+\mbox{\Hypertarget{structCoordinateLine_ae1c0e057c97296c8307ac1b4c5e0ddf2}\label{structCoordinateLine_ae1c0e057c97296c8307ac1b4c5e0ddf2}} 
+\index{CoordinateLine@{CoordinateLine}!ToString@{ToString}}
+\index{ToString@{ToString}!CoordinateLine@{CoordinateLine}}
+\doxysubsubsection{\texorpdfstring{ToString()}{ToString()}}
+{\footnotesize\ttfamily override string Coordinate\+Line.\+To\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structCoordinateLine_a5f91b85e577509725b48f492aafb378f}\label{structCoordinateLine_a5f91b85e577509725b48f492aafb378f}} 
+\index{CoordinateLine@{CoordinateLine}!WithDelta@{WithDelta}}
+\index{WithDelta@{WithDelta}!CoordinateLine@{CoordinateLine}}
+\doxysubsubsection{\texorpdfstring{WithDelta()}{WithDelta()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structCoordinateLine}{Coordinate\+Line}} Coordinate\+Line.\+With\+Delta (\begin{DoxyParamCaption}\item[{double}]{dX,  }\item[{double}]{dY }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structCoordinateLine_a207d56f07cb2db9c72a5aa940d317175}\label{structCoordinateLine_a207d56f07cb2db9c72a5aa940d317175}} 
+\index{CoordinateLine@{CoordinateLine}!X@{X}}
+\index{X@{X}!CoordinateLine@{CoordinateLine}}
+\doxysubsubsection{\texorpdfstring{X()}{X()}}
+{\footnotesize\ttfamily double Coordinate\+Line.\+X (\begin{DoxyParamCaption}\item[{double}]{y = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return the X position on the line at the given Y 
+
+\mbox{\Hypertarget{structCoordinateLine_a5997a9efb4201e40ec825ff242b8ebe7}\label{structCoordinateLine_a5997a9efb4201e40ec825ff242b8ebe7}} 
+\index{CoordinateLine@{CoordinateLine}!Y@{Y}}
+\index{Y@{Y}!CoordinateLine@{CoordinateLine}}
+\doxysubsubsection{\texorpdfstring{Y()}{Y()}}
+{\footnotesize\ttfamily double Coordinate\+Line.\+Y (\begin{DoxyParamCaption}\item[{double}]{x = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return the Y position on the line at the given X 
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structCoordinateLine_a2bac186507439dafc1fbf130c111fa2a}\label{structCoordinateLine_a2bac186507439dafc1fbf130c111fa2a}} 
+\index{CoordinateLine@{CoordinateLine}!X1@{X1}}
+\index{X1@{X1}!CoordinateLine@{CoordinateLine}}
+\doxysubsubsection{\texorpdfstring{X1}{X1}}
+{\footnotesize\ttfamily readonly double Coordinate\+Line.\+X1}
+
+\mbox{\Hypertarget{structCoordinateLine_ab655d935c24dc698f4af60999d8fb9f2}\label{structCoordinateLine_ab655d935c24dc698f4af60999d8fb9f2}} 
+\index{CoordinateLine@{CoordinateLine}!X2@{X2}}
+\index{X2@{X2}!CoordinateLine@{CoordinateLine}}
+\doxysubsubsection{\texorpdfstring{X2}{X2}}
+{\footnotesize\ttfamily readonly double Coordinate\+Line.\+X2}
+
+\mbox{\Hypertarget{structCoordinateLine_aa11c3f58fab5d892fb667236fcde9127}\label{structCoordinateLine_aa11c3f58fab5d892fb667236fcde9127}} 
+\index{CoordinateLine@{CoordinateLine}!Y1@{Y1}}
+\index{Y1@{Y1}!CoordinateLine@{CoordinateLine}}
+\doxysubsubsection{\texorpdfstring{Y1}{Y1}}
+{\footnotesize\ttfamily readonly double Coordinate\+Line.\+Y1}
+
+\mbox{\Hypertarget{structCoordinateLine_a3f97bcfd64c95b40898fb9c2655e7d54}\label{structCoordinateLine_a3f97bcfd64c95b40898fb9c2655e7d54}} 
+\index{CoordinateLine@{CoordinateLine}!Y2@{Y2}}
+\index{Y2@{Y2}!CoordinateLine@{CoordinateLine}}
+\doxysubsubsection{\texorpdfstring{Y2}{Y2}}
+{\footnotesize\ttfamily readonly double Coordinate\+Line.\+Y2}
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{structCoordinateLine_a913c54df2d0406354b7b34b7d0d4cad5}\label{structCoordinateLine_a913c54df2d0406354b7b34b7d0d4cad5}} 
+\index{CoordinateLine@{CoordinateLine}!End@{End}}
+\index{End@{End}!CoordinateLine@{CoordinateLine}}
+\doxysubsubsection{\texorpdfstring{End}{End}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structCoordinates}{Coordinates}} Coordinate\+Line.\+End\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{structCoordinateLine_a0ee33f17e02aabc5c50ba49abde3b953}\label{structCoordinateLine_a0ee33f17e02aabc5c50ba49abde3b953}} 
+\index{CoordinateLine@{CoordinateLine}!Length@{Length}}
+\index{Length@{Length}!CoordinateLine@{CoordinateLine}}
+\doxysubsubsection{\texorpdfstring{Length}{Length}}
+{\footnotesize\ttfamily float Coordinate\+Line.\+Length\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{structCoordinateLine_abddcdfb3d13f88c0312dcbf48daecb65}\label{structCoordinateLine_abddcdfb3d13f88c0312dcbf48daecb65}} 
+\index{CoordinateLine@{CoordinateLine}!Slope@{Slope}}
+\index{Slope@{Slope}!CoordinateLine@{CoordinateLine}}
+\doxysubsubsection{\texorpdfstring{Slope}{Slope}}
+{\footnotesize\ttfamily double Coordinate\+Line.\+Slope\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{structCoordinateLine_a40cf027e78eef2a4cb554c05a735ebf4}\label{structCoordinateLine_a40cf027e78eef2a4cb554c05a735ebf4}} 
+\index{CoordinateLine@{CoordinateLine}!SlopeDegrees@{SlopeDegrees}}
+\index{SlopeDegrees@{SlopeDegrees}!CoordinateLine@{CoordinateLine}}
+\doxysubsubsection{\texorpdfstring{SlopeDegrees}{SlopeDegrees}}
+{\footnotesize\ttfamily double Coordinate\+Line.\+Slope\+Degrees\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{structCoordinateLine_a775942b4cb80430174f774e500ccc44d}\label{structCoordinateLine_a775942b4cb80430174f774e500ccc44d}} 
+\index{CoordinateLine@{CoordinateLine}!SlopeRadians@{SlopeRadians}}
+\index{SlopeRadians@{SlopeRadians}!CoordinateLine@{CoordinateLine}}
+\doxysubsubsection{\texorpdfstring{SlopeRadians}{SlopeRadians}}
+{\footnotesize\ttfamily double Coordinate\+Line.\+Slope\+Radians\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{structCoordinateLine_a13bdc371a06b7d4dd0b4fa045b5f46a3}\label{structCoordinateLine_a13bdc371a06b7d4dd0b4fa045b5f46a3}} 
+\index{CoordinateLine@{CoordinateLine}!Start@{Start}}
+\index{Start@{Start}!CoordinateLine@{CoordinateLine}}
+\doxysubsubsection{\texorpdfstring{Start}{Start}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structCoordinates}{Coordinates}} Coordinate\+Line.\+Start\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{structCoordinateLine_a95f5c9021b10a787145cb39d8cc0871b}\label{structCoordinateLine_a95f5c9021b10a787145cb39d8cc0871b}} 
+\index{CoordinateLine@{CoordinateLine}!XSpan@{XSpan}}
+\index{XSpan@{XSpan}!CoordinateLine@{CoordinateLine}}
+\doxysubsubsection{\texorpdfstring{XSpan}{XSpan}}
+{\footnotesize\ttfamily double Coordinate\+Line.\+XSpan\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{structCoordinateLine_a3d1cdedf7e8e00ef328be5ff1dfa558b}\label{structCoordinateLine_a3d1cdedf7e8e00ef328be5ff1dfa558b}} 
+\index{CoordinateLine@{CoordinateLine}!YIntercept@{YIntercept}}
+\index{YIntercept@{YIntercept}!CoordinateLine@{CoordinateLine}}
+\doxysubsubsection{\texorpdfstring{YIntercept}{YIntercept}}
+{\footnotesize\ttfamily double Coordinate\+Line.\+YIntercept\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{structCoordinateLine_afc44713f1d6f600a72444c9ac8bea6ae}\label{structCoordinateLine_afc44713f1d6f600a72444c9ac8bea6ae}} 
+\index{CoordinateLine@{CoordinateLine}!YSpan@{YSpan}}
+\index{YSpan@{YSpan}!CoordinateLine@{CoordinateLine}}
+\doxysubsubsection{\texorpdfstring{YSpan}{YSpan}}
+{\footnotesize\ttfamily double Coordinate\+Line.\+YSpan\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Primitives/Coordinate\+Line.\+cs\end{DoxyCompactItemize}

@@ -1,0 +1,129 @@
+\doxysection{Scott\+Plot.\+Open\+GL.\+GLPrograms.\+Lines\+Program Class Reference}
+\hypertarget{class_scott_plot_1_1_open_g_l_1_1_g_l_programs_1_1_lines_program}{}\label{class_scott_plot_1_1_open_g_l_1_1_g_l_programs_1_1_lines_program}\index{ScottPlot.OpenGL.GLPrograms.LinesProgram@{ScottPlot.OpenGL.GLPrograms.LinesProgram}}
+
+
+A lines program which draws effeciently but does not allow line width customization.  
+
+
+Inheritance diagram for Scott\+Plot.\+Open\+GL.\+GLPrograms.\+Lines\+Program\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.624595cm]{class_scott_plot_1_1_open_g_l_1_1_g_l_programs_1_1_lines_program}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_open_g_l_1_1_g_l_programs_1_1_lines_program_a96d794d5687d21e6a5841ad33618d16f}{Set\+Transform}} (Matrix4d transform)
+\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_open_g_l_1_1_g_l_programs_1_1_lines_program_a224cc8e05c26317a014aa924656b3f53}{Set\+Color}} (Color4 color)
+\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_open_g_l_1_1_g_l_programs_1_1_lines_program_aeea26409077b735b9bdf6d27a507fbbe}{Set\+Line\+Width}} (float line\+Width)
+\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_open_g_l_1_1_g_l_programs_1_1_lines_program_a2e8bd2bf39e94b648fd95e6c2b09f9f6}{Set\+View\+Port\+Size}} (float width, float height)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_scott_plot_1_1_open_g_l_1_1_g_l_programs_1_1_g_l_program_base}{Scott\+Plot.\+Open\+GL.\+GLPrograms.\+GLProgram\+Base}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_scott_plot_1_1_open_g_l_1_1_g_l_programs_1_1_g_l_program_base_a552db0daefcae995e47abcfb11f5010b}{GLProgram\+Base}} ()
+\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_open_g_l_1_1_g_l_programs_1_1_g_l_program_base_a8553b9fb6d7f7a673f8a41206a23b867}{Use}} ()
+\item 
+int \mbox{\hyperlink{class_scott_plot_1_1_open_g_l_1_1_g_l_programs_1_1_g_l_program_base_ad9973113f3308f2e0ea7003e560228e2}{Get\+Attrib\+Location}} (string attrib\+Name)
+\item 
+int \mbox{\hyperlink{class_scott_plot_1_1_open_g_l_1_1_g_l_programs_1_1_g_l_program_base_ae288961f0c6b7e9a2bcc9b7462a9d977}{Get\+Uniform\+Location}} (string attrib\+Name)
+\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_open_g_l_1_1_g_l_programs_1_1_g_l_program_base_a82ecd4aeec66f3151d835fc47a044ef6}{GLFinish}} ()
+\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_open_g_l_1_1_g_l_programs_1_1_g_l_program_base_a5c06864aa2076bad69348e4677dda6fa}{Dispose}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_scott_plot_1_1_open_g_l_1_1_g_l_programs_1_1_i_g_l_program}{Scott\+Plot.\+Open\+GL.\+GLPrograms.\+IGLProgram}}}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_scott_plot_1_1_open_g_l_1_1_g_l_programs_1_1_i_lines_draw_program}{Scott\+Plot.\+Open\+GL.\+GLPrograms.\+ILines\+Draw\+Program}}}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+override string \mbox{\hyperlink{class_scott_plot_1_1_open_g_l_1_1_g_l_programs_1_1_lines_program_a127ee8fce7ca99b414e0ee1a8bf35eaa}{Vertex\+Shader\+Source}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+override string \mbox{\hyperlink{class_scott_plot_1_1_open_g_l_1_1_g_l_programs_1_1_lines_program_a0019fda47aa7bbff5a0882504a4cdbc9}{Fragment\+Shader\+Source}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{class_scott_plot_1_1_open_g_l_1_1_g_l_programs_1_1_g_l_program_base}{Scott\+Plot.\+Open\+GL.\+GLPrograms.\+GLProgram\+Base}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual ? string \mbox{\hyperlink{class_scott_plot_1_1_open_g_l_1_1_g_l_programs_1_1_g_l_program_base_a4b463702047552be60415683db04ab1e}{Vertex\+Shader\+Source}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+virtual ? string \mbox{\hyperlink{class_scott_plot_1_1_open_g_l_1_1_g_l_programs_1_1_g_l_program_base_ad362cc22f87602a5d9176a430cd5a5f8}{Geometry\+Shader\+Source}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+virtual ? string \mbox{\hyperlink{class_scott_plot_1_1_open_g_l_1_1_g_l_programs_1_1_g_l_program_base_aa575efc4c36a47f9d16a6cec03fb82a7}{Fragment\+Shader\+Source}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_scott_plot_1_1_open_g_l_1_1_g_l_programs_1_1_g_l_program_base}{Scott\+Plot.\+Open\+GL.\+GLPrograms.\+GLProgram\+Base}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_scott_plot_1_1_open_g_l_1_1_g_l_programs_1_1_g_l_program_base_afad3918755249390758e97a04ad4a31b}{Dispose}} (bool disposing)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A lines program which draws effeciently but does not allow line width customization. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_scott_plot_1_1_open_g_l_1_1_g_l_programs_1_1_lines_program_a224cc8e05c26317a014aa924656b3f53}\index{ScottPlot.OpenGL.GLPrograms.LinesProgram@{ScottPlot.OpenGL.GLPrograms.LinesProgram}!SetColor@{SetColor}}
+\index{SetColor@{SetColor}!ScottPlot.OpenGL.GLPrograms.LinesProgram@{ScottPlot.OpenGL.GLPrograms.LinesProgram}}
+\doxysubsubsection{\texorpdfstring{SetColor()}{SetColor()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_open_g_l_1_1_g_l_programs_1_1_lines_program_a224cc8e05c26317a014aa924656b3f53} 
+void Scott\+Plot.\+Open\+GL.\+GLPrograms.\+Lines\+Program.\+Set\+Color (\begin{DoxyParamCaption}\item[{Color4}]{color}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_open_g_l_1_1_g_l_programs_1_1_i_lines_draw_program_abe71946f4e8ec6d0ae6bdfb835edef30}{Scott\+Plot.\+Open\+GL.\+GLPrograms.\+ILines\+Draw\+Program}}.
+
+\Hypertarget{class_scott_plot_1_1_open_g_l_1_1_g_l_programs_1_1_lines_program_aeea26409077b735b9bdf6d27a507fbbe}\index{ScottPlot.OpenGL.GLPrograms.LinesProgram@{ScottPlot.OpenGL.GLPrograms.LinesProgram}!SetLineWidth@{SetLineWidth}}
+\index{SetLineWidth@{SetLineWidth}!ScottPlot.OpenGL.GLPrograms.LinesProgram@{ScottPlot.OpenGL.GLPrograms.LinesProgram}}
+\doxysubsubsection{\texorpdfstring{SetLineWidth()}{SetLineWidth()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_open_g_l_1_1_g_l_programs_1_1_lines_program_aeea26409077b735b9bdf6d27a507fbbe} 
+void Scott\+Plot.\+Open\+GL.\+GLPrograms.\+Lines\+Program.\+Set\+Line\+Width (\begin{DoxyParamCaption}\item[{float}]{line\+Width}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_open_g_l_1_1_g_l_programs_1_1_i_lines_draw_program_a121e967c283c620eb3333bb59e7adf78}{Scott\+Plot.\+Open\+GL.\+GLPrograms.\+ILines\+Draw\+Program}}.
+
+\Hypertarget{class_scott_plot_1_1_open_g_l_1_1_g_l_programs_1_1_lines_program_a96d794d5687d21e6a5841ad33618d16f}\index{ScottPlot.OpenGL.GLPrograms.LinesProgram@{ScottPlot.OpenGL.GLPrograms.LinesProgram}!SetTransform@{SetTransform}}
+\index{SetTransform@{SetTransform}!ScottPlot.OpenGL.GLPrograms.LinesProgram@{ScottPlot.OpenGL.GLPrograms.LinesProgram}}
+\doxysubsubsection{\texorpdfstring{SetTransform()}{SetTransform()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_open_g_l_1_1_g_l_programs_1_1_lines_program_a96d794d5687d21e6a5841ad33618d16f} 
+void Scott\+Plot.\+Open\+GL.\+GLPrograms.\+Lines\+Program.\+Set\+Transform (\begin{DoxyParamCaption}\item[{Matrix4d}]{transform}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_open_g_l_1_1_g_l_programs_1_1_i_lines_draw_program_ab8668fe6c045db7b80e1dd0bde9b60b4}{Scott\+Plot.\+Open\+GL.\+GLPrograms.\+ILines\+Draw\+Program}}.
+
+\Hypertarget{class_scott_plot_1_1_open_g_l_1_1_g_l_programs_1_1_lines_program_a2e8bd2bf39e94b648fd95e6c2b09f9f6}\index{ScottPlot.OpenGL.GLPrograms.LinesProgram@{ScottPlot.OpenGL.GLPrograms.LinesProgram}!SetViewPortSize@{SetViewPortSize}}
+\index{SetViewPortSize@{SetViewPortSize}!ScottPlot.OpenGL.GLPrograms.LinesProgram@{ScottPlot.OpenGL.GLPrograms.LinesProgram}}
+\doxysubsubsection{\texorpdfstring{SetViewPortSize()}{SetViewPortSize()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_open_g_l_1_1_g_l_programs_1_1_lines_program_a2e8bd2bf39e94b648fd95e6c2b09f9f6} 
+void Scott\+Plot.\+Open\+GL.\+GLPrograms.\+Lines\+Program.\+Set\+View\+Port\+Size (\begin{DoxyParamCaption}\item[{float}]{width}{, }\item[{float}]{height}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_open_g_l_1_1_g_l_programs_1_1_i_lines_draw_program_aa6b7128bc013d30e6170d9c4398dfc2a}{Scott\+Plot.\+Open\+GL.\+GLPrograms.\+ILines\+Draw\+Program}}.
+
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{class_scott_plot_1_1_open_g_l_1_1_g_l_programs_1_1_lines_program_a0019fda47aa7bbff5a0882504a4cdbc9}\index{ScottPlot.OpenGL.GLPrograms.LinesProgram@{ScottPlot.OpenGL.GLPrograms.LinesProgram}!FragmentShaderSource@{FragmentShaderSource}}
+\index{FragmentShaderSource@{FragmentShaderSource}!ScottPlot.OpenGL.GLPrograms.LinesProgram@{ScottPlot.OpenGL.GLPrograms.LinesProgram}}
+\doxysubsubsection{\texorpdfstring{FragmentShaderSource}{FragmentShaderSource}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_open_g_l_1_1_g_l_programs_1_1_lines_program_a0019fda47aa7bbff5a0882504a4cdbc9} 
+override string Scott\+Plot.\+Open\+GL.\+GLPrograms.\+Lines\+Program.\+Fragment\+Shader\+Source\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [protected]}}
+
+\Hypertarget{class_scott_plot_1_1_open_g_l_1_1_g_l_programs_1_1_lines_program_a127ee8fce7ca99b414e0ee1a8bf35eaa}\index{ScottPlot.OpenGL.GLPrograms.LinesProgram@{ScottPlot.OpenGL.GLPrograms.LinesProgram}!VertexShaderSource@{VertexShaderSource}}
+\index{VertexShaderSource@{VertexShaderSource}!ScottPlot.OpenGL.GLPrograms.LinesProgram@{ScottPlot.OpenGL.GLPrograms.LinesProgram}}
+\doxysubsubsection{\texorpdfstring{VertexShaderSource}{VertexShaderSource}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_open_g_l_1_1_g_l_programs_1_1_lines_program_a127ee8fce7ca99b414e0ee1a8bf35eaa} 
+override string Scott\+Plot.\+Open\+GL.\+GLPrograms.\+Lines\+Program.\+Vertex\+Shader\+Source\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5 Controls/\+Scott\+Plot.\+Open\+GL/\+GLPrograms/Lines\+Program.\+cs\end{DoxyCompactItemize}

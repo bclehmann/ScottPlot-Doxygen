@@ -1,0 +1,340 @@
+\hypertarget{classDataStreamer}{}\doxysection{Data\+Streamer Class Reference}
+\label{classDataStreamer}\index{DataStreamer@{DataStreamer}}
+Inheritance diagram for Data\+Streamer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classDataStreamer}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classDataStreamer_a2f6958e33360a40bcdce272acfe94d69}{Data\+Streamer}} (\mbox{\hyperlink{classPlot}{Plot}} plot, double\mbox{[}$\,$\mbox{]} data)
+\item 
+void \mbox{\hyperlink{classDataStreamer_aceed0152e684e746670e006d4cf17eec}{Add}} (double value)
+\begin{DoxyCompactList}\small\item\em Shift in a new Y value \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDataStreamer_aee8441445f26b937147dff61083d7b46}{Add}} (double\mbox{[}$\,$\mbox{]} ys)
+\item 
+void \mbox{\hyperlink{classDataStreamer_abe6c5b6a5575282ddd9d6e874ce406ea}{Add\+Range}} (\mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$ double $>$ values)
+\begin{DoxyCompactList}\small\item\em Shift in a collection of new Y values \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDataStreamer_a60ae6ccfcf54f097c237aee75d59dc58}{Clear}} (double value=0)
+\begin{DoxyCompactList}\small\item\em Clear the buffer by setting all Y points to the given value \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDataStreamer_a8c84ccf66923bc1782a8df0c5a03f487}{View\+Wipe\+Right}} (double blank\+Fraction=0)
+\begin{DoxyCompactList}\small\item\em Display the data using a view where new data overlaps old data from left to right. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDataStreamer_a6b5818cfd55fd9eeb0f25aa960c94a40}{View\+Wipe\+Left}} ()
+\begin{DoxyCompactList}\small\item\em Display the data using a view where new data overlaps old data from right to left. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDataStreamer_a498fd9295d6adaee5447ee90fc20c09f}{View\+Scroll\+Left}} ()
+\begin{DoxyCompactList}\small\item\em Display the data using a view that continuously shifts data to the left, placing the newest data on the right. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDataStreamer_a1dd6cbc7933ee953edc097660f5d67b7}{View\+Scroll\+Right}} ()
+\begin{DoxyCompactList}\small\item\em Display the data using a view that continuously shifts data to the right, placing the newest data on the left. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDataStreamer_a176912ce6482f7b9c9e9ecd7a2b911de}{View\+Custom}} (Data\+Views.\+IData\+Streamer\+View view)
+\begin{DoxyCompactList}\small\item\em Display the data using a custom rendering function \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} \mbox{\hyperlink{classDataStreamer_a1e3e2bbdb484275f688e8a073a9fe1e6}{Get\+Axis\+Limits}} ()
+\begin{DoxyCompactList}\small\item\em Return the 2D area (in coordinate space) occupied by the data contained in this plottable \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDataStreamer_a4e3740e758f02aba4f2b1c22756b8778}{Update\+Axis\+Limits}} (\mbox{\hyperlink{classPlot}{Plot}} plot)
+\item 
+virtual void \mbox{\hyperlink{classDataStreamer_a1ffa6cac3c26492bd3f825adde91d0c2}{Render}} (\mbox{\hyperlink{classRenderPack}{Render\+Pack}} rp)
+\begin{DoxyCompactList}\small\item\em Draw the data from this plottable into the data area defined in the \mbox{\hyperlink{classAxes}{Axes}}. By default the surface is already clipped to the data area, but this can be cleared inside the plottable. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classDataStreamer_a8e37dfd43a9ac0e6a0c82aae5ae57e09}{Is\+Visible}} = true\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{interfaceIAxes}{IAxes}} \mbox{\hyperlink{classDataStreamer_a9042dfae150565ac7b5b5d20b512c714}{Axes}} = Scott\+Plot.\+Axes.\+Default\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$ \mbox{\hyperlink{classLegendItem}{Legend\+Item}} $>$ \mbox{\hyperlink{classDataStreamer_ac2a053bc42830597648143e32344aee1}{Legend\+Items}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+string \mbox{\hyperlink{classDataStreamer_a158b8f23976e6a245f588bb4c1ee46fc}{Label}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+string \mbox{\hyperlink{classDataStreamer_a6db0b1747cca15ac30e557673f09d596}{Legend\+Text}} = string.\+Empty\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{classLineStyle}{Line\+Style}} \mbox{\hyperlink{classDataStreamer_ad6da2ac95af2ad78285c8059223d818d}{Line\+Style}} = new() \{ Width = 1 \}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{classDataStreamer_a3fb53e9a79efa340bef245b8531636df}{Line\+Width}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+Line\+Pattern \mbox{\hyperlink{classDataStreamer_a3023e4ce971ae9523f5b4b213acc348b}{Line\+Pattern}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{structColor}{Color}} \mbox{\hyperlink{classDataStreamer_a97872f16fff2626d924dd5b53570cc59}{Line\+Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{structColor}{Color}} \mbox{\hyperlink{classDataStreamer_a4757dc02c9c5ce152cb0184722b28421}{Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{classDataStreamerSource}{Data\+Streamer\+Source}} \mbox{\hyperlink{classDataStreamer_ae8dbf6030a6e76a9c326239f39cc5bc3}{Data}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+int \mbox{\hyperlink{classDataStreamer_a79184c75777e209d37e21ca23303b028}{Count}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+int \mbox{\hyperlink{classDataStreamer_aba5076999e603d8c7799d948bdaa9b2e}{Count\+Total}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+double \mbox{\hyperlink{classDataStreamer_a3d097649792fc6cc9ea84c7bc5389b74}{Period}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+bool \mbox{\hyperlink{classDataStreamer_a9c91f8a4504ccdc352ef0f7e63a51667}{Has\+New\+Data}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Returns true if data has been added since the last render \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classDataStreamer_ac529d6002a73b4b8de63e276ee924786}{Manage\+Axis\+Limits}} = true\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em If enabled, axis limits will be adjusted automatically if new data runs off the screen. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classDataStreamer_a9ec1db05df16e768c9712394dc7eedba}{Continuously\+Autoscale}} = false\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+Data\+Views.\+IData\+Streamer\+View \mbox{\hyperlink{classDataStreamer_a9e93f29be41e9d00b03548f55a604379}{Renderer}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Logic for displaying the fixed-\/length Y values in \mbox{\hyperlink{classDataStreamer_ae8dbf6030a6e76a9c326239f39cc5bc3}{Data}} \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classDataStreamer_a2f6958e33360a40bcdce272acfe94d69}\label{classDataStreamer_a2f6958e33360a40bcdce272acfe94d69}} 
+\index{DataStreamer@{DataStreamer}!DataStreamer@{DataStreamer}}
+\index{DataStreamer@{DataStreamer}!DataStreamer@{DataStreamer}}
+\doxysubsubsection{\texorpdfstring{DataStreamer()}{DataStreamer()}}
+{\footnotesize\ttfamily Data\+Streamer.\+Data\+Streamer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPlot}{Plot}}}]{plot,  }\item[{double\mbox{[}$\,$\mbox{]}}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classDataStreamer_aceed0152e684e746670e006d4cf17eec}\label{classDataStreamer_aceed0152e684e746670e006d4cf17eec}} 
+\index{DataStreamer@{DataStreamer}!Add@{Add}}
+\index{Add@{Add}!DataStreamer@{DataStreamer}}
+\doxysubsubsection{\texorpdfstring{Add()}{Add()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Data\+Streamer.\+Add (\begin{DoxyParamCaption}\item[{double}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Shift in a new Y value 
+
+\mbox{\Hypertarget{classDataStreamer_aee8441445f26b937147dff61083d7b46}\label{classDataStreamer_aee8441445f26b937147dff61083d7b46}} 
+\index{DataStreamer@{DataStreamer}!Add@{Add}}
+\index{Add@{Add}!DataStreamer@{DataStreamer}}
+\doxysubsubsection{\texorpdfstring{Add()}{Add()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Data\+Streamer.\+Add (\begin{DoxyParamCaption}\item[{double\mbox{[}$\,$\mbox{]}}]{ys }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classDataStreamer_abe6c5b6a5575282ddd9d6e874ce406ea}\label{classDataStreamer_abe6c5b6a5575282ddd9d6e874ce406ea}} 
+\index{DataStreamer@{DataStreamer}!AddRange@{AddRange}}
+\index{AddRange@{AddRange}!DataStreamer@{DataStreamer}}
+\doxysubsubsection{\texorpdfstring{AddRange()}{AddRange()}}
+{\footnotesize\ttfamily void Data\+Streamer.\+Add\+Range (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$ double $>$}]{values }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Shift in a collection of new Y values 
+
+\mbox{\Hypertarget{classDataStreamer_a60ae6ccfcf54f097c237aee75d59dc58}\label{classDataStreamer_a60ae6ccfcf54f097c237aee75d59dc58}} 
+\index{DataStreamer@{DataStreamer}!Clear@{Clear}}
+\index{Clear@{Clear}!DataStreamer@{DataStreamer}}
+\doxysubsubsection{\texorpdfstring{Clear()}{Clear()}}
+{\footnotesize\ttfamily void Data\+Streamer.\+Clear (\begin{DoxyParamCaption}\item[{double}]{value = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Clear the buffer by setting all Y points to the given value 
+
+\mbox{\Hypertarget{classDataStreamer_a1e3e2bbdb484275f688e8a073a9fe1e6}\label{classDataStreamer_a1e3e2bbdb484275f688e8a073a9fe1e6}} 
+\index{DataStreamer@{DataStreamer}!GetAxisLimits@{GetAxisLimits}}
+\index{GetAxisLimits@{GetAxisLimits}!DataStreamer@{DataStreamer}}
+\doxysubsubsection{\texorpdfstring{GetAxisLimits()}{GetAxisLimits()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} Data\+Streamer.\+Get\+Axis\+Limits (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return the 2D area (in coordinate space) occupied by the data contained in this plottable 
+
+
+
+Implements \mbox{\hyperlink{interfaceIPlottable_ac98e2f5e56f9f938bbd081c87c7c6f50}{IPlottable}}.
+
+\mbox{\Hypertarget{classDataStreamer_a1ffa6cac3c26492bd3f825adde91d0c2}\label{classDataStreamer_a1ffa6cac3c26492bd3f825adde91d0c2}} 
+\index{DataStreamer@{DataStreamer}!Render@{Render}}
+\index{Render@{Render}!DataStreamer@{DataStreamer}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily virtual void Data\+Streamer.\+Render (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classRenderPack}{Render\+Pack}}}]{rp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Draw the data from this plottable into the data area defined in the \mbox{\hyperlink{classAxes}{Axes}}. By default the surface is already clipped to the data area, but this can be cleared inside the plottable. 
+
+
+
+Implements \mbox{\hyperlink{interfaceIPlottable_a201a1a236dc718eda93db143a5ade9f8}{IPlottable}}.
+
+\mbox{\Hypertarget{classDataStreamer_a4e3740e758f02aba4f2b1c22756b8778}\label{classDataStreamer_a4e3740e758f02aba4f2b1c22756b8778}} 
+\index{DataStreamer@{DataStreamer}!UpdateAxisLimits@{UpdateAxisLimits}}
+\index{UpdateAxisLimits@{UpdateAxisLimits}!DataStreamer@{DataStreamer}}
+\doxysubsubsection{\texorpdfstring{UpdateAxisLimits()}{UpdateAxisLimits()}}
+{\footnotesize\ttfamily void Data\+Streamer.\+Update\+Axis\+Limits (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPlot}{Plot}}}]{plot }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Implements \mbox{\hyperlink{interfaceIManagesAxisLimits_a89b37ad99b341ad037982a08228265a3}{IManages\+Axis\+Limits}}.
+
+\mbox{\Hypertarget{classDataStreamer_a176912ce6482f7b9c9e9ecd7a2b911de}\label{classDataStreamer_a176912ce6482f7b9c9e9ecd7a2b911de}} 
+\index{DataStreamer@{DataStreamer}!ViewCustom@{ViewCustom}}
+\index{ViewCustom@{ViewCustom}!DataStreamer@{DataStreamer}}
+\doxysubsubsection{\texorpdfstring{ViewCustom()}{ViewCustom()}}
+{\footnotesize\ttfamily void Data\+Streamer.\+View\+Custom (\begin{DoxyParamCaption}\item[{Data\+Views.\+IData\+Streamer\+View}]{view }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Display the data using a custom rendering function 
+
+\mbox{\Hypertarget{classDataStreamer_a498fd9295d6adaee5447ee90fc20c09f}\label{classDataStreamer_a498fd9295d6adaee5447ee90fc20c09f}} 
+\index{DataStreamer@{DataStreamer}!ViewScrollLeft@{ViewScrollLeft}}
+\index{ViewScrollLeft@{ViewScrollLeft}!DataStreamer@{DataStreamer}}
+\doxysubsubsection{\texorpdfstring{ViewScrollLeft()}{ViewScrollLeft()}}
+{\footnotesize\ttfamily void Data\+Streamer.\+View\+Scroll\+Left (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Display the data using a view that continuously shifts data to the left, placing the newest data on the right. 
+
+\mbox{\Hypertarget{classDataStreamer_a1dd6cbc7933ee953edc097660f5d67b7}\label{classDataStreamer_a1dd6cbc7933ee953edc097660f5d67b7}} 
+\index{DataStreamer@{DataStreamer}!ViewScrollRight@{ViewScrollRight}}
+\index{ViewScrollRight@{ViewScrollRight}!DataStreamer@{DataStreamer}}
+\doxysubsubsection{\texorpdfstring{ViewScrollRight()}{ViewScrollRight()}}
+{\footnotesize\ttfamily void Data\+Streamer.\+View\+Scroll\+Right (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Display the data using a view that continuously shifts data to the right, placing the newest data on the left. 
+
+\mbox{\Hypertarget{classDataStreamer_a6b5818cfd55fd9eeb0f25aa960c94a40}\label{classDataStreamer_a6b5818cfd55fd9eeb0f25aa960c94a40}} 
+\index{DataStreamer@{DataStreamer}!ViewWipeLeft@{ViewWipeLeft}}
+\index{ViewWipeLeft@{ViewWipeLeft}!DataStreamer@{DataStreamer}}
+\doxysubsubsection{\texorpdfstring{ViewWipeLeft()}{ViewWipeLeft()}}
+{\footnotesize\ttfamily void Data\+Streamer.\+View\+Wipe\+Left (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Display the data using a view where new data overlaps old data from right to left. 
+
+\mbox{\Hypertarget{classDataStreamer_a8c84ccf66923bc1782a8df0c5a03f487}\label{classDataStreamer_a8c84ccf66923bc1782a8df0c5a03f487}} 
+\index{DataStreamer@{DataStreamer}!ViewWipeRight@{ViewWipeRight}}
+\index{ViewWipeRight@{ViewWipeRight}!DataStreamer@{DataStreamer}}
+\doxysubsubsection{\texorpdfstring{ViewWipeRight()}{ViewWipeRight()}}
+{\footnotesize\ttfamily void Data\+Streamer.\+View\+Wipe\+Right (\begin{DoxyParamCaption}\item[{double}]{blank\+Fraction = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Display the data using a view where new data overlaps old data from left to right. 
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{classDataStreamer_a9042dfae150565ac7b5b5d20b512c714}\label{classDataStreamer_a9042dfae150565ac7b5b5d20b512c714}} 
+\index{DataStreamer@{DataStreamer}!Axes@{Axes}}
+\index{Axes@{Axes}!DataStreamer@{DataStreamer}}
+\doxysubsubsection{\texorpdfstring{Axes}{Axes}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceIAxes}{IAxes}} Data\+Streamer.\+Axes = Scott\+Plot.\+Axes.\+Default\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classDataStreamer_a4757dc02c9c5ce152cb0184722b28421}\label{classDataStreamer_a4757dc02c9c5ce152cb0184722b28421}} 
+\index{DataStreamer@{DataStreamer}!Color@{Color}}
+\index{Color@{Color}!DataStreamer@{DataStreamer}}
+\doxysubsubsection{\texorpdfstring{Color}{Color}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structColor}{Color}} Data\+Streamer.\+Color\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classDataStreamer_a9ec1db05df16e768c9712394dc7eedba}\label{classDataStreamer_a9ec1db05df16e768c9712394dc7eedba}} 
+\index{DataStreamer@{DataStreamer}!ContinuouslyAutoscale@{ContinuouslyAutoscale}}
+\index{ContinuouslyAutoscale@{ContinuouslyAutoscale}!DataStreamer@{DataStreamer}}
+\doxysubsubsection{\texorpdfstring{ContinuouslyAutoscale}{ContinuouslyAutoscale}}
+{\footnotesize\ttfamily bool Data\+Streamer.\+Continuously\+Autoscale = false\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classDataStreamer_a79184c75777e209d37e21ca23303b028}\label{classDataStreamer_a79184c75777e209d37e21ca23303b028}} 
+\index{DataStreamer@{DataStreamer}!Count@{Count}}
+\index{Count@{Count}!DataStreamer@{DataStreamer}}
+\doxysubsubsection{\texorpdfstring{Count}{Count}}
+{\footnotesize\ttfamily int Data\+Streamer.\+Count\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{classDataStreamer_aba5076999e603d8c7799d948bdaa9b2e}\label{classDataStreamer_aba5076999e603d8c7799d948bdaa9b2e}} 
+\index{DataStreamer@{DataStreamer}!CountTotal@{CountTotal}}
+\index{CountTotal@{CountTotal}!DataStreamer@{DataStreamer}}
+\doxysubsubsection{\texorpdfstring{CountTotal}{CountTotal}}
+{\footnotesize\ttfamily int Data\+Streamer.\+Count\+Total\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{classDataStreamer_ae8dbf6030a6e76a9c326239f39cc5bc3}\label{classDataStreamer_ae8dbf6030a6e76a9c326239f39cc5bc3}} 
+\index{DataStreamer@{DataStreamer}!Data@{Data}}
+\index{Data@{Data}!DataStreamer@{DataStreamer}}
+\doxysubsubsection{\texorpdfstring{Data}{Data}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classDataStreamerSource}{Data\+Streamer\+Source}} Data\+Streamer.\+Data\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classDataStreamer_a9c91f8a4504ccdc352ef0f7e63a51667}\label{classDataStreamer_a9c91f8a4504ccdc352ef0f7e63a51667}} 
+\index{DataStreamer@{DataStreamer}!HasNewData@{HasNewData}}
+\index{HasNewData@{HasNewData}!DataStreamer@{DataStreamer}}
+\doxysubsubsection{\texorpdfstring{HasNewData}{HasNewData}}
+{\footnotesize\ttfamily bool Data\+Streamer.\+Has\+New\+Data\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Returns true if data has been added since the last render 
+
+\mbox{\Hypertarget{classDataStreamer_a8e37dfd43a9ac0e6a0c82aae5ae57e09}\label{classDataStreamer_a8e37dfd43a9ac0e6a0c82aae5ae57e09}} 
+\index{DataStreamer@{DataStreamer}!IsVisible@{IsVisible}}
+\index{IsVisible@{IsVisible}!DataStreamer@{DataStreamer}}
+\doxysubsubsection{\texorpdfstring{IsVisible}{IsVisible}}
+{\footnotesize\ttfamily bool Data\+Streamer.\+Is\+Visible = true\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classDataStreamer_a158b8f23976e6a245f588bb4c1ee46fc}\label{classDataStreamer_a158b8f23976e6a245f588bb4c1ee46fc}} 
+\index{DataStreamer@{DataStreamer}!Label@{Label}}
+\index{Label@{Label}!DataStreamer@{DataStreamer}}
+\doxysubsubsection{\texorpdfstring{Label}{Label}}
+{\footnotesize\ttfamily string Data\+Streamer.\+Label\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classDataStreamer_ac2a053bc42830597648143e32344aee1}\label{classDataStreamer_ac2a053bc42830597648143e32344aee1}} 
+\index{DataStreamer@{DataStreamer}!LegendItems@{LegendItems}}
+\index{LegendItems@{LegendItems}!DataStreamer@{DataStreamer}}
+\doxysubsubsection{\texorpdfstring{LegendItems}{LegendItems}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$\mbox{\hyperlink{classLegendItem}{Legend\+Item}}$>$ Data\+Streamer.\+Legend\+Items\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{classDataStreamer_a6db0b1747cca15ac30e557673f09d596}\label{classDataStreamer_a6db0b1747cca15ac30e557673f09d596}} 
+\index{DataStreamer@{DataStreamer}!LegendText@{LegendText}}
+\index{LegendText@{LegendText}!DataStreamer@{DataStreamer}}
+\doxysubsubsection{\texorpdfstring{LegendText}{LegendText}}
+{\footnotesize\ttfamily string Data\+Streamer.\+Legend\+Text = string.\+Empty\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classDataStreamer_a97872f16fff2626d924dd5b53570cc59}\label{classDataStreamer_a97872f16fff2626d924dd5b53570cc59}} 
+\index{DataStreamer@{DataStreamer}!LineColor@{LineColor}}
+\index{LineColor@{LineColor}!DataStreamer@{DataStreamer}}
+\doxysubsubsection{\texorpdfstring{LineColor}{LineColor}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structColor}{Color}} Data\+Streamer.\+Line\+Color\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classDataStreamer_a3023e4ce971ae9523f5b4b213acc348b}\label{classDataStreamer_a3023e4ce971ae9523f5b4b213acc348b}} 
+\index{DataStreamer@{DataStreamer}!LinePattern@{LinePattern}}
+\index{LinePattern@{LinePattern}!DataStreamer@{DataStreamer}}
+\doxysubsubsection{\texorpdfstring{LinePattern}{LinePattern}}
+{\footnotesize\ttfamily Line\+Pattern Data\+Streamer.\+Line\+Pattern\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classDataStreamer_ad6da2ac95af2ad78285c8059223d818d}\label{classDataStreamer_ad6da2ac95af2ad78285c8059223d818d}} 
+\index{DataStreamer@{DataStreamer}!LineStyle@{LineStyle}}
+\index{LineStyle@{LineStyle}!DataStreamer@{DataStreamer}}
+\doxysubsubsection{\texorpdfstring{LineStyle}{LineStyle}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classLineStyle}{Line\+Style}} Data\+Streamer.\+Line\+Style = new() \{ Width = 1 \}\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classDataStreamer_a3fb53e9a79efa340bef245b8531636df}\label{classDataStreamer_a3fb53e9a79efa340bef245b8531636df}} 
+\index{DataStreamer@{DataStreamer}!LineWidth@{LineWidth}}
+\index{LineWidth@{LineWidth}!DataStreamer@{DataStreamer}}
+\doxysubsubsection{\texorpdfstring{LineWidth}{LineWidth}}
+{\footnotesize\ttfamily float Data\+Streamer.\+Line\+Width\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classDataStreamer_ac529d6002a73b4b8de63e276ee924786}\label{classDataStreamer_ac529d6002a73b4b8de63e276ee924786}} 
+\index{DataStreamer@{DataStreamer}!ManageAxisLimits@{ManageAxisLimits}}
+\index{ManageAxisLimits@{ManageAxisLimits}!DataStreamer@{DataStreamer}}
+\doxysubsubsection{\texorpdfstring{ManageAxisLimits}{ManageAxisLimits}}
+{\footnotesize\ttfamily bool Data\+Streamer.\+Manage\+Axis\+Limits = true\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+If enabled, axis limits will be adjusted automatically if new data runs off the screen. 
+
+\mbox{\Hypertarget{classDataStreamer_a3d097649792fc6cc9ea84c7bc5389b74}\label{classDataStreamer_a3d097649792fc6cc9ea84c7bc5389b74}} 
+\index{DataStreamer@{DataStreamer}!Period@{Period}}
+\index{Period@{Period}!DataStreamer@{DataStreamer}}
+\doxysubsubsection{\texorpdfstring{Period}{Period}}
+{\footnotesize\ttfamily double Data\+Streamer.\+Period\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classDataStreamer_a9e93f29be41e9d00b03548f55a604379}\label{classDataStreamer_a9e93f29be41e9d00b03548f55a604379}} 
+\index{DataStreamer@{DataStreamer}!Renderer@{Renderer}}
+\index{Renderer@{Renderer}!DataStreamer@{DataStreamer}}
+\doxysubsubsection{\texorpdfstring{Renderer}{Renderer}}
+{\footnotesize\ttfamily Data\+Views.\+IData\+Streamer\+View Data\+Streamer.\+Renderer\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Logic for displaying the fixed-\/length Y values in \mbox{\hyperlink{classDataStreamer_ae8dbf6030a6e76a9c326239f39cc5bc3}{Data}} 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Plottables/Data\+Streamer.\+cs\end{DoxyCompactItemize}

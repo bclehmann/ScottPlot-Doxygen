@@ -1,0 +1,353 @@
+\doxysection{Scott\+Plot.\+Axis\+Panels.\+XAxis\+Base Class Reference}
+\hypertarget{class_scott_plot_1_1_axis_panels_1_1_x_axis_base}{}\label{class_scott_plot_1_1_axis_panels_1_1_x_axis_base}\index{ScottPlot.AxisPanels.XAxisBase@{ScottPlot.AxisPanels.XAxisBase}}
+Inheritance diagram for Scott\+Plot.\+Axis\+Panels.\+XAxis\+Base\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.125000cm]{class_scott_plot_1_1_axis_panels_1_1_x_axis_base}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_scott_plot_1_1_axis_panels_1_1_x_axis_base_a6357a672526c2a75ab508c465b06f943}{XAxis\+Base}} ()
+\item 
+virtual float \mbox{\hyperlink{class_scott_plot_1_1_axis_panels_1_1_x_axis_base_a8fe132a139e3861360e897acfbc87278}{Measure}} ()
+\begin{DoxyCompactList}\small\item\em Return the size (in pixels) of the panel in the dimension perpendicular to the edge it lays on. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_scott_plot_1_1_axis_panels_1_1_x_axis_base_aad572af1076bc653c2956acbb30b21cf}{Get\+Pixel}} (double position, \mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect}{Pixel\+Rect}} data\+Area)
+\begin{DoxyCompactList}\small\item\em Get the pixel position of a coordinate given the location and size of the data area. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_scott_plot_1_1_axis_panels_1_1_x_axis_base_abb22a7467e0f905c75e851550604d94f}{Get\+Coordinate}} (float pixel, \mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect}{Pixel\+Rect}} data\+Area)
+\begin{DoxyCompactList}\small\item\em Get the coordinate of a pixel position given the location and size of the data area. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect}{Pixel\+Rect}} \mbox{\hyperlink{class_scott_plot_1_1_axis_panels_1_1_x_axis_base_a803b3a119dbfa0d72ddd615364ed7c3b}{Get\+Panel\+Rect}} (\mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect}{Pixel\+Rect}} data\+Rect, float size, float offset)
+\begin{DoxyCompactList}\small\item\em Return the rectangle for this panel. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_scott_plot_1_1_axis_panels_1_1_x_axis_base_a137fe16da6ee0866f6d32546425c4ae0}{Render}} (Render\+Pack rp, float size, float offset)
+\begin{DoxyCompactList}\small\item\em Draw this panel on a canvas. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_scott_plot_1_1_axis_panels_1_1_x_axis_base_ac45a36a6f05a60f38605b79c56ae01af}{Get\+Pixel\+Distance}} (double distance, \mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect}{Pixel\+Rect}} data\+Area)
+\begin{DoxyCompactList}\small\item\em Given a distance in coordinate space, converts to pixel space. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_scott_plot_1_1_axis_panels_1_1_x_axis_base_adb7ff2043a0551fa03e7449a7c2d65fb}{Get\+Coordinate\+Distance}} (float distance, \mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect}{Pixel\+Rect}} data\+Area)
+\begin{DoxyCompactList}\small\item\em Given a distance in pixel space, converts to coordinate space. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_axis_panels_1_1_x_axis_base_a40fd29e5300a4a26602c913258daabe3}{Regenerate\+Ticks}} (\mbox{\hyperlink{struct_scott_plot_1_1_pixel_length}{Pixel\+Length}} size)
+\begin{DoxyCompactList}\small\item\em Use the \doxylink{class_scott_plot_1_1_axis_panels_1_1_axis_base_a6cc32b52350c6520676248512d585e1b}{Tick\+Label\+Style} to generate ticks with ideal spacing. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_scott_plot_1_1_axis_panels_1_1_axis_base}{Scott\+Plot.\+Axis\+Panels.\+Axis\+Base}}}
+\begin{DoxyCompactItemize}
+\item 
+override string \mbox{\hyperlink{class_scott_plot_1_1_axis_panels_1_1_axis_base_aaa1c26cebbef2515c7279f957707e852}{To\+String}} ()
+\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_axis_panels_1_1_axis_base_ae7eea1bb8bfcc71fb8acf0b5e66df2e9}{Color}} (\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} color)
+\begin{DoxyCompactList}\small\item\em Apply a single color to all axis components\+: label, tick labels, tick marks, and frame. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_axis_panels_1_1_axis_base_afec7d7580ac85ada5b8291551c9e6f96}{Set\+Ticks}} (double\mbox{[}$\,$\mbox{]} xs, string\mbox{[}$\,$\mbox{]} labels)
+\begin{DoxyCompactList}\small\item\em Replace the \doxylink{class_scott_plot_1_1_axis_panels_1_1_axis_base_aeb6beef5e9aeb660f872695a28a327f1}{Tick\+Generator} with a Numeric\+Manual pre-\/loaded with the given ticks. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_scott_plot_1_1_i_axis}{Scott\+Plot.\+IAxis}}}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{interface_scott_plot_1_1_i_axis_acd0cf18ce44d7ad32f5cb6cc37f2bd32}{Set\+Ticks}} (double\mbox{[}$\,$\mbox{]} xs, string\mbox{[}$\,$\mbox{]} labels)
+\begin{DoxyCompactList}\small\item\em Replace the \doxylink{interface_scott_plot_1_1_i_axis_ab0c0472bd35aa4d7e23bddc34728c88a}{Tick\+Generator} with a Numeric\+Manual pre-\/loaded with the given ticks. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_scott_plot_1_1_i_panel}{Scott\+Plot.\+IPanel}}}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{class_scott_plot_1_1_axis_panels_1_1_x_axis_base_ad5552c641976983c826bc4c05269e308}{Width}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{class_scott_plot_1_1_axis_panels_1_1_axis_base}{Scott\+Plot.\+Axis\+Panels.\+Axis\+Base}}}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_scott_plot_1_1_axis_panels_1_1_axis_base_a30fa046d727fac70b02c8a0504e663e0}{Is\+Visible}} = true\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{namespace_scott_plot_a33d0346dfdd3d1d7cefc8d769ca98fcc}{Edge}} \mbox{\hyperlink{class_scott_plot_1_1_axis_panels_1_1_axis_base_af296f0f3948f0a762579a96eff8e9a6e}{Edge}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+virtual \mbox{\hyperlink{class_scott_plot_1_1_coordinate_range_mutable}{Coordinate\+Range\+Mutable}} \mbox{\hyperlink{class_scott_plot_1_1_axis_panels_1_1_axis_base_a7bfc8f644e4a7fe298f8baaf42d83d6a}{Range}} = \mbox{\hyperlink{class_scott_plot_1_1_coordinate_range_mutable_a0198a8908a814ab3cfb9a6eba2018a43}{Coordinate\+Range\+Mutable.\+Not\+Set}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_scott_plot_1_1_axis_panels_1_1_axis_base_adfd25816da90d0c8850f6555a800c3db}{Minimum\+Size}} = 0\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_scott_plot_1_1_axis_panels_1_1_axis_base_ae669e4dfd471555b864c8e01d5fb16d3}{Maximum\+Size}} = float.\+Max\+Value\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_scott_plot_1_1_axis_panels_1_1_axis_base_a7e5b7614e67ecddc3c27702cea830a6a}{Size\+When\+No\+Data}} = 15\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_pixel_padding}{Pixel\+Padding}} \mbox{\hyperlink{class_scott_plot_1_1_axis_panels_1_1_axis_base_af93d0315628d2952ff51631efc4508f5}{Empty\+Label\+Padding}} = new(10, 5)\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_pixel_padding}{Pixel\+Padding}} \mbox{\hyperlink{class_scott_plot_1_1_axis_panels_1_1_axis_base_a712e8c672285f7011d742f803115e0d2}{Padding\+Between\+Tick\+And\+Axis\+Labels}} = new(5, 3)\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_pixel_padding}{Pixel\+Padding}} \mbox{\hyperlink{class_scott_plot_1_1_axis_panels_1_1_axis_base_aff87a028e032c33951859d505dcc0fc0}{Padding\+Outside\+Axis\+Labels}} = new(2, 2)\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+double \mbox{\hyperlink{class_scott_plot_1_1_axis_panels_1_1_axis_base_a489f8ac0d6392fc553bc1231424fef58}{Min}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+double \mbox{\hyperlink{class_scott_plot_1_1_axis_panels_1_1_axis_base_ab798e11fc39dbd741fe1f7ee693f8fad}{Max}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+virtual \mbox{\hyperlink{interface_scott_plot_1_1_i_tick_generator}{ITick\+Generator}} \mbox{\hyperlink{class_scott_plot_1_1_axis_panels_1_1_axis_base_aeb6beef5e9aeb660f872695a28a327f1}{Tick\+Generator}} = null!\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{class_scott_plot_1_1_label_style}{Label\+Style}} \mbox{\hyperlink{class_scott_plot_1_1_axis_panels_1_1_axis_base_a0ea292fd916f8f5cd8f382dc8b842e18}{Label}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+override \mbox{\hyperlink{class_scott_plot_1_1_label_style}{Label\+Style}} \mbox{\hyperlink{class_scott_plot_1_1_axis_panels_1_1_axis_base_adf30d1da794f9587a329ebb262979156}{Label\+Style}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+bool \mbox{\hyperlink{class_scott_plot_1_1_axis_panels_1_1_axis_base_a7767589ad068f79f44a23e2881b05362}{Show\+Debug\+Information}} = false\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{class_scott_plot_1_1_line_style}{Line\+Style}} \mbox{\hyperlink{class_scott_plot_1_1_axis_panels_1_1_axis_base_a63e515fe0af0c38a4830dfb50de36dc3}{Frame\+Line\+Style}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{class_scott_plot_1_1_tick_mark_style}{Tick\+Mark\+Style}} \mbox{\hyperlink{class_scott_plot_1_1_axis_panels_1_1_axis_base_afb59b79e6a8091afb802773ef50372d6}{Major\+Tick\+Style}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{class_scott_plot_1_1_tick_mark_style}{Tick\+Mark\+Style}} \mbox{\hyperlink{class_scott_plot_1_1_axis_panels_1_1_axis_base_afe7184319d8ac3fd04597351b8de3390}{Minor\+Tick\+Style}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{class_scott_plot_1_1_label_style}{Label\+Style}} \mbox{\hyperlink{class_scott_plot_1_1_axis_panels_1_1_axis_base_a6cc32b52350c6520676248512d585e1b}{Tick\+Label\+Style}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{class_scott_plot_1_1_label_style_properties}{Scott\+Plot.\+Label\+Style\+Properties}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_scott_plot_1_1_label_style}{Label\+Style}} \mbox{\hyperlink{class_scott_plot_1_1_label_style_properties_a4d45af4d6ce14b3115c1fdcc913e54ad}{Label\+Style}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_scott_plot_1_1_label_style_properties_ad66633c9a6aa11859343f9dfe832a192}{Label\+OffsetX}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_scott_plot_1_1_label_style_properties_a86d6fd9120d65534c6baaa2e529c51ee}{Label\+OffsetY}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_scott_plot_1_1_label_style_properties_aa4647f36b4fa1d2f4557c6bc466cc0db}{Label\+Rotation}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_scott_plot_1_1_label_style_properties_a049cfb7ea0df971f637e0d121338ad2c}{Label\+Padding}}\hspace{0.3cm}{\ttfamily  \mbox{[}set\mbox{]}}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_pixel_padding}{Pixel\+Padding}} \mbox{\hyperlink{class_scott_plot_1_1_label_style_properties_a6105a8187fb6499678e5dbf99cc3bd76}{Label\+Pixel\+Padding}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect}{Pixel\+Rect}} \mbox{\hyperlink{class_scott_plot_1_1_label_style_properties_abb2cb41053cd69e21f0fd74bbe72363c}{Label\+Last\+Render\+Pixel\+Rect}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+string \mbox{\hyperlink{class_scott_plot_1_1_label_style_properties_a022d8202c3f13282e962f16c53866f58}{Label\+Text}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{namespace_scott_plot_a2da000551e02ef1d0af13793cf678abc}{Alignment}} \mbox{\hyperlink{class_scott_plot_1_1_label_style_properties_a2b86910ff4f6425f2034f63824fd1a8c}{Label\+Alignment}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+string \mbox{\hyperlink{class_scott_plot_1_1_label_style_properties_ab5eda90c765a6037744d900deaf08f8a}{Label\+Font\+Name}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_scott_plot_1_1_label_style_properties_a88a150094f4b81eb7f38267ec24b7649}{Label\+Font\+Size}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float? \mbox{\hyperlink{class_scott_plot_1_1_label_style_properties_a331be92968ee012e7828cca5c1e60eaa}{Label\+Line\+Spacing}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+bool \mbox{\hyperlink{class_scott_plot_1_1_label_style_properties_af2e763b88d56a7d99fa3e6dc3d05a018}{Label\+Italic}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+bool \mbox{\hyperlink{class_scott_plot_1_1_label_style_properties_aaa25e4307df5bc9406f8ca3bcbe4d4ab}{Label\+Bold}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} \mbox{\hyperlink{class_scott_plot_1_1_label_style_properties_ad89528902ec8bf119b397682be415ead}{Label\+Font\+Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} \mbox{\hyperlink{class_scott_plot_1_1_label_style_properties_a3f9706403c67ae5dc55f3e70c9724767}{Label\+Background\+Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_scott_plot_1_1_label_style_properties_a5f084224053ee525e8dd9438b4420190}{Label\+Border\+Width}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} \mbox{\hyperlink{class_scott_plot_1_1_label_style_properties_a0594321f834452bffb8b1913078be01a}{Label\+Border\+Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} \mbox{\hyperlink{class_scott_plot_1_1_label_style_properties_ad1a9e2fc0141629cfa77808874d43344}{Label\+Shadow\+Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{namespace_scott_plot_a3dfefa78aee0c8cf7184895e4ad7d44b}{Pixel\+Offset}} \mbox{\hyperlink{class_scott_plot_1_1_label_style_properties_a6f0e42f2ca9a5f08f8780028b4eeb46f}{Label\+Shadow\+Offset}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{interface_scott_plot_1_1_i_has_label}{Scott\+Plot.\+IHas\+Label}}}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{interface_scott_plot_1_1_i_x_axis}{Scott\+Plot.\+IXAxis}}}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{interface_scott_plot_1_1_i_axis}{Scott\+Plot.\+IAxis}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_scott_plot_1_1_coordinate_range_mutable}{Coordinate\+Range\+Mutable}} \mbox{\hyperlink{interface_scott_plot_1_1_i_axis_ad2702496b9d49221140ff48a6f17af6c}{Range}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Min/\+Max range currently displayed by this axis. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{interface_scott_plot_1_1_i_axis_a47f2eb766c729705f03030dfaa603340}{Min}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+double \mbox{\hyperlink{interface_scott_plot_1_1_i_axis_ae0d4febc3bfe6af3412bfe8bb80b58d1}{Max}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{interface_scott_plot_1_1_i_tick_generator}{ITick\+Generator}} \mbox{\hyperlink{interface_scott_plot_1_1_i_axis_ab0c0472bd35aa4d7e23bddc34728c88a}{Tick\+Generator}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Logic for determining tick positions and formatting tick labels. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_scott_plot_1_1_label_style}{Label\+Style}} \mbox{\hyperlink{interface_scott_plot_1_1_i_axis_af5139ba55e3af4441bf3dcd7de1bff4b}{Label}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The label is the text displayed distal to the ticks. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_scott_plot_1_1_tick_mark_style}{Tick\+Mark\+Style}} \mbox{\hyperlink{interface_scott_plot_1_1_i_axis_acd86d0503853d720ad96548d68783cd0}{Major\+Tick\+Style}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{class_scott_plot_1_1_tick_mark_style}{Tick\+Mark\+Style}} \mbox{\hyperlink{interface_scott_plot_1_1_i_axis_a92922b379c97d66556b82b9832b7cb80}{Minor\+Tick\+Style}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{class_scott_plot_1_1_label_style}{Label\+Style}} \mbox{\hyperlink{interface_scott_plot_1_1_i_axis_a0b179c4141a65a8c0d904ec75fd60e60}{Tick\+Label\+Style}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{class_scott_plot_1_1_line_style}{Line\+Style}} \mbox{\hyperlink{interface_scott_plot_1_1_i_axis_a9045b0fc1b5d7838966656f2b3320cb3}{Frame\+Line\+Style}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{interface_scott_plot_1_1_i_panel}{Scott\+Plot.\+IPanel}}}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{interface_scott_plot_1_1_i_panel_a069bdc441cb78cac2b84b145619f611b}{Is\+Visible}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em If false, the panel will not be displayed or report any size. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{interface_scott_plot_1_1_i_panel_a8ef55ceafe5df573671ef511b8fadef6}{Minimum\+Size}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Disallow the panel to be smaller than this. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{interface_scott_plot_1_1_i_panel_a123f2d992c915b32e6c811345d5d5eb5}{Maximum\+Size}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Disallow the panel to be larger than this. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_scott_plot_a33d0346dfdd3d1d7cefc8d769ca98fcc}{Edge}} \mbox{\hyperlink{interface_scott_plot_1_1_i_panel_a8a8fe69c083a9672d27be0a7019cebf3}{Edge}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Indicates which edge of the data rectangle this panel lays on. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{interface_scott_plot_1_1_i_panel_a26b00d1d20b1b032917179aefdedf7ea}{Show\+Debug\+Information}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Enable this to display extra information on the axis to facilitate development. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Static Public Member Functions inherited from \mbox{\hyperlink{class_scott_plot_1_1_axis_panels_1_1_axis_base}{Scott\+Plot.\+Axis\+Panels.\+Axis\+Base}}}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_scott_plot_1_1_axis_panels_1_1_axis_base_af2168a0047a3f19b0af6affeed253836}{Draw\+Frame}} (Render\+Pack rp, \mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect}{Pixel\+Rect}} panel\+Rect, \mbox{\hyperlink{namespace_scott_plot_a33d0346dfdd3d1d7cefc8d769ca98fcc}{Edge}} edge, \mbox{\hyperlink{class_scott_plot_1_1_line_style}{Line\+Style}} line\+Style)
+\begin{DoxyCompactList}\small\item\em Draw a line along the edge of an axis on the side of the data area. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_scott_plot_1_1_axis_panels_1_1_axis_base_a7627d736fab6aa55f4558e548bad5929}{Draw\+Ticks}} (Render\+Pack rp, \mbox{\hyperlink{class_scott_plot_1_1_label_style}{Label\+Style}} label, \mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect}{Pixel\+Rect}} panel\+Rect, \mbox{\hyperlink{class_i_enumerable}{IEnumerable}}$<$ \mbox{\hyperlink{struct_scott_plot_1_1_tick}{Tick}} $>$ ticks, \mbox{\hyperlink{interface_scott_plot_1_1_i_axis}{IAxis}} axis, \mbox{\hyperlink{class_scott_plot_1_1_tick_mark_style}{Tick\+Mark\+Style}} major\+Style, \mbox{\hyperlink{class_scott_plot_1_1_tick_mark_style}{Tick\+Mark\+Style}} minor\+Style)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_scott_plot_1_1_axis_panels_1_1_x_axis_base_a6357a672526c2a75ab508c465b06f943}\index{ScottPlot.AxisPanels.XAxisBase@{ScottPlot.AxisPanels.XAxisBase}!XAxisBase@{XAxisBase}}
+\index{XAxisBase@{XAxisBase}!ScottPlot.AxisPanels.XAxisBase@{ScottPlot.AxisPanels.XAxisBase}}
+\doxysubsubsection{\texorpdfstring{XAxisBase()}{XAxisBase()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axis_panels_1_1_x_axis_base_a6357a672526c2a75ab508c465b06f943} 
+Scott\+Plot.\+Axis\+Panels.\+XAxis\+Base.\+XAxis\+Base (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_scott_plot_1_1_axis_panels_1_1_x_axis_base_abb22a7467e0f905c75e851550604d94f}\index{ScottPlot.AxisPanels.XAxisBase@{ScottPlot.AxisPanels.XAxisBase}!GetCoordinate@{GetCoordinate}}
+\index{GetCoordinate@{GetCoordinate}!ScottPlot.AxisPanels.XAxisBase@{ScottPlot.AxisPanels.XAxisBase}}
+\doxysubsubsection{\texorpdfstring{GetCoordinate()}{GetCoordinate()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axis_panels_1_1_x_axis_base_abb22a7467e0f905c75e851550604d94f} 
+double Scott\+Plot.\+Axis\+Panels.\+XAxis\+Base.\+Get\+Coordinate (\begin{DoxyParamCaption}\item[{float}]{pixel}{, }\item[{\mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect}{Pixel\+Rect}}}]{data\+Area}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the coordinate of a pixel position given the location and size of the data area. 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_axis_a39ae5e99c2d1a943d1953dc097d86ac5}{Scott\+Plot.\+IAxis}}.
+
+\Hypertarget{class_scott_plot_1_1_axis_panels_1_1_x_axis_base_adb7ff2043a0551fa03e7449a7c2d65fb}\index{ScottPlot.AxisPanels.XAxisBase@{ScottPlot.AxisPanels.XAxisBase}!GetCoordinateDistance@{GetCoordinateDistance}}
+\index{GetCoordinateDistance@{GetCoordinateDistance}!ScottPlot.AxisPanels.XAxisBase@{ScottPlot.AxisPanels.XAxisBase}}
+\doxysubsubsection{\texorpdfstring{GetCoordinateDistance()}{GetCoordinateDistance()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axis_panels_1_1_x_axis_base_adb7ff2043a0551fa03e7449a7c2d65fb} 
+double Scott\+Plot.\+Axis\+Panels.\+XAxis\+Base.\+Get\+Coordinate\+Distance (\begin{DoxyParamCaption}\item[{float}]{pixel\+Distance}{, }\item[{\mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect}{Pixel\+Rect}}}]{data\+Area}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Given a distance in pixel space, converts to coordinate space. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pixel\+Distance} & A distance in pixel units\\
+\hline
+{\em data\+Area} & The rectangle onto which the coordinates are mapped\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The same distance in coordinate units
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_axis_a34f1c2979a7818e0e216f11293dd83ba}{Scott\+Plot.\+IAxis}}.
+
+\Hypertarget{class_scott_plot_1_1_axis_panels_1_1_x_axis_base_a803b3a119dbfa0d72ddd615364ed7c3b}\index{ScottPlot.AxisPanels.XAxisBase@{ScottPlot.AxisPanels.XAxisBase}!GetPanelRect@{GetPanelRect}}
+\index{GetPanelRect@{GetPanelRect}!ScottPlot.AxisPanels.XAxisBase@{ScottPlot.AxisPanels.XAxisBase}}
+\doxysubsubsection{\texorpdfstring{GetPanelRect()}{GetPanelRect()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axis_panels_1_1_x_axis_base_a803b3a119dbfa0d72ddd615364ed7c3b} 
+\mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect}{Pixel\+Rect}} Scott\+Plot.\+Axis\+Panels.\+XAxis\+Base.\+Get\+Panel\+Rect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect}{Pixel\+Rect}}}]{data\+Rect}{, }\item[{float}]{size}{, }\item[{float}]{offset}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return the rectangle for this panel. 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_panel_a26cfc14ec07de545951f2e40e47e5d64}{Scott\+Plot.\+IPanel}}.
+
+\Hypertarget{class_scott_plot_1_1_axis_panels_1_1_x_axis_base_aad572af1076bc653c2956acbb30b21cf}\index{ScottPlot.AxisPanels.XAxisBase@{ScottPlot.AxisPanels.XAxisBase}!GetPixel@{GetPixel}}
+\index{GetPixel@{GetPixel}!ScottPlot.AxisPanels.XAxisBase@{ScottPlot.AxisPanels.XAxisBase}}
+\doxysubsubsection{\texorpdfstring{GetPixel()}{GetPixel()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axis_panels_1_1_x_axis_base_aad572af1076bc653c2956acbb30b21cf} 
+float Scott\+Plot.\+Axis\+Panels.\+XAxis\+Base.\+Get\+Pixel (\begin{DoxyParamCaption}\item[{double}]{position}{, }\item[{\mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect}{Pixel\+Rect}}}]{data\+Area}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the pixel position of a coordinate given the location and size of the data area. 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_axis_ab95d377d1e4744fdb09ee724c9080b22}{Scott\+Plot.\+IAxis}}.
+
+\Hypertarget{class_scott_plot_1_1_axis_panels_1_1_x_axis_base_ac45a36a6f05a60f38605b79c56ae01af}\index{ScottPlot.AxisPanels.XAxisBase@{ScottPlot.AxisPanels.XAxisBase}!GetPixelDistance@{GetPixelDistance}}
+\index{GetPixelDistance@{GetPixelDistance}!ScottPlot.AxisPanels.XAxisBase@{ScottPlot.AxisPanels.XAxisBase}}
+\doxysubsubsection{\texorpdfstring{GetPixelDistance()}{GetPixelDistance()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axis_panels_1_1_x_axis_base_ac45a36a6f05a60f38605b79c56ae01af} 
+double Scott\+Plot.\+Axis\+Panels.\+XAxis\+Base.\+Get\+Pixel\+Distance (\begin{DoxyParamCaption}\item[{double}]{coordinate\+Distance}{, }\item[{\mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect}{Pixel\+Rect}}}]{data\+Area}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Given a distance in coordinate space, converts to pixel space. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em coordinate\+Distance} & A distance in coordinate units\\
+\hline
+{\em data\+Area} & The rectangle onto which the coordinates are mapped\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The same distance in pixel units
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_axis_ac69fe5a39238002bde890cd113f28f24}{Scott\+Plot.\+IAxis}}.
+
+\Hypertarget{class_scott_plot_1_1_axis_panels_1_1_x_axis_base_a8fe132a139e3861360e897acfbc87278}\index{ScottPlot.AxisPanels.XAxisBase@{ScottPlot.AxisPanels.XAxisBase}!Measure@{Measure}}
+\index{Measure@{Measure}!ScottPlot.AxisPanels.XAxisBase@{ScottPlot.AxisPanels.XAxisBase}}
+\doxysubsubsection{\texorpdfstring{Measure()}{Measure()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axis_panels_1_1_x_axis_base_a8fe132a139e3861360e897acfbc87278} 
+virtual float Scott\+Plot.\+Axis\+Panels.\+XAxis\+Base.\+Measure (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Return the size (in pixels) of the panel in the dimension perpendicular to the edge it lays on. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_panel_a525ddfa90be153952506cce1e3877bd3}{Scott\+Plot.\+IPanel}}.
+
+\Hypertarget{class_scott_plot_1_1_axis_panels_1_1_x_axis_base_a40fd29e5300a4a26602c913258daabe3}\index{ScottPlot.AxisPanels.XAxisBase@{ScottPlot.AxisPanels.XAxisBase}!RegenerateTicks@{RegenerateTicks}}
+\index{RegenerateTicks@{RegenerateTicks}!ScottPlot.AxisPanels.XAxisBase@{ScottPlot.AxisPanels.XAxisBase}}
+\doxysubsubsection{\texorpdfstring{RegenerateTicks()}{RegenerateTicks()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axis_panels_1_1_x_axis_base_a40fd29e5300a4a26602c913258daabe3} 
+void Scott\+Plot.\+Axis\+Panels.\+XAxis\+Base.\+Regenerate\+Ticks (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_scott_plot_1_1_pixel_length}{Pixel\+Length}}}]{size}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Use the \doxylink{class_scott_plot_1_1_axis_panels_1_1_axis_base_a6cc32b52350c6520676248512d585e1b}{Tick\+Label\+Style} to generate ticks with ideal spacing. 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_axis_a59bc3906ef60b447c40ceb335c8bb4f8}{Scott\+Plot.\+IAxis}}.
+
+\Hypertarget{class_scott_plot_1_1_axis_panels_1_1_x_axis_base_a137fe16da6ee0866f6d32546425c4ae0}\index{ScottPlot.AxisPanels.XAxisBase@{ScottPlot.AxisPanels.XAxisBase}!Render@{Render}}
+\index{Render@{Render}!ScottPlot.AxisPanels.XAxisBase@{ScottPlot.AxisPanels.XAxisBase}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axis_panels_1_1_x_axis_base_a137fe16da6ee0866f6d32546425c4ae0} 
+virtual void Scott\+Plot.\+Axis\+Panels.\+XAxis\+Base.\+Render (\begin{DoxyParamCaption}\item[{Render\+Pack}]{rp}{, }\item[{float}]{size}{, }\item[{float}]{offset}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Draw this panel on a canvas. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em surface} & contains the canvas to draw on\\
+\hline
+{\em data\+Rect} & dimensions of the data area (pixel units)\\
+\hline
+{\em size} & size of this panel (pixel units)\\
+\hline
+{\em offset} & distance from the edge of this panel to the edge of the data area\\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_panel_a4c4f8b3f594d7abb91f9e5b1cbb12363}{Scott\+Plot.\+IPanel}}.
+
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{class_scott_plot_1_1_axis_panels_1_1_x_axis_base_ad5552c641976983c826bc4c05269e308}\index{ScottPlot.AxisPanels.XAxisBase@{ScottPlot.AxisPanels.XAxisBase}!Width@{Width}}
+\index{Width@{Width}!ScottPlot.AxisPanels.XAxisBase@{ScottPlot.AxisPanels.XAxisBase}}
+\doxysubsubsection{\texorpdfstring{Width}{Width}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axis_panels_1_1_x_axis_base_ad5552c641976983c826bc4c05269e308} 
+double Scott\+Plot.\+Axis\+Panels.\+XAxis\+Base.\+Width\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_x_axis_a282a449ba75f0ff5af99dfc29bd8febe}{Scott\+Plot.\+IXAxis}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Axis\+Panels/XAxis\+Base.\+cs\end{DoxyCompactItemize}

@@ -1,0 +1,313 @@
+\hypertarget{classCoordinateRangeMutable}{}\doxysection{Coordinate\+Range\+Mutable Class Reference}
+\label{classCoordinateRangeMutable}\index{CoordinateRangeMutable@{CoordinateRangeMutable}}
+
+
+Represents a range of values between two coordinates on a single axis  
+
+
+Inheritance diagram for Coordinate\+Range\+Mutable\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classCoordinateRangeMutable}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classCoordinateRangeMutable_a9c8b795710c10d0ce92c9292ab1856f1}{Coordinate\+Range\+Mutable}} (double min, double max)
+\item 
+override string \mbox{\hyperlink{classCoordinateRangeMutable_ac29e168a22744dd000d916b598de9d89}{To\+String}} ()
+\item 
+bool \mbox{\hyperlink{classCoordinateRangeMutable_a4fc8921702e27310e5c23b8ab37c38ad}{Contains}} (double position)
+\begin{DoxyCompactList}\small\item\em Returns true if the given position is within the range (inclusive) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCoordinateRangeMutable_a006a78a5693d262495027cb049e9380d}{Expand}} (double value)
+\begin{DoxyCompactList}\small\item\em Expand the range if needed to include the given point \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCoordinateRangeMutable_aaac727a018326e9dea8ce980a46191db}{Expand}} (\mbox{\hyperlink{classCoordinateRangeMutable}{Coordinate\+Range\+Mutable}} range)
+\begin{DoxyCompactList}\small\item\em Expand this range if needed to ensure the given range is included \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCoordinateRangeMutable_a83667b56ecd10fe0d5fe17851a54ffa9}{Expand}} (\mbox{\hyperlink{structCoordinateRange}{Coordinate\+Range}} range)
+\begin{DoxyCompactList}\small\item\em Expand this range if needed to ensure the given range is included \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCoordinateRangeMutable_aa1cfea8206dfe2f502bffd6b143f2ea5}{Reset}} ()
+\begin{DoxyCompactList}\small\item\em Reset this range to inverted infinite values to indicate the range has not yet been set \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCoordinateRangeMutable_a85f59aa5bc0aac04fcc6f8ab59e6d492}{Set}} (double min, double max)
+\item 
+void \mbox{\hyperlink{classCoordinateRangeMutable_ad8b6ee892dc0ced0f05a0d8a760fc349}{Set}} (\mbox{\hyperlink{structCoordinateRange}{Coordinate\+Range}} range)
+\item 
+void \mbox{\hyperlink{classCoordinateRangeMutable_a36e7ccdf60d046d41379b954e7ff8c04}{Set}} (\mbox{\hyperlink{classCoordinateRangeMutable}{Coordinate\+Range\+Mutable}} range)
+\item 
+void \mbox{\hyperlink{classCoordinateRangeMutable_a6c0db9886d7fc0deb67db4fb52257165}{Set}} (\mbox{\hyperlink{interfaceIAxis}{IAxis}} other\+Axis)
+\item 
+void \mbox{\hyperlink{classCoordinateRangeMutable_ab4b3b9cce5d6dca784ff3ee307e9c2d3}{Pan}} (double delta)
+\item 
+void \mbox{\hyperlink{classCoordinateRangeMutable_a5299333892a36a2d88f6c0428bfab8ed}{Pan\+Mouse}} (float mouse\+Delta\+Px, float data\+Size\+Px)
+\item 
+void \mbox{\hyperlink{classCoordinateRangeMutable_a4cf5b0ee8c9b9f535d0f8a4a3daa349b}{Zoom\+Frac}} (double frac)
+\item 
+void \mbox{\hyperlink{classCoordinateRangeMutable_aa399e75b70bfb880c7191f2595b55918}{Zoom\+Out}} (double multiple)
+\item 
+void \mbox{\hyperlink{classCoordinateRangeMutable_a7a34b087f4ded8232543c8524e21773a}{Zoom\+Mouse\+Delta}} (float delta\+Px, float data\+Size\+Px)
+\item 
+void \mbox{\hyperlink{classCoordinateRangeMutable_abe2356441704e4284175e9516b523741}{Zoom\+Frac}} (double frac, double zoom\+To)
+\item 
+bool \mbox{\hyperlink{classCoordinateRangeMutable_a0846c11834f925cb004ae1f9bc01f43f}{Equals}} (\mbox{\hyperlink{classCoordinateRangeMutable}{Coordinate\+Range\+Mutable}}? other)
+\item 
+override bool \mbox{\hyperlink{classCoordinateRangeMutable_a7add41955f3c597d84c1ef0f314a3a80}{Equals}} (object? obj)
+\item 
+override int \mbox{\hyperlink{classCoordinateRangeMutable_a9012aee86d54548364f0cc44d99e5bab}{Get\+Hash\+Code}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{classCoordinateRangeMutable_a9d49b41c6f01e3a7d009103a3503f11c}{operator==}} (\mbox{\hyperlink{classCoordinateRangeMutable}{Coordinate\+Range\+Mutable}} a, \mbox{\hyperlink{classCoordinateRangeMutable}{Coordinate\+Range\+Mutable}} b)
+\item 
+static bool \mbox{\hyperlink{classCoordinateRangeMutable_a4af93e1683307bf875cfb00ceafcdb65}{operator!=}} (\mbox{\hyperlink{classCoordinateRangeMutable}{Coordinate\+Range\+Mutable}} a, \mbox{\hyperlink{classCoordinateRangeMutable}{Coordinate\+Range\+Mutable}} b)
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{classCoordinateRangeMutable_a66cdf9de3eafd0f7f2f66e58bf5a4bc5}{Min}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+double \mbox{\hyperlink{classCoordinateRangeMutable_a568eedfde23ee3342691937990951a74}{Max}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+double \mbox{\hyperlink{classCoordinateRangeMutable_a941885e45cf737096644ba7e23ae94af}{Center}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+double \mbox{\hyperlink{classCoordinateRangeMutable_a8b5907afd5ea9b854359721e75129e36}{Span}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+bool \mbox{\hyperlink{classCoordinateRangeMutable_a762ef9e28e41d31c157a36ea31556566}{Has\+Been\+Set}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{structCoordinateRange}{Coordinate\+Range}} \mbox{\hyperlink{classCoordinateRangeMutable_a0122b14f98944df9a716153c022ca324}{To\+Coordinate\+Range}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{structCoordinateRange}{Coordinate\+Range}} \mbox{\hyperlink{classCoordinateRangeMutable_a90e68026b9350b80c552a9eae6f99711}{To\+Rectified\+Coordinate\+Range}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+static \mbox{\hyperlink{classCoordinateRangeMutable}{Coordinate\+Range\+Mutable}} \mbox{\hyperlink{classCoordinateRangeMutable_ac696a02644f28e83973e45a155d9346d}{Infinity}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+static \mbox{\hyperlink{classCoordinateRangeMutable}{Coordinate\+Range\+Mutable}} \mbox{\hyperlink{classCoordinateRangeMutable_ac8391f451d7953656f577dc7198a8b82}{Not\+Set}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em This infinite inverted range is used to indicate a range that has not yet been set \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a range of values between two coordinates on a single axis 
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classCoordinateRangeMutable_a9c8b795710c10d0ce92c9292ab1856f1}\label{classCoordinateRangeMutable_a9c8b795710c10d0ce92c9292ab1856f1}} 
+\index{CoordinateRangeMutable@{CoordinateRangeMutable}!CoordinateRangeMutable@{CoordinateRangeMutable}}
+\index{CoordinateRangeMutable@{CoordinateRangeMutable}!CoordinateRangeMutable@{CoordinateRangeMutable}}
+\doxysubsubsection{\texorpdfstring{CoordinateRangeMutable()}{CoordinateRangeMutable()}}
+{\footnotesize\ttfamily Coordinate\+Range\+Mutable.\+Coordinate\+Range\+Mutable (\begin{DoxyParamCaption}\item[{double}]{min,  }\item[{double}]{max }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classCoordinateRangeMutable_a4fc8921702e27310e5c23b8ab37c38ad}\label{classCoordinateRangeMutable_a4fc8921702e27310e5c23b8ab37c38ad}} 
+\index{CoordinateRangeMutable@{CoordinateRangeMutable}!Contains@{Contains}}
+\index{Contains@{Contains}!CoordinateRangeMutable@{CoordinateRangeMutable}}
+\doxysubsubsection{\texorpdfstring{Contains()}{Contains()}}
+{\footnotesize\ttfamily bool Coordinate\+Range\+Mutable.\+Contains (\begin{DoxyParamCaption}\item[{double}]{position }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns true if the given position is within the range (inclusive) 
+
+\mbox{\Hypertarget{classCoordinateRangeMutable_a0846c11834f925cb004ae1f9bc01f43f}\label{classCoordinateRangeMutable_a0846c11834f925cb004ae1f9bc01f43f}} 
+\index{CoordinateRangeMutable@{CoordinateRangeMutable}!Equals@{Equals}}
+\index{Equals@{Equals}!CoordinateRangeMutable@{CoordinateRangeMutable}}
+\doxysubsubsection{\texorpdfstring{Equals()}{Equals()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool Coordinate\+Range\+Mutable.\+Equals (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCoordinateRangeMutable}{Coordinate\+Range\+Mutable}}?}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCoordinateRangeMutable_a7add41955f3c597d84c1ef0f314a3a80}\label{classCoordinateRangeMutable_a7add41955f3c597d84c1ef0f314a3a80}} 
+\index{CoordinateRangeMutable@{CoordinateRangeMutable}!Equals@{Equals}}
+\index{Equals@{Equals}!CoordinateRangeMutable@{CoordinateRangeMutable}}
+\doxysubsubsection{\texorpdfstring{Equals()}{Equals()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily override bool Coordinate\+Range\+Mutable.\+Equals (\begin{DoxyParamCaption}\item[{object?}]{obj }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCoordinateRangeMutable_a83667b56ecd10fe0d5fe17851a54ffa9}\label{classCoordinateRangeMutable_a83667b56ecd10fe0d5fe17851a54ffa9}} 
+\index{CoordinateRangeMutable@{CoordinateRangeMutable}!Expand@{Expand}}
+\index{Expand@{Expand}!CoordinateRangeMutable@{CoordinateRangeMutable}}
+\doxysubsubsection{\texorpdfstring{Expand()}{Expand()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily void Coordinate\+Range\+Mutable.\+Expand (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structCoordinateRange}{Coordinate\+Range}}}]{range }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Expand this range if needed to ensure the given range is included 
+
+\mbox{\Hypertarget{classCoordinateRangeMutable_aaac727a018326e9dea8ce980a46191db}\label{classCoordinateRangeMutable_aaac727a018326e9dea8ce980a46191db}} 
+\index{CoordinateRangeMutable@{CoordinateRangeMutable}!Expand@{Expand}}
+\index{Expand@{Expand}!CoordinateRangeMutable@{CoordinateRangeMutable}}
+\doxysubsubsection{\texorpdfstring{Expand()}{Expand()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily void Coordinate\+Range\+Mutable.\+Expand (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCoordinateRangeMutable}{Coordinate\+Range\+Mutable}}}]{range }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Expand this range if needed to ensure the given range is included 
+
+\mbox{\Hypertarget{classCoordinateRangeMutable_a006a78a5693d262495027cb049e9380d}\label{classCoordinateRangeMutable_a006a78a5693d262495027cb049e9380d}} 
+\index{CoordinateRangeMutable@{CoordinateRangeMutable}!Expand@{Expand}}
+\index{Expand@{Expand}!CoordinateRangeMutable@{CoordinateRangeMutable}}
+\doxysubsubsection{\texorpdfstring{Expand()}{Expand()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily void Coordinate\+Range\+Mutable.\+Expand (\begin{DoxyParamCaption}\item[{double}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Expand the range if needed to include the given point 
+
+\mbox{\Hypertarget{classCoordinateRangeMutable_a9012aee86d54548364f0cc44d99e5bab}\label{classCoordinateRangeMutable_a9012aee86d54548364f0cc44d99e5bab}} 
+\index{CoordinateRangeMutable@{CoordinateRangeMutable}!GetHashCode@{GetHashCode}}
+\index{GetHashCode@{GetHashCode}!CoordinateRangeMutable@{CoordinateRangeMutable}}
+\doxysubsubsection{\texorpdfstring{GetHashCode()}{GetHashCode()}}
+{\footnotesize\ttfamily override int Coordinate\+Range\+Mutable.\+Get\+Hash\+Code (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCoordinateRangeMutable_a4af93e1683307bf875cfb00ceafcdb65}\label{classCoordinateRangeMutable_a4af93e1683307bf875cfb00ceafcdb65}} 
+\index{CoordinateRangeMutable@{CoordinateRangeMutable}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!CoordinateRangeMutable@{CoordinateRangeMutable}}
+\doxysubsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily static bool Coordinate\+Range\+Mutable.\+operator!= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCoordinateRangeMutable}{Coordinate\+Range\+Mutable}}}]{a,  }\item[{\mbox{\hyperlink{classCoordinateRangeMutable}{Coordinate\+Range\+Mutable}}}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{classCoordinateRangeMutable_a9d49b41c6f01e3a7d009103a3503f11c}\label{classCoordinateRangeMutable_a9d49b41c6f01e3a7d009103a3503f11c}} 
+\index{CoordinateRangeMutable@{CoordinateRangeMutable}!operator==@{operator==}}
+\index{operator==@{operator==}!CoordinateRangeMutable@{CoordinateRangeMutable}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily static bool Coordinate\+Range\+Mutable.\+operator== (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCoordinateRangeMutable}{Coordinate\+Range\+Mutable}}}]{a,  }\item[{\mbox{\hyperlink{classCoordinateRangeMutable}{Coordinate\+Range\+Mutable}}}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{classCoordinateRangeMutable_ab4b3b9cce5d6dca784ff3ee307e9c2d3}\label{classCoordinateRangeMutable_ab4b3b9cce5d6dca784ff3ee307e9c2d3}} 
+\index{CoordinateRangeMutable@{CoordinateRangeMutable}!Pan@{Pan}}
+\index{Pan@{Pan}!CoordinateRangeMutable@{CoordinateRangeMutable}}
+\doxysubsubsection{\texorpdfstring{Pan()}{Pan()}}
+{\footnotesize\ttfamily void Coordinate\+Range\+Mutable.\+Pan (\begin{DoxyParamCaption}\item[{double}]{delta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCoordinateRangeMutable_a5299333892a36a2d88f6c0428bfab8ed}\label{classCoordinateRangeMutable_a5299333892a36a2d88f6c0428bfab8ed}} 
+\index{CoordinateRangeMutable@{CoordinateRangeMutable}!PanMouse@{PanMouse}}
+\index{PanMouse@{PanMouse}!CoordinateRangeMutable@{CoordinateRangeMutable}}
+\doxysubsubsection{\texorpdfstring{PanMouse()}{PanMouse()}}
+{\footnotesize\ttfamily void Coordinate\+Range\+Mutable.\+Pan\+Mouse (\begin{DoxyParamCaption}\item[{float}]{mouse\+Delta\+Px,  }\item[{float}]{data\+Size\+Px }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCoordinateRangeMutable_aa1cfea8206dfe2f502bffd6b143f2ea5}\label{classCoordinateRangeMutable_aa1cfea8206dfe2f502bffd6b143f2ea5}} 
+\index{CoordinateRangeMutable@{CoordinateRangeMutable}!Reset@{Reset}}
+\index{Reset@{Reset}!CoordinateRangeMutable@{CoordinateRangeMutable}}
+\doxysubsubsection{\texorpdfstring{Reset()}{Reset()}}
+{\footnotesize\ttfamily void Coordinate\+Range\+Mutable.\+Reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Reset this range to inverted infinite values to indicate the range has not yet been set 
+
+\mbox{\Hypertarget{classCoordinateRangeMutable_ad8b6ee892dc0ced0f05a0d8a760fc349}\label{classCoordinateRangeMutable_ad8b6ee892dc0ced0f05a0d8a760fc349}} 
+\index{CoordinateRangeMutable@{CoordinateRangeMutable}!Set@{Set}}
+\index{Set@{Set}!CoordinateRangeMutable@{CoordinateRangeMutable}}
+\doxysubsubsection{\texorpdfstring{Set()}{Set()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily void Coordinate\+Range\+Mutable.\+Set (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structCoordinateRange}{Coordinate\+Range}}}]{range }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCoordinateRangeMutable_a36e7ccdf60d046d41379b954e7ff8c04}\label{classCoordinateRangeMutable_a36e7ccdf60d046d41379b954e7ff8c04}} 
+\index{CoordinateRangeMutable@{CoordinateRangeMutable}!Set@{Set}}
+\index{Set@{Set}!CoordinateRangeMutable@{CoordinateRangeMutable}}
+\doxysubsubsection{\texorpdfstring{Set()}{Set()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily void Coordinate\+Range\+Mutable.\+Set (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCoordinateRangeMutable}{Coordinate\+Range\+Mutable}}}]{range }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCoordinateRangeMutable_a85f59aa5bc0aac04fcc6f8ab59e6d492}\label{classCoordinateRangeMutable_a85f59aa5bc0aac04fcc6f8ab59e6d492}} 
+\index{CoordinateRangeMutable@{CoordinateRangeMutable}!Set@{Set}}
+\index{Set@{Set}!CoordinateRangeMutable@{CoordinateRangeMutable}}
+\doxysubsubsection{\texorpdfstring{Set()}{Set()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily void Coordinate\+Range\+Mutable.\+Set (\begin{DoxyParamCaption}\item[{double}]{min,  }\item[{double}]{max }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCoordinateRangeMutable_a6c0db9886d7fc0deb67db4fb52257165}\label{classCoordinateRangeMutable_a6c0db9886d7fc0deb67db4fb52257165}} 
+\index{CoordinateRangeMutable@{CoordinateRangeMutable}!Set@{Set}}
+\index{Set@{Set}!CoordinateRangeMutable@{CoordinateRangeMutable}}
+\doxysubsubsection{\texorpdfstring{Set()}{Set()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily void Coordinate\+Range\+Mutable.\+Set (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceIAxis}{IAxis}}}]{other\+Axis }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCoordinateRangeMutable_ac29e168a22744dd000d916b598de9d89}\label{classCoordinateRangeMutable_ac29e168a22744dd000d916b598de9d89}} 
+\index{CoordinateRangeMutable@{CoordinateRangeMutable}!ToString@{ToString}}
+\index{ToString@{ToString}!CoordinateRangeMutable@{CoordinateRangeMutable}}
+\doxysubsubsection{\texorpdfstring{ToString()}{ToString()}}
+{\footnotesize\ttfamily override string Coordinate\+Range\+Mutable.\+To\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCoordinateRangeMutable_a4cf5b0ee8c9b9f535d0f8a4a3daa349b}\label{classCoordinateRangeMutable_a4cf5b0ee8c9b9f535d0f8a4a3daa349b}} 
+\index{CoordinateRangeMutable@{CoordinateRangeMutable}!ZoomFrac@{ZoomFrac}}
+\index{ZoomFrac@{ZoomFrac}!CoordinateRangeMutable@{CoordinateRangeMutable}}
+\doxysubsubsection{\texorpdfstring{ZoomFrac()}{ZoomFrac()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Coordinate\+Range\+Mutable.\+Zoom\+Frac (\begin{DoxyParamCaption}\item[{double}]{frac }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCoordinateRangeMutable_abe2356441704e4284175e9516b523741}\label{classCoordinateRangeMutable_abe2356441704e4284175e9516b523741}} 
+\index{CoordinateRangeMutable@{CoordinateRangeMutable}!ZoomFrac@{ZoomFrac}}
+\index{ZoomFrac@{ZoomFrac}!CoordinateRangeMutable@{CoordinateRangeMutable}}
+\doxysubsubsection{\texorpdfstring{ZoomFrac()}{ZoomFrac()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Coordinate\+Range\+Mutable.\+Zoom\+Frac (\begin{DoxyParamCaption}\item[{double}]{frac,  }\item[{double}]{zoom\+To }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCoordinateRangeMutable_a7a34b087f4ded8232543c8524e21773a}\label{classCoordinateRangeMutable_a7a34b087f4ded8232543c8524e21773a}} 
+\index{CoordinateRangeMutable@{CoordinateRangeMutable}!ZoomMouseDelta@{ZoomMouseDelta}}
+\index{ZoomMouseDelta@{ZoomMouseDelta}!CoordinateRangeMutable@{CoordinateRangeMutable}}
+\doxysubsubsection{\texorpdfstring{ZoomMouseDelta()}{ZoomMouseDelta()}}
+{\footnotesize\ttfamily void Coordinate\+Range\+Mutable.\+Zoom\+Mouse\+Delta (\begin{DoxyParamCaption}\item[{float}]{delta\+Px,  }\item[{float}]{data\+Size\+Px }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCoordinateRangeMutable_aa399e75b70bfb880c7191f2595b55918}\label{classCoordinateRangeMutable_aa399e75b70bfb880c7191f2595b55918}} 
+\index{CoordinateRangeMutable@{CoordinateRangeMutable}!ZoomOut@{ZoomOut}}
+\index{ZoomOut@{ZoomOut}!CoordinateRangeMutable@{CoordinateRangeMutable}}
+\doxysubsubsection{\texorpdfstring{ZoomOut()}{ZoomOut()}}
+{\footnotesize\ttfamily void Coordinate\+Range\+Mutable.\+Zoom\+Out (\begin{DoxyParamCaption}\item[{double}]{multiple }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{classCoordinateRangeMutable_a941885e45cf737096644ba7e23ae94af}\label{classCoordinateRangeMutable_a941885e45cf737096644ba7e23ae94af}} 
+\index{CoordinateRangeMutable@{CoordinateRangeMutable}!Center@{Center}}
+\index{Center@{Center}!CoordinateRangeMutable@{CoordinateRangeMutable}}
+\doxysubsubsection{\texorpdfstring{Center}{Center}}
+{\footnotesize\ttfamily double Coordinate\+Range\+Mutable.\+Center\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{classCoordinateRangeMutable_a762ef9e28e41d31c157a36ea31556566}\label{classCoordinateRangeMutable_a762ef9e28e41d31c157a36ea31556566}} 
+\index{CoordinateRangeMutable@{CoordinateRangeMutable}!HasBeenSet@{HasBeenSet}}
+\index{HasBeenSet@{HasBeenSet}!CoordinateRangeMutable@{CoordinateRangeMutable}}
+\doxysubsubsection{\texorpdfstring{HasBeenSet}{HasBeenSet}}
+{\footnotesize\ttfamily bool Coordinate\+Range\+Mutable.\+Has\+Been\+Set\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{classCoordinateRangeMutable_ac696a02644f28e83973e45a155d9346d}\label{classCoordinateRangeMutable_ac696a02644f28e83973e45a155d9346d}} 
+\index{CoordinateRangeMutable@{CoordinateRangeMutable}!Infinity@{Infinity}}
+\index{Infinity@{Infinity}!CoordinateRangeMutable@{CoordinateRangeMutable}}
+\doxysubsubsection{\texorpdfstring{Infinity}{Infinity}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCoordinateRangeMutable}{Coordinate\+Range\+Mutable}} Coordinate\+Range\+Mutable.\+Infinity\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+\mbox{\Hypertarget{classCoordinateRangeMutable_a568eedfde23ee3342691937990951a74}\label{classCoordinateRangeMutable_a568eedfde23ee3342691937990951a74}} 
+\index{CoordinateRangeMutable@{CoordinateRangeMutable}!Max@{Max}}
+\index{Max@{Max}!CoordinateRangeMutable@{CoordinateRangeMutable}}
+\doxysubsubsection{\texorpdfstring{Max}{Max}}
+{\footnotesize\ttfamily double Coordinate\+Range\+Mutable.\+Max\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classCoordinateRangeMutable_a66cdf9de3eafd0f7f2f66e58bf5a4bc5}\label{classCoordinateRangeMutable_a66cdf9de3eafd0f7f2f66e58bf5a4bc5}} 
+\index{CoordinateRangeMutable@{CoordinateRangeMutable}!Min@{Min}}
+\index{Min@{Min}!CoordinateRangeMutable@{CoordinateRangeMutable}}
+\doxysubsubsection{\texorpdfstring{Min}{Min}}
+{\footnotesize\ttfamily double Coordinate\+Range\+Mutable.\+Min\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classCoordinateRangeMutable_ac8391f451d7953656f577dc7198a8b82}\label{classCoordinateRangeMutable_ac8391f451d7953656f577dc7198a8b82}} 
+\index{CoordinateRangeMutable@{CoordinateRangeMutable}!NotSet@{NotSet}}
+\index{NotSet@{NotSet}!CoordinateRangeMutable@{CoordinateRangeMutable}}
+\doxysubsubsection{\texorpdfstring{NotSet}{NotSet}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCoordinateRangeMutable}{Coordinate\+Range\+Mutable}} Coordinate\+Range\+Mutable.\+Not\+Set\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+
+
+This infinite inverted range is used to indicate a range that has not yet been set 
+
+\mbox{\Hypertarget{classCoordinateRangeMutable_a8b5907afd5ea9b854359721e75129e36}\label{classCoordinateRangeMutable_a8b5907afd5ea9b854359721e75129e36}} 
+\index{CoordinateRangeMutable@{CoordinateRangeMutable}!Span@{Span}}
+\index{Span@{Span}!CoordinateRangeMutable@{CoordinateRangeMutable}}
+\doxysubsubsection{\texorpdfstring{Span}{Span}}
+{\footnotesize\ttfamily double Coordinate\+Range\+Mutable.\+Span\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{classCoordinateRangeMutable_a0122b14f98944df9a716153c022ca324}\label{classCoordinateRangeMutable_a0122b14f98944df9a716153c022ca324}} 
+\index{CoordinateRangeMutable@{CoordinateRangeMutable}!ToCoordinateRange@{ToCoordinateRange}}
+\index{ToCoordinateRange@{ToCoordinateRange}!CoordinateRangeMutable@{CoordinateRangeMutable}}
+\doxysubsubsection{\texorpdfstring{ToCoordinateRange}{ToCoordinateRange}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structCoordinateRange}{Coordinate\+Range}} Coordinate\+Range\+Mutable.\+To\+Coordinate\+Range\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{classCoordinateRangeMutable_a90e68026b9350b80c552a9eae6f99711}\label{classCoordinateRangeMutable_a90e68026b9350b80c552a9eae6f99711}} 
+\index{CoordinateRangeMutable@{CoordinateRangeMutable}!ToRectifiedCoordinateRange@{ToRectifiedCoordinateRange}}
+\index{ToRectifiedCoordinateRange@{ToRectifiedCoordinateRange}!CoordinateRangeMutable@{CoordinateRangeMutable}}
+\doxysubsubsection{\texorpdfstring{ToRectifiedCoordinateRange}{ToRectifiedCoordinateRange}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structCoordinateRange}{Coordinate\+Range}} Coordinate\+Range\+Mutable.\+To\+Rectified\+Coordinate\+Range\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Primitives/Coordinate\+Range\+Mutable.\+cs\end{DoxyCompactItemize}

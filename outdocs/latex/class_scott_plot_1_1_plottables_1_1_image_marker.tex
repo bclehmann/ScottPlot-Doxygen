@@ -1,0 +1,139 @@
+\doxysection{Scott\+Plot.\+Plottables.\+Image\+Marker Class Reference}
+\hypertarget{class_scott_plot_1_1_plottables_1_1_image_marker}{}\label{class_scott_plot_1_1_plottables_1_1_image_marker}\index{ScottPlot.Plottables.ImageMarker@{ScottPlot.Plottables.ImageMarker}}
+Inheritance diagram for Scott\+Plot.\+Plottables.\+Image\+Marker\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_scott_plot_1_1_plottables_1_1_image_marker}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_image_marker_a02a3b72e3f870a34cbb12df056aaed8a}{Get\+Axis\+Limits}} ()
+\begin{DoxyCompactList}\small\item\em Return the 2D area (in coordinate space) occupied by the data contained in this plottable. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_image_marker_a71c2672bf50a3c0e707f174497f899c3}{Render}} (Render\+Pack rp)
+\begin{DoxyCompactList}\small\item\em Draw the data from this plottable into the data area defined in the \doxylink{class_scott_plot_1_1_axes}{Axes}. By default the surface is already clipped to the data area, but this can be cleared inside the plottable. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable}{Scott\+Plot.\+IPlottable}}}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_image_marker_a7fceee24a38005194687927743cbb704}{Is\+Visible}} = true\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Toggles whether this plottable is shown and contributes to the automatic axis limit detection. The calling method will check this variable (it does not need to be checked inside the Render method). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{interface_scott_plot_1_1_i_axes}{IAxes}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_image_marker_a4cb82154ebfbede69eeda24e619a50e1}{Axes}} = new \mbox{\hyperlink{class_scott_plot_1_1_axes}{Axes}}()\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em This object performs coordinate/pixel translation at render time based on the latest data area. It stores the axes to use for this plottable and also the data area (in pixels) updated just before each render. If this object is null it will be constructed using the default X and Y axes at render time. \end{DoxyCompactList}\item 
+Scott\+Plot.? \mbox{\hyperlink{class_scott_plot_1_1_image}{Image}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_image_marker_a4f147d1571f7ce7a206c008312086458}{Image}} = null\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_coordinates}{Coordinates}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_image_marker_a3bfce98d87c4836d0c9d5b51bb96a809}{Location}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_image_marker_a52c33378a38a7e25ec939230153fb78d}{Scale}} = 1\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+bool \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_image_marker_a4681127dae129ebdac629fa7bd397bb3}{Anti\+Alias}} = true\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{class_i_enumerable}{IEnumerable}}$<$ \mbox{\hyperlink{class_scott_plot_1_1_legend_item}{Legend\+Item}} $>$ \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_image_marker_ae8c22877a812f67dcd6853d9ba2f972a}{Legend\+Items}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Items which will appear in the legend. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable}{Scott\+Plot.\+IPlottable}}}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_image_marker_a02a3b72e3f870a34cbb12df056aaed8a}\index{ScottPlot.Plottables.ImageMarker@{ScottPlot.Plottables.ImageMarker}!GetAxisLimits@{GetAxisLimits}}
+\index{GetAxisLimits@{GetAxisLimits}!ScottPlot.Plottables.ImageMarker@{ScottPlot.Plottables.ImageMarker}}
+\doxysubsubsection{\texorpdfstring{GetAxisLimits()}{GetAxisLimits()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_image_marker_a02a3b72e3f870a34cbb12df056aaed8a} 
+\mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}} Scott\+Plot.\+Plottables.\+Image\+Marker.\+Get\+Axis\+Limits (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Return the 2D area (in coordinate space) occupied by the data contained in this plottable. 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable_a2e455cf76f9e8bc3187900b1a90487c3}{Scott\+Plot.\+IPlottable}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_image_marker_a71c2672bf50a3c0e707f174497f899c3}\index{ScottPlot.Plottables.ImageMarker@{ScottPlot.Plottables.ImageMarker}!Render@{Render}}
+\index{Render@{Render}!ScottPlot.Plottables.ImageMarker@{ScottPlot.Plottables.ImageMarker}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_image_marker_a71c2672bf50a3c0e707f174497f899c3} 
+virtual void Scott\+Plot.\+Plottables.\+Image\+Marker.\+Render (\begin{DoxyParamCaption}\item[{Render\+Pack}]{rp}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Draw the data from this plottable into the data area defined in the \doxylink{class_scott_plot_1_1_axes}{Axes}. By default the surface is already clipped to the data area, but this can be cleared inside the plottable. 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable_a11d2487f1d7628e019a09748d876c289}{Scott\+Plot.\+IPlottable}}.
+
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_image_marker_a4681127dae129ebdac629fa7bd397bb3}\index{ScottPlot.Plottables.ImageMarker@{ScottPlot.Plottables.ImageMarker}!AntiAlias@{AntiAlias}}
+\index{AntiAlias@{AntiAlias}!ScottPlot.Plottables.ImageMarker@{ScottPlot.Plottables.ImageMarker}}
+\doxysubsubsection{\texorpdfstring{AntiAlias}{AntiAlias}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_image_marker_a4681127dae129ebdac629fa7bd397bb3} 
+bool Scott\+Plot.\+Plottables.\+Image\+Marker.\+Anti\+Alias = true\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_image_marker_a4cb82154ebfbede69eeda24e619a50e1}\index{ScottPlot.Plottables.ImageMarker@{ScottPlot.Plottables.ImageMarker}!Axes@{Axes}}
+\index{Axes@{Axes}!ScottPlot.Plottables.ImageMarker@{ScottPlot.Plottables.ImageMarker}}
+\doxysubsubsection{\texorpdfstring{Axes}{Axes}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_image_marker_a4cb82154ebfbede69eeda24e619a50e1} 
+\mbox{\hyperlink{interface_scott_plot_1_1_i_axes}{IAxes}} Scott\+Plot.\+Plottables.\+Image\+Marker.\+Axes = new \mbox{\hyperlink{class_scott_plot_1_1_axes}{Axes}}()\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+This object performs coordinate/pixel translation at render time based on the latest data area. It stores the axes to use for this plottable and also the data area (in pixels) updated just before each render. If this object is null it will be constructed using the default X and Y axes at render time. 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable_aa68bc5153a673a7cd4a68f93da377d0a}{Scott\+Plot.\+IPlottable}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_image_marker_a4f147d1571f7ce7a206c008312086458}\index{ScottPlot.Plottables.ImageMarker@{ScottPlot.Plottables.ImageMarker}!Image@{Image}}
+\index{Image@{Image}!ScottPlot.Plottables.ImageMarker@{ScottPlot.Plottables.ImageMarker}}
+\doxysubsubsection{\texorpdfstring{Image}{Image}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_image_marker_a4f147d1571f7ce7a206c008312086458} 
+Scott\+Plot.? \mbox{\hyperlink{class_scott_plot_1_1_image}{Image}} Scott\+Plot.\+Plottables.\+Image\+Marker.\+Image = null\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_image_marker_a7fceee24a38005194687927743cbb704}\index{ScottPlot.Plottables.ImageMarker@{ScottPlot.Plottables.ImageMarker}!IsVisible@{IsVisible}}
+\index{IsVisible@{IsVisible}!ScottPlot.Plottables.ImageMarker@{ScottPlot.Plottables.ImageMarker}}
+\doxysubsubsection{\texorpdfstring{IsVisible}{IsVisible}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_image_marker_a7fceee24a38005194687927743cbb704} 
+bool Scott\+Plot.\+Plottables.\+Image\+Marker.\+Is\+Visible = true\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Toggles whether this plottable is shown and contributes to the automatic axis limit detection. The calling method will check this variable (it does not need to be checked inside the Render method). 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable_abbe75ba55a332d695313ccb5dc780923}{Scott\+Plot.\+IPlottable}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_image_marker_ae8c22877a812f67dcd6853d9ba2f972a}\index{ScottPlot.Plottables.ImageMarker@{ScottPlot.Plottables.ImageMarker}!LegendItems@{LegendItems}}
+\index{LegendItems@{LegendItems}!ScottPlot.Plottables.ImageMarker@{ScottPlot.Plottables.ImageMarker}}
+\doxysubsubsection{\texorpdfstring{LegendItems}{LegendItems}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_image_marker_ae8c22877a812f67dcd6853d9ba2f972a} 
+\mbox{\hyperlink{class_i_enumerable}{IEnumerable}}$<$\mbox{\hyperlink{class_scott_plot_1_1_legend_item}{Legend\+Item}}$>$ Scott\+Plot.\+Plottables.\+Image\+Marker.\+Legend\+Items\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Items which will appear in the legend. 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable_a4565f96a253f832bd9aa8033c99eff75}{Scott\+Plot.\+IPlottable}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_image_marker_a3bfce98d87c4836d0c9d5b51bb96a809}\index{ScottPlot.Plottables.ImageMarker@{ScottPlot.Plottables.ImageMarker}!Location@{Location}}
+\index{Location@{Location}!ScottPlot.Plottables.ImageMarker@{ScottPlot.Plottables.ImageMarker}}
+\doxysubsubsection{\texorpdfstring{Location}{Location}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_image_marker_a3bfce98d87c4836d0c9d5b51bb96a809} 
+\mbox{\hyperlink{struct_scott_plot_1_1_coordinates}{Coordinates}} Scott\+Plot.\+Plottables.\+Image\+Marker.\+Location\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_image_marker_a52c33378a38a7e25ec939230153fb78d}\index{ScottPlot.Plottables.ImageMarker@{ScottPlot.Plottables.ImageMarker}!Scale@{Scale}}
+\index{Scale@{Scale}!ScottPlot.Plottables.ImageMarker@{ScottPlot.Plottables.ImageMarker}}
+\doxysubsubsection{\texorpdfstring{Scale}{Scale}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_image_marker_a52c33378a38a7e25ec939230153fb78d} 
+float Scott\+Plot.\+Plottables.\+Image\+Marker.\+Scale = 1\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Plottables/Image\+Marker.\+cs\end{DoxyCompactItemize}

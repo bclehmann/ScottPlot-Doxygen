@@ -1,0 +1,202 @@
+\doxysection{Scott\+Plot.\+Control.\+Input\+Bindings Class Reference}
+\hypertarget{class_scott_plot_1_1_control_1_1_input_bindings}{}\label{class_scott_plot_1_1_control_1_1_input_bindings}\index{ScottPlot.Control.InputBindings@{ScottPlot.Control.InputBindings}}
+
+
+This class defines which buttons and keys perform which actions to manipulate the plot.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \mbox{\hyperlink{class_scott_plot_1_1_control_1_1_input_bindings_ae119cb3f0ce3fb2bc6f4087037566641}{Should\+LockX}} (\mbox{\hyperlink{class_i_enumerable}{IEnumerable}}$<$ \mbox{\hyperlink{namespace_scott_plot_1_1_control_afccfe76da99cb53fbf88864d1e6e66b4}{Key}} $>$ keys, \mbox{\hyperlink{namespace_scott_plot_1_1_control_a1ce2192b1e04dba3b2c4e0ff10f1ab3b}{Mouse\+Button}}? button=null)
+\begin{DoxyCompactList}\small\item\em Returns {\ttfamily true} if {\itshape keys}  contains the key which locks the X axis. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_scott_plot_1_1_control_1_1_input_bindings_aa6ee3bd76d22ad33d3779d00941b8757}{Should\+LockY}} (\mbox{\hyperlink{class_i_enumerable}{IEnumerable}}$<$ \mbox{\hyperlink{namespace_scott_plot_1_1_control_afccfe76da99cb53fbf88864d1e6e66b4}{Key}} $>$ keys, \mbox{\hyperlink{namespace_scott_plot_1_1_control_a1ce2192b1e04dba3b2c4e0ff10f1ab3b}{Mouse\+Button}}? button=null)
+\begin{DoxyCompactList}\small\item\em Returns {\ttfamily true} if {\itshape keys}  contains the key which locks the Y axis. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_scott_plot_1_1_control_1_1_input_bindings_a5e7a9fed9621127343a79d16607a5aa6}{Should\+Zoom\+Rectangle}} (\mbox{\hyperlink{namespace_scott_plot_1_1_control_a1ce2192b1e04dba3b2c4e0ff10f1ab3b}{Mouse\+Button}} button, \mbox{\hyperlink{class_i_enumerable}{IEnumerable}}$<$ \mbox{\hyperlink{namespace_scott_plot_1_1_control_afccfe76da99cb53fbf88864d1e6e66b4}{Key}} $>$ keys)
+\begin{DoxyCompactList}\small\item\em Returns {\ttfamily true} if the combination of pressed buttons and keys results in a click-\/drag zoom rectangle. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_scott_plot_1_1_control_1_1_input_bindings}{Input\+Bindings}} \mbox{\hyperlink{class_scott_plot_1_1_control_1_1_input_bindings_acb54e00927340c083cb9dde54dd74bea}{Standard}} ()
+\item 
+static \mbox{\hyperlink{class_scott_plot_1_1_control_1_1_input_bindings}{Input\+Bindings}} \mbox{\hyperlink{class_scott_plot_1_1_control_1_1_input_bindings_add7a816139fad82c24f23b1a96f041e5}{Non\+Interactive}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespace_scott_plot_1_1_control_a1ce2192b1e04dba3b2c4e0ff10f1ab3b}{Mouse\+Button}}? \mbox{\hyperlink{class_scott_plot_1_1_control_1_1_input_bindings_a469c44e5cfb61b0c50098322174e00ec}{Drag\+Pan\+Button}} = null
+\item 
+\mbox{\hyperlink{namespace_scott_plot_1_1_control_a1ce2192b1e04dba3b2c4e0ff10f1ab3b}{Mouse\+Button}}? \mbox{\hyperlink{class_scott_plot_1_1_control_1_1_input_bindings_a704f82f1f2d4efaff364db0c2595ccff}{Drag\+Zoom\+Button}} = null
+\item 
+\mbox{\hyperlink{namespace_scott_plot_1_1_control_a1ce2192b1e04dba3b2c4e0ff10f1ab3b}{Mouse\+Button}}? \mbox{\hyperlink{class_scott_plot_1_1_control_1_1_input_bindings_a23e3f6946e2332fad1d9ea53a22a7539}{Drag\+Zoom\+Rectangle\+Button}} = null
+\item 
+\mbox{\hyperlink{namespace_scott_plot_1_1_control_a1ce2192b1e04dba3b2c4e0ff10f1ab3b}{Mouse\+Button}}? \mbox{\hyperlink{class_scott_plot_1_1_control_1_1_input_bindings_a141a3aa26f3a4c3ed80fd81df2432818}{Double\+Click\+Button}} = null
+\item 
+\mbox{\hyperlink{namespace_scott_plot_1_1_control_a1ce2192b1e04dba3b2c4e0ff10f1ab3b}{Mouse\+Button}}? \mbox{\hyperlink{class_scott_plot_1_1_control_1_1_input_bindings_a4026c48bb260fc61b343c39b8a1c4e32}{Click\+Auto\+Axis\+Button}} = null
+\item 
+\mbox{\hyperlink{namespace_scott_plot_1_1_control_a1ce2192b1e04dba3b2c4e0ff10f1ab3b}{Mouse\+Button}}? \mbox{\hyperlink{class_scott_plot_1_1_control_1_1_input_bindings_a9a320100cd68192a69d173acd35d6367}{Click\+Context\+Menu\+Button}} = null
+\item 
+\mbox{\hyperlink{namespace_scott_plot_1_1_control_a9b32e7e9b9ccc6ff1d01cfcba13216ed}{Mouse\+Wheel\+Direction}}? \mbox{\hyperlink{class_scott_plot_1_1_control_1_1_input_bindings_ad38c267e61e4911610f78b5a47d71caf}{Zoom\+In\+Wheel\+Direction}} = null
+\item 
+\mbox{\hyperlink{namespace_scott_plot_1_1_control_a9b32e7e9b9ccc6ff1d01cfcba13216ed}{Mouse\+Wheel\+Direction}}? \mbox{\hyperlink{class_scott_plot_1_1_control_1_1_input_bindings_a68592357c96bd4b69a0dc58f6bc0efdd}{Zoom\+Out\+Wheel\+Direction}} = null
+\item 
+\mbox{\hyperlink{namespace_scott_plot_1_1_control_a9b32e7e9b9ccc6ff1d01cfcba13216ed}{Mouse\+Wheel\+Direction}}? \mbox{\hyperlink{class_scott_plot_1_1_control_1_1_input_bindings_ab0c94e413f319b788be4b709d030446b}{Pan\+Up\+Wheel\+Direction}} = null
+\item 
+\mbox{\hyperlink{namespace_scott_plot_1_1_control_a9b32e7e9b9ccc6ff1d01cfcba13216ed}{Mouse\+Wheel\+Direction}}? \mbox{\hyperlink{class_scott_plot_1_1_control_1_1_input_bindings_a00ee0e7db78082fd24245b379d67e55c}{Pan\+Down\+Wheel\+Direction}} = null
+\item 
+\mbox{\hyperlink{namespace_scott_plot_1_1_control_a9b32e7e9b9ccc6ff1d01cfcba13216ed}{Mouse\+Wheel\+Direction}}? \mbox{\hyperlink{class_scott_plot_1_1_control_1_1_input_bindings_ac9a9980e077a5f97c7e2dac6e739ce14}{Pan\+Left\+Wheel\+Direction}} = null
+\item 
+\mbox{\hyperlink{namespace_scott_plot_1_1_control_a9b32e7e9b9ccc6ff1d01cfcba13216ed}{Mouse\+Wheel\+Direction}}? \mbox{\hyperlink{class_scott_plot_1_1_control_1_1_input_bindings_ab5e321ddf8f5810d15a2e6e44ae1208c}{Pan\+Right\+Wheel\+Direction}} = null
+\item 
+\mbox{\hyperlink{namespace_scott_plot_1_1_control_afccfe76da99cb53fbf88864d1e6e66b4}{Key}}? \mbox{\hyperlink{class_scott_plot_1_1_control_1_1_input_bindings_a7051f9b675410b4acfb8f05d9d751422}{Lock\+Horizontal\+Axis\+Key}} = null
+\item 
+\mbox{\hyperlink{namespace_scott_plot_1_1_control_afccfe76da99cb53fbf88864d1e6e66b4}{Key}}? \mbox{\hyperlink{class_scott_plot_1_1_control_1_1_input_bindings_a787979a50fd6b25e4a9b3bcb420c5295}{Lock\+Vertical\+Axis\+Key}} = null
+\item 
+\mbox{\hyperlink{namespace_scott_plot_1_1_control_afccfe76da99cb53fbf88864d1e6e66b4}{Key}}? \mbox{\hyperlink{class_scott_plot_1_1_control_1_1_input_bindings_affa1bf404a3532f07d221e123c011776}{Pan\+Zoom\+Rectangle\+Key}} = null
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class defines which buttons and keys perform which actions to manipulate the plot. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_scott_plot_1_1_control_1_1_input_bindings_add7a816139fad82c24f23b1a96f041e5}\index{ScottPlot.Control.InputBindings@{ScottPlot.Control.InputBindings}!NonInteractive@{NonInteractive}}
+\index{NonInteractive@{NonInteractive}!ScottPlot.Control.InputBindings@{ScottPlot.Control.InputBindings}}
+\doxysubsubsection{\texorpdfstring{NonInteractive()}{NonInteractive()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_control_1_1_input_bindings_add7a816139fad82c24f23b1a96f041e5} 
+static \mbox{\hyperlink{class_scott_plot_1_1_control_1_1_input_bindings}{Input\+Bindings}} Scott\+Plot.\+Control.\+Input\+Bindings.\+Non\+Interactive (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_scott_plot_1_1_control_1_1_input_bindings_ae119cb3f0ce3fb2bc6f4087037566641}\index{ScottPlot.Control.InputBindings@{ScottPlot.Control.InputBindings}!ShouldLockX@{ShouldLockX}}
+\index{ShouldLockX@{ShouldLockX}!ScottPlot.Control.InputBindings@{ScottPlot.Control.InputBindings}}
+\doxysubsubsection{\texorpdfstring{ShouldLockX()}{ShouldLockX()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_control_1_1_input_bindings_ae119cb3f0ce3fb2bc6f4087037566641} 
+virtual bool Scott\+Plot.\+Control.\+Input\+Bindings.\+Should\+LockX (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_i_enumerable}{IEnumerable}}$<$ \mbox{\hyperlink{namespace_scott_plot_1_1_control_afccfe76da99cb53fbf88864d1e6e66b4}{Key}} $>$}]{keys}{, }\item[{\mbox{\hyperlink{namespace_scott_plot_1_1_control_a1ce2192b1e04dba3b2c4e0ff10f1ab3b}{Mouse\+Button}}?}]{button}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Returns {\ttfamily true} if {\itshape keys}  contains the key which locks the X axis. 
+
+\Hypertarget{class_scott_plot_1_1_control_1_1_input_bindings_aa6ee3bd76d22ad33d3779d00941b8757}\index{ScottPlot.Control.InputBindings@{ScottPlot.Control.InputBindings}!ShouldLockY@{ShouldLockY}}
+\index{ShouldLockY@{ShouldLockY}!ScottPlot.Control.InputBindings@{ScottPlot.Control.InputBindings}}
+\doxysubsubsection{\texorpdfstring{ShouldLockY()}{ShouldLockY()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_control_1_1_input_bindings_aa6ee3bd76d22ad33d3779d00941b8757} 
+virtual bool Scott\+Plot.\+Control.\+Input\+Bindings.\+Should\+LockY (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_i_enumerable}{IEnumerable}}$<$ \mbox{\hyperlink{namespace_scott_plot_1_1_control_afccfe76da99cb53fbf88864d1e6e66b4}{Key}} $>$}]{keys}{, }\item[{\mbox{\hyperlink{namespace_scott_plot_1_1_control_a1ce2192b1e04dba3b2c4e0ff10f1ab3b}{Mouse\+Button}}?}]{button}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Returns {\ttfamily true} if {\itshape keys}  contains the key which locks the Y axis. 
+
+\Hypertarget{class_scott_plot_1_1_control_1_1_input_bindings_a5e7a9fed9621127343a79d16607a5aa6}\index{ScottPlot.Control.InputBindings@{ScottPlot.Control.InputBindings}!ShouldZoomRectangle@{ShouldZoomRectangle}}
+\index{ShouldZoomRectangle@{ShouldZoomRectangle}!ScottPlot.Control.InputBindings@{ScottPlot.Control.InputBindings}}
+\doxysubsubsection{\texorpdfstring{ShouldZoomRectangle()}{ShouldZoomRectangle()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_control_1_1_input_bindings_a5e7a9fed9621127343a79d16607a5aa6} 
+virtual bool Scott\+Plot.\+Control.\+Input\+Bindings.\+Should\+Zoom\+Rectangle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_scott_plot_1_1_control_a1ce2192b1e04dba3b2c4e0ff10f1ab3b}{Mouse\+Button}}}]{button}{, }\item[{\mbox{\hyperlink{class_i_enumerable}{IEnumerable}}$<$ \mbox{\hyperlink{namespace_scott_plot_1_1_control_afccfe76da99cb53fbf88864d1e6e66b4}{Key}} $>$}]{keys}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Returns {\ttfamily true} if the combination of pressed buttons and keys results in a click-\/drag zoom rectangle. 
+
+\Hypertarget{class_scott_plot_1_1_control_1_1_input_bindings_acb54e00927340c083cb9dde54dd74bea}\index{ScottPlot.Control.InputBindings@{ScottPlot.Control.InputBindings}!Standard@{Standard}}
+\index{Standard@{Standard}!ScottPlot.Control.InputBindings@{ScottPlot.Control.InputBindings}}
+\doxysubsubsection{\texorpdfstring{Standard()}{Standard()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_control_1_1_input_bindings_acb54e00927340c083cb9dde54dd74bea} 
+static \mbox{\hyperlink{class_scott_plot_1_1_control_1_1_input_bindings}{Input\+Bindings}} Scott\+Plot.\+Control.\+Input\+Bindings.\+Standard (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_scott_plot_1_1_control_1_1_input_bindings_a4026c48bb260fc61b343c39b8a1c4e32}\index{ScottPlot.Control.InputBindings@{ScottPlot.Control.InputBindings}!ClickAutoAxisButton@{ClickAutoAxisButton}}
+\index{ClickAutoAxisButton@{ClickAutoAxisButton}!ScottPlot.Control.InputBindings@{ScottPlot.Control.InputBindings}}
+\doxysubsubsection{\texorpdfstring{ClickAutoAxisButton}{ClickAutoAxisButton}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_control_1_1_input_bindings_a4026c48bb260fc61b343c39b8a1c4e32} 
+\mbox{\hyperlink{namespace_scott_plot_1_1_control_a1ce2192b1e04dba3b2c4e0ff10f1ab3b}{Mouse\+Button}}? Scott\+Plot.\+Control.\+Input\+Bindings.\+Click\+Auto\+Axis\+Button = null}
+
+\Hypertarget{class_scott_plot_1_1_control_1_1_input_bindings_a9a320100cd68192a69d173acd35d6367}\index{ScottPlot.Control.InputBindings@{ScottPlot.Control.InputBindings}!ClickContextMenuButton@{ClickContextMenuButton}}
+\index{ClickContextMenuButton@{ClickContextMenuButton}!ScottPlot.Control.InputBindings@{ScottPlot.Control.InputBindings}}
+\doxysubsubsection{\texorpdfstring{ClickContextMenuButton}{ClickContextMenuButton}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_control_1_1_input_bindings_a9a320100cd68192a69d173acd35d6367} 
+\mbox{\hyperlink{namespace_scott_plot_1_1_control_a1ce2192b1e04dba3b2c4e0ff10f1ab3b}{Mouse\+Button}}? Scott\+Plot.\+Control.\+Input\+Bindings.\+Click\+Context\+Menu\+Button = null}
+
+\Hypertarget{class_scott_plot_1_1_control_1_1_input_bindings_a141a3aa26f3a4c3ed80fd81df2432818}\index{ScottPlot.Control.InputBindings@{ScottPlot.Control.InputBindings}!DoubleClickButton@{DoubleClickButton}}
+\index{DoubleClickButton@{DoubleClickButton}!ScottPlot.Control.InputBindings@{ScottPlot.Control.InputBindings}}
+\doxysubsubsection{\texorpdfstring{DoubleClickButton}{DoubleClickButton}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_control_1_1_input_bindings_a141a3aa26f3a4c3ed80fd81df2432818} 
+\mbox{\hyperlink{namespace_scott_plot_1_1_control_a1ce2192b1e04dba3b2c4e0ff10f1ab3b}{Mouse\+Button}}? Scott\+Plot.\+Control.\+Input\+Bindings.\+Double\+Click\+Button = null}
+
+\Hypertarget{class_scott_plot_1_1_control_1_1_input_bindings_a469c44e5cfb61b0c50098322174e00ec}\index{ScottPlot.Control.InputBindings@{ScottPlot.Control.InputBindings}!DragPanButton@{DragPanButton}}
+\index{DragPanButton@{DragPanButton}!ScottPlot.Control.InputBindings@{ScottPlot.Control.InputBindings}}
+\doxysubsubsection{\texorpdfstring{DragPanButton}{DragPanButton}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_control_1_1_input_bindings_a469c44e5cfb61b0c50098322174e00ec} 
+\mbox{\hyperlink{namespace_scott_plot_1_1_control_a1ce2192b1e04dba3b2c4e0ff10f1ab3b}{Mouse\+Button}}? Scott\+Plot.\+Control.\+Input\+Bindings.\+Drag\+Pan\+Button = null}
+
+\Hypertarget{class_scott_plot_1_1_control_1_1_input_bindings_a704f82f1f2d4efaff364db0c2595ccff}\index{ScottPlot.Control.InputBindings@{ScottPlot.Control.InputBindings}!DragZoomButton@{DragZoomButton}}
+\index{DragZoomButton@{DragZoomButton}!ScottPlot.Control.InputBindings@{ScottPlot.Control.InputBindings}}
+\doxysubsubsection{\texorpdfstring{DragZoomButton}{DragZoomButton}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_control_1_1_input_bindings_a704f82f1f2d4efaff364db0c2595ccff} 
+\mbox{\hyperlink{namespace_scott_plot_1_1_control_a1ce2192b1e04dba3b2c4e0ff10f1ab3b}{Mouse\+Button}}? Scott\+Plot.\+Control.\+Input\+Bindings.\+Drag\+Zoom\+Button = null}
+
+\Hypertarget{class_scott_plot_1_1_control_1_1_input_bindings_a23e3f6946e2332fad1d9ea53a22a7539}\index{ScottPlot.Control.InputBindings@{ScottPlot.Control.InputBindings}!DragZoomRectangleButton@{DragZoomRectangleButton}}
+\index{DragZoomRectangleButton@{DragZoomRectangleButton}!ScottPlot.Control.InputBindings@{ScottPlot.Control.InputBindings}}
+\doxysubsubsection{\texorpdfstring{DragZoomRectangleButton}{DragZoomRectangleButton}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_control_1_1_input_bindings_a23e3f6946e2332fad1d9ea53a22a7539} 
+\mbox{\hyperlink{namespace_scott_plot_1_1_control_a1ce2192b1e04dba3b2c4e0ff10f1ab3b}{Mouse\+Button}}? Scott\+Plot.\+Control.\+Input\+Bindings.\+Drag\+Zoom\+Rectangle\+Button = null}
+
+\Hypertarget{class_scott_plot_1_1_control_1_1_input_bindings_a7051f9b675410b4acfb8f05d9d751422}\index{ScottPlot.Control.InputBindings@{ScottPlot.Control.InputBindings}!LockHorizontalAxisKey@{LockHorizontalAxisKey}}
+\index{LockHorizontalAxisKey@{LockHorizontalAxisKey}!ScottPlot.Control.InputBindings@{ScottPlot.Control.InputBindings}}
+\doxysubsubsection{\texorpdfstring{LockHorizontalAxisKey}{LockHorizontalAxisKey}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_control_1_1_input_bindings_a7051f9b675410b4acfb8f05d9d751422} 
+\mbox{\hyperlink{namespace_scott_plot_1_1_control_afccfe76da99cb53fbf88864d1e6e66b4}{Key}}? Scott\+Plot.\+Control.\+Input\+Bindings.\+Lock\+Horizontal\+Axis\+Key = null}
+
+\Hypertarget{class_scott_plot_1_1_control_1_1_input_bindings_a787979a50fd6b25e4a9b3bcb420c5295}\index{ScottPlot.Control.InputBindings@{ScottPlot.Control.InputBindings}!LockVerticalAxisKey@{LockVerticalAxisKey}}
+\index{LockVerticalAxisKey@{LockVerticalAxisKey}!ScottPlot.Control.InputBindings@{ScottPlot.Control.InputBindings}}
+\doxysubsubsection{\texorpdfstring{LockVerticalAxisKey}{LockVerticalAxisKey}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_control_1_1_input_bindings_a787979a50fd6b25e4a9b3bcb420c5295} 
+\mbox{\hyperlink{namespace_scott_plot_1_1_control_afccfe76da99cb53fbf88864d1e6e66b4}{Key}}? Scott\+Plot.\+Control.\+Input\+Bindings.\+Lock\+Vertical\+Axis\+Key = null}
+
+\Hypertarget{class_scott_plot_1_1_control_1_1_input_bindings_a00ee0e7db78082fd24245b379d67e55c}\index{ScottPlot.Control.InputBindings@{ScottPlot.Control.InputBindings}!PanDownWheelDirection@{PanDownWheelDirection}}
+\index{PanDownWheelDirection@{PanDownWheelDirection}!ScottPlot.Control.InputBindings@{ScottPlot.Control.InputBindings}}
+\doxysubsubsection{\texorpdfstring{PanDownWheelDirection}{PanDownWheelDirection}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_control_1_1_input_bindings_a00ee0e7db78082fd24245b379d67e55c} 
+\mbox{\hyperlink{namespace_scott_plot_1_1_control_a9b32e7e9b9ccc6ff1d01cfcba13216ed}{Mouse\+Wheel\+Direction}}? Scott\+Plot.\+Control.\+Input\+Bindings.\+Pan\+Down\+Wheel\+Direction = null}
+
+\Hypertarget{class_scott_plot_1_1_control_1_1_input_bindings_ac9a9980e077a5f97c7e2dac6e739ce14}\index{ScottPlot.Control.InputBindings@{ScottPlot.Control.InputBindings}!PanLeftWheelDirection@{PanLeftWheelDirection}}
+\index{PanLeftWheelDirection@{PanLeftWheelDirection}!ScottPlot.Control.InputBindings@{ScottPlot.Control.InputBindings}}
+\doxysubsubsection{\texorpdfstring{PanLeftWheelDirection}{PanLeftWheelDirection}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_control_1_1_input_bindings_ac9a9980e077a5f97c7e2dac6e739ce14} 
+\mbox{\hyperlink{namespace_scott_plot_1_1_control_a9b32e7e9b9ccc6ff1d01cfcba13216ed}{Mouse\+Wheel\+Direction}}? Scott\+Plot.\+Control.\+Input\+Bindings.\+Pan\+Left\+Wheel\+Direction = null}
+
+\Hypertarget{class_scott_plot_1_1_control_1_1_input_bindings_ab5e321ddf8f5810d15a2e6e44ae1208c}\index{ScottPlot.Control.InputBindings@{ScottPlot.Control.InputBindings}!PanRightWheelDirection@{PanRightWheelDirection}}
+\index{PanRightWheelDirection@{PanRightWheelDirection}!ScottPlot.Control.InputBindings@{ScottPlot.Control.InputBindings}}
+\doxysubsubsection{\texorpdfstring{PanRightWheelDirection}{PanRightWheelDirection}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_control_1_1_input_bindings_ab5e321ddf8f5810d15a2e6e44ae1208c} 
+\mbox{\hyperlink{namespace_scott_plot_1_1_control_a9b32e7e9b9ccc6ff1d01cfcba13216ed}{Mouse\+Wheel\+Direction}}? Scott\+Plot.\+Control.\+Input\+Bindings.\+Pan\+Right\+Wheel\+Direction = null}
+
+\Hypertarget{class_scott_plot_1_1_control_1_1_input_bindings_ab0c94e413f319b788be4b709d030446b}\index{ScottPlot.Control.InputBindings@{ScottPlot.Control.InputBindings}!PanUpWheelDirection@{PanUpWheelDirection}}
+\index{PanUpWheelDirection@{PanUpWheelDirection}!ScottPlot.Control.InputBindings@{ScottPlot.Control.InputBindings}}
+\doxysubsubsection{\texorpdfstring{PanUpWheelDirection}{PanUpWheelDirection}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_control_1_1_input_bindings_ab0c94e413f319b788be4b709d030446b} 
+\mbox{\hyperlink{namespace_scott_plot_1_1_control_a9b32e7e9b9ccc6ff1d01cfcba13216ed}{Mouse\+Wheel\+Direction}}? Scott\+Plot.\+Control.\+Input\+Bindings.\+Pan\+Up\+Wheel\+Direction = null}
+
+\Hypertarget{class_scott_plot_1_1_control_1_1_input_bindings_affa1bf404a3532f07d221e123c011776}\index{ScottPlot.Control.InputBindings@{ScottPlot.Control.InputBindings}!PanZoomRectangleKey@{PanZoomRectangleKey}}
+\index{PanZoomRectangleKey@{PanZoomRectangleKey}!ScottPlot.Control.InputBindings@{ScottPlot.Control.InputBindings}}
+\doxysubsubsection{\texorpdfstring{PanZoomRectangleKey}{PanZoomRectangleKey}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_control_1_1_input_bindings_affa1bf404a3532f07d221e123c011776} 
+\mbox{\hyperlink{namespace_scott_plot_1_1_control_afccfe76da99cb53fbf88864d1e6e66b4}{Key}}? Scott\+Plot.\+Control.\+Input\+Bindings.\+Pan\+Zoom\+Rectangle\+Key = null}
+
+\Hypertarget{class_scott_plot_1_1_control_1_1_input_bindings_ad38c267e61e4911610f78b5a47d71caf}\index{ScottPlot.Control.InputBindings@{ScottPlot.Control.InputBindings}!ZoomInWheelDirection@{ZoomInWheelDirection}}
+\index{ZoomInWheelDirection@{ZoomInWheelDirection}!ScottPlot.Control.InputBindings@{ScottPlot.Control.InputBindings}}
+\doxysubsubsection{\texorpdfstring{ZoomInWheelDirection}{ZoomInWheelDirection}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_control_1_1_input_bindings_ad38c267e61e4911610f78b5a47d71caf} 
+\mbox{\hyperlink{namespace_scott_plot_1_1_control_a9b32e7e9b9ccc6ff1d01cfcba13216ed}{Mouse\+Wheel\+Direction}}? Scott\+Plot.\+Control.\+Input\+Bindings.\+Zoom\+In\+Wheel\+Direction = null}
+
+\Hypertarget{class_scott_plot_1_1_control_1_1_input_bindings_a68592357c96bd4b69a0dc58f6bc0efdd}\index{ScottPlot.Control.InputBindings@{ScottPlot.Control.InputBindings}!ZoomOutWheelDirection@{ZoomOutWheelDirection}}
+\index{ZoomOutWheelDirection@{ZoomOutWheelDirection}!ScottPlot.Control.InputBindings@{ScottPlot.Control.InputBindings}}
+\doxysubsubsection{\texorpdfstring{ZoomOutWheelDirection}{ZoomOutWheelDirection}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_control_1_1_input_bindings_a68592357c96bd4b69a0dc58f6bc0efdd} 
+\mbox{\hyperlink{namespace_scott_plot_1_1_control_a9b32e7e9b9ccc6ff1d01cfcba13216ed}{Mouse\+Wheel\+Direction}}? Scott\+Plot.\+Control.\+Input\+Bindings.\+Zoom\+Out\+Wheel\+Direction = null}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Control/Input\+Bindings.\+cs\end{DoxyCompactItemize}

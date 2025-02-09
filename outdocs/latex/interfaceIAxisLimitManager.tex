@@ -1,0 +1,81 @@
+\hypertarget{interfaceIAxisLimitManager}{}\doxysection{IAxis\+Limit\+Manager Interface Reference}
+\label{interfaceIAxisLimitManager}\index{IAxisLimitManager@{IAxisLimitManager}}
+
+
+An axis manager contains logic to suggest axis limits given the current view and size of the data.  
+
+
+Inheritance diagram for IAxis\+Limit\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interfaceIAxisLimitManager}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structCoordinateRange}{Coordinate\+Range}} \mbox{\hyperlink{interfaceIAxisLimitManager_a7e1fd7dbaa29feede5fecfdafe0849e2}{Get\+RangeX}} (\mbox{\hyperlink{structCoordinateRange}{Coordinate\+Range}} view\+RangeX, \mbox{\hyperlink{structCoordinateRange}{Coordinate\+Range}} data\+RangeX)
+\begin{DoxyCompactList}\small\item\em Returns the recommended X axis range given the current view and size of the data \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structCoordinateRange}{Coordinate\+Range}} \mbox{\hyperlink{interfaceIAxisLimitManager_a79dbb73bf902b531071d78adc55c7910}{Get\+RangeY}} (\mbox{\hyperlink{structCoordinateRange}{Coordinate\+Range}} view\+RangeY, \mbox{\hyperlink{structCoordinateRange}{Coordinate\+Range}} data\+RangeY)
+\begin{DoxyCompactList}\small\item\em Returns the recommended Y axis range given the current view and size of the data \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+An axis manager contains logic to suggest axis limits given the current view and size of the data. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{interfaceIAxisLimitManager_a7e1fd7dbaa29feede5fecfdafe0849e2}\label{interfaceIAxisLimitManager_a7e1fd7dbaa29feede5fecfdafe0849e2}} 
+\index{IAxisLimitManager@{IAxisLimitManager}!GetRangeX@{GetRangeX}}
+\index{GetRangeX@{GetRangeX}!IAxisLimitManager@{IAxisLimitManager}}
+\doxysubsubsection{\texorpdfstring{GetRangeX()}{GetRangeX()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structCoordinateRange}{Coordinate\+Range}} IAxis\+Limit\+Manager.\+Get\+RangeX (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structCoordinateRange}{Coordinate\+Range}}}]{view\+RangeX,  }\item[{\mbox{\hyperlink{structCoordinateRange}{Coordinate\+Range}}}]{data\+RangeX }\end{DoxyParamCaption})}
+
+
+
+Returns the recommended X axis range given the current view and size of the data 
+
+
+\begin{DoxyParams}{Parameters}
+{\em view\+RangeX} & X axis view range\\
+\hline
+{\em data\+RangeX} & X axis data range\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classSlide_ab0a31fabf4f4d5b13143aceff4cc5b3d}{Slide}}, \mbox{\hyperlink{classFull_af03ee9b6b31a41999bdebb5152edd35c}{Full}}, and \mbox{\hyperlink{classFixedWidth_ac291080067f76d06d27519ead8a8a072}{Fixed\+Width}}.
+
+\mbox{\Hypertarget{interfaceIAxisLimitManager_a79dbb73bf902b531071d78adc55c7910}\label{interfaceIAxisLimitManager_a79dbb73bf902b531071d78adc55c7910}} 
+\index{IAxisLimitManager@{IAxisLimitManager}!GetRangeY@{GetRangeY}}
+\index{GetRangeY@{GetRangeY}!IAxisLimitManager@{IAxisLimitManager}}
+\doxysubsubsection{\texorpdfstring{GetRangeY()}{GetRangeY()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structCoordinateRange}{Coordinate\+Range}} IAxis\+Limit\+Manager.\+Get\+RangeY (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structCoordinateRange}{Coordinate\+Range}}}]{view\+RangeY,  }\item[{\mbox{\hyperlink{structCoordinateRange}{Coordinate\+Range}}}]{data\+RangeY }\end{DoxyParamCaption})}
+
+
+
+Returns the recommended Y axis range given the current view and size of the data 
+
+
+\begin{DoxyParams}{Parameters}
+{\em view\+RangeY} & Y axis view range\\
+\hline
+{\em data\+RangeY} & Y axis view range\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classSlide_a61f4c2d24f8c6abad958b685e37c7167}{Slide}}, \mbox{\hyperlink{classFull_ad504aed89113e45ec2ad7da79260034b}{Full}}, and \mbox{\hyperlink{classFixedWidth_a278b37231a4ba8b2081dcf87123c6ab7}{Fixed\+Width}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Primitives/IAxis\+Limit\+Manager.\+cs\end{DoxyCompactItemize}

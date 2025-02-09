@@ -1,0 +1,156 @@
+\hypertarget{classFormsPlotBase}{}\doxysection{Forms\+Plot\+Base Class Reference}
+\label{classFormsPlotBase}\index{FormsPlotBase@{FormsPlotBase}}
+Inheritance diagram for Forms\+Plot\+Base\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classFormsPlotBase}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classFormsPlotBase_a46e9ba863656ea814477b2f8c448ad1c}{Forms\+Plot\+Base}} ()
+\item 
+void \mbox{\hyperlink{classFormsPlotBase_a7d140b80a2055e9071b2a5e75c2cd124}{Reset}} ()
+\begin{DoxyCompactList}\small\item\em Disposes the current \mbox{\hyperlink{classPlot}{Plot}} and creates a new one for the control \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classFormsPlotBase_a685f276d47b122ada5fab012068b2ec6}{Reset}} (\mbox{\hyperlink{classPlot}{Plot}} plot)
+\begin{DoxyCompactList}\small\item\em Loads the given \mbox{\hyperlink{classPlot}{Plot}} into the control \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classFormsPlotBase_a7ce0ef993ae63c48cfbb515f3ffcb65d}{Show\+Context\+Menu}} (\mbox{\hyperlink{structPixel}{Pixel}} position)
+\begin{DoxyCompactList}\small\item\em Launch the default pop-\/up menu (typically in response to a right-\/click) at the given position in the control \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classFormsPlotBase_a7f9cadb8113de82a7749b8dd1e3df245}{Detect\+Display\+Scale}} ()
+\begin{DoxyCompactList}\small\item\em Determine the DPI scaling ratio of the present display. A value of 1.\+0 means no scaling, and 1.\+5 means 150\% scaling. This operation may be costly so do not call it frequently. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+abstract GRContext \mbox{\hyperlink{classFormsPlotBase_a874049bde119ca21fc1258ee87822ec5}{GRContext}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{classPlot}{Plot}} \mbox{\hyperlink{classFormsPlotBase_aecbc6b89f8942d9fce4a59ae15204d21}{Plot}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{interfaceIPlotInteraction}{IPlot\+Interaction}} \mbox{\hyperlink{classFormsPlotBase_af6b0d1a43aac54d384eba1f26045651a}{Interaction}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{interfaceIPlotMenu}{IPlot\+Menu}} \mbox{\hyperlink{classFormsPlotBase_a622b1ae4ac52f5a19e13952b47909ed4}{Menu}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{classUserInputProcessor}{User\+Input\+Processor}} \mbox{\hyperlink{classFormsPlotBase_aa858acdfa93c9e22809340629d522971}{User\+Input\+Processor}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+float \mbox{\hyperlink{classFormsPlotBase_abdaf9e0614eff10fb69e90694cf28c55}{Display\+Scale}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+override System.\+Drawing.\+Color \mbox{\hyperlink{classFormsPlotBase_ab082f274e849a2dc2d50ff83597859ff}{Back\+Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classFormsPlotBase_a46e9ba863656ea814477b2f8c448ad1c}\label{classFormsPlotBase_a46e9ba863656ea814477b2f8c448ad1c}} 
+\index{FormsPlotBase@{FormsPlotBase}!FormsPlotBase@{FormsPlotBase}}
+\index{FormsPlotBase@{FormsPlotBase}!FormsPlotBase@{FormsPlotBase}}
+\doxysubsubsection{\texorpdfstring{FormsPlotBase()}{FormsPlotBase()}}
+{\footnotesize\ttfamily Forms\+Plot\+Base.\+Forms\+Plot\+Base (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classFormsPlotBase_a7f9cadb8113de82a7749b8dd1e3df245}\label{classFormsPlotBase_a7f9cadb8113de82a7749b8dd1e3df245}} 
+\index{FormsPlotBase@{FormsPlotBase}!DetectDisplayScale@{DetectDisplayScale}}
+\index{DetectDisplayScale@{DetectDisplayScale}!FormsPlotBase@{FormsPlotBase}}
+\doxysubsubsection{\texorpdfstring{DetectDisplayScale()}{DetectDisplayScale()}}
+{\footnotesize\ttfamily float Forms\+Plot\+Base.\+Detect\+Display\+Scale (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Determine the DPI scaling ratio of the present display. A value of 1.\+0 means no scaling, and 1.\+5 means 150\% scaling. This operation may be costly so do not call it frequently. 
+
+
+
+Implements \mbox{\hyperlink{interfaceIPlotControl_aa091d213054094b8acdc307ceda2db06}{IPlot\+Control}}.
+
+\mbox{\Hypertarget{classFormsPlotBase_a7d140b80a2055e9071b2a5e75c2cd124}\label{classFormsPlotBase_a7d140b80a2055e9071b2a5e75c2cd124}} 
+\index{FormsPlotBase@{FormsPlotBase}!Reset@{Reset}}
+\index{Reset@{Reset}!FormsPlotBase@{FormsPlotBase}}
+\doxysubsubsection{\texorpdfstring{Reset()}{Reset()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Forms\+Plot\+Base.\+Reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Disposes the current \mbox{\hyperlink{classPlot}{Plot}} and creates a new one for the control 
+
+
+
+Implements \mbox{\hyperlink{interfaceIPlotControl_a3021825d73d2bcf47dfd5f6f562e2cdf}{IPlot\+Control}}.
+
+\mbox{\Hypertarget{classFormsPlotBase_a685f276d47b122ada5fab012068b2ec6}\label{classFormsPlotBase_a685f276d47b122ada5fab012068b2ec6}} 
+\index{FormsPlotBase@{FormsPlotBase}!Reset@{Reset}}
+\index{Reset@{Reset}!FormsPlotBase@{FormsPlotBase}}
+\doxysubsubsection{\texorpdfstring{Reset()}{Reset()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Forms\+Plot\+Base.\+Reset (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPlot}{Plot}}}]{plot }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Loads the given \mbox{\hyperlink{classPlot}{Plot}} into the control 
+
+
+
+Implements \mbox{\hyperlink{interfaceIPlotControl_a3204ee77a937b93563c72a8fbaacd957}{IPlot\+Control}}.
+
+\mbox{\Hypertarget{classFormsPlotBase_a7ce0ef993ae63c48cfbb515f3ffcb65d}\label{classFormsPlotBase_a7ce0ef993ae63c48cfbb515f3ffcb65d}} 
+\index{FormsPlotBase@{FormsPlotBase}!ShowContextMenu@{ShowContextMenu}}
+\index{ShowContextMenu@{ShowContextMenu}!FormsPlotBase@{FormsPlotBase}}
+\doxysubsubsection{\texorpdfstring{ShowContextMenu()}{ShowContextMenu()}}
+{\footnotesize\ttfamily void Forms\+Plot\+Base.\+Show\+Context\+Menu (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPixel}{Pixel}}}]{position }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Launch the default pop-\/up menu (typically in response to a right-\/click) at the given position in the control 
+
+
+
+Implements \mbox{\hyperlink{interfaceIPlotControl_aa822894e483df742fb376cd3169eefc4}{IPlot\+Control}}.
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{classFormsPlotBase_ab082f274e849a2dc2d50ff83597859ff}\label{classFormsPlotBase_ab082f274e849a2dc2d50ff83597859ff}} 
+\index{FormsPlotBase@{FormsPlotBase}!BackColor@{BackColor}}
+\index{BackColor@{BackColor}!FormsPlotBase@{FormsPlotBase}}
+\doxysubsubsection{\texorpdfstring{BackColor}{BackColor}}
+{\footnotesize\ttfamily override System.\+Drawing.\+Color Forms\+Plot\+Base.\+Back\+Color\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classFormsPlotBase_abdaf9e0614eff10fb69e90694cf28c55}\label{classFormsPlotBase_abdaf9e0614eff10fb69e90694cf28c55}} 
+\index{FormsPlotBase@{FormsPlotBase}!DisplayScale@{DisplayScale}}
+\index{DisplayScale@{DisplayScale}!FormsPlotBase@{FormsPlotBase}}
+\doxysubsubsection{\texorpdfstring{DisplayScale}{DisplayScale}}
+{\footnotesize\ttfamily float Forms\+Plot\+Base.\+Display\+Scale\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classFormsPlotBase_a874049bde119ca21fc1258ee87822ec5}\label{classFormsPlotBase_a874049bde119ca21fc1258ee87822ec5}} 
+\index{FormsPlotBase@{FormsPlotBase}!GRContext@{GRContext}}
+\index{GRContext@{GRContext}!FormsPlotBase@{FormsPlotBase}}
+\doxysubsubsection{\texorpdfstring{GRContext}{GRContext}}
+{\footnotesize\ttfamily abstract GRContext Forms\+Plot\+Base.\+GRContext\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{classFormsPlotBase_af6b0d1a43aac54d384eba1f26045651a}\label{classFormsPlotBase_af6b0d1a43aac54d384eba1f26045651a}} 
+\index{FormsPlotBase@{FormsPlotBase}!Interaction@{Interaction}}
+\index{Interaction@{Interaction}!FormsPlotBase@{FormsPlotBase}}
+\doxysubsubsection{\texorpdfstring{Interaction}{Interaction}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceIPlotInteraction}{IPlot\+Interaction}} Forms\+Plot\+Base.\+Interaction\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classFormsPlotBase_a622b1ae4ac52f5a19e13952b47909ed4}\label{classFormsPlotBase_a622b1ae4ac52f5a19e13952b47909ed4}} 
+\index{FormsPlotBase@{FormsPlotBase}!Menu@{Menu}}
+\index{Menu@{Menu}!FormsPlotBase@{FormsPlotBase}}
+\doxysubsubsection{\texorpdfstring{Menu}{Menu}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceIPlotMenu}{IPlot\+Menu}} Forms\+Plot\+Base.\+Menu\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classFormsPlotBase_aecbc6b89f8942d9fce4a59ae15204d21}\label{classFormsPlotBase_aecbc6b89f8942d9fce4a59ae15204d21}} 
+\index{FormsPlotBase@{FormsPlotBase}!Plot@{Plot}}
+\index{Plot@{Plot}!FormsPlotBase@{FormsPlotBase}}
+\doxysubsubsection{\texorpdfstring{Plot}{Plot}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPlot}{Plot}} Forms\+Plot\+Base.\+Plot\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classFormsPlotBase_aa858acdfa93c9e22809340629d522971}\label{classFormsPlotBase_aa858acdfa93c9e22809340629d522971}} 
+\index{FormsPlotBase@{FormsPlotBase}!UserInputProcessor@{UserInputProcessor}}
+\index{UserInputProcessor@{UserInputProcessor}!FormsPlotBase@{FormsPlotBase}}
+\doxysubsubsection{\texorpdfstring{UserInputProcessor}{UserInputProcessor}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classUserInputProcessor}{User\+Input\+Processor}} Forms\+Plot\+Base.\+User\+Input\+Processor\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5 Controls/\+Scott\+Plot.\+Win\+Forms/Forms\+Plot\+Base.\+cs\end{DoxyCompactItemize}

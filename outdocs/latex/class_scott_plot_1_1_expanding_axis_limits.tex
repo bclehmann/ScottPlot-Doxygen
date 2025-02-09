@@ -1,0 +1,347 @@
+\doxysection{Scott\+Plot.\+Expanding\+Axis\+Limits Class Reference}
+\hypertarget{class_scott_plot_1_1_expanding_axis_limits}{}\label{class_scott_plot_1_1_expanding_axis_limits}\index{ScottPlot.ExpandingAxisLimits@{ScottPlot.ExpandingAxisLimits}}
+
+
+A stateful analog to \doxylink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits} deisgned to expand to include given data.  
+
+
+Inheritance diagram for Scott\+Plot.\+Expanding\+Axis\+Limits\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_scott_plot_1_1_expanding_axis_limits}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_scott_plot_1_1_expanding_axis_limits_a9f65634247eb082b0715b5f41b2ee231}{Expanding\+Axis\+Limits}} ()
+\begin{DoxyCompactList}\small\item\em Create a new set of expanding axis limits with no leimits set initially. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_scott_plot_1_1_expanding_axis_limits_a95225f06830386e72884efd9e7faedbe}{Expanding\+Axis\+Limits}} (\mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}} initial\+Limits)
+\begin{DoxyCompactList}\small\item\em Create a new set of expanding axis limits starting from the given axis limits. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_scott_plot_1_1_expanding_axis_limits_aba6ff441add036fc749c671fb7a32fc0}{Expanding\+Axis\+Limits}} (\mbox{\hyperlink{class_i_enumerable}{IEnumerable}}$<$ \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable}{IPlottable}} $>$ plottables)
+\item 
+override string \mbox{\hyperlink{class_scott_plot_1_1_expanding_axis_limits_a6ea1514f5dc59bcc5fefef137094ce82}{To\+String}} ()
+\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_expanding_axis_limits_a9eeff7942bc3f9bf5bc04fdf70d4bded}{SetX}} (double left, double right)
+\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_expanding_axis_limits_acf720fdd6fc30d1f77421d61cd0e85b8}{SetY}} (double bottom, double top)
+\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_expanding_axis_limits_a1bfcfb91289654d4949e974688a9a9bf}{Expand}} (double x, double y)
+\begin{DoxyCompactList}\small\item\em Expanded limits to include the given {\itshape x}  and {\itshape y} . \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_expanding_axis_limits_a38e617ed0e58eeb14626f165531dcb01}{Expand}} (\mbox{\hyperlink{interface_scott_plot_1_1_i_plottable}{IPlottable}} plottable)
+\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_expanding_axis_limits_ad4c5820a6bb0dcb7a35cd8475d551550}{ExpandX}} (double x)
+\begin{DoxyCompactList}\small\item\em Expanded limits to include the given {\itshape x} . \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_expanding_axis_limits_a4449d841437bde8b34e91141adca23ae}{ExpandY}} (double y)
+\begin{DoxyCompactList}\small\item\em Expanded limits to include the given {\itshape y} . \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_expanding_axis_limits_ab4b76690ccf052b79b97fe4d7448f736}{Expand}} (\mbox{\hyperlink{struct_scott_plot_1_1_coordinates}{Coordinates}} coordinates)
+\begin{DoxyCompactList}\small\item\em Expanded limits to include the given {\itshape coordinates} . \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_expanding_axis_limits_ae68975f2992ace231d03aabc079691b1}{Expand}} (\mbox{\hyperlink{class_i_enumerable}{IEnumerable}}$<$ \mbox{\hyperlink{struct_scott_plot_1_1_coordinates}{Coordinates}} $>$ coordinates)
+\begin{DoxyCompactList}\small\item\em Expanded limits to include the given {\itshape coordinates} . \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_expanding_axis_limits_aaa19c2e58be03bd956eaf0b243564e24}{Expand}} (\mbox{\hyperlink{struct_scott_plot_1_1_coordinate_rect}{Coordinate\+Rect}} rect)
+\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_expanding_axis_limits_a3834616c1c624e565edd9a26b1fcd234}{Expand}} (\mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}} limits)
+\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_expanding_axis_limits_a4b2bf6846746a32592c7838179aecea5}{ExpandX}} (\mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}} limits)
+\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_expanding_axis_limits_aa5ac12d34b31dadd2cc9f9d4fc121bea}{ExpandY}} (\mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}} limits)
+\item 
+bool \mbox{\hyperlink{class_scott_plot_1_1_expanding_axis_limits_ad2bea92296d08b563e1d1fe5be9073ce}{Equals}} (\mbox{\hyperlink{class_scott_plot_1_1_expanding_axis_limits}{Expanding\+Axis\+Limits}}? other)
+\item 
+bool \mbox{\hyperlink{class_scott_plot_1_1_expanding_axis_limits_ab67c3474fd75b4a817d92e38bcf53595}{Equals}} (\mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}} other)
+\item 
+override bool \mbox{\hyperlink{class_scott_plot_1_1_expanding_axis_limits_a5b0087639d158190b44e9379801e228c}{Equals}} (object? obj)
+\item 
+override int \mbox{\hyperlink{class_scott_plot_1_1_expanding_axis_limits_a3c0d164949b5e8c4a7215386d6b05fc9}{Get\+Hash\+Code}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{class_scott_plot_1_1_expanding_axis_limits_a971201ec59eecba84ff30b32cd21afbb}{operator==}} (\mbox{\hyperlink{class_scott_plot_1_1_expanding_axis_limits}{Expanding\+Axis\+Limits}} a, \mbox{\hyperlink{class_scott_plot_1_1_expanding_axis_limits}{Expanding\+Axis\+Limits}} b)
+\item 
+static bool \mbox{\hyperlink{class_scott_plot_1_1_expanding_axis_limits_a46fe95af1d05e347600dcd965ad44b1a}{operator!=}} (\mbox{\hyperlink{class_scott_plot_1_1_expanding_axis_limits}{Expanding\+Axis\+Limits}} a, \mbox{\hyperlink{class_scott_plot_1_1_expanding_axis_limits}{Expanding\+Axis\+Limits}} b)
+\item 
+static bool \mbox{\hyperlink{class_scott_plot_1_1_expanding_axis_limits_a4b51489f758ea0fcaaeff6d205c43905}{operator==}} (\mbox{\hyperlink{class_scott_plot_1_1_expanding_axis_limits}{Expanding\+Axis\+Limits}} a, \mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}} b)
+\item 
+static bool \mbox{\hyperlink{class_scott_plot_1_1_expanding_axis_limits_ad13bc04893503fc0268c513df9b284cb}{operator!=}} (\mbox{\hyperlink{class_scott_plot_1_1_expanding_axis_limits}{Expanding\+Axis\+Limits}} a, \mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}} b)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{class_scott_plot_1_1_expanding_axis_limits_aa81892fb072b73118ff8cbde79d0f112}{Left}} = double.\+NaN\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+double \mbox{\hyperlink{class_scott_plot_1_1_expanding_axis_limits_aa92826a9ca43db5c45b3ae96d2667338}{Right}} = double.\+NaN\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+double \mbox{\hyperlink{class_scott_plot_1_1_expanding_axis_limits_a97807a5043a7c5498310c249e0378a6a}{Bottom}} = double.\+NaN\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+double \mbox{\hyperlink{class_scott_plot_1_1_expanding_axis_limits_a76aae462a9995e032de097b70f975797}{Top}} = double.\+NaN\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+double \mbox{\hyperlink{class_scott_plot_1_1_expanding_axis_limits_a7f369fa0bab77a97fdb0bd7f3527898c}{Horizontal\+Span}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+double \mbox{\hyperlink{class_scott_plot_1_1_expanding_axis_limits_af304069f8a3a0f8caebf7508d7494f3e}{Vertical\+Span}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+bool \mbox{\hyperlink{class_scott_plot_1_1_expanding_axis_limits_a2f1654a0d3c591a4fbe58b712ff56ca4}{Is\+RealX}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+bool \mbox{\hyperlink{class_scott_plot_1_1_expanding_axis_limits_a17c9c8369bf80f44a9fa98cbcaf67499}{Is\+RealY}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+bool \mbox{\hyperlink{class_scott_plot_1_1_expanding_axis_limits_a4602149b6e57dee839fa2843f628913c}{Is\+Real}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+bool \mbox{\hyperlink{class_scott_plot_1_1_expanding_axis_limits_ad570a2b2ccd034b2a66e2968f8159a6b}{Has\+Area}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}} \mbox{\hyperlink{class_scott_plot_1_1_expanding_axis_limits_a9a77f90e04fbe9904143a189a0b8506d}{Axis\+Limits}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A stateful analog to \doxylink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits} deisgned to expand to include given data. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_scott_plot_1_1_expanding_axis_limits_a9f65634247eb082b0715b5f41b2ee231}\index{ScottPlot.ExpandingAxisLimits@{ScottPlot.ExpandingAxisLimits}!ExpandingAxisLimits@{ExpandingAxisLimits}}
+\index{ExpandingAxisLimits@{ExpandingAxisLimits}!ScottPlot.ExpandingAxisLimits@{ScottPlot.ExpandingAxisLimits}}
+\doxysubsubsection{\texorpdfstring{ExpandingAxisLimits()}{ExpandingAxisLimits()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_expanding_axis_limits_a9f65634247eb082b0715b5f41b2ee231} 
+Scott\+Plot.\+Expanding\+Axis\+Limits.\+Expanding\+Axis\+Limits (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Create a new set of expanding axis limits with no leimits set initially. 
+
+\Hypertarget{class_scott_plot_1_1_expanding_axis_limits_a95225f06830386e72884efd9e7faedbe}\index{ScottPlot.ExpandingAxisLimits@{ScottPlot.ExpandingAxisLimits}!ExpandingAxisLimits@{ExpandingAxisLimits}}
+\index{ExpandingAxisLimits@{ExpandingAxisLimits}!ScottPlot.ExpandingAxisLimits@{ScottPlot.ExpandingAxisLimits}}
+\doxysubsubsection{\texorpdfstring{ExpandingAxisLimits()}{ExpandingAxisLimits()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_expanding_axis_limits_a95225f06830386e72884efd9e7faedbe} 
+Scott\+Plot.\+Expanding\+Axis\+Limits.\+Expanding\+Axis\+Limits (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}}}]{initial\+Limits}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Create a new set of expanding axis limits starting from the given axis limits. 
+
+\Hypertarget{class_scott_plot_1_1_expanding_axis_limits_aba6ff441add036fc749c671fb7a32fc0}\index{ScottPlot.ExpandingAxisLimits@{ScottPlot.ExpandingAxisLimits}!ExpandingAxisLimits@{ExpandingAxisLimits}}
+\index{ExpandingAxisLimits@{ExpandingAxisLimits}!ScottPlot.ExpandingAxisLimits@{ScottPlot.ExpandingAxisLimits}}
+\doxysubsubsection{\texorpdfstring{ExpandingAxisLimits()}{ExpandingAxisLimits()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_expanding_axis_limits_aba6ff441add036fc749c671fb7a32fc0} 
+Scott\+Plot.\+Expanding\+Axis\+Limits.\+Expanding\+Axis\+Limits (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_i_enumerable}{IEnumerable}}$<$ \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable}{IPlottable}} $>$}]{plottables}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_scott_plot_1_1_expanding_axis_limits_ab67c3474fd75b4a817d92e38bcf53595}\index{ScottPlot.ExpandingAxisLimits@{ScottPlot.ExpandingAxisLimits}!Equals@{Equals}}
+\index{Equals@{Equals}!ScottPlot.ExpandingAxisLimits@{ScottPlot.ExpandingAxisLimits}}
+\doxysubsubsection{\texorpdfstring{Equals()}{Equals()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_expanding_axis_limits_ab67c3474fd75b4a817d92e38bcf53595} 
+bool Scott\+Plot.\+Expanding\+Axis\+Limits.\+Equals (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}}}]{other}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_expanding_axis_limits_ad2bea92296d08b563e1d1fe5be9073ce}\index{ScottPlot.ExpandingAxisLimits@{ScottPlot.ExpandingAxisLimits}!Equals@{Equals}}
+\index{Equals@{Equals}!ScottPlot.ExpandingAxisLimits@{ScottPlot.ExpandingAxisLimits}}
+\doxysubsubsection{\texorpdfstring{Equals()}{Equals()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_expanding_axis_limits_ad2bea92296d08b563e1d1fe5be9073ce} 
+bool Scott\+Plot.\+Expanding\+Axis\+Limits.\+Equals (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_scott_plot_1_1_expanding_axis_limits}{Expanding\+Axis\+Limits}}?}]{other}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_expanding_axis_limits_a5b0087639d158190b44e9379801e228c}\index{ScottPlot.ExpandingAxisLimits@{ScottPlot.ExpandingAxisLimits}!Equals@{Equals}}
+\index{Equals@{Equals}!ScottPlot.ExpandingAxisLimits@{ScottPlot.ExpandingAxisLimits}}
+\doxysubsubsection{\texorpdfstring{Equals()}{Equals()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_expanding_axis_limits_a5b0087639d158190b44e9379801e228c} 
+override bool Scott\+Plot.\+Expanding\+Axis\+Limits.\+Equals (\begin{DoxyParamCaption}\item[{object?}]{obj}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_expanding_axis_limits_a3834616c1c624e565edd9a26b1fcd234}\index{ScottPlot.ExpandingAxisLimits@{ScottPlot.ExpandingAxisLimits}!Expand@{Expand}}
+\index{Expand@{Expand}!ScottPlot.ExpandingAxisLimits@{ScottPlot.ExpandingAxisLimits}}
+\doxysubsubsection{\texorpdfstring{Expand()}{Expand()}\hspace{0.1cm}{\footnotesize\ttfamily [1/6]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_expanding_axis_limits_a3834616c1c624e565edd9a26b1fcd234} 
+void Scott\+Plot.\+Expanding\+Axis\+Limits.\+Expand (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}}}]{limits}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_expanding_axis_limits_aaa19c2e58be03bd956eaf0b243564e24}\index{ScottPlot.ExpandingAxisLimits@{ScottPlot.ExpandingAxisLimits}!Expand@{Expand}}
+\index{Expand@{Expand}!ScottPlot.ExpandingAxisLimits@{ScottPlot.ExpandingAxisLimits}}
+\doxysubsubsection{\texorpdfstring{Expand()}{Expand()}\hspace{0.1cm}{\footnotesize\ttfamily [2/6]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_expanding_axis_limits_aaa19c2e58be03bd956eaf0b243564e24} 
+void Scott\+Plot.\+Expanding\+Axis\+Limits.\+Expand (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_scott_plot_1_1_coordinate_rect}{Coordinate\+Rect}}}]{rect}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_expanding_axis_limits_ab4b76690ccf052b79b97fe4d7448f736}\index{ScottPlot.ExpandingAxisLimits@{ScottPlot.ExpandingAxisLimits}!Expand@{Expand}}
+\index{Expand@{Expand}!ScottPlot.ExpandingAxisLimits@{ScottPlot.ExpandingAxisLimits}}
+\doxysubsubsection{\texorpdfstring{Expand()}{Expand()}\hspace{0.1cm}{\footnotesize\ttfamily [3/6]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_expanding_axis_limits_ab4b76690ccf052b79b97fe4d7448f736} 
+void Scott\+Plot.\+Expanding\+Axis\+Limits.\+Expand (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_scott_plot_1_1_coordinates}{Coordinates}}}]{coordinates}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Expanded limits to include the given {\itshape coordinates} . 
+
+\Hypertarget{class_scott_plot_1_1_expanding_axis_limits_a1bfcfb91289654d4949e974688a9a9bf}\index{ScottPlot.ExpandingAxisLimits@{ScottPlot.ExpandingAxisLimits}!Expand@{Expand}}
+\index{Expand@{Expand}!ScottPlot.ExpandingAxisLimits@{ScottPlot.ExpandingAxisLimits}}
+\doxysubsubsection{\texorpdfstring{Expand()}{Expand()}\hspace{0.1cm}{\footnotesize\ttfamily [4/6]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_expanding_axis_limits_a1bfcfb91289654d4949e974688a9a9bf} 
+void Scott\+Plot.\+Expanding\+Axis\+Limits.\+Expand (\begin{DoxyParamCaption}\item[{double}]{x}{, }\item[{double}]{y}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Expanded limits to include the given {\itshape x}  and {\itshape y} . 
+
+\Hypertarget{class_scott_plot_1_1_expanding_axis_limits_ae68975f2992ace231d03aabc079691b1}\index{ScottPlot.ExpandingAxisLimits@{ScottPlot.ExpandingAxisLimits}!Expand@{Expand}}
+\index{Expand@{Expand}!ScottPlot.ExpandingAxisLimits@{ScottPlot.ExpandingAxisLimits}}
+\doxysubsubsection{\texorpdfstring{Expand()}{Expand()}\hspace{0.1cm}{\footnotesize\ttfamily [5/6]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_expanding_axis_limits_ae68975f2992ace231d03aabc079691b1} 
+void Scott\+Plot.\+Expanding\+Axis\+Limits.\+Expand (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_i_enumerable}{IEnumerable}}$<$ \mbox{\hyperlink{struct_scott_plot_1_1_coordinates}{Coordinates}} $>$}]{coordinates}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Expanded limits to include the given {\itshape coordinates} . 
+
+\Hypertarget{class_scott_plot_1_1_expanding_axis_limits_a38e617ed0e58eeb14626f165531dcb01}\index{ScottPlot.ExpandingAxisLimits@{ScottPlot.ExpandingAxisLimits}!Expand@{Expand}}
+\index{Expand@{Expand}!ScottPlot.ExpandingAxisLimits@{ScottPlot.ExpandingAxisLimits}}
+\doxysubsubsection{\texorpdfstring{Expand()}{Expand()}\hspace{0.1cm}{\footnotesize\ttfamily [6/6]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_expanding_axis_limits_a38e617ed0e58eeb14626f165531dcb01} 
+void Scott\+Plot.\+Expanding\+Axis\+Limits.\+Expand (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_scott_plot_1_1_i_plottable}{IPlottable}}}]{plottable}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_expanding_axis_limits_a4b2bf6846746a32592c7838179aecea5}\index{ScottPlot.ExpandingAxisLimits@{ScottPlot.ExpandingAxisLimits}!ExpandX@{ExpandX}}
+\index{ExpandX@{ExpandX}!ScottPlot.ExpandingAxisLimits@{ScottPlot.ExpandingAxisLimits}}
+\doxysubsubsection{\texorpdfstring{ExpandX()}{ExpandX()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_expanding_axis_limits_a4b2bf6846746a32592c7838179aecea5} 
+void Scott\+Plot.\+Expanding\+Axis\+Limits.\+ExpandX (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}}}]{limits}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_expanding_axis_limits_ad4c5820a6bb0dcb7a35cd8475d551550}\index{ScottPlot.ExpandingAxisLimits@{ScottPlot.ExpandingAxisLimits}!ExpandX@{ExpandX}}
+\index{ExpandX@{ExpandX}!ScottPlot.ExpandingAxisLimits@{ScottPlot.ExpandingAxisLimits}}
+\doxysubsubsection{\texorpdfstring{ExpandX()}{ExpandX()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_expanding_axis_limits_ad4c5820a6bb0dcb7a35cd8475d551550} 
+void Scott\+Plot.\+Expanding\+Axis\+Limits.\+ExpandX (\begin{DoxyParamCaption}\item[{double}]{x}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Expanded limits to include the given {\itshape x} . 
+
+\Hypertarget{class_scott_plot_1_1_expanding_axis_limits_aa5ac12d34b31dadd2cc9f9d4fc121bea}\index{ScottPlot.ExpandingAxisLimits@{ScottPlot.ExpandingAxisLimits}!ExpandY@{ExpandY}}
+\index{ExpandY@{ExpandY}!ScottPlot.ExpandingAxisLimits@{ScottPlot.ExpandingAxisLimits}}
+\doxysubsubsection{\texorpdfstring{ExpandY()}{ExpandY()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_expanding_axis_limits_aa5ac12d34b31dadd2cc9f9d4fc121bea} 
+void Scott\+Plot.\+Expanding\+Axis\+Limits.\+ExpandY (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}}}]{limits}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_expanding_axis_limits_a4449d841437bde8b34e91141adca23ae}\index{ScottPlot.ExpandingAxisLimits@{ScottPlot.ExpandingAxisLimits}!ExpandY@{ExpandY}}
+\index{ExpandY@{ExpandY}!ScottPlot.ExpandingAxisLimits@{ScottPlot.ExpandingAxisLimits}}
+\doxysubsubsection{\texorpdfstring{ExpandY()}{ExpandY()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_expanding_axis_limits_a4449d841437bde8b34e91141adca23ae} 
+void Scott\+Plot.\+Expanding\+Axis\+Limits.\+ExpandY (\begin{DoxyParamCaption}\item[{double}]{y}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Expanded limits to include the given {\itshape y} . 
+
+\Hypertarget{class_scott_plot_1_1_expanding_axis_limits_a3c0d164949b5e8c4a7215386d6b05fc9}\index{ScottPlot.ExpandingAxisLimits@{ScottPlot.ExpandingAxisLimits}!GetHashCode@{GetHashCode}}
+\index{GetHashCode@{GetHashCode}!ScottPlot.ExpandingAxisLimits@{ScottPlot.ExpandingAxisLimits}}
+\doxysubsubsection{\texorpdfstring{GetHashCode()}{GetHashCode()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_expanding_axis_limits_a3c0d164949b5e8c4a7215386d6b05fc9} 
+override int Scott\+Plot.\+Expanding\+Axis\+Limits.\+Get\+Hash\+Code (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_expanding_axis_limits_ad13bc04893503fc0268c513df9b284cb}\index{ScottPlot.ExpandingAxisLimits@{ScottPlot.ExpandingAxisLimits}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!ScottPlot.ExpandingAxisLimits@{ScottPlot.ExpandingAxisLimits}}
+\doxysubsubsection{\texorpdfstring{operator"!=()}{operator!=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_expanding_axis_limits_ad13bc04893503fc0268c513df9b284cb} 
+static bool Scott\+Plot.\+Expanding\+Axis\+Limits.\+operator!= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_scott_plot_1_1_expanding_axis_limits}{Expanding\+Axis\+Limits}}}]{a}{, }\item[{\mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}}}]{b}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\Hypertarget{class_scott_plot_1_1_expanding_axis_limits_a46fe95af1d05e347600dcd965ad44b1a}\index{ScottPlot.ExpandingAxisLimits@{ScottPlot.ExpandingAxisLimits}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!ScottPlot.ExpandingAxisLimits@{ScottPlot.ExpandingAxisLimits}}
+\doxysubsubsection{\texorpdfstring{operator"!=()}{operator!=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_expanding_axis_limits_a46fe95af1d05e347600dcd965ad44b1a} 
+static bool Scott\+Plot.\+Expanding\+Axis\+Limits.\+operator!= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_scott_plot_1_1_expanding_axis_limits}{Expanding\+Axis\+Limits}}}]{a}{, }\item[{\mbox{\hyperlink{class_scott_plot_1_1_expanding_axis_limits}{Expanding\+Axis\+Limits}}}]{b}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\Hypertarget{class_scott_plot_1_1_expanding_axis_limits_a4b51489f758ea0fcaaeff6d205c43905}\index{ScottPlot.ExpandingAxisLimits@{ScottPlot.ExpandingAxisLimits}!operator==@{operator==}}
+\index{operator==@{operator==}!ScottPlot.ExpandingAxisLimits@{ScottPlot.ExpandingAxisLimits}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_expanding_axis_limits_a4b51489f758ea0fcaaeff6d205c43905} 
+static bool Scott\+Plot.\+Expanding\+Axis\+Limits.\+operator== (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_scott_plot_1_1_expanding_axis_limits}{Expanding\+Axis\+Limits}}}]{a}{, }\item[{\mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}}}]{b}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\Hypertarget{class_scott_plot_1_1_expanding_axis_limits_a971201ec59eecba84ff30b32cd21afbb}\index{ScottPlot.ExpandingAxisLimits@{ScottPlot.ExpandingAxisLimits}!operator==@{operator==}}
+\index{operator==@{operator==}!ScottPlot.ExpandingAxisLimits@{ScottPlot.ExpandingAxisLimits}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_expanding_axis_limits_a971201ec59eecba84ff30b32cd21afbb} 
+static bool Scott\+Plot.\+Expanding\+Axis\+Limits.\+operator== (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_scott_plot_1_1_expanding_axis_limits}{Expanding\+Axis\+Limits}}}]{a}{, }\item[{\mbox{\hyperlink{class_scott_plot_1_1_expanding_axis_limits}{Expanding\+Axis\+Limits}}}]{b}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\Hypertarget{class_scott_plot_1_1_expanding_axis_limits_a9eeff7942bc3f9bf5bc04fdf70d4bded}\index{ScottPlot.ExpandingAxisLimits@{ScottPlot.ExpandingAxisLimits}!SetX@{SetX}}
+\index{SetX@{SetX}!ScottPlot.ExpandingAxisLimits@{ScottPlot.ExpandingAxisLimits}}
+\doxysubsubsection{\texorpdfstring{SetX()}{SetX()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_expanding_axis_limits_a9eeff7942bc3f9bf5bc04fdf70d4bded} 
+void Scott\+Plot.\+Expanding\+Axis\+Limits.\+SetX (\begin{DoxyParamCaption}\item[{double}]{left}{, }\item[{double}]{right}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_expanding_axis_limits_acf720fdd6fc30d1f77421d61cd0e85b8}\index{ScottPlot.ExpandingAxisLimits@{ScottPlot.ExpandingAxisLimits}!SetY@{SetY}}
+\index{SetY@{SetY}!ScottPlot.ExpandingAxisLimits@{ScottPlot.ExpandingAxisLimits}}
+\doxysubsubsection{\texorpdfstring{SetY()}{SetY()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_expanding_axis_limits_acf720fdd6fc30d1f77421d61cd0e85b8} 
+void Scott\+Plot.\+Expanding\+Axis\+Limits.\+SetY (\begin{DoxyParamCaption}\item[{double}]{bottom}{, }\item[{double}]{top}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_expanding_axis_limits_a6ea1514f5dc59bcc5fefef137094ce82}\index{ScottPlot.ExpandingAxisLimits@{ScottPlot.ExpandingAxisLimits}!ToString@{ToString}}
+\index{ToString@{ToString}!ScottPlot.ExpandingAxisLimits@{ScottPlot.ExpandingAxisLimits}}
+\doxysubsubsection{\texorpdfstring{ToString()}{ToString()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_expanding_axis_limits_a6ea1514f5dc59bcc5fefef137094ce82} 
+override string Scott\+Plot.\+Expanding\+Axis\+Limits.\+To\+String (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{class_scott_plot_1_1_expanding_axis_limits_a9a77f90e04fbe9904143a189a0b8506d}\index{ScottPlot.ExpandingAxisLimits@{ScottPlot.ExpandingAxisLimits}!AxisLimits@{AxisLimits}}
+\index{AxisLimits@{AxisLimits}!ScottPlot.ExpandingAxisLimits@{ScottPlot.ExpandingAxisLimits}}
+\doxysubsubsection{\texorpdfstring{AxisLimits}{AxisLimits}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_expanding_axis_limits_a9a77f90e04fbe9904143a189a0b8506d} 
+\mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}} Scott\+Plot.\+Expanding\+Axis\+Limits.\+Axis\+Limits\hspace{0.3cm}{\ttfamily [get]}}
+
+\Hypertarget{class_scott_plot_1_1_expanding_axis_limits_a97807a5043a7c5498310c249e0378a6a}\index{ScottPlot.ExpandingAxisLimits@{ScottPlot.ExpandingAxisLimits}!Bottom@{Bottom}}
+\index{Bottom@{Bottom}!ScottPlot.ExpandingAxisLimits@{ScottPlot.ExpandingAxisLimits}}
+\doxysubsubsection{\texorpdfstring{Bottom}{Bottom}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_expanding_axis_limits_a97807a5043a7c5498310c249e0378a6a} 
+double Scott\+Plot.\+Expanding\+Axis\+Limits.\+Bottom = double.\+NaN\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_expanding_axis_limits_ad570a2b2ccd034b2a66e2968f8159a6b}\index{ScottPlot.ExpandingAxisLimits@{ScottPlot.ExpandingAxisLimits}!HasArea@{HasArea}}
+\index{HasArea@{HasArea}!ScottPlot.ExpandingAxisLimits@{ScottPlot.ExpandingAxisLimits}}
+\doxysubsubsection{\texorpdfstring{HasArea}{HasArea}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_expanding_axis_limits_ad570a2b2ccd034b2a66e2968f8159a6b} 
+bool Scott\+Plot.\+Expanding\+Axis\+Limits.\+Has\+Area\hspace{0.3cm}{\ttfamily [get]}}
+
+\Hypertarget{class_scott_plot_1_1_expanding_axis_limits_a7f369fa0bab77a97fdb0bd7f3527898c}\index{ScottPlot.ExpandingAxisLimits@{ScottPlot.ExpandingAxisLimits}!HorizontalSpan@{HorizontalSpan}}
+\index{HorizontalSpan@{HorizontalSpan}!ScottPlot.ExpandingAxisLimits@{ScottPlot.ExpandingAxisLimits}}
+\doxysubsubsection{\texorpdfstring{HorizontalSpan}{HorizontalSpan}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_expanding_axis_limits_a7f369fa0bab77a97fdb0bd7f3527898c} 
+double Scott\+Plot.\+Expanding\+Axis\+Limits.\+Horizontal\+Span\hspace{0.3cm}{\ttfamily [get]}}
+
+\Hypertarget{class_scott_plot_1_1_expanding_axis_limits_a4602149b6e57dee839fa2843f628913c}\index{ScottPlot.ExpandingAxisLimits@{ScottPlot.ExpandingAxisLimits}!IsReal@{IsReal}}
+\index{IsReal@{IsReal}!ScottPlot.ExpandingAxisLimits@{ScottPlot.ExpandingAxisLimits}}
+\doxysubsubsection{\texorpdfstring{IsReal}{IsReal}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_expanding_axis_limits_a4602149b6e57dee839fa2843f628913c} 
+bool Scott\+Plot.\+Expanding\+Axis\+Limits.\+Is\+Real\hspace{0.3cm}{\ttfamily [get]}}
+
+\Hypertarget{class_scott_plot_1_1_expanding_axis_limits_a2f1654a0d3c591a4fbe58b712ff56ca4}\index{ScottPlot.ExpandingAxisLimits@{ScottPlot.ExpandingAxisLimits}!IsRealX@{IsRealX}}
+\index{IsRealX@{IsRealX}!ScottPlot.ExpandingAxisLimits@{ScottPlot.ExpandingAxisLimits}}
+\doxysubsubsection{\texorpdfstring{IsRealX}{IsRealX}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_expanding_axis_limits_a2f1654a0d3c591a4fbe58b712ff56ca4} 
+bool Scott\+Plot.\+Expanding\+Axis\+Limits.\+Is\+RealX\hspace{0.3cm}{\ttfamily [get]}}
+
+\Hypertarget{class_scott_plot_1_1_expanding_axis_limits_a17c9c8369bf80f44a9fa98cbcaf67499}\index{ScottPlot.ExpandingAxisLimits@{ScottPlot.ExpandingAxisLimits}!IsRealY@{IsRealY}}
+\index{IsRealY@{IsRealY}!ScottPlot.ExpandingAxisLimits@{ScottPlot.ExpandingAxisLimits}}
+\doxysubsubsection{\texorpdfstring{IsRealY}{IsRealY}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_expanding_axis_limits_a17c9c8369bf80f44a9fa98cbcaf67499} 
+bool Scott\+Plot.\+Expanding\+Axis\+Limits.\+Is\+RealY\hspace{0.3cm}{\ttfamily [get]}}
+
+\Hypertarget{class_scott_plot_1_1_expanding_axis_limits_aa81892fb072b73118ff8cbde79d0f112}\index{ScottPlot.ExpandingAxisLimits@{ScottPlot.ExpandingAxisLimits}!Left@{Left}}
+\index{Left@{Left}!ScottPlot.ExpandingAxisLimits@{ScottPlot.ExpandingAxisLimits}}
+\doxysubsubsection{\texorpdfstring{Left}{Left}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_expanding_axis_limits_aa81892fb072b73118ff8cbde79d0f112} 
+double Scott\+Plot.\+Expanding\+Axis\+Limits.\+Left = double.\+NaN\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_expanding_axis_limits_aa92826a9ca43db5c45b3ae96d2667338}\index{ScottPlot.ExpandingAxisLimits@{ScottPlot.ExpandingAxisLimits}!Right@{Right}}
+\index{Right@{Right}!ScottPlot.ExpandingAxisLimits@{ScottPlot.ExpandingAxisLimits}}
+\doxysubsubsection{\texorpdfstring{Right}{Right}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_expanding_axis_limits_aa92826a9ca43db5c45b3ae96d2667338} 
+double Scott\+Plot.\+Expanding\+Axis\+Limits.\+Right = double.\+NaN\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_expanding_axis_limits_a76aae462a9995e032de097b70f975797}\index{ScottPlot.ExpandingAxisLimits@{ScottPlot.ExpandingAxisLimits}!Top@{Top}}
+\index{Top@{Top}!ScottPlot.ExpandingAxisLimits@{ScottPlot.ExpandingAxisLimits}}
+\doxysubsubsection{\texorpdfstring{Top}{Top}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_expanding_axis_limits_a76aae462a9995e032de097b70f975797} 
+double Scott\+Plot.\+Expanding\+Axis\+Limits.\+Top = double.\+NaN\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_expanding_axis_limits_af304069f8a3a0f8caebf7508d7494f3e}\index{ScottPlot.ExpandingAxisLimits@{ScottPlot.ExpandingAxisLimits}!VerticalSpan@{VerticalSpan}}
+\index{VerticalSpan@{VerticalSpan}!ScottPlot.ExpandingAxisLimits@{ScottPlot.ExpandingAxisLimits}}
+\doxysubsubsection{\texorpdfstring{VerticalSpan}{VerticalSpan}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_expanding_axis_limits_af304069f8a3a0f8caebf7508d7494f3e} 
+double Scott\+Plot.\+Expanding\+Axis\+Limits.\+Vertical\+Span\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Primitives/Expanding\+Axis\+Limits.\+cs\end{DoxyCompactItemize}

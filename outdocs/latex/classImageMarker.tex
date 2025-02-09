@@ -1,0 +1,113 @@
+\hypertarget{classImageMarker}{}\doxysection{Image\+Marker Class Reference}
+\label{classImageMarker}\index{ImageMarker@{ImageMarker}}
+Inheritance diagram for Image\+Marker\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classImageMarker}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} \mbox{\hyperlink{classImageMarker_a3625a8c26bffa8434db81c6a073b4708}{Get\+Axis\+Limits}} ()
+\begin{DoxyCompactList}\small\item\em Return the 2D area (in coordinate space) occupied by the data contained in this plottable \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classImageMarker_ae46f6b43a00c3ba46584e023a8d2e209}{Render}} (\mbox{\hyperlink{classRenderPack}{Render\+Pack}} rp)
+\begin{DoxyCompactList}\small\item\em Draw the data from this plottable into the data area defined in the \mbox{\hyperlink{classAxes}{Axes}}. By default the surface is already clipped to the data area, but this can be cleared inside the plottable. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classImageMarker_a2236ae556fa1ecbbd6766514caaf2c59}{Is\+Visible}} = true\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{interfaceIAxes}{IAxes}} \mbox{\hyperlink{classImageMarker_a636f8399a0537195231e2cde38100f55}{Axes}} = new \mbox{\hyperlink{classAxes}{Axes}}()\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+Scott\+Plot.? \mbox{\hyperlink{classImage}{Image}} \mbox{\hyperlink{classImageMarker_ab697ac5962a8c90c59b49f8ecdfa3961}{Image}} = null\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{structCoordinates}{Coordinates}} \mbox{\hyperlink{classImageMarker_aa74a1ff7cde640e7d1b49c1ce484319f}{Location}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{classImageMarker_a478aff1efbc98b2165bc8346f67e0585}{Scale}} = 1\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+bool \mbox{\hyperlink{classImageMarker_a6347f34ce6097b35a130ead0b567fbe3}{Anti\+Alias}} = true\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$ \mbox{\hyperlink{classLegendItem}{Legend\+Item}} $>$ \mbox{\hyperlink{classImageMarker_a8043ef2263d3c65d129476892d715256}{Legend\+Items}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classImageMarker_a3625a8c26bffa8434db81c6a073b4708}\label{classImageMarker_a3625a8c26bffa8434db81c6a073b4708}} 
+\index{ImageMarker@{ImageMarker}!GetAxisLimits@{GetAxisLimits}}
+\index{GetAxisLimits@{GetAxisLimits}!ImageMarker@{ImageMarker}}
+\doxysubsubsection{\texorpdfstring{GetAxisLimits()}{GetAxisLimits()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} Image\+Marker.\+Get\+Axis\+Limits (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Return the 2D area (in coordinate space) occupied by the data contained in this plottable 
+
+
+
+Implements \mbox{\hyperlink{interfaceIPlottable_ac98e2f5e56f9f938bbd081c87c7c6f50}{IPlottable}}.
+
+\mbox{\Hypertarget{classImageMarker_ae46f6b43a00c3ba46584e023a8d2e209}\label{classImageMarker_ae46f6b43a00c3ba46584e023a8d2e209}} 
+\index{ImageMarker@{ImageMarker}!Render@{Render}}
+\index{Render@{Render}!ImageMarker@{ImageMarker}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily virtual void Image\+Marker.\+Render (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classRenderPack}{Render\+Pack}}}]{rp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Draw the data from this plottable into the data area defined in the \mbox{\hyperlink{classAxes}{Axes}}. By default the surface is already clipped to the data area, but this can be cleared inside the plottable. 
+
+
+
+Implements \mbox{\hyperlink{interfaceIPlottable_a201a1a236dc718eda93db143a5ade9f8}{IPlottable}}.
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{classImageMarker_a6347f34ce6097b35a130ead0b567fbe3}\label{classImageMarker_a6347f34ce6097b35a130ead0b567fbe3}} 
+\index{ImageMarker@{ImageMarker}!AntiAlias@{AntiAlias}}
+\index{AntiAlias@{AntiAlias}!ImageMarker@{ImageMarker}}
+\doxysubsubsection{\texorpdfstring{AntiAlias}{AntiAlias}}
+{\footnotesize\ttfamily bool Image\+Marker.\+Anti\+Alias = true\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classImageMarker_a636f8399a0537195231e2cde38100f55}\label{classImageMarker_a636f8399a0537195231e2cde38100f55}} 
+\index{ImageMarker@{ImageMarker}!Axes@{Axes}}
+\index{Axes@{Axes}!ImageMarker@{ImageMarker}}
+\doxysubsubsection{\texorpdfstring{Axes}{Axes}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceIAxes}{IAxes}} Image\+Marker.\+Axes = new \mbox{\hyperlink{classAxes}{Axes}}()\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classImageMarker_ab697ac5962a8c90c59b49f8ecdfa3961}\label{classImageMarker_ab697ac5962a8c90c59b49f8ecdfa3961}} 
+\index{ImageMarker@{ImageMarker}!Image@{Image}}
+\index{Image@{Image}!ImageMarker@{ImageMarker}}
+\doxysubsubsection{\texorpdfstring{Image}{Image}}
+{\footnotesize\ttfamily Scott\+Plot.? \mbox{\hyperlink{classImage}{Image}} Image\+Marker.\+Image = null\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classImageMarker_a2236ae556fa1ecbbd6766514caaf2c59}\label{classImageMarker_a2236ae556fa1ecbbd6766514caaf2c59}} 
+\index{ImageMarker@{ImageMarker}!IsVisible@{IsVisible}}
+\index{IsVisible@{IsVisible}!ImageMarker@{ImageMarker}}
+\doxysubsubsection{\texorpdfstring{IsVisible}{IsVisible}}
+{\footnotesize\ttfamily bool Image\+Marker.\+Is\+Visible = true\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classImageMarker_a8043ef2263d3c65d129476892d715256}\label{classImageMarker_a8043ef2263d3c65d129476892d715256}} 
+\index{ImageMarker@{ImageMarker}!LegendItems@{LegendItems}}
+\index{LegendItems@{LegendItems}!ImageMarker@{ImageMarker}}
+\doxysubsubsection{\texorpdfstring{LegendItems}{LegendItems}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$\mbox{\hyperlink{classLegendItem}{Legend\+Item}}$>$ Image\+Marker.\+Legend\+Items\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{classImageMarker_aa74a1ff7cde640e7d1b49c1ce484319f}\label{classImageMarker_aa74a1ff7cde640e7d1b49c1ce484319f}} 
+\index{ImageMarker@{ImageMarker}!Location@{Location}}
+\index{Location@{Location}!ImageMarker@{ImageMarker}}
+\doxysubsubsection{\texorpdfstring{Location}{Location}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structCoordinates}{Coordinates}} Image\+Marker.\+Location\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classImageMarker_a478aff1efbc98b2165bc8346f67e0585}\label{classImageMarker_a478aff1efbc98b2165bc8346f67e0585}} 
+\index{ImageMarker@{ImageMarker}!Scale@{Scale}}
+\index{Scale@{Scale}!ImageMarker@{ImageMarker}}
+\doxysubsubsection{\texorpdfstring{Scale}{Scale}}
+{\footnotesize\ttfamily float Image\+Marker.\+Scale = 1\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Plottables/Image\+Marker.\+cs\end{DoxyCompactItemize}

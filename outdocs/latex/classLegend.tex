@@ -1,0 +1,459 @@
+\hypertarget{classLegend}{}\doxysection{Legend Class Reference}
+\label{classLegend}\index{Legend@{Legend}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} \mbox{\hyperlink{classLegend_a7f3d70d5b1db9becb654104cc7c04bf1}{Get\+Axis\+Limits}} ()
+\item 
+\mbox{\hyperlink{classLegendItem}{Legend\+Item}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classLegend_a7874e0fff94426ed19f6acef4f387ae8}{Get\+Items}} ()
+\item 
+\mbox{\hyperlink{classImage}{Image}} \mbox{\hyperlink{classLegend_ac9c02ae65d3d70ffe9fe0f50c5c8a414}{Get\+Image}} ()
+\begin{DoxyCompactList}\small\item\em Return an \mbox{\hyperlink{classImage}{Image}} containing just the legend \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classLegend_a63c171f524fe5bdaa99125eb9e9b08b5}{Get\+Svg\+Xml}} ()
+\begin{DoxyCompactList}\small\item\em Return contents of a SVG image containing just the legend \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classLegend_a229864e76a563bad922c805a6301a96b}{Render}} (\mbox{\hyperlink{classRenderPack}{Render\+Pack}} rp)
+\begin{DoxyCompactList}\small\item\em This is called automatically by the render manager \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classLegend_a7842d9f1ec9a17001344b017e3dad33a}{Render}} (\mbox{\hyperlink{classRenderPack}{Render\+Pack}} rp, \mbox{\hyperlink{structPixelRect}{Pixel\+Rect}} rect, \mbox{\hyperlink{classLegend_a9a20aeb0d2ed443cd5435788d2a5b3a5}{Alignment}} alignment)
+\begin{DoxyCompactList}\small\item\em Render the legend inside the given rectangle \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPlot}{Plot}} \mbox{\hyperlink{classLegend_a1d6c290a8c6597fe8930b337df97872a}{plot}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{classPlot}{Plot}} \mbox{\hyperlink{classLegend_ac2abfc142d1bc5ba0954d3cb78fc78ee}{Plot}} = \mbox{\hyperlink{classLegend_a1d6c290a8c6597fe8930b337df97872a}{plot}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+bool \mbox{\hyperlink{classLegend_af9212e6bb743b9c121b0f4c16842e2c9}{Is\+Visible}} = true\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+Alignment \mbox{\hyperlink{classLegend_a9a20aeb0d2ed443cd5435788d2a5b3a5}{Alignment}} = Alignment.\+Lower\+Right\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Position of the legend relative to the data area \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classLegend_a9a20aeb0d2ed443cd5435788d2a5b3a5}{Alignment}} \mbox{\hyperlink{classLegend_aeb15729340083955deba4e02f2c95d57}{Location}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Position of the legend relative to the data area \end{DoxyCompactList}\item 
+Orientation \mbox{\hyperlink{classLegend_a187ebbc5c92f5d583e7b9741c493049c}{Orientation}} = Orientation.\+Vertical\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Stack items in the legend according to this preferred orientation \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structPixelPadding}{Pixel\+Padding}} \mbox{\hyperlink{classLegend_a6c3cda464485262f80b69b86a4d839c8}{Margin}} = new(7, 7)\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Distance from the edge of the data area to the edge of the legend \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structPixelPadding}{Pixel\+Padding}} \mbox{\hyperlink{classLegend_a4eb1a0ef5ca8f548bcf1fc3a2e2ac521}{Padding}} = new(10, 5)\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Distance between the legend frame and the items within it \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classLegend_ab53a728df98b7b9f4528480fd1709a44}{Symbol\+Width}} = 20\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Width of the symbol in a legend item \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classLegend_addc0218b04a2ec0dd30209560a084c4b}{Symbol\+Padding}} = 5\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Padding between a symbol and label within a legend item \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structPixelPadding}{Pixel\+Padding}} \mbox{\hyperlink{classLegend_ab2b961ef1e3c19d8f4117eaf19b4e427}{Inter\+Item\+Padding}} = new(10, 10, 6, 6)\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Space separating legend items \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{classLegendItem}{Legend\+Item}} $>$ \mbox{\hyperlink{classLegend_aeab8f793230e4411e769aec79c6dbae1}{Manual\+Items}} = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Items in this list will always be displayed in the legend \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classLegend_aea67a8d9f766627f87d16dc9c38b33c3}{Tight\+Horizontal\+Wrapping}} = false\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em If enabled, items in horizontal oriented legends will not be aligned in columns but instead resized tightly to fit their contents \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classLegend_afc388b0ee1ad82d42e65dbae0b9b393a}{Show\+Item\+Rectangles\+\_\+\+DEBUG}} = false\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+bool \mbox{\hyperlink{classLegend_a3a8fa626e842a6a449e8c167d3f1e8cc}{Set\+Best\+Font\+On\+Each\+Render}} = false\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Enabling this allows multi-\/language text in the figure legend, but may slow down the render loop. \end{DoxyCompactList}\item 
+float? \mbox{\hyperlink{classLegend_a4e38da637cea69a7561f8a64dedb7fd8}{Font\+Size}} = null\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em If set, this overrides the value in the \mbox{\hyperlink{classLegendItem}{Legend\+Item}}\textquotesingle{}s \mbox{\hyperlink{classFontStyle}{Font\+Style}} \end{DoxyCompactList}\item 
+string? \mbox{\hyperlink{classLegend_a212ce3ab93aba522ffa0d17624dd6d3f}{Font\+Name}} = null\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em If set, this overrides the value in the \mbox{\hyperlink{classLegendItem}{Legend\+Item}}\textquotesingle{}s \mbox{\hyperlink{classFontStyle}{Font\+Style}} \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structColor}{Color}}? \mbox{\hyperlink{classLegend_aa1b9143a56fd5c5d9435680b3a17ed1a}{Font\+Color}} = null\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em If set, this overrides the value in the \mbox{\hyperlink{classLegendItem}{Legend\+Item}}\textquotesingle{}s \mbox{\hyperlink{classFontStyle}{Font\+Style}} \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classFillStyle}{Fill\+Style}} \mbox{\hyperlink{classLegend_a8c76e221694aaeafc9ac1750a7cc72d6}{Font}} = new()\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+bool \mbox{\hyperlink{classLegend_a1a147cabd04cb60ee02030dad5191ff0}{Allow\+Multiline}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{interfaceILegendLayout}{ILegend\+Layout}} \mbox{\hyperlink{classLegend_a0a79b9825eda38560c2c57d20f2665d7}{Layout}} = new Legend\+Layouts.\+Wrapping()\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{structPixelSize}{Pixel\+Size}} \mbox{\hyperlink{classLegend_a98759bcae7407258c2c99626a03b0056}{Last\+Render\+Size}} = \mbox{\hyperlink{structPixelSize_a64013bdd0c91c094fb37e0beb0cabad0}{Pixel\+Size.\+NaN}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{classLineStyle}{Line\+Style}} \mbox{\hyperlink{classLegend_a3c5214e6f77b561f9eca2c0cb9a91960}{Outline\+Style}} = new() \{ Width = 1, \mbox{\hyperlink{structColor}{Color}} = \mbox{\hyperlink{structColors_a6a4f09e77ec6d0ef4c08348eb2e21714}{Colors.\+Black}}, \}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{classLegend_a35866327fd57f5f59f190be7048e1193}{Outline\+Width}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+Line\+Pattern \mbox{\hyperlink{classLegend_a770c5d70c696be70196e0579d5c6ba8c}{Outline\+Pattern}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{structColor}{Color}} \mbox{\hyperlink{classLegend_af1dcb3df333707fd9e5f26c025508207}{Outline\+Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{classFillStyle}{Fill\+Style}} \mbox{\hyperlink{classLegend_aa14e6e111115d5dd070ee6920d2c6d63}{Background\+Fill}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{classFillStyle}{Fill\+Style}} \mbox{\hyperlink{classLegend_a4bb29249f42689f3202fe2c59c3e7797}{Background\+Fill\+Style}} = new() \{ \mbox{\hyperlink{structColor}{Color}} = \mbox{\hyperlink{structColors_ab0ad6baf8f6d892c8597ade1d65b9e6e}{Colors.\+White}} \}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{structColor}{Color}} \mbox{\hyperlink{classLegend_a181d9dcf37bd2d0c7fe42314d8d71509}{Background\+Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{structColor}{Color}} \mbox{\hyperlink{classLegend_ab0db58344adccf79f13cdc10782559bf}{Background\+Hatch\+Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{interfaceIHatch}{IHatch}}? \mbox{\hyperlink{classLegend_ae9807ce53063ad8dbdf8f647b8e21564}{Background\+Hatch}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{classFillStyle}{Fill\+Style}} \mbox{\hyperlink{classLegend_ad884a265286ba0e8005396a6b4f5b325}{Shadow\+Fill}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{classFillStyle}{Fill\+Style}} \mbox{\hyperlink{classLegend_a216aa76f9a61b6caaeca28df01bcef62}{Shadow\+Fill\+Style}} = new() \{ \mbox{\hyperlink{structColor}{Color}} = Colors.\+Black.\+With\+Opacity(.\+2) \}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{structColor}{Color}} \mbox{\hyperlink{classLegend_ae271d7755d5b5d0e270f0e8497d9a07f}{Shadow\+Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{structPixelOffset}{Pixel\+Offset}} \mbox{\hyperlink{classLegend_abf8132ff21546b6514dbcff0092c599b}{Shadow\+Offset}} = new(3, 3)\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{classLegend_a9a20aeb0d2ed443cd5435788d2a5b3a5}{Alignment}} \mbox{\hyperlink{classLegend_a93424a3ff1393d72a228b96e7b833843}{Shadow\+Alignment}} = Alignment.\+Lower\+Right\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{interfaceIAxes}{IAxes}} \mbox{\hyperlink{classLegend_adfc09dfccbaaefc25c2d6322a9e0c587}{Axes}} = new \mbox{\hyperlink{classAxes}{Axes}}()\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$ \mbox{\hyperlink{classLegendItem}{Legend\+Item}} $>$ \mbox{\hyperlink{classLegend_acd51d10cc3fe9a274d68bc174afd820b}{Legend\+Items}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+bool \mbox{\hyperlink{classLegend_ae7f09534076615d914a19239d842ff61}{Display\+Plottable\+Legend\+Items}} = true\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classLegend_a7f3d70d5b1db9becb654104cc7c04bf1}\label{classLegend_a7f3d70d5b1db9becb654104cc7c04bf1}} 
+\index{Legend@{Legend}!GetAxisLimits@{GetAxisLimits}}
+\index{GetAxisLimits@{GetAxisLimits}!Legend@{Legend}}
+\doxysubsubsection{\texorpdfstring{GetAxisLimits()}{GetAxisLimits()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} Legend.\+Get\+Axis\+Limits (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classLegend_ac9c02ae65d3d70ffe9fe0f50c5c8a414}\label{classLegend_ac9c02ae65d3d70ffe9fe0f50c5c8a414}} 
+\index{Legend@{Legend}!GetImage@{GetImage}}
+\index{GetImage@{GetImage}!Legend@{Legend}}
+\doxysubsubsection{\texorpdfstring{GetImage()}{GetImage()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classImage}{Image}} Legend.\+Get\+Image (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return an \mbox{\hyperlink{classImage}{Image}} containing just the legend 
+
+\mbox{\Hypertarget{classLegend_a7874e0fff94426ed19f6acef4f387ae8}\label{classLegend_a7874e0fff94426ed19f6acef4f387ae8}} 
+\index{Legend@{Legend}!GetItems@{GetItems}}
+\index{GetItems@{GetItems}!Legend@{Legend}}
+\doxysubsubsection{\texorpdfstring{GetItems()}{GetItems()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classLegendItem}{Legend\+Item}} \mbox{[}$\,$\mbox{]} Legend.\+Get\+Items (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classLegend_a63c171f524fe5bdaa99125eb9e9b08b5}\label{classLegend_a63c171f524fe5bdaa99125eb9e9b08b5}} 
+\index{Legend@{Legend}!GetSvgXml@{GetSvgXml}}
+\index{GetSvgXml@{GetSvgXml}!Legend@{Legend}}
+\doxysubsubsection{\texorpdfstring{GetSvgXml()}{GetSvgXml()}}
+{\footnotesize\ttfamily string Legend.\+Get\+Svg\+Xml (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return contents of a SVG image containing just the legend 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classLegend_a229864e76a563bad922c805a6301a96b}\label{classLegend_a229864e76a563bad922c805a6301a96b}} 
+\index{Legend@{Legend}!Render@{Render}}
+\index{Render@{Render}!Legend@{Legend}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual void Legend.\+Render (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classRenderPack}{Render\+Pack}}}]{rp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+This is called automatically by the render manager 
+
+\mbox{\Hypertarget{classLegend_a7842d9f1ec9a17001344b017e3dad33a}\label{classLegend_a7842d9f1ec9a17001344b017e3dad33a}} 
+\index{Legend@{Legend}!Render@{Render}}
+\index{Render@{Render}!Legend@{Legend}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Legend.\+Render (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classRenderPack}{Render\+Pack}}}]{rp,  }\item[{\mbox{\hyperlink{structPixelRect}{Pixel\+Rect}}}]{rect,  }\item[{\mbox{\hyperlink{classLegend_a9a20aeb0d2ed443cd5435788d2a5b3a5}{Alignment}}}]{alignment }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Render the legend inside the given rectangle 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rp} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{classLegend_a9a20aeb0d2ed443cd5435788d2a5b3a5}\label{classLegend_a9a20aeb0d2ed443cd5435788d2a5b3a5}} 
+\index{Legend@{Legend}!Alignment@{Alignment}}
+\index{Alignment@{Alignment}!Legend@{Legend}}
+\doxysubsubsection{\texorpdfstring{Alignment}{Alignment}}
+{\footnotesize\ttfamily Alignment Legend.\+Alignment = Alignment.\+Lower\+Right\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Position of the legend relative to the data area 
+
+\mbox{\Hypertarget{classLegend_a1a147cabd04cb60ee02030dad5191ff0}\label{classLegend_a1a147cabd04cb60ee02030dad5191ff0}} 
+\index{Legend@{Legend}!AllowMultiline@{AllowMultiline}}
+\index{AllowMultiline@{AllowMultiline}!Legend@{Legend}}
+\doxysubsubsection{\texorpdfstring{AllowMultiline}{AllowMultiline}}
+{\footnotesize\ttfamily bool Legend.\+Allow\+Multiline\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classLegend_adfc09dfccbaaefc25c2d6322a9e0c587}\label{classLegend_adfc09dfccbaaefc25c2d6322a9e0c587}} 
+\index{Legend@{Legend}!Axes@{Axes}}
+\index{Axes@{Axes}!Legend@{Legend}}
+\doxysubsubsection{\texorpdfstring{Axes}{Axes}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceIAxes}{IAxes}} Legend.\+Axes = new \mbox{\hyperlink{classAxes}{Axes}}()\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classLegend_a181d9dcf37bd2d0c7fe42314d8d71509}\label{classLegend_a181d9dcf37bd2d0c7fe42314d8d71509}} 
+\index{Legend@{Legend}!BackgroundColor@{BackgroundColor}}
+\index{BackgroundColor@{BackgroundColor}!Legend@{Legend}}
+\doxysubsubsection{\texorpdfstring{BackgroundColor}{BackgroundColor}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structColor}{Color}} Legend.\+Background\+Color\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classLegend_aa14e6e111115d5dd070ee6920d2c6d63}\label{classLegend_aa14e6e111115d5dd070ee6920d2c6d63}} 
+\index{Legend@{Legend}!BackgroundFill@{BackgroundFill}}
+\index{BackgroundFill@{BackgroundFill}!Legend@{Legend}}
+\doxysubsubsection{\texorpdfstring{BackgroundFill}{BackgroundFill}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classFillStyle}{Fill\+Style}} Legend.\+Background\+Fill\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classLegend_a4bb29249f42689f3202fe2c59c3e7797}\label{classLegend_a4bb29249f42689f3202fe2c59c3e7797}} 
+\index{Legend@{Legend}!BackgroundFillStyle@{BackgroundFillStyle}}
+\index{BackgroundFillStyle@{BackgroundFillStyle}!Legend@{Legend}}
+\doxysubsubsection{\texorpdfstring{BackgroundFillStyle}{BackgroundFillStyle}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classFillStyle}{Fill\+Style}} Legend.\+Background\+Fill\+Style = new() \{ \mbox{\hyperlink{structColor}{Color}} = \mbox{\hyperlink{structColors_ab0ad6baf8f6d892c8597ade1d65b9e6e}{Colors.\+White}} \}\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{classLegend_ae9807ce53063ad8dbdf8f647b8e21564}\label{classLegend_ae9807ce53063ad8dbdf8f647b8e21564}} 
+\index{Legend@{Legend}!BackgroundHatch@{BackgroundHatch}}
+\index{BackgroundHatch@{BackgroundHatch}!Legend@{Legend}}
+\doxysubsubsection{\texorpdfstring{BackgroundHatch}{BackgroundHatch}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceIHatch}{IHatch}}? Legend.\+Background\+Hatch\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classLegend_ab0db58344adccf79f13cdc10782559bf}\label{classLegend_ab0db58344adccf79f13cdc10782559bf}} 
+\index{Legend@{Legend}!BackgroundHatchColor@{BackgroundHatchColor}}
+\index{BackgroundHatchColor@{BackgroundHatchColor}!Legend@{Legend}}
+\doxysubsubsection{\texorpdfstring{BackgroundHatchColor}{BackgroundHatchColor}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structColor}{Color}} Legend.\+Background\+Hatch\+Color\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classLegend_ae7f09534076615d914a19239d842ff61}\label{classLegend_ae7f09534076615d914a19239d842ff61}} 
+\index{Legend@{Legend}!DisplayPlottableLegendItems@{DisplayPlottableLegendItems}}
+\index{DisplayPlottableLegendItems@{DisplayPlottableLegendItems}!Legend@{Legend}}
+\doxysubsubsection{\texorpdfstring{DisplayPlottableLegendItems}{DisplayPlottableLegendItems}}
+{\footnotesize\ttfamily bool Legend.\+Display\+Plottable\+Legend\+Items = true\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classLegend_a8c76e221694aaeafc9ac1750a7cc72d6}\label{classLegend_a8c76e221694aaeafc9ac1750a7cc72d6}} 
+\index{Legend@{Legend}!Font@{Font}}
+\index{Font@{Font}!Legend@{Legend}}
+\doxysubsubsection{\texorpdfstring{Font}{Font}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classFillStyle}{Fill\+Style}} Legend.\+Font = new()\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classLegend_aa1b9143a56fd5c5d9435680b3a17ed1a}\label{classLegend_aa1b9143a56fd5c5d9435680b3a17ed1a}} 
+\index{Legend@{Legend}!FontColor@{FontColor}}
+\index{FontColor@{FontColor}!Legend@{Legend}}
+\doxysubsubsection{\texorpdfstring{FontColor}{FontColor}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structColor}{Color}}? Legend.\+Font\+Color = null\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+If set, this overrides the value in the \mbox{\hyperlink{classLegendItem}{Legend\+Item}}\textquotesingle{}s \mbox{\hyperlink{classFontStyle}{Font\+Style}} 
+
+\mbox{\Hypertarget{classLegend_a212ce3ab93aba522ffa0d17624dd6d3f}\label{classLegend_a212ce3ab93aba522ffa0d17624dd6d3f}} 
+\index{Legend@{Legend}!FontName@{FontName}}
+\index{FontName@{FontName}!Legend@{Legend}}
+\doxysubsubsection{\texorpdfstring{FontName}{FontName}}
+{\footnotesize\ttfamily string? Legend.\+Font\+Name = null\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+If set, this overrides the value in the \mbox{\hyperlink{classLegendItem}{Legend\+Item}}\textquotesingle{}s \mbox{\hyperlink{classFontStyle}{Font\+Style}} 
+
+\mbox{\Hypertarget{classLegend_a4e38da637cea69a7561f8a64dedb7fd8}\label{classLegend_a4e38da637cea69a7561f8a64dedb7fd8}} 
+\index{Legend@{Legend}!FontSize@{FontSize}}
+\index{FontSize@{FontSize}!Legend@{Legend}}
+\doxysubsubsection{\texorpdfstring{FontSize}{FontSize}}
+{\footnotesize\ttfamily float? Legend.\+Font\+Size = null\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+If set, this overrides the value in the \mbox{\hyperlink{classLegendItem}{Legend\+Item}}\textquotesingle{}s \mbox{\hyperlink{classFontStyle}{Font\+Style}} 
+
+\mbox{\Hypertarget{classLegend_ab2b961ef1e3c19d8f4117eaf19b4e427}\label{classLegend_ab2b961ef1e3c19d8f4117eaf19b4e427}} 
+\index{Legend@{Legend}!InterItemPadding@{InterItemPadding}}
+\index{InterItemPadding@{InterItemPadding}!Legend@{Legend}}
+\doxysubsubsection{\texorpdfstring{InterItemPadding}{InterItemPadding}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structPixelPadding}{Pixel\+Padding}} Legend.\+Inter\+Item\+Padding = new(10, 10, 6, 6)\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Space separating legend items 
+
+\mbox{\Hypertarget{classLegend_af9212e6bb743b9c121b0f4c16842e2c9}\label{classLegend_af9212e6bb743b9c121b0f4c16842e2c9}} 
+\index{Legend@{Legend}!IsVisible@{IsVisible}}
+\index{IsVisible@{IsVisible}!Legend@{Legend}}
+\doxysubsubsection{\texorpdfstring{IsVisible}{IsVisible}}
+{\footnotesize\ttfamily bool Legend.\+Is\+Visible = true\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classLegend_a98759bcae7407258c2c99626a03b0056}\label{classLegend_a98759bcae7407258c2c99626a03b0056}} 
+\index{Legend@{Legend}!LastRenderSize@{LastRenderSize}}
+\index{LastRenderSize@{LastRenderSize}!Legend@{Legend}}
+\doxysubsubsection{\texorpdfstring{LastRenderSize}{LastRenderSize}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structPixelSize}{Pixel\+Size}} Legend.\+Last\+Render\+Size = \mbox{\hyperlink{structPixelSize_a64013bdd0c91c094fb37e0beb0cabad0}{Pixel\+Size.\+NaN}}\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{classLegend_a0a79b9825eda38560c2c57d20f2665d7}\label{classLegend_a0a79b9825eda38560c2c57d20f2665d7}} 
+\index{Legend@{Legend}!Layout@{Layout}}
+\index{Layout@{Layout}!Legend@{Legend}}
+\doxysubsubsection{\texorpdfstring{Layout}{Layout}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceILegendLayout}{ILegend\+Layout}} Legend.\+Layout = new Legend\+Layouts.\+Wrapping()\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classLegend_acd51d10cc3fe9a274d68bc174afd820b}\label{classLegend_acd51d10cc3fe9a274d68bc174afd820b}} 
+\index{Legend@{Legend}!LegendItems@{LegendItems}}
+\index{LegendItems@{LegendItems}!Legend@{Legend}}
+\doxysubsubsection{\texorpdfstring{LegendItems}{LegendItems}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$\mbox{\hyperlink{classLegendItem}{Legend\+Item}}$>$ Legend.\+Legend\+Items\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{classLegend_aeb15729340083955deba4e02f2c95d57}\label{classLegend_aeb15729340083955deba4e02f2c95d57}} 
+\index{Legend@{Legend}!Location@{Location}}
+\index{Location@{Location}!Legend@{Legend}}
+\doxysubsubsection{\texorpdfstring{Location}{Location}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classLegend_a9a20aeb0d2ed443cd5435788d2a5b3a5}{Alignment}} Legend.\+Location\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Position of the legend relative to the data area 
+
+\mbox{\Hypertarget{classLegend_aeab8f793230e4411e769aec79c6dbae1}\label{classLegend_aeab8f793230e4411e769aec79c6dbae1}} 
+\index{Legend@{Legend}!ManualItems@{ManualItems}}
+\index{ManualItems@{ManualItems}!Legend@{Legend}}
+\doxysubsubsection{\texorpdfstring{ManualItems}{ManualItems}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classLegendItem}{Legend\+Item}}$>$ Legend.\+Manual\+Items = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Items in this list will always be displayed in the legend 
+
+\mbox{\Hypertarget{classLegend_a6c3cda464485262f80b69b86a4d839c8}\label{classLegend_a6c3cda464485262f80b69b86a4d839c8}} 
+\index{Legend@{Legend}!Margin@{Margin}}
+\index{Margin@{Margin}!Legend@{Legend}}
+\doxysubsubsection{\texorpdfstring{Margin}{Margin}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structPixelPadding}{Pixel\+Padding}} Legend.\+Margin = new(7, 7)\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Distance from the edge of the data area to the edge of the legend 
+
+\mbox{\Hypertarget{classLegend_a187ebbc5c92f5d583e7b9741c493049c}\label{classLegend_a187ebbc5c92f5d583e7b9741c493049c}} 
+\index{Legend@{Legend}!Orientation@{Orientation}}
+\index{Orientation@{Orientation}!Legend@{Legend}}
+\doxysubsubsection{\texorpdfstring{Orientation}{Orientation}}
+{\footnotesize\ttfamily Orientation Legend.\+Orientation = Orientation.\+Vertical\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Stack items in the legend according to this preferred orientation 
+
+\mbox{\Hypertarget{classLegend_af1dcb3df333707fd9e5f26c025508207}\label{classLegend_af1dcb3df333707fd9e5f26c025508207}} 
+\index{Legend@{Legend}!OutlineColor@{OutlineColor}}
+\index{OutlineColor@{OutlineColor}!Legend@{Legend}}
+\doxysubsubsection{\texorpdfstring{OutlineColor}{OutlineColor}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structColor}{Color}} Legend.\+Outline\+Color\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classLegend_a770c5d70c696be70196e0579d5c6ba8c}\label{classLegend_a770c5d70c696be70196e0579d5c6ba8c}} 
+\index{Legend@{Legend}!OutlinePattern@{OutlinePattern}}
+\index{OutlinePattern@{OutlinePattern}!Legend@{Legend}}
+\doxysubsubsection{\texorpdfstring{OutlinePattern}{OutlinePattern}}
+{\footnotesize\ttfamily Line\+Pattern Legend.\+Outline\+Pattern\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classLegend_a3c5214e6f77b561f9eca2c0cb9a91960}\label{classLegend_a3c5214e6f77b561f9eca2c0cb9a91960}} 
+\index{Legend@{Legend}!OutlineStyle@{OutlineStyle}}
+\index{OutlineStyle@{OutlineStyle}!Legend@{Legend}}
+\doxysubsubsection{\texorpdfstring{OutlineStyle}{OutlineStyle}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classLineStyle}{Line\+Style}} Legend.\+Outline\+Style = new() \{ Width = 1, \mbox{\hyperlink{structColor}{Color}} = \mbox{\hyperlink{structColors_a6a4f09e77ec6d0ef4c08348eb2e21714}{Colors.\+Black}}, \}\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classLegend_a35866327fd57f5f59f190be7048e1193}\label{classLegend_a35866327fd57f5f59f190be7048e1193}} 
+\index{Legend@{Legend}!OutlineWidth@{OutlineWidth}}
+\index{OutlineWidth@{OutlineWidth}!Legend@{Legend}}
+\doxysubsubsection{\texorpdfstring{OutlineWidth}{OutlineWidth}}
+{\footnotesize\ttfamily float Legend.\+Outline\+Width\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classLegend_a4eb1a0ef5ca8f548bcf1fc3a2e2ac521}\label{classLegend_a4eb1a0ef5ca8f548bcf1fc3a2e2ac521}} 
+\index{Legend@{Legend}!Padding@{Padding}}
+\index{Padding@{Padding}!Legend@{Legend}}
+\doxysubsubsection{\texorpdfstring{Padding}{Padding}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structPixelPadding}{Pixel\+Padding}} Legend.\+Padding = new(10, 5)\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Distance between the legend frame and the items within it 
+
+\mbox{\Hypertarget{classLegend_a1d6c290a8c6597fe8930b337df97872a}\label{classLegend_a1d6c290a8c6597fe8930b337df97872a}} 
+\index{Legend@{Legend}!plot@{plot}}
+\index{plot@{plot}!Legend@{Legend}}
+\doxysubsubsection{\texorpdfstring{plot}{plot}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPlot}{Plot}} Legend.\+plot\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classLegend_ac2abfc142d1bc5ba0954d3cb78fc78ee}\label{classLegend_ac2abfc142d1bc5ba0954d3cb78fc78ee}} 
+\index{Legend@{Legend}!Plot@{Plot}}
+\index{Plot@{Plot}!Legend@{Legend}}
+\doxysubsubsection{\texorpdfstring{Plot}{Plot}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPlot}{Plot}} Legend.\+Plot = \mbox{\hyperlink{classLegend_a1d6c290a8c6597fe8930b337df97872a}{plot}}\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{classLegend_a3a8fa626e842a6a449e8c167d3f1e8cc}\label{classLegend_a3a8fa626e842a6a449e8c167d3f1e8cc}} 
+\index{Legend@{Legend}!SetBestFontOnEachRender@{SetBestFontOnEachRender}}
+\index{SetBestFontOnEachRender@{SetBestFontOnEachRender}!Legend@{Legend}}
+\doxysubsubsection{\texorpdfstring{SetBestFontOnEachRender}{SetBestFontOnEachRender}}
+{\footnotesize\ttfamily bool Legend.\+Set\+Best\+Font\+On\+Each\+Render = false\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Enabling this allows multi-\/language text in the figure legend, but may slow down the render loop. 
+
+\mbox{\Hypertarget{classLegend_a93424a3ff1393d72a228b96e7b833843}\label{classLegend_a93424a3ff1393d72a228b96e7b833843}} 
+\index{Legend@{Legend}!ShadowAlignment@{ShadowAlignment}}
+\index{ShadowAlignment@{ShadowAlignment}!Legend@{Legend}}
+\doxysubsubsection{\texorpdfstring{ShadowAlignment}{ShadowAlignment}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classLegend_a9a20aeb0d2ed443cd5435788d2a5b3a5}{Alignment}} Legend.\+Shadow\+Alignment = Alignment.\+Lower\+Right\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classLegend_ae271d7755d5b5d0e270f0e8497d9a07f}\label{classLegend_ae271d7755d5b5d0e270f0e8497d9a07f}} 
+\index{Legend@{Legend}!ShadowColor@{ShadowColor}}
+\index{ShadowColor@{ShadowColor}!Legend@{Legend}}
+\doxysubsubsection{\texorpdfstring{ShadowColor}{ShadowColor}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structColor}{Color}} Legend.\+Shadow\+Color\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classLegend_ad884a265286ba0e8005396a6b4f5b325}\label{classLegend_ad884a265286ba0e8005396a6b4f5b325}} 
+\index{Legend@{Legend}!ShadowFill@{ShadowFill}}
+\index{ShadowFill@{ShadowFill}!Legend@{Legend}}
+\doxysubsubsection{\texorpdfstring{ShadowFill}{ShadowFill}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classFillStyle}{Fill\+Style}} Legend.\+Shadow\+Fill\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classLegend_a216aa76f9a61b6caaeca28df01bcef62}\label{classLegend_a216aa76f9a61b6caaeca28df01bcef62}} 
+\index{Legend@{Legend}!ShadowFillStyle@{ShadowFillStyle}}
+\index{ShadowFillStyle@{ShadowFillStyle}!Legend@{Legend}}
+\doxysubsubsection{\texorpdfstring{ShadowFillStyle}{ShadowFillStyle}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classFillStyle}{Fill\+Style}} Legend.\+Shadow\+Fill\+Style = new() \{ \mbox{\hyperlink{structColor}{Color}} = Colors.\+Black.\+With\+Opacity(.\+2) \}\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{classLegend_abf8132ff21546b6514dbcff0092c599b}\label{classLegend_abf8132ff21546b6514dbcff0092c599b}} 
+\index{Legend@{Legend}!ShadowOffset@{ShadowOffset}}
+\index{ShadowOffset@{ShadowOffset}!Legend@{Legend}}
+\doxysubsubsection{\texorpdfstring{ShadowOffset}{ShadowOffset}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structPixelOffset}{Pixel\+Offset}} Legend.\+Shadow\+Offset = new(3, 3)\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classLegend_afc388b0ee1ad82d42e65dbae0b9b393a}\label{classLegend_afc388b0ee1ad82d42e65dbae0b9b393a}} 
+\index{Legend@{Legend}!ShowItemRectangles\_DEBUG@{ShowItemRectangles\_DEBUG}}
+\index{ShowItemRectangles\_DEBUG@{ShowItemRectangles\_DEBUG}!Legend@{Legend}}
+\doxysubsubsection{\texorpdfstring{ShowItemRectangles\_DEBUG}{ShowItemRectangles\_DEBUG}}
+{\footnotesize\ttfamily bool Legend.\+Show\+Item\+Rectangles\+\_\+\+DEBUG = false\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classLegend_addc0218b04a2ec0dd30209560a084c4b}\label{classLegend_addc0218b04a2ec0dd30209560a084c4b}} 
+\index{Legend@{Legend}!SymbolPadding@{SymbolPadding}}
+\index{SymbolPadding@{SymbolPadding}!Legend@{Legend}}
+\doxysubsubsection{\texorpdfstring{SymbolPadding}{SymbolPadding}}
+{\footnotesize\ttfamily float Legend.\+Symbol\+Padding = 5\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Padding between a symbol and label within a legend item 
+
+\mbox{\Hypertarget{classLegend_ab53a728df98b7b9f4528480fd1709a44}\label{classLegend_ab53a728df98b7b9f4528480fd1709a44}} 
+\index{Legend@{Legend}!SymbolWidth@{SymbolWidth}}
+\index{SymbolWidth@{SymbolWidth}!Legend@{Legend}}
+\doxysubsubsection{\texorpdfstring{SymbolWidth}{SymbolWidth}}
+{\footnotesize\ttfamily float Legend.\+Symbol\+Width = 20\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Width of the symbol in a legend item 
+
+\mbox{\Hypertarget{classLegend_aea67a8d9f766627f87d16dc9c38b33c3}\label{classLegend_aea67a8d9f766627f87d16dc9c38b33c3}} 
+\index{Legend@{Legend}!TightHorizontalWrapping@{TightHorizontalWrapping}}
+\index{TightHorizontalWrapping@{TightHorizontalWrapping}!Legend@{Legend}}
+\doxysubsubsection{\texorpdfstring{TightHorizontalWrapping}{TightHorizontalWrapping}}
+{\footnotesize\ttfamily bool Legend.\+Tight\+Horizontal\+Wrapping = false\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+If enabled, items in horizontal oriented legends will not be aligned in columns but instead resized tightly to fit their contents 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Primitives/Legend.\+cs\end{DoxyCompactItemize}

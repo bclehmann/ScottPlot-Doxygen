@@ -1,0 +1,149 @@
+\hypertarget{classCanvasState}{}\doxysection{Canvas\+State Class Reference}
+\label{classCanvasState}\index{CanvasState@{CanvasState}}
+
+
+This object manages wraps a SKCanvas and manages calls to \mbox{\hyperlink{namespaceSkiaSharp}{Skia\+Sharp}} methods to ensure state is tracked across complex render systems.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classCanvasState_a4c93c6f7fbca46364d60b7332677d266}{Save}} ()
+\begin{DoxyCompactList}\small\item\em Save the current state of the canvas. This state can be recalled by calling \mbox{\hyperlink{classCanvasState_a223228be9ace02dddc44b565c8ffc232}{Restore}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCanvasState_a223228be9ace02dddc44b565c8ffc232}{Restore}} ()
+\begin{DoxyCompactList}\small\item\em Restore the canvas to the state the last time \mbox{\hyperlink{classCanvasState_a4c93c6f7fbca46364d60b7332677d266}{Save}} was called. This method will throw if a canvas is restored more times than it was saved. Use the \mbox{\hyperlink{classCanvasState_ac089bbde4f7982b19492dc24e30c0072}{Restore\+All}} method to restore a canvas to its original state if the number of saves is unknown. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCanvasState_ac089bbde4f7982b19492dc24e30c0072}{Restore\+All}} ()
+\begin{DoxyCompactList}\small\item\em Restore the canvas to its original state, regardless of how many times \mbox{\hyperlink{classCanvasState_a4c93c6f7fbca46364d60b7332677d266}{Save}} was called. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCanvasState_a09730d315abc7354a94d50e52a5e0c96}{Disable\+Clipping}} ()
+\begin{DoxyCompactList}\small\item\em Restore the canvas to its original state. Disables all clipping and transformations. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCanvasState_af26f5a5cead5b434f5bb103a3d4d8b38}{Clip}} (\mbox{\hyperlink{structPixelRect}{Pixel\+Rect}} rect)
+\begin{DoxyCompactList}\small\item\em Clip the canvas so drawing will only occur within the given rectangle. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCanvasState_a9f37325f010b5198ed1b717ed3f3cac3}{Translate}} (\mbox{\hyperlink{structPixel}{Pixel}} px)
+\item 
+void \mbox{\hyperlink{classCanvasState_abc1bd9a4757a41b0e2fb2319dfdaf4d5}{Rotate\+Degrees}} (double degrees)
+\item 
+void \mbox{\hyperlink{classCanvasState_a523fc2a87ada29d2c71b2ddfd7181276}{Rotate\+Degrees}} (double degrees, \mbox{\hyperlink{structPixel}{Pixel}} px)
+\item 
+void \mbox{\hyperlink{classCanvasState_a125371b80c8286e810c403caa608baa5}{Rotate\+Radians}} (double radians)
+\item 
+void \mbox{\hyperlink{classCanvasState_a21ce0e176363ca99b3bb55058e7afa94}{Rotate\+Radians}} (double radians, \mbox{\hyperlink{structPixel}{Pixel}} px)
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+SKCanvas \mbox{\hyperlink{classCanvasState_af3aab3ca5427ff3df2069a3794597ff2}{canvas}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+int \mbox{\hyperlink{classCanvasState_aafdf50cf4d4922ae6783f2ae1c0a0c42}{Save\+Levels}} = 0\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Number of times \mbox{\hyperlink{classCanvasState_a4c93c6f7fbca46364d60b7332677d266}{Save}} was called without \mbox{\hyperlink{classCanvasState_a223228be9ace02dddc44b565c8ffc232}{Restore}} \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This object manages wraps a SKCanvas and manages calls to \mbox{\hyperlink{namespaceSkiaSharp}{Skia\+Sharp}} methods to ensure state is tracked across complex render systems. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classCanvasState_af26f5a5cead5b434f5bb103a3d4d8b38}\label{classCanvasState_af26f5a5cead5b434f5bb103a3d4d8b38}} 
+\index{CanvasState@{CanvasState}!Clip@{Clip}}
+\index{Clip@{Clip}!CanvasState@{CanvasState}}
+\doxysubsubsection{\texorpdfstring{Clip()}{Clip()}}
+{\footnotesize\ttfamily void Canvas\+State.\+Clip (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPixelRect}{Pixel\+Rect}}}]{rect }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Clip the canvas so drawing will only occur within the given rectangle. 
+
+\mbox{\Hypertarget{classCanvasState_a09730d315abc7354a94d50e52a5e0c96}\label{classCanvasState_a09730d315abc7354a94d50e52a5e0c96}} 
+\index{CanvasState@{CanvasState}!DisableClipping@{DisableClipping}}
+\index{DisableClipping@{DisableClipping}!CanvasState@{CanvasState}}
+\doxysubsubsection{\texorpdfstring{DisableClipping()}{DisableClipping()}}
+{\footnotesize\ttfamily void Canvas\+State.\+Disable\+Clipping (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Restore the canvas to its original state. Disables all clipping and transformations. 
+
+\mbox{\Hypertarget{classCanvasState_a223228be9ace02dddc44b565c8ffc232}\label{classCanvasState_a223228be9ace02dddc44b565c8ffc232}} 
+\index{CanvasState@{CanvasState}!Restore@{Restore}}
+\index{Restore@{Restore}!CanvasState@{CanvasState}}
+\doxysubsubsection{\texorpdfstring{Restore()}{Restore()}}
+{\footnotesize\ttfamily void Canvas\+State.\+Restore (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Restore the canvas to the state the last time \mbox{\hyperlink{classCanvasState_a4c93c6f7fbca46364d60b7332677d266}{Save}} was called. This method will throw if a canvas is restored more times than it was saved. Use the \mbox{\hyperlink{classCanvasState_ac089bbde4f7982b19492dc24e30c0072}{Restore\+All}} method to restore a canvas to its original state if the number of saves is unknown. 
+
+\mbox{\Hypertarget{classCanvasState_ac089bbde4f7982b19492dc24e30c0072}\label{classCanvasState_ac089bbde4f7982b19492dc24e30c0072}} 
+\index{CanvasState@{CanvasState}!RestoreAll@{RestoreAll}}
+\index{RestoreAll@{RestoreAll}!CanvasState@{CanvasState}}
+\doxysubsubsection{\texorpdfstring{RestoreAll()}{RestoreAll()}}
+{\footnotesize\ttfamily void Canvas\+State.\+Restore\+All (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Restore the canvas to its original state, regardless of how many times \mbox{\hyperlink{classCanvasState_a4c93c6f7fbca46364d60b7332677d266}{Save}} was called. 
+
+\mbox{\Hypertarget{classCanvasState_abc1bd9a4757a41b0e2fb2319dfdaf4d5}\label{classCanvasState_abc1bd9a4757a41b0e2fb2319dfdaf4d5}} 
+\index{CanvasState@{CanvasState}!RotateDegrees@{RotateDegrees}}
+\index{RotateDegrees@{RotateDegrees}!CanvasState@{CanvasState}}
+\doxysubsubsection{\texorpdfstring{RotateDegrees()}{RotateDegrees()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Canvas\+State.\+Rotate\+Degrees (\begin{DoxyParamCaption}\item[{double}]{degrees }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCanvasState_a523fc2a87ada29d2c71b2ddfd7181276}\label{classCanvasState_a523fc2a87ada29d2c71b2ddfd7181276}} 
+\index{CanvasState@{CanvasState}!RotateDegrees@{RotateDegrees}}
+\index{RotateDegrees@{RotateDegrees}!CanvasState@{CanvasState}}
+\doxysubsubsection{\texorpdfstring{RotateDegrees()}{RotateDegrees()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Canvas\+State.\+Rotate\+Degrees (\begin{DoxyParamCaption}\item[{double}]{degrees,  }\item[{\mbox{\hyperlink{structPixel}{Pixel}}}]{px }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCanvasState_a125371b80c8286e810c403caa608baa5}\label{classCanvasState_a125371b80c8286e810c403caa608baa5}} 
+\index{CanvasState@{CanvasState}!RotateRadians@{RotateRadians}}
+\index{RotateRadians@{RotateRadians}!CanvasState@{CanvasState}}
+\doxysubsubsection{\texorpdfstring{RotateRadians()}{RotateRadians()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Canvas\+State.\+Rotate\+Radians (\begin{DoxyParamCaption}\item[{double}]{radians }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCanvasState_a21ce0e176363ca99b3bb55058e7afa94}\label{classCanvasState_a21ce0e176363ca99b3bb55058e7afa94}} 
+\index{CanvasState@{CanvasState}!RotateRadians@{RotateRadians}}
+\index{RotateRadians@{RotateRadians}!CanvasState@{CanvasState}}
+\doxysubsubsection{\texorpdfstring{RotateRadians()}{RotateRadians()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Canvas\+State.\+Rotate\+Radians (\begin{DoxyParamCaption}\item[{double}]{radians,  }\item[{\mbox{\hyperlink{structPixel}{Pixel}}}]{px }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCanvasState_a4c93c6f7fbca46364d60b7332677d266}\label{classCanvasState_a4c93c6f7fbca46364d60b7332677d266}} 
+\index{CanvasState@{CanvasState}!Save@{Save}}
+\index{Save@{Save}!CanvasState@{CanvasState}}
+\doxysubsubsection{\texorpdfstring{Save()}{Save()}}
+{\footnotesize\ttfamily void Canvas\+State.\+Save (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Save the current state of the canvas. This state can be recalled by calling \mbox{\hyperlink{classCanvasState_a223228be9ace02dddc44b565c8ffc232}{Restore}}. 
+
+\mbox{\Hypertarget{classCanvasState_a9f37325f010b5198ed1b717ed3f3cac3}\label{classCanvasState_a9f37325f010b5198ed1b717ed3f3cac3}} 
+\index{CanvasState@{CanvasState}!Translate@{Translate}}
+\index{Translate@{Translate}!CanvasState@{CanvasState}}
+\doxysubsubsection{\texorpdfstring{Translate()}{Translate()}}
+{\footnotesize\ttfamily void Canvas\+State.\+Translate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPixel}{Pixel}}}]{px }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{classCanvasState_af3aab3ca5427ff3df2069a3794597ff2}\label{classCanvasState_af3aab3ca5427ff3df2069a3794597ff2}} 
+\index{CanvasState@{CanvasState}!canvas@{canvas}}
+\index{canvas@{canvas}!CanvasState@{CanvasState}}
+\doxysubsubsection{\texorpdfstring{canvas}{canvas}}
+{\footnotesize\ttfamily SKCanvas Canvas\+State.\+canvas\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classCanvasState_aafdf50cf4d4922ae6783f2ae1c0a0c42}\label{classCanvasState_aafdf50cf4d4922ae6783f2ae1c0a0c42}} 
+\index{CanvasState@{CanvasState}!SaveLevels@{SaveLevels}}
+\index{SaveLevels@{SaveLevels}!CanvasState@{CanvasState}}
+\doxysubsubsection{\texorpdfstring{SaveLevels}{SaveLevels}}
+{\footnotesize\ttfamily int Canvas\+State.\+Save\+Levels = 0\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Number of times \mbox{\hyperlink{classCanvasState_a4c93c6f7fbca46364d60b7332677d266}{Save}} was called without \mbox{\hyperlink{classCanvasState_a223228be9ace02dddc44b565c8ffc232}{Restore}} 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Primitives/Canvas\+State.\+cs\end{DoxyCompactItemize}

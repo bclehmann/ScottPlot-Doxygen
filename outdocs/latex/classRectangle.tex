@@ -1,0 +1,201 @@
+\hypertarget{classRectangle}{}\doxysection{Rectangle Class Reference}
+\label{classRectangle}\index{Rectangle@{Rectangle}}
+Inheritance diagram for Rectangle\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classRectangle}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} \mbox{\hyperlink{classRectangle_a411be5483faff7cb8da87cdee5aeb00b}{Get\+Axis\+Limits}} ()
+\begin{DoxyCompactList}\small\item\em Return the 2D area (in coordinate space) occupied by the data contained in this plottable \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classRectangle_a83b435f93a76099abe83dd2a5ab587e1}{Render}} (\mbox{\hyperlink{classRenderPack}{Render\+Pack}} rp)
+\begin{DoxyCompactList}\small\item\em Draw the data from this plottable into the data area defined in the \mbox{\hyperlink{classAxes}{Axes}}. By default the surface is already clipped to the data area, but this can be cleared inside the plottable. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classRectangle_a4d21f3e7876f067a0dc16fc14126f6c1}{Is\+Visible}} = true\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{interfaceIAxes}{IAxes}} \mbox{\hyperlink{classRectangle_a9b6e7a06656af10fe4d9202104c90d99}{Axes}} = new \mbox{\hyperlink{classAxes}{Axes}}()\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$ \mbox{\hyperlink{classLegendItem}{Legend\+Item}} $>$ \mbox{\hyperlink{classRectangle_a926f0f75b273e435df276a67098e6949}{Legend\+Items}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{classLineStyle}{Line\+Style}} \mbox{\hyperlink{classRectangle_a72bd1aed4178862814be370327d389e7}{Line\+Style}} = new() \{ Width = 1 \}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{classRectangle_a8d695a73eaa19a25f738f89aa0afd6d2}{Line\+Width}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+Line\+Pattern \mbox{\hyperlink{classRectangle_af4e19ad45b4e24f43e793ba4cc5992f3}{Line\+Pattern}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{structColor}{Color}} \mbox{\hyperlink{classRectangle_a050291d1190396b7d9a73813c6374c1b}{Line\+Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{classFillStyle}{Fill\+Style}} \mbox{\hyperlink{classRectangle_ae1933f505813f0053f71b097e3e1286e}{Fill\+Style}} = new()\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{structColor}{Color}} \mbox{\hyperlink{classRectangle_a0c924b1ce292a996d7253721b1e1c12d}{Fill\+Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{structColor}{Color}} \mbox{\hyperlink{classRectangle_aa09aed81fc170f79bb411d1991426d60}{Fill\+Hatch\+Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{interfaceIHatch}{IHatch}}? \mbox{\hyperlink{classRectangle_a6fbcb24a8eb93f36662e65099db07ac7}{Fill\+Hatch}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+string \mbox{\hyperlink{classRectangle_a586d8afaf2b052648a70ab349cad5262}{Label}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+string \mbox{\hyperlink{classRectangle_a5e32799f6421a4f187fcfce0b4ae1496}{Legend\+Text}} = string.\+Empty\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+double \mbox{\hyperlink{classRectangle_a97f582f90efe38675578a51f64d09fff}{X1}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+double \mbox{\hyperlink{classRectangle_ac5d88d8c0817aad9e6e9b57bdab75471}{X2}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+double \mbox{\hyperlink{classRectangle_a65d871f4b875a2d2b1f10e920c901e57}{Y1}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+double \mbox{\hyperlink{classRectangle_afa58c89451f72e15c92694d111f2f5b5}{Y2}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{structCoordinateRect}{Coordinate\+Rect}} \mbox{\hyperlink{classRectangle_a05a59063fdf3a89600ec4b83aff923ec}{Coordinate\+Rect}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classRectangle_a411be5483faff7cb8da87cdee5aeb00b}\label{classRectangle_a411be5483faff7cb8da87cdee5aeb00b}} 
+\index{Rectangle@{Rectangle}!GetAxisLimits@{GetAxisLimits}}
+\index{GetAxisLimits@{GetAxisLimits}!Rectangle@{Rectangle}}
+\doxysubsubsection{\texorpdfstring{GetAxisLimits()}{GetAxisLimits()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} Rectangle.\+Get\+Axis\+Limits (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Return the 2D area (in coordinate space) occupied by the data contained in this plottable 
+
+
+
+Implements \mbox{\hyperlink{interfaceIPlottable_ac98e2f5e56f9f938bbd081c87c7c6f50}{IPlottable}}.
+
+\mbox{\Hypertarget{classRectangle_a83b435f93a76099abe83dd2a5ab587e1}\label{classRectangle_a83b435f93a76099abe83dd2a5ab587e1}} 
+\index{Rectangle@{Rectangle}!Render@{Render}}
+\index{Render@{Render}!Rectangle@{Rectangle}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily virtual void Rectangle.\+Render (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classRenderPack}{Render\+Pack}}}]{rp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Draw the data from this plottable into the data area defined in the \mbox{\hyperlink{classAxes}{Axes}}. By default the surface is already clipped to the data area, but this can be cleared inside the plottable. 
+
+
+
+Implements \mbox{\hyperlink{interfaceIPlottable_a201a1a236dc718eda93db143a5ade9f8}{IPlottable}}.
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{classRectangle_a9b6e7a06656af10fe4d9202104c90d99}\label{classRectangle_a9b6e7a06656af10fe4d9202104c90d99}} 
+\index{Rectangle@{Rectangle}!Axes@{Axes}}
+\index{Axes@{Axes}!Rectangle@{Rectangle}}
+\doxysubsubsection{\texorpdfstring{Axes}{Axes}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceIAxes}{IAxes}} Rectangle.\+Axes = new \mbox{\hyperlink{classAxes}{Axes}}()\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classRectangle_a05a59063fdf3a89600ec4b83aff923ec}\label{classRectangle_a05a59063fdf3a89600ec4b83aff923ec}} 
+\index{Rectangle@{Rectangle}!CoordinateRect@{CoordinateRect}}
+\index{CoordinateRect@{CoordinateRect}!Rectangle@{Rectangle}}
+\doxysubsubsection{\texorpdfstring{CoordinateRect}{CoordinateRect}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structCoordinateRect}{Coordinate\+Rect}} Rectangle.\+Coordinate\+Rect\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classRectangle_a0c924b1ce292a996d7253721b1e1c12d}\label{classRectangle_a0c924b1ce292a996d7253721b1e1c12d}} 
+\index{Rectangle@{Rectangle}!FillColor@{FillColor}}
+\index{FillColor@{FillColor}!Rectangle@{Rectangle}}
+\doxysubsubsection{\texorpdfstring{FillColor}{FillColor}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structColor}{Color}} Rectangle.\+Fill\+Color\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classRectangle_a6fbcb24a8eb93f36662e65099db07ac7}\label{classRectangle_a6fbcb24a8eb93f36662e65099db07ac7}} 
+\index{Rectangle@{Rectangle}!FillHatch@{FillHatch}}
+\index{FillHatch@{FillHatch}!Rectangle@{Rectangle}}
+\doxysubsubsection{\texorpdfstring{FillHatch}{FillHatch}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceIHatch}{IHatch}}? Rectangle.\+Fill\+Hatch\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classRectangle_aa09aed81fc170f79bb411d1991426d60}\label{classRectangle_aa09aed81fc170f79bb411d1991426d60}} 
+\index{Rectangle@{Rectangle}!FillHatchColor@{FillHatchColor}}
+\index{FillHatchColor@{FillHatchColor}!Rectangle@{Rectangle}}
+\doxysubsubsection{\texorpdfstring{FillHatchColor}{FillHatchColor}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structColor}{Color}} Rectangle.\+Fill\+Hatch\+Color\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classRectangle_ae1933f505813f0053f71b097e3e1286e}\label{classRectangle_ae1933f505813f0053f71b097e3e1286e}} 
+\index{Rectangle@{Rectangle}!FillStyle@{FillStyle}}
+\index{FillStyle@{FillStyle}!Rectangle@{Rectangle}}
+\doxysubsubsection{\texorpdfstring{FillStyle}{FillStyle}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classFillStyle}{Fill\+Style}} Rectangle.\+Fill\+Style = new()\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classRectangle_a4d21f3e7876f067a0dc16fc14126f6c1}\label{classRectangle_a4d21f3e7876f067a0dc16fc14126f6c1}} 
+\index{Rectangle@{Rectangle}!IsVisible@{IsVisible}}
+\index{IsVisible@{IsVisible}!Rectangle@{Rectangle}}
+\doxysubsubsection{\texorpdfstring{IsVisible}{IsVisible}}
+{\footnotesize\ttfamily bool Rectangle.\+Is\+Visible = true\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classRectangle_a586d8afaf2b052648a70ab349cad5262}\label{classRectangle_a586d8afaf2b052648a70ab349cad5262}} 
+\index{Rectangle@{Rectangle}!Label@{Label}}
+\index{Label@{Label}!Rectangle@{Rectangle}}
+\doxysubsubsection{\texorpdfstring{Label}{Label}}
+{\footnotesize\ttfamily string Rectangle.\+Label\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classRectangle_a926f0f75b273e435df276a67098e6949}\label{classRectangle_a926f0f75b273e435df276a67098e6949}} 
+\index{Rectangle@{Rectangle}!LegendItems@{LegendItems}}
+\index{LegendItems@{LegendItems}!Rectangle@{Rectangle}}
+\doxysubsubsection{\texorpdfstring{LegendItems}{LegendItems}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$\mbox{\hyperlink{classLegendItem}{Legend\+Item}}$>$ Rectangle.\+Legend\+Items\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{classRectangle_a5e32799f6421a4f187fcfce0b4ae1496}\label{classRectangle_a5e32799f6421a4f187fcfce0b4ae1496}} 
+\index{Rectangle@{Rectangle}!LegendText@{LegendText}}
+\index{LegendText@{LegendText}!Rectangle@{Rectangle}}
+\doxysubsubsection{\texorpdfstring{LegendText}{LegendText}}
+{\footnotesize\ttfamily string Rectangle.\+Legend\+Text = string.\+Empty\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classRectangle_a050291d1190396b7d9a73813c6374c1b}\label{classRectangle_a050291d1190396b7d9a73813c6374c1b}} 
+\index{Rectangle@{Rectangle}!LineColor@{LineColor}}
+\index{LineColor@{LineColor}!Rectangle@{Rectangle}}
+\doxysubsubsection{\texorpdfstring{LineColor}{LineColor}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structColor}{Color}} Rectangle.\+Line\+Color\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classRectangle_af4e19ad45b4e24f43e793ba4cc5992f3}\label{classRectangle_af4e19ad45b4e24f43e793ba4cc5992f3}} 
+\index{Rectangle@{Rectangle}!LinePattern@{LinePattern}}
+\index{LinePattern@{LinePattern}!Rectangle@{Rectangle}}
+\doxysubsubsection{\texorpdfstring{LinePattern}{LinePattern}}
+{\footnotesize\ttfamily Line\+Pattern Rectangle.\+Line\+Pattern\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classRectangle_a72bd1aed4178862814be370327d389e7}\label{classRectangle_a72bd1aed4178862814be370327d389e7}} 
+\index{Rectangle@{Rectangle}!LineStyle@{LineStyle}}
+\index{LineStyle@{LineStyle}!Rectangle@{Rectangle}}
+\doxysubsubsection{\texorpdfstring{LineStyle}{LineStyle}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classLineStyle}{Line\+Style}} Rectangle.\+Line\+Style = new() \{ Width = 1 \}\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classRectangle_a8d695a73eaa19a25f738f89aa0afd6d2}\label{classRectangle_a8d695a73eaa19a25f738f89aa0afd6d2}} 
+\index{Rectangle@{Rectangle}!LineWidth@{LineWidth}}
+\index{LineWidth@{LineWidth}!Rectangle@{Rectangle}}
+\doxysubsubsection{\texorpdfstring{LineWidth}{LineWidth}}
+{\footnotesize\ttfamily float Rectangle.\+Line\+Width\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classRectangle_a97f582f90efe38675578a51f64d09fff}\label{classRectangle_a97f582f90efe38675578a51f64d09fff}} 
+\index{Rectangle@{Rectangle}!X1@{X1}}
+\index{X1@{X1}!Rectangle@{Rectangle}}
+\doxysubsubsection{\texorpdfstring{X1}{X1}}
+{\footnotesize\ttfamily double Rectangle.\+X1\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classRectangle_ac5d88d8c0817aad9e6e9b57bdab75471}\label{classRectangle_ac5d88d8c0817aad9e6e9b57bdab75471}} 
+\index{Rectangle@{Rectangle}!X2@{X2}}
+\index{X2@{X2}!Rectangle@{Rectangle}}
+\doxysubsubsection{\texorpdfstring{X2}{X2}}
+{\footnotesize\ttfamily double Rectangle.\+X2\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classRectangle_a65d871f4b875a2d2b1f10e920c901e57}\label{classRectangle_a65d871f4b875a2d2b1f10e920c901e57}} 
+\index{Rectangle@{Rectangle}!Y1@{Y1}}
+\index{Y1@{Y1}!Rectangle@{Rectangle}}
+\doxysubsubsection{\texorpdfstring{Y1}{Y1}}
+{\footnotesize\ttfamily double Rectangle.\+Y1\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classRectangle_afa58c89451f72e15c92694d111f2f5b5}\label{classRectangle_afa58c89451f72e15c92694d111f2f5b5}} 
+\index{Rectangle@{Rectangle}!Y2@{Y2}}
+\index{Y2@{Y2}!Rectangle@{Rectangle}}
+\doxysubsubsection{\texorpdfstring{Y2}{Y2}}
+{\footnotesize\ttfamily double Rectangle.\+Y2\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Plottables/Rectangle.\+cs\end{DoxyCompactItemize}

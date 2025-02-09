@@ -1,0 +1,132 @@
+\hypertarget{classHorizontalSpan}{}\doxysection{Horizontal\+Span Class Reference}
+\label{classHorizontalSpan}\index{HorizontalSpan@{HorizontalSpan}}
+
+
+A horizontal span marks the full vertical range between two horizontal values  
+
+
+Inheritance diagram for Horizontal\+Span\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classHorizontalSpan}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override \mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} \mbox{\hyperlink{classHorizontalSpan_adb7bad9cacc15e6faa4cf9e3f6c82441}{Get\+Axis\+Limits}} ()
+\begin{DoxyCompactList}\small\item\em Return the 2D area (in coordinate space) occupied by the data contained in this plottable \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{classHorizontalSpan_ac19ab44605844dd9e6b8cfe8804eb9a6}{Render}} (\mbox{\hyperlink{classRenderPack}{Render\+Pack}} rp)
+\begin{DoxyCompactList}\small\item\em Draw the data from this plottable into the data area defined in the \mbox{\hyperlink{classAxes}{Axes}}. By default the surface is already clipped to the data area, but this can be cleared inside the plottable. \end{DoxyCompactList}\item 
+override? \mbox{\hyperlink{classAxisSpanUnderMouse}{Axis\+Span\+Under\+Mouse}} \mbox{\hyperlink{classHorizontalSpan_af62c273759c9c08db7518707e1c22fe0}{Under\+Mouse}} (\mbox{\hyperlink{structCoordinateRect}{Coordinate\+Rect}} rect)
+\item 
+override void \mbox{\hyperlink{classHorizontalSpan_ae2cc726e4212417964124c1532a129e8}{Drag\+To}} (\mbox{\hyperlink{classAxisSpanUnderMouse}{Axis\+Span\+Under\+Mouse}} span\+Under\+Mouse, \mbox{\hyperlink{structCoordinates}{Coordinates}} mouse\+Now)
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{classHorizontalSpan_a0f68ccdd8627a6fde13860f2bac48032}{X1}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+double \mbox{\hyperlink{classHorizontalSpan_a62bb291541b53772ad45ec49cc3c4109}{X2}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{structCoordinateRange}{Coordinate\+Range}} \mbox{\hyperlink{classHorizontalSpan_a1fed79e43c4851241cc40cde5e2566c2}{XRange}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+double \mbox{\hyperlink{classHorizontalSpan_a20941342c865a1f3066ef246fe740141}{Left}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+double \mbox{\hyperlink{classHorizontalSpan_a30d54055dbae168ba066db3d232945be}{Right}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A horizontal span marks the full vertical range between two horizontal values 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classHorizontalSpan_ae2cc726e4212417964124c1532a129e8}\label{classHorizontalSpan_ae2cc726e4212417964124c1532a129e8}} 
+\index{HorizontalSpan@{HorizontalSpan}!DragTo@{DragTo}}
+\index{DragTo@{DragTo}!HorizontalSpan@{HorizontalSpan}}
+\doxysubsubsection{\texorpdfstring{DragTo()}{DragTo()}}
+{\footnotesize\ttfamily override void Horizontal\+Span.\+Drag\+To (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classAxisSpanUnderMouse}{Axis\+Span\+Under\+Mouse}}}]{span\+Under\+Mouse,  }\item[{\mbox{\hyperlink{structCoordinates}{Coordinates}}}]{mouse\+Now }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classAxisSpan_aceeba7d9a3f00b3cfdd6e0a1ed9a2909}{Axis\+Span}}.
+
+\mbox{\Hypertarget{classHorizontalSpan_adb7bad9cacc15e6faa4cf9e3f6c82441}\label{classHorizontalSpan_adb7bad9cacc15e6faa4cf9e3f6c82441}} 
+\index{HorizontalSpan@{HorizontalSpan}!GetAxisLimits@{GetAxisLimits}}
+\index{GetAxisLimits@{GetAxisLimits}!HorizontalSpan@{HorizontalSpan}}
+\doxysubsubsection{\texorpdfstring{GetAxisLimits()}{GetAxisLimits()}}
+{\footnotesize\ttfamily override \mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} Horizontal\+Span.\+Get\+Axis\+Limits (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return the 2D area (in coordinate space) occupied by the data contained in this plottable 
+
+
+
+Implements \mbox{\hyperlink{interfaceIPlottable_ac98e2f5e56f9f938bbd081c87c7c6f50}{IPlottable}}.
+
+\mbox{\Hypertarget{classHorizontalSpan_ac19ab44605844dd9e6b8cfe8804eb9a6}\label{classHorizontalSpan_ac19ab44605844dd9e6b8cfe8804eb9a6}} 
+\index{HorizontalSpan@{HorizontalSpan}!Render@{Render}}
+\index{Render@{Render}!HorizontalSpan@{HorizontalSpan}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily override void Horizontal\+Span.\+Render (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classRenderPack}{Render\+Pack}}}]{rp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Draw the data from this plottable into the data area defined in the \mbox{\hyperlink{classAxes}{Axes}}. By default the surface is already clipped to the data area, but this can be cleared inside the plottable. 
+
+
+
+Implements \mbox{\hyperlink{interfaceIPlottable_a201a1a236dc718eda93db143a5ade9f8}{IPlottable}}.
+
+\mbox{\Hypertarget{classHorizontalSpan_af62c273759c9c08db7518707e1c22fe0}\label{classHorizontalSpan_af62c273759c9c08db7518707e1c22fe0}} 
+\index{HorizontalSpan@{HorizontalSpan}!UnderMouse@{UnderMouse}}
+\index{UnderMouse@{UnderMouse}!HorizontalSpan@{HorizontalSpan}}
+\doxysubsubsection{\texorpdfstring{UnderMouse()}{UnderMouse()}}
+{\footnotesize\ttfamily override? \mbox{\hyperlink{classAxisSpanUnderMouse}{Axis\+Span\+Under\+Mouse}} Horizontal\+Span.\+Under\+Mouse (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structCoordinateRect}{Coordinate\+Rect}}}]{rect }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classAxisSpan_ab029998dabe75fa807cdd10ccb1ca554}{Axis\+Span}}.
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{classHorizontalSpan_a20941342c865a1f3066ef246fe740141}\label{classHorizontalSpan_a20941342c865a1f3066ef246fe740141}} 
+\index{HorizontalSpan@{HorizontalSpan}!Left@{Left}}
+\index{Left@{Left}!HorizontalSpan@{HorizontalSpan}}
+\doxysubsubsection{\texorpdfstring{Left}{Left}}
+{\footnotesize\ttfamily double Horizontal\+Span.\+Left\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classHorizontalSpan_a30d54055dbae168ba066db3d232945be}\label{classHorizontalSpan_a30d54055dbae168ba066db3d232945be}} 
+\index{HorizontalSpan@{HorizontalSpan}!Right@{Right}}
+\index{Right@{Right}!HorizontalSpan@{HorizontalSpan}}
+\doxysubsubsection{\texorpdfstring{Right}{Right}}
+{\footnotesize\ttfamily double Horizontal\+Span.\+Right\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classHorizontalSpan_a0f68ccdd8627a6fde13860f2bac48032}\label{classHorizontalSpan_a0f68ccdd8627a6fde13860f2bac48032}} 
+\index{HorizontalSpan@{HorizontalSpan}!X1@{X1}}
+\index{X1@{X1}!HorizontalSpan@{HorizontalSpan}}
+\doxysubsubsection{\texorpdfstring{X1}{X1}}
+{\footnotesize\ttfamily double Horizontal\+Span.\+X1\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classHorizontalSpan_a62bb291541b53772ad45ec49cc3c4109}\label{classHorizontalSpan_a62bb291541b53772ad45ec49cc3c4109}} 
+\index{HorizontalSpan@{HorizontalSpan}!X2@{X2}}
+\index{X2@{X2}!HorizontalSpan@{HorizontalSpan}}
+\doxysubsubsection{\texorpdfstring{X2}{X2}}
+{\footnotesize\ttfamily double Horizontal\+Span.\+X2\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classHorizontalSpan_a1fed79e43c4851241cc40cde5e2566c2}\label{classHorizontalSpan_a1fed79e43c4851241cc40cde5e2566c2}} 
+\index{HorizontalSpan@{HorizontalSpan}!XRange@{XRange}}
+\index{XRange@{XRange}!HorizontalSpan@{HorizontalSpan}}
+\doxysubsubsection{\texorpdfstring{XRange}{XRange}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structCoordinateRange}{Coordinate\+Range}} Horizontal\+Span.\+XRange\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Plottables/Horizontal\+Span.\+cs\end{DoxyCompactItemize}

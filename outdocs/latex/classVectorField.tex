@@ -1,0 +1,187 @@
+\hypertarget{classVectorField}{}\doxysection{Vector\+Field Class Reference}
+\label{classVectorField}\index{VectorField@{VectorField}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} \mbox{\hyperlink{classVectorField_a3fe9ab03ae84c2eb5944d00134031c2d}{Get\+Axis\+Limits}} ()
+\item 
+virtual void \mbox{\hyperlink{classVectorField_a9948508511410f64ad1577a0c07a1902}{Render}} (\mbox{\hyperlink{classRenderPack}{Render\+Pack}} rp)
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interfaceIVectorFieldSource}{IVector\+Field\+Source}} \mbox{\hyperlink{classVectorField_a4381d10de8d66a61291802930b3e16f5}{source}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+bool \mbox{\hyperlink{classVectorField_ad1ff06a0a5642750bed876e6d4d665b5}{Is\+Visible}} = true\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{interfaceIAxes}{IAxes}} \mbox{\hyperlink{classVectorField_a3607f03d869b3d9a1e71dcbfce992603}{Axes}} = new \mbox{\hyperlink{classAxes}{Axes}}()\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+string \mbox{\hyperlink{classVectorField_ae09088562751c18b541bf7b03a2a6f04}{Label}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+string \mbox{\hyperlink{classVectorField_ab9d23f8ddcd06ea2ce576950cfb3979b}{Legend\+Text}} = string.\+Empty\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{classArrowStyle}{Arrow\+Style}} \mbox{\hyperlink{classVectorField_a690ce4cd877116a131d0964e75854089}{Arrow\+Style}} = new() \{ Line\+Width = 2, Line\+Color = \mbox{\hyperlink{structColors_a6a4f09e77ec6d0ef4c08348eb2e21714}{Colors.\+Black}} \}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{structColor}{Color}} \mbox{\hyperlink{classVectorField_a015284293f5b87bc1fb1d816d5eafee0}{Arrow\+Line\+Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{classVectorField_ad0e9aeec3e4014bb2cb7ddd7618962ef}{Arrow\+Line\+Width}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{structColor}{Color}} \mbox{\hyperlink{classVectorField_a891232ed3ad3a2edf6cd2e83f010258b}{Arrow\+Fill\+Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{classVectorField_a0c51478ca10a1ec1eb2dc8d515517749}{Arrow\+Minimum\+Length}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{classVectorField_addc79610b372d24472f5da705cf83375}{Arrow\+Maximum\+Length}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{classVectorField_a7e5ba48202cf5fa4eaff7ad9a16c2c7f}{Arrow\+Offset}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+Arrow\+Anchor \mbox{\hyperlink{classVectorField_abb052c66ecb1384b5194c728f3b46fdc}{Arrow\+Anchor}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{classVectorField_abb132a930c8bbfbc06f027d6f500728e}{Arrow\+Width}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{classVectorField_a72d248d13d96105038b0256bbdf8b975}{Arrowhead\+Axis\+Length}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{classVectorField_ac861043edb3a2ad31ab01a2557e7a5c7}{Arrowhead\+Length}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{classVectorField_a78d6840b6b3d8e5dbc5c4624f32918bf}{Arrowhead\+Width}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{interfaceIColormap}{IColormap}}? \mbox{\hyperlink{classVectorField_a0ff224f60ad3afafe1d4302d783a5bc8}{Colormap}} = null\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$ \mbox{\hyperlink{classLegendItem}{Legend\+Item}} $>$ \mbox{\hyperlink{classVectorField_aaacaa8d5a12335bda000a3672ad10553}{Legend\+Items}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classVectorField_a3fe9ab03ae84c2eb5944d00134031c2d}\label{classVectorField_a3fe9ab03ae84c2eb5944d00134031c2d}} 
+\index{VectorField@{VectorField}!GetAxisLimits@{GetAxisLimits}}
+\index{GetAxisLimits@{GetAxisLimits}!VectorField@{VectorField}}
+\doxysubsubsection{\texorpdfstring{GetAxisLimits()}{GetAxisLimits()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} Vector\+Field.\+Get\+Axis\+Limits (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classVectorField_a9948508511410f64ad1577a0c07a1902}\label{classVectorField_a9948508511410f64ad1577a0c07a1902}} 
+\index{VectorField@{VectorField}!Render@{Render}}
+\index{Render@{Render}!VectorField@{VectorField}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily virtual void Vector\+Field.\+Render (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classRenderPack}{Render\+Pack}}}]{rp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{classVectorField_abb052c66ecb1384b5194c728f3b46fdc}\label{classVectorField_abb052c66ecb1384b5194c728f3b46fdc}} 
+\index{VectorField@{VectorField}!ArrowAnchor@{ArrowAnchor}}
+\index{ArrowAnchor@{ArrowAnchor}!VectorField@{VectorField}}
+\doxysubsubsection{\texorpdfstring{ArrowAnchor}{ArrowAnchor}}
+{\footnotesize\ttfamily Arrow\+Anchor Vector\+Field.\+Arrow\+Anchor\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classVectorField_a891232ed3ad3a2edf6cd2e83f010258b}\label{classVectorField_a891232ed3ad3a2edf6cd2e83f010258b}} 
+\index{VectorField@{VectorField}!ArrowFillColor@{ArrowFillColor}}
+\index{ArrowFillColor@{ArrowFillColor}!VectorField@{VectorField}}
+\doxysubsubsection{\texorpdfstring{ArrowFillColor}{ArrowFillColor}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structColor}{Color}} Vector\+Field.\+Arrow\+Fill\+Color\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classVectorField_a72d248d13d96105038b0256bbdf8b975}\label{classVectorField_a72d248d13d96105038b0256bbdf8b975}} 
+\index{VectorField@{VectorField}!ArrowheadAxisLength@{ArrowheadAxisLength}}
+\index{ArrowheadAxisLength@{ArrowheadAxisLength}!VectorField@{VectorField}}
+\doxysubsubsection{\texorpdfstring{ArrowheadAxisLength}{ArrowheadAxisLength}}
+{\footnotesize\ttfamily float Vector\+Field.\+Arrowhead\+Axis\+Length\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classVectorField_ac861043edb3a2ad31ab01a2557e7a5c7}\label{classVectorField_ac861043edb3a2ad31ab01a2557e7a5c7}} 
+\index{VectorField@{VectorField}!ArrowheadLength@{ArrowheadLength}}
+\index{ArrowheadLength@{ArrowheadLength}!VectorField@{VectorField}}
+\doxysubsubsection{\texorpdfstring{ArrowheadLength}{ArrowheadLength}}
+{\footnotesize\ttfamily float Vector\+Field.\+Arrowhead\+Length\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classVectorField_a78d6840b6b3d8e5dbc5c4624f32918bf}\label{classVectorField_a78d6840b6b3d8e5dbc5c4624f32918bf}} 
+\index{VectorField@{VectorField}!ArrowheadWidth@{ArrowheadWidth}}
+\index{ArrowheadWidth@{ArrowheadWidth}!VectorField@{VectorField}}
+\doxysubsubsection{\texorpdfstring{ArrowheadWidth}{ArrowheadWidth}}
+{\footnotesize\ttfamily float Vector\+Field.\+Arrowhead\+Width\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classVectorField_a015284293f5b87bc1fb1d816d5eafee0}\label{classVectorField_a015284293f5b87bc1fb1d816d5eafee0}} 
+\index{VectorField@{VectorField}!ArrowLineColor@{ArrowLineColor}}
+\index{ArrowLineColor@{ArrowLineColor}!VectorField@{VectorField}}
+\doxysubsubsection{\texorpdfstring{ArrowLineColor}{ArrowLineColor}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structColor}{Color}} Vector\+Field.\+Arrow\+Line\+Color\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classVectorField_ad0e9aeec3e4014bb2cb7ddd7618962ef}\label{classVectorField_ad0e9aeec3e4014bb2cb7ddd7618962ef}} 
+\index{VectorField@{VectorField}!ArrowLineWidth@{ArrowLineWidth}}
+\index{ArrowLineWidth@{ArrowLineWidth}!VectorField@{VectorField}}
+\doxysubsubsection{\texorpdfstring{ArrowLineWidth}{ArrowLineWidth}}
+{\footnotesize\ttfamily float Vector\+Field.\+Arrow\+Line\+Width\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classVectorField_addc79610b372d24472f5da705cf83375}\label{classVectorField_addc79610b372d24472f5da705cf83375}} 
+\index{VectorField@{VectorField}!ArrowMaximumLength@{ArrowMaximumLength}}
+\index{ArrowMaximumLength@{ArrowMaximumLength}!VectorField@{VectorField}}
+\doxysubsubsection{\texorpdfstring{ArrowMaximumLength}{ArrowMaximumLength}}
+{\footnotesize\ttfamily float Vector\+Field.\+Arrow\+Maximum\+Length\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classVectorField_a0c51478ca10a1ec1eb2dc8d515517749}\label{classVectorField_a0c51478ca10a1ec1eb2dc8d515517749}} 
+\index{VectorField@{VectorField}!ArrowMinimumLength@{ArrowMinimumLength}}
+\index{ArrowMinimumLength@{ArrowMinimumLength}!VectorField@{VectorField}}
+\doxysubsubsection{\texorpdfstring{ArrowMinimumLength}{ArrowMinimumLength}}
+{\footnotesize\ttfamily float Vector\+Field.\+Arrow\+Minimum\+Length\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classVectorField_a7e5ba48202cf5fa4eaff7ad9a16c2c7f}\label{classVectorField_a7e5ba48202cf5fa4eaff7ad9a16c2c7f}} 
+\index{VectorField@{VectorField}!ArrowOffset@{ArrowOffset}}
+\index{ArrowOffset@{ArrowOffset}!VectorField@{VectorField}}
+\doxysubsubsection{\texorpdfstring{ArrowOffset}{ArrowOffset}}
+{\footnotesize\ttfamily float Vector\+Field.\+Arrow\+Offset\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classVectorField_a690ce4cd877116a131d0964e75854089}\label{classVectorField_a690ce4cd877116a131d0964e75854089}} 
+\index{VectorField@{VectorField}!ArrowStyle@{ArrowStyle}}
+\index{ArrowStyle@{ArrowStyle}!VectorField@{VectorField}}
+\doxysubsubsection{\texorpdfstring{ArrowStyle}{ArrowStyle}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classArrowStyle}{Arrow\+Style}} Vector\+Field.\+Arrow\+Style = new() \{ Line\+Width = 2, Line\+Color = \mbox{\hyperlink{structColors_a6a4f09e77ec6d0ef4c08348eb2e21714}{Colors.\+Black}} \}\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classVectorField_abb132a930c8bbfbc06f027d6f500728e}\label{classVectorField_abb132a930c8bbfbc06f027d6f500728e}} 
+\index{VectorField@{VectorField}!ArrowWidth@{ArrowWidth}}
+\index{ArrowWidth@{ArrowWidth}!VectorField@{VectorField}}
+\doxysubsubsection{\texorpdfstring{ArrowWidth}{ArrowWidth}}
+{\footnotesize\ttfamily float Vector\+Field.\+Arrow\+Width\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classVectorField_a3607f03d869b3d9a1e71dcbfce992603}\label{classVectorField_a3607f03d869b3d9a1e71dcbfce992603}} 
+\index{VectorField@{VectorField}!Axes@{Axes}}
+\index{Axes@{Axes}!VectorField@{VectorField}}
+\doxysubsubsection{\texorpdfstring{Axes}{Axes}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceIAxes}{IAxes}} Vector\+Field.\+Axes = new \mbox{\hyperlink{classAxes}{Axes}}()\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classVectorField_a0ff224f60ad3afafe1d4302d783a5bc8}\label{classVectorField_a0ff224f60ad3afafe1d4302d783a5bc8}} 
+\index{VectorField@{VectorField}!Colormap@{Colormap}}
+\index{Colormap@{Colormap}!VectorField@{VectorField}}
+\doxysubsubsection{\texorpdfstring{Colormap}{Colormap}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceIColormap}{IColormap}}? Vector\+Field.\+Colormap = null\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classVectorField_ad1ff06a0a5642750bed876e6d4d665b5}\label{classVectorField_ad1ff06a0a5642750bed876e6d4d665b5}} 
+\index{VectorField@{VectorField}!IsVisible@{IsVisible}}
+\index{IsVisible@{IsVisible}!VectorField@{VectorField}}
+\doxysubsubsection{\texorpdfstring{IsVisible}{IsVisible}}
+{\footnotesize\ttfamily bool Vector\+Field.\+Is\+Visible = true\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classVectorField_ae09088562751c18b541bf7b03a2a6f04}\label{classVectorField_ae09088562751c18b541bf7b03a2a6f04}} 
+\index{VectorField@{VectorField}!Label@{Label}}
+\index{Label@{Label}!VectorField@{VectorField}}
+\doxysubsubsection{\texorpdfstring{Label}{Label}}
+{\footnotesize\ttfamily string Vector\+Field.\+Label\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classVectorField_aaacaa8d5a12335bda000a3672ad10553}\label{classVectorField_aaacaa8d5a12335bda000a3672ad10553}} 
+\index{VectorField@{VectorField}!LegendItems@{LegendItems}}
+\index{LegendItems@{LegendItems}!VectorField@{VectorField}}
+\doxysubsubsection{\texorpdfstring{LegendItems}{LegendItems}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$\mbox{\hyperlink{classLegendItem}{Legend\+Item}}$>$ Vector\+Field.\+Legend\+Items\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{classVectorField_ab9d23f8ddcd06ea2ce576950cfb3979b}\label{classVectorField_ab9d23f8ddcd06ea2ce576950cfb3979b}} 
+\index{VectorField@{VectorField}!LegendText@{LegendText}}
+\index{LegendText@{LegendText}!VectorField@{VectorField}}
+\doxysubsubsection{\texorpdfstring{LegendText}{LegendText}}
+{\footnotesize\ttfamily string Vector\+Field.\+Legend\+Text = string.\+Empty\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classVectorField_a4381d10de8d66a61291802930b3e16f5}\label{classVectorField_a4381d10de8d66a61291802930b3e16f5}} 
+\index{VectorField@{VectorField}!source@{source}}
+\index{source@{source}!VectorField@{VectorField}}
+\doxysubsubsection{\texorpdfstring{source}{source}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceIVectorFieldSource}{IVector\+Field\+Source}} Vector\+Field.\+source\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Plottables/Vector\+Field.\+cs\end{DoxyCompactItemize}

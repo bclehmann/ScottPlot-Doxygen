@@ -1,0 +1,952 @@
+\hypertarget{classPlot}{}\doxysection{Plot Class Reference}
+\label{classPlot}\index{Plot@{Plot}}
+Inheritance diagram for Plot\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classPlot}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPlot_a0283ac878f67811a22de5155c046e19e}{Plot}} ()
+\item 
+void \mbox{\hyperlink{classPlot_a3129e24f5fbaffdb9a26408824e42622}{Dispose}} ()
+\item 
+\mbox{\hyperlink{structPixel}{Pixel}} \mbox{\hyperlink{classPlot_aca66a009c0320642ae2fce059433627a}{Get\+Pixel}} (\mbox{\hyperlink{structCoordinates}{Coordinates}} coordinates)
+\begin{DoxyCompactList}\small\item\em Return the location on the screen (pixel) for a location on the plot (coordinates) on the default axes. The figure size and layout referenced will be the one from the last render. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structPixel}{Pixel}} \mbox{\hyperlink{classPlot_a8484abbfcdfe8e3346c7cbabe9e32e09}{Get\+Pixel}} (\mbox{\hyperlink{structCoordinates}{Coordinates}} coordinates, \mbox{\hyperlink{interfaceIXAxis}{IXAxis}} x\+Axis, \mbox{\hyperlink{interfaceIYAxis}{IYAxis}} y\+Axis)
+\begin{DoxyCompactList}\small\item\em Return the location on the screen (pixel) for a location on the plot (coordinates) on the given axes. The figure size and layout referenced will be the one from the last render. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structCoordinates}{Coordinates}} \mbox{\hyperlink{classPlot_a28d70512fe5bacaaaeb65c37a8d3599b}{Get\+Coordinates}} (\mbox{\hyperlink{structPixel}{Pixel}} pixel, \mbox{\hyperlink{interfaceIXAxis}{IXAxis}}? x\+Axis=null, \mbox{\hyperlink{interfaceIYAxis}{IYAxis}}? y\+Axis=null)
+\begin{DoxyCompactList}\small\item\em Return the coordinate for a specific pixel using measurements from the most recent render. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structCoordinates}{Coordinates}} \mbox{\hyperlink{classPlot_a130c5ba38636fb2212c2d5d4e90dc72c}{Get\+Coordinates}} (float x, float y, \mbox{\hyperlink{interfaceIXAxis}{IXAxis}}? x\+Axis=null, \mbox{\hyperlink{interfaceIYAxis}{IYAxis}}? y\+Axis=null)
+\begin{DoxyCompactList}\small\item\em Return the coordinate for a specific pixel using measurements from the most recent render. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structCoordinateRect}{Coordinate\+Rect}} \mbox{\hyperlink{classPlot_a8539c05a88749cdbf003e8c615167b15}{Get\+Coordinate\+Rect}} (float x, float y, float radius=10, \mbox{\hyperlink{interfaceIXAxis}{IXAxis}}? x\+Axis=null, \mbox{\hyperlink{interfaceIYAxis}{IYAxis}}? y\+Axis=null)
+\begin{DoxyCompactList}\small\item\em Return a coordinate rectangle centered at a pixel. Uses measurements from the most recent render. 
+\begin{DoxyParams}{Parameters}
+{\em x} & Center point pixel\textquotesingle{}s x\\
+\hline
+{\em y} & Center point pixel\textquotesingle{}s y\\
+\hline
+{\em radius} & Radius in pixels\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The coordinate rectangle
+\end{DoxyReturn}
+\end{DoxyCompactList}\item 
+\mbox{\hyperlink{structCoordinateRect}{Coordinate\+Rect}} \mbox{\hyperlink{classPlot_a144d0dfdda82a887bba00443878e5f91}{Get\+Coordinate\+Rect}} (\mbox{\hyperlink{structPixel}{Pixel}} pixel, float radius=10, \mbox{\hyperlink{interfaceIXAxis}{IXAxis}}? x\+Axis=null, \mbox{\hyperlink{interfaceIYAxis}{IYAxis}}? y\+Axis=null)
+\begin{DoxyCompactList}\small\item\em Return a coordinate rectangle centered at a pixel. Uses measurements from the most recent render. 
+\begin{DoxyParams}{Parameters}
+{\em pixel} & Center point pixel\\
+\hline
+{\em radius} & Radius in pixels\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The coordinate rectangle
+\end{DoxyReturn}
+\end{DoxyCompactList}\item 
+\mbox{\hyperlink{structCoordinateRect}{Coordinate\+Rect}} \mbox{\hyperlink{classPlot_a91c0b44ecfa324e876302cba0381c491}{Get\+Coordinate\+Rect}} (\mbox{\hyperlink{structCoordinates}{Coordinates}} coordinates, float radius=10, \mbox{\hyperlink{interfaceIXAxis}{IXAxis}}? x\+Axis=null, \mbox{\hyperlink{interfaceIYAxis}{IYAxis}}? y\+Axis=null)
+\begin{DoxyCompactList}\small\item\em Return a coordinate rectangle centered at a coordinate pair with the radius specified in pixels. Uses measurements from the most recent render. 
+\begin{DoxyParams}{Parameters}
+{\em coordinates} & Center point in coordinate units\\
+\hline
+{\em radius} & Radius in pixels\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The coordinate rectangle
+\end{DoxyReturn}
+\end{DoxyCompactList}\item 
+\mbox{\hyperlink{interfaceIAxis}{IAxis}}? \mbox{\hyperlink{classPlot_adff163f05b52aaecce9643c7559a3cfc}{Get\+Axis}} (\mbox{\hyperlink{structPixel}{Pixel}} pixel)
+\begin{DoxyCompactList}\small\item\em Get the axis under a given pixel \end{DoxyCompactList}\item 
+\mbox{\hyperlink{interfaceIPanel}{IPanel}}? \mbox{\hyperlink{classPlot_add84381248670e42c1c45cb82ebe28a1}{Get\+Panel}} (\mbox{\hyperlink{structPixel}{Pixel}} pixel, bool axes\+Only)
+\begin{DoxyCompactList}\small\item\em Get the panel under a given pixel \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPlot_aa91dc4610ed47d78c5a7853a5ddab6a6}{Render}} (int width=400, int height=300)
+\item 
+void \mbox{\hyperlink{classPlot_a2969601a26f3493363931012d19246e6}{Render\+In\+Memory}} (int width=400, int height=300)
+\begin{DoxyCompactList}\small\item\em Create a new image of the given dimensions, render the plot onto it, and return it. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPlot_addaa339d13480597fba9a576455ea599}{Render}} (SKCanvas canvas, int width, int height)
+\begin{DoxyCompactList}\small\item\em Render onto an existing canvas \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPlot_a281d91bd0db8ee56ec45e9adb6541ebe}{Render}} (SKCanvas canvas, \mbox{\hyperlink{structPixelRect}{Pixel\+Rect}} rect)
+\begin{DoxyCompactList}\small\item\em Render onto an existing canvas inside the given rectangle \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPlot_a86e468285ab93cd1a87648a148b8ca06}{Render}} (SKSurface surface)
+\begin{DoxyCompactList}\small\item\em Render onto an existing canvas of a surface over the local clip bounds \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classImage}{Image}} \mbox{\hyperlink{classPlot_aa5c8cd09373148b23e157997cf3086ae}{Get\+Image}} (int width, int height)
+\item 
+string \mbox{\hyperlink{classPlot_a5261db5b069decaeff925584a82aa266}{Get\+Image\+Html}} (int width, int height)
+\begin{DoxyCompactList}\small\item\em Render the plot and return an HTML img element containing a Base64-\/encoded PNG \end{DoxyCompactList}\item 
+Saved\+Image\+Info \mbox{\hyperlink{classPlot_aa411bd6d5ca369e61876a84b155244e6}{Save\+Jpeg}} (string file\+Path, int width, int height, int quality=85)
+\item 
+Saved\+Image\+Info \mbox{\hyperlink{classPlot_acd8e87f7a4ab019a875160cd345ebe50}{Save\+Png}} (string file\+Path, int width, int height)
+\item 
+Saved\+Image\+Info \mbox{\hyperlink{classPlot_aed63dd8288ecd03f616f036d5994fad4}{Save\+Bmp}} (string file\+Path, int width, int height)
+\item 
+Saved\+Image\+Info \mbox{\hyperlink{classPlot_abc4077e1dd40b3598f0ec73171b2db94}{Save\+Webp}} (string file\+Path, int width, int height, int quality=85)
+\item 
+Saved\+Image\+Info \mbox{\hyperlink{classPlot_a2d0728484087ef227a6d97e5f0763090}{Save\+Svg}} (string file\+Path, int width, int height)
+\item 
+string \mbox{\hyperlink{classPlot_aba5026453945e889714bce5e44881fe6}{Get\+Svg\+Xml}} (int width, int height)
+\item 
+Saved\+Image\+Info \mbox{\hyperlink{classPlot_ae04f6df5bdb8a9bf8ec2b4a09793af49}{Save}} (string file\+Path, int width, int height, Image\+Format format=Image\+Format.\+Png, int quality=85)
+\item 
+byte\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classPlot_aaf8eacf51981c6a87ff4af3f9df6fc03}{Get\+Image\+Bytes}} (int width, int height, Image\+Format format=Image\+Format.\+Bmp)
+\item 
+\mbox{\hyperlink{classImage}{Image}} \mbox{\hyperlink{classPlot_a4874e59a704130b87e532f9022ac4e29}{Get\+Legend\+Image}} ()
+\begin{DoxyCompactList}\small\item\em Returns the content of the legend as a raster image \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classPlot_a5f73276f28ff8387c5eb7403d9ad6aac}{Get\+Legend\+Svg\+Xml}} ()
+\begin{DoxyCompactList}\small\item\em Returns the content of the legend as SVG (vector) image \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$ \mbox{\hyperlink{interfaceIPlottable}{IPlottable}} $>$ \mbox{\hyperlink{classPlot_a933867c4a72c8ce9607238b5a1620c2a}{Get\+Plottables}} ()
+\begin{DoxyCompactList}\small\item\em Return contents of \mbox{\hyperlink{classPlot_aff5b45ecb59d1ef7600b76c2ca61943c}{Plottable\+List}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$ T $>$ \mbox{\hyperlink{classPlot_a96ffa55da2180a8bf96f4b126962e8b1}{Get\+Plottables$<$ T $>$}} ()
+\begin{DoxyCompactList}\small\item\em Return all plottables in \mbox{\hyperlink{classPlot_aff5b45ecb59d1ef7600b76c2ca61943c}{Plottable\+List}} of the given type. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPlot_a085443b090a4f7435c71ff8909ec09ae}{Remove}} (\mbox{\hyperlink{interfaceIPlottable}{IPlottable}} plottable)
+\begin{DoxyCompactList}\small\item\em Remove the given plottable from the \mbox{\hyperlink{classPlot_aff5b45ecb59d1ef7600b76c2ca61943c}{Plottable\+List}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPlot_aca300913b4dfd0fe01d59b6c9c846750}{Remove}} (\mbox{\hyperlink{interfaceIPanel}{IPanel}} panel)
+\begin{DoxyCompactList}\small\item\em Remove the given Panel from the \mbox{\hyperlink{classAxes}{Axes}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPlot_a6ed11afae815d6d177eb12b315ebc122}{Remove}} (\mbox{\hyperlink{interfaceIAxis}{IAxis}} axis)
+\begin{DoxyCompactList}\small\item\em Remove the given Axis from the \mbox{\hyperlink{classAxes}{Axes}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPlot_acca9cdd21aa56036976ab2ce861323ec}{Remove}} (Type plot\+Type)
+\begin{DoxyCompactList}\small\item\em Remove all items of a specific type from the \mbox{\hyperlink{classPlot_aff5b45ecb59d1ef7600b76c2ca61943c}{Plottable\+List}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPlot_a9e5f9493c0f55f309364c9c2f202c9de}{Remove$<$ T $>$}} ()
+\begin{DoxyCompactList}\small\item\em Remove a all instances of a specific type from the \mbox{\hyperlink{classPlot_aff5b45ecb59d1ef7600b76c2ca61943c}{Plottable\+List}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPlot_aa4cd625ea8178aa598775325cab7984d}{Remove$<$ T $>$}} (Func$<$ T, bool $>$ predicate)
+\begin{DoxyCompactList}\small\item\em Remove all instances of a specific type from the \mbox{\hyperlink{classPlot_aff5b45ecb59d1ef7600b76c2ca61943c}{Plottable\+List}} that meet the {\itshape predicate}  criteraia. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPlot_a8224d917dcd8f753f585e79399bcabc9}{Move\+To\+Top}} (\mbox{\hyperlink{interfaceIPlottable}{IPlottable}} plottable)
+\item 
+void \mbox{\hyperlink{classPlot_a8d3e0bc98a363bc6317c940314308984}{Move\+To\+Bottom}} (\mbox{\hyperlink{interfaceIPlottable}{IPlottable}} plottable)
+\item 
+void \mbox{\hyperlink{classPlot_ad47013a5303f24d25106843f1c5d1ff7}{Move\+To\+Front}} (\mbox{\hyperlink{interfaceIPlottable}{IPlottable}} plottable)
+\begin{DoxyCompactList}\small\item\em Move the indicated plottable to the end of the list so it is rendered last \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPlot_ae880a2e1007eaf23885957c4b09f305e}{Move\+To\+Back}} (\mbox{\hyperlink{interfaceIPlottable}{IPlottable}} plottable)
+\begin{DoxyCompactList}\small\item\em Move the indicated plottable to the start of the list so it is rendered first \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPlot_a294c52151dc6753f0054815356f4a39b}{Hide\+Axes\+And\+Grid}} (bool show\+Title=true)
+\begin{DoxyCompactList}\small\item\em Disable visibility for all axes and grids \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPlot_a9fc3c07912ddf637cb0c60c2bd3d95a7}{Hide\+Grid}} ()
+\begin{DoxyCompactList}\small\item\em Disable visibility for all grids \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPlot_aefa2cf591748badc4c453d0f094e8b6c}{Show\+Grid}} ()
+\begin{DoxyCompactList}\small\item\em Enable visibility for all grids \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classLegend}{Legend}} \mbox{\hyperlink{classPlot_aeb40eb1c15bd539fb20dc774c696d411}{Show\+Legend}} ()
+\begin{DoxyCompactList}\small\item\em Helper method for setting visibility of the \mbox{\hyperlink{classLegend}{Legend}} \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classLegend}{Legend}} \mbox{\hyperlink{classPlot_a61b1e3d0f7a7a86b74f58ca70e859480}{Show\+Legend}} (Alignment alignment)
+\begin{DoxyCompactList}\small\item\em Helper method for setting visibility of the \mbox{\hyperlink{classLegend}{Legend}} and setting \mbox{\hyperlink{classLegend_aeb15729340083955deba4e02f2c95d57}{Legend.\+Location}} to the provided one. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classLegend}{Legend}} \mbox{\hyperlink{classPlot_ada30402650a9bfe4449744e5ebc2843d}{Show\+Legend}} (Alignment alignment, Orientation orientation)
+\begin{DoxyCompactList}\small\item\em Helper method for setting the \mbox{\hyperlink{classLegend}{Legend}}\textquotesingle{}s Is\+Visible, Alignment, and Orientation properties all at once. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classLegend}{Legend}} \mbox{\hyperlink{classPlot_ad1c2b38a1d87e28b65b2992cac3e019d}{Show\+Legend}} (\mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$ \mbox{\hyperlink{classLegendItem}{Legend\+Item}} $>$ items, Alignment location=Alignment.\+Lower\+Right)
+\begin{DoxyCompactList}\small\item\em Helper method for displaying specific items in the legend \end{DoxyCompactList}\item 
+Panels.\+Legend\+Panel \mbox{\hyperlink{classPlot_a1576b0bdd307d8daddc1fd875dcb2846}{Show\+Legend}} (Edge edge)
+\begin{DoxyCompactList}\small\item\em Hide the default legend (inside the data area) and create a new legend panel placed on the edge of the figure outside the data area. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classLegend}{Legend}} \mbox{\hyperlink{classPlot_a42305ee322ccdea421a16a9a68f6e75c}{Hide\+Legend}} ()
+\begin{DoxyCompactList}\small\item\em Helper method for setting visibility of the \mbox{\hyperlink{classLegend}{Legend}} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPlot_a626565c32bb2b621cd33139eeb2e210f}{Clear}} ()
+\begin{DoxyCompactList}\small\item\em Clears the \mbox{\hyperlink{classPlot_aff5b45ecb59d1ef7600b76c2ca61943c}{Plottable\+List}} list \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPlot_afc99a5af4a01383b081dfe121af5c95b}{Clear$<$ T $>$}} ()
+\begin{DoxyCompactList}\small\item\em Clear a all instances of a specific type from the \mbox{\hyperlink{classPlot_aff5b45ecb59d1ef7600b76c2ca61943c}{Plottable\+List}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPlot_a9168ba6c280a080e10f7c634c226eee5}{Title}} (string text, float? size=null)
+\begin{DoxyCompactList}\small\item\em Shortcut to set text of the \mbox{\hyperlink{classTitlePanel}{Title\+Panel}} \mbox{\hyperlink{classLabel}{Label}}. Assign properties of \mbox{\hyperlink{classTitlePanel}{Title\+Panel}} \mbox{\hyperlink{classLabel}{Label}} to customize size, color, font, etc. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPlot_a452ff052d64069119c4f96b63ac9ae08}{XLabel}} (string label, float? size=null)
+\begin{DoxyCompactList}\small\item\em Shortcut to set text of the \mbox{\hyperlink{classBottomAxis}{Bottom\+Axis}} \mbox{\hyperlink{classLabel}{Label}} Assign properties of \mbox{\hyperlink{classBottomAxis}{Bottom\+Axis}} \mbox{\hyperlink{classLabel}{Label}} to customize size, color, font, etc. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPlot_a5c10d7a0aa0cc5b7219024799d7c73d6}{YLabel}} (string label, float? size=null)
+\begin{DoxyCompactList}\small\item\em Shortcut to set text of the \mbox{\hyperlink{classBottomAxis}{Bottom\+Axis}} \mbox{\hyperlink{classLabel}{Label}} Assign properties of \mbox{\hyperlink{classBottomAxis}{Bottom\+Axis}} \mbox{\hyperlink{classLabel}{Label}} to customize size, color, font, etc. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPlotStyle}{Plot\+Style}} \mbox{\hyperlink{classPlot_a7679e15885258f582bb25535b95a398b}{Get\+Style}} ()
+\begin{DoxyCompactList}\small\item\em Return the current style settings for this plot \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPlot_a4a2e0262c2092defc0bd68a78938fb32}{Set\+Style}} (\mbox{\hyperlink{classPlotStyle}{Plot\+Style}} style)
+\begin{DoxyCompactList}\small\item\em Apply the given style settings to this plot \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPlot_ae3483e67c77724705bb6fb1bf394c2e1}{Set\+Style}} (\mbox{\hyperlink{classPlot}{Plot}} other\+Plot)
+\begin{DoxyCompactList}\small\item\em Apply the style settings from the given plot to this plot \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPlot_a120c54883b47f2e9d30b4a5cd12ae038}{Developer\+\_\+\+Show\+Axis\+Details}} (bool enable=true)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classDefaultGrid}{Default\+Grid}} \mbox{\hyperlink{classPlot_aa8325d5a5ebef8cf646cff193707e1e1}{Get\+Default\+Grid}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classBackgroundStyle}{Background\+Style}} \mbox{\hyperlink{classPlot_a121a18fb6b77e8688f79f9d17e2f3ad1}{Figure\+Background}} = new() \{ \mbox{\hyperlink{structColor}{Color}} = \mbox{\hyperlink{structColors_ab0ad6baf8f6d892c8597ade1d65b9e6e}{Colors.\+White}} \}
+\begin{DoxyCompactList}\small\item\em Style for the background of the entire figure \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classBackgroundStyle}{Background\+Style}} \mbox{\hyperlink{classPlot_ad12401c935e2ed9e0e397b999a87d0a1}{Data\+Background}} = new() \{ \mbox{\hyperlink{structColor}{Color}} = \mbox{\hyperlink{structColors_a9695917727155acebdb5b379dcfdad8b}{Colors.\+Transparent}} \}
+\begin{DoxyCompactList}\small\item\em Style for the data area (the area within the axis frames) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ \mbox{\hyperlink{interfaceIPlottable}{IPlottable}} $>$ \mbox{\hyperlink{classPlot_aff5b45ecb59d1ef7600b76c2ca61943c}{Plottable\+List}} = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{classPlottableAdder}{Plottable\+Adder}} \mbox{\hyperlink{classPlot_a2547c8035f715653ef32a42da4bf5788}{Add}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{classRenderManager}{Render\+Manager}} \mbox{\hyperlink{classPlot_a8c904b14c9dca82c6ae052d00ac53cec}{Render\+Manager}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{structRenderDetails}{Render\+Details}} \mbox{\hyperlink{classPlot_a270ca3f5f046e51119b0a3fd2acb6808}{Last\+Render}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{classLayoutManager}{Layout\+Manager}} \mbox{\hyperlink{classPlot_a72dd497db34deb43caa10c0cec79f1a8}{Layout}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{interfaceIZoomRectangle}{IZoom\+Rectangle}} \mbox{\hyperlink{classPlot_ad8ae056d082daacf6308276791e2de79}{Zoom\+Rectangle}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+double \mbox{\hyperlink{classPlot_ad4e36fa1634081d801ebbe7df311983f}{Scale\+Factor}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{classAxisManager}{Axis\+Manager}} \mbox{\hyperlink{classPlot_a1d25ef99cd07e03e62f67b60def141e0}{Axes}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+Plot\+Styler \mbox{\hyperlink{classPlot_a7ab05dff09e3d391efdf12cf34bb78d2}{Style}} = new()\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{classFontStyler}{Font\+Styler}} \mbox{\hyperlink{classPlot_aba7d4441e8bcfbf9db21c1f7a94cb342}{Font}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{classLegend}{Legend}} \mbox{\hyperlink{classPlot_a5a189bc6f289d594a24d9d16c4d32e30}{Legend}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{classDefaultGrid}{Default\+Grid}} \mbox{\hyperlink{classPlot_a30b5ee030e10da3e5506760a9140b54d}{Grid}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{interfaceIPlottable}{IPlottable}} \mbox{\hyperlink{classPlot_a01bb71d37138275ca75e462addc4038e}{Benchmark}} = new Plottables.\+Benchmark()\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+object \mbox{\hyperlink{classPlot_aae98113eaa510db9460a35e298aa27a4}{Sync}} = new()\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em This object is locked by the \mbox{\hyperlink{classPlot_aa91dc4610ed47d78c5a7853a5ddab6a6}{Render()}} methods. Logic that manipulates the plot (UI inputs or editing data) can lock this object to prevent rendering artifacts. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{interfaceIPlotControl}{IPlot\+Control}}? \mbox{\hyperlink{classPlot_a5dbbb0567b6a467221ece35577b3c3ee}{Plot\+Control}} = null\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The user control this plot belongs to \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPlot_a0283ac878f67811a22de5155c046e19e}\label{classPlot_a0283ac878f67811a22de5155c046e19e}} 
+\index{Plot@{Plot}!Plot@{Plot}}
+\index{Plot@{Plot}!Plot@{Plot}}
+\doxysubsubsection{\texorpdfstring{Plot()}{Plot()}}
+{\footnotesize\ttfamily Plot.\+Plot (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPlot_a626565c32bb2b621cd33139eeb2e210f}\label{classPlot_a626565c32bb2b621cd33139eeb2e210f}} 
+\index{Plot@{Plot}!Clear@{Clear}}
+\index{Clear@{Clear}!Plot@{Plot}}
+\doxysubsubsection{\texorpdfstring{Clear()}{Clear()}}
+{\footnotesize\ttfamily void Plot.\+Clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Clears the \mbox{\hyperlink{classPlot_aff5b45ecb59d1ef7600b76c2ca61943c}{Plottable\+List}} list 
+
+\mbox{\Hypertarget{classPlot_afc99a5af4a01383b081dfe121af5c95b}\label{classPlot_afc99a5af4a01383b081dfe121af5c95b}} 
+\index{Plot@{Plot}!Clear$<$ T $>$@{Clear$<$ T $>$}}
+\index{Clear$<$ T $>$@{Clear$<$ T $>$}!Plot@{Plot}}
+\doxysubsubsection{\texorpdfstring{Clear$<$ T $>$()}{Clear< T >()}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{classPlot_a626565c32bb2b621cd33139eeb2e210f}{Plot.\+Clear}}$<$ T $>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Clear a all instances of a specific type from the \mbox{\hyperlink{classPlot_aff5b45ecb59d1ef7600b76c2ca61943c}{Plottable\+List}}. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & Type of \mbox{\hyperlink{interfaceIPlottable}{IPlottable}} to be cleared\\
+\hline
+\end{DoxyTemplParams}
+\begin{Desc}
+\item[Type Constraints]\begin{description}
+\item[{\em T} : {\em \mbox{\hyperlink{interfaceIPlottable}{IPlottable}}}]\end{description}
+\end{Desc}
+\mbox{\Hypertarget{classPlot_a120c54883b47f2e9d30b4a5cd12ae038}\label{classPlot_a120c54883b47f2e9d30b4a5cd12ae038}} 
+\index{Plot@{Plot}!Developer\_ShowAxisDetails@{Developer\_ShowAxisDetails}}
+\index{Developer\_ShowAxisDetails@{Developer\_ShowAxisDetails}!Plot@{Plot}}
+\doxysubsubsection{\texorpdfstring{Developer\_ShowAxisDetails()}{Developer\_ShowAxisDetails()}}
+{\footnotesize\ttfamily void Plot.\+Developer\+\_\+\+Show\+Axis\+Details (\begin{DoxyParamCaption}\item[{bool}]{enable = {\ttfamily true} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classPlot_a3129e24f5fbaffdb9a26408824e42622}\label{classPlot_a3129e24f5fbaffdb9a26408824e42622}} 
+\index{Plot@{Plot}!Dispose@{Dispose}}
+\index{Dispose@{Dispose}!Plot@{Plot}}
+\doxysubsubsection{\texorpdfstring{Dispose()}{Dispose()}}
+{\footnotesize\ttfamily void Plot.\+Dispose (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classPlot_adff163f05b52aaecce9643c7559a3cfc}\label{classPlot_adff163f05b52aaecce9643c7559a3cfc}} 
+\index{Plot@{Plot}!GetAxis@{GetAxis}}
+\index{GetAxis@{GetAxis}!Plot@{Plot}}
+\doxysubsubsection{\texorpdfstring{GetAxis()}{GetAxis()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceIAxis}{IAxis}}? Plot.\+Get\+Axis (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPixel}{Pixel}}}]{pixel }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the axis under a given pixel 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pixel} & Point\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The axis at {\itshape pixel}  (or null)
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPlot_a91c0b44ecfa324e876302cba0381c491}\label{classPlot_a91c0b44ecfa324e876302cba0381c491}} 
+\index{Plot@{Plot}!GetCoordinateRect@{GetCoordinateRect}}
+\index{GetCoordinateRect@{GetCoordinateRect}!Plot@{Plot}}
+\doxysubsubsection{\texorpdfstring{GetCoordinateRect()}{GetCoordinateRect()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structCoordinateRect}{Coordinate\+Rect}} Plot.\+Get\+Coordinate\+Rect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structCoordinates}{Coordinates}}}]{coordinates,  }\item[{float}]{radius = {\ttfamily 10},  }\item[{\mbox{\hyperlink{interfaceIXAxis}{IXAxis}}?}]{x\+Axis = {\ttfamily null},  }\item[{\mbox{\hyperlink{interfaceIYAxis}{IYAxis}}?}]{y\+Axis = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return a coordinate rectangle centered at a coordinate pair with the radius specified in pixels. Uses measurements from the most recent render. 
+\begin{DoxyParams}{Parameters}
+{\em coordinates} & Center point in coordinate units\\
+\hline
+{\em radius} & Radius in pixels\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The coordinate rectangle
+\end{DoxyReturn}
+
+
+\mbox{\Hypertarget{classPlot_a8539c05a88749cdbf003e8c615167b15}\label{classPlot_a8539c05a88749cdbf003e8c615167b15}} 
+\index{Plot@{Plot}!GetCoordinateRect@{GetCoordinateRect}}
+\index{GetCoordinateRect@{GetCoordinateRect}!Plot@{Plot}}
+\doxysubsubsection{\texorpdfstring{GetCoordinateRect()}{GetCoordinateRect()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structCoordinateRect}{Coordinate\+Rect}} Plot.\+Get\+Coordinate\+Rect (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{radius = {\ttfamily 10},  }\item[{\mbox{\hyperlink{interfaceIXAxis}{IXAxis}}?}]{x\+Axis = {\ttfamily null},  }\item[{\mbox{\hyperlink{interfaceIYAxis}{IYAxis}}?}]{y\+Axis = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return a coordinate rectangle centered at a pixel. Uses measurements from the most recent render. 
+\begin{DoxyParams}{Parameters}
+{\em x} & Center point pixel\textquotesingle{}s x\\
+\hline
+{\em y} & Center point pixel\textquotesingle{}s y\\
+\hline
+{\em radius} & Radius in pixels\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The coordinate rectangle
+\end{DoxyReturn}
+
+
+\mbox{\Hypertarget{classPlot_a144d0dfdda82a887bba00443878e5f91}\label{classPlot_a144d0dfdda82a887bba00443878e5f91}} 
+\index{Plot@{Plot}!GetCoordinateRect@{GetCoordinateRect}}
+\index{GetCoordinateRect@{GetCoordinateRect}!Plot@{Plot}}
+\doxysubsubsection{\texorpdfstring{GetCoordinateRect()}{GetCoordinateRect()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structCoordinateRect}{Coordinate\+Rect}} Plot.\+Get\+Coordinate\+Rect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPixel}{Pixel}}}]{pixel,  }\item[{float}]{radius = {\ttfamily 10},  }\item[{\mbox{\hyperlink{interfaceIXAxis}{IXAxis}}?}]{x\+Axis = {\ttfamily null},  }\item[{\mbox{\hyperlink{interfaceIYAxis}{IYAxis}}?}]{y\+Axis = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return a coordinate rectangle centered at a pixel. Uses measurements from the most recent render. 
+\begin{DoxyParams}{Parameters}
+{\em pixel} & Center point pixel\\
+\hline
+{\em radius} & Radius in pixels\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The coordinate rectangle
+\end{DoxyReturn}
+
+
+\mbox{\Hypertarget{classPlot_a130c5ba38636fb2212c2d5d4e90dc72c}\label{classPlot_a130c5ba38636fb2212c2d5d4e90dc72c}} 
+\index{Plot@{Plot}!GetCoordinates@{GetCoordinates}}
+\index{GetCoordinates@{GetCoordinates}!Plot@{Plot}}
+\doxysubsubsection{\texorpdfstring{GetCoordinates()}{GetCoordinates()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structCoordinates}{Coordinates}} Plot.\+Get\+Coordinates (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{\mbox{\hyperlink{interfaceIXAxis}{IXAxis}}?}]{x\+Axis = {\ttfamily null},  }\item[{\mbox{\hyperlink{interfaceIYAxis}{IYAxis}}?}]{y\+Axis = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return the coordinate for a specific pixel using measurements from the most recent render. 
+
+\mbox{\Hypertarget{classPlot_a28d70512fe5bacaaaeb65c37a8d3599b}\label{classPlot_a28d70512fe5bacaaaeb65c37a8d3599b}} 
+\index{Plot@{Plot}!GetCoordinates@{GetCoordinates}}
+\index{GetCoordinates@{GetCoordinates}!Plot@{Plot}}
+\doxysubsubsection{\texorpdfstring{GetCoordinates()}{GetCoordinates()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structCoordinates}{Coordinates}} Plot.\+Get\+Coordinates (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPixel}{Pixel}}}]{pixel,  }\item[{\mbox{\hyperlink{interfaceIXAxis}{IXAxis}}?}]{x\+Axis = {\ttfamily null},  }\item[{\mbox{\hyperlink{interfaceIYAxis}{IYAxis}}?}]{y\+Axis = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return the coordinate for a specific pixel using measurements from the most recent render. 
+
+\mbox{\Hypertarget{classPlot_aa8325d5a5ebef8cf646cff193707e1e1}\label{classPlot_aa8325d5a5ebef8cf646cff193707e1e1}} 
+\index{Plot@{Plot}!GetDefaultGrid@{GetDefaultGrid}}
+\index{GetDefaultGrid@{GetDefaultGrid}!Plot@{Plot}}
+\doxysubsubsection{\texorpdfstring{GetDefaultGrid()}{GetDefaultGrid()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classDefaultGrid}{Default\+Grid}} Plot.\+Get\+Default\+Grid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classPlot_aa5c8cd09373148b23e157997cf3086ae}\label{classPlot_aa5c8cd09373148b23e157997cf3086ae}} 
+\index{Plot@{Plot}!GetImage@{GetImage}}
+\index{GetImage@{GetImage}!Plot@{Plot}}
+\doxysubsubsection{\texorpdfstring{GetImage()}{GetImage()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classImage}{Image}} Plot.\+Get\+Image (\begin{DoxyParamCaption}\item[{int}]{width,  }\item[{int}]{height }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classPlot_aaf8eacf51981c6a87ff4af3f9df6fc03}\label{classPlot_aaf8eacf51981c6a87ff4af3f9df6fc03}} 
+\index{Plot@{Plot}!GetImageBytes@{GetImageBytes}}
+\index{GetImageBytes@{GetImageBytes}!Plot@{Plot}}
+\doxysubsubsection{\texorpdfstring{GetImageBytes()}{GetImageBytes()}}
+{\footnotesize\ttfamily byte \mbox{[}$\,$\mbox{]} Plot.\+Get\+Image\+Bytes (\begin{DoxyParamCaption}\item[{int}]{width,  }\item[{int}]{height,  }\item[{Image\+Format}]{format = {\ttfamily ImageFormat.Bmp} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classPlot_a5261db5b069decaeff925584a82aa266}\label{classPlot_a5261db5b069decaeff925584a82aa266}} 
+\index{Plot@{Plot}!GetImageHtml@{GetImageHtml}}
+\index{GetImageHtml@{GetImageHtml}!Plot@{Plot}}
+\doxysubsubsection{\texorpdfstring{GetImageHtml()}{GetImageHtml()}}
+{\footnotesize\ttfamily string Plot.\+Get\+Image\+Html (\begin{DoxyParamCaption}\item[{int}]{width,  }\item[{int}]{height }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Render the plot and return an HTML img element containing a Base64-\/encoded PNG 
+
+\mbox{\Hypertarget{classPlot_a4874e59a704130b87e532f9022ac4e29}\label{classPlot_a4874e59a704130b87e532f9022ac4e29}} 
+\index{Plot@{Plot}!GetLegendImage@{GetLegendImage}}
+\index{GetLegendImage@{GetLegendImage}!Plot@{Plot}}
+\doxysubsubsection{\texorpdfstring{GetLegendImage()}{GetLegendImage()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classImage}{Image}} Plot.\+Get\+Legend\+Image (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the content of the legend as a raster image 
+
+\mbox{\Hypertarget{classPlot_a5f73276f28ff8387c5eb7403d9ad6aac}\label{classPlot_a5f73276f28ff8387c5eb7403d9ad6aac}} 
+\index{Plot@{Plot}!GetLegendSvgXml@{GetLegendSvgXml}}
+\index{GetLegendSvgXml@{GetLegendSvgXml}!Plot@{Plot}}
+\doxysubsubsection{\texorpdfstring{GetLegendSvgXml()}{GetLegendSvgXml()}}
+{\footnotesize\ttfamily string Plot.\+Get\+Legend\+Svg\+Xml (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the content of the legend as SVG (vector) image 
+
+\mbox{\Hypertarget{classPlot_add84381248670e42c1c45cb82ebe28a1}\label{classPlot_add84381248670e42c1c45cb82ebe28a1}} 
+\index{Plot@{Plot}!GetPanel@{GetPanel}}
+\index{GetPanel@{GetPanel}!Plot@{Plot}}
+\doxysubsubsection{\texorpdfstring{GetPanel()}{GetPanel()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceIPanel}{IPanel}}? Plot.\+Get\+Panel (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPixel}{Pixel}}}]{pixel,  }\item[{bool}]{axes\+Only }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the panel under a given pixel 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pixel} & Point\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The panel at {\itshape pixel}  (or null)
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPlot_aca66a009c0320642ae2fce059433627a}\label{classPlot_aca66a009c0320642ae2fce059433627a}} 
+\index{Plot@{Plot}!GetPixel@{GetPixel}}
+\index{GetPixel@{GetPixel}!Plot@{Plot}}
+\doxysubsubsection{\texorpdfstring{GetPixel()}{GetPixel()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structPixel}{Pixel}} Plot.\+Get\+Pixel (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structCoordinates}{Coordinates}}}]{coordinates }\end{DoxyParamCaption})}
+
+
+
+Return the location on the screen (pixel) for a location on the plot (coordinates) on the default axes. The figure size and layout referenced will be the one from the last render. 
+
+\mbox{\Hypertarget{classPlot_a8484abbfcdfe8e3346c7cbabe9e32e09}\label{classPlot_a8484abbfcdfe8e3346c7cbabe9e32e09}} 
+\index{Plot@{Plot}!GetPixel@{GetPixel}}
+\index{GetPixel@{GetPixel}!Plot@{Plot}}
+\doxysubsubsection{\texorpdfstring{GetPixel()}{GetPixel()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structPixel}{Pixel}} Plot.\+Get\+Pixel (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structCoordinates}{Coordinates}}}]{coordinates,  }\item[{\mbox{\hyperlink{interfaceIXAxis}{IXAxis}}}]{x\+Axis,  }\item[{\mbox{\hyperlink{interfaceIYAxis}{IYAxis}}}]{y\+Axis }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return the location on the screen (pixel) for a location on the plot (coordinates) on the given axes. The figure size and layout referenced will be the one from the last render. 
+
+\mbox{\Hypertarget{classPlot_a933867c4a72c8ce9607238b5a1620c2a}\label{classPlot_a933867c4a72c8ce9607238b5a1620c2a}} 
+\index{Plot@{Plot}!GetPlottables@{GetPlottables}}
+\index{GetPlottables@{GetPlottables}!Plot@{Plot}}
+\doxysubsubsection{\texorpdfstring{GetPlottables()}{GetPlottables()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$\mbox{\hyperlink{interfaceIPlottable}{IPlottable}}$>$ Plot.\+Get\+Plottables (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return contents of \mbox{\hyperlink{classPlot_aff5b45ecb59d1ef7600b76c2ca61943c}{Plottable\+List}}. 
+
+\mbox{\Hypertarget{classPlot_a96ffa55da2180a8bf96f4b126962e8b1}\label{classPlot_a96ffa55da2180a8bf96f4b126962e8b1}} 
+\index{Plot@{Plot}!GetPlottables$<$ T $>$@{GetPlottables$<$ T $>$}}
+\index{GetPlottables$<$ T $>$@{GetPlottables$<$ T $>$}!Plot@{Plot}}
+\doxysubsubsection{\texorpdfstring{GetPlottables$<$ T $>$()}{GetPlottables< T >()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$T$>$ \mbox{\hyperlink{classPlot_a933867c4a72c8ce9607238b5a1620c2a}{Plot.\+Get\+Plottables}}$<$ T $>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return all plottables in \mbox{\hyperlink{classPlot_aff5b45ecb59d1ef7600b76c2ca61943c}{Plottable\+List}} of the given type. 
+
+\begin{Desc}
+\item[Type Constraints]\begin{description}
+\item[{\em T} : {\em \mbox{\hyperlink{interfaceIPlottable}{IPlottable}}}]\end{description}
+\end{Desc}
+\mbox{\Hypertarget{classPlot_a7679e15885258f582bb25535b95a398b}\label{classPlot_a7679e15885258f582bb25535b95a398b}} 
+\index{Plot@{Plot}!GetStyle@{GetStyle}}
+\index{GetStyle@{GetStyle}!Plot@{Plot}}
+\doxysubsubsection{\texorpdfstring{GetStyle()}{GetStyle()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPlotStyle}{Plot\+Style}} Plot.\+Get\+Style (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Return the current style settings for this plot 
+
+\mbox{\Hypertarget{classPlot_aba5026453945e889714bce5e44881fe6}\label{classPlot_aba5026453945e889714bce5e44881fe6}} 
+\index{Plot@{Plot}!GetSvgXml@{GetSvgXml}}
+\index{GetSvgXml@{GetSvgXml}!Plot@{Plot}}
+\doxysubsubsection{\texorpdfstring{GetSvgXml()}{GetSvgXml()}}
+{\footnotesize\ttfamily string Plot.\+Get\+Svg\+Xml (\begin{DoxyParamCaption}\item[{int}]{width,  }\item[{int}]{height }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classPlot_a294c52151dc6753f0054815356f4a39b}\label{classPlot_a294c52151dc6753f0054815356f4a39b}} 
+\index{Plot@{Plot}!HideAxesAndGrid@{HideAxesAndGrid}}
+\index{HideAxesAndGrid@{HideAxesAndGrid}!Plot@{Plot}}
+\doxysubsubsection{\texorpdfstring{HideAxesAndGrid()}{HideAxesAndGrid()}}
+{\footnotesize\ttfamily void Plot.\+Hide\+Axes\+And\+Grid (\begin{DoxyParamCaption}\item[{bool}]{show\+Title = {\ttfamily true} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Disable visibility for all axes and grids 
+
+\mbox{\Hypertarget{classPlot_a9fc3c07912ddf637cb0c60c2bd3d95a7}\label{classPlot_a9fc3c07912ddf637cb0c60c2bd3d95a7}} 
+\index{Plot@{Plot}!HideGrid@{HideGrid}}
+\index{HideGrid@{HideGrid}!Plot@{Plot}}
+\doxysubsubsection{\texorpdfstring{HideGrid()}{HideGrid()}}
+{\footnotesize\ttfamily void Plot.\+Hide\+Grid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Disable visibility for all grids 
+
+\mbox{\Hypertarget{classPlot_a42305ee322ccdea421a16a9a68f6e75c}\label{classPlot_a42305ee322ccdea421a16a9a68f6e75c}} 
+\index{Plot@{Plot}!HideLegend@{HideLegend}}
+\index{HideLegend@{HideLegend}!Plot@{Plot}}
+\doxysubsubsection{\texorpdfstring{HideLegend()}{HideLegend()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classLegend}{Legend}} Plot.\+Hide\+Legend (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Helper method for setting visibility of the \mbox{\hyperlink{classLegend}{Legend}} 
+
+\mbox{\Hypertarget{classPlot_ae880a2e1007eaf23885957c4b09f305e}\label{classPlot_ae880a2e1007eaf23885957c4b09f305e}} 
+\index{Plot@{Plot}!MoveToBack@{MoveToBack}}
+\index{MoveToBack@{MoveToBack}!Plot@{Plot}}
+\doxysubsubsection{\texorpdfstring{MoveToBack()}{MoveToBack()}}
+{\footnotesize\ttfamily void Plot.\+Move\+To\+Back (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceIPlottable}{IPlottable}}}]{plottable }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Move the indicated plottable to the start of the list so it is rendered first 
+
+\mbox{\Hypertarget{classPlot_a8d3e0bc98a363bc6317c940314308984}\label{classPlot_a8d3e0bc98a363bc6317c940314308984}} 
+\index{Plot@{Plot}!MoveToBottom@{MoveToBottom}}
+\index{MoveToBottom@{MoveToBottom}!Plot@{Plot}}
+\doxysubsubsection{\texorpdfstring{MoveToBottom()}{MoveToBottom()}}
+{\footnotesize\ttfamily void Plot.\+Move\+To\+Bottom (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceIPlottable}{IPlottable}}}]{plottable }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPlot_ad47013a5303f24d25106843f1c5d1ff7}\label{classPlot_ad47013a5303f24d25106843f1c5d1ff7}} 
+\index{Plot@{Plot}!MoveToFront@{MoveToFront}}
+\index{MoveToFront@{MoveToFront}!Plot@{Plot}}
+\doxysubsubsection{\texorpdfstring{MoveToFront()}{MoveToFront()}}
+{\footnotesize\ttfamily void Plot.\+Move\+To\+Front (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceIPlottable}{IPlottable}}}]{plottable }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Move the indicated plottable to the end of the list so it is rendered last 
+
+\mbox{\Hypertarget{classPlot_a8224d917dcd8f753f585e79399bcabc9}\label{classPlot_a8224d917dcd8f753f585e79399bcabc9}} 
+\index{Plot@{Plot}!MoveToTop@{MoveToTop}}
+\index{MoveToTop@{MoveToTop}!Plot@{Plot}}
+\doxysubsubsection{\texorpdfstring{MoveToTop()}{MoveToTop()}}
+{\footnotesize\ttfamily void Plot.\+Move\+To\+Top (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceIPlottable}{IPlottable}}}]{plottable }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPlot_a6ed11afae815d6d177eb12b315ebc122}\label{classPlot_a6ed11afae815d6d177eb12b315ebc122}} 
+\index{Plot@{Plot}!Remove@{Remove}}
+\index{Remove@{Remove}!Plot@{Plot}}
+\doxysubsubsection{\texorpdfstring{Remove()}{Remove()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily void Plot.\+Remove (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceIAxis}{IAxis}}}]{axis }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Remove the given Axis from the \mbox{\hyperlink{classAxes}{Axes}}. 
+
+\mbox{\Hypertarget{classPlot_aca300913b4dfd0fe01d59b6c9c846750}\label{classPlot_aca300913b4dfd0fe01d59b6c9c846750}} 
+\index{Plot@{Plot}!Remove@{Remove}}
+\index{Remove@{Remove}!Plot@{Plot}}
+\doxysubsubsection{\texorpdfstring{Remove()}{Remove()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily void Plot.\+Remove (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceIPanel}{IPanel}}}]{panel }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Remove the given Panel from the \mbox{\hyperlink{classAxes}{Axes}}. 
+
+\mbox{\Hypertarget{classPlot_a085443b090a4f7435c71ff8909ec09ae}\label{classPlot_a085443b090a4f7435c71ff8909ec09ae}} 
+\index{Plot@{Plot}!Remove@{Remove}}
+\index{Remove@{Remove}!Plot@{Plot}}
+\doxysubsubsection{\texorpdfstring{Remove()}{Remove()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily void Plot.\+Remove (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceIPlottable}{IPlottable}}}]{plottable }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Remove the given plottable from the \mbox{\hyperlink{classPlot_aff5b45ecb59d1ef7600b76c2ca61943c}{Plottable\+List}}. 
+
+\mbox{\Hypertarget{classPlot_acca9cdd21aa56036976ab2ce861323ec}\label{classPlot_acca9cdd21aa56036976ab2ce861323ec}} 
+\index{Plot@{Plot}!Remove@{Remove}}
+\index{Remove@{Remove}!Plot@{Plot}}
+\doxysubsubsection{\texorpdfstring{Remove()}{Remove()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily void Plot.\+Remove (\begin{DoxyParamCaption}\item[{Type}]{plot\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Remove all items of a specific type from the \mbox{\hyperlink{classPlot_aff5b45ecb59d1ef7600b76c2ca61943c}{Plottable\+List}}. 
+
+\mbox{\Hypertarget{classPlot_a9e5f9493c0f55f309364c9c2f202c9de}\label{classPlot_a9e5f9493c0f55f309364c9c2f202c9de}} 
+\index{Plot@{Plot}!Remove$<$ T $>$@{Remove$<$ T $>$}}
+\index{Remove$<$ T $>$@{Remove$<$ T $>$}!Plot@{Plot}}
+\doxysubsubsection{\texorpdfstring{Remove$<$ T $>$()}{Remove< T >()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{classPlot_a085443b090a4f7435c71ff8909ec09ae}{Plot.\+Remove}}$<$ T $>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Remove a all instances of a specific type from the \mbox{\hyperlink{classPlot_aff5b45ecb59d1ef7600b76c2ca61943c}{Plottable\+List}}. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & Type of \mbox{\hyperlink{interfaceIPlottable}{IPlottable}} to be removed\\
+\hline
+\end{DoxyTemplParams}
+\begin{Desc}
+\item[Type Constraints]\begin{description}
+\item[{\em T} : {\em \mbox{\hyperlink{interfaceIPlottable}{IPlottable}}}]\end{description}
+\end{Desc}
+\mbox{\Hypertarget{classPlot_aa4cd625ea8178aa598775325cab7984d}\label{classPlot_aa4cd625ea8178aa598775325cab7984d}} 
+\index{Plot@{Plot}!Remove$<$ T $>$@{Remove$<$ T $>$}}
+\index{Remove$<$ T $>$@{Remove$<$ T $>$}!Plot@{Plot}}
+\doxysubsubsection{\texorpdfstring{Remove$<$ T $>$()}{Remove< T >()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{classPlot_a085443b090a4f7435c71ff8909ec09ae}{Plot.\+Remove}}$<$ T $>$ (\begin{DoxyParamCaption}\item[{Func$<$ T, bool $>$}]{predicate }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Remove all instances of a specific type from the \mbox{\hyperlink{classPlot_aff5b45ecb59d1ef7600b76c2ca61943c}{Plottable\+List}} that meet the {\itshape predicate}  criteraia. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em predicate} & A function to test each element for a condition.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & Type of \mbox{\hyperlink{interfaceIPlottable}{IPlottable}} to be removed\\
+\hline
+\end{DoxyTemplParams}
+\begin{Desc}
+\item[Type Constraints]\begin{description}
+\item[{\em T} : {\em \mbox{\hyperlink{interfaceIPlottable}{IPlottable}}}]\end{description}
+\end{Desc}
+\mbox{\Hypertarget{classPlot_aa91dc4610ed47d78c5a7853a5ddab6a6}\label{classPlot_aa91dc4610ed47d78c5a7853a5ddab6a6}} 
+\index{Plot@{Plot}!Render@{Render}}
+\index{Render@{Render}!Plot@{Plot}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily void Plot.\+Render (\begin{DoxyParamCaption}\item[{int}]{width = {\ttfamily 400},  }\item[{int}]{height = {\ttfamily 300} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classPlot_addaa339d13480597fba9a576455ea599}\label{classPlot_addaa339d13480597fba9a576455ea599}} 
+\index{Plot@{Plot}!Render@{Render}}
+\index{Render@{Render}!Plot@{Plot}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily void Plot.\+Render (\begin{DoxyParamCaption}\item[{SKCanvas}]{canvas,  }\item[{int}]{width,  }\item[{int}]{height }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Render onto an existing canvas 
+
+\mbox{\Hypertarget{classPlot_a281d91bd0db8ee56ec45e9adb6541ebe}\label{classPlot_a281d91bd0db8ee56ec45e9adb6541ebe}} 
+\index{Plot@{Plot}!Render@{Render}}
+\index{Render@{Render}!Plot@{Plot}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily void Plot.\+Render (\begin{DoxyParamCaption}\item[{SKCanvas}]{canvas,  }\item[{\mbox{\hyperlink{structPixelRect}{Pixel\+Rect}}}]{rect }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Render onto an existing canvas inside the given rectangle 
+
+\mbox{\Hypertarget{classPlot_a86e468285ab93cd1a87648a148b8ca06}\label{classPlot_a86e468285ab93cd1a87648a148b8ca06}} 
+\index{Plot@{Plot}!Render@{Render}}
+\index{Render@{Render}!Plot@{Plot}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily void Plot.\+Render (\begin{DoxyParamCaption}\item[{SKSurface}]{surface }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Render onto an existing canvas of a surface over the local clip bounds 
+
+\mbox{\Hypertarget{classPlot_a2969601a26f3493363931012d19246e6}\label{classPlot_a2969601a26f3493363931012d19246e6}} 
+\index{Plot@{Plot}!RenderInMemory@{RenderInMemory}}
+\index{RenderInMemory@{RenderInMemory}!Plot@{Plot}}
+\doxysubsubsection{\texorpdfstring{RenderInMemory()}{RenderInMemory()}}
+{\footnotesize\ttfamily void Plot.\+Render\+In\+Memory (\begin{DoxyParamCaption}\item[{int}]{width = {\ttfamily 400},  }\item[{int}]{height = {\ttfamily 300} }\end{DoxyParamCaption})}
+
+
+
+Create a new image of the given dimensions, render the plot onto it, and return it. 
+
+\mbox{\Hypertarget{classPlot_ae04f6df5bdb8a9bf8ec2b4a09793af49}\label{classPlot_ae04f6df5bdb8a9bf8ec2b4a09793af49}} 
+\index{Plot@{Plot}!Save@{Save}}
+\index{Save@{Save}!Plot@{Plot}}
+\doxysubsubsection{\texorpdfstring{Save()}{Save()}}
+{\footnotesize\ttfamily Saved\+Image\+Info Plot.\+Save (\begin{DoxyParamCaption}\item[{string}]{file\+Path,  }\item[{int}]{width,  }\item[{int}]{height,  }\item[{Image\+Format}]{format = {\ttfamily ImageFormat.Png},  }\item[{int}]{quality = {\ttfamily 85} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classPlot_aed63dd8288ecd03f616f036d5994fad4}\label{classPlot_aed63dd8288ecd03f616f036d5994fad4}} 
+\index{Plot@{Plot}!SaveBmp@{SaveBmp}}
+\index{SaveBmp@{SaveBmp}!Plot@{Plot}}
+\doxysubsubsection{\texorpdfstring{SaveBmp()}{SaveBmp()}}
+{\footnotesize\ttfamily Saved\+Image\+Info Plot.\+Save\+Bmp (\begin{DoxyParamCaption}\item[{string}]{file\+Path,  }\item[{int}]{width,  }\item[{int}]{height }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classPlot_aa411bd6d5ca369e61876a84b155244e6}\label{classPlot_aa411bd6d5ca369e61876a84b155244e6}} 
+\index{Plot@{Plot}!SaveJpeg@{SaveJpeg}}
+\index{SaveJpeg@{SaveJpeg}!Plot@{Plot}}
+\doxysubsubsection{\texorpdfstring{SaveJpeg()}{SaveJpeg()}}
+{\footnotesize\ttfamily Saved\+Image\+Info Plot.\+Save\+Jpeg (\begin{DoxyParamCaption}\item[{string}]{file\+Path,  }\item[{int}]{width,  }\item[{int}]{height,  }\item[{int}]{quality = {\ttfamily 85} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classPlot_acd8e87f7a4ab019a875160cd345ebe50}\label{classPlot_acd8e87f7a4ab019a875160cd345ebe50}} 
+\index{Plot@{Plot}!SavePng@{SavePng}}
+\index{SavePng@{SavePng}!Plot@{Plot}}
+\doxysubsubsection{\texorpdfstring{SavePng()}{SavePng()}}
+{\footnotesize\ttfamily Saved\+Image\+Info Plot.\+Save\+Png (\begin{DoxyParamCaption}\item[{string}]{file\+Path,  }\item[{int}]{width,  }\item[{int}]{height }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classPlot_a2d0728484087ef227a6d97e5f0763090}\label{classPlot_a2d0728484087ef227a6d97e5f0763090}} 
+\index{Plot@{Plot}!SaveSvg@{SaveSvg}}
+\index{SaveSvg@{SaveSvg}!Plot@{Plot}}
+\doxysubsubsection{\texorpdfstring{SaveSvg()}{SaveSvg()}}
+{\footnotesize\ttfamily Saved\+Image\+Info Plot.\+Save\+Svg (\begin{DoxyParamCaption}\item[{string}]{file\+Path,  }\item[{int}]{width,  }\item[{int}]{height }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classPlot_abc4077e1dd40b3598f0ec73171b2db94}\label{classPlot_abc4077e1dd40b3598f0ec73171b2db94}} 
+\index{Plot@{Plot}!SaveWebp@{SaveWebp}}
+\index{SaveWebp@{SaveWebp}!Plot@{Plot}}
+\doxysubsubsection{\texorpdfstring{SaveWebp()}{SaveWebp()}}
+{\footnotesize\ttfamily Saved\+Image\+Info Plot.\+Save\+Webp (\begin{DoxyParamCaption}\item[{string}]{file\+Path,  }\item[{int}]{width,  }\item[{int}]{height,  }\item[{int}]{quality = {\ttfamily 85} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classPlot_ae3483e67c77724705bb6fb1bf394c2e1}\label{classPlot_ae3483e67c77724705bb6fb1bf394c2e1}} 
+\index{Plot@{Plot}!SetStyle@{SetStyle}}
+\index{SetStyle@{SetStyle}!Plot@{Plot}}
+\doxysubsubsection{\texorpdfstring{SetStyle()}{SetStyle()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Plot.\+Set\+Style (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPlot}{Plot}}}]{other\+Plot }\end{DoxyParamCaption})}
+
+
+
+Apply the style settings from the given plot to this plot 
+
+\mbox{\Hypertarget{classPlot_a4a2e0262c2092defc0bd68a78938fb32}\label{classPlot_a4a2e0262c2092defc0bd68a78938fb32}} 
+\index{Plot@{Plot}!SetStyle@{SetStyle}}
+\index{SetStyle@{SetStyle}!Plot@{Plot}}
+\doxysubsubsection{\texorpdfstring{SetStyle()}{SetStyle()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Plot.\+Set\+Style (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPlotStyle}{Plot\+Style}}}]{style }\end{DoxyParamCaption})}
+
+
+
+Apply the given style settings to this plot 
+
+\mbox{\Hypertarget{classPlot_aefa2cf591748badc4c453d0f094e8b6c}\label{classPlot_aefa2cf591748badc4c453d0f094e8b6c}} 
+\index{Plot@{Plot}!ShowGrid@{ShowGrid}}
+\index{ShowGrid@{ShowGrid}!Plot@{Plot}}
+\doxysubsubsection{\texorpdfstring{ShowGrid()}{ShowGrid()}}
+{\footnotesize\ttfamily void Plot.\+Show\+Grid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Enable visibility for all grids 
+
+\mbox{\Hypertarget{classPlot_aeb40eb1c15bd539fb20dc774c696d411}\label{classPlot_aeb40eb1c15bd539fb20dc774c696d411}} 
+\index{Plot@{Plot}!ShowLegend@{ShowLegend}}
+\index{ShowLegend@{ShowLegend}!Plot@{Plot}}
+\doxysubsubsection{\texorpdfstring{ShowLegend()}{ShowLegend()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classLegend}{Legend}} Plot.\+Show\+Legend (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Helper method for setting visibility of the \mbox{\hyperlink{classLegend}{Legend}} 
+
+\mbox{\Hypertarget{classPlot_a61b1e3d0f7a7a86b74f58ca70e859480}\label{classPlot_a61b1e3d0f7a7a86b74f58ca70e859480}} 
+\index{Plot@{Plot}!ShowLegend@{ShowLegend}}
+\index{ShowLegend@{ShowLegend}!Plot@{Plot}}
+\doxysubsubsection{\texorpdfstring{ShowLegend()}{ShowLegend()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classLegend}{Legend}} Plot.\+Show\+Legend (\begin{DoxyParamCaption}\item[{Alignment}]{alignment }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Helper method for setting visibility of the \mbox{\hyperlink{classLegend}{Legend}} and setting \mbox{\hyperlink{classLegend_aeb15729340083955deba4e02f2c95d57}{Legend.\+Location}} to the provided one. 
+
+\mbox{\Hypertarget{classPlot_ada30402650a9bfe4449744e5ebc2843d}\label{classPlot_ada30402650a9bfe4449744e5ebc2843d}} 
+\index{Plot@{Plot}!ShowLegend@{ShowLegend}}
+\index{ShowLegend@{ShowLegend}!Plot@{Plot}}
+\doxysubsubsection{\texorpdfstring{ShowLegend()}{ShowLegend()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classLegend}{Legend}} Plot.\+Show\+Legend (\begin{DoxyParamCaption}\item[{Alignment}]{alignment,  }\item[{Orientation}]{orientation }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Helper method for setting the \mbox{\hyperlink{classLegend}{Legend}}\textquotesingle{}s Is\+Visible, Alignment, and Orientation properties all at once. 
+
+\mbox{\Hypertarget{classPlot_a1576b0bdd307d8daddc1fd875dcb2846}\label{classPlot_a1576b0bdd307d8daddc1fd875dcb2846}} 
+\index{Plot@{Plot}!ShowLegend@{ShowLegend}}
+\index{ShowLegend@{ShowLegend}!Plot@{Plot}}
+\doxysubsubsection{\texorpdfstring{ShowLegend()}{ShowLegend()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily Panels.\+Legend\+Panel Plot.\+Show\+Legend (\begin{DoxyParamCaption}\item[{Edge}]{edge }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Hide the default legend (inside the data area) and create a new legend panel placed on the edge of the figure outside the data area. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPlot_ad1c2b38a1d87e28b65b2992cac3e019d}\label{classPlot_ad1c2b38a1d87e28b65b2992cac3e019d}} 
+\index{Plot@{Plot}!ShowLegend@{ShowLegend}}
+\index{ShowLegend@{ShowLegend}!Plot@{Plot}}
+\doxysubsubsection{\texorpdfstring{ShowLegend()}{ShowLegend()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classLegend}{Legend}} Plot.\+Show\+Legend (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$ \mbox{\hyperlink{classLegendItem}{Legend\+Item}} $>$}]{items,  }\item[{Alignment}]{location = {\ttfamily Alignment.LowerRight} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Helper method for displaying specific items in the legend 
+
+\mbox{\Hypertarget{classPlot_a9168ba6c280a080e10f7c634c226eee5}\label{classPlot_a9168ba6c280a080e10f7c634c226eee5}} 
+\index{Plot@{Plot}!Title@{Title}}
+\index{Title@{Title}!Plot@{Plot}}
+\doxysubsubsection{\texorpdfstring{Title()}{Title()}}
+{\footnotesize\ttfamily void Plot.\+Title (\begin{DoxyParamCaption}\item[{string}]{text,  }\item[{float?}]{size = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Shortcut to set text of the \mbox{\hyperlink{classTitlePanel}{Title\+Panel}} \mbox{\hyperlink{classLabel}{Label}}. Assign properties of \mbox{\hyperlink{classTitlePanel}{Title\+Panel}} \mbox{\hyperlink{classLabel}{Label}} to customize size, color, font, etc. 
+
+\mbox{\Hypertarget{classPlot_a452ff052d64069119c4f96b63ac9ae08}\label{classPlot_a452ff052d64069119c4f96b63ac9ae08}} 
+\index{Plot@{Plot}!XLabel@{XLabel}}
+\index{XLabel@{XLabel}!Plot@{Plot}}
+\doxysubsubsection{\texorpdfstring{XLabel()}{XLabel()}}
+{\footnotesize\ttfamily void Plot.\+XLabel (\begin{DoxyParamCaption}\item[{string}]{label,  }\item[{float?}]{size = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Shortcut to set text of the \mbox{\hyperlink{classBottomAxis}{Bottom\+Axis}} \mbox{\hyperlink{classLabel}{Label}} Assign properties of \mbox{\hyperlink{classBottomAxis}{Bottom\+Axis}} \mbox{\hyperlink{classLabel}{Label}} to customize size, color, font, etc. 
+
+\mbox{\Hypertarget{classPlot_a5c10d7a0aa0cc5b7219024799d7c73d6}\label{classPlot_a5c10d7a0aa0cc5b7219024799d7c73d6}} 
+\index{Plot@{Plot}!YLabel@{YLabel}}
+\index{YLabel@{YLabel}!Plot@{Plot}}
+\doxysubsubsection{\texorpdfstring{YLabel()}{YLabel()}}
+{\footnotesize\ttfamily void Plot.\+YLabel (\begin{DoxyParamCaption}\item[{string}]{label,  }\item[{float?}]{size = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Shortcut to set text of the \mbox{\hyperlink{classBottomAxis}{Bottom\+Axis}} \mbox{\hyperlink{classLabel}{Label}} Assign properties of \mbox{\hyperlink{classBottomAxis}{Bottom\+Axis}} \mbox{\hyperlink{classLabel}{Label}} to customize size, color, font, etc. 
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classPlot_ad12401c935e2ed9e0e397b999a87d0a1}\label{classPlot_ad12401c935e2ed9e0e397b999a87d0a1}} 
+\index{Plot@{Plot}!DataBackground@{DataBackground}}
+\index{DataBackground@{DataBackground}!Plot@{Plot}}
+\doxysubsubsection{\texorpdfstring{DataBackground}{DataBackground}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classBackgroundStyle}{Background\+Style}} Plot.\+Data\+Background = new() \{ \mbox{\hyperlink{structColor}{Color}} = \mbox{\hyperlink{structColors_a9695917727155acebdb5b379dcfdad8b}{Colors.\+Transparent}} \}}
+
+
+
+Style for the data area (the area within the axis frames) 
+
+\mbox{\Hypertarget{classPlot_a121a18fb6b77e8688f79f9d17e2f3ad1}\label{classPlot_a121a18fb6b77e8688f79f9d17e2f3ad1}} 
+\index{Plot@{Plot}!FigureBackground@{FigureBackground}}
+\index{FigureBackground@{FigureBackground}!Plot@{Plot}}
+\doxysubsubsection{\texorpdfstring{FigureBackground}{FigureBackground}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classBackgroundStyle}{Background\+Style}} Plot.\+Figure\+Background = new() \{ \mbox{\hyperlink{structColor}{Color}} = \mbox{\hyperlink{structColors_ab0ad6baf8f6d892c8597ade1d65b9e6e}{Colors.\+White}} \}}
+
+
+
+Style for the background of the entire figure 
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{classPlot_a2547c8035f715653ef32a42da4bf5788}\label{classPlot_a2547c8035f715653ef32a42da4bf5788}} 
+\index{Plot@{Plot}!Add@{Add}}
+\index{Add@{Add}!Plot@{Plot}}
+\doxysubsubsection{\texorpdfstring{Add}{Add}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPlottableAdder}{Plottable\+Adder}} Plot.\+Add\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{classPlot_a1d25ef99cd07e03e62f67b60def141e0}\label{classPlot_a1d25ef99cd07e03e62f67b60def141e0}} 
+\index{Plot@{Plot}!Axes@{Axes}}
+\index{Axes@{Axes}!Plot@{Plot}}
+\doxysubsubsection{\texorpdfstring{Axes}{Axes}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classAxisManager}{Axis\+Manager}} Plot.\+Axes\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{classPlot_a01bb71d37138275ca75e462addc4038e}\label{classPlot_a01bb71d37138275ca75e462addc4038e}} 
+\index{Plot@{Plot}!Benchmark@{Benchmark}}
+\index{Benchmark@{Benchmark}!Plot@{Plot}}
+\doxysubsubsection{\texorpdfstring{Benchmark}{Benchmark}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceIPlottable}{IPlottable}} Plot.\+Benchmark = new Plottables.\+Benchmark()\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classPlot_aba7d4441e8bcfbf9db21c1f7a94cb342}\label{classPlot_aba7d4441e8bcfbf9db21c1f7a94cb342}} 
+\index{Plot@{Plot}!Font@{Font}}
+\index{Font@{Font}!Plot@{Plot}}
+\doxysubsubsection{\texorpdfstring{Font}{Font}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classFontStyler}{Font\+Styler}} Plot.\+Font\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{classPlot_a30b5ee030e10da3e5506760a9140b54d}\label{classPlot_a30b5ee030e10da3e5506760a9140b54d}} 
+\index{Plot@{Plot}!Grid@{Grid}}
+\index{Grid@{Grid}!Plot@{Plot}}
+\doxysubsubsection{\texorpdfstring{Grid}{Grid}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classDefaultGrid}{Default\+Grid}} Plot.\+Grid\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{classPlot_a270ca3f5f046e51119b0a3fd2acb6808}\label{classPlot_a270ca3f5f046e51119b0a3fd2acb6808}} 
+\index{Plot@{Plot}!LastRender@{LastRender}}
+\index{LastRender@{LastRender}!Plot@{Plot}}
+\doxysubsubsection{\texorpdfstring{LastRender}{LastRender}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structRenderDetails}{Render\+Details}} Plot.\+Last\+Render\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{classPlot_a72dd497db34deb43caa10c0cec79f1a8}\label{classPlot_a72dd497db34deb43caa10c0cec79f1a8}} 
+\index{Plot@{Plot}!Layout@{Layout}}
+\index{Layout@{Layout}!Plot@{Plot}}
+\doxysubsubsection{\texorpdfstring{Layout}{Layout}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classLayoutManager}{Layout\+Manager}} Plot.\+Layout\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{classPlot_a5a189bc6f289d594a24d9d16c4d32e30}\label{classPlot_a5a189bc6f289d594a24d9d16c4d32e30}} 
+\index{Plot@{Plot}!Legend@{Legend}}
+\index{Legend@{Legend}!Plot@{Plot}}
+\doxysubsubsection{\texorpdfstring{Legend}{Legend}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classLegend}{Legend}} Plot.\+Legend\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{classPlot_a5dbbb0567b6a467221ece35577b3c3ee}\label{classPlot_a5dbbb0567b6a467221ece35577b3c3ee}} 
+\index{Plot@{Plot}!PlotControl@{PlotControl}}
+\index{PlotControl@{PlotControl}!Plot@{Plot}}
+\doxysubsubsection{\texorpdfstring{PlotControl}{PlotControl}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceIPlotControl}{IPlot\+Control}}? Plot.\+Plot\+Control = null\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The user control this plot belongs to 
+
+\mbox{\Hypertarget{classPlot_aff5b45ecb59d1ef7600b76c2ca61943c}\label{classPlot_aff5b45ecb59d1ef7600b76c2ca61943c}} 
+\index{Plot@{Plot}!PlottableList@{PlottableList}}
+\index{PlottableList@{PlottableList}!Plot@{Plot}}
+\doxysubsubsection{\texorpdfstring{PlottableList}{PlottableList}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{interfaceIPlottable}{IPlottable}}$>$ Plot.\+Plottable\+List = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{classPlot_a8c904b14c9dca82c6ae052d00ac53cec}\label{classPlot_a8c904b14c9dca82c6ae052d00ac53cec}} 
+\index{Plot@{Plot}!RenderManager@{RenderManager}}
+\index{RenderManager@{RenderManager}!Plot@{Plot}}
+\doxysubsubsection{\texorpdfstring{RenderManager}{RenderManager}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classRenderManager}{Render\+Manager}} Plot.\+Render\+Manager\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{classPlot_ad4e36fa1634081d801ebbe7df311983f}\label{classPlot_ad4e36fa1634081d801ebbe7df311983f}} 
+\index{Plot@{Plot}!ScaleFactor@{ScaleFactor}}
+\index{ScaleFactor@{ScaleFactor}!Plot@{Plot}}
+\doxysubsubsection{\texorpdfstring{ScaleFactor}{ScaleFactor}}
+{\footnotesize\ttfamily double Plot.\+Scale\+Factor\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classPlot_a7ab05dff09e3d391efdf12cf34bb78d2}\label{classPlot_a7ab05dff09e3d391efdf12cf34bb78d2}} 
+\index{Plot@{Plot}!Style@{Style}}
+\index{Style@{Style}!Plot@{Plot}}
+\doxysubsubsection{\texorpdfstring{Style}{Style}}
+{\footnotesize\ttfamily Plot\+Styler Plot.\+Style = new()\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{classPlot_aae98113eaa510db9460a35e298aa27a4}\label{classPlot_aae98113eaa510db9460a35e298aa27a4}} 
+\index{Plot@{Plot}!Sync@{Sync}}
+\index{Sync@{Sync}!Plot@{Plot}}
+\doxysubsubsection{\texorpdfstring{Sync}{Sync}}
+{\footnotesize\ttfamily object Plot.\+Sync = new()\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+This object is locked by the \mbox{\hyperlink{classPlot_aa91dc4610ed47d78c5a7853a5ddab6a6}{Render()}} methods. Logic that manipulates the plot (UI inputs or editing data) can lock this object to prevent rendering artifacts. 
+
+\mbox{\Hypertarget{classPlot_ad8ae056d082daacf6308276791e2de79}\label{classPlot_ad8ae056d082daacf6308276791e2de79}} 
+\index{Plot@{Plot}!ZoomRectangle@{ZoomRectangle}}
+\index{ZoomRectangle@{ZoomRectangle}!Plot@{Plot}}
+\doxysubsubsection{\texorpdfstring{ZoomRectangle}{ZoomRectangle}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceIZoomRectangle}{IZoom\+Rectangle}} Plot.\+Zoom\+Rectangle\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/Plot.\+cs\end{DoxyCompactItemize}

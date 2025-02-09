@@ -1,0 +1,114 @@
+\hypertarget{classHorizontalLine}{}\doxysection{Horizontal\+Line Class Reference}
+\label{classHorizontalLine}\index{HorizontalLine@{HorizontalLine}}
+
+
+A line at a defined Y position that spans the entire horizontal space of the data area  
+
+
+Inheritance diagram for Horizontal\+Line\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.270073cm]{classHorizontalLine}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classHorizontalLine_a6184d0f076f8cb7fe36571f35117d647}{Horizontal\+Line}} ()
+\item 
+override bool \mbox{\hyperlink{classHorizontalLine_a425f58ff74ff86904927942c51cf8edd}{Is\+Under\+Mouse}} (\mbox{\hyperlink{structCoordinateRect}{Coordinate\+Rect}} rect)
+\item 
+override \mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} \mbox{\hyperlink{classHorizontalLine_a3699b28d2cf43ae832413546a4a6b7b6}{Get\+Axis\+Limits}} ()
+\begin{DoxyCompactList}\small\item\em Return the 2D area (in coordinate space) occupied by the data contained in this plottable \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{classHorizontalLine_a672b320970ca93fbdd16c0dcdd39ac66}{Render}} (\mbox{\hyperlink{classRenderPack}{Render\+Pack}} rp)
+\begin{DoxyCompactList}\small\item\em Draw the data from this plottable into the data area defined in the \mbox{\hyperlink{classAxes}{Axes}}. By default the surface is already clipped to the data area, but this can be cleared inside the plottable. \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{classHorizontalLine_af18cfb76c00dcd46a71d7be59d8594a9}{Render\+Last}} (\mbox{\hyperlink{classRenderPack}{Render\+Pack}} rp)
+\begin{DoxyCompactList}\small\item\em Plottables that implement this interface have a second render method that runs after the axes are drawn, allowing graphics to be placed on top of the axes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{classHorizontalLine_a2bd85e580aaed5397c5355abcdfbc833}{Y}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A line at a defined Y position that spans the entire horizontal space of the data area 
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classHorizontalLine_a6184d0f076f8cb7fe36571f35117d647}\label{classHorizontalLine_a6184d0f076f8cb7fe36571f35117d647}} 
+\index{HorizontalLine@{HorizontalLine}!HorizontalLine@{HorizontalLine}}
+\index{HorizontalLine@{HorizontalLine}!HorizontalLine@{HorizontalLine}}
+\doxysubsubsection{\texorpdfstring{HorizontalLine()}{HorizontalLine()}}
+{\footnotesize\ttfamily Horizontal\+Line.\+Horizontal\+Line (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classHorizontalLine_a3699b28d2cf43ae832413546a4a6b7b6}\label{classHorizontalLine_a3699b28d2cf43ae832413546a4a6b7b6}} 
+\index{HorizontalLine@{HorizontalLine}!GetAxisLimits@{GetAxisLimits}}
+\index{GetAxisLimits@{GetAxisLimits}!HorizontalLine@{HorizontalLine}}
+\doxysubsubsection{\texorpdfstring{GetAxisLimits()}{GetAxisLimits()}}
+{\footnotesize\ttfamily override \mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} Horizontal\+Line.\+Get\+Axis\+Limits (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Return the 2D area (in coordinate space) occupied by the data contained in this plottable 
+
+
+
+Implements \mbox{\hyperlink{classAxisLine_a27d4d4b88ed74cecd82ae9830bf33403}{Axis\+Line}}.
+
+\mbox{\Hypertarget{classHorizontalLine_a425f58ff74ff86904927942c51cf8edd}\label{classHorizontalLine_a425f58ff74ff86904927942c51cf8edd}} 
+\index{HorizontalLine@{HorizontalLine}!IsUnderMouse@{IsUnderMouse}}
+\index{IsUnderMouse@{IsUnderMouse}!HorizontalLine@{HorizontalLine}}
+\doxysubsubsection{\texorpdfstring{IsUnderMouse()}{IsUnderMouse()}}
+{\footnotesize\ttfamily override bool Horizontal\+Line.\+Is\+Under\+Mouse (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structCoordinateRect}{Coordinate\+Rect}}}]{rect }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classAxisLine_a9b8ee106a65f97ad00a55dc0117b161d}{Axis\+Line}}.
+
+\mbox{\Hypertarget{classHorizontalLine_a672b320970ca93fbdd16c0dcdd39ac66}\label{classHorizontalLine_a672b320970ca93fbdd16c0dcdd39ac66}} 
+\index{HorizontalLine@{HorizontalLine}!Render@{Render}}
+\index{Render@{Render}!HorizontalLine@{HorizontalLine}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily override void Horizontal\+Line.\+Render (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classRenderPack}{Render\+Pack}}}]{rp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Draw the data from this plottable into the data area defined in the \mbox{\hyperlink{classAxes}{Axes}}. By default the surface is already clipped to the data area, but this can be cleared inside the plottable. 
+
+
+
+Implements \mbox{\hyperlink{classAxisLine_aa0cb2f156e29e28f42a41f3488310cc9}{Axis\+Line}}.
+
+\mbox{\Hypertarget{classHorizontalLine_af18cfb76c00dcd46a71d7be59d8594a9}\label{classHorizontalLine_af18cfb76c00dcd46a71d7be59d8594a9}} 
+\index{HorizontalLine@{HorizontalLine}!RenderLast@{RenderLast}}
+\index{RenderLast@{RenderLast}!HorizontalLine@{HorizontalLine}}
+\doxysubsubsection{\texorpdfstring{RenderLast()}{RenderLast()}}
+{\footnotesize\ttfamily override void Horizontal\+Line.\+Render\+Last (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classRenderPack}{Render\+Pack}}}]{rp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Plottables that implement this interface have a second render method that runs after the axes are drawn, allowing graphics to be placed on top of the axes. 
+
+
+
+Implements \mbox{\hyperlink{classAxisLine_af0921fb9295ff2071d60fec430c6e322}{Axis\+Line}}.
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{classHorizontalLine_a2bd85e580aaed5397c5355abcdfbc833}\label{classHorizontalLine_a2bd85e580aaed5397c5355abcdfbc833}} 
+\index{HorizontalLine@{HorizontalLine}!Y@{Y}}
+\index{Y@{Y}!HorizontalLine@{HorizontalLine}}
+\doxysubsubsection{\texorpdfstring{Y}{Y}}
+{\footnotesize\ttfamily double Horizontal\+Line.\+Y\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Plottables/Horizontal\+Line.\+cs\end{DoxyCompactItemize}

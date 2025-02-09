@@ -1,0 +1,283 @@
+\hypertarget{classAxisBase}{}\doxysection{Axis\+Base Class Reference}
+\label{classAxisBase}\index{AxisBase@{AxisBase}}
+Inheritance diagram for Axis\+Base\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=8.000000cm]{classAxisBase}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override string \mbox{\hyperlink{classAxisBase_ac8e8116c2c6be686e27192d5efeecfd6}{To\+String}} ()
+\item 
+void \mbox{\hyperlink{classAxisBase_a236dc3bf66cd2debf7ed0e6f59789c05}{Color}} (\mbox{\hyperlink{structColor}{Color}} color)
+\begin{DoxyCompactList}\small\item\em Apply a single color to all axis components\+: label, tick labels, tick marks, and frame \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAxisBase_a99b98b1c0dc0a127a6a4e91e17498f46}{Set\+Ticks}} (double\mbox{[}$\,$\mbox{]} xs, string\mbox{[}$\,$\mbox{]} labels)
+\begin{DoxyCompactList}\small\item\em Replace the \mbox{\hyperlink{classAxisBase_a5ee9b7041a2fdd7e60999812ed6e59b8}{Tick\+Generator}} with a \mbox{\hyperlink{classNumericManual}{Numeric\+Manual}} pre-\/loaded with the given ticks. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classAxisBase_a74426bdae487f07e9bc2bf8f063da721}{Draw\+Frame}} (\mbox{\hyperlink{classRenderPack}{Render\+Pack}} rp, \mbox{\hyperlink{structPixelRect}{Pixel\+Rect}} panel\+Rect, \mbox{\hyperlink{classAxisBase_ad198e91685401e839189003522cf85e0}{Edge}} edge, \mbox{\hyperlink{classLineStyle}{Line\+Style}} line\+Style)
+\begin{DoxyCompactList}\small\item\em Draw a line along the edge of an axis on the side of the data area \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classAxisBase_afd460e9c257782645344da97edaaddec}{Draw\+Ticks}} (\mbox{\hyperlink{classRenderPack}{Render\+Pack}} rp, \mbox{\hyperlink{classLabelStyle}{Label\+Style}} label, \mbox{\hyperlink{structPixelRect}{Pixel\+Rect}} panel\+Rect, \mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$ \mbox{\hyperlink{structTick}{Tick}} $>$ ticks, \mbox{\hyperlink{interfaceIAxis}{IAxis}} axis, \mbox{\hyperlink{classTickMarkStyle}{Tick\+Mark\+Style}} major\+Style, \mbox{\hyperlink{classTickMarkStyle}{Tick\+Mark\+Style}} minor\+Style)
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classAxisBase_a67f63bdc4762ab6d1fd0493c9b7ffd93}{Is\+Visible}} = true\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+abstract Edge \mbox{\hyperlink{classAxisBase_ad198e91685401e839189003522cf85e0}{Edge}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+virtual \mbox{\hyperlink{classCoordinateRangeMutable}{Coordinate\+Range\+Mutable}} \mbox{\hyperlink{classAxisBase_a4799d59808a858e399c7819b533e1765}{Range}} = \mbox{\hyperlink{classCoordinateRangeMutable_ac8391f451d7953656f577dc7198a8b82}{Coordinate\+Range\+Mutable.\+Not\+Set}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+float \mbox{\hyperlink{classAxisBase_af4100a8713ea180bad003a7a1954cebf}{Minimum\+Size}} = 0\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{classAxisBase_ab8d6f4c15e9e7385528cd20b2395902d}{Maximum\+Size}} = float.\+Max\+Value\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{classAxisBase_afa4ed69d3e893767226429a5acf8ad16}{Size\+When\+No\+Data}} = 15\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{structPixelPadding}{Pixel\+Padding}} \mbox{\hyperlink{classAxisBase_af0415df0bca53a410b9021e64e481279}{Empty\+Label\+Padding}} = new(10, 5)\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{structPixelPadding}{Pixel\+Padding}} \mbox{\hyperlink{classAxisBase_aeabe16bdab935e9cfa994a48b6ba9166}{Padding\+Between\+Tick\+And\+Axis\+Labels}} = new(5, 3)\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{structPixelPadding}{Pixel\+Padding}} \mbox{\hyperlink{classAxisBase_a0693bdbcda4587b41fd0eac726cfce69}{Padding\+Outside\+Axis\+Labels}} = new(2, 2)\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+double \mbox{\hyperlink{classAxisBase_a59a18cebe8e8cd5fc610fe440c42b3c2}{Min}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+double \mbox{\hyperlink{classAxisBase_aad350961479d2ddc716e0feb092d2513}{Max}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+virtual \mbox{\hyperlink{interfaceITickGenerator}{ITick\+Generator}} \mbox{\hyperlink{classAxisBase_a5ee9b7041a2fdd7e60999812ed6e59b8}{Tick\+Generator}} = null!\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{classLabelStyle}{Label\+Style}} \mbox{\hyperlink{classAxisBase_ac1a69ac8b4251f796f05564279e23079}{Label}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+override \mbox{\hyperlink{classLabelStyle}{Label\+Style}} \mbox{\hyperlink{classAxisBase_a3ef85ed345a013fd6a16328db144fd68}{Label\+Style}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+bool \mbox{\hyperlink{classAxisBase_ab3af7231479dec8bc72657acfdd5985a}{Show\+Debug\+Information}} = false\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{classLineStyle}{Line\+Style}} \mbox{\hyperlink{classAxisBase_a30fd91695adcd8dd12c18cdc5046c4a0}{Frame\+Line\+Style}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{classTickMarkStyle}{Tick\+Mark\+Style}} \mbox{\hyperlink{classAxisBase_adbbd91000947edb608226d42b523511f}{Major\+Tick\+Style}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{classTickMarkStyle}{Tick\+Mark\+Style}} \mbox{\hyperlink{classAxisBase_a588b49cbe34164e62b88378bf72e9e49}{Minor\+Tick\+Style}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{classLabelStyle}{Label\+Style}} \mbox{\hyperlink{classAxisBase_ad28f36ed0ada2bb660256e1b8c2b0f7d}{Tick\+Label\+Style}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classAxisBase_a236dc3bf66cd2debf7ed0e6f59789c05}\label{classAxisBase_a236dc3bf66cd2debf7ed0e6f59789c05}} 
+\index{AxisBase@{AxisBase}!Color@{Color}}
+\index{Color@{Color}!AxisBase@{AxisBase}}
+\doxysubsubsection{\texorpdfstring{Color()}{Color()}}
+{\footnotesize\ttfamily void Axis\+Base.\+Color (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structColor}{Color}}}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Apply a single color to all axis components\+: label, tick labels, tick marks, and frame 
+
+\mbox{\Hypertarget{classAxisBase_a74426bdae487f07e9bc2bf8f063da721}\label{classAxisBase_a74426bdae487f07e9bc2bf8f063da721}} 
+\index{AxisBase@{AxisBase}!DrawFrame@{DrawFrame}}
+\index{DrawFrame@{DrawFrame}!AxisBase@{AxisBase}}
+\doxysubsubsection{\texorpdfstring{DrawFrame()}{DrawFrame()}}
+{\footnotesize\ttfamily static void Axis\+Base.\+Draw\+Frame (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classRenderPack}{Render\+Pack}}}]{rp,  }\item[{\mbox{\hyperlink{structPixelRect}{Pixel\+Rect}}}]{panel\+Rect,  }\item[{\mbox{\hyperlink{classAxisBase_ad198e91685401e839189003522cf85e0}{Edge}}}]{edge,  }\item[{\mbox{\hyperlink{classLineStyle}{Line\+Style}}}]{line\+Style }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Draw a line along the edge of an axis on the side of the data area 
+
+\mbox{\Hypertarget{classAxisBase_afd460e9c257782645344da97edaaddec}\label{classAxisBase_afd460e9c257782645344da97edaaddec}} 
+\index{AxisBase@{AxisBase}!DrawTicks@{DrawTicks}}
+\index{DrawTicks@{DrawTicks}!AxisBase@{AxisBase}}
+\doxysubsubsection{\texorpdfstring{DrawTicks()}{DrawTicks()}}
+{\footnotesize\ttfamily static void Axis\+Base.\+Draw\+Ticks (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classRenderPack}{Render\+Pack}}}]{rp,  }\item[{\mbox{\hyperlink{classLabelStyle}{Label\+Style}}}]{label,  }\item[{\mbox{\hyperlink{structPixelRect}{Pixel\+Rect}}}]{panel\+Rect,  }\item[{\mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$ \mbox{\hyperlink{structTick}{Tick}} $>$}]{ticks,  }\item[{\mbox{\hyperlink{interfaceIAxis}{IAxis}}}]{axis,  }\item[{\mbox{\hyperlink{classTickMarkStyle}{Tick\+Mark\+Style}}}]{major\+Style,  }\item[{\mbox{\hyperlink{classTickMarkStyle}{Tick\+Mark\+Style}}}]{minor\+Style }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{classAxisBase_a99b98b1c0dc0a127a6a4e91e17498f46}\label{classAxisBase_a99b98b1c0dc0a127a6a4e91e17498f46}} 
+\index{AxisBase@{AxisBase}!SetTicks@{SetTicks}}
+\index{SetTicks@{SetTicks}!AxisBase@{AxisBase}}
+\doxysubsubsection{\texorpdfstring{SetTicks()}{SetTicks()}}
+{\footnotesize\ttfamily void Axis\+Base.\+Set\+Ticks (\begin{DoxyParamCaption}\item[{double\mbox{[}$\,$\mbox{]}}]{xs,  }\item[{string\mbox{[}$\,$\mbox{]}}]{labels }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Replace the \mbox{\hyperlink{classAxisBase_a5ee9b7041a2fdd7e60999812ed6e59b8}{Tick\+Generator}} with a \mbox{\hyperlink{classNumericManual}{Numeric\+Manual}} pre-\/loaded with the given ticks. 
+
+\mbox{\Hypertarget{classAxisBase_ac8e8116c2c6be686e27192d5efeecfd6}\label{classAxisBase_ac8e8116c2c6be686e27192d5efeecfd6}} 
+\index{AxisBase@{AxisBase}!ToString@{ToString}}
+\index{ToString@{ToString}!AxisBase@{AxisBase}}
+\doxysubsubsection{\texorpdfstring{ToString()}{ToString()}}
+{\footnotesize\ttfamily override string Axis\+Base.\+To\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{classAxisBase_ad198e91685401e839189003522cf85e0}\label{classAxisBase_ad198e91685401e839189003522cf85e0}} 
+\index{AxisBase@{AxisBase}!Edge@{Edge}}
+\index{Edge@{Edge}!AxisBase@{AxisBase}}
+\doxysubsubsection{\texorpdfstring{Edge}{Edge}}
+{\footnotesize\ttfamily abstract Edge Axis\+Base.\+Edge\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{classAxisBase_af0415df0bca53a410b9021e64e481279}\label{classAxisBase_af0415df0bca53a410b9021e64e481279}} 
+\index{AxisBase@{AxisBase}!EmptyLabelPadding@{EmptyLabelPadding}}
+\index{EmptyLabelPadding@{EmptyLabelPadding}!AxisBase@{AxisBase}}
+\doxysubsubsection{\texorpdfstring{EmptyLabelPadding}{EmptyLabelPadding}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structPixelPadding}{Pixel\+Padding}} Axis\+Base.\+Empty\+Label\+Padding = new(10, 5)\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classAxisBase_a30fd91695adcd8dd12c18cdc5046c4a0}\label{classAxisBase_a30fd91695adcd8dd12c18cdc5046c4a0}} 
+\index{AxisBase@{AxisBase}!FrameLineStyle@{FrameLineStyle}}
+\index{FrameLineStyle@{FrameLineStyle}!AxisBase@{AxisBase}}
+\doxysubsubsection{\texorpdfstring{FrameLineStyle}{FrameLineStyle}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classLineStyle}{Line\+Style}} Axis\+Base.\+Frame\+Line\+Style\hspace{0.3cm}{\ttfamily [get]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new}()}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        Width = 1,}
+\DoxyCodeLine{        \mbox{\hyperlink{structColor}{Color}} = \mbox{\hyperlink{structColors}{Colors}}.\mbox{\hyperlink{structColors_a6a4f09e77ec6d0ef4c08348eb2e21714}{Black}},}
+\DoxyCodeLine{        AntiAlias = \textcolor{keyword}{false},}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classAxisBase_a67f63bdc4762ab6d1fd0493c9b7ffd93}\label{classAxisBase_a67f63bdc4762ab6d1fd0493c9b7ffd93}} 
+\index{AxisBase@{AxisBase}!IsVisible@{IsVisible}}
+\index{IsVisible@{IsVisible}!AxisBase@{AxisBase}}
+\doxysubsubsection{\texorpdfstring{IsVisible}{IsVisible}}
+{\footnotesize\ttfamily bool Axis\+Base.\+Is\+Visible = true\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classAxisBase_ac1a69ac8b4251f796f05564279e23079}\label{classAxisBase_ac1a69ac8b4251f796f05564279e23079}} 
+\index{AxisBase@{AxisBase}!Label@{Label}}
+\index{Label@{Label}!AxisBase@{AxisBase}}
+\doxysubsubsection{\texorpdfstring{Label}{Label}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classLabelStyle}{Label\+Style}} Axis\+Base.\+Label\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{classAxisBase_a3ef85ed345a013fd6a16328db144fd68}\label{classAxisBase_a3ef85ed345a013fd6a16328db144fd68}} 
+\index{AxisBase@{AxisBase}!LabelStyle@{LabelStyle}}
+\index{LabelStyle@{LabelStyle}!AxisBase@{AxisBase}}
+\doxysubsubsection{\texorpdfstring{LabelStyle}{LabelStyle}}
+{\footnotesize\ttfamily override \mbox{\hyperlink{classLabelStyle}{Label\+Style}} Axis\+Base.\+Label\+Style\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new}()}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        Text = \textcolor{keywordtype}{string}.Empty,}
+\DoxyCodeLine{        FontSize = 16,}
+\DoxyCodeLine{        Bold = \textcolor{keyword}{true},}
+\DoxyCodeLine{        Rotation = -\/90,}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classAxisBase_adbbd91000947edb608226d42b523511f}\label{classAxisBase_adbbd91000947edb608226d42b523511f}} 
+\index{AxisBase@{AxisBase}!MajorTickStyle@{MajorTickStyle}}
+\index{MajorTickStyle@{MajorTickStyle}!AxisBase@{AxisBase}}
+\doxysubsubsection{\texorpdfstring{MajorTickStyle}{MajorTickStyle}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classTickMarkStyle}{Tick\+Mark\+Style}} Axis\+Base.\+Major\+Tick\+Style\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new}()}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        Length = 4,}
+\DoxyCodeLine{        Width = 1,}
+\DoxyCodeLine{        \mbox{\hyperlink{structColor}{Color}} = \mbox{\hyperlink{structColors}{Colors}}.\mbox{\hyperlink{structColors_a6a4f09e77ec6d0ef4c08348eb2e21714}{Black}},}
+\DoxyCodeLine{        AntiAlias = \textcolor{keyword}{false},}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classAxisBase_aad350961479d2ddc716e0feb092d2513}\label{classAxisBase_aad350961479d2ddc716e0feb092d2513}} 
+\index{AxisBase@{AxisBase}!Max@{Max}}
+\index{Max@{Max}!AxisBase@{AxisBase}}
+\doxysubsubsection{\texorpdfstring{Max}{Max}}
+{\footnotesize\ttfamily double Axis\+Base.\+Max\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classAxisBase_ab8d6f4c15e9e7385528cd20b2395902d}\label{classAxisBase_ab8d6f4c15e9e7385528cd20b2395902d}} 
+\index{AxisBase@{AxisBase}!MaximumSize@{MaximumSize}}
+\index{MaximumSize@{MaximumSize}!AxisBase@{AxisBase}}
+\doxysubsubsection{\texorpdfstring{MaximumSize}{MaximumSize}}
+{\footnotesize\ttfamily float Axis\+Base.\+Maximum\+Size = float.\+Max\+Value\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classAxisBase_a59a18cebe8e8cd5fc610fe440c42b3c2}\label{classAxisBase_a59a18cebe8e8cd5fc610fe440c42b3c2}} 
+\index{AxisBase@{AxisBase}!Min@{Min}}
+\index{Min@{Min}!AxisBase@{AxisBase}}
+\doxysubsubsection{\texorpdfstring{Min}{Min}}
+{\footnotesize\ttfamily double Axis\+Base.\+Min\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classAxisBase_af4100a8713ea180bad003a7a1954cebf}\label{classAxisBase_af4100a8713ea180bad003a7a1954cebf}} 
+\index{AxisBase@{AxisBase}!MinimumSize@{MinimumSize}}
+\index{MinimumSize@{MinimumSize}!AxisBase@{AxisBase}}
+\doxysubsubsection{\texorpdfstring{MinimumSize}{MinimumSize}}
+{\footnotesize\ttfamily float Axis\+Base.\+Minimum\+Size = 0\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classAxisBase_a588b49cbe34164e62b88378bf72e9e49}\label{classAxisBase_a588b49cbe34164e62b88378bf72e9e49}} 
+\index{AxisBase@{AxisBase}!MinorTickStyle@{MinorTickStyle}}
+\index{MinorTickStyle@{MinorTickStyle}!AxisBase@{AxisBase}}
+\doxysubsubsection{\texorpdfstring{MinorTickStyle}{MinorTickStyle}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classTickMarkStyle}{Tick\+Mark\+Style}} Axis\+Base.\+Minor\+Tick\+Style\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new}()}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        Length = 2,}
+\DoxyCodeLine{        Width = 1,}
+\DoxyCodeLine{        \mbox{\hyperlink{structColor}{Color}} = \mbox{\hyperlink{structColors}{Colors}}.\mbox{\hyperlink{structColors_a6a4f09e77ec6d0ef4c08348eb2e21714}{Black}},}
+\DoxyCodeLine{        AntiAlias = \textcolor{keyword}{false},}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classAxisBase_aeabe16bdab935e9cfa994a48b6ba9166}\label{classAxisBase_aeabe16bdab935e9cfa994a48b6ba9166}} 
+\index{AxisBase@{AxisBase}!PaddingBetweenTickAndAxisLabels@{PaddingBetweenTickAndAxisLabels}}
+\index{PaddingBetweenTickAndAxisLabels@{PaddingBetweenTickAndAxisLabels}!AxisBase@{AxisBase}}
+\doxysubsubsection{\texorpdfstring{PaddingBetweenTickAndAxisLabels}{PaddingBetweenTickAndAxisLabels}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structPixelPadding}{Pixel\+Padding}} Axis\+Base.\+Padding\+Between\+Tick\+And\+Axis\+Labels = new(5, 3)\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classAxisBase_a0693bdbcda4587b41fd0eac726cfce69}\label{classAxisBase_a0693bdbcda4587b41fd0eac726cfce69}} 
+\index{AxisBase@{AxisBase}!PaddingOutsideAxisLabels@{PaddingOutsideAxisLabels}}
+\index{PaddingOutsideAxisLabels@{PaddingOutsideAxisLabels}!AxisBase@{AxisBase}}
+\doxysubsubsection{\texorpdfstring{PaddingOutsideAxisLabels}{PaddingOutsideAxisLabels}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structPixelPadding}{Pixel\+Padding}} Axis\+Base.\+Padding\+Outside\+Axis\+Labels = new(2, 2)\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classAxisBase_a4799d59808a858e399c7819b533e1765}\label{classAxisBase_a4799d59808a858e399c7819b533e1765}} 
+\index{AxisBase@{AxisBase}!Range@{Range}}
+\index{Range@{Range}!AxisBase@{AxisBase}}
+\doxysubsubsection{\texorpdfstring{Range}{Range}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classCoordinateRangeMutable}{Coordinate\+Range\+Mutable}} Axis\+Base.\+Range = \mbox{\hyperlink{classCoordinateRangeMutable_ac8391f451d7953656f577dc7198a8b82}{Coordinate\+Range\+Mutable.\+Not\+Set}}\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{classAxisBase_ab3af7231479dec8bc72657acfdd5985a}\label{classAxisBase_ab3af7231479dec8bc72657acfdd5985a}} 
+\index{AxisBase@{AxisBase}!ShowDebugInformation@{ShowDebugInformation}}
+\index{ShowDebugInformation@{ShowDebugInformation}!AxisBase@{AxisBase}}
+\doxysubsubsection{\texorpdfstring{ShowDebugInformation}{ShowDebugInformation}}
+{\footnotesize\ttfamily bool Axis\+Base.\+Show\+Debug\+Information = false\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classAxisBase_afa4ed69d3e893767226429a5acf8ad16}\label{classAxisBase_afa4ed69d3e893767226429a5acf8ad16}} 
+\index{AxisBase@{AxisBase}!SizeWhenNoData@{SizeWhenNoData}}
+\index{SizeWhenNoData@{SizeWhenNoData}!AxisBase@{AxisBase}}
+\doxysubsubsection{\texorpdfstring{SizeWhenNoData}{SizeWhenNoData}}
+{\footnotesize\ttfamily float Axis\+Base.\+Size\+When\+No\+Data = 15\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classAxisBase_a5ee9b7041a2fdd7e60999812ed6e59b8}\label{classAxisBase_a5ee9b7041a2fdd7e60999812ed6e59b8}} 
+\index{AxisBase@{AxisBase}!TickGenerator@{TickGenerator}}
+\index{TickGenerator@{TickGenerator}!AxisBase@{AxisBase}}
+\doxysubsubsection{\texorpdfstring{TickGenerator}{TickGenerator}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{interfaceITickGenerator}{ITick\+Generator}} Axis\+Base.\+Tick\+Generator = null!\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classAxisBase_ad28f36ed0ada2bb660256e1b8c2b0f7d}\label{classAxisBase_ad28f36ed0ada2bb660256e1b8c2b0f7d}} 
+\index{AxisBase@{AxisBase}!TickLabelStyle@{TickLabelStyle}}
+\index{TickLabelStyle@{TickLabelStyle}!AxisBase@{AxisBase}}
+\doxysubsubsection{\texorpdfstring{TickLabelStyle}{TickLabelStyle}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classLabelStyle}{Label\+Style}} Axis\+Base.\+Tick\+Label\+Style\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new}()}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        Alignment = Alignment.MiddleCenter}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Axis\+Panels/Axis\+Base.\+cs\end{DoxyCompactItemize}

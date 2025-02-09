@@ -1,0 +1,107 @@
+\doxysection{Scott\+Plot.\+Tick\+Generators.\+Time\+Units.\+Day Class Reference}
+\hypertarget{class_scott_plot_1_1_tick_generators_1_1_time_units_1_1_day}{}\label{class_scott_plot_1_1_tick_generators_1_1_time_units_1_1_day}\index{ScottPlot.TickGenerators.TimeUnits.Day@{ScottPlot.TickGenerators.TimeUnits.Day}}
+Inheritance diagram for Scott\+Plot.\+Tick\+Generators.\+Time\+Units.\+Day\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_scott_plot_1_1_tick_generators_1_1_time_units_1_1_day}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Date\+Time \mbox{\hyperlink{class_scott_plot_1_1_tick_generators_1_1_time_units_1_1_day_a1b1808a3dc223b96f4c4c5b396369138}{Snap}} (Date\+Time dt)
+\begin{DoxyCompactList}\small\item\em Return a given date "{}snapped"{} back to the nearest nice tick position. Use this to find a good tick position for a given Date\+Time. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_scott_plot_1_1_tick_generators_1_1_time_units_1_1_day_a63dcb423975000a8d39a10852e952bf0}{Get\+Date\+Time\+Format\+String}} ()
+\begin{DoxyCompactList}\small\item\em Returns the format string used to display tick labels of this time unit. \href{https://learn.microsoft.com/en-us/dotnet/api/system.datetime.tostring}{\texttt{ https\+://learn.\+microsoft.\+com/en-\/us/dotnet/api/system.\+datetime.\+tostring}}. \end{DoxyCompactList}\item 
+Date\+Time \mbox{\hyperlink{class_scott_plot_1_1_tick_generators_1_1_time_units_1_1_day_a9eaecb350b4078c78e9e36e6a45ec180}{Next}} (Date\+Time date\+Time, int increment=1)
+\begin{DoxyCompactList}\small\item\em Return the Date\+Time N units relative to this one. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_scott_plot_1_1_tick_generators_1_1_i_time_unit}{Scott\+Plot.\+Tick\+Generators.\+ITime\+Unit}}}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+IRead\+Only\+List$<$ int $>$ \mbox{\hyperlink{class_scott_plot_1_1_tick_generators_1_1_time_units_1_1_day_a9b8628bcf868a230735e8684b5c00792}{Divisors}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em An array of integers that serve as good divisors to subdivide this time unit. \end{DoxyCompactList}\item 
+Time\+Span \mbox{\hyperlink{class_scott_plot_1_1_tick_generators_1_1_time_units_1_1_day_a9e600690b8087e63b08e8bf568f54c01}{Min\+Size}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Minimum span this time unit can represent. To represent spans smaller than this, try the next smaller unit. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{interface_scott_plot_1_1_tick_generators_1_1_i_time_unit}{Scott\+Plot.\+Tick\+Generators.\+ITime\+Unit}}}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_scott_plot_1_1_tick_generators_1_1_time_units_1_1_day_a63dcb423975000a8d39a10852e952bf0}\index{ScottPlot.TickGenerators.TimeUnits.Day@{ScottPlot.TickGenerators.TimeUnits.Day}!GetDateTimeFormatString@{GetDateTimeFormatString}}
+\index{GetDateTimeFormatString@{GetDateTimeFormatString}!ScottPlot.TickGenerators.TimeUnits.Day@{ScottPlot.TickGenerators.TimeUnits.Day}}
+\doxysubsubsection{\texorpdfstring{GetDateTimeFormatString()}{GetDateTimeFormatString()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_tick_generators_1_1_time_units_1_1_day_a63dcb423975000a8d39a10852e952bf0} 
+string Scott\+Plot.\+Tick\+Generators.\+Time\+Units.\+Day.\+Get\+Date\+Time\+Format\+String (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the format string used to display tick labels of this time unit. \href{https://learn.microsoft.com/en-us/dotnet/api/system.datetime.tostring}{\texttt{ https\+://learn.\+microsoft.\+com/en-\/us/dotnet/api/system.\+datetime.\+tostring}}. 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_tick_generators_1_1_i_time_unit_a611fef45d432851c6d12eeb90ed50d0b}{Scott\+Plot.\+Tick\+Generators.\+ITime\+Unit}}.
+
+\Hypertarget{class_scott_plot_1_1_tick_generators_1_1_time_units_1_1_day_a9eaecb350b4078c78e9e36e6a45ec180}\index{ScottPlot.TickGenerators.TimeUnits.Day@{ScottPlot.TickGenerators.TimeUnits.Day}!Next@{Next}}
+\index{Next@{Next}!ScottPlot.TickGenerators.TimeUnits.Day@{ScottPlot.TickGenerators.TimeUnits.Day}}
+\doxysubsubsection{\texorpdfstring{Next()}{Next()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_tick_generators_1_1_time_units_1_1_day_a9eaecb350b4078c78e9e36e6a45ec180} 
+Date\+Time Scott\+Plot.\+Tick\+Generators.\+Time\+Units.\+Day.\+Next (\begin{DoxyParamCaption}\item[{Date\+Time}]{date\+Time}{, }\item[{int}]{increment}{ = {\ttfamily 1}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return the Date\+Time N units relative to this one. 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_tick_generators_1_1_i_time_unit_a188992aa82e24d6521dcd5110dbd82ef}{Scott\+Plot.\+Tick\+Generators.\+ITime\+Unit}}.
+
+\Hypertarget{class_scott_plot_1_1_tick_generators_1_1_time_units_1_1_day_a1b1808a3dc223b96f4c4c5b396369138}\index{ScottPlot.TickGenerators.TimeUnits.Day@{ScottPlot.TickGenerators.TimeUnits.Day}!Snap@{Snap}}
+\index{Snap@{Snap}!ScottPlot.TickGenerators.TimeUnits.Day@{ScottPlot.TickGenerators.TimeUnits.Day}}
+\doxysubsubsection{\texorpdfstring{Snap()}{Snap()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_tick_generators_1_1_time_units_1_1_day_a1b1808a3dc223b96f4c4c5b396369138} 
+Date\+Time Scott\+Plot.\+Tick\+Generators.\+Time\+Units.\+Day.\+Snap (\begin{DoxyParamCaption}\item[{Date\+Time}]{date\+Time}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return a given date "{}snapped"{} back to the nearest nice tick position. Use this to find a good tick position for a given Date\+Time. 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_tick_generators_1_1_i_time_unit_ae5f4159b5b27f89e2ed695964b8dee94}{Scott\+Plot.\+Tick\+Generators.\+ITime\+Unit}}.
+
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{class_scott_plot_1_1_tick_generators_1_1_time_units_1_1_day_a9b8628bcf868a230735e8684b5c00792}\index{ScottPlot.TickGenerators.TimeUnits.Day@{ScottPlot.TickGenerators.TimeUnits.Day}!Divisors@{Divisors}}
+\index{Divisors@{Divisors}!ScottPlot.TickGenerators.TimeUnits.Day@{ScottPlot.TickGenerators.TimeUnits.Day}}
+\doxysubsubsection{\texorpdfstring{Divisors}{Divisors}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_tick_generators_1_1_time_units_1_1_day_a9b8628bcf868a230735e8684b5c00792} 
+IRead\+Only\+List$<$int$>$ Scott\+Plot.\+Tick\+Generators.\+Time\+Units.\+Day.\+Divisors\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+An array of integers that serve as good divisors to subdivide this time unit. 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_tick_generators_1_1_i_time_unit_a994ceae8a4910c48015bf4a744780c91}{Scott\+Plot.\+Tick\+Generators.\+ITime\+Unit}}.
+
+\Hypertarget{class_scott_plot_1_1_tick_generators_1_1_time_units_1_1_day_a9e600690b8087e63b08e8bf568f54c01}\index{ScottPlot.TickGenerators.TimeUnits.Day@{ScottPlot.TickGenerators.TimeUnits.Day}!MinSize@{MinSize}}
+\index{MinSize@{MinSize}!ScottPlot.TickGenerators.TimeUnits.Day@{ScottPlot.TickGenerators.TimeUnits.Day}}
+\doxysubsubsection{\texorpdfstring{MinSize}{MinSize}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_tick_generators_1_1_time_units_1_1_day_a9e600690b8087e63b08e8bf568f54c01} 
+Time\+Span Scott\+Plot.\+Tick\+Generators.\+Time\+Units.\+Day.\+Min\+Size\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Minimum span this time unit can represent. To represent spans smaller than this, try the next smaller unit. 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_tick_generators_1_1_i_time_unit_a3d07fc9f990862efe5eec6342479e182}{Scott\+Plot.\+Tick\+Generators.\+ITime\+Unit}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Tick\+Generators/\+Time\+Units/Day.\+cs\end{DoxyCompactItemize}

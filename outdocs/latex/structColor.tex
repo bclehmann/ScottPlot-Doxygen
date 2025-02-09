@@ -1,0 +1,505 @@
+\hypertarget{structColor}{}\doxysection{Color Struct Reference}
+\label{structColor}\index{Color@{Color}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override string \mbox{\hyperlink{structColor_a34c1fb4157d9ee56538c033271ceb920}{To\+String}} ()
+\item 
+\mbox{\hyperlink{structColor_aa5c0ca710540fa0745323526e84daa88}{Color}} (byte red, byte green, byte blue, byte alpha=255)
+\item 
+\mbox{\hyperlink{structColor_aa61d76951c65fa9abf1050f7ededf525}{Color}} (float red, float green, float blue, float alpha=1)
+\item 
+\mbox{\hyperlink{structColor_a7c2993e417031eb7a355dd7236631396}{Color}} (string hex\+Code)
+\item 
+\mbox{\hyperlink{structColor_a6d7d1f6012ab1e00735f1d84931347f9}{Color}} (uint argb)
+\item 
+override int \mbox{\hyperlink{structColor_ad92ea26f3193ac50c42a885a8b452d79}{Get\+Hash\+Code}} ()
+\item 
+override bool \mbox{\hyperlink{structColor_ac389f5099b217c1642826c3ed870116f}{Equals}} (object? obj)
+\item 
+readonly \mbox{\hyperlink{structColor}{Color}} \mbox{\hyperlink{structColor_a808bf714ddd5b9e5fa234613dc889fe1}{With\+Red}} (byte red)
+\item 
+readonly \mbox{\hyperlink{structColor}{Color}} \mbox{\hyperlink{structColor_ad900cc4dac22ca1fa074ca4bd9033957}{With\+Green}} (byte green)
+\item 
+readonly \mbox{\hyperlink{structColor}{Color}} \mbox{\hyperlink{structColor_a54533f0a9da1cb0d6f0797597f8ca9b8}{With\+Blue}} (byte blue)
+\item 
+readonly \mbox{\hyperlink{structColor}{Color}} \mbox{\hyperlink{structColor_aa7eb7eebe65ab77b6895ac1bfe4278d3}{With\+Alpha}} (byte alpha)
+\item 
+readonly \mbox{\hyperlink{structColor}{Color}} \mbox{\hyperlink{structColor_ad29ddab7aa61d86a2510dad052ebd895}{With\+Alpha}} (double alpha)
+\item 
+readonly \mbox{\hyperlink{structColor}{Color}} \mbox{\hyperlink{structColor_a0773d6508a42a919a12e3e23195b6d14}{With\+Opacity}} (double opacity=.\+5)
+\item 
+string \mbox{\hyperlink{structColor_a55c199bc8f11af61fbaa467db8ce8685}{To\+Hex}} ()
+\item 
+string \mbox{\hyperlink{structColor_a20252225572ede33c0a309c85d3e2b2e}{To\+String\+RGB}} ()
+\item 
+string \mbox{\hyperlink{structColor_a8f1e70db1b1c7e39d83145b15469521d}{To\+String\+RGBA}} ()
+\item 
+Skia\+Sharp.\+SKColor \mbox{\hyperlink{structColor_af94dc7bd069d63522af5d4fda88d43bc}{To\+SKColor}} ()
+\item 
+float float float l \mbox{\hyperlink{structColor_a185952988e945e6df8b9d07d34a2ba6b}{To\+HSL}} ()
+\item 
+\mbox{\hyperlink{structColor}{Color}} \mbox{\hyperlink{structColor_a87a58ae8489527ba5f4883e652d46348}{With\+Lightness}} (float lightness=.\+5f)
+\item 
+\mbox{\hyperlink{structColor}{Color}} \mbox{\hyperlink{structColor_a9c1f85fd8e525da234c094bdb4481fcc}{Lighten}} (double fraction=.\+5f)
+\begin{DoxyCompactList}\small\item\em Amount to lighten the color (from 0-\/1). Larger numbers produce lighter results. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structColor}{Color}} \mbox{\hyperlink{structColor_ad3175afc31b43c4240a33946b2879c60}{Darken}} (double fraction=.\+5f)
+\begin{DoxyCompactList}\small\item\em Amount to darken the color (from 0-\/1). Larger numbers produce darker results. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structColor}{Color}} \mbox{\hyperlink{structColor_a9d41ff7b7e1c4dd116980afc8b19cdb0}{Mixed\+With}} (\mbox{\hyperlink{structColor}{Color}} other\+Color, double fraction)
+\begin{DoxyCompactList}\small\item\em Return this color mixed with another color. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structColor}{Color}} \mbox{\hyperlink{structColor_aeb77ad379186a526836eecfef6fa3a49}{Interpolate\+Rgb}} (\mbox{\hyperlink{structColor}{Color}} c1, double factor)
+\item 
+\mbox{\hyperlink{structColor}{Color}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{structColor_a5bedc8eb709878dcc9ac58efd98d5cec}{Interpolate\+Array\+Rgb}} (\mbox{\hyperlink{structColor}{Color}} c1, int steps)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{structColor_a6941860a6ceb79aef4eb961e2cbb089b}{operator==}} (\mbox{\hyperlink{structColor}{Color}} a, \mbox{\hyperlink{structColor}{Color}} b)
+\item 
+static bool \mbox{\hyperlink{structColor_af976f1d0e76a53d59a094eec93f99061}{operator!=}} (\mbox{\hyperlink{structColor}{Color}} a, \mbox{\hyperlink{structColor}{Color}} b)
+\item 
+static \mbox{\hyperlink{structColor}{Color}} \mbox{\hyperlink{structColor_afe3f10dd7ea837b1fd760a8ac4af9624}{Gray}} (byte value)
+\item 
+static \mbox{\hyperlink{structColor}{Color}} \mbox{\hyperlink{structColor_afc549cd89b282e468f80d4c55137f0ff}{From\+ARGB}} (int argb)
+\item 
+static \mbox{\hyperlink{structColor}{Color}} \mbox{\hyperlink{structColor_a91ec731618cd0b00e6072fd9d60ed077}{From\+ARGB}} (uint argb)
+\item 
+static \mbox{\hyperlink{structColor}{Color}} \mbox{\hyperlink{structColor_a89b986561f631e4ee1dc5008aca5174f}{From\+Hex}} (string hex)
+\item 
+static \mbox{\hyperlink{structColor}{Color}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{structColor_aa8e1da4023a721e8f82d3f1da10845d6}{From\+Hex}} (string\mbox{[}$\,$\mbox{]} hex)
+\item 
+static \mbox{\hyperlink{structColor}{Color}} \mbox{\hyperlink{structColor_a8da68655abd9cc02e868c9a6a2bec264}{From\+Color}} (System.\+Drawing.\+Color color)
+\item 
+static \mbox{\hyperlink{structColor}{Color}} \mbox{\hyperlink{structColor_ae4c556ddf64eccf622a66b9d33b7f3a6}{From\+SKColor}} (SKColor skcolor)
+\item 
+static \mbox{\hyperlink{structColor}{Color}} \mbox{\hyperlink{structColor_a951e698266952c62ba34ad2a71e49876}{From\+HSL}} (float hue, float saturation, float luminosity, float alpha=1)
+\begin{DoxyCompactList}\small\item\em Create a \mbox{\hyperlink{structColor}{Color}} given Hue, Saturation, and Luminance (as fractions from 0 to 1) \end{DoxyCompactList}\item 
+static byte \mbox{\hyperlink{structColor_a394cb71ba698493aa30883da62999f14}{Interpolate\+Rgb}} (byte b1, byte b2, double factor)
+\item 
+static \mbox{\hyperlink{structColor}{Color}} \mbox{\hyperlink{structColor_ae6b726be313197731886986bf5adab8a}{Interpolate\+Rgb}} (\mbox{\hyperlink{structColor}{Color}} c1, \mbox{\hyperlink{structColor}{Color}} c2, double factor)
+\item 
+static \mbox{\hyperlink{structColor}{Color}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{structColor_a2b4e363afa9d2aeb6eb709bdb57d3487}{Interpolate\+Rgb\+Array}} (\mbox{\hyperlink{structColor}{Color}} c1, \mbox{\hyperlink{structColor}{Color}} c2, int steps)
+\item 
+static \mbox{\hyperlink{structColor}{Color}} \mbox{\hyperlink{structColor_a50560842f691550a80e6200cdebb2673}{Random\+Hue}} ()
+\item 
+static System.\+Drawing.\+Color \mbox{\hyperlink{structColor_a3033f6e798f559fd2c01eaf3d74a8ffe}{To\+Color}} (Scott\+Plot.\+Color color)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+readonly byte \mbox{\hyperlink{structColor_a0d4a9fc7a63b92b5ce0a01acd273e8b5}{Red}}
+\item 
+readonly byte \mbox{\hyperlink{structColor_a9c05cb31ab054e17c7ea7ce081c298b9}{Green}}
+\item 
+readonly byte \mbox{\hyperlink{structColor_a9039ae660172cdab5ebd441895fa0877}{Blue}}
+\item 
+readonly byte \mbox{\hyperlink{structColor_a0d7b3f3dff939d96ae5e79e729c7c4d9}{Alpha}}
+\item 
+float \mbox{\hyperlink{structColor_a57570c21279d41ae5c2ff304ffed1cb1}{h}}
+\begin{DoxyCompactList}\small\item\em Hue, Saturation, and Luminance (as fractions from 0 to 1) \end{DoxyCompactList}\item 
+float float \mbox{\hyperlink{structColor_a41af167f7d77f68d37a83fb2df0e11b9}{s}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+byte \mbox{\hyperlink{structColor_ad4d7683bdf5ef52d19fa3e141e8fa2f0}{R}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+byte \mbox{\hyperlink{structColor_a69ff079ecc53b51519e212263e7c9eac}{G}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+byte \mbox{\hyperlink{structColor_accff13adb10a0607baa3715f61114440}{B}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+byte \mbox{\hyperlink{structColor_a32ae690a9e9d2b7d48aad41c887398e1}{A}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+uint \mbox{\hyperlink{structColor_a86b451eaa8d321678d8ce655e7622d51}{ARGB}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+float \mbox{\hyperlink{structColor_af272181a810334f3d0750694aad41f81}{Luminance}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Luminance as a fraction from 0 to 1 \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{structColor_a0ba9214587b4ee6450e3ed04f757eff5}{Hue}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Hue as a fraction from 0 to 1 \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{structColor_abcecfda6222c8c67a7d7c0260ab454a2}{Saturation}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Saturation as a fraction from 0 to 1 \end{DoxyCompactList}\item 
+uint \mbox{\hyperlink{structColor_a69f39f83f9076b1b06d40ee7f0d5571b}{Premultiplied\+ARGB}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structColor_aa5c0ca710540fa0745323526e84daa88}\label{structColor_aa5c0ca710540fa0745323526e84daa88}} 
+\index{Color@{Color}!Color@{Color}}
+\index{Color@{Color}!Color@{Color}}
+\doxysubsubsection{\texorpdfstring{Color()}{Color()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily Color.\+Color (\begin{DoxyParamCaption}\item[{byte}]{red,  }\item[{byte}]{green,  }\item[{byte}]{blue,  }\item[{byte}]{alpha = {\ttfamily 255} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structColor_aa61d76951c65fa9abf1050f7ededf525}\label{structColor_aa61d76951c65fa9abf1050f7ededf525}} 
+\index{Color@{Color}!Color@{Color}}
+\index{Color@{Color}!Color@{Color}}
+\doxysubsubsection{\texorpdfstring{Color()}{Color()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily Color.\+Color (\begin{DoxyParamCaption}\item[{float}]{red,  }\item[{float}]{green,  }\item[{float}]{blue,  }\item[{float}]{alpha = {\ttfamily 1} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structColor_a7c2993e417031eb7a355dd7236631396}\label{structColor_a7c2993e417031eb7a355dd7236631396}} 
+\index{Color@{Color}!Color@{Color}}
+\index{Color@{Color}!Color@{Color}}
+\doxysubsubsection{\texorpdfstring{Color()}{Color()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily Color.\+Color (\begin{DoxyParamCaption}\item[{string}]{hex\+Code }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structColor_a6d7d1f6012ab1e00735f1d84931347f9}\label{structColor_a6d7d1f6012ab1e00735f1d84931347f9}} 
+\index{Color@{Color}!Color@{Color}}
+\index{Color@{Color}!Color@{Color}}
+\doxysubsubsection{\texorpdfstring{Color()}{Color()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily Color.\+Color (\begin{DoxyParamCaption}\item[{uint}]{argb }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{structColor_ad3175afc31b43c4240a33946b2879c60}\label{structColor_ad3175afc31b43c4240a33946b2879c60}} 
+\index{Color@{Color}!Darken@{Darken}}
+\index{Darken@{Darken}!Color@{Color}}
+\doxysubsubsection{\texorpdfstring{Darken()}{Darken()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structColor}{Color}} Color.\+Darken (\begin{DoxyParamCaption}\item[{double}]{fraction = {\ttfamily .5f} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Amount to darken the color (from 0-\/1). Larger numbers produce darker results. 
+
+\mbox{\Hypertarget{structColor_ac389f5099b217c1642826c3ed870116f}\label{structColor_ac389f5099b217c1642826c3ed870116f}} 
+\index{Color@{Color}!Equals@{Equals}}
+\index{Equals@{Equals}!Color@{Color}}
+\doxysubsubsection{\texorpdfstring{Equals()}{Equals()}}
+{\footnotesize\ttfamily override bool Color.\+Equals (\begin{DoxyParamCaption}\item[{object?}]{obj }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structColor_afc549cd89b282e468f80d4c55137f0ff}\label{structColor_afc549cd89b282e468f80d4c55137f0ff}} 
+\index{Color@{Color}!FromARGB@{FromARGB}}
+\index{FromARGB@{FromARGB}!Color@{Color}}
+\doxysubsubsection{\texorpdfstring{FromARGB()}{FromARGB()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{structColor}{Color}} Color.\+From\+ARGB (\begin{DoxyParamCaption}\item[{int}]{argb }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{structColor_a91ec731618cd0b00e6072fd9d60ed077}\label{structColor_a91ec731618cd0b00e6072fd9d60ed077}} 
+\index{Color@{Color}!FromARGB@{FromARGB}}
+\index{FromARGB@{FromARGB}!Color@{Color}}
+\doxysubsubsection{\texorpdfstring{FromARGB()}{FromARGB()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{structColor}{Color}} Color.\+From\+ARGB (\begin{DoxyParamCaption}\item[{uint}]{argb }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{structColor_a8da68655abd9cc02e868c9a6a2bec264}\label{structColor_a8da68655abd9cc02e868c9a6a2bec264}} 
+\index{Color@{Color}!FromColor@{FromColor}}
+\index{FromColor@{FromColor}!Color@{Color}}
+\doxysubsubsection{\texorpdfstring{FromColor()}{FromColor()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{structColor}{Color}} Color.\+From\+Color (\begin{DoxyParamCaption}\item[{System.\+Drawing.\+Color}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{structColor_a89b986561f631e4ee1dc5008aca5174f}\label{structColor_a89b986561f631e4ee1dc5008aca5174f}} 
+\index{Color@{Color}!FromHex@{FromHex}}
+\index{FromHex@{FromHex}!Color@{Color}}
+\doxysubsubsection{\texorpdfstring{FromHex()}{FromHex()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{structColor}{Color}} Color.\+From\+Hex (\begin{DoxyParamCaption}\item[{string}]{hex }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{structColor_aa8e1da4023a721e8f82d3f1da10845d6}\label{structColor_aa8e1da4023a721e8f82d3f1da10845d6}} 
+\index{Color@{Color}!FromHex@{FromHex}}
+\index{FromHex@{FromHex}!Color@{Color}}
+\doxysubsubsection{\texorpdfstring{FromHex()}{FromHex()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{structColor}{Color}} \mbox{[}$\,$\mbox{]} Color.\+From\+Hex (\begin{DoxyParamCaption}\item[{string\mbox{[}$\,$\mbox{]}}]{hex }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{structColor_a951e698266952c62ba34ad2a71e49876}\label{structColor_a951e698266952c62ba34ad2a71e49876}} 
+\index{Color@{Color}!FromHSL@{FromHSL}}
+\index{FromHSL@{FromHSL}!Color@{Color}}
+\doxysubsubsection{\texorpdfstring{FromHSL()}{FromHSL()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{structColor}{Color}} Color.\+From\+HSL (\begin{DoxyParamCaption}\item[{float}]{hue,  }\item[{float}]{saturation,  }\item[{float}]{luminosity,  }\item[{float}]{alpha = {\ttfamily 1} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Create a \mbox{\hyperlink{structColor}{Color}} given Hue, Saturation, and Luminance (as fractions from 0 to 1) 
+
+\mbox{\Hypertarget{structColor_ae4c556ddf64eccf622a66b9d33b7f3a6}\label{structColor_ae4c556ddf64eccf622a66b9d33b7f3a6}} 
+\index{Color@{Color}!FromSKColor@{FromSKColor}}
+\index{FromSKColor@{FromSKColor}!Color@{Color}}
+\doxysubsubsection{\texorpdfstring{FromSKColor()}{FromSKColor()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{structColor}{Color}} Color.\+From\+SKColor (\begin{DoxyParamCaption}\item[{SKColor}]{skcolor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{structColor_ad92ea26f3193ac50c42a885a8b452d79}\label{structColor_ad92ea26f3193ac50c42a885a8b452d79}} 
+\index{Color@{Color}!GetHashCode@{GetHashCode}}
+\index{GetHashCode@{GetHashCode}!Color@{Color}}
+\doxysubsubsection{\texorpdfstring{GetHashCode()}{GetHashCode()}}
+{\footnotesize\ttfamily override int Color.\+Get\+Hash\+Code (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structColor_afe3f10dd7ea837b1fd760a8ac4af9624}\label{structColor_afe3f10dd7ea837b1fd760a8ac4af9624}} 
+\index{Color@{Color}!Gray@{Gray}}
+\index{Gray@{Gray}!Color@{Color}}
+\doxysubsubsection{\texorpdfstring{Gray()}{Gray()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{structColor}{Color}} Color.\+Gray (\begin{DoxyParamCaption}\item[{byte}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{structColor_a5bedc8eb709878dcc9ac58efd98d5cec}\label{structColor_a5bedc8eb709878dcc9ac58efd98d5cec}} 
+\index{Color@{Color}!InterpolateArrayRgb@{InterpolateArrayRgb}}
+\index{InterpolateArrayRgb@{InterpolateArrayRgb}!Color@{Color}}
+\doxysubsubsection{\texorpdfstring{InterpolateArrayRgb()}{InterpolateArrayRgb()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structColor}{Color}} \mbox{[}$\,$\mbox{]} Color.\+Interpolate\+Array\+Rgb (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structColor}{Color}}}]{c1,  }\item[{int}]{steps }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structColor_a394cb71ba698493aa30883da62999f14}\label{structColor_a394cb71ba698493aa30883da62999f14}} 
+\index{Color@{Color}!InterpolateRgb@{InterpolateRgb}}
+\index{InterpolateRgb@{InterpolateRgb}!Color@{Color}}
+\doxysubsubsection{\texorpdfstring{InterpolateRgb()}{InterpolateRgb()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily static byte Color.\+Interpolate\+Rgb (\begin{DoxyParamCaption}\item[{byte}]{b1,  }\item[{byte}]{b2,  }\item[{double}]{factor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{structColor_ae6b726be313197731886986bf5adab8a}\label{structColor_ae6b726be313197731886986bf5adab8a}} 
+\index{Color@{Color}!InterpolateRgb@{InterpolateRgb}}
+\index{InterpolateRgb@{InterpolateRgb}!Color@{Color}}
+\doxysubsubsection{\texorpdfstring{InterpolateRgb()}{InterpolateRgb()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{structColor}{Color}} Color.\+Interpolate\+Rgb (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structColor}{Color}}}]{c1,  }\item[{\mbox{\hyperlink{structColor}{Color}}}]{c2,  }\item[{double}]{factor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{structColor_aeb77ad379186a526836eecfef6fa3a49}\label{structColor_aeb77ad379186a526836eecfef6fa3a49}} 
+\index{Color@{Color}!InterpolateRgb@{InterpolateRgb}}
+\index{InterpolateRgb@{InterpolateRgb}!Color@{Color}}
+\doxysubsubsection{\texorpdfstring{InterpolateRgb()}{InterpolateRgb()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structColor}{Color}} Color.\+Interpolate\+Rgb (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structColor}{Color}}}]{c1,  }\item[{double}]{factor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structColor_a2b4e363afa9d2aeb6eb709bdb57d3487}\label{structColor_a2b4e363afa9d2aeb6eb709bdb57d3487}} 
+\index{Color@{Color}!InterpolateRgbArray@{InterpolateRgbArray}}
+\index{InterpolateRgbArray@{InterpolateRgbArray}!Color@{Color}}
+\doxysubsubsection{\texorpdfstring{InterpolateRgbArray()}{InterpolateRgbArray()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{structColor}{Color}} \mbox{[}$\,$\mbox{]} Color.\+Interpolate\+Rgb\+Array (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structColor}{Color}}}]{c1,  }\item[{\mbox{\hyperlink{structColor}{Color}}}]{c2,  }\item[{int}]{steps }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{structColor_a9c1f85fd8e525da234c094bdb4481fcc}\label{structColor_a9c1f85fd8e525da234c094bdb4481fcc}} 
+\index{Color@{Color}!Lighten@{Lighten}}
+\index{Lighten@{Lighten}!Color@{Color}}
+\doxysubsubsection{\texorpdfstring{Lighten()}{Lighten()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structColor}{Color}} Color.\+Lighten (\begin{DoxyParamCaption}\item[{double}]{fraction = {\ttfamily .5f} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Amount to lighten the color (from 0-\/1). Larger numbers produce lighter results. 
+
+\mbox{\Hypertarget{structColor_a9d41ff7b7e1c4dd116980afc8b19cdb0}\label{structColor_a9d41ff7b7e1c4dd116980afc8b19cdb0}} 
+\index{Color@{Color}!MixedWith@{MixedWith}}
+\index{MixedWith@{MixedWith}!Color@{Color}}
+\doxysubsubsection{\texorpdfstring{MixedWith()}{MixedWith()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structColor}{Color}} Color.\+Mixed\+With (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structColor}{Color}}}]{other\+Color,  }\item[{double}]{fraction }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return this color mixed with another color. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other\+Color} & \mbox{\hyperlink{structColor}{Color}} to mix with this color\\
+\hline
+{\em fraction} & Fraction of {\itshape other\+Color}  to use\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{structColor_af976f1d0e76a53d59a094eec93f99061}\label{structColor_af976f1d0e76a53d59a094eec93f99061}} 
+\index{Color@{Color}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!Color@{Color}}
+\doxysubsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily static bool Color.\+operator!= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structColor}{Color}}}]{a,  }\item[{\mbox{\hyperlink{structColor}{Color}}}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{structColor_a6941860a6ceb79aef4eb961e2cbb089b}\label{structColor_a6941860a6ceb79aef4eb961e2cbb089b}} 
+\index{Color@{Color}!operator==@{operator==}}
+\index{operator==@{operator==}!Color@{Color}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily static bool Color.\+operator== (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structColor}{Color}}}]{a,  }\item[{\mbox{\hyperlink{structColor}{Color}}}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{structColor_a50560842f691550a80e6200cdebb2673}\label{structColor_a50560842f691550a80e6200cdebb2673}} 
+\index{Color@{Color}!RandomHue@{RandomHue}}
+\index{RandomHue@{RandomHue}!Color@{Color}}
+\doxysubsubsection{\texorpdfstring{RandomHue()}{RandomHue()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{structColor}{Color}} Color.\+Random\+Hue (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{structColor_a3033f6e798f559fd2c01eaf3d74a8ffe}\label{structColor_a3033f6e798f559fd2c01eaf3d74a8ffe}} 
+\index{Color@{Color}!ToColor@{ToColor}}
+\index{ToColor@{ToColor}!Color@{Color}}
+\doxysubsubsection{\texorpdfstring{ToColor()}{ToColor()}}
+{\footnotesize\ttfamily static System.\+Drawing.\+Color Color.\+To\+Color (\begin{DoxyParamCaption}\item[{Scott\+Plot.\+Color}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{structColor_a55c199bc8f11af61fbaa467db8ce8685}\label{structColor_a55c199bc8f11af61fbaa467db8ce8685}} 
+\index{Color@{Color}!ToHex@{ToHex}}
+\index{ToHex@{ToHex}!Color@{Color}}
+\doxysubsubsection{\texorpdfstring{ToHex()}{ToHex()}}
+{\footnotesize\ttfamily string Color.\+To\+Hex (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structColor_a185952988e945e6df8b9d07d34a2ba6b}\label{structColor_a185952988e945e6df8b9d07d34a2ba6b}} 
+\index{Color@{Color}!ToHSL@{ToHSL}}
+\index{ToHSL@{ToHSL}!Color@{Color}}
+\doxysubsubsection{\texorpdfstring{ToHSL()}{ToHSL()}}
+{\footnotesize\ttfamily float float float l Color.\+To\+HSL (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structColor_af94dc7bd069d63522af5d4fda88d43bc}\label{structColor_af94dc7bd069d63522af5d4fda88d43bc}} 
+\index{Color@{Color}!ToSKColor@{ToSKColor}}
+\index{ToSKColor@{ToSKColor}!Color@{Color}}
+\doxysubsubsection{\texorpdfstring{ToSKColor()}{ToSKColor()}}
+{\footnotesize\ttfamily Skia\+Sharp.\+SKColor Color.\+To\+SKColor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structColor_a34c1fb4157d9ee56538c033271ceb920}\label{structColor_a34c1fb4157d9ee56538c033271ceb920}} 
+\index{Color@{Color}!ToString@{ToString}}
+\index{ToString@{ToString}!Color@{Color}}
+\doxysubsubsection{\texorpdfstring{ToString()}{ToString()}}
+{\footnotesize\ttfamily override string Color.\+To\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structColor_a20252225572ede33c0a309c85d3e2b2e}\label{structColor_a20252225572ede33c0a309c85d3e2b2e}} 
+\index{Color@{Color}!ToStringRGB@{ToStringRGB}}
+\index{ToStringRGB@{ToStringRGB}!Color@{Color}}
+\doxysubsubsection{\texorpdfstring{ToStringRGB()}{ToStringRGB()}}
+{\footnotesize\ttfamily string Color.\+To\+String\+RGB (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structColor_a8f1e70db1b1c7e39d83145b15469521d}\label{structColor_a8f1e70db1b1c7e39d83145b15469521d}} 
+\index{Color@{Color}!ToStringRGBA@{ToStringRGBA}}
+\index{ToStringRGBA@{ToStringRGBA}!Color@{Color}}
+\doxysubsubsection{\texorpdfstring{ToStringRGBA()}{ToStringRGBA()}}
+{\footnotesize\ttfamily string Color.\+To\+String\+RGBA (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structColor_aa7eb7eebe65ab77b6895ac1bfe4278d3}\label{structColor_aa7eb7eebe65ab77b6895ac1bfe4278d3}} 
+\index{Color@{Color}!WithAlpha@{WithAlpha}}
+\index{WithAlpha@{WithAlpha}!Color@{Color}}
+\doxysubsubsection{\texorpdfstring{WithAlpha()}{WithAlpha()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily readonly \mbox{\hyperlink{structColor}{Color}} Color.\+With\+Alpha (\begin{DoxyParamCaption}\item[{byte}]{alpha }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structColor_ad29ddab7aa61d86a2510dad052ebd895}\label{structColor_ad29ddab7aa61d86a2510dad052ebd895}} 
+\index{Color@{Color}!WithAlpha@{WithAlpha}}
+\index{WithAlpha@{WithAlpha}!Color@{Color}}
+\doxysubsubsection{\texorpdfstring{WithAlpha()}{WithAlpha()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily readonly \mbox{\hyperlink{structColor}{Color}} Color.\+With\+Alpha (\begin{DoxyParamCaption}\item[{double}]{alpha }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{structColor_a54533f0a9da1cb0d6f0797597f8ca9b8}\label{structColor_a54533f0a9da1cb0d6f0797597f8ca9b8}} 
+\index{Color@{Color}!WithBlue@{WithBlue}}
+\index{WithBlue@{WithBlue}!Color@{Color}}
+\doxysubsubsection{\texorpdfstring{WithBlue()}{WithBlue()}}
+{\footnotesize\ttfamily readonly \mbox{\hyperlink{structColor}{Color}} Color.\+With\+Blue (\begin{DoxyParamCaption}\item[{byte}]{blue }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{structColor_ad900cc4dac22ca1fa074ca4bd9033957}\label{structColor_ad900cc4dac22ca1fa074ca4bd9033957}} 
+\index{Color@{Color}!WithGreen@{WithGreen}}
+\index{WithGreen@{WithGreen}!Color@{Color}}
+\doxysubsubsection{\texorpdfstring{WithGreen()}{WithGreen()}}
+{\footnotesize\ttfamily readonly \mbox{\hyperlink{structColor}{Color}} Color.\+With\+Green (\begin{DoxyParamCaption}\item[{byte}]{green }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{structColor_a87a58ae8489527ba5f4883e652d46348}\label{structColor_a87a58ae8489527ba5f4883e652d46348}} 
+\index{Color@{Color}!WithLightness@{WithLightness}}
+\index{WithLightness@{WithLightness}!Color@{Color}}
+\doxysubsubsection{\texorpdfstring{WithLightness()}{WithLightness()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structColor}{Color}} Color.\+With\+Lightness (\begin{DoxyParamCaption}\item[{float}]{lightness = {\ttfamily .5f} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structColor_a0773d6508a42a919a12e3e23195b6d14}\label{structColor_a0773d6508a42a919a12e3e23195b6d14}} 
+\index{Color@{Color}!WithOpacity@{WithOpacity}}
+\index{WithOpacity@{WithOpacity}!Color@{Color}}
+\doxysubsubsection{\texorpdfstring{WithOpacity()}{WithOpacity()}}
+{\footnotesize\ttfamily readonly \mbox{\hyperlink{structColor}{Color}} Color.\+With\+Opacity (\begin{DoxyParamCaption}\item[{double}]{opacity = {\ttfamily .5} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{structColor_a808bf714ddd5b9e5fa234613dc889fe1}\label{structColor_a808bf714ddd5b9e5fa234613dc889fe1}} 
+\index{Color@{Color}!WithRed@{WithRed}}
+\index{WithRed@{WithRed}!Color@{Color}}
+\doxysubsubsection{\texorpdfstring{WithRed()}{WithRed()}}
+{\footnotesize\ttfamily readonly \mbox{\hyperlink{structColor}{Color}} Color.\+With\+Red (\begin{DoxyParamCaption}\item[{byte}]{red }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structColor_a0d7b3f3dff939d96ae5e79e729c7c4d9}\label{structColor_a0d7b3f3dff939d96ae5e79e729c7c4d9}} 
+\index{Color@{Color}!Alpha@{Alpha}}
+\index{Alpha@{Alpha}!Color@{Color}}
+\doxysubsubsection{\texorpdfstring{Alpha}{Alpha}}
+{\footnotesize\ttfamily readonly byte Color.\+Alpha}
+
+\mbox{\Hypertarget{structColor_a9039ae660172cdab5ebd441895fa0877}\label{structColor_a9039ae660172cdab5ebd441895fa0877}} 
+\index{Color@{Color}!Blue@{Blue}}
+\index{Blue@{Blue}!Color@{Color}}
+\doxysubsubsection{\texorpdfstring{Blue}{Blue}}
+{\footnotesize\ttfamily readonly byte Color.\+Blue}
+
+\mbox{\Hypertarget{structColor_a9c05cb31ab054e17c7ea7ce081c298b9}\label{structColor_a9c05cb31ab054e17c7ea7ce081c298b9}} 
+\index{Color@{Color}!Green@{Green}}
+\index{Green@{Green}!Color@{Color}}
+\doxysubsubsection{\texorpdfstring{Green}{Green}}
+{\footnotesize\ttfamily readonly byte Color.\+Green}
+
+\mbox{\Hypertarget{structColor_a57570c21279d41ae5c2ff304ffed1cb1}\label{structColor_a57570c21279d41ae5c2ff304ffed1cb1}} 
+\index{Color@{Color}!h@{h}}
+\index{h@{h}!Color@{Color}}
+\doxysubsubsection{\texorpdfstring{h}{h}}
+{\footnotesize\ttfamily float Color.\+h}
+
+
+
+Hue, Saturation, and Luminance (as fractions from 0 to 1) 
+
+\mbox{\Hypertarget{structColor_a0d4a9fc7a63b92b5ce0a01acd273e8b5}\label{structColor_a0d4a9fc7a63b92b5ce0a01acd273e8b5}} 
+\index{Color@{Color}!Red@{Red}}
+\index{Red@{Red}!Color@{Color}}
+\doxysubsubsection{\texorpdfstring{Red}{Red}}
+{\footnotesize\ttfamily readonly byte Color.\+Red}
+
+\mbox{\Hypertarget{structColor_a41af167f7d77f68d37a83fb2df0e11b9}\label{structColor_a41af167f7d77f68d37a83fb2df0e11b9}} 
+\index{Color@{Color}!s@{s}}
+\index{s@{s}!Color@{Color}}
+\doxysubsubsection{\texorpdfstring{s}{s}}
+{\footnotesize\ttfamily float float Color.\+s}
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{structColor_a32ae690a9e9d2b7d48aad41c887398e1}\label{structColor_a32ae690a9e9d2b7d48aad41c887398e1}} 
+\index{Color@{Color}!A@{A}}
+\index{A@{A}!Color@{Color}}
+\doxysubsubsection{\texorpdfstring{A}{A}}
+{\footnotesize\ttfamily byte Color.\+A\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{structColor_a86b451eaa8d321678d8ce655e7622d51}\label{structColor_a86b451eaa8d321678d8ce655e7622d51}} 
+\index{Color@{Color}!ARGB@{ARGB}}
+\index{ARGB@{ARGB}!Color@{Color}}
+\doxysubsubsection{\texorpdfstring{ARGB}{ARGB}}
+{\footnotesize\ttfamily uint Color.\+ARGB\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{structColor_accff13adb10a0607baa3715f61114440}\label{structColor_accff13adb10a0607baa3715f61114440}} 
+\index{Color@{Color}!B@{B}}
+\index{B@{B}!Color@{Color}}
+\doxysubsubsection{\texorpdfstring{B}{B}}
+{\footnotesize\ttfamily byte Color.\+B\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{structColor_a69ff079ecc53b51519e212263e7c9eac}\label{structColor_a69ff079ecc53b51519e212263e7c9eac}} 
+\index{Color@{Color}!G@{G}}
+\index{G@{G}!Color@{Color}}
+\doxysubsubsection{\texorpdfstring{G}{G}}
+{\footnotesize\ttfamily byte Color.\+G\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{structColor_a0ba9214587b4ee6450e3ed04f757eff5}\label{structColor_a0ba9214587b4ee6450e3ed04f757eff5}} 
+\index{Color@{Color}!Hue@{Hue}}
+\index{Hue@{Hue}!Color@{Color}}
+\doxysubsubsection{\texorpdfstring{Hue}{Hue}}
+{\footnotesize\ttfamily float Color.\+Hue\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Hue as a fraction from 0 to 1 
+
+\mbox{\Hypertarget{structColor_af272181a810334f3d0750694aad41f81}\label{structColor_af272181a810334f3d0750694aad41f81}} 
+\index{Color@{Color}!Luminance@{Luminance}}
+\index{Luminance@{Luminance}!Color@{Color}}
+\doxysubsubsection{\texorpdfstring{Luminance}{Luminance}}
+{\footnotesize\ttfamily float Color.\+Luminance\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Luminance as a fraction from 0 to 1 
+
+\mbox{\Hypertarget{structColor_a69f39f83f9076b1b06d40ee7f0d5571b}\label{structColor_a69f39f83f9076b1b06d40ee7f0d5571b}} 
+\index{Color@{Color}!PremultipliedARGB@{PremultipliedARGB}}
+\index{PremultipliedARGB@{PremultipliedARGB}!Color@{Color}}
+\doxysubsubsection{\texorpdfstring{PremultipliedARGB}{PremultipliedARGB}}
+{\footnotesize\ttfamily uint Color.\+Premultiplied\+ARGB\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{structColor_ad4d7683bdf5ef52d19fa3e141e8fa2f0}\label{structColor_ad4d7683bdf5ef52d19fa3e141e8fa2f0}} 
+\index{Color@{Color}!R@{R}}
+\index{R@{R}!Color@{Color}}
+\doxysubsubsection{\texorpdfstring{R}{R}}
+{\footnotesize\ttfamily byte Color.\+R\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{structColor_abcecfda6222c8c67a7d7c0260ab454a2}\label{structColor_abcecfda6222c8c67a7d7c0260ab454a2}} 
+\index{Color@{Color}!Saturation@{Saturation}}
+\index{Saturation@{Saturation}!Color@{Color}}
+\doxysubsubsection{\texorpdfstring{Saturation}{Saturation}}
+{\footnotesize\ttfamily float Color.\+Saturation\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Saturation as a fraction from 0 to 1 
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Primitives/Color.\+cs\end{DoxyCompactItemize}

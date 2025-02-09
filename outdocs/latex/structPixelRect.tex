@@ -1,0 +1,601 @@
+\hypertarget{structPixelRect}{}\doxysection{Pixel\+Rect Struct Reference}
+\label{structPixelRect}\index{PixelRect@{PixelRect}}
+Inheritance diagram for Pixel\+Rect\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{structPixelRect}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structPixelRect_ab43929a6cd9e163c3d362644de922f95}{Pixel\+Rect}} (\mbox{\hyperlink{structPixel}{Pixel}} center, float radius)
+\begin{DoxyCompactList}\small\item\em Create a rectangle from the bounding box of a circle centered at {\itshape center}  with radius {\itshape radius}  \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structPixelRect_a546151403af916c48144f1a3a5e4cb11}{Pixel\+Rect}} (\mbox{\hyperlink{structPixel}{Pixel}} corner1, \mbox{\hyperlink{structPixel}{Pixel}} corner2)
+\begin{DoxyCompactList}\small\item\em Create a rectangle with edges at the given pixel positions. This constructor will rectify the points so rectangles will always have positive area. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structPixelRect_a9a91f9a3e9a809e276fa34ada011226b}{Pixel\+Rect}} (\mbox{\hyperlink{structPixel}{Pixel}} top\+Left\+Corner, \mbox{\hyperlink{structPixelSize}{Pixel\+Size}} size)
+\begin{DoxyCompactList}\small\item\em Create a rectangle representing pixels on a screen \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structPixelRect_af22e4d1872a73d7e75eb64099620a29c}{Pixel\+Rect}} (\mbox{\hyperlink{structPixelOffset}{Pixel\+Offset}} offset, \mbox{\hyperlink{structPixelSize}{Pixel\+Size}} size)
+\begin{DoxyCompactList}\small\item\em Create a rectangle representing pixels on a screen \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structPixelRect_afd13d7a74b20f6ee86aa50c4bf2fd1fb}{Pixel\+Rect}} (\mbox{\hyperlink{structPixel}{Pixel}} top\+Left\+Corner, float width, float height)
+\begin{DoxyCompactList}\small\item\em Create a rectangle representing pixels on a screen \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structPixelRect_a7d0452be24530e450d889ddf621a1cf3}{Pixel\+Rect}} (\mbox{\hyperlink{structPixelSize}{Pixel\+Size}} size)
+\begin{DoxyCompactList}\small\item\em Create a rectangle representing pixels on a screen \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structPixelRect_a2c86ee486c6d4f4709bf5642e2b1b964}{Pixel\+Rect}} (\mbox{\hyperlink{structPixelSize}{Pixel\+Size}} size, \mbox{\hyperlink{structPixel}{Pixel}} offset)
+\begin{DoxyCompactList}\small\item\em Create a rectangle representing pixels on a screen \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structPixelRect_a9b0b8adced17901e64422cbfa443a296}{Pixel\+Rect}} (\mbox{\hyperlink{structPixelSize}{Pixel\+Size}} size, \mbox{\hyperlink{structPixelOffset}{Pixel\+Offset}} offset)
+\begin{DoxyCompactList}\small\item\em Create a rectangle representing pixels on a screen \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structPixelRect_a25ec932f370ce5d2147fb2fadc49fb44}{Pixel\+Rect}} (float left, float right, float bottom, float top)
+\begin{DoxyCompactList}\small\item\em Create a rectangle from the given edges. This constructor permits inverted rectangles with negative area. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structPixelRect_a9f4bbe3ff9ed5a275cc45b2cd280da2f}{Pixel\+Rect}} (\mbox{\hyperlink{structPixelRangeX}{Pixel\+RangeX}} x\+Range, \mbox{\hyperlink{structPixelRangeY}{Pixel\+RangeY}} y\+Range)
+\begin{DoxyCompactList}\small\item\em Create a pixel rectangle from two pixel ranges \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structPixelRect_ab8d1e271f54bf155828a13b5ef4a5d5c}{Pixel\+Rect}} (\mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$ \mbox{\hyperlink{structPixel}{Pixel}} $>$ pixels)
+\item 
+\mbox{\hyperlink{structPixelRect}{Pixel\+Rect}} \mbox{\hyperlink{structPixelRect_a9a70690e8701264a849ea91ccd57ce3f}{With\+Pan}} (float x, float y)
+\item 
+override string \mbox{\hyperlink{structPixelRect_a5334165c1ef480a560a22e14cfc155a2}{To\+String}} ()
+\item 
+Skia\+Sharp.\+SKRect \mbox{\hyperlink{structPixelRect_a08918ec022158b4184c28edf8eb4d820}{To\+SKRect}} ()
+\item 
+\mbox{\hyperlink{structPixelRect}{Pixel\+Rect}} \mbox{\hyperlink{structPixelRect_addfe7aee6480c64275dca48643dd93d1}{Contract}} (float delta)
+\item 
+\mbox{\hyperlink{structPixelRect}{Pixel\+Rect}} \mbox{\hyperlink{structPixelRect_a55b87cea3baa113a23df09384cbdd2c3}{Contract}} (float x, float y)
+\item 
+\mbox{\hyperlink{structPixelRect}{Pixel\+Rect}} \mbox{\hyperlink{structPixelRect_af024d3c4509bfcb8ee137a27ffac9662}{Contract}} (\mbox{\hyperlink{structPixelPadding}{Pixel\+Padding}} padding)
+\item 
+\mbox{\hyperlink{structPixelRect}{Pixel\+Rect}} \mbox{\hyperlink{structPixelRect_afa82b78ff4d439eacddc4e94ea1eb15e}{Expand}} (\mbox{\hyperlink{structPixelRect}{Pixel\+Rect}} other)
+\item 
+\mbox{\hyperlink{structPixelRect}{Pixel\+Rect}} \mbox{\hyperlink{structPixelRect_a22353c0e9e7ceaac963960dd23ec7fd0}{Intersect}} (\mbox{\hyperlink{structPixelRect}{Pixel\+Rect}} other)
+\begin{DoxyCompactList}\small\item\em Returns the intersection with another rectangle \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structPixelRect}{Pixel\+Rect}} \mbox{\hyperlink{structPixelRect_ad0f277f6895959508446fab279e27507}{Expand}} (\mbox{\hyperlink{structPixelPadding}{Pixel\+Padding}} pad)
+\item 
+\mbox{\hyperlink{structPixelRect}{Pixel\+Rect}} \mbox{\hyperlink{structPixelRect_ae876bfa61976a23977cb76a11e058606}{Expand}} (float delta)
+\item 
+\mbox{\hyperlink{structPixelRect}{Pixel\+Rect}} \mbox{\hyperlink{structPixelRect_ab79a36edc53ccb5bcebd7ace6f44c4d0}{ExpandX}} (float x)
+\item 
+\mbox{\hyperlink{structPixelRect}{Pixel\+Rect}} \mbox{\hyperlink{structPixelRect_a3aa5acded031abe08935afed3559023e}{ExpandY}} (float y)
+\item 
+\mbox{\hyperlink{structPixelRect}{Pixel\+Rect}} \mbox{\hyperlink{structPixelRect_a27da29b08bf3982d6f287237a2e862e5}{With\+Delta}} (float x, float y)
+\item 
+\mbox{\hyperlink{structPixelRect}{Pixel\+Rect}} \mbox{\hyperlink{structPixelRect_a73ae5249111e93aa6d26bb7edc7c4719}{With\+Delta}} (float x, float y, Alignment alignment)
+\item 
+bool \mbox{\hyperlink{structPixelRect_a7f3edf4f47caefdafca49974011f086d}{Equals}} (\mbox{\hyperlink{structPixelRect}{Pixel\+Rect}} other)
+\item 
+override bool \mbox{\hyperlink{structPixelRect_a9856de1d2166e59839fad7459a837a74}{Equals}} (object? obj)
+\item 
+override int \mbox{\hyperlink{structPixelRect_a98f052bad765654c4d06687c5498d282}{Get\+Hash\+Code}} ()
+\item 
+bool \mbox{\hyperlink{structPixelRect_a5e71b022ff4caee5c32d76a732bcb01e}{Contains}} (\mbox{\hyperlink{structPixel}{Pixel}} px)
+\item 
+bool \mbox{\hyperlink{structPixelRect_a82e10c5897fb1c8a89e1c3e645be89d8}{Contains}} (float x, float y)
+\item 
+bool \mbox{\hyperlink{structPixelRect_ab431d97ef9e43375107f110d2c7a4e67}{ContainsX}} (float x)
+\item 
+bool \mbox{\hyperlink{structPixelRect_ac388a790ed0afbc29dbccf63d233eae5}{ContainsY}} (float y)
+\item 
+\mbox{\hyperlink{structPixel}{Pixel}} \mbox{\hyperlink{structPixelRect_a0f22ead552c9c861d5efb2e9030ccccd}{Get\+Aligned\+Pixel}} (Alignment alignment)
+\item 
+\mbox{\hyperlink{structPixelRect}{Pixel\+Rect}} \mbox{\hyperlink{structPixelRect_ae79649d261a63bcf92cfaaad7f593754}{With\+Offset}} (\mbox{\hyperlink{structPixelOffset}{Pixel\+Offset}} offset)
+\item 
+\mbox{\hyperlink{structPixelRect}{Pixel\+Rect}} \mbox{\hyperlink{structPixelRect_ad96f13da2bd3cbed14457d29a184edca}{Aligned\+Inside}} (\mbox{\hyperlink{structPixelRect}{Pixel\+Rect}} larger\+Rect, Alignment alignment)
+\begin{DoxyCompactList}\small\item\em Return the position of this rectangle aligned inside a larger one \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structPixelRect}{Pixel\+Rect}} \mbox{\hyperlink{structPixelRect_a05aaa021a1b46d3247111f6d03cd3ff6}{Aligned\+Inside}} (\mbox{\hyperlink{structPixelRect}{Pixel\+Rect}} larger\+Rect, Alignment alignment, \mbox{\hyperlink{structPixelPadding}{Pixel\+Padding}} padding)
+\begin{DoxyCompactList}\small\item\em Return the position of this rectangle aligned inside a larger one \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{structPixelRect_a169b5b57e4a6713167770b6d7f266c77}{operator==}} (\mbox{\hyperlink{structPixelRect}{Pixel\+Rect}} a, \mbox{\hyperlink{structPixelRect}{Pixel\+Rect}} b)
+\item 
+static bool \mbox{\hyperlink{structPixelRect_ae524d092838eecec1bbb6a672271735e}{operator!=}} (\mbox{\hyperlink{structPixelRect}{Pixel\+Rect}} a, \mbox{\hyperlink{structPixelRect}{Pixel\+Rect}} b)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+readonly float \mbox{\hyperlink{structPixelRect_ae469b48bfe3e8bbf47f62f88d3a9e952}{Left}}
+\item 
+readonly float \mbox{\hyperlink{structPixelRect_a9b3e014031202903b664d4d3a6726b7e}{Right}}
+\item 
+readonly float \mbox{\hyperlink{structPixelRect_a791af0ac0c6e0c19b2c14d07b3943929}{Bottom}}
+\item 
+readonly float \mbox{\hyperlink{structPixelRect_a92b4a4ad98fbc07e6f0d49235053b229}{Top}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{structPixelRect_a32b3c5719cf8cb37f2d430e96aca39a3}{Horizontal\+Center}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+float \mbox{\hyperlink{structPixelRect_a1f5aaa4c8a9723bc3e227357d1202d39}{Vertical\+Center}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+float \mbox{\hyperlink{structPixelRect_a4472c486305fa39462ab333bbc52b4ee}{Width}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+float \mbox{\hyperlink{structPixelRect_a9edaa7ebc4b0ef59282b69eddf140298}{Height}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+bool \mbox{\hyperlink{structPixelRect_ac7cfff34310b416baa9aed3eec0d6464}{Has\+Area}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{structPixel}{Pixel}} \mbox{\hyperlink{structPixelRect_a194ade99548af0511cbf45b3a470c31d}{Top\+Left}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{structPixel}{Pixel}} \mbox{\hyperlink{structPixelRect_a3c376bf2c6fec38e064c133317d2f7d4}{Top\+Right}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{structPixel}{Pixel}} \mbox{\hyperlink{structPixelRect_ae872725aa0e9034f9d2a2ef06778536f}{Bottom\+Left}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{structPixel}{Pixel}} \mbox{\hyperlink{structPixelRect_a6998a148d199061eb60c3e9c3c4569d1}{Bottom\+Right}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{structPixel}{Pixel}} \mbox{\hyperlink{structPixelRect_a2774a8db174cf5eeef5c46523ced6af6}{Left\+Center}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{structPixel}{Pixel}} \mbox{\hyperlink{structPixelRect_a3c12a31c5109098f2b377a0d1c9d9cd1}{Right\+Center}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{structPixel}{Pixel}} \mbox{\hyperlink{structPixelRect_ae3d597a45959da74dbb76674b0f688e6}{Bottom\+Center}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{structPixel}{Pixel}} \mbox{\hyperlink{structPixelRect_a8b6f50c7d2c17e875946c32982dff043}{Top\+Center}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{structPixel}{Pixel}} \mbox{\hyperlink{structPixelRect_aae36ddb7f5db926315ecf62b3a6dd4be}{Center}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{structPixelSize}{Pixel\+Size}} \mbox{\hyperlink{structPixelRect_a48bb9d883f455aeb9af7b37a10353518}{Size}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{structPixelLine}{Pixel\+Line}} \mbox{\hyperlink{structPixelRect_a693b815f0097eaffe564a19e0f426943}{Bottom\+Line}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{structPixelLine}{Pixel\+Line}} \mbox{\hyperlink{structPixelRect_a84dfc8599be093d9725a31e73574e4a4}{Top\+Line}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{structPixelLine}{Pixel\+Line}} \mbox{\hyperlink{structPixelRect_aee725130ff414d68cfccc0ec3c21d403}{Left\+Line}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{structPixelLine}{Pixel\+Line}} \mbox{\hyperlink{structPixelRect_adbb7ebc4a15a1febd2a7e0d7752b29fb}{Right\+Line}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+static \mbox{\hyperlink{structPixelRect}{Pixel\+Rect}} \mbox{\hyperlink{structPixelRect_a9c454d591d92d4a92ddbf876cc0baf66}{Zero}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+static \mbox{\hyperlink{structPixelRect}{Pixel\+Rect}} \mbox{\hyperlink{structPixelRect_a57af1c76310c62581231c78af357d7ed}{NaN}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structPixelRect_ab43929a6cd9e163c3d362644de922f95}\label{structPixelRect_ab43929a6cd9e163c3d362644de922f95}} 
+\index{PixelRect@{PixelRect}!PixelRect@{PixelRect}}
+\index{PixelRect@{PixelRect}!PixelRect@{PixelRect}}
+\doxysubsubsection{\texorpdfstring{PixelRect()}{PixelRect()}\hspace{0.1cm}{\footnotesize\ttfamily [1/11]}}
+{\footnotesize\ttfamily Pixel\+Rect.\+Pixel\+Rect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPixel}{Pixel}}}]{center,  }\item[{float}]{radius }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Create a rectangle from the bounding box of a circle centered at {\itshape center}  with radius {\itshape radius}  
+
+\mbox{\Hypertarget{structPixelRect_a546151403af916c48144f1a3a5e4cb11}\label{structPixelRect_a546151403af916c48144f1a3a5e4cb11}} 
+\index{PixelRect@{PixelRect}!PixelRect@{PixelRect}}
+\index{PixelRect@{PixelRect}!PixelRect@{PixelRect}}
+\doxysubsubsection{\texorpdfstring{PixelRect()}{PixelRect()}\hspace{0.1cm}{\footnotesize\ttfamily [2/11]}}
+{\footnotesize\ttfamily Pixel\+Rect.\+Pixel\+Rect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPixel}{Pixel}}}]{corner1,  }\item[{\mbox{\hyperlink{structPixel}{Pixel}}}]{corner2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Create a rectangle with edges at the given pixel positions. This constructor will rectify the points so rectangles will always have positive area. 
+
+\mbox{\Hypertarget{structPixelRect_a9a91f9a3e9a809e276fa34ada011226b}\label{structPixelRect_a9a91f9a3e9a809e276fa34ada011226b}} 
+\index{PixelRect@{PixelRect}!PixelRect@{PixelRect}}
+\index{PixelRect@{PixelRect}!PixelRect@{PixelRect}}
+\doxysubsubsection{\texorpdfstring{PixelRect()}{PixelRect()}\hspace{0.1cm}{\footnotesize\ttfamily [3/11]}}
+{\footnotesize\ttfamily Pixel\+Rect.\+Pixel\+Rect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPixel}{Pixel}}}]{top\+Left\+Corner,  }\item[{\mbox{\hyperlink{structPixelSize}{Pixel\+Size}}}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Create a rectangle representing pixels on a screen 
+
+\mbox{\Hypertarget{structPixelRect_af22e4d1872a73d7e75eb64099620a29c}\label{structPixelRect_af22e4d1872a73d7e75eb64099620a29c}} 
+\index{PixelRect@{PixelRect}!PixelRect@{PixelRect}}
+\index{PixelRect@{PixelRect}!PixelRect@{PixelRect}}
+\doxysubsubsection{\texorpdfstring{PixelRect()}{PixelRect()}\hspace{0.1cm}{\footnotesize\ttfamily [4/11]}}
+{\footnotesize\ttfamily Pixel\+Rect.\+Pixel\+Rect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPixelOffset}{Pixel\+Offset}}}]{offset,  }\item[{\mbox{\hyperlink{structPixelSize}{Pixel\+Size}}}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Create a rectangle representing pixels on a screen 
+
+\mbox{\Hypertarget{structPixelRect_afd13d7a74b20f6ee86aa50c4bf2fd1fb}\label{structPixelRect_afd13d7a74b20f6ee86aa50c4bf2fd1fb}} 
+\index{PixelRect@{PixelRect}!PixelRect@{PixelRect}}
+\index{PixelRect@{PixelRect}!PixelRect@{PixelRect}}
+\doxysubsubsection{\texorpdfstring{PixelRect()}{PixelRect()}\hspace{0.1cm}{\footnotesize\ttfamily [5/11]}}
+{\footnotesize\ttfamily Pixel\+Rect.\+Pixel\+Rect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPixel}{Pixel}}}]{top\+Left\+Corner,  }\item[{float}]{width,  }\item[{float}]{height }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Create a rectangle representing pixels on a screen 
+
+\mbox{\Hypertarget{structPixelRect_a7d0452be24530e450d889ddf621a1cf3}\label{structPixelRect_a7d0452be24530e450d889ddf621a1cf3}} 
+\index{PixelRect@{PixelRect}!PixelRect@{PixelRect}}
+\index{PixelRect@{PixelRect}!PixelRect@{PixelRect}}
+\doxysubsubsection{\texorpdfstring{PixelRect()}{PixelRect()}\hspace{0.1cm}{\footnotesize\ttfamily [6/11]}}
+{\footnotesize\ttfamily Pixel\+Rect.\+Pixel\+Rect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPixelSize}{Pixel\+Size}}}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Create a rectangle representing pixels on a screen 
+
+\mbox{\Hypertarget{structPixelRect_a2c86ee486c6d4f4709bf5642e2b1b964}\label{structPixelRect_a2c86ee486c6d4f4709bf5642e2b1b964}} 
+\index{PixelRect@{PixelRect}!PixelRect@{PixelRect}}
+\index{PixelRect@{PixelRect}!PixelRect@{PixelRect}}
+\doxysubsubsection{\texorpdfstring{PixelRect()}{PixelRect()}\hspace{0.1cm}{\footnotesize\ttfamily [7/11]}}
+{\footnotesize\ttfamily Pixel\+Rect.\+Pixel\+Rect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPixelSize}{Pixel\+Size}}}]{size,  }\item[{\mbox{\hyperlink{structPixel}{Pixel}}}]{offset }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Create a rectangle representing pixels on a screen 
+
+\mbox{\Hypertarget{structPixelRect_a9b0b8adced17901e64422cbfa443a296}\label{structPixelRect_a9b0b8adced17901e64422cbfa443a296}} 
+\index{PixelRect@{PixelRect}!PixelRect@{PixelRect}}
+\index{PixelRect@{PixelRect}!PixelRect@{PixelRect}}
+\doxysubsubsection{\texorpdfstring{PixelRect()}{PixelRect()}\hspace{0.1cm}{\footnotesize\ttfamily [8/11]}}
+{\footnotesize\ttfamily Pixel\+Rect.\+Pixel\+Rect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPixelSize}{Pixel\+Size}}}]{size,  }\item[{\mbox{\hyperlink{structPixelOffset}{Pixel\+Offset}}}]{offset }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Create a rectangle representing pixels on a screen 
+
+\mbox{\Hypertarget{structPixelRect_a25ec932f370ce5d2147fb2fadc49fb44}\label{structPixelRect_a25ec932f370ce5d2147fb2fadc49fb44}} 
+\index{PixelRect@{PixelRect}!PixelRect@{PixelRect}}
+\index{PixelRect@{PixelRect}!PixelRect@{PixelRect}}
+\doxysubsubsection{\texorpdfstring{PixelRect()}{PixelRect()}\hspace{0.1cm}{\footnotesize\ttfamily [9/11]}}
+{\footnotesize\ttfamily Pixel\+Rect.\+Pixel\+Rect (\begin{DoxyParamCaption}\item[{float}]{left,  }\item[{float}]{right,  }\item[{float}]{bottom,  }\item[{float}]{top }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Create a rectangle from the given edges. This constructor permits inverted rectangles with negative area. 
+
+\mbox{\Hypertarget{structPixelRect_a9f4bbe3ff9ed5a275cc45b2cd280da2f}\label{structPixelRect_a9f4bbe3ff9ed5a275cc45b2cd280da2f}} 
+\index{PixelRect@{PixelRect}!PixelRect@{PixelRect}}
+\index{PixelRect@{PixelRect}!PixelRect@{PixelRect}}
+\doxysubsubsection{\texorpdfstring{PixelRect()}{PixelRect()}\hspace{0.1cm}{\footnotesize\ttfamily [10/11]}}
+{\footnotesize\ttfamily Pixel\+Rect.\+Pixel\+Rect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPixelRangeX}{Pixel\+RangeX}}}]{x\+Range,  }\item[{\mbox{\hyperlink{structPixelRangeY}{Pixel\+RangeY}}}]{y\+Range }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Create a pixel rectangle from two pixel ranges 
+
+\mbox{\Hypertarget{structPixelRect_ab8d1e271f54bf155828a13b5ef4a5d5c}\label{structPixelRect_ab8d1e271f54bf155828a13b5ef4a5d5c}} 
+\index{PixelRect@{PixelRect}!PixelRect@{PixelRect}}
+\index{PixelRect@{PixelRect}!PixelRect@{PixelRect}}
+\doxysubsubsection{\texorpdfstring{PixelRect()}{PixelRect()}\hspace{0.1cm}{\footnotesize\ttfamily [11/11]}}
+{\footnotesize\ttfamily Pixel\+Rect.\+Pixel\+Rect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$ \mbox{\hyperlink{structPixel}{Pixel}} $>$}]{pixels }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{structPixelRect_ad96f13da2bd3cbed14457d29a184edca}\label{structPixelRect_ad96f13da2bd3cbed14457d29a184edca}} 
+\index{PixelRect@{PixelRect}!AlignedInside@{AlignedInside}}
+\index{AlignedInside@{AlignedInside}!PixelRect@{PixelRect}}
+\doxysubsubsection{\texorpdfstring{AlignedInside()}{AlignedInside()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structPixelRect}{Pixel\+Rect}} Pixel\+Rect.\+Aligned\+Inside (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPixelRect}{Pixel\+Rect}}}]{larger\+Rect,  }\item[{Alignment}]{alignment }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return the position of this rectangle aligned inside a larger one 
+
+\mbox{\Hypertarget{structPixelRect_a05aaa021a1b46d3247111f6d03cd3ff6}\label{structPixelRect_a05aaa021a1b46d3247111f6d03cd3ff6}} 
+\index{PixelRect@{PixelRect}!AlignedInside@{AlignedInside}}
+\index{AlignedInside@{AlignedInside}!PixelRect@{PixelRect}}
+\doxysubsubsection{\texorpdfstring{AlignedInside()}{AlignedInside()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structPixelRect}{Pixel\+Rect}} Pixel\+Rect.\+Aligned\+Inside (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPixelRect}{Pixel\+Rect}}}]{larger\+Rect,  }\item[{Alignment}]{alignment,  }\item[{\mbox{\hyperlink{structPixelPadding}{Pixel\+Padding}}}]{padding }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return the position of this rectangle aligned inside a larger one 
+
+\mbox{\Hypertarget{structPixelRect_a82e10c5897fb1c8a89e1c3e645be89d8}\label{structPixelRect_a82e10c5897fb1c8a89e1c3e645be89d8}} 
+\index{PixelRect@{PixelRect}!Contains@{Contains}}
+\index{Contains@{Contains}!PixelRect@{PixelRect}}
+\doxysubsubsection{\texorpdfstring{Contains()}{Contains()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool Pixel\+Rect.\+Contains (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structPixelRect_a5e71b022ff4caee5c32d76a732bcb01e}\label{structPixelRect_a5e71b022ff4caee5c32d76a732bcb01e}} 
+\index{PixelRect@{PixelRect}!Contains@{Contains}}
+\index{Contains@{Contains}!PixelRect@{PixelRect}}
+\doxysubsubsection{\texorpdfstring{Contains()}{Contains()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool Pixel\+Rect.\+Contains (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPixel}{Pixel}}}]{px }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structPixelRect_ab431d97ef9e43375107f110d2c7a4e67}\label{structPixelRect_ab431d97ef9e43375107f110d2c7a4e67}} 
+\index{PixelRect@{PixelRect}!ContainsX@{ContainsX}}
+\index{ContainsX@{ContainsX}!PixelRect@{PixelRect}}
+\doxysubsubsection{\texorpdfstring{ContainsX()}{ContainsX()}}
+{\footnotesize\ttfamily bool Pixel\+Rect.\+ContainsX (\begin{DoxyParamCaption}\item[{float}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structPixelRect_ac388a790ed0afbc29dbccf63d233eae5}\label{structPixelRect_ac388a790ed0afbc29dbccf63d233eae5}} 
+\index{PixelRect@{PixelRect}!ContainsY@{ContainsY}}
+\index{ContainsY@{ContainsY}!PixelRect@{PixelRect}}
+\doxysubsubsection{\texorpdfstring{ContainsY()}{ContainsY()}}
+{\footnotesize\ttfamily bool Pixel\+Rect.\+ContainsY (\begin{DoxyParamCaption}\item[{float}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structPixelRect_addfe7aee6480c64275dca48643dd93d1}\label{structPixelRect_addfe7aee6480c64275dca48643dd93d1}} 
+\index{PixelRect@{PixelRect}!Contract@{Contract}}
+\index{Contract@{Contract}!PixelRect@{PixelRect}}
+\doxysubsubsection{\texorpdfstring{Contract()}{Contract()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structPixelRect}{Pixel\+Rect}} Pixel\+Rect.\+Contract (\begin{DoxyParamCaption}\item[{float}]{delta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structPixelRect_a55b87cea3baa113a23df09384cbdd2c3}\label{structPixelRect_a55b87cea3baa113a23df09384cbdd2c3}} 
+\index{PixelRect@{PixelRect}!Contract@{Contract}}
+\index{Contract@{Contract}!PixelRect@{PixelRect}}
+\doxysubsubsection{\texorpdfstring{Contract()}{Contract()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structPixelRect}{Pixel\+Rect}} Pixel\+Rect.\+Contract (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structPixelRect_af024d3c4509bfcb8ee137a27ffac9662}\label{structPixelRect_af024d3c4509bfcb8ee137a27ffac9662}} 
+\index{PixelRect@{PixelRect}!Contract@{Contract}}
+\index{Contract@{Contract}!PixelRect@{PixelRect}}
+\doxysubsubsection{\texorpdfstring{Contract()}{Contract()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structPixelRect}{Pixel\+Rect}} Pixel\+Rect.\+Contract (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPixelPadding}{Pixel\+Padding}}}]{padding }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structPixelRect_a9856de1d2166e59839fad7459a837a74}\label{structPixelRect_a9856de1d2166e59839fad7459a837a74}} 
+\index{PixelRect@{PixelRect}!Equals@{Equals}}
+\index{Equals@{Equals}!PixelRect@{PixelRect}}
+\doxysubsubsection{\texorpdfstring{Equals()}{Equals()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily override bool Pixel\+Rect.\+Equals (\begin{DoxyParamCaption}\item[{object?}]{obj }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structPixelRect_a7f3edf4f47caefdafca49974011f086d}\label{structPixelRect_a7f3edf4f47caefdafca49974011f086d}} 
+\index{PixelRect@{PixelRect}!Equals@{Equals}}
+\index{Equals@{Equals}!PixelRect@{PixelRect}}
+\doxysubsubsection{\texorpdfstring{Equals()}{Equals()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool Pixel\+Rect.\+Equals (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPixelRect}{Pixel\+Rect}}}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structPixelRect_ae876bfa61976a23977cb76a11e058606}\label{structPixelRect_ae876bfa61976a23977cb76a11e058606}} 
+\index{PixelRect@{PixelRect}!Expand@{Expand}}
+\index{Expand@{Expand}!PixelRect@{PixelRect}}
+\doxysubsubsection{\texorpdfstring{Expand()}{Expand()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structPixelRect}{Pixel\+Rect}} Pixel\+Rect.\+Expand (\begin{DoxyParamCaption}\item[{float}]{delta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structPixelRect_ad0f277f6895959508446fab279e27507}\label{structPixelRect_ad0f277f6895959508446fab279e27507}} 
+\index{PixelRect@{PixelRect}!Expand@{Expand}}
+\index{Expand@{Expand}!PixelRect@{PixelRect}}
+\doxysubsubsection{\texorpdfstring{Expand()}{Expand()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structPixelRect}{Pixel\+Rect}} Pixel\+Rect.\+Expand (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPixelPadding}{Pixel\+Padding}}}]{pad }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structPixelRect_afa82b78ff4d439eacddc4e94ea1eb15e}\label{structPixelRect_afa82b78ff4d439eacddc4e94ea1eb15e}} 
+\index{PixelRect@{PixelRect}!Expand@{Expand}}
+\index{Expand@{Expand}!PixelRect@{PixelRect}}
+\doxysubsubsection{\texorpdfstring{Expand()}{Expand()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structPixelRect}{Pixel\+Rect}} Pixel\+Rect.\+Expand (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPixelRect}{Pixel\+Rect}}}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structPixelRect_ab79a36edc53ccb5bcebd7ace6f44c4d0}\label{structPixelRect_ab79a36edc53ccb5bcebd7ace6f44c4d0}} 
+\index{PixelRect@{PixelRect}!ExpandX@{ExpandX}}
+\index{ExpandX@{ExpandX}!PixelRect@{PixelRect}}
+\doxysubsubsection{\texorpdfstring{ExpandX()}{ExpandX()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structPixelRect}{Pixel\+Rect}} Pixel\+Rect.\+ExpandX (\begin{DoxyParamCaption}\item[{float}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structPixelRect_a3aa5acded031abe08935afed3559023e}\label{structPixelRect_a3aa5acded031abe08935afed3559023e}} 
+\index{PixelRect@{PixelRect}!ExpandY@{ExpandY}}
+\index{ExpandY@{ExpandY}!PixelRect@{PixelRect}}
+\doxysubsubsection{\texorpdfstring{ExpandY()}{ExpandY()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structPixelRect}{Pixel\+Rect}} Pixel\+Rect.\+ExpandY (\begin{DoxyParamCaption}\item[{float}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structPixelRect_a0f22ead552c9c861d5efb2e9030ccccd}\label{structPixelRect_a0f22ead552c9c861d5efb2e9030ccccd}} 
+\index{PixelRect@{PixelRect}!GetAlignedPixel@{GetAlignedPixel}}
+\index{GetAlignedPixel@{GetAlignedPixel}!PixelRect@{PixelRect}}
+\doxysubsubsection{\texorpdfstring{GetAlignedPixel()}{GetAlignedPixel()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structPixel}{Pixel}} Pixel\+Rect.\+Get\+Aligned\+Pixel (\begin{DoxyParamCaption}\item[{Alignment}]{alignment }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structPixelRect_a98f052bad765654c4d06687c5498d282}\label{structPixelRect_a98f052bad765654c4d06687c5498d282}} 
+\index{PixelRect@{PixelRect}!GetHashCode@{GetHashCode}}
+\index{GetHashCode@{GetHashCode}!PixelRect@{PixelRect}}
+\doxysubsubsection{\texorpdfstring{GetHashCode()}{GetHashCode()}}
+{\footnotesize\ttfamily override int Pixel\+Rect.\+Get\+Hash\+Code (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structPixelRect_a22353c0e9e7ceaac963960dd23ec7fd0}\label{structPixelRect_a22353c0e9e7ceaac963960dd23ec7fd0}} 
+\index{PixelRect@{PixelRect}!Intersect@{Intersect}}
+\index{Intersect@{Intersect}!PixelRect@{PixelRect}}
+\doxysubsubsection{\texorpdfstring{Intersect()}{Intersect()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structPixelRect}{Pixel\+Rect}} Pixel\+Rect.\+Intersect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPixelRect}{Pixel\+Rect}}}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the intersection with another rectangle 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & Other rectangle\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Intersection rectangle
+\end{DoxyReturn}
+\mbox{\Hypertarget{structPixelRect_ae524d092838eecec1bbb6a672271735e}\label{structPixelRect_ae524d092838eecec1bbb6a672271735e}} 
+\index{PixelRect@{PixelRect}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!PixelRect@{PixelRect}}
+\doxysubsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily static bool Pixel\+Rect.\+operator!= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPixelRect}{Pixel\+Rect}}}]{a,  }\item[{\mbox{\hyperlink{structPixelRect}{Pixel\+Rect}}}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{structPixelRect_a169b5b57e4a6713167770b6d7f266c77}\label{structPixelRect_a169b5b57e4a6713167770b6d7f266c77}} 
+\index{PixelRect@{PixelRect}!operator==@{operator==}}
+\index{operator==@{operator==}!PixelRect@{PixelRect}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily static bool Pixel\+Rect.\+operator== (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPixelRect}{Pixel\+Rect}}}]{a,  }\item[{\mbox{\hyperlink{structPixelRect}{Pixel\+Rect}}}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{structPixelRect_a08918ec022158b4184c28edf8eb4d820}\label{structPixelRect_a08918ec022158b4184c28edf8eb4d820}} 
+\index{PixelRect@{PixelRect}!ToSKRect@{ToSKRect}}
+\index{ToSKRect@{ToSKRect}!PixelRect@{PixelRect}}
+\doxysubsubsection{\texorpdfstring{ToSKRect()}{ToSKRect()}}
+{\footnotesize\ttfamily Skia\+Sharp.\+SKRect Pixel\+Rect.\+To\+SKRect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structPixelRect_a5334165c1ef480a560a22e14cfc155a2}\label{structPixelRect_a5334165c1ef480a560a22e14cfc155a2}} 
+\index{PixelRect@{PixelRect}!ToString@{ToString}}
+\index{ToString@{ToString}!PixelRect@{PixelRect}}
+\doxysubsubsection{\texorpdfstring{ToString()}{ToString()}}
+{\footnotesize\ttfamily override string Pixel\+Rect.\+To\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structPixelRect_a27da29b08bf3982d6f287237a2e862e5}\label{structPixelRect_a27da29b08bf3982d6f287237a2e862e5}} 
+\index{PixelRect@{PixelRect}!WithDelta@{WithDelta}}
+\index{WithDelta@{WithDelta}!PixelRect@{PixelRect}}
+\doxysubsubsection{\texorpdfstring{WithDelta()}{WithDelta()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structPixelRect}{Pixel\+Rect}} Pixel\+Rect.\+With\+Delta (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structPixelRect_a73ae5249111e93aa6d26bb7edc7c4719}\label{structPixelRect_a73ae5249111e93aa6d26bb7edc7c4719}} 
+\index{PixelRect@{PixelRect}!WithDelta@{WithDelta}}
+\index{WithDelta@{WithDelta}!PixelRect@{PixelRect}}
+\doxysubsubsection{\texorpdfstring{WithDelta()}{WithDelta()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structPixelRect}{Pixel\+Rect}} Pixel\+Rect.\+With\+Delta (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{Alignment}]{alignment }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structPixelRect_ae79649d261a63bcf92cfaaad7f593754}\label{structPixelRect_ae79649d261a63bcf92cfaaad7f593754}} 
+\index{PixelRect@{PixelRect}!WithOffset@{WithOffset}}
+\index{WithOffset@{WithOffset}!PixelRect@{PixelRect}}
+\doxysubsubsection{\texorpdfstring{WithOffset()}{WithOffset()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structPixelRect}{Pixel\+Rect}} Pixel\+Rect.\+With\+Offset (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPixelOffset}{Pixel\+Offset}}}]{offset }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structPixelRect_a9a70690e8701264a849ea91ccd57ce3f}\label{structPixelRect_a9a70690e8701264a849ea91ccd57ce3f}} 
+\index{PixelRect@{PixelRect}!WithPan@{WithPan}}
+\index{WithPan@{WithPan}!PixelRect@{PixelRect}}
+\doxysubsubsection{\texorpdfstring{WithPan()}{WithPan()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structPixelRect}{Pixel\+Rect}} Pixel\+Rect.\+With\+Pan (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structPixelRect_a791af0ac0c6e0c19b2c14d07b3943929}\label{structPixelRect_a791af0ac0c6e0c19b2c14d07b3943929}} 
+\index{PixelRect@{PixelRect}!Bottom@{Bottom}}
+\index{Bottom@{Bottom}!PixelRect@{PixelRect}}
+\doxysubsubsection{\texorpdfstring{Bottom}{Bottom}}
+{\footnotesize\ttfamily readonly float Pixel\+Rect.\+Bottom}
+
+\mbox{\Hypertarget{structPixelRect_ae469b48bfe3e8bbf47f62f88d3a9e952}\label{structPixelRect_ae469b48bfe3e8bbf47f62f88d3a9e952}} 
+\index{PixelRect@{PixelRect}!Left@{Left}}
+\index{Left@{Left}!PixelRect@{PixelRect}}
+\doxysubsubsection{\texorpdfstring{Left}{Left}}
+{\footnotesize\ttfamily readonly float Pixel\+Rect.\+Left}
+
+\mbox{\Hypertarget{structPixelRect_a9b3e014031202903b664d4d3a6726b7e}\label{structPixelRect_a9b3e014031202903b664d4d3a6726b7e}} 
+\index{PixelRect@{PixelRect}!Right@{Right}}
+\index{Right@{Right}!PixelRect@{PixelRect}}
+\doxysubsubsection{\texorpdfstring{Right}{Right}}
+{\footnotesize\ttfamily readonly float Pixel\+Rect.\+Right}
+
+\mbox{\Hypertarget{structPixelRect_a92b4a4ad98fbc07e6f0d49235053b229}\label{structPixelRect_a92b4a4ad98fbc07e6f0d49235053b229}} 
+\index{PixelRect@{PixelRect}!Top@{Top}}
+\index{Top@{Top}!PixelRect@{PixelRect}}
+\doxysubsubsection{\texorpdfstring{Top}{Top}}
+{\footnotesize\ttfamily readonly float Pixel\+Rect.\+Top}
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{structPixelRect_ae3d597a45959da74dbb76674b0f688e6}\label{structPixelRect_ae3d597a45959da74dbb76674b0f688e6}} 
+\index{PixelRect@{PixelRect}!BottomCenter@{BottomCenter}}
+\index{BottomCenter@{BottomCenter}!PixelRect@{PixelRect}}
+\doxysubsubsection{\texorpdfstring{BottomCenter}{BottomCenter}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structPixel}{Pixel}} Pixel\+Rect.\+Bottom\+Center\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{structPixelRect_ae872725aa0e9034f9d2a2ef06778536f}\label{structPixelRect_ae872725aa0e9034f9d2a2ef06778536f}} 
+\index{PixelRect@{PixelRect}!BottomLeft@{BottomLeft}}
+\index{BottomLeft@{BottomLeft}!PixelRect@{PixelRect}}
+\doxysubsubsection{\texorpdfstring{BottomLeft}{BottomLeft}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structPixel}{Pixel}} Pixel\+Rect.\+Bottom\+Left\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{structPixelRect_a693b815f0097eaffe564a19e0f426943}\label{structPixelRect_a693b815f0097eaffe564a19e0f426943}} 
+\index{PixelRect@{PixelRect}!BottomLine@{BottomLine}}
+\index{BottomLine@{BottomLine}!PixelRect@{PixelRect}}
+\doxysubsubsection{\texorpdfstring{BottomLine}{BottomLine}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structPixelLine}{Pixel\+Line}} Pixel\+Rect.\+Bottom\+Line\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{structPixelRect_a6998a148d199061eb60c3e9c3c4569d1}\label{structPixelRect_a6998a148d199061eb60c3e9c3c4569d1}} 
+\index{PixelRect@{PixelRect}!BottomRight@{BottomRight}}
+\index{BottomRight@{BottomRight}!PixelRect@{PixelRect}}
+\doxysubsubsection{\texorpdfstring{BottomRight}{BottomRight}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structPixel}{Pixel}} Pixel\+Rect.\+Bottom\+Right\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{structPixelRect_aae36ddb7f5db926315ecf62b3a6dd4be}\label{structPixelRect_aae36ddb7f5db926315ecf62b3a6dd4be}} 
+\index{PixelRect@{PixelRect}!Center@{Center}}
+\index{Center@{Center}!PixelRect@{PixelRect}}
+\doxysubsubsection{\texorpdfstring{Center}{Center}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structPixel}{Pixel}} Pixel\+Rect.\+Center\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{structPixelRect_ac7cfff34310b416baa9aed3eec0d6464}\label{structPixelRect_ac7cfff34310b416baa9aed3eec0d6464}} 
+\index{PixelRect@{PixelRect}!HasArea@{HasArea}}
+\index{HasArea@{HasArea}!PixelRect@{PixelRect}}
+\doxysubsubsection{\texorpdfstring{HasArea}{HasArea}}
+{\footnotesize\ttfamily bool Pixel\+Rect.\+Has\+Area\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{structPixelRect_a9edaa7ebc4b0ef59282b69eddf140298}\label{structPixelRect_a9edaa7ebc4b0ef59282b69eddf140298}} 
+\index{PixelRect@{PixelRect}!Height@{Height}}
+\index{Height@{Height}!PixelRect@{PixelRect}}
+\doxysubsubsection{\texorpdfstring{Height}{Height}}
+{\footnotesize\ttfamily float Pixel\+Rect.\+Height\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{structPixelRect_a32b3c5719cf8cb37f2d430e96aca39a3}\label{structPixelRect_a32b3c5719cf8cb37f2d430e96aca39a3}} 
+\index{PixelRect@{PixelRect}!HorizontalCenter@{HorizontalCenter}}
+\index{HorizontalCenter@{HorizontalCenter}!PixelRect@{PixelRect}}
+\doxysubsubsection{\texorpdfstring{HorizontalCenter}{HorizontalCenter}}
+{\footnotesize\ttfamily float Pixel\+Rect.\+Horizontal\+Center\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{structPixelRect_a2774a8db174cf5eeef5c46523ced6af6}\label{structPixelRect_a2774a8db174cf5eeef5c46523ced6af6}} 
+\index{PixelRect@{PixelRect}!LeftCenter@{LeftCenter}}
+\index{LeftCenter@{LeftCenter}!PixelRect@{PixelRect}}
+\doxysubsubsection{\texorpdfstring{LeftCenter}{LeftCenter}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structPixel}{Pixel}} Pixel\+Rect.\+Left\+Center\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{structPixelRect_aee725130ff414d68cfccc0ec3c21d403}\label{structPixelRect_aee725130ff414d68cfccc0ec3c21d403}} 
+\index{PixelRect@{PixelRect}!LeftLine@{LeftLine}}
+\index{LeftLine@{LeftLine}!PixelRect@{PixelRect}}
+\doxysubsubsection{\texorpdfstring{LeftLine}{LeftLine}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structPixelLine}{Pixel\+Line}} Pixel\+Rect.\+Left\+Line\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{structPixelRect_a57af1c76310c62581231c78af357d7ed}\label{structPixelRect_a57af1c76310c62581231c78af357d7ed}} 
+\index{PixelRect@{PixelRect}!NaN@{NaN}}
+\index{NaN@{NaN}!PixelRect@{PixelRect}}
+\doxysubsubsection{\texorpdfstring{NaN}{NaN}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structPixelRect}{Pixel\+Rect}} Pixel\+Rect.\+NaN\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+\mbox{\Hypertarget{structPixelRect_a3c12a31c5109098f2b377a0d1c9d9cd1}\label{structPixelRect_a3c12a31c5109098f2b377a0d1c9d9cd1}} 
+\index{PixelRect@{PixelRect}!RightCenter@{RightCenter}}
+\index{RightCenter@{RightCenter}!PixelRect@{PixelRect}}
+\doxysubsubsection{\texorpdfstring{RightCenter}{RightCenter}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structPixel}{Pixel}} Pixel\+Rect.\+Right\+Center\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{structPixelRect_adbb7ebc4a15a1febd2a7e0d7752b29fb}\label{structPixelRect_adbb7ebc4a15a1febd2a7e0d7752b29fb}} 
+\index{PixelRect@{PixelRect}!RightLine@{RightLine}}
+\index{RightLine@{RightLine}!PixelRect@{PixelRect}}
+\doxysubsubsection{\texorpdfstring{RightLine}{RightLine}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structPixelLine}{Pixel\+Line}} Pixel\+Rect.\+Right\+Line\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{structPixelRect_a48bb9d883f455aeb9af7b37a10353518}\label{structPixelRect_a48bb9d883f455aeb9af7b37a10353518}} 
+\index{PixelRect@{PixelRect}!Size@{Size}}
+\index{Size@{Size}!PixelRect@{PixelRect}}
+\doxysubsubsection{\texorpdfstring{Size}{Size}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structPixelSize}{Pixel\+Size}} Pixel\+Rect.\+Size\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{structPixelRect_a8b6f50c7d2c17e875946c32982dff043}\label{structPixelRect_a8b6f50c7d2c17e875946c32982dff043}} 
+\index{PixelRect@{PixelRect}!TopCenter@{TopCenter}}
+\index{TopCenter@{TopCenter}!PixelRect@{PixelRect}}
+\doxysubsubsection{\texorpdfstring{TopCenter}{TopCenter}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structPixel}{Pixel}} Pixel\+Rect.\+Top\+Center\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{structPixelRect_a194ade99548af0511cbf45b3a470c31d}\label{structPixelRect_a194ade99548af0511cbf45b3a470c31d}} 
+\index{PixelRect@{PixelRect}!TopLeft@{TopLeft}}
+\index{TopLeft@{TopLeft}!PixelRect@{PixelRect}}
+\doxysubsubsection{\texorpdfstring{TopLeft}{TopLeft}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structPixel}{Pixel}} Pixel\+Rect.\+Top\+Left\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{structPixelRect_a84dfc8599be093d9725a31e73574e4a4}\label{structPixelRect_a84dfc8599be093d9725a31e73574e4a4}} 
+\index{PixelRect@{PixelRect}!TopLine@{TopLine}}
+\index{TopLine@{TopLine}!PixelRect@{PixelRect}}
+\doxysubsubsection{\texorpdfstring{TopLine}{TopLine}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structPixelLine}{Pixel\+Line}} Pixel\+Rect.\+Top\+Line\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{structPixelRect_a3c376bf2c6fec38e064c133317d2f7d4}\label{structPixelRect_a3c376bf2c6fec38e064c133317d2f7d4}} 
+\index{PixelRect@{PixelRect}!TopRight@{TopRight}}
+\index{TopRight@{TopRight}!PixelRect@{PixelRect}}
+\doxysubsubsection{\texorpdfstring{TopRight}{TopRight}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structPixel}{Pixel}} Pixel\+Rect.\+Top\+Right\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{structPixelRect_a1f5aaa4c8a9723bc3e227357d1202d39}\label{structPixelRect_a1f5aaa4c8a9723bc3e227357d1202d39}} 
+\index{PixelRect@{PixelRect}!VerticalCenter@{VerticalCenter}}
+\index{VerticalCenter@{VerticalCenter}!PixelRect@{PixelRect}}
+\doxysubsubsection{\texorpdfstring{VerticalCenter}{VerticalCenter}}
+{\footnotesize\ttfamily float Pixel\+Rect.\+Vertical\+Center\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{structPixelRect_a4472c486305fa39462ab333bbc52b4ee}\label{structPixelRect_a4472c486305fa39462ab333bbc52b4ee}} 
+\index{PixelRect@{PixelRect}!Width@{Width}}
+\index{Width@{Width}!PixelRect@{PixelRect}}
+\doxysubsubsection{\texorpdfstring{Width}{Width}}
+{\footnotesize\ttfamily float Pixel\+Rect.\+Width\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{structPixelRect_a9c454d591d92d4a92ddbf876cc0baf66}\label{structPixelRect_a9c454d591d92d4a92ddbf876cc0baf66}} 
+\index{PixelRect@{PixelRect}!Zero@{Zero}}
+\index{Zero@{Zero}!PixelRect@{PixelRect}}
+\doxysubsubsection{\texorpdfstring{Zero}{Zero}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structPixelRect}{Pixel\+Rect}} Pixel\+Rect.\+Zero\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Primitives/Pixel\+Rect.\+cs\end{DoxyCompactItemize}

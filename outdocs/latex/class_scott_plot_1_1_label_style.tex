@@ -1,0 +1,383 @@
+\doxysection{Scott\+Plot.\+Label\+Style Class Reference}
+\hypertarget{class_scott_plot_1_1_label_style}{}\label{class_scott_plot_1_1_label_style}\index{ScottPlot.LabelStyle@{ScottPlot.LabelStyle}}
+Inheritance diagram for Scott\+Plot.\+Label\+Style\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_scott_plot_1_1_label_style}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_label_style_a206291297eccb6f72f301b112adc2f40}{Set\+Best\+Font}} ()
+\begin{DoxyCompactList}\small\item\em Use the characters in \doxylink{class_scott_plot_1_1_label_style_a8c04d0a27cdbcf44c443e878a7dfebbb}{Text} to determine an installed system font most likely to support this character set. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_label_style_a365adcfce3ba2fecece5b73dc71217ec}{Apply\+To\+Paint}} (SKPaint paint)
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_measured_text}{Measured\+Text}} \mbox{\hyperlink{class_scott_plot_1_1_label_style_a8b9200c29154ed4eff77d04e1b9dbba6}{Measure}} ()
+\begin{DoxyCompactList}\small\item\em Return size information for the contents of the \doxylink{class_scott_plot_1_1_label_style_a8c04d0a27cdbcf44c443e878a7dfebbb}{Text} property. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_measured_text}{Measured\+Text}} \mbox{\hyperlink{class_scott_plot_1_1_label_style_a2a680031909d8de91b2c9ef417b310ac}{Measure}} (string \mbox{\hyperlink{class_scott_plot_1_1_label_style_a074d3b7375c5b1bba371c87ba57d2794}{text}})
+\begin{DoxyCompactList}\small\item\em Return size information for the given text. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_measured_text}{Measured\+Text}} \mbox{\hyperlink{class_scott_plot_1_1_label_style_ae6e19b3d47ad90869145599776d706a3}{Measure}} (string \mbox{\hyperlink{class_scott_plot_1_1_label_style_a074d3b7375c5b1bba371c87ba57d2794}{text}}, SKPaint paint)
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}} \mbox{\hyperlink{class_scott_plot_1_1_label_style_aa6c2d7334cdc7cabe2a7ea094dd5261e}{Get\+Render\+Location}} (\mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect}{Pixel\+Rect}} rect, \mbox{\hyperlink{namespace_scott_plot_a2da000551e02ef1d0af13793cf678abc}{Alignment}} rect\+Alignment, float offsetX, float offsetY, SKPaint paint)
+\begin{DoxyCompactList}\small\item\em Use the \doxylink{class_scott_plot_1_1_label}{Label}\textquotesingle{}s size and \doxylink{class_scott_plot_1_1_label_style_a6604dbf2e97876c844254914edce230a}{Alignment} to determine where it should be drawn relative to the given rectangle (aligned to the rectangle according to {\itshape rect\+Alignment} ). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_label_style_ada65dab85b410198e407fa73b0bc20bf}{Render}} (SKCanvas canvas, \mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}} px, SKPaint paint, bool bottom=true)
+\item 
+string float height \mbox{\hyperlink{class_scott_plot_1_1_label_style_ab9e5b074bd7d1da0135534f58447de49}{Measure\+Highest\+String}} (string\mbox{[}$\,$\mbox{]} strings, SKPaint paint)
+\item 
+string \mbox{\hyperlink{struct_scott_plot_1_1_pixel_length}{Pixel\+Length}} width \mbox{\hyperlink{class_scott_plot_1_1_label_style_a2192d2cec0b4a80266a7c60f9ac939ab}{Measure\+Widest\+String}} (string\mbox{[}$\,$\mbox{]} strings, SKPaint paint)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_scott_plot_1_1_label_style_acfd9141c0f38512e48ae0cc93f415213}{Italic}} = false
+\item 
+bool \mbox{\hyperlink{class_scott_plot_1_1_label_style_a645b0ac531a38def17493e2be5559493}{Anti\+Alias}} = true
+\item 
+float \mbox{\hyperlink{class_scott_plot_1_1_label_style_a3488765b9b62069f20b2191ea070ddba}{Point\+Size}} = 0
+\item 
+bool \mbox{\hyperlink{class_scott_plot_1_1_label_style_ac1c6a5d3d1d7a181c9b92a0348064ac5}{Point\+Filled}} = false
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} \mbox{\hyperlink{class_scott_plot_1_1_label_style_adc86a7cc0b6f6c6629138f86b3228d81}{Point\+Color}} = \mbox{\hyperlink{struct_scott_plot_1_1_colors_a029f10eefd8cf1988d1b2a58d471b2eb}{Colors.\+Magenta}}
+\item 
+float \mbox{\hyperlink{class_scott_plot_1_1_label_style_aae8709de3d8ab2a77f5ee5a528388593}{OffsetX}} = 0
+\item 
+float \mbox{\hyperlink{class_scott_plot_1_1_label_style_a9a1403015c826cd936c6804fa351a879}{OffsetY}} = 0
+\item 
+float \mbox{\hyperlink{class_scott_plot_1_1_label_style_aef7510bb928d99cc1df4e95ee0d71a63}{Border\+RadiusX}} = 0
+\item 
+float \mbox{\hyperlink{class_scott_plot_1_1_label_style_a04c2bc0b7920b9c3abb9c9f735869f35}{Border\+RadiusY}} = 0
+\item 
+string \mbox{\hyperlink{class_scott_plot_1_1_label_style_a074d3b7375c5b1bba371c87ba57d2794}{text}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_scott_plot_1_1_label_style_a70d8f6e8b6ec45c123186448487a0454}{Is\+Visible}} = true\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+string \mbox{\hyperlink{class_scott_plot_1_1_label_style_a8c04d0a27cdbcf44c443e878a7dfebbb}{Text}} = string.\+Empty\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{namespace_scott_plot_a2da000551e02ef1d0af13793cf678abc}{Alignment}} \mbox{\hyperlink{class_scott_plot_1_1_label_style_a6604dbf2e97876c844254914edce230a}{Alignment}} = \mbox{\hyperlink{namespace_scott_plot_a2da000551e02ef1d0af13793cf678abca6f43ca0793e0c68184761673278f4ca4}{Alignment.\+Upper\+Left}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_scott_plot_1_1_label_style_abac9b6b0259190207729638943030d76}{Rotation}} = 0\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Rotation in degrees clockwise from 0 (horizontal text) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} \mbox{\hyperlink{class_scott_plot_1_1_label_style_a436171a5229a5b8a4f5e7d0ed254282c}{Fore\+Color}} = \mbox{\hyperlink{struct_scott_plot_1_1_colors_a2aafa2dc613a50b4fa1699a09fe003b1}{Colors.\+Black}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} \mbox{\hyperlink{class_scott_plot_1_1_label_style_ad845311391aec3c809a19d3402e43190}{Back\+Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} \mbox{\hyperlink{class_scott_plot_1_1_label_style_a1cb73fe3b6874c314c94c240851797c1}{Background\+Color}} = \mbox{\hyperlink{struct_scott_plot_1_1_colors_aecffb5296bdfb8fdb3168a75822b5da0}{Colors.\+Transparent}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} \mbox{\hyperlink{class_scott_plot_1_1_label_style_abaccef1f0819cdc9aa76fa37b4772915}{Border\+Color}} = \mbox{\hyperlink{struct_scott_plot_1_1_colors_aecffb5296bdfb8fdb3168a75822b5da0}{Colors.\+Transparent}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_scott_plot_1_1_label_style_a6c5901b64e0d78980816bf30b9acafe0}{Border\+Width}} = 1\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect}{Pixel\+Rect}} \mbox{\hyperlink{class_scott_plot_1_1_label_style_aa2318cffcca461ffd61d94349e1e7e75}{Last\+Render\+Pixel\+Rect}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} \mbox{\hyperlink{class_scott_plot_1_1_label_style_aec3941c60235e6a2e307f271cbdc46b6}{Shadow\+Color}} = \mbox{\hyperlink{struct_scott_plot_1_1_colors_aecffb5296bdfb8fdb3168a75822b5da0}{Colors.\+Transparent}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{namespace_scott_plot_a3dfefa78aee0c8cf7184895e4ad7d44b}{Pixel\+Offset}} \mbox{\hyperlink{class_scott_plot_1_1_label_style_a5d3ce58b3a9e15feb1b0a20aeafe7a9c}{Shadow\+Offset}} = new(3, 3)\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+bool \mbox{\hyperlink{class_scott_plot_1_1_label_style_a8298ef19a225b2c47ebc00aa2b7525c8}{Anti\+Alias\+Background}} = true\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+bool \mbox{\hyperlink{class_scott_plot_1_1_label_style_accbbc7ffd30a2366a94484f226263f29}{Anti\+Alias\+Text}} = true\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+bool \mbox{\hyperlink{class_scott_plot_1_1_label_style_a54b7d7af4ebfb332ec9e27ea9cb5070e}{Subpixel\+Text}} = true\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+string \mbox{\hyperlink{class_scott_plot_1_1_label_style_a6b6c6e9d36ef1f1e8f1e589b63e0f495}{Font\+Name}} = Fonts.\+Default\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_scott_plot_1_1_label_style_a4f9942106333875cc56bd5812777e6cf}{Font\+Size}} = 12\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+bool \mbox{\hyperlink{class_scott_plot_1_1_label_style_ace659a736eacc0f5602272f6ba7a4c47}{Bold}} = false\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float? \mbox{\hyperlink{class_scott_plot_1_1_label_style_a9b957eaec290d0560bac52b1d43d153b}{Line\+Spacing}} = null\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Manually defined line height in pixels. If not defined, the default line spacing will be used (according to the typeface, size, etc.) \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_scott_plot_1_1_label_style_aa7703fb806207c5e9814b3b3b575f863}{Padding}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_pixel_padding}{Pixel\+Padding}} \mbox{\hyperlink{class_scott_plot_1_1_label_style_a28d025f234d0d89daaa3a03559479f88}{Pixel\+Padding}} = new(0, 0, 0, 0)\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_scott_plot_1_1_label_style_a1f224d0cb6b211d0e129a832d7fd3195}{Border\+Radius}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_scott_plot_1_1_label_style_a365adcfce3ba2fecece5b73dc71217ec}\index{ScottPlot.LabelStyle@{ScottPlot.LabelStyle}!ApplyToPaint@{ApplyToPaint}}
+\index{ApplyToPaint@{ApplyToPaint}!ScottPlot.LabelStyle@{ScottPlot.LabelStyle}}
+\doxysubsubsection{\texorpdfstring{ApplyToPaint()}{ApplyToPaint()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_label_style_a365adcfce3ba2fecece5b73dc71217ec} 
+void Scott\+Plot.\+Label\+Style.\+Apply\+To\+Paint (\begin{DoxyParamCaption}\item[{SKPaint}]{paint}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_label_style_aa6c2d7334cdc7cabe2a7ea094dd5261e}\index{ScottPlot.LabelStyle@{ScottPlot.LabelStyle}!GetRenderLocation@{GetRenderLocation}}
+\index{GetRenderLocation@{GetRenderLocation}!ScottPlot.LabelStyle@{ScottPlot.LabelStyle}}
+\doxysubsubsection{\texorpdfstring{GetRenderLocation()}{GetRenderLocation()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_label_style_aa6c2d7334cdc7cabe2a7ea094dd5261e} 
+\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}} Scott\+Plot.\+Label\+Style.\+Get\+Render\+Location (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect}{Pixel\+Rect}}}]{rect}{, }\item[{\mbox{\hyperlink{namespace_scott_plot_a2da000551e02ef1d0af13793cf678abc}{Alignment}}}]{rect\+Alignment}{, }\item[{float}]{offsetX}{, }\item[{float}]{offsetY}{, }\item[{SKPaint}]{paint}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Use the \doxylink{class_scott_plot_1_1_label}{Label}\textquotesingle{}s size and \doxylink{class_scott_plot_1_1_label_style_a6604dbf2e97876c844254914edce230a}{Alignment} to determine where it should be drawn relative to the given rectangle (aligned to the rectangle according to {\itshape rect\+Alignment} ). 
+
+\Hypertarget{class_scott_plot_1_1_label_style_a8b9200c29154ed4eff77d04e1b9dbba6}\index{ScottPlot.LabelStyle@{ScottPlot.LabelStyle}!Measure@{Measure}}
+\index{Measure@{Measure}!ScottPlot.LabelStyle@{ScottPlot.LabelStyle}}
+\doxysubsubsection{\texorpdfstring{Measure()}{Measure()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_label_style_a8b9200c29154ed4eff77d04e1b9dbba6} 
+\mbox{\hyperlink{struct_scott_plot_1_1_measured_text}{Measured\+Text}} Scott\+Plot.\+Label\+Style.\+Measure (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return size information for the contents of the \doxylink{class_scott_plot_1_1_label_style_a8c04d0a27cdbcf44c443e878a7dfebbb}{Text} property. 
+
+\Hypertarget{class_scott_plot_1_1_label_style_a2a680031909d8de91b2c9ef417b310ac}\index{ScottPlot.LabelStyle@{ScottPlot.LabelStyle}!Measure@{Measure}}
+\index{Measure@{Measure}!ScottPlot.LabelStyle@{ScottPlot.LabelStyle}}
+\doxysubsubsection{\texorpdfstring{Measure()}{Measure()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_label_style_a2a680031909d8de91b2c9ef417b310ac} 
+\mbox{\hyperlink{struct_scott_plot_1_1_measured_text}{Measured\+Text}} Scott\+Plot.\+Label\+Style.\+Measure (\begin{DoxyParamCaption}\item[{string}]{text}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return size information for the given text. 
+
+\Hypertarget{class_scott_plot_1_1_label_style_ae6e19b3d47ad90869145599776d706a3}\index{ScottPlot.LabelStyle@{ScottPlot.LabelStyle}!Measure@{Measure}}
+\index{Measure@{Measure}!ScottPlot.LabelStyle@{ScottPlot.LabelStyle}}
+\doxysubsubsection{\texorpdfstring{Measure()}{Measure()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_label_style_ae6e19b3d47ad90869145599776d706a3} 
+\mbox{\hyperlink{struct_scott_plot_1_1_measured_text}{Measured\+Text}} Scott\+Plot.\+Label\+Style.\+Measure (\begin{DoxyParamCaption}\item[{string}]{text}{, }\item[{SKPaint}]{paint}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_label_style_ab9e5b074bd7d1da0135534f58447de49}\index{ScottPlot.LabelStyle@{ScottPlot.LabelStyle}!MeasureHighestString@{MeasureHighestString}}
+\index{MeasureHighestString@{MeasureHighestString}!ScottPlot.LabelStyle@{ScottPlot.LabelStyle}}
+\doxysubsubsection{\texorpdfstring{MeasureHighestString()}{MeasureHighestString()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_label_style_ab9e5b074bd7d1da0135534f58447de49} 
+string float height Scott\+Plot.\+Label\+Style.\+Measure\+Highest\+String (\begin{DoxyParamCaption}\item[{string\mbox{[}$\,$\mbox{]}}]{strings}{, }\item[{SKPaint}]{paint}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_label_style_a2192d2cec0b4a80266a7c60f9ac939ab}\index{ScottPlot.LabelStyle@{ScottPlot.LabelStyle}!MeasureWidestString@{MeasureWidestString}}
+\index{MeasureWidestString@{MeasureWidestString}!ScottPlot.LabelStyle@{ScottPlot.LabelStyle}}
+\doxysubsubsection{\texorpdfstring{MeasureWidestString()}{MeasureWidestString()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_label_style_a2192d2cec0b4a80266a7c60f9ac939ab} 
+string \mbox{\hyperlink{struct_scott_plot_1_1_pixel_length}{Pixel\+Length}} width Scott\+Plot.\+Label\+Style.\+Measure\+Widest\+String (\begin{DoxyParamCaption}\item[{string\mbox{[}$\,$\mbox{]}}]{strings}{, }\item[{SKPaint}]{paint}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_label_style_ada65dab85b410198e407fa73b0bc20bf}\index{ScottPlot.LabelStyle@{ScottPlot.LabelStyle}!Render@{Render}}
+\index{Render@{Render}!ScottPlot.LabelStyle@{ScottPlot.LabelStyle}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_label_style_ada65dab85b410198e407fa73b0bc20bf} 
+void Scott\+Plot.\+Label\+Style.\+Render (\begin{DoxyParamCaption}\item[{SKCanvas}]{canvas}{, }\item[{\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}}}]{px}{, }\item[{SKPaint}]{paint}{, }\item[{bool}]{bottom}{ = {\ttfamily true}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_label_style_a206291297eccb6f72f301b112adc2f40}\index{ScottPlot.LabelStyle@{ScottPlot.LabelStyle}!SetBestFont@{SetBestFont}}
+\index{SetBestFont@{SetBestFont}!ScottPlot.LabelStyle@{ScottPlot.LabelStyle}}
+\doxysubsubsection{\texorpdfstring{SetBestFont()}{SetBestFont()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_label_style_a206291297eccb6f72f301b112adc2f40} 
+void Scott\+Plot.\+Label\+Style.\+Set\+Best\+Font (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Use the characters in \doxylink{class_scott_plot_1_1_label_style_a8c04d0a27cdbcf44c443e878a7dfebbb}{Text} to determine an installed system font most likely to support this character set. 
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_scott_plot_1_1_label_style_a645b0ac531a38def17493e2be5559493}\index{ScottPlot.LabelStyle@{ScottPlot.LabelStyle}!AntiAlias@{AntiAlias}}
+\index{AntiAlias@{AntiAlias}!ScottPlot.LabelStyle@{ScottPlot.LabelStyle}}
+\doxysubsubsection{\texorpdfstring{AntiAlias}{AntiAlias}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_label_style_a645b0ac531a38def17493e2be5559493} 
+bool Scott\+Plot.\+Label\+Style.\+Anti\+Alias = true}
+
+\Hypertarget{class_scott_plot_1_1_label_style_aef7510bb928d99cc1df4e95ee0d71a63}\index{ScottPlot.LabelStyle@{ScottPlot.LabelStyle}!BorderRadiusX@{BorderRadiusX}}
+\index{BorderRadiusX@{BorderRadiusX}!ScottPlot.LabelStyle@{ScottPlot.LabelStyle}}
+\doxysubsubsection{\texorpdfstring{BorderRadiusX}{BorderRadiusX}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_label_style_aef7510bb928d99cc1df4e95ee0d71a63} 
+float Scott\+Plot.\+Label\+Style.\+Border\+RadiusX = 0}
+
+\Hypertarget{class_scott_plot_1_1_label_style_a04c2bc0b7920b9c3abb9c9f735869f35}\index{ScottPlot.LabelStyle@{ScottPlot.LabelStyle}!BorderRadiusY@{BorderRadiusY}}
+\index{BorderRadiusY@{BorderRadiusY}!ScottPlot.LabelStyle@{ScottPlot.LabelStyle}}
+\doxysubsubsection{\texorpdfstring{BorderRadiusY}{BorderRadiusY}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_label_style_a04c2bc0b7920b9c3abb9c9f735869f35} 
+float Scott\+Plot.\+Label\+Style.\+Border\+RadiusY = 0}
+
+\Hypertarget{class_scott_plot_1_1_label_style_acfd9141c0f38512e48ae0cc93f415213}\index{ScottPlot.LabelStyle@{ScottPlot.LabelStyle}!Italic@{Italic}}
+\index{Italic@{Italic}!ScottPlot.LabelStyle@{ScottPlot.LabelStyle}}
+\doxysubsubsection{\texorpdfstring{Italic}{Italic}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_label_style_acfd9141c0f38512e48ae0cc93f415213} 
+bool Scott\+Plot.\+Label\+Style.\+Italic = false}
+
+\Hypertarget{class_scott_plot_1_1_label_style_aae8709de3d8ab2a77f5ee5a528388593}\index{ScottPlot.LabelStyle@{ScottPlot.LabelStyle}!OffsetX@{OffsetX}}
+\index{OffsetX@{OffsetX}!ScottPlot.LabelStyle@{ScottPlot.LabelStyle}}
+\doxysubsubsection{\texorpdfstring{OffsetX}{OffsetX}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_label_style_aae8709de3d8ab2a77f5ee5a528388593} 
+float Scott\+Plot.\+Label\+Style.\+OffsetX = 0}
+
+\Hypertarget{class_scott_plot_1_1_label_style_a9a1403015c826cd936c6804fa351a879}\index{ScottPlot.LabelStyle@{ScottPlot.LabelStyle}!OffsetY@{OffsetY}}
+\index{OffsetY@{OffsetY}!ScottPlot.LabelStyle@{ScottPlot.LabelStyle}}
+\doxysubsubsection{\texorpdfstring{OffsetY}{OffsetY}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_label_style_a9a1403015c826cd936c6804fa351a879} 
+float Scott\+Plot.\+Label\+Style.\+OffsetY = 0}
+
+\Hypertarget{class_scott_plot_1_1_label_style_adc86a7cc0b6f6c6629138f86b3228d81}\index{ScottPlot.LabelStyle@{ScottPlot.LabelStyle}!PointColor@{PointColor}}
+\index{PointColor@{PointColor}!ScottPlot.LabelStyle@{ScottPlot.LabelStyle}}
+\doxysubsubsection{\texorpdfstring{PointColor}{PointColor}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_label_style_adc86a7cc0b6f6c6629138f86b3228d81} 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} Scott\+Plot.\+Label\+Style.\+Point\+Color = \mbox{\hyperlink{struct_scott_plot_1_1_colors_a029f10eefd8cf1988d1b2a58d471b2eb}{Colors.\+Magenta}}}
+
+\Hypertarget{class_scott_plot_1_1_label_style_ac1c6a5d3d1d7a181c9b92a0348064ac5}\index{ScottPlot.LabelStyle@{ScottPlot.LabelStyle}!PointFilled@{PointFilled}}
+\index{PointFilled@{PointFilled}!ScottPlot.LabelStyle@{ScottPlot.LabelStyle}}
+\doxysubsubsection{\texorpdfstring{PointFilled}{PointFilled}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_label_style_ac1c6a5d3d1d7a181c9b92a0348064ac5} 
+bool Scott\+Plot.\+Label\+Style.\+Point\+Filled = false}
+
+\Hypertarget{class_scott_plot_1_1_label_style_a3488765b9b62069f20b2191ea070ddba}\index{ScottPlot.LabelStyle@{ScottPlot.LabelStyle}!PointSize@{PointSize}}
+\index{PointSize@{PointSize}!ScottPlot.LabelStyle@{ScottPlot.LabelStyle}}
+\doxysubsubsection{\texorpdfstring{PointSize}{PointSize}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_label_style_a3488765b9b62069f20b2191ea070ddba} 
+float Scott\+Plot.\+Label\+Style.\+Point\+Size = 0}
+
+\Hypertarget{class_scott_plot_1_1_label_style_a074d3b7375c5b1bba371c87ba57d2794}\index{ScottPlot.LabelStyle@{ScottPlot.LabelStyle}!text@{text}}
+\index{text@{text}!ScottPlot.LabelStyle@{ScottPlot.LabelStyle}}
+\doxysubsubsection{\texorpdfstring{text}{text}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_label_style_a074d3b7375c5b1bba371c87ba57d2794} 
+string Scott\+Plot.\+Label\+Style.\+text}
+
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{class_scott_plot_1_1_label_style_a6604dbf2e97876c844254914edce230a}\index{ScottPlot.LabelStyle@{ScottPlot.LabelStyle}!Alignment@{Alignment}}
+\index{Alignment@{Alignment}!ScottPlot.LabelStyle@{ScottPlot.LabelStyle}}
+\doxysubsubsection{\texorpdfstring{Alignment}{Alignment}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_label_style_a6604dbf2e97876c844254914edce230a} 
+\mbox{\hyperlink{namespace_scott_plot_a2da000551e02ef1d0af13793cf678abc}{Alignment}} Scott\+Plot.\+Label\+Style.\+Alignment = \mbox{\hyperlink{namespace_scott_plot_a2da000551e02ef1d0af13793cf678abca6f43ca0793e0c68184761673278f4ca4}{Alignment.\+Upper\+Left}}\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_label_style_a8298ef19a225b2c47ebc00aa2b7525c8}\index{ScottPlot.LabelStyle@{ScottPlot.LabelStyle}!AntiAliasBackground@{AntiAliasBackground}}
+\index{AntiAliasBackground@{AntiAliasBackground}!ScottPlot.LabelStyle@{ScottPlot.LabelStyle}}
+\doxysubsubsection{\texorpdfstring{AntiAliasBackground}{AntiAliasBackground}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_label_style_a8298ef19a225b2c47ebc00aa2b7525c8} 
+bool Scott\+Plot.\+Label\+Style.\+Anti\+Alias\+Background = true\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_label_style_accbbc7ffd30a2366a94484f226263f29}\index{ScottPlot.LabelStyle@{ScottPlot.LabelStyle}!AntiAliasText@{AntiAliasText}}
+\index{AntiAliasText@{AntiAliasText}!ScottPlot.LabelStyle@{ScottPlot.LabelStyle}}
+\doxysubsubsection{\texorpdfstring{AntiAliasText}{AntiAliasText}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_label_style_accbbc7ffd30a2366a94484f226263f29} 
+bool Scott\+Plot.\+Label\+Style.\+Anti\+Alias\+Text = true\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_label_style_ad845311391aec3c809a19d3402e43190}\index{ScottPlot.LabelStyle@{ScottPlot.LabelStyle}!BackColor@{BackColor}}
+\index{BackColor@{BackColor}!ScottPlot.LabelStyle@{ScottPlot.LabelStyle}}
+\doxysubsubsection{\texorpdfstring{BackColor}{BackColor}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_label_style_ad845311391aec3c809a19d3402e43190} 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} Scott\+Plot.\+Label\+Style.\+Back\+Color\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_label_style_a1cb73fe3b6874c314c94c240851797c1}\index{ScottPlot.LabelStyle@{ScottPlot.LabelStyle}!BackgroundColor@{BackgroundColor}}
+\index{BackgroundColor@{BackgroundColor}!ScottPlot.LabelStyle@{ScottPlot.LabelStyle}}
+\doxysubsubsection{\texorpdfstring{BackgroundColor}{BackgroundColor}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_label_style_a1cb73fe3b6874c314c94c240851797c1} 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} Scott\+Plot.\+Label\+Style.\+Background\+Color = \mbox{\hyperlink{struct_scott_plot_1_1_colors_aecffb5296bdfb8fdb3168a75822b5da0}{Colors.\+Transparent}}\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_label_style_ace659a736eacc0f5602272f6ba7a4c47}\index{ScottPlot.LabelStyle@{ScottPlot.LabelStyle}!Bold@{Bold}}
+\index{Bold@{Bold}!ScottPlot.LabelStyle@{ScottPlot.LabelStyle}}
+\doxysubsubsection{\texorpdfstring{Bold}{Bold}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_label_style_ace659a736eacc0f5602272f6ba7a4c47} 
+bool Scott\+Plot.\+Label\+Style.\+Bold = false\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_label_style_abaccef1f0819cdc9aa76fa37b4772915}\index{ScottPlot.LabelStyle@{ScottPlot.LabelStyle}!BorderColor@{BorderColor}}
+\index{BorderColor@{BorderColor}!ScottPlot.LabelStyle@{ScottPlot.LabelStyle}}
+\doxysubsubsection{\texorpdfstring{BorderColor}{BorderColor}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_label_style_abaccef1f0819cdc9aa76fa37b4772915} 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} Scott\+Plot.\+Label\+Style.\+Border\+Color = \mbox{\hyperlink{struct_scott_plot_1_1_colors_aecffb5296bdfb8fdb3168a75822b5da0}{Colors.\+Transparent}}\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_label_style_a1f224d0cb6b211d0e129a832d7fd3195}\index{ScottPlot.LabelStyle@{ScottPlot.LabelStyle}!BorderRadius@{BorderRadius}}
+\index{BorderRadius@{BorderRadius}!ScottPlot.LabelStyle@{ScottPlot.LabelStyle}}
+\doxysubsubsection{\texorpdfstring{BorderRadius}{BorderRadius}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_label_style_a1f224d0cb6b211d0e129a832d7fd3195} 
+float Scott\+Plot.\+Label\+Style.\+Border\+Radius\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_label_style_a6c5901b64e0d78980816bf30b9acafe0}\index{ScottPlot.LabelStyle@{ScottPlot.LabelStyle}!BorderWidth@{BorderWidth}}
+\index{BorderWidth@{BorderWidth}!ScottPlot.LabelStyle@{ScottPlot.LabelStyle}}
+\doxysubsubsection{\texorpdfstring{BorderWidth}{BorderWidth}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_label_style_a6c5901b64e0d78980816bf30b9acafe0} 
+float Scott\+Plot.\+Label\+Style.\+Border\+Width = 1\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_label_style_a6b6c6e9d36ef1f1e8f1e589b63e0f495}\index{ScottPlot.LabelStyle@{ScottPlot.LabelStyle}!FontName@{FontName}}
+\index{FontName@{FontName}!ScottPlot.LabelStyle@{ScottPlot.LabelStyle}}
+\doxysubsubsection{\texorpdfstring{FontName}{FontName}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_label_style_a6b6c6e9d36ef1f1e8f1e589b63e0f495} 
+string Scott\+Plot.\+Label\+Style.\+Font\+Name = Fonts.\+Default\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_label_style_a4f9942106333875cc56bd5812777e6cf}\index{ScottPlot.LabelStyle@{ScottPlot.LabelStyle}!FontSize@{FontSize}}
+\index{FontSize@{FontSize}!ScottPlot.LabelStyle@{ScottPlot.LabelStyle}}
+\doxysubsubsection{\texorpdfstring{FontSize}{FontSize}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_label_style_a4f9942106333875cc56bd5812777e6cf} 
+float Scott\+Plot.\+Label\+Style.\+Font\+Size = 12\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_label_style_a436171a5229a5b8a4f5e7d0ed254282c}\index{ScottPlot.LabelStyle@{ScottPlot.LabelStyle}!ForeColor@{ForeColor}}
+\index{ForeColor@{ForeColor}!ScottPlot.LabelStyle@{ScottPlot.LabelStyle}}
+\doxysubsubsection{\texorpdfstring{ForeColor}{ForeColor}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_label_style_a436171a5229a5b8a4f5e7d0ed254282c} 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} Scott\+Plot.\+Label\+Style.\+Fore\+Color = \mbox{\hyperlink{struct_scott_plot_1_1_colors_a2aafa2dc613a50b4fa1699a09fe003b1}{Colors.\+Black}}\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_label_style_a70d8f6e8b6ec45c123186448487a0454}\index{ScottPlot.LabelStyle@{ScottPlot.LabelStyle}!IsVisible@{IsVisible}}
+\index{IsVisible@{IsVisible}!ScottPlot.LabelStyle@{ScottPlot.LabelStyle}}
+\doxysubsubsection{\texorpdfstring{IsVisible}{IsVisible}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_label_style_a70d8f6e8b6ec45c123186448487a0454} 
+bool Scott\+Plot.\+Label\+Style.\+Is\+Visible = true\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_label_style_aa2318cffcca461ffd61d94349e1e7e75}\index{ScottPlot.LabelStyle@{ScottPlot.LabelStyle}!LastRenderPixelRect@{LastRenderPixelRect}}
+\index{LastRenderPixelRect@{LastRenderPixelRect}!ScottPlot.LabelStyle@{ScottPlot.LabelStyle}}
+\doxysubsubsection{\texorpdfstring{LastRenderPixelRect}{LastRenderPixelRect}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_label_style_aa2318cffcca461ffd61d94349e1e7e75} 
+\mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect}{Pixel\+Rect}} Scott\+Plot.\+Label\+Style.\+Last\+Render\+Pixel\+Rect\hspace{0.3cm}{\ttfamily [get]}}
+
+\Hypertarget{class_scott_plot_1_1_label_style_a9b957eaec290d0560bac52b1d43d153b}\index{ScottPlot.LabelStyle@{ScottPlot.LabelStyle}!LineSpacing@{LineSpacing}}
+\index{LineSpacing@{LineSpacing}!ScottPlot.LabelStyle@{ScottPlot.LabelStyle}}
+\doxysubsubsection{\texorpdfstring{LineSpacing}{LineSpacing}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_label_style_a9b957eaec290d0560bac52b1d43d153b} 
+float? Scott\+Plot.\+Label\+Style.\+Line\+Spacing = null\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Manually defined line height in pixels. If not defined, the default line spacing will be used (according to the typeface, size, etc.) 
+
+\Hypertarget{class_scott_plot_1_1_label_style_aa7703fb806207c5e9814b3b3b575f863}\index{ScottPlot.LabelStyle@{ScottPlot.LabelStyle}!Padding@{Padding}}
+\index{Padding@{Padding}!ScottPlot.LabelStyle@{ScottPlot.LabelStyle}}
+\doxysubsubsection{\texorpdfstring{Padding}{Padding}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_label_style_aa7703fb806207c5e9814b3b3b575f863} 
+float Scott\+Plot.\+Label\+Style.\+Padding\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}, {\ttfamily [add]}}
+
+\Hypertarget{class_scott_plot_1_1_label_style_a28d025f234d0d89daaa3a03559479f88}\index{ScottPlot.LabelStyle@{ScottPlot.LabelStyle}!PixelPadding@{PixelPadding}}
+\index{PixelPadding@{PixelPadding}!ScottPlot.LabelStyle@{ScottPlot.LabelStyle}}
+\doxysubsubsection{\texorpdfstring{PixelPadding}{PixelPadding}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_label_style_a28d025f234d0d89daaa3a03559479f88} 
+\mbox{\hyperlink{struct_scott_plot_1_1_pixel_padding}{Pixel\+Padding}} Scott\+Plot.\+Label\+Style.\+Pixel\+Padding = new(0, 0, 0, 0)\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_label_style_abac9b6b0259190207729638943030d76}\index{ScottPlot.LabelStyle@{ScottPlot.LabelStyle}!Rotation@{Rotation}}
+\index{Rotation@{Rotation}!ScottPlot.LabelStyle@{ScottPlot.LabelStyle}}
+\doxysubsubsection{\texorpdfstring{Rotation}{Rotation}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_label_style_abac9b6b0259190207729638943030d76} 
+float Scott\+Plot.\+Label\+Style.\+Rotation = 0\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Rotation in degrees clockwise from 0 (horizontal text) 
+
+\Hypertarget{class_scott_plot_1_1_label_style_aec3941c60235e6a2e307f271cbdc46b6}\index{ScottPlot.LabelStyle@{ScottPlot.LabelStyle}!ShadowColor@{ShadowColor}}
+\index{ShadowColor@{ShadowColor}!ScottPlot.LabelStyle@{ScottPlot.LabelStyle}}
+\doxysubsubsection{\texorpdfstring{ShadowColor}{ShadowColor}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_label_style_aec3941c60235e6a2e307f271cbdc46b6} 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} Scott\+Plot.\+Label\+Style.\+Shadow\+Color = \mbox{\hyperlink{struct_scott_plot_1_1_colors_aecffb5296bdfb8fdb3168a75822b5da0}{Colors.\+Transparent}}\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_label_style_a5d3ce58b3a9e15feb1b0a20aeafe7a9c}\index{ScottPlot.LabelStyle@{ScottPlot.LabelStyle}!ShadowOffset@{ShadowOffset}}
+\index{ShadowOffset@{ShadowOffset}!ScottPlot.LabelStyle@{ScottPlot.LabelStyle}}
+\doxysubsubsection{\texorpdfstring{ShadowOffset}{ShadowOffset}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_label_style_a5d3ce58b3a9e15feb1b0a20aeafe7a9c} 
+\mbox{\hyperlink{namespace_scott_plot_a3dfefa78aee0c8cf7184895e4ad7d44b}{Pixel\+Offset}} Scott\+Plot.\+Label\+Style.\+Shadow\+Offset = new(3, 3)\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_label_style_a54b7d7af4ebfb332ec9e27ea9cb5070e}\index{ScottPlot.LabelStyle@{ScottPlot.LabelStyle}!SubpixelText@{SubpixelText}}
+\index{SubpixelText@{SubpixelText}!ScottPlot.LabelStyle@{ScottPlot.LabelStyle}}
+\doxysubsubsection{\texorpdfstring{SubpixelText}{SubpixelText}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_label_style_a54b7d7af4ebfb332ec9e27ea9cb5070e} 
+bool Scott\+Plot.\+Label\+Style.\+Subpixel\+Text = true\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_label_style_a8c04d0a27cdbcf44c443e878a7dfebbb}\index{ScottPlot.LabelStyle@{ScottPlot.LabelStyle}!Text@{Text}}
+\index{Text@{Text}!ScottPlot.LabelStyle@{ScottPlot.LabelStyle}}
+\doxysubsubsection{\texorpdfstring{Text}{Text}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_label_style_a8c04d0a27cdbcf44c443e878a7dfebbb} 
+string Scott\+Plot.\+Label\+Style.\+Text = string.\+Empty\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Primitives/Label\+Style.\+cs\end{DoxyCompactItemize}

@@ -1,0 +1,93 @@
+\hypertarget{classFillStyle}{}\doxysection{Fill\+Style Class Reference}
+\label{classFillStyle}\index{FillStyle@{FillStyle}}
+
+
+This configuration object (reference type) permanently lives inside objects which require styling. It is recommended to use this object as an init-\/only property.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classFillStyle_a53b62c16afc08b6082194b176759a19b}{Render}} (SKCanvas canvas, \mbox{\hyperlink{structPixelRect}{Pixel\+Rect}} rect, SKPaint paint)
+\item 
+void \mbox{\hyperlink{classFillStyle_a2fb57d25365257966a32e463dab328c2}{Apply\+To\+Paint}} (SKPaint paint, \mbox{\hyperlink{structPixelRect}{Pixel\+Rect}} rect)
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structColor}{Color}} \mbox{\hyperlink{classFillStyle_adc307882468f55b2768723bfc658710f}{Color}} = \mbox{\hyperlink{structColors_a9695917727155acebdb5b379dcfdad8b}{Colors.\+Transparent}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{structColor}{Color}} \mbox{\hyperlink{classFillStyle_a9751a47140c15cdd5d005d529c121632}{Hatch\+Color}} = \mbox{\hyperlink{structColors_a40281534a72ec779aaac57457738c220}{Colors.\+Gray}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{interfaceIHatch}{IHatch}}? \mbox{\hyperlink{classFillStyle_a68b97a57b8e78c0eb78ad77babf98b93}{Hatch}} = null\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+bool \mbox{\hyperlink{classFillStyle_a67a3b38cfd6ebba127685570ba3d25b9}{Has\+Value}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+bool \mbox{\hyperlink{classFillStyle_a91a1d1b571602810d7debaad6137ce79}{Anti\+Alias}} = true\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+bool \mbox{\hyperlink{classFillStyle_ad8fbf8d338cc6ba83082907858d7c764}{Is\+Visible}} = true\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This configuration object (reference type) permanently lives inside objects which require styling. It is recommended to use this object as an init-\/only property. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classFillStyle_a2fb57d25365257966a32e463dab328c2}\label{classFillStyle_a2fb57d25365257966a32e463dab328c2}} 
+\index{FillStyle@{FillStyle}!ApplyToPaint@{ApplyToPaint}}
+\index{ApplyToPaint@{ApplyToPaint}!FillStyle@{FillStyle}}
+\doxysubsubsection{\texorpdfstring{ApplyToPaint()}{ApplyToPaint()}}
+{\footnotesize\ttfamily void Fill\+Style.\+Apply\+To\+Paint (\begin{DoxyParamCaption}\item[{SKPaint}]{paint,  }\item[{\mbox{\hyperlink{structPixelRect}{Pixel\+Rect}}}]{rect }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classFillStyle_a53b62c16afc08b6082194b176759a19b}\label{classFillStyle_a53b62c16afc08b6082194b176759a19b}} 
+\index{FillStyle@{FillStyle}!Render@{Render}}
+\index{Render@{Render}!FillStyle@{FillStyle}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily void Fill\+Style.\+Render (\begin{DoxyParamCaption}\item[{SKCanvas}]{canvas,  }\item[{\mbox{\hyperlink{structPixelRect}{Pixel\+Rect}}}]{rect,  }\item[{SKPaint}]{paint }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{classFillStyle_a91a1d1b571602810d7debaad6137ce79}\label{classFillStyle_a91a1d1b571602810d7debaad6137ce79}} 
+\index{FillStyle@{FillStyle}!AntiAlias@{AntiAlias}}
+\index{AntiAlias@{AntiAlias}!FillStyle@{FillStyle}}
+\doxysubsubsection{\texorpdfstring{AntiAlias}{AntiAlias}}
+{\footnotesize\ttfamily bool Fill\+Style.\+Anti\+Alias = true\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classFillStyle_adc307882468f55b2768723bfc658710f}\label{classFillStyle_adc307882468f55b2768723bfc658710f}} 
+\index{FillStyle@{FillStyle}!Color@{Color}}
+\index{Color@{Color}!FillStyle@{FillStyle}}
+\doxysubsubsection{\texorpdfstring{Color}{Color}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structColor}{Color}} Fill\+Style.\+Color = \mbox{\hyperlink{structColors_a9695917727155acebdb5b379dcfdad8b}{Colors.\+Transparent}}\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classFillStyle_a67a3b38cfd6ebba127685570ba3d25b9}\label{classFillStyle_a67a3b38cfd6ebba127685570ba3d25b9}} 
+\index{FillStyle@{FillStyle}!HasValue@{HasValue}}
+\index{HasValue@{HasValue}!FillStyle@{FillStyle}}
+\doxysubsubsection{\texorpdfstring{HasValue}{HasValue}}
+{\footnotesize\ttfamily bool Fill\+Style.\+Has\+Value\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{classFillStyle_a68b97a57b8e78c0eb78ad77babf98b93}\label{classFillStyle_a68b97a57b8e78c0eb78ad77babf98b93}} 
+\index{FillStyle@{FillStyle}!Hatch@{Hatch}}
+\index{Hatch@{Hatch}!FillStyle@{FillStyle}}
+\doxysubsubsection{\texorpdfstring{Hatch}{Hatch}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceIHatch}{IHatch}}? Fill\+Style.\+Hatch = null\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classFillStyle_a9751a47140c15cdd5d005d529c121632}\label{classFillStyle_a9751a47140c15cdd5d005d529c121632}} 
+\index{FillStyle@{FillStyle}!HatchColor@{HatchColor}}
+\index{HatchColor@{HatchColor}!FillStyle@{FillStyle}}
+\doxysubsubsection{\texorpdfstring{HatchColor}{HatchColor}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structColor}{Color}} Fill\+Style.\+Hatch\+Color = \mbox{\hyperlink{structColors_a40281534a72ec779aaac57457738c220}{Colors.\+Gray}}\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classFillStyle_ad8fbf8d338cc6ba83082907858d7c764}\label{classFillStyle_ad8fbf8d338cc6ba83082907858d7c764}} 
+\index{FillStyle@{FillStyle}!IsVisible@{IsVisible}}
+\index{IsVisible@{IsVisible}!FillStyle@{FillStyle}}
+\doxysubsubsection{\texorpdfstring{IsVisible}{IsVisible}}
+{\footnotesize\ttfamily bool Fill\+Style.\+Is\+Visible = true\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Primitives/Fill\+Style.\+cs\end{DoxyCompactItemize}

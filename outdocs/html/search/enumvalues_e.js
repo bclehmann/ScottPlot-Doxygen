@@ -1,0 +1,19 @@
+var searchData=
+[
+  ['semibold_0',['SemiBold',['../namespace_scott_plot.html#a1d8fcfd93615ae77e73e5ad8f6f69fa3a57da4df095766e2b4e9012d34ae8e221',1,'ScottPlot']]],
+  ['sequential_1',['Sequential',['../namespace_scott_plot.html#adfb68832d4ab59ef6fb034faedd4c899aa7e82daa7280af25afbaa076ac16eb1e',1,'ScottPlot']]],
+  ['shift_2',['Shift',['../namespace_scott_plot_1_1_control.html#afccfe76da99cb53fbf88864d1e6e66b4a825a3d98017bab11815ad2817201324c',1,'ScottPlot::Control']]],
+  ['single_3',['Single',['../namespace_scott_plot.html#a6f9767494c0d8779946de9ad14136d4aa66ba162102bbf6ae31b522aec561735e',1,'ScottPlot']]],
+  ['singlegauge_4',['SingleGauge',['../namespace_scott_plot.html#adfb68832d4ab59ef6fb034faedd4c899a25f968edac3c9059f713c594a7024b5a',1,'ScottPlot']]],
+  ['singleline_5',['SingleLine',['../namespace_scott_plot.html#a6f9767494c0d8779946de9ad14136d4aa3e5c1fb76b6543ac61af54b185f02af9',1,'ScottPlot']]],
+  ['skip_6',['Skip',['../namespace_scott_plot_1_1_open_g_l.html#a2bc9d91a96127301367863989863aeafa72ef2b9b6965d078e3c7f95487a82d1c',1,'ScottPlot::OpenGL']]],
+  ['software_7',['Software',['../namespace_scott_plot_1_1_open_g_l.html#a2bc9d91a96127301367863989863aeafa719d067b229178f03bcfa1da4ac4dede',1,'ScottPlot::OpenGL']]],
+  ['solid_8',['Solid',['../namespace_scott_plot.html#a625917eb44cadb4de90991e525db6ab5ae41480b6bbfbf7407974a88d3d34f4fa',1,'ScottPlot']]],
+  ['stacked_9',['Stacked',['../namespace_scott_plot.html#adfb68832d4ab59ef6fb034faedd4c899a29b733fdb4bddeda910b3b4a659c2fef',1,'ScottPlot']]],
+  ['stephorizontal_10',['StepHorizontal',['../namespace_scott_plot.html#aa42f072dac0344ddc25e4f2c253b3a6ba7ba3491c3fc5f6c42bf1169556e7588e',1,'ScottPlot']]],
+  ['stepvertical_11',['StepVertical',['../namespace_scott_plot.html#aa42f072dac0344ddc25e4f2c253b3a6ba22ae2ab8876ac9dff3b211ff43aa2caf',1,'ScottPlot']]],
+  ['straight_12',['Straight',['../namespace_scott_plot.html#aa42f072dac0344ddc25e4f2c253b3a6bab6bd418b8879851e86bcaccd553b74db',1,'ScottPlot']]],
+  ['stretch_13',['Stretch',['../namespace_scott_plot.html#a08e0c26803b81c75808619a1fcc5abfcafbb09a82eafab60150d0996e8fe46560',1,'ScottPlot']]],
+  ['svg_14',['Svg',['../namespace_scott_plot.html#a9a656259ac7f098b833a020b5f6687a2a1a9a612a14f347adfbf122cc7c0e985b',1,'ScottPlot']]],
+  ['sweep_15',['Sweep',['../namespace_scott_plot.html#a1ecac35efa1724105eb80cb2b6994543a8e9014ddfce21beb1b3cd7da888cbdea',1,'ScottPlot']]]
+];

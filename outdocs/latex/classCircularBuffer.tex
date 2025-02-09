@@ -1,0 +1,206 @@
+\hypertarget{classCircularBuffer}{}\doxysection{Circular\+Buffer$<$ T $>$ Class Template Reference}
+\label{classCircularBuffer}\index{CircularBuffer$<$ T $>$@{CircularBuffer$<$ T $>$}}
+
+
+The circular buffer starts with an empty list and grows to a maximum size. When the buffer is full, adding or inserting a new item removes the first item in the buffer.  
+
+
+Inheritance diagram for Circular\+Buffer$<$ T $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classCircularBuffer}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classCircularBuffer_afb36ca7d09d33caac78c98123e231026}{Circular\+Buffer}} (int capacity)
+\item 
+int \mbox{\hyperlink{classCircularBuffer_a0122178f13370f96f704707cc41320b3}{Index\+Of}} (T item)
+\item 
+void \mbox{\hyperlink{classCircularBuffer_a799a6b35bc9a4afba7dc93a6b91bdc7c}{Insert}} (int index, T item)
+\item 
+void \mbox{\hyperlink{classCircularBuffer_ac97496eab115b7d700538be18c53c168}{Remove\+At}} (int index)
+\item 
+bool \mbox{\hyperlink{classCircularBuffer_a4056ab78c53601cf11620c09c9a782d0}{Remove}} (T item)
+\item 
+void \mbox{\hyperlink{classCircularBuffer_adfb2e164e113750c351553c85ff8ea04}{Add}} (T item)
+\item 
+void \mbox{\hyperlink{classCircularBuffer_aabffa3bc7324688fdcb9d897063e320d}{Clear}} ()
+\item 
+bool \mbox{\hyperlink{classCircularBuffer_a133066d61395eb2624a9d507a7c7069a}{Contains}} (T item)
+\item 
+void \mbox{\hyperlink{classCircularBuffer_ab8ba764e4365728f7967902f923912f1}{Copy\+To}} (T\mbox{[}$\,$\mbox{]} array, int array\+Index)
+\item 
+T\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classCircularBuffer_a73af4b19c400aa16112bf23f151abec1}{To\+Array}} ()
+\item 
+IEnumerator$<$ T $>$ \mbox{\hyperlink{classCircularBuffer_a8c7cfb1084ccfe9b4a01a69f30ff768c}{Get\+Enumerator}} ()
+\item 
+int \mbox{\hyperlink{classCircularBuffer_a6f2fd39dbd7381c78224dcab933a35a9}{Binary\+Search}} (int index, int count, T item, \mbox{\hyperlink{classIComparer}{IComparer}}$<$ T $>$ comparer)
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classCircularBuffer_a875cb596639adf4ed23fbe79472b3236}{Capacity}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+bool \mbox{\hyperlink{classCircularBuffer_a26dc6111bbd7444d417ae43c4f0eb9d4}{Is\+Full}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+bool \mbox{\hyperlink{classCircularBuffer_ac00bec6f85cffc9ec1a67d2b7bcf2018}{Is\+Empty}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+int \mbox{\hyperlink{classCircularBuffer_aa630dc6b22f8aaf1707b6c324a674234}{Count}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+bool \mbox{\hyperlink{classCircularBuffer_a489639c79fba262b5778b72fb1ded5cf}{Is\+Read\+Only}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+bool \mbox{\hyperlink{classCircularBuffer_ab33951ba61ba476d8812973b83362ae4}{Is\+Fixed\+Size}} = true\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+object \mbox{\hyperlink{classCircularBuffer_ae37153664594b45fe2bc24ceb0210db5}{Sync\+Root}} = new object()\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+bool \mbox{\hyperlink{classCircularBuffer_aad71698bd35c35a4ef4e1b1adb469e35}{Is\+Synchronized}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+T \mbox{\hyperlink{classCircularBuffer_ad69c834d699667362b8904f9c68e93d0}{this\mbox{[}int index\mbox{]}}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The circular buffer starts with an empty list and grows to a maximum size. When the buffer is full, adding or inserting a new item removes the first item in the buffer. 
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classCircularBuffer_afb36ca7d09d33caac78c98123e231026}\label{classCircularBuffer_afb36ca7d09d33caac78c98123e231026}} 
+\index{CircularBuffer$<$ T $>$@{CircularBuffer$<$ T $>$}!CircularBuffer@{CircularBuffer}}
+\index{CircularBuffer@{CircularBuffer}!CircularBuffer$<$ T $>$@{CircularBuffer$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{CircularBuffer()}{CircularBuffer()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCircularBuffer}{Circular\+Buffer}}$<$ T $>$.\mbox{\hyperlink{classCircularBuffer}{Circular\+Buffer}} (\begin{DoxyParamCaption}\item[{int}]{capacity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classCircularBuffer_adfb2e164e113750c351553c85ff8ea04}\label{classCircularBuffer_adfb2e164e113750c351553c85ff8ea04}} 
+\index{CircularBuffer$<$ T $>$@{CircularBuffer$<$ T $>$}!Add@{Add}}
+\index{Add@{Add}!CircularBuffer$<$ T $>$@{CircularBuffer$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Add()}{Add()}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{classCircularBuffer}{Circular\+Buffer}}$<$ T $>$.Add (\begin{DoxyParamCaption}\item[{T}]{item }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCircularBuffer_a6f2fd39dbd7381c78224dcab933a35a9}\label{classCircularBuffer_a6f2fd39dbd7381c78224dcab933a35a9}} 
+\index{CircularBuffer$<$ T $>$@{CircularBuffer$<$ T $>$}!BinarySearch@{BinarySearch}}
+\index{BinarySearch@{BinarySearch}!CircularBuffer$<$ T $>$@{CircularBuffer$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{BinarySearch()}{BinarySearch()}}
+{\footnotesize\ttfamily int \mbox{\hyperlink{classCircularBuffer}{Circular\+Buffer}}$<$ T $>$.Binary\+Search (\begin{DoxyParamCaption}\item[{int}]{index,  }\item[{int}]{count,  }\item[{T}]{item,  }\item[{\mbox{\hyperlink{classIComparer}{IComparer}}$<$ T $>$}]{comparer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCircularBuffer_aabffa3bc7324688fdcb9d897063e320d}\label{classCircularBuffer_aabffa3bc7324688fdcb9d897063e320d}} 
+\index{CircularBuffer$<$ T $>$@{CircularBuffer$<$ T $>$}!Clear@{Clear}}
+\index{Clear@{Clear}!CircularBuffer$<$ T $>$@{CircularBuffer$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Clear()}{Clear()}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{classCircularBuffer}{Circular\+Buffer}}$<$ T $>$.Clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCircularBuffer_a133066d61395eb2624a9d507a7c7069a}\label{classCircularBuffer_a133066d61395eb2624a9d507a7c7069a}} 
+\index{CircularBuffer$<$ T $>$@{CircularBuffer$<$ T $>$}!Contains@{Contains}}
+\index{Contains@{Contains}!CircularBuffer$<$ T $>$@{CircularBuffer$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Contains()}{Contains()}}
+{\footnotesize\ttfamily bool \mbox{\hyperlink{classCircularBuffer}{Circular\+Buffer}}$<$ T $>$.Contains (\begin{DoxyParamCaption}\item[{T}]{item }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCircularBuffer_ab8ba764e4365728f7967902f923912f1}\label{classCircularBuffer_ab8ba764e4365728f7967902f923912f1}} 
+\index{CircularBuffer$<$ T $>$@{CircularBuffer$<$ T $>$}!CopyTo@{CopyTo}}
+\index{CopyTo@{CopyTo}!CircularBuffer$<$ T $>$@{CircularBuffer$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{CopyTo()}{CopyTo()}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{classCircularBuffer}{Circular\+Buffer}}$<$ T $>$.Copy\+To (\begin{DoxyParamCaption}\item[{T\mbox{[}$\,$\mbox{]}}]{array,  }\item[{int}]{array\+Index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCircularBuffer_a8c7cfb1084ccfe9b4a01a69f30ff768c}\label{classCircularBuffer_a8c7cfb1084ccfe9b4a01a69f30ff768c}} 
+\index{CircularBuffer$<$ T $>$@{CircularBuffer$<$ T $>$}!GetEnumerator@{GetEnumerator}}
+\index{GetEnumerator@{GetEnumerator}!CircularBuffer$<$ T $>$@{CircularBuffer$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{GetEnumerator()}{GetEnumerator()}}
+{\footnotesize\ttfamily IEnumerator$<$T$>$ \mbox{\hyperlink{classCircularBuffer}{Circular\+Buffer}}$<$ T $>$.Get\+Enumerator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCircularBuffer_a0122178f13370f96f704707cc41320b3}\label{classCircularBuffer_a0122178f13370f96f704707cc41320b3}} 
+\index{CircularBuffer$<$ T $>$@{CircularBuffer$<$ T $>$}!IndexOf@{IndexOf}}
+\index{IndexOf@{IndexOf}!CircularBuffer$<$ T $>$@{CircularBuffer$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{IndexOf()}{IndexOf()}}
+{\footnotesize\ttfamily int \mbox{\hyperlink{classCircularBuffer}{Circular\+Buffer}}$<$ T $>$.Index\+Of (\begin{DoxyParamCaption}\item[{T}]{item }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCircularBuffer_a799a6b35bc9a4afba7dc93a6b91bdc7c}\label{classCircularBuffer_a799a6b35bc9a4afba7dc93a6b91bdc7c}} 
+\index{CircularBuffer$<$ T $>$@{CircularBuffer$<$ T $>$}!Insert@{Insert}}
+\index{Insert@{Insert}!CircularBuffer$<$ T $>$@{CircularBuffer$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Insert()}{Insert()}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{classCircularBuffer}{Circular\+Buffer}}$<$ T $>$.Insert (\begin{DoxyParamCaption}\item[{int}]{index,  }\item[{T}]{item }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCircularBuffer_a4056ab78c53601cf11620c09c9a782d0}\label{classCircularBuffer_a4056ab78c53601cf11620c09c9a782d0}} 
+\index{CircularBuffer$<$ T $>$@{CircularBuffer$<$ T $>$}!Remove@{Remove}}
+\index{Remove@{Remove}!CircularBuffer$<$ T $>$@{CircularBuffer$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Remove()}{Remove()}}
+{\footnotesize\ttfamily bool \mbox{\hyperlink{classCircularBuffer}{Circular\+Buffer}}$<$ T $>$.Remove (\begin{DoxyParamCaption}\item[{T}]{item }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCircularBuffer_ac97496eab115b7d700538be18c53c168}\label{classCircularBuffer_ac97496eab115b7d700538be18c53c168}} 
+\index{CircularBuffer$<$ T $>$@{CircularBuffer$<$ T $>$}!RemoveAt@{RemoveAt}}
+\index{RemoveAt@{RemoveAt}!CircularBuffer$<$ T $>$@{CircularBuffer$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{RemoveAt()}{RemoveAt()}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{classCircularBuffer}{Circular\+Buffer}}$<$ T $>$.Remove\+At (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCircularBuffer_a73af4b19c400aa16112bf23f151abec1}\label{classCircularBuffer_a73af4b19c400aa16112bf23f151abec1}} 
+\index{CircularBuffer$<$ T $>$@{CircularBuffer$<$ T $>$}!ToArray@{ToArray}}
+\index{ToArray@{ToArray}!CircularBuffer$<$ T $>$@{CircularBuffer$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{ToArray()}{ToArray()}}
+{\footnotesize\ttfamily T \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classCircularBuffer}{Circular\+Buffer}}$<$ T $>$.To\+Array (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{classCircularBuffer_a875cb596639adf4ed23fbe79472b3236}\label{classCircularBuffer_a875cb596639adf4ed23fbe79472b3236}} 
+\index{CircularBuffer$<$ T $>$@{CircularBuffer$<$ T $>$}!Capacity@{Capacity}}
+\index{Capacity@{Capacity}!CircularBuffer$<$ T $>$@{CircularBuffer$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Capacity}{Capacity}}
+{\footnotesize\ttfamily int \mbox{\hyperlink{classCircularBuffer}{Circular\+Buffer}}$<$ T $>$.Capacity\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{classCircularBuffer_aa630dc6b22f8aaf1707b6c324a674234}\label{classCircularBuffer_aa630dc6b22f8aaf1707b6c324a674234}} 
+\index{CircularBuffer$<$ T $>$@{CircularBuffer$<$ T $>$}!Count@{Count}}
+\index{Count@{Count}!CircularBuffer$<$ T $>$@{CircularBuffer$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Count}{Count}}
+{\footnotesize\ttfamily int \mbox{\hyperlink{classCircularBuffer}{Circular\+Buffer}}$<$ T $>$.Count\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{classCircularBuffer_ac00bec6f85cffc9ec1a67d2b7bcf2018}\label{classCircularBuffer_ac00bec6f85cffc9ec1a67d2b7bcf2018}} 
+\index{CircularBuffer$<$ T $>$@{CircularBuffer$<$ T $>$}!IsEmpty@{IsEmpty}}
+\index{IsEmpty@{IsEmpty}!CircularBuffer$<$ T $>$@{CircularBuffer$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{IsEmpty}{IsEmpty}}
+{\footnotesize\ttfamily bool \mbox{\hyperlink{classCircularBuffer}{Circular\+Buffer}}$<$ T $>$.Is\+Empty\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{classCircularBuffer_ab33951ba61ba476d8812973b83362ae4}\label{classCircularBuffer_ab33951ba61ba476d8812973b83362ae4}} 
+\index{CircularBuffer$<$ T $>$@{CircularBuffer$<$ T $>$}!IsFixedSize@{IsFixedSize}}
+\index{IsFixedSize@{IsFixedSize}!CircularBuffer$<$ T $>$@{CircularBuffer$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{IsFixedSize}{IsFixedSize}}
+{\footnotesize\ttfamily bool \mbox{\hyperlink{classCircularBuffer}{Circular\+Buffer}}$<$ T $>$.Is\+Fixed\+Size = true\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{classCircularBuffer_a26dc6111bbd7444d417ae43c4f0eb9d4}\label{classCircularBuffer_a26dc6111bbd7444d417ae43c4f0eb9d4}} 
+\index{CircularBuffer$<$ T $>$@{CircularBuffer$<$ T $>$}!IsFull@{IsFull}}
+\index{IsFull@{IsFull}!CircularBuffer$<$ T $>$@{CircularBuffer$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{IsFull}{IsFull}}
+{\footnotesize\ttfamily bool \mbox{\hyperlink{classCircularBuffer}{Circular\+Buffer}}$<$ T $>$.Is\+Full\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{classCircularBuffer_a489639c79fba262b5778b72fb1ded5cf}\label{classCircularBuffer_a489639c79fba262b5778b72fb1ded5cf}} 
+\index{CircularBuffer$<$ T $>$@{CircularBuffer$<$ T $>$}!IsReadOnly@{IsReadOnly}}
+\index{IsReadOnly@{IsReadOnly}!CircularBuffer$<$ T $>$@{CircularBuffer$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{IsReadOnly}{IsReadOnly}}
+{\footnotesize\ttfamily bool \mbox{\hyperlink{classCircularBuffer}{Circular\+Buffer}}$<$ T $>$.Is\+Read\+Only\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{classCircularBuffer_aad71698bd35c35a4ef4e1b1adb469e35}\label{classCircularBuffer_aad71698bd35c35a4ef4e1b1adb469e35}} 
+\index{CircularBuffer$<$ T $>$@{CircularBuffer$<$ T $>$}!IsSynchronized@{IsSynchronized}}
+\index{IsSynchronized@{IsSynchronized}!CircularBuffer$<$ T $>$@{CircularBuffer$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{IsSynchronized}{IsSynchronized}}
+{\footnotesize\ttfamily bool \mbox{\hyperlink{classCircularBuffer}{Circular\+Buffer}}$<$ T $>$.Is\+Synchronized\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{classCircularBuffer_ae37153664594b45fe2bc24ceb0210db5}\label{classCircularBuffer_ae37153664594b45fe2bc24ceb0210db5}} 
+\index{CircularBuffer$<$ T $>$@{CircularBuffer$<$ T $>$}!SyncRoot@{SyncRoot}}
+\index{SyncRoot@{SyncRoot}!CircularBuffer$<$ T $>$@{CircularBuffer$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{SyncRoot}{SyncRoot}}
+{\footnotesize\ttfamily object \mbox{\hyperlink{classCircularBuffer}{Circular\+Buffer}}$<$ T $>$.Sync\+Root = new object()\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{classCircularBuffer_ad69c834d699667362b8904f9c68e93d0}\label{classCircularBuffer_ad69c834d699667362b8904f9c68e93d0}} 
+\index{CircularBuffer$<$ T $>$@{CircularBuffer$<$ T $>$}!this\mbox{[}int index\mbox{]}@{this[int index]}}
+\index{this\mbox{[}int index\mbox{]}@{this[int index]}!CircularBuffer$<$ T $>$@{CircularBuffer$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{this[int index]}{this[int index]}}
+{\footnotesize\ttfamily T \mbox{\hyperlink{classCircularBuffer}{Circular\+Buffer}}$<$ T $>$.this\mbox{[}int index\mbox{]}\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Collections/Circular\+Buffer.\+cs\end{DoxyCompactItemize}

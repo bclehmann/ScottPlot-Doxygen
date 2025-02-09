@@ -1,0 +1,97 @@
+\hypertarget{interfaceITimeUnit}{}\doxysection{ITime\+Unit Interface Reference}
+\label{interfaceITimeUnit}\index{ITimeUnit@{ITimeUnit}}
+Inheritance diagram for ITime\+Unit\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=10.000000cm]{interfaceITimeUnit}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{interfaceITimeUnit_ad70c5bcb960ce6aea108d372a62d2111}{Get\+Date\+Time\+Format\+String}} ()
+\begin{DoxyCompactList}\small\item\em Returns the format string used to display tick labels of this time unit. \href{https://learn.microsoft.com/en-us/dotnet/api/system.datetime.tostring}{\texttt{ https\+://learn.\+microsoft.\+com/en-\/us/dotnet/api/system.\+datetime.\+tostring}} \end{DoxyCompactList}\item 
+Date\+Time \mbox{\hyperlink{interfaceITimeUnit_a937b9d1835716e8f94106fbf3dd76e99}{Next}} (Date\+Time date\+Time, int increment=1)
+\begin{DoxyCompactList}\small\item\em Return the Date\+Time N units relative to this one \end{DoxyCompactList}\item 
+Date\+Time \mbox{\hyperlink{interfaceITimeUnit_a5442876054e06f2d6a1d9e79ceb8747b}{Snap}} (Date\+Time date\+Time)
+\begin{DoxyCompactList}\small\item\em Return a given date \char`\"{}snapped\char`\"{} back to the nearest nice tick position. Use this to find a good tick position for a given Date\+Time. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+IRead\+Only\+List$<$ int $>$ \mbox{\hyperlink{interfaceITimeUnit_ae1f96fde4849f093b1e885c7cae5a0e3}{Divisors}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em An array of integers that serve as good divisors to subdivide this time unit \end{DoxyCompactList}\item 
+Time\+Span \mbox{\hyperlink{interfaceITimeUnit_a79453b757de8881f2ea76f181645ddf2}{Min\+Size}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Minimum span this time unit can represent. To represent spans smaller than this, try the next smaller unit. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{interfaceITimeUnit_ad70c5bcb960ce6aea108d372a62d2111}\label{interfaceITimeUnit_ad70c5bcb960ce6aea108d372a62d2111}} 
+\index{ITimeUnit@{ITimeUnit}!GetDateTimeFormatString@{GetDateTimeFormatString}}
+\index{GetDateTimeFormatString@{GetDateTimeFormatString}!ITimeUnit@{ITimeUnit}}
+\doxysubsubsection{\texorpdfstring{GetDateTimeFormatString()}{GetDateTimeFormatString()}}
+{\footnotesize\ttfamily string ITime\+Unit.\+Get\+Date\+Time\+Format\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the format string used to display tick labels of this time unit. \href{https://learn.microsoft.com/en-us/dotnet/api/system.datetime.tostring}{\texttt{ https\+://learn.\+microsoft.\+com/en-\/us/dotnet/api/system.\+datetime.\+tostring}} 
+
+
+
+Implemented in \mbox{\hyperlink{classYear_abcd60abcfb8f5add6dcb29628e218546}{Year}}, \mbox{\hyperlink{classSecond_a7d33b0afe25642ca313b0df29538cd2e}{Second}}, \mbox{\hyperlink{classMonth_af83e2c9cc0f1d687297620c205e4584e}{Month}}, \mbox{\hyperlink{classMinute_acc83393a8190c214b43527d978c125a6}{Minute}}, \mbox{\hyperlink{classMillisecond_ac0759a4929762c1a9911d1fc599b7a66}{Millisecond}}, \mbox{\hyperlink{classHour_a13723a01c481f37f8239cd74a884f644}{Hour}}, \mbox{\hyperlink{classDecisecond_ad55e22cb6af3e0a2644c0e9b4aed53ab}{Decisecond}}, \mbox{\hyperlink{classDay_afc049f8460c400da674afe46770e3554}{Day}}, and \mbox{\hyperlink{classCentisecond_a237f34b3c03359fee3a9d917658ac65f}{Centisecond}}.
+
+\mbox{\Hypertarget{interfaceITimeUnit_a937b9d1835716e8f94106fbf3dd76e99}\label{interfaceITimeUnit_a937b9d1835716e8f94106fbf3dd76e99}} 
+\index{ITimeUnit@{ITimeUnit}!Next@{Next}}
+\index{Next@{Next}!ITimeUnit@{ITimeUnit}}
+\doxysubsubsection{\texorpdfstring{Next()}{Next()}}
+{\footnotesize\ttfamily Date\+Time ITime\+Unit.\+Next (\begin{DoxyParamCaption}\item[{Date\+Time}]{date\+Time,  }\item[{int}]{increment = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+
+
+Return the Date\+Time N units relative to this one 
+
+
+
+Implemented in \mbox{\hyperlink{classYear_a986fbbdde700d6c9285ed653aae3cc98}{Year}}, \mbox{\hyperlink{classSecond_a32dc534974574c47c2a039432d12a0b4}{Second}}, \mbox{\hyperlink{classMonth_af14f5f75c30a12479c08157295a99bba}{Month}}, \mbox{\hyperlink{classMinute_ab19fa6153ab03915fdf815ac2c090780}{Minute}}, \mbox{\hyperlink{classMillisecond_aa14661a6b1693cb4ede8796a19f8ca52}{Millisecond}}, \mbox{\hyperlink{classHour_a7a3fed421cf89c18c0252218b650c50c}{Hour}}, \mbox{\hyperlink{classDecisecond_a3e83ca43fbd5b0f65baf35c1ab96e9c7}{Decisecond}}, \mbox{\hyperlink{classDay_a4c32ccf74f3ae8111f52f6a941f4d75e}{Day}}, and \mbox{\hyperlink{classCentisecond_a58fd63271272bfa3704ef36403a724d7}{Centisecond}}.
+
+\mbox{\Hypertarget{interfaceITimeUnit_a5442876054e06f2d6a1d9e79ceb8747b}\label{interfaceITimeUnit_a5442876054e06f2d6a1d9e79ceb8747b}} 
+\index{ITimeUnit@{ITimeUnit}!Snap@{Snap}}
+\index{Snap@{Snap}!ITimeUnit@{ITimeUnit}}
+\doxysubsubsection{\texorpdfstring{Snap()}{Snap()}}
+{\footnotesize\ttfamily Date\+Time ITime\+Unit.\+Snap (\begin{DoxyParamCaption}\item[{Date\+Time}]{date\+Time }\end{DoxyParamCaption})}
+
+
+
+Return a given date \char`\"{}snapped\char`\"{} back to the nearest nice tick position. Use this to find a good tick position for a given Date\+Time. 
+
+
+
+Implemented in \mbox{\hyperlink{classYear_a6ab7b2b32fcbe58a529d1c597c58cf6e}{Year}}, \mbox{\hyperlink{classSecond_a354eca24c0a0d58b5fe47de14dbae329}{Second}}, \mbox{\hyperlink{classMonth_ac67875a599de9e223c241333e5f8a7e2}{Month}}, \mbox{\hyperlink{classMinute_afcea90a58118a59612e021801ae45026}{Minute}}, \mbox{\hyperlink{classMillisecond_a105e29ced6cf4cd435d5cfd706757eb5}{Millisecond}}, \mbox{\hyperlink{classHour_a3fe6feb7309cc0f518184dc57a89edb1}{Hour}}, \mbox{\hyperlink{classDecisecond_a6752a7e34baa0008bb3febe136d3645b}{Decisecond}}, \mbox{\hyperlink{classDay_a58df3e4dbf9c1b1a5e86dc88306c5d4d}{Day}}, and \mbox{\hyperlink{classCentisecond_ab941fbb94b5a65f4eeb0b679b0aaa515}{Centisecond}}.
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{interfaceITimeUnit_ae1f96fde4849f093b1e885c7cae5a0e3}\label{interfaceITimeUnit_ae1f96fde4849f093b1e885c7cae5a0e3}} 
+\index{ITimeUnit@{ITimeUnit}!Divisors@{Divisors}}
+\index{Divisors@{Divisors}!ITimeUnit@{ITimeUnit}}
+\doxysubsubsection{\texorpdfstring{Divisors}{Divisors}}
+{\footnotesize\ttfamily IRead\+Only\+List$<$int$>$ ITime\+Unit.\+Divisors\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+An array of integers that serve as good divisors to subdivide this time unit 
+
+\mbox{\Hypertarget{interfaceITimeUnit_a79453b757de8881f2ea76f181645ddf2}\label{interfaceITimeUnit_a79453b757de8881f2ea76f181645ddf2}} 
+\index{ITimeUnit@{ITimeUnit}!MinSize@{MinSize}}
+\index{MinSize@{MinSize}!ITimeUnit@{ITimeUnit}}
+\doxysubsubsection{\texorpdfstring{MinSize}{MinSize}}
+{\footnotesize\ttfamily Time\+Span ITime\+Unit.\+Min\+Size\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Minimum span this time unit can represent. To represent spans smaller than this, try the next smaller unit. 
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Tick\+Generators/ITime\+Unit.\+cs\end{DoxyCompactItemize}

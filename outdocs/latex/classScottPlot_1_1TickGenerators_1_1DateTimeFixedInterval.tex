@@ -1,0 +1,181 @@
+\hypertarget{classScottPlot_1_1TickGenerators_1_1DateTimeFixedInterval}{}\doxysection{Scott\+Plot.\+Tick\+Generators.\+Date\+Time\+Fixed\+Interval Class Reference}
+\label{classScottPlot_1_1TickGenerators_1_1DateTimeFixedInterval}\index{ScottPlot.TickGenerators.DateTimeFixedInterval@{ScottPlot.TickGenerators.DateTimeFixedInterval}}
+Inheritance diagram for Scott\+Plot.\+Tick\+Generators.\+Date\+Time\+Fixed\+Interval\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classScottPlot_1_1TickGenerators_1_1DateTimeFixedInterval}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classScottPlot_1_1TickGenerators_1_1DateTimeFixedInterval_af7361a31a577a2934a0a76bafefec949}{Date\+Time\+Fixed\+Interval}} (\mbox{\hyperlink{interfaceITimeUnit}{ITime\+Unit}} interval, int intervals\+Per\+Tick=1, \mbox{\hyperlink{interfaceITimeUnit}{ITime\+Unit}}? minor\+Interval=null, int minor\+Intervals\+Per\+Tick=1, Func$<$ Date\+Time, Date\+Time $>$? get\+Interval\+Start\+Func=null)
+\begin{DoxyCompactList}\small\item\em Creates a new \mbox{\hyperlink{classScottPlot_1_1TickGenerators_1_1DateTimeFixedInterval}{Date\+Time\+Fixed\+Interval}} generator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$ double $>$ \mbox{\hyperlink{classScottPlot_1_1TickGenerators_1_1DateTimeFixedInterval_a1638f8b2d7012347dc2c63cbde158772}{Convert\+To\+Coordinate\+Space}} (\mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$ Date\+Time $>$ dates)
+\item 
+void \mbox{\hyperlink{classScottPlot_1_1TickGenerators_1_1DateTimeFixedInterval_a7d180dd217e14253bd65d1e88ef8153d}{Regenerate}} (\mbox{\hyperlink{structCoordinateRange}{Coordinate\+Range}} range, Edge edge, \mbox{\hyperlink{structPixelLength}{Pixel\+Length}} size, SKPaint paint, \mbox{\hyperlink{classLabelStyle}{Label\+Style}} label\+Style)
+\begin{DoxyCompactList}\small\item\em Generate ticks based on the current settings and store the result in \mbox{\hyperlink{classScottPlot_1_1TickGenerators_1_1DateTimeFixedInterval_a809e1fc6eaef85c6ec7b810a3273e733}{Ticks}} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interfaceITimeUnit}{ITime\+Unit}} \mbox{\hyperlink{classScottPlot_1_1TickGenerators_1_1DateTimeFixedInterval_acd42a029a9d5d6f93a284baf1870d0e7}{Interval}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The time unit to use for major ticks \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classScottPlot_1_1TickGenerators_1_1DateTimeFixedInterval_a25a2cf2938ac60159209cbe0bea91b9b}{Intervals\+Per\+Tick}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The number of \mbox{\hyperlink{classScottPlot_1_1TickGenerators_1_1DateTimeFixedInterval_acd42a029a9d5d6f93a284baf1870d0e7}{Interval}} units between major ticks (e.\+g. major ticks every 7 \mbox{\hyperlink{classDay}{Day}}s) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{interfaceITimeUnit}{ITime\+Unit}}? \mbox{\hyperlink{classScottPlot_1_1TickGenerators_1_1DateTimeFixedInterval_a7d4a4f2706dceb7f36e28c3eeef38a22}{Minor\+Interval}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The time unit to use for minor ticks. If null, no minor ticks are generated. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classScottPlot_1_1TickGenerators_1_1DateTimeFixedInterval_abdd54bdc3b195a1ae0ea74c46f223d6f}{Minor\+Intervals\+Per\+Tick}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The number of \mbox{\hyperlink{classScottPlot_1_1TickGenerators_1_1DateTimeFixedInterval_a7d4a4f2706dceb7f36e28c3eeef38a22}{Minor\+Interval}} units between minor ticks. \end{DoxyCompactList}\item 
+Func$<$ Date\+Time, Date\+Time $>$? \mbox{\hyperlink{classScottPlot_1_1TickGenerators_1_1DateTimeFixedInterval_a0e09a69752716d74589799b092f19b3a}{Get\+Interval\+Start\+Func}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em An optional function to override where the intervals for ticks start. The Date\+Time argument provided is the start range of the axis (i.\+e. \mbox{\hyperlink{interfaceIAxis_a6373d03803f9fbb3b9336b257ddc3c74}{IAxis.\+Min}}). \end{DoxyCompactList}\item 
+Func$<$ Date\+Time, string $>$? \mbox{\hyperlink{classScottPlot_1_1TickGenerators_1_1DateTimeFixedInterval_a9f08d74434cedcc0617acaf7d3d8c208}{Label\+Formatter}} = null\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em If assigned, this function will be used to create tick labels \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structTick}{Tick}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classScottPlot_1_1TickGenerators_1_1DateTimeFixedInterval_a809e1fc6eaef85c6ec7b810a3273e733}{Ticks}} = Array.\+Empty$<$\mbox{\hyperlink{structTick}{Tick}}$>$()\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+int \mbox{\hyperlink{classScottPlot_1_1TickGenerators_1_1DateTimeFixedInterval_ae77017d5a957269fb2b1b6a1b9e52cc3}{Max\+Tick\+Count}} = 10\+\_\+000\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classScottPlot_1_1TickGenerators_1_1DateTimeFixedInterval_af7361a31a577a2934a0a76bafefec949}\label{classScottPlot_1_1TickGenerators_1_1DateTimeFixedInterval_af7361a31a577a2934a0a76bafefec949}} 
+\index{ScottPlot.TickGenerators.DateTimeFixedInterval@{ScottPlot.TickGenerators.DateTimeFixedInterval}!DateTimeFixedInterval@{DateTimeFixedInterval}}
+\index{DateTimeFixedInterval@{DateTimeFixedInterval}!ScottPlot.TickGenerators.DateTimeFixedInterval@{ScottPlot.TickGenerators.DateTimeFixedInterval}}
+\doxysubsubsection{\texorpdfstring{DateTimeFixedInterval()}{DateTimeFixedInterval()}}
+{\footnotesize\ttfamily Scott\+Plot.\+Tick\+Generators.\+Date\+Time\+Fixed\+Interval.\+Date\+Time\+Fixed\+Interval (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceITimeUnit}{ITime\+Unit}}}]{interval,  }\item[{int}]{intervals\+Per\+Tick = {\ttfamily 1},  }\item[{\mbox{\hyperlink{interfaceITimeUnit}{ITime\+Unit}}?}]{minor\+Interval = {\ttfamily null},  }\item[{int}]{minor\+Intervals\+Per\+Tick = {\ttfamily 1},  }\item[{Func$<$ Date\+Time, Date\+Time $>$?}]{get\+Interval\+Start\+Func = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Creates a new \mbox{\hyperlink{classScottPlot_1_1TickGenerators_1_1DateTimeFixedInterval}{Date\+Time\+Fixed\+Interval}} generator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em interval} & The time unit to use for major ticks\\
+\hline
+{\em intervals\+Per\+Tick} & The number of \mbox{\hyperlink{classScottPlot_1_1TickGenerators_1_1DateTimeFixedInterval_acd42a029a9d5d6f93a284baf1870d0e7}{Interval}} units between major ticks\\
+\hline
+{\em minor\+Interval} & The time unit to use for minor ticks. If null, no minor ticks are generated.\\
+\hline
+{\em minor\+Intervals\+Per\+Tick} & The number of \mbox{\hyperlink{classScottPlot_1_1TickGenerators_1_1DateTimeFixedInterval_a7d4a4f2706dceb7f36e28c3eeef38a22}{Minor\+Interval}} units between minor ticks.\\
+\hline
+{\em get\+Interval\+Start\+Func} & An optional function to override where the intervals for ticks start. The Date\+Time argument provided is the start range of the axis (i.\+e. \mbox{\hyperlink{interfaceIAxis_a6373d03803f9fbb3b9336b257ddc3c74}{IAxis.\+Min}}). \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classScottPlot_1_1TickGenerators_1_1DateTimeFixedInterval_a1638f8b2d7012347dc2c63cbde158772}\label{classScottPlot_1_1TickGenerators_1_1DateTimeFixedInterval_a1638f8b2d7012347dc2c63cbde158772}} 
+\index{ScottPlot.TickGenerators.DateTimeFixedInterval@{ScottPlot.TickGenerators.DateTimeFixedInterval}!ConvertToCoordinateSpace@{ConvertToCoordinateSpace}}
+\index{ConvertToCoordinateSpace@{ConvertToCoordinateSpace}!ScottPlot.TickGenerators.DateTimeFixedInterval@{ScottPlot.TickGenerators.DateTimeFixedInterval}}
+\doxysubsubsection{\texorpdfstring{ConvertToCoordinateSpace()}{ConvertToCoordinateSpace()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$double$>$ Scott\+Plot.\+Tick\+Generators.\+Date\+Time\+Fixed\+Interval.\+Convert\+To\+Coordinate\+Space (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$ Date\+Time $>$}]{dates }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Implements \mbox{\hyperlink{interfaceIDateTimeTickGenerator_a528da18b042ee87af38720a7b6edf1be}{IDate\+Time\+Tick\+Generator}}.
+
+\mbox{\Hypertarget{classScottPlot_1_1TickGenerators_1_1DateTimeFixedInterval_a7d180dd217e14253bd65d1e88ef8153d}\label{classScottPlot_1_1TickGenerators_1_1DateTimeFixedInterval_a7d180dd217e14253bd65d1e88ef8153d}} 
+\index{ScottPlot.TickGenerators.DateTimeFixedInterval@{ScottPlot.TickGenerators.DateTimeFixedInterval}!Regenerate@{Regenerate}}
+\index{Regenerate@{Regenerate}!ScottPlot.TickGenerators.DateTimeFixedInterval@{ScottPlot.TickGenerators.DateTimeFixedInterval}}
+\doxysubsubsection{\texorpdfstring{Regenerate()}{Regenerate()}}
+{\footnotesize\ttfamily void Scott\+Plot.\+Tick\+Generators.\+Date\+Time\+Fixed\+Interval.\+Regenerate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structCoordinateRange}{Coordinate\+Range}}}]{range,  }\item[{Edge}]{edge,  }\item[{\mbox{\hyperlink{structPixelLength}{Pixel\+Length}}}]{size,  }\item[{SKPaint}]{paint,  }\item[{\mbox{\hyperlink{classLabelStyle}{Label\+Style}}}]{label\+Style }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Generate ticks based on the current settings and store the result in \mbox{\hyperlink{classScottPlot_1_1TickGenerators_1_1DateTimeFixedInterval_a809e1fc6eaef85c6ec7b810a3273e733}{Ticks}} 
+
+
+
+Implements \mbox{\hyperlink{interfaceITickGenerator_afce3e3bc89a3026ca1dc3dfca576020f}{ITick\+Generator}}.
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{classScottPlot_1_1TickGenerators_1_1DateTimeFixedInterval_a0e09a69752716d74589799b092f19b3a}\label{classScottPlot_1_1TickGenerators_1_1DateTimeFixedInterval_a0e09a69752716d74589799b092f19b3a}} 
+\index{ScottPlot.TickGenerators.DateTimeFixedInterval@{ScottPlot.TickGenerators.DateTimeFixedInterval}!GetIntervalStartFunc@{GetIntervalStartFunc}}
+\index{GetIntervalStartFunc@{GetIntervalStartFunc}!ScottPlot.TickGenerators.DateTimeFixedInterval@{ScottPlot.TickGenerators.DateTimeFixedInterval}}
+\doxysubsubsection{\texorpdfstring{GetIntervalStartFunc}{GetIntervalStartFunc}}
+{\footnotesize\ttfamily Func$<$Date\+Time, Date\+Time$>$? Scott\+Plot.\+Tick\+Generators.\+Date\+Time\+Fixed\+Interval.\+Get\+Interval\+Start\+Func\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+An optional function to override where the intervals for ticks start. The Date\+Time argument provided is the start range of the axis (i.\+e. \mbox{\hyperlink{interfaceIAxis_a6373d03803f9fbb3b9336b257ddc3c74}{IAxis.\+Min}}). 
+
+If omitted, the ticks will start from \mbox{\hyperlink{interfaceIAxis_a6373d03803f9fbb3b9336b257ddc3c74}{IAxis.\+Min}}. This may have undesirable effects when zooming and panning. If provided, the ticks will start from the returned Date\+Time. 
+
+If the plot contains weekly data, and it is desired to have ticks on the 1st of each month\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{dt => \textcolor{keyword}{new} DateTime(dt.Year, dt.Month, 1);}
+
+\end{DoxyCode}
+ If the plot contains hourly data, and it is desired to have ticks every 6 hours at 00\+:00, 6\+:00, 12\+:00, etc, then set \mbox{\hyperlink{classScottPlot_1_1TickGenerators_1_1DateTimeFixedInterval_acd42a029a9d5d6f93a284baf1870d0e7}{Interval}} to \mbox{\hyperlink{classHour}{Hour}}, \mbox{\hyperlink{classScottPlot_1_1TickGenerators_1_1DateTimeFixedInterval_a25a2cf2938ac60159209cbe0bea91b9b}{Intervals\+Per\+Tick}} to 6, and provide the function\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{dt => \textcolor{keyword}{new} DateTime(dt.Year, dt.Month, dt.Day);}
+
+\end{DoxyCode}
+ \mbox{\Hypertarget{classScottPlot_1_1TickGenerators_1_1DateTimeFixedInterval_acd42a029a9d5d6f93a284baf1870d0e7}\label{classScottPlot_1_1TickGenerators_1_1DateTimeFixedInterval_acd42a029a9d5d6f93a284baf1870d0e7}} 
+\index{ScottPlot.TickGenerators.DateTimeFixedInterval@{ScottPlot.TickGenerators.DateTimeFixedInterval}!Interval@{Interval}}
+\index{Interval@{Interval}!ScottPlot.TickGenerators.DateTimeFixedInterval@{ScottPlot.TickGenerators.DateTimeFixedInterval}}
+\doxysubsubsection{\texorpdfstring{Interval}{Interval}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceITimeUnit}{ITime\+Unit}} Scott\+Plot.\+Tick\+Generators.\+Date\+Time\+Fixed\+Interval.\+Interval\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The time unit to use for major ticks 
+
+\mbox{\Hypertarget{classScottPlot_1_1TickGenerators_1_1DateTimeFixedInterval_a25a2cf2938ac60159209cbe0bea91b9b}\label{classScottPlot_1_1TickGenerators_1_1DateTimeFixedInterval_a25a2cf2938ac60159209cbe0bea91b9b}} 
+\index{ScottPlot.TickGenerators.DateTimeFixedInterval@{ScottPlot.TickGenerators.DateTimeFixedInterval}!IntervalsPerTick@{IntervalsPerTick}}
+\index{IntervalsPerTick@{IntervalsPerTick}!ScottPlot.TickGenerators.DateTimeFixedInterval@{ScottPlot.TickGenerators.DateTimeFixedInterval}}
+\doxysubsubsection{\texorpdfstring{IntervalsPerTick}{IntervalsPerTick}}
+{\footnotesize\ttfamily int Scott\+Plot.\+Tick\+Generators.\+Date\+Time\+Fixed\+Interval.\+Intervals\+Per\+Tick\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The number of \mbox{\hyperlink{classScottPlot_1_1TickGenerators_1_1DateTimeFixedInterval_acd42a029a9d5d6f93a284baf1870d0e7}{Interval}} units between major ticks (e.\+g. major ticks every 7 \mbox{\hyperlink{classDay}{Day}}s) 
+
+\mbox{\Hypertarget{classScottPlot_1_1TickGenerators_1_1DateTimeFixedInterval_a9f08d74434cedcc0617acaf7d3d8c208}\label{classScottPlot_1_1TickGenerators_1_1DateTimeFixedInterval_a9f08d74434cedcc0617acaf7d3d8c208}} 
+\index{ScottPlot.TickGenerators.DateTimeFixedInterval@{ScottPlot.TickGenerators.DateTimeFixedInterval}!LabelFormatter@{LabelFormatter}}
+\index{LabelFormatter@{LabelFormatter}!ScottPlot.TickGenerators.DateTimeFixedInterval@{ScottPlot.TickGenerators.DateTimeFixedInterval}}
+\doxysubsubsection{\texorpdfstring{LabelFormatter}{LabelFormatter}}
+{\footnotesize\ttfamily Func$<$Date\+Time, string$>$? Scott\+Plot.\+Tick\+Generators.\+Date\+Time\+Fixed\+Interval.\+Label\+Formatter = null\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+If assigned, this function will be used to create tick labels 
+
+\mbox{\Hypertarget{classScottPlot_1_1TickGenerators_1_1DateTimeFixedInterval_ae77017d5a957269fb2b1b6a1b9e52cc3}\label{classScottPlot_1_1TickGenerators_1_1DateTimeFixedInterval_ae77017d5a957269fb2b1b6a1b9e52cc3}} 
+\index{ScottPlot.TickGenerators.DateTimeFixedInterval@{ScottPlot.TickGenerators.DateTimeFixedInterval}!MaxTickCount@{MaxTickCount}}
+\index{MaxTickCount@{MaxTickCount}!ScottPlot.TickGenerators.DateTimeFixedInterval@{ScottPlot.TickGenerators.DateTimeFixedInterval}}
+\doxysubsubsection{\texorpdfstring{MaxTickCount}{MaxTickCount}}
+{\footnotesize\ttfamily int Scott\+Plot.\+Tick\+Generators.\+Date\+Time\+Fixed\+Interval.\+Max\+Tick\+Count = 10\+\_\+000\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classScottPlot_1_1TickGenerators_1_1DateTimeFixedInterval_a7d4a4f2706dceb7f36e28c3eeef38a22}\label{classScottPlot_1_1TickGenerators_1_1DateTimeFixedInterval_a7d4a4f2706dceb7f36e28c3eeef38a22}} 
+\index{ScottPlot.TickGenerators.DateTimeFixedInterval@{ScottPlot.TickGenerators.DateTimeFixedInterval}!MinorInterval@{MinorInterval}}
+\index{MinorInterval@{MinorInterval}!ScottPlot.TickGenerators.DateTimeFixedInterval@{ScottPlot.TickGenerators.DateTimeFixedInterval}}
+\doxysubsubsection{\texorpdfstring{MinorInterval}{MinorInterval}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceITimeUnit}{ITime\+Unit}}? Scott\+Plot.\+Tick\+Generators.\+Date\+Time\+Fixed\+Interval.\+Minor\+Interval\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The time unit to use for minor ticks. If null, no minor ticks are generated. 
+
+\mbox{\Hypertarget{classScottPlot_1_1TickGenerators_1_1DateTimeFixedInterval_abdd54bdc3b195a1ae0ea74c46f223d6f}\label{classScottPlot_1_1TickGenerators_1_1DateTimeFixedInterval_abdd54bdc3b195a1ae0ea74c46f223d6f}} 
+\index{ScottPlot.TickGenerators.DateTimeFixedInterval@{ScottPlot.TickGenerators.DateTimeFixedInterval}!MinorIntervalsPerTick@{MinorIntervalsPerTick}}
+\index{MinorIntervalsPerTick@{MinorIntervalsPerTick}!ScottPlot.TickGenerators.DateTimeFixedInterval@{ScottPlot.TickGenerators.DateTimeFixedInterval}}
+\doxysubsubsection{\texorpdfstring{MinorIntervalsPerTick}{MinorIntervalsPerTick}}
+{\footnotesize\ttfamily int Scott\+Plot.\+Tick\+Generators.\+Date\+Time\+Fixed\+Interval.\+Minor\+Intervals\+Per\+Tick\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The number of \mbox{\hyperlink{classScottPlot_1_1TickGenerators_1_1DateTimeFixedInterval_a7d4a4f2706dceb7f36e28c3eeef38a22}{Minor\+Interval}} units between minor ticks. 
+
+\mbox{\Hypertarget{classScottPlot_1_1TickGenerators_1_1DateTimeFixedInterval_a809e1fc6eaef85c6ec7b810a3273e733}\label{classScottPlot_1_1TickGenerators_1_1DateTimeFixedInterval_a809e1fc6eaef85c6ec7b810a3273e733}} 
+\index{ScottPlot.TickGenerators.DateTimeFixedInterval@{ScottPlot.TickGenerators.DateTimeFixedInterval}!Ticks@{Ticks}}
+\index{Ticks@{Ticks}!ScottPlot.TickGenerators.DateTimeFixedInterval@{ScottPlot.TickGenerators.DateTimeFixedInterval}}
+\doxysubsubsection{\texorpdfstring{Ticks}{Ticks}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structTick}{Tick}} \mbox{[}$\,$\mbox{]} Scott\+Plot.\+Tick\+Generators.\+Date\+Time\+Fixed\+Interval.\+Ticks = Array.\+Empty$<$\mbox{\hyperlink{structTick}{Tick}}$>$()\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Tick\+Generators/Date\+Time\+Fixed\+Interval.\+cs\end{DoxyCompactItemize}

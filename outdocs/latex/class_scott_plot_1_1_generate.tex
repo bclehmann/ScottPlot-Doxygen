@@ -1,0 +1,715 @@
+\doxysection{Scott\+Plot.\+Generate Class Reference}
+\hypertarget{class_scott_plot_1_1_generate}{}\label{class_scott_plot_1_1_generate}\index{ScottPlot.Generate@{ScottPlot.Generate}}
+
+
+This class contains methods which generate sample data for testing and demonstration purposes.  
+
+
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_scott_plot_1_1_generate_1_1_date_time}{Date\+Time}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static double\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_scott_plot_1_1_generate_afc1adad335cc6b0b0f1ebad732567c30}{Consecutive}} (int count=51, double delta=1, double first=0)
+\begin{DoxyCompactList}\small\item\em Return an array of evenly-\/spaced numbers. \end{DoxyCompactList}\item 
+static double\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_scott_plot_1_1_generate_a58afd799bbebf7d26d3a641850c89b68}{Sin}} (int count=51, double mult=1, double offset=0, double oscillations=1, double phase=0)
+\begin{DoxyCompactList}\small\item\em Return an array of sine waves between -\/1 and 1. Values are multiplied by {\itshape mult}  then shifted by {\itshape offset} . Phase shifts the sine wave horizontally between 0 and 2 Pi. \end{DoxyCompactList}\item 
+static double\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_scott_plot_1_1_generate_ada9d5c408ddee25cb5a0de87d692bc10}{Cos}} (int count=51, double mult=1, double offset=0, double oscillations=1, double phase=0)
+\begin{DoxyCompactList}\small\item\em Return an array of cosine waves between -\/1 and 1. Values are multiplied by {\itshape mult}  then shifted by {\itshape offset} . Phase shifts the sine wave horizontally between 0 and 2 Pi. \end{DoxyCompactList}\item 
+static double\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_scott_plot_1_1_generate_a98e552b52c861487c8b93a2918f09681}{Noisy\+Sin}} (int count=51, double magnitude=1)
+\item 
+static double\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_scott_plot_1_1_generate_a1978b2dfa341a4cf51c3e42db83f1952}{Noisy\+Exponential}} (int count, double mult=1000, double noise=.\+5, double tau=5)
+\begin{DoxyCompactList}\small\item\em An exponential curve that rises from 0 to {\itshape mult}  over {\itshape count}  points with random positive noise that scales with the underlying signal. The rate constant of the exponential curve is {\itshape tau} . \end{DoxyCompactList}\item 
+static double\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_scott_plot_1_1_generate_af19586902dd6bee245a7506775fd4a31}{Square\+Wave}} (uint cycles=20, uint points\+Per\+Cycle=1\+\_\+000, double duty=.\+5, double low=0, double high=1)
+\item 
+static double\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_scott_plot_1_1_generate_a626a6287ff9c2d36db5a5e728b874a0b}{Zeros}} (int count)
+\item 
+static double\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_scott_plot_1_1_generate_a7a7a78c179a5ab007269d3b0ed585bb4}{Ones}} (int count)
+\item 
+static double\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_scott_plot_1_1_generate_afda53aa5366d4f5e72956c4198be5a82}{Repeating}} (int count, double value)
+\item 
+static double\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_scott_plot_1_1_generate_a21e1703e0ead39b5f2b8864faa74c903}{NaN}} (int count)
+\item 
+static \mbox{\hyperlink{class_i_enumerable}{IEnumerable}}$<$ double $>$ \mbox{\hyperlink{class_scott_plot_1_1_generate_a8cf4de8ca80d2123be501f897f7b9f97}{Range\+Enumerable}} (double start, double stop, double step=1)
+\begin{DoxyCompactList}\small\item\em Return values from {\itshape start}  to {\itshape stop}  (inclusive) separated by {\itshape step}  \end{DoxyCompactList}\item 
+static double\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_scott_plot_1_1_generate_a0d7aad96c8ec1e8fd9b25289f667e71e}{Range}} (double start, double stop, double step=1)
+\begin{DoxyCompactList}\small\item\em Return values from {\itshape start}  to {\itshape stop}  (inclusive) separated by {\itshape step}  \end{DoxyCompactList}\item 
+static double\mbox{[},\mbox{]} \mbox{\hyperlink{class_scott_plot_1_1_generate_abae9fe998a22c3c1837c02f967aafdb7}{Consecutive2D}} (int rows, int columns, double spacing=1, double offset=0)
+\begin{DoxyCompactList}\small\item\em Generates a 2D array of numbers with constant spacing. \end{DoxyCompactList}\item 
+static double\mbox{[},\mbox{]} \mbox{\hyperlink{class_scott_plot_1_1_generate_a231db562c50c704f5416bbd5e48875be}{Sin2D}} (int width, int height, double x\+Period=.\+2, double y\+Period=.\+2, double multiple=100)
+\begin{DoxyCompactList}\small\item\em Generates a 2D sine pattern. \end{DoxyCompactList}\item 
+static double\mbox{[},\mbox{]} \mbox{\hyperlink{class_scott_plot_1_1_generate_a73cf7314838465d8641930cd7876a8ad}{Ramp2D}} (int width, int height, double min=0, double max=1)
+\begin{DoxyCompactList}\small\item\em \doxylink{class_scott_plot_1_1_generate}{Generate} a 2D array in a diagonal gradient pattern. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{namespace_scott_plot_a2501491e0769bfdb137a8f53d8f28372}{Rooted\+Coordinate\+Vector}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_scott_plot_1_1_generate_a94f366b86d8cf526b00a87ea4f7f3548}{Sample\+Vectors}} (int columns=10, int rows=10, double oscillations=1)
+\item 
+static double\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_scott_plot_1_1_generate_a68c3ae299d2c256b95bfb15510a43dce}{Random\+Walk}} (int count, double mult=1, double offset=0)
+\begin{DoxyCompactList}\small\item\em Return a series of values starting with {\itshape offset}  and each randomly deviating from the previous by at most {\itshape mult} . \end{DoxyCompactList}\item 
+static double\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_scott_plot_1_1_generate_a59cedef633912d404166fbaaa10951f7}{Random}} (int count, double min=0, double max=1)
+\item 
+static double\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_scott_plot_1_1_generate_af639c6130b190df59083118ba75d9baa}{Random\+Sample}} (int count, double min=0, double max=1)
+\begin{DoxyCompactList}\small\item\em Return an array of {\itshape count}  random values from {\itshape min}  to {\itshape max}  \end{DoxyCompactList}\item 
+static double\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_scott_plot_1_1_generate_aa11e54f819061091aaf12996a27efd68}{Random\+Ascending}} (int count, double min\+Delta=0, double max\+Delta=1)
+\begin{DoxyCompactList}\small\item\em Sequence of ascending numbers with random spacing between values. \end{DoxyCompactList}\item 
+static double\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_scott_plot_1_1_generate_a83a531f0819c66ea878ed913e04a0026}{Random\+Normal}} (int count, double mean=0, double std\+Dev=1)
+\item 
+static int \mbox{\hyperlink{class_scott_plot_1_1_generate_a31a9a54433652e2d044a39727a06c128}{Random\+Integer}} (int max)
+\begin{DoxyCompactList}\small\item\em Random\+Sample integer between zero (inclusive) and {\itshape max}  (exclusive) \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{class_scott_plot_1_1_generate_aad02bb77f208d02be7c6d9e5716950d8}{Random\+Integer}} (int min, int max)
+\begin{DoxyCompactList}\small\item\em Random\+Sample integer between {\itshape min}  (inclusive) and {\itshape max}  (exclusive) \end{DoxyCompactList}\item 
+static int\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_scott_plot_1_1_generate_ac82debbab0d1a05aa8049754fecb2d2b}{Random\+Integers}} (int count, int max)
+\begin{DoxyCompactList}\small\item\em Random\+Sample integers between zero (inclusive) and {\itshape max}  (exclusive) \end{DoxyCompactList}\item 
+static int\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_scott_plot_1_1_generate_a1390f9dc592a26ddf7ab3656edfe01a9}{Random\+Integers}} (int count, int min, int max)
+\begin{DoxyCompactList}\small\item\em Random\+Sample integers between {\itshape min}  (inclusive) and {\itshape max}  (exclusive) \end{DoxyCompactList}\item 
+static double \mbox{\hyperlink{class_scott_plot_1_1_generate_a4402f984ca3b118929a64aafb1047563}{Random\+Number}} ()
+\begin{DoxyCompactList}\small\item\em Random\+Sample integer between 0 (inclusive) and 1 (exclusive) \end{DoxyCompactList}\item 
+static double \mbox{\hyperlink{class_scott_plot_1_1_generate_abe6bf0aa2d636307ad2c967c8556b811}{Random\+Number}} (double max)
+\begin{DoxyCompactList}\small\item\em Random\+Sample integer between 0 (inclusive) and {\itshape max}  (exclusive) \end{DoxyCompactList}\item 
+static double \mbox{\hyperlink{class_scott_plot_1_1_generate_a6f13d1c4f333d7c3d34261253826a05a}{Random\+Number}} (double min, double max)
+\begin{DoxyCompactList}\small\item\em Random\+Sample integer between {\itshape min}  (inclusive) and {\itshape max}  (exclusive) \end{DoxyCompactList}\item 
+static double \mbox{\hyperlink{class_scott_plot_1_1_generate_add52ee62fd7291500b2befd0c0ab3ae1}{Random\+Normal\+Number}} (double mean=0, double std\+Dev=1)
+\begin{DoxyCompactList}\small\item\em Return a number normally distributed around the given {\itshape mean}  according to the {\itshape std\+Dev}  standard deviation. \end{DoxyCompactList}\item 
+static double\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_scott_plot_1_1_generate_a07077d719af4379d2e7e8f5fe797dd62}{Random\+Numbers}} (int count, double max)
+\begin{DoxyCompactList}\small\item\em Random numbers between zero (inclusive) and {\itshape max}  (exclusive) \end{DoxyCompactList}\item 
+static double\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_scott_plot_1_1_generate_a97ccf80b06318082bbb543173de44c1c}{Random\+Numbers}} (int count, double min, double max)
+\begin{DoxyCompactList}\small\item\em Random numbers between {\itshape min}  (inclusive) and {\itshape max}  (exclusive) \end{DoxyCompactList}\item 
+static double\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_scott_plot_1_1_generate_aae11bdca6d9bd0d8f159d5baa197d330}{Add\+Noise}} (double\mbox{[}$\,$\mbox{]} input, double magnitude=1)
+\begin{DoxyCompactList}\small\item\em Return a copy of the given array with random values added to each point. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_scott_plot_1_1_generate_a10a3d11694470a79187fde1160daf989}{Add\+Noise\+In\+Place}} (double\mbox{[}$\,$\mbox{]} values, double magnitude=1)
+\begin{DoxyCompactList}\small\item\em Mutate the given array by adding a random value to each point. \end{DoxyCompactList}\item 
+static char \mbox{\hyperlink{class_scott_plot_1_1_generate_a65123ade0fae71320e3007ad972a1d55}{Random\+Char}} ()
+\item 
+static string \mbox{\hyperlink{class_scott_plot_1_1_generate_ae4c7fd807ce88224b5413c79b895cf41}{Random\+String}} (int length)
+\item 
+static \mbox{\hyperlink{struct_scott_plot_1_1_coordinates}{Coordinates}} \mbox{\hyperlink{class_scott_plot_1_1_generate_a1df437188af0824fe61fd33b1bcabe7a}{Random\+Coordinates}} (double x\+Mult=1, double y\+Mult=1, double x\+Offset=0, double y\+Offset=0)
+\item 
+static \mbox{\hyperlink{struct_scott_plot_1_1_coordinates}{Coordinates}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_scott_plot_1_1_generate_a8044c50326b172eae07eaf961f3c3007}{Random\+Coordinates}} (int count, double x\+Mult=1, double y\+Mult=1, double x\+Offset=0, double y\+Offset=0)
+\item 
+static \mbox{\hyperlink{struct_scott_plot_1_1_coordinates}{Coordinates}} \mbox{\hyperlink{class_scott_plot_1_1_generate_ad76ccfda509eb44efa87898b48ef8cd8}{Random\+Location}} ()
+\item 
+static \mbox{\hyperlink{struct_scott_plot_1_1_coordinates}{Coordinates}} \mbox{\hyperlink{class_scott_plot_1_1_generate_a6e8d3887287ad4c8098c46f5fa353e77}{Random\+Location}} (\mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}} limits)
+\item 
+static \mbox{\hyperlink{struct_scott_plot_1_1_coordinates}{Coordinates}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_scott_plot_1_1_generate_a7a63705cc7a6828fbb8f406e0266c1b0}{Random\+Locations}} (int count)
+\item 
+static \mbox{\hyperlink{struct_scott_plot_1_1_coordinates}{Coordinates}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_scott_plot_1_1_generate_ad25d841560393f5e6171723effef0fe5}{Random\+Locations}} (int count, \mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}} limits)
+\item 
+static System.\+Date\+Time\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_scott_plot_1_1_generate_a00022538f031549b06c1845104d8f7ac}{Consecutive}} (int count, System.\+Date\+Time start, Time\+Span time\+Span)
+\item 
+static System.\+Date\+Time\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_scott_plot_1_1_generate_a98a0eca4b9bd69a72b48d350ef00d3de}{Consecutive\+Date\+Times}} (int count, System.\+Date\+Time start, Time\+Span time\+Span)
+\item 
+static System.\+Date\+Time\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_scott_plot_1_1_generate_a29a9dd517cab454804c533a26725485c}{Consecutive\+Days}} (int count, int year=2023, int month=1, int day=1)
+\item 
+static System.\+Date\+Time\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_scott_plot_1_1_generate_a475fb4b90de5c6c8af1ca91fcb882109}{Consecutive\+Days}} (int count, System.\+Date\+Time start)
+\item 
+static System.\+Date\+Time\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_scott_plot_1_1_generate_ae1e260f02c2e858474dffdf34e6d6523}{Consecutive\+Weekdays}} (int count, int year=2023, int month=1, int day=1)
+\item 
+static System.\+Date\+Time\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_scott_plot_1_1_generate_a8059f97939c05aba11a2315ff85c6e2c}{Consecutive\+Weekdays}} (int count, System.\+Date\+Time start)
+\item 
+static System.\+Date\+Time\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_scott_plot_1_1_generate_a09d4b6062f3411f4f554bf706c22a298}{Consecutive\+Hours}} (int count)
+\item 
+static System.\+Date\+Time\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_scott_plot_1_1_generate_a27a15b25aab16248de7bd81967ae6ae0}{Consecutive\+Hours}} (int count, System.\+Date\+Time start)
+\item 
+static System.\+Date\+Time\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_scott_plot_1_1_generate_adb808b6eaa67239a2a28d57d03620ed0}{Consecutive\+Quarter\+Hours}} (int count, System.\+Date\+Time start)
+\item 
+static System.\+Date\+Time\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_scott_plot_1_1_generate_a93439a5e9fce76c3ab6c3cacfd216fee}{Consecutive\+Minutes}} (int count, System.\+Date\+Time start)
+\item 
+static System.\+Date\+Time\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_scott_plot_1_1_generate_a4c5eb1c3b5e729e42d97138d4a5ab22c}{Consecutive\+Seconds}} (int count, System.\+Date\+Time start)
+\item 
+static \mbox{\hyperlink{struct_scott_plot_1_1_o_h_l_c}{OHLC}} \mbox{\hyperlink{class_scott_plot_1_1_generate_a4a35830c9eb2126667dae1eb4fa06b72}{Random\+OHLC}} ()
+\item 
+static \mbox{\hyperlink{struct_scott_plot_1_1_o_h_l_c}{OHLC}} \mbox{\hyperlink{class_scott_plot_1_1_generate_a51257cbd039934e72c7ba87728098dc4}{Random\+OHLC}} (System.\+Date\+Time date)
+\item 
+static List$<$ \mbox{\hyperlink{struct_scott_plot_1_1_o_h_l_c}{OHLC}} $>$ \mbox{\hyperlink{class_scott_plot_1_1_generate_a8a03a5c2d921c29a30ba747e4a628bad}{Random\+OHLCs}} (int count)
+\item 
+static List$<$ \mbox{\hyperlink{struct_scott_plot_1_1_o_h_l_c}{OHLC}} $>$ \mbox{\hyperlink{class_scott_plot_1_1_generate_a8c1d463cb10d0f31bf178b1d176179b0}{Random\+OHLCs}} (int count, System.\+Date\+Time start\+Date)
+\item 
+static \mbox{\hyperlink{class_scott_plot_1_1_box}{Box}} \mbox{\hyperlink{class_scott_plot_1_1_generate_a2ac7648d910ebb98437d636146816dc4}{Random\+Box}} (double position)
+\item 
+static \mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} \mbox{\hyperlink{class_scott_plot_1_1_generate_a919372de48bb364eae726e28c1a67438}{Random\+Hue}} ()
+\item 
+static \mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} \mbox{\hyperlink{class_scott_plot_1_1_generate_ac1273b8b880dceb553502f38a49d84c2}{Random\+Color}} ()
+\item 
+static \mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} \mbox{\hyperlink{class_scott_plot_1_1_generate_a1d9b6d938ff591d77a835c5e3d25cf40}{Random\+Color}} (byte max)
+\begin{DoxyCompactList}\small\item\em \doxylink{class_scott_plot_1_1_generate}{Generate} a dark color by defining the maximum value to use for R, G, and B. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} \mbox{\hyperlink{class_scott_plot_1_1_generate_ad99ba71e4df6c34da2bc594c362ec94f}{Random\+Color}} (\mbox{\hyperlink{interface_scott_plot_1_1_i_colormap}{IColormap}} colormap)
+\item 
+static \mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_scott_plot_1_1_generate_ac01cd28bd8311f376d5a8baaf1e98c21}{Random\+Colors}} (int count, \mbox{\hyperlink{interface_scott_plot_1_1_i_colormap}{IColormap}} colormap)
+\item 
+static \mbox{\hyperlink{namespace_scott_plot_aac856b9cf151418c331a7b848724d1f7}{Marker\+Shape}} \mbox{\hyperlink{class_scott_plot_1_1_generate_ad1c25c708ba88ae5bf5191a3c98c0eed}{Random\+Marker\+Shape}} ()
+\item 
+static \mbox{\hyperlink{struct_scott_plot_1_1_coordinate_line}{Coordinate\+Line}} \mbox{\hyperlink{class_scott_plot_1_1_generate_a57b4b6966379f856d895609f1d36a151}{Random\+Line}} ()
+\item 
+static \mbox{\hyperlink{namespace_scott_plot_a625917eb44cadb4de90991e525db6ab5}{Line\+Pattern}} \mbox{\hyperlink{class_scott_plot_1_1_generate_ab675a528cba73acdf9eece2ed0dca53f}{Random\+Line\+Pattern}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static readonly Data\+Generators.\+Random\+Walker \mbox{\hyperlink{class_scott_plot_1_1_generate_aaddd37e18f8afff10761b4f2dd826c36}{Random\+Walker}} = new()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_scott_plot_1_1_random_data_generator}{Random\+Data\+Generator}} \mbox{\hyperlink{class_scott_plot_1_1_generate_a7ee275badd4f4b0edaec521bd8888c88}{Random\+Data}} = new(0)\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class contains methods which generate sample data for testing and demonstration purposes. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_scott_plot_1_1_generate_aae11bdca6d9bd0d8f159d5baa197d330}\index{ScottPlot.Generate@{ScottPlot.Generate}!AddNoise@{AddNoise}}
+\index{AddNoise@{AddNoise}!ScottPlot.Generate@{ScottPlot.Generate}}
+\doxysubsubsection{\texorpdfstring{AddNoise()}{AddNoise()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_generate_aae11bdca6d9bd0d8f159d5baa197d330} 
+static double\mbox{[}$\,$\mbox{]} Scott\+Plot.\+Generate.\+Add\+Noise (\begin{DoxyParamCaption}\item[{double\mbox{[}$\,$\mbox{]}}]{input}{, }\item[{double}]{magnitude}{ = {\ttfamily 1}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Return a copy of the given array with random values added to each point. 
+
+\Hypertarget{class_scott_plot_1_1_generate_a10a3d11694470a79187fde1160daf989}\index{ScottPlot.Generate@{ScottPlot.Generate}!AddNoiseInPlace@{AddNoiseInPlace}}
+\index{AddNoiseInPlace@{AddNoiseInPlace}!ScottPlot.Generate@{ScottPlot.Generate}}
+\doxysubsubsection{\texorpdfstring{AddNoiseInPlace()}{AddNoiseInPlace()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_generate_a10a3d11694470a79187fde1160daf989} 
+static void Scott\+Plot.\+Generate.\+Add\+Noise\+In\+Place (\begin{DoxyParamCaption}\item[{double\mbox{[}$\,$\mbox{]}}]{values}{, }\item[{double}]{magnitude}{ = {\ttfamily 1}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Mutate the given array by adding a random value to each point. 
+
+\Hypertarget{class_scott_plot_1_1_generate_a00022538f031549b06c1845104d8f7ac}\index{ScottPlot.Generate@{ScottPlot.Generate}!Consecutive@{Consecutive}}
+\index{Consecutive@{Consecutive}!ScottPlot.Generate@{ScottPlot.Generate}}
+\doxysubsubsection{\texorpdfstring{Consecutive()}{Consecutive()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_generate_a00022538f031549b06c1845104d8f7ac} 
+static System.\+Date\+Time\mbox{[}$\,$\mbox{]} Scott\+Plot.\+Generate.\+Consecutive (\begin{DoxyParamCaption}\item[{int}]{count}{, }\item[{System.\+Date\+Time}]{start}{, }\item[{Time\+Span}]{time\+Span}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\Hypertarget{class_scott_plot_1_1_generate_afc1adad335cc6b0b0f1ebad732567c30}\index{ScottPlot.Generate@{ScottPlot.Generate}!Consecutive@{Consecutive}}
+\index{Consecutive@{Consecutive}!ScottPlot.Generate@{ScottPlot.Generate}}
+\doxysubsubsection{\texorpdfstring{Consecutive()}{Consecutive()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_generate_afc1adad335cc6b0b0f1ebad732567c30} 
+static double\mbox{[}$\,$\mbox{]} Scott\+Plot.\+Generate.\+Consecutive (\begin{DoxyParamCaption}\item[{int}]{count}{ = {\ttfamily 51}, }\item[{double}]{delta}{ = {\ttfamily 1}, }\item[{double}]{first}{ = {\ttfamily 0}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Return an array of evenly-\/spaced numbers. 
+
+\Hypertarget{class_scott_plot_1_1_generate_abae9fe998a22c3c1837c02f967aafdb7}\index{ScottPlot.Generate@{ScottPlot.Generate}!Consecutive2D@{Consecutive2D}}
+\index{Consecutive2D@{Consecutive2D}!ScottPlot.Generate@{ScottPlot.Generate}}
+\doxysubsubsection{\texorpdfstring{Consecutive2D()}{Consecutive2D()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_generate_abae9fe998a22c3c1837c02f967aafdb7} 
+static double\mbox{[},\mbox{]} Scott\+Plot.\+Generate.\+Consecutive2D (\begin{DoxyParamCaption}\item[{int}]{rows}{, }\item[{int}]{columns}{, }\item[{double}]{spacing}{ = {\ttfamily 1}, }\item[{double}]{offset}{ = {\ttfamily 0}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Generates a 2D array of numbers with constant spacing. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rows} & \\
+\hline
+{\em columns} & \\
+\hline
+{\em spacing} & The space between points.\\
+\hline
+{\em offset} & The first point.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{class_scott_plot_1_1_generate_a98a0eca4b9bd69a72b48d350ef00d3de}\index{ScottPlot.Generate@{ScottPlot.Generate}!ConsecutiveDateTimes@{ConsecutiveDateTimes}}
+\index{ConsecutiveDateTimes@{ConsecutiveDateTimes}!ScottPlot.Generate@{ScottPlot.Generate}}
+\doxysubsubsection{\texorpdfstring{ConsecutiveDateTimes()}{ConsecutiveDateTimes()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_generate_a98a0eca4b9bd69a72b48d350ef00d3de} 
+static System.\+Date\+Time\mbox{[}$\,$\mbox{]} Scott\+Plot.\+Generate.\+Consecutive\+Date\+Times (\begin{DoxyParamCaption}\item[{int}]{count}{, }\item[{System.\+Date\+Time}]{start}{, }\item[{Time\+Span}]{time\+Span}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\Hypertarget{class_scott_plot_1_1_generate_a29a9dd517cab454804c533a26725485c}\index{ScottPlot.Generate@{ScottPlot.Generate}!ConsecutiveDays@{ConsecutiveDays}}
+\index{ConsecutiveDays@{ConsecutiveDays}!ScottPlot.Generate@{ScottPlot.Generate}}
+\doxysubsubsection{\texorpdfstring{ConsecutiveDays()}{ConsecutiveDays()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_generate_a29a9dd517cab454804c533a26725485c} 
+static System.\+Date\+Time\mbox{[}$\,$\mbox{]} Scott\+Plot.\+Generate.\+Consecutive\+Days (\begin{DoxyParamCaption}\item[{int}]{count}{, }\item[{int}]{year}{ = {\ttfamily 2023}, }\item[{int}]{month}{ = {\ttfamily 1}, }\item[{int}]{day}{ = {\ttfamily 1}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\Hypertarget{class_scott_plot_1_1_generate_a475fb4b90de5c6c8af1ca91fcb882109}\index{ScottPlot.Generate@{ScottPlot.Generate}!ConsecutiveDays@{ConsecutiveDays}}
+\index{ConsecutiveDays@{ConsecutiveDays}!ScottPlot.Generate@{ScottPlot.Generate}}
+\doxysubsubsection{\texorpdfstring{ConsecutiveDays()}{ConsecutiveDays()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_generate_a475fb4b90de5c6c8af1ca91fcb882109} 
+static System.\+Date\+Time\mbox{[}$\,$\mbox{]} Scott\+Plot.\+Generate.\+Consecutive\+Days (\begin{DoxyParamCaption}\item[{int}]{count}{, }\item[{System.\+Date\+Time}]{start}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\Hypertarget{class_scott_plot_1_1_generate_a09d4b6062f3411f4f554bf706c22a298}\index{ScottPlot.Generate@{ScottPlot.Generate}!ConsecutiveHours@{ConsecutiveHours}}
+\index{ConsecutiveHours@{ConsecutiveHours}!ScottPlot.Generate@{ScottPlot.Generate}}
+\doxysubsubsection{\texorpdfstring{ConsecutiveHours()}{ConsecutiveHours()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_generate_a09d4b6062f3411f4f554bf706c22a298} 
+static System.\+Date\+Time\mbox{[}$\,$\mbox{]} Scott\+Plot.\+Generate.\+Consecutive\+Hours (\begin{DoxyParamCaption}\item[{int}]{count}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\Hypertarget{class_scott_plot_1_1_generate_a27a15b25aab16248de7bd81967ae6ae0}\index{ScottPlot.Generate@{ScottPlot.Generate}!ConsecutiveHours@{ConsecutiveHours}}
+\index{ConsecutiveHours@{ConsecutiveHours}!ScottPlot.Generate@{ScottPlot.Generate}}
+\doxysubsubsection{\texorpdfstring{ConsecutiveHours()}{ConsecutiveHours()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_generate_a27a15b25aab16248de7bd81967ae6ae0} 
+static System.\+Date\+Time\mbox{[}$\,$\mbox{]} Scott\+Plot.\+Generate.\+Consecutive\+Hours (\begin{DoxyParamCaption}\item[{int}]{count}{, }\item[{System.\+Date\+Time}]{start}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\Hypertarget{class_scott_plot_1_1_generate_a93439a5e9fce76c3ab6c3cacfd216fee}\index{ScottPlot.Generate@{ScottPlot.Generate}!ConsecutiveMinutes@{ConsecutiveMinutes}}
+\index{ConsecutiveMinutes@{ConsecutiveMinutes}!ScottPlot.Generate@{ScottPlot.Generate}}
+\doxysubsubsection{\texorpdfstring{ConsecutiveMinutes()}{ConsecutiveMinutes()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_generate_a93439a5e9fce76c3ab6c3cacfd216fee} 
+static System.\+Date\+Time\mbox{[}$\,$\mbox{]} Scott\+Plot.\+Generate.\+Consecutive\+Minutes (\begin{DoxyParamCaption}\item[{int}]{count}{, }\item[{System.\+Date\+Time}]{start}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\Hypertarget{class_scott_plot_1_1_generate_adb808b6eaa67239a2a28d57d03620ed0}\index{ScottPlot.Generate@{ScottPlot.Generate}!ConsecutiveQuarterHours@{ConsecutiveQuarterHours}}
+\index{ConsecutiveQuarterHours@{ConsecutiveQuarterHours}!ScottPlot.Generate@{ScottPlot.Generate}}
+\doxysubsubsection{\texorpdfstring{ConsecutiveQuarterHours()}{ConsecutiveQuarterHours()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_generate_adb808b6eaa67239a2a28d57d03620ed0} 
+static System.\+Date\+Time\mbox{[}$\,$\mbox{]} Scott\+Plot.\+Generate.\+Consecutive\+Quarter\+Hours (\begin{DoxyParamCaption}\item[{int}]{count}{, }\item[{System.\+Date\+Time}]{start}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\Hypertarget{class_scott_plot_1_1_generate_a4c5eb1c3b5e729e42d97138d4a5ab22c}\index{ScottPlot.Generate@{ScottPlot.Generate}!ConsecutiveSeconds@{ConsecutiveSeconds}}
+\index{ConsecutiveSeconds@{ConsecutiveSeconds}!ScottPlot.Generate@{ScottPlot.Generate}}
+\doxysubsubsection{\texorpdfstring{ConsecutiveSeconds()}{ConsecutiveSeconds()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_generate_a4c5eb1c3b5e729e42d97138d4a5ab22c} 
+static System.\+Date\+Time\mbox{[}$\,$\mbox{]} Scott\+Plot.\+Generate.\+Consecutive\+Seconds (\begin{DoxyParamCaption}\item[{int}]{count}{, }\item[{System.\+Date\+Time}]{start}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\Hypertarget{class_scott_plot_1_1_generate_ae1e260f02c2e858474dffdf34e6d6523}\index{ScottPlot.Generate@{ScottPlot.Generate}!ConsecutiveWeekdays@{ConsecutiveWeekdays}}
+\index{ConsecutiveWeekdays@{ConsecutiveWeekdays}!ScottPlot.Generate@{ScottPlot.Generate}}
+\doxysubsubsection{\texorpdfstring{ConsecutiveWeekdays()}{ConsecutiveWeekdays()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_generate_ae1e260f02c2e858474dffdf34e6d6523} 
+static System.\+Date\+Time\mbox{[}$\,$\mbox{]} Scott\+Plot.\+Generate.\+Consecutive\+Weekdays (\begin{DoxyParamCaption}\item[{int}]{count}{, }\item[{int}]{year}{ = {\ttfamily 2023}, }\item[{int}]{month}{ = {\ttfamily 1}, }\item[{int}]{day}{ = {\ttfamily 1}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\Hypertarget{class_scott_plot_1_1_generate_a8059f97939c05aba11a2315ff85c6e2c}\index{ScottPlot.Generate@{ScottPlot.Generate}!ConsecutiveWeekdays@{ConsecutiveWeekdays}}
+\index{ConsecutiveWeekdays@{ConsecutiveWeekdays}!ScottPlot.Generate@{ScottPlot.Generate}}
+\doxysubsubsection{\texorpdfstring{ConsecutiveWeekdays()}{ConsecutiveWeekdays()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_generate_a8059f97939c05aba11a2315ff85c6e2c} 
+static System.\+Date\+Time\mbox{[}$\,$\mbox{]} Scott\+Plot.\+Generate.\+Consecutive\+Weekdays (\begin{DoxyParamCaption}\item[{int}]{count}{, }\item[{System.\+Date\+Time}]{start}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\Hypertarget{class_scott_plot_1_1_generate_ada9d5c408ddee25cb5a0de87d692bc10}\index{ScottPlot.Generate@{ScottPlot.Generate}!Cos@{Cos}}
+\index{Cos@{Cos}!ScottPlot.Generate@{ScottPlot.Generate}}
+\doxysubsubsection{\texorpdfstring{Cos()}{Cos()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_generate_ada9d5c408ddee25cb5a0de87d692bc10} 
+static double\mbox{[}$\,$\mbox{]} Scott\+Plot.\+Generate.\+Cos (\begin{DoxyParamCaption}\item[{int}]{count}{ = {\ttfamily 51}, }\item[{double}]{mult}{ = {\ttfamily 1}, }\item[{double}]{offset}{ = {\ttfamily 0}, }\item[{double}]{oscillations}{ = {\ttfamily 1}, }\item[{double}]{phase}{ = {\ttfamily 0}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Return an array of cosine waves between -\/1 and 1. Values are multiplied by {\itshape mult}  then shifted by {\itshape offset} . Phase shifts the sine wave horizontally between 0 and 2 Pi. 
+
+\Hypertarget{class_scott_plot_1_1_generate_a21e1703e0ead39b5f2b8864faa74c903}\index{ScottPlot.Generate@{ScottPlot.Generate}!NaN@{NaN}}
+\index{NaN@{NaN}!ScottPlot.Generate@{ScottPlot.Generate}}
+\doxysubsubsection{\texorpdfstring{NaN()}{NaN()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_generate_a21e1703e0ead39b5f2b8864faa74c903} 
+static double\mbox{[}$\,$\mbox{]} Scott\+Plot.\+Generate.\+NaN (\begin{DoxyParamCaption}\item[{int}]{count}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\Hypertarget{class_scott_plot_1_1_generate_a1978b2dfa341a4cf51c3e42db83f1952}\index{ScottPlot.Generate@{ScottPlot.Generate}!NoisyExponential@{NoisyExponential}}
+\index{NoisyExponential@{NoisyExponential}!ScottPlot.Generate@{ScottPlot.Generate}}
+\doxysubsubsection{\texorpdfstring{NoisyExponential()}{NoisyExponential()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_generate_a1978b2dfa341a4cf51c3e42db83f1952} 
+static double\mbox{[}$\,$\mbox{]} Scott\+Plot.\+Generate.\+Noisy\+Exponential (\begin{DoxyParamCaption}\item[{int}]{count}{, }\item[{double}]{mult}{ = {\ttfamily 1000}, }\item[{double}]{noise}{ = {\ttfamily \+:\+:5}, }\item[{double}]{tau}{ = {\ttfamily 5}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+An exponential curve that rises from 0 to {\itshape mult}  over {\itshape count}  points with random positive noise that scales with the underlying signal. The rate constant of the exponential curve is {\itshape tau} . 
+
+\Hypertarget{class_scott_plot_1_1_generate_a98e552b52c861487c8b93a2918f09681}\index{ScottPlot.Generate@{ScottPlot.Generate}!NoisySin@{NoisySin}}
+\index{NoisySin@{NoisySin}!ScottPlot.Generate@{ScottPlot.Generate}}
+\doxysubsubsection{\texorpdfstring{NoisySin()}{NoisySin()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_generate_a98e552b52c861487c8b93a2918f09681} 
+static double\mbox{[}$\,$\mbox{]} Scott\+Plot.\+Generate.\+Noisy\+Sin (\begin{DoxyParamCaption}\item[{int}]{count}{ = {\ttfamily 51}, }\item[{double}]{magnitude}{ = {\ttfamily 1}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\Hypertarget{class_scott_plot_1_1_generate_a7a7a78c179a5ab007269d3b0ed585bb4}\index{ScottPlot.Generate@{ScottPlot.Generate}!Ones@{Ones}}
+\index{Ones@{Ones}!ScottPlot.Generate@{ScottPlot.Generate}}
+\doxysubsubsection{\texorpdfstring{Ones()}{Ones()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_generate_a7a7a78c179a5ab007269d3b0ed585bb4} 
+static double\mbox{[}$\,$\mbox{]} Scott\+Plot.\+Generate.\+Ones (\begin{DoxyParamCaption}\item[{int}]{count}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\Hypertarget{class_scott_plot_1_1_generate_a73cf7314838465d8641930cd7876a8ad}\index{ScottPlot.Generate@{ScottPlot.Generate}!Ramp2D@{Ramp2D}}
+\index{Ramp2D@{Ramp2D}!ScottPlot.Generate@{ScottPlot.Generate}}
+\doxysubsubsection{\texorpdfstring{Ramp2D()}{Ramp2D()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_generate_a73cf7314838465d8641930cd7876a8ad} 
+static double\mbox{[},\mbox{]} Scott\+Plot.\+Generate.\+Ramp2D (\begin{DoxyParamCaption}\item[{int}]{width}{, }\item[{int}]{height}{, }\item[{double}]{min}{ = {\ttfamily 0}, }\item[{double}]{max}{ = {\ttfamily 1}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+\doxylink{class_scott_plot_1_1_generate}{Generate} a 2D array in a diagonal gradient pattern. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & \\
+\hline
+{\em height} & \\
+\hline
+{\em min} & \\
+\hline
+{\em max} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{class_scott_plot_1_1_generate_a59cedef633912d404166fbaaa10951f7}\index{ScottPlot.Generate@{ScottPlot.Generate}!Random@{Random}}
+\index{Random@{Random}!ScottPlot.Generate@{ScottPlot.Generate}}
+\doxysubsubsection{\texorpdfstring{Random()}{Random()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_generate_a59cedef633912d404166fbaaa10951f7} 
+static double\mbox{[}$\,$\mbox{]} Scott\+Plot.\+Generate.\+Random (\begin{DoxyParamCaption}\item[{int}]{count}{, }\item[{double}]{min}{ = {\ttfamily 0}, }\item[{double}]{max}{ = {\ttfamily 1}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\Hypertarget{class_scott_plot_1_1_generate_aa11e54f819061091aaf12996a27efd68}\index{ScottPlot.Generate@{ScottPlot.Generate}!RandomAscending@{RandomAscending}}
+\index{RandomAscending@{RandomAscending}!ScottPlot.Generate@{ScottPlot.Generate}}
+\doxysubsubsection{\texorpdfstring{RandomAscending()}{RandomAscending()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_generate_aa11e54f819061091aaf12996a27efd68} 
+static double\mbox{[}$\,$\mbox{]} Scott\+Plot.\+Generate.\+Random\+Ascending (\begin{DoxyParamCaption}\item[{int}]{count}{, }\item[{double}]{min\+Delta}{ = {\ttfamily 0}, }\item[{double}]{max\+Delta}{ = {\ttfamily 1}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Sequence of ascending numbers with random spacing between values. 
+
+\Hypertarget{class_scott_plot_1_1_generate_a2ac7648d910ebb98437d636146816dc4}\index{ScottPlot.Generate@{ScottPlot.Generate}!RandomBox@{RandomBox}}
+\index{RandomBox@{RandomBox}!ScottPlot.Generate@{ScottPlot.Generate}}
+\doxysubsubsection{\texorpdfstring{RandomBox()}{RandomBox()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_generate_a2ac7648d910ebb98437d636146816dc4} 
+static \mbox{\hyperlink{class_scott_plot_1_1_box}{Box}} Scott\+Plot.\+Generate.\+Random\+Box (\begin{DoxyParamCaption}\item[{double}]{position}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\Hypertarget{class_scott_plot_1_1_generate_a65123ade0fae71320e3007ad972a1d55}\index{ScottPlot.Generate@{ScottPlot.Generate}!RandomChar@{RandomChar}}
+\index{RandomChar@{RandomChar}!ScottPlot.Generate@{ScottPlot.Generate}}
+\doxysubsubsection{\texorpdfstring{RandomChar()}{RandomChar()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_generate_a65123ade0fae71320e3007ad972a1d55} 
+static char Scott\+Plot.\+Generate.\+Random\+Char (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\Hypertarget{class_scott_plot_1_1_generate_ac1273b8b880dceb553502f38a49d84c2}\index{ScottPlot.Generate@{ScottPlot.Generate}!RandomColor@{RandomColor}}
+\index{RandomColor@{RandomColor}!ScottPlot.Generate@{ScottPlot.Generate}}
+\doxysubsubsection{\texorpdfstring{RandomColor()}{RandomColor()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_generate_ac1273b8b880dceb553502f38a49d84c2} 
+static \mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} Scott\+Plot.\+Generate.\+Random\+Color (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\Hypertarget{class_scott_plot_1_1_generate_a1d9b6d938ff591d77a835c5e3d25cf40}\index{ScottPlot.Generate@{ScottPlot.Generate}!RandomColor@{RandomColor}}
+\index{RandomColor@{RandomColor}!ScottPlot.Generate@{ScottPlot.Generate}}
+\doxysubsubsection{\texorpdfstring{RandomColor()}{RandomColor()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_generate_a1d9b6d938ff591d77a835c5e3d25cf40} 
+static \mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} Scott\+Plot.\+Generate.\+Random\+Color (\begin{DoxyParamCaption}\item[{byte}]{max}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+\doxylink{class_scott_plot_1_1_generate}{Generate} a dark color by defining the maximum value to use for R, G, and B. 
+
+\Hypertarget{class_scott_plot_1_1_generate_ad99ba71e4df6c34da2bc594c362ec94f}\index{ScottPlot.Generate@{ScottPlot.Generate}!RandomColor@{RandomColor}}
+\index{RandomColor@{RandomColor}!ScottPlot.Generate@{ScottPlot.Generate}}
+\doxysubsubsection{\texorpdfstring{RandomColor()}{RandomColor()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_generate_ad99ba71e4df6c34da2bc594c362ec94f} 
+static \mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} Scott\+Plot.\+Generate.\+Random\+Color (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_scott_plot_1_1_i_colormap}{IColormap}}}]{colormap}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\Hypertarget{class_scott_plot_1_1_generate_ac01cd28bd8311f376d5a8baaf1e98c21}\index{ScottPlot.Generate@{ScottPlot.Generate}!RandomColors@{RandomColors}}
+\index{RandomColors@{RandomColors}!ScottPlot.Generate@{ScottPlot.Generate}}
+\doxysubsubsection{\texorpdfstring{RandomColors()}{RandomColors()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_generate_ac01cd28bd8311f376d5a8baaf1e98c21} 
+static \mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}}\mbox{[}$\,$\mbox{]} Scott\+Plot.\+Generate.\+Random\+Colors (\begin{DoxyParamCaption}\item[{int}]{count}{, }\item[{\mbox{\hyperlink{interface_scott_plot_1_1_i_colormap}{IColormap}}}]{colormap}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\Hypertarget{class_scott_plot_1_1_generate_a1df437188af0824fe61fd33b1bcabe7a}\index{ScottPlot.Generate@{ScottPlot.Generate}!RandomCoordinates@{RandomCoordinates}}
+\index{RandomCoordinates@{RandomCoordinates}!ScottPlot.Generate@{ScottPlot.Generate}}
+\doxysubsubsection{\texorpdfstring{RandomCoordinates()}{RandomCoordinates()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_generate_a1df437188af0824fe61fd33b1bcabe7a} 
+static \mbox{\hyperlink{struct_scott_plot_1_1_coordinates}{Coordinates}} Scott\+Plot.\+Generate.\+Random\+Coordinates (\begin{DoxyParamCaption}\item[{double}]{x\+Mult}{ = {\ttfamily 1}, }\item[{double}]{y\+Mult}{ = {\ttfamily 1}, }\item[{double}]{x\+Offset}{ = {\ttfamily 0}, }\item[{double}]{y\+Offset}{ = {\ttfamily 0}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\Hypertarget{class_scott_plot_1_1_generate_a8044c50326b172eae07eaf961f3c3007}\index{ScottPlot.Generate@{ScottPlot.Generate}!RandomCoordinates@{RandomCoordinates}}
+\index{RandomCoordinates@{RandomCoordinates}!ScottPlot.Generate@{ScottPlot.Generate}}
+\doxysubsubsection{\texorpdfstring{RandomCoordinates()}{RandomCoordinates()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_generate_a8044c50326b172eae07eaf961f3c3007} 
+static \mbox{\hyperlink{struct_scott_plot_1_1_coordinates}{Coordinates}}\mbox{[}$\,$\mbox{]} Scott\+Plot.\+Generate.\+Random\+Coordinates (\begin{DoxyParamCaption}\item[{int}]{count}{, }\item[{double}]{x\+Mult}{ = {\ttfamily 1}, }\item[{double}]{y\+Mult}{ = {\ttfamily 1}, }\item[{double}]{x\+Offset}{ = {\ttfamily 0}, }\item[{double}]{y\+Offset}{ = {\ttfamily 0}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\Hypertarget{class_scott_plot_1_1_generate_a919372de48bb364eae726e28c1a67438}\index{ScottPlot.Generate@{ScottPlot.Generate}!RandomHue@{RandomHue}}
+\index{RandomHue@{RandomHue}!ScottPlot.Generate@{ScottPlot.Generate}}
+\doxysubsubsection{\texorpdfstring{RandomHue()}{RandomHue()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_generate_a919372de48bb364eae726e28c1a67438} 
+static \mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} Scott\+Plot.\+Generate.\+Random\+Hue (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_scott_plot_1_1_generate_a31a9a54433652e2d044a39727a06c128}\index{ScottPlot.Generate@{ScottPlot.Generate}!RandomInteger@{RandomInteger}}
+\index{RandomInteger@{RandomInteger}!ScottPlot.Generate@{ScottPlot.Generate}}
+\doxysubsubsection{\texorpdfstring{RandomInteger()}{RandomInteger()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_generate_a31a9a54433652e2d044a39727a06c128} 
+static int Scott\+Plot.\+Generate.\+Random\+Integer (\begin{DoxyParamCaption}\item[{int}]{max}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Random\+Sample integer between zero (inclusive) and {\itshape max}  (exclusive) 
+
+\Hypertarget{class_scott_plot_1_1_generate_aad02bb77f208d02be7c6d9e5716950d8}\index{ScottPlot.Generate@{ScottPlot.Generate}!RandomInteger@{RandomInteger}}
+\index{RandomInteger@{RandomInteger}!ScottPlot.Generate@{ScottPlot.Generate}}
+\doxysubsubsection{\texorpdfstring{RandomInteger()}{RandomInteger()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_generate_aad02bb77f208d02be7c6d9e5716950d8} 
+static int Scott\+Plot.\+Generate.\+Random\+Integer (\begin{DoxyParamCaption}\item[{int}]{min}{, }\item[{int}]{max}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Random\+Sample integer between {\itshape min}  (inclusive) and {\itshape max}  (exclusive) 
+
+\Hypertarget{class_scott_plot_1_1_generate_ac82debbab0d1a05aa8049754fecb2d2b}\index{ScottPlot.Generate@{ScottPlot.Generate}!RandomIntegers@{RandomIntegers}}
+\index{RandomIntegers@{RandomIntegers}!ScottPlot.Generate@{ScottPlot.Generate}}
+\doxysubsubsection{\texorpdfstring{RandomIntegers()}{RandomIntegers()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_generate_ac82debbab0d1a05aa8049754fecb2d2b} 
+static int\mbox{[}$\,$\mbox{]} Scott\+Plot.\+Generate.\+Random\+Integers (\begin{DoxyParamCaption}\item[{int}]{count}{, }\item[{int}]{max}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Random\+Sample integers between zero (inclusive) and {\itshape max}  (exclusive) 
+
+\Hypertarget{class_scott_plot_1_1_generate_a1390f9dc592a26ddf7ab3656edfe01a9}\index{ScottPlot.Generate@{ScottPlot.Generate}!RandomIntegers@{RandomIntegers}}
+\index{RandomIntegers@{RandomIntegers}!ScottPlot.Generate@{ScottPlot.Generate}}
+\doxysubsubsection{\texorpdfstring{RandomIntegers()}{RandomIntegers()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_generate_a1390f9dc592a26ddf7ab3656edfe01a9} 
+static int\mbox{[}$\,$\mbox{]} Scott\+Plot.\+Generate.\+Random\+Integers (\begin{DoxyParamCaption}\item[{int}]{count}{, }\item[{int}]{min}{, }\item[{int}]{max}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Random\+Sample integers between {\itshape min}  (inclusive) and {\itshape max}  (exclusive) 
+
+\Hypertarget{class_scott_plot_1_1_generate_a57b4b6966379f856d895609f1d36a151}\index{ScottPlot.Generate@{ScottPlot.Generate}!RandomLine@{RandomLine}}
+\index{RandomLine@{RandomLine}!ScottPlot.Generate@{ScottPlot.Generate}}
+\doxysubsubsection{\texorpdfstring{RandomLine()}{RandomLine()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_generate_a57b4b6966379f856d895609f1d36a151} 
+static \mbox{\hyperlink{struct_scott_plot_1_1_coordinate_line}{Coordinate\+Line}} Scott\+Plot.\+Generate.\+Random\+Line (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\Hypertarget{class_scott_plot_1_1_generate_ab675a528cba73acdf9eece2ed0dca53f}\index{ScottPlot.Generate@{ScottPlot.Generate}!RandomLinePattern@{RandomLinePattern}}
+\index{RandomLinePattern@{RandomLinePattern}!ScottPlot.Generate@{ScottPlot.Generate}}
+\doxysubsubsection{\texorpdfstring{RandomLinePattern()}{RandomLinePattern()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_generate_ab675a528cba73acdf9eece2ed0dca53f} 
+static \mbox{\hyperlink{namespace_scott_plot_a625917eb44cadb4de90991e525db6ab5}{Line\+Pattern}} Scott\+Plot.\+Generate.\+Random\+Line\+Pattern (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\Hypertarget{class_scott_plot_1_1_generate_ad76ccfda509eb44efa87898b48ef8cd8}\index{ScottPlot.Generate@{ScottPlot.Generate}!RandomLocation@{RandomLocation}}
+\index{RandomLocation@{RandomLocation}!ScottPlot.Generate@{ScottPlot.Generate}}
+\doxysubsubsection{\texorpdfstring{RandomLocation()}{RandomLocation()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_generate_ad76ccfda509eb44efa87898b48ef8cd8} 
+static \mbox{\hyperlink{struct_scott_plot_1_1_coordinates}{Coordinates}} Scott\+Plot.\+Generate.\+Random\+Location (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\Hypertarget{class_scott_plot_1_1_generate_a6e8d3887287ad4c8098c46f5fa353e77}\index{ScottPlot.Generate@{ScottPlot.Generate}!RandomLocation@{RandomLocation}}
+\index{RandomLocation@{RandomLocation}!ScottPlot.Generate@{ScottPlot.Generate}}
+\doxysubsubsection{\texorpdfstring{RandomLocation()}{RandomLocation()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_generate_a6e8d3887287ad4c8098c46f5fa353e77} 
+static \mbox{\hyperlink{struct_scott_plot_1_1_coordinates}{Coordinates}} Scott\+Plot.\+Generate.\+Random\+Location (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}}}]{limits}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\Hypertarget{class_scott_plot_1_1_generate_a7a63705cc7a6828fbb8f406e0266c1b0}\index{ScottPlot.Generate@{ScottPlot.Generate}!RandomLocations@{RandomLocations}}
+\index{RandomLocations@{RandomLocations}!ScottPlot.Generate@{ScottPlot.Generate}}
+\doxysubsubsection{\texorpdfstring{RandomLocations()}{RandomLocations()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_generate_a7a63705cc7a6828fbb8f406e0266c1b0} 
+static \mbox{\hyperlink{struct_scott_plot_1_1_coordinates}{Coordinates}}\mbox{[}$\,$\mbox{]} Scott\+Plot.\+Generate.\+Random\+Locations (\begin{DoxyParamCaption}\item[{int}]{count}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\Hypertarget{class_scott_plot_1_1_generate_ad25d841560393f5e6171723effef0fe5}\index{ScottPlot.Generate@{ScottPlot.Generate}!RandomLocations@{RandomLocations}}
+\index{RandomLocations@{RandomLocations}!ScottPlot.Generate@{ScottPlot.Generate}}
+\doxysubsubsection{\texorpdfstring{RandomLocations()}{RandomLocations()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_generate_ad25d841560393f5e6171723effef0fe5} 
+static \mbox{\hyperlink{struct_scott_plot_1_1_coordinates}{Coordinates}}\mbox{[}$\,$\mbox{]} Scott\+Plot.\+Generate.\+Random\+Locations (\begin{DoxyParamCaption}\item[{int}]{count}{, }\item[{\mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}}}]{limits}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\Hypertarget{class_scott_plot_1_1_generate_ad1c25c708ba88ae5bf5191a3c98c0eed}\index{ScottPlot.Generate@{ScottPlot.Generate}!RandomMarkerShape@{RandomMarkerShape}}
+\index{RandomMarkerShape@{RandomMarkerShape}!ScottPlot.Generate@{ScottPlot.Generate}}
+\doxysubsubsection{\texorpdfstring{RandomMarkerShape()}{RandomMarkerShape()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_generate_ad1c25c708ba88ae5bf5191a3c98c0eed} 
+static \mbox{\hyperlink{namespace_scott_plot_aac856b9cf151418c331a7b848724d1f7}{Marker\+Shape}} Scott\+Plot.\+Generate.\+Random\+Marker\+Shape (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\Hypertarget{class_scott_plot_1_1_generate_a83a531f0819c66ea878ed913e04a0026}\index{ScottPlot.Generate@{ScottPlot.Generate}!RandomNormal@{RandomNormal}}
+\index{RandomNormal@{RandomNormal}!ScottPlot.Generate@{ScottPlot.Generate}}
+\doxysubsubsection{\texorpdfstring{RandomNormal()}{RandomNormal()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_generate_a83a531f0819c66ea878ed913e04a0026} 
+static double\mbox{[}$\,$\mbox{]} Scott\+Plot.\+Generate.\+Random\+Normal (\begin{DoxyParamCaption}\item[{int}]{count}{, }\item[{double}]{mean}{ = {\ttfamily 0}, }\item[{double}]{std\+Dev}{ = {\ttfamily 1}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\Hypertarget{class_scott_plot_1_1_generate_add52ee62fd7291500b2befd0c0ab3ae1}\index{ScottPlot.Generate@{ScottPlot.Generate}!RandomNormalNumber@{RandomNormalNumber}}
+\index{RandomNormalNumber@{RandomNormalNumber}!ScottPlot.Generate@{ScottPlot.Generate}}
+\doxysubsubsection{\texorpdfstring{RandomNormalNumber()}{RandomNormalNumber()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_generate_add52ee62fd7291500b2befd0c0ab3ae1} 
+static double Scott\+Plot.\+Generate.\+Random\+Normal\+Number (\begin{DoxyParamCaption}\item[{double}]{mean}{ = {\ttfamily 0}, }\item[{double}]{std\+Dev}{ = {\ttfamily 1}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Return a number normally distributed around the given {\itshape mean}  according to the {\itshape std\+Dev}  standard deviation. 
+
+\Hypertarget{class_scott_plot_1_1_generate_a4402f984ca3b118929a64aafb1047563}\index{ScottPlot.Generate@{ScottPlot.Generate}!RandomNumber@{RandomNumber}}
+\index{RandomNumber@{RandomNumber}!ScottPlot.Generate@{ScottPlot.Generate}}
+\doxysubsubsection{\texorpdfstring{RandomNumber()}{RandomNumber()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_generate_a4402f984ca3b118929a64aafb1047563} 
+static double Scott\+Plot.\+Generate.\+Random\+Number (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Random\+Sample integer between 0 (inclusive) and 1 (exclusive) 
+
+\Hypertarget{class_scott_plot_1_1_generate_abe6bf0aa2d636307ad2c967c8556b811}\index{ScottPlot.Generate@{ScottPlot.Generate}!RandomNumber@{RandomNumber}}
+\index{RandomNumber@{RandomNumber}!ScottPlot.Generate@{ScottPlot.Generate}}
+\doxysubsubsection{\texorpdfstring{RandomNumber()}{RandomNumber()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_generate_abe6bf0aa2d636307ad2c967c8556b811} 
+static double Scott\+Plot.\+Generate.\+Random\+Number (\begin{DoxyParamCaption}\item[{double}]{max}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Random\+Sample integer between 0 (inclusive) and {\itshape max}  (exclusive) 
+
+\Hypertarget{class_scott_plot_1_1_generate_a6f13d1c4f333d7c3d34261253826a05a}\index{ScottPlot.Generate@{ScottPlot.Generate}!RandomNumber@{RandomNumber}}
+\index{RandomNumber@{RandomNumber}!ScottPlot.Generate@{ScottPlot.Generate}}
+\doxysubsubsection{\texorpdfstring{RandomNumber()}{RandomNumber()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_generate_a6f13d1c4f333d7c3d34261253826a05a} 
+static double Scott\+Plot.\+Generate.\+Random\+Number (\begin{DoxyParamCaption}\item[{double}]{min}{, }\item[{double}]{max}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Random\+Sample integer between {\itshape min}  (inclusive) and {\itshape max}  (exclusive) 
+
+\Hypertarget{class_scott_plot_1_1_generate_a07077d719af4379d2e7e8f5fe797dd62}\index{ScottPlot.Generate@{ScottPlot.Generate}!RandomNumbers@{RandomNumbers}}
+\index{RandomNumbers@{RandomNumbers}!ScottPlot.Generate@{ScottPlot.Generate}}
+\doxysubsubsection{\texorpdfstring{RandomNumbers()}{RandomNumbers()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_generate_a07077d719af4379d2e7e8f5fe797dd62} 
+static double\mbox{[}$\,$\mbox{]} Scott\+Plot.\+Generate.\+Random\+Numbers (\begin{DoxyParamCaption}\item[{int}]{count}{, }\item[{double}]{max}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Random numbers between zero (inclusive) and {\itshape max}  (exclusive) 
+
+\Hypertarget{class_scott_plot_1_1_generate_a97ccf80b06318082bbb543173de44c1c}\index{ScottPlot.Generate@{ScottPlot.Generate}!RandomNumbers@{RandomNumbers}}
+\index{RandomNumbers@{RandomNumbers}!ScottPlot.Generate@{ScottPlot.Generate}}
+\doxysubsubsection{\texorpdfstring{RandomNumbers()}{RandomNumbers()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_generate_a97ccf80b06318082bbb543173de44c1c} 
+static double\mbox{[}$\,$\mbox{]} Scott\+Plot.\+Generate.\+Random\+Numbers (\begin{DoxyParamCaption}\item[{int}]{count}{, }\item[{double}]{min}{, }\item[{double}]{max}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Random numbers between {\itshape min}  (inclusive) and {\itshape max}  (exclusive) 
+
+\Hypertarget{class_scott_plot_1_1_generate_a4a35830c9eb2126667dae1eb4fa06b72}\index{ScottPlot.Generate@{ScottPlot.Generate}!RandomOHLC@{RandomOHLC}}
+\index{RandomOHLC@{RandomOHLC}!ScottPlot.Generate@{ScottPlot.Generate}}
+\doxysubsubsection{\texorpdfstring{RandomOHLC()}{RandomOHLC()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_generate_a4a35830c9eb2126667dae1eb4fa06b72} 
+static \mbox{\hyperlink{struct_scott_plot_1_1_o_h_l_c}{OHLC}} Scott\+Plot.\+Generate.\+Random\+OHLC (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\Hypertarget{class_scott_plot_1_1_generate_a51257cbd039934e72c7ba87728098dc4}\index{ScottPlot.Generate@{ScottPlot.Generate}!RandomOHLC@{RandomOHLC}}
+\index{RandomOHLC@{RandomOHLC}!ScottPlot.Generate@{ScottPlot.Generate}}
+\doxysubsubsection{\texorpdfstring{RandomOHLC()}{RandomOHLC()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_generate_a51257cbd039934e72c7ba87728098dc4} 
+static \mbox{\hyperlink{struct_scott_plot_1_1_o_h_l_c}{OHLC}} Scott\+Plot.\+Generate.\+Random\+OHLC (\begin{DoxyParamCaption}\item[{System.\+Date\+Time}]{date}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\Hypertarget{class_scott_plot_1_1_generate_a8a03a5c2d921c29a30ba747e4a628bad}\index{ScottPlot.Generate@{ScottPlot.Generate}!RandomOHLCs@{RandomOHLCs}}
+\index{RandomOHLCs@{RandomOHLCs}!ScottPlot.Generate@{ScottPlot.Generate}}
+\doxysubsubsection{\texorpdfstring{RandomOHLCs()}{RandomOHLCs()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_generate_a8a03a5c2d921c29a30ba747e4a628bad} 
+static List$<$ \mbox{\hyperlink{struct_scott_plot_1_1_o_h_l_c}{OHLC}} $>$ Scott\+Plot.\+Generate.\+Random\+OHLCs (\begin{DoxyParamCaption}\item[{int}]{count}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\Hypertarget{class_scott_plot_1_1_generate_a8c1d463cb10d0f31bf178b1d176179b0}\index{ScottPlot.Generate@{ScottPlot.Generate}!RandomOHLCs@{RandomOHLCs}}
+\index{RandomOHLCs@{RandomOHLCs}!ScottPlot.Generate@{ScottPlot.Generate}}
+\doxysubsubsection{\texorpdfstring{RandomOHLCs()}{RandomOHLCs()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_generate_a8c1d463cb10d0f31bf178b1d176179b0} 
+static List$<$ \mbox{\hyperlink{struct_scott_plot_1_1_o_h_l_c}{OHLC}} $>$ Scott\+Plot.\+Generate.\+Random\+OHLCs (\begin{DoxyParamCaption}\item[{int}]{count}{, }\item[{System.\+Date\+Time}]{start\+Date}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\Hypertarget{class_scott_plot_1_1_generate_af639c6130b190df59083118ba75d9baa}\index{ScottPlot.Generate@{ScottPlot.Generate}!RandomSample@{RandomSample}}
+\index{RandomSample@{RandomSample}!ScottPlot.Generate@{ScottPlot.Generate}}
+\doxysubsubsection{\texorpdfstring{RandomSample()}{RandomSample()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_generate_af639c6130b190df59083118ba75d9baa} 
+static double\mbox{[}$\,$\mbox{]} Scott\+Plot.\+Generate.\+Random\+Sample (\begin{DoxyParamCaption}\item[{int}]{count}{, }\item[{double}]{min}{ = {\ttfamily 0}, }\item[{double}]{max}{ = {\ttfamily 1}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Return an array of {\itshape count}  random values from {\itshape min}  to {\itshape max}  
+
+\Hypertarget{class_scott_plot_1_1_generate_ae4c7fd807ce88224b5413c79b895cf41}\index{ScottPlot.Generate@{ScottPlot.Generate}!RandomString@{RandomString}}
+\index{RandomString@{RandomString}!ScottPlot.Generate@{ScottPlot.Generate}}
+\doxysubsubsection{\texorpdfstring{RandomString()}{RandomString()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_generate_ae4c7fd807ce88224b5413c79b895cf41} 
+static string Scott\+Plot.\+Generate.\+Random\+String (\begin{DoxyParamCaption}\item[{int}]{length}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\Hypertarget{class_scott_plot_1_1_generate_a68c3ae299d2c256b95bfb15510a43dce}\index{ScottPlot.Generate@{ScottPlot.Generate}!RandomWalk@{RandomWalk}}
+\index{RandomWalk@{RandomWalk}!ScottPlot.Generate@{ScottPlot.Generate}}
+\doxysubsubsection{\texorpdfstring{RandomWalk()}{RandomWalk()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_generate_a68c3ae299d2c256b95bfb15510a43dce} 
+static double\mbox{[}$\,$\mbox{]} Scott\+Plot.\+Generate.\+Random\+Walk (\begin{DoxyParamCaption}\item[{int}]{count}{, }\item[{double}]{mult}{ = {\ttfamily 1}, }\item[{double}]{offset}{ = {\ttfamily 0}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Return a series of values starting with {\itshape offset}  and each randomly deviating from the previous by at most {\itshape mult} . 
+
+\Hypertarget{class_scott_plot_1_1_generate_a0d7aad96c8ec1e8fd9b25289f667e71e}\index{ScottPlot.Generate@{ScottPlot.Generate}!Range@{Range}}
+\index{Range@{Range}!ScottPlot.Generate@{ScottPlot.Generate}}
+\doxysubsubsection{\texorpdfstring{Range()}{Range()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_generate_a0d7aad96c8ec1e8fd9b25289f667e71e} 
+static double\mbox{[}$\,$\mbox{]} Scott\+Plot.\+Generate.\+Range (\begin{DoxyParamCaption}\item[{double}]{start}{, }\item[{double}]{stop}{, }\item[{double}]{step}{ = {\ttfamily 1}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Return values from {\itshape start}  to {\itshape stop}  (inclusive) separated by {\itshape step}  
+
+\Hypertarget{class_scott_plot_1_1_generate_a8cf4de8ca80d2123be501f897f7b9f97}\index{ScottPlot.Generate@{ScottPlot.Generate}!RangeEnumerable@{RangeEnumerable}}
+\index{RangeEnumerable@{RangeEnumerable}!ScottPlot.Generate@{ScottPlot.Generate}}
+\doxysubsubsection{\texorpdfstring{RangeEnumerable()}{RangeEnumerable()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_generate_a8cf4de8ca80d2123be501f897f7b9f97} 
+static \mbox{\hyperlink{class_i_enumerable}{IEnumerable}}$<$ double $>$ Scott\+Plot.\+Generate.\+Range\+Enumerable (\begin{DoxyParamCaption}\item[{double}]{start}{, }\item[{double}]{stop}{, }\item[{double}]{step}{ = {\ttfamily 1}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Return values from {\itshape start}  to {\itshape stop}  (inclusive) separated by {\itshape step}  
+
+\Hypertarget{class_scott_plot_1_1_generate_afda53aa5366d4f5e72956c4198be5a82}\index{ScottPlot.Generate@{ScottPlot.Generate}!Repeating@{Repeating}}
+\index{Repeating@{Repeating}!ScottPlot.Generate@{ScottPlot.Generate}}
+\doxysubsubsection{\texorpdfstring{Repeating()}{Repeating()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_generate_afda53aa5366d4f5e72956c4198be5a82} 
+static double\mbox{[}$\,$\mbox{]} Scott\+Plot.\+Generate.\+Repeating (\begin{DoxyParamCaption}\item[{int}]{count}{, }\item[{double}]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\Hypertarget{class_scott_plot_1_1_generate_a94f366b86d8cf526b00a87ea4f7f3548}\index{ScottPlot.Generate@{ScottPlot.Generate}!SampleVectors@{SampleVectors}}
+\index{SampleVectors@{SampleVectors}!ScottPlot.Generate@{ScottPlot.Generate}}
+\doxysubsubsection{\texorpdfstring{SampleVectors()}{SampleVectors()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_generate_a94f366b86d8cf526b00a87ea4f7f3548} 
+static \mbox{\hyperlink{namespace_scott_plot_a2501491e0769bfdb137a8f53d8f28372}{Rooted\+Coordinate\+Vector}}\mbox{[}$\,$\mbox{]} Scott\+Plot.\+Generate.\+Sample\+Vectors (\begin{DoxyParamCaption}\item[{int}]{columns}{ = {\ttfamily 10}, }\item[{int}]{rows}{ = {\ttfamily 10}, }\item[{double}]{oscillations}{ = {\ttfamily 1}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\Hypertarget{class_scott_plot_1_1_generate_a58afd799bbebf7d26d3a641850c89b68}\index{ScottPlot.Generate@{ScottPlot.Generate}!Sin@{Sin}}
+\index{Sin@{Sin}!ScottPlot.Generate@{ScottPlot.Generate}}
+\doxysubsubsection{\texorpdfstring{Sin()}{Sin()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_generate_a58afd799bbebf7d26d3a641850c89b68} 
+static double\mbox{[}$\,$\mbox{]} Scott\+Plot.\+Generate.\+Sin (\begin{DoxyParamCaption}\item[{int}]{count}{ = {\ttfamily 51}, }\item[{double}]{mult}{ = {\ttfamily 1}, }\item[{double}]{offset}{ = {\ttfamily 0}, }\item[{double}]{oscillations}{ = {\ttfamily 1}, }\item[{double}]{phase}{ = {\ttfamily 0}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Return an array of sine waves between -\/1 and 1. Values are multiplied by {\itshape mult}  then shifted by {\itshape offset} . Phase shifts the sine wave horizontally between 0 and 2 Pi. 
+
+\Hypertarget{class_scott_plot_1_1_generate_a231db562c50c704f5416bbd5e48875be}\index{ScottPlot.Generate@{ScottPlot.Generate}!Sin2D@{Sin2D}}
+\index{Sin2D@{Sin2D}!ScottPlot.Generate@{ScottPlot.Generate}}
+\doxysubsubsection{\texorpdfstring{Sin2D()}{Sin2D()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_generate_a231db562c50c704f5416bbd5e48875be} 
+static double\mbox{[},\mbox{]} Scott\+Plot.\+Generate.\+Sin2D (\begin{DoxyParamCaption}\item[{int}]{width}{, }\item[{int}]{height}{, }\item[{double}]{x\+Period}{ = {\ttfamily \+:\+:2}, }\item[{double}]{y\+Period}{ = {\ttfamily \+:\+:2}, }\item[{double}]{multiple}{ = {\ttfamily 100}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Generates a 2D sine pattern. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & \\
+\hline
+{\em height} & \\
+\hline
+{\em x\+Period} & Frequency factor in x direction.\\
+\hline
+{\em y\+Period} & Frequency factor in y direction.\\
+\hline
+{\em multiple} & Intensity factor.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_scott_plot_1_1_generate_af19586902dd6bee245a7506775fd4a31}\index{ScottPlot.Generate@{ScottPlot.Generate}!SquareWave@{SquareWave}}
+\index{SquareWave@{SquareWave}!ScottPlot.Generate@{ScottPlot.Generate}}
+\doxysubsubsection{\texorpdfstring{SquareWave()}{SquareWave()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_generate_af19586902dd6bee245a7506775fd4a31} 
+static double\mbox{[}$\,$\mbox{]} Scott\+Plot.\+Generate.\+Square\+Wave (\begin{DoxyParamCaption}\item[{uint}]{cycles}{ = {\ttfamily 20}, }\item[{uint}]{points\+Per\+Cycle}{ = {\ttfamily 1\+\_\+000}, }\item[{double}]{duty}{ = {\ttfamily \+:\+:5}, }\item[{double}]{low}{ = {\ttfamily 0}, }\item[{double}]{high}{ = {\ttfamily 1}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\Hypertarget{class_scott_plot_1_1_generate_a626a6287ff9c2d36db5a5e728b874a0b}\index{ScottPlot.Generate@{ScottPlot.Generate}!Zeros@{Zeros}}
+\index{Zeros@{Zeros}!ScottPlot.Generate@{ScottPlot.Generate}}
+\doxysubsubsection{\texorpdfstring{Zeros()}{Zeros()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_generate_a626a6287ff9c2d36db5a5e728b874a0b} 
+static double\mbox{[}$\,$\mbox{]} Scott\+Plot.\+Generate.\+Zeros (\begin{DoxyParamCaption}\item[{int}]{count}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_scott_plot_1_1_generate_aaddd37e18f8afff10761b4f2dd826c36}\index{ScottPlot.Generate@{ScottPlot.Generate}!RandomWalker@{RandomWalker}}
+\index{RandomWalker@{RandomWalker}!ScottPlot.Generate@{ScottPlot.Generate}}
+\doxysubsubsection{\texorpdfstring{RandomWalker}{RandomWalker}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_generate_aaddd37e18f8afff10761b4f2dd826c36} 
+readonly Data\+Generators.\+Random\+Walker Scott\+Plot.\+Generate.\+Random\+Walker = new()\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{class_scott_plot_1_1_generate_a7ee275badd4f4b0edaec521bd8888c88}\index{ScottPlot.Generate@{ScottPlot.Generate}!RandomData@{RandomData}}
+\index{RandomData@{RandomData}!ScottPlot.Generate@{ScottPlot.Generate}}
+\doxysubsubsection{\texorpdfstring{RandomData}{RandomData}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_generate_a7ee275badd4f4b0edaec521bd8888c88} 
+\mbox{\hyperlink{class_scott_plot_1_1_random_data_generator}{Random\+Data\+Generator}} Scott\+Plot.\+Generate.\+Random\+Data = new(0)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\mbox{\hyperlink{_generate_8cs}{Generate.\+cs}}\end{DoxyCompactItemize}

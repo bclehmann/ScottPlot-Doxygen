@@ -1,0 +1,289 @@
+\doxysection{Scott\+Plot.\+Plottables.\+Marker Class Reference}
+\hypertarget{class_scott_plot_1_1_plottables_1_1_marker}{}\label{class_scott_plot_1_1_plottables_1_1_marker}\index{ScottPlot.Plottables.Marker@{ScottPlot.Plottables.Marker}}
+Inheritance diagram for Scott\+Plot.\+Plottables.\+Marker\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_scott_plot_1_1_plottables_1_1_marker}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_marker_a12fbd0697b855fa7bc5bfbdadd23d3de}{Get\+Axis\+Limits}} ()
+\begin{DoxyCompactList}\small\item\em Return the 2D area (in coordinate space) occupied by the data contained in this plottable. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_marker_a51d7a95a496a8a45aa38e062035463cc}{Render}} (Render\+Pack rp)
+\begin{DoxyCompactList}\small\item\em Draw the data from this plottable into the data area defined in the \doxylink{class_scott_plot_1_1_axes}{Axes}. By default the surface is already clipped to the data area, but this can be cleared inside the plottable. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable}{Scott\+Plot.\+IPlottable}}}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_marker_a5fcd157af44ca8edf531ba4cba1386bd}{X}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+double \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_marker_a117d9778ee9215a8483363edd1fde470}{Y}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_coordinates}{Coordinates}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_marker_a6c1b49f18c4123a8ae4cf344b9ec88cf}{Location}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_coordinates}{Coordinates}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_marker_a2a76abd36616522a64341a4030f6a36c}{Position}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_coordinates}{Coordinates}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_marker_afa34aaa6eed9f24a16a94e33f7823d27}{Coordinates}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+string \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_marker_af731f35d8286b96a189f47326bb96797}{Label}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+string \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_marker_a7e3bbd5927678ba5819ab7989c8d1ca9}{Legend\+Text}} = string.\+Empty\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em If populated, this text appears in the legend. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_marker_a583badfd6b643a7e76194aca538a0fb7}{Is\+Visible}} = true\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Toggles whether this plottable is shown and contributes to the automatic axis limit detection. The calling method will check this variable (it does not need to be checked inside the Render method). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_scott_plot_1_1_marker_style}{Marker\+Style}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_marker_a184c847a4afed752d6248b9215d324fc}{Marker\+Style}} = new()\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{namespace_scott_plot_aac856b9cf151418c331a7b848724d1f7}{Marker\+Shape}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_marker_af7145e5b7adcd6ba2022dae34ff5377d}{Marker\+Shape}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_marker_a6b31649b74578d1b210590a1f40b1e68}{Marker\+Size}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_marker_a34a72c7cdbf9014dd4a558171facef5c}{Marker\+Fill\+Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_marker_a32c485ae036d97eca2d6e0f198720890}{Marker\+Line\+Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_marker_a5f00f573a2aa9e251debb9eb966b8ccf}{Marker\+Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_marker_af7c4373bf04a3b60c8bcce6d82fad906}{Marker\+Line\+Width}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_marker_ace011a25da5513d1441c0c877385962e}{Size}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_marker_a84389aaae4a9d90c395972e186021a6a}{Line\+Width}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{namespace_scott_plot_aac856b9cf151418c331a7b848724d1f7}{Marker\+Shape}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_marker_a5dc66d461eee6c63f6786490ace75b2f}{Shape}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_marker_a3f2de91e74b72b8270a6c1f80c2ab0b1}{Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{interface_scott_plot_1_1_i_axes}{IAxes}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_marker_a9fa5fa42a5c6c60dcf15a58201458c24}{Axes}} = new \mbox{\hyperlink{class_scott_plot_1_1_axes}{Axes}}()\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em This object performs coordinate/pixel translation at render time based on the latest data area. It stores the axes to use for this plottable and also the data area (in pixels) updated just before each render. If this object is null it will be constructed using the default X and Y axes at render time. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_enumerable}{IEnumerable}}$<$ \mbox{\hyperlink{class_scott_plot_1_1_legend_item}{Legend\+Item}} $>$ \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_marker_af3838789695cac66129d047995848f76}{Legend\+Items}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Items which will appear in the legend. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable}{Scott\+Plot.\+IPlottable}}}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{interface_scott_plot_1_1_i_has_marker}{Scott\+Plot.\+IHas\+Marker}}}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{interface_scott_plot_1_1_i_has_legend_text}{Scott\+Plot.\+IHas\+Legend\+Text}}}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_marker_a12fbd0697b855fa7bc5bfbdadd23d3de}\index{ScottPlot.Plottables.Marker@{ScottPlot.Plottables.Marker}!GetAxisLimits@{GetAxisLimits}}
+\index{GetAxisLimits@{GetAxisLimits}!ScottPlot.Plottables.Marker@{ScottPlot.Plottables.Marker}}
+\doxysubsubsection{\texorpdfstring{GetAxisLimits()}{GetAxisLimits()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_marker_a12fbd0697b855fa7bc5bfbdadd23d3de} 
+\mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}} Scott\+Plot.\+Plottables.\+Marker.\+Get\+Axis\+Limits (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Return the 2D area (in coordinate space) occupied by the data contained in this plottable. 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable_a2e455cf76f9e8bc3187900b1a90487c3}{Scott\+Plot.\+IPlottable}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_marker_a51d7a95a496a8a45aa38e062035463cc}\index{ScottPlot.Plottables.Marker@{ScottPlot.Plottables.Marker}!Render@{Render}}
+\index{Render@{Render}!ScottPlot.Plottables.Marker@{ScottPlot.Plottables.Marker}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_marker_a51d7a95a496a8a45aa38e062035463cc} 
+virtual void Scott\+Plot.\+Plottables.\+Marker.\+Render (\begin{DoxyParamCaption}\item[{Render\+Pack}]{rp}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Draw the data from this plottable into the data area defined in the \doxylink{class_scott_plot_1_1_axes}{Axes}. By default the surface is already clipped to the data area, but this can be cleared inside the plottable. 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable_a11d2487f1d7628e019a09748d876c289}{Scott\+Plot.\+IPlottable}}.
+
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_marker_a9fa5fa42a5c6c60dcf15a58201458c24}\index{ScottPlot.Plottables.Marker@{ScottPlot.Plottables.Marker}!Axes@{Axes}}
+\index{Axes@{Axes}!ScottPlot.Plottables.Marker@{ScottPlot.Plottables.Marker}}
+\doxysubsubsection{\texorpdfstring{Axes}{Axes}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_marker_a9fa5fa42a5c6c60dcf15a58201458c24} 
+\mbox{\hyperlink{interface_scott_plot_1_1_i_axes}{IAxes}} Scott\+Plot.\+Plottables.\+Marker.\+Axes = new \mbox{\hyperlink{class_scott_plot_1_1_axes}{Axes}}()\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+This object performs coordinate/pixel translation at render time based on the latest data area. It stores the axes to use for this plottable and also the data area (in pixels) updated just before each render. If this object is null it will be constructed using the default X and Y axes at render time. 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable_aa68bc5153a673a7cd4a68f93da377d0a}{Scott\+Plot.\+IPlottable}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_marker_a3f2de91e74b72b8270a6c1f80c2ab0b1}\index{ScottPlot.Plottables.Marker@{ScottPlot.Plottables.Marker}!Color@{Color}}
+\index{Color@{Color}!ScottPlot.Plottables.Marker@{ScottPlot.Plottables.Marker}}
+\doxysubsubsection{\texorpdfstring{Color}{Color}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_marker_a3f2de91e74b72b8270a6c1f80c2ab0b1} 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} Scott\+Plot.\+Plottables.\+Marker.\+Color\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_marker_afa34aaa6eed9f24a16a94e33f7823d27}\index{ScottPlot.Plottables.Marker@{ScottPlot.Plottables.Marker}!Coordinates@{Coordinates}}
+\index{Coordinates@{Coordinates}!ScottPlot.Plottables.Marker@{ScottPlot.Plottables.Marker}}
+\doxysubsubsection{\texorpdfstring{Coordinates}{Coordinates}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_marker_afa34aaa6eed9f24a16a94e33f7823d27} 
+\mbox{\hyperlink{struct_scott_plot_1_1_coordinates}{Coordinates}} Scott\+Plot.\+Plottables.\+Marker.\+Coordinates\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_marker_a583badfd6b643a7e76194aca538a0fb7}\index{ScottPlot.Plottables.Marker@{ScottPlot.Plottables.Marker}!IsVisible@{IsVisible}}
+\index{IsVisible@{IsVisible}!ScottPlot.Plottables.Marker@{ScottPlot.Plottables.Marker}}
+\doxysubsubsection{\texorpdfstring{IsVisible}{IsVisible}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_marker_a583badfd6b643a7e76194aca538a0fb7} 
+bool Scott\+Plot.\+Plottables.\+Marker.\+Is\+Visible = true\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Toggles whether this plottable is shown and contributes to the automatic axis limit detection. The calling method will check this variable (it does not need to be checked inside the Render method). 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable_abbe75ba55a332d695313ccb5dc780923}{Scott\+Plot.\+IPlottable}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_marker_af731f35d8286b96a189f47326bb96797}\index{ScottPlot.Plottables.Marker@{ScottPlot.Plottables.Marker}!Label@{Label}}
+\index{Label@{Label}!ScottPlot.Plottables.Marker@{ScottPlot.Plottables.Marker}}
+\doxysubsubsection{\texorpdfstring{Label}{Label}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_marker_af731f35d8286b96a189f47326bb96797} 
+string Scott\+Plot.\+Plottables.\+Marker.\+Label\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_marker_af3838789695cac66129d047995848f76}\index{ScottPlot.Plottables.Marker@{ScottPlot.Plottables.Marker}!LegendItems@{LegendItems}}
+\index{LegendItems@{LegendItems}!ScottPlot.Plottables.Marker@{ScottPlot.Plottables.Marker}}
+\doxysubsubsection{\texorpdfstring{LegendItems}{LegendItems}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_marker_af3838789695cac66129d047995848f76} 
+\mbox{\hyperlink{class_i_enumerable}{IEnumerable}}$<$\mbox{\hyperlink{class_scott_plot_1_1_legend_item}{Legend\+Item}}$>$ Scott\+Plot.\+Plottables.\+Marker.\+Legend\+Items\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Items which will appear in the legend. 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable_a4565f96a253f832bd9aa8033c99eff75}{Scott\+Plot.\+IPlottable}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_marker_a7e3bbd5927678ba5819ab7989c8d1ca9}\index{ScottPlot.Plottables.Marker@{ScottPlot.Plottables.Marker}!LegendText@{LegendText}}
+\index{LegendText@{LegendText}!ScottPlot.Plottables.Marker@{ScottPlot.Plottables.Marker}}
+\doxysubsubsection{\texorpdfstring{LegendText}{LegendText}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_marker_a7e3bbd5927678ba5819ab7989c8d1ca9} 
+string Scott\+Plot.\+Plottables.\+Marker.\+Legend\+Text = string.\+Empty\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+If populated, this text appears in the legend. 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_has_legend_text_ad89967a734dbda7c02217a19c17d88d8}{Scott\+Plot.\+IHas\+Legend\+Text}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_marker_a84389aaae4a9d90c395972e186021a6a}\index{ScottPlot.Plottables.Marker@{ScottPlot.Plottables.Marker}!LineWidth@{LineWidth}}
+\index{LineWidth@{LineWidth}!ScottPlot.Plottables.Marker@{ScottPlot.Plottables.Marker}}
+\doxysubsubsection{\texorpdfstring{LineWidth}{LineWidth}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_marker_a84389aaae4a9d90c395972e186021a6a} 
+float Scott\+Plot.\+Plottables.\+Marker.\+Line\+Width\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_marker_a6c1b49f18c4123a8ae4cf344b9ec88cf}\index{ScottPlot.Plottables.Marker@{ScottPlot.Plottables.Marker}!Location@{Location}}
+\index{Location@{Location}!ScottPlot.Plottables.Marker@{ScottPlot.Plottables.Marker}}
+\doxysubsubsection{\texorpdfstring{Location}{Location}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_marker_a6c1b49f18c4123a8ae4cf344b9ec88cf} 
+\mbox{\hyperlink{struct_scott_plot_1_1_coordinates}{Coordinates}} Scott\+Plot.\+Plottables.\+Marker.\+Location\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_marker_a5f00f573a2aa9e251debb9eb966b8ccf}\index{ScottPlot.Plottables.Marker@{ScottPlot.Plottables.Marker}!MarkerColor@{MarkerColor}}
+\index{MarkerColor@{MarkerColor}!ScottPlot.Plottables.Marker@{ScottPlot.Plottables.Marker}}
+\doxysubsubsection{\texorpdfstring{MarkerColor}{MarkerColor}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_marker_a5f00f573a2aa9e251debb9eb966b8ccf} 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} Scott\+Plot.\+Plottables.\+Marker.\+Marker\+Color\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_has_marker_a3e1a1b5c22ff67edc1aee2de18a06ea4}{Scott\+Plot.\+IHas\+Marker}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_marker_a34a72c7cdbf9014dd4a558171facef5c}\index{ScottPlot.Plottables.Marker@{ScottPlot.Plottables.Marker}!MarkerFillColor@{MarkerFillColor}}
+\index{MarkerFillColor@{MarkerFillColor}!ScottPlot.Plottables.Marker@{ScottPlot.Plottables.Marker}}
+\doxysubsubsection{\texorpdfstring{MarkerFillColor}{MarkerFillColor}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_marker_a34a72c7cdbf9014dd4a558171facef5c} 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} Scott\+Plot.\+Plottables.\+Marker.\+Marker\+Fill\+Color\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_has_marker_a6f7de20ca67594f0f69b2edaaa4995fe}{Scott\+Plot.\+IHas\+Marker}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_marker_a32c485ae036d97eca2d6e0f198720890}\index{ScottPlot.Plottables.Marker@{ScottPlot.Plottables.Marker}!MarkerLineColor@{MarkerLineColor}}
+\index{MarkerLineColor@{MarkerLineColor}!ScottPlot.Plottables.Marker@{ScottPlot.Plottables.Marker}}
+\doxysubsubsection{\texorpdfstring{MarkerLineColor}{MarkerLineColor}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_marker_a32c485ae036d97eca2d6e0f198720890} 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} Scott\+Plot.\+Plottables.\+Marker.\+Marker\+Line\+Color\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_has_marker_afde846e67ecac2739669b1b63f17fbce}{Scott\+Plot.\+IHas\+Marker}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_marker_af7c4373bf04a3b60c8bcce6d82fad906}\index{ScottPlot.Plottables.Marker@{ScottPlot.Plottables.Marker}!MarkerLineWidth@{MarkerLineWidth}}
+\index{MarkerLineWidth@{MarkerLineWidth}!ScottPlot.Plottables.Marker@{ScottPlot.Plottables.Marker}}
+\doxysubsubsection{\texorpdfstring{MarkerLineWidth}{MarkerLineWidth}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_marker_af7c4373bf04a3b60c8bcce6d82fad906} 
+float Scott\+Plot.\+Plottables.\+Marker.\+Marker\+Line\+Width\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_has_marker_a38d9e4be5f01c0cda2730d7ad9fa90ed}{Scott\+Plot.\+IHas\+Marker}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_marker_af7145e5b7adcd6ba2022dae34ff5377d}\index{ScottPlot.Plottables.Marker@{ScottPlot.Plottables.Marker}!MarkerShape@{MarkerShape}}
+\index{MarkerShape@{MarkerShape}!ScottPlot.Plottables.Marker@{ScottPlot.Plottables.Marker}}
+\doxysubsubsection{\texorpdfstring{MarkerShape}{MarkerShape}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_marker_af7145e5b7adcd6ba2022dae34ff5377d} 
+\mbox{\hyperlink{namespace_scott_plot_aac856b9cf151418c331a7b848724d1f7}{Marker\+Shape}} Scott\+Plot.\+Plottables.\+Marker.\+Marker\+Shape\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_has_marker_a17093f6641893022d052dc40e90998f9}{Scott\+Plot.\+IHas\+Marker}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_marker_a6b31649b74578d1b210590a1f40b1e68}\index{ScottPlot.Plottables.Marker@{ScottPlot.Plottables.Marker}!MarkerSize@{MarkerSize}}
+\index{MarkerSize@{MarkerSize}!ScottPlot.Plottables.Marker@{ScottPlot.Plottables.Marker}}
+\doxysubsubsection{\texorpdfstring{MarkerSize}{MarkerSize}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_marker_a6b31649b74578d1b210590a1f40b1e68} 
+float Scott\+Plot.\+Plottables.\+Marker.\+Marker\+Size\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_has_marker_a410d2ca405f2b5a7acd50ddb873b614b}{Scott\+Plot.\+IHas\+Marker}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_marker_a184c847a4afed752d6248b9215d324fc}\index{ScottPlot.Plottables.Marker@{ScottPlot.Plottables.Marker}!MarkerStyle@{MarkerStyle}}
+\index{MarkerStyle@{MarkerStyle}!ScottPlot.Plottables.Marker@{ScottPlot.Plottables.Marker}}
+\doxysubsubsection{\texorpdfstring{MarkerStyle}{MarkerStyle}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_marker_a184c847a4afed752d6248b9215d324fc} 
+\mbox{\hyperlink{class_scott_plot_1_1_marker_style}{Marker\+Style}} Scott\+Plot.\+Plottables.\+Marker.\+Marker\+Style = new()\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_has_marker_a0c763a0a433beea9ce112c14ac481084}{Scott\+Plot.\+IHas\+Marker}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_marker_a2a76abd36616522a64341a4030f6a36c}\index{ScottPlot.Plottables.Marker@{ScottPlot.Plottables.Marker}!Position@{Position}}
+\index{Position@{Position}!ScottPlot.Plottables.Marker@{ScottPlot.Plottables.Marker}}
+\doxysubsubsection{\texorpdfstring{Position}{Position}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_marker_a2a76abd36616522a64341a4030f6a36c} 
+\mbox{\hyperlink{struct_scott_plot_1_1_coordinates}{Coordinates}} Scott\+Plot.\+Plottables.\+Marker.\+Position\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_marker_a5dc66d461eee6c63f6786490ace75b2f}\index{ScottPlot.Plottables.Marker@{ScottPlot.Plottables.Marker}!Shape@{Shape}}
+\index{Shape@{Shape}!ScottPlot.Plottables.Marker@{ScottPlot.Plottables.Marker}}
+\doxysubsubsection{\texorpdfstring{Shape}{Shape}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_marker_a5dc66d461eee6c63f6786490ace75b2f} 
+\mbox{\hyperlink{namespace_scott_plot_aac856b9cf151418c331a7b848724d1f7}{Marker\+Shape}} Scott\+Plot.\+Plottables.\+Marker.\+Shape\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_marker_ace011a25da5513d1441c0c877385962e}\index{ScottPlot.Plottables.Marker@{ScottPlot.Plottables.Marker}!Size@{Size}}
+\index{Size@{Size}!ScottPlot.Plottables.Marker@{ScottPlot.Plottables.Marker}}
+\doxysubsubsection{\texorpdfstring{Size}{Size}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_marker_ace011a25da5513d1441c0c877385962e} 
+float Scott\+Plot.\+Plottables.\+Marker.\+Size\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_marker_a5fcd157af44ca8edf531ba4cba1386bd}\index{ScottPlot.Plottables.Marker@{ScottPlot.Plottables.Marker}!X@{X}}
+\index{X@{X}!ScottPlot.Plottables.Marker@{ScottPlot.Plottables.Marker}}
+\doxysubsubsection{\texorpdfstring{X}{X}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_marker_a5fcd157af44ca8edf531ba4cba1386bd} 
+double Scott\+Plot.\+Plottables.\+Marker.\+X\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_marker_a117d9778ee9215a8483363edd1fde470}\index{ScottPlot.Plottables.Marker@{ScottPlot.Plottables.Marker}!Y@{Y}}
+\index{Y@{Y}!ScottPlot.Plottables.Marker@{ScottPlot.Plottables.Marker}}
+\doxysubsubsection{\texorpdfstring{Y}{Y}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_marker_a117d9778ee9215a8483363edd1fde470} 
+double Scott\+Plot.\+Plottables.\+Marker.\+Y\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Plottables/Marker.\+cs\end{DoxyCompactItemize}

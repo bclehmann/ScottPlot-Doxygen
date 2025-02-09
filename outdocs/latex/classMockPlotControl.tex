@@ -1,0 +1,438 @@
+\hypertarget{classMockPlotControl}{}\doxysection{Mock\+Plot\+Control Class Reference}
+\label{classMockPlotControl}\index{MockPlotControl@{MockPlotControl}}
+
+
+A plot control that renders in-\/memory and has functionality useful for testing interactivity.  
+
+
+Inheritance diagram for Mock\+Plot\+Control\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classMockPlotControl}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classMockPlotControl_aff2ae0611641a931ba4df3c29f0821f7}{Mock\+Plot\+Control}} ()
+\item 
+float \mbox{\hyperlink{classMockPlotControl_a610dc7b66a99b8cb11e38840c91a6492}{Detect\+Display\+Scale}} ()
+\begin{DoxyCompactList}\small\item\em Determine the DPI scaling ratio of the present display. A value of 1.\+0 means no scaling, and 1.\+5 means 150\% scaling. This operation may be costly so do not call it frequently. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMockPlotControl_ae82d505694026f17089719c6357c02bc}{Refresh}} ()
+\begin{DoxyCompactList}\small\item\em Render the plot and update the image \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMockPlotControl_a7f790f8eb3600531afb74f8665656042}{Reset}} ()
+\begin{DoxyCompactList}\small\item\em Disposes the current \mbox{\hyperlink{classPlot}{Plot}} and creates a new one for the control \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMockPlotControl_a08c33fba28f25b0929862e69b4a63f03}{Reset}} (\mbox{\hyperlink{classPlot}{Plot}} plot)
+\begin{DoxyCompactList}\small\item\em Loads the given \mbox{\hyperlink{classPlot}{Plot}} into the control \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMockPlotControl_a4113e46f7d6d98ce22255ddc67d99305}{Show\+Context\+Menu}} (\mbox{\hyperlink{structPixel}{Pixel}} position)
+\begin{DoxyCompactList}\small\item\em Launch the default pop-\/up menu (typically in response to a right-\/click) at the given position in the control \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMockPlotControl_afe68558c16f474eeca50a756b1b49b7a}{Scroll\+Wheel\+Up}} (\mbox{\hyperlink{structPixel}{Pixel}} pixel)
+\item 
+void \mbox{\hyperlink{classMockPlotControl_a1073ea48e5ce36cb2dd580756a51e625}{Scroll\+Wheel\+Down}} (\mbox{\hyperlink{structPixel}{Pixel}} pixel)
+\item 
+void \mbox{\hyperlink{classMockPlotControl_a2f03301e9f6f7f3ef13b9eef59fdd0f8}{Press\+Shift}} ()
+\item 
+void \mbox{\hyperlink{classMockPlotControl_a49f8a2d4fdbea4678e9d99fd27536be7}{Release\+Shift}} ()
+\item 
+void \mbox{\hyperlink{classMockPlotControl_af6dd268686131db9ff09f97efdcc38c4}{Press\+Ctrl}} ()
+\item 
+void \mbox{\hyperlink{classMockPlotControl_a5b789c7d92ff66639b446064e8e2c2fc}{Release\+Ctrl}} ()
+\item 
+void \mbox{\hyperlink{classMockPlotControl_a409dfd42faaf450cf5cffc9a1536d68e}{Press\+Alt}} ()
+\item 
+void \mbox{\hyperlink{classMockPlotControl_ae84bd07a7a52a72d3105d950d3366747}{Release\+Alt}} ()
+\item 
+void \mbox{\hyperlink{classMockPlotControl_a022e42da9cb22e05a2bcecc4fcfaeac8}{Tap\+Right\+Arrow}} ()
+\item 
+void \mbox{\hyperlink{classMockPlotControl_a5595a4434c4c014b35a70daaeb15ff1e}{Tap\+Left\+Arrow}} ()
+\item 
+void \mbox{\hyperlink{classMockPlotControl_a51187da9e1bfb88cc4888bf4fe9f1137}{Tap\+Up\+Arrow}} ()
+\item 
+void \mbox{\hyperlink{classMockPlotControl_a59104dbf9d0c00c2ef1f42cbfce7f4c0}{Tap\+Down\+Arrow}} ()
+\item 
+void \mbox{\hyperlink{classMockPlotControl_a2b306390136c9b4eae4251e9d4c469ea}{Press\+Key}} (\mbox{\hyperlink{structKey}{Key}} key)
+\item 
+void \mbox{\hyperlink{classMockPlotControl_aca5eceafe2064cd97304fd7eee98ea88}{Release\+Key}} (\mbox{\hyperlink{structKey}{Key}} key)
+\item 
+void \mbox{\hyperlink{classMockPlotControl_ae79e7625a27c178baf11ec38d0b8f6d3}{Tap\+Key}} (\mbox{\hyperlink{structKey}{Key}} key)
+\item 
+void \mbox{\hyperlink{classMockPlotControl_a7118fcaca1863b6171fe073cd720a872}{Move\+Mouse}} (\mbox{\hyperlink{structPixel}{Pixel}} px)
+\item 
+void \mbox{\hyperlink{classMockPlotControl_ad0e3138ef6ce626957d92f8ad315951b}{Left\+Mouse\+Down}} (\mbox{\hyperlink{structPixel}{Pixel}} px)
+\item 
+void \mbox{\hyperlink{classMockPlotControl_a7e1bbc36b8747a4e9ce29babdc543204}{Left\+Mouse\+Up}} (\mbox{\hyperlink{structPixel}{Pixel}} px)
+\item 
+void \mbox{\hyperlink{classMockPlotControl_a93ba4813b41313f9a17ba116b02935cf}{Left\+Click}} (\mbox{\hyperlink{structPixel}{Pixel}} px)
+\item 
+void \mbox{\hyperlink{classMockPlotControl_a6aea9098a527e749f459ab6cd79aa8c7}{Left\+Click\+Drag}} (\mbox{\hyperlink{structPixel}{Pixel}} px1, \mbox{\hyperlink{structPixel}{Pixel}} px2)
+\item 
+void \mbox{\hyperlink{classMockPlotControl_a7175a03e1392eb23a1035f1a8a3dda0d}{Right\+Mouse\+Down}} (\mbox{\hyperlink{structPixel}{Pixel}} px)
+\item 
+void \mbox{\hyperlink{classMockPlotControl_a100338391b0f0c16e81a30732d4a420b}{Right\+Mouse\+Up}} (\mbox{\hyperlink{structPixel}{Pixel}} px)
+\item 
+void \mbox{\hyperlink{classMockPlotControl_afeaa7af99b24e1a502603829383a99e9}{Right\+Click}} (\mbox{\hyperlink{structPixel}{Pixel}} px)
+\item 
+void \mbox{\hyperlink{classMockPlotControl_a00cb2ce781280f1ab9f20df242865435}{Right\+Click\+Drag}} (\mbox{\hyperlink{structPixel}{Pixel}} px1, \mbox{\hyperlink{structPixel}{Pixel}} px2)
+\item 
+void \mbox{\hyperlink{classMockPlotControl_aff254fe2fce81f7df1cc1e70fe1237fc}{Middle\+Mouse\+Down}} (\mbox{\hyperlink{structPixel}{Pixel}} px)
+\item 
+void \mbox{\hyperlink{classMockPlotControl_af55c2c6ad170def1e9e8264d3cd1f435}{Middle\+Mouse\+Up}} (\mbox{\hyperlink{structPixel}{Pixel}} px)
+\item 
+void \mbox{\hyperlink{classMockPlotControl_af220864aa04ed1edd0c6288037cca73a}{Middle\+Click}} (\mbox{\hyperlink{structPixel}{Pixel}} px)
+\item 
+void \mbox{\hyperlink{classMockPlotControl_aa114461df2f6c699363bc351f33e9033}{Middle\+Click\+Drag}} (\mbox{\hyperlink{structPixel}{Pixel}} px1, \mbox{\hyperlink{structPixel}{Pixel}} px2)
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classMockPlotControl_a4e31eb161293d6787d1c44c18e0ac7ea}{Width}} = 400\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+int \mbox{\hyperlink{classMockPlotControl_a2743e6b9a18cfc5c08802f7dcaf9637e}{Height}} = 300\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{structPixel}{Pixel}} \mbox{\hyperlink{classMockPlotControl_aaa2d87f402b6a571e957ce1394ce8ea3}{Center}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{classPlot}{Plot}} \mbox{\hyperlink{classMockPlotControl_a3e8be76df89ba0331de69400319be87c}{Plot}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+GRContext? \mbox{\hyperlink{classMockPlotControl_a97b641dc0fae509338e65657aa7d588a}{GRContext}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{interfaceIPlotInteraction}{IPlot\+Interaction}} \mbox{\hyperlink{classMockPlotControl_aacb06d5f4cb51d6dc4250690074ce572}{Interaction}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+Interactivity.\+User\+Input\+Processor \mbox{\hyperlink{classMockPlotControl_ac8699ceb8d6444b7a4a7863e2e92bb2a}{User\+Input\+Processor}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{interfaceIPlotMenu}{IPlot\+Menu}} \mbox{\hyperlink{classMockPlotControl_a1ca544c4f3d86f900a966e8b2f6a67e1}{Menu}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{classMockPlotControl_aaff4397d4b2ccb3801f0b3b2bad6cb55}{Display\+Scale}} = 1\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+int \mbox{\hyperlink{classMockPlotControl_af70374f6c6c6bd113fffe2793d9d4762}{Refresh\+Count}} = 0\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+int \mbox{\hyperlink{classMockPlotControl_abfd4030d1474f27e3f168feed314deaa}{Context\+Menu\+Launch\+Count}} = 0\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A plot control that renders in-\/memory and has functionality useful for testing interactivity. 
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classMockPlotControl_aff2ae0611641a931ba4df3c29f0821f7}\label{classMockPlotControl_aff2ae0611641a931ba4df3c29f0821f7}} 
+\index{MockPlotControl@{MockPlotControl}!MockPlotControl@{MockPlotControl}}
+\index{MockPlotControl@{MockPlotControl}!MockPlotControl@{MockPlotControl}}
+\doxysubsubsection{\texorpdfstring{MockPlotControl()}{MockPlotControl()}}
+{\footnotesize\ttfamily Mock\+Plot\+Control.\+Mock\+Plot\+Control (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classMockPlotControl_a610dc7b66a99b8cb11e38840c91a6492}\label{classMockPlotControl_a610dc7b66a99b8cb11e38840c91a6492}} 
+\index{MockPlotControl@{MockPlotControl}!DetectDisplayScale@{DetectDisplayScale}}
+\index{DetectDisplayScale@{DetectDisplayScale}!MockPlotControl@{MockPlotControl}}
+\doxysubsubsection{\texorpdfstring{DetectDisplayScale()}{DetectDisplayScale()}}
+{\footnotesize\ttfamily float Mock\+Plot\+Control.\+Detect\+Display\+Scale (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Determine the DPI scaling ratio of the present display. A value of 1.\+0 means no scaling, and 1.\+5 means 150\% scaling. This operation may be costly so do not call it frequently. 
+
+
+
+Implements \mbox{\hyperlink{interfaceIPlotControl_aa091d213054094b8acdc307ceda2db06}{IPlot\+Control}}.
+
+\mbox{\Hypertarget{classMockPlotControl_a93ba4813b41313f9a17ba116b02935cf}\label{classMockPlotControl_a93ba4813b41313f9a17ba116b02935cf}} 
+\index{MockPlotControl@{MockPlotControl}!LeftClick@{LeftClick}}
+\index{LeftClick@{LeftClick}!MockPlotControl@{MockPlotControl}}
+\doxysubsubsection{\texorpdfstring{LeftClick()}{LeftClick()}}
+{\footnotesize\ttfamily void Mock\+Plot\+Control.\+Left\+Click (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPixel}{Pixel}}}]{px }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classMockPlotControl_a6aea9098a527e749f459ab6cd79aa8c7}\label{classMockPlotControl_a6aea9098a527e749f459ab6cd79aa8c7}} 
+\index{MockPlotControl@{MockPlotControl}!LeftClickDrag@{LeftClickDrag}}
+\index{LeftClickDrag@{LeftClickDrag}!MockPlotControl@{MockPlotControl}}
+\doxysubsubsection{\texorpdfstring{LeftClickDrag()}{LeftClickDrag()}}
+{\footnotesize\ttfamily void Mock\+Plot\+Control.\+Left\+Click\+Drag (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPixel}{Pixel}}}]{px1,  }\item[{\mbox{\hyperlink{structPixel}{Pixel}}}]{px2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classMockPlotControl_ad0e3138ef6ce626957d92f8ad315951b}\label{classMockPlotControl_ad0e3138ef6ce626957d92f8ad315951b}} 
+\index{MockPlotControl@{MockPlotControl}!LeftMouseDown@{LeftMouseDown}}
+\index{LeftMouseDown@{LeftMouseDown}!MockPlotControl@{MockPlotControl}}
+\doxysubsubsection{\texorpdfstring{LeftMouseDown()}{LeftMouseDown()}}
+{\footnotesize\ttfamily void Mock\+Plot\+Control.\+Left\+Mouse\+Down (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPixel}{Pixel}}}]{px }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classMockPlotControl_a7e1bbc36b8747a4e9ce29babdc543204}\label{classMockPlotControl_a7e1bbc36b8747a4e9ce29babdc543204}} 
+\index{MockPlotControl@{MockPlotControl}!LeftMouseUp@{LeftMouseUp}}
+\index{LeftMouseUp@{LeftMouseUp}!MockPlotControl@{MockPlotControl}}
+\doxysubsubsection{\texorpdfstring{LeftMouseUp()}{LeftMouseUp()}}
+{\footnotesize\ttfamily void Mock\+Plot\+Control.\+Left\+Mouse\+Up (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPixel}{Pixel}}}]{px }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classMockPlotControl_af220864aa04ed1edd0c6288037cca73a}\label{classMockPlotControl_af220864aa04ed1edd0c6288037cca73a}} 
+\index{MockPlotControl@{MockPlotControl}!MiddleClick@{MiddleClick}}
+\index{MiddleClick@{MiddleClick}!MockPlotControl@{MockPlotControl}}
+\doxysubsubsection{\texorpdfstring{MiddleClick()}{MiddleClick()}}
+{\footnotesize\ttfamily void Mock\+Plot\+Control.\+Middle\+Click (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPixel}{Pixel}}}]{px }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classMockPlotControl_aa114461df2f6c699363bc351f33e9033}\label{classMockPlotControl_aa114461df2f6c699363bc351f33e9033}} 
+\index{MockPlotControl@{MockPlotControl}!MiddleClickDrag@{MiddleClickDrag}}
+\index{MiddleClickDrag@{MiddleClickDrag}!MockPlotControl@{MockPlotControl}}
+\doxysubsubsection{\texorpdfstring{MiddleClickDrag()}{MiddleClickDrag()}}
+{\footnotesize\ttfamily void Mock\+Plot\+Control.\+Middle\+Click\+Drag (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPixel}{Pixel}}}]{px1,  }\item[{\mbox{\hyperlink{structPixel}{Pixel}}}]{px2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classMockPlotControl_aff254fe2fce81f7df1cc1e70fe1237fc}\label{classMockPlotControl_aff254fe2fce81f7df1cc1e70fe1237fc}} 
+\index{MockPlotControl@{MockPlotControl}!MiddleMouseDown@{MiddleMouseDown}}
+\index{MiddleMouseDown@{MiddleMouseDown}!MockPlotControl@{MockPlotControl}}
+\doxysubsubsection{\texorpdfstring{MiddleMouseDown()}{MiddleMouseDown()}}
+{\footnotesize\ttfamily void Mock\+Plot\+Control.\+Middle\+Mouse\+Down (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPixel}{Pixel}}}]{px }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classMockPlotControl_af55c2c6ad170def1e9e8264d3cd1f435}\label{classMockPlotControl_af55c2c6ad170def1e9e8264d3cd1f435}} 
+\index{MockPlotControl@{MockPlotControl}!MiddleMouseUp@{MiddleMouseUp}}
+\index{MiddleMouseUp@{MiddleMouseUp}!MockPlotControl@{MockPlotControl}}
+\doxysubsubsection{\texorpdfstring{MiddleMouseUp()}{MiddleMouseUp()}}
+{\footnotesize\ttfamily void Mock\+Plot\+Control.\+Middle\+Mouse\+Up (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPixel}{Pixel}}}]{px }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classMockPlotControl_a7118fcaca1863b6171fe073cd720a872}\label{classMockPlotControl_a7118fcaca1863b6171fe073cd720a872}} 
+\index{MockPlotControl@{MockPlotControl}!MoveMouse@{MoveMouse}}
+\index{MoveMouse@{MoveMouse}!MockPlotControl@{MockPlotControl}}
+\doxysubsubsection{\texorpdfstring{MoveMouse()}{MoveMouse()}}
+{\footnotesize\ttfamily void Mock\+Plot\+Control.\+Move\+Mouse (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPixel}{Pixel}}}]{px }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classMockPlotControl_a409dfd42faaf450cf5cffc9a1536d68e}\label{classMockPlotControl_a409dfd42faaf450cf5cffc9a1536d68e}} 
+\index{MockPlotControl@{MockPlotControl}!PressAlt@{PressAlt}}
+\index{PressAlt@{PressAlt}!MockPlotControl@{MockPlotControl}}
+\doxysubsubsection{\texorpdfstring{PressAlt()}{PressAlt()}}
+{\footnotesize\ttfamily void Mock\+Plot\+Control.\+Press\+Alt (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classMockPlotControl_af6dd268686131db9ff09f97efdcc38c4}\label{classMockPlotControl_af6dd268686131db9ff09f97efdcc38c4}} 
+\index{MockPlotControl@{MockPlotControl}!PressCtrl@{PressCtrl}}
+\index{PressCtrl@{PressCtrl}!MockPlotControl@{MockPlotControl}}
+\doxysubsubsection{\texorpdfstring{PressCtrl()}{PressCtrl()}}
+{\footnotesize\ttfamily void Mock\+Plot\+Control.\+Press\+Ctrl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classMockPlotControl_a2b306390136c9b4eae4251e9d4c469ea}\label{classMockPlotControl_a2b306390136c9b4eae4251e9d4c469ea}} 
+\index{MockPlotControl@{MockPlotControl}!PressKey@{PressKey}}
+\index{PressKey@{PressKey}!MockPlotControl@{MockPlotControl}}
+\doxysubsubsection{\texorpdfstring{PressKey()}{PressKey()}}
+{\footnotesize\ttfamily void Mock\+Plot\+Control.\+Press\+Key (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structKey}{Key}}}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classMockPlotControl_a2f03301e9f6f7f3ef13b9eef59fdd0f8}\label{classMockPlotControl_a2f03301e9f6f7f3ef13b9eef59fdd0f8}} 
+\index{MockPlotControl@{MockPlotControl}!PressShift@{PressShift}}
+\index{PressShift@{PressShift}!MockPlotControl@{MockPlotControl}}
+\doxysubsubsection{\texorpdfstring{PressShift()}{PressShift()}}
+{\footnotesize\ttfamily void Mock\+Plot\+Control.\+Press\+Shift (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classMockPlotControl_ae82d505694026f17089719c6357c02bc}\label{classMockPlotControl_ae82d505694026f17089719c6357c02bc}} 
+\index{MockPlotControl@{MockPlotControl}!Refresh@{Refresh}}
+\index{Refresh@{Refresh}!MockPlotControl@{MockPlotControl}}
+\doxysubsubsection{\texorpdfstring{Refresh()}{Refresh()}}
+{\footnotesize\ttfamily void Mock\+Plot\+Control.\+Refresh (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Render the plot and update the image 
+
+
+
+Implements \mbox{\hyperlink{interfaceIPlotControl_ac5672b6f3e3e2825da1e95f0cd2f4bcb}{IPlot\+Control}}.
+
+\mbox{\Hypertarget{classMockPlotControl_ae84bd07a7a52a72d3105d950d3366747}\label{classMockPlotControl_ae84bd07a7a52a72d3105d950d3366747}} 
+\index{MockPlotControl@{MockPlotControl}!ReleaseAlt@{ReleaseAlt}}
+\index{ReleaseAlt@{ReleaseAlt}!MockPlotControl@{MockPlotControl}}
+\doxysubsubsection{\texorpdfstring{ReleaseAlt()}{ReleaseAlt()}}
+{\footnotesize\ttfamily void Mock\+Plot\+Control.\+Release\+Alt (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classMockPlotControl_a5b789c7d92ff66639b446064e8e2c2fc}\label{classMockPlotControl_a5b789c7d92ff66639b446064e8e2c2fc}} 
+\index{MockPlotControl@{MockPlotControl}!ReleaseCtrl@{ReleaseCtrl}}
+\index{ReleaseCtrl@{ReleaseCtrl}!MockPlotControl@{MockPlotControl}}
+\doxysubsubsection{\texorpdfstring{ReleaseCtrl()}{ReleaseCtrl()}}
+{\footnotesize\ttfamily void Mock\+Plot\+Control.\+Release\+Ctrl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classMockPlotControl_aca5eceafe2064cd97304fd7eee98ea88}\label{classMockPlotControl_aca5eceafe2064cd97304fd7eee98ea88}} 
+\index{MockPlotControl@{MockPlotControl}!ReleaseKey@{ReleaseKey}}
+\index{ReleaseKey@{ReleaseKey}!MockPlotControl@{MockPlotControl}}
+\doxysubsubsection{\texorpdfstring{ReleaseKey()}{ReleaseKey()}}
+{\footnotesize\ttfamily void Mock\+Plot\+Control.\+Release\+Key (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structKey}{Key}}}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classMockPlotControl_a49f8a2d4fdbea4678e9d99fd27536be7}\label{classMockPlotControl_a49f8a2d4fdbea4678e9d99fd27536be7}} 
+\index{MockPlotControl@{MockPlotControl}!ReleaseShift@{ReleaseShift}}
+\index{ReleaseShift@{ReleaseShift}!MockPlotControl@{MockPlotControl}}
+\doxysubsubsection{\texorpdfstring{ReleaseShift()}{ReleaseShift()}}
+{\footnotesize\ttfamily void Mock\+Plot\+Control.\+Release\+Shift (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classMockPlotControl_a7f790f8eb3600531afb74f8665656042}\label{classMockPlotControl_a7f790f8eb3600531afb74f8665656042}} 
+\index{MockPlotControl@{MockPlotControl}!Reset@{Reset}}
+\index{Reset@{Reset}!MockPlotControl@{MockPlotControl}}
+\doxysubsubsection{\texorpdfstring{Reset()}{Reset()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Mock\+Plot\+Control.\+Reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Disposes the current \mbox{\hyperlink{classPlot}{Plot}} and creates a new one for the control 
+
+
+
+Implements \mbox{\hyperlink{interfaceIPlotControl_a3021825d73d2bcf47dfd5f6f562e2cdf}{IPlot\+Control}}.
+
+\mbox{\Hypertarget{classMockPlotControl_a08c33fba28f25b0929862e69b4a63f03}\label{classMockPlotControl_a08c33fba28f25b0929862e69b4a63f03}} 
+\index{MockPlotControl@{MockPlotControl}!Reset@{Reset}}
+\index{Reset@{Reset}!MockPlotControl@{MockPlotControl}}
+\doxysubsubsection{\texorpdfstring{Reset()}{Reset()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Mock\+Plot\+Control.\+Reset (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPlot}{Plot}}}]{plot }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Loads the given \mbox{\hyperlink{classPlot}{Plot}} into the control 
+
+
+
+Implements \mbox{\hyperlink{interfaceIPlotControl_a3204ee77a937b93563c72a8fbaacd957}{IPlot\+Control}}.
+
+\mbox{\Hypertarget{classMockPlotControl_afeaa7af99b24e1a502603829383a99e9}\label{classMockPlotControl_afeaa7af99b24e1a502603829383a99e9}} 
+\index{MockPlotControl@{MockPlotControl}!RightClick@{RightClick}}
+\index{RightClick@{RightClick}!MockPlotControl@{MockPlotControl}}
+\doxysubsubsection{\texorpdfstring{RightClick()}{RightClick()}}
+{\footnotesize\ttfamily void Mock\+Plot\+Control.\+Right\+Click (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPixel}{Pixel}}}]{px }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classMockPlotControl_a00cb2ce781280f1ab9f20df242865435}\label{classMockPlotControl_a00cb2ce781280f1ab9f20df242865435}} 
+\index{MockPlotControl@{MockPlotControl}!RightClickDrag@{RightClickDrag}}
+\index{RightClickDrag@{RightClickDrag}!MockPlotControl@{MockPlotControl}}
+\doxysubsubsection{\texorpdfstring{RightClickDrag()}{RightClickDrag()}}
+{\footnotesize\ttfamily void Mock\+Plot\+Control.\+Right\+Click\+Drag (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPixel}{Pixel}}}]{px1,  }\item[{\mbox{\hyperlink{structPixel}{Pixel}}}]{px2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classMockPlotControl_a7175a03e1392eb23a1035f1a8a3dda0d}\label{classMockPlotControl_a7175a03e1392eb23a1035f1a8a3dda0d}} 
+\index{MockPlotControl@{MockPlotControl}!RightMouseDown@{RightMouseDown}}
+\index{RightMouseDown@{RightMouseDown}!MockPlotControl@{MockPlotControl}}
+\doxysubsubsection{\texorpdfstring{RightMouseDown()}{RightMouseDown()}}
+{\footnotesize\ttfamily void Mock\+Plot\+Control.\+Right\+Mouse\+Down (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPixel}{Pixel}}}]{px }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classMockPlotControl_a100338391b0f0c16e81a30732d4a420b}\label{classMockPlotControl_a100338391b0f0c16e81a30732d4a420b}} 
+\index{MockPlotControl@{MockPlotControl}!RightMouseUp@{RightMouseUp}}
+\index{RightMouseUp@{RightMouseUp}!MockPlotControl@{MockPlotControl}}
+\doxysubsubsection{\texorpdfstring{RightMouseUp()}{RightMouseUp()}}
+{\footnotesize\ttfamily void Mock\+Plot\+Control.\+Right\+Mouse\+Up (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPixel}{Pixel}}}]{px }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classMockPlotControl_a1073ea48e5ce36cb2dd580756a51e625}\label{classMockPlotControl_a1073ea48e5ce36cb2dd580756a51e625}} 
+\index{MockPlotControl@{MockPlotControl}!ScrollWheelDown@{ScrollWheelDown}}
+\index{ScrollWheelDown@{ScrollWheelDown}!MockPlotControl@{MockPlotControl}}
+\doxysubsubsection{\texorpdfstring{ScrollWheelDown()}{ScrollWheelDown()}}
+{\footnotesize\ttfamily void Mock\+Plot\+Control.\+Scroll\+Wheel\+Down (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPixel}{Pixel}}}]{pixel }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classMockPlotControl_afe68558c16f474eeca50a756b1b49b7a}\label{classMockPlotControl_afe68558c16f474eeca50a756b1b49b7a}} 
+\index{MockPlotControl@{MockPlotControl}!ScrollWheelUp@{ScrollWheelUp}}
+\index{ScrollWheelUp@{ScrollWheelUp}!MockPlotControl@{MockPlotControl}}
+\doxysubsubsection{\texorpdfstring{ScrollWheelUp()}{ScrollWheelUp()}}
+{\footnotesize\ttfamily void Mock\+Plot\+Control.\+Scroll\+Wheel\+Up (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPixel}{Pixel}}}]{pixel }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classMockPlotControl_a4113e46f7d6d98ce22255ddc67d99305}\label{classMockPlotControl_a4113e46f7d6d98ce22255ddc67d99305}} 
+\index{MockPlotControl@{MockPlotControl}!ShowContextMenu@{ShowContextMenu}}
+\index{ShowContextMenu@{ShowContextMenu}!MockPlotControl@{MockPlotControl}}
+\doxysubsubsection{\texorpdfstring{ShowContextMenu()}{ShowContextMenu()}}
+{\footnotesize\ttfamily void Mock\+Plot\+Control.\+Show\+Context\+Menu (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPixel}{Pixel}}}]{position }\end{DoxyParamCaption})}
+
+
+
+Launch the default pop-\/up menu (typically in response to a right-\/click) at the given position in the control 
+
+
+
+Implements \mbox{\hyperlink{interfaceIPlotControl_aa822894e483df742fb376cd3169eefc4}{IPlot\+Control}}.
+
+\mbox{\Hypertarget{classMockPlotControl_a59104dbf9d0c00c2ef1f42cbfce7f4c0}\label{classMockPlotControl_a59104dbf9d0c00c2ef1f42cbfce7f4c0}} 
+\index{MockPlotControl@{MockPlotControl}!TapDownArrow@{TapDownArrow}}
+\index{TapDownArrow@{TapDownArrow}!MockPlotControl@{MockPlotControl}}
+\doxysubsubsection{\texorpdfstring{TapDownArrow()}{TapDownArrow()}}
+{\footnotesize\ttfamily void Mock\+Plot\+Control.\+Tap\+Down\+Arrow (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classMockPlotControl_ae79e7625a27c178baf11ec38d0b8f6d3}\label{classMockPlotControl_ae79e7625a27c178baf11ec38d0b8f6d3}} 
+\index{MockPlotControl@{MockPlotControl}!TapKey@{TapKey}}
+\index{TapKey@{TapKey}!MockPlotControl@{MockPlotControl}}
+\doxysubsubsection{\texorpdfstring{TapKey()}{TapKey()}}
+{\footnotesize\ttfamily void Mock\+Plot\+Control.\+Tap\+Key (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structKey}{Key}}}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classMockPlotControl_a5595a4434c4c014b35a70daaeb15ff1e}\label{classMockPlotControl_a5595a4434c4c014b35a70daaeb15ff1e}} 
+\index{MockPlotControl@{MockPlotControl}!TapLeftArrow@{TapLeftArrow}}
+\index{TapLeftArrow@{TapLeftArrow}!MockPlotControl@{MockPlotControl}}
+\doxysubsubsection{\texorpdfstring{TapLeftArrow()}{TapLeftArrow()}}
+{\footnotesize\ttfamily void Mock\+Plot\+Control.\+Tap\+Left\+Arrow (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classMockPlotControl_a022e42da9cb22e05a2bcecc4fcfaeac8}\label{classMockPlotControl_a022e42da9cb22e05a2bcecc4fcfaeac8}} 
+\index{MockPlotControl@{MockPlotControl}!TapRightArrow@{TapRightArrow}}
+\index{TapRightArrow@{TapRightArrow}!MockPlotControl@{MockPlotControl}}
+\doxysubsubsection{\texorpdfstring{TapRightArrow()}{TapRightArrow()}}
+{\footnotesize\ttfamily void Mock\+Plot\+Control.\+Tap\+Right\+Arrow (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classMockPlotControl_a51187da9e1bfb88cc4888bf4fe9f1137}\label{classMockPlotControl_a51187da9e1bfb88cc4888bf4fe9f1137}} 
+\index{MockPlotControl@{MockPlotControl}!TapUpArrow@{TapUpArrow}}
+\index{TapUpArrow@{TapUpArrow}!MockPlotControl@{MockPlotControl}}
+\doxysubsubsection{\texorpdfstring{TapUpArrow()}{TapUpArrow()}}
+{\footnotesize\ttfamily void Mock\+Plot\+Control.\+Tap\+Up\+Arrow (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{classMockPlotControl_aaa2d87f402b6a571e957ce1394ce8ea3}\label{classMockPlotControl_aaa2d87f402b6a571e957ce1394ce8ea3}} 
+\index{MockPlotControl@{MockPlotControl}!Center@{Center}}
+\index{Center@{Center}!MockPlotControl@{MockPlotControl}}
+\doxysubsubsection{\texorpdfstring{Center}{Center}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structPixel}{Pixel}} Mock\+Plot\+Control.\+Center\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{classMockPlotControl_abfd4030d1474f27e3f168feed314deaa}\label{classMockPlotControl_abfd4030d1474f27e3f168feed314deaa}} 
+\index{MockPlotControl@{MockPlotControl}!ContextMenuLaunchCount@{ContextMenuLaunchCount}}
+\index{ContextMenuLaunchCount@{ContextMenuLaunchCount}!MockPlotControl@{MockPlotControl}}
+\doxysubsubsection{\texorpdfstring{ContextMenuLaunchCount}{ContextMenuLaunchCount}}
+{\footnotesize\ttfamily int Mock\+Plot\+Control.\+Context\+Menu\+Launch\+Count = 0\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{classMockPlotControl_aaff4397d4b2ccb3801f0b3b2bad6cb55}\label{classMockPlotControl_aaff4397d4b2ccb3801f0b3b2bad6cb55}} 
+\index{MockPlotControl@{MockPlotControl}!DisplayScale@{DisplayScale}}
+\index{DisplayScale@{DisplayScale}!MockPlotControl@{MockPlotControl}}
+\doxysubsubsection{\texorpdfstring{DisplayScale}{DisplayScale}}
+{\footnotesize\ttfamily float Mock\+Plot\+Control.\+Display\+Scale = 1\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classMockPlotControl_a97b641dc0fae509338e65657aa7d588a}\label{classMockPlotControl_a97b641dc0fae509338e65657aa7d588a}} 
+\index{MockPlotControl@{MockPlotControl}!GRContext@{GRContext}}
+\index{GRContext@{GRContext}!MockPlotControl@{MockPlotControl}}
+\doxysubsubsection{\texorpdfstring{GRContext}{GRContext}}
+{\footnotesize\ttfamily GRContext? Mock\+Plot\+Control.\+GRContext\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{classMockPlotControl_a2743e6b9a18cfc5c08802f7dcaf9637e}\label{classMockPlotControl_a2743e6b9a18cfc5c08802f7dcaf9637e}} 
+\index{MockPlotControl@{MockPlotControl}!Height@{Height}}
+\index{Height@{Height}!MockPlotControl@{MockPlotControl}}
+\doxysubsubsection{\texorpdfstring{Height}{Height}}
+{\footnotesize\ttfamily int Mock\+Plot\+Control.\+Height = 300\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classMockPlotControl_aacb06d5f4cb51d6dc4250690074ce572}\label{classMockPlotControl_aacb06d5f4cb51d6dc4250690074ce572}} 
+\index{MockPlotControl@{MockPlotControl}!Interaction@{Interaction}}
+\index{Interaction@{Interaction}!MockPlotControl@{MockPlotControl}}
+\doxysubsubsection{\texorpdfstring{Interaction}{Interaction}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceIPlotInteraction}{IPlot\+Interaction}} Mock\+Plot\+Control.\+Interaction\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classMockPlotControl_a1ca544c4f3d86f900a966e8b2f6a67e1}\label{classMockPlotControl_a1ca544c4f3d86f900a966e8b2f6a67e1}} 
+\index{MockPlotControl@{MockPlotControl}!Menu@{Menu}}
+\index{Menu@{Menu}!MockPlotControl@{MockPlotControl}}
+\doxysubsubsection{\texorpdfstring{Menu}{Menu}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceIPlotMenu}{IPlot\+Menu}} Mock\+Plot\+Control.\+Menu\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classMockPlotControl_a3e8be76df89ba0331de69400319be87c}\label{classMockPlotControl_a3e8be76df89ba0331de69400319be87c}} 
+\index{MockPlotControl@{MockPlotControl}!Plot@{Plot}}
+\index{Plot@{Plot}!MockPlotControl@{MockPlotControl}}
+\doxysubsubsection{\texorpdfstring{Plot}{Plot}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPlot}{Plot}} Mock\+Plot\+Control.\+Plot\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{classMockPlotControl_af70374f6c6c6bd113fffe2793d9d4762}\label{classMockPlotControl_af70374f6c6c6bd113fffe2793d9d4762}} 
+\index{MockPlotControl@{MockPlotControl}!RefreshCount@{RefreshCount}}
+\index{RefreshCount@{RefreshCount}!MockPlotControl@{MockPlotControl}}
+\doxysubsubsection{\texorpdfstring{RefreshCount}{RefreshCount}}
+{\footnotesize\ttfamily int Mock\+Plot\+Control.\+Refresh\+Count = 0\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{classMockPlotControl_ac8699ceb8d6444b7a4a7863e2e92bb2a}\label{classMockPlotControl_ac8699ceb8d6444b7a4a7863e2e92bb2a}} 
+\index{MockPlotControl@{MockPlotControl}!UserInputProcessor@{UserInputProcessor}}
+\index{UserInputProcessor@{UserInputProcessor}!MockPlotControl@{MockPlotControl}}
+\doxysubsubsection{\texorpdfstring{UserInputProcessor}{UserInputProcessor}}
+{\footnotesize\ttfamily Interactivity.\+User\+Input\+Processor Mock\+Plot\+Control.\+User\+Input\+Processor\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{classMockPlotControl_a4e31eb161293d6787d1c44c18e0ac7ea}\label{classMockPlotControl_a4e31eb161293d6787d1c44c18e0ac7ea}} 
+\index{MockPlotControl@{MockPlotControl}!Width@{Width}}
+\index{Width@{Width}!MockPlotControl@{MockPlotControl}}
+\doxysubsubsection{\texorpdfstring{Width}{Width}}
+{\footnotesize\ttfamily int Mock\+Plot\+Control.\+Width = 400\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Testing/Mock\+Plot\+Control.\+cs\end{DoxyCompactItemize}

@@ -1,0 +1,128 @@
+\doxysection{Scott\+Plot.\+Axis\+Limit\+Managers.\+Slide Class Reference}
+\hypertarget{class_scott_plot_1_1_axis_limit_managers_1_1_slide}{}\label{class_scott_plot_1_1_axis_limit_managers_1_1_slide}\index{ScottPlot.AxisLimitManagers.Slide@{ScottPlot.AxisLimitManagers.Slide}}
+
+
+\doxylink{class_scott_plot_1_1_axis_limit_managers_1_1_slide}{Slide} the view to the right to keep the newest data points in view.  
+
+
+Inheritance diagram for Scott\+Plot.\+Axis\+Limit\+Managers.\+Slide\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_scott_plot_1_1_axis_limit_managers_1_1_slide}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespace_scott_plot_a4f8afc1393f89ce60e775705cbf134d1}{Coordinate\+Range}} \mbox{\hyperlink{class_scott_plot_1_1_axis_limit_managers_1_1_slide_ac2fe4eaf57124cd7e1adf047c3e22072}{Get\+RangeX}} (\mbox{\hyperlink{namespace_scott_plot_a4f8afc1393f89ce60e775705cbf134d1}{Coordinate\+Range}} view\+RangeX, \mbox{\hyperlink{namespace_scott_plot_a4f8afc1393f89ce60e775705cbf134d1}{Coordinate\+Range}} data\+RangeX)
+\begin{DoxyCompactList}\small\item\em Returns the recommended X axis range given the current view and size of the data. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_scott_plot_a4f8afc1393f89ce60e775705cbf134d1}{Coordinate\+Range}} \mbox{\hyperlink{class_scott_plot_1_1_axis_limit_managers_1_1_slide_aefec52f7cf1ba2a411a2931b5c998a7b}{Get\+RangeY}} (\mbox{\hyperlink{namespace_scott_plot_a4f8afc1393f89ce60e775705cbf134d1}{Coordinate\+Range}} view\+RangeY, \mbox{\hyperlink{namespace_scott_plot_a4f8afc1393f89ce60e775705cbf134d1}{Coordinate\+Range}} data\+RangeY)
+\begin{DoxyCompactList}\small\item\em Returns the recommended Y axis range given the current view and size of the data. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_scott_plot_1_1_i_axis_limit_manager}{Scott\+Plot.\+IAxis\+Limit\+Manager}}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{class_scott_plot_1_1_axis_limit_managers_1_1_slide_a83fe99072f094d9ff8f3f0582a7599fb}{Padding\+FractionX}} = 0
+\begin{DoxyCompactList}\small\item\em Defines the amount of whitespace added to the right of the data when data runs outside the current view. 0 for a view that slides every time new data is added 1 for a view that only slides forward when new data runs off the screen. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_scott_plot_1_1_axis_limit_managers_1_1_slide_a3c15cd90a4c1aa4e381607afc186d88f}{Padding\+FractionY}} = .\+5
+\begin{DoxyCompactList}\small\item\em Defines the amount of whitespace added to the top or bottom of the data when data runs outside the current view. 0 sets axis limits to tightly fit the data height 1 sets axis limits to double the vertical span in the direction of the vertical overflow. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{class_scott_plot_1_1_axis_limit_managers_1_1_slide_a7fcc3476d526bbda5460a6f3fcfcb6d4}{Width}} = 1000\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Amount of horizontal area to display (in axis units) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\doxylink{class_scott_plot_1_1_axis_limit_managers_1_1_slide}{Slide} the view to the right to keep the newest data points in view. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_scott_plot_1_1_axis_limit_managers_1_1_slide_ac2fe4eaf57124cd7e1adf047c3e22072}\index{ScottPlot.AxisLimitManagers.Slide@{ScottPlot.AxisLimitManagers.Slide}!GetRangeX@{GetRangeX}}
+\index{GetRangeX@{GetRangeX}!ScottPlot.AxisLimitManagers.Slide@{ScottPlot.AxisLimitManagers.Slide}}
+\doxysubsubsection{\texorpdfstring{GetRangeX()}{GetRangeX()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axis_limit_managers_1_1_slide_ac2fe4eaf57124cd7e1adf047c3e22072} 
+\mbox{\hyperlink{namespace_scott_plot_a4f8afc1393f89ce60e775705cbf134d1}{Coordinate\+Range}} Scott\+Plot.\+Axis\+Limit\+Managers.\+Slide.\+Get\+RangeX (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_scott_plot_a4f8afc1393f89ce60e775705cbf134d1}{Coordinate\+Range}}}]{view\+RangeX}{, }\item[{\mbox{\hyperlink{namespace_scott_plot_a4f8afc1393f89ce60e775705cbf134d1}{Coordinate\+Range}}}]{data\+RangeX}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the recommended X axis range given the current view and size of the data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em view\+RangeX} & X axis view range\\
+\hline
+{\em data\+RangeX} & X axis data range\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_axis_limit_manager_adf6fe892995462ad4ea7c75fe1609f50}{Scott\+Plot.\+IAxis\+Limit\+Manager}}.
+
+\Hypertarget{class_scott_plot_1_1_axis_limit_managers_1_1_slide_aefec52f7cf1ba2a411a2931b5c998a7b}\index{ScottPlot.AxisLimitManagers.Slide@{ScottPlot.AxisLimitManagers.Slide}!GetRangeY@{GetRangeY}}
+\index{GetRangeY@{GetRangeY}!ScottPlot.AxisLimitManagers.Slide@{ScottPlot.AxisLimitManagers.Slide}}
+\doxysubsubsection{\texorpdfstring{GetRangeY()}{GetRangeY()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axis_limit_managers_1_1_slide_aefec52f7cf1ba2a411a2931b5c998a7b} 
+\mbox{\hyperlink{namespace_scott_plot_a4f8afc1393f89ce60e775705cbf134d1}{Coordinate\+Range}} Scott\+Plot.\+Axis\+Limit\+Managers.\+Slide.\+Get\+RangeY (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_scott_plot_a4f8afc1393f89ce60e775705cbf134d1}{Coordinate\+Range}}}]{view\+RangeY}{, }\item[{\mbox{\hyperlink{namespace_scott_plot_a4f8afc1393f89ce60e775705cbf134d1}{Coordinate\+Range}}}]{data\+RangeY}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the recommended Y axis range given the current view and size of the data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em view\+RangeY} & Y axis view range\\
+\hline
+{\em data\+RangeY} & Y axis view range\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_axis_limit_manager_af322da7af1ab81ab81cbaad45ffce3de}{Scott\+Plot.\+IAxis\+Limit\+Manager}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_scott_plot_1_1_axis_limit_managers_1_1_slide_a83fe99072f094d9ff8f3f0582a7599fb}\index{ScottPlot.AxisLimitManagers.Slide@{ScottPlot.AxisLimitManagers.Slide}!PaddingFractionX@{PaddingFractionX}}
+\index{PaddingFractionX@{PaddingFractionX}!ScottPlot.AxisLimitManagers.Slide@{ScottPlot.AxisLimitManagers.Slide}}
+\doxysubsubsection{\texorpdfstring{PaddingFractionX}{PaddingFractionX}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axis_limit_managers_1_1_slide_a83fe99072f094d9ff8f3f0582a7599fb} 
+double Scott\+Plot.\+Axis\+Limit\+Managers.\+Slide.\+Padding\+FractionX = 0}
+
+
+
+Defines the amount of whitespace added to the right of the data when data runs outside the current view. 0 for a view that slides every time new data is added 1 for a view that only slides forward when new data runs off the screen. 
+
+\Hypertarget{class_scott_plot_1_1_axis_limit_managers_1_1_slide_a3c15cd90a4c1aa4e381607afc186d88f}\index{ScottPlot.AxisLimitManagers.Slide@{ScottPlot.AxisLimitManagers.Slide}!PaddingFractionY@{PaddingFractionY}}
+\index{PaddingFractionY@{PaddingFractionY}!ScottPlot.AxisLimitManagers.Slide@{ScottPlot.AxisLimitManagers.Slide}}
+\doxysubsubsection{\texorpdfstring{PaddingFractionY}{PaddingFractionY}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axis_limit_managers_1_1_slide_a3c15cd90a4c1aa4e381607afc186d88f} 
+double Scott\+Plot.\+Axis\+Limit\+Managers.\+Slide.\+Padding\+FractionY = .\+5}
+
+
+
+Defines the amount of whitespace added to the top or bottom of the data when data runs outside the current view. 0 sets axis limits to tightly fit the data height 1 sets axis limits to double the vertical span in the direction of the vertical overflow. 
+
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{class_scott_plot_1_1_axis_limit_managers_1_1_slide_a7fcc3476d526bbda5460a6f3fcfcb6d4}\index{ScottPlot.AxisLimitManagers.Slide@{ScottPlot.AxisLimitManagers.Slide}!Width@{Width}}
+\index{Width@{Width}!ScottPlot.AxisLimitManagers.Slide@{ScottPlot.AxisLimitManagers.Slide}}
+\doxysubsubsection{\texorpdfstring{Width}{Width}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axis_limit_managers_1_1_slide_a7fcc3476d526bbda5460a6f3fcfcb6d4} 
+double Scott\+Plot.\+Axis\+Limit\+Managers.\+Slide.\+Width = 1000\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Amount of horizontal area to display (in axis units) 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Axis\+Limit\+Managers/Slide.\+cs\end{DoxyCompactItemize}

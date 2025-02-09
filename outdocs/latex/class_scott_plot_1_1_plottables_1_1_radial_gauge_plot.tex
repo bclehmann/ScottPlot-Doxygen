@@ -1,0 +1,404 @@
+\doxysection{Scott\+Plot.\+Plottables.\+Radial\+Gauge\+Plot Class Reference}
+\hypertarget{class_scott_plot_1_1_plottables_1_1_radial_gauge_plot}{}\label{class_scott_plot_1_1_plottables_1_1_radial_gauge_plot}\index{ScottPlot.Plottables.RadialGaugePlot@{ScottPlot.Plottables.RadialGaugePlot}}
+
+
+A radial gauge chart is a graphical method of displaying scalar data in the form of a chart made of circular gauges so that each scalar is represented by each gauge.  
+
+
+Inheritance diagram for Scott\+Plot.\+Plottables.\+Radial\+Gauge\+Plot\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_scott_plot_1_1_plottables_1_1_radial_gauge_plot}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_radial_gauge_plot_a705815f54553273bceaddedf2f7eeea3}{Radial\+Gauge\+Plot}} (double\mbox{[}$\,$\mbox{]} levels, \mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}}\mbox{[}$\,$\mbox{]} colors)
+\item 
+override string \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_radial_gauge_plot_a1463821f46db561f8a32dff2a3f1f6d4}{To\+String}} ()
+\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_radial_gauge_plot_a79822815b32303a80b1b34e7ccc7ec1f}{Update}} (double\mbox{[}$\,$\mbox{]} levels, \mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}}\mbox{[}$\,$\mbox{]}? colors=null)
+\begin{DoxyCompactList}\small\item\em Replace gauge levels with new ones. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_radial_gauge_plot_afba8b81bdf29b9d21bfcccd7559e6306}{Validate\+Data}} (bool deep=false)
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_radial_gauge_plot_a7ef4c093f7951ee1069dc2293389c50c}{Get\+Axis\+Limits}} ()
+\begin{DoxyCompactList}\small\item\em Return the 2D area (in coordinate space) occupied by the data contained in this plottable. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_radial_gauge_plot_ab4de3abcd90a3fb6d2871c3ec5329a21}{Render}} (Render\+Pack rp)
+\begin{DoxyCompactList}\small\item\em Draw the data from this plottable into the data area defined in the \doxylink{class_scott_plot_1_1_axes}{Axes}. By default the surface is already clipped to the data area, but this can be cleared inside the plottable. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable}{Scott\+Plot.\+IPlottable}}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+readonly \mbox{\hyperlink{class_scott_plot_1_1_font_style}{Font\+Style}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_radial_gauge_plot_ac781e61bc914f8e2a6f13c6b9b4261e7}{Font}} = new()
+\begin{DoxyCompactList}\small\item\em Describes labels drawn on each gauge. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_scott_plot_1_1_i_axes}{IAxes}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_radial_gauge_plot_add3b55db142800b0ec280a8ddb14054f}{Axes}} = new \mbox{\hyperlink{class_scott_plot_1_1_axes}{Axes}}()\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em This object performs coordinate/pixel translation at render time based on the latest data area. It stores the axes to use for this plottable and also the data area (in pixels) updated just before each render. If this object is null it will be constructed using the default X and Y axes at render time. \end{DoxyCompactList}\item 
+double\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_radial_gauge_plot_a956f067fd2f743886524589f142ef1bc}{Levels}} = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em This array holds the original levels passed-\/in by the user. These levels are used to calculate radial gauge positions on every render. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_radial_gauge_plot_a85080399a6e30d0eaec4c62177d02b5d}{Gauge\+Count}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Number of gauges. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_radial_gauge_plot_ae6865fcd5132eb60f36e4f25a37049d8}{Maximum\+Angle}} = 360\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Maximum size (degrees) for the gauge. 180 is a semicircle and 360 is a full circle. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_radial_gauge_plot_ac17e78e3b969279a886fc5732ff6f6bf}{Circular\+Background}} = true\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Controls whether the backgrounds of the gauges are full circles or stop at the maximum angle. \end{DoxyCompactList}\item 
+string?\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_radial_gauge_plot_abf0cbff3a1d5c2f9e659279eb4394bde}{Labels}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Labels that appear in the legend for each gauge. Number of labels must equal number of gauges. May be null if gauges are not to appear in the legend. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_radial_gauge_plot_a772743973b1b07a081164890afe9f5ac}{Colors}} = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em \doxylink{struct_scott_plot_1_1_colors}{Colors} for each gauge. Number of colors must equal number of gauges. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_radial_gauge_plot_a8b7c156dd789ddd6bcf2da5c9fbb1b90}{Background\+Transparency\+Fraction}} = .\+15\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Describes how transparent the unfilled background of each gauge is (0 to 1). The larger the number the darker the background becomes. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_radial_gauge_plot_a577fd0dd4036d7edcd08c4713fc2bfbd}{Clockwise}} = true\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Indicates whether gauges fill clockwise as levels increase. If false, gauges will fill counter-\/clockwise (anti-\/clockwise). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_scott_plot_adfb68832d4ab59ef6fb034faedd4c899}{Radial\+Gauge\+Mode}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_radial_gauge_plot_a252e744a6ab39caa147c17e401760bbc}{Gauge\+Mode}} = \mbox{\hyperlink{namespace_scott_plot_adfb68832d4ab59ef6fb034faedd4c899a29b733fdb4bddeda910b3b4a659c2fef}{Radial\+Gauge\+Mode.\+Stacked}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Determines whether the gauges are drawn stacked (dafault value), sequentially, or as a single gauge (ressembling a pie plot). \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_radial_gauge_plot_a9eea4c58fdf19c5edafc35e9e9b48419}{Order\+Inside\+Out}} = true\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Controls whether gauges will be dwan inside-\/out (true) or outside-\/in (false) \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_radial_gauge_plot_a7cd0a86183320cc925861371b413c8db}{Label\+Position\+Fraction}} = 1\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Defines where the gauge label is written on the gage as a fraction of its length. Low values place the label near the base and high values place the label at its tip. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_radial_gauge_plot_aa7c6358a1d6f3bf5f0044a2ff2be496e}{Starting\+Angle}} = 270\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em \doxylink{struct_scott_plot_1_1_angle}{Angle} (degrees) at which the gauges start. 270° for North (default value), 0° for East, 90° for South, 180° for West, etc. Expected values in the range \mbox{[}0°-\/360°\mbox{]}, otherwise unexpected side-\/effects might happen. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_radial_gauge_plot_a710f4fd58e9c59e8076e6657dc523fdf}{Space\+Fraction}} = .\+5f\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The empty space between gauges as a fraction of the gauge width. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_radial_gauge_plot_a3088be6971a90a5933116c67daaf949b}{Font\+Size\+Fraction}} = .\+75\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Size of the gague label text as a fraction of the gauge width. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_radial_gauge_plot_a3b86091d006403190d801e4ccbf78871}{Show\+Levels}} = true\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Controls if value labels are shown inside the gauges. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_radial_gauge_plot_a0aee2fafc4d5be230d50f93a3ac4866c}{Level\+Text\+Format}} = "{}0.\#\#"{}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em String formatter to use for converting gauge levels to text. \end{DoxyCompactList}\item 
+Skia\+Sharp.\+SKStroke\+Cap \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_radial_gauge_plot_a94e622dd63a0158970d887b4dc640569}{End\+Cap}} = SKStroke\+Cap.\+Round\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Style of the tip of the gauge. \end{DoxyCompactList}\item 
+Skia\+Sharp.\+SKStroke\+Cap \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_radial_gauge_plot_adf9d8cf11175d9f01043295963dccfbc}{Start\+Cap}} = SKStroke\+Cap.\+Round\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Style of the base of the gauge. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_radial_gauge_plot_ad74d026d0ef6984023af061fd5399d76}{Is\+Visible}} = true\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Toggles whether this plottable is shown and contributes to the automatic axis limit detection. The calling method will check this variable (it does not need to be checked inside the Render method). \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_radial_gauge_plot_a3c025b0cdc08ee0049579a12d2a4a843}{XAxis\+Index}} = 0\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+int \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_radial_gauge_plot_aacf4472c1a0e460b71d5124c48a7c1fc}{YAxis\+Index}} = 0\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{class_i_enumerable}{IEnumerable}}$<$ \mbox{\hyperlink{class_scott_plot_1_1_legend_item}{Legend\+Item}} $>$ \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_radial_gauge_plot_a34b45dc57326f831bace5d7226e22144}{Legend\+Items}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Items which will appear in the legend. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable}{Scott\+Plot.\+IPlottable}}}
+
+
+\doxysubsection{Detailed Description}
+A radial gauge chart is a graphical method of displaying scalar data in the form of a chart made of circular gauges so that each scalar is represented by each gauge. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_radial_gauge_plot_a705815f54553273bceaddedf2f7eeea3}\index{ScottPlot.Plottables.RadialGaugePlot@{ScottPlot.Plottables.RadialGaugePlot}!RadialGaugePlot@{RadialGaugePlot}}
+\index{RadialGaugePlot@{RadialGaugePlot}!ScottPlot.Plottables.RadialGaugePlot@{ScottPlot.Plottables.RadialGaugePlot}}
+\doxysubsubsection{\texorpdfstring{RadialGaugePlot()}{RadialGaugePlot()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_radial_gauge_plot_a705815f54553273bceaddedf2f7eeea3} 
+Scott\+Plot.\+Plottables.\+Radial\+Gauge\+Plot.\+Radial\+Gauge\+Plot (\begin{DoxyParamCaption}\item[{double\mbox{[}$\,$\mbox{]}}]{levels}{, }\item[{\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}}\mbox{[}$\,$\mbox{]}}]{colors}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_radial_gauge_plot_a7ef4c093f7951ee1069dc2293389c50c}\index{ScottPlot.Plottables.RadialGaugePlot@{ScottPlot.Plottables.RadialGaugePlot}!GetAxisLimits@{GetAxisLimits}}
+\index{GetAxisLimits@{GetAxisLimits}!ScottPlot.Plottables.RadialGaugePlot@{ScottPlot.Plottables.RadialGaugePlot}}
+\doxysubsubsection{\texorpdfstring{GetAxisLimits()}{GetAxisLimits()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_radial_gauge_plot_a7ef4c093f7951ee1069dc2293389c50c} 
+\mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}} Scott\+Plot.\+Plottables.\+Radial\+Gauge\+Plot.\+Get\+Axis\+Limits (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return the 2D area (in coordinate space) occupied by the data contained in this plottable. 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable_a2e455cf76f9e8bc3187900b1a90487c3}{Scott\+Plot.\+IPlottable}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_radial_gauge_plot_ab4de3abcd90a3fb6d2871c3ec5329a21}\index{ScottPlot.Plottables.RadialGaugePlot@{ScottPlot.Plottables.RadialGaugePlot}!Render@{Render}}
+\index{Render@{Render}!ScottPlot.Plottables.RadialGaugePlot@{ScottPlot.Plottables.RadialGaugePlot}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_radial_gauge_plot_ab4de3abcd90a3fb6d2871c3ec5329a21} 
+virtual void Scott\+Plot.\+Plottables.\+Radial\+Gauge\+Plot.\+Render (\begin{DoxyParamCaption}\item[{Render\+Pack}]{rp}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Draw the data from this plottable into the data area defined in the \doxylink{class_scott_plot_1_1_axes}{Axes}. By default the surface is already clipped to the data area, but this can be cleared inside the plottable. 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable_a11d2487f1d7628e019a09748d876c289}{Scott\+Plot.\+IPlottable}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_radial_gauge_plot_a1463821f46db561f8a32dff2a3f1f6d4}\index{ScottPlot.Plottables.RadialGaugePlot@{ScottPlot.Plottables.RadialGaugePlot}!ToString@{ToString}}
+\index{ToString@{ToString}!ScottPlot.Plottables.RadialGaugePlot@{ScottPlot.Plottables.RadialGaugePlot}}
+\doxysubsubsection{\texorpdfstring{ToString()}{ToString()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_radial_gauge_plot_a1463821f46db561f8a32dff2a3f1f6d4} 
+override string Scott\+Plot.\+Plottables.\+Radial\+Gauge\+Plot.\+To\+String (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_radial_gauge_plot_a79822815b32303a80b1b34e7ccc7ec1f}\index{ScottPlot.Plottables.RadialGaugePlot@{ScottPlot.Plottables.RadialGaugePlot}!Update@{Update}}
+\index{Update@{Update}!ScottPlot.Plottables.RadialGaugePlot@{ScottPlot.Plottables.RadialGaugePlot}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_radial_gauge_plot_a79822815b32303a80b1b34e7ccc7ec1f} 
+void Scott\+Plot.\+Plottables.\+Radial\+Gauge\+Plot.\+Update (\begin{DoxyParamCaption}\item[{double\mbox{[}$\,$\mbox{]}}]{levels}{, }\item[{\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}}?\mbox{[}$\,$\mbox{]}}]{colors}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Replace gauge levels with new ones. 
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_radial_gauge_plot_afba8b81bdf29b9d21bfcccd7559e6306}\index{ScottPlot.Plottables.RadialGaugePlot@{ScottPlot.Plottables.RadialGaugePlot}!ValidateData@{ValidateData}}
+\index{ValidateData@{ValidateData}!ScottPlot.Plottables.RadialGaugePlot@{ScottPlot.Plottables.RadialGaugePlot}}
+\doxysubsubsection{\texorpdfstring{ValidateData()}{ValidateData()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_radial_gauge_plot_afba8b81bdf29b9d21bfcccd7559e6306} 
+void Scott\+Plot.\+Plottables.\+Radial\+Gauge\+Plot.\+Validate\+Data (\begin{DoxyParamCaption}\item[{bool}]{deep}{ = {\ttfamily false}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_radial_gauge_plot_ac781e61bc914f8e2a6f13c6b9b4261e7}\index{ScottPlot.Plottables.RadialGaugePlot@{ScottPlot.Plottables.RadialGaugePlot}!Font@{Font}}
+\index{Font@{Font}!ScottPlot.Plottables.RadialGaugePlot@{ScottPlot.Plottables.RadialGaugePlot}}
+\doxysubsubsection{\texorpdfstring{Font}{Font}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_radial_gauge_plot_ac781e61bc914f8e2a6f13c6b9b4261e7} 
+readonly \mbox{\hyperlink{class_scott_plot_1_1_font_style}{Font\+Style}} Scott\+Plot.\+Plottables.\+Radial\+Gauge\+Plot.\+Font = new()}
+
+
+
+Describes labels drawn on each gauge. 
+
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_radial_gauge_plot_add3b55db142800b0ec280a8ddb14054f}\index{ScottPlot.Plottables.RadialGaugePlot@{ScottPlot.Plottables.RadialGaugePlot}!Axes@{Axes}}
+\index{Axes@{Axes}!ScottPlot.Plottables.RadialGaugePlot@{ScottPlot.Plottables.RadialGaugePlot}}
+\doxysubsubsection{\texorpdfstring{Axes}{Axes}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_radial_gauge_plot_add3b55db142800b0ec280a8ddb14054f} 
+\mbox{\hyperlink{interface_scott_plot_1_1_i_axes}{IAxes}} Scott\+Plot.\+Plottables.\+Radial\+Gauge\+Plot.\+Axes = new \mbox{\hyperlink{class_scott_plot_1_1_axes}{Axes}}()\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+This object performs coordinate/pixel translation at render time based on the latest data area. It stores the axes to use for this plottable and also the data area (in pixels) updated just before each render. If this object is null it will be constructed using the default X and Y axes at render time. 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable_aa68bc5153a673a7cd4a68f93da377d0a}{Scott\+Plot.\+IPlottable}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_radial_gauge_plot_a8b7c156dd789ddd6bcf2da5c9fbb1b90}\index{ScottPlot.Plottables.RadialGaugePlot@{ScottPlot.Plottables.RadialGaugePlot}!BackgroundTransparencyFraction@{BackgroundTransparencyFraction}}
+\index{BackgroundTransparencyFraction@{BackgroundTransparencyFraction}!ScottPlot.Plottables.RadialGaugePlot@{ScottPlot.Plottables.RadialGaugePlot}}
+\doxysubsubsection{\texorpdfstring{BackgroundTransparencyFraction}{BackgroundTransparencyFraction}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_radial_gauge_plot_a8b7c156dd789ddd6bcf2da5c9fbb1b90} 
+double Scott\+Plot.\+Plottables.\+Radial\+Gauge\+Plot.\+Background\+Transparency\+Fraction = .\+15\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Describes how transparent the unfilled background of each gauge is (0 to 1). The larger the number the darker the background becomes. 
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_radial_gauge_plot_ac17e78e3b969279a886fc5732ff6f6bf}\index{ScottPlot.Plottables.RadialGaugePlot@{ScottPlot.Plottables.RadialGaugePlot}!CircularBackground@{CircularBackground}}
+\index{CircularBackground@{CircularBackground}!ScottPlot.Plottables.RadialGaugePlot@{ScottPlot.Plottables.RadialGaugePlot}}
+\doxysubsubsection{\texorpdfstring{CircularBackground}{CircularBackground}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_radial_gauge_plot_ac17e78e3b969279a886fc5732ff6f6bf} 
+bool Scott\+Plot.\+Plottables.\+Radial\+Gauge\+Plot.\+Circular\+Background = true\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Controls whether the backgrounds of the gauges are full circles or stop at the maximum angle. 
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_radial_gauge_plot_a577fd0dd4036d7edcd08c4713fc2bfbd}\index{ScottPlot.Plottables.RadialGaugePlot@{ScottPlot.Plottables.RadialGaugePlot}!Clockwise@{Clockwise}}
+\index{Clockwise@{Clockwise}!ScottPlot.Plottables.RadialGaugePlot@{ScottPlot.Plottables.RadialGaugePlot}}
+\doxysubsubsection{\texorpdfstring{Clockwise}{Clockwise}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_radial_gauge_plot_a577fd0dd4036d7edcd08c4713fc2bfbd} 
+bool Scott\+Plot.\+Plottables.\+Radial\+Gauge\+Plot.\+Clockwise = true\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Indicates whether gauges fill clockwise as levels increase. If false, gauges will fill counter-\/clockwise (anti-\/clockwise). 
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_radial_gauge_plot_a772743973b1b07a081164890afe9f5ac}\index{ScottPlot.Plottables.RadialGaugePlot@{ScottPlot.Plottables.RadialGaugePlot}!Colors@{Colors}}
+\index{Colors@{Colors}!ScottPlot.Plottables.RadialGaugePlot@{ScottPlot.Plottables.RadialGaugePlot}}
+\doxysubsubsection{\texorpdfstring{Colors}{Colors}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_radial_gauge_plot_a772743973b1b07a081164890afe9f5ac} 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} \mbox{[}$\,$\mbox{]} Scott\+Plot.\+Plottables.\+Radial\+Gauge\+Plot.\+Colors = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+\doxylink{struct_scott_plot_1_1_colors}{Colors} for each gauge. Number of colors must equal number of gauges. 
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_radial_gauge_plot_a94e622dd63a0158970d887b4dc640569}\index{ScottPlot.Plottables.RadialGaugePlot@{ScottPlot.Plottables.RadialGaugePlot}!EndCap@{EndCap}}
+\index{EndCap@{EndCap}!ScottPlot.Plottables.RadialGaugePlot@{ScottPlot.Plottables.RadialGaugePlot}}
+\doxysubsubsection{\texorpdfstring{EndCap}{EndCap}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_radial_gauge_plot_a94e622dd63a0158970d887b4dc640569} 
+Skia\+Sharp.\+SKStroke\+Cap Scott\+Plot.\+Plottables.\+Radial\+Gauge\+Plot.\+End\+Cap = SKStroke\+Cap.\+Round\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Style of the tip of the gauge. 
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_radial_gauge_plot_a3088be6971a90a5933116c67daaf949b}\index{ScottPlot.Plottables.RadialGaugePlot@{ScottPlot.Plottables.RadialGaugePlot}!FontSizeFraction@{FontSizeFraction}}
+\index{FontSizeFraction@{FontSizeFraction}!ScottPlot.Plottables.RadialGaugePlot@{ScottPlot.Plottables.RadialGaugePlot}}
+\doxysubsubsection{\texorpdfstring{FontSizeFraction}{FontSizeFraction}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_radial_gauge_plot_a3088be6971a90a5933116c67daaf949b} 
+double Scott\+Plot.\+Plottables.\+Radial\+Gauge\+Plot.\+Font\+Size\+Fraction = .\+75\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Size of the gague label text as a fraction of the gauge width. 
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_radial_gauge_plot_a85080399a6e30d0eaec4c62177d02b5d}\index{ScottPlot.Plottables.RadialGaugePlot@{ScottPlot.Plottables.RadialGaugePlot}!GaugeCount@{GaugeCount}}
+\index{GaugeCount@{GaugeCount}!ScottPlot.Plottables.RadialGaugePlot@{ScottPlot.Plottables.RadialGaugePlot}}
+\doxysubsubsection{\texorpdfstring{GaugeCount}{GaugeCount}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_radial_gauge_plot_a85080399a6e30d0eaec4c62177d02b5d} 
+int Scott\+Plot.\+Plottables.\+Radial\+Gauge\+Plot.\+Gauge\+Count\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Number of gauges. 
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_radial_gauge_plot_a252e744a6ab39caa147c17e401760bbc}\index{ScottPlot.Plottables.RadialGaugePlot@{ScottPlot.Plottables.RadialGaugePlot}!GaugeMode@{GaugeMode}}
+\index{GaugeMode@{GaugeMode}!ScottPlot.Plottables.RadialGaugePlot@{ScottPlot.Plottables.RadialGaugePlot}}
+\doxysubsubsection{\texorpdfstring{GaugeMode}{GaugeMode}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_radial_gauge_plot_a252e744a6ab39caa147c17e401760bbc} 
+\mbox{\hyperlink{namespace_scott_plot_adfb68832d4ab59ef6fb034faedd4c899}{Radial\+Gauge\+Mode}} Scott\+Plot.\+Plottables.\+Radial\+Gauge\+Plot.\+Gauge\+Mode = \mbox{\hyperlink{namespace_scott_plot_adfb68832d4ab59ef6fb034faedd4c899a29b733fdb4bddeda910b3b4a659c2fef}{Radial\+Gauge\+Mode.\+Stacked}}\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Determines whether the gauges are drawn stacked (dafault value), sequentially, or as a single gauge (ressembling a pie plot). 
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_radial_gauge_plot_ad74d026d0ef6984023af061fd5399d76}\index{ScottPlot.Plottables.RadialGaugePlot@{ScottPlot.Plottables.RadialGaugePlot}!IsVisible@{IsVisible}}
+\index{IsVisible@{IsVisible}!ScottPlot.Plottables.RadialGaugePlot@{ScottPlot.Plottables.RadialGaugePlot}}
+\doxysubsubsection{\texorpdfstring{IsVisible}{IsVisible}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_radial_gauge_plot_ad74d026d0ef6984023af061fd5399d76} 
+bool Scott\+Plot.\+Plottables.\+Radial\+Gauge\+Plot.\+Is\+Visible = true\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Toggles whether this plottable is shown and contributes to the automatic axis limit detection. The calling method will check this variable (it does not need to be checked inside the Render method). 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable_abbe75ba55a332d695313ccb5dc780923}{Scott\+Plot.\+IPlottable}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_radial_gauge_plot_a7cd0a86183320cc925861371b413c8db}\index{ScottPlot.Plottables.RadialGaugePlot@{ScottPlot.Plottables.RadialGaugePlot}!LabelPositionFraction@{LabelPositionFraction}}
+\index{LabelPositionFraction@{LabelPositionFraction}!ScottPlot.Plottables.RadialGaugePlot@{ScottPlot.Plottables.RadialGaugePlot}}
+\doxysubsubsection{\texorpdfstring{LabelPositionFraction}{LabelPositionFraction}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_radial_gauge_plot_a7cd0a86183320cc925861371b413c8db} 
+double Scott\+Plot.\+Plottables.\+Radial\+Gauge\+Plot.\+Label\+Position\+Fraction = 1\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Defines where the gauge label is written on the gage as a fraction of its length. Low values place the label near the base and high values place the label at its tip. 
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_radial_gauge_plot_abf0cbff3a1d5c2f9e659279eb4394bde}\index{ScottPlot.Plottables.RadialGaugePlot@{ScottPlot.Plottables.RadialGaugePlot}!Labels@{Labels}}
+\index{Labels@{Labels}!ScottPlot.Plottables.RadialGaugePlot@{ScottPlot.Plottables.RadialGaugePlot}}
+\doxysubsubsection{\texorpdfstring{Labels}{Labels}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_radial_gauge_plot_abf0cbff3a1d5c2f9e659279eb4394bde} 
+string? \mbox{[}$\,$\mbox{]} Scott\+Plot.\+Plottables.\+Radial\+Gauge\+Plot.\+Labels\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Labels that appear in the legend for each gauge. Number of labels must equal number of gauges. May be null if gauges are not to appear in the legend. 
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_radial_gauge_plot_a34b45dc57326f831bace5d7226e22144}\index{ScottPlot.Plottables.RadialGaugePlot@{ScottPlot.Plottables.RadialGaugePlot}!LegendItems@{LegendItems}}
+\index{LegendItems@{LegendItems}!ScottPlot.Plottables.RadialGaugePlot@{ScottPlot.Plottables.RadialGaugePlot}}
+\doxysubsubsection{\texorpdfstring{LegendItems}{LegendItems}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_radial_gauge_plot_a34b45dc57326f831bace5d7226e22144} 
+\mbox{\hyperlink{class_i_enumerable}{IEnumerable}}$<$\mbox{\hyperlink{class_scott_plot_1_1_legend_item}{Legend\+Item}}$>$ Scott\+Plot.\+Plottables.\+Radial\+Gauge\+Plot.\+Legend\+Items\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Items which will appear in the legend. 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable_a4565f96a253f832bd9aa8033c99eff75}{Scott\+Plot.\+IPlottable}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_radial_gauge_plot_a956f067fd2f743886524589f142ef1bc}\index{ScottPlot.Plottables.RadialGaugePlot@{ScottPlot.Plottables.RadialGaugePlot}!Levels@{Levels}}
+\index{Levels@{Levels}!ScottPlot.Plottables.RadialGaugePlot@{ScottPlot.Plottables.RadialGaugePlot}}
+\doxysubsubsection{\texorpdfstring{Levels}{Levels}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_radial_gauge_plot_a956f067fd2f743886524589f142ef1bc} 
+double \mbox{[}$\,$\mbox{]} Scott\+Plot.\+Plottables.\+Radial\+Gauge\+Plot.\+Levels = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+This array holds the original levels passed-\/in by the user. These levels are used to calculate radial gauge positions on every render. 
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_radial_gauge_plot_a0aee2fafc4d5be230d50f93a3ac4866c}\index{ScottPlot.Plottables.RadialGaugePlot@{ScottPlot.Plottables.RadialGaugePlot}!LevelTextFormat@{LevelTextFormat}}
+\index{LevelTextFormat@{LevelTextFormat}!ScottPlot.Plottables.RadialGaugePlot@{ScottPlot.Plottables.RadialGaugePlot}}
+\doxysubsubsection{\texorpdfstring{LevelTextFormat}{LevelTextFormat}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_radial_gauge_plot_a0aee2fafc4d5be230d50f93a3ac4866c} 
+string Scott\+Plot.\+Plottables.\+Radial\+Gauge\+Plot.\+Level\+Text\+Format = "{}0.\#\#"{}\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+String formatter to use for converting gauge levels to text. 
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_radial_gauge_plot_ae6865fcd5132eb60f36e4f25a37049d8}\index{ScottPlot.Plottables.RadialGaugePlot@{ScottPlot.Plottables.RadialGaugePlot}!MaximumAngle@{MaximumAngle}}
+\index{MaximumAngle@{MaximumAngle}!ScottPlot.Plottables.RadialGaugePlot@{ScottPlot.Plottables.RadialGaugePlot}}
+\doxysubsubsection{\texorpdfstring{MaximumAngle}{MaximumAngle}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_radial_gauge_plot_ae6865fcd5132eb60f36e4f25a37049d8} 
+double Scott\+Plot.\+Plottables.\+Radial\+Gauge\+Plot.\+Maximum\+Angle = 360\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Maximum size (degrees) for the gauge. 180 is a semicircle and 360 is a full circle. 
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_radial_gauge_plot_a9eea4c58fdf19c5edafc35e9e9b48419}\index{ScottPlot.Plottables.RadialGaugePlot@{ScottPlot.Plottables.RadialGaugePlot}!OrderInsideOut@{OrderInsideOut}}
+\index{OrderInsideOut@{OrderInsideOut}!ScottPlot.Plottables.RadialGaugePlot@{ScottPlot.Plottables.RadialGaugePlot}}
+\doxysubsubsection{\texorpdfstring{OrderInsideOut}{OrderInsideOut}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_radial_gauge_plot_a9eea4c58fdf19c5edafc35e9e9b48419} 
+bool Scott\+Plot.\+Plottables.\+Radial\+Gauge\+Plot.\+Order\+Inside\+Out = true\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Controls whether gauges will be dwan inside-\/out (true) or outside-\/in (false) 
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_radial_gauge_plot_a3b86091d006403190d801e4ccbf78871}\index{ScottPlot.Plottables.RadialGaugePlot@{ScottPlot.Plottables.RadialGaugePlot}!ShowLevels@{ShowLevels}}
+\index{ShowLevels@{ShowLevels}!ScottPlot.Plottables.RadialGaugePlot@{ScottPlot.Plottables.RadialGaugePlot}}
+\doxysubsubsection{\texorpdfstring{ShowLevels}{ShowLevels}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_radial_gauge_plot_a3b86091d006403190d801e4ccbf78871} 
+bool Scott\+Plot.\+Plottables.\+Radial\+Gauge\+Plot.\+Show\+Levels = true\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Controls if value labels are shown inside the gauges. 
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_radial_gauge_plot_a710f4fd58e9c59e8076e6657dc523fdf}\index{ScottPlot.Plottables.RadialGaugePlot@{ScottPlot.Plottables.RadialGaugePlot}!SpaceFraction@{SpaceFraction}}
+\index{SpaceFraction@{SpaceFraction}!ScottPlot.Plottables.RadialGaugePlot@{ScottPlot.Plottables.RadialGaugePlot}}
+\doxysubsubsection{\texorpdfstring{SpaceFraction}{SpaceFraction}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_radial_gauge_plot_a710f4fd58e9c59e8076e6657dc523fdf} 
+double Scott\+Plot.\+Plottables.\+Radial\+Gauge\+Plot.\+Space\+Fraction = .\+5f\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The empty space between gauges as a fraction of the gauge width. 
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_radial_gauge_plot_adf9d8cf11175d9f01043295963dccfbc}\index{ScottPlot.Plottables.RadialGaugePlot@{ScottPlot.Plottables.RadialGaugePlot}!StartCap@{StartCap}}
+\index{StartCap@{StartCap}!ScottPlot.Plottables.RadialGaugePlot@{ScottPlot.Plottables.RadialGaugePlot}}
+\doxysubsubsection{\texorpdfstring{StartCap}{StartCap}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_radial_gauge_plot_adf9d8cf11175d9f01043295963dccfbc} 
+Skia\+Sharp.\+SKStroke\+Cap Scott\+Plot.\+Plottables.\+Radial\+Gauge\+Plot.\+Start\+Cap = SKStroke\+Cap.\+Round\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Style of the base of the gauge. 
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_radial_gauge_plot_aa7c6358a1d6f3bf5f0044a2ff2be496e}\index{ScottPlot.Plottables.RadialGaugePlot@{ScottPlot.Plottables.RadialGaugePlot}!StartingAngle@{StartingAngle}}
+\index{StartingAngle@{StartingAngle}!ScottPlot.Plottables.RadialGaugePlot@{ScottPlot.Plottables.RadialGaugePlot}}
+\doxysubsubsection{\texorpdfstring{StartingAngle}{StartingAngle}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_radial_gauge_plot_aa7c6358a1d6f3bf5f0044a2ff2be496e} 
+float Scott\+Plot.\+Plottables.\+Radial\+Gauge\+Plot.\+Starting\+Angle = 270\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+\doxylink{struct_scott_plot_1_1_angle}{Angle} (degrees) at which the gauges start. 270° for North (default value), 0° for East, 90° for South, 180° for West, etc. Expected values in the range \mbox{[}0°-\/360°\mbox{]}, otherwise unexpected side-\/effects might happen. 
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_radial_gauge_plot_a3c025b0cdc08ee0049579a12d2a4a843}\index{ScottPlot.Plottables.RadialGaugePlot@{ScottPlot.Plottables.RadialGaugePlot}!XAxisIndex@{XAxisIndex}}
+\index{XAxisIndex@{XAxisIndex}!ScottPlot.Plottables.RadialGaugePlot@{ScottPlot.Plottables.RadialGaugePlot}}
+\doxysubsubsection{\texorpdfstring{XAxisIndex}{XAxisIndex}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_radial_gauge_plot_a3c025b0cdc08ee0049579a12d2a4a843} 
+int Scott\+Plot.\+Plottables.\+Radial\+Gauge\+Plot.\+XAxis\+Index = 0\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_radial_gauge_plot_aacf4472c1a0e460b71d5124c48a7c1fc}\index{ScottPlot.Plottables.RadialGaugePlot@{ScottPlot.Plottables.RadialGaugePlot}!YAxisIndex@{YAxisIndex}}
+\index{YAxisIndex@{YAxisIndex}!ScottPlot.Plottables.RadialGaugePlot@{ScottPlot.Plottables.RadialGaugePlot}}
+\doxysubsubsection{\texorpdfstring{YAxisIndex}{YAxisIndex}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_radial_gauge_plot_aacf4472c1a0e460b71d5124c48a7c1fc} 
+int Scott\+Plot.\+Plottables.\+Radial\+Gauge\+Plot.\+YAxis\+Index = 0\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Plottables/Radial\+Gauge\+Plot.\+cs\end{DoxyCompactItemize}

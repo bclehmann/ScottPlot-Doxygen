@@ -1,0 +1,486 @@
+\doxysection{Scott\+Plot.\+Testing.\+Mock\+Plot\+Control Class Reference}
+\hypertarget{class_scott_plot_1_1_testing_1_1_mock_plot_control}{}\label{class_scott_plot_1_1_testing_1_1_mock_plot_control}\index{ScottPlot.Testing.MockPlotControl@{ScottPlot.Testing.MockPlotControl}}
+
+
+A plot control that renders in-\/memory and has functionality useful for testing interactivity.  
+
+
+Inheritance diagram for Scott\+Plot.\+Testing.\+Mock\+Plot\+Control\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_scott_plot_1_1_testing_1_1_mock_plot_control}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_scott_plot_1_1_testing_1_1_mock_plot_control_a96bcfd9bf9ca5910ba102b25b6fe4fd6}{Mock\+Plot\+Control}} ()
+\item 
+float \mbox{\hyperlink{class_scott_plot_1_1_testing_1_1_mock_plot_control_acba9b1cc7f0070c19ab2c5b05ecab6f4}{Detect\+Display\+Scale}} ()
+\begin{DoxyCompactList}\small\item\em Determine the DPI scaling ratio of the present display. A value of 1.\+0 means no scaling, and 1.\+5 means 150\% scaling. This operation may be costly so do not call it frequently. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_testing_1_1_mock_plot_control_a23d7165664ba5f5b103b045902ab3f0f}{Refresh}} ()
+\begin{DoxyCompactList}\small\item\em Render the plot and update the image. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_testing_1_1_mock_plot_control_a7741cb9b673288384eaf92fb1f65cc1e}{Reset}} ()
+\begin{DoxyCompactList}\small\item\em Disposes the current \doxylink{class_scott_plot_1_1_plot}{Plot} and creates a new one for the control. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_testing_1_1_mock_plot_control_acf978c09e84fe665244c14f8effb7564}{Reset}} (\mbox{\hyperlink{class_scott_plot_1_1_plot}{Plot}} plot)
+\begin{DoxyCompactList}\small\item\em Loads the given \doxylink{class_scott_plot_1_1_plot}{Plot} into the control. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_testing_1_1_mock_plot_control_acde7aa2a483bfef0f1fdacb5ebfadef4}{Show\+Context\+Menu}} (\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}} position)
+\begin{DoxyCompactList}\small\item\em Launch the default pop-\/up menu (typically in response to a right-\/click) at the given position in the control. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_testing_1_1_mock_plot_control_a2156d2992d438cc53250ba281c0d4e2c}{Scroll\+Wheel\+Up}} (\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}} pixel)
+\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_testing_1_1_mock_plot_control_a749bd6390527dcff2fb8aeb88b5ab0fc}{Scroll\+Wheel\+Down}} (\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}} pixel)
+\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_testing_1_1_mock_plot_control_ab173ec7ca4bd4cf0e2c8bb19a4460b71}{Press\+Shift}} ()
+\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_testing_1_1_mock_plot_control_a5898ba54cd0da8222ebe205474f6a789}{Release\+Shift}} ()
+\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_testing_1_1_mock_plot_control_a3324cbdb66fdd05d194a4e4ccc6c842b}{Press\+Ctrl}} ()
+\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_testing_1_1_mock_plot_control_a8d22eb7d5250bba37c4a905b89e2bd7d}{Release\+Ctrl}} ()
+\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_testing_1_1_mock_plot_control_a6d5da197a98cbc0ef0e857199ae1eb1f}{Press\+Alt}} ()
+\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_testing_1_1_mock_plot_control_ab0473da2adb39cf965db49f2a0e536a2}{Release\+Alt}} ()
+\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_testing_1_1_mock_plot_control_a2b833f15ec39dd6a4eeae341d46e1563}{Tap\+Right\+Arrow}} ()
+\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_testing_1_1_mock_plot_control_a9dd21e6c4bb87e77516205a4e15a8bde}{Tap\+Left\+Arrow}} ()
+\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_testing_1_1_mock_plot_control_a239f7b03c12852a618e6535d4f69db69}{Tap\+Up\+Arrow}} ()
+\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_testing_1_1_mock_plot_control_ae26f8841b1a4f28905cb4d0ec7d30ea8}{Tap\+Down\+Arrow}} ()
+\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_testing_1_1_mock_plot_control_a9d89673fac5171a1ad640511d12154dc}{Press\+Key}} (\mbox{\hyperlink{struct_scott_plot_1_1_interactivity_1_1_key}{Key}} key)
+\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_testing_1_1_mock_plot_control_ae08586fb1e2017ccb3ad2829dd4c9a71}{Release\+Key}} (\mbox{\hyperlink{struct_scott_plot_1_1_interactivity_1_1_key}{Key}} key)
+\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_testing_1_1_mock_plot_control_a4b345903ba21fed574f2c9aefbdc575c}{Tap\+Key}} (\mbox{\hyperlink{struct_scott_plot_1_1_interactivity_1_1_key}{Key}} key)
+\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_testing_1_1_mock_plot_control_a6d68b8244981e4c32022a8a06f075bcf}{Move\+Mouse}} (\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}} px)
+\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_testing_1_1_mock_plot_control_a63841ad83a8a1f7a8044f0559fe5011a}{Left\+Mouse\+Down}} (\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}} px)
+\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_testing_1_1_mock_plot_control_ad1460450a763dfb7828ae8b9e6b94f45}{Left\+Mouse\+Up}} (\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}} px)
+\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_testing_1_1_mock_plot_control_a880268ba6d3f5f8216834b17cf9066bb}{Left\+Click}} (\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}} px)
+\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_testing_1_1_mock_plot_control_af7042ca57f7bdd039143221ab5805997}{Left\+Click\+Drag}} (\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}} px1, \mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}} px2)
+\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_testing_1_1_mock_plot_control_abb698e8011fa2ce81636f6ad48df1d89}{Right\+Mouse\+Down}} (\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}} px)
+\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_testing_1_1_mock_plot_control_a02ed2b7f5b8b5ce4e22656c8e48ea658}{Right\+Mouse\+Up}} (\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}} px)
+\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_testing_1_1_mock_plot_control_a3176af89412bd455e88b8dc10a295583}{Right\+Click}} (\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}} px)
+\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_testing_1_1_mock_plot_control_a52091a55233841422404bcae973bad14}{Right\+Click\+Drag}} (\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}} px1, \mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}} px2)
+\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_testing_1_1_mock_plot_control_ae50f6cf670ceb27eef4db21b87b7ba03}{Middle\+Mouse\+Down}} (\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}} px)
+\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_testing_1_1_mock_plot_control_a097fae6eeac8f60fb60a75a4108feb52}{Middle\+Mouse\+Up}} (\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}} px)
+\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_testing_1_1_mock_plot_control_acf01eb6350305a763d86882754c942d9}{Middle\+Click}} (\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}} px)
+\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_testing_1_1_mock_plot_control_a876009d77c4b1161a43ee94282323ec9}{Middle\+Click\+Drag}} (\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}} px1, \mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}} px2)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_scott_plot_1_1_i_plot_control}{Scott\+Plot.\+IPlot\+Control}}}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_scott_plot_1_1_testing_1_1_mock_plot_control_a98b478bd0a4e065e82d80227109a4be4}{Width}} = 400\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+int \mbox{\hyperlink{class_scott_plot_1_1_testing_1_1_mock_plot_control_a88d546ef5e117ce01a6cc438878f3dfc}{Height}} = 300\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}} \mbox{\hyperlink{class_scott_plot_1_1_testing_1_1_mock_plot_control_a69b23fff07c205e7217c85e54e5b0fc1}{Center}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{class_scott_plot_1_1_plot}{Plot}} \mbox{\hyperlink{class_scott_plot_1_1_testing_1_1_mock_plot_control_aebf14642236773e5fa0f0a850f6c126b}{Plot}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The \doxylink{class_scott_plot_1_1_plot}{Plot} displayed by this interactive control. \end{DoxyCompactList}\item 
+GRContext? \mbox{\hyperlink{class_scott_plot_1_1_testing_1_1_mock_plot_control_ae0bd8cf40aed573566b561bede20b906}{GRContext}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Context for hardware-\/accelerated graphics (or null if not available) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{interface_scott_plot_1_1_i_plot_interaction}{IPlot\+Interaction}} \mbox{\hyperlink{class_scott_plot_1_1_testing_1_1_mock_plot_control_aac8169232632a7563cc861a7e28e9d00}{Interaction}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Options for configuring user inputs. This functionality is being replaced by \doxylink{class_scott_plot_1_1_testing_1_1_mock_plot_control_a1e842d4c5e549da60a10badd6f37b980}{User\+Input\+Processor}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_scott_plot_1_1_interactivity_1_1_user_input_processor}{Interactivity.\+User\+Input\+Processor}} \mbox{\hyperlink{class_scott_plot_1_1_testing_1_1_mock_plot_control_a1e842d4c5e549da60a10badd6f37b980}{User\+Input\+Processor}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em This object takes in UI events and contains logic for how to respond to them. This is a newer alternative to the older \doxylink{class_scott_plot_1_1_testing_1_1_mock_plot_control_aac8169232632a7563cc861a7e28e9d00}{Interaction} system. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{interface_scott_plot_1_1_i_plot_menu}{IPlot\+Menu}} \mbox{\hyperlink{class_scott_plot_1_1_testing_1_1_mock_plot_control_ac09a49791943afd34d34d2eebd3227b3}{Menu}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Platform-\/specific logic for managing the context menu. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_scott_plot_1_1_testing_1_1_mock_plot_control_af475df77f908e0b362ebc82520d0c4a3}{Display\+Scale}} = 1\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The value of the present display scaling. Mouse positions are multiplied by this value for pixel/coordinate conversions. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_scott_plot_1_1_testing_1_1_mock_plot_control_a8c1f7e2ea67334a16e29b297a959139c}{Refresh\+Count}} = 0\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+int \mbox{\hyperlink{class_scott_plot_1_1_testing_1_1_mock_plot_control_a3b0c867dcc8d2fae8c5658b68ae1ae62}{Context\+Menu\+Launch\+Count}} = 0\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{interface_scott_plot_1_1_i_plot_control}{Scott\+Plot.\+IPlot\+Control}}}
+
+
+\doxysubsection{Detailed Description}
+A plot control that renders in-\/memory and has functionality useful for testing interactivity. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_scott_plot_1_1_testing_1_1_mock_plot_control_a96bcfd9bf9ca5910ba102b25b6fe4fd6}\index{ScottPlot.Testing.MockPlotControl@{ScottPlot.Testing.MockPlotControl}!MockPlotControl@{MockPlotControl}}
+\index{MockPlotControl@{MockPlotControl}!ScottPlot.Testing.MockPlotControl@{ScottPlot.Testing.MockPlotControl}}
+\doxysubsubsection{\texorpdfstring{MockPlotControl()}{MockPlotControl()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_testing_1_1_mock_plot_control_a96bcfd9bf9ca5910ba102b25b6fe4fd6} 
+Scott\+Plot.\+Testing.\+Mock\+Plot\+Control.\+Mock\+Plot\+Control (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_scott_plot_1_1_testing_1_1_mock_plot_control_acba9b1cc7f0070c19ab2c5b05ecab6f4}\index{ScottPlot.Testing.MockPlotControl@{ScottPlot.Testing.MockPlotControl}!DetectDisplayScale@{DetectDisplayScale}}
+\index{DetectDisplayScale@{DetectDisplayScale}!ScottPlot.Testing.MockPlotControl@{ScottPlot.Testing.MockPlotControl}}
+\doxysubsubsection{\texorpdfstring{DetectDisplayScale()}{DetectDisplayScale()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_testing_1_1_mock_plot_control_acba9b1cc7f0070c19ab2c5b05ecab6f4} 
+float Scott\+Plot.\+Testing.\+Mock\+Plot\+Control.\+Detect\+Display\+Scale (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Determine the DPI scaling ratio of the present display. A value of 1.\+0 means no scaling, and 1.\+5 means 150\% scaling. This operation may be costly so do not call it frequently. 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_plot_control_aa11515568028768ad0a9a1bf17b34182}{Scott\+Plot.\+IPlot\+Control}}.
+
+\Hypertarget{class_scott_plot_1_1_testing_1_1_mock_plot_control_a880268ba6d3f5f8216834b17cf9066bb}\index{ScottPlot.Testing.MockPlotControl@{ScottPlot.Testing.MockPlotControl}!LeftClick@{LeftClick}}
+\index{LeftClick@{LeftClick}!ScottPlot.Testing.MockPlotControl@{ScottPlot.Testing.MockPlotControl}}
+\doxysubsubsection{\texorpdfstring{LeftClick()}{LeftClick()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_testing_1_1_mock_plot_control_a880268ba6d3f5f8216834b17cf9066bb} 
+void Scott\+Plot.\+Testing.\+Mock\+Plot\+Control.\+Left\+Click (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}}}]{px}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_testing_1_1_mock_plot_control_af7042ca57f7bdd039143221ab5805997}\index{ScottPlot.Testing.MockPlotControl@{ScottPlot.Testing.MockPlotControl}!LeftClickDrag@{LeftClickDrag}}
+\index{LeftClickDrag@{LeftClickDrag}!ScottPlot.Testing.MockPlotControl@{ScottPlot.Testing.MockPlotControl}}
+\doxysubsubsection{\texorpdfstring{LeftClickDrag()}{LeftClickDrag()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_testing_1_1_mock_plot_control_af7042ca57f7bdd039143221ab5805997} 
+void Scott\+Plot.\+Testing.\+Mock\+Plot\+Control.\+Left\+Click\+Drag (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}}}]{px1}{, }\item[{\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}}}]{px2}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_testing_1_1_mock_plot_control_a63841ad83a8a1f7a8044f0559fe5011a}\index{ScottPlot.Testing.MockPlotControl@{ScottPlot.Testing.MockPlotControl}!LeftMouseDown@{LeftMouseDown}}
+\index{LeftMouseDown@{LeftMouseDown}!ScottPlot.Testing.MockPlotControl@{ScottPlot.Testing.MockPlotControl}}
+\doxysubsubsection{\texorpdfstring{LeftMouseDown()}{LeftMouseDown()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_testing_1_1_mock_plot_control_a63841ad83a8a1f7a8044f0559fe5011a} 
+void Scott\+Plot.\+Testing.\+Mock\+Plot\+Control.\+Left\+Mouse\+Down (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}}}]{px}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_testing_1_1_mock_plot_control_ad1460450a763dfb7828ae8b9e6b94f45}\index{ScottPlot.Testing.MockPlotControl@{ScottPlot.Testing.MockPlotControl}!LeftMouseUp@{LeftMouseUp}}
+\index{LeftMouseUp@{LeftMouseUp}!ScottPlot.Testing.MockPlotControl@{ScottPlot.Testing.MockPlotControl}}
+\doxysubsubsection{\texorpdfstring{LeftMouseUp()}{LeftMouseUp()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_testing_1_1_mock_plot_control_ad1460450a763dfb7828ae8b9e6b94f45} 
+void Scott\+Plot.\+Testing.\+Mock\+Plot\+Control.\+Left\+Mouse\+Up (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}}}]{px}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_testing_1_1_mock_plot_control_acf01eb6350305a763d86882754c942d9}\index{ScottPlot.Testing.MockPlotControl@{ScottPlot.Testing.MockPlotControl}!MiddleClick@{MiddleClick}}
+\index{MiddleClick@{MiddleClick}!ScottPlot.Testing.MockPlotControl@{ScottPlot.Testing.MockPlotControl}}
+\doxysubsubsection{\texorpdfstring{MiddleClick()}{MiddleClick()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_testing_1_1_mock_plot_control_acf01eb6350305a763d86882754c942d9} 
+void Scott\+Plot.\+Testing.\+Mock\+Plot\+Control.\+Middle\+Click (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}}}]{px}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_testing_1_1_mock_plot_control_a876009d77c4b1161a43ee94282323ec9}\index{ScottPlot.Testing.MockPlotControl@{ScottPlot.Testing.MockPlotControl}!MiddleClickDrag@{MiddleClickDrag}}
+\index{MiddleClickDrag@{MiddleClickDrag}!ScottPlot.Testing.MockPlotControl@{ScottPlot.Testing.MockPlotControl}}
+\doxysubsubsection{\texorpdfstring{MiddleClickDrag()}{MiddleClickDrag()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_testing_1_1_mock_plot_control_a876009d77c4b1161a43ee94282323ec9} 
+void Scott\+Plot.\+Testing.\+Mock\+Plot\+Control.\+Middle\+Click\+Drag (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}}}]{px1}{, }\item[{\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}}}]{px2}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_testing_1_1_mock_plot_control_ae50f6cf670ceb27eef4db21b87b7ba03}\index{ScottPlot.Testing.MockPlotControl@{ScottPlot.Testing.MockPlotControl}!MiddleMouseDown@{MiddleMouseDown}}
+\index{MiddleMouseDown@{MiddleMouseDown}!ScottPlot.Testing.MockPlotControl@{ScottPlot.Testing.MockPlotControl}}
+\doxysubsubsection{\texorpdfstring{MiddleMouseDown()}{MiddleMouseDown()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_testing_1_1_mock_plot_control_ae50f6cf670ceb27eef4db21b87b7ba03} 
+void Scott\+Plot.\+Testing.\+Mock\+Plot\+Control.\+Middle\+Mouse\+Down (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}}}]{px}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_testing_1_1_mock_plot_control_a097fae6eeac8f60fb60a75a4108feb52}\index{ScottPlot.Testing.MockPlotControl@{ScottPlot.Testing.MockPlotControl}!MiddleMouseUp@{MiddleMouseUp}}
+\index{MiddleMouseUp@{MiddleMouseUp}!ScottPlot.Testing.MockPlotControl@{ScottPlot.Testing.MockPlotControl}}
+\doxysubsubsection{\texorpdfstring{MiddleMouseUp()}{MiddleMouseUp()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_testing_1_1_mock_plot_control_a097fae6eeac8f60fb60a75a4108feb52} 
+void Scott\+Plot.\+Testing.\+Mock\+Plot\+Control.\+Middle\+Mouse\+Up (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}}}]{px}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_testing_1_1_mock_plot_control_a6d68b8244981e4c32022a8a06f075bcf}\index{ScottPlot.Testing.MockPlotControl@{ScottPlot.Testing.MockPlotControl}!MoveMouse@{MoveMouse}}
+\index{MoveMouse@{MoveMouse}!ScottPlot.Testing.MockPlotControl@{ScottPlot.Testing.MockPlotControl}}
+\doxysubsubsection{\texorpdfstring{MoveMouse()}{MoveMouse()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_testing_1_1_mock_plot_control_a6d68b8244981e4c32022a8a06f075bcf} 
+void Scott\+Plot.\+Testing.\+Mock\+Plot\+Control.\+Move\+Mouse (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}}}]{px}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_testing_1_1_mock_plot_control_a6d5da197a98cbc0ef0e857199ae1eb1f}\index{ScottPlot.Testing.MockPlotControl@{ScottPlot.Testing.MockPlotControl}!PressAlt@{PressAlt}}
+\index{PressAlt@{PressAlt}!ScottPlot.Testing.MockPlotControl@{ScottPlot.Testing.MockPlotControl}}
+\doxysubsubsection{\texorpdfstring{PressAlt()}{PressAlt()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_testing_1_1_mock_plot_control_a6d5da197a98cbc0ef0e857199ae1eb1f} 
+void Scott\+Plot.\+Testing.\+Mock\+Plot\+Control.\+Press\+Alt (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_scott_plot_1_1_testing_1_1_mock_plot_control_a3324cbdb66fdd05d194a4e4ccc6c842b}\index{ScottPlot.Testing.MockPlotControl@{ScottPlot.Testing.MockPlotControl}!PressCtrl@{PressCtrl}}
+\index{PressCtrl@{PressCtrl}!ScottPlot.Testing.MockPlotControl@{ScottPlot.Testing.MockPlotControl}}
+\doxysubsubsection{\texorpdfstring{PressCtrl()}{PressCtrl()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_testing_1_1_mock_plot_control_a3324cbdb66fdd05d194a4e4ccc6c842b} 
+void Scott\+Plot.\+Testing.\+Mock\+Plot\+Control.\+Press\+Ctrl (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_scott_plot_1_1_testing_1_1_mock_plot_control_a9d89673fac5171a1ad640511d12154dc}\index{ScottPlot.Testing.MockPlotControl@{ScottPlot.Testing.MockPlotControl}!PressKey@{PressKey}}
+\index{PressKey@{PressKey}!ScottPlot.Testing.MockPlotControl@{ScottPlot.Testing.MockPlotControl}}
+\doxysubsubsection{\texorpdfstring{PressKey()}{PressKey()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_testing_1_1_mock_plot_control_a9d89673fac5171a1ad640511d12154dc} 
+void Scott\+Plot.\+Testing.\+Mock\+Plot\+Control.\+Press\+Key (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_scott_plot_1_1_interactivity_1_1_key}{Key}}}]{key}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_testing_1_1_mock_plot_control_ab173ec7ca4bd4cf0e2c8bb19a4460b71}\index{ScottPlot.Testing.MockPlotControl@{ScottPlot.Testing.MockPlotControl}!PressShift@{PressShift}}
+\index{PressShift@{PressShift}!ScottPlot.Testing.MockPlotControl@{ScottPlot.Testing.MockPlotControl}}
+\doxysubsubsection{\texorpdfstring{PressShift()}{PressShift()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_testing_1_1_mock_plot_control_ab173ec7ca4bd4cf0e2c8bb19a4460b71} 
+void Scott\+Plot.\+Testing.\+Mock\+Plot\+Control.\+Press\+Shift (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_scott_plot_1_1_testing_1_1_mock_plot_control_a23d7165664ba5f5b103b045902ab3f0f}\index{ScottPlot.Testing.MockPlotControl@{ScottPlot.Testing.MockPlotControl}!Refresh@{Refresh}}
+\index{Refresh@{Refresh}!ScottPlot.Testing.MockPlotControl@{ScottPlot.Testing.MockPlotControl}}
+\doxysubsubsection{\texorpdfstring{Refresh()}{Refresh()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_testing_1_1_mock_plot_control_a23d7165664ba5f5b103b045902ab3f0f} 
+void Scott\+Plot.\+Testing.\+Mock\+Plot\+Control.\+Refresh (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Render the plot and update the image. 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_plot_control_a06515ebfc38fce1ae2a8dfdaa662c294}{Scott\+Plot.\+IPlot\+Control}}.
+
+\Hypertarget{class_scott_plot_1_1_testing_1_1_mock_plot_control_ab0473da2adb39cf965db49f2a0e536a2}\index{ScottPlot.Testing.MockPlotControl@{ScottPlot.Testing.MockPlotControl}!ReleaseAlt@{ReleaseAlt}}
+\index{ReleaseAlt@{ReleaseAlt}!ScottPlot.Testing.MockPlotControl@{ScottPlot.Testing.MockPlotControl}}
+\doxysubsubsection{\texorpdfstring{ReleaseAlt()}{ReleaseAlt()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_testing_1_1_mock_plot_control_ab0473da2adb39cf965db49f2a0e536a2} 
+void Scott\+Plot.\+Testing.\+Mock\+Plot\+Control.\+Release\+Alt (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_scott_plot_1_1_testing_1_1_mock_plot_control_a8d22eb7d5250bba37c4a905b89e2bd7d}\index{ScottPlot.Testing.MockPlotControl@{ScottPlot.Testing.MockPlotControl}!ReleaseCtrl@{ReleaseCtrl}}
+\index{ReleaseCtrl@{ReleaseCtrl}!ScottPlot.Testing.MockPlotControl@{ScottPlot.Testing.MockPlotControl}}
+\doxysubsubsection{\texorpdfstring{ReleaseCtrl()}{ReleaseCtrl()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_testing_1_1_mock_plot_control_a8d22eb7d5250bba37c4a905b89e2bd7d} 
+void Scott\+Plot.\+Testing.\+Mock\+Plot\+Control.\+Release\+Ctrl (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_scott_plot_1_1_testing_1_1_mock_plot_control_ae08586fb1e2017ccb3ad2829dd4c9a71}\index{ScottPlot.Testing.MockPlotControl@{ScottPlot.Testing.MockPlotControl}!ReleaseKey@{ReleaseKey}}
+\index{ReleaseKey@{ReleaseKey}!ScottPlot.Testing.MockPlotControl@{ScottPlot.Testing.MockPlotControl}}
+\doxysubsubsection{\texorpdfstring{ReleaseKey()}{ReleaseKey()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_testing_1_1_mock_plot_control_ae08586fb1e2017ccb3ad2829dd4c9a71} 
+void Scott\+Plot.\+Testing.\+Mock\+Plot\+Control.\+Release\+Key (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_scott_plot_1_1_interactivity_1_1_key}{Key}}}]{key}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_testing_1_1_mock_plot_control_a5898ba54cd0da8222ebe205474f6a789}\index{ScottPlot.Testing.MockPlotControl@{ScottPlot.Testing.MockPlotControl}!ReleaseShift@{ReleaseShift}}
+\index{ReleaseShift@{ReleaseShift}!ScottPlot.Testing.MockPlotControl@{ScottPlot.Testing.MockPlotControl}}
+\doxysubsubsection{\texorpdfstring{ReleaseShift()}{ReleaseShift()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_testing_1_1_mock_plot_control_a5898ba54cd0da8222ebe205474f6a789} 
+void Scott\+Plot.\+Testing.\+Mock\+Plot\+Control.\+Release\+Shift (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_scott_plot_1_1_testing_1_1_mock_plot_control_a7741cb9b673288384eaf92fb1f65cc1e}\index{ScottPlot.Testing.MockPlotControl@{ScottPlot.Testing.MockPlotControl}!Reset@{Reset}}
+\index{Reset@{Reset}!ScottPlot.Testing.MockPlotControl@{ScottPlot.Testing.MockPlotControl}}
+\doxysubsubsection{\texorpdfstring{Reset()}{Reset()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_testing_1_1_mock_plot_control_a7741cb9b673288384eaf92fb1f65cc1e} 
+void Scott\+Plot.\+Testing.\+Mock\+Plot\+Control.\+Reset (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Disposes the current \doxylink{class_scott_plot_1_1_plot}{Plot} and creates a new one for the control. 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_plot_control_a3c35aec5502c19eba32a34cb9f7dfd20}{Scott\+Plot.\+IPlot\+Control}}.
+
+\Hypertarget{class_scott_plot_1_1_testing_1_1_mock_plot_control_acf978c09e84fe665244c14f8effb7564}\index{ScottPlot.Testing.MockPlotControl@{ScottPlot.Testing.MockPlotControl}!Reset@{Reset}}
+\index{Reset@{Reset}!ScottPlot.Testing.MockPlotControl@{ScottPlot.Testing.MockPlotControl}}
+\doxysubsubsection{\texorpdfstring{Reset()}{Reset()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_testing_1_1_mock_plot_control_acf978c09e84fe665244c14f8effb7564} 
+void Scott\+Plot.\+Testing.\+Mock\+Plot\+Control.\+Reset (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_scott_plot_1_1_plot}{Plot}}}]{plot}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Loads the given \doxylink{class_scott_plot_1_1_plot}{Plot} into the control. 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_plot_control_a7577b50882b1814f3344ab414e24cb44}{Scott\+Plot.\+IPlot\+Control}}.
+
+\Hypertarget{class_scott_plot_1_1_testing_1_1_mock_plot_control_a3176af89412bd455e88b8dc10a295583}\index{ScottPlot.Testing.MockPlotControl@{ScottPlot.Testing.MockPlotControl}!RightClick@{RightClick}}
+\index{RightClick@{RightClick}!ScottPlot.Testing.MockPlotControl@{ScottPlot.Testing.MockPlotControl}}
+\doxysubsubsection{\texorpdfstring{RightClick()}{RightClick()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_testing_1_1_mock_plot_control_a3176af89412bd455e88b8dc10a295583} 
+void Scott\+Plot.\+Testing.\+Mock\+Plot\+Control.\+Right\+Click (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}}}]{px}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_testing_1_1_mock_plot_control_a52091a55233841422404bcae973bad14}\index{ScottPlot.Testing.MockPlotControl@{ScottPlot.Testing.MockPlotControl}!RightClickDrag@{RightClickDrag}}
+\index{RightClickDrag@{RightClickDrag}!ScottPlot.Testing.MockPlotControl@{ScottPlot.Testing.MockPlotControl}}
+\doxysubsubsection{\texorpdfstring{RightClickDrag()}{RightClickDrag()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_testing_1_1_mock_plot_control_a52091a55233841422404bcae973bad14} 
+void Scott\+Plot.\+Testing.\+Mock\+Plot\+Control.\+Right\+Click\+Drag (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}}}]{px1}{, }\item[{\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}}}]{px2}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_testing_1_1_mock_plot_control_abb698e8011fa2ce81636f6ad48df1d89}\index{ScottPlot.Testing.MockPlotControl@{ScottPlot.Testing.MockPlotControl}!RightMouseDown@{RightMouseDown}}
+\index{RightMouseDown@{RightMouseDown}!ScottPlot.Testing.MockPlotControl@{ScottPlot.Testing.MockPlotControl}}
+\doxysubsubsection{\texorpdfstring{RightMouseDown()}{RightMouseDown()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_testing_1_1_mock_plot_control_abb698e8011fa2ce81636f6ad48df1d89} 
+void Scott\+Plot.\+Testing.\+Mock\+Plot\+Control.\+Right\+Mouse\+Down (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}}}]{px}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_testing_1_1_mock_plot_control_a02ed2b7f5b8b5ce4e22656c8e48ea658}\index{ScottPlot.Testing.MockPlotControl@{ScottPlot.Testing.MockPlotControl}!RightMouseUp@{RightMouseUp}}
+\index{RightMouseUp@{RightMouseUp}!ScottPlot.Testing.MockPlotControl@{ScottPlot.Testing.MockPlotControl}}
+\doxysubsubsection{\texorpdfstring{RightMouseUp()}{RightMouseUp()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_testing_1_1_mock_plot_control_a02ed2b7f5b8b5ce4e22656c8e48ea658} 
+void Scott\+Plot.\+Testing.\+Mock\+Plot\+Control.\+Right\+Mouse\+Up (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}}}]{px}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_testing_1_1_mock_plot_control_a749bd6390527dcff2fb8aeb88b5ab0fc}\index{ScottPlot.Testing.MockPlotControl@{ScottPlot.Testing.MockPlotControl}!ScrollWheelDown@{ScrollWheelDown}}
+\index{ScrollWheelDown@{ScrollWheelDown}!ScottPlot.Testing.MockPlotControl@{ScottPlot.Testing.MockPlotControl}}
+\doxysubsubsection{\texorpdfstring{ScrollWheelDown()}{ScrollWheelDown()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_testing_1_1_mock_plot_control_a749bd6390527dcff2fb8aeb88b5ab0fc} 
+void Scott\+Plot.\+Testing.\+Mock\+Plot\+Control.\+Scroll\+Wheel\+Down (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}}}]{pixel}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_testing_1_1_mock_plot_control_a2156d2992d438cc53250ba281c0d4e2c}\index{ScottPlot.Testing.MockPlotControl@{ScottPlot.Testing.MockPlotControl}!ScrollWheelUp@{ScrollWheelUp}}
+\index{ScrollWheelUp@{ScrollWheelUp}!ScottPlot.Testing.MockPlotControl@{ScottPlot.Testing.MockPlotControl}}
+\doxysubsubsection{\texorpdfstring{ScrollWheelUp()}{ScrollWheelUp()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_testing_1_1_mock_plot_control_a2156d2992d438cc53250ba281c0d4e2c} 
+void Scott\+Plot.\+Testing.\+Mock\+Plot\+Control.\+Scroll\+Wheel\+Up (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}}}]{pixel}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_testing_1_1_mock_plot_control_acde7aa2a483bfef0f1fdacb5ebfadef4}\index{ScottPlot.Testing.MockPlotControl@{ScottPlot.Testing.MockPlotControl}!ShowContextMenu@{ShowContextMenu}}
+\index{ShowContextMenu@{ShowContextMenu}!ScottPlot.Testing.MockPlotControl@{ScottPlot.Testing.MockPlotControl}}
+\doxysubsubsection{\texorpdfstring{ShowContextMenu()}{ShowContextMenu()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_testing_1_1_mock_plot_control_acde7aa2a483bfef0f1fdacb5ebfadef4} 
+void Scott\+Plot.\+Testing.\+Mock\+Plot\+Control.\+Show\+Context\+Menu (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}}}]{position}{}\end{DoxyParamCaption})}
+
+
+
+Launch the default pop-\/up menu (typically in response to a right-\/click) at the given position in the control. 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_plot_control_a724dd4f2dbc8eb65dd0d169431b5ed21}{Scott\+Plot.\+IPlot\+Control}}.
+
+\Hypertarget{class_scott_plot_1_1_testing_1_1_mock_plot_control_ae26f8841b1a4f28905cb4d0ec7d30ea8}\index{ScottPlot.Testing.MockPlotControl@{ScottPlot.Testing.MockPlotControl}!TapDownArrow@{TapDownArrow}}
+\index{TapDownArrow@{TapDownArrow}!ScottPlot.Testing.MockPlotControl@{ScottPlot.Testing.MockPlotControl}}
+\doxysubsubsection{\texorpdfstring{TapDownArrow()}{TapDownArrow()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_testing_1_1_mock_plot_control_ae26f8841b1a4f28905cb4d0ec7d30ea8} 
+void Scott\+Plot.\+Testing.\+Mock\+Plot\+Control.\+Tap\+Down\+Arrow (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_scott_plot_1_1_testing_1_1_mock_plot_control_a4b345903ba21fed574f2c9aefbdc575c}\index{ScottPlot.Testing.MockPlotControl@{ScottPlot.Testing.MockPlotControl}!TapKey@{TapKey}}
+\index{TapKey@{TapKey}!ScottPlot.Testing.MockPlotControl@{ScottPlot.Testing.MockPlotControl}}
+\doxysubsubsection{\texorpdfstring{TapKey()}{TapKey()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_testing_1_1_mock_plot_control_a4b345903ba21fed574f2c9aefbdc575c} 
+void Scott\+Plot.\+Testing.\+Mock\+Plot\+Control.\+Tap\+Key (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_scott_plot_1_1_interactivity_1_1_key}{Key}}}]{key}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_testing_1_1_mock_plot_control_a9dd21e6c4bb87e77516205a4e15a8bde}\index{ScottPlot.Testing.MockPlotControl@{ScottPlot.Testing.MockPlotControl}!TapLeftArrow@{TapLeftArrow}}
+\index{TapLeftArrow@{TapLeftArrow}!ScottPlot.Testing.MockPlotControl@{ScottPlot.Testing.MockPlotControl}}
+\doxysubsubsection{\texorpdfstring{TapLeftArrow()}{TapLeftArrow()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_testing_1_1_mock_plot_control_a9dd21e6c4bb87e77516205a4e15a8bde} 
+void Scott\+Plot.\+Testing.\+Mock\+Plot\+Control.\+Tap\+Left\+Arrow (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_scott_plot_1_1_testing_1_1_mock_plot_control_a2b833f15ec39dd6a4eeae341d46e1563}\index{ScottPlot.Testing.MockPlotControl@{ScottPlot.Testing.MockPlotControl}!TapRightArrow@{TapRightArrow}}
+\index{TapRightArrow@{TapRightArrow}!ScottPlot.Testing.MockPlotControl@{ScottPlot.Testing.MockPlotControl}}
+\doxysubsubsection{\texorpdfstring{TapRightArrow()}{TapRightArrow()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_testing_1_1_mock_plot_control_a2b833f15ec39dd6a4eeae341d46e1563} 
+void Scott\+Plot.\+Testing.\+Mock\+Plot\+Control.\+Tap\+Right\+Arrow (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_scott_plot_1_1_testing_1_1_mock_plot_control_a239f7b03c12852a618e6535d4f69db69}\index{ScottPlot.Testing.MockPlotControl@{ScottPlot.Testing.MockPlotControl}!TapUpArrow@{TapUpArrow}}
+\index{TapUpArrow@{TapUpArrow}!ScottPlot.Testing.MockPlotControl@{ScottPlot.Testing.MockPlotControl}}
+\doxysubsubsection{\texorpdfstring{TapUpArrow()}{TapUpArrow()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_testing_1_1_mock_plot_control_a239f7b03c12852a618e6535d4f69db69} 
+void Scott\+Plot.\+Testing.\+Mock\+Plot\+Control.\+Tap\+Up\+Arrow (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{class_scott_plot_1_1_testing_1_1_mock_plot_control_a69b23fff07c205e7217c85e54e5b0fc1}\index{ScottPlot.Testing.MockPlotControl@{ScottPlot.Testing.MockPlotControl}!Center@{Center}}
+\index{Center@{Center}!ScottPlot.Testing.MockPlotControl@{ScottPlot.Testing.MockPlotControl}}
+\doxysubsubsection{\texorpdfstring{Center}{Center}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_testing_1_1_mock_plot_control_a69b23fff07c205e7217c85e54e5b0fc1} 
+\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}} Scott\+Plot.\+Testing.\+Mock\+Plot\+Control.\+Center\hspace{0.3cm}{\ttfamily [get]}}
+
+\Hypertarget{class_scott_plot_1_1_testing_1_1_mock_plot_control_a3b0c867dcc8d2fae8c5658b68ae1ae62}\index{ScottPlot.Testing.MockPlotControl@{ScottPlot.Testing.MockPlotControl}!ContextMenuLaunchCount@{ContextMenuLaunchCount}}
+\index{ContextMenuLaunchCount@{ContextMenuLaunchCount}!ScottPlot.Testing.MockPlotControl@{ScottPlot.Testing.MockPlotControl}}
+\doxysubsubsection{\texorpdfstring{ContextMenuLaunchCount}{ContextMenuLaunchCount}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_testing_1_1_mock_plot_control_a3b0c867dcc8d2fae8c5658b68ae1ae62} 
+int Scott\+Plot.\+Testing.\+Mock\+Plot\+Control.\+Context\+Menu\+Launch\+Count = 0\hspace{0.3cm}{\ttfamily [get]}}
+
+\Hypertarget{class_scott_plot_1_1_testing_1_1_mock_plot_control_af475df77f908e0b362ebc82520d0c4a3}\index{ScottPlot.Testing.MockPlotControl@{ScottPlot.Testing.MockPlotControl}!DisplayScale@{DisplayScale}}
+\index{DisplayScale@{DisplayScale}!ScottPlot.Testing.MockPlotControl@{ScottPlot.Testing.MockPlotControl}}
+\doxysubsubsection{\texorpdfstring{DisplayScale}{DisplayScale}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_testing_1_1_mock_plot_control_af475df77f908e0b362ebc82520d0c4a3} 
+float Scott\+Plot.\+Testing.\+Mock\+Plot\+Control.\+Display\+Scale = 1\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The value of the present display scaling. Mouse positions are multiplied by this value for pixel/coordinate conversions. 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_plot_control_afbe575470185aa2a1f797bbd7a0e75c2}{Scott\+Plot.\+IPlot\+Control}}.
+
+\Hypertarget{class_scott_plot_1_1_testing_1_1_mock_plot_control_ae0bd8cf40aed573566b561bede20b906}\index{ScottPlot.Testing.MockPlotControl@{ScottPlot.Testing.MockPlotControl}!GRContext@{GRContext}}
+\index{GRContext@{GRContext}!ScottPlot.Testing.MockPlotControl@{ScottPlot.Testing.MockPlotControl}}
+\doxysubsubsection{\texorpdfstring{GRContext}{GRContext}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_testing_1_1_mock_plot_control_ae0bd8cf40aed573566b561bede20b906} 
+GRContext? Scott\+Plot.\+Testing.\+Mock\+Plot\+Control.\+GRContext\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Context for hardware-\/accelerated graphics (or null if not available) 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_plot_control_a34f8c1df93361a966cfe7c4f7e03910b}{Scott\+Plot.\+IPlot\+Control}}.
+
+\Hypertarget{class_scott_plot_1_1_testing_1_1_mock_plot_control_a88d546ef5e117ce01a6cc438878f3dfc}\index{ScottPlot.Testing.MockPlotControl@{ScottPlot.Testing.MockPlotControl}!Height@{Height}}
+\index{Height@{Height}!ScottPlot.Testing.MockPlotControl@{ScottPlot.Testing.MockPlotControl}}
+\doxysubsubsection{\texorpdfstring{Height}{Height}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_testing_1_1_mock_plot_control_a88d546ef5e117ce01a6cc438878f3dfc} 
+int Scott\+Plot.\+Testing.\+Mock\+Plot\+Control.\+Height = 300\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_testing_1_1_mock_plot_control_aac8169232632a7563cc861a7e28e9d00}\index{ScottPlot.Testing.MockPlotControl@{ScottPlot.Testing.MockPlotControl}!Interaction@{Interaction}}
+\index{Interaction@{Interaction}!ScottPlot.Testing.MockPlotControl@{ScottPlot.Testing.MockPlotControl}}
+\doxysubsubsection{\texorpdfstring{Interaction}{Interaction}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_testing_1_1_mock_plot_control_aac8169232632a7563cc861a7e28e9d00} 
+\mbox{\hyperlink{interface_scott_plot_1_1_i_plot_interaction}{IPlot\+Interaction}} Scott\+Plot.\+Testing.\+Mock\+Plot\+Control.\+Interaction\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Options for configuring user inputs. This functionality is being replaced by \doxylink{class_scott_plot_1_1_testing_1_1_mock_plot_control_a1e842d4c5e549da60a10badd6f37b980}{User\+Input\+Processor}. 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_plot_control_ae503734717812d8018497b48c77fd744}{Scott\+Plot.\+IPlot\+Control}}.
+
+\Hypertarget{class_scott_plot_1_1_testing_1_1_mock_plot_control_ac09a49791943afd34d34d2eebd3227b3}\index{ScottPlot.Testing.MockPlotControl@{ScottPlot.Testing.MockPlotControl}!Menu@{Menu}}
+\index{Menu@{Menu}!ScottPlot.Testing.MockPlotControl@{ScottPlot.Testing.MockPlotControl}}
+\doxysubsubsection{\texorpdfstring{Menu}{Menu}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_testing_1_1_mock_plot_control_ac09a49791943afd34d34d2eebd3227b3} 
+\mbox{\hyperlink{interface_scott_plot_1_1_i_plot_menu}{IPlot\+Menu}} Scott\+Plot.\+Testing.\+Mock\+Plot\+Control.\+Menu\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Platform-\/specific logic for managing the context menu. 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_plot_control_a3c970f5b3b54bbf5796b9a8f8f47ccfc}{Scott\+Plot.\+IPlot\+Control}}.
+
+\Hypertarget{class_scott_plot_1_1_testing_1_1_mock_plot_control_aebf14642236773e5fa0f0a850f6c126b}\index{ScottPlot.Testing.MockPlotControl@{ScottPlot.Testing.MockPlotControl}!Plot@{Plot}}
+\index{Plot@{Plot}!ScottPlot.Testing.MockPlotControl@{ScottPlot.Testing.MockPlotControl}}
+\doxysubsubsection{\texorpdfstring{Plot}{Plot}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_testing_1_1_mock_plot_control_aebf14642236773e5fa0f0a850f6c126b} 
+\mbox{\hyperlink{class_scott_plot_1_1_plot}{Plot}} Scott\+Plot.\+Testing.\+Mock\+Plot\+Control.\+Plot\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The \doxylink{class_scott_plot_1_1_plot}{Plot} displayed by this interactive control. 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_plot_control_ac5c49a58b4d8452af92f01ec935139ed}{Scott\+Plot.\+IPlot\+Control}}.
+
+\Hypertarget{class_scott_plot_1_1_testing_1_1_mock_plot_control_a8c1f7e2ea67334a16e29b297a959139c}\index{ScottPlot.Testing.MockPlotControl@{ScottPlot.Testing.MockPlotControl}!RefreshCount@{RefreshCount}}
+\index{RefreshCount@{RefreshCount}!ScottPlot.Testing.MockPlotControl@{ScottPlot.Testing.MockPlotControl}}
+\doxysubsubsection{\texorpdfstring{RefreshCount}{RefreshCount}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_testing_1_1_mock_plot_control_a8c1f7e2ea67334a16e29b297a959139c} 
+int Scott\+Plot.\+Testing.\+Mock\+Plot\+Control.\+Refresh\+Count = 0\hspace{0.3cm}{\ttfamily [get]}}
+
+\Hypertarget{class_scott_plot_1_1_testing_1_1_mock_plot_control_a1e842d4c5e549da60a10badd6f37b980}\index{ScottPlot.Testing.MockPlotControl@{ScottPlot.Testing.MockPlotControl}!UserInputProcessor@{UserInputProcessor}}
+\index{UserInputProcessor@{UserInputProcessor}!ScottPlot.Testing.MockPlotControl@{ScottPlot.Testing.MockPlotControl}}
+\doxysubsubsection{\texorpdfstring{UserInputProcessor}{UserInputProcessor}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_testing_1_1_mock_plot_control_a1e842d4c5e549da60a10badd6f37b980} 
+\mbox{\hyperlink{class_scott_plot_1_1_interactivity_1_1_user_input_processor}{Interactivity.\+User\+Input\+Processor}} Scott\+Plot.\+Testing.\+Mock\+Plot\+Control.\+User\+Input\+Processor\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+This object takes in UI events and contains logic for how to respond to them. This is a newer alternative to the older \doxylink{class_scott_plot_1_1_testing_1_1_mock_plot_control_aac8169232632a7563cc861a7e28e9d00}{Interaction} system. 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_plot_control_a49c623cd834bd6d6f572ec0b5b24c892}{Scott\+Plot.\+IPlot\+Control}}.
+
+\Hypertarget{class_scott_plot_1_1_testing_1_1_mock_plot_control_a98b478bd0a4e065e82d80227109a4be4}\index{ScottPlot.Testing.MockPlotControl@{ScottPlot.Testing.MockPlotControl}!Width@{Width}}
+\index{Width@{Width}!ScottPlot.Testing.MockPlotControl@{ScottPlot.Testing.MockPlotControl}}
+\doxysubsubsection{\texorpdfstring{Width}{Width}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_testing_1_1_mock_plot_control_a98b478bd0a4e065e82d80227109a4be4} 
+int Scott\+Plot.\+Testing.\+Mock\+Plot\+Control.\+Width = 400\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Testing/Mock\+Plot\+Control.\+cs\end{DoxyCompactItemize}

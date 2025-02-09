@@ -1,0 +1,105 @@
+\doxysection{Scott\+Plot.\+Tick\+Generators.\+ITime\+Unit Interface Reference}
+\hypertarget{interface_scott_plot_1_1_tick_generators_1_1_i_time_unit}{}\label{interface_scott_plot_1_1_tick_generators_1_1_i_time_unit}\index{ScottPlot.TickGenerators.ITimeUnit@{ScottPlot.TickGenerators.ITimeUnit}}
+Inheritance diagram for Scott\+Plot.\+Tick\+Generators.\+ITime\+Unit\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=9.655172cm]{interface_scott_plot_1_1_tick_generators_1_1_i_time_unit}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{interface_scott_plot_1_1_tick_generators_1_1_i_time_unit_a611fef45d432851c6d12eeb90ed50d0b}{Get\+Date\+Time\+Format\+String}} ()
+\begin{DoxyCompactList}\small\item\em Returns the format string used to display tick labels of this time unit. \href{https://learn.microsoft.com/en-us/dotnet/api/system.datetime.tostring}{\texttt{ https\+://learn.\+microsoft.\+com/en-\/us/dotnet/api/system.\+datetime.\+tostring}}. \end{DoxyCompactList}\item 
+Date\+Time \mbox{\hyperlink{interface_scott_plot_1_1_tick_generators_1_1_i_time_unit_a188992aa82e24d6521dcd5110dbd82ef}{Next}} (Date\+Time date\+Time, int increment=1)
+\begin{DoxyCompactList}\small\item\em Return the Date\+Time N units relative to this one. \end{DoxyCompactList}\item 
+Date\+Time \mbox{\hyperlink{interface_scott_plot_1_1_tick_generators_1_1_i_time_unit_ae5f4159b5b27f89e2ed695964b8dee94}{Snap}} (Date\+Time date\+Time)
+\begin{DoxyCompactList}\small\item\em Return a given date "{}snapped"{} back to the nearest nice tick position. Use this to find a good tick position for a given Date\+Time. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+IRead\+Only\+List$<$ int $>$ \mbox{\hyperlink{interface_scott_plot_1_1_tick_generators_1_1_i_time_unit_a994ceae8a4910c48015bf4a744780c91}{Divisors}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em An array of integers that serve as good divisors to subdivide this time unit. \end{DoxyCompactList}\item 
+Time\+Span \mbox{\hyperlink{interface_scott_plot_1_1_tick_generators_1_1_i_time_unit_a3d07fc9f990862efe5eec6342479e182}{Min\+Size}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Minimum span this time unit can represent. To represent spans smaller than this, try the next smaller unit. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_scott_plot_1_1_tick_generators_1_1_i_time_unit_a611fef45d432851c6d12eeb90ed50d0b}\index{ScottPlot.TickGenerators.ITimeUnit@{ScottPlot.TickGenerators.ITimeUnit}!GetDateTimeFormatString@{GetDateTimeFormatString}}
+\index{GetDateTimeFormatString@{GetDateTimeFormatString}!ScottPlot.TickGenerators.ITimeUnit@{ScottPlot.TickGenerators.ITimeUnit}}
+\doxysubsubsection{\texorpdfstring{GetDateTimeFormatString()}{GetDateTimeFormatString()}}
+{\footnotesize\ttfamily \label{interface_scott_plot_1_1_tick_generators_1_1_i_time_unit_a611fef45d432851c6d12eeb90ed50d0b} 
+string Scott\+Plot.\+Tick\+Generators.\+ITime\+Unit.\+Get\+Date\+Time\+Format\+String (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Returns the format string used to display tick labels of this time unit. \href{https://learn.microsoft.com/en-us/dotnet/api/system.datetime.tostring}{\texttt{ https\+://learn.\+microsoft.\+com/en-\/us/dotnet/api/system.\+datetime.\+tostring}}. 
+
+
+
+Implemented in \mbox{\hyperlink{class_scott_plot_1_1_tick_generators_1_1_time_units_1_1_centisecond_acdff40b30896b516691bdc2d73b5c3eb}{Scott\+Plot.\+Tick\+Generators.\+Time\+Units.\+Centisecond}}, \mbox{\hyperlink{class_scott_plot_1_1_tick_generators_1_1_time_units_1_1_day_a63dcb423975000a8d39a10852e952bf0}{Scott\+Plot.\+Tick\+Generators.\+Time\+Units.\+Day}}, \mbox{\hyperlink{class_scott_plot_1_1_tick_generators_1_1_time_units_1_1_decisecond_a1863b70c0dc173fc86bb2704f68d296b}{Scott\+Plot.\+Tick\+Generators.\+Time\+Units.\+Decisecond}}, \mbox{\hyperlink{class_scott_plot_1_1_tick_generators_1_1_time_units_1_1_hour_ad62dfe0fe7e27eed85e204526cd9459b}{Scott\+Plot.\+Tick\+Generators.\+Time\+Units.\+Hour}}, \mbox{\hyperlink{class_scott_plot_1_1_tick_generators_1_1_time_units_1_1_millisecond_a95a138020b26e9c5049f6531dc72923a}{Scott\+Plot.\+Tick\+Generators.\+Time\+Units.\+Millisecond}}, \mbox{\hyperlink{class_scott_plot_1_1_tick_generators_1_1_time_units_1_1_minute_abc680d29688211e64f8f07bdb01dfdc1}{Scott\+Plot.\+Tick\+Generators.\+Time\+Units.\+Minute}}, \mbox{\hyperlink{class_scott_plot_1_1_tick_generators_1_1_time_units_1_1_month_aabfe3e115eaf48d695b95e286e36e58d}{Scott\+Plot.\+Tick\+Generators.\+Time\+Units.\+Month}}, \mbox{\hyperlink{class_scott_plot_1_1_tick_generators_1_1_time_units_1_1_second_ae8604259379548729c62dfa9263a7c0c}{Scott\+Plot.\+Tick\+Generators.\+Time\+Units.\+Second}}, and \mbox{\hyperlink{class_scott_plot_1_1_tick_generators_1_1_time_units_1_1_year_a9f78a6e275ffea41a0adae47209831f2}{Scott\+Plot.\+Tick\+Generators.\+Time\+Units.\+Year}}.
+
+\Hypertarget{interface_scott_plot_1_1_tick_generators_1_1_i_time_unit_a188992aa82e24d6521dcd5110dbd82ef}\index{ScottPlot.TickGenerators.ITimeUnit@{ScottPlot.TickGenerators.ITimeUnit}!Next@{Next}}
+\index{Next@{Next}!ScottPlot.TickGenerators.ITimeUnit@{ScottPlot.TickGenerators.ITimeUnit}}
+\doxysubsubsection{\texorpdfstring{Next()}{Next()}}
+{\footnotesize\ttfamily \label{interface_scott_plot_1_1_tick_generators_1_1_i_time_unit_a188992aa82e24d6521dcd5110dbd82ef} 
+Date\+Time Scott\+Plot.\+Tick\+Generators.\+ITime\+Unit.\+Next (\begin{DoxyParamCaption}\item[{Date\+Time}]{date\+Time}{, }\item[{int}]{increment}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+
+
+Return the Date\+Time N units relative to this one. 
+
+
+
+Implemented in \mbox{\hyperlink{class_scott_plot_1_1_tick_generators_1_1_time_units_1_1_centisecond_a22146925fe53b38face3f134ebc87549}{Scott\+Plot.\+Tick\+Generators.\+Time\+Units.\+Centisecond}}, \mbox{\hyperlink{class_scott_plot_1_1_tick_generators_1_1_time_units_1_1_day_a9eaecb350b4078c78e9e36e6a45ec180}{Scott\+Plot.\+Tick\+Generators.\+Time\+Units.\+Day}}, \mbox{\hyperlink{class_scott_plot_1_1_tick_generators_1_1_time_units_1_1_decisecond_a661bd9450359aab9e881cdd3b353cfec}{Scott\+Plot.\+Tick\+Generators.\+Time\+Units.\+Decisecond}}, \mbox{\hyperlink{class_scott_plot_1_1_tick_generators_1_1_time_units_1_1_hour_a1c009efcfc1afdcad7c7907ee4c07017}{Scott\+Plot.\+Tick\+Generators.\+Time\+Units.\+Hour}}, \mbox{\hyperlink{class_scott_plot_1_1_tick_generators_1_1_time_units_1_1_millisecond_a28759dd2a0d3d2451368867a8649ae89}{Scott\+Plot.\+Tick\+Generators.\+Time\+Units.\+Millisecond}}, \mbox{\hyperlink{class_scott_plot_1_1_tick_generators_1_1_time_units_1_1_minute_a53272fdeafcda473103e4d4174d8973d}{Scott\+Plot.\+Tick\+Generators.\+Time\+Units.\+Minute}}, \mbox{\hyperlink{class_scott_plot_1_1_tick_generators_1_1_time_units_1_1_month_ab81b5067ec5a4c68e2f5e0f3e6b93e91}{Scott\+Plot.\+Tick\+Generators.\+Time\+Units.\+Month}}, \mbox{\hyperlink{class_scott_plot_1_1_tick_generators_1_1_time_units_1_1_second_a043b3a222df8320d5c76409b12e5efd8}{Scott\+Plot.\+Tick\+Generators.\+Time\+Units.\+Second}}, and \mbox{\hyperlink{class_scott_plot_1_1_tick_generators_1_1_time_units_1_1_year_a7c76387c49e3335d413d3ac9417b8f32}{Scott\+Plot.\+Tick\+Generators.\+Time\+Units.\+Year}}.
+
+\Hypertarget{interface_scott_plot_1_1_tick_generators_1_1_i_time_unit_ae5f4159b5b27f89e2ed695964b8dee94}\index{ScottPlot.TickGenerators.ITimeUnit@{ScottPlot.TickGenerators.ITimeUnit}!Snap@{Snap}}
+\index{Snap@{Snap}!ScottPlot.TickGenerators.ITimeUnit@{ScottPlot.TickGenerators.ITimeUnit}}
+\doxysubsubsection{\texorpdfstring{Snap()}{Snap()}}
+{\footnotesize\ttfamily \label{interface_scott_plot_1_1_tick_generators_1_1_i_time_unit_ae5f4159b5b27f89e2ed695964b8dee94} 
+Date\+Time Scott\+Plot.\+Tick\+Generators.\+ITime\+Unit.\+Snap (\begin{DoxyParamCaption}\item[{Date\+Time}]{date\+Time}{}\end{DoxyParamCaption})}
+
+
+
+Return a given date "{}snapped"{} back to the nearest nice tick position. Use this to find a good tick position for a given Date\+Time. 
+
+
+
+Implemented in \mbox{\hyperlink{class_scott_plot_1_1_tick_generators_1_1_time_units_1_1_centisecond_aa740ee43c3735e03cad9bf67e261c919}{Scott\+Plot.\+Tick\+Generators.\+Time\+Units.\+Centisecond}}, \mbox{\hyperlink{class_scott_plot_1_1_tick_generators_1_1_time_units_1_1_day_a1b1808a3dc223b96f4c4c5b396369138}{Scott\+Plot.\+Tick\+Generators.\+Time\+Units.\+Day}}, \mbox{\hyperlink{class_scott_plot_1_1_tick_generators_1_1_time_units_1_1_decisecond_ab687d7d2532182dacd83dec3511f401b}{Scott\+Plot.\+Tick\+Generators.\+Time\+Units.\+Decisecond}}, \mbox{\hyperlink{class_scott_plot_1_1_tick_generators_1_1_time_units_1_1_hour_aa2d0ff7999e7ad282a77254b206b2c5b}{Scott\+Plot.\+Tick\+Generators.\+Time\+Units.\+Hour}}, \mbox{\hyperlink{class_scott_plot_1_1_tick_generators_1_1_time_units_1_1_millisecond_a7989025915bd4982f005f4a8f6709af1}{Scott\+Plot.\+Tick\+Generators.\+Time\+Units.\+Millisecond}}, \mbox{\hyperlink{class_scott_plot_1_1_tick_generators_1_1_time_units_1_1_minute_a5588dad23958adccecbb0633c82b7095}{Scott\+Plot.\+Tick\+Generators.\+Time\+Units.\+Minute}}, \mbox{\hyperlink{class_scott_plot_1_1_tick_generators_1_1_time_units_1_1_month_a013ccbca39761474748a27594782bb09}{Scott\+Plot.\+Tick\+Generators.\+Time\+Units.\+Month}}, \mbox{\hyperlink{class_scott_plot_1_1_tick_generators_1_1_time_units_1_1_second_a548452a5882b13a2140b94629100ee9d}{Scott\+Plot.\+Tick\+Generators.\+Time\+Units.\+Second}}, and \mbox{\hyperlink{class_scott_plot_1_1_tick_generators_1_1_time_units_1_1_year_aa6826468f4a271b635f550631570b5f8}{Scott\+Plot.\+Tick\+Generators.\+Time\+Units.\+Year}}.
+
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{interface_scott_plot_1_1_tick_generators_1_1_i_time_unit_a994ceae8a4910c48015bf4a744780c91}\index{ScottPlot.TickGenerators.ITimeUnit@{ScottPlot.TickGenerators.ITimeUnit}!Divisors@{Divisors}}
+\index{Divisors@{Divisors}!ScottPlot.TickGenerators.ITimeUnit@{ScottPlot.TickGenerators.ITimeUnit}}
+\doxysubsubsection{\texorpdfstring{Divisors}{Divisors}}
+{\footnotesize\ttfamily \label{interface_scott_plot_1_1_tick_generators_1_1_i_time_unit_a994ceae8a4910c48015bf4a744780c91} 
+IRead\+Only\+List$<$int$>$ Scott\+Plot.\+Tick\+Generators.\+ITime\+Unit.\+Divisors\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+An array of integers that serve as good divisors to subdivide this time unit. 
+
+
+
+Implemented in \mbox{\hyperlink{class_scott_plot_1_1_tick_generators_1_1_time_units_1_1_centisecond_a792d5fd986b51f57ce700cbaa7d6f89e}{Scott\+Plot.\+Tick\+Generators.\+Time\+Units.\+Centisecond}}, \mbox{\hyperlink{class_scott_plot_1_1_tick_generators_1_1_time_units_1_1_day_a9b8628bcf868a230735e8684b5c00792}{Scott\+Plot.\+Tick\+Generators.\+Time\+Units.\+Day}}, \mbox{\hyperlink{class_scott_plot_1_1_tick_generators_1_1_time_units_1_1_decisecond_a549032718adbc56f41792116e1d7b5e9}{Scott\+Plot.\+Tick\+Generators.\+Time\+Units.\+Decisecond}}, \mbox{\hyperlink{class_scott_plot_1_1_tick_generators_1_1_time_units_1_1_hour_adff6c64690b2d3a00dfb49796c3b2ef4}{Scott\+Plot.\+Tick\+Generators.\+Time\+Units.\+Hour}}, \mbox{\hyperlink{class_scott_plot_1_1_tick_generators_1_1_time_units_1_1_millisecond_ae719d070f95b4a16a2a14c4b762582f7}{Scott\+Plot.\+Tick\+Generators.\+Time\+Units.\+Millisecond}}, \mbox{\hyperlink{class_scott_plot_1_1_tick_generators_1_1_time_units_1_1_minute_ac4354567e564bd470b44f8c0b8d3ecf8}{Scott\+Plot.\+Tick\+Generators.\+Time\+Units.\+Minute}}, \mbox{\hyperlink{class_scott_plot_1_1_tick_generators_1_1_time_units_1_1_month_a11c61f0a54750693b3437538d4413ce8}{Scott\+Plot.\+Tick\+Generators.\+Time\+Units.\+Month}}, \mbox{\hyperlink{class_scott_plot_1_1_tick_generators_1_1_time_units_1_1_second_a6229440f8b6126c1b88066079834989f}{Scott\+Plot.\+Tick\+Generators.\+Time\+Units.\+Second}}, and \mbox{\hyperlink{class_scott_plot_1_1_tick_generators_1_1_time_units_1_1_year_a256f203d4ff493889592f3cfe9a1d5dc}{Scott\+Plot.\+Tick\+Generators.\+Time\+Units.\+Year}}.
+
+\Hypertarget{interface_scott_plot_1_1_tick_generators_1_1_i_time_unit_a3d07fc9f990862efe5eec6342479e182}\index{ScottPlot.TickGenerators.ITimeUnit@{ScottPlot.TickGenerators.ITimeUnit}!MinSize@{MinSize}}
+\index{MinSize@{MinSize}!ScottPlot.TickGenerators.ITimeUnit@{ScottPlot.TickGenerators.ITimeUnit}}
+\doxysubsubsection{\texorpdfstring{MinSize}{MinSize}}
+{\footnotesize\ttfamily \label{interface_scott_plot_1_1_tick_generators_1_1_i_time_unit_a3d07fc9f990862efe5eec6342479e182} 
+Time\+Span Scott\+Plot.\+Tick\+Generators.\+ITime\+Unit.\+Min\+Size\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Minimum span this time unit can represent. To represent spans smaller than this, try the next smaller unit. 
+
+
+
+Implemented in \mbox{\hyperlink{class_scott_plot_1_1_tick_generators_1_1_time_units_1_1_centisecond_ac643057a4617522c953254723741e53f}{Scott\+Plot.\+Tick\+Generators.\+Time\+Units.\+Centisecond}}, \mbox{\hyperlink{class_scott_plot_1_1_tick_generators_1_1_time_units_1_1_day_a9e600690b8087e63b08e8bf568f54c01}{Scott\+Plot.\+Tick\+Generators.\+Time\+Units.\+Day}}, \mbox{\hyperlink{class_scott_plot_1_1_tick_generators_1_1_time_units_1_1_decisecond_a6fdf68d2c7ded1f7c0d236275aec44bb}{Scott\+Plot.\+Tick\+Generators.\+Time\+Units.\+Decisecond}}, \mbox{\hyperlink{class_scott_plot_1_1_tick_generators_1_1_time_units_1_1_hour_a0af29c379b6c46ab90ef184c905094f8}{Scott\+Plot.\+Tick\+Generators.\+Time\+Units.\+Hour}}, \mbox{\hyperlink{class_scott_plot_1_1_tick_generators_1_1_time_units_1_1_millisecond_a82928f2678e893ea57f34914852e4d94}{Scott\+Plot.\+Tick\+Generators.\+Time\+Units.\+Millisecond}}, \mbox{\hyperlink{class_scott_plot_1_1_tick_generators_1_1_time_units_1_1_minute_a8bffcc085bb846603091cb26b0ac494a}{Scott\+Plot.\+Tick\+Generators.\+Time\+Units.\+Minute}}, \mbox{\hyperlink{class_scott_plot_1_1_tick_generators_1_1_time_units_1_1_month_ae60b6da1d6e57a9c0778cbf62ace989d}{Scott\+Plot.\+Tick\+Generators.\+Time\+Units.\+Month}}, \mbox{\hyperlink{class_scott_plot_1_1_tick_generators_1_1_time_units_1_1_second_a0a065664ae3e1cbba03e4c444e9c52fe}{Scott\+Plot.\+Tick\+Generators.\+Time\+Units.\+Second}}, and \mbox{\hyperlink{class_scott_plot_1_1_tick_generators_1_1_time_units_1_1_year_a6191128fe7db2316770a73f4ae657240}{Scott\+Plot.\+Tick\+Generators.\+Time\+Units.\+Year}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Tick\+Generators/ITime\+Unit.\+cs\end{DoxyCompactItemize}

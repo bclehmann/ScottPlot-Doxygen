@@ -1,0 +1,164 @@
+\hypertarget{classSignalXYSourceDoubleArray}{}\doxysection{Signal\+XYSource\+Double\+Array Class Reference}
+\label{classSignalXYSourceDoubleArray}\index{SignalXYSourceDoubleArray@{SignalXYSourceDoubleArray}}
+Inheritance diagram for Signal\+XYSource\+Double\+Array\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classSignalXYSourceDoubleArray}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classSignalXYSourceDoubleArray_a26d21cc4a09eb2b9eeab24730f832579}{Signal\+XYSource\+Double\+Array}} (double\mbox{[}$\,$\mbox{]} xs, double\mbox{[}$\,$\mbox{]} ys)
+\item 
+\mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} \mbox{\hyperlink{classSignalXYSourceDoubleArray_a7e52da53e1287e5fcfa3386a3a66ea53}{Get\+Axis\+Limits}} ()
+\begin{DoxyCompactList}\small\item\em Return the axis limits covered by these data \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structPixel}{Pixel}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classSignalXYSourceDoubleArray_aa8c741100094a346d75fac684ffb5b58}{Get\+Pixels\+To\+Draw}} (\mbox{\hyperlink{classRenderPack}{Render\+Pack}} rp, \mbox{\hyperlink{interfaceIAxes}{IAxes}} axes, Connect\+Style connect\+Style)
+\begin{DoxyCompactList}\small\item\em Return pixels to render to display this signal. May return one extra point on each side of the plot outside the data area. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structDataPoint}{Data\+Point}} \mbox{\hyperlink{classSignalXYSourceDoubleArray_ac6875f8eeb1c40ba149696369b4a9779}{Get\+Nearest}} (\mbox{\hyperlink{structCoordinates}{Coordinates}} mouse\+Location, \mbox{\hyperlink{structRenderDetails}{Render\+Details}} render\+Info, float max\+Distance=15)
+\begin{DoxyCompactList}\small\item\em Return the point nearest a specific location given the X/Y pixel scaling information from a previous render. Will return \mbox{\hyperlink{structDataPoint_a603f30d56d53e5db758b40e244e2ffe8}{Data\+Point.\+None}} if the nearest point is greater than {\itshape max\+Distance}  pixels away. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structDataPoint}{Data\+Point}} \mbox{\hyperlink{classSignalXYSourceDoubleArray_af73b697cac7e1dfc6fe2727c91533073}{Get\+NearestX}} (\mbox{\hyperlink{structCoordinates}{Coordinates}} mouse\+Location, \mbox{\hyperlink{structRenderDetails}{Render\+Details}} render\+Info, float max\+Distance=15)
+\begin{DoxyCompactList}\small\item\em Return the point nearest a specific X location given the X/Y pixel scaling information from a previous render. Will return \mbox{\hyperlink{structDataPoint_a603f30d56d53e5db758b40e244e2ffe8}{Data\+Point.\+None}} if the nearest point is greater than {\itshape max\+Distance}  pixels away. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classSignalXYSourceDoubleArray_abdf42d12cbfab5772e52abef7af7ee44}{Count}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+bool \mbox{\hyperlink{classSignalXYSourceDoubleArray_a19ed2f3718628092489d2fb910520d2b}{Rotated}} = false\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+double \mbox{\hyperlink{classSignalXYSourceDoubleArray_a4b0f0a99d568fd04a6feb9797edf53df}{XOffset}} = 0\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+double \mbox{\hyperlink{classSignalXYSourceDoubleArray_a5bc59319f1f24419e0ff580ebe118d13}{YOffset}} = 0\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+double \mbox{\hyperlink{classSignalXYSourceDoubleArray_ae6040185a3137b23dc9412e8e0837863}{YScale}} = 1\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+double \mbox{\hyperlink{classSignalXYSourceDoubleArray_a82ac3c6aba42e1bb79c1302d3d6f811b}{XScale}} = 1\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+int \mbox{\hyperlink{classSignalXYSourceDoubleArray_a867d7b85fe52d116adeeab0ed7d5c277}{Minimum\+Index}} = 0\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+int \mbox{\hyperlink{classSignalXYSourceDoubleArray_a7b58fcd30fd584f29a568a93cccee3a7}{Maximum\+Index}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classSignalXYSourceDoubleArray_a26d21cc4a09eb2b9eeab24730f832579}\label{classSignalXYSourceDoubleArray_a26d21cc4a09eb2b9eeab24730f832579}} 
+\index{SignalXYSourceDoubleArray@{SignalXYSourceDoubleArray}!SignalXYSourceDoubleArray@{SignalXYSourceDoubleArray}}
+\index{SignalXYSourceDoubleArray@{SignalXYSourceDoubleArray}!SignalXYSourceDoubleArray@{SignalXYSourceDoubleArray}}
+\doxysubsubsection{\texorpdfstring{SignalXYSourceDoubleArray()}{SignalXYSourceDoubleArray()}}
+{\footnotesize\ttfamily Signal\+XYSource\+Double\+Array.\+Signal\+XYSource\+Double\+Array (\begin{DoxyParamCaption}\item[{double\mbox{[}$\,$\mbox{]}}]{xs,  }\item[{double\mbox{[}$\,$\mbox{]}}]{ys }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classSignalXYSourceDoubleArray_a7e52da53e1287e5fcfa3386a3a66ea53}\label{classSignalXYSourceDoubleArray_a7e52da53e1287e5fcfa3386a3a66ea53}} 
+\index{SignalXYSourceDoubleArray@{SignalXYSourceDoubleArray}!GetAxisLimits@{GetAxisLimits}}
+\index{GetAxisLimits@{GetAxisLimits}!SignalXYSourceDoubleArray@{SignalXYSourceDoubleArray}}
+\doxysubsubsection{\texorpdfstring{GetAxisLimits()}{GetAxisLimits()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} Signal\+XYSource\+Double\+Array.\+Get\+Axis\+Limits (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return the axis limits covered by these data 
+
+
+
+Implements \mbox{\hyperlink{interfaceISignalXYSource_a6c71a54b989f0c121f8a4d03375e43c0}{ISignal\+XYSource}}.
+
+\mbox{\Hypertarget{classSignalXYSourceDoubleArray_ac6875f8eeb1c40ba149696369b4a9779}\label{classSignalXYSourceDoubleArray_ac6875f8eeb1c40ba149696369b4a9779}} 
+\index{SignalXYSourceDoubleArray@{SignalXYSourceDoubleArray}!GetNearest@{GetNearest}}
+\index{GetNearest@{GetNearest}!SignalXYSourceDoubleArray@{SignalXYSourceDoubleArray}}
+\doxysubsubsection{\texorpdfstring{GetNearest()}{GetNearest()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structDataPoint}{Data\+Point}} Signal\+XYSource\+Double\+Array.\+Get\+Nearest (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structCoordinates}{Coordinates}}}]{location,  }\item[{\mbox{\hyperlink{structRenderDetails}{Render\+Details}}}]{render\+Info,  }\item[{float}]{max\+Distance = {\ttfamily 15} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return the point nearest a specific location given the X/Y pixel scaling information from a previous render. Will return \mbox{\hyperlink{structDataPoint_a603f30d56d53e5db758b40e244e2ffe8}{Data\+Point.\+None}} if the nearest point is greater than {\itshape max\+Distance}  pixels away. 
+
+
+
+Implements \mbox{\hyperlink{interfaceISignalXYSource_a8e138189fc2472edfad928e6cc7a01b6}{ISignal\+XYSource}}.
+
+\mbox{\Hypertarget{classSignalXYSourceDoubleArray_af73b697cac7e1dfc6fe2727c91533073}\label{classSignalXYSourceDoubleArray_af73b697cac7e1dfc6fe2727c91533073}} 
+\index{SignalXYSourceDoubleArray@{SignalXYSourceDoubleArray}!GetNearestX@{GetNearestX}}
+\index{GetNearestX@{GetNearestX}!SignalXYSourceDoubleArray@{SignalXYSourceDoubleArray}}
+\doxysubsubsection{\texorpdfstring{GetNearestX()}{GetNearestX()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structDataPoint}{Data\+Point}} Signal\+XYSource\+Double\+Array.\+Get\+NearestX (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structCoordinates}{Coordinates}}}]{location,  }\item[{\mbox{\hyperlink{structRenderDetails}{Render\+Details}}}]{render\+Info,  }\item[{float}]{max\+Distance = {\ttfamily 15} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return the point nearest a specific X location given the X/Y pixel scaling information from a previous render. Will return \mbox{\hyperlink{structDataPoint_a603f30d56d53e5db758b40e244e2ffe8}{Data\+Point.\+None}} if the nearest point is greater than {\itshape max\+Distance}  pixels away. 
+
+
+
+Implements \mbox{\hyperlink{interfaceISignalXYSource_aa96fb717fa09af9cf245c0641ebc6fa7}{ISignal\+XYSource}}.
+
+\mbox{\Hypertarget{classSignalXYSourceDoubleArray_aa8c741100094a346d75fac684ffb5b58}\label{classSignalXYSourceDoubleArray_aa8c741100094a346d75fac684ffb5b58}} 
+\index{SignalXYSourceDoubleArray@{SignalXYSourceDoubleArray}!GetPixelsToDraw@{GetPixelsToDraw}}
+\index{GetPixelsToDraw@{GetPixelsToDraw}!SignalXYSourceDoubleArray@{SignalXYSourceDoubleArray}}
+\doxysubsubsection{\texorpdfstring{GetPixelsToDraw()}{GetPixelsToDraw()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structPixel}{Pixel}} \mbox{[}$\,$\mbox{]} Signal\+XYSource\+Double\+Array.\+Get\+Pixels\+To\+Draw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classRenderPack}{Render\+Pack}}}]{rp,  }\item[{\mbox{\hyperlink{interfaceIAxes}{IAxes}}}]{axes,  }\item[{Connect\+Style}]{connect\+Style }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return pixels to render to display this signal. May return one extra point on each side of the plot outside the data area. 
+
+
+
+Implements \mbox{\hyperlink{interfaceISignalXYSource_ab683c4d33444adba8f2b3b248b7aa149}{ISignal\+XYSource}}.
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{classSignalXYSourceDoubleArray_abdf42d12cbfab5772e52abef7af7ee44}\label{classSignalXYSourceDoubleArray_abdf42d12cbfab5772e52abef7af7ee44}} 
+\index{SignalXYSourceDoubleArray@{SignalXYSourceDoubleArray}!Count@{Count}}
+\index{Count@{Count}!SignalXYSourceDoubleArray@{SignalXYSourceDoubleArray}}
+\doxysubsubsection{\texorpdfstring{Count}{Count}}
+{\footnotesize\ttfamily int Signal\+XYSource\+Double\+Array.\+Count\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{classSignalXYSourceDoubleArray_a7b58fcd30fd584f29a568a93cccee3a7}\label{classSignalXYSourceDoubleArray_a7b58fcd30fd584f29a568a93cccee3a7}} 
+\index{SignalXYSourceDoubleArray@{SignalXYSourceDoubleArray}!MaximumIndex@{MaximumIndex}}
+\index{MaximumIndex@{MaximumIndex}!SignalXYSourceDoubleArray@{SignalXYSourceDoubleArray}}
+\doxysubsubsection{\texorpdfstring{MaximumIndex}{MaximumIndex}}
+{\footnotesize\ttfamily int Signal\+XYSource\+Double\+Array.\+Maximum\+Index\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classSignalXYSourceDoubleArray_a867d7b85fe52d116adeeab0ed7d5c277}\label{classSignalXYSourceDoubleArray_a867d7b85fe52d116adeeab0ed7d5c277}} 
+\index{SignalXYSourceDoubleArray@{SignalXYSourceDoubleArray}!MinimumIndex@{MinimumIndex}}
+\index{MinimumIndex@{MinimumIndex}!SignalXYSourceDoubleArray@{SignalXYSourceDoubleArray}}
+\doxysubsubsection{\texorpdfstring{MinimumIndex}{MinimumIndex}}
+{\footnotesize\ttfamily int Signal\+XYSource\+Double\+Array.\+Minimum\+Index = 0\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classSignalXYSourceDoubleArray_a19ed2f3718628092489d2fb910520d2b}\label{classSignalXYSourceDoubleArray_a19ed2f3718628092489d2fb910520d2b}} 
+\index{SignalXYSourceDoubleArray@{SignalXYSourceDoubleArray}!Rotated@{Rotated}}
+\index{Rotated@{Rotated}!SignalXYSourceDoubleArray@{SignalXYSourceDoubleArray}}
+\doxysubsubsection{\texorpdfstring{Rotated}{Rotated}}
+{\footnotesize\ttfamily bool Signal\+XYSource\+Double\+Array.\+Rotated = false\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classSignalXYSourceDoubleArray_a4b0f0a99d568fd04a6feb9797edf53df}\label{classSignalXYSourceDoubleArray_a4b0f0a99d568fd04a6feb9797edf53df}} 
+\index{SignalXYSourceDoubleArray@{SignalXYSourceDoubleArray}!XOffset@{XOffset}}
+\index{XOffset@{XOffset}!SignalXYSourceDoubleArray@{SignalXYSourceDoubleArray}}
+\doxysubsubsection{\texorpdfstring{XOffset}{XOffset}}
+{\footnotesize\ttfamily double Signal\+XYSource\+Double\+Array.\+XOffset = 0\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classSignalXYSourceDoubleArray_a82ac3c6aba42e1bb79c1302d3d6f811b}\label{classSignalXYSourceDoubleArray_a82ac3c6aba42e1bb79c1302d3d6f811b}} 
+\index{SignalXYSourceDoubleArray@{SignalXYSourceDoubleArray}!XScale@{XScale}}
+\index{XScale@{XScale}!SignalXYSourceDoubleArray@{SignalXYSourceDoubleArray}}
+\doxysubsubsection{\texorpdfstring{XScale}{XScale}}
+{\footnotesize\ttfamily double Signal\+XYSource\+Double\+Array.\+XScale = 1\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classSignalXYSourceDoubleArray_a5bc59319f1f24419e0ff580ebe118d13}\label{classSignalXYSourceDoubleArray_a5bc59319f1f24419e0ff580ebe118d13}} 
+\index{SignalXYSourceDoubleArray@{SignalXYSourceDoubleArray}!YOffset@{YOffset}}
+\index{YOffset@{YOffset}!SignalXYSourceDoubleArray@{SignalXYSourceDoubleArray}}
+\doxysubsubsection{\texorpdfstring{YOffset}{YOffset}}
+{\footnotesize\ttfamily double Signal\+XYSource\+Double\+Array.\+YOffset = 0\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classSignalXYSourceDoubleArray_ae6040185a3137b23dc9412e8e0837863}\label{classSignalXYSourceDoubleArray_ae6040185a3137b23dc9412e8e0837863}} 
+\index{SignalXYSourceDoubleArray@{SignalXYSourceDoubleArray}!YScale@{YScale}}
+\index{YScale@{YScale}!SignalXYSourceDoubleArray@{SignalXYSourceDoubleArray}}
+\doxysubsubsection{\texorpdfstring{YScale}{YScale}}
+{\footnotesize\ttfamily double Signal\+XYSource\+Double\+Array.\+YScale = 1\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Data\+Sources/Signal\+XYSource\+Double\+Array.\+cs\end{DoxyCompactItemize}

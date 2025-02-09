@@ -1,0 +1,155 @@
+\doxysection{Scott\+Plot.\+Control.\+Plot\+Actions Class Reference}
+\hypertarget{class_scott_plot_1_1_control_1_1_plot_actions}{}\label{class_scott_plot_1_1_control_1_1_plot_actions}\index{ScottPlot.Control.PlotActions@{ScottPlot.Control.PlotActions}}
+
+
+This object holds actions which manipulate the plot. To customize plot manipulation behavior, replace these delegates with custom ones.  
+
+
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_scott_plot_1_1_control_1_1_plot_actions}{Plot\+Actions}} \mbox{\hyperlink{class_scott_plot_1_1_control_1_1_plot_actions_a538d663ce3a9ddc581b0c04d05c03865}{Standard}} ()
+\item 
+static \mbox{\hyperlink{class_scott_plot_1_1_control_1_1_plot_actions}{Plot\+Actions}} \mbox{\hyperlink{class_scott_plot_1_1_control_1_1_plot_actions_a5cb4447a71cbc32e88f80047ac064687}{Non\+Interactive}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Action$<$ \mbox{\hyperlink{interface_scott_plot_1_1_i_plot_control}{IPlot\+Control}}, \mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}}, \mbox{\hyperlink{struct_scott_plot_1_1_control_1_1_locked_axes}{Locked\+Axes}} $>$ \mbox{\hyperlink{class_scott_plot_1_1_control_1_1_plot_actions_a319914df0c7d808b17288b44264b51ef}{Zoom\+In}} = delegate \{ \}
+\item 
+Action$<$ \mbox{\hyperlink{interface_scott_plot_1_1_i_plot_control}{IPlot\+Control}}, \mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}}, \mbox{\hyperlink{struct_scott_plot_1_1_control_1_1_locked_axes}{Locked\+Axes}} $>$ \mbox{\hyperlink{class_scott_plot_1_1_control_1_1_plot_actions_a6ca696258ac00014ba3c1f166a932164}{Zoom\+Out}} = delegate \{ \}
+\item 
+Action$<$ \mbox{\hyperlink{interface_scott_plot_1_1_i_plot_control}{IPlot\+Control}} $>$ \mbox{\hyperlink{class_scott_plot_1_1_control_1_1_plot_actions_a87a790153f7b233da3c6c7e825ec6c14}{Pan\+Up}} = delegate \{ \}
+\item 
+Action$<$ \mbox{\hyperlink{interface_scott_plot_1_1_i_plot_control}{IPlot\+Control}} $>$ \mbox{\hyperlink{class_scott_plot_1_1_control_1_1_plot_actions_a574b41d106ce0a643a377cb9d30f068b}{Pan\+Down}} = delegate \{ \}
+\item 
+Action$<$ \mbox{\hyperlink{interface_scott_plot_1_1_i_plot_control}{IPlot\+Control}} $>$ \mbox{\hyperlink{class_scott_plot_1_1_control_1_1_plot_actions_a3e02f7543ce327cabc98b0dcbe4a59bd}{Pan\+Left}} = delegate \{ \}
+\item 
+Action$<$ \mbox{\hyperlink{interface_scott_plot_1_1_i_plot_control}{IPlot\+Control}} $>$ \mbox{\hyperlink{class_scott_plot_1_1_control_1_1_plot_actions_aff81b08bb2a8207d6d0e0db9d7e09134}{Pan\+Right}} = delegate \{ \}
+\item 
+Action$<$ \mbox{\hyperlink{interface_scott_plot_1_1_i_plot_control}{IPlot\+Control}}, \mbox{\hyperlink{struct_scott_plot_1_1_control_1_1_mouse_drag}{Mouse\+Drag}}, \mbox{\hyperlink{struct_scott_plot_1_1_control_1_1_locked_axes}{Locked\+Axes}} $>$ \mbox{\hyperlink{class_scott_plot_1_1_control_1_1_plot_actions_ac895469acf9cc840986bf905e75d7c71}{Drag\+Pan}} = delegate \{ \}
+\item 
+Action$<$ \mbox{\hyperlink{interface_scott_plot_1_1_i_plot_control}{IPlot\+Control}}, \mbox{\hyperlink{struct_scott_plot_1_1_control_1_1_mouse_drag}{Mouse\+Drag}}, \mbox{\hyperlink{struct_scott_plot_1_1_control_1_1_locked_axes}{Locked\+Axes}} $>$ \mbox{\hyperlink{class_scott_plot_1_1_control_1_1_plot_actions_a5119474bec1836929add256bdb5b9399}{Drag\+Zoom}} = delegate \{ \}
+\item 
+Action$<$ \mbox{\hyperlink{interface_scott_plot_1_1_i_plot_control}{IPlot\+Control}}, \mbox{\hyperlink{struct_scott_plot_1_1_control_1_1_mouse_drag}{Mouse\+Drag}}, \mbox{\hyperlink{struct_scott_plot_1_1_control_1_1_locked_axes}{Locked\+Axes}} $>$ \mbox{\hyperlink{class_scott_plot_1_1_control_1_1_plot_actions_a77322a26b684b09576e0e3139a3cf393}{Drag\+Zoom\+Rectangle}} = delegate \{ \}
+\item 
+Action$<$ \mbox{\hyperlink{interface_scott_plot_1_1_i_plot_control}{IPlot\+Control}} $>$ \mbox{\hyperlink{class_scott_plot_1_1_control_1_1_plot_actions_a56461c7d49c21da8fa9930785a24258a}{Zoom\+Rectangle\+Clear}} = delegate \{ \}
+\item 
+Action$<$ \mbox{\hyperlink{interface_scott_plot_1_1_i_plot_control}{IPlot\+Control}} $>$ \mbox{\hyperlink{class_scott_plot_1_1_control_1_1_plot_actions_ab5623522b77eaa46adc75038a27c49dd}{Zoom\+Rectangle\+Apply}} = delegate \{ \}
+\item 
+Action$<$ \mbox{\hyperlink{interface_scott_plot_1_1_i_plot_control}{IPlot\+Control}} $>$ \mbox{\hyperlink{class_scott_plot_1_1_control_1_1_plot_actions_a3431153704cc31749c90a01a9e467fe4}{Toggle\+Benchmark}} = delegate \{ \}
+\item 
+Action$<$ \mbox{\hyperlink{interface_scott_plot_1_1_i_plot_control}{IPlot\+Control}}, \mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}} $>$ \mbox{\hyperlink{class_scott_plot_1_1_control_1_1_plot_actions_a038585909a0123f20df90e6bfa08b0c2}{Auto\+Scale}} = delegate \{ \}
+\item 
+Action$<$ \mbox{\hyperlink{interface_scott_plot_1_1_i_plot_control}{IPlot\+Control}}, \mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}} $>$ \mbox{\hyperlink{class_scott_plot_1_1_control_1_1_plot_actions_ac65566847359d79c6e8c354e5248d848}{Show\+Context\+Menu}} = delegate \{ \}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This object holds actions which manipulate the plot. To customize plot manipulation behavior, replace these delegates with custom ones. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_scott_plot_1_1_control_1_1_plot_actions_a5cb4447a71cbc32e88f80047ac064687}\index{ScottPlot.Control.PlotActions@{ScottPlot.Control.PlotActions}!NonInteractive@{NonInteractive}}
+\index{NonInteractive@{NonInteractive}!ScottPlot.Control.PlotActions@{ScottPlot.Control.PlotActions}}
+\doxysubsubsection{\texorpdfstring{NonInteractive()}{NonInteractive()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_control_1_1_plot_actions_a5cb4447a71cbc32e88f80047ac064687} 
+static \mbox{\hyperlink{class_scott_plot_1_1_control_1_1_plot_actions}{Plot\+Actions}} Scott\+Plot.\+Control.\+Plot\+Actions.\+Non\+Interactive (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\Hypertarget{class_scott_plot_1_1_control_1_1_plot_actions_a538d663ce3a9ddc581b0c04d05c03865}\index{ScottPlot.Control.PlotActions@{ScottPlot.Control.PlotActions}!Standard@{Standard}}
+\index{Standard@{Standard}!ScottPlot.Control.PlotActions@{ScottPlot.Control.PlotActions}}
+\doxysubsubsection{\texorpdfstring{Standard()}{Standard()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_control_1_1_plot_actions_a538d663ce3a9ddc581b0c04d05c03865} 
+static \mbox{\hyperlink{class_scott_plot_1_1_control_1_1_plot_actions}{Plot\+Actions}} Scott\+Plot.\+Control.\+Plot\+Actions.\+Standard (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_scott_plot_1_1_control_1_1_plot_actions_a038585909a0123f20df90e6bfa08b0c2}\index{ScottPlot.Control.PlotActions@{ScottPlot.Control.PlotActions}!AutoScale@{AutoScale}}
+\index{AutoScale@{AutoScale}!ScottPlot.Control.PlotActions@{ScottPlot.Control.PlotActions}}
+\doxysubsubsection{\texorpdfstring{AutoScale}{AutoScale}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_control_1_1_plot_actions_a038585909a0123f20df90e6bfa08b0c2} 
+Action$<$\mbox{\hyperlink{interface_scott_plot_1_1_i_plot_control}{IPlot\+Control}}, \mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}}$>$ Scott\+Plot.\+Control.\+Plot\+Actions.\+Auto\+Scale = delegate \{ \}}
+
+\Hypertarget{class_scott_plot_1_1_control_1_1_plot_actions_ac895469acf9cc840986bf905e75d7c71}\index{ScottPlot.Control.PlotActions@{ScottPlot.Control.PlotActions}!DragPan@{DragPan}}
+\index{DragPan@{DragPan}!ScottPlot.Control.PlotActions@{ScottPlot.Control.PlotActions}}
+\doxysubsubsection{\texorpdfstring{DragPan}{DragPan}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_control_1_1_plot_actions_ac895469acf9cc840986bf905e75d7c71} 
+Action$<$\mbox{\hyperlink{interface_scott_plot_1_1_i_plot_control}{IPlot\+Control}}, \mbox{\hyperlink{struct_scott_plot_1_1_control_1_1_mouse_drag}{Mouse\+Drag}}, \mbox{\hyperlink{struct_scott_plot_1_1_control_1_1_locked_axes}{Locked\+Axes}}$>$ Scott\+Plot.\+Control.\+Plot\+Actions.\+Drag\+Pan = delegate \{ \}}
+
+\Hypertarget{class_scott_plot_1_1_control_1_1_plot_actions_a5119474bec1836929add256bdb5b9399}\index{ScottPlot.Control.PlotActions@{ScottPlot.Control.PlotActions}!DragZoom@{DragZoom}}
+\index{DragZoom@{DragZoom}!ScottPlot.Control.PlotActions@{ScottPlot.Control.PlotActions}}
+\doxysubsubsection{\texorpdfstring{DragZoom}{DragZoom}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_control_1_1_plot_actions_a5119474bec1836929add256bdb5b9399} 
+Action$<$\mbox{\hyperlink{interface_scott_plot_1_1_i_plot_control}{IPlot\+Control}}, \mbox{\hyperlink{struct_scott_plot_1_1_control_1_1_mouse_drag}{Mouse\+Drag}}, \mbox{\hyperlink{struct_scott_plot_1_1_control_1_1_locked_axes}{Locked\+Axes}}$>$ Scott\+Plot.\+Control.\+Plot\+Actions.\+Drag\+Zoom = delegate \{ \}}
+
+\Hypertarget{class_scott_plot_1_1_control_1_1_plot_actions_a77322a26b684b09576e0e3139a3cf393}\index{ScottPlot.Control.PlotActions@{ScottPlot.Control.PlotActions}!DragZoomRectangle@{DragZoomRectangle}}
+\index{DragZoomRectangle@{DragZoomRectangle}!ScottPlot.Control.PlotActions@{ScottPlot.Control.PlotActions}}
+\doxysubsubsection{\texorpdfstring{DragZoomRectangle}{DragZoomRectangle}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_control_1_1_plot_actions_a77322a26b684b09576e0e3139a3cf393} 
+Action$<$\mbox{\hyperlink{interface_scott_plot_1_1_i_plot_control}{IPlot\+Control}}, \mbox{\hyperlink{struct_scott_plot_1_1_control_1_1_mouse_drag}{Mouse\+Drag}}, \mbox{\hyperlink{struct_scott_plot_1_1_control_1_1_locked_axes}{Locked\+Axes}}$>$ Scott\+Plot.\+Control.\+Plot\+Actions.\+Drag\+Zoom\+Rectangle = delegate \{ \}}
+
+\Hypertarget{class_scott_plot_1_1_control_1_1_plot_actions_a574b41d106ce0a643a377cb9d30f068b}\index{ScottPlot.Control.PlotActions@{ScottPlot.Control.PlotActions}!PanDown@{PanDown}}
+\index{PanDown@{PanDown}!ScottPlot.Control.PlotActions@{ScottPlot.Control.PlotActions}}
+\doxysubsubsection{\texorpdfstring{PanDown}{PanDown}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_control_1_1_plot_actions_a574b41d106ce0a643a377cb9d30f068b} 
+Action$<$\mbox{\hyperlink{interface_scott_plot_1_1_i_plot_control}{IPlot\+Control}}$>$ Scott\+Plot.\+Control.\+Plot\+Actions.\+Pan\+Down = delegate \{ \}}
+
+\Hypertarget{class_scott_plot_1_1_control_1_1_plot_actions_a3e02f7543ce327cabc98b0dcbe4a59bd}\index{ScottPlot.Control.PlotActions@{ScottPlot.Control.PlotActions}!PanLeft@{PanLeft}}
+\index{PanLeft@{PanLeft}!ScottPlot.Control.PlotActions@{ScottPlot.Control.PlotActions}}
+\doxysubsubsection{\texorpdfstring{PanLeft}{PanLeft}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_control_1_1_plot_actions_a3e02f7543ce327cabc98b0dcbe4a59bd} 
+Action$<$\mbox{\hyperlink{interface_scott_plot_1_1_i_plot_control}{IPlot\+Control}}$>$ Scott\+Plot.\+Control.\+Plot\+Actions.\+Pan\+Left = delegate \{ \}}
+
+\Hypertarget{class_scott_plot_1_1_control_1_1_plot_actions_aff81b08bb2a8207d6d0e0db9d7e09134}\index{ScottPlot.Control.PlotActions@{ScottPlot.Control.PlotActions}!PanRight@{PanRight}}
+\index{PanRight@{PanRight}!ScottPlot.Control.PlotActions@{ScottPlot.Control.PlotActions}}
+\doxysubsubsection{\texorpdfstring{PanRight}{PanRight}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_control_1_1_plot_actions_aff81b08bb2a8207d6d0e0db9d7e09134} 
+Action$<$\mbox{\hyperlink{interface_scott_plot_1_1_i_plot_control}{IPlot\+Control}}$>$ Scott\+Plot.\+Control.\+Plot\+Actions.\+Pan\+Right = delegate \{ \}}
+
+\Hypertarget{class_scott_plot_1_1_control_1_1_plot_actions_a87a790153f7b233da3c6c7e825ec6c14}\index{ScottPlot.Control.PlotActions@{ScottPlot.Control.PlotActions}!PanUp@{PanUp}}
+\index{PanUp@{PanUp}!ScottPlot.Control.PlotActions@{ScottPlot.Control.PlotActions}}
+\doxysubsubsection{\texorpdfstring{PanUp}{PanUp}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_control_1_1_plot_actions_a87a790153f7b233da3c6c7e825ec6c14} 
+Action$<$\mbox{\hyperlink{interface_scott_plot_1_1_i_plot_control}{IPlot\+Control}}$>$ Scott\+Plot.\+Control.\+Plot\+Actions.\+Pan\+Up = delegate \{ \}}
+
+\Hypertarget{class_scott_plot_1_1_control_1_1_plot_actions_ac65566847359d79c6e8c354e5248d848}\index{ScottPlot.Control.PlotActions@{ScottPlot.Control.PlotActions}!ShowContextMenu@{ShowContextMenu}}
+\index{ShowContextMenu@{ShowContextMenu}!ScottPlot.Control.PlotActions@{ScottPlot.Control.PlotActions}}
+\doxysubsubsection{\texorpdfstring{ShowContextMenu}{ShowContextMenu}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_control_1_1_plot_actions_ac65566847359d79c6e8c354e5248d848} 
+Action$<$\mbox{\hyperlink{interface_scott_plot_1_1_i_plot_control}{IPlot\+Control}}, \mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}}$>$ Scott\+Plot.\+Control.\+Plot\+Actions.\+Show\+Context\+Menu = delegate \{ \}}
+
+\Hypertarget{class_scott_plot_1_1_control_1_1_plot_actions_a3431153704cc31749c90a01a9e467fe4}\index{ScottPlot.Control.PlotActions@{ScottPlot.Control.PlotActions}!ToggleBenchmark@{ToggleBenchmark}}
+\index{ToggleBenchmark@{ToggleBenchmark}!ScottPlot.Control.PlotActions@{ScottPlot.Control.PlotActions}}
+\doxysubsubsection{\texorpdfstring{ToggleBenchmark}{ToggleBenchmark}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_control_1_1_plot_actions_a3431153704cc31749c90a01a9e467fe4} 
+Action$<$\mbox{\hyperlink{interface_scott_plot_1_1_i_plot_control}{IPlot\+Control}}$>$ Scott\+Plot.\+Control.\+Plot\+Actions.\+Toggle\+Benchmark = delegate \{ \}}
+
+\Hypertarget{class_scott_plot_1_1_control_1_1_plot_actions_a319914df0c7d808b17288b44264b51ef}\index{ScottPlot.Control.PlotActions@{ScottPlot.Control.PlotActions}!ZoomIn@{ZoomIn}}
+\index{ZoomIn@{ZoomIn}!ScottPlot.Control.PlotActions@{ScottPlot.Control.PlotActions}}
+\doxysubsubsection{\texorpdfstring{ZoomIn}{ZoomIn}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_control_1_1_plot_actions_a319914df0c7d808b17288b44264b51ef} 
+Action$<$\mbox{\hyperlink{interface_scott_plot_1_1_i_plot_control}{IPlot\+Control}}, \mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}}, \mbox{\hyperlink{struct_scott_plot_1_1_control_1_1_locked_axes}{Locked\+Axes}}$>$ Scott\+Plot.\+Control.\+Plot\+Actions.\+Zoom\+In = delegate \{ \}}
+
+\Hypertarget{class_scott_plot_1_1_control_1_1_plot_actions_a6ca696258ac00014ba3c1f166a932164}\index{ScottPlot.Control.PlotActions@{ScottPlot.Control.PlotActions}!ZoomOut@{ZoomOut}}
+\index{ZoomOut@{ZoomOut}!ScottPlot.Control.PlotActions@{ScottPlot.Control.PlotActions}}
+\doxysubsubsection{\texorpdfstring{ZoomOut}{ZoomOut}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_control_1_1_plot_actions_a6ca696258ac00014ba3c1f166a932164} 
+Action$<$\mbox{\hyperlink{interface_scott_plot_1_1_i_plot_control}{IPlot\+Control}}, \mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}}, \mbox{\hyperlink{struct_scott_plot_1_1_control_1_1_locked_axes}{Locked\+Axes}}$>$ Scott\+Plot.\+Control.\+Plot\+Actions.\+Zoom\+Out = delegate \{ \}}
+
+\Hypertarget{class_scott_plot_1_1_control_1_1_plot_actions_ab5623522b77eaa46adc75038a27c49dd}\index{ScottPlot.Control.PlotActions@{ScottPlot.Control.PlotActions}!ZoomRectangleApply@{ZoomRectangleApply}}
+\index{ZoomRectangleApply@{ZoomRectangleApply}!ScottPlot.Control.PlotActions@{ScottPlot.Control.PlotActions}}
+\doxysubsubsection{\texorpdfstring{ZoomRectangleApply}{ZoomRectangleApply}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_control_1_1_plot_actions_ab5623522b77eaa46adc75038a27c49dd} 
+Action$<$\mbox{\hyperlink{interface_scott_plot_1_1_i_plot_control}{IPlot\+Control}}$>$ Scott\+Plot.\+Control.\+Plot\+Actions.\+Zoom\+Rectangle\+Apply = delegate \{ \}}
+
+\Hypertarget{class_scott_plot_1_1_control_1_1_plot_actions_a56461c7d49c21da8fa9930785a24258a}\index{ScottPlot.Control.PlotActions@{ScottPlot.Control.PlotActions}!ZoomRectangleClear@{ZoomRectangleClear}}
+\index{ZoomRectangleClear@{ZoomRectangleClear}!ScottPlot.Control.PlotActions@{ScottPlot.Control.PlotActions}}
+\doxysubsubsection{\texorpdfstring{ZoomRectangleClear}{ZoomRectangleClear}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_control_1_1_plot_actions_a56461c7d49c21da8fa9930785a24258a} 
+Action$<$\mbox{\hyperlink{interface_scott_plot_1_1_i_plot_control}{IPlot\+Control}}$>$ Scott\+Plot.\+Control.\+Plot\+Actions.\+Zoom\+Rectangle\+Clear = delegate \{ \}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Control/Plot\+Actions.\+cs\end{DoxyCompactItemize}

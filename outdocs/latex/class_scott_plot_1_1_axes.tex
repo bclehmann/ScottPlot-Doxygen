@@ -1,0 +1,190 @@
+\doxysection{Scott\+Plot.\+Axes Class Reference}
+\hypertarget{class_scott_plot_1_1_axes}{}\label{class_scott_plot_1_1_axes}\index{ScottPlot.Axes@{ScottPlot.Axes}}
+
+
+This object holds an X axis and Y axis and performs 2D coordinate/pixel conversions.  
+
+
+Inheritance diagram for Scott\+Plot.\+Axes\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_scott_plot_1_1_axes}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_scott_plot_1_1_axes_ac3c5b310e45eb832467ee21c9d1e9df2}{Axes}} ()
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_coordinates}{Coordinates}} \mbox{\hyperlink{class_scott_plot_1_1_axes_a39cd051d694a1364d2d28f92bdf071bd}{Get\+Coordinates}} (\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}} pixel)
+\item 
+double \mbox{\hyperlink{class_scott_plot_1_1_axes_a4dffaa60d112ec0da23cc26ef6b59ed7}{Get\+CoordinateX}} (float pixel)
+\item 
+double \mbox{\hyperlink{class_scott_plot_1_1_axes_a0b543ce431eb7cc45c602165278fa564}{Get\+CoordinateY}} (float pixel)
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}} \mbox{\hyperlink{class_scott_plot_1_1_axes_aead6a79284690d7d645785d7e3c42bcd}{Get\+Pixel}} (\mbox{\hyperlink{struct_scott_plot_1_1_coordinates}{Coordinates}} coordinates)
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_pixel_line}{Pixel\+Line}} \mbox{\hyperlink{class_scott_plot_1_1_axes_a8f03c2c662bac4f481efe5f26dd09cd2}{Get\+Pixel\+Line}} (\mbox{\hyperlink{struct_scott_plot_1_1_coordinate_line}{Coordinate\+Line}} line)
+\item 
+float \mbox{\hyperlink{class_scott_plot_1_1_axes_a4995d628c9fa922fa31b7c7c9c95c935}{Get\+PixelX}} (double x\+Coordinate)
+\item 
+float \mbox{\hyperlink{class_scott_plot_1_1_axes_a329fa04b6657c715067dfccc5855a16a}{Get\+PixelY}} (double y\+Coordinate)
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect}{Pixel\+Rect}} \mbox{\hyperlink{class_scott_plot_1_1_axes_afc17cfc4204b769bafe14493b014b9f8}{Get\+Pixel\+Rect}} (\mbox{\hyperlink{struct_scott_plot_1_1_coordinate_rect}{Coordinate\+Rect}} rect)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_scott_plot_1_1_i_axes}{Scott\+Plot.\+IAxes}}}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_scott_plot_1_1_i_x_axis}{IXAxis}} \mbox{\hyperlink{class_scott_plot_1_1_axes_ab70d72ef43d05274567ca0d774f4bd55}{XAxis}} = null!\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{interface_scott_plot_1_1_i_y_axis}{IYAxis}} \mbox{\hyperlink{class_scott_plot_1_1_axes_af858a413d0d82f4e5624c2d11a48bd67}{YAxis}} = null!\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect}{Pixel\+Rect}} \mbox{\hyperlink{class_scott_plot_1_1_axes_a5eb650340434dff19bdcd420174bbcb1}{Data\+Rect}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Describes the region in the center of the figure where plottable data will be displayed. This region is set by the renderer immediately before a Plottable\textquotesingle{}s Render() method is called. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_scott_plot_1_1_axes}{Axes}} \mbox{\hyperlink{class_scott_plot_1_1_axes_a00487b4ad8c9534674002cf8245b4920}{Default}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{interface_scott_plot_1_1_i_axes}{Scott\+Plot.\+IAxes}}}
+
+
+\doxysubsection{Detailed Description}
+This object holds an X axis and Y axis and performs 2D coordinate/pixel conversions. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_scott_plot_1_1_axes_ac3c5b310e45eb832467ee21c9d1e9df2}\index{ScottPlot.Axes@{ScottPlot.Axes}!Axes@{Axes}}
+\index{Axes@{Axes}!ScottPlot.Axes@{ScottPlot.Axes}}
+\doxysubsubsection{\texorpdfstring{Axes()}{Axes()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axes_ac3c5b310e45eb832467ee21c9d1e9df2} 
+Scott\+Plot.\+Axes.\+Axes (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_scott_plot_1_1_axes_a39cd051d694a1364d2d28f92bdf071bd}\index{ScottPlot.Axes@{ScottPlot.Axes}!GetCoordinates@{GetCoordinates}}
+\index{GetCoordinates@{GetCoordinates}!ScottPlot.Axes@{ScottPlot.Axes}}
+\doxysubsubsection{\texorpdfstring{GetCoordinates()}{GetCoordinates()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axes_a39cd051d694a1364d2d28f92bdf071bd} 
+\mbox{\hyperlink{struct_scott_plot_1_1_coordinates}{Coordinates}} Scott\+Plot.\+Axes.\+Get\+Coordinates (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}}}]{pixel}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_axes_a82b080e17d76fa9d0f1de341bdf3181e}{Scott\+Plot.\+IAxes}}.
+
+\Hypertarget{class_scott_plot_1_1_axes_a4dffaa60d112ec0da23cc26ef6b59ed7}\index{ScottPlot.Axes@{ScottPlot.Axes}!GetCoordinateX@{GetCoordinateX}}
+\index{GetCoordinateX@{GetCoordinateX}!ScottPlot.Axes@{ScottPlot.Axes}}
+\doxysubsubsection{\texorpdfstring{GetCoordinateX()}{GetCoordinateX()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axes_a4dffaa60d112ec0da23cc26ef6b59ed7} 
+double Scott\+Plot.\+Axes.\+Get\+CoordinateX (\begin{DoxyParamCaption}\item[{float}]{pixel}{}\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_axes_a2ef38a3c0c9fdf42e5ba9007fbfbba9a}{Scott\+Plot.\+IAxes}}.
+
+\Hypertarget{class_scott_plot_1_1_axes_a0b543ce431eb7cc45c602165278fa564}\index{ScottPlot.Axes@{ScottPlot.Axes}!GetCoordinateY@{GetCoordinateY}}
+\index{GetCoordinateY@{GetCoordinateY}!ScottPlot.Axes@{ScottPlot.Axes}}
+\doxysubsubsection{\texorpdfstring{GetCoordinateY()}{GetCoordinateY()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axes_a0b543ce431eb7cc45c602165278fa564} 
+double Scott\+Plot.\+Axes.\+Get\+CoordinateY (\begin{DoxyParamCaption}\item[{float}]{pixel}{}\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_axes_a2dba2a6f1301f96843194a1c64acbddf}{Scott\+Plot.\+IAxes}}.
+
+\Hypertarget{class_scott_plot_1_1_axes_aead6a79284690d7d645785d7e3c42bcd}\index{ScottPlot.Axes@{ScottPlot.Axes}!GetPixel@{GetPixel}}
+\index{GetPixel@{GetPixel}!ScottPlot.Axes@{ScottPlot.Axes}}
+\doxysubsubsection{\texorpdfstring{GetPixel()}{GetPixel()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axes_aead6a79284690d7d645785d7e3c42bcd} 
+\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}} Scott\+Plot.\+Axes.\+Get\+Pixel (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_scott_plot_1_1_coordinates}{Coordinates}}}]{coordinates}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_axes_a52c03a3cb2ab640401fbcb8bd4768c69}{Scott\+Plot.\+IAxes}}.
+
+\Hypertarget{class_scott_plot_1_1_axes_a8f03c2c662bac4f481efe5f26dd09cd2}\index{ScottPlot.Axes@{ScottPlot.Axes}!GetPixelLine@{GetPixelLine}}
+\index{GetPixelLine@{GetPixelLine}!ScottPlot.Axes@{ScottPlot.Axes}}
+\doxysubsubsection{\texorpdfstring{GetPixelLine()}{GetPixelLine()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axes_a8f03c2c662bac4f481efe5f26dd09cd2} 
+\mbox{\hyperlink{struct_scott_plot_1_1_pixel_line}{Pixel\+Line}} Scott\+Plot.\+Axes.\+Get\+Pixel\+Line (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_scott_plot_1_1_coordinate_line}{Coordinate\+Line}}}]{line}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_axes_a0d89c0a4939f5f14f1db3ffa1f4741bc}{Scott\+Plot.\+IAxes}}.
+
+\Hypertarget{class_scott_plot_1_1_axes_afc17cfc4204b769bafe14493b014b9f8}\index{ScottPlot.Axes@{ScottPlot.Axes}!GetPixelRect@{GetPixelRect}}
+\index{GetPixelRect@{GetPixelRect}!ScottPlot.Axes@{ScottPlot.Axes}}
+\doxysubsubsection{\texorpdfstring{GetPixelRect()}{GetPixelRect()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axes_afc17cfc4204b769bafe14493b014b9f8} 
+\mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect}{Pixel\+Rect}} Scott\+Plot.\+Axes.\+Get\+Pixel\+Rect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_scott_plot_1_1_coordinate_rect}{Coordinate\+Rect}}}]{rect}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_axes_ae289efbc70a58c856414aeba3922fa8c}{Scott\+Plot.\+IAxes}}.
+
+\Hypertarget{class_scott_plot_1_1_axes_a4995d628c9fa922fa31b7c7c9c95c935}\index{ScottPlot.Axes@{ScottPlot.Axes}!GetPixelX@{GetPixelX}}
+\index{GetPixelX@{GetPixelX}!ScottPlot.Axes@{ScottPlot.Axes}}
+\doxysubsubsection{\texorpdfstring{GetPixelX()}{GetPixelX()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axes_a4995d628c9fa922fa31b7c7c9c95c935} 
+float Scott\+Plot.\+Axes.\+Get\+PixelX (\begin{DoxyParamCaption}\item[{double}]{x\+Coordinate}{}\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_axes_a3ff0f164400d332d47deacfe40f942a6}{Scott\+Plot.\+IAxes}}.
+
+\Hypertarget{class_scott_plot_1_1_axes_a329fa04b6657c715067dfccc5855a16a}\index{ScottPlot.Axes@{ScottPlot.Axes}!GetPixelY@{GetPixelY}}
+\index{GetPixelY@{GetPixelY}!ScottPlot.Axes@{ScottPlot.Axes}}
+\doxysubsubsection{\texorpdfstring{GetPixelY()}{GetPixelY()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axes_a329fa04b6657c715067dfccc5855a16a} 
+float Scott\+Plot.\+Axes.\+Get\+PixelY (\begin{DoxyParamCaption}\item[{double}]{y\+Coordinate}{}\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_axes_ad6d12d80ab6778ee54df4ca278f38c66}{Scott\+Plot.\+IAxes}}.
+
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{class_scott_plot_1_1_axes_a5eb650340434dff19bdcd420174bbcb1}\index{ScottPlot.Axes@{ScottPlot.Axes}!DataRect@{DataRect}}
+\index{DataRect@{DataRect}!ScottPlot.Axes@{ScottPlot.Axes}}
+\doxysubsubsection{\texorpdfstring{DataRect}{DataRect}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axes_a5eb650340434dff19bdcd420174bbcb1} 
+\mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect}{Pixel\+Rect}} Scott\+Plot.\+Axes.\+Data\+Rect\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Describes the region in the center of the figure where plottable data will be displayed. This region is set by the renderer immediately before a Plottable\textquotesingle{}s Render() method is called. 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_axes_ad20bdd617a031e322ec49277bf6134ed}{Scott\+Plot.\+IAxes}}.
+
+\Hypertarget{class_scott_plot_1_1_axes_a00487b4ad8c9534674002cf8245b4920}\index{ScottPlot.Axes@{ScottPlot.Axes}!Default@{Default}}
+\index{Default@{Default}!ScottPlot.Axes@{ScottPlot.Axes}}
+\doxysubsubsection{\texorpdfstring{Default}{Default}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axes_a00487b4ad8c9534674002cf8245b4920} 
+\mbox{\hyperlink{class_scott_plot_1_1_axes}{Axes}} Scott\+Plot.\+Axes.\+Default\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+\Hypertarget{class_scott_plot_1_1_axes_ab70d72ef43d05274567ca0d774f4bd55}\index{ScottPlot.Axes@{ScottPlot.Axes}!XAxis@{XAxis}}
+\index{XAxis@{XAxis}!ScottPlot.Axes@{ScottPlot.Axes}}
+\doxysubsubsection{\texorpdfstring{XAxis}{XAxis}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axes_ab70d72ef43d05274567ca0d774f4bd55} 
+\mbox{\hyperlink{interface_scott_plot_1_1_i_x_axis}{IXAxis}} Scott\+Plot.\+Axes.\+XAxis = null!\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_axes_a6beb5edb2f794005f6f3b5949ee4fc18}{Scott\+Plot.\+IAxes}}.
+
+\Hypertarget{class_scott_plot_1_1_axes_af858a413d0d82f4e5624c2d11a48bd67}\index{ScottPlot.Axes@{ScottPlot.Axes}!YAxis@{YAxis}}
+\index{YAxis@{YAxis}!ScottPlot.Axes@{ScottPlot.Axes}}
+\doxysubsubsection{\texorpdfstring{YAxis}{YAxis}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axes_af858a413d0d82f4e5624c2d11a48bd67} 
+\mbox{\hyperlink{interface_scott_plot_1_1_i_y_axis}{IYAxis}} Scott\+Plot.\+Axes.\+YAxis = null!\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_axes_ac921474efab1ef05e578b184b1b0f34b}{Scott\+Plot.\+IAxes}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Primitives/Axes.\+cs\end{DoxyCompactItemize}

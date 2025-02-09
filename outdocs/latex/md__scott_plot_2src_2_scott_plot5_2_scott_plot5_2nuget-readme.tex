@@ -1,0 +1,56 @@
+\chapter{nuget-\/readme}
+\hypertarget{md__scott_plot_2src_2_scott_plot5_2_scott_plot5_2nuget-readme}{}\label{md__scott_plot_2src_2_scott_plot5_2_scott_plot5_2nuget-readme}\index{nuget-\/readme@{nuget-\/readme}}
+{\bfseries{\href{https://scottplot.net}{\texttt{ Scott\+Plot}} is a free and open-\/source plotting library for .NET}} that makes it easy to interactively display large datasets.
+
+\href{https://scottplot.net}{\texttt{ }}
+
+The \href{https://scottplot.net/cookbook/5.0/}{\texttt{ {\bfseries{Scott\+Plot Cookbook}}}} demonstrates how to create line plots, bar charts, pie graphs, scatter plots, and more with just a few lines of code.\hypertarget{md__scott_plot_2src_2_scott_plot5_2_scott_plot5_2nuget-readme_autotoc_md0}{}\doxysubsection{\texorpdfstring{Quickstart}{Quickstart}}\label{md__scott_plot_2src_2_scott_plot5_2_scott_plot5_2nuget-readme_autotoc_md0}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordtype}{double}[]\ dataX\ =\ \{\ 1,\ 2,\ 3,\ 4,\ 5\ \};}
+\DoxyCodeLine{\textcolor{keywordtype}{double}[]\ dataY\ =\ \{\ 1,\ 4,\ 9,\ 16,\ 25\ \};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\mbox{\hyperlink{class_scott_plot_1_1_plot}{ScottPlot.Plot}}\ myPlot\ =\ \textcolor{keyword}{new}();}
+\DoxyCodeLine{myPlot.Add.Scatter(dataX,\ dataY);}
+\DoxyCodeLine{myPlot.SavePng(\textcolor{stringliteral}{"{}quickstart.png"{}},\ 400,\ 300);}
+
+\end{DoxyCode}
+
+
+\hypertarget{md__scott_plot_2src_2_scott_plot5_2_scott_plot5_2nuget-readme_autotoc_md1}{}\doxysubsection{\texorpdfstring{Windows Forms Quickstart}{Windows Forms Quickstart}}\label{md__scott_plot_2src_2_scott_plot5_2_scott_plot5_2nuget-readme_autotoc_md1}
+Install the \href{https://www.nuget.org/packages/ScottPlot.WinForms}{\texttt{ {\ttfamily Scott\+Plot.\+Win\+Forms} Nu\+Get package}}, drop a {\ttfamily Forms\+Plot} from the toolbox onto your form, then add the following to your start-\/up sequence\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordtype}{double}[]\ dataX\ =\ \{\ 1,\ 2,\ 3,\ 4,\ 5\ \};}
+\DoxyCodeLine{\textcolor{keywordtype}{double}[]\ dataY\ =\ \{\ 1,\ 4,\ 9,\ 16,\ 25\ \};}
+\DoxyCodeLine{}
+\DoxyCodeLine{formsPlot1.Plot.Add.Scatter(dataX,\ dataY);}
+\DoxyCodeLine{formsPlot1.Refresh();}
+
+\end{DoxyCode}
+
+
+\hypertarget{md__scott_plot_2src_2_scott_plot5_2_scott_plot5_2nuget-readme_autotoc_md2}{}\doxysubsection{\texorpdfstring{More Quickstarts}{More Quickstarts}}\label{md__scott_plot_2src_2_scott_plot5_2_scott_plot5_2nuget-readme_autotoc_md2}
+
+\begin{DoxyItemize}
+\item \href{https://scottplot.net/quickstart/console/}{\texttt{ {\bfseries{Console Application Quickstart}}}}
+\item \href{https://scottplot.net/quickstart/winforms/}{\texttt{ {\bfseries{Windows Forms Quickstart}}}}
+\item \href{https://scottplot.net/quickstart/wpf/}{\texttt{ {\bfseries{WPF Quickstart}}}}
+\item \href{https://scottplot.net/quickstart/winui/}{\texttt{ {\bfseries{Win\+UI Quickstart}}}}
+\item \href{https://scottplot.net/quickstart/unoplatform/}{\texttt{ {\bfseries{Uno Platform Quickstart}}}}
+\item \href{https://scottplot.net/quickstart/avalonia/}{\texttt{ {\bfseries{Avalonia Quickstart}}}}
+\item \href{https://scottplot.net/quickstart/eto/}{\texttt{ {\bfseries{Eto Quickstart}}}}
+\item \href{https://scottplot.net/quickstart/blazor/}{\texttt{ {\bfseries{Blazor Quickstart}}}}
+\item \href{https://scottplot.net/quickstart/powershell/}{\texttt{ {\bfseries{Powershell Quickstart}}}}
+\item \href{https://scottplot.net/quickstart/notebook/}{\texttt{ {\bfseries{Polyglot Notebook Quickstart}}}}
+\end{DoxyItemize}\hypertarget{md__scott_plot_2src_2_scott_plot5_2_scott_plot5_2nuget-readme_autotoc_md3}{}\doxysubsection{\texorpdfstring{Interactive Demo}{Interactive Demo}}\label{md__scott_plot_2src_2_scott_plot5_2_scott_plot5_2nuget-readme_autotoc_md3}
+The \href{https://scottplot.net/demo/}{\texttt{ {\bfseries{Scott\+Plot Demo}}}} allows you to run these examples interactively.\hypertarget{md__scott_plot_2src_2_scott_plot5_2_scott_plot5_2nuget-readme_autotoc_md4}{}\doxysubsection{\texorpdfstring{Scott\+Plot Cookbook}{Scott\+Plot Cookbook}}\label{md__scott_plot_2src_2_scott_plot5_2_scott_plot5_2nuget-readme_autotoc_md4}
+The \href{https://scottplot.net/cookbook/5.0/}{\texttt{ {\bfseries{Scott\+Plot Cookbook}}}} demonstrates how to create line plots, bar charts, pie graphs, scatter plots, and more with just a few lines of code.
+
+\href{https://scottplot.net/cookbook/5.0/}{\texttt{ }}\hypertarget{md__scott_plot_2src_2_scott_plot5_2_scott_plot5_2nuget-readme_autotoc_md5}{}\doxysection{\texorpdfstring{Versions}{Versions}}\label{md__scott_plot_2src_2_scott_plot5_2_scott_plot5_2nuget-readme_autotoc_md5}
+
+\begin{DoxyItemize}
+\item {\bfseries{\doxylink{namespace_scott_plot}{Scott\+Plot} 5.\+0 is the newest version of \doxylink{namespace_scott_plot}{Scott\+Plot}.}} \doxylink{namespace_scott_plot}{Scott\+Plot} 5 is actively developed and supports all operating systems. The API is similar but not identical to \doxylink{namespace_scott_plot}{Scott\+Plot} 4. See the \href{https://scottplot.net/faq/version-5.0/}{\texttt{ What\textquotesingle{}s New in Scott\+Plot 5.\+0}} page for details.
+\item {\bfseries{\doxylink{namespace_scott_plot}{Scott\+Plot} 4.\+1 is a stable version of \doxylink{namespace_scott_plot}{Scott\+Plot}}} which continues to be maintained but no longer receives major new features. \doxylink{namespace_scott_plot}{Scott\+Plot} 4 supported all operating systems through .NET 6, but after .NET 7 it can only be used in projects that target Windows. 
+\end{DoxyItemize}

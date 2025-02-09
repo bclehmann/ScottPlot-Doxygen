@@ -1,0 +1,266 @@
+\doxysection{Scott\+Plot.\+Random\+Data\+Generator Class Reference}
+\hypertarget{class_scott_plot_1_1_random_data_generator}{}\label{class_scott_plot_1_1_random_data_generator}\index{ScottPlot.RandomDataGenerator@{ScottPlot.RandomDataGenerator}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_scott_plot_1_1_random_data_generator_a26492c6bf5c1da5b208b00824fe69fc3}{Random\+Data\+Generator}} (int? seed=null)
+\begin{DoxyCompactList}\small\item\em Create a random number generator. The seed is random by default, but could be fixed to the defined value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_random_data_generator_a4d563456a58cca552ae84f62c7c82866}{Seed}} (int seed)
+\item 
+double \mbox{\hyperlink{class_scott_plot_1_1_random_data_generator_a0db9a1ec378109311e0c8f1c6c9a74d4}{Random\+Number}} ()
+\begin{DoxyCompactList}\small\item\em Return a uniformly random number between 0 (inclusive) and 1 (exclusive) \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_scott_plot_1_1_random_data_generator_a268253f6d1dee97a6eabaf29f3a98e06}{Random\+Number}} (double max)
+\begin{DoxyCompactList}\small\item\em Return a uniformly random number between 0 (inclusive) and {\itshape max}  (exclusive) \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_scott_plot_1_1_random_data_generator_a3693803a5f63885c86c13d1ee4fb7890}{Random\+Number}} (double min, double max)
+\begin{DoxyCompactList}\small\item\em Return a uniformly random number between {\itshape min}  (inclusive) and {\itshape max}  (exclusive) \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_scott_plot_1_1_random_data_generator_aa79430d4fcf3d8379be9bbff02e9e027}{Random\+Non\+Zero\+Number}} (double max=1)
+\begin{DoxyCompactList}\small\item\em Return a random number guaranteed not to be zero. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_scott_plot_1_1_random_data_generator_a2f859bf3206cb61a4263cc379f2a7e10}{Random\+Integer}} ()
+\begin{DoxyCompactList}\small\item\em Return a random integer up to the maximum integer size. \end{DoxyCompactList}\item 
+byte \mbox{\hyperlink{class_scott_plot_1_1_random_data_generator_ab599fbdd945c88afd3810f562ce4495a}{Random\+Byte}} ()
+\begin{DoxyCompactList}\small\item\em Return a random byte (0-\/255) \end{DoxyCompactList}\item 
+byte \mbox{\hyperlink{class_scott_plot_1_1_random_data_generator_a6562a0dd0a4b5f78aadc00b69aa2e788}{Random\+Byte}} (byte min, byte max)
+\begin{DoxyCompactList}\small\item\em Return a random byte between the given values (inclusive) \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_scott_plot_1_1_random_data_generator_a034bc6a825c6eb6c6682dc3a922c55da}{Random\+Integer}} (int max)
+\begin{DoxyCompactList}\small\item\em Return a random integer between zero (inclusive) and {\itshape max}  (exclusive) \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_scott_plot_1_1_random_data_generator_acbdc912e6f3c43a30590f17866cf3461}{Random\+Integer}} (int min, int max)
+\begin{DoxyCompactList}\small\item\em Return a random integer between {\itshape min}  (inclusive) and {\itshape max}  (exclusive) \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_scott_plot_1_1_random_data_generator_a237ecb2062397ebef3b5be84e3007f64}{Random\+Normal\+Number}} (double mean=0, double std\+Dev=1)
+\begin{DoxyCompactList}\small\item\em Return a number normally distributed around the given {\itshape mean}  according to the {\itshape std\+Dev}  standard deviation. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_random_data_generator_a871053fa1d4fd63ad49c338ec44bd303}{Add\+Noise\+In\+Place}} (double\mbox{[}$\,$\mbox{]} values, double magnitude)
+\begin{DoxyCompactList}\small\item\em Mutate the given array by adding noise (± magnitude) and return it. \end{DoxyCompactList}\item 
+double\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_scott_plot_1_1_random_data_generator_a9afd0f5d9f70ceedf903b7b29e538c30}{Add\+Noise}} (double\mbox{[}$\,$\mbox{]} input, double magnitude)
+\begin{DoxyCompactList}\small\item\em Return a copy of the given data with random noise added (± magnitude) \end{DoxyCompactList}\item 
+double\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_scott_plot_1_1_random_data_generator_ac2db755f758a613018ab578da6752eaf}{Random\+Sample}} (int count, double mult=1, double offset=0)
+\begin{DoxyCompactList}\small\item\em Uniformly distributed random numbers between 0 and 1 (multiplied by {\itshape mult}  then added to {\itshape offset} ). \end{DoxyCompactList}\item 
+double\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_scott_plot_1_1_random_data_generator_a1874862ca797c332f0cd1245783530ae}{Random\+Normal\+Sample}} (int count, double mean=0, double std\+Dev=1)
+\begin{DoxyCompactList}\small\item\em Return a collection of numbers normally distributed around the given {\itshape mean}  according to the {\itshape std\+Dev}  standard deviation. \end{DoxyCompactList}\item 
+double\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_scott_plot_1_1_random_data_generator_aa37f8855e0207a2a01d2eef50640716f}{Random\+Sin}} (int count)
+\begin{DoxyCompactList}\small\item\em Sine wave with random frequency, amplitude, and phase. \end{DoxyCompactList}\item 
+double\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_scott_plot_1_1_random_data_generator_ab6a9f1bee4c782eab4e44dd3dde66a28}{Random\+Walk}} (int count, double mult=1, double offset=0, double slope=0)
+\begin{DoxyCompactList}\small\item\em A sequence of numbers that starts at {\itshape offset}  and "{}walks"{} randomly from one point to the next, scaled by {\itshape mult}  with an approximate slope of {\itshape slope} . \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{struct_scott_plot_1_1_o_h_l_c}{OHLC}} $>$ \mbox{\hyperlink{class_scott_plot_1_1_random_data_generator_ad5860f5f09c6931ad877d0a00fe305eb}{Random\+OHLCs}} (int count)
+\begin{DoxyCompactList}\small\item\em Return a collection OHLCs representing random price action. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{struct_scott_plot_1_1_o_h_l_c}{OHLC}} $>$ \mbox{\hyperlink{class_scott_plot_1_1_random_data_generator_a1276c04df55d9e2af63e85d6b90c03fb}{Random\+OHLCs}} (int count, Date\+Time start)
+\begin{DoxyCompactList}\small\item\em Return a collection OHLCs representing random price action. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_scott_plot_1_1_random_data_generator}{Random\+Data\+Generator}} \mbox{\hyperlink{class_scott_plot_1_1_random_data_generator_ad68d354eab656032724faf93e485156c}{Generate}} = new(0)\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_scott_plot_1_1_random_data_generator_a26492c6bf5c1da5b208b00824fe69fc3}\index{ScottPlot.RandomDataGenerator@{ScottPlot.RandomDataGenerator}!RandomDataGenerator@{RandomDataGenerator}}
+\index{RandomDataGenerator@{RandomDataGenerator}!ScottPlot.RandomDataGenerator@{ScottPlot.RandomDataGenerator}}
+\doxysubsubsection{\texorpdfstring{RandomDataGenerator()}{RandomDataGenerator()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_random_data_generator_a26492c6bf5c1da5b208b00824fe69fc3} 
+Scott\+Plot.\+Random\+Data\+Generator.\+Random\+Data\+Generator (\begin{DoxyParamCaption}\item[{int?}]{seed}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Create a random number generator. The seed is random by default, but could be fixed to the defined value. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_scott_plot_1_1_random_data_generator_a9afd0f5d9f70ceedf903b7b29e538c30}\index{ScottPlot.RandomDataGenerator@{ScottPlot.RandomDataGenerator}!AddNoise@{AddNoise}}
+\index{AddNoise@{AddNoise}!ScottPlot.RandomDataGenerator@{ScottPlot.RandomDataGenerator}}
+\doxysubsubsection{\texorpdfstring{AddNoise()}{AddNoise()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_random_data_generator_a9afd0f5d9f70ceedf903b7b29e538c30} 
+double\mbox{[}$\,$\mbox{]} Scott\+Plot.\+Random\+Data\+Generator.\+Add\+Noise (\begin{DoxyParamCaption}\item[{double\mbox{[}$\,$\mbox{]}}]{input}{, }\item[{double}]{magnitude}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return a copy of the given data with random noise added (± magnitude) 
+
+\Hypertarget{class_scott_plot_1_1_random_data_generator_a871053fa1d4fd63ad49c338ec44bd303}\index{ScottPlot.RandomDataGenerator@{ScottPlot.RandomDataGenerator}!AddNoiseInPlace@{AddNoiseInPlace}}
+\index{AddNoiseInPlace@{AddNoiseInPlace}!ScottPlot.RandomDataGenerator@{ScottPlot.RandomDataGenerator}}
+\doxysubsubsection{\texorpdfstring{AddNoiseInPlace()}{AddNoiseInPlace()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_random_data_generator_a871053fa1d4fd63ad49c338ec44bd303} 
+void Scott\+Plot.\+Random\+Data\+Generator.\+Add\+Noise\+In\+Place (\begin{DoxyParamCaption}\item[{double\mbox{[}$\,$\mbox{]}}]{values}{, }\item[{double}]{magnitude}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Mutate the given array by adding noise (± magnitude) and return it. 
+
+\Hypertarget{class_scott_plot_1_1_random_data_generator_ab599fbdd945c88afd3810f562ce4495a}\index{ScottPlot.RandomDataGenerator@{ScottPlot.RandomDataGenerator}!RandomByte@{RandomByte}}
+\index{RandomByte@{RandomByte}!ScottPlot.RandomDataGenerator@{ScottPlot.RandomDataGenerator}}
+\doxysubsubsection{\texorpdfstring{RandomByte()}{RandomByte()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_random_data_generator_ab599fbdd945c88afd3810f562ce4495a} 
+byte Scott\+Plot.\+Random\+Data\+Generator.\+Random\+Byte (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return a random byte (0-\/255) 
+
+\Hypertarget{class_scott_plot_1_1_random_data_generator_a6562a0dd0a4b5f78aadc00b69aa2e788}\index{ScottPlot.RandomDataGenerator@{ScottPlot.RandomDataGenerator}!RandomByte@{RandomByte}}
+\index{RandomByte@{RandomByte}!ScottPlot.RandomDataGenerator@{ScottPlot.RandomDataGenerator}}
+\doxysubsubsection{\texorpdfstring{RandomByte()}{RandomByte()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_random_data_generator_a6562a0dd0a4b5f78aadc00b69aa2e788} 
+byte Scott\+Plot.\+Random\+Data\+Generator.\+Random\+Byte (\begin{DoxyParamCaption}\item[{byte}]{min}{, }\item[{byte}]{max}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return a random byte between the given values (inclusive) 
+
+\Hypertarget{class_scott_plot_1_1_random_data_generator_a2f859bf3206cb61a4263cc379f2a7e10}\index{ScottPlot.RandomDataGenerator@{ScottPlot.RandomDataGenerator}!RandomInteger@{RandomInteger}}
+\index{RandomInteger@{RandomInteger}!ScottPlot.RandomDataGenerator@{ScottPlot.RandomDataGenerator}}
+\doxysubsubsection{\texorpdfstring{RandomInteger()}{RandomInteger()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_random_data_generator_a2f859bf3206cb61a4263cc379f2a7e10} 
+int Scott\+Plot.\+Random\+Data\+Generator.\+Random\+Integer (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return a random integer up to the maximum integer size. 
+
+\Hypertarget{class_scott_plot_1_1_random_data_generator_a034bc6a825c6eb6c6682dc3a922c55da}\index{ScottPlot.RandomDataGenerator@{ScottPlot.RandomDataGenerator}!RandomInteger@{RandomInteger}}
+\index{RandomInteger@{RandomInteger}!ScottPlot.RandomDataGenerator@{ScottPlot.RandomDataGenerator}}
+\doxysubsubsection{\texorpdfstring{RandomInteger()}{RandomInteger()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_random_data_generator_a034bc6a825c6eb6c6682dc3a922c55da} 
+int Scott\+Plot.\+Random\+Data\+Generator.\+Random\+Integer (\begin{DoxyParamCaption}\item[{int}]{max}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return a random integer between zero (inclusive) and {\itshape max}  (exclusive) 
+
+\Hypertarget{class_scott_plot_1_1_random_data_generator_acbdc912e6f3c43a30590f17866cf3461}\index{ScottPlot.RandomDataGenerator@{ScottPlot.RandomDataGenerator}!RandomInteger@{RandomInteger}}
+\index{RandomInteger@{RandomInteger}!ScottPlot.RandomDataGenerator@{ScottPlot.RandomDataGenerator}}
+\doxysubsubsection{\texorpdfstring{RandomInteger()}{RandomInteger()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_random_data_generator_acbdc912e6f3c43a30590f17866cf3461} 
+int Scott\+Plot.\+Random\+Data\+Generator.\+Random\+Integer (\begin{DoxyParamCaption}\item[{int}]{min}{, }\item[{int}]{max}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return a random integer between {\itshape min}  (inclusive) and {\itshape max}  (exclusive) 
+
+\Hypertarget{class_scott_plot_1_1_random_data_generator_aa79430d4fcf3d8379be9bbff02e9e027}\index{ScottPlot.RandomDataGenerator@{ScottPlot.RandomDataGenerator}!RandomNonZeroNumber@{RandomNonZeroNumber}}
+\index{RandomNonZeroNumber@{RandomNonZeroNumber}!ScottPlot.RandomDataGenerator@{ScottPlot.RandomDataGenerator}}
+\doxysubsubsection{\texorpdfstring{RandomNonZeroNumber()}{RandomNonZeroNumber()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_random_data_generator_aa79430d4fcf3d8379be9bbff02e9e027} 
+double Scott\+Plot.\+Random\+Data\+Generator.\+Random\+Non\+Zero\+Number (\begin{DoxyParamCaption}\item[{double}]{max}{ = {\ttfamily 1}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return a random number guaranteed not to be zero. 
+
+\Hypertarget{class_scott_plot_1_1_random_data_generator_a237ecb2062397ebef3b5be84e3007f64}\index{ScottPlot.RandomDataGenerator@{ScottPlot.RandomDataGenerator}!RandomNormalNumber@{RandomNormalNumber}}
+\index{RandomNormalNumber@{RandomNormalNumber}!ScottPlot.RandomDataGenerator@{ScottPlot.RandomDataGenerator}}
+\doxysubsubsection{\texorpdfstring{RandomNormalNumber()}{RandomNormalNumber()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_random_data_generator_a237ecb2062397ebef3b5be84e3007f64} 
+double Scott\+Plot.\+Random\+Data\+Generator.\+Random\+Normal\+Number (\begin{DoxyParamCaption}\item[{double}]{mean}{ = {\ttfamily 0}, }\item[{double}]{std\+Dev}{ = {\ttfamily 1}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return a number normally distributed around the given {\itshape mean}  according to the {\itshape std\+Dev}  standard deviation. 
+
+\Hypertarget{class_scott_plot_1_1_random_data_generator_a1874862ca797c332f0cd1245783530ae}\index{ScottPlot.RandomDataGenerator@{ScottPlot.RandomDataGenerator}!RandomNormalSample@{RandomNormalSample}}
+\index{RandomNormalSample@{RandomNormalSample}!ScottPlot.RandomDataGenerator@{ScottPlot.RandomDataGenerator}}
+\doxysubsubsection{\texorpdfstring{RandomNormalSample()}{RandomNormalSample()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_random_data_generator_a1874862ca797c332f0cd1245783530ae} 
+double\mbox{[}$\,$\mbox{]} Scott\+Plot.\+Random\+Data\+Generator.\+Random\+Normal\+Sample (\begin{DoxyParamCaption}\item[{int}]{count}{, }\item[{double}]{mean}{ = {\ttfamily 0}, }\item[{double}]{std\+Dev}{ = {\ttfamily 1}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return a collection of numbers normally distributed around the given {\itshape mean}  according to the {\itshape std\+Dev}  standard deviation. 
+
+\Hypertarget{class_scott_plot_1_1_random_data_generator_a0db9a1ec378109311e0c8f1c6c9a74d4}\index{ScottPlot.RandomDataGenerator@{ScottPlot.RandomDataGenerator}!RandomNumber@{RandomNumber}}
+\index{RandomNumber@{RandomNumber}!ScottPlot.RandomDataGenerator@{ScottPlot.RandomDataGenerator}}
+\doxysubsubsection{\texorpdfstring{RandomNumber()}{RandomNumber()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_random_data_generator_a0db9a1ec378109311e0c8f1c6c9a74d4} 
+double Scott\+Plot.\+Random\+Data\+Generator.\+Random\+Number (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return a uniformly random number between 0 (inclusive) and 1 (exclusive) 
+
+\Hypertarget{class_scott_plot_1_1_random_data_generator_a268253f6d1dee97a6eabaf29f3a98e06}\index{ScottPlot.RandomDataGenerator@{ScottPlot.RandomDataGenerator}!RandomNumber@{RandomNumber}}
+\index{RandomNumber@{RandomNumber}!ScottPlot.RandomDataGenerator@{ScottPlot.RandomDataGenerator}}
+\doxysubsubsection{\texorpdfstring{RandomNumber()}{RandomNumber()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_random_data_generator_a268253f6d1dee97a6eabaf29f3a98e06} 
+double Scott\+Plot.\+Random\+Data\+Generator.\+Random\+Number (\begin{DoxyParamCaption}\item[{double}]{max}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return a uniformly random number between 0 (inclusive) and {\itshape max}  (exclusive) 
+
+\Hypertarget{class_scott_plot_1_1_random_data_generator_a3693803a5f63885c86c13d1ee4fb7890}\index{ScottPlot.RandomDataGenerator@{ScottPlot.RandomDataGenerator}!RandomNumber@{RandomNumber}}
+\index{RandomNumber@{RandomNumber}!ScottPlot.RandomDataGenerator@{ScottPlot.RandomDataGenerator}}
+\doxysubsubsection{\texorpdfstring{RandomNumber()}{RandomNumber()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_random_data_generator_a3693803a5f63885c86c13d1ee4fb7890} 
+double Scott\+Plot.\+Random\+Data\+Generator.\+Random\+Number (\begin{DoxyParamCaption}\item[{double}]{min}{, }\item[{double}]{max}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return a uniformly random number between {\itshape min}  (inclusive) and {\itshape max}  (exclusive) 
+
+\Hypertarget{class_scott_plot_1_1_random_data_generator_ad5860f5f09c6931ad877d0a00fe305eb}\index{ScottPlot.RandomDataGenerator@{ScottPlot.RandomDataGenerator}!RandomOHLCs@{RandomOHLCs}}
+\index{RandomOHLCs@{RandomOHLCs}!ScottPlot.RandomDataGenerator@{ScottPlot.RandomDataGenerator}}
+\doxysubsubsection{\texorpdfstring{RandomOHLCs()}{RandomOHLCs()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_random_data_generator_ad5860f5f09c6931ad877d0a00fe305eb} 
+List$<$ \mbox{\hyperlink{struct_scott_plot_1_1_o_h_l_c}{OHLC}} $>$ Scott\+Plot.\+Random\+Data\+Generator.\+Random\+OHLCs (\begin{DoxyParamCaption}\item[{int}]{count}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return a collection OHLCs representing random price action. 
+
+\Hypertarget{class_scott_plot_1_1_random_data_generator_a1276c04df55d9e2af63e85d6b90c03fb}\index{ScottPlot.RandomDataGenerator@{ScottPlot.RandomDataGenerator}!RandomOHLCs@{RandomOHLCs}}
+\index{RandomOHLCs@{RandomOHLCs}!ScottPlot.RandomDataGenerator@{ScottPlot.RandomDataGenerator}}
+\doxysubsubsection{\texorpdfstring{RandomOHLCs()}{RandomOHLCs()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_random_data_generator_a1276c04df55d9e2af63e85d6b90c03fb} 
+List$<$ \mbox{\hyperlink{struct_scott_plot_1_1_o_h_l_c}{OHLC}} $>$ Scott\+Plot.\+Random\+Data\+Generator.\+Random\+OHLCs (\begin{DoxyParamCaption}\item[{int}]{count}{, }\item[{Date\+Time}]{start}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return a collection OHLCs representing random price action. 
+
+\Hypertarget{class_scott_plot_1_1_random_data_generator_ac2db755f758a613018ab578da6752eaf}\index{ScottPlot.RandomDataGenerator@{ScottPlot.RandomDataGenerator}!RandomSample@{RandomSample}}
+\index{RandomSample@{RandomSample}!ScottPlot.RandomDataGenerator@{ScottPlot.RandomDataGenerator}}
+\doxysubsubsection{\texorpdfstring{RandomSample()}{RandomSample()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_random_data_generator_ac2db755f758a613018ab578da6752eaf} 
+double\mbox{[}$\,$\mbox{]} Scott\+Plot.\+Random\+Data\+Generator.\+Random\+Sample (\begin{DoxyParamCaption}\item[{int}]{count}{, }\item[{double}]{mult}{ = {\ttfamily 1}, }\item[{double}]{offset}{ = {\ttfamily 0}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Uniformly distributed random numbers between 0 and 1 (multiplied by {\itshape mult}  then added to {\itshape offset} ). 
+
+\Hypertarget{class_scott_plot_1_1_random_data_generator_aa37f8855e0207a2a01d2eef50640716f}\index{ScottPlot.RandomDataGenerator@{ScottPlot.RandomDataGenerator}!RandomSin@{RandomSin}}
+\index{RandomSin@{RandomSin}!ScottPlot.RandomDataGenerator@{ScottPlot.RandomDataGenerator}}
+\doxysubsubsection{\texorpdfstring{RandomSin()}{RandomSin()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_random_data_generator_aa37f8855e0207a2a01d2eef50640716f} 
+double\mbox{[}$\,$\mbox{]} Scott\+Plot.\+Random\+Data\+Generator.\+Random\+Sin (\begin{DoxyParamCaption}\item[{int}]{count}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sine wave with random frequency, amplitude, and phase. 
+
+\Hypertarget{class_scott_plot_1_1_random_data_generator_ab6a9f1bee4c782eab4e44dd3dde66a28}\index{ScottPlot.RandomDataGenerator@{ScottPlot.RandomDataGenerator}!RandomWalk@{RandomWalk}}
+\index{RandomWalk@{RandomWalk}!ScottPlot.RandomDataGenerator@{ScottPlot.RandomDataGenerator}}
+\doxysubsubsection{\texorpdfstring{RandomWalk()}{RandomWalk()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_random_data_generator_ab6a9f1bee4c782eab4e44dd3dde66a28} 
+double\mbox{[}$\,$\mbox{]} Scott\+Plot.\+Random\+Data\+Generator.\+Random\+Walk (\begin{DoxyParamCaption}\item[{int}]{count}{, }\item[{double}]{mult}{ = {\ttfamily 1}, }\item[{double}]{offset}{ = {\ttfamily 0}, }\item[{double}]{slope}{ = {\ttfamily 0}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+A sequence of numbers that starts at {\itshape offset}  and "{}walks"{} randomly from one point to the next, scaled by {\itshape mult}  with an approximate slope of {\itshape slope} . 
+
+\Hypertarget{class_scott_plot_1_1_random_data_generator_a4d563456a58cca552ae84f62c7c82866}\index{ScottPlot.RandomDataGenerator@{ScottPlot.RandomDataGenerator}!Seed@{Seed}}
+\index{Seed@{Seed}!ScottPlot.RandomDataGenerator@{ScottPlot.RandomDataGenerator}}
+\doxysubsubsection{\texorpdfstring{Seed()}{Seed()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_random_data_generator_a4d563456a58cca552ae84f62c7c82866} 
+void Scott\+Plot.\+Random\+Data\+Generator.\+Seed (\begin{DoxyParamCaption}\item[{int}]{seed}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{class_scott_plot_1_1_random_data_generator_ad68d354eab656032724faf93e485156c}\index{ScottPlot.RandomDataGenerator@{ScottPlot.RandomDataGenerator}!Generate@{Generate}}
+\index{Generate@{Generate}!ScottPlot.RandomDataGenerator@{ScottPlot.RandomDataGenerator}}
+\doxysubsubsection{\texorpdfstring{Generate}{Generate}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_random_data_generator_ad68d354eab656032724faf93e485156c} 
+\mbox{\hyperlink{class_scott_plot_1_1_random_data_generator}{Random\+Data\+Generator}} Scott\+Plot.\+Random\+Data\+Generator.\+Generate = new(0)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/Random\+Data\+Generator.\+cs\end{DoxyCompactItemize}

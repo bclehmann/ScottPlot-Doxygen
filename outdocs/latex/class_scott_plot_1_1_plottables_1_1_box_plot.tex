@@ -1,0 +1,194 @@
+\doxysection{Scott\+Plot.\+Plottables.\+Box\+Plot Class Reference}
+\hypertarget{class_scott_plot_1_1_plottables_1_1_box_plot}{}\label{class_scott_plot_1_1_plottables_1_1_box_plot}\index{ScottPlot.Plottables.BoxPlot@{ScottPlot.Plottables.BoxPlot}}
+
+
+Displays 1 or more boxes all styled the same.  
+
+
+Inheritance diagram for Scott\+Plot.\+Plottables.\+Box\+Plot\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_scott_plot_1_1_plottables_1_1_box_plot}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_box_plot_a7b175d03129f84606710ef8f360ddd2f}{Get\+Axis\+Limits}} ()
+\begin{DoxyCompactList}\small\item\em Return the 2D area (in coordinate space) occupied by the data contained in this plottable. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_box_plot_ab66fb3d8ca9629463532aaa73024e379}{Render}} (Render\+Pack rp)
+\begin{DoxyCompactList}\small\item\em Draw the data from this plottable into the data area defined in the \doxylink{class_scott_plot_1_1_axes}{Axes}. By default the surface is already clipped to the data area, but this can be cleared inside the plottable. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable}{Scott\+Plot.\+IPlottable}}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+readonly List$<$ \mbox{\hyperlink{class_scott_plot_1_1_box}{Box}} $>$ \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_box_plot_a9b29064694c9d940882451d3d84d3cbd}{Boxes}} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_box_plot_a9d1b63ac44b9f5e7de86c10fa2d49a89}{Is\+Visible}} = true\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Toggles whether this plottable is shown and contributes to the automatic axis limit detection. The calling method will check this variable (it does not need to be checked inside the Render method). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{interface_scott_plot_1_1_i_axes}{IAxes}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_box_plot_a866d6d3c7a9dd9988836a9af9f048190}{Axes}} = new \mbox{\hyperlink{class_scott_plot_1_1_axes}{Axes}}()\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em This object performs coordinate/pixel translation at render time based on the latest data area. It stores the axes to use for this plottable and also the data area (in pixels) updated just before each render. If this object is null it will be constructed using the default X and Y axes at render time. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_box_plot_a8121c9838bae6edb63ae2ae3e582676e}{Label}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+string \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_box_plot_a03263878ab2a9cd27abe8dad05ceee7b}{Legend\+Text}} = string.\+Empty\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em If populated, this text appears in the legend. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_enumerable}{IEnumerable}}$<$ \mbox{\hyperlink{class_scott_plot_1_1_legend_item}{Legend\+Item}} $>$ \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_box_plot_a1c6454bfdb575a26b7aa71633fd36aea}{Legend\+Items}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Items which will appear in the legend. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_box_plot_a4845bdc16e339c4f69e7849a1b492448}{Fill\+Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}set\mbox{]}}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_box_plot_a950a9d36685cfa0da9a9e231301091ee}{Line\+Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}set\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_box_plot_af5f7980ad6783605cfca98e43a5619c6}{Line\+Width}}\hspace{0.3cm}{\ttfamily  \mbox{[}set\mbox{]}}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_box_plot_af5ab00ae6724bf4d918c675e6dbc9ae4}{Stroke\+Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}set\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_box_plot_a394a16992c27cf574770e5ac726f1b8f}{Stroke\+Width}}\hspace{0.3cm}{\ttfamily  \mbox{[}set\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable}{Scott\+Plot.\+IPlottable}}}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{interface_scott_plot_1_1_i_has_legend_text}{Scott\+Plot.\+IHas\+Legend\+Text}}}
+
+
+\doxysubsection{Detailed Description}
+Displays 1 or more boxes all styled the same. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_box_plot_a7b175d03129f84606710ef8f360ddd2f}\index{ScottPlot.Plottables.BoxPlot@{ScottPlot.Plottables.BoxPlot}!GetAxisLimits@{GetAxisLimits}}
+\index{GetAxisLimits@{GetAxisLimits}!ScottPlot.Plottables.BoxPlot@{ScottPlot.Plottables.BoxPlot}}
+\doxysubsubsection{\texorpdfstring{GetAxisLimits()}{GetAxisLimits()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_box_plot_a7b175d03129f84606710ef8f360ddd2f} 
+\mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}} Scott\+Plot.\+Plottables.\+Box\+Plot.\+Get\+Axis\+Limits (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return the 2D area (in coordinate space) occupied by the data contained in this plottable. 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable_a2e455cf76f9e8bc3187900b1a90487c3}{Scott\+Plot.\+IPlottable}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_box_plot_ab66fb3d8ca9629463532aaa73024e379}\index{ScottPlot.Plottables.BoxPlot@{ScottPlot.Plottables.BoxPlot}!Render@{Render}}
+\index{Render@{Render}!ScottPlot.Plottables.BoxPlot@{ScottPlot.Plottables.BoxPlot}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_box_plot_ab66fb3d8ca9629463532aaa73024e379} 
+virtual void Scott\+Plot.\+Plottables.\+Box\+Plot.\+Render (\begin{DoxyParamCaption}\item[{Render\+Pack}]{rp}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Draw the data from this plottable into the data area defined in the \doxylink{class_scott_plot_1_1_axes}{Axes}. By default the surface is already clipped to the data area, but this can be cleared inside the plottable. 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable_a11d2487f1d7628e019a09748d876c289}{Scott\+Plot.\+IPlottable}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_box_plot_a9b29064694c9d940882451d3d84d3cbd}\index{ScottPlot.Plottables.BoxPlot@{ScottPlot.Plottables.BoxPlot}!Boxes@{Boxes}}
+\index{Boxes@{Boxes}!ScottPlot.Plottables.BoxPlot@{ScottPlot.Plottables.BoxPlot}}
+\doxysubsubsection{\texorpdfstring{Boxes}{Boxes}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_box_plot_a9b29064694c9d940882451d3d84d3cbd} 
+readonly List$<$\mbox{\hyperlink{class_scott_plot_1_1_box}{Box}}$>$ Scott\+Plot.\+Plottables.\+Box\+Plot.\+Boxes = \mbox{[}$\,$\mbox{]}}
+
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_box_plot_a866d6d3c7a9dd9988836a9af9f048190}\index{ScottPlot.Plottables.BoxPlot@{ScottPlot.Plottables.BoxPlot}!Axes@{Axes}}
+\index{Axes@{Axes}!ScottPlot.Plottables.BoxPlot@{ScottPlot.Plottables.BoxPlot}}
+\doxysubsubsection{\texorpdfstring{Axes}{Axes}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_box_plot_a866d6d3c7a9dd9988836a9af9f048190} 
+\mbox{\hyperlink{interface_scott_plot_1_1_i_axes}{IAxes}} Scott\+Plot.\+Plottables.\+Box\+Plot.\+Axes = new \mbox{\hyperlink{class_scott_plot_1_1_axes}{Axes}}()\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+This object performs coordinate/pixel translation at render time based on the latest data area. It stores the axes to use for this plottable and also the data area (in pixels) updated just before each render. If this object is null it will be constructed using the default X and Y axes at render time. 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable_aa68bc5153a673a7cd4a68f93da377d0a}{Scott\+Plot.\+IPlottable}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_box_plot_a4845bdc16e339c4f69e7849a1b492448}\index{ScottPlot.Plottables.BoxPlot@{ScottPlot.Plottables.BoxPlot}!FillColor@{FillColor}}
+\index{FillColor@{FillColor}!ScottPlot.Plottables.BoxPlot@{ScottPlot.Plottables.BoxPlot}}
+\doxysubsubsection{\texorpdfstring{FillColor}{FillColor}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_box_plot_a4845bdc16e339c4f69e7849a1b492448} 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} Scott\+Plot.\+Plottables.\+Box\+Plot.\+Fill\+Color\hspace{0.3cm}{\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_box_plot_a9d1b63ac44b9f5e7de86c10fa2d49a89}\index{ScottPlot.Plottables.BoxPlot@{ScottPlot.Plottables.BoxPlot}!IsVisible@{IsVisible}}
+\index{IsVisible@{IsVisible}!ScottPlot.Plottables.BoxPlot@{ScottPlot.Plottables.BoxPlot}}
+\doxysubsubsection{\texorpdfstring{IsVisible}{IsVisible}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_box_plot_a9d1b63ac44b9f5e7de86c10fa2d49a89} 
+bool Scott\+Plot.\+Plottables.\+Box\+Plot.\+Is\+Visible = true\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Toggles whether this plottable is shown and contributes to the automatic axis limit detection. The calling method will check this variable (it does not need to be checked inside the Render method). 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable_abbe75ba55a332d695313ccb5dc780923}{Scott\+Plot.\+IPlottable}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_box_plot_a8121c9838bae6edb63ae2ae3e582676e}\index{ScottPlot.Plottables.BoxPlot@{ScottPlot.Plottables.BoxPlot}!Label@{Label}}
+\index{Label@{Label}!ScottPlot.Plottables.BoxPlot@{ScottPlot.Plottables.BoxPlot}}
+\doxysubsubsection{\texorpdfstring{Label}{Label}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_box_plot_a8121c9838bae6edb63ae2ae3e582676e} 
+string Scott\+Plot.\+Plottables.\+Box\+Plot.\+Label\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_box_plot_a1c6454bfdb575a26b7aa71633fd36aea}\index{ScottPlot.Plottables.BoxPlot@{ScottPlot.Plottables.BoxPlot}!LegendItems@{LegendItems}}
+\index{LegendItems@{LegendItems}!ScottPlot.Plottables.BoxPlot@{ScottPlot.Plottables.BoxPlot}}
+\doxysubsubsection{\texorpdfstring{LegendItems}{LegendItems}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_box_plot_a1c6454bfdb575a26b7aa71633fd36aea} 
+\mbox{\hyperlink{class_i_enumerable}{IEnumerable}}$<$\mbox{\hyperlink{class_scott_plot_1_1_legend_item}{Legend\+Item}}$>$ Scott\+Plot.\+Plottables.\+Box\+Plot.\+Legend\+Items\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Items which will appear in the legend. 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable_a4565f96a253f832bd9aa8033c99eff75}{Scott\+Plot.\+IPlottable}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_box_plot_a03263878ab2a9cd27abe8dad05ceee7b}\index{ScottPlot.Plottables.BoxPlot@{ScottPlot.Plottables.BoxPlot}!LegendText@{LegendText}}
+\index{LegendText@{LegendText}!ScottPlot.Plottables.BoxPlot@{ScottPlot.Plottables.BoxPlot}}
+\doxysubsubsection{\texorpdfstring{LegendText}{LegendText}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_box_plot_a03263878ab2a9cd27abe8dad05ceee7b} 
+string Scott\+Plot.\+Plottables.\+Box\+Plot.\+Legend\+Text = string.\+Empty\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+If populated, this text appears in the legend. 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_has_legend_text_ad89967a734dbda7c02217a19c17d88d8}{Scott\+Plot.\+IHas\+Legend\+Text}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_box_plot_a950a9d36685cfa0da9a9e231301091ee}\index{ScottPlot.Plottables.BoxPlot@{ScottPlot.Plottables.BoxPlot}!LineColor@{LineColor}}
+\index{LineColor@{LineColor}!ScottPlot.Plottables.BoxPlot@{ScottPlot.Plottables.BoxPlot}}
+\doxysubsubsection{\texorpdfstring{LineColor}{LineColor}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_box_plot_a950a9d36685cfa0da9a9e231301091ee} 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} Scott\+Plot.\+Plottables.\+Box\+Plot.\+Line\+Color\hspace{0.3cm}{\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_box_plot_af5f7980ad6783605cfca98e43a5619c6}\index{ScottPlot.Plottables.BoxPlot@{ScottPlot.Plottables.BoxPlot}!LineWidth@{LineWidth}}
+\index{LineWidth@{LineWidth}!ScottPlot.Plottables.BoxPlot@{ScottPlot.Plottables.BoxPlot}}
+\doxysubsubsection{\texorpdfstring{LineWidth}{LineWidth}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_box_plot_af5f7980ad6783605cfca98e43a5619c6} 
+float Scott\+Plot.\+Plottables.\+Box\+Plot.\+Line\+Width\hspace{0.3cm}{\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_box_plot_af5ab00ae6724bf4d918c675e6dbc9ae4}\index{ScottPlot.Plottables.BoxPlot@{ScottPlot.Plottables.BoxPlot}!StrokeColor@{StrokeColor}}
+\index{StrokeColor@{StrokeColor}!ScottPlot.Plottables.BoxPlot@{ScottPlot.Plottables.BoxPlot}}
+\doxysubsubsection{\texorpdfstring{StrokeColor}{StrokeColor}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_box_plot_af5ab00ae6724bf4d918c675e6dbc9ae4} 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} Scott\+Plot.\+Plottables.\+Box\+Plot.\+Stroke\+Color\hspace{0.3cm}{\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_box_plot_a394a16992c27cf574770e5ac726f1b8f}\index{ScottPlot.Plottables.BoxPlot@{ScottPlot.Plottables.BoxPlot}!StrokeWidth@{StrokeWidth}}
+\index{StrokeWidth@{StrokeWidth}!ScottPlot.Plottables.BoxPlot@{ScottPlot.Plottables.BoxPlot}}
+\doxysubsubsection{\texorpdfstring{StrokeWidth}{StrokeWidth}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_box_plot_a394a16992c27cf574770e5ac726f1b8f} 
+float Scott\+Plot.\+Plottables.\+Box\+Plot.\+Stroke\+Width\hspace{0.3cm}{\ttfamily [set]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Plottables/Box\+Plot.\+cs\end{DoxyCompactItemize}

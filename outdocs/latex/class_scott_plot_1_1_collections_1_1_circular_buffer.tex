@@ -1,0 +1,204 @@
+\doxysection{Scott\+Plot.\+Collections.\+Circular\+Buffer\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>} Class Template Reference}
+\hypertarget{class_scott_plot_1_1_collections_1_1_circular_buffer}{}\label{class_scott_plot_1_1_collections_1_1_circular_buffer}\index{ScottPlot.Collections.CircularBuffer$<$ T $>$@{ScottPlot.Collections.CircularBuffer$<$ T $>$}}
+
+
+The circular buffer starts with an empty list and grows to a maximum size. When the buffer is full, adding or inserting a new item removes the first item in the buffer.  
+
+
+Inheritance diagram for Scott\+Plot.\+Collections.\+Circular\+Buffer\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>}\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.115538cm]{class_scott_plot_1_1_collections_1_1_circular_buffer}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_scott_plot_1_1_collections_1_1_circular_buffer_aac652e4541de78dcea4368d5bbb230e8}{Circular\+Buffer}} (int capacity)
+\item 
+int \mbox{\hyperlink{class_scott_plot_1_1_collections_1_1_circular_buffer_a3cd34e3f23041f6816872964f89ab70f}{Index\+Of}} (T item)
+\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_collections_1_1_circular_buffer_a9944e9ac7fa623bb53880e767c88c6c4}{Insert}} (int index, T item)
+\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_collections_1_1_circular_buffer_a5a75faed3cf6052d2312ff8f0034f39c}{Remove\+At}} (int index)
+\item 
+bool \mbox{\hyperlink{class_scott_plot_1_1_collections_1_1_circular_buffer_a6768a0bf73a17e18bebae8f0ccb03a93}{Remove}} (T item)
+\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_collections_1_1_circular_buffer_ab07c41c4702095e9a4b19f0167ae559b}{Add}} (T item)
+\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_collections_1_1_circular_buffer_a3dc230e14a2a72f3e1d3e0ecf3a0417e}{Clear}} ()
+\item 
+bool \mbox{\hyperlink{class_scott_plot_1_1_collections_1_1_circular_buffer_a8f2820a9dcec21cc0e02b04b34d6d900}{Contains}} (T item)
+\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_collections_1_1_circular_buffer_a479bd478e4b4e5fa9a211a43930a03df}{Copy\+To}} (T\mbox{[}$\,$\mbox{]} array, int array\+Index)
+\item 
+T\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_scott_plot_1_1_collections_1_1_circular_buffer_acc7a31df16515df3356956510006c181}{To\+Array}} ()
+\item 
+IEnumerator$<$ T $>$ \mbox{\hyperlink{class_scott_plot_1_1_collections_1_1_circular_buffer_a271966e03e134894f9afaebad8bb53a8}{Get\+Enumerator}} ()
+\item 
+int \mbox{\hyperlink{class_scott_plot_1_1_collections_1_1_circular_buffer_a2b6fce2b027dc4049f99bbec743dadb5}{Binary\+Search}} (int index, int count, T item, \mbox{\hyperlink{class_i_comparer}{IComparer}}$<$ T $>$ comparer)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_scott_plot_1_1_collections_1_1_circular_buffer_a133e8ce8c0a3eb6a016d82bb169b1d0a}{Capacity}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+bool \mbox{\hyperlink{class_scott_plot_1_1_collections_1_1_circular_buffer_a4bc78c242504431db494ce4dcbf9d822}{Is\+Full}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+bool \mbox{\hyperlink{class_scott_plot_1_1_collections_1_1_circular_buffer_a51bf1e431cfa63ec1e0eb1db9a3015a0}{Is\+Empty}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+int \mbox{\hyperlink{class_scott_plot_1_1_collections_1_1_circular_buffer_af6252df728d028358d51dab7a49c4fd2}{Count}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+bool \mbox{\hyperlink{class_scott_plot_1_1_collections_1_1_circular_buffer_a63d1f3866704f52dcc0b61152270ad4e}{Is\+Read\+Only}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+bool \mbox{\hyperlink{class_scott_plot_1_1_collections_1_1_circular_buffer_a37ab809fb5bdb110adf92d61619eb3e8}{Is\+Fixed\+Size}} = true\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+object \mbox{\hyperlink{class_scott_plot_1_1_collections_1_1_circular_buffer_a56c9327c5d54af1889179508dade11a1}{Sync\+Root}} = new object()\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+bool \mbox{\hyperlink{class_scott_plot_1_1_collections_1_1_circular_buffer_a05d8f7c21f913003cee842235ada4a52}{Is\+Synchronized}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+T \mbox{\hyperlink{class_scott_plot_1_1_collections_1_1_circular_buffer_addcdcd6ab881089483fc6820fd460452}{this\mbox{[}int index\mbox{]}}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The circular buffer starts with an empty list and grows to a maximum size. When the buffer is full, adding or inserting a new item removes the first item in the buffer. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_scott_plot_1_1_collections_1_1_circular_buffer_aac652e4541de78dcea4368d5bbb230e8}\index{ScottPlot.Collections.CircularBuffer$<$ T $>$@{ScottPlot.Collections.CircularBuffer$<$ T $>$}!CircularBuffer@{CircularBuffer}}
+\index{CircularBuffer@{CircularBuffer}!ScottPlot.Collections.CircularBuffer$<$ T $>$@{ScottPlot.Collections.CircularBuffer$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{CircularBuffer()}{CircularBuffer()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_collections_1_1_circular_buffer_aac652e4541de78dcea4368d5bbb230e8} 
+\mbox{\hyperlink{class_scott_plot_1_1_collections_1_1_circular_buffer}{Scott\+Plot.\+Collections.\+Circular\+Buffer}}$<$ T $>$.\mbox{\hyperlink{class_scott_plot_1_1_collections_1_1_circular_buffer}{Circular\+Buffer}} (\begin{DoxyParamCaption}\item[{int}]{capacity}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_scott_plot_1_1_collections_1_1_circular_buffer_ab07c41c4702095e9a4b19f0167ae559b}\index{ScottPlot.Collections.CircularBuffer$<$ T $>$@{ScottPlot.Collections.CircularBuffer$<$ T $>$}!Add@{Add}}
+\index{Add@{Add}!ScottPlot.Collections.CircularBuffer$<$ T $>$@{ScottPlot.Collections.CircularBuffer$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Add()}{Add()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_collections_1_1_circular_buffer_ab07c41c4702095e9a4b19f0167ae559b} 
+void \mbox{\hyperlink{class_scott_plot_1_1_collections_1_1_circular_buffer}{Scott\+Plot.\+Collections.\+Circular\+Buffer}}$<$ T $>$.Add (\begin{DoxyParamCaption}\item[{T}]{item}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_collections_1_1_circular_buffer_a2b6fce2b027dc4049f99bbec743dadb5}\index{ScottPlot.Collections.CircularBuffer$<$ T $>$@{ScottPlot.Collections.CircularBuffer$<$ T $>$}!BinarySearch@{BinarySearch}}
+\index{BinarySearch@{BinarySearch}!ScottPlot.Collections.CircularBuffer$<$ T $>$@{ScottPlot.Collections.CircularBuffer$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{BinarySearch()}{BinarySearch()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_collections_1_1_circular_buffer_a2b6fce2b027dc4049f99bbec743dadb5} 
+int \mbox{\hyperlink{class_scott_plot_1_1_collections_1_1_circular_buffer}{Scott\+Plot.\+Collections.\+Circular\+Buffer}}$<$ T $>$.Binary\+Search (\begin{DoxyParamCaption}\item[{int}]{index}{, }\item[{int}]{count}{, }\item[{T}]{item}{, }\item[{\mbox{\hyperlink{class_i_comparer}{IComparer}}$<$ T $>$}]{comparer}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_collections_1_1_circular_buffer_a3dc230e14a2a72f3e1d3e0ecf3a0417e}\index{ScottPlot.Collections.CircularBuffer$<$ T $>$@{ScottPlot.Collections.CircularBuffer$<$ T $>$}!Clear@{Clear}}
+\index{Clear@{Clear}!ScottPlot.Collections.CircularBuffer$<$ T $>$@{ScottPlot.Collections.CircularBuffer$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Clear()}{Clear()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_collections_1_1_circular_buffer_a3dc230e14a2a72f3e1d3e0ecf3a0417e} 
+void \mbox{\hyperlink{class_scott_plot_1_1_collections_1_1_circular_buffer}{Scott\+Plot.\+Collections.\+Circular\+Buffer}}$<$ T $>$.Clear (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_collections_1_1_circular_buffer_a8f2820a9dcec21cc0e02b04b34d6d900}\index{ScottPlot.Collections.CircularBuffer$<$ T $>$@{ScottPlot.Collections.CircularBuffer$<$ T $>$}!Contains@{Contains}}
+\index{Contains@{Contains}!ScottPlot.Collections.CircularBuffer$<$ T $>$@{ScottPlot.Collections.CircularBuffer$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Contains()}{Contains()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_collections_1_1_circular_buffer_a8f2820a9dcec21cc0e02b04b34d6d900} 
+bool \mbox{\hyperlink{class_scott_plot_1_1_collections_1_1_circular_buffer}{Scott\+Plot.\+Collections.\+Circular\+Buffer}}$<$ T $>$.Contains (\begin{DoxyParamCaption}\item[{T}]{item}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_scott_plot_1_1_collections_1_1_circular_buffer_a479bd478e4b4e5fa9a211a43930a03df}\index{ScottPlot.Collections.CircularBuffer$<$ T $>$@{ScottPlot.Collections.CircularBuffer$<$ T $>$}!CopyTo@{CopyTo}}
+\index{CopyTo@{CopyTo}!ScottPlot.Collections.CircularBuffer$<$ T $>$@{ScottPlot.Collections.CircularBuffer$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{CopyTo()}{CopyTo()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_collections_1_1_circular_buffer_a479bd478e4b4e5fa9a211a43930a03df} 
+void \mbox{\hyperlink{class_scott_plot_1_1_collections_1_1_circular_buffer}{Scott\+Plot.\+Collections.\+Circular\+Buffer}}$<$ T $>$.Copy\+To (\begin{DoxyParamCaption}\item[{T\mbox{[}$\,$\mbox{]}}]{array}{, }\item[{int}]{array\+Index}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_collections_1_1_circular_buffer_a271966e03e134894f9afaebad8bb53a8}\index{ScottPlot.Collections.CircularBuffer$<$ T $>$@{ScottPlot.Collections.CircularBuffer$<$ T $>$}!GetEnumerator@{GetEnumerator}}
+\index{GetEnumerator@{GetEnumerator}!ScottPlot.Collections.CircularBuffer$<$ T $>$@{ScottPlot.Collections.CircularBuffer$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{GetEnumerator()}{GetEnumerator()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_collections_1_1_circular_buffer_a271966e03e134894f9afaebad8bb53a8} 
+IEnumerator$<$ T $>$ \mbox{\hyperlink{class_scott_plot_1_1_collections_1_1_circular_buffer}{Scott\+Plot.\+Collections.\+Circular\+Buffer}}$<$ T $>$.Get\+Enumerator (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_collections_1_1_circular_buffer_a3cd34e3f23041f6816872964f89ab70f}\index{ScottPlot.Collections.CircularBuffer$<$ T $>$@{ScottPlot.Collections.CircularBuffer$<$ T $>$}!IndexOf@{IndexOf}}
+\index{IndexOf@{IndexOf}!ScottPlot.Collections.CircularBuffer$<$ T $>$@{ScottPlot.Collections.CircularBuffer$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{IndexOf()}{IndexOf()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_collections_1_1_circular_buffer_a3cd34e3f23041f6816872964f89ab70f} 
+int \mbox{\hyperlink{class_scott_plot_1_1_collections_1_1_circular_buffer}{Scott\+Plot.\+Collections.\+Circular\+Buffer}}$<$ T $>$.Index\+Of (\begin{DoxyParamCaption}\item[{T}]{item}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_collections_1_1_circular_buffer_a9944e9ac7fa623bb53880e767c88c6c4}\index{ScottPlot.Collections.CircularBuffer$<$ T $>$@{ScottPlot.Collections.CircularBuffer$<$ T $>$}!Insert@{Insert}}
+\index{Insert@{Insert}!ScottPlot.Collections.CircularBuffer$<$ T $>$@{ScottPlot.Collections.CircularBuffer$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Insert()}{Insert()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_collections_1_1_circular_buffer_a9944e9ac7fa623bb53880e767c88c6c4} 
+void \mbox{\hyperlink{class_scott_plot_1_1_collections_1_1_circular_buffer}{Scott\+Plot.\+Collections.\+Circular\+Buffer}}$<$ T $>$.Insert (\begin{DoxyParamCaption}\item[{int}]{index}{, }\item[{T}]{item}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_collections_1_1_circular_buffer_a6768a0bf73a17e18bebae8f0ccb03a93}\index{ScottPlot.Collections.CircularBuffer$<$ T $>$@{ScottPlot.Collections.CircularBuffer$<$ T $>$}!Remove@{Remove}}
+\index{Remove@{Remove}!ScottPlot.Collections.CircularBuffer$<$ T $>$@{ScottPlot.Collections.CircularBuffer$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Remove()}{Remove()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_collections_1_1_circular_buffer_a6768a0bf73a17e18bebae8f0ccb03a93} 
+bool \mbox{\hyperlink{class_scott_plot_1_1_collections_1_1_circular_buffer}{Scott\+Plot.\+Collections.\+Circular\+Buffer}}$<$ T $>$.Remove (\begin{DoxyParamCaption}\item[{T}]{item}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_collections_1_1_circular_buffer_a5a75faed3cf6052d2312ff8f0034f39c}\index{ScottPlot.Collections.CircularBuffer$<$ T $>$@{ScottPlot.Collections.CircularBuffer$<$ T $>$}!RemoveAt@{RemoveAt}}
+\index{RemoveAt@{RemoveAt}!ScottPlot.Collections.CircularBuffer$<$ T $>$@{ScottPlot.Collections.CircularBuffer$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{RemoveAt()}{RemoveAt()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_collections_1_1_circular_buffer_a5a75faed3cf6052d2312ff8f0034f39c} 
+void \mbox{\hyperlink{class_scott_plot_1_1_collections_1_1_circular_buffer}{Scott\+Plot.\+Collections.\+Circular\+Buffer}}$<$ T $>$.Remove\+At (\begin{DoxyParamCaption}\item[{int}]{index}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_collections_1_1_circular_buffer_acc7a31df16515df3356956510006c181}\index{ScottPlot.Collections.CircularBuffer$<$ T $>$@{ScottPlot.Collections.CircularBuffer$<$ T $>$}!ToArray@{ToArray}}
+\index{ToArray@{ToArray}!ScottPlot.Collections.CircularBuffer$<$ T $>$@{ScottPlot.Collections.CircularBuffer$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{ToArray()}{ToArray()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_collections_1_1_circular_buffer_acc7a31df16515df3356956510006c181} 
+T\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_scott_plot_1_1_collections_1_1_circular_buffer}{Scott\+Plot.\+Collections.\+Circular\+Buffer}}$<$ T $>$.To\+Array (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{class_scott_plot_1_1_collections_1_1_circular_buffer_a133e8ce8c0a3eb6a016d82bb169b1d0a}\index{ScottPlot.Collections.CircularBuffer$<$ T $>$@{ScottPlot.Collections.CircularBuffer$<$ T $>$}!Capacity@{Capacity}}
+\index{Capacity@{Capacity}!ScottPlot.Collections.CircularBuffer$<$ T $>$@{ScottPlot.Collections.CircularBuffer$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Capacity}{Capacity}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_collections_1_1_circular_buffer_a133e8ce8c0a3eb6a016d82bb169b1d0a} 
+int \mbox{\hyperlink{class_scott_plot_1_1_collections_1_1_circular_buffer}{Scott\+Plot.\+Collections.\+Circular\+Buffer}}$<$ T $>$.Capacity\hspace{0.3cm}{\ttfamily [get]}}
+
+\Hypertarget{class_scott_plot_1_1_collections_1_1_circular_buffer_af6252df728d028358d51dab7a49c4fd2}\index{ScottPlot.Collections.CircularBuffer$<$ T $>$@{ScottPlot.Collections.CircularBuffer$<$ T $>$}!Count@{Count}}
+\index{Count@{Count}!ScottPlot.Collections.CircularBuffer$<$ T $>$@{ScottPlot.Collections.CircularBuffer$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Count}{Count}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_collections_1_1_circular_buffer_af6252df728d028358d51dab7a49c4fd2} 
+int \mbox{\hyperlink{class_scott_plot_1_1_collections_1_1_circular_buffer}{Scott\+Plot.\+Collections.\+Circular\+Buffer}}$<$ T $>$.Count\hspace{0.3cm}{\ttfamily [get]}}
+
+\Hypertarget{class_scott_plot_1_1_collections_1_1_circular_buffer_a51bf1e431cfa63ec1e0eb1db9a3015a0}\index{ScottPlot.Collections.CircularBuffer$<$ T $>$@{ScottPlot.Collections.CircularBuffer$<$ T $>$}!IsEmpty@{IsEmpty}}
+\index{IsEmpty@{IsEmpty}!ScottPlot.Collections.CircularBuffer$<$ T $>$@{ScottPlot.Collections.CircularBuffer$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{IsEmpty}{IsEmpty}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_collections_1_1_circular_buffer_a51bf1e431cfa63ec1e0eb1db9a3015a0} 
+bool \mbox{\hyperlink{class_scott_plot_1_1_collections_1_1_circular_buffer}{Scott\+Plot.\+Collections.\+Circular\+Buffer}}$<$ T $>$.Is\+Empty\hspace{0.3cm}{\ttfamily [get]}}
+
+\Hypertarget{class_scott_plot_1_1_collections_1_1_circular_buffer_a37ab809fb5bdb110adf92d61619eb3e8}\index{ScottPlot.Collections.CircularBuffer$<$ T $>$@{ScottPlot.Collections.CircularBuffer$<$ T $>$}!IsFixedSize@{IsFixedSize}}
+\index{IsFixedSize@{IsFixedSize}!ScottPlot.Collections.CircularBuffer$<$ T $>$@{ScottPlot.Collections.CircularBuffer$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{IsFixedSize}{IsFixedSize}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_collections_1_1_circular_buffer_a37ab809fb5bdb110adf92d61619eb3e8} 
+bool \mbox{\hyperlink{class_scott_plot_1_1_collections_1_1_circular_buffer}{Scott\+Plot.\+Collections.\+Circular\+Buffer}}$<$ T $>$.Is\+Fixed\+Size = true\hspace{0.3cm}{\ttfamily [get]}}
+
+\Hypertarget{class_scott_plot_1_1_collections_1_1_circular_buffer_a4bc78c242504431db494ce4dcbf9d822}\index{ScottPlot.Collections.CircularBuffer$<$ T $>$@{ScottPlot.Collections.CircularBuffer$<$ T $>$}!IsFull@{IsFull}}
+\index{IsFull@{IsFull}!ScottPlot.Collections.CircularBuffer$<$ T $>$@{ScottPlot.Collections.CircularBuffer$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{IsFull}{IsFull}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_collections_1_1_circular_buffer_a4bc78c242504431db494ce4dcbf9d822} 
+bool \mbox{\hyperlink{class_scott_plot_1_1_collections_1_1_circular_buffer}{Scott\+Plot.\+Collections.\+Circular\+Buffer}}$<$ T $>$.Is\+Full\hspace{0.3cm}{\ttfamily [get]}}
+
+\Hypertarget{class_scott_plot_1_1_collections_1_1_circular_buffer_a63d1f3866704f52dcc0b61152270ad4e}\index{ScottPlot.Collections.CircularBuffer$<$ T $>$@{ScottPlot.Collections.CircularBuffer$<$ T $>$}!IsReadOnly@{IsReadOnly}}
+\index{IsReadOnly@{IsReadOnly}!ScottPlot.Collections.CircularBuffer$<$ T $>$@{ScottPlot.Collections.CircularBuffer$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{IsReadOnly}{IsReadOnly}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_collections_1_1_circular_buffer_a63d1f3866704f52dcc0b61152270ad4e} 
+bool \mbox{\hyperlink{class_scott_plot_1_1_collections_1_1_circular_buffer}{Scott\+Plot.\+Collections.\+Circular\+Buffer}}$<$ T $>$.Is\+Read\+Only\hspace{0.3cm}{\ttfamily [get]}}
+
+\Hypertarget{class_scott_plot_1_1_collections_1_1_circular_buffer_a05d8f7c21f913003cee842235ada4a52}\index{ScottPlot.Collections.CircularBuffer$<$ T $>$@{ScottPlot.Collections.CircularBuffer$<$ T $>$}!IsSynchronized@{IsSynchronized}}
+\index{IsSynchronized@{IsSynchronized}!ScottPlot.Collections.CircularBuffer$<$ T $>$@{ScottPlot.Collections.CircularBuffer$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{IsSynchronized}{IsSynchronized}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_collections_1_1_circular_buffer_a05d8f7c21f913003cee842235ada4a52} 
+bool \mbox{\hyperlink{class_scott_plot_1_1_collections_1_1_circular_buffer}{Scott\+Plot.\+Collections.\+Circular\+Buffer}}$<$ T $>$.Is\+Synchronized\hspace{0.3cm}{\ttfamily [get]}}
+
+\Hypertarget{class_scott_plot_1_1_collections_1_1_circular_buffer_a56c9327c5d54af1889179508dade11a1}\index{ScottPlot.Collections.CircularBuffer$<$ T $>$@{ScottPlot.Collections.CircularBuffer$<$ T $>$}!SyncRoot@{SyncRoot}}
+\index{SyncRoot@{SyncRoot}!ScottPlot.Collections.CircularBuffer$<$ T $>$@{ScottPlot.Collections.CircularBuffer$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{SyncRoot}{SyncRoot}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_collections_1_1_circular_buffer_a56c9327c5d54af1889179508dade11a1} 
+object \mbox{\hyperlink{class_scott_plot_1_1_collections_1_1_circular_buffer}{Scott\+Plot.\+Collections.\+Circular\+Buffer}}$<$ T $>$.Sync\+Root = new object()\hspace{0.3cm}{\ttfamily [get]}}
+
+\Hypertarget{class_scott_plot_1_1_collections_1_1_circular_buffer_addcdcd6ab881089483fc6820fd460452}\index{ScottPlot.Collections.CircularBuffer$<$ T $>$@{ScottPlot.Collections.CircularBuffer$<$ T $>$}!this\mbox{[}int index\mbox{]}@{this[int index]}}
+\index{this\mbox{[}int index\mbox{]}@{this[int index]}!ScottPlot.Collections.CircularBuffer$<$ T $>$@{ScottPlot.Collections.CircularBuffer$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{this[int index]}{this[int index]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_collections_1_1_circular_buffer_addcdcd6ab881089483fc6820fd460452} 
+T \mbox{\hyperlink{class_scott_plot_1_1_collections_1_1_circular_buffer}{Scott\+Plot.\+Collections.\+Circular\+Buffer}}$<$ T $>$.this\mbox{[}int index\mbox{]}\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Collections/Circular\+Buffer.\+cs\end{DoxyCompactItemize}

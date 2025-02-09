@@ -1,0 +1,174 @@
+\hypertarget{classAxes}{}\doxysection{Axes Class Reference}
+\label{classAxes}\index{Axes@{Axes}}
+
+
+This object holds an X axis and Y axis and performs 2D coordinate/pixel conversions  
+
+
+Inheritance diagram for Axes\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classAxes}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classAxes_ac077847806d94b1b8913966bb20c77a1}{Axes}} ()
+\item 
+\mbox{\hyperlink{structCoordinates}{Coordinates}} \mbox{\hyperlink{classAxes_aedfdf488a7bb379dcd2fec707558141e}{Get\+Coordinates}} (\mbox{\hyperlink{structPixel}{Pixel}} pixel)
+\item 
+double \mbox{\hyperlink{classAxes_ad3193382ac1d32cd8464604d9d2e797a}{Get\+CoordinateX}} (float pixel)
+\item 
+double \mbox{\hyperlink{classAxes_a304dba9eeb21feeb9d7189ddca178660}{Get\+CoordinateY}} (float pixel)
+\item 
+\mbox{\hyperlink{structPixel}{Pixel}} \mbox{\hyperlink{classAxes_af91b2a3c7e0a2acf7a1fc3f213a1b17f}{Get\+Pixel}} (\mbox{\hyperlink{structCoordinates}{Coordinates}} coordinates)
+\item 
+\mbox{\hyperlink{structPixelLine}{Pixel\+Line}} \mbox{\hyperlink{classAxes_ab9d22d6fbaf0f839649cc8ddf07cab09}{Get\+Pixel\+Line}} (\mbox{\hyperlink{structCoordinateLine}{Coordinate\+Line}} line)
+\item 
+float \mbox{\hyperlink{classAxes_a768b4cfe16ffbe80e00ef0399828ec59}{Get\+PixelX}} (double x\+Coordinate)
+\item 
+float \mbox{\hyperlink{classAxes_afc46013eb72833ffcaa3696aed2ecee6}{Get\+PixelY}} (double y\+Coordinate)
+\item 
+\mbox{\hyperlink{structPixelRect}{Pixel\+Rect}} \mbox{\hyperlink{classAxes_ac0f89baf249d65223259d40cc25571a3}{Get\+Pixel\+Rect}} (\mbox{\hyperlink{structCoordinateRect}{Coordinate\+Rect}} rect)
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interfaceIXAxis}{IXAxis}} \mbox{\hyperlink{classAxes_a2bbf94dbf4d460d890f4b1b10781c157}{XAxis}} = null!\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{interfaceIYAxis}{IYAxis}} \mbox{\hyperlink{classAxes_a5a2eb8d19d7863ff1bb0b24427a3f7ac}{YAxis}} = null!\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{structPixelRect}{Pixel\+Rect}} \mbox{\hyperlink{classAxes_abc3df7d2001ebfb373e1b063032a7502}{Data\+Rect}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+static \mbox{\hyperlink{classAxes}{Axes}} \mbox{\hyperlink{classAxes_aa4283c191c1f3a9cd728e17e466e59e5}{Default}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This object holds an X axis and Y axis and performs 2D coordinate/pixel conversions 
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classAxes_ac077847806d94b1b8913966bb20c77a1}\label{classAxes_ac077847806d94b1b8913966bb20c77a1}} 
+\index{Axes@{Axes}!Axes@{Axes}}
+\index{Axes@{Axes}!Axes@{Axes}}
+\doxysubsubsection{\texorpdfstring{Axes()}{Axes()}}
+{\footnotesize\ttfamily Axes.\+Axes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classAxes_aedfdf488a7bb379dcd2fec707558141e}\label{classAxes_aedfdf488a7bb379dcd2fec707558141e}} 
+\index{Axes@{Axes}!GetCoordinates@{GetCoordinates}}
+\index{GetCoordinates@{GetCoordinates}!Axes@{Axes}}
+\doxysubsubsection{\texorpdfstring{GetCoordinates()}{GetCoordinates()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structCoordinates}{Coordinates}} Axes.\+Get\+Coordinates (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPixel}{Pixel}}}]{pixel }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Implements \mbox{\hyperlink{interfaceIAxes_abf921d6c621dca6ed0e2d07b2444c9d8}{IAxes}}.
+
+\mbox{\Hypertarget{classAxes_ad3193382ac1d32cd8464604d9d2e797a}\label{classAxes_ad3193382ac1d32cd8464604d9d2e797a}} 
+\index{Axes@{Axes}!GetCoordinateX@{GetCoordinateX}}
+\index{GetCoordinateX@{GetCoordinateX}!Axes@{Axes}}
+\doxysubsubsection{\texorpdfstring{GetCoordinateX()}{GetCoordinateX()}}
+{\footnotesize\ttfamily double Axes.\+Get\+CoordinateX (\begin{DoxyParamCaption}\item[{float}]{pixel }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interfaceIAxes_a36469ed55ea0bedafeedc5e2b452a341}{IAxes}}.
+
+\mbox{\Hypertarget{classAxes_a304dba9eeb21feeb9d7189ddca178660}\label{classAxes_a304dba9eeb21feeb9d7189ddca178660}} 
+\index{Axes@{Axes}!GetCoordinateY@{GetCoordinateY}}
+\index{GetCoordinateY@{GetCoordinateY}!Axes@{Axes}}
+\doxysubsubsection{\texorpdfstring{GetCoordinateY()}{GetCoordinateY()}}
+{\footnotesize\ttfamily double Axes.\+Get\+CoordinateY (\begin{DoxyParamCaption}\item[{float}]{pixel }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interfaceIAxes_ae72cf39bad7065ae044ac6b951856779}{IAxes}}.
+
+\mbox{\Hypertarget{classAxes_af91b2a3c7e0a2acf7a1fc3f213a1b17f}\label{classAxes_af91b2a3c7e0a2acf7a1fc3f213a1b17f}} 
+\index{Axes@{Axes}!GetPixel@{GetPixel}}
+\index{GetPixel@{GetPixel}!Axes@{Axes}}
+\doxysubsubsection{\texorpdfstring{GetPixel()}{GetPixel()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structPixel}{Pixel}} Axes.\+Get\+Pixel (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structCoordinates}{Coordinates}}}]{coordinates }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Implements \mbox{\hyperlink{interfaceIAxes_a4c814f41677e9447e3fc992d95305637}{IAxes}}.
+
+\mbox{\Hypertarget{classAxes_ab9d22d6fbaf0f839649cc8ddf07cab09}\label{classAxes_ab9d22d6fbaf0f839649cc8ddf07cab09}} 
+\index{Axes@{Axes}!GetPixelLine@{GetPixelLine}}
+\index{GetPixelLine@{GetPixelLine}!Axes@{Axes}}
+\doxysubsubsection{\texorpdfstring{GetPixelLine()}{GetPixelLine()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structPixelLine}{Pixel\+Line}} Axes.\+Get\+Pixel\+Line (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structCoordinateLine}{Coordinate\+Line}}}]{line }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Implements \mbox{\hyperlink{interfaceIAxes_ac0d2b9af3766c6c339ee0d8d51d073da}{IAxes}}.
+
+\mbox{\Hypertarget{classAxes_ac0f89baf249d65223259d40cc25571a3}\label{classAxes_ac0f89baf249d65223259d40cc25571a3}} 
+\index{Axes@{Axes}!GetPixelRect@{GetPixelRect}}
+\index{GetPixelRect@{GetPixelRect}!Axes@{Axes}}
+\doxysubsubsection{\texorpdfstring{GetPixelRect()}{GetPixelRect()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structPixelRect}{Pixel\+Rect}} Axes.\+Get\+Pixel\+Rect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structCoordinateRect}{Coordinate\+Rect}}}]{rect }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Implements \mbox{\hyperlink{interfaceIAxes_a1d7c87b248a9ba04cd89a035eb9264e6}{IAxes}}.
+
+\mbox{\Hypertarget{classAxes_a768b4cfe16ffbe80e00ef0399828ec59}\label{classAxes_a768b4cfe16ffbe80e00ef0399828ec59}} 
+\index{Axes@{Axes}!GetPixelX@{GetPixelX}}
+\index{GetPixelX@{GetPixelX}!Axes@{Axes}}
+\doxysubsubsection{\texorpdfstring{GetPixelX()}{GetPixelX()}}
+{\footnotesize\ttfamily float Axes.\+Get\+PixelX (\begin{DoxyParamCaption}\item[{double}]{x\+Coordinate }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interfaceIAxes_a769c5a80e5886fd81f74b7192e4c9937}{IAxes}}.
+
+\mbox{\Hypertarget{classAxes_afc46013eb72833ffcaa3696aed2ecee6}\label{classAxes_afc46013eb72833ffcaa3696aed2ecee6}} 
+\index{Axes@{Axes}!GetPixelY@{GetPixelY}}
+\index{GetPixelY@{GetPixelY}!Axes@{Axes}}
+\doxysubsubsection{\texorpdfstring{GetPixelY()}{GetPixelY()}}
+{\footnotesize\ttfamily float Axes.\+Get\+PixelY (\begin{DoxyParamCaption}\item[{double}]{y\+Coordinate }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interfaceIAxes_aa2ae897f96e089fd0adc49905395bd12}{IAxes}}.
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{classAxes_abc3df7d2001ebfb373e1b063032a7502}\label{classAxes_abc3df7d2001ebfb373e1b063032a7502}} 
+\index{Axes@{Axes}!DataRect@{DataRect}}
+\index{DataRect@{DataRect}!Axes@{Axes}}
+\doxysubsubsection{\texorpdfstring{DataRect}{DataRect}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structPixelRect}{Pixel\+Rect}} Axes.\+Data\+Rect\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classAxes_aa4283c191c1f3a9cd728e17e466e59e5}\label{classAxes_aa4283c191c1f3a9cd728e17e466e59e5}} 
+\index{Axes@{Axes}!Default@{Default}}
+\index{Default@{Default}!Axes@{Axes}}
+\doxysubsubsection{\texorpdfstring{Default}{Default}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classAxes}{Axes}} Axes.\+Default\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+\mbox{\Hypertarget{classAxes_a2bbf94dbf4d460d890f4b1b10781c157}\label{classAxes_a2bbf94dbf4d460d890f4b1b10781c157}} 
+\index{Axes@{Axes}!XAxis@{XAxis}}
+\index{XAxis@{XAxis}!Axes@{Axes}}
+\doxysubsubsection{\texorpdfstring{XAxis}{XAxis}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceIXAxis}{IXAxis}} Axes.\+XAxis = null!\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classAxes_a5a2eb8d19d7863ff1bb0b24427a3f7ac}\label{classAxes_a5a2eb8d19d7863ff1bb0b24427a3f7ac}} 
+\index{Axes@{Axes}!YAxis@{YAxis}}
+\index{YAxis@{YAxis}!Axes@{Axes}}
+\doxysubsubsection{\texorpdfstring{YAxis}{YAxis}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceIYAxis}{IYAxis}} Axes.\+YAxis = null!\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Primitives/Axes.\+cs\end{DoxyCompactItemize}

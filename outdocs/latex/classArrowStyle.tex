@@ -1,0 +1,181 @@
+\hypertarget{classArrowStyle}{}\doxysection{Arrow\+Style Class Reference}
+\label{classArrowStyle}\index{ArrowStyle@{ArrowStyle}}
+Inheritance diagram for Arrow\+Style\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classArrowStyle}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classArrowStyle_a89124f4e14d5c1c4b87b843cc0cd9b86}{Render}} (SKCanvas canvas, \mbox{\hyperlink{structPixelLine}{Pixel\+Line}} line, SKPaint paint)
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classLineStyle}{Line\+Style}} \mbox{\hyperlink{classArrowStyle_a17ab68547787076a09d027b3a2ebcd29}{Line\+Style}} = new()\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{classArrowStyle_a968ea958bce34a82827fd24ad4cf8931}{Line\+Width}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{structColor}{Color}} \mbox{\hyperlink{classArrowStyle_aa33cad2c4f8fefa9d3777d45d964a1b4}{Line\+Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+Line\+Pattern \mbox{\hyperlink{classArrowStyle_a33f460f6ff66043876b6a336ff17d5b5}{Line\+Pattern}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{classFillStyle}{Fill\+Style}} \mbox{\hyperlink{classArrowStyle_a0275eff63fdf96a63a6c460435d7ed39}{Fill\+Style}} = new()\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{structColor}{Color}} \mbox{\hyperlink{classArrowStyle_a30e99a032a701ca681c2da1aa80f4629}{Fill\+Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{structColor}{Color}} \mbox{\hyperlink{classArrowStyle_a96444641eb14da0834e2ee709cc6b849}{Fill\+Hatch\+Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{interfaceIHatch}{IHatch}}? \mbox{\hyperlink{classArrowStyle_a167203e95efb105236562e94adf4b9fb}{Fill\+Hatch}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+Arrow\+Anchor \mbox{\hyperlink{classArrowStyle_a66cce7c614054598fa0b458c7375c90f}{Anchor}} = Arrow\+Anchor.\+Center\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+bool \mbox{\hyperlink{classArrowStyle_ae948ab731ccd4d4211ddaecbde43c68f}{Is\+Visible}} = true\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{classArrowStyle_a4fa6ffc1a994a65d98bec569c5592395}{Arrow\+Width}} = 7\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{classArrowStyle_acf439476ca6c06f3d8d3b77a60481d0c}{Arrowhead\+Axis\+Length}} = 15\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{classArrowStyle_a836eed9181c59aab64c8594b43886029}{Arrowhead\+Length}} = 20\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{classArrowStyle_acc1dd201a277d813616ad83f8bb09f77}{Arrowhead\+Width}} = 20\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{classArrowStyle_affc55f072c4748c3d53cbf1196f58654}{Minimum\+Length}} = 0\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The arrow will always be rendered to be at least this long (in pixels). If too small, its base will move away from the tip. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classArrowStyle_a5cb6a4c0c0a7454c7d662c51ae36cf6f}{Maximum\+Length}} = float.\+Max\+Value\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The arrow will always be rendered to its length never exceeds this value (in pixels). If too large, its base will move toward the tip. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classArrowStyle_a55244eeb8325d41e375ad0a0fee8a43b}{Offset}} = 0\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Back the arrow away from its tip along its axis by this many pixels \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classArrowStyle_a89124f4e14d5c1c4b87b843cc0cd9b86}\label{classArrowStyle_a89124f4e14d5c1c4b87b843cc0cd9b86}} 
+\index{ArrowStyle@{ArrowStyle}!Render@{Render}}
+\index{Render@{Render}!ArrowStyle@{ArrowStyle}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily void Arrow\+Style.\+Render (\begin{DoxyParamCaption}\item[{SKCanvas}]{canvas,  }\item[{\mbox{\hyperlink{structPixelLine}{Pixel\+Line}}}]{line,  }\item[{SKPaint}]{paint }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{classArrowStyle_a66cce7c614054598fa0b458c7375c90f}\label{classArrowStyle_a66cce7c614054598fa0b458c7375c90f}} 
+\index{ArrowStyle@{ArrowStyle}!Anchor@{Anchor}}
+\index{Anchor@{Anchor}!ArrowStyle@{ArrowStyle}}
+\doxysubsubsection{\texorpdfstring{Anchor}{Anchor}}
+{\footnotesize\ttfamily Arrow\+Anchor Arrow\+Style.\+Anchor = Arrow\+Anchor.\+Center\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classArrowStyle_acf439476ca6c06f3d8d3b77a60481d0c}\label{classArrowStyle_acf439476ca6c06f3d8d3b77a60481d0c}} 
+\index{ArrowStyle@{ArrowStyle}!ArrowheadAxisLength@{ArrowheadAxisLength}}
+\index{ArrowheadAxisLength@{ArrowheadAxisLength}!ArrowStyle@{ArrowStyle}}
+\doxysubsubsection{\texorpdfstring{ArrowheadAxisLength}{ArrowheadAxisLength}}
+{\footnotesize\ttfamily float Arrow\+Style.\+Arrowhead\+Axis\+Length = 15\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classArrowStyle_a836eed9181c59aab64c8594b43886029}\label{classArrowStyle_a836eed9181c59aab64c8594b43886029}} 
+\index{ArrowStyle@{ArrowStyle}!ArrowheadLength@{ArrowheadLength}}
+\index{ArrowheadLength@{ArrowheadLength}!ArrowStyle@{ArrowStyle}}
+\doxysubsubsection{\texorpdfstring{ArrowheadLength}{ArrowheadLength}}
+{\footnotesize\ttfamily float Arrow\+Style.\+Arrowhead\+Length = 20\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classArrowStyle_acc1dd201a277d813616ad83f8bb09f77}\label{classArrowStyle_acc1dd201a277d813616ad83f8bb09f77}} 
+\index{ArrowStyle@{ArrowStyle}!ArrowheadWidth@{ArrowheadWidth}}
+\index{ArrowheadWidth@{ArrowheadWidth}!ArrowStyle@{ArrowStyle}}
+\doxysubsubsection{\texorpdfstring{ArrowheadWidth}{ArrowheadWidth}}
+{\footnotesize\ttfamily float Arrow\+Style.\+Arrowhead\+Width = 20\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classArrowStyle_a4fa6ffc1a994a65d98bec569c5592395}\label{classArrowStyle_a4fa6ffc1a994a65d98bec569c5592395}} 
+\index{ArrowStyle@{ArrowStyle}!ArrowWidth@{ArrowWidth}}
+\index{ArrowWidth@{ArrowWidth}!ArrowStyle@{ArrowStyle}}
+\doxysubsubsection{\texorpdfstring{ArrowWidth}{ArrowWidth}}
+{\footnotesize\ttfamily float Arrow\+Style.\+Arrow\+Width = 7\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classArrowStyle_a30e99a032a701ca681c2da1aa80f4629}\label{classArrowStyle_a30e99a032a701ca681c2da1aa80f4629}} 
+\index{ArrowStyle@{ArrowStyle}!FillColor@{FillColor}}
+\index{FillColor@{FillColor}!ArrowStyle@{ArrowStyle}}
+\doxysubsubsection{\texorpdfstring{FillColor}{FillColor}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structColor}{Color}} Arrow\+Style.\+Fill\+Color\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classArrowStyle_a167203e95efb105236562e94adf4b9fb}\label{classArrowStyle_a167203e95efb105236562e94adf4b9fb}} 
+\index{ArrowStyle@{ArrowStyle}!FillHatch@{FillHatch}}
+\index{FillHatch@{FillHatch}!ArrowStyle@{ArrowStyle}}
+\doxysubsubsection{\texorpdfstring{FillHatch}{FillHatch}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceIHatch}{IHatch}}? Arrow\+Style.\+Fill\+Hatch\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classArrowStyle_a96444641eb14da0834e2ee709cc6b849}\label{classArrowStyle_a96444641eb14da0834e2ee709cc6b849}} 
+\index{ArrowStyle@{ArrowStyle}!FillHatchColor@{FillHatchColor}}
+\index{FillHatchColor@{FillHatchColor}!ArrowStyle@{ArrowStyle}}
+\doxysubsubsection{\texorpdfstring{FillHatchColor}{FillHatchColor}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structColor}{Color}} Arrow\+Style.\+Fill\+Hatch\+Color\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classArrowStyle_a0275eff63fdf96a63a6c460435d7ed39}\label{classArrowStyle_a0275eff63fdf96a63a6c460435d7ed39}} 
+\index{ArrowStyle@{ArrowStyle}!FillStyle@{FillStyle}}
+\index{FillStyle@{FillStyle}!ArrowStyle@{ArrowStyle}}
+\doxysubsubsection{\texorpdfstring{FillStyle}{FillStyle}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classFillStyle}{Fill\+Style}} Arrow\+Style.\+Fill\+Style = new()\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classArrowStyle_ae948ab731ccd4d4211ddaecbde43c68f}\label{classArrowStyle_ae948ab731ccd4d4211ddaecbde43c68f}} 
+\index{ArrowStyle@{ArrowStyle}!IsVisible@{IsVisible}}
+\index{IsVisible@{IsVisible}!ArrowStyle@{ArrowStyle}}
+\doxysubsubsection{\texorpdfstring{IsVisible}{IsVisible}}
+{\footnotesize\ttfamily bool Arrow\+Style.\+Is\+Visible = true\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classArrowStyle_aa33cad2c4f8fefa9d3777d45d964a1b4}\label{classArrowStyle_aa33cad2c4f8fefa9d3777d45d964a1b4}} 
+\index{ArrowStyle@{ArrowStyle}!LineColor@{LineColor}}
+\index{LineColor@{LineColor}!ArrowStyle@{ArrowStyle}}
+\doxysubsubsection{\texorpdfstring{LineColor}{LineColor}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structColor}{Color}} Arrow\+Style.\+Line\+Color\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classArrowStyle_a33f460f6ff66043876b6a336ff17d5b5}\label{classArrowStyle_a33f460f6ff66043876b6a336ff17d5b5}} 
+\index{ArrowStyle@{ArrowStyle}!LinePattern@{LinePattern}}
+\index{LinePattern@{LinePattern}!ArrowStyle@{ArrowStyle}}
+\doxysubsubsection{\texorpdfstring{LinePattern}{LinePattern}}
+{\footnotesize\ttfamily Line\+Pattern Arrow\+Style.\+Line\+Pattern\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classArrowStyle_a17ab68547787076a09d027b3a2ebcd29}\label{classArrowStyle_a17ab68547787076a09d027b3a2ebcd29}} 
+\index{ArrowStyle@{ArrowStyle}!LineStyle@{LineStyle}}
+\index{LineStyle@{LineStyle}!ArrowStyle@{ArrowStyle}}
+\doxysubsubsection{\texorpdfstring{LineStyle}{LineStyle}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classLineStyle}{Line\+Style}} Arrow\+Style.\+Line\+Style = new()\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classArrowStyle_a968ea958bce34a82827fd24ad4cf8931}\label{classArrowStyle_a968ea958bce34a82827fd24ad4cf8931}} 
+\index{ArrowStyle@{ArrowStyle}!LineWidth@{LineWidth}}
+\index{LineWidth@{LineWidth}!ArrowStyle@{ArrowStyle}}
+\doxysubsubsection{\texorpdfstring{LineWidth}{LineWidth}}
+{\footnotesize\ttfamily float Arrow\+Style.\+Line\+Width\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classArrowStyle_a5cb6a4c0c0a7454c7d662c51ae36cf6f}\label{classArrowStyle_a5cb6a4c0c0a7454c7d662c51ae36cf6f}} 
+\index{ArrowStyle@{ArrowStyle}!MaximumLength@{MaximumLength}}
+\index{MaximumLength@{MaximumLength}!ArrowStyle@{ArrowStyle}}
+\doxysubsubsection{\texorpdfstring{MaximumLength}{MaximumLength}}
+{\footnotesize\ttfamily float Arrow\+Style.\+Maximum\+Length = float.\+Max\+Value\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The arrow will always be rendered to its length never exceeds this value (in pixels). If too large, its base will move toward the tip. 
+
+\mbox{\Hypertarget{classArrowStyle_affc55f072c4748c3d53cbf1196f58654}\label{classArrowStyle_affc55f072c4748c3d53cbf1196f58654}} 
+\index{ArrowStyle@{ArrowStyle}!MinimumLength@{MinimumLength}}
+\index{MinimumLength@{MinimumLength}!ArrowStyle@{ArrowStyle}}
+\doxysubsubsection{\texorpdfstring{MinimumLength}{MinimumLength}}
+{\footnotesize\ttfamily float Arrow\+Style.\+Minimum\+Length = 0\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The arrow will always be rendered to be at least this long (in pixels). If too small, its base will move away from the tip. 
+
+\mbox{\Hypertarget{classArrowStyle_a55244eeb8325d41e375ad0a0fee8a43b}\label{classArrowStyle_a55244eeb8325d41e375ad0a0fee8a43b}} 
+\index{ArrowStyle@{ArrowStyle}!Offset@{Offset}}
+\index{Offset@{Offset}!ArrowStyle@{ArrowStyle}}
+\doxysubsubsection{\texorpdfstring{Offset}{Offset}}
+{\footnotesize\ttfamily float Arrow\+Style.\+Offset = 0\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Back the arrow away from its tip along its axis by this many pixels 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Primitives/Arrow\+Style.\+cs\end{DoxyCompactItemize}

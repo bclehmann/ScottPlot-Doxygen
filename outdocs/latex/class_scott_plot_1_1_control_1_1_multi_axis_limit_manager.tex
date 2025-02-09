@@ -1,0 +1,72 @@
+\doxysection{Scott\+Plot.\+Control.\+Multi\+Axis\+Limit\+Manager Class Reference}
+\hypertarget{class_scott_plot_1_1_control_1_1_multi_axis_limit_manager}{}\label{class_scott_plot_1_1_control_1_1_multi_axis_limit_manager}\index{ScottPlot.Control.MultiAxisLimitManager@{ScottPlot.Control.MultiAxisLimitManager}}
+
+
+This object remembers limits of all axes so it can restore them later. It is used for mouse interaction to translate pixel distances to coordinate distances based on previous renders.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_scott_plot_1_1_control_1_1_multi_axis_limit_manager_a639fa1f9b526d5d81b94acec9902989c}{Multi\+Axis\+Limit\+Manager}} ()
+\item 
+\mbox{\hyperlink{class_scott_plot_1_1_control_1_1_multi_axis_limit_manager_a7d586aa7c486c0365ca4cad4b888c377}{Multi\+Axis\+Limit\+Manager}} (\mbox{\hyperlink{class_scott_plot_1_1_plot}{Plot}} plot)
+\item 
+\mbox{\hyperlink{class_scott_plot_1_1_control_1_1_multi_axis_limit_manager_a413d72fd562fda001501be4dac4bc846}{Multi\+Axis\+Limit\+Manager}} (\mbox{\hyperlink{interface_scott_plot_1_1_i_plot_control}{IPlot\+Control}} control)
+\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_control_1_1_multi_axis_limit_manager_a068ecbdf4ec49883447664a6d53235a3}{Remember}} (\mbox{\hyperlink{class_scott_plot_1_1_control_1_1_multi_axis_limit_manager}{Multi\+Axis\+Limit\+Manager}} new\+Multi\+Limits)
+\begin{DoxyCompactList}\small\item\em Clear memory of previous axes and remember all the given axis limits. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_control_1_1_multi_axis_limit_manager_ac7ee5ad9dd63dddbef11948e8528d87e}{Apply}} (\mbox{\hyperlink{class_scott_plot_1_1_plot}{Plot}} plot)
+\begin{DoxyCompactList}\small\item\em Update all axis limits of the given plot with those previously remembered. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This object remembers limits of all axes so it can restore them later. It is used for mouse interaction to translate pixel distances to coordinate distances based on previous renders. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_scott_plot_1_1_control_1_1_multi_axis_limit_manager_a639fa1f9b526d5d81b94acec9902989c}\index{ScottPlot.Control.MultiAxisLimitManager@{ScottPlot.Control.MultiAxisLimitManager}!MultiAxisLimitManager@{MultiAxisLimitManager}}
+\index{MultiAxisLimitManager@{MultiAxisLimitManager}!ScottPlot.Control.MultiAxisLimitManager@{ScottPlot.Control.MultiAxisLimitManager}}
+\doxysubsubsection{\texorpdfstring{MultiAxisLimitManager()}{MultiAxisLimitManager()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_control_1_1_multi_axis_limit_manager_a639fa1f9b526d5d81b94acec9902989c} 
+Scott\+Plot.\+Control.\+Multi\+Axis\+Limit\+Manager.\+Multi\+Axis\+Limit\+Manager (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_control_1_1_multi_axis_limit_manager_a7d586aa7c486c0365ca4cad4b888c377}\index{ScottPlot.Control.MultiAxisLimitManager@{ScottPlot.Control.MultiAxisLimitManager}!MultiAxisLimitManager@{MultiAxisLimitManager}}
+\index{MultiAxisLimitManager@{MultiAxisLimitManager}!ScottPlot.Control.MultiAxisLimitManager@{ScottPlot.Control.MultiAxisLimitManager}}
+\doxysubsubsection{\texorpdfstring{MultiAxisLimitManager()}{MultiAxisLimitManager()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_control_1_1_multi_axis_limit_manager_a7d586aa7c486c0365ca4cad4b888c377} 
+Scott\+Plot.\+Control.\+Multi\+Axis\+Limit\+Manager.\+Multi\+Axis\+Limit\+Manager (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_scott_plot_1_1_plot}{Plot}}}]{plot}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_control_1_1_multi_axis_limit_manager_a413d72fd562fda001501be4dac4bc846}\index{ScottPlot.Control.MultiAxisLimitManager@{ScottPlot.Control.MultiAxisLimitManager}!MultiAxisLimitManager@{MultiAxisLimitManager}}
+\index{MultiAxisLimitManager@{MultiAxisLimitManager}!ScottPlot.Control.MultiAxisLimitManager@{ScottPlot.Control.MultiAxisLimitManager}}
+\doxysubsubsection{\texorpdfstring{MultiAxisLimitManager()}{MultiAxisLimitManager()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_control_1_1_multi_axis_limit_manager_a413d72fd562fda001501be4dac4bc846} 
+Scott\+Plot.\+Control.\+Multi\+Axis\+Limit\+Manager.\+Multi\+Axis\+Limit\+Manager (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_scott_plot_1_1_i_plot_control}{IPlot\+Control}}}]{control}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_scott_plot_1_1_control_1_1_multi_axis_limit_manager_ac7ee5ad9dd63dddbef11948e8528d87e}\index{ScottPlot.Control.MultiAxisLimitManager@{ScottPlot.Control.MultiAxisLimitManager}!Apply@{Apply}}
+\index{Apply@{Apply}!ScottPlot.Control.MultiAxisLimitManager@{ScottPlot.Control.MultiAxisLimitManager}}
+\doxysubsubsection{\texorpdfstring{Apply()}{Apply()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_control_1_1_multi_axis_limit_manager_ac7ee5ad9dd63dddbef11948e8528d87e} 
+void Scott\+Plot.\+Control.\+Multi\+Axis\+Limit\+Manager.\+Apply (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_scott_plot_1_1_plot}{Plot}}}]{plot}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Update all axis limits of the given plot with those previously remembered. 
+
+\Hypertarget{class_scott_plot_1_1_control_1_1_multi_axis_limit_manager_a068ecbdf4ec49883447664a6d53235a3}\index{ScottPlot.Control.MultiAxisLimitManager@{ScottPlot.Control.MultiAxisLimitManager}!Remember@{Remember}}
+\index{Remember@{Remember}!ScottPlot.Control.MultiAxisLimitManager@{ScottPlot.Control.MultiAxisLimitManager}}
+\doxysubsubsection{\texorpdfstring{Remember()}{Remember()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_control_1_1_multi_axis_limit_manager_a068ecbdf4ec49883447664a6d53235a3} 
+void Scott\+Plot.\+Control.\+Multi\+Axis\+Limit\+Manager.\+Remember (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_scott_plot_1_1_control_1_1_multi_axis_limit_manager}{Multi\+Axis\+Limit\+Manager}}}]{new\+Multi\+Limits}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Clear memory of previous axes and remember all the given axis limits. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Control/Multi\+Axis\+Limit\+Manager.\+cs\end{DoxyCompactItemize}

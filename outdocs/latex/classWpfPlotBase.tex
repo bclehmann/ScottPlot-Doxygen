@@ -1,0 +1,195 @@
+\hypertarget{classWpfPlotBase}{}\doxysection{Wpf\+Plot\+Base Class Reference}
+\label{classWpfPlotBase}\index{WpfPlotBase@{WpfPlotBase}}
+Inheritance diagram for Wpf\+Plot\+Base\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classWpfPlotBase}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+abstract void \mbox{\hyperlink{classWpfPlotBase_af51e0ec4a68326a56b53ace098ad8296}{Refresh}} ()
+\begin{DoxyCompactList}\small\item\em Render the plot and update the image \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classWpfPlotBase_ab4355d317701cf31a08207067bebc552}{Wpf\+Plot\+Base}} ()
+\item 
+void \mbox{\hyperlink{classWpfPlotBase_a915a1b29a38112ad527fe2317937cb66}{Reset}} ()
+\begin{DoxyCompactList}\small\item\em Disposes the current \mbox{\hyperlink{classPlot}{Plot}} and creates a new one for the control \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classWpfPlotBase_ab8f92749ae654147e394046619a4f86d}{Reset}} (\mbox{\hyperlink{classPlot}{Plot}} new\+Plot)
+\begin{DoxyCompactList}\small\item\em Loads the given \mbox{\hyperlink{classPlot}{Plot}} into the control \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classWpfPlotBase_a39ccd286da34a7886559e490d4292552}{Show\+Context\+Menu}} (\mbox{\hyperlink{structPixel}{Pixel}} position)
+\begin{DoxyCompactList}\small\item\em Launch the default pop-\/up menu (typically in response to a right-\/click) at the given position in the control \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classWpfPlotBase_a4592386537ac1f5569f99d0692cb8153}{Detect\+Display\+Scale}} ()
+\begin{DoxyCompactList}\small\item\em Determine the DPI scaling ratio of the present display. A value of 1.\+0 means no scaling, and 1.\+5 means 150\% scaling. This operation may be costly so do not call it frequently. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{classWpfPlotBase_a39d2e78820db36e537292f43d2558d60}{On\+Key\+Down}} (Key\+Event\+Args e)
+\item 
+override void \mbox{\hyperlink{classWpfPlotBase_ab711639fe4a50b141b71d8256d733b35}{On\+Key\+Up}} (Key\+Event\+Args e)
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+abstract GRContext \mbox{\hyperlink{classWpfPlotBase_a50c7c472bc7a1cc9afa425691f0f874b}{GRContext}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{classPlot}{Plot}} \mbox{\hyperlink{classWpfPlotBase_acbd4f005dca57d6173b149cd5dba9112}{Plot}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{interfaceIPlotInteraction}{IPlot\+Interaction}} \mbox{\hyperlink{classWpfPlotBase_a7e3fe560aeb7ecd05e4e303df235b9c5}{Interaction}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{classWpfPlotBase_a29d336e45bae38aa84e0cf537ff3d818}{Display\+Scale}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{interfaceIPlotMenu}{IPlot\+Menu}} \mbox{\hyperlink{classWpfPlotBase_a07f07ca744a3fbeb6f2b0856d87b4059}{Menu}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+Interactivity.\+User\+Input\+Processor \mbox{\hyperlink{classWpfPlotBase_acbe59b0fcddef3975acdaf0cc34d59db}{User\+Input\+Processor}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+abstract Framework\+Element \mbox{\hyperlink{classWpfPlotBase_adc0ace44db074872faeab53f643befe7}{Plot\+Framework\+Element}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classWpfPlotBase_ab4355d317701cf31a08207067bebc552}\label{classWpfPlotBase_ab4355d317701cf31a08207067bebc552}} 
+\index{WpfPlotBase@{WpfPlotBase}!WpfPlotBase@{WpfPlotBase}}
+\index{WpfPlotBase@{WpfPlotBase}!WpfPlotBase@{WpfPlotBase}}
+\doxysubsubsection{\texorpdfstring{WpfPlotBase()}{WpfPlotBase()}}
+{\footnotesize\ttfamily Wpf\+Plot\+Base.\+Wpf\+Plot\+Base (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classWpfPlotBase_a4592386537ac1f5569f99d0692cb8153}\label{classWpfPlotBase_a4592386537ac1f5569f99d0692cb8153}} 
+\index{WpfPlotBase@{WpfPlotBase}!DetectDisplayScale@{DetectDisplayScale}}
+\index{DetectDisplayScale@{DetectDisplayScale}!WpfPlotBase@{WpfPlotBase}}
+\doxysubsubsection{\texorpdfstring{DetectDisplayScale()}{DetectDisplayScale()}}
+{\footnotesize\ttfamily float Wpf\+Plot\+Base.\+Detect\+Display\+Scale (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Determine the DPI scaling ratio of the present display. A value of 1.\+0 means no scaling, and 1.\+5 means 150\% scaling. This operation may be costly so do not call it frequently. 
+
+
+
+Implements \mbox{\hyperlink{interfaceIPlotControl_aa091d213054094b8acdc307ceda2db06}{IPlot\+Control}}.
+
+\mbox{\Hypertarget{classWpfPlotBase_a39d2e78820db36e537292f43d2558d60}\label{classWpfPlotBase_a39d2e78820db36e537292f43d2558d60}} 
+\index{WpfPlotBase@{WpfPlotBase}!OnKeyDown@{OnKeyDown}}
+\index{OnKeyDown@{OnKeyDown}!WpfPlotBase@{WpfPlotBase}}
+\doxysubsubsection{\texorpdfstring{OnKeyDown()}{OnKeyDown()}}
+{\footnotesize\ttfamily override void Wpf\+Plot\+Base.\+On\+Key\+Down (\begin{DoxyParamCaption}\item[{Key\+Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classWpfPlotBase_ab711639fe4a50b141b71d8256d733b35}\label{classWpfPlotBase_ab711639fe4a50b141b71d8256d733b35}} 
+\index{WpfPlotBase@{WpfPlotBase}!OnKeyUp@{OnKeyUp}}
+\index{OnKeyUp@{OnKeyUp}!WpfPlotBase@{WpfPlotBase}}
+\doxysubsubsection{\texorpdfstring{OnKeyUp()}{OnKeyUp()}}
+{\footnotesize\ttfamily override void Wpf\+Plot\+Base.\+On\+Key\+Up (\begin{DoxyParamCaption}\item[{Key\+Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classWpfPlotBase_af51e0ec4a68326a56b53ace098ad8296}\label{classWpfPlotBase_af51e0ec4a68326a56b53ace098ad8296}} 
+\index{WpfPlotBase@{WpfPlotBase}!Refresh@{Refresh}}
+\index{Refresh@{Refresh}!WpfPlotBase@{WpfPlotBase}}
+\doxysubsubsection{\texorpdfstring{Refresh()}{Refresh()}}
+{\footnotesize\ttfamily abstract void Wpf\+Plot\+Base.\+Refresh (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Render the plot and update the image 
+
+
+
+Implements \mbox{\hyperlink{interfaceIPlotControl_ac5672b6f3e3e2825da1e95f0cd2f4bcb}{IPlot\+Control}}.
+
+
+
+Implemented in \mbox{\hyperlink{classWpfPlotGL_ab002c60bde7781904c60b8b201b44316}{Wpf\+Plot\+GL}}, and \mbox{\hyperlink{classScottPlot_1_1WPF_1_1WpfPlot_a26f9065976d6115b11dac8cf1a726c50}{Scott\+Plot.\+WPF.\+Wpf\+Plot}}.
+
+\mbox{\Hypertarget{classWpfPlotBase_a915a1b29a38112ad527fe2317937cb66}\label{classWpfPlotBase_a915a1b29a38112ad527fe2317937cb66}} 
+\index{WpfPlotBase@{WpfPlotBase}!Reset@{Reset}}
+\index{Reset@{Reset}!WpfPlotBase@{WpfPlotBase}}
+\doxysubsubsection{\texorpdfstring{Reset()}{Reset()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Wpf\+Plot\+Base.\+Reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Disposes the current \mbox{\hyperlink{classPlot}{Plot}} and creates a new one for the control 
+
+
+
+Implements \mbox{\hyperlink{interfaceIPlotControl_a3021825d73d2bcf47dfd5f6f562e2cdf}{IPlot\+Control}}.
+
+\mbox{\Hypertarget{classWpfPlotBase_ab8f92749ae654147e394046619a4f86d}\label{classWpfPlotBase_ab8f92749ae654147e394046619a4f86d}} 
+\index{WpfPlotBase@{WpfPlotBase}!Reset@{Reset}}
+\index{Reset@{Reset}!WpfPlotBase@{WpfPlotBase}}
+\doxysubsubsection{\texorpdfstring{Reset()}{Reset()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Wpf\+Plot\+Base.\+Reset (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPlot}{Plot}}}]{plot }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Loads the given \mbox{\hyperlink{classPlot}{Plot}} into the control 
+
+
+
+Implements \mbox{\hyperlink{interfaceIPlotControl_a3204ee77a937b93563c72a8fbaacd957}{IPlot\+Control}}.
+
+\mbox{\Hypertarget{classWpfPlotBase_a39ccd286da34a7886559e490d4292552}\label{classWpfPlotBase_a39ccd286da34a7886559e490d4292552}} 
+\index{WpfPlotBase@{WpfPlotBase}!ShowContextMenu@{ShowContextMenu}}
+\index{ShowContextMenu@{ShowContextMenu}!WpfPlotBase@{WpfPlotBase}}
+\doxysubsubsection{\texorpdfstring{ShowContextMenu()}{ShowContextMenu()}}
+{\footnotesize\ttfamily void Wpf\+Plot\+Base.\+Show\+Context\+Menu (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPixel}{Pixel}}}]{position }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Launch the default pop-\/up menu (typically in response to a right-\/click) at the given position in the control 
+
+
+
+Implements \mbox{\hyperlink{interfaceIPlotControl_aa822894e483df742fb376cd3169eefc4}{IPlot\+Control}}.
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{classWpfPlotBase_a29d336e45bae38aa84e0cf537ff3d818}\label{classWpfPlotBase_a29d336e45bae38aa84e0cf537ff3d818}} 
+\index{WpfPlotBase@{WpfPlotBase}!DisplayScale@{DisplayScale}}
+\index{DisplayScale@{DisplayScale}!WpfPlotBase@{WpfPlotBase}}
+\doxysubsubsection{\texorpdfstring{DisplayScale}{DisplayScale}}
+{\footnotesize\ttfamily float Wpf\+Plot\+Base.\+Display\+Scale\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classWpfPlotBase_a50c7c472bc7a1cc9afa425691f0f874b}\label{classWpfPlotBase_a50c7c472bc7a1cc9afa425691f0f874b}} 
+\index{WpfPlotBase@{WpfPlotBase}!GRContext@{GRContext}}
+\index{GRContext@{GRContext}!WpfPlotBase@{WpfPlotBase}}
+\doxysubsubsection{\texorpdfstring{GRContext}{GRContext}}
+{\footnotesize\ttfamily abstract GRContext Wpf\+Plot\+Base.\+GRContext\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{classWpfPlotBase_a7e3fe560aeb7ecd05e4e303df235b9c5}\label{classWpfPlotBase_a7e3fe560aeb7ecd05e4e303df235b9c5}} 
+\index{WpfPlotBase@{WpfPlotBase}!Interaction@{Interaction}}
+\index{Interaction@{Interaction}!WpfPlotBase@{WpfPlotBase}}
+\doxysubsubsection{\texorpdfstring{Interaction}{Interaction}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceIPlotInteraction}{IPlot\+Interaction}} Wpf\+Plot\+Base.\+Interaction\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classWpfPlotBase_a07f07ca744a3fbeb6f2b0856d87b4059}\label{classWpfPlotBase_a07f07ca744a3fbeb6f2b0856d87b4059}} 
+\index{WpfPlotBase@{WpfPlotBase}!Menu@{Menu}}
+\index{Menu@{Menu}!WpfPlotBase@{WpfPlotBase}}
+\doxysubsubsection{\texorpdfstring{Menu}{Menu}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceIPlotMenu}{IPlot\+Menu}} Wpf\+Plot\+Base.\+Menu\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classWpfPlotBase_acbd4f005dca57d6173b149cd5dba9112}\label{classWpfPlotBase_acbd4f005dca57d6173b149cd5dba9112}} 
+\index{WpfPlotBase@{WpfPlotBase}!Plot@{Plot}}
+\index{Plot@{Plot}!WpfPlotBase@{WpfPlotBase}}
+\doxysubsubsection{\texorpdfstring{Plot}{Plot}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPlot}{Plot}} Wpf\+Plot\+Base.\+Plot\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classWpfPlotBase_adc0ace44db074872faeab53f643befe7}\label{classWpfPlotBase_adc0ace44db074872faeab53f643befe7}} 
+\index{WpfPlotBase@{WpfPlotBase}!PlotFrameworkElement@{PlotFrameworkElement}}
+\index{PlotFrameworkElement@{PlotFrameworkElement}!WpfPlotBase@{WpfPlotBase}}
+\doxysubsubsection{\texorpdfstring{PlotFrameworkElement}{PlotFrameworkElement}}
+{\footnotesize\ttfamily abstract Framework\+Element Wpf\+Plot\+Base.\+Plot\+Framework\+Element\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classWpfPlotBase_acbe59b0fcddef3975acdaf0cc34d59db}\label{classWpfPlotBase_acbe59b0fcddef3975acdaf0cc34d59db}} 
+\index{WpfPlotBase@{WpfPlotBase}!UserInputProcessor@{UserInputProcessor}}
+\index{UserInputProcessor@{UserInputProcessor}!WpfPlotBase@{WpfPlotBase}}
+\doxysubsubsection{\texorpdfstring{UserInputProcessor}{UserInputProcessor}}
+{\footnotesize\ttfamily Interactivity.\+User\+Input\+Processor Wpf\+Plot\+Base.\+User\+Input\+Processor\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5 Controls/\+Scott\+Plot.\+WPF/Wpf\+Plot\+Base.\+cs\end{DoxyCompactItemize}

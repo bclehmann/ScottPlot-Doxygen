@@ -1,0 +1,270 @@
+\doxysection{Scott\+Plot.\+Plottables.\+Rectangle Class Reference}
+\hypertarget{class_scott_plot_1_1_plottables_1_1_rectangle}{}\label{class_scott_plot_1_1_plottables_1_1_rectangle}\index{ScottPlot.Plottables.Rectangle@{ScottPlot.Plottables.Rectangle}}
+Inheritance diagram for Scott\+Plot.\+Plottables.\+Rectangle\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.497326cm]{class_scott_plot_1_1_plottables_1_1_rectangle}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_rectangle_a1ea47a797fe5ece4222cf7a009abba93}{Get\+Axis\+Limits}} ()
+\begin{DoxyCompactList}\small\item\em Return the 2D area (in coordinate space) occupied by the data contained in this plottable. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_rectangle_aa13074479d1421f55259fe77dafb2fde}{Render}} (Render\+Pack rp)
+\begin{DoxyCompactList}\small\item\em Draw the data from this plottable into the data area defined in the \doxylink{class_scott_plot_1_1_axes}{Axes}. By default the surface is already clipped to the data area, but this can be cleared inside the plottable. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable}{Scott\+Plot.\+IPlottable}}}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_rectangle_a3e6b8254afd46ad7d40ef6ad9fe2c447}{Is\+Visible}} = true\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Toggles whether this plottable is shown and contributes to the automatic axis limit detection. The calling method will check this variable (it does not need to be checked inside the Render method). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{interface_scott_plot_1_1_i_axes}{IAxes}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_rectangle_a9cbfd9e9edc7535f9ac859df0f343655}{Axes}} = new \mbox{\hyperlink{class_scott_plot_1_1_axes}{Axes}}()\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em This object performs coordinate/pixel translation at render time based on the latest data area. It stores the axes to use for this plottable and also the data area (in pixels) updated just before each render. If this object is null it will be constructed using the default X and Y axes at render time. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_enumerable}{IEnumerable}}$<$ \mbox{\hyperlink{class_scott_plot_1_1_legend_item}{Legend\+Item}} $>$ \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_rectangle_ad44a419a9c305d0e06b8ac9c81024d27}{Legend\+Items}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Items which will appear in the legend. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_scott_plot_1_1_line_style}{Line\+Style}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_rectangle_a3972b91c1474263607da8b35d8e98138}{Line\+Style}} = new() \{ Width = 1 \}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_rectangle_a0d71daf146fdda0fbf8488a3dbe684a9}{Line\+Width}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{namespace_scott_plot_a625917eb44cadb4de90991e525db6ab5}{Line\+Pattern}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_rectangle_ab0640fcc1168c3993c44da23ff89d20e}{Line\+Pattern}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_rectangle_acc9e68e229f9db8f1570fa5ed920c42c}{Line\+Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{class_scott_plot_1_1_fill_style}{Fill\+Style}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_rectangle_a545fd5e0cf9d6ab1a9d78fb5c9142c61}{Fill\+Style}} = new()\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_rectangle_ae182b409c01bc18450cf691b9b381d2c}{Fill\+Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_rectangle_a74ad761fff091a2eb042082e01b6650f}{Fill\+Hatch\+Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{interface_scott_plot_1_1_i_hatch}{IHatch}}? \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_rectangle_afd38d6de0495bd77570c7a4b91aaeba5}{Fill\+Hatch}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+string \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_rectangle_a4b5c3dbce24e6b7d870aa8284fc87e57}{Label}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+string \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_rectangle_aab33891cfaec4e6cc33f9833bc5b2eeb}{Legend\+Text}} = string.\+Empty\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em If populated, this text appears in the legend. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_rectangle_a9fc16affcf222f93ff4fa116dc63ce58}{X1}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+double \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_rectangle_a367302afb9f0745bd5d87f7ff1fdde4e}{X2}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+double \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_rectangle_ab9c3eb23ba05fe7332b257f8f175990c}{Y1}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+double \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_rectangle_a5b4d52f7418f81fe8b70315da80e7118}{Y2}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_coordinate_rect}{Coordinate\+Rect}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_rectangle_aed9038f593e985251d28ceb2a0afcdc4}{Coordinate\+Rect}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable}{Scott\+Plot.\+IPlottable}}}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{interface_scott_plot_1_1_i_has_line}{Scott\+Plot.\+IHas\+Line}}}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{interface_scott_plot_1_1_i_has_fill}{Scott\+Plot.\+IHas\+Fill}}}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{interface_scott_plot_1_1_i_has_legend_text}{Scott\+Plot.\+IHas\+Legend\+Text}}}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_rectangle_a1ea47a797fe5ece4222cf7a009abba93}\index{ScottPlot.Plottables.Rectangle@{ScottPlot.Plottables.Rectangle}!GetAxisLimits@{GetAxisLimits}}
+\index{GetAxisLimits@{GetAxisLimits}!ScottPlot.Plottables.Rectangle@{ScottPlot.Plottables.Rectangle}}
+\doxysubsubsection{\texorpdfstring{GetAxisLimits()}{GetAxisLimits()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_rectangle_a1ea47a797fe5ece4222cf7a009abba93} 
+\mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}} Scott\+Plot.\+Plottables.\+Rectangle.\+Get\+Axis\+Limits (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Return the 2D area (in coordinate space) occupied by the data contained in this plottable. 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable_a2e455cf76f9e8bc3187900b1a90487c3}{Scott\+Plot.\+IPlottable}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_rectangle_aa13074479d1421f55259fe77dafb2fde}\index{ScottPlot.Plottables.Rectangle@{ScottPlot.Plottables.Rectangle}!Render@{Render}}
+\index{Render@{Render}!ScottPlot.Plottables.Rectangle@{ScottPlot.Plottables.Rectangle}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_rectangle_aa13074479d1421f55259fe77dafb2fde} 
+virtual void Scott\+Plot.\+Plottables.\+Rectangle.\+Render (\begin{DoxyParamCaption}\item[{Render\+Pack}]{rp}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Draw the data from this plottable into the data area defined in the \doxylink{class_scott_plot_1_1_axes}{Axes}. By default the surface is already clipped to the data area, but this can be cleared inside the plottable. 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable_a11d2487f1d7628e019a09748d876c289}{Scott\+Plot.\+IPlottable}}.
+
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_rectangle_a9cbfd9e9edc7535f9ac859df0f343655}\index{ScottPlot.Plottables.Rectangle@{ScottPlot.Plottables.Rectangle}!Axes@{Axes}}
+\index{Axes@{Axes}!ScottPlot.Plottables.Rectangle@{ScottPlot.Plottables.Rectangle}}
+\doxysubsubsection{\texorpdfstring{Axes}{Axes}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_rectangle_a9cbfd9e9edc7535f9ac859df0f343655} 
+\mbox{\hyperlink{interface_scott_plot_1_1_i_axes}{IAxes}} Scott\+Plot.\+Plottables.\+Rectangle.\+Axes = new \mbox{\hyperlink{class_scott_plot_1_1_axes}{Axes}}()\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+This object performs coordinate/pixel translation at render time based on the latest data area. It stores the axes to use for this plottable and also the data area (in pixels) updated just before each render. If this object is null it will be constructed using the default X and Y axes at render time. 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable_aa68bc5153a673a7cd4a68f93da377d0a}{Scott\+Plot.\+IPlottable}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_rectangle_aed9038f593e985251d28ceb2a0afcdc4}\index{ScottPlot.Plottables.Rectangle@{ScottPlot.Plottables.Rectangle}!CoordinateRect@{CoordinateRect}}
+\index{CoordinateRect@{CoordinateRect}!ScottPlot.Plottables.Rectangle@{ScottPlot.Plottables.Rectangle}}
+\doxysubsubsection{\texorpdfstring{CoordinateRect}{CoordinateRect}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_rectangle_aed9038f593e985251d28ceb2a0afcdc4} 
+\mbox{\hyperlink{struct_scott_plot_1_1_coordinate_rect}{Coordinate\+Rect}} Scott\+Plot.\+Plottables.\+Rectangle.\+Coordinate\+Rect\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_rectangle_ae182b409c01bc18450cf691b9b381d2c}\index{ScottPlot.Plottables.Rectangle@{ScottPlot.Plottables.Rectangle}!FillColor@{FillColor}}
+\index{FillColor@{FillColor}!ScottPlot.Plottables.Rectangle@{ScottPlot.Plottables.Rectangle}}
+\doxysubsubsection{\texorpdfstring{FillColor}{FillColor}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_rectangle_ae182b409c01bc18450cf691b9b381d2c} 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} Scott\+Plot.\+Plottables.\+Rectangle.\+Fill\+Color\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_has_fill_a22e0a80821a7ed97ea4af9f5f5614f0e}{Scott\+Plot.\+IHas\+Fill}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_rectangle_afd38d6de0495bd77570c7a4b91aaeba5}\index{ScottPlot.Plottables.Rectangle@{ScottPlot.Plottables.Rectangle}!FillHatch@{FillHatch}}
+\index{FillHatch@{FillHatch}!ScottPlot.Plottables.Rectangle@{ScottPlot.Plottables.Rectangle}}
+\doxysubsubsection{\texorpdfstring{FillHatch}{FillHatch}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_rectangle_afd38d6de0495bd77570c7a4b91aaeba5} 
+\mbox{\hyperlink{interface_scott_plot_1_1_i_hatch}{IHatch}}? Scott\+Plot.\+Plottables.\+Rectangle.\+Fill\+Hatch\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_has_fill_a681a7efc565989ffe28dc38f6bf42d9e}{Scott\+Plot.\+IHas\+Fill}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_rectangle_a74ad761fff091a2eb042082e01b6650f}\index{ScottPlot.Plottables.Rectangle@{ScottPlot.Plottables.Rectangle}!FillHatchColor@{FillHatchColor}}
+\index{FillHatchColor@{FillHatchColor}!ScottPlot.Plottables.Rectangle@{ScottPlot.Plottables.Rectangle}}
+\doxysubsubsection{\texorpdfstring{FillHatchColor}{FillHatchColor}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_rectangle_a74ad761fff091a2eb042082e01b6650f} 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} Scott\+Plot.\+Plottables.\+Rectangle.\+Fill\+Hatch\+Color\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_has_fill_a677a670c4b6c9718d48c8556d93f7094}{Scott\+Plot.\+IHas\+Fill}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_rectangle_a545fd5e0cf9d6ab1a9d78fb5c9142c61}\index{ScottPlot.Plottables.Rectangle@{ScottPlot.Plottables.Rectangle}!FillStyle@{FillStyle}}
+\index{FillStyle@{FillStyle}!ScottPlot.Plottables.Rectangle@{ScottPlot.Plottables.Rectangle}}
+\doxysubsubsection{\texorpdfstring{FillStyle}{FillStyle}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_rectangle_a545fd5e0cf9d6ab1a9d78fb5c9142c61} 
+\mbox{\hyperlink{class_scott_plot_1_1_fill_style}{Fill\+Style}} Scott\+Plot.\+Plottables.\+Rectangle.\+Fill\+Style = new()\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_has_fill_aceaa90166768f5edc0e81d89b6165b0a}{Scott\+Plot.\+IHas\+Fill}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_rectangle_a3e6b8254afd46ad7d40ef6ad9fe2c447}\index{ScottPlot.Plottables.Rectangle@{ScottPlot.Plottables.Rectangle}!IsVisible@{IsVisible}}
+\index{IsVisible@{IsVisible}!ScottPlot.Plottables.Rectangle@{ScottPlot.Plottables.Rectangle}}
+\doxysubsubsection{\texorpdfstring{IsVisible}{IsVisible}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_rectangle_a3e6b8254afd46ad7d40ef6ad9fe2c447} 
+bool Scott\+Plot.\+Plottables.\+Rectangle.\+Is\+Visible = true\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Toggles whether this plottable is shown and contributes to the automatic axis limit detection. The calling method will check this variable (it does not need to be checked inside the Render method). 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable_abbe75ba55a332d695313ccb5dc780923}{Scott\+Plot.\+IPlottable}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_rectangle_a4b5c3dbce24e6b7d870aa8284fc87e57}\index{ScottPlot.Plottables.Rectangle@{ScottPlot.Plottables.Rectangle}!Label@{Label}}
+\index{Label@{Label}!ScottPlot.Plottables.Rectangle@{ScottPlot.Plottables.Rectangle}}
+\doxysubsubsection{\texorpdfstring{Label}{Label}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_rectangle_a4b5c3dbce24e6b7d870aa8284fc87e57} 
+string Scott\+Plot.\+Plottables.\+Rectangle.\+Label\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_rectangle_ad44a419a9c305d0e06b8ac9c81024d27}\index{ScottPlot.Plottables.Rectangle@{ScottPlot.Plottables.Rectangle}!LegendItems@{LegendItems}}
+\index{LegendItems@{LegendItems}!ScottPlot.Plottables.Rectangle@{ScottPlot.Plottables.Rectangle}}
+\doxysubsubsection{\texorpdfstring{LegendItems}{LegendItems}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_rectangle_ad44a419a9c305d0e06b8ac9c81024d27} 
+\mbox{\hyperlink{class_i_enumerable}{IEnumerable}}$<$\mbox{\hyperlink{class_scott_plot_1_1_legend_item}{Legend\+Item}}$>$ Scott\+Plot.\+Plottables.\+Rectangle.\+Legend\+Items\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Items which will appear in the legend. 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable_a4565f96a253f832bd9aa8033c99eff75}{Scott\+Plot.\+IPlottable}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_rectangle_aab33891cfaec4e6cc33f9833bc5b2eeb}\index{ScottPlot.Plottables.Rectangle@{ScottPlot.Plottables.Rectangle}!LegendText@{LegendText}}
+\index{LegendText@{LegendText}!ScottPlot.Plottables.Rectangle@{ScottPlot.Plottables.Rectangle}}
+\doxysubsubsection{\texorpdfstring{LegendText}{LegendText}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_rectangle_aab33891cfaec4e6cc33f9833bc5b2eeb} 
+string Scott\+Plot.\+Plottables.\+Rectangle.\+Legend\+Text = string.\+Empty\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+If populated, this text appears in the legend. 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_has_legend_text_ad89967a734dbda7c02217a19c17d88d8}{Scott\+Plot.\+IHas\+Legend\+Text}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_rectangle_acc9e68e229f9db8f1570fa5ed920c42c}\index{ScottPlot.Plottables.Rectangle@{ScottPlot.Plottables.Rectangle}!LineColor@{LineColor}}
+\index{LineColor@{LineColor}!ScottPlot.Plottables.Rectangle@{ScottPlot.Plottables.Rectangle}}
+\doxysubsubsection{\texorpdfstring{LineColor}{LineColor}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_rectangle_acc9e68e229f9db8f1570fa5ed920c42c} 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} Scott\+Plot.\+Plottables.\+Rectangle.\+Line\+Color\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_has_line_aa6dfc6fced8c40566cc6fdf237b66175}{Scott\+Plot.\+IHas\+Line}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_rectangle_ab0640fcc1168c3993c44da23ff89d20e}\index{ScottPlot.Plottables.Rectangle@{ScottPlot.Plottables.Rectangle}!LinePattern@{LinePattern}}
+\index{LinePattern@{LinePattern}!ScottPlot.Plottables.Rectangle@{ScottPlot.Plottables.Rectangle}}
+\doxysubsubsection{\texorpdfstring{LinePattern}{LinePattern}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_rectangle_ab0640fcc1168c3993c44da23ff89d20e} 
+\mbox{\hyperlink{namespace_scott_plot_a625917eb44cadb4de90991e525db6ab5}{Line\+Pattern}} Scott\+Plot.\+Plottables.\+Rectangle.\+Line\+Pattern\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_has_line_a36a31df15a64944ab9108d98574a5ada}{Scott\+Plot.\+IHas\+Line}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_rectangle_a3972b91c1474263607da8b35d8e98138}\index{ScottPlot.Plottables.Rectangle@{ScottPlot.Plottables.Rectangle}!LineStyle@{LineStyle}}
+\index{LineStyle@{LineStyle}!ScottPlot.Plottables.Rectangle@{ScottPlot.Plottables.Rectangle}}
+\doxysubsubsection{\texorpdfstring{LineStyle}{LineStyle}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_rectangle_a3972b91c1474263607da8b35d8e98138} 
+\mbox{\hyperlink{class_scott_plot_1_1_line_style}{Line\+Style}} Scott\+Plot.\+Plottables.\+Rectangle.\+Line\+Style = new() \{ Width = 1 \}\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_has_line_a1a04ccd6d040be2e80338c8af04ea291}{Scott\+Plot.\+IHas\+Line}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_rectangle_a0d71daf146fdda0fbf8488a3dbe684a9}\index{ScottPlot.Plottables.Rectangle@{ScottPlot.Plottables.Rectangle}!LineWidth@{LineWidth}}
+\index{LineWidth@{LineWidth}!ScottPlot.Plottables.Rectangle@{ScottPlot.Plottables.Rectangle}}
+\doxysubsubsection{\texorpdfstring{LineWidth}{LineWidth}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_rectangle_a0d71daf146fdda0fbf8488a3dbe684a9} 
+float Scott\+Plot.\+Plottables.\+Rectangle.\+Line\+Width\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_has_line_aa5f2d70e52466770207ed3547ffeecb3}{Scott\+Plot.\+IHas\+Line}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_rectangle_a9fc16affcf222f93ff4fa116dc63ce58}\index{ScottPlot.Plottables.Rectangle@{ScottPlot.Plottables.Rectangle}!X1@{X1}}
+\index{X1@{X1}!ScottPlot.Plottables.Rectangle@{ScottPlot.Plottables.Rectangle}}
+\doxysubsubsection{\texorpdfstring{X1}{X1}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_rectangle_a9fc16affcf222f93ff4fa116dc63ce58} 
+double Scott\+Plot.\+Plottables.\+Rectangle.\+X1\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_rectangle_a367302afb9f0745bd5d87f7ff1fdde4e}\index{ScottPlot.Plottables.Rectangle@{ScottPlot.Plottables.Rectangle}!X2@{X2}}
+\index{X2@{X2}!ScottPlot.Plottables.Rectangle@{ScottPlot.Plottables.Rectangle}}
+\doxysubsubsection{\texorpdfstring{X2}{X2}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_rectangle_a367302afb9f0745bd5d87f7ff1fdde4e} 
+double Scott\+Plot.\+Plottables.\+Rectangle.\+X2\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_rectangle_ab9c3eb23ba05fe7332b257f8f175990c}\index{ScottPlot.Plottables.Rectangle@{ScottPlot.Plottables.Rectangle}!Y1@{Y1}}
+\index{Y1@{Y1}!ScottPlot.Plottables.Rectangle@{ScottPlot.Plottables.Rectangle}}
+\doxysubsubsection{\texorpdfstring{Y1}{Y1}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_rectangle_ab9c3eb23ba05fe7332b257f8f175990c} 
+double Scott\+Plot.\+Plottables.\+Rectangle.\+Y1\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_rectangle_a5b4d52f7418f81fe8b70315da80e7118}\index{ScottPlot.Plottables.Rectangle@{ScottPlot.Plottables.Rectangle}!Y2@{Y2}}
+\index{Y2@{Y2}!ScottPlot.Plottables.Rectangle@{ScottPlot.Plottables.Rectangle}}
+\doxysubsubsection{\texorpdfstring{Y2}{Y2}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_rectangle_a5b4d52f7418f81fe8b70315da80e7118} 
+double Scott\+Plot.\+Plottables.\+Rectangle.\+Y2\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Plottables/Rectangle.\+cs\end{DoxyCompactItemize}

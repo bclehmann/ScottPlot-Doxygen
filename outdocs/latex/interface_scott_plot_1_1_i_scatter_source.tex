@@ -1,0 +1,103 @@
+\doxysection{Scott\+Plot.\+IScatter\+Source Interface Reference}
+\hypertarget{interface_scott_plot_1_1_i_scatter_source}{}\label{interface_scott_plot_1_1_i_scatter_source}\index{ScottPlot.IScatterSource@{ScottPlot.IScatterSource}}
+
+
+Represents a series of data points with distinct X and Y positions in coordinate space.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+IRead\+Only\+List$<$ \mbox{\hyperlink{struct_scott_plot_1_1_coordinates}{Coordinates}} $>$ \mbox{\hyperlink{interface_scott_plot_1_1_i_scatter_source_a02b766cdedd145760aaf42d8c89299b1}{Get\+Scatter\+Points}} ()
+\begin{DoxyCompactList}\small\item\em Return a copy of the data in \doxylink{struct_scott_plot_1_1_coordinates}{Coordinates} format. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_data_point}{Data\+Point}} \mbox{\hyperlink{interface_scott_plot_1_1_i_scatter_source_a2d7a567b9909bbe0a18a2e47c306e8f1}{Get\+Nearest}} (\mbox{\hyperlink{struct_scott_plot_1_1_coordinates}{Coordinates}} location, \mbox{\hyperlink{struct_scott_plot_1_1_render_details}{Render\+Details}} render\+Info, float max\+Distance=15)
+\begin{DoxyCompactList}\small\item\em Return the point nearest a specific location given the X/Y pixel scaling information from a previous render. Will return \doxylink{struct_scott_plot_1_1_data_point_af8284a4f8c8854936112d2ce1850a3c1}{Data\+Point.\+None} if the nearest point is greater than {\itshape max\+Distance}  pixels away. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_data_point}{Data\+Point}} \mbox{\hyperlink{interface_scott_plot_1_1_i_scatter_source_a9442f6337b71a6f5f2c2a6523995d185}{Get\+NearestX}} (\mbox{\hyperlink{struct_scott_plot_1_1_coordinates}{Coordinates}} location, \mbox{\hyperlink{struct_scott_plot_1_1_render_details}{Render\+Details}} render\+Info, float max\+Distance=15)
+\begin{DoxyCompactList}\small\item\em Return the point nearest a specific X location given the X/Y pixel scaling information from a previous render. Will return \doxylink{struct_scott_plot_1_1_data_point_af8284a4f8c8854936112d2ce1850a3c1}{Data\+Point.\+None} if the nearest point is greater than {\itshape max\+Distance}  pixels away. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_scott_plot_a4f8afc1393f89ce60e775705cbf134d1}{Coordinate\+Range}} \mbox{\hyperlink{interface_scott_plot_1_1_i_scatter_source_ad8c31cf720b186c5755058a82ffd63e9}{Get\+LimitsX}} ()
+\item 
+\mbox{\hyperlink{namespace_scott_plot_a4f8afc1393f89ce60e775705cbf134d1}{Coordinate\+Range}} \mbox{\hyperlink{interface_scott_plot_1_1_i_scatter_source_a0e65b9f669c112d8d35eb0201d1c0cdd}{Get\+LimitsY}} ()
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}} \mbox{\hyperlink{interface_scott_plot_1_1_i_scatter_source_a38d47eaae43813816622ae92b75fbc1e}{Get\+Limits}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{interface_scott_plot_1_1_i_scatter_source_afafdb4fdca43d1483dc6271df805bdda}{Min\+Render\+Index}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+int \mbox{\hyperlink{interface_scott_plot_1_1_i_scatter_source_a75b31c9c93d0f2f18f686b1393fb19af}{Max\+Render\+Index}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a series of data points with distinct X and Y positions in coordinate space. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_scott_plot_1_1_i_scatter_source_a38d47eaae43813816622ae92b75fbc1e}\index{ScottPlot.IScatterSource@{ScottPlot.IScatterSource}!GetLimits@{GetLimits}}
+\index{GetLimits@{GetLimits}!ScottPlot.IScatterSource@{ScottPlot.IScatterSource}}
+\doxysubsubsection{\texorpdfstring{GetLimits()}{GetLimits()}}
+{\footnotesize\ttfamily \label{interface_scott_plot_1_1_i_scatter_source_a38d47eaae43813816622ae92b75fbc1e} 
+\mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}} Scott\+Plot.\+IScatter\+Source.\+Get\+Limits (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{interface_scott_plot_1_1_i_scatter_source_ad8c31cf720b186c5755058a82ffd63e9}\index{ScottPlot.IScatterSource@{ScottPlot.IScatterSource}!GetLimitsX@{GetLimitsX}}
+\index{GetLimitsX@{GetLimitsX}!ScottPlot.IScatterSource@{ScottPlot.IScatterSource}}
+\doxysubsubsection{\texorpdfstring{GetLimitsX()}{GetLimitsX()}}
+{\footnotesize\ttfamily \label{interface_scott_plot_1_1_i_scatter_source_ad8c31cf720b186c5755058a82ffd63e9} 
+\mbox{\hyperlink{namespace_scott_plot_a4f8afc1393f89ce60e775705cbf134d1}{Coordinate\+Range}} Scott\+Plot.\+IScatter\+Source.\+Get\+LimitsX (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{interface_scott_plot_1_1_i_scatter_source_a0e65b9f669c112d8d35eb0201d1c0cdd}\index{ScottPlot.IScatterSource@{ScottPlot.IScatterSource}!GetLimitsY@{GetLimitsY}}
+\index{GetLimitsY@{GetLimitsY}!ScottPlot.IScatterSource@{ScottPlot.IScatterSource}}
+\doxysubsubsection{\texorpdfstring{GetLimitsY()}{GetLimitsY()}}
+{\footnotesize\ttfamily \label{interface_scott_plot_1_1_i_scatter_source_a0e65b9f669c112d8d35eb0201d1c0cdd} 
+\mbox{\hyperlink{namespace_scott_plot_a4f8afc1393f89ce60e775705cbf134d1}{Coordinate\+Range}} Scott\+Plot.\+IScatter\+Source.\+Get\+LimitsY (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{interface_scott_plot_1_1_i_scatter_source_a2d7a567b9909bbe0a18a2e47c306e8f1}\index{ScottPlot.IScatterSource@{ScottPlot.IScatterSource}!GetNearest@{GetNearest}}
+\index{GetNearest@{GetNearest}!ScottPlot.IScatterSource@{ScottPlot.IScatterSource}}
+\doxysubsubsection{\texorpdfstring{GetNearest()}{GetNearest()}}
+{\footnotesize\ttfamily \label{interface_scott_plot_1_1_i_scatter_source_a2d7a567b9909bbe0a18a2e47c306e8f1} 
+\mbox{\hyperlink{struct_scott_plot_1_1_data_point}{Data\+Point}} Scott\+Plot.\+IScatter\+Source.\+Get\+Nearest (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_scott_plot_1_1_coordinates}{Coordinates}}}]{location}{, }\item[{\mbox{\hyperlink{struct_scott_plot_1_1_render_details}{Render\+Details}}}]{render\+Info}{, }\item[{float}]{max\+Distance}{ = {\ttfamily 15}}\end{DoxyParamCaption})}
+
+
+
+Return the point nearest a specific location given the X/Y pixel scaling information from a previous render. Will return \doxylink{struct_scott_plot_1_1_data_point_af8284a4f8c8854936112d2ce1850a3c1}{Data\+Point.\+None} if the nearest point is greater than {\itshape max\+Distance}  pixels away. 
+
+\Hypertarget{interface_scott_plot_1_1_i_scatter_source_a9442f6337b71a6f5f2c2a6523995d185}\index{ScottPlot.IScatterSource@{ScottPlot.IScatterSource}!GetNearestX@{GetNearestX}}
+\index{GetNearestX@{GetNearestX}!ScottPlot.IScatterSource@{ScottPlot.IScatterSource}}
+\doxysubsubsection{\texorpdfstring{GetNearestX()}{GetNearestX()}}
+{\footnotesize\ttfamily \label{interface_scott_plot_1_1_i_scatter_source_a9442f6337b71a6f5f2c2a6523995d185} 
+\mbox{\hyperlink{struct_scott_plot_1_1_data_point}{Data\+Point}} Scott\+Plot.\+IScatter\+Source.\+Get\+NearestX (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_scott_plot_1_1_coordinates}{Coordinates}}}]{location}{, }\item[{\mbox{\hyperlink{struct_scott_plot_1_1_render_details}{Render\+Details}}}]{render\+Info}{, }\item[{float}]{max\+Distance}{ = {\ttfamily 15}}\end{DoxyParamCaption})}
+
+
+
+Return the point nearest a specific X location given the X/Y pixel scaling information from a previous render. Will return \doxylink{struct_scott_plot_1_1_data_point_af8284a4f8c8854936112d2ce1850a3c1}{Data\+Point.\+None} if the nearest point is greater than {\itshape max\+Distance}  pixels away. 
+
+\Hypertarget{interface_scott_plot_1_1_i_scatter_source_a02b766cdedd145760aaf42d8c89299b1}\index{ScottPlot.IScatterSource@{ScottPlot.IScatterSource}!GetScatterPoints@{GetScatterPoints}}
+\index{GetScatterPoints@{GetScatterPoints}!ScottPlot.IScatterSource@{ScottPlot.IScatterSource}}
+\doxysubsubsection{\texorpdfstring{GetScatterPoints()}{GetScatterPoints()}}
+{\footnotesize\ttfamily \label{interface_scott_plot_1_1_i_scatter_source_a02b766cdedd145760aaf42d8c89299b1} 
+IRead\+Only\+List$<$ \mbox{\hyperlink{struct_scott_plot_1_1_coordinates}{Coordinates}} $>$ Scott\+Plot.\+IScatter\+Source.\+Get\+Scatter\+Points (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Return a copy of the data in \doxylink{struct_scott_plot_1_1_coordinates}{Coordinates} format. 
+
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{interface_scott_plot_1_1_i_scatter_source_a75b31c9c93d0f2f18f686b1393fb19af}\index{ScottPlot.IScatterSource@{ScottPlot.IScatterSource}!MaxRenderIndex@{MaxRenderIndex}}
+\index{MaxRenderIndex@{MaxRenderIndex}!ScottPlot.IScatterSource@{ScottPlot.IScatterSource}}
+\doxysubsubsection{\texorpdfstring{MaxRenderIndex}{MaxRenderIndex}}
+{\footnotesize\ttfamily \label{interface_scott_plot_1_1_i_scatter_source_a75b31c9c93d0f2f18f686b1393fb19af} 
+int Scott\+Plot.\+IScatter\+Source.\+Max\+Render\+Index\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{interface_scott_plot_1_1_i_scatter_source_afafdb4fdca43d1483dc6271df805bdda}\index{ScottPlot.IScatterSource@{ScottPlot.IScatterSource}!MinRenderIndex@{MinRenderIndex}}
+\index{MinRenderIndex@{MinRenderIndex}!ScottPlot.IScatterSource@{ScottPlot.IScatterSource}}
+\doxysubsubsection{\texorpdfstring{MinRenderIndex}{MinRenderIndex}}
+{\footnotesize\ttfamily \label{interface_scott_plot_1_1_i_scatter_source_afafdb4fdca43d1483dc6271df805bdda} 
+int Scott\+Plot.\+IScatter\+Source.\+Min\+Render\+Index\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Interfaces/IScatter\+Source.\+cs\end{DoxyCompactItemize}

@@ -1,0 +1,207 @@
+\hypertarget{classScatterGL}{}\doxysection{Scatter\+GL Class Reference}
+\label{classScatterGL}\index{ScatterGL@{ScatterGL}}
+
+
+This plot type uses an Open\+GL shader for rendering.  
+
+
+Inheritance diagram for Scatter\+GL\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classScatterGL}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classScatterGL_a89bc02dea8b9ea8fc0800b3b32ef5fe8}{Scatter\+GL}} (\mbox{\hyperlink{interfaceIScatterSource}{IScatter\+Source}} data, \mbox{\hyperlink{interfaceIPlotControl}{IPlot\+Control}} control)
+\item 
+new void \mbox{\hyperlink{classScatterGL_a3504c9a668d6f60a23c0e4a4cd5c0940}{Render}} (\mbox{\hyperlink{classRenderPack}{Render\+Pack}} rp)
+\begin{DoxyCompactList}\small\item\em Draw the data from this plottable into the data area defined in the \mbox{\hyperlink{classAxes}{Axes}}. By default the surface is already clipped to the data area, but this can be cleared inside the plottable. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classScatterGL_a59f7cc8ba41348833859ade378efb122}{Render}} (SKSurface surface)
+\item 
+void \mbox{\hyperlink{classScatterGL_a6905a28a4325323c2c258362f8d8a2b0}{GLFinish}} ()
+\begin{DoxyCompactList}\small\item\em Used to manually synchronize rendering \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classScatterGL_ae49287f130020bcb0e1863959132dfaa}{Initialize\+GL}} ()
+\item 
+Matrix4d \mbox{\hyperlink{classScatterGL_a70ac8426cf097d3f41e79eadb562adda}{Calc\+Transform}} ()
+\item 
+virtual void \mbox{\hyperlink{classScatterGL_af11c9b70cdc7559b2f0f2786b232ba94}{Render\+With\+Open\+GL}} (SKSurface surface, GRContext context)
+\item 
+void \mbox{\hyperlink{classScatterGL_a6bb7f6628d095a466413a0710d9de1f1}{Render\+Markers}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classScatterGL_a51986e47f398ce793bb4b7a3825e05fe}{Vertex\+Buffer\+Object}}
+\item 
+int \mbox{\hyperlink{classScatterGL_a8e5a588124206d7d0888c7e3bac04b08}{Vertex\+Array\+Object}}
+\item 
+\mbox{\hyperlink{interfaceILinesDrawProgram}{ILines\+Draw\+Program}}? \mbox{\hyperlink{classScatterGL_ac08afa21859edcdc53bb020d49c35a6d}{Lines\+Program}}
+\item 
+\mbox{\hyperlink{interfaceIMarkersDrawProgram}{IMarkers\+Draw\+Program}}? \mbox{\hyperlink{classScatterGL_ad7aac58c262ef9682300db2f52ce9b75}{Marker\+Program}}
+\item 
+double\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classScatterGL_af5c111b3373247418fcdd9c3ea038830}{Vertices}}
+\item 
+readonly int \mbox{\hyperlink{classScatterGL_a4f673f5694592db6760a0d73c73bd9d5}{Vertices\+Count}}
+\item 
+bool \mbox{\hyperlink{classScatterGL_a9be5646e658b8563b87b14d73eb2a0b7}{GLHas\+Been\+Initialized}} = false
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interfaceIPlotControl}{IPlot\+Control}} \mbox{\hyperlink{classScatterGL_acc06da7d797687348d8cef6ba31964eb}{Plot\+Control}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+GLFallback\+Render\+Strategy \mbox{\hyperlink{classScatterGL_a4d89e4e2f1a6c5030a6820b2cdcfd73c}{Fallback}} = GLFallback\+Render\+Strategy.\+Software\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This plot type uses an Open\+GL shader for rendering. 
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classScatterGL_a89bc02dea8b9ea8fc0800b3b32ef5fe8}\label{classScatterGL_a89bc02dea8b9ea8fc0800b3b32ef5fe8}} 
+\index{ScatterGL@{ScatterGL}!ScatterGL@{ScatterGL}}
+\index{ScatterGL@{ScatterGL}!ScatterGL@{ScatterGL}}
+\doxysubsubsection{\texorpdfstring{ScatterGL()}{ScatterGL()}}
+{\footnotesize\ttfamily Scatter\+GL.\+Scatter\+GL (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceIScatterSource}{IScatter\+Source}}}]{data,  }\item[{\mbox{\hyperlink{interfaceIPlotControl}{IPlot\+Control}}}]{control }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classScatterGL_a70ac8426cf097d3f41e79eadb562adda}\label{classScatterGL_a70ac8426cf097d3f41e79eadb562adda}} 
+\index{ScatterGL@{ScatterGL}!CalcTransform@{CalcTransform}}
+\index{CalcTransform@{CalcTransform}!ScatterGL@{ScatterGL}}
+\doxysubsubsection{\texorpdfstring{CalcTransform()}{CalcTransform()}}
+{\footnotesize\ttfamily Matrix4d Scatter\+GL.\+Calc\+Transform (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classScatterGL_a6905a28a4325323c2c258362f8d8a2b0}\label{classScatterGL_a6905a28a4325323c2c258362f8d8a2b0}} 
+\index{ScatterGL@{ScatterGL}!GLFinish@{GLFinish}}
+\index{GLFinish@{GLFinish}!ScatterGL@{ScatterGL}}
+\doxysubsubsection{\texorpdfstring{GLFinish()}{GLFinish()}}
+{\footnotesize\ttfamily void Scatter\+GL.\+GLFinish (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Used to manually synchronize rendering 
+
+
+
+Implements \mbox{\hyperlink{interfaceIPlottableGL_a5ed0d8767b55e19eef959dfdda3e5305}{IPlottable\+GL}}.
+
+\mbox{\Hypertarget{classScatterGL_ae49287f130020bcb0e1863959132dfaa}\label{classScatterGL_ae49287f130020bcb0e1863959132dfaa}} 
+\index{ScatterGL@{ScatterGL}!InitializeGL@{InitializeGL}}
+\index{InitializeGL@{InitializeGL}!ScatterGL@{ScatterGL}}
+\doxysubsubsection{\texorpdfstring{InitializeGL()}{InitializeGL()}}
+{\footnotesize\ttfamily virtual void Scatter\+GL.\+Initialize\+GL (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{classScatterGLCustom_af6d64ad30e88f19a0baa441f71d16a90}{Scatter\+GLCustom}}.
+
+\mbox{\Hypertarget{classScatterGL_a3504c9a668d6f60a23c0e4a4cd5c0940}\label{classScatterGL_a3504c9a668d6f60a23c0e4a4cd5c0940}} 
+\index{ScatterGL@{ScatterGL}!Render@{Render}}
+\index{Render@{Render}!ScatterGL@{ScatterGL}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily new void Scatter\+GL.\+Render (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classRenderPack}{Render\+Pack}}}]{rp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Draw the data from this plottable into the data area defined in the \mbox{\hyperlink{classAxes}{Axes}}. By default the surface is already clipped to the data area, but this can be cleared inside the plottable. 
+
+
+
+Implements \mbox{\hyperlink{interfaceIPlottable_a201a1a236dc718eda93db143a5ade9f8}{IPlottable}}.
+
+\mbox{\Hypertarget{classScatterGL_a59f7cc8ba41348833859ade378efb122}\label{classScatterGL_a59f7cc8ba41348833859ade378efb122}} 
+\index{ScatterGL@{ScatterGL}!Render@{Render}}
+\index{Render@{Render}!ScatterGL@{ScatterGL}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Scatter\+GL.\+Render (\begin{DoxyParamCaption}\item[{SKSurface}]{surface }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classScatterGL_a6bb7f6628d095a466413a0710d9de1f1}\label{classScatterGL_a6bb7f6628d095a466413a0710d9de1f1}} 
+\index{ScatterGL@{ScatterGL}!RenderMarkers@{RenderMarkers}}
+\index{RenderMarkers@{RenderMarkers}!ScatterGL@{ScatterGL}}
+\doxysubsubsection{\texorpdfstring{RenderMarkers()}{RenderMarkers()}}
+{\footnotesize\ttfamily void Scatter\+GL.\+Render\+Markers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classScatterGL_af11c9b70cdc7559b2f0f2786b232ba94}\label{classScatterGL_af11c9b70cdc7559b2f0f2786b232ba94}} 
+\index{ScatterGL@{ScatterGL}!RenderWithOpenGL@{RenderWithOpenGL}}
+\index{RenderWithOpenGL@{RenderWithOpenGL}!ScatterGL@{ScatterGL}}
+\doxysubsubsection{\texorpdfstring{RenderWithOpenGL()}{RenderWithOpenGL()}}
+{\footnotesize\ttfamily virtual void Scatter\+GL.\+Render\+With\+Open\+GL (\begin{DoxyParamCaption}\item[{SKSurface}]{surface,  }\item[{GRContext}]{context }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{classScatterGLCustom_a4e93d3ceb8683d2f7e7f4b64ed8aca35}{Scatter\+GLCustom}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classScatterGL_a9be5646e658b8563b87b14d73eb2a0b7}\label{classScatterGL_a9be5646e658b8563b87b14d73eb2a0b7}} 
+\index{ScatterGL@{ScatterGL}!GLHasBeenInitialized@{GLHasBeenInitialized}}
+\index{GLHasBeenInitialized@{GLHasBeenInitialized}!ScatterGL@{ScatterGL}}
+\doxysubsubsection{\texorpdfstring{GLHasBeenInitialized}{GLHasBeenInitialized}}
+{\footnotesize\ttfamily bool Scatter\+GL.\+GLHas\+Been\+Initialized = false\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classScatterGL_ac08afa21859edcdc53bb020d49c35a6d}\label{classScatterGL_ac08afa21859edcdc53bb020d49c35a6d}} 
+\index{ScatterGL@{ScatterGL}!LinesProgram@{LinesProgram}}
+\index{LinesProgram@{LinesProgram}!ScatterGL@{ScatterGL}}
+\doxysubsubsection{\texorpdfstring{LinesProgram}{LinesProgram}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceILinesDrawProgram}{ILines\+Draw\+Program}}? Scatter\+GL.\+Lines\+Program\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classScatterGL_ad7aac58c262ef9682300db2f52ce9b75}\label{classScatterGL_ad7aac58c262ef9682300db2f52ce9b75}} 
+\index{ScatterGL@{ScatterGL}!MarkerProgram@{MarkerProgram}}
+\index{MarkerProgram@{MarkerProgram}!ScatterGL@{ScatterGL}}
+\doxysubsubsection{\texorpdfstring{MarkerProgram}{MarkerProgram}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceIMarkersDrawProgram}{IMarkers\+Draw\+Program}}? Scatter\+GL.\+Marker\+Program\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classScatterGL_a8e5a588124206d7d0888c7e3bac04b08}\label{classScatterGL_a8e5a588124206d7d0888c7e3bac04b08}} 
+\index{ScatterGL@{ScatterGL}!VertexArrayObject@{VertexArrayObject}}
+\index{VertexArrayObject@{VertexArrayObject}!ScatterGL@{ScatterGL}}
+\doxysubsubsection{\texorpdfstring{VertexArrayObject}{VertexArrayObject}}
+{\footnotesize\ttfamily int Scatter\+GL.\+Vertex\+Array\+Object\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classScatterGL_a51986e47f398ce793bb4b7a3825e05fe}\label{classScatterGL_a51986e47f398ce793bb4b7a3825e05fe}} 
+\index{ScatterGL@{ScatterGL}!VertexBufferObject@{VertexBufferObject}}
+\index{VertexBufferObject@{VertexBufferObject}!ScatterGL@{ScatterGL}}
+\doxysubsubsection{\texorpdfstring{VertexBufferObject}{VertexBufferObject}}
+{\footnotesize\ttfamily int Scatter\+GL.\+Vertex\+Buffer\+Object\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classScatterGL_af5c111b3373247418fcdd9c3ea038830}\label{classScatterGL_af5c111b3373247418fcdd9c3ea038830}} 
+\index{ScatterGL@{ScatterGL}!Vertices@{Vertices}}
+\index{Vertices@{Vertices}!ScatterGL@{ScatterGL}}
+\doxysubsubsection{\texorpdfstring{Vertices}{Vertices}}
+{\footnotesize\ttfamily double \mbox{[}$\,$\mbox{]} Scatter\+GL.\+Vertices\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classScatterGL_a4f673f5694592db6760a0d73c73bd9d5}\label{classScatterGL_a4f673f5694592db6760a0d73c73bd9d5}} 
+\index{ScatterGL@{ScatterGL}!VerticesCount@{VerticesCount}}
+\index{VerticesCount@{VerticesCount}!ScatterGL@{ScatterGL}}
+\doxysubsubsection{\texorpdfstring{VerticesCount}{VerticesCount}}
+{\footnotesize\ttfamily readonly int Scatter\+GL.\+Vertices\+Count\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{classScatterGL_a4d89e4e2f1a6c5030a6820b2cdcfd73c}\label{classScatterGL_a4d89e4e2f1a6c5030a6820b2cdcfd73c}} 
+\index{ScatterGL@{ScatterGL}!Fallback@{Fallback}}
+\index{Fallback@{Fallback}!ScatterGL@{ScatterGL}}
+\doxysubsubsection{\texorpdfstring{Fallback}{Fallback}}
+{\footnotesize\ttfamily GLFallback\+Render\+Strategy Scatter\+GL.\+Fallback = GLFallback\+Render\+Strategy.\+Software\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classScatterGL_acc06da7d797687348d8cef6ba31964eb}\label{classScatterGL_acc06da7d797687348d8cef6ba31964eb}} 
+\index{ScatterGL@{ScatterGL}!PlotControl@{PlotControl}}
+\index{PlotControl@{PlotControl}!ScatterGL@{ScatterGL}}
+\doxysubsubsection{\texorpdfstring{PlotControl}{PlotControl}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceIPlotControl}{IPlot\+Control}} Scatter\+GL.\+Plot\+Control\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5 Controls/\+Scott\+Plot.\+Open\+GL/\+Plottables/Scatter\+GL.\+cs\end{DoxyCompactItemize}

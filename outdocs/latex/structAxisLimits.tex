@@ -1,0 +1,425 @@
+\hypertarget{structAxisLimits}{}\doxysection{Axis\+Limits Struct Reference}
+\label{structAxisLimits}\index{AxisLimits@{AxisLimits}}
+
+
+This object represents the rectangular visible area on a 2D coordinate system. It simply stores a \mbox{\hyperlink{structCoordinateRect}{Coordinate\+Rect}} but has axis-\/related methods to act upon it.  
+
+
+Inheritance diagram for Axis\+Limits\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{structAxisLimits}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structAxisLimits_abc9413fe4069d1a2d82f51767f5df365}{Axis\+Limits}} (\mbox{\hyperlink{structCoordinates}{Coordinates}} coordinates)
+\item 
+\mbox{\hyperlink{structAxisLimits_a09745ee53313c47bfbd4311dadbf6acf}{Axis\+Limits}} (\mbox{\hyperlink{structCoordinateRect}{Coordinate\+Rect}} rect)
+\item 
+\mbox{\hyperlink{structAxisLimits_ab80bef48b04555446d89308807fe268b}{Axis\+Limits}} (double left, double right, double bottom, double top)
+\item 
+\mbox{\hyperlink{structAxisLimits_a1db64c6280ecb0aa0354e648e95c3efe}{Axis\+Limits}} (\mbox{\hyperlink{structCoordinateRange}{Coordinate\+Range}} x\+Range, \mbox{\hyperlink{structCoordinateRange}{Coordinate\+Range}} y\+Range)
+\item 
+\mbox{\hyperlink{structAxisLimits_a894abbcf5b27b34660c05d51d8979a29}{Axis\+Limits}} (\mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$ \mbox{\hyperlink{interfaceIPlottable}{IPlottable}} $>$ plottables)
+\item 
+\mbox{\hyperlink{structAxisLimits_a050f8659ccd2f324d384bdca91836e9e}{Axis\+Limits}} (\mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$ \mbox{\hyperlink{structCoordinates}{Coordinates}} $>$ coordinates)
+\item 
+\mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} \mbox{\hyperlink{structAxisLimits_a5a3662d8285bf59750d28a456426b905}{Inverted\+Vertically}} ()
+\item 
+\mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} \mbox{\hyperlink{structAxisLimits_ac39f7f1481b5ff3d3b66a75d21cf0e29}{Inverted\+Horizontally}} ()
+\item 
+\mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} \mbox{\hyperlink{structAxisLimits_a144f0c81aa470b0f4e49c06a14878753}{Expanded\+To\+Include}} (\mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} other\+Limits)
+\item 
+override string \mbox{\hyperlink{structAxisLimits_a272196d85b1caa751c6d1d7ab03daeb4}{To\+String}} ()
+\item 
+string \mbox{\hyperlink{structAxisLimits_ae6fd7a0d7c9d9d0b151ddebee7e704f8}{To\+String}} (int digits)
+\item 
+\mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} \mbox{\hyperlink{structAxisLimits_a0c6ee3df4569372cd3baebe7e76f51ce}{Expanded}} (double x, double y)
+\begin{DoxyCompactList}\small\item\em Return a new \mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} expanded to include the given {\itshape x}  and {\itshape y} . \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} \mbox{\hyperlink{structAxisLimits_a75569c4b42cff9fb42ff0307c2525152}{Expanded}} (\mbox{\hyperlink{structCoordinates}{Coordinates}} coordinates)
+\begin{DoxyCompactList}\small\item\em Return a new \mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} expanded to include the given {\itshape coordinates} . \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} \mbox{\hyperlink{structAxisLimits_a794ad9e30e39910e80d6adbb05b352d5}{Expanded}} (\mbox{\hyperlink{structCoordinateRect}{Coordinate\+Rect}} rect)
+\begin{DoxyCompactList}\small\item\em Return a new \mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} expanded to include all corners of the given {\itshape rect} . \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} \mbox{\hyperlink{structAxisLimits_aa24685d0b86366cbf7d933a4428f59aa}{Expanded}} (\mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} limits)
+\begin{DoxyCompactList}\small\item\em Return a new \mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} expanded to include the area defined by {\itshape limits} . \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} \mbox{\hyperlink{structAxisLimits_acdb9619798cb225e0aba461fe8cf4d5b}{With\+Pan}} (double deltaX, double deltaY)
+\item 
+\mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} \mbox{\hyperlink{structAxisLimits_a1d8a69beecbf4019ae7ea59e5d9fde04}{With\+Zoom}} (double fracX, double fracY)
+\item 
+\mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} \mbox{\hyperlink{structAxisLimits_a54b06358f7f2f2f8dc4d424fc3415405}{With\+Zoom}} (double fracX, double fracY, double zoom\+ToX, double zoom\+ToY)
+\item 
+bool \mbox{\hyperlink{structAxisLimits_a6690be9ccd4bf12384604bdd6ff1ae9d}{Equals}} (\mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} other)
+\item 
+override bool \mbox{\hyperlink{structAxisLimits_a4d76f552d1b707a4040773c8a5fb727d}{Equals}} (object? obj)
+\item 
+override int \mbox{\hyperlink{structAxisLimits_a28587942df73bdd5cc0ae09384598815}{Get\+Hash\+Code}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} \mbox{\hyperlink{structAxisLimits_a7f4313970b5a390a0b5f49aabe829a61}{From\+Point}} (double x, double y)
+\item 
+static \mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} \mbox{\hyperlink{structAxisLimits_a95389c6e0c372e35823a122a71e15917}{From\+Point}} (\mbox{\hyperlink{structCoordinates}{Coordinates}} c)
+\item 
+static \mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} \mbox{\hyperlink{structAxisLimits_a3455dd463a6079cd8f2069b3653674fd}{Vertical\+Only}} (double y\+Min, double y\+Max)
+\item 
+static \mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} \mbox{\hyperlink{structAxisLimits_a0f9e8c895741aca997bbf7b7f928053d}{Horizontal\+Only}} (double x\+Min, double x\+Max)
+\item 
+static bool \mbox{\hyperlink{structAxisLimits_a33e1b8707976fd2691482679076e6ef3}{operator==}} (\mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} a, \mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} b)
+\item 
+static bool \mbox{\hyperlink{structAxisLimits_a23d3abd35d11c9627af20c522838b6d1}{operator!=}} (\mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} a, \mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} b)
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{structAxisLimits_ad2b291d50c4c10d5cc629eafdf8363c9}{Left}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+double \mbox{\hyperlink{structAxisLimits_a7c4f108983796daed9ca48b04996c47d}{Right}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+double \mbox{\hyperlink{structAxisLimits_ae255ba799be6ba4b46219c1c85ca0925}{Bottom}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+double \mbox{\hyperlink{structAxisLimits_aca6c3f0ac0778ddf4bcf8e51ddbbd80e}{Top}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+double \mbox{\hyperlink{structAxisLimits_ad1e26512e7d3dc676a85f0578bf37e4f}{Horizontal\+Span}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+double \mbox{\hyperlink{structAxisLimits_ad961b9881ca889773e1dcd6632fb312c}{Vertical\+Span}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+double \mbox{\hyperlink{structAxisLimits_a2fa431a25684b86d5a6d8507146464c5}{Horizontal\+Center}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+double \mbox{\hyperlink{structAxisLimits_ae17609b4cc94a2480e965b3799ec16e4}{Vertical\+Center}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{structCoordinates}{Coordinates}} \mbox{\hyperlink{structAxisLimits_a43a3855dcf7dc9fd10b8a9a473c76bf1}{Center}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{structCoordinateRange}{Coordinate\+Range}} \mbox{\hyperlink{structAxisLimits_ad9e0b0d1f12be01f7d1eaa1595923658}{XRange}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{structCoordinateRange}{Coordinate\+Range}} \mbox{\hyperlink{structAxisLimits_a8d4567956d1f9bc512763dd59042cf9d}{YRange}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{structCoordinateRect}{Coordinate\+Rect}} \mbox{\hyperlink{structAxisLimits_a228cea52ef401f5f0810c292e50423cd}{Rect}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+static \mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} \mbox{\hyperlink{structAxisLimits_a55947526e8556dcc2603fe8ceb8e514e}{Default}} = new(-\/10, 10, -\/10, 10)\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+bool \mbox{\hyperlink{structAxisLimits_a5e5635d5824511b744329702d083356f}{Is\+RealX}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+bool \mbox{\hyperlink{structAxisLimits_aded97cc289ac8c191a1567bf8beec432}{Is\+RealY}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+bool \mbox{\hyperlink{structAxisLimits_ac9cacb890dc466e3144cac2aeec10c4e}{Is\+Real}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+bool \mbox{\hyperlink{structAxisLimits_a2bc8aed7c8daa95c38cf0be433c4cbed}{Has\+Area}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+static \mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} \mbox{\hyperlink{structAxisLimits_a08c677db51e6eeb3a93781091c8bf4d0}{No\+Limits}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+static \mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} \mbox{\hyperlink{structAxisLimits_aabeb21c40e8906f476d4a1f5bf4d2706}{Unset}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This object represents the rectangular visible area on a 2D coordinate system. It simply stores a \mbox{\hyperlink{structCoordinateRect}{Coordinate\+Rect}} but has axis-\/related methods to act upon it. 
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structAxisLimits_abc9413fe4069d1a2d82f51767f5df365}\label{structAxisLimits_abc9413fe4069d1a2d82f51767f5df365}} 
+\index{AxisLimits@{AxisLimits}!AxisLimits@{AxisLimits}}
+\index{AxisLimits@{AxisLimits}!AxisLimits@{AxisLimits}}
+\doxysubsubsection{\texorpdfstring{AxisLimits()}{AxisLimits()}\hspace{0.1cm}{\footnotesize\ttfamily [1/6]}}
+{\footnotesize\ttfamily Axis\+Limits.\+Axis\+Limits (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structCoordinates}{Coordinates}}}]{coordinates }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structAxisLimits_a09745ee53313c47bfbd4311dadbf6acf}\label{structAxisLimits_a09745ee53313c47bfbd4311dadbf6acf}} 
+\index{AxisLimits@{AxisLimits}!AxisLimits@{AxisLimits}}
+\index{AxisLimits@{AxisLimits}!AxisLimits@{AxisLimits}}
+\doxysubsubsection{\texorpdfstring{AxisLimits()}{AxisLimits()}\hspace{0.1cm}{\footnotesize\ttfamily [2/6]}}
+{\footnotesize\ttfamily Axis\+Limits.\+Axis\+Limits (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structCoordinateRect}{Coordinate\+Rect}}}]{rect }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structAxisLimits_ab80bef48b04555446d89308807fe268b}\label{structAxisLimits_ab80bef48b04555446d89308807fe268b}} 
+\index{AxisLimits@{AxisLimits}!AxisLimits@{AxisLimits}}
+\index{AxisLimits@{AxisLimits}!AxisLimits@{AxisLimits}}
+\doxysubsubsection{\texorpdfstring{AxisLimits()}{AxisLimits()}\hspace{0.1cm}{\footnotesize\ttfamily [3/6]}}
+{\footnotesize\ttfamily Axis\+Limits.\+Axis\+Limits (\begin{DoxyParamCaption}\item[{double}]{left,  }\item[{double}]{right,  }\item[{double}]{bottom,  }\item[{double}]{top }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structAxisLimits_a1db64c6280ecb0aa0354e648e95c3efe}\label{structAxisLimits_a1db64c6280ecb0aa0354e648e95c3efe}} 
+\index{AxisLimits@{AxisLimits}!AxisLimits@{AxisLimits}}
+\index{AxisLimits@{AxisLimits}!AxisLimits@{AxisLimits}}
+\doxysubsubsection{\texorpdfstring{AxisLimits()}{AxisLimits()}\hspace{0.1cm}{\footnotesize\ttfamily [4/6]}}
+{\footnotesize\ttfamily Axis\+Limits.\+Axis\+Limits (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structCoordinateRange}{Coordinate\+Range}}}]{x\+Range,  }\item[{\mbox{\hyperlink{structCoordinateRange}{Coordinate\+Range}}}]{y\+Range }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structAxisLimits_a894abbcf5b27b34660c05d51d8979a29}\label{structAxisLimits_a894abbcf5b27b34660c05d51d8979a29}} 
+\index{AxisLimits@{AxisLimits}!AxisLimits@{AxisLimits}}
+\index{AxisLimits@{AxisLimits}!AxisLimits@{AxisLimits}}
+\doxysubsubsection{\texorpdfstring{AxisLimits()}{AxisLimits()}\hspace{0.1cm}{\footnotesize\ttfamily [5/6]}}
+{\footnotesize\ttfamily Axis\+Limits.\+Axis\+Limits (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$ \mbox{\hyperlink{interfaceIPlottable}{IPlottable}} $>$}]{plottables }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structAxisLimits_a050f8659ccd2f324d384bdca91836e9e}\label{structAxisLimits_a050f8659ccd2f324d384bdca91836e9e}} 
+\index{AxisLimits@{AxisLimits}!AxisLimits@{AxisLimits}}
+\index{AxisLimits@{AxisLimits}!AxisLimits@{AxisLimits}}
+\doxysubsubsection{\texorpdfstring{AxisLimits()}{AxisLimits()}\hspace{0.1cm}{\footnotesize\ttfamily [6/6]}}
+{\footnotesize\ttfamily Axis\+Limits.\+Axis\+Limits (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$ \mbox{\hyperlink{structCoordinates}{Coordinates}} $>$}]{coordinates }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{structAxisLimits_a6690be9ccd4bf12384604bdd6ff1ae9d}\label{structAxisLimits_a6690be9ccd4bf12384604bdd6ff1ae9d}} 
+\index{AxisLimits@{AxisLimits}!Equals@{Equals}}
+\index{Equals@{Equals}!AxisLimits@{AxisLimits}}
+\doxysubsubsection{\texorpdfstring{Equals()}{Equals()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool Axis\+Limits.\+Equals (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structAxisLimits}{Axis\+Limits}}}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structAxisLimits_a4d76f552d1b707a4040773c8a5fb727d}\label{structAxisLimits_a4d76f552d1b707a4040773c8a5fb727d}} 
+\index{AxisLimits@{AxisLimits}!Equals@{Equals}}
+\index{Equals@{Equals}!AxisLimits@{AxisLimits}}
+\doxysubsubsection{\texorpdfstring{Equals()}{Equals()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily override bool Axis\+Limits.\+Equals (\begin{DoxyParamCaption}\item[{object?}]{obj }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structAxisLimits_aa24685d0b86366cbf7d933a4428f59aa}\label{structAxisLimits_aa24685d0b86366cbf7d933a4428f59aa}} 
+\index{AxisLimits@{AxisLimits}!Expanded@{Expanded}}
+\index{Expanded@{Expanded}!AxisLimits@{AxisLimits}}
+\doxysubsubsection{\texorpdfstring{Expanded()}{Expanded()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} Axis\+Limits.\+Expanded (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structAxisLimits}{Axis\+Limits}}}]{limits }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return a new \mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} expanded to include the area defined by {\itshape limits} . 
+
+\mbox{\Hypertarget{structAxisLimits_a794ad9e30e39910e80d6adbb05b352d5}\label{structAxisLimits_a794ad9e30e39910e80d6adbb05b352d5}} 
+\index{AxisLimits@{AxisLimits}!Expanded@{Expanded}}
+\index{Expanded@{Expanded}!AxisLimits@{AxisLimits}}
+\doxysubsubsection{\texorpdfstring{Expanded()}{Expanded()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} Axis\+Limits.\+Expanded (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structCoordinateRect}{Coordinate\+Rect}}}]{rect }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return a new \mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} expanded to include all corners of the given {\itshape rect} . 
+
+\mbox{\Hypertarget{structAxisLimits_a75569c4b42cff9fb42ff0307c2525152}\label{structAxisLimits_a75569c4b42cff9fb42ff0307c2525152}} 
+\index{AxisLimits@{AxisLimits}!Expanded@{Expanded}}
+\index{Expanded@{Expanded}!AxisLimits@{AxisLimits}}
+\doxysubsubsection{\texorpdfstring{Expanded()}{Expanded()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} Axis\+Limits.\+Expanded (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structCoordinates}{Coordinates}}}]{coordinates }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return a new \mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} expanded to include the given {\itshape coordinates} . 
+
+\mbox{\Hypertarget{structAxisLimits_a0c6ee3df4569372cd3baebe7e76f51ce}\label{structAxisLimits_a0c6ee3df4569372cd3baebe7e76f51ce}} 
+\index{AxisLimits@{AxisLimits}!Expanded@{Expanded}}
+\index{Expanded@{Expanded}!AxisLimits@{AxisLimits}}
+\doxysubsubsection{\texorpdfstring{Expanded()}{Expanded()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} Axis\+Limits.\+Expanded (\begin{DoxyParamCaption}\item[{double}]{x,  }\item[{double}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return a new \mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} expanded to include the given {\itshape x}  and {\itshape y} . 
+
+\mbox{\Hypertarget{structAxisLimits_a144f0c81aa470b0f4e49c06a14878753}\label{structAxisLimits_a144f0c81aa470b0f4e49c06a14878753}} 
+\index{AxisLimits@{AxisLimits}!ExpandedToInclude@{ExpandedToInclude}}
+\index{ExpandedToInclude@{ExpandedToInclude}!AxisLimits@{AxisLimits}}
+\doxysubsubsection{\texorpdfstring{ExpandedToInclude()}{ExpandedToInclude()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} Axis\+Limits.\+Expanded\+To\+Include (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structAxisLimits}{Axis\+Limits}}}]{other\+Limits }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structAxisLimits_a95389c6e0c372e35823a122a71e15917}\label{structAxisLimits_a95389c6e0c372e35823a122a71e15917}} 
+\index{AxisLimits@{AxisLimits}!FromPoint@{FromPoint}}
+\index{FromPoint@{FromPoint}!AxisLimits@{AxisLimits}}
+\doxysubsubsection{\texorpdfstring{FromPoint()}{FromPoint()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} Axis\+Limits.\+From\+Point (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structCoordinates}{Coordinates}}}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{structAxisLimits_a7f4313970b5a390a0b5f49aabe829a61}\label{structAxisLimits_a7f4313970b5a390a0b5f49aabe829a61}} 
+\index{AxisLimits@{AxisLimits}!FromPoint@{FromPoint}}
+\index{FromPoint@{FromPoint}!AxisLimits@{AxisLimits}}
+\doxysubsubsection{\texorpdfstring{FromPoint()}{FromPoint()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} Axis\+Limits.\+From\+Point (\begin{DoxyParamCaption}\item[{double}]{x,  }\item[{double}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{structAxisLimits_a28587942df73bdd5cc0ae09384598815}\label{structAxisLimits_a28587942df73bdd5cc0ae09384598815}} 
+\index{AxisLimits@{AxisLimits}!GetHashCode@{GetHashCode}}
+\index{GetHashCode@{GetHashCode}!AxisLimits@{AxisLimits}}
+\doxysubsubsection{\texorpdfstring{GetHashCode()}{GetHashCode()}}
+{\footnotesize\ttfamily override int Axis\+Limits.\+Get\+Hash\+Code (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structAxisLimits_a0f9e8c895741aca997bbf7b7f928053d}\label{structAxisLimits_a0f9e8c895741aca997bbf7b7f928053d}} 
+\index{AxisLimits@{AxisLimits}!HorizontalOnly@{HorizontalOnly}}
+\index{HorizontalOnly@{HorizontalOnly}!AxisLimits@{AxisLimits}}
+\doxysubsubsection{\texorpdfstring{HorizontalOnly()}{HorizontalOnly()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} Axis\+Limits.\+Horizontal\+Only (\begin{DoxyParamCaption}\item[{double}]{x\+Min,  }\item[{double}]{x\+Max }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{structAxisLimits_ac39f7f1481b5ff3d3b66a75d21cf0e29}\label{structAxisLimits_ac39f7f1481b5ff3d3b66a75d21cf0e29}} 
+\index{AxisLimits@{AxisLimits}!InvertedHorizontally@{InvertedHorizontally}}
+\index{InvertedHorizontally@{InvertedHorizontally}!AxisLimits@{AxisLimits}}
+\doxysubsubsection{\texorpdfstring{InvertedHorizontally()}{InvertedHorizontally()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} Axis\+Limits.\+Inverted\+Horizontally (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{structAxisLimits_a5a3662d8285bf59750d28a456426b905}\label{structAxisLimits_a5a3662d8285bf59750d28a456426b905}} 
+\index{AxisLimits@{AxisLimits}!InvertedVertically@{InvertedVertically}}
+\index{InvertedVertically@{InvertedVertically}!AxisLimits@{AxisLimits}}
+\doxysubsubsection{\texorpdfstring{InvertedVertically()}{InvertedVertically()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} Axis\+Limits.\+Inverted\+Vertically (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{structAxisLimits_a23d3abd35d11c9627af20c522838b6d1}\label{structAxisLimits_a23d3abd35d11c9627af20c522838b6d1}} 
+\index{AxisLimits@{AxisLimits}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!AxisLimits@{AxisLimits}}
+\doxysubsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily static bool Axis\+Limits.\+operator!= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structAxisLimits}{Axis\+Limits}}}]{a,  }\item[{\mbox{\hyperlink{structAxisLimits}{Axis\+Limits}}}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{structAxisLimits_a33e1b8707976fd2691482679076e6ef3}\label{structAxisLimits_a33e1b8707976fd2691482679076e6ef3}} 
+\index{AxisLimits@{AxisLimits}!operator==@{operator==}}
+\index{operator==@{operator==}!AxisLimits@{AxisLimits}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily static bool Axis\+Limits.\+operator== (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structAxisLimits}{Axis\+Limits}}}]{a,  }\item[{\mbox{\hyperlink{structAxisLimits}{Axis\+Limits}}}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{structAxisLimits_a272196d85b1caa751c6d1d7ab03daeb4}\label{structAxisLimits_a272196d85b1caa751c6d1d7ab03daeb4}} 
+\index{AxisLimits@{AxisLimits}!ToString@{ToString}}
+\index{ToString@{ToString}!AxisLimits@{AxisLimits}}
+\doxysubsubsection{\texorpdfstring{ToString()}{ToString()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily override string Axis\+Limits.\+To\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structAxisLimits_ae6fd7a0d7c9d9d0b151ddebee7e704f8}\label{structAxisLimits_ae6fd7a0d7c9d9d0b151ddebee7e704f8}} 
+\index{AxisLimits@{AxisLimits}!ToString@{ToString}}
+\index{ToString@{ToString}!AxisLimits@{AxisLimits}}
+\doxysubsubsection{\texorpdfstring{ToString()}{ToString()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily string Axis\+Limits.\+To\+String (\begin{DoxyParamCaption}\item[{int}]{digits }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structAxisLimits_a3455dd463a6079cd8f2069b3653674fd}\label{structAxisLimits_a3455dd463a6079cd8f2069b3653674fd}} 
+\index{AxisLimits@{AxisLimits}!VerticalOnly@{VerticalOnly}}
+\index{VerticalOnly@{VerticalOnly}!AxisLimits@{AxisLimits}}
+\doxysubsubsection{\texorpdfstring{VerticalOnly()}{VerticalOnly()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} Axis\+Limits.\+Vertical\+Only (\begin{DoxyParamCaption}\item[{double}]{y\+Min,  }\item[{double}]{y\+Max }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{structAxisLimits_acdb9619798cb225e0aba461fe8cf4d5b}\label{structAxisLimits_acdb9619798cb225e0aba461fe8cf4d5b}} 
+\index{AxisLimits@{AxisLimits}!WithPan@{WithPan}}
+\index{WithPan@{WithPan}!AxisLimits@{AxisLimits}}
+\doxysubsubsection{\texorpdfstring{WithPan()}{WithPan()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} Axis\+Limits.\+With\+Pan (\begin{DoxyParamCaption}\item[{double}]{deltaX,  }\item[{double}]{deltaY }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structAxisLimits_a1d8a69beecbf4019ae7ea59e5d9fde04}\label{structAxisLimits_a1d8a69beecbf4019ae7ea59e5d9fde04}} 
+\index{AxisLimits@{AxisLimits}!WithZoom@{WithZoom}}
+\index{WithZoom@{WithZoom}!AxisLimits@{AxisLimits}}
+\doxysubsubsection{\texorpdfstring{WithZoom()}{WithZoom()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} Axis\+Limits.\+With\+Zoom (\begin{DoxyParamCaption}\item[{double}]{fracX,  }\item[{double}]{fracY }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structAxisLimits_a54b06358f7f2f2f8dc4d424fc3415405}\label{structAxisLimits_a54b06358f7f2f2f8dc4d424fc3415405}} 
+\index{AxisLimits@{AxisLimits}!WithZoom@{WithZoom}}
+\index{WithZoom@{WithZoom}!AxisLimits@{AxisLimits}}
+\doxysubsubsection{\texorpdfstring{WithZoom()}{WithZoom()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} Axis\+Limits.\+With\+Zoom (\begin{DoxyParamCaption}\item[{double}]{fracX,  }\item[{double}]{fracY,  }\item[{double}]{zoom\+ToX,  }\item[{double}]{zoom\+ToY }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{structAxisLimits_ae255ba799be6ba4b46219c1c85ca0925}\label{structAxisLimits_ae255ba799be6ba4b46219c1c85ca0925}} 
+\index{AxisLimits@{AxisLimits}!Bottom@{Bottom}}
+\index{Bottom@{Bottom}!AxisLimits@{AxisLimits}}
+\doxysubsubsection{\texorpdfstring{Bottom}{Bottom}}
+{\footnotesize\ttfamily double Axis\+Limits.\+Bottom\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{structAxisLimits_a43a3855dcf7dc9fd10b8a9a473c76bf1}\label{structAxisLimits_a43a3855dcf7dc9fd10b8a9a473c76bf1}} 
+\index{AxisLimits@{AxisLimits}!Center@{Center}}
+\index{Center@{Center}!AxisLimits@{AxisLimits}}
+\doxysubsubsection{\texorpdfstring{Center}{Center}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structCoordinates}{Coordinates}} Axis\+Limits.\+Center\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{structAxisLimits_a55947526e8556dcc2603fe8ceb8e514e}\label{structAxisLimits_a55947526e8556dcc2603fe8ceb8e514e}} 
+\index{AxisLimits@{AxisLimits}!Default@{Default}}
+\index{Default@{Default}!AxisLimits@{AxisLimits}}
+\doxysubsubsection{\texorpdfstring{Default}{Default}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} Axis\+Limits.\+Default = new(-\/10, 10, -\/10, 10)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+\mbox{\Hypertarget{structAxisLimits_a2bc8aed7c8daa95c38cf0be433c4cbed}\label{structAxisLimits_a2bc8aed7c8daa95c38cf0be433c4cbed}} 
+\index{AxisLimits@{AxisLimits}!HasArea@{HasArea}}
+\index{HasArea@{HasArea}!AxisLimits@{AxisLimits}}
+\doxysubsubsection{\texorpdfstring{HasArea}{HasArea}}
+{\footnotesize\ttfamily bool Axis\+Limits.\+Has\+Area\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{structAxisLimits_a2fa431a25684b86d5a6d8507146464c5}\label{structAxisLimits_a2fa431a25684b86d5a6d8507146464c5}} 
+\index{AxisLimits@{AxisLimits}!HorizontalCenter@{HorizontalCenter}}
+\index{HorizontalCenter@{HorizontalCenter}!AxisLimits@{AxisLimits}}
+\doxysubsubsection{\texorpdfstring{HorizontalCenter}{HorizontalCenter}}
+{\footnotesize\ttfamily double Axis\+Limits.\+Horizontal\+Center\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{structAxisLimits_ad1e26512e7d3dc676a85f0578bf37e4f}\label{structAxisLimits_ad1e26512e7d3dc676a85f0578bf37e4f}} 
+\index{AxisLimits@{AxisLimits}!HorizontalSpan@{HorizontalSpan}}
+\index{HorizontalSpan@{HorizontalSpan}!AxisLimits@{AxisLimits}}
+\doxysubsubsection{\texorpdfstring{HorizontalSpan}{HorizontalSpan}}
+{\footnotesize\ttfamily double Axis\+Limits.\+Horizontal\+Span\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{structAxisLimits_ac9cacb890dc466e3144cac2aeec10c4e}\label{structAxisLimits_ac9cacb890dc466e3144cac2aeec10c4e}} 
+\index{AxisLimits@{AxisLimits}!IsReal@{IsReal}}
+\index{IsReal@{IsReal}!AxisLimits@{AxisLimits}}
+\doxysubsubsection{\texorpdfstring{IsReal}{IsReal}}
+{\footnotesize\ttfamily bool Axis\+Limits.\+Is\+Real\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{structAxisLimits_a5e5635d5824511b744329702d083356f}\label{structAxisLimits_a5e5635d5824511b744329702d083356f}} 
+\index{AxisLimits@{AxisLimits}!IsRealX@{IsRealX}}
+\index{IsRealX@{IsRealX}!AxisLimits@{AxisLimits}}
+\doxysubsubsection{\texorpdfstring{IsRealX}{IsRealX}}
+{\footnotesize\ttfamily bool Axis\+Limits.\+Is\+RealX\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{structAxisLimits_aded97cc289ac8c191a1567bf8beec432}\label{structAxisLimits_aded97cc289ac8c191a1567bf8beec432}} 
+\index{AxisLimits@{AxisLimits}!IsRealY@{IsRealY}}
+\index{IsRealY@{IsRealY}!AxisLimits@{AxisLimits}}
+\doxysubsubsection{\texorpdfstring{IsRealY}{IsRealY}}
+{\footnotesize\ttfamily bool Axis\+Limits.\+Is\+RealY\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{structAxisLimits_ad2b291d50c4c10d5cc629eafdf8363c9}\label{structAxisLimits_ad2b291d50c4c10d5cc629eafdf8363c9}} 
+\index{AxisLimits@{AxisLimits}!Left@{Left}}
+\index{Left@{Left}!AxisLimits@{AxisLimits}}
+\doxysubsubsection{\texorpdfstring{Left}{Left}}
+{\footnotesize\ttfamily double Axis\+Limits.\+Left\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{structAxisLimits_a08c677db51e6eeb3a93781091c8bf4d0}\label{structAxisLimits_a08c677db51e6eeb3a93781091c8bf4d0}} 
+\index{AxisLimits@{AxisLimits}!NoLimits@{NoLimits}}
+\index{NoLimits@{NoLimits}!AxisLimits@{AxisLimits}}
+\doxysubsubsection{\texorpdfstring{NoLimits}{NoLimits}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} Axis\+Limits.\+No\+Limits\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+\mbox{\Hypertarget{structAxisLimits_a228cea52ef401f5f0810c292e50423cd}\label{structAxisLimits_a228cea52ef401f5f0810c292e50423cd}} 
+\index{AxisLimits@{AxisLimits}!Rect@{Rect}}
+\index{Rect@{Rect}!AxisLimits@{AxisLimits}}
+\doxysubsubsection{\texorpdfstring{Rect}{Rect}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structCoordinateRect}{Coordinate\+Rect}} Axis\+Limits.\+Rect\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{structAxisLimits_a7c4f108983796daed9ca48b04996c47d}\label{structAxisLimits_a7c4f108983796daed9ca48b04996c47d}} 
+\index{AxisLimits@{AxisLimits}!Right@{Right}}
+\index{Right@{Right}!AxisLimits@{AxisLimits}}
+\doxysubsubsection{\texorpdfstring{Right}{Right}}
+{\footnotesize\ttfamily double Axis\+Limits.\+Right\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{structAxisLimits_aca6c3f0ac0778ddf4bcf8e51ddbbd80e}\label{structAxisLimits_aca6c3f0ac0778ddf4bcf8e51ddbbd80e}} 
+\index{AxisLimits@{AxisLimits}!Top@{Top}}
+\index{Top@{Top}!AxisLimits@{AxisLimits}}
+\doxysubsubsection{\texorpdfstring{Top}{Top}}
+{\footnotesize\ttfamily double Axis\+Limits.\+Top\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{structAxisLimits_aabeb21c40e8906f476d4a1f5bf4d2706}\label{structAxisLimits_aabeb21c40e8906f476d4a1f5bf4d2706}} 
+\index{AxisLimits@{AxisLimits}!Unset@{Unset}}
+\index{Unset@{Unset}!AxisLimits@{AxisLimits}}
+\doxysubsubsection{\texorpdfstring{Unset}{Unset}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} Axis\+Limits.\+Unset\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+\mbox{\Hypertarget{structAxisLimits_ae17609b4cc94a2480e965b3799ec16e4}\label{structAxisLimits_ae17609b4cc94a2480e965b3799ec16e4}} 
+\index{AxisLimits@{AxisLimits}!VerticalCenter@{VerticalCenter}}
+\index{VerticalCenter@{VerticalCenter}!AxisLimits@{AxisLimits}}
+\doxysubsubsection{\texorpdfstring{VerticalCenter}{VerticalCenter}}
+{\footnotesize\ttfamily double Axis\+Limits.\+Vertical\+Center\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{structAxisLimits_ad961b9881ca889773e1dcd6632fb312c}\label{structAxisLimits_ad961b9881ca889773e1dcd6632fb312c}} 
+\index{AxisLimits@{AxisLimits}!VerticalSpan@{VerticalSpan}}
+\index{VerticalSpan@{VerticalSpan}!AxisLimits@{AxisLimits}}
+\doxysubsubsection{\texorpdfstring{VerticalSpan}{VerticalSpan}}
+{\footnotesize\ttfamily double Axis\+Limits.\+Vertical\+Span\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{structAxisLimits_ad9e0b0d1f12be01f7d1eaa1595923658}\label{structAxisLimits_ad9e0b0d1f12be01f7d1eaa1595923658}} 
+\index{AxisLimits@{AxisLimits}!XRange@{XRange}}
+\index{XRange@{XRange}!AxisLimits@{AxisLimits}}
+\doxysubsubsection{\texorpdfstring{XRange}{XRange}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structCoordinateRange}{Coordinate\+Range}} Axis\+Limits.\+XRange\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{structAxisLimits_a8d4567956d1f9bc512763dd59042cf9d}\label{structAxisLimits_a8d4567956d1f9bc512763dd59042cf9d}} 
+\index{AxisLimits@{AxisLimits}!YRange@{YRange}}
+\index{YRange@{YRange}!AxisLimits@{AxisLimits}}
+\doxysubsubsection{\texorpdfstring{YRange}{YRange}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structCoordinateRange}{Coordinate\+Range}} Axis\+Limits.\+YRange\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Primitives/Axis\+Limits.\+cs\end{DoxyCompactItemize}

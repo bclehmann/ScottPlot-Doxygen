@@ -1,0 +1,178 @@
+\doxysection{Scott\+Plot.\+Plottables.\+Horizontal\+Span Class Reference}
+\hypertarget{class_scott_plot_1_1_plottables_1_1_horizontal_span}{}\label{class_scott_plot_1_1_plottables_1_1_horizontal_span}\index{ScottPlot.Plottables.HorizontalSpan@{ScottPlot.Plottables.HorizontalSpan}}
+
+
+A horizontal span marks the full vertical range between two horizontal values.  
+
+
+Inheritance diagram for Scott\+Plot.\+Plottables.\+Horizontal\+Span\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.935484cm]{class_scott_plot_1_1_plottables_1_1_horizontal_span}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override \mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_horizontal_span_a65b649e2105df9e70847a25d40bdc8e0}{Get\+Axis\+Limits}} ()
+\begin{DoxyCompactList}\small\item\em Return the 2D area (in coordinate space) occupied by the data contained in this plottable. \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_horizontal_span_a8fc50bbf6edf62f68552cdfa75c82abb}{Render}} (Render\+Pack rp)
+\begin{DoxyCompactList}\small\item\em Draw the data from this plottable into the data area defined in the \doxylink{class_scott_plot_1_1_axes}{Axes}. By default the surface is already clipped to the data area, but this can be cleared inside the plottable. \end{DoxyCompactList}\item 
+override? \mbox{\hyperlink{class_scott_plot_1_1_axis_span_under_mouse}{Axis\+Span\+Under\+Mouse}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_horizontal_span_ab7686eebeda5d5a6b3c8c98765f35e6a}{Under\+Mouse}} (\mbox{\hyperlink{struct_scott_plot_1_1_coordinate_rect}{Coordinate\+Rect}} rect)
+\item 
+override void \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_horizontal_span_ac3bb5467068104fd0c442af343b4d48e}{Drag\+To}} (\mbox{\hyperlink{class_scott_plot_1_1_axis_span_under_mouse}{Axis\+Span\+Under\+Mouse}} span\+Under\+Mouse, \mbox{\hyperlink{struct_scott_plot_1_1_coordinates}{Coordinates}} mouse\+Now)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_axis_span}{Scott\+Plot.\+Plottables.\+Axis\+Span}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_axis_span_af14dba9da4a5580e7bfa64363cad5ce7}{Get\+Axis\+Limits}} ()
+\begin{DoxyCompactList}\small\item\em Return the 2D area (in coordinate space) occupied by the data contained in this plottable. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_axis_span_ad657fd2def84fb55b7fb8f93e5905642}{Render}} (Render\+Pack rp)
+\begin{DoxyCompactList}\small\item\em Draw the data from this plottable into the data area defined in the \doxylink{class_scott_plot_1_1_axes}{Axes}. By default the surface is already clipped to the data area, but this can be cleared inside the plottable. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_scott_plot_1_1_axis_span_under_mouse}{Axis\+Span\+Under\+Mouse}}? \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_axis_span_ad15751e39469ebb4627705116276ad71}{Under\+Mouse}} (\mbox{\hyperlink{struct_scott_plot_1_1_coordinate_rect}{Coordinate\+Rect}} rect)
+\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_axis_span_a4c2eb6fb49b7c82530a1dbe01d78f7ff}{Drag\+To}} (\mbox{\hyperlink{class_scott_plot_1_1_axis_span_under_mouse}{Axis\+Span\+Under\+Mouse}} start, \mbox{\hyperlink{struct_scott_plot_1_1_coordinates}{Coordinates}} mouse\+Now)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable}{Scott\+Plot.\+IPlottable}}}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_horizontal_span_a60de805ff0dec9db812d49be2b3bfdcf}{X1}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+double \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_horizontal_span_a951c45fa8c835a8b677574a8ea75b44b}{X2}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{namespace_scott_plot_a4f8afc1393f89ce60e775705cbf134d1}{Coordinate\+Range}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_horizontal_span_ab0818b187bc5b8b93fe3d15fe6da67cc}{XRange}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+double \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_horizontal_span_a78e8e51088f748bca6fe4d45e57cf17f}{Left}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+double \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_horizontal_span_a5a6c56ddf56c34fa37208aa36de01ca0}{Right}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_axis_span}{Scott\+Plot.\+Plottables.\+Axis\+Span}}}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_axis_span_ae617a0d7f0777a120a549eb4de418185}{Is\+Visible}} = true\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Toggles whether this plottable is shown and contributes to the automatic axis limit detection. The calling method will check this variable (it does not need to be checked inside the Render method). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{interface_scott_plot_1_1_i_axes}{IAxes}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_axis_span_a2f7e924a2aa5c09a1043682eb67d8498}{Axes}} = new \mbox{\hyperlink{class_scott_plot_1_1_axes}{Axes}}()\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em This object performs coordinate/pixel translation at render time based on the latest data area. It stores the axes to use for this plottable and also the data area (in pixels) updated just before each render. If this object is null it will be constructed using the default X and Y axes at render time. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_scott_plot_1_1_label_style}{Label\+Style}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_axis_span_a80ad0c664fe6fe889dbe469fc08b2908}{Label}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+string \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_axis_span_a9a08299f75f17516b90af4310f452119}{Legend\+Text}} = string.\+Empty\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em If populated, this text appears in the legend. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_scott_plot_1_1_line_style}{Line\+Style}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_axis_span_aac0dbc4fc653031c2b043cec317b74f5}{Line\+Style}} = new()\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_axis_span_a30c806a4e31dec00c3635329a35265f6}{Line\+Width}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{namespace_scott_plot_a625917eb44cadb4de90991e525db6ab5}{Line\+Pattern}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_axis_span_ab714862cf83cafa9366e532b4dfcbd77}{Line\+Pattern}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_axis_span_a2070f5b785f6efb61f2c9a8ba3f4fc53}{Line\+Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{class_scott_plot_1_1_fill_style}{Fill\+Style}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_axis_span_a236925543dd16c9f709e9e77d2e7530b}{Fill\+Style}} = new()\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_axis_span_a8599a9dea6de16fab28f101c47eaba48}{Fill\+Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_axis_span_a5bbdcf7a05bba77214242638facc9703}{Fill\+Hatch\+Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{interface_scott_plot_1_1_i_hatch}{IHatch}}? \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_axis_span_aff09fe53f98c43f1a979578410989334}{Fill\+Hatch}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{class_i_enumerable}{IEnumerable}}$<$ \mbox{\hyperlink{class_scott_plot_1_1_legend_item}{Legend\+Item}} $>$ \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_axis_span_ae5f760e1424148e9756f49b6dd481aed}{Legend\+Items}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Items which will appear in the legend. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_axis_span_abbc575e32a43e66d9fea463dd35fe226}{Enable\+Autoscale}} = true\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+bool \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_axis_span_aa93bde7d562235f43dea65e839b67e63}{Is\+Draggable}} = false\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+bool \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_axis_span_ab0cb94c7c0cac10ed5ca37081803a7ad}{Is\+Resizable}} = false\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable}{Scott\+Plot.\+IPlottable}}}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{interface_scott_plot_1_1_i_has_line}{Scott\+Plot.\+IHas\+Line}}}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{interface_scott_plot_1_1_i_has_fill}{Scott\+Plot.\+IHas\+Fill}}}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{interface_scott_plot_1_1_i_has_legend_text}{Scott\+Plot.\+IHas\+Legend\+Text}}}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_axis_span}{Scott\+Plot.\+Plottables.\+Axis\+Span}}}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_axis_span_ac06a2e50854a58bb78a0c83f7a6159a7}{Render}} (Render\+Pack rp, \mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect}{Pixel\+Rect}} rect)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A horizontal span marks the full vertical range between two horizontal values. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_horizontal_span_ac3bb5467068104fd0c442af343b4d48e}\index{ScottPlot.Plottables.HorizontalSpan@{ScottPlot.Plottables.HorizontalSpan}!DragTo@{DragTo}}
+\index{DragTo@{DragTo}!ScottPlot.Plottables.HorizontalSpan@{ScottPlot.Plottables.HorizontalSpan}}
+\doxysubsubsection{\texorpdfstring{DragTo()}{DragTo()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_horizontal_span_ac3bb5467068104fd0c442af343b4d48e} 
+override void Scott\+Plot.\+Plottables.\+Horizontal\+Span.\+Drag\+To (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_scott_plot_1_1_axis_span_under_mouse}{Axis\+Span\+Under\+Mouse}}}]{span\+Under\+Mouse}{, }\item[{\mbox{\hyperlink{struct_scott_plot_1_1_coordinates}{Coordinates}}}]{mouse\+Now}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_horizontal_span_a65b649e2105df9e70847a25d40bdc8e0}\index{ScottPlot.Plottables.HorizontalSpan@{ScottPlot.Plottables.HorizontalSpan}!GetAxisLimits@{GetAxisLimits}}
+\index{GetAxisLimits@{GetAxisLimits}!ScottPlot.Plottables.HorizontalSpan@{ScottPlot.Plottables.HorizontalSpan}}
+\doxysubsubsection{\texorpdfstring{GetAxisLimits()}{GetAxisLimits()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_horizontal_span_a65b649e2105df9e70847a25d40bdc8e0} 
+override \mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}} Scott\+Plot.\+Plottables.\+Horizontal\+Span.\+Get\+Axis\+Limits (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return the 2D area (in coordinate space) occupied by the data contained in this plottable. 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable_a2e455cf76f9e8bc3187900b1a90487c3}{Scott\+Plot.\+IPlottable}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_horizontal_span_a8fc50bbf6edf62f68552cdfa75c82abb}\index{ScottPlot.Plottables.HorizontalSpan@{ScottPlot.Plottables.HorizontalSpan}!Render@{Render}}
+\index{Render@{Render}!ScottPlot.Plottables.HorizontalSpan@{ScottPlot.Plottables.HorizontalSpan}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_horizontal_span_a8fc50bbf6edf62f68552cdfa75c82abb} 
+override void Scott\+Plot.\+Plottables.\+Horizontal\+Span.\+Render (\begin{DoxyParamCaption}\item[{Render\+Pack}]{rp}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Draw the data from this plottable into the data area defined in the \doxylink{class_scott_plot_1_1_axes}{Axes}. By default the surface is already clipped to the data area, but this can be cleared inside the plottable. 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable_a11d2487f1d7628e019a09748d876c289}{Scott\+Plot.\+IPlottable}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_horizontal_span_ab7686eebeda5d5a6b3c8c98765f35e6a}\index{ScottPlot.Plottables.HorizontalSpan@{ScottPlot.Plottables.HorizontalSpan}!UnderMouse@{UnderMouse}}
+\index{UnderMouse@{UnderMouse}!ScottPlot.Plottables.HorizontalSpan@{ScottPlot.Plottables.HorizontalSpan}}
+\doxysubsubsection{\texorpdfstring{UnderMouse()}{UnderMouse()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_horizontal_span_ab7686eebeda5d5a6b3c8c98765f35e6a} 
+override? \mbox{\hyperlink{class_scott_plot_1_1_axis_span_under_mouse}{Axis\+Span\+Under\+Mouse}} Scott\+Plot.\+Plottables.\+Horizontal\+Span.\+Under\+Mouse (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_scott_plot_1_1_coordinate_rect}{Coordinate\+Rect}}}]{rect}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_horizontal_span_a78e8e51088f748bca6fe4d45e57cf17f}\index{ScottPlot.Plottables.HorizontalSpan@{ScottPlot.Plottables.HorizontalSpan}!Left@{Left}}
+\index{Left@{Left}!ScottPlot.Plottables.HorizontalSpan@{ScottPlot.Plottables.HorizontalSpan}}
+\doxysubsubsection{\texorpdfstring{Left}{Left}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_horizontal_span_a78e8e51088f748bca6fe4d45e57cf17f} 
+double Scott\+Plot.\+Plottables.\+Horizontal\+Span.\+Left\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_horizontal_span_a5a6c56ddf56c34fa37208aa36de01ca0}\index{ScottPlot.Plottables.HorizontalSpan@{ScottPlot.Plottables.HorizontalSpan}!Right@{Right}}
+\index{Right@{Right}!ScottPlot.Plottables.HorizontalSpan@{ScottPlot.Plottables.HorizontalSpan}}
+\doxysubsubsection{\texorpdfstring{Right}{Right}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_horizontal_span_a5a6c56ddf56c34fa37208aa36de01ca0} 
+double Scott\+Plot.\+Plottables.\+Horizontal\+Span.\+Right\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_horizontal_span_a60de805ff0dec9db812d49be2b3bfdcf}\index{ScottPlot.Plottables.HorizontalSpan@{ScottPlot.Plottables.HorizontalSpan}!X1@{X1}}
+\index{X1@{X1}!ScottPlot.Plottables.HorizontalSpan@{ScottPlot.Plottables.HorizontalSpan}}
+\doxysubsubsection{\texorpdfstring{X1}{X1}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_horizontal_span_a60de805ff0dec9db812d49be2b3bfdcf} 
+double Scott\+Plot.\+Plottables.\+Horizontal\+Span.\+X1\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_horizontal_span_a951c45fa8c835a8b677574a8ea75b44b}\index{ScottPlot.Plottables.HorizontalSpan@{ScottPlot.Plottables.HorizontalSpan}!X2@{X2}}
+\index{X2@{X2}!ScottPlot.Plottables.HorizontalSpan@{ScottPlot.Plottables.HorizontalSpan}}
+\doxysubsubsection{\texorpdfstring{X2}{X2}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_horizontal_span_a951c45fa8c835a8b677574a8ea75b44b} 
+double Scott\+Plot.\+Plottables.\+Horizontal\+Span.\+X2\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_horizontal_span_ab0818b187bc5b8b93fe3d15fe6da67cc}\index{ScottPlot.Plottables.HorizontalSpan@{ScottPlot.Plottables.HorizontalSpan}!XRange@{XRange}}
+\index{XRange@{XRange}!ScottPlot.Plottables.HorizontalSpan@{ScottPlot.Plottables.HorizontalSpan}}
+\doxysubsubsection{\texorpdfstring{XRange}{XRange}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_horizontal_span_ab0818b187bc5b8b93fe3d15fe6da67cc} 
+\mbox{\hyperlink{namespace_scott_plot_a4f8afc1393f89ce60e775705cbf134d1}{Coordinate\+Range}} Scott\+Plot.\+Plottables.\+Horizontal\+Span.\+XRange\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Plottables/Horizontal\+Span.\+cs\end{DoxyCompactItemize}

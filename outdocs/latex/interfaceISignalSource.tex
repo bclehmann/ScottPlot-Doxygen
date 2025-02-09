@@ -1,0 +1,219 @@
+\hypertarget{interfaceISignalSource}{}\doxysection{ISignal\+Source Interface Reference}
+\label{interfaceISignalSource}\index{ISignalSource@{ISignalSource}}
+
+
+This interface is used by plottables to access data while rendering. This interface describes Y data sampled along an X axis at a fixed period.  
+
+
+Inheritance diagram for ISignal\+Source\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.365854cm]{interfaceISignalSource}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structPixelColumn}{Pixel\+Column}} \mbox{\hyperlink{interfaceISignalSource_a25d479c1a4ecc702a4f0c5afca89f6b6}{Get\+Pixel\+Column}} (\mbox{\hyperlink{interfaceIAxes}{IAxes}} axes, int x\+Pixel\+Index)
+\begin{DoxyCompactList}\small\item\em Returns range information about the data at a specific pixel location \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{interfaceISignalSource_adf0f633ae00d308649ce1a1674f593be}{Get\+Index}} (double x, bool clamp)
+\begin{DoxyCompactList}\small\item\em Returns the predicted index for the data point nearest a given X position. If clamped, the returned index will be clamped between 0 and Length -\/ 1. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{interfaceISignalSource_a05717bcb975006e0f6149b6ddcfb894f}{GetX}} (int index)
+\begin{DoxyCompactList}\small\item\em Returns the X position for a given index. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{interfaceISignalSource_a8a7a12dfb4bc99b7432bdd6383daf81f}{GetY}} (int index)
+\begin{DoxyCompactList}\small\item\em Returns the Y position for a given index. \end{DoxyCompactList}\item 
+IRead\+Only\+List$<$ double $>$ \mbox{\hyperlink{interfaceISignalSource_ad3b8b4b3d40a211415217f3c51a1d78f}{Get\+Ys}} ()
+\begin{DoxyCompactList}\small\item\em Return an object for working with all Y values. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$ double $>$ \mbox{\hyperlink{interfaceISignalSource_a946340ff7bed92681aa1f38e7a6d35ef}{Get\+Ys}} (int index1, int index2)
+\begin{DoxyCompactList}\small\item\em Y values between a range of indexes (inclusive). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structCoordinateRange}{Coordinate\+Range}} \mbox{\hyperlink{interfaceISignalSource_a9eac44d327b768fa39e7ef1578a8ebe6}{Get\+LimitsX}} ()
+\item 
+\mbox{\hyperlink{structCoordinateRange}{Coordinate\+Range}} \mbox{\hyperlink{interfaceISignalSource_a02b6b9acc34ec1eed94daf4b196b4307}{Get\+LimitsY}} ()
+\item 
+\mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} \mbox{\hyperlink{interfaceISignalSource_a36c7d43450b35d6f3fbade011d35edcf}{Get\+Limits}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{interfaceISignalSource_ab4ece16e1d0e8beb563722f030de9fef}{Period}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em X distance between Y points \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{interfaceISignalSource_a21d756ff99f2fb17f3883260ecabbcf5}{XOffset}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em X position of the first data point \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{interfaceISignalSource_ac3123d50c9f632ba01a1b0d011e4c4f0}{YOffset}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Shift Y position of all values by this amount \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{interfaceISignalSource_a0c01698bb4c7e9b820c1de3b79400ab4}{YScale}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Multiply Y values by this scale factor (before applying offset) \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{interfaceISignalSource_a5d46e8a544d6bc1368757fa7ee7e69d0}{Maximum\+Index}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Do not display data above this index \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{interfaceISignalSource_ab0395e417ec66707854a9f5281cb8d98}{Minimum\+Index}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Do not display data below this index \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This interface is used by plottables to access data while rendering. This interface describes Y data sampled along an X axis at a fixed period. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{interfaceISignalSource_adf0f633ae00d308649ce1a1674f593be}\label{interfaceISignalSource_adf0f633ae00d308649ce1a1674f593be}} 
+\index{ISignalSource@{ISignalSource}!GetIndex@{GetIndex}}
+\index{GetIndex@{GetIndex}!ISignalSource@{ISignalSource}}
+\doxysubsubsection{\texorpdfstring{GetIndex()}{GetIndex()}}
+{\footnotesize\ttfamily int ISignal\+Source.\+Get\+Index (\begin{DoxyParamCaption}\item[{double}]{x,  }\item[{bool}]{clamp }\end{DoxyParamCaption})}
+
+
+
+Returns the predicted index for the data point nearest a given X position. If clamped, the returned index will be clamped between 0 and Length -\/ 1. 
+
+\mbox{\Hypertarget{interfaceISignalSource_a36c7d43450b35d6f3fbade011d35edcf}\label{interfaceISignalSource_a36c7d43450b35d6f3fbade011d35edcf}} 
+\index{ISignalSource@{ISignalSource}!GetLimits@{GetLimits}}
+\index{GetLimits@{GetLimits}!ISignalSource@{ISignalSource}}
+\doxysubsubsection{\texorpdfstring{GetLimits()}{GetLimits()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} ISignal\+Source.\+Get\+Limits (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{interfaceISignalSource_a9eac44d327b768fa39e7ef1578a8ebe6}\label{interfaceISignalSource_a9eac44d327b768fa39e7ef1578a8ebe6}} 
+\index{ISignalSource@{ISignalSource}!GetLimitsX@{GetLimitsX}}
+\index{GetLimitsX@{GetLimitsX}!ISignalSource@{ISignalSource}}
+\doxysubsubsection{\texorpdfstring{GetLimitsX()}{GetLimitsX()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structCoordinateRange}{Coordinate\+Range}} ISignal\+Source.\+Get\+LimitsX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{interfaceISignalSource_a02b6b9acc34ec1eed94daf4b196b4307}\label{interfaceISignalSource_a02b6b9acc34ec1eed94daf4b196b4307}} 
+\index{ISignalSource@{ISignalSource}!GetLimitsY@{GetLimitsY}}
+\index{GetLimitsY@{GetLimitsY}!ISignalSource@{ISignalSource}}
+\doxysubsubsection{\texorpdfstring{GetLimitsY()}{GetLimitsY()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structCoordinateRange}{Coordinate\+Range}} ISignal\+Source.\+Get\+LimitsY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{interfaceISignalSource_a25d479c1a4ecc702a4f0c5afca89f6b6}\label{interfaceISignalSource_a25d479c1a4ecc702a4f0c5afca89f6b6}} 
+\index{ISignalSource@{ISignalSource}!GetPixelColumn@{GetPixelColumn}}
+\index{GetPixelColumn@{GetPixelColumn}!ISignalSource@{ISignalSource}}
+\doxysubsubsection{\texorpdfstring{GetPixelColumn()}{GetPixelColumn()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structPixelColumn}{Pixel\+Column}} ISignal\+Source.\+Get\+Pixel\+Column (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceIAxes}{IAxes}}}]{axes,  }\item[{int}]{x\+Pixel\+Index }\end{DoxyParamCaption})}
+
+
+
+Returns range information about the data at a specific pixel location 
+
+
+
+Implemented in \mbox{\hyperlink{classSignalSourceGenericList_aa8e936d990683a9716a5c7f6b0f99a48}{Signal\+Source\+Generic\+List$<$ T $>$}}, \mbox{\hyperlink{classSignalSourceGenericArray_a85e0d358b870badc06f52be7ef7673bb}{Signal\+Source\+Generic\+Array$<$ T $>$}}, \mbox{\hyperlink{classSignalSourceDouble_aa0e5fd2041ce457bb07bfc87473560e8}{Signal\+Source\+Double}}, and \mbox{\hyperlink{classFastSignalSourceDouble_aa10e6428d9012a131a579d90d08d9706}{Fast\+Signal\+Source\+Double}}.
+
+\mbox{\Hypertarget{interfaceISignalSource_a05717bcb975006e0f6149b6ddcfb894f}\label{interfaceISignalSource_a05717bcb975006e0f6149b6ddcfb894f}} 
+\index{ISignalSource@{ISignalSource}!GetX@{GetX}}
+\index{GetX@{GetX}!ISignalSource@{ISignalSource}}
+\doxysubsubsection{\texorpdfstring{GetX()}{GetX()}}
+{\footnotesize\ttfamily double ISignal\+Source.\+GetX (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})}
+
+
+
+Returns the X position for a given index. 
+
+\mbox{\Hypertarget{interfaceISignalSource_a8a7a12dfb4bc99b7432bdd6383daf81f}\label{interfaceISignalSource_a8a7a12dfb4bc99b7432bdd6383daf81f}} 
+\index{ISignalSource@{ISignalSource}!GetY@{GetY}}
+\index{GetY@{GetY}!ISignalSource@{ISignalSource}}
+\doxysubsubsection{\texorpdfstring{GetY()}{GetY()}}
+{\footnotesize\ttfamily double ISignal\+Source.\+GetY (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})}
+
+
+
+Returns the Y position for a given index. 
+
+
+
+Implemented in \mbox{\hyperlink{classSignalSourceGenericList_a19760649abb63a0ee77e13d9ac7d7c33}{Signal\+Source\+Generic\+List$<$ T $>$}}, \mbox{\hyperlink{classSignalSourceGenericArray_ac8b358304ad5da1d647816f69a597b5a}{Signal\+Source\+Generic\+Array$<$ T $>$}}, \mbox{\hyperlink{classSignalSourceDouble_ad1e8b0aeff0dab86ef868ec95aa3ff2f}{Signal\+Source\+Double}}, and \mbox{\hyperlink{classFastSignalSourceDouble_a531acda6682303320d3f5b3c8dbf490f}{Fast\+Signal\+Source\+Double}}.
+
+\mbox{\Hypertarget{interfaceISignalSource_ad3b8b4b3d40a211415217f3c51a1d78f}\label{interfaceISignalSource_ad3b8b4b3d40a211415217f3c51a1d78f}} 
+\index{ISignalSource@{ISignalSource}!GetYs@{GetYs}}
+\index{GetYs@{GetYs}!ISignalSource@{ISignalSource}}
+\doxysubsubsection{\texorpdfstring{GetYs()}{GetYs()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily IRead\+Only\+List$<$double$>$ ISignal\+Source.\+Get\+Ys (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Return an object for working with all Y values. 
+
+
+
+Implemented in \mbox{\hyperlink{classSignalSourceGenericList_a12e5fe634fd187ff1fe593d9d916faba}{Signal\+Source\+Generic\+List$<$ T $>$}}, \mbox{\hyperlink{classSignalSourceGenericArray_aef713d1585930888441e60bc4c9c849a}{Signal\+Source\+Generic\+Array$<$ T $>$}}, \mbox{\hyperlink{classSignalSourceDouble_a85af793eb9ba4b7aab39a01d59e91004}{Signal\+Source\+Double}}, and \mbox{\hyperlink{classFastSignalSourceDouble_ada94c1531076fc3653bc3c5ac81c1ac4}{Fast\+Signal\+Source\+Double}}.
+
+\mbox{\Hypertarget{interfaceISignalSource_a946340ff7bed92681aa1f38e7a6d35ef}\label{interfaceISignalSource_a946340ff7bed92681aa1f38e7a6d35ef}} 
+\index{ISignalSource@{ISignalSource}!GetYs@{GetYs}}
+\index{GetYs@{GetYs}!ISignalSource@{ISignalSource}}
+\doxysubsubsection{\texorpdfstring{GetYs()}{GetYs()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$double$>$ ISignal\+Source.\+Get\+Ys (\begin{DoxyParamCaption}\item[{int}]{index1,  }\item[{int}]{index2 }\end{DoxyParamCaption})}
+
+
+
+Y values between a range of indexes (inclusive). 
+
+
+
+Implemented in \mbox{\hyperlink{classSignalSourceGenericList_a441be9e4272fb3a89e5ffb8b0ba37d4b}{Signal\+Source\+Generic\+List$<$ T $>$}}, \mbox{\hyperlink{classSignalSourceGenericArray_a7af0f6f6fb47961bcaeb99f17025d75e}{Signal\+Source\+Generic\+Array$<$ T $>$}}, \mbox{\hyperlink{classSignalSourceDouble_aee50dacea0ca37459ce259c74554851c}{Signal\+Source\+Double}}, and \mbox{\hyperlink{classFastSignalSourceDouble_a3739794105c230e4ae0c0e40fcf92463}{Fast\+Signal\+Source\+Double}}.
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{interfaceISignalSource_a5d46e8a544d6bc1368757fa7ee7e69d0}\label{interfaceISignalSource_a5d46e8a544d6bc1368757fa7ee7e69d0}} 
+\index{ISignalSource@{ISignalSource}!MaximumIndex@{MaximumIndex}}
+\index{MaximumIndex@{MaximumIndex}!ISignalSource@{ISignalSource}}
+\doxysubsubsection{\texorpdfstring{MaximumIndex}{MaximumIndex}}
+{\footnotesize\ttfamily int ISignal\+Source.\+Maximum\+Index\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Do not display data above this index 
+
+\mbox{\Hypertarget{interfaceISignalSource_ab0395e417ec66707854a9f5281cb8d98}\label{interfaceISignalSource_ab0395e417ec66707854a9f5281cb8d98}} 
+\index{ISignalSource@{ISignalSource}!MinimumIndex@{MinimumIndex}}
+\index{MinimumIndex@{MinimumIndex}!ISignalSource@{ISignalSource}}
+\doxysubsubsection{\texorpdfstring{MinimumIndex}{MinimumIndex}}
+{\footnotesize\ttfamily int ISignal\+Source.\+Minimum\+Index\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Do not display data below this index 
+
+\mbox{\Hypertarget{interfaceISignalSource_ab4ece16e1d0e8beb563722f030de9fef}\label{interfaceISignalSource_ab4ece16e1d0e8beb563722f030de9fef}} 
+\index{ISignalSource@{ISignalSource}!Period@{Period}}
+\index{Period@{Period}!ISignalSource@{ISignalSource}}
+\doxysubsubsection{\texorpdfstring{Period}{Period}}
+{\footnotesize\ttfamily double ISignal\+Source.\+Period\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+X distance between Y points 
+
+\mbox{\Hypertarget{interfaceISignalSource_a21d756ff99f2fb17f3883260ecabbcf5}\label{interfaceISignalSource_a21d756ff99f2fb17f3883260ecabbcf5}} 
+\index{ISignalSource@{ISignalSource}!XOffset@{XOffset}}
+\index{XOffset@{XOffset}!ISignalSource@{ISignalSource}}
+\doxysubsubsection{\texorpdfstring{XOffset}{XOffset}}
+{\footnotesize\ttfamily double ISignal\+Source.\+XOffset\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+X position of the first data point 
+
+\mbox{\Hypertarget{interfaceISignalSource_ac3123d50c9f632ba01a1b0d011e4c4f0}\label{interfaceISignalSource_ac3123d50c9f632ba01a1b0d011e4c4f0}} 
+\index{ISignalSource@{ISignalSource}!YOffset@{YOffset}}
+\index{YOffset@{YOffset}!ISignalSource@{ISignalSource}}
+\doxysubsubsection{\texorpdfstring{YOffset}{YOffset}}
+{\footnotesize\ttfamily double ISignal\+Source.\+YOffset\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Shift Y position of all values by this amount 
+
+\mbox{\Hypertarget{interfaceISignalSource_a0c01698bb4c7e9b820c1de3b79400ab4}\label{interfaceISignalSource_a0c01698bb4c7e9b820c1de3b79400ab4}} 
+\index{ISignalSource@{ISignalSource}!YScale@{YScale}}
+\index{YScale@{YScale}!ISignalSource@{ISignalSource}}
+\doxysubsubsection{\texorpdfstring{YScale}{YScale}}
+{\footnotesize\ttfamily double ISignal\+Source.\+YScale\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Multiply Y values by this scale factor (before applying offset) 
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Interfaces/ISignal\+Source.\+cs\end{DoxyCompactItemize}

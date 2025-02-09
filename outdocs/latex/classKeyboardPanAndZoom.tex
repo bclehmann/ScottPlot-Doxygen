@@ -1,0 +1,149 @@
+\hypertarget{classKeyboardPanAndZoom}{}\doxysection{Keyboard\+Pan\+And\+Zoom Class Reference}
+\label{classKeyboardPanAndZoom}\index{KeyboardPanAndZoom@{KeyboardPanAndZoom}}
+Inheritance diagram for Keyboard\+Pan\+And\+Zoom\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classKeyboardPanAndZoom}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structResponseInfo}{Response\+Info}} \mbox{\hyperlink{classKeyboardPanAndZoom_ab51ddfa3478a2f27315b389f5d60d829}{Execute}} (\mbox{\hyperlink{classPlot}{Plot}} plot, \mbox{\hyperlink{interfaceIUserAction}{IUser\+Action}} user\+Input, \mbox{\hyperlink{classKeyboardState}{Keyboard\+State}} keys)
+\begin{DoxyCompactList}\small\item\em Perform the given action on the specified plot and return a result indicating what to do next. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structKey}{Key}} \mbox{\hyperlink{classKeyboardPanAndZoom_a8b178edde684dc545c1f3156f90a6ba8}{Pan\+Left\+Key}} = Standard\+Keys.\+Left\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{structKey}{Key}} \mbox{\hyperlink{classKeyboardPanAndZoom_a64513b4462f2bb25d9e51d45e26d4b65}{Pan\+Right\+Key}} = Standard\+Keys.\+Right\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{structKey}{Key}} \mbox{\hyperlink{classKeyboardPanAndZoom_a6b226e2ecf7fd6f9c9908d4f97047493}{Pan\+Down\+Key}} = Standard\+Keys.\+Down\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{structKey}{Key}} \mbox{\hyperlink{classKeyboardPanAndZoom_a7701148c5c7ad57b0b6d1fd3dc2d77aa}{Pan\+Up\+Key}} = Standard\+Keys.\+Up\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{structKey}{Key}} \mbox{\hyperlink{classKeyboardPanAndZoom_a86d8e2623c2f19a34815cf47ca29a299}{Zoom\+Modifier\+Key}} = Standard\+Keys.\+Control\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em When this key is held, pan actions will zoom instead \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structKey}{Key}} \mbox{\hyperlink{classKeyboardPanAndZoom_acade4d4cae377afe6c37885381e884e4}{Large\+Step\+Key}} = Standard\+Keys.\+Shift\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em When this key is held, panning will occur in larger steps \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structKey}{Key}} \mbox{\hyperlink{classKeyboardPanAndZoom_afbb5558c68b1d8c835c1e06edc35730a}{Fine\+Step\+Key}} = Standard\+Keys.\+Alt\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em When this key is held, panning will occur in single pixel steps \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classKeyboardPanAndZoom_a6f9a40b3ce7db28ae37473ee999e6eec}{Step\+Distance}} = 20\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{classKeyboardPanAndZoom_a65c52ed4cf883454c741dc076ae2a8e6}{Large\+Step\+Distance}} = 100\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{classKeyboardPanAndZoom_a125191285224a8f4fba9731806188f79}{Fine\+Step\+Distance}} = 1\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+double \mbox{\hyperlink{classKeyboardPanAndZoom_af53963c8a5b87acc27c0c634371275a8}{Delta\+Zoom\+In}} = 0.\+85f\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+double \mbox{\hyperlink{classKeyboardPanAndZoom_aa25b25ddf09761849a03cd658430e4d0}{Delta\+Zoom\+Out}} = 1.\+15f\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classKeyboardPanAndZoom_ab51ddfa3478a2f27315b389f5d60d829}\label{classKeyboardPanAndZoom_ab51ddfa3478a2f27315b389f5d60d829}} 
+\index{KeyboardPanAndZoom@{KeyboardPanAndZoom}!Execute@{Execute}}
+\index{Execute@{Execute}!KeyboardPanAndZoom@{KeyboardPanAndZoom}}
+\doxysubsubsection{\texorpdfstring{Execute()}{Execute()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structResponseInfo}{Response\+Info}} Keyboard\+Pan\+And\+Zoom.\+Execute (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPlot}{Plot}}}]{plot,  }\item[{\mbox{\hyperlink{interfaceIUserAction}{IUser\+Action}}}]{user\+Actions,  }\item[{\mbox{\hyperlink{classKeyboardState}{Keyboard\+State}}}]{keys }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Perform the given action on the specified plot and return a result indicating what to do next. 
+
+
+
+Implements \mbox{\hyperlink{interfaceIUserActionResponse_af521a5ad4b74ca1d30e032dbdb420a46}{IUser\+Action\+Response}}.
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{classKeyboardPanAndZoom_af53963c8a5b87acc27c0c634371275a8}\label{classKeyboardPanAndZoom_af53963c8a5b87acc27c0c634371275a8}} 
+\index{KeyboardPanAndZoom@{KeyboardPanAndZoom}!DeltaZoomIn@{DeltaZoomIn}}
+\index{DeltaZoomIn@{DeltaZoomIn}!KeyboardPanAndZoom@{KeyboardPanAndZoom}}
+\doxysubsubsection{\texorpdfstring{DeltaZoomIn}{DeltaZoomIn}}
+{\footnotesize\ttfamily double Keyboard\+Pan\+And\+Zoom.\+Delta\+Zoom\+In = 0.\+85f\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classKeyboardPanAndZoom_aa25b25ddf09761849a03cd658430e4d0}\label{classKeyboardPanAndZoom_aa25b25ddf09761849a03cd658430e4d0}} 
+\index{KeyboardPanAndZoom@{KeyboardPanAndZoom}!DeltaZoomOut@{DeltaZoomOut}}
+\index{DeltaZoomOut@{DeltaZoomOut}!KeyboardPanAndZoom@{KeyboardPanAndZoom}}
+\doxysubsubsection{\texorpdfstring{DeltaZoomOut}{DeltaZoomOut}}
+{\footnotesize\ttfamily double Keyboard\+Pan\+And\+Zoom.\+Delta\+Zoom\+Out = 1.\+15f\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classKeyboardPanAndZoom_a125191285224a8f4fba9731806188f79}\label{classKeyboardPanAndZoom_a125191285224a8f4fba9731806188f79}} 
+\index{KeyboardPanAndZoom@{KeyboardPanAndZoom}!FineStepDistance@{FineStepDistance}}
+\index{FineStepDistance@{FineStepDistance}!KeyboardPanAndZoom@{KeyboardPanAndZoom}}
+\doxysubsubsection{\texorpdfstring{FineStepDistance}{FineStepDistance}}
+{\footnotesize\ttfamily float Keyboard\+Pan\+And\+Zoom.\+Fine\+Step\+Distance = 1\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classKeyboardPanAndZoom_afbb5558c68b1d8c835c1e06edc35730a}\label{classKeyboardPanAndZoom_afbb5558c68b1d8c835c1e06edc35730a}} 
+\index{KeyboardPanAndZoom@{KeyboardPanAndZoom}!FineStepKey@{FineStepKey}}
+\index{FineStepKey@{FineStepKey}!KeyboardPanAndZoom@{KeyboardPanAndZoom}}
+\doxysubsubsection{\texorpdfstring{FineStepKey}{FineStepKey}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structKey}{Key}} Keyboard\+Pan\+And\+Zoom.\+Fine\+Step\+Key = Standard\+Keys.\+Alt\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+When this key is held, panning will occur in single pixel steps 
+
+\mbox{\Hypertarget{classKeyboardPanAndZoom_a65c52ed4cf883454c741dc076ae2a8e6}\label{classKeyboardPanAndZoom_a65c52ed4cf883454c741dc076ae2a8e6}} 
+\index{KeyboardPanAndZoom@{KeyboardPanAndZoom}!LargeStepDistance@{LargeStepDistance}}
+\index{LargeStepDistance@{LargeStepDistance}!KeyboardPanAndZoom@{KeyboardPanAndZoom}}
+\doxysubsubsection{\texorpdfstring{LargeStepDistance}{LargeStepDistance}}
+{\footnotesize\ttfamily float Keyboard\+Pan\+And\+Zoom.\+Large\+Step\+Distance = 100\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classKeyboardPanAndZoom_acade4d4cae377afe6c37885381e884e4}\label{classKeyboardPanAndZoom_acade4d4cae377afe6c37885381e884e4}} 
+\index{KeyboardPanAndZoom@{KeyboardPanAndZoom}!LargeStepKey@{LargeStepKey}}
+\index{LargeStepKey@{LargeStepKey}!KeyboardPanAndZoom@{KeyboardPanAndZoom}}
+\doxysubsubsection{\texorpdfstring{LargeStepKey}{LargeStepKey}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structKey}{Key}} Keyboard\+Pan\+And\+Zoom.\+Large\+Step\+Key = Standard\+Keys.\+Shift\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+When this key is held, panning will occur in larger steps 
+
+\mbox{\Hypertarget{classKeyboardPanAndZoom_a6b226e2ecf7fd6f9c9908d4f97047493}\label{classKeyboardPanAndZoom_a6b226e2ecf7fd6f9c9908d4f97047493}} 
+\index{KeyboardPanAndZoom@{KeyboardPanAndZoom}!PanDownKey@{PanDownKey}}
+\index{PanDownKey@{PanDownKey}!KeyboardPanAndZoom@{KeyboardPanAndZoom}}
+\doxysubsubsection{\texorpdfstring{PanDownKey}{PanDownKey}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structKey}{Key}} Keyboard\+Pan\+And\+Zoom.\+Pan\+Down\+Key = Standard\+Keys.\+Down\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classKeyboardPanAndZoom_a8b178edde684dc545c1f3156f90a6ba8}\label{classKeyboardPanAndZoom_a8b178edde684dc545c1f3156f90a6ba8}} 
+\index{KeyboardPanAndZoom@{KeyboardPanAndZoom}!PanLeftKey@{PanLeftKey}}
+\index{PanLeftKey@{PanLeftKey}!KeyboardPanAndZoom@{KeyboardPanAndZoom}}
+\doxysubsubsection{\texorpdfstring{PanLeftKey}{PanLeftKey}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structKey}{Key}} Keyboard\+Pan\+And\+Zoom.\+Pan\+Left\+Key = Standard\+Keys.\+Left\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classKeyboardPanAndZoom_a64513b4462f2bb25d9e51d45e26d4b65}\label{classKeyboardPanAndZoom_a64513b4462f2bb25d9e51d45e26d4b65}} 
+\index{KeyboardPanAndZoom@{KeyboardPanAndZoom}!PanRightKey@{PanRightKey}}
+\index{PanRightKey@{PanRightKey}!KeyboardPanAndZoom@{KeyboardPanAndZoom}}
+\doxysubsubsection{\texorpdfstring{PanRightKey}{PanRightKey}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structKey}{Key}} Keyboard\+Pan\+And\+Zoom.\+Pan\+Right\+Key = Standard\+Keys.\+Right\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classKeyboardPanAndZoom_a7701148c5c7ad57b0b6d1fd3dc2d77aa}\label{classKeyboardPanAndZoom_a7701148c5c7ad57b0b6d1fd3dc2d77aa}} 
+\index{KeyboardPanAndZoom@{KeyboardPanAndZoom}!PanUpKey@{PanUpKey}}
+\index{PanUpKey@{PanUpKey}!KeyboardPanAndZoom@{KeyboardPanAndZoom}}
+\doxysubsubsection{\texorpdfstring{PanUpKey}{PanUpKey}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structKey}{Key}} Keyboard\+Pan\+And\+Zoom.\+Pan\+Up\+Key = Standard\+Keys.\+Up\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classKeyboardPanAndZoom_a6f9a40b3ce7db28ae37473ee999e6eec}\label{classKeyboardPanAndZoom_a6f9a40b3ce7db28ae37473ee999e6eec}} 
+\index{KeyboardPanAndZoom@{KeyboardPanAndZoom}!StepDistance@{StepDistance}}
+\index{StepDistance@{StepDistance}!KeyboardPanAndZoom@{KeyboardPanAndZoom}}
+\doxysubsubsection{\texorpdfstring{StepDistance}{StepDistance}}
+{\footnotesize\ttfamily float Keyboard\+Pan\+And\+Zoom.\+Step\+Distance = 20\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classKeyboardPanAndZoom_a86d8e2623c2f19a34815cf47ca29a299}\label{classKeyboardPanAndZoom_a86d8e2623c2f19a34815cf47ca29a299}} 
+\index{KeyboardPanAndZoom@{KeyboardPanAndZoom}!ZoomModifierKey@{ZoomModifierKey}}
+\index{ZoomModifierKey@{ZoomModifierKey}!KeyboardPanAndZoom@{KeyboardPanAndZoom}}
+\doxysubsubsection{\texorpdfstring{ZoomModifierKey}{ZoomModifierKey}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structKey}{Key}} Keyboard\+Pan\+And\+Zoom.\+Zoom\+Modifier\+Key = Standard\+Keys.\+Control\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+When this key is held, pan actions will zoom instead 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Interactivity/\+User\+Action\+Responses/Keyboard\+Pan\+And\+Zoom.\+cs\end{DoxyCompactItemize}

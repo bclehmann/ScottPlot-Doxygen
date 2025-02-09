@@ -1,0 +1,189 @@
+\hypertarget{classLineStyle}{}\doxysection{Line\+Style Class Reference}
+\label{classLineStyle}\index{LineStyle@{LineStyle}}
+
+
+This configuration object (reference type) permanently lives inside objects which require styling. It is recommended to use this object as an init-\/only property.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classLineStyle_a1eb611a5806408822e95587d3eb4e12a}{Render}} (SKCanvas canvas, \mbox{\hyperlink{structPixel}{Pixel}}\mbox{[}$\,$\mbox{]} starts, \mbox{\hyperlink{structPixel}{Pixel}}\mbox{[}$\,$\mbox{]} ends, SKPaint paint)
+\item 
+void \mbox{\hyperlink{classLineStyle_a21261b5fc5073a9cfa4d53bfbfa626a8}{Render}} (SKCanvas canvas, \mbox{\hyperlink{structPixelLine}{Pixel\+Line}}\mbox{[}$\,$\mbox{]} lines, SKPaint paint)
+\item 
+void \mbox{\hyperlink{classLineStyle_a7365f4f0810e99ae02bcef3286e3b4e4}{Render}} (SKCanvas canvas, \mbox{\hyperlink{structPixelLine}{Pixel\+Line}} line, SKPaint paint)
+\item 
+void \mbox{\hyperlink{classLineStyle_a592338eb32f1f268b0b0e5c6422c0cfe}{Render}} (SKCanvas canvas, \mbox{\hyperlink{structPixelRect}{Pixel\+Rect}} rect, SKPaint paint)
+\item 
+void \mbox{\hyperlink{classLineStyle_aaf15668182114848af169b84f9459d21}{Render}} (SKCanvas canvas, SKPath path, SKPaint paint)
+\item 
+void \mbox{\hyperlink{classLineStyle_aa8fcd40f24d74de0ea3854c7f67bbb73}{Render}} (SKCanvas canvas, SKPaint paint, \mbox{\hyperlink{structPixelLine}{Pixel\+Line}} line)
+\item 
+void \mbox{\hyperlink{classLineStyle_a06ceeb72f00ccc184333f96d58d4a554}{Apply\+To\+Paint}} (SKPaint paint)
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{classLineStyle_ad9ee8827ebade92a3c0ea33822942570}{Width}} = 0\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Width of the line (in pixels) \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classLineStyle_a2a65c16aa36802317fa809c94740a7fd}{Hairline}} = false\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em If enabled, \mbox{\hyperlink{classLineStyle_ad9ee8827ebade92a3c0ea33822942570}{Width}} is ignored and lines are rendered as a single pixel (regardless of scale factor) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structColor}{Color}} \mbox{\hyperlink{classLineStyle_a9a08635dfae8ca7fb1adb6522c96c4ce}{Color}} = \mbox{\hyperlink{structColors_a6a4f09e77ec6d0ef4c08348eb2e21714}{Colors.\+Black}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+Line\+Pattern \mbox{\hyperlink{classLineStyle_aeb3d19cf77ee2c2b406f65ce25ad08dd}{Pattern}} = Line\+Pattern.\+Solid\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+bool \mbox{\hyperlink{classLineStyle_ad30b3bc319e2a459c9665cc203909663}{Is\+Visible}} = true\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+bool \mbox{\hyperlink{classLineStyle_a8cc4317e0936fe2662872f7b97653966}{Anti\+Alias}} = true\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+bool \mbox{\hyperlink{classLineStyle_a317c03a1eb6f4674bdd25904a1bf0bb3}{Rounded}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+SKStroke\+Cap \mbox{\hyperlink{classLineStyle_ab8ecae3f379eadc93a3e6f158adee6a7}{Stroke\+Cap}} = SKStroke\+Cap.\+Butt\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+SKStroke\+Join \mbox{\hyperlink{classLineStyle_a8b224e33435191ba03772188e262b5db}{Stroke\+Join}} = SKStroke\+Join.\+Miter\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{classLineStyle_a28724f3bb9d076ef00ca8d2596121913}{Stroke\+Miter}} = 4\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+static \mbox{\hyperlink{classLineStyle}{Line\+Style}} \mbox{\hyperlink{classLineStyle_a8e6425e997debe86e64eda1b21a2d473}{None}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+bool \mbox{\hyperlink{classLineStyle_a8041072a7faa2697098319f61a57644e}{Can\+Be\+Rendered}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This configuration object (reference type) permanently lives inside objects which require styling. It is recommended to use this object as an init-\/only property. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classLineStyle_a06ceeb72f00ccc184333f96d58d4a554}\label{classLineStyle_a06ceeb72f00ccc184333f96d58d4a554}} 
+\index{LineStyle@{LineStyle}!ApplyToPaint@{ApplyToPaint}}
+\index{ApplyToPaint@{ApplyToPaint}!LineStyle@{LineStyle}}
+\doxysubsubsection{\texorpdfstring{ApplyToPaint()}{ApplyToPaint()}}
+{\footnotesize\ttfamily void Line\+Style.\+Apply\+To\+Paint (\begin{DoxyParamCaption}\item[{SKPaint}]{paint }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classLineStyle_a1eb611a5806408822e95587d3eb4e12a}\label{classLineStyle_a1eb611a5806408822e95587d3eb4e12a}} 
+\index{LineStyle@{LineStyle}!Render@{Render}}
+\index{Render@{Render}!LineStyle@{LineStyle}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}\hspace{0.1cm}{\footnotesize\ttfamily [1/6]}}
+{\footnotesize\ttfamily void Line\+Style.\+Render (\begin{DoxyParamCaption}\item[{SKCanvas}]{canvas,  }\item[{\mbox{\hyperlink{structPixel}{Pixel}}\mbox{[}$\,$\mbox{]}}]{starts,  }\item[{\mbox{\hyperlink{structPixel}{Pixel}}\mbox{[}$\,$\mbox{]}}]{ends,  }\item[{SKPaint}]{paint }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classLineStyle_a7365f4f0810e99ae02bcef3286e3b4e4}\label{classLineStyle_a7365f4f0810e99ae02bcef3286e3b4e4}} 
+\index{LineStyle@{LineStyle}!Render@{Render}}
+\index{Render@{Render}!LineStyle@{LineStyle}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}\hspace{0.1cm}{\footnotesize\ttfamily [2/6]}}
+{\footnotesize\ttfamily void Line\+Style.\+Render (\begin{DoxyParamCaption}\item[{SKCanvas}]{canvas,  }\item[{\mbox{\hyperlink{structPixelLine}{Pixel\+Line}}}]{line,  }\item[{SKPaint}]{paint }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classLineStyle_a21261b5fc5073a9cfa4d53bfbfa626a8}\label{classLineStyle_a21261b5fc5073a9cfa4d53bfbfa626a8}} 
+\index{LineStyle@{LineStyle}!Render@{Render}}
+\index{Render@{Render}!LineStyle@{LineStyle}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}\hspace{0.1cm}{\footnotesize\ttfamily [3/6]}}
+{\footnotesize\ttfamily void Line\+Style.\+Render (\begin{DoxyParamCaption}\item[{SKCanvas}]{canvas,  }\item[{\mbox{\hyperlink{structPixelLine}{Pixel\+Line}}\mbox{[}$\,$\mbox{]}}]{lines,  }\item[{SKPaint}]{paint }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classLineStyle_a592338eb32f1f268b0b0e5c6422c0cfe}\label{classLineStyle_a592338eb32f1f268b0b0e5c6422c0cfe}} 
+\index{LineStyle@{LineStyle}!Render@{Render}}
+\index{Render@{Render}!LineStyle@{LineStyle}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}\hspace{0.1cm}{\footnotesize\ttfamily [4/6]}}
+{\footnotesize\ttfamily void Line\+Style.\+Render (\begin{DoxyParamCaption}\item[{SKCanvas}]{canvas,  }\item[{\mbox{\hyperlink{structPixelRect}{Pixel\+Rect}}}]{rect,  }\item[{SKPaint}]{paint }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classLineStyle_aa8fcd40f24d74de0ea3854c7f67bbb73}\label{classLineStyle_aa8fcd40f24d74de0ea3854c7f67bbb73}} 
+\index{LineStyle@{LineStyle}!Render@{Render}}
+\index{Render@{Render}!LineStyle@{LineStyle}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}\hspace{0.1cm}{\footnotesize\ttfamily [5/6]}}
+{\footnotesize\ttfamily void Line\+Style.\+Render (\begin{DoxyParamCaption}\item[{SKCanvas}]{canvas,  }\item[{SKPaint}]{paint,  }\item[{\mbox{\hyperlink{structPixelLine}{Pixel\+Line}}}]{line }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classLineStyle_aaf15668182114848af169b84f9459d21}\label{classLineStyle_aaf15668182114848af169b84f9459d21}} 
+\index{LineStyle@{LineStyle}!Render@{Render}}
+\index{Render@{Render}!LineStyle@{LineStyle}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}\hspace{0.1cm}{\footnotesize\ttfamily [6/6]}}
+{\footnotesize\ttfamily void Line\+Style.\+Render (\begin{DoxyParamCaption}\item[{SKCanvas}]{canvas,  }\item[{SKPath}]{path,  }\item[{SKPaint}]{paint }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{classLineStyle_a8cc4317e0936fe2662872f7b97653966}\label{classLineStyle_a8cc4317e0936fe2662872f7b97653966}} 
+\index{LineStyle@{LineStyle}!AntiAlias@{AntiAlias}}
+\index{AntiAlias@{AntiAlias}!LineStyle@{LineStyle}}
+\doxysubsubsection{\texorpdfstring{AntiAlias}{AntiAlias}}
+{\footnotesize\ttfamily bool Line\+Style.\+Anti\+Alias = true\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classLineStyle_a8041072a7faa2697098319f61a57644e}\label{classLineStyle_a8041072a7faa2697098319f61a57644e}} 
+\index{LineStyle@{LineStyle}!CanBeRendered@{CanBeRendered}}
+\index{CanBeRendered@{CanBeRendered}!LineStyle@{LineStyle}}
+\doxysubsubsection{\texorpdfstring{CanBeRendered}{CanBeRendered}}
+{\footnotesize\ttfamily bool Line\+Style.\+Can\+Be\+Rendered\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{classLineStyle_a9a08635dfae8ca7fb1adb6522c96c4ce}\label{classLineStyle_a9a08635dfae8ca7fb1adb6522c96c4ce}} 
+\index{LineStyle@{LineStyle}!Color@{Color}}
+\index{Color@{Color}!LineStyle@{LineStyle}}
+\doxysubsubsection{\texorpdfstring{Color}{Color}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structColor}{Color}} Line\+Style.\+Color = \mbox{\hyperlink{structColors_a6a4f09e77ec6d0ef4c08348eb2e21714}{Colors.\+Black}}\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classLineStyle_a2a65c16aa36802317fa809c94740a7fd}\label{classLineStyle_a2a65c16aa36802317fa809c94740a7fd}} 
+\index{LineStyle@{LineStyle}!Hairline@{Hairline}}
+\index{Hairline@{Hairline}!LineStyle@{LineStyle}}
+\doxysubsubsection{\texorpdfstring{Hairline}{Hairline}}
+{\footnotesize\ttfamily bool Line\+Style.\+Hairline = false\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+If enabled, \mbox{\hyperlink{classLineStyle_ad9ee8827ebade92a3c0ea33822942570}{Width}} is ignored and lines are rendered as a single pixel (regardless of scale factor) 
+
+\mbox{\Hypertarget{classLineStyle_ad30b3bc319e2a459c9665cc203909663}\label{classLineStyle_ad30b3bc319e2a459c9665cc203909663}} 
+\index{LineStyle@{LineStyle}!IsVisible@{IsVisible}}
+\index{IsVisible@{IsVisible}!LineStyle@{LineStyle}}
+\doxysubsubsection{\texorpdfstring{IsVisible}{IsVisible}}
+{\footnotesize\ttfamily bool Line\+Style.\+Is\+Visible = true\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classLineStyle_a8e6425e997debe86e64eda1b21a2d473}\label{classLineStyle_a8e6425e997debe86e64eda1b21a2d473}} 
+\index{LineStyle@{LineStyle}!None@{None}}
+\index{None@{None}!LineStyle@{LineStyle}}
+\doxysubsubsection{\texorpdfstring{None}{None}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classLineStyle}{Line\+Style}} Line\+Style.\+None\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+\mbox{\Hypertarget{classLineStyle_aeb3d19cf77ee2c2b406f65ce25ad08dd}\label{classLineStyle_aeb3d19cf77ee2c2b406f65ce25ad08dd}} 
+\index{LineStyle@{LineStyle}!Pattern@{Pattern}}
+\index{Pattern@{Pattern}!LineStyle@{LineStyle}}
+\doxysubsubsection{\texorpdfstring{Pattern}{Pattern}}
+{\footnotesize\ttfamily Line\+Pattern Line\+Style.\+Pattern = Line\+Pattern.\+Solid\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classLineStyle_a317c03a1eb6f4674bdd25904a1bf0bb3}\label{classLineStyle_a317c03a1eb6f4674bdd25904a1bf0bb3}} 
+\index{LineStyle@{LineStyle}!Rounded@{Rounded}}
+\index{Rounded@{Rounded}!LineStyle@{LineStyle}}
+\doxysubsubsection{\texorpdfstring{Rounded}{Rounded}}
+{\footnotesize\ttfamily bool Line\+Style.\+Rounded\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classLineStyle_ab8ecae3f379eadc93a3e6f158adee6a7}\label{classLineStyle_ab8ecae3f379eadc93a3e6f158adee6a7}} 
+\index{LineStyle@{LineStyle}!StrokeCap@{StrokeCap}}
+\index{StrokeCap@{StrokeCap}!LineStyle@{LineStyle}}
+\doxysubsubsection{\texorpdfstring{StrokeCap}{StrokeCap}}
+{\footnotesize\ttfamily SKStroke\+Cap Line\+Style.\+Stroke\+Cap = SKStroke\+Cap.\+Butt\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classLineStyle_a8b224e33435191ba03772188e262b5db}\label{classLineStyle_a8b224e33435191ba03772188e262b5db}} 
+\index{LineStyle@{LineStyle}!StrokeJoin@{StrokeJoin}}
+\index{StrokeJoin@{StrokeJoin}!LineStyle@{LineStyle}}
+\doxysubsubsection{\texorpdfstring{StrokeJoin}{StrokeJoin}}
+{\footnotesize\ttfamily SKStroke\+Join Line\+Style.\+Stroke\+Join = SKStroke\+Join.\+Miter\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classLineStyle_a28724f3bb9d076ef00ca8d2596121913}\label{classLineStyle_a28724f3bb9d076ef00ca8d2596121913}} 
+\index{LineStyle@{LineStyle}!StrokeMiter@{StrokeMiter}}
+\index{StrokeMiter@{StrokeMiter}!LineStyle@{LineStyle}}
+\doxysubsubsection{\texorpdfstring{StrokeMiter}{StrokeMiter}}
+{\footnotesize\ttfamily float Line\+Style.\+Stroke\+Miter = 4\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classLineStyle_ad9ee8827ebade92a3c0ea33822942570}\label{classLineStyle_ad9ee8827ebade92a3c0ea33822942570}} 
+\index{LineStyle@{LineStyle}!Width@{Width}}
+\index{Width@{Width}!LineStyle@{LineStyle}}
+\doxysubsubsection{\texorpdfstring{Width}{Width}}
+{\footnotesize\ttfamily float Line\+Style.\+Width = 0\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Width of the line (in pixels) 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Primitives/Line\+Style.\+cs\end{DoxyCompactItemize}

@@ -1,0 +1,261 @@
+\hypertarget{classInteraction}{}\doxysection{Interaction Class Reference}
+\label{classInteraction}\index{Interaction@{Interaction}}
+
+
+This class contains logic to perform plot manipulations in response to UI actions. To customize how user inputs are interpreted, inherit and override functions in this class. To customize behavior of actions, replace properties of \mbox{\hyperlink{classInteraction_a7e00e6da534004ed32147695413c4591}{Actions}} with custom delegates. To customize UI inputs, assign desired button and key properties of \mbox{\hyperlink{classInteraction_aa9f42ce0622349d6e03e3410a4fccc3b}{Inputs}}.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classInteraction_a0303fc813bb70d0d07a1cdda7404b4f4}{Is\+Dragging\+Mouse}} (\mbox{\hyperlink{structPixel}{Pixel}} pos)
+\item 
+void \mbox{\hyperlink{classInteraction_aa9af092d4de5a6d252a2dfbfd28df5d8}{Disable}} ()
+\begin{DoxyCompactList}\small\item\em Disable all mouse interactivity \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classInteraction_a947885cfa439788af412c4284d292a5b}{Enable}} ()
+\begin{DoxyCompactList}\small\item\em Enable mouse interactivity using the default mouse actions \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classInteraction_a8396ff4cd46994bfa284c45f276a67de}{Enable}} (\mbox{\hyperlink{classPlotActions}{Plot\+Actions}} custom\+Actions)
+\begin{DoxyCompactList}\small\item\em Enable mouse interactivity using custom mouse actions \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structCoordinates}{Coordinates}} \mbox{\hyperlink{classInteraction_ad08204cae9d4aad6a7820f0abedb8684}{Get\+Mouse\+Coordinates}} (\mbox{\hyperlink{interfaceIXAxis}{IXAxis}}? x\+Axis=null, \mbox{\hyperlink{interfaceIYAxis}{IYAxis}}? y\+Axis=null)
+\begin{DoxyCompactList}\small\item\em Return the last observed location of the mouse in coordinate units \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classInteraction_a0327a1cf10519e19b3232dc19c17c109}{On\+Mouse\+Move}} (\mbox{\hyperlink{structPixel}{Pixel}} new\+Position)
+\item 
+virtual void \mbox{\hyperlink{classInteraction_a2faac849a4c1c54a7e35700e69183a6e}{Key\+Up}} (\mbox{\hyperlink{structKey}{Key}} key)
+\item 
+virtual void \mbox{\hyperlink{classInteraction_a211118c77edc117502892d894b2d7502}{Key\+Down}} (\mbox{\hyperlink{structKey}{Key}} key)
+\item 
+virtual void \mbox{\hyperlink{classInteraction_a9b39fe5b2bdb2c3c0c7e6389ab46e6d7}{Mouse\+Down}} (\mbox{\hyperlink{structPixel}{Pixel}} position, \mbox{\hyperlink{structMouseButton}{Mouse\+Button}} button)
+\item 
+virtual void \mbox{\hyperlink{classInteraction_a2e1672b5d56cf5c5542679b0d8904bfa}{Mouse\+Up}} (\mbox{\hyperlink{structPixel}{Pixel}} position, \mbox{\hyperlink{structMouseButton}{Mouse\+Button}} button)
+\item 
+virtual void \mbox{\hyperlink{classInteraction_a66ceeaa463c99516abde5af917d204e5}{Double\+Click}} ()
+\item 
+virtual void \mbox{\hyperlink{classInteraction_aa43d81ce7bf92afca215b11ee617ee24}{Mouse\+Wheel\+Vertical}} (\mbox{\hyperlink{structPixel}{Pixel}} pixel, float delta)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classInputBindings}{Input\+Bindings}} \mbox{\hyperlink{classInteraction_aa9f42ce0622349d6e03e3410a4fccc3b}{Inputs}} = \mbox{\hyperlink{classInputBindings_a1a8dab71e0095da799d012c8e5da3df0}{Input\+Bindings.\+Standard}}()
+\begin{DoxyCompactList}\small\item\em Buttons and keys in this object can be overwritten to customize actions for specific user input events. (e.\+g., make left-\/click-\/drag zoom instead of pan) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPlotActions}{Plot\+Actions}} \mbox{\hyperlink{classInteraction_a7e00e6da534004ed32147695413c4591}{Actions}} = \mbox{\hyperlink{classPlotActions_af763913b52bb009c47a3288dfa9377a4}{Plot\+Actions.\+Standard}}()
+\begin{DoxyCompactList}\small\item\em Delegates in this object can be overwritten with custom functions that manipulate the plot. (e.\+g., changing the sensitivity of click-\/drag-\/zooming) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classInteraction_aaea05a4b61066f7e8981e4a89aaaf743}{Mouse\+Drag}} (\mbox{\hyperlink{structPixel}{Pixel}} from, \mbox{\hyperlink{structPixel}{Pixel}} to, \mbox{\hyperlink{structMouseButton}{Mouse\+Button}} button, \mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$ \mbox{\hyperlink{structKey}{Key}} $>$ keys, \mbox{\hyperlink{classMultiAxisLimitManager}{Multi\+Axis\+Limit\+Manager}} start)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+readonly \mbox{\hyperlink{classKeyboardState}{Keyboard\+State}} \mbox{\hyperlink{classInteraction_afaa69b719083d7347ccfe8aacfe65532}{Keyboard}} = new()
+\item 
+readonly \mbox{\hyperlink{classMouseState}{Mouse\+State}} \mbox{\hyperlink{classInteraction_a210790b51511a123458967cb1e3b8e53}{Mouse}} = new()
+\item 
+bool \mbox{\hyperlink{classInteraction_a411ed4c11be5a57ebaad08b757027df0}{Is\+Zooming\+Rectangle}} = false
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interfaceIPlotControl}{IPlot\+Control}} \mbox{\hyperlink{classInteraction_a4e1193e49319be51e85f710ced93541d}{control}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{interfaceIPlotControl}{IPlot\+Control}} \mbox{\hyperlink{classInteraction_ad325cbba786c515296e9cbbb33103196}{Plot\+Control}} = \mbox{\hyperlink{classInteraction_a4e1193e49319be51e85f710ced93541d}{control}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+bool \mbox{\hyperlink{classInteraction_aa6ecf3589a857830165365f8ef9e2a98}{Is\+Enabled}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Controls whether events will be processed by this class. Setting this resets this event processor to use the default interactions. Enabling this disables the newer \mbox{\hyperlink{interfaceIPlotControl_a21049e00d17f6a449c20fa2dad6082e4}{IPlot\+Control.\+User\+Input\+Processor}}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classInteraction_a044fab20f61d5e71df4ed52d794183c7}{LockX}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+bool \mbox{\hyperlink{classInteraction_a9fe86201b2e664018bc90ac3516a7920}{LockY}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+bool \mbox{\hyperlink{classInteraction_ab52d7320d7ea75cd8206263ab3079fd8}{Change\+Opposing\+Axes\+Together}} = false\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class contains logic to perform plot manipulations in response to UI actions. To customize how user inputs are interpreted, inherit and override functions in this class. To customize behavior of actions, replace properties of \mbox{\hyperlink{classInteraction_a7e00e6da534004ed32147695413c4591}{Actions}} with custom delegates. To customize UI inputs, assign desired button and key properties of \mbox{\hyperlink{classInteraction_aa9f42ce0622349d6e03e3410a4fccc3b}{Inputs}}. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classInteraction_aa9af092d4de5a6d252a2dfbfd28df5d8}\label{classInteraction_aa9af092d4de5a6d252a2dfbfd28df5d8}} 
+\index{Interaction@{Interaction}!Disable@{Disable}}
+\index{Disable@{Disable}!Interaction@{Interaction}}
+\doxysubsubsection{\texorpdfstring{Disable()}{Disable()}}
+{\footnotesize\ttfamily void Interaction.\+Disable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Disable all mouse interactivity 
+
+\mbox{\Hypertarget{classInteraction_a66ceeaa463c99516abde5af917d204e5}\label{classInteraction_a66ceeaa463c99516abde5af917d204e5}} 
+\index{Interaction@{Interaction}!DoubleClick@{DoubleClick}}
+\index{DoubleClick@{DoubleClick}!Interaction@{Interaction}}
+\doxysubsubsection{\texorpdfstring{DoubleClick()}{DoubleClick()}}
+{\footnotesize\ttfamily virtual void Interaction.\+Double\+Click (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classInteraction_a947885cfa439788af412c4284d292a5b}\label{classInteraction_a947885cfa439788af412c4284d292a5b}} 
+\index{Interaction@{Interaction}!Enable@{Enable}}
+\index{Enable@{Enable}!Interaction@{Interaction}}
+\doxysubsubsection{\texorpdfstring{Enable()}{Enable()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Interaction.\+Enable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Enable mouse interactivity using the default mouse actions 
+
+\mbox{\Hypertarget{classInteraction_a8396ff4cd46994bfa284c45f276a67de}\label{classInteraction_a8396ff4cd46994bfa284c45f276a67de}} 
+\index{Interaction@{Interaction}!Enable@{Enable}}
+\index{Enable@{Enable}!Interaction@{Interaction}}
+\doxysubsubsection{\texorpdfstring{Enable()}{Enable()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Interaction.\+Enable (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPlotActions}{Plot\+Actions}}}]{custom\+Actions }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Enable mouse interactivity using custom mouse actions 
+
+\mbox{\Hypertarget{classInteraction_ad08204cae9d4aad6a7820f0abedb8684}\label{classInteraction_ad08204cae9d4aad6a7820f0abedb8684}} 
+\index{Interaction@{Interaction}!GetMouseCoordinates@{GetMouseCoordinates}}
+\index{GetMouseCoordinates@{GetMouseCoordinates}!Interaction@{Interaction}}
+\doxysubsubsection{\texorpdfstring{GetMouseCoordinates()}{GetMouseCoordinates()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structCoordinates}{Coordinates}} Interaction.\+Get\+Mouse\+Coordinates (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceIXAxis}{IXAxis}}?}]{x\+Axis = {\ttfamily null},  }\item[{\mbox{\hyperlink{interfaceIYAxis}{IYAxis}}?}]{y\+Axis = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return the last observed location of the mouse in coordinate units 
+
+\mbox{\Hypertarget{classInteraction_a0303fc813bb70d0d07a1cdda7404b4f4}\label{classInteraction_a0303fc813bb70d0d07a1cdda7404b4f4}} 
+\index{Interaction@{Interaction}!IsDraggingMouse@{IsDraggingMouse}}
+\index{IsDraggingMouse@{IsDraggingMouse}!Interaction@{Interaction}}
+\doxysubsubsection{\texorpdfstring{IsDraggingMouse()}{IsDraggingMouse()}}
+{\footnotesize\ttfamily bool Interaction.\+Is\+Dragging\+Mouse (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPixel}{Pixel}}}]{pos }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classInteraction_a211118c77edc117502892d894b2d7502}\label{classInteraction_a211118c77edc117502892d894b2d7502}} 
+\index{Interaction@{Interaction}!KeyDown@{KeyDown}}
+\index{KeyDown@{KeyDown}!Interaction@{Interaction}}
+\doxysubsubsection{\texorpdfstring{KeyDown()}{KeyDown()}}
+{\footnotesize\ttfamily virtual void Interaction.\+Key\+Down (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structKey}{Key}}}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classInteraction_a2faac849a4c1c54a7e35700e69183a6e}\label{classInteraction_a2faac849a4c1c54a7e35700e69183a6e}} 
+\index{Interaction@{Interaction}!KeyUp@{KeyUp}}
+\index{KeyUp@{KeyUp}!Interaction@{Interaction}}
+\doxysubsubsection{\texorpdfstring{KeyUp()}{KeyUp()}}
+{\footnotesize\ttfamily virtual void Interaction.\+Key\+Up (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structKey}{Key}}}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classInteraction_a9b39fe5b2bdb2c3c0c7e6389ab46e6d7}\label{classInteraction_a9b39fe5b2bdb2c3c0c7e6389ab46e6d7}} 
+\index{Interaction@{Interaction}!MouseDown@{MouseDown}}
+\index{MouseDown@{MouseDown}!Interaction@{Interaction}}
+\doxysubsubsection{\texorpdfstring{MouseDown()}{MouseDown()}}
+{\footnotesize\ttfamily virtual void Interaction.\+Mouse\+Down (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPixel}{Pixel}}}]{position,  }\item[{\mbox{\hyperlink{structMouseButton}{Mouse\+Button}}}]{button }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classInteraction_aaea05a4b61066f7e8981e4a89aaaf743}\label{classInteraction_aaea05a4b61066f7e8981e4a89aaaf743}} 
+\index{Interaction@{Interaction}!MouseDrag@{MouseDrag}}
+\index{MouseDrag@{MouseDrag}!Interaction@{Interaction}}
+\doxysubsubsection{\texorpdfstring{MouseDrag()}{MouseDrag()}}
+{\footnotesize\ttfamily virtual void Interaction.\+Mouse\+Drag (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPixel}{Pixel}}}]{from,  }\item[{\mbox{\hyperlink{structPixel}{Pixel}}}]{to,  }\item[{\mbox{\hyperlink{structMouseButton}{Mouse\+Button}}}]{button,  }\item[{\mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$ \mbox{\hyperlink{structKey}{Key}} $>$}]{keys,  }\item[{\mbox{\hyperlink{classMultiAxisLimitManager}{Multi\+Axis\+Limit\+Manager}}}]{start }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classInteraction_a2e1672b5d56cf5c5542679b0d8904bfa}\label{classInteraction_a2e1672b5d56cf5c5542679b0d8904bfa}} 
+\index{Interaction@{Interaction}!MouseUp@{MouseUp}}
+\index{MouseUp@{MouseUp}!Interaction@{Interaction}}
+\doxysubsubsection{\texorpdfstring{MouseUp()}{MouseUp()}}
+{\footnotesize\ttfamily virtual void Interaction.\+Mouse\+Up (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPixel}{Pixel}}}]{position,  }\item[{\mbox{\hyperlink{structMouseButton}{Mouse\+Button}}}]{button }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classInteraction_aa43d81ce7bf92afca215b11ee617ee24}\label{classInteraction_aa43d81ce7bf92afca215b11ee617ee24}} 
+\index{Interaction@{Interaction}!MouseWheelVertical@{MouseWheelVertical}}
+\index{MouseWheelVertical@{MouseWheelVertical}!Interaction@{Interaction}}
+\doxysubsubsection{\texorpdfstring{MouseWheelVertical()}{MouseWheelVertical()}}
+{\footnotesize\ttfamily virtual void Interaction.\+Mouse\+Wheel\+Vertical (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPixel}{Pixel}}}]{pixel,  }\item[{float}]{delta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classInteraction_a0327a1cf10519e19b3232dc19c17c109}\label{classInteraction_a0327a1cf10519e19b3232dc19c17c109}} 
+\index{Interaction@{Interaction}!OnMouseMove@{OnMouseMove}}
+\index{OnMouseMove@{OnMouseMove}!Interaction@{Interaction}}
+\doxysubsubsection{\texorpdfstring{OnMouseMove()}{OnMouseMove()}}
+{\footnotesize\ttfamily virtual void Interaction.\+On\+Mouse\+Move (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPixel}{Pixel}}}]{new\+Position }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classInteraction_a7e00e6da534004ed32147695413c4591}\label{classInteraction_a7e00e6da534004ed32147695413c4591}} 
+\index{Interaction@{Interaction}!Actions@{Actions}}
+\index{Actions@{Actions}!Interaction@{Interaction}}
+\doxysubsubsection{\texorpdfstring{Actions}{Actions}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPlotActions}{Plot\+Actions}} Interaction.\+Actions = \mbox{\hyperlink{classPlotActions_af763913b52bb009c47a3288dfa9377a4}{Plot\+Actions.\+Standard}}()}
+
+
+
+Delegates in this object can be overwritten with custom functions that manipulate the plot. (e.\+g., changing the sensitivity of click-\/drag-\/zooming) 
+
+\mbox{\Hypertarget{classInteraction_aa9f42ce0622349d6e03e3410a4fccc3b}\label{classInteraction_aa9f42ce0622349d6e03e3410a4fccc3b}} 
+\index{Interaction@{Interaction}!Inputs@{Inputs}}
+\index{Inputs@{Inputs}!Interaction@{Interaction}}
+\doxysubsubsection{\texorpdfstring{Inputs}{Inputs}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classInputBindings}{Input\+Bindings}} Interaction.\+Inputs = \mbox{\hyperlink{classInputBindings_a1a8dab71e0095da799d012c8e5da3df0}{Input\+Bindings.\+Standard}}()}
+
+
+
+Buttons and keys in this object can be overwritten to customize actions for specific user input events. (e.\+g., make left-\/click-\/drag zoom instead of pan) 
+
+\mbox{\Hypertarget{classInteraction_a411ed4c11be5a57ebaad08b757027df0}\label{classInteraction_a411ed4c11be5a57ebaad08b757027df0}} 
+\index{Interaction@{Interaction}!IsZoomingRectangle@{IsZoomingRectangle}}
+\index{IsZoomingRectangle@{IsZoomingRectangle}!Interaction@{Interaction}}
+\doxysubsubsection{\texorpdfstring{IsZoomingRectangle}{IsZoomingRectangle}}
+{\footnotesize\ttfamily bool Interaction.\+Is\+Zooming\+Rectangle = false\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classInteraction_afaa69b719083d7347ccfe8aacfe65532}\label{classInteraction_afaa69b719083d7347ccfe8aacfe65532}} 
+\index{Interaction@{Interaction}!Keyboard@{Keyboard}}
+\index{Keyboard@{Keyboard}!Interaction@{Interaction}}
+\doxysubsubsection{\texorpdfstring{Keyboard}{Keyboard}}
+{\footnotesize\ttfamily readonly \mbox{\hyperlink{classKeyboardState}{Keyboard\+State}} Interaction.\+Keyboard = new()\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classInteraction_a210790b51511a123458967cb1e3b8e53}\label{classInteraction_a210790b51511a123458967cb1e3b8e53}} 
+\index{Interaction@{Interaction}!Mouse@{Mouse}}
+\index{Mouse@{Mouse}!Interaction@{Interaction}}
+\doxysubsubsection{\texorpdfstring{Mouse}{Mouse}}
+{\footnotesize\ttfamily readonly \mbox{\hyperlink{classMouseState}{Mouse\+State}} Interaction.\+Mouse = new()\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{classInteraction_ab52d7320d7ea75cd8206263ab3079fd8}\label{classInteraction_ab52d7320d7ea75cd8206263ab3079fd8}} 
+\index{Interaction@{Interaction}!ChangeOpposingAxesTogether@{ChangeOpposingAxesTogether}}
+\index{ChangeOpposingAxesTogether@{ChangeOpposingAxesTogether}!Interaction@{Interaction}}
+\doxysubsubsection{\texorpdfstring{ChangeOpposingAxesTogether}{ChangeOpposingAxesTogether}}
+{\footnotesize\ttfamily bool Interaction.\+Change\+Opposing\+Axes\+Together = false\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classInteraction_a4e1193e49319be51e85f710ced93541d}\label{classInteraction_a4e1193e49319be51e85f710ced93541d}} 
+\index{Interaction@{Interaction}!control@{control}}
+\index{control@{control}!Interaction@{Interaction}}
+\doxysubsubsection{\texorpdfstring{control}{control}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceIPlotControl}{IPlot\+Control}} Interaction.\+control\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classInteraction_aa6ecf3589a857830165365f8ef9e2a98}\label{classInteraction_aa6ecf3589a857830165365f8ef9e2a98}} 
+\index{Interaction@{Interaction}!IsEnabled@{IsEnabled}}
+\index{IsEnabled@{IsEnabled}!Interaction@{Interaction}}
+\doxysubsubsection{\texorpdfstring{IsEnabled}{IsEnabled}}
+{\footnotesize\ttfamily bool Interaction.\+Is\+Enabled\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Controls whether events will be processed by this class. Setting this resets this event processor to use the default interactions. Enabling this disables the newer \mbox{\hyperlink{interfaceIPlotControl_a21049e00d17f6a449c20fa2dad6082e4}{IPlot\+Control.\+User\+Input\+Processor}}. 
+
+\mbox{\Hypertarget{classInteraction_a044fab20f61d5e71df4ed52d794183c7}\label{classInteraction_a044fab20f61d5e71df4ed52d794183c7}} 
+\index{Interaction@{Interaction}!LockX@{LockX}}
+\index{LockX@{LockX}!Interaction@{Interaction}}
+\doxysubsubsection{\texorpdfstring{LockX}{LockX}}
+{\footnotesize\ttfamily bool Interaction.\+LockX\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classInteraction_a9fe86201b2e664018bc90ac3516a7920}\label{classInteraction_a9fe86201b2e664018bc90ac3516a7920}} 
+\index{Interaction@{Interaction}!LockY@{LockY}}
+\index{LockY@{LockY}!Interaction@{Interaction}}
+\doxysubsubsection{\texorpdfstring{LockY}{LockY}}
+{\footnotesize\ttfamily bool Interaction.\+LockY\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classInteraction_ad325cbba786c515296e9cbbb33103196}\label{classInteraction_ad325cbba786c515296e9cbbb33103196}} 
+\index{Interaction@{Interaction}!PlotControl@{PlotControl}}
+\index{PlotControl@{PlotControl}!Interaction@{Interaction}}
+\doxysubsubsection{\texorpdfstring{PlotControl}{PlotControl}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceIPlotControl}{IPlot\+Control}} Interaction.\+Plot\+Control = \mbox{\hyperlink{classInteraction_a4e1193e49319be51e85f710ced93541d}{control}}\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Control/Interaction.\+cs\end{DoxyCompactItemize}

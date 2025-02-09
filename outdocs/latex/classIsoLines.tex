@@ -1,0 +1,180 @@
+\hypertarget{classIsoLines}{}\doxysection{Iso\+Lines Class Reference}
+\label{classIsoLines}\index{IsoLines@{IsoLines}}
+Inheritance diagram for Iso\+Lines\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classIsoLines}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} \mbox{\hyperlink{classIsoLines_a71493a1d116c03dbe4cc91820697faaf}{Get\+Axis\+Limits}} ()
+\begin{DoxyCompactList}\small\item\em Return the 2D area (in coordinate space) occupied by the data contained in this plottable \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classIsoLines_a9b286d07cfb084ea82fdb71fd6f5def8}{Render}} (\mbox{\hyperlink{classRenderPack}{Render\+Pack}} rp)
+\begin{DoxyCompactList}\small\item\em Draw the data from this plottable into the data area defined in the \mbox{\hyperlink{classAxes}{Axes}}. By default the surface is already clipped to the data area, but this can be cleared inside the plottable. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static string \mbox{\hyperlink{classIsoLines_a4e9e02b266e15adbbe51fb883e65bcf2}{Default\+Tick\+Formatter}} (double y\+Intercept)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classLabelStyle}{Label\+Style}} \mbox{\hyperlink{classIsoLines_a08eb0cea75d93e576396b90f49476ee7}{Tick\+Label\+Style}} = new()
+\item 
+readonly List$<$(double, string)$>$ \mbox{\hyperlink{classIsoLines_af50a84a6bce92514b9d28f9c0f420941}{Manual\+Positions}} = \mbox{[}$\,$\mbox{]}
+\item 
+Func$<$ double, string $>$ \mbox{\hyperlink{classIsoLines_a93ecdcd50eb196c68f03595d20c4e3cb}{Tick\+Label\+Formatter}} = \mbox{\hyperlink{classIsoLines_a4e9e02b266e15adbbe51fb883e65bcf2}{Default\+Tick\+Formatter}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classIsoLines_aecb7fef859db975e59eacf274378fc1e}{Is\+Visible}} = true\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{interfaceIAxes}{IAxes}} \mbox{\hyperlink{classIsoLines_a3b5379f4b97fb088c74297f85055b5ad}{Axes}} = new \mbox{\hyperlink{classAxes}{Axes}}()\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$ \mbox{\hyperlink{classLegendItem}{Legend\+Item}} $>$ \mbox{\hyperlink{classIsoLines_ae9c8f0049a063d0dadd65c86263a5997}{Legend\+Items}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+bool \mbox{\hyperlink{classIsoLines_a5cf914f7df37665f55ba2ab9c6d19505}{Rotate\+Labels}} = true\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+bool \mbox{\hyperlink{classIsoLines_af25b0e6e19f655af63e08d8b74ce901c}{Exterior\+Tick\+Labels}} = false\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{classLineStyle}{Line\+Style}} \mbox{\hyperlink{classIsoLines_a1dcee9dc5a2758363b9342684619a436}{Line\+Style}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{classIsoLines_af36e20fd43a0540bec7a846357a7392e}{Line\+Width}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+Line\+Pattern \mbox{\hyperlink{classIsoLines_a14a693dfa648b19dfee488f49f675dce}{Line\+Pattern}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{structColor}{Color}} \mbox{\hyperlink{classIsoLines_a1af1305c50a0f0b6ecc7c7d0eebadb27}{Line\+Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classIsoLines_a4e9e02b266e15adbbe51fb883e65bcf2}\label{classIsoLines_a4e9e02b266e15adbbe51fb883e65bcf2}} 
+\index{IsoLines@{IsoLines}!DefaultTickFormatter@{DefaultTickFormatter}}
+\index{DefaultTickFormatter@{DefaultTickFormatter}!IsoLines@{IsoLines}}
+\doxysubsubsection{\texorpdfstring{DefaultTickFormatter()}{DefaultTickFormatter()}}
+{\footnotesize\ttfamily static string Iso\+Lines.\+Default\+Tick\+Formatter (\begin{DoxyParamCaption}\item[{double}]{y\+Intercept }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{classIsoLines_a71493a1d116c03dbe4cc91820697faaf}\label{classIsoLines_a71493a1d116c03dbe4cc91820697faaf}} 
+\index{IsoLines@{IsoLines}!GetAxisLimits@{GetAxisLimits}}
+\index{GetAxisLimits@{GetAxisLimits}!IsoLines@{IsoLines}}
+\doxysubsubsection{\texorpdfstring{GetAxisLimits()}{GetAxisLimits()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} Iso\+Lines.\+Get\+Axis\+Limits (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Return the 2D area (in coordinate space) occupied by the data contained in this plottable 
+
+
+
+Implements \mbox{\hyperlink{interfaceIPlottable_ac98e2f5e56f9f938bbd081c87c7c6f50}{IPlottable}}.
+
+\mbox{\Hypertarget{classIsoLines_a9b286d07cfb084ea82fdb71fd6f5def8}\label{classIsoLines_a9b286d07cfb084ea82fdb71fd6f5def8}} 
+\index{IsoLines@{IsoLines}!Render@{Render}}
+\index{Render@{Render}!IsoLines@{IsoLines}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily virtual void Iso\+Lines.\+Render (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classRenderPack}{Render\+Pack}}}]{rp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Draw the data from this plottable into the data area defined in the \mbox{\hyperlink{classAxes}{Axes}}. By default the surface is already clipped to the data area, but this can be cleared inside the plottable. 
+
+
+
+Implements \mbox{\hyperlink{interfaceIPlottable_a201a1a236dc718eda93db143a5ade9f8}{IPlottable}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classIsoLines_af50a84a6bce92514b9d28f9c0f420941}\label{classIsoLines_af50a84a6bce92514b9d28f9c0f420941}} 
+\index{IsoLines@{IsoLines}!ManualPositions@{ManualPositions}}
+\index{ManualPositions@{ManualPositions}!IsoLines@{IsoLines}}
+\doxysubsubsection{\texorpdfstring{ManualPositions}{ManualPositions}}
+{\footnotesize\ttfamily readonly List$<$(double, string)$>$ Iso\+Lines.\+Manual\+Positions = \mbox{[}$\,$\mbox{]}}
+
+\mbox{\Hypertarget{classIsoLines_a93ecdcd50eb196c68f03595d20c4e3cb}\label{classIsoLines_a93ecdcd50eb196c68f03595d20c4e3cb}} 
+\index{IsoLines@{IsoLines}!TickLabelFormatter@{TickLabelFormatter}}
+\index{TickLabelFormatter@{TickLabelFormatter}!IsoLines@{IsoLines}}
+\doxysubsubsection{\texorpdfstring{TickLabelFormatter}{TickLabelFormatter}}
+{\footnotesize\ttfamily Func$<$double, string$>$ Iso\+Lines.\+Tick\+Label\+Formatter = \mbox{\hyperlink{classIsoLines_a4e9e02b266e15adbbe51fb883e65bcf2}{Default\+Tick\+Formatter}}}
+
+\mbox{\Hypertarget{classIsoLines_a08eb0cea75d93e576396b90f49476ee7}\label{classIsoLines_a08eb0cea75d93e576396b90f49476ee7}} 
+\index{IsoLines@{IsoLines}!TickLabelStyle@{TickLabelStyle}}
+\index{TickLabelStyle@{TickLabelStyle}!IsoLines@{IsoLines}}
+\doxysubsubsection{\texorpdfstring{TickLabelStyle}{TickLabelStyle}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classLabelStyle}{Label\+Style}} Iso\+Lines.\+Tick\+Label\+Style = new()}
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{classIsoLines_a3b5379f4b97fb088c74297f85055b5ad}\label{classIsoLines_a3b5379f4b97fb088c74297f85055b5ad}} 
+\index{IsoLines@{IsoLines}!Axes@{Axes}}
+\index{Axes@{Axes}!IsoLines@{IsoLines}}
+\doxysubsubsection{\texorpdfstring{Axes}{Axes}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceIAxes}{IAxes}} Iso\+Lines.\+Axes = new \mbox{\hyperlink{classAxes}{Axes}}()\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classIsoLines_af25b0e6e19f655af63e08d8b74ce901c}\label{classIsoLines_af25b0e6e19f655af63e08d8b74ce901c}} 
+\index{IsoLines@{IsoLines}!ExteriorTickLabels@{ExteriorTickLabels}}
+\index{ExteriorTickLabels@{ExteriorTickLabels}!IsoLines@{IsoLines}}
+\doxysubsubsection{\texorpdfstring{ExteriorTickLabels}{ExteriorTickLabels}}
+{\footnotesize\ttfamily bool Iso\+Lines.\+Exterior\+Tick\+Labels = false\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classIsoLines_aecb7fef859db975e59eacf274378fc1e}\label{classIsoLines_aecb7fef859db975e59eacf274378fc1e}} 
+\index{IsoLines@{IsoLines}!IsVisible@{IsVisible}}
+\index{IsVisible@{IsVisible}!IsoLines@{IsoLines}}
+\doxysubsubsection{\texorpdfstring{IsVisible}{IsVisible}}
+{\footnotesize\ttfamily bool Iso\+Lines.\+Is\+Visible = true\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classIsoLines_ae9c8f0049a063d0dadd65c86263a5997}\label{classIsoLines_ae9c8f0049a063d0dadd65c86263a5997}} 
+\index{IsoLines@{IsoLines}!LegendItems@{LegendItems}}
+\index{LegendItems@{LegendItems}!IsoLines@{IsoLines}}
+\doxysubsubsection{\texorpdfstring{LegendItems}{LegendItems}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$\mbox{\hyperlink{classLegendItem}{Legend\+Item}}$>$ Iso\+Lines.\+Legend\+Items\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{classIsoLines_a1af1305c50a0f0b6ecc7c7d0eebadb27}\label{classIsoLines_a1af1305c50a0f0b6ecc7c7d0eebadb27}} 
+\index{IsoLines@{IsoLines}!LineColor@{LineColor}}
+\index{LineColor@{LineColor}!IsoLines@{IsoLines}}
+\doxysubsubsection{\texorpdfstring{LineColor}{LineColor}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structColor}{Color}} Iso\+Lines.\+Line\+Color\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classIsoLines_a14a693dfa648b19dfee488f49f675dce}\label{classIsoLines_a14a693dfa648b19dfee488f49f675dce}} 
+\index{IsoLines@{IsoLines}!LinePattern@{LinePattern}}
+\index{LinePattern@{LinePattern}!IsoLines@{IsoLines}}
+\doxysubsubsection{\texorpdfstring{LinePattern}{LinePattern}}
+{\footnotesize\ttfamily Line\+Pattern Iso\+Lines.\+Line\+Pattern\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classIsoLines_a1dcee9dc5a2758363b9342684619a436}\label{classIsoLines_a1dcee9dc5a2758363b9342684619a436}} 
+\index{IsoLines@{IsoLines}!LineStyle@{LineStyle}}
+\index{LineStyle@{LineStyle}!IsoLines@{IsoLines}}
+\doxysubsubsection{\texorpdfstring{LineStyle}{LineStyle}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classLineStyle}{Line\+Style}} Iso\+Lines.\+Line\+Style\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new}()}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        Width = 1,}
+\DoxyCodeLine{        \mbox{\hyperlink{structColor}{Color}} = \mbox{\hyperlink{structColors}{Colors}}.\mbox{\hyperlink{structColors_a6a4f09e77ec6d0ef4c08348eb2e21714}{Black}}.\mbox{\hyperlink{structColor_aa7eb7eebe65ab77b6895ac1bfe4278d3}{WithAlpha}}(.2),}
+\DoxyCodeLine{        Pattern = LinePattern.DenselyDashed,}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classIsoLines_af36e20fd43a0540bec7a846357a7392e}\label{classIsoLines_af36e20fd43a0540bec7a846357a7392e}} 
+\index{IsoLines@{IsoLines}!LineWidth@{LineWidth}}
+\index{LineWidth@{LineWidth}!IsoLines@{IsoLines}}
+\doxysubsubsection{\texorpdfstring{LineWidth}{LineWidth}}
+{\footnotesize\ttfamily float Iso\+Lines.\+Line\+Width\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classIsoLines_a5cf914f7df37665f55ba2ab9c6d19505}\label{classIsoLines_a5cf914f7df37665f55ba2ab9c6d19505}} 
+\index{IsoLines@{IsoLines}!RotateLabels@{RotateLabels}}
+\index{RotateLabels@{RotateLabels}!IsoLines@{IsoLines}}
+\doxysubsubsection{\texorpdfstring{RotateLabels}{RotateLabels}}
+{\footnotesize\ttfamily bool Iso\+Lines.\+Rotate\+Labels = true\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Plottables/Iso\+Lines.\+cs\end{DoxyCompactItemize}

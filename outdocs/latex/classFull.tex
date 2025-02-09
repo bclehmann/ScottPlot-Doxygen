@@ -1,0 +1,99 @@
+\hypertarget{classFull}{}\doxysection{Full Class Reference}
+\label{classFull}\index{Full@{Full}}
+
+
+Show the entire range of data, changing the axis limits only when the data extends outside the current view.  
+
+
+Inheritance diagram for Full\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classFull}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structCoordinateRange}{Coordinate\+Range}} \mbox{\hyperlink{classFull_af03ee9b6b31a41999bdebb5152edd35c}{Get\+RangeX}} (\mbox{\hyperlink{structCoordinateRange}{Coordinate\+Range}} view\+RangeX, \mbox{\hyperlink{structCoordinateRange}{Coordinate\+Range}} data\+RangeX)
+\begin{DoxyCompactList}\small\item\em Returns the recommended X axis range given the current view and size of the data \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structCoordinateRange}{Coordinate\+Range}} \mbox{\hyperlink{classFull_ad504aed89113e45ec2ad7da79260034b}{Get\+RangeY}} (\mbox{\hyperlink{structCoordinateRange}{Coordinate\+Range}} view\+RangeY, \mbox{\hyperlink{structCoordinateRange}{Coordinate\+Range}} data\+RangeY)
+\begin{DoxyCompactList}\small\item\em Returns the recommended Y axis range given the current view and size of the data \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{classFull_a24be2da35eec46e596da21108254c5cd}{Expansion\+Ratio}} = .\+25\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Defines the amount of whitespace added to the right of the data when data runs outside the current view. 1.\+0 for a view that tightly fits the data and is always changing. 2.\+0 for a view that doubles the horizontal span when new data runs outside the current view. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Show the entire range of data, changing the axis limits only when the data extends outside the current view. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classFull_af03ee9b6b31a41999bdebb5152edd35c}\label{classFull_af03ee9b6b31a41999bdebb5152edd35c}} 
+\index{Full@{Full}!GetRangeX@{GetRangeX}}
+\index{GetRangeX@{GetRangeX}!Full@{Full}}
+\doxysubsubsection{\texorpdfstring{GetRangeX()}{GetRangeX()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structCoordinateRange}{Coordinate\+Range}} Full.\+Get\+RangeX (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structCoordinateRange}{Coordinate\+Range}}}]{view\+RangeX,  }\item[{\mbox{\hyperlink{structCoordinateRange}{Coordinate\+Range}}}]{data\+RangeX }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the recommended X axis range given the current view and size of the data 
+
+
+\begin{DoxyParams}{Parameters}
+{\em view\+RangeX} & X axis view range\\
+\hline
+{\em data\+RangeX} & X axis data range\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfaceIAxisLimitManager_a7e1fd7dbaa29feede5fecfdafe0849e2}{IAxis\+Limit\+Manager}}.
+
+\mbox{\Hypertarget{classFull_ad504aed89113e45ec2ad7da79260034b}\label{classFull_ad504aed89113e45ec2ad7da79260034b}} 
+\index{Full@{Full}!GetRangeY@{GetRangeY}}
+\index{GetRangeY@{GetRangeY}!Full@{Full}}
+\doxysubsubsection{\texorpdfstring{GetRangeY()}{GetRangeY()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structCoordinateRange}{Coordinate\+Range}} Full.\+Get\+RangeY (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structCoordinateRange}{Coordinate\+Range}}}]{view\+RangeY,  }\item[{\mbox{\hyperlink{structCoordinateRange}{Coordinate\+Range}}}]{data\+RangeY }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the recommended Y axis range given the current view and size of the data 
+
+
+\begin{DoxyParams}{Parameters}
+{\em view\+RangeY} & Y axis view range\\
+\hline
+{\em data\+RangeY} & Y axis view range\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfaceIAxisLimitManager_a79dbb73bf902b531071d78adc55c7910}{IAxis\+Limit\+Manager}}.
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{classFull_a24be2da35eec46e596da21108254c5cd}\label{classFull_a24be2da35eec46e596da21108254c5cd}} 
+\index{Full@{Full}!ExpansionRatio@{ExpansionRatio}}
+\index{ExpansionRatio@{ExpansionRatio}!Full@{Full}}
+\doxysubsubsection{\texorpdfstring{ExpansionRatio}{ExpansionRatio}}
+{\footnotesize\ttfamily double Full.\+Expansion\+Ratio = .\+25\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Defines the amount of whitespace added to the right of the data when data runs outside the current view. 1.\+0 for a view that tightly fits the data and is always changing. 2.\+0 for a view that doubles the horizontal span when new data runs outside the current view. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Axis\+Limit\+Managers/Full.\+cs\end{DoxyCompactItemize}

@@ -1,0 +1,204 @@
+\hypertarget{classYAxisBase}{}\doxysection{YAxis\+Base Class Reference}
+\label{classYAxisBase}\index{YAxisBase@{YAxisBase}}
+Inheritance diagram for YAxis\+Base\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{classYAxisBase}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{classYAxisBase_aef887441b4929a1d1e62d6f94333505b}{Get\+Pixel}} (double position, \mbox{\hyperlink{structPixelRect}{Pixel\+Rect}} data\+Area)
+\begin{DoxyCompactList}\small\item\em Get the pixel position of a coordinate given the location and size of the data area \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classYAxisBase_af216fb4afa59e6284d72a8573ebd4f5b}{Get\+Coordinate}} (float pixel, \mbox{\hyperlink{structPixelRect}{Pixel\+Rect}} data\+Area)
+\begin{DoxyCompactList}\small\item\em Get the coordinate of a pixel position given the location and size of the data area \end{DoxyCompactList}\item 
+virtual float \mbox{\hyperlink{classYAxisBase_ab36ecda2cd0efdfa9da154a2cf74c7bb}{Measure}} ()
+\begin{DoxyCompactList}\small\item\em Return the size (in pixels) of the panel in the dimension perpendicular to the edge it lays on \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structPixelRect}{Pixel\+Rect}} \mbox{\hyperlink{classYAxisBase_a961c548722a3f1cb7664f64774d1634b}{Get\+Panel\+Rect}} (\mbox{\hyperlink{structPixelRect}{Pixel\+Rect}} data\+Rect, float size, float offset)
+\begin{DoxyCompactList}\small\item\em Return the rectangle for this panel \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classYAxisBase_aac42422632b874ee952e6d9cf75d4755}{Render}} (\mbox{\hyperlink{classRenderPack}{Render\+Pack}} rp, float size, float offset)
+\begin{DoxyCompactList}\small\item\em Draw this panel on a canvas \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classYAxisBase_ae4869aa38f9a8a1d1f893c7eedbe079e}{Get\+Pixel\+Distance}} (double distance, \mbox{\hyperlink{structPixelRect}{Pixel\+Rect}} data\+Area)
+\begin{DoxyCompactList}\small\item\em Given a distance in coordinate space, converts to pixel space \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classYAxisBase_ac875ee8426e2a275e13088dc8b4a8e17}{Get\+Coordinate\+Distance}} (float distance, \mbox{\hyperlink{structPixelRect}{Pixel\+Rect}} data\+Area)
+\begin{DoxyCompactList}\small\item\em Given a distance in pixel space, converts to coordinate space \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classYAxisBase_a1575814b1a5b4b01beabbe6529670df5}{Regenerate\+Ticks}} (\mbox{\hyperlink{structPixelLength}{Pixel\+Length}} size)
+\begin{DoxyCompactList}\small\item\em Use the \mbox{\hyperlink{classAxisBase_ad28f36ed0ada2bb660256e1b8c2b0f7d}{Tick\+Label\+Style}} to generate ticks with ideal spacing. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{classYAxisBase_aeac5afd5a8cfe226d3b6e722669f0395}{Height}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classYAxisBase_af216fb4afa59e6284d72a8573ebd4f5b}\label{classYAxisBase_af216fb4afa59e6284d72a8573ebd4f5b}} 
+\index{YAxisBase@{YAxisBase}!GetCoordinate@{GetCoordinate}}
+\index{GetCoordinate@{GetCoordinate}!YAxisBase@{YAxisBase}}
+\doxysubsubsection{\texorpdfstring{GetCoordinate()}{GetCoordinate()}}
+{\footnotesize\ttfamily double YAxis\+Base.\+Get\+Coordinate (\begin{DoxyParamCaption}\item[{float}]{pixel,  }\item[{\mbox{\hyperlink{structPixelRect}{Pixel\+Rect}}}]{data\+Area }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the coordinate of a pixel position given the location and size of the data area 
+
+
+
+Implements \mbox{\hyperlink{interfaceIAxis_a6f1fba5166f44b3d5d3a49d9d4fa8767}{IAxis}}.
+
+\mbox{\Hypertarget{classYAxisBase_ac875ee8426e2a275e13088dc8b4a8e17}\label{classYAxisBase_ac875ee8426e2a275e13088dc8b4a8e17}} 
+\index{YAxisBase@{YAxisBase}!GetCoordinateDistance@{GetCoordinateDistance}}
+\index{GetCoordinateDistance@{GetCoordinateDistance}!YAxisBase@{YAxisBase}}
+\doxysubsubsection{\texorpdfstring{GetCoordinateDistance()}{GetCoordinateDistance()}}
+{\footnotesize\ttfamily double YAxis\+Base.\+Get\+Coordinate\+Distance (\begin{DoxyParamCaption}\item[{float}]{pixel\+Distance,  }\item[{\mbox{\hyperlink{structPixelRect}{Pixel\+Rect}}}]{data\+Area }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Given a distance in pixel space, converts to coordinate space 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pixel\+Distance} & A distance in pixel units\\
+\hline
+{\em data\+Area} & The rectangle onto which the coordinates are mapped\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The same distance in coordinate units
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfaceIAxis_a53f51e0020af0aff3b28e1420bc251ce}{IAxis}}.
+
+\mbox{\Hypertarget{classYAxisBase_a961c548722a3f1cb7664f64774d1634b}\label{classYAxisBase_a961c548722a3f1cb7664f64774d1634b}} 
+\index{YAxisBase@{YAxisBase}!GetPanelRect@{GetPanelRect}}
+\index{GetPanelRect@{GetPanelRect}!YAxisBase@{YAxisBase}}
+\doxysubsubsection{\texorpdfstring{GetPanelRect()}{GetPanelRect()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structPixelRect}{Pixel\+Rect}} YAxis\+Base.\+Get\+Panel\+Rect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPixelRect}{Pixel\+Rect}}}]{data\+Rect,  }\item[{float}]{size,  }\item[{float}]{offset }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return the rectangle for this panel 
+
+
+
+Implements \mbox{\hyperlink{interfaceIPanel_a0e0b911af145b8a7797de86bd6e3d94e}{IPanel}}.
+
+\mbox{\Hypertarget{classYAxisBase_aef887441b4929a1d1e62d6f94333505b}\label{classYAxisBase_aef887441b4929a1d1e62d6f94333505b}} 
+\index{YAxisBase@{YAxisBase}!GetPixel@{GetPixel}}
+\index{GetPixel@{GetPixel}!YAxisBase@{YAxisBase}}
+\doxysubsubsection{\texorpdfstring{GetPixel()}{GetPixel()}}
+{\footnotesize\ttfamily float YAxis\+Base.\+Get\+Pixel (\begin{DoxyParamCaption}\item[{double}]{position,  }\item[{\mbox{\hyperlink{structPixelRect}{Pixel\+Rect}}}]{data\+Area }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the pixel position of a coordinate given the location and size of the data area 
+
+
+
+Implements \mbox{\hyperlink{interfaceIAxis_aeb617694defc22d1c88db1b9f49b189b}{IAxis}}.
+
+\mbox{\Hypertarget{classYAxisBase_ae4869aa38f9a8a1d1f893c7eedbe079e}\label{classYAxisBase_ae4869aa38f9a8a1d1f893c7eedbe079e}} 
+\index{YAxisBase@{YAxisBase}!GetPixelDistance@{GetPixelDistance}}
+\index{GetPixelDistance@{GetPixelDistance}!YAxisBase@{YAxisBase}}
+\doxysubsubsection{\texorpdfstring{GetPixelDistance()}{GetPixelDistance()}}
+{\footnotesize\ttfamily double YAxis\+Base.\+Get\+Pixel\+Distance (\begin{DoxyParamCaption}\item[{double}]{coordinate\+Distance,  }\item[{\mbox{\hyperlink{structPixelRect}{Pixel\+Rect}}}]{data\+Area }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Given a distance in coordinate space, converts to pixel space 
+
+
+\begin{DoxyParams}{Parameters}
+{\em coordinate\+Distance} & A distance in coordinate units\\
+\hline
+{\em data\+Area} & The rectangle onto which the coordinates are mapped\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The same distance in pixel units
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfaceIAxis_a59389a04e3af51f1f1fd82ffd5f9f6af}{IAxis}}.
+
+\mbox{\Hypertarget{classYAxisBase_ab36ecda2cd0efdfa9da154a2cf74c7bb}\label{classYAxisBase_ab36ecda2cd0efdfa9da154a2cf74c7bb}} 
+\index{YAxisBase@{YAxisBase}!Measure@{Measure}}
+\index{Measure@{Measure}!YAxisBase@{YAxisBase}}
+\doxysubsubsection{\texorpdfstring{Measure()}{Measure()}}
+{\footnotesize\ttfamily virtual float YAxis\+Base.\+Measure (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Return the size (in pixels) of the panel in the dimension perpendicular to the edge it lays on 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfaceIPanel_a974b8efde6b8f1b9e573d4437e18b59d}{IPanel}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classLeftAxisWithSubtitle_a24844b55724f8f15a77ab4412afc801a}{Left\+Axis\+With\+Subtitle}}.
+
+\mbox{\Hypertarget{classYAxisBase_a1575814b1a5b4b01beabbe6529670df5}\label{classYAxisBase_a1575814b1a5b4b01beabbe6529670df5}} 
+\index{YAxisBase@{YAxisBase}!RegenerateTicks@{RegenerateTicks}}
+\index{RegenerateTicks@{RegenerateTicks}!YAxisBase@{YAxisBase}}
+\doxysubsubsection{\texorpdfstring{RegenerateTicks()}{RegenerateTicks()}}
+{\footnotesize\ttfamily void YAxis\+Base.\+Regenerate\+Ticks (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPixelLength}{Pixel\+Length}}}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Use the \mbox{\hyperlink{classAxisBase_ad28f36ed0ada2bb660256e1b8c2b0f7d}{Tick\+Label\+Style}} to generate ticks with ideal spacing. 
+
+
+
+Implements \mbox{\hyperlink{interfaceIAxis_a0b1fb76ab306fb3ea8d234f4a1053be3}{IAxis}}.
+
+\mbox{\Hypertarget{classYAxisBase_aac42422632b874ee952e6d9cf75d4755}\label{classYAxisBase_aac42422632b874ee952e6d9cf75d4755}} 
+\index{YAxisBase@{YAxisBase}!Render@{Render}}
+\index{Render@{Render}!YAxisBase@{YAxisBase}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily virtual void YAxis\+Base.\+Render (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classRenderPack}{Render\+Pack}}}]{rp,  }\item[{float}]{size,  }\item[{float}]{offset }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Draw this panel on a canvas 
+
+
+\begin{DoxyParams}{Parameters}
+{\em surface} & contains the canvas to draw on\\
+\hline
+{\em data\+Rect} & dimensions of the data area (pixel units)\\
+\hline
+{\em size} & size of this panel (pixel units)\\
+\hline
+{\em offset} & distance from the edge of this panel to the edge of the data area\\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interfaceIPanel_a521381a218c86184b8ea51fa8a45c46d}{IPanel}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classLeftAxisWithSubtitle_a2b094860bd10451f0390d334ae80d9a4}{Left\+Axis\+With\+Subtitle}}.
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{classYAxisBase_aeac5afd5a8cfe226d3b6e722669f0395}\label{classYAxisBase_aeac5afd5a8cfe226d3b6e722669f0395}} 
+\index{YAxisBase@{YAxisBase}!Height@{Height}}
+\index{Height@{Height}!YAxisBase@{YAxisBase}}
+\doxysubsubsection{\texorpdfstring{Height}{Height}}
+{\footnotesize\ttfamily double YAxis\+Base.\+Height\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Axis\+Panels/YAxis\+Base.\+cs\end{DoxyCompactItemize}

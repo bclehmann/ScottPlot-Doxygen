@@ -1,0 +1,287 @@
+\hypertarget{classCrosshair}{}\doxysection{Crosshair Class Reference}
+\label{classCrosshair}\index{Crosshair@{Crosshair}}
+Inheritance diagram for Crosshair\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classCrosshair}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} \mbox{\hyperlink{classCrosshair_a02d6e3f2a09d0184ef937e6cd9cd2c38}{Get\+Axis\+Limits}} ()
+\begin{DoxyCompactList}\small\item\em Return the 2D area (in coordinate space) occupied by the data contained in this plottable \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classCrosshair_a835e69280ae50983bc8301ff5d0a4409}{Render}} (\mbox{\hyperlink{classRenderPack}{Render\+Pack}} rp)
+\begin{DoxyCompactList}\small\item\em Draw the data from this plottable into the data area defined in the \mbox{\hyperlink{classAxes}{Axes}}. By default the surface is already clipped to the data area, but this can be cleared inside the plottable. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCrosshair_adbcbcf44cd1f5fb423c0b7864d4f5b11}{Render\+Last}} (\mbox{\hyperlink{classRenderPack}{Render\+Pack}} rp)
+\begin{DoxyCompactList}\small\item\em Plottables that implement this interface have a second render method that runs after the axes are drawn, allowing graphics to be placed on top of the axes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structColor}{Color}} \mbox{\hyperlink{classCrosshair_a8fb97c6c7566f7d82b0b37e2fba6ff77}{Font\+Color}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classHorizontalLine}{Horizontal\+Line}} \mbox{\hyperlink{classCrosshair_af14b92aaf54b165cb38a6c59eebf6edf}{Horizontal\+Line}} = new()\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{classVerticalLine}{Vertical\+Line}} \mbox{\hyperlink{classCrosshair_a6d9dbf1b8c84fb0e0b4ded8843849165}{Vertical\+Line}} = new()\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{structCoordinates}{Coordinates}} \mbox{\hyperlink{classCrosshair_a8f5de7e0c95f193d5f11373009aef070}{Position}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+double \mbox{\hyperlink{classCrosshair_a39a730309c4569933929d4512028f1a4}{X}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+double \mbox{\hyperlink{classCrosshair_af7769d450e1ac59d3f9f995b99d4d491}{Y}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{classCrosshair_a512671871ab9196d04a532897cdc7f3c}{Font\+Size}}\hspace{0.3cm}{\ttfamily  \mbox{[}set\mbox{]}}
+\item 
+bool \mbox{\hyperlink{classCrosshair_a686612202fad7bc865f5b48229e3c269}{Font\+Bold}}\hspace{0.3cm}{\ttfamily  \mbox{[}set\mbox{]}}
+\item 
+string \mbox{\hyperlink{classCrosshair_aa810475688e1168b791e9424e2630cb6}{Font\+Name}}\hspace{0.3cm}{\ttfamily  \mbox{[}set\mbox{]}}
+\item 
+\mbox{\hyperlink{structColor}{Color}} \mbox{\hyperlink{classCrosshair_a7e5f52ac488b69dba084cdb12d68adc1}{Text\+Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}set\mbox{]}}
+\item 
+\mbox{\hyperlink{structColor}{Color}} \mbox{\hyperlink{classCrosshair_a5036bede20039de2e689dd00e9dd80c6}{Text\+Background\+Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}set\mbox{]}}
+\item 
+\mbox{\hyperlink{structColor}{Color}} \mbox{\hyperlink{classCrosshair_a96906eee133504de44b8e565ad393cc1}{Line\+Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}set\mbox{]}}
+\item 
+float \mbox{\hyperlink{classCrosshair_a10e3fefe18bf104526763d42c042d8e4}{Line\+Width}}\hspace{0.3cm}{\ttfamily  \mbox{[}set\mbox{]}}
+\item 
+Line\+Pattern \mbox{\hyperlink{classCrosshair_a3cb071824317dc43465e86dc83f47189}{Line\+Pattern}}\hspace{0.3cm}{\ttfamily  \mbox{[}set\mbox{]}}
+\item 
+\mbox{\hyperlink{classMarkerStyle}{Marker\+Style}} \mbox{\hyperlink{classCrosshair_a03d70957e4e139e15392856cd07bcb12}{Marker\+Style}} = new() \{ \mbox{\hyperlink{classCrosshair_a10e3fefe18bf104526763d42c042d8e4}{Line\+Width}} = 1 \}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+Marker\+Shape \mbox{\hyperlink{classCrosshair_a136f67ed2357de418c81c46ea0b0e1d4}{Marker\+Shape}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{classCrosshair_a9b2b3b92a2862d337a9e4fb35c955043}{Marker\+Size}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{structColor}{Color}} \mbox{\hyperlink{classCrosshair_ac0d7919af239e85215810d344a39c457}{Marker\+Fill\+Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{structColor}{Color}} \mbox{\hyperlink{classCrosshair_a37e5210627b451d5aad0fa03c211c94c}{Marker\+Line\+Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{structColor}{Color}} \mbox{\hyperlink{classCrosshair_acc6ef00ab4e5ca09988dbce7729bf080}{Marker\+Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{classCrosshair_a55831092832075771bf2257ff77cbfbb}{Marker\+Line\+Width}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{classLineStyle}{Line\+Style}} \mbox{\hyperlink{classCrosshair_a710bd12f916bbe814dad0435dce7cb9e}{Line\+Style}} = new()\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+bool \mbox{\hyperlink{classCrosshair_a1fc670d8f94c8cf8274ad1e5d2064b82}{Enable\+Autoscale}} = false\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+bool \mbox{\hyperlink{classCrosshair_a410e4445b4735f0bf5c23aae28d0f771}{Is\+Visible}} = true\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{interfaceIAxes}{IAxes}} \mbox{\hyperlink{classCrosshair_af21862b0b1646ddb054c4aba311ca6cb}{Axes}} = new \mbox{\hyperlink{classAxes}{Axes}}()\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$ \mbox{\hyperlink{classLegendItem}{Legend\+Item}} $>$ \mbox{\hyperlink{classCrosshair_afd97d34f7505f67075bc6b4c83d77a65}{Legend\+Items}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classCrosshair_a02d6e3f2a09d0184ef937e6cd9cd2c38}\label{classCrosshair_a02d6e3f2a09d0184ef937e6cd9cd2c38}} 
+\index{Crosshair@{Crosshair}!GetAxisLimits@{GetAxisLimits}}
+\index{GetAxisLimits@{GetAxisLimits}!Crosshair@{Crosshair}}
+\doxysubsubsection{\texorpdfstring{GetAxisLimits()}{GetAxisLimits()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} Crosshair.\+Get\+Axis\+Limits (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Return the 2D area (in coordinate space) occupied by the data contained in this plottable 
+
+
+
+Implements \mbox{\hyperlink{interfaceIPlottable_ac98e2f5e56f9f938bbd081c87c7c6f50}{IPlottable}}.
+
+\mbox{\Hypertarget{classCrosshair_a835e69280ae50983bc8301ff5d0a4409}\label{classCrosshair_a835e69280ae50983bc8301ff5d0a4409}} 
+\index{Crosshair@{Crosshair}!Render@{Render}}
+\index{Render@{Render}!Crosshair@{Crosshair}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily virtual void Crosshair.\+Render (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classRenderPack}{Render\+Pack}}}]{rp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Draw the data from this plottable into the data area defined in the \mbox{\hyperlink{classAxes}{Axes}}. By default the surface is already clipped to the data area, but this can be cleared inside the plottable. 
+
+
+
+Implements \mbox{\hyperlink{interfaceIPlottable_a201a1a236dc718eda93db143a5ade9f8}{IPlottable}}.
+
+\mbox{\Hypertarget{classCrosshair_adbcbcf44cd1f5fb423c0b7864d4f5b11}\label{classCrosshair_adbcbcf44cd1f5fb423c0b7864d4f5b11}} 
+\index{Crosshair@{Crosshair}!RenderLast@{RenderLast}}
+\index{RenderLast@{RenderLast}!Crosshair@{Crosshair}}
+\doxysubsubsection{\texorpdfstring{RenderLast()}{RenderLast()}}
+{\footnotesize\ttfamily void Crosshair.\+Render\+Last (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classRenderPack}{Render\+Pack}}}]{rp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Plottables that implement this interface have a second render method that runs after the axes are drawn, allowing graphics to be placed on top of the axes. 
+
+
+
+Implements \mbox{\hyperlink{interfaceIRenderLast_a48d83d7c8c87ddffa18b0fbf746144df}{IRender\+Last}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classCrosshair_a8fb97c6c7566f7d82b0b37e2fba6ff77}\label{classCrosshair_a8fb97c6c7566f7d82b0b37e2fba6ff77}} 
+\index{Crosshair@{Crosshair}!FontColor@{FontColor}}
+\index{FontColor@{FontColor}!Crosshair@{Crosshair}}
+\doxysubsubsection{\texorpdfstring{FontColor}{FontColor}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structColor}{Color}} Crosshair.\+Font\+Color}
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{classCrosshair_af21862b0b1646ddb054c4aba311ca6cb}\label{classCrosshair_af21862b0b1646ddb054c4aba311ca6cb}} 
+\index{Crosshair@{Crosshair}!Axes@{Axes}}
+\index{Axes@{Axes}!Crosshair@{Crosshair}}
+\doxysubsubsection{\texorpdfstring{Axes}{Axes}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceIAxes}{IAxes}} Crosshair.\+Axes = new \mbox{\hyperlink{classAxes}{Axes}}()\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classCrosshair_a1fc670d8f94c8cf8274ad1e5d2064b82}\label{classCrosshair_a1fc670d8f94c8cf8274ad1e5d2064b82}} 
+\index{Crosshair@{Crosshair}!EnableAutoscale@{EnableAutoscale}}
+\index{EnableAutoscale@{EnableAutoscale}!Crosshair@{Crosshair}}
+\doxysubsubsection{\texorpdfstring{EnableAutoscale}{EnableAutoscale}}
+{\footnotesize\ttfamily bool Crosshair.\+Enable\+Autoscale = false\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classCrosshair_a686612202fad7bc865f5b48229e3c269}\label{classCrosshair_a686612202fad7bc865f5b48229e3c269}} 
+\index{Crosshair@{Crosshair}!FontBold@{FontBold}}
+\index{FontBold@{FontBold}!Crosshair@{Crosshair}}
+\doxysubsubsection{\texorpdfstring{FontBold}{FontBold}}
+{\footnotesize\ttfamily bool Crosshair.\+Font\+Bold\hspace{0.3cm}{\ttfamily [set]}}
+
+\mbox{\Hypertarget{classCrosshair_aa810475688e1168b791e9424e2630cb6}\label{classCrosshair_aa810475688e1168b791e9424e2630cb6}} 
+\index{Crosshair@{Crosshair}!FontName@{FontName}}
+\index{FontName@{FontName}!Crosshair@{Crosshair}}
+\doxysubsubsection{\texorpdfstring{FontName}{FontName}}
+{\footnotesize\ttfamily string Crosshair.\+Font\+Name\hspace{0.3cm}{\ttfamily [set]}}
+
+\mbox{\Hypertarget{classCrosshair_a512671871ab9196d04a532897cdc7f3c}\label{classCrosshair_a512671871ab9196d04a532897cdc7f3c}} 
+\index{Crosshair@{Crosshair}!FontSize@{FontSize}}
+\index{FontSize@{FontSize}!Crosshair@{Crosshair}}
+\doxysubsubsection{\texorpdfstring{FontSize}{FontSize}}
+{\footnotesize\ttfamily float Crosshair.\+Font\+Size\hspace{0.3cm}{\ttfamily [set]}}
+
+\mbox{\Hypertarget{classCrosshair_af14b92aaf54b165cb38a6c59eebf6edf}\label{classCrosshair_af14b92aaf54b165cb38a6c59eebf6edf}} 
+\index{Crosshair@{Crosshair}!HorizontalLine@{HorizontalLine}}
+\index{HorizontalLine@{HorizontalLine}!Crosshair@{Crosshair}}
+\doxysubsubsection{\texorpdfstring{HorizontalLine}{HorizontalLine}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classHorizontalLine}{Horizontal\+Line}} Crosshair.\+Horizontal\+Line = new()\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{classCrosshair_a410e4445b4735f0bf5c23aae28d0f771}\label{classCrosshair_a410e4445b4735f0bf5c23aae28d0f771}} 
+\index{Crosshair@{Crosshair}!IsVisible@{IsVisible}}
+\index{IsVisible@{IsVisible}!Crosshair@{Crosshair}}
+\doxysubsubsection{\texorpdfstring{IsVisible}{IsVisible}}
+{\footnotesize\ttfamily bool Crosshair.\+Is\+Visible = true\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classCrosshair_afd97d34f7505f67075bc6b4c83d77a65}\label{classCrosshair_afd97d34f7505f67075bc6b4c83d77a65}} 
+\index{Crosshair@{Crosshair}!LegendItems@{LegendItems}}
+\index{LegendItems@{LegendItems}!Crosshair@{Crosshair}}
+\doxysubsubsection{\texorpdfstring{LegendItems}{LegendItems}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$\mbox{\hyperlink{classLegendItem}{Legend\+Item}}$>$ Crosshair.\+Legend\+Items\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{classCrosshair_a96906eee133504de44b8e565ad393cc1}\label{classCrosshair_a96906eee133504de44b8e565ad393cc1}} 
+\index{Crosshair@{Crosshair}!LineColor@{LineColor}}
+\index{LineColor@{LineColor}!Crosshair@{Crosshair}}
+\doxysubsubsection{\texorpdfstring{LineColor}{LineColor}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structColor}{Color}} Crosshair.\+Line\+Color\hspace{0.3cm}{\ttfamily [set]}}
+
+\mbox{\Hypertarget{classCrosshair_a3cb071824317dc43465e86dc83f47189}\label{classCrosshair_a3cb071824317dc43465e86dc83f47189}} 
+\index{Crosshair@{Crosshair}!LinePattern@{LinePattern}}
+\index{LinePattern@{LinePattern}!Crosshair@{Crosshair}}
+\doxysubsubsection{\texorpdfstring{LinePattern}{LinePattern}}
+{\footnotesize\ttfamily Line\+Pattern Crosshair.\+Line\+Pattern\hspace{0.3cm}{\ttfamily [set]}}
+
+\mbox{\Hypertarget{classCrosshair_a710bd12f916bbe814dad0435dce7cb9e}\label{classCrosshair_a710bd12f916bbe814dad0435dce7cb9e}} 
+\index{Crosshair@{Crosshair}!LineStyle@{LineStyle}}
+\index{LineStyle@{LineStyle}!Crosshair@{Crosshair}}
+\doxysubsubsection{\texorpdfstring{LineStyle}{LineStyle}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classLineStyle}{Line\+Style}} Crosshair.\+Line\+Style = new()\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classCrosshair_a10e3fefe18bf104526763d42c042d8e4}\label{classCrosshair_a10e3fefe18bf104526763d42c042d8e4}} 
+\index{Crosshair@{Crosshair}!LineWidth@{LineWidth}}
+\index{LineWidth@{LineWidth}!Crosshair@{Crosshair}}
+\doxysubsubsection{\texorpdfstring{LineWidth}{LineWidth}}
+{\footnotesize\ttfamily float Crosshair.\+Line\+Width\hspace{0.3cm}{\ttfamily [set]}}
+
+\mbox{\Hypertarget{classCrosshair_acc6ef00ab4e5ca09988dbce7729bf080}\label{classCrosshair_acc6ef00ab4e5ca09988dbce7729bf080}} 
+\index{Crosshair@{Crosshair}!MarkerColor@{MarkerColor}}
+\index{MarkerColor@{MarkerColor}!Crosshair@{Crosshair}}
+\doxysubsubsection{\texorpdfstring{MarkerColor}{MarkerColor}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structColor}{Color}} Crosshair.\+Marker\+Color\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classCrosshair_ac0d7919af239e85215810d344a39c457}\label{classCrosshair_ac0d7919af239e85215810d344a39c457}} 
+\index{Crosshair@{Crosshair}!MarkerFillColor@{MarkerFillColor}}
+\index{MarkerFillColor@{MarkerFillColor}!Crosshair@{Crosshair}}
+\doxysubsubsection{\texorpdfstring{MarkerFillColor}{MarkerFillColor}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structColor}{Color}} Crosshair.\+Marker\+Fill\+Color\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classCrosshair_a37e5210627b451d5aad0fa03c211c94c}\label{classCrosshair_a37e5210627b451d5aad0fa03c211c94c}} 
+\index{Crosshair@{Crosshair}!MarkerLineColor@{MarkerLineColor}}
+\index{MarkerLineColor@{MarkerLineColor}!Crosshair@{Crosshair}}
+\doxysubsubsection{\texorpdfstring{MarkerLineColor}{MarkerLineColor}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structColor}{Color}} Crosshair.\+Marker\+Line\+Color\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classCrosshair_a55831092832075771bf2257ff77cbfbb}\label{classCrosshair_a55831092832075771bf2257ff77cbfbb}} 
+\index{Crosshair@{Crosshair}!MarkerLineWidth@{MarkerLineWidth}}
+\index{MarkerLineWidth@{MarkerLineWidth}!Crosshair@{Crosshair}}
+\doxysubsubsection{\texorpdfstring{MarkerLineWidth}{MarkerLineWidth}}
+{\footnotesize\ttfamily float Crosshair.\+Marker\+Line\+Width\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classCrosshair_a136f67ed2357de418c81c46ea0b0e1d4}\label{classCrosshair_a136f67ed2357de418c81c46ea0b0e1d4}} 
+\index{Crosshair@{Crosshair}!MarkerShape@{MarkerShape}}
+\index{MarkerShape@{MarkerShape}!Crosshair@{Crosshair}}
+\doxysubsubsection{\texorpdfstring{MarkerShape}{MarkerShape}}
+{\footnotesize\ttfamily Marker\+Shape Crosshair.\+Marker\+Shape\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classCrosshair_a9b2b3b92a2862d337a9e4fb35c955043}\label{classCrosshair_a9b2b3b92a2862d337a9e4fb35c955043}} 
+\index{Crosshair@{Crosshair}!MarkerSize@{MarkerSize}}
+\index{MarkerSize@{MarkerSize}!Crosshair@{Crosshair}}
+\doxysubsubsection{\texorpdfstring{MarkerSize}{MarkerSize}}
+{\footnotesize\ttfamily float Crosshair.\+Marker\+Size\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classCrosshair_a03d70957e4e139e15392856cd07bcb12}\label{classCrosshair_a03d70957e4e139e15392856cd07bcb12}} 
+\index{Crosshair@{Crosshair}!MarkerStyle@{MarkerStyle}}
+\index{MarkerStyle@{MarkerStyle}!Crosshair@{Crosshair}}
+\doxysubsubsection{\texorpdfstring{MarkerStyle}{MarkerStyle}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classMarkerStyle}{Marker\+Style}} Crosshair.\+Marker\+Style = new() \{ \mbox{\hyperlink{classCrosshair_a10e3fefe18bf104526763d42c042d8e4}{Line\+Width}} = 1 \}\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classCrosshair_a8f5de7e0c95f193d5f11373009aef070}\label{classCrosshair_a8f5de7e0c95f193d5f11373009aef070}} 
+\index{Crosshair@{Crosshair}!Position@{Position}}
+\index{Position@{Position}!Crosshair@{Crosshair}}
+\doxysubsubsection{\texorpdfstring{Position}{Position}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structCoordinates}{Coordinates}} Crosshair.\+Position\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classCrosshair_a5036bede20039de2e689dd00e9dd80c6}\label{classCrosshair_a5036bede20039de2e689dd00e9dd80c6}} 
+\index{Crosshair@{Crosshair}!TextBackgroundColor@{TextBackgroundColor}}
+\index{TextBackgroundColor@{TextBackgroundColor}!Crosshair@{Crosshair}}
+\doxysubsubsection{\texorpdfstring{TextBackgroundColor}{TextBackgroundColor}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structColor}{Color}} Crosshair.\+Text\+Background\+Color\hspace{0.3cm}{\ttfamily [set]}}
+
+\mbox{\Hypertarget{classCrosshair_a7e5f52ac488b69dba084cdb12d68adc1}\label{classCrosshair_a7e5f52ac488b69dba084cdb12d68adc1}} 
+\index{Crosshair@{Crosshair}!TextColor@{TextColor}}
+\index{TextColor@{TextColor}!Crosshair@{Crosshair}}
+\doxysubsubsection{\texorpdfstring{TextColor}{TextColor}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structColor}{Color}} Crosshair.\+Text\+Color\hspace{0.3cm}{\ttfamily [set]}}
+
+\mbox{\Hypertarget{classCrosshair_a6d9dbf1b8c84fb0e0b4ded8843849165}\label{classCrosshair_a6d9dbf1b8c84fb0e0b4ded8843849165}} 
+\index{Crosshair@{Crosshair}!VerticalLine@{VerticalLine}}
+\index{VerticalLine@{VerticalLine}!Crosshair@{Crosshair}}
+\doxysubsubsection{\texorpdfstring{VerticalLine}{VerticalLine}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVerticalLine}{Vertical\+Line}} Crosshair.\+Vertical\+Line = new()\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{classCrosshair_a39a730309c4569933929d4512028f1a4}\label{classCrosshair_a39a730309c4569933929d4512028f1a4}} 
+\index{Crosshair@{Crosshair}!X@{X}}
+\index{X@{X}!Crosshair@{Crosshair}}
+\doxysubsubsection{\texorpdfstring{X}{X}}
+{\footnotesize\ttfamily double Crosshair.\+X\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classCrosshair_af7769d450e1ac59d3f9f995b99d4d491}\label{classCrosshair_af7769d450e1ac59d3f9f995b99d4d491}} 
+\index{Crosshair@{Crosshair}!Y@{Y}}
+\index{Y@{Y}!Crosshair@{Crosshair}}
+\doxysubsubsection{\texorpdfstring{Y}{Y}}
+{\footnotesize\ttfamily double Crosshair.\+Y\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Plottables/Crosshair.\+cs\end{DoxyCompactItemize}

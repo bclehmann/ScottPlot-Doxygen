@@ -1,0 +1,79 @@
+\doxysection{Scott\+Plot.\+IVector\+Field\+Source Interface Reference}
+\hypertarget{interface_scott_plot_1_1_i_vector_field_source}{}\label{interface_scott_plot_1_1_i_vector_field_source}\index{ScottPlot.IVectorFieldSource@{ScottPlot.IVectorFieldSource}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+IRead\+Only\+List$<$ \mbox{\hyperlink{namespace_scott_plot_a2501491e0769bfdb137a8f53d8f28372}{Rooted\+Coordinate\+Vector}} $>$ \mbox{\hyperlink{interface_scott_plot_1_1_i_vector_field_source_a107b81abb690e2a0c45a0dc29fdfdd49}{Get\+Rooted\+Vectors}} ()
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_data_point}{Data\+Point}} \mbox{\hyperlink{interface_scott_plot_1_1_i_vector_field_source_a8313e22377f1f1b192d2b2c280579768}{Get\+Nearest}} (\mbox{\hyperlink{struct_scott_plot_1_1_coordinates}{Coordinates}} location, \mbox{\hyperlink{struct_scott_plot_1_1_render_details}{Render\+Details}} render\+Info, float max\+Distance=15)
+\begin{DoxyCompactList}\small\item\em Return the point nearest a specific location given the X/Y pixel scaling information from a previous render. Will return \doxylink{struct_scott_plot_1_1_data_point_af8284a4f8c8854936112d2ce1850a3c1}{Data\+Point.\+None} if the nearest point is greater than {\itshape max\+Distance}  pixels away. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_scott_plot_a4f8afc1393f89ce60e775705cbf134d1}{Coordinate\+Range}} \mbox{\hyperlink{interface_scott_plot_1_1_i_vector_field_source_aa45995ff2cb902e2c60ffb7d47e54377}{Get\+LimitsX}} ()
+\item 
+\mbox{\hyperlink{namespace_scott_plot_a4f8afc1393f89ce60e775705cbf134d1}{Coordinate\+Range}} \mbox{\hyperlink{interface_scott_plot_1_1_i_vector_field_source_a894a86b26906a6fd7b3780a6e24bf224}{Get\+LimitsY}} ()
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}} \mbox{\hyperlink{interface_scott_plot_1_1_i_vector_field_source_ac6bc67d6ef63aae131ecf9efd731a7ac}{Get\+Limits}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{interface_scott_plot_1_1_i_vector_field_source_a10113076f993356b52566d9ef7b4968e}{Min\+Render\+Index}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+int \mbox{\hyperlink{interface_scott_plot_1_1_i_vector_field_source_ab549496a5147e19b92b64b47ad0da59c}{Max\+Render\+Index}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_scott_plot_1_1_i_vector_field_source_ac6bc67d6ef63aae131ecf9efd731a7ac}\index{ScottPlot.IVectorFieldSource@{ScottPlot.IVectorFieldSource}!GetLimits@{GetLimits}}
+\index{GetLimits@{GetLimits}!ScottPlot.IVectorFieldSource@{ScottPlot.IVectorFieldSource}}
+\doxysubsubsection{\texorpdfstring{GetLimits()}{GetLimits()}}
+{\footnotesize\ttfamily \label{interface_scott_plot_1_1_i_vector_field_source_ac6bc67d6ef63aae131ecf9efd731a7ac} 
+\mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}} Scott\+Plot.\+IVector\+Field\+Source.\+Get\+Limits (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{interface_scott_plot_1_1_i_vector_field_source_aa45995ff2cb902e2c60ffb7d47e54377}\index{ScottPlot.IVectorFieldSource@{ScottPlot.IVectorFieldSource}!GetLimitsX@{GetLimitsX}}
+\index{GetLimitsX@{GetLimitsX}!ScottPlot.IVectorFieldSource@{ScottPlot.IVectorFieldSource}}
+\doxysubsubsection{\texorpdfstring{GetLimitsX()}{GetLimitsX()}}
+{\footnotesize\ttfamily \label{interface_scott_plot_1_1_i_vector_field_source_aa45995ff2cb902e2c60ffb7d47e54377} 
+\mbox{\hyperlink{namespace_scott_plot_a4f8afc1393f89ce60e775705cbf134d1}{Coordinate\+Range}} Scott\+Plot.\+IVector\+Field\+Source.\+Get\+LimitsX (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{interface_scott_plot_1_1_i_vector_field_source_a894a86b26906a6fd7b3780a6e24bf224}\index{ScottPlot.IVectorFieldSource@{ScottPlot.IVectorFieldSource}!GetLimitsY@{GetLimitsY}}
+\index{GetLimitsY@{GetLimitsY}!ScottPlot.IVectorFieldSource@{ScottPlot.IVectorFieldSource}}
+\doxysubsubsection{\texorpdfstring{GetLimitsY()}{GetLimitsY()}}
+{\footnotesize\ttfamily \label{interface_scott_plot_1_1_i_vector_field_source_a894a86b26906a6fd7b3780a6e24bf224} 
+\mbox{\hyperlink{namespace_scott_plot_a4f8afc1393f89ce60e775705cbf134d1}{Coordinate\+Range}} Scott\+Plot.\+IVector\+Field\+Source.\+Get\+LimitsY (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{interface_scott_plot_1_1_i_vector_field_source_a8313e22377f1f1b192d2b2c280579768}\index{ScottPlot.IVectorFieldSource@{ScottPlot.IVectorFieldSource}!GetNearest@{GetNearest}}
+\index{GetNearest@{GetNearest}!ScottPlot.IVectorFieldSource@{ScottPlot.IVectorFieldSource}}
+\doxysubsubsection{\texorpdfstring{GetNearest()}{GetNearest()}}
+{\footnotesize\ttfamily \label{interface_scott_plot_1_1_i_vector_field_source_a8313e22377f1f1b192d2b2c280579768} 
+\mbox{\hyperlink{struct_scott_plot_1_1_data_point}{Data\+Point}} Scott\+Plot.\+IVector\+Field\+Source.\+Get\+Nearest (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_scott_plot_1_1_coordinates}{Coordinates}}}]{location}{, }\item[{\mbox{\hyperlink{struct_scott_plot_1_1_render_details}{Render\+Details}}}]{render\+Info}{, }\item[{float}]{max\+Distance}{ = {\ttfamily 15}}\end{DoxyParamCaption})}
+
+
+
+Return the point nearest a specific location given the X/Y pixel scaling information from a previous render. Will return \doxylink{struct_scott_plot_1_1_data_point_af8284a4f8c8854936112d2ce1850a3c1}{Data\+Point.\+None} if the nearest point is greater than {\itshape max\+Distance}  pixels away. 
+
+\Hypertarget{interface_scott_plot_1_1_i_vector_field_source_a107b81abb690e2a0c45a0dc29fdfdd49}\index{ScottPlot.IVectorFieldSource@{ScottPlot.IVectorFieldSource}!GetRootedVectors@{GetRootedVectors}}
+\index{GetRootedVectors@{GetRootedVectors}!ScottPlot.IVectorFieldSource@{ScottPlot.IVectorFieldSource}}
+\doxysubsubsection{\texorpdfstring{GetRootedVectors()}{GetRootedVectors()}}
+{\footnotesize\ttfamily \label{interface_scott_plot_1_1_i_vector_field_source_a107b81abb690e2a0c45a0dc29fdfdd49} 
+IRead\+Only\+List$<$ \mbox{\hyperlink{namespace_scott_plot_a2501491e0769bfdb137a8f53d8f28372}{Rooted\+Coordinate\+Vector}} $>$ Scott\+Plot.\+IVector\+Field\+Source.\+Get\+Rooted\+Vectors (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{interface_scott_plot_1_1_i_vector_field_source_ab549496a5147e19b92b64b47ad0da59c}\index{ScottPlot.IVectorFieldSource@{ScottPlot.IVectorFieldSource}!MaxRenderIndex@{MaxRenderIndex}}
+\index{MaxRenderIndex@{MaxRenderIndex}!ScottPlot.IVectorFieldSource@{ScottPlot.IVectorFieldSource}}
+\doxysubsubsection{\texorpdfstring{MaxRenderIndex}{MaxRenderIndex}}
+{\footnotesize\ttfamily \label{interface_scott_plot_1_1_i_vector_field_source_ab549496a5147e19b92b64b47ad0da59c} 
+int Scott\+Plot.\+IVector\+Field\+Source.\+Max\+Render\+Index\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{interface_scott_plot_1_1_i_vector_field_source_a10113076f993356b52566d9ef7b4968e}\index{ScottPlot.IVectorFieldSource@{ScottPlot.IVectorFieldSource}!MinRenderIndex@{MinRenderIndex}}
+\index{MinRenderIndex@{MinRenderIndex}!ScottPlot.IVectorFieldSource@{ScottPlot.IVectorFieldSource}}
+\doxysubsubsection{\texorpdfstring{MinRenderIndex}{MinRenderIndex}}
+{\footnotesize\ttfamily \label{interface_scott_plot_1_1_i_vector_field_source_a10113076f993356b52566d9ef7b4968e} 
+int Scott\+Plot.\+IVector\+Field\+Source.\+Min\+Render\+Index\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Interfaces/IVector\+Field\+Source.\+cs\end{DoxyCompactItemize}

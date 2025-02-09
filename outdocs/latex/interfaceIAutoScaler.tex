@@ -1,0 +1,83 @@
+\hypertarget{interfaceIAutoScaler}{}\doxysection{IAuto\+Scaler Interface Reference}
+\label{interfaceIAutoScaler}\index{IAutoScaler@{IAutoScaler}}
+
+
+Contains logic for determining new axis limits when Autoscale() is called  
+
+
+Inheritance diagram for IAuto\+Scaler\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interfaceIAutoScaler}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} \mbox{\hyperlink{interfaceIAutoScaler_a22e68b24596e4bfa94498668dff39219}{Get\+Axis\+Limits}} (\mbox{\hyperlink{classPlot}{Plot}} plot, \mbox{\hyperlink{interfaceIXAxis}{IXAxis}} x\+Axis, \mbox{\hyperlink{interfaceIYAxis}{IYAxis}} y\+Axis)
+\begin{DoxyCompactList}\small\item\em Return the recommended axis limits for the plottables that use the given axes \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfaceIAutoScaler_ac17dbf271f1de3cef623dcfe60fd45ef}{Auto\+Scale\+All}} (\mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$ \mbox{\hyperlink{interfaceIPlottable}{IPlottable}} $>$ plottables)
+\begin{DoxyCompactList}\small\item\em Autoscale every unset axis used by plottables. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{interfaceIAutoScaler_ab1ce391c8d1a990d187c4630690dbd03}{InvertedX}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+bool \mbox{\hyperlink{interfaceIAutoScaler_a9f9e4fc4555040c8b8cec230526eb258}{InvertedY}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Contains logic for determining new axis limits when Autoscale() is called 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{interfaceIAutoScaler_ac17dbf271f1de3cef623dcfe60fd45ef}\label{interfaceIAutoScaler_ac17dbf271f1de3cef623dcfe60fd45ef}} 
+\index{IAutoScaler@{IAutoScaler}!AutoScaleAll@{AutoScaleAll}}
+\index{AutoScaleAll@{AutoScaleAll}!IAutoScaler@{IAutoScaler}}
+\doxysubsubsection{\texorpdfstring{AutoScaleAll()}{AutoScaleAll()}}
+{\footnotesize\ttfamily void IAuto\+Scaler.\+Auto\+Scale\+All (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$ \mbox{\hyperlink{interfaceIPlottable}{IPlottable}} $>$}]{plottables }\end{DoxyParamCaption})}
+
+
+
+Autoscale every unset axis used by plottables. 
+
+
+
+Implemented in \mbox{\hyperlink{classFractionalAutoScaler_a43da450fa582f169a600800ceec895bb}{Fractional\+Auto\+Scaler}}.
+
+\mbox{\Hypertarget{interfaceIAutoScaler_a22e68b24596e4bfa94498668dff39219}\label{interfaceIAutoScaler_a22e68b24596e4bfa94498668dff39219}} 
+\index{IAutoScaler@{IAutoScaler}!GetAxisLimits@{GetAxisLimits}}
+\index{GetAxisLimits@{GetAxisLimits}!IAutoScaler@{IAutoScaler}}
+\doxysubsubsection{\texorpdfstring{GetAxisLimits()}{GetAxisLimits()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} IAuto\+Scaler.\+Get\+Axis\+Limits (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPlot}{Plot}}}]{plot,  }\item[{\mbox{\hyperlink{interfaceIXAxis}{IXAxis}}}]{x\+Axis,  }\item[{\mbox{\hyperlink{interfaceIYAxis}{IYAxis}}}]{y\+Axis }\end{DoxyParamCaption})}
+
+
+
+Return the recommended axis limits for the plottables that use the given axes 
+
+
+
+Implemented in \mbox{\hyperlink{classFractionalAutoScaler_a7fbf6603f12b08451cb00afc8da54592}{Fractional\+Auto\+Scaler}}.
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{interfaceIAutoScaler_ab1ce391c8d1a990d187c4630690dbd03}\label{interfaceIAutoScaler_ab1ce391c8d1a990d187c4630690dbd03}} 
+\index{IAutoScaler@{IAutoScaler}!InvertedX@{InvertedX}}
+\index{InvertedX@{InvertedX}!IAutoScaler@{IAutoScaler}}
+\doxysubsubsection{\texorpdfstring{InvertedX}{InvertedX}}
+{\footnotesize\ttfamily bool IAuto\+Scaler.\+InvertedX\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{interfaceIAutoScaler_a9f9e4fc4555040c8b8cec230526eb258}\label{interfaceIAutoScaler_a9f9e4fc4555040c8b8cec230526eb258}} 
+\index{IAutoScaler@{IAutoScaler}!InvertedY@{InvertedY}}
+\index{InvertedY@{InvertedY}!IAutoScaler@{IAutoScaler}}
+\doxysubsubsection{\texorpdfstring{InvertedY}{InvertedY}}
+{\footnotesize\ttfamily bool IAuto\+Scaler.\+InvertedY\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Primitives/IAuto\+Scaler.\+cs\end{DoxyCompactItemize}

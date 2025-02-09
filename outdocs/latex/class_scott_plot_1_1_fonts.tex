@@ -1,0 +1,211 @@
+\doxysection{Scott\+Plot.\+Fonts Class Reference}
+\hypertarget{class_scott_plot_1_1_fonts}{}\label{class_scott_plot_1_1_fonts}\index{ScottPlot.Fonts@{ScottPlot.Fonts}}
+
+
+Cross-\/platform tools for working with fonts.  
+
+
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_scott_plot_1_1_fonts_a378cbd4306c2856d1c88d674c01c53ef}{Add\+Font\+File}} (string name, string path, bool bold, bool italic)
+\begin{DoxyCompactList}\small\item\em Add a font resolver that creates a typeface from a TTF file. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_scott_plot_1_1_fonts_a2e43bb7514d0a2dafbd3b055018ed49a}{Exists}} (string font\+Name)
+\item 
+static bool \mbox{\hyperlink{class_scott_plot_1_1_fonts_a280991335f28316e653625c0bc76f702}{Exists}} (string font\+Name, bool bold, bool italic)
+\item 
+static SKTypeface \mbox{\hyperlink{class_scott_plot_1_1_fonts_a7b804e3e3e112cc49e97350f18be0c97}{Get\+Typeface}} (string font\+Name, bool bold, bool italic)
+\begin{DoxyCompactList}\small\item\em Returns a typeface for the requested font name and style. A cached typeface will be used if it exists, otherwise one will be created, cached, and returned. \end{DoxyCompactList}\item 
+static string \mbox{\hyperlink{class_scott_plot_1_1_fonts_aaf0f6fcd5c522d8294017437514ae9a5}{Detect}} (string text)
+\begin{DoxyCompactList}\small\item\em Use the characters in the string to determine an installed system font most likely to support this character set. Returns the system \doxylink{class_scott_plot_1_1_fonts_a593f8924a5a864749d52639b51cb9275}{Default} font if an ideal font cannot be determined. \end{DoxyCompactList}\item 
+static string \mbox{\hyperlink{class_scott_plot_1_1_fonts_a842567f8a0f87f6a96e2f31728371fed}{Get\+Default\+Font\+Family}} ()
+\item 
+static List$<$ string $>$ \mbox{\hyperlink{class_scott_plot_1_1_fonts_a6ed3aeb36cf4cc461ab7e9bf29a1600d}{Get\+Candidate\+Fonts\+For\+String}} (List$<$ int $>$ standalone\+Code\+Points)
+\item 
+static int \mbox{\hyperlink{class_scott_plot_1_1_fonts_a460458adc987cbae96671b8a1d36b174}{Count\+Missing\+Glyphs}} (string font\+Name, List$<$ int $>$ standalone\+Code\+Points)
+\item 
+static List$<$ int $>$ \mbox{\hyperlink{class_scott_plot_1_1_fonts_a476847fc76ee269d683661d4d5e412c5}{Get\+Standalone\+Code\+Points}} (string input\+Text)
+\item 
+static List$<$ string $>$ \mbox{\hyperlink{class_scott_plot_1_1_fonts_aaeefde8dc7ee5858825d7afd802376d3}{Convert\+String\+To\+Text\+Elements}} (string text\+String)
+\item 
+static List$<$ int $>$ \mbox{\hyperlink{class_scott_plot_1_1_fonts_a1ce3444f39d5fffbae6d5aa3910c14d1}{Convert\+Text\+Element\+To\+Utf32\+Code\+Points}} (string text\+Element)
+\begin{DoxyCompactList}\small\item\em Take a single text element ("{}grapheme cluster"{}) as input, and return one or more Unicode code points. The code points are represented with signed ints since that is idiomatic for C\#, even though they are always unsigned values. \end{DoxyCompactList}\item 
+static List$<$ int $>$ \mbox{\hyperlink{class_scott_plot_1_1_fonts_a3ce25ac972c26dab5af5e2008992d366}{Get\+Standalone\+Code\+Points}} (\mbox{\hyperlink{class_i_enumerable}{IEnumerable}}$<$ List$<$ int $>$ $>$ code\+Point\+Lists)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+static List$<$ \mbox{\hyperlink{interface_scott_plot_1_1_i_font_resolver}{IFont\+Resolver}} $>$ \mbox{\hyperlink{class_scott_plot_1_1_fonts_a068277496e7da4d1d41acdb1ddd801c1}{Font\+Resolvers}} = \mbox{[}new \mbox{\hyperlink{class_scott_plot_1_1_font_resolvers_1_1_system_font_resolver}{System\+Font\+Resolver}}()\mbox{]}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Collection of font resolvers that return typefaces from font names and style information. \end{DoxyCompactList}\item 
+static string \mbox{\hyperlink{class_scott_plot_1_1_fonts_a593f8924a5a864749d52639b51cb9275}{Default}} = System\+Font\+Resolver.\+Installed\+Sans\+Font()\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em This font is used for almost all text rendering. \end{DoxyCompactList}\item 
+static string \mbox{\hyperlink{class_scott_plot_1_1_fonts_a237e6063113cfc2478e6fa2625be0ebe}{Sans}} = System\+Font\+Resolver.\+Installed\+Sans\+Font()\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Name of a sans-\/serif font present on the system. \end{DoxyCompactList}\item 
+static string \mbox{\hyperlink{class_scott_plot_1_1_fonts_a699a884d309e5d401c90f743c4039b8c}{Serif}} = System\+Font\+Resolver.\+Installed\+Serif\+Font()\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Name of a serif font present on the system. \end{DoxyCompactList}\item 
+static string \mbox{\hyperlink{class_scott_plot_1_1_fonts_af5adbc351c6ba591821f8a808804e737}{Monospace}} = System\+Font\+Resolver.\+Installed\+Monospace\+Font()\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Name of a monospace font present on the system. \end{DoxyCompactList}\item 
+static string \mbox{\hyperlink{class_scott_plot_1_1_fonts_aefdccbf020c2343b1e4d1b126c42b4eb}{System}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Default system font name. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Cross-\/platform tools for working with fonts. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_scott_plot_1_1_fonts_a378cbd4306c2856d1c88d674c01c53ef}\index{ScottPlot.Fonts@{ScottPlot.Fonts}!AddFontFile@{AddFontFile}}
+\index{AddFontFile@{AddFontFile}!ScottPlot.Fonts@{ScottPlot.Fonts}}
+\doxysubsubsection{\texorpdfstring{AddFontFile()}{AddFontFile()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_fonts_a378cbd4306c2856d1c88d674c01c53ef} 
+static void Scott\+Plot.\+Fonts.\+Add\+Font\+File (\begin{DoxyParamCaption}\item[{string}]{name}{, }\item[{string}]{path}{, }\item[{bool}]{bold}{, }\item[{bool}]{italic}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Add a font resolver that creates a typeface from a TTF file. 
+
+\Hypertarget{class_scott_plot_1_1_fonts_aaeefde8dc7ee5858825d7afd802376d3}\index{ScottPlot.Fonts@{ScottPlot.Fonts}!ConvertStringToTextElements@{ConvertStringToTextElements}}
+\index{ConvertStringToTextElements@{ConvertStringToTextElements}!ScottPlot.Fonts@{ScottPlot.Fonts}}
+\doxysubsubsection{\texorpdfstring{ConvertStringToTextElements()}{ConvertStringToTextElements()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_fonts_aaeefde8dc7ee5858825d7afd802376d3} 
+static List$<$ string $>$ Scott\+Plot.\+Fonts.\+Convert\+String\+To\+Text\+Elements (\begin{DoxyParamCaption}\item[{string}]{text\+String}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\Hypertarget{class_scott_plot_1_1_fonts_a1ce3444f39d5fffbae6d5aa3910c14d1}\index{ScottPlot.Fonts@{ScottPlot.Fonts}!ConvertTextElementToUtf32CodePoints@{ConvertTextElementToUtf32CodePoints}}
+\index{ConvertTextElementToUtf32CodePoints@{ConvertTextElementToUtf32CodePoints}!ScottPlot.Fonts@{ScottPlot.Fonts}}
+\doxysubsubsection{\texorpdfstring{ConvertTextElementToUtf32CodePoints()}{ConvertTextElementToUtf32CodePoints()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_fonts_a1ce3444f39d5fffbae6d5aa3910c14d1} 
+static List$<$ int $>$ Scott\+Plot.\+Fonts.\+Convert\+Text\+Element\+To\+Utf32\+Code\+Points (\begin{DoxyParamCaption}\item[{string}]{text\+Element}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Take a single text element ("{}grapheme cluster"{}) as input, and return one or more Unicode code points. The code points are represented with signed ints since that is idiomatic for C\#, even though they are always unsigned values. 
+
+\Hypertarget{class_scott_plot_1_1_fonts_a460458adc987cbae96671b8a1d36b174}\index{ScottPlot.Fonts@{ScottPlot.Fonts}!CountMissingGlyphs@{CountMissingGlyphs}}
+\index{CountMissingGlyphs@{CountMissingGlyphs}!ScottPlot.Fonts@{ScottPlot.Fonts}}
+\doxysubsubsection{\texorpdfstring{CountMissingGlyphs()}{CountMissingGlyphs()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_fonts_a460458adc987cbae96671b8a1d36b174} 
+static int Scott\+Plot.\+Fonts.\+Count\+Missing\+Glyphs (\begin{DoxyParamCaption}\item[{string}]{font\+Name}{, }\item[{List$<$ int $>$}]{standalone\+Code\+Points}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\Hypertarget{class_scott_plot_1_1_fonts_aaf0f6fcd5c522d8294017437514ae9a5}\index{ScottPlot.Fonts@{ScottPlot.Fonts}!Detect@{Detect}}
+\index{Detect@{Detect}!ScottPlot.Fonts@{ScottPlot.Fonts}}
+\doxysubsubsection{\texorpdfstring{Detect()}{Detect()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_fonts_aaf0f6fcd5c522d8294017437514ae9a5} 
+static string Scott\+Plot.\+Fonts.\+Detect (\begin{DoxyParamCaption}\item[{string}]{text}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Use the characters in the string to determine an installed system font most likely to support this character set. Returns the system \doxylink{class_scott_plot_1_1_fonts_a593f8924a5a864749d52639b51cb9275}{Default} font if an ideal font cannot be determined. 
+
+\Hypertarget{class_scott_plot_1_1_fonts_a2e43bb7514d0a2dafbd3b055018ed49a}\index{ScottPlot.Fonts@{ScottPlot.Fonts}!Exists@{Exists}}
+\index{Exists@{Exists}!ScottPlot.Fonts@{ScottPlot.Fonts}}
+\doxysubsubsection{\texorpdfstring{Exists()}{Exists()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_fonts_a2e43bb7514d0a2dafbd3b055018ed49a} 
+static bool Scott\+Plot.\+Fonts.\+Exists (\begin{DoxyParamCaption}\item[{string}]{font\+Name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\Hypertarget{class_scott_plot_1_1_fonts_a280991335f28316e653625c0bc76f702}\index{ScottPlot.Fonts@{ScottPlot.Fonts}!Exists@{Exists}}
+\index{Exists@{Exists}!ScottPlot.Fonts@{ScottPlot.Fonts}}
+\doxysubsubsection{\texorpdfstring{Exists()}{Exists()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_fonts_a280991335f28316e653625c0bc76f702} 
+static bool Scott\+Plot.\+Fonts.\+Exists (\begin{DoxyParamCaption}\item[{string}]{font\+Name}{, }\item[{bool}]{bold}{, }\item[{bool}]{italic}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\Hypertarget{class_scott_plot_1_1_fonts_a6ed3aeb36cf4cc461ab7e9bf29a1600d}\index{ScottPlot.Fonts@{ScottPlot.Fonts}!GetCandidateFontsForString@{GetCandidateFontsForString}}
+\index{GetCandidateFontsForString@{GetCandidateFontsForString}!ScottPlot.Fonts@{ScottPlot.Fonts}}
+\doxysubsubsection{\texorpdfstring{GetCandidateFontsForString()}{GetCandidateFontsForString()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_fonts_a6ed3aeb36cf4cc461ab7e9bf29a1600d} 
+static List$<$ string $>$ Scott\+Plot.\+Fonts.\+Get\+Candidate\+Fonts\+For\+String (\begin{DoxyParamCaption}\item[{List$<$ int $>$}]{standalone\+Code\+Points}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\Hypertarget{class_scott_plot_1_1_fonts_a842567f8a0f87f6a96e2f31728371fed}\index{ScottPlot.Fonts@{ScottPlot.Fonts}!GetDefaultFontFamily@{GetDefaultFontFamily}}
+\index{GetDefaultFontFamily@{GetDefaultFontFamily}!ScottPlot.Fonts@{ScottPlot.Fonts}}
+\doxysubsubsection{\texorpdfstring{GetDefaultFontFamily()}{GetDefaultFontFamily()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_fonts_a842567f8a0f87f6a96e2f31728371fed} 
+static string Scott\+Plot.\+Fonts.\+Get\+Default\+Font\+Family (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\Hypertarget{class_scott_plot_1_1_fonts_a3ce25ac972c26dab5af5e2008992d366}\index{ScottPlot.Fonts@{ScottPlot.Fonts}!GetStandaloneCodePoints@{GetStandaloneCodePoints}}
+\index{GetStandaloneCodePoints@{GetStandaloneCodePoints}!ScottPlot.Fonts@{ScottPlot.Fonts}}
+\doxysubsubsection{\texorpdfstring{GetStandaloneCodePoints()}{GetStandaloneCodePoints()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_fonts_a3ce25ac972c26dab5af5e2008992d366} 
+static List$<$ int $>$ Scott\+Plot.\+Fonts.\+Get\+Standalone\+Code\+Points (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_i_enumerable}{IEnumerable}}$<$ List$<$ int $>$ $>$}]{code\+Point\+Lists}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Take a list of code point lists as input. Each code point list must correspond to a single text element ("{}grapheme cluster"{}). Filter the list to retain the code point lists made up of single code points, i.\+e. remove combining characters, etc. Return as a flattened list of the remaining standalone code points.\Hypertarget{class_scott_plot_1_1_fonts_a476847fc76ee269d683661d4d5e412c5}\index{ScottPlot.Fonts@{ScottPlot.Fonts}!GetStandaloneCodePoints@{GetStandaloneCodePoints}}
+\index{GetStandaloneCodePoints@{GetStandaloneCodePoints}!ScottPlot.Fonts@{ScottPlot.Fonts}}
+\doxysubsubsection{\texorpdfstring{GetStandaloneCodePoints()}{GetStandaloneCodePoints()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_fonts_a476847fc76ee269d683661d4d5e412c5} 
+static List$<$ int $>$ Scott\+Plot.\+Fonts.\+Get\+Standalone\+Code\+Points (\begin{DoxyParamCaption}\item[{string}]{input\+Text}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\Hypertarget{class_scott_plot_1_1_fonts_a7b804e3e3e112cc49e97350f18be0c97}\index{ScottPlot.Fonts@{ScottPlot.Fonts}!GetTypeface@{GetTypeface}}
+\index{GetTypeface@{GetTypeface}!ScottPlot.Fonts@{ScottPlot.Fonts}}
+\doxysubsubsection{\texorpdfstring{GetTypeface()}{GetTypeface()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_fonts_a7b804e3e3e112cc49e97350f18be0c97} 
+static SKTypeface Scott\+Plot.\+Fonts.\+Get\+Typeface (\begin{DoxyParamCaption}\item[{string}]{font\+Name}{, }\item[{bool}]{bold}{, }\item[{bool}]{italic}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Returns a typeface for the requested font name and style. A cached typeface will be used if it exists, otherwise one will be created, cached, and returned. 
+
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{class_scott_plot_1_1_fonts_a593f8924a5a864749d52639b51cb9275}\index{ScottPlot.Fonts@{ScottPlot.Fonts}!Default@{Default}}
+\index{Default@{Default}!ScottPlot.Fonts@{ScottPlot.Fonts}}
+\doxysubsubsection{\texorpdfstring{Default}{Default}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_fonts_a593f8924a5a864749d52639b51cb9275} 
+string Scott\+Plot.\+Fonts.\+Default = System\+Font\+Resolver.\+Installed\+Sans\+Font()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+This font is used for almost all text rendering. 
+
+\Hypertarget{class_scott_plot_1_1_fonts_a068277496e7da4d1d41acdb1ddd801c1}\index{ScottPlot.Fonts@{ScottPlot.Fonts}!FontResolvers@{FontResolvers}}
+\index{FontResolvers@{FontResolvers}!ScottPlot.Fonts@{ScottPlot.Fonts}}
+\doxysubsubsection{\texorpdfstring{FontResolvers}{FontResolvers}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_fonts_a068277496e7da4d1d41acdb1ddd801c1} 
+List$<$\mbox{\hyperlink{interface_scott_plot_1_1_i_font_resolver}{IFont\+Resolver}}$>$ Scott\+Plot.\+Fonts.\+Font\+Resolvers = \mbox{[}new \mbox{\hyperlink{class_scott_plot_1_1_font_resolvers_1_1_system_font_resolver}{System\+Font\+Resolver}}()\mbox{]}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+
+
+Collection of font resolvers that return typefaces from font names and style information. 
+
+\Hypertarget{class_scott_plot_1_1_fonts_af5adbc351c6ba591821f8a808804e737}\index{ScottPlot.Fonts@{ScottPlot.Fonts}!Monospace@{Monospace}}
+\index{Monospace@{Monospace}!ScottPlot.Fonts@{ScottPlot.Fonts}}
+\doxysubsubsection{\texorpdfstring{Monospace}{Monospace}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_fonts_af5adbc351c6ba591821f8a808804e737} 
+string Scott\+Plot.\+Fonts.\+Monospace = System\+Font\+Resolver.\+Installed\+Monospace\+Font()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Name of a monospace font present on the system. 
+
+\Hypertarget{class_scott_plot_1_1_fonts_a237e6063113cfc2478e6fa2625be0ebe}\index{ScottPlot.Fonts@{ScottPlot.Fonts}!Sans@{Sans}}
+\index{Sans@{Sans}!ScottPlot.Fonts@{ScottPlot.Fonts}}
+\doxysubsubsection{\texorpdfstring{Sans}{Sans}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_fonts_a237e6063113cfc2478e6fa2625be0ebe} 
+string Scott\+Plot.\+Fonts.\+Sans = System\+Font\+Resolver.\+Installed\+Sans\+Font()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Name of a sans-\/serif font present on the system. 
+
+\Hypertarget{class_scott_plot_1_1_fonts_a699a884d309e5d401c90f743c4039b8c}\index{ScottPlot.Fonts@{ScottPlot.Fonts}!Serif@{Serif}}
+\index{Serif@{Serif}!ScottPlot.Fonts@{ScottPlot.Fonts}}
+\doxysubsubsection{\texorpdfstring{Serif}{Serif}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_fonts_a699a884d309e5d401c90f743c4039b8c} 
+string Scott\+Plot.\+Fonts.\+Serif = System\+Font\+Resolver.\+Installed\+Serif\+Font()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Name of a serif font present on the system. 
+
+\Hypertarget{class_scott_plot_1_1_fonts_aefdccbf020c2343b1e4d1b126c42b4eb}\index{ScottPlot.Fonts@{ScottPlot.Fonts}!System@{System}}
+\index{System@{System}!ScottPlot.Fonts@{ScottPlot.Fonts}}
+\doxysubsubsection{\texorpdfstring{System}{System}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_fonts_aefdccbf020c2343b1e4d1b126c42b4eb} 
+string Scott\+Plot.\+Fonts.\+System\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+
+
+Default system font name. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\mbox{\hyperlink{_fonts_8cs}{Fonts.\+cs}}\end{DoxyCompactItemize}

@@ -1,0 +1,109 @@
+\hypertarget{classScatterSourceGenericList}{}\doxysection{Scatter\+Source\+Generic\+List$<$ T1, T2 $>$ Class Template Reference}
+\label{classScatterSourceGenericList}\index{ScatterSourceGenericList$<$ T1, T2 $>$@{ScatterSourceGenericList$<$ T1, T2 $>$}}
+
+
+This data source manages X/Y points as separate X and Y collections  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+IRead\+Only\+List$<$ \mbox{\hyperlink{structCoordinates}{Coordinates}} $>$ \mbox{\hyperlink{classScatterSourceGenericList_a6346d69212b7bcc47f90277e7da357b9}{Get\+Scatter\+Points}} ()
+\item 
+\mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} \mbox{\hyperlink{classScatterSourceGenericList_a336fa05e0759972761abfe1419602845}{Get\+Limits}} ()
+\item 
+\mbox{\hyperlink{structCoordinateRange}{Coordinate\+Range}} \mbox{\hyperlink{classScatterSourceGenericList_abe0943b63f0090bb771f63c3782a0df9}{Get\+LimitsX}} ()
+\item 
+\mbox{\hyperlink{structCoordinateRange}{Coordinate\+Range}} \mbox{\hyperlink{classScatterSourceGenericList_a380e940682dcc14972ed7f6146d7126c}{Get\+LimitsY}} ()
+\item 
+\mbox{\hyperlink{structDataPoint}{Data\+Point}} \mbox{\hyperlink{classScatterSourceGenericList_a54e1b1b27cc8499605ecfaaacb19221f}{Get\+Nearest}} (\mbox{\hyperlink{structCoordinates}{Coordinates}} mouse\+Location, \mbox{\hyperlink{structRenderDetails}{Render\+Details}} render\+Info, float max\+Distance=15)
+\item 
+\mbox{\hyperlink{structDataPoint}{Data\+Point}} \mbox{\hyperlink{classScatterSourceGenericList_a2154078b4d9c41b79a63a8ecedcceecc}{Get\+NearestX}} (\mbox{\hyperlink{structCoordinates}{Coordinates}} mouse\+Location, \mbox{\hyperlink{structRenderDetails}{Render\+Details}} render\+Info, float max\+Distance=15)
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ T1 $>$ \mbox{\hyperlink{classScatterSourceGenericList_a3bebb6cd561ac5bb5c39528732118e3d}{xs}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+List$<$ T2 $>$ \mbox{\hyperlink{classScatterSourceGenericList_a04d7c26a792df1ec9b9bb999b10e9069}{ys}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+int \mbox{\hyperlink{classScatterSourceGenericList_a307c748ab76e510e113e71bc6c5774b9}{Min\+Render\+Index}} = 0\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+int \mbox{\hyperlink{classScatterSourceGenericList_a7afffa47017a9d154806d859cdad8782}{Max\+Render\+Index}} = int.\+Max\+Value\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This data source manages X/Y points as separate X and Y collections 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classScatterSourceGenericList_a336fa05e0759972761abfe1419602845}\label{classScatterSourceGenericList_a336fa05e0759972761abfe1419602845}} 
+\index{ScatterSourceGenericList$<$ T1, T2 $>$@{ScatterSourceGenericList$<$ T1, T2 $>$}!GetLimits@{GetLimits}}
+\index{GetLimits@{GetLimits}!ScatterSourceGenericList$<$ T1, T2 $>$@{ScatterSourceGenericList$<$ T1, T2 $>$}}
+\doxysubsubsection{\texorpdfstring{GetLimits()}{GetLimits()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} \mbox{\hyperlink{classScatterSourceGenericList}{Scatter\+Source\+Generic\+List}}$<$ T1, T2 $>$.Get\+Limits (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classScatterSourceGenericList_abe0943b63f0090bb771f63c3782a0df9}\label{classScatterSourceGenericList_abe0943b63f0090bb771f63c3782a0df9}} 
+\index{ScatterSourceGenericList$<$ T1, T2 $>$@{ScatterSourceGenericList$<$ T1, T2 $>$}!GetLimitsX@{GetLimitsX}}
+\index{GetLimitsX@{GetLimitsX}!ScatterSourceGenericList$<$ T1, T2 $>$@{ScatterSourceGenericList$<$ T1, T2 $>$}}
+\doxysubsubsection{\texorpdfstring{GetLimitsX()}{GetLimitsX()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structCoordinateRange}{Coordinate\+Range}} \mbox{\hyperlink{classScatterSourceGenericList}{Scatter\+Source\+Generic\+List}}$<$ T1, T2 $>$.Get\+LimitsX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classScatterSourceGenericList_a380e940682dcc14972ed7f6146d7126c}\label{classScatterSourceGenericList_a380e940682dcc14972ed7f6146d7126c}} 
+\index{ScatterSourceGenericList$<$ T1, T2 $>$@{ScatterSourceGenericList$<$ T1, T2 $>$}!GetLimitsY@{GetLimitsY}}
+\index{GetLimitsY@{GetLimitsY}!ScatterSourceGenericList$<$ T1, T2 $>$@{ScatterSourceGenericList$<$ T1, T2 $>$}}
+\doxysubsubsection{\texorpdfstring{GetLimitsY()}{GetLimitsY()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structCoordinateRange}{Coordinate\+Range}} \mbox{\hyperlink{classScatterSourceGenericList}{Scatter\+Source\+Generic\+List}}$<$ T1, T2 $>$.Get\+LimitsY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classScatterSourceGenericList_a54e1b1b27cc8499605ecfaaacb19221f}\label{classScatterSourceGenericList_a54e1b1b27cc8499605ecfaaacb19221f}} 
+\index{ScatterSourceGenericList$<$ T1, T2 $>$@{ScatterSourceGenericList$<$ T1, T2 $>$}!GetNearest@{GetNearest}}
+\index{GetNearest@{GetNearest}!ScatterSourceGenericList$<$ T1, T2 $>$@{ScatterSourceGenericList$<$ T1, T2 $>$}}
+\doxysubsubsection{\texorpdfstring{GetNearest()}{GetNearest()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structDataPoint}{Data\+Point}} \mbox{\hyperlink{classScatterSourceGenericList}{Scatter\+Source\+Generic\+List}}$<$ T1, T2 $>$.Get\+Nearest (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structCoordinates}{Coordinates}}}]{mouse\+Location,  }\item[{\mbox{\hyperlink{structRenderDetails}{Render\+Details}}}]{render\+Info,  }\item[{float}]{max\+Distance = {\ttfamily 15} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classScatterSourceGenericList_a2154078b4d9c41b79a63a8ecedcceecc}\label{classScatterSourceGenericList_a2154078b4d9c41b79a63a8ecedcceecc}} 
+\index{ScatterSourceGenericList$<$ T1, T2 $>$@{ScatterSourceGenericList$<$ T1, T2 $>$}!GetNearestX@{GetNearestX}}
+\index{GetNearestX@{GetNearestX}!ScatterSourceGenericList$<$ T1, T2 $>$@{ScatterSourceGenericList$<$ T1, T2 $>$}}
+\doxysubsubsection{\texorpdfstring{GetNearestX()}{GetNearestX()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structDataPoint}{Data\+Point}} \mbox{\hyperlink{classScatterSourceGenericList}{Scatter\+Source\+Generic\+List}}$<$ T1, T2 $>$.Get\+NearestX (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structCoordinates}{Coordinates}}}]{mouse\+Location,  }\item[{\mbox{\hyperlink{structRenderDetails}{Render\+Details}}}]{render\+Info,  }\item[{float}]{max\+Distance = {\ttfamily 15} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classScatterSourceGenericList_a6346d69212b7bcc47f90277e7da357b9}\label{classScatterSourceGenericList_a6346d69212b7bcc47f90277e7da357b9}} 
+\index{ScatterSourceGenericList$<$ T1, T2 $>$@{ScatterSourceGenericList$<$ T1, T2 $>$}!GetScatterPoints@{GetScatterPoints}}
+\index{GetScatterPoints@{GetScatterPoints}!ScatterSourceGenericList$<$ T1, T2 $>$@{ScatterSourceGenericList$<$ T1, T2 $>$}}
+\doxysubsubsection{\texorpdfstring{GetScatterPoints()}{GetScatterPoints()}}
+{\footnotesize\ttfamily IRead\+Only\+List$<$\mbox{\hyperlink{structCoordinates}{Coordinates}}$>$ \mbox{\hyperlink{classScatterSourceGenericList}{Scatter\+Source\+Generic\+List}}$<$ T1, T2 $>$.Get\+Scatter\+Points (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{classScatterSourceGenericList_a7afffa47017a9d154806d859cdad8782}\label{classScatterSourceGenericList_a7afffa47017a9d154806d859cdad8782}} 
+\index{ScatterSourceGenericList$<$ T1, T2 $>$@{ScatterSourceGenericList$<$ T1, T2 $>$}!MaxRenderIndex@{MaxRenderIndex}}
+\index{MaxRenderIndex@{MaxRenderIndex}!ScatterSourceGenericList$<$ T1, T2 $>$@{ScatterSourceGenericList$<$ T1, T2 $>$}}
+\doxysubsubsection{\texorpdfstring{MaxRenderIndex}{MaxRenderIndex}}
+{\footnotesize\ttfamily int \mbox{\hyperlink{classScatterSourceGenericList}{Scatter\+Source\+Generic\+List}}$<$ T1, T2 $>$.Max\+Render\+Index = int.\+Max\+Value\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classScatterSourceGenericList_a307c748ab76e510e113e71bc6c5774b9}\label{classScatterSourceGenericList_a307c748ab76e510e113e71bc6c5774b9}} 
+\index{ScatterSourceGenericList$<$ T1, T2 $>$@{ScatterSourceGenericList$<$ T1, T2 $>$}!MinRenderIndex@{MinRenderIndex}}
+\index{MinRenderIndex@{MinRenderIndex}!ScatterSourceGenericList$<$ T1, T2 $>$@{ScatterSourceGenericList$<$ T1, T2 $>$}}
+\doxysubsubsection{\texorpdfstring{MinRenderIndex}{MinRenderIndex}}
+{\footnotesize\ttfamily int \mbox{\hyperlink{classScatterSourceGenericList}{Scatter\+Source\+Generic\+List}}$<$ T1, T2 $>$.Min\+Render\+Index = 0\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classScatterSourceGenericList_a3bebb6cd561ac5bb5c39528732118e3d}\label{classScatterSourceGenericList_a3bebb6cd561ac5bb5c39528732118e3d}} 
+\index{ScatterSourceGenericList$<$ T1, T2 $>$@{ScatterSourceGenericList$<$ T1, T2 $>$}!xs@{xs}}
+\index{xs@{xs}!ScatterSourceGenericList$<$ T1, T2 $>$@{ScatterSourceGenericList$<$ T1, T2 $>$}}
+\doxysubsubsection{\texorpdfstring{xs}{xs}}
+{\footnotesize\ttfamily List$<$T1$>$ \mbox{\hyperlink{classScatterSourceGenericList}{Scatter\+Source\+Generic\+List}}$<$ T1, T2 $>$.xs\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classScatterSourceGenericList_a04d7c26a792df1ec9b9bb999b10e9069}\label{classScatterSourceGenericList_a04d7c26a792df1ec9b9bb999b10e9069}} 
+\index{ScatterSourceGenericList$<$ T1, T2 $>$@{ScatterSourceGenericList$<$ T1, T2 $>$}!ys@{ys}}
+\index{ys@{ys}!ScatterSourceGenericList$<$ T1, T2 $>$@{ScatterSourceGenericList$<$ T1, T2 $>$}}
+\doxysubsubsection{\texorpdfstring{ys}{ys}}
+{\footnotesize\ttfamily List$<$T2$>$ \mbox{\hyperlink{classScatterSourceGenericList}{Scatter\+Source\+Generic\+List}}$<$ T1, T2 $>$.ys\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Data\+Sources/Scatter\+Source\+Generic\+List.\+cs\end{DoxyCompactItemize}

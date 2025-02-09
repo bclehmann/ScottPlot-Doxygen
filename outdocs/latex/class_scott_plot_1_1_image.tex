@@ -1,0 +1,246 @@
+\doxysection{Scott\+Plot.\+Image Class Reference}
+\hypertarget{class_scott_plot_1_1_image}{}\label{class_scott_plot_1_1_image}\index{ScottPlot.Image@{ScottPlot.Image}}
+
+
+Bitmap representation of a \begin{DoxySeeAlso}{See also}
+Skia\+Sharp.\+SKImage
+
+
+\end{DoxySeeAlso}
+ 
+
+
+Inheritance diagram for Scott\+Plot.\+Image\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_scott_plot_1_1_image}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_scott_plot_1_1_image_a7672fa254218c518726ad58897f7b761}{Image}} (\mbox{\hyperlink{class_scott_plot_1_1_image_abac8f526c370716031e333b92288b692}{SKImage}} image)
+\item 
+\mbox{\hyperlink{class_scott_plot_1_1_image_a5f5e38ada459a513bf27f3c7473802cb}{Image}} (SKSurface surface)
+\item 
+\mbox{\hyperlink{class_scott_plot_1_1_image_a595cc49d52c21cd39eb2ca306ed6a8aa}{Image}} (string filename)
+\item 
+\mbox{\hyperlink{class_scott_plot_1_1_image_a706ba563c178c71fc3b76a03d6fdeb7f}{Image}} (byte\mbox{[}$\,$\mbox{]} bytes)
+\item 
+\mbox{\hyperlink{class_scott_plot_1_1_image_a9431a4432c36b03bb3150f019f87c2dc}{Image}} (SKBitmap bmp)
+\item 
+\mbox{\hyperlink{class_scott_plot_1_1_image_ad122676f21087d4d607d61937410d49f}{Image}} (int width, int height)
+\item 
+\mbox{\hyperlink{class_scott_plot_1_1_image_a4dd17e5d151b83d3553d9bd98e26148d}{Image}} (\mbox{\hyperlink{struct_scott_plot_1_1_pixel_size}{Pixel\+Size}} size)
+\item 
+\mbox{\hyperlink{class_scott_plot_1_1_image_a9bfae029465948ad30534cc7b98eda1a}{Image}} (int width, int height, \mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} color)
+\item 
+\mbox{\hyperlink{class_scott_plot_1_1_image_a5beb3e5b1efab6a2c419fc8850afa208}{Image}} (byte\mbox{[},\mbox{]} pixel\+Array)
+\item 
+\mbox{\hyperlink{class_scott_plot_1_1_image_a19760d5589002746cca2fd284323e9e6}{Image}} (byte\mbox{[},,\mbox{]} pixel\+Array)
+\item 
+byte\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_scott_plot_1_1_image_a3fc22badf765ae3df2e12ed4c524b842}{Get\+Image\+Bytes}} (\mbox{\hyperlink{namespace_scott_plot_a9a656259ac7f098b833a020b5f6687a2}{Image\+Format}} format=\mbox{\hyperlink{namespace_scott_plot_a9a656259ac7f098b833a020b5f6687a2af8fd4f1b5b05c6b1cc6a661141fd4f54}{Image\+Format.\+Png}}, int quality=100)
+\item 
+Saved\+Image\+Info \mbox{\hyperlink{class_scott_plot_1_1_image_a9f6b7e1bfd73a5c68f8d1af7e44dae92}{Save\+Jpeg}} (string path, int quality=85)
+\item 
+Saved\+Image\+Info \mbox{\hyperlink{class_scott_plot_1_1_image_a898228d2de244669bd3527267f24f00b}{Save\+Png}} (string path)
+\item 
+Saved\+Image\+Info \mbox{\hyperlink{class_scott_plot_1_1_image_ac04a7bf93c53e0af2a6358f963f04b91}{Save\+Bmp}} (string path)
+\item 
+Saved\+Image\+Info \mbox{\hyperlink{class_scott_plot_1_1_image_aab8698eca052d17aa673e389feced731}{Save\+Webp}} (string path, int quality=85)
+\item 
+Saved\+Image\+Info \mbox{\hyperlink{class_scott_plot_1_1_image_ad5e84c850b48bfcc3ce5fe39fe80b129}{Save}} (string path, \mbox{\hyperlink{namespace_scott_plot_a9a656259ac7f098b833a020b5f6687a2}{Image\+Format}} format=\mbox{\hyperlink{namespace_scott_plot_a9a656259ac7f098b833a020b5f6687a2af8fd4f1b5b05c6b1cc6a661141fd4f54}{Image\+Format.\+Png}}, int quality=85)
+\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_image_a017d875eb6dbafc3be4ad4004ada4992}{Dispose}} ()
+\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_image_a27ed9bf568d78d01f314ec6ad9efb7ec}{Render}} (SKCanvas canvas, \mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect}{Pixel\+Rect}} target, SKPaint paint, bool anti\+Alias)
+\item 
+byte\mbox{[},\mbox{]} \mbox{\hyperlink{class_scott_plot_1_1_image_a9e0b326254fe8aee4d328059cc84b5a5}{Get\+Array\+Grayscale}} ()
+\item 
+byte\mbox{[},,\mbox{]} \mbox{\hyperlink{class_scott_plot_1_1_image_a5208c870960d279a12543bd6a21bd593}{Get\+Array\+RGB}} ()
+\item 
+\mbox{\hyperlink{class_scott_plot_1_1_image}{Image}} \mbox{\hyperlink{class_scott_plot_1_1_image_ad0ba8ecf6f299d7c0fab729496a63c14}{Get\+Autoscaled\+Image}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+SKImage \mbox{\hyperlink{class_scott_plot_1_1_image_abac8f526c370716031e333b92288b692}{SKImage}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+int \mbox{\hyperlink{class_scott_plot_1_1_image_a596bae9584ea277473b187eb3342bc62}{Width}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+int \mbox{\hyperlink{class_scott_plot_1_1_image_a9a8fb2575fa00a79ea62c3b1c6a3f83b}{Height}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_pixel_size}{Pixel\+Size}} \mbox{\hyperlink{class_scott_plot_1_1_image_a68aa2203dcc272699749bd2ef422384c}{Size}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Bitmap representation of a \begin{DoxySeeAlso}{See also}
+Skia\+Sharp.\+SKImage
+
+
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_scott_plot_1_1_image_a7672fa254218c518726ad58897f7b761}\index{ScottPlot.Image@{ScottPlot.Image}!Image@{Image}}
+\index{Image@{Image}!ScottPlot.Image@{ScottPlot.Image}}
+\doxysubsubsection{\texorpdfstring{Image()}{Image()}\hspace{0.1cm}{\footnotesize\ttfamily [1/10]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_image_a7672fa254218c518726ad58897f7b761} 
+Scott\+Plot.\+Image.\+Image (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_scott_plot_1_1_image_abac8f526c370716031e333b92288b692}{SKImage}}}]{image}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_image_a5f5e38ada459a513bf27f3c7473802cb}\index{ScottPlot.Image@{ScottPlot.Image}!Image@{Image}}
+\index{Image@{Image}!ScottPlot.Image@{ScottPlot.Image}}
+\doxysubsubsection{\texorpdfstring{Image()}{Image()}\hspace{0.1cm}{\footnotesize\ttfamily [2/10]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_image_a5f5e38ada459a513bf27f3c7473802cb} 
+Scott\+Plot.\+Image.\+Image (\begin{DoxyParamCaption}\item[{SKSurface}]{surface}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_image_a595cc49d52c21cd39eb2ca306ed6a8aa}\index{ScottPlot.Image@{ScottPlot.Image}!Image@{Image}}
+\index{Image@{Image}!ScottPlot.Image@{ScottPlot.Image}}
+\doxysubsubsection{\texorpdfstring{Image()}{Image()}\hspace{0.1cm}{\footnotesize\ttfamily [3/10]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_image_a595cc49d52c21cd39eb2ca306ed6a8aa} 
+Scott\+Plot.\+Image.\+Image (\begin{DoxyParamCaption}\item[{string}]{filename}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_image_a706ba563c178c71fc3b76a03d6fdeb7f}\index{ScottPlot.Image@{ScottPlot.Image}!Image@{Image}}
+\index{Image@{Image}!ScottPlot.Image@{ScottPlot.Image}}
+\doxysubsubsection{\texorpdfstring{Image()}{Image()}\hspace{0.1cm}{\footnotesize\ttfamily [4/10]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_image_a706ba563c178c71fc3b76a03d6fdeb7f} 
+Scott\+Plot.\+Image.\+Image (\begin{DoxyParamCaption}\item[{byte\mbox{[}$\,$\mbox{]}}]{bytes}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_image_a9431a4432c36b03bb3150f019f87c2dc}\index{ScottPlot.Image@{ScottPlot.Image}!Image@{Image}}
+\index{Image@{Image}!ScottPlot.Image@{ScottPlot.Image}}
+\doxysubsubsection{\texorpdfstring{Image()}{Image()}\hspace{0.1cm}{\footnotesize\ttfamily [5/10]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_image_a9431a4432c36b03bb3150f019f87c2dc} 
+Scott\+Plot.\+Image.\+Image (\begin{DoxyParamCaption}\item[{SKBitmap}]{bmp}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_image_ad122676f21087d4d607d61937410d49f}\index{ScottPlot.Image@{ScottPlot.Image}!Image@{Image}}
+\index{Image@{Image}!ScottPlot.Image@{ScottPlot.Image}}
+\doxysubsubsection{\texorpdfstring{Image()}{Image()}\hspace{0.1cm}{\footnotesize\ttfamily [6/10]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_image_ad122676f21087d4d607d61937410d49f} 
+Scott\+Plot.\+Image.\+Image (\begin{DoxyParamCaption}\item[{int}]{width}{, }\item[{int}]{height}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_image_a4dd17e5d151b83d3553d9bd98e26148d}\index{ScottPlot.Image@{ScottPlot.Image}!Image@{Image}}
+\index{Image@{Image}!ScottPlot.Image@{ScottPlot.Image}}
+\doxysubsubsection{\texorpdfstring{Image()}{Image()}\hspace{0.1cm}{\footnotesize\ttfamily [7/10]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_image_a4dd17e5d151b83d3553d9bd98e26148d} 
+Scott\+Plot.\+Image.\+Image (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_scott_plot_1_1_pixel_size}{Pixel\+Size}}}]{size}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_image_a9bfae029465948ad30534cc7b98eda1a}\index{ScottPlot.Image@{ScottPlot.Image}!Image@{Image}}
+\index{Image@{Image}!ScottPlot.Image@{ScottPlot.Image}}
+\doxysubsubsection{\texorpdfstring{Image()}{Image()}\hspace{0.1cm}{\footnotesize\ttfamily [8/10]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_image_a9bfae029465948ad30534cc7b98eda1a} 
+Scott\+Plot.\+Image.\+Image (\begin{DoxyParamCaption}\item[{int}]{width}{, }\item[{int}]{height}{, }\item[{\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}}}]{color}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_image_a5beb3e5b1efab6a2c419fc8850afa208}\index{ScottPlot.Image@{ScottPlot.Image}!Image@{Image}}
+\index{Image@{Image}!ScottPlot.Image@{ScottPlot.Image}}
+\doxysubsubsection{\texorpdfstring{Image()}{Image()}\hspace{0.1cm}{\footnotesize\ttfamily [9/10]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_image_a5beb3e5b1efab6a2c419fc8850afa208} 
+Scott\+Plot.\+Image.\+Image (\begin{DoxyParamCaption}\item[{byte}]{pixel\+Array}{\mbox{[},\mbox{]}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_image_a19760d5589002746cca2fd284323e9e6}\index{ScottPlot.Image@{ScottPlot.Image}!Image@{Image}}
+\index{Image@{Image}!ScottPlot.Image@{ScottPlot.Image}}
+\doxysubsubsection{\texorpdfstring{Image()}{Image()}\hspace{0.1cm}{\footnotesize\ttfamily [10/10]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_image_a19760d5589002746cca2fd284323e9e6} 
+Scott\+Plot.\+Image.\+Image (\begin{DoxyParamCaption}\item[{byte}]{pixel\+Array}{\mbox{[},,\mbox{]}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_scott_plot_1_1_image_a017d875eb6dbafc3be4ad4004ada4992}\index{ScottPlot.Image@{ScottPlot.Image}!Dispose@{Dispose}}
+\index{Dispose@{Dispose}!ScottPlot.Image@{ScottPlot.Image}}
+\doxysubsubsection{\texorpdfstring{Dispose()}{Dispose()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_image_a017d875eb6dbafc3be4ad4004ada4992} 
+void Scott\+Plot.\+Image.\+Dispose (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_image_a9e0b326254fe8aee4d328059cc84b5a5}\index{ScottPlot.Image@{ScottPlot.Image}!GetArrayGrayscale@{GetArrayGrayscale}}
+\index{GetArrayGrayscale@{GetArrayGrayscale}!ScottPlot.Image@{ScottPlot.Image}}
+\doxysubsubsection{\texorpdfstring{GetArrayGrayscale()}{GetArrayGrayscale()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_image_a9e0b326254fe8aee4d328059cc84b5a5} 
+byte\mbox{[},\mbox{]} Scott\+Plot.\+Image.\+Get\+Array\+Grayscale (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_image_a5208c870960d279a12543bd6a21bd593}\index{ScottPlot.Image@{ScottPlot.Image}!GetArrayRGB@{GetArrayRGB}}
+\index{GetArrayRGB@{GetArrayRGB}!ScottPlot.Image@{ScottPlot.Image}}
+\doxysubsubsection{\texorpdfstring{GetArrayRGB()}{GetArrayRGB()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_image_a5208c870960d279a12543bd6a21bd593} 
+byte\mbox{[},,\mbox{]} Scott\+Plot.\+Image.\+Get\+Array\+RGB (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_image_ad0ba8ecf6f299d7c0fab729496a63c14}\index{ScottPlot.Image@{ScottPlot.Image}!GetAutoscaledImage@{GetAutoscaledImage}}
+\index{GetAutoscaledImage@{GetAutoscaledImage}!ScottPlot.Image@{ScottPlot.Image}}
+\doxysubsubsection{\texorpdfstring{GetAutoscaledImage()}{GetAutoscaledImage()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_image_ad0ba8ecf6f299d7c0fab729496a63c14} 
+\mbox{\hyperlink{class_scott_plot_1_1_image}{Image}} Scott\+Plot.\+Image.\+Get\+Autoscaled\+Image (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_image_a3fc22badf765ae3df2e12ed4c524b842}\index{ScottPlot.Image@{ScottPlot.Image}!GetImageBytes@{GetImageBytes}}
+\index{GetImageBytes@{GetImageBytes}!ScottPlot.Image@{ScottPlot.Image}}
+\doxysubsubsection{\texorpdfstring{GetImageBytes()}{GetImageBytes()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_image_a3fc22badf765ae3df2e12ed4c524b842} 
+byte\mbox{[}$\,$\mbox{]} Scott\+Plot.\+Image.\+Get\+Image\+Bytes (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_scott_plot_a9a656259ac7f098b833a020b5f6687a2}{Image\+Format}}}]{format}{ = {\ttfamily \mbox{\hyperlink{namespace_scott_plot_a9a656259ac7f098b833a020b5f6687a2af8fd4f1b5b05c6b1cc6a661141fd4f54}{Image\+Format\+::\+Png}}}, }\item[{int}]{quality}{ = {\ttfamily 100}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_image_a27ed9bf568d78d01f314ec6ad9efb7ec}\index{ScottPlot.Image@{ScottPlot.Image}!Render@{Render}}
+\index{Render@{Render}!ScottPlot.Image@{ScottPlot.Image}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_image_a27ed9bf568d78d01f314ec6ad9efb7ec} 
+void Scott\+Plot.\+Image.\+Render (\begin{DoxyParamCaption}\item[{SKCanvas}]{canvas}{, }\item[{\mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect}{Pixel\+Rect}}}]{target}{, }\item[{SKPaint}]{paint}{, }\item[{bool}]{anti\+Alias}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_image_ad5e84c850b48bfcc3ce5fe39fe80b129}\index{ScottPlot.Image@{ScottPlot.Image}!Save@{Save}}
+\index{Save@{Save}!ScottPlot.Image@{ScottPlot.Image}}
+\doxysubsubsection{\texorpdfstring{Save()}{Save()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_image_ad5e84c850b48bfcc3ce5fe39fe80b129} 
+Saved\+Image\+Info Scott\+Plot.\+Image.\+Save (\begin{DoxyParamCaption}\item[{string}]{path}{, }\item[{\mbox{\hyperlink{namespace_scott_plot_a9a656259ac7f098b833a020b5f6687a2}{Image\+Format}}}]{format}{ = {\ttfamily \mbox{\hyperlink{namespace_scott_plot_a9a656259ac7f098b833a020b5f6687a2af8fd4f1b5b05c6b1cc6a661141fd4f54}{Image\+Format\+::\+Png}}}, }\item[{int}]{quality}{ = {\ttfamily 85}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_image_ac04a7bf93c53e0af2a6358f963f04b91}\index{ScottPlot.Image@{ScottPlot.Image}!SaveBmp@{SaveBmp}}
+\index{SaveBmp@{SaveBmp}!ScottPlot.Image@{ScottPlot.Image}}
+\doxysubsubsection{\texorpdfstring{SaveBmp()}{SaveBmp()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_image_ac04a7bf93c53e0af2a6358f963f04b91} 
+Saved\+Image\+Info Scott\+Plot.\+Image.\+Save\+Bmp (\begin{DoxyParamCaption}\item[{string}]{path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_image_a9f6b7e1bfd73a5c68f8d1af7e44dae92}\index{ScottPlot.Image@{ScottPlot.Image}!SaveJpeg@{SaveJpeg}}
+\index{SaveJpeg@{SaveJpeg}!ScottPlot.Image@{ScottPlot.Image}}
+\doxysubsubsection{\texorpdfstring{SaveJpeg()}{SaveJpeg()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_image_a9f6b7e1bfd73a5c68f8d1af7e44dae92} 
+Saved\+Image\+Info Scott\+Plot.\+Image.\+Save\+Jpeg (\begin{DoxyParamCaption}\item[{string}]{path}{, }\item[{int}]{quality}{ = {\ttfamily 85}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_image_a898228d2de244669bd3527267f24f00b}\index{ScottPlot.Image@{ScottPlot.Image}!SavePng@{SavePng}}
+\index{SavePng@{SavePng}!ScottPlot.Image@{ScottPlot.Image}}
+\doxysubsubsection{\texorpdfstring{SavePng()}{SavePng()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_image_a898228d2de244669bd3527267f24f00b} 
+Saved\+Image\+Info Scott\+Plot.\+Image.\+Save\+Png (\begin{DoxyParamCaption}\item[{string}]{path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_image_aab8698eca052d17aa673e389feced731}\index{ScottPlot.Image@{ScottPlot.Image}!SaveWebp@{SaveWebp}}
+\index{SaveWebp@{SaveWebp}!ScottPlot.Image@{ScottPlot.Image}}
+\doxysubsubsection{\texorpdfstring{SaveWebp()}{SaveWebp()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_image_aab8698eca052d17aa673e389feced731} 
+Saved\+Image\+Info Scott\+Plot.\+Image.\+Save\+Webp (\begin{DoxyParamCaption}\item[{string}]{path}{, }\item[{int}]{quality}{ = {\ttfamily 85}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{class_scott_plot_1_1_image_a9a8fb2575fa00a79ea62c3b1c6a3f83b}\index{ScottPlot.Image@{ScottPlot.Image}!Height@{Height}}
+\index{Height@{Height}!ScottPlot.Image@{ScottPlot.Image}}
+\doxysubsubsection{\texorpdfstring{Height}{Height}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_image_a9a8fb2575fa00a79ea62c3b1c6a3f83b} 
+int Scott\+Plot.\+Image.\+Height\hspace{0.3cm}{\ttfamily [get]}}
+
+\Hypertarget{class_scott_plot_1_1_image_a68aa2203dcc272699749bd2ef422384c}\index{ScottPlot.Image@{ScottPlot.Image}!Size@{Size}}
+\index{Size@{Size}!ScottPlot.Image@{ScottPlot.Image}}
+\doxysubsubsection{\texorpdfstring{Size}{Size}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_image_a68aa2203dcc272699749bd2ef422384c} 
+\mbox{\hyperlink{struct_scott_plot_1_1_pixel_size}{Pixel\+Size}} Scott\+Plot.\+Image.\+Size\hspace{0.3cm}{\ttfamily [get]}}
+
+\Hypertarget{class_scott_plot_1_1_image_abac8f526c370716031e333b92288b692}\index{ScottPlot.Image@{ScottPlot.Image}!SKImage@{SKImage}}
+\index{SKImage@{SKImage}!ScottPlot.Image@{ScottPlot.Image}}
+\doxysubsubsection{\texorpdfstring{SKImage}{SKImage}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_image_abac8f526c370716031e333b92288b692} 
+SKImage Scott\+Plot.\+Image.\+SKImage\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [protected]}}
+
+\Hypertarget{class_scott_plot_1_1_image_a596bae9584ea277473b187eb3342bc62}\index{ScottPlot.Image@{ScottPlot.Image}!Width@{Width}}
+\index{Width@{Width}!ScottPlot.Image@{ScottPlot.Image}}
+\doxysubsubsection{\texorpdfstring{Width}{Width}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_image_a596bae9584ea277473b187eb3342bc62} 
+int Scott\+Plot.\+Image.\+Width\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Primitives/Image.\+cs\end{DoxyCompactItemize}

@@ -1,0 +1,185 @@
+\hypertarget{classColorBar}{}\doxysection{Color\+Bar Class Reference}
+\label{classColorBar}\index{ColorBar@{ColorBar}}
+
+
+An axis panel which displays a colormap and range of values  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{classColorBar_a0bcf695f27ce394c4759e195fcdf5152}{Measure}} ()
+\item 
+\mbox{\hyperlink{structPixelRect}{Pixel\+Rect}} \mbox{\hyperlink{classColorBar_a8f31d6fff4f7b8f8da4364b661503853}{Get\+Panel\+Rect}} (\mbox{\hyperlink{structPixelRect}{Pixel\+Rect}} data\+Rect, float size, float offset)
+\begin{DoxyCompactList}\small\item\em Return a rectangle encapsulating the colormap bitmap plus the axis and ticks. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classColorBar_a43187dc5e20968ec486787955f4981f5}{Render}} (\mbox{\hyperlink{classRenderPack}{Render\+Pack}} rp, float size, float offset)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classColorBar_a399e994f6e1424ed8a422ba25d093fb4}{Edge}} \mbox{\hyperlink{classColorBar_a7aa366304783487707dca92bc780b806}{edge}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interfaceIHasColorAxis}{IHas\+Color\+Axis}} \mbox{\hyperlink{classColorBar_af9b7887896d483b4540c26bc17ef6074}{source}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{interfaceIHasColorAxis}{IHas\+Color\+Axis}} \mbox{\hyperlink{classColorBar_ab76475162884ae6370f0bdb8f37230b0}{Source}} = \mbox{\hyperlink{classColorBar_af9b7887896d483b4540c26bc17ef6074}{source}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+Edge \mbox{\hyperlink{classColorBar_a399e994f6e1424ed8a422ba25d093fb4}{Edge}} = \mbox{\hyperlink{classColorBar_a7aa366304783487707dca92bc780b806}{edge}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{interfaceIAxis}{IAxis}} \mbox{\hyperlink{classColorBar_aa64c0cacf5efd8beab56c7dcdff1a98f}{Axis}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Axis (spine, ticks, label, etc) for the colorbar \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classColorBar_a4a365bd2f12eecfe1e8c8c8119f81638}{Width}} = 30\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Thickness of the colorbar image (in pixels) \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classColorBar_a8228d3e5edcffb27e40ca166473019fa}{Label}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Title for the colorbar, displayed outside the ticks. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classLabelStyle}{Label\+Style}} \mbox{\hyperlink{classColorBar_acbf0c4ad33026267d9ebd5a4adf52722}{Label\+Style}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Title for the colorbar, displayed outside the ticks. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classColorBar_a72075e128c62e9caa4c25273679994a9}{Show\+Debug\+Information}} = false\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{classColorBar_ad544c576ffe371e08b81cb9a42c21ed2}{Minimum\+Size}} = 0\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{classColorBar_ad90e95211b0aea0f8cf8dd04f8613d1e}{Maximum\+Size}} = float.\+Max\+Value\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+An axis panel which displays a colormap and range of values 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classColorBar_a8f31d6fff4f7b8f8da4364b661503853}\label{classColorBar_a8f31d6fff4f7b8f8da4364b661503853}} 
+\index{ColorBar@{ColorBar}!GetPanelRect@{GetPanelRect}}
+\index{GetPanelRect@{GetPanelRect}!ColorBar@{ColorBar}}
+\doxysubsubsection{\texorpdfstring{GetPanelRect()}{GetPanelRect()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structPixelRect}{Pixel\+Rect}} Color\+Bar.\+Get\+Panel\+Rect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPixelRect}{Pixel\+Rect}}}]{data\+Rect,  }\item[{float}]{size,  }\item[{float}]{offset }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return a rectangle encapsulating the colormap bitmap plus the axis and ticks. 
+
+\mbox{\Hypertarget{classColorBar_a0bcf695f27ce394c4759e195fcdf5152}\label{classColorBar_a0bcf695f27ce394c4759e195fcdf5152}} 
+\index{ColorBar@{ColorBar}!Measure@{Measure}}
+\index{Measure@{Measure}!ColorBar@{ColorBar}}
+\doxysubsubsection{\texorpdfstring{Measure()}{Measure()}}
+{\footnotesize\ttfamily float Color\+Bar.\+Measure (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classColorBar_a43187dc5e20968ec486787955f4981f5}\label{classColorBar_a43187dc5e20968ec486787955f4981f5}} 
+\index{ColorBar@{ColorBar}!Render@{Render}}
+\index{Render@{Render}!ColorBar@{ColorBar}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily void Color\+Bar.\+Render (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classRenderPack}{Render\+Pack}}}]{rp,  }\item[{float}]{size,  }\item[{float}]{offset }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classColorBar_a7aa366304783487707dca92bc780b806}\label{classColorBar_a7aa366304783487707dca92bc780b806}} 
+\index{ColorBar@{ColorBar}!edge@{edge}}
+\index{edge@{edge}!ColorBar@{ColorBar}}
+\doxysubsubsection{\texorpdfstring{edge}{edge}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classColorBar_a399e994f6e1424ed8a422ba25d093fb4}{Edge}} Color\+Bar.\+edge}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= Edge.Right \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keywordtype}{bool} IsVisible \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \} = \textcolor{keyword}{true}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{classColorBar_aa64c0cacf5efd8beab56c7dcdff1a98f}\label{classColorBar_aa64c0cacf5efd8beab56c7dcdff1a98f}} 
+\index{ColorBar@{ColorBar}!Axis@{Axis}}
+\index{Axis@{Axis}!ColorBar@{ColorBar}}
+\doxysubsubsection{\texorpdfstring{Axis}{Axis}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceIAxis}{IAxis}} Color\+Bar.\+Axis\hspace{0.3cm}{\ttfamily [get]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \mbox{\hyperlink{classColorBar_a7aa366304783487707dca92bc780b806}{edge}} \textcolor{keywordflow}{switch}}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        Edge.Left => \textcolor{keyword}{new} AxisPanels.LeftAxis(),}
+\DoxyCodeLine{        Edge.Right => \textcolor{keyword}{new} AxisPanels.RightAxis(),}
+\DoxyCodeLine{        Edge.Bottom => \textcolor{keyword}{new} AxisPanels.BottomAxis(),}
+\DoxyCodeLine{        Edge.Top => \textcolor{keyword}{new} AxisPanels.TopAxis(),}
+\DoxyCodeLine{        \_ => \textcolor{keywordflow}{throw} \textcolor{keyword}{new} NotImplementedException()}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+
+
+Axis (spine, ticks, label, etc) for the colorbar 
+
+\mbox{\Hypertarget{classColorBar_a399e994f6e1424ed8a422ba25d093fb4}\label{classColorBar_a399e994f6e1424ed8a422ba25d093fb4}} 
+\index{ColorBar@{ColorBar}!Edge@{Edge}}
+\index{Edge@{Edge}!ColorBar@{ColorBar}}
+\doxysubsubsection{\texorpdfstring{Edge}{Edge}}
+{\footnotesize\ttfamily Edge Color\+Bar.\+Edge = \mbox{\hyperlink{classColorBar_a7aa366304783487707dca92bc780b806}{edge}}\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classColorBar_a8228d3e5edcffb27e40ca166473019fa}\label{classColorBar_a8228d3e5edcffb27e40ca166473019fa}} 
+\index{ColorBar@{ColorBar}!Label@{Label}}
+\index{Label@{Label}!ColorBar@{ColorBar}}
+\doxysubsubsection{\texorpdfstring{Label}{Label}}
+{\footnotesize\ttfamily string Color\+Bar.\+Label\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Title for the colorbar, displayed outside the ticks. 
+
+\mbox{\Hypertarget{classColorBar_acbf0c4ad33026267d9ebd5a4adf52722}\label{classColorBar_acbf0c4ad33026267d9ebd5a4adf52722}} 
+\index{ColorBar@{ColorBar}!LabelStyle@{LabelStyle}}
+\index{LabelStyle@{LabelStyle}!ColorBar@{ColorBar}}
+\doxysubsubsection{\texorpdfstring{LabelStyle}{LabelStyle}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classLabelStyle}{Label\+Style}} Color\+Bar.\+Label\+Style\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Title for the colorbar, displayed outside the ticks. 
+
+\mbox{\Hypertarget{classColorBar_ad90e95211b0aea0f8cf8dd04f8613d1e}\label{classColorBar_ad90e95211b0aea0f8cf8dd04f8613d1e}} 
+\index{ColorBar@{ColorBar}!MaximumSize@{MaximumSize}}
+\index{MaximumSize@{MaximumSize}!ColorBar@{ColorBar}}
+\doxysubsubsection{\texorpdfstring{MaximumSize}{MaximumSize}}
+{\footnotesize\ttfamily float Color\+Bar.\+Maximum\+Size = float.\+Max\+Value\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classColorBar_ad544c576ffe371e08b81cb9a42c21ed2}\label{classColorBar_ad544c576ffe371e08b81cb9a42c21ed2}} 
+\index{ColorBar@{ColorBar}!MinimumSize@{MinimumSize}}
+\index{MinimumSize@{MinimumSize}!ColorBar@{ColorBar}}
+\doxysubsubsection{\texorpdfstring{MinimumSize}{MinimumSize}}
+{\footnotesize\ttfamily float Color\+Bar.\+Minimum\+Size = 0\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classColorBar_a72075e128c62e9caa4c25273679994a9}\label{classColorBar_a72075e128c62e9caa4c25273679994a9}} 
+\index{ColorBar@{ColorBar}!ShowDebugInformation@{ShowDebugInformation}}
+\index{ShowDebugInformation@{ShowDebugInformation}!ColorBar@{ColorBar}}
+\doxysubsubsection{\texorpdfstring{ShowDebugInformation}{ShowDebugInformation}}
+{\footnotesize\ttfamily bool Color\+Bar.\+Show\+Debug\+Information = false\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classColorBar_af9b7887896d483b4540c26bc17ef6074}\label{classColorBar_af9b7887896d483b4540c26bc17ef6074}} 
+\index{ColorBar@{ColorBar}!source@{source}}
+\index{source@{source}!ColorBar@{ColorBar}}
+\doxysubsubsection{\texorpdfstring{source}{source}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceIHasColorAxis}{IHas\+Color\+Axis}} Color\+Bar.\+source\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classColorBar_ab76475162884ae6370f0bdb8f37230b0}\label{classColorBar_ab76475162884ae6370f0bdb8f37230b0}} 
+\index{ColorBar@{ColorBar}!Source@{Source}}
+\index{Source@{Source}!ColorBar@{ColorBar}}
+\doxysubsubsection{\texorpdfstring{Source}{Source}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceIHasColorAxis}{IHas\+Color\+Axis}} Color\+Bar.\+Source = \mbox{\hyperlink{classColorBar_af9b7887896d483b4540c26bc17ef6074}{source}}\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classColorBar_a4a365bd2f12eecfe1e8c8c8119f81638}\label{classColorBar_a4a365bd2f12eecfe1e8c8c8119f81638}} 
+\index{ColorBar@{ColorBar}!Width@{Width}}
+\index{Width@{Width}!ColorBar@{ColorBar}}
+\doxysubsubsection{\texorpdfstring{Width}{Width}}
+{\footnotesize\ttfamily float Color\+Bar.\+Width = 30\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Thickness of the colorbar image (in pixels) 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Panels/Color\+Bar.\+cs\end{DoxyCompactItemize}

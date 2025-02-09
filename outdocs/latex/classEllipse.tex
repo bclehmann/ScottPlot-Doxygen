@@ -1,0 +1,211 @@
+\hypertarget{classEllipse}{}\doxysection{Ellipse Class Reference}
+\label{classEllipse}\index{Ellipse@{Ellipse}}
+Inheritance diagram for Ellipse\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classEllipse}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} \mbox{\hyperlink{classEllipse_ab144897634824c351283752f33d95cc9}{Get\+Axis\+Limits}} ()
+\begin{DoxyCompactList}\small\item\em Return the 2D area (in coordinate space) occupied by the data contained in this plottable \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classEllipse_ab2a2607a099a8278ed1ec00f12f7ad9f}{Render}} (\mbox{\hyperlink{classRenderPack}{Render\+Pack}} rp)
+\begin{DoxyCompactList}\small\item\em Draw the data from this plottable into the data area defined in the \mbox{\hyperlink{classAxes}{Axes}}. By default the surface is already clipped to the data area, but this can be cleared inside the plottable. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structCoordinates}{Coordinates}} \mbox{\hyperlink{classEllipse_a25fd7e3d969dca65e0394242c4496109}{Center}} = \mbox{\hyperlink{structCoordinates_a49615b3291051896655c15edc575154f}{Coordinates.\+Origin}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classEllipse_a83ebe48a2a6914754762dfb0867f745e}{Is\+Visible}} = true\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{interfaceIAxes}{IAxes}} \mbox{\hyperlink{classEllipse_a3e94345a0e1d0fe66ea0b9a5823376e3}{Axes}} = new \mbox{\hyperlink{classAxes}{Axes}}()\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$ \mbox{\hyperlink{classLegendItem}{Legend\+Item}} $>$ \mbox{\hyperlink{classEllipse_a91acdb5a40af413851280a01043c4069}{Legend\+Items}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{classLineStyle}{Line\+Style}} \mbox{\hyperlink{classEllipse_af598a15ffa534a37f9e408184ae80f5e}{Line\+Style}} = new() \{ Width = 1 \}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{classEllipse_acf89a779e9298fcd257f9af2c05a02ce}{Line\+Width}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+Line\+Pattern \mbox{\hyperlink{classEllipse_af464570a176ea2cf940d1db9998f2215}{Line\+Pattern}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{structColor}{Color}} \mbox{\hyperlink{classEllipse_ae1482fd37ef834c0b290cd62dfc265e1}{Line\+Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{classFillStyle}{Fill\+Style}} \mbox{\hyperlink{classEllipse_a096b33a500e5e775ec04b5fea6714845}{Fill\+Style}} = new() \{ \mbox{\hyperlink{structColor}{Color}} = \mbox{\hyperlink{structColors_a9695917727155acebdb5b379dcfdad8b}{Colors.\+Transparent}} \}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{structColor}{Color}} \mbox{\hyperlink{classEllipse_af17e26b31b319930ffd99b743fe4c5dd}{Fill\+Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{structColor}{Color}} \mbox{\hyperlink{classEllipse_a543aa01e50e22c9ce9de725a4e6400ca}{Fill\+Hatch\+Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{interfaceIHatch}{IHatch}}? \mbox{\hyperlink{classEllipse_a7bc3647362a963037f1275292b56ab34}{Fill\+Hatch}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+string \mbox{\hyperlink{classEllipse_a4d6f9d31cb38b3fa11744da3bfcb9b5c}{Label}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+string \mbox{\hyperlink{classEllipse_a46a6c9c347176aefbae377c5b9afec77}{Legend\+Text}} = string.\+Empty\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+double \mbox{\hyperlink{classEllipse_abb0fe32603ced09bcdae30f6e8d708c5}{RadiusX}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Horizontal radius (axis units) \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classEllipse_a6e8488e058d9126ea72ca38abc346df8}{RadiusY}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Horizontal radius (axis units) \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classEllipse_a56cd17791cb9849e3db4bdb808c5b157}{Rotation}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Rotation of the ellipse (degrees) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classEllipse_ab144897634824c351283752f33d95cc9}\label{classEllipse_ab144897634824c351283752f33d95cc9}} 
+\index{Ellipse@{Ellipse}!GetAxisLimits@{GetAxisLimits}}
+\index{GetAxisLimits@{GetAxisLimits}!Ellipse@{Ellipse}}
+\doxysubsubsection{\texorpdfstring{GetAxisLimits()}{GetAxisLimits()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} Ellipse.\+Get\+Axis\+Limits (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return the 2D area (in coordinate space) occupied by the data contained in this plottable 
+
+
+
+Implements \mbox{\hyperlink{interfaceIPlottable_ac98e2f5e56f9f938bbd081c87c7c6f50}{IPlottable}}.
+
+\mbox{\Hypertarget{classEllipse_ab2a2607a099a8278ed1ec00f12f7ad9f}\label{classEllipse_ab2a2607a099a8278ed1ec00f12f7ad9f}} 
+\index{Ellipse@{Ellipse}!Render@{Render}}
+\index{Render@{Render}!Ellipse@{Ellipse}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily virtual void Ellipse.\+Render (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classRenderPack}{Render\+Pack}}}]{rp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Draw the data from this plottable into the data area defined in the \mbox{\hyperlink{classAxes}{Axes}}. By default the surface is already clipped to the data area, but this can be cleared inside the plottable. 
+
+
+
+Implements \mbox{\hyperlink{interfaceIPlottable_a201a1a236dc718eda93db143a5ade9f8}{IPlottable}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classEllipse_a25fd7e3d969dca65e0394242c4496109}\label{classEllipse_a25fd7e3d969dca65e0394242c4496109}} 
+\index{Ellipse@{Ellipse}!Center@{Center}}
+\index{Center@{Center}!Ellipse@{Ellipse}}
+\doxysubsubsection{\texorpdfstring{Center}{Center}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structCoordinates}{Coordinates}} Ellipse.\+Center = \mbox{\hyperlink{structCoordinates_a49615b3291051896655c15edc575154f}{Coordinates.\+Origin}}}
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{classEllipse_a3e94345a0e1d0fe66ea0b9a5823376e3}\label{classEllipse_a3e94345a0e1d0fe66ea0b9a5823376e3}} 
+\index{Ellipse@{Ellipse}!Axes@{Axes}}
+\index{Axes@{Axes}!Ellipse@{Ellipse}}
+\doxysubsubsection{\texorpdfstring{Axes}{Axes}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceIAxes}{IAxes}} Ellipse.\+Axes = new \mbox{\hyperlink{classAxes}{Axes}}()\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classEllipse_af17e26b31b319930ffd99b743fe4c5dd}\label{classEllipse_af17e26b31b319930ffd99b743fe4c5dd}} 
+\index{Ellipse@{Ellipse}!FillColor@{FillColor}}
+\index{FillColor@{FillColor}!Ellipse@{Ellipse}}
+\doxysubsubsection{\texorpdfstring{FillColor}{FillColor}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structColor}{Color}} Ellipse.\+Fill\+Color\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classEllipse_a7bc3647362a963037f1275292b56ab34}\label{classEllipse_a7bc3647362a963037f1275292b56ab34}} 
+\index{Ellipse@{Ellipse}!FillHatch@{FillHatch}}
+\index{FillHatch@{FillHatch}!Ellipse@{Ellipse}}
+\doxysubsubsection{\texorpdfstring{FillHatch}{FillHatch}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceIHatch}{IHatch}}? Ellipse.\+Fill\+Hatch\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classEllipse_a543aa01e50e22c9ce9de725a4e6400ca}\label{classEllipse_a543aa01e50e22c9ce9de725a4e6400ca}} 
+\index{Ellipse@{Ellipse}!FillHatchColor@{FillHatchColor}}
+\index{FillHatchColor@{FillHatchColor}!Ellipse@{Ellipse}}
+\doxysubsubsection{\texorpdfstring{FillHatchColor}{FillHatchColor}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structColor}{Color}} Ellipse.\+Fill\+Hatch\+Color\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classEllipse_a096b33a500e5e775ec04b5fea6714845}\label{classEllipse_a096b33a500e5e775ec04b5fea6714845}} 
+\index{Ellipse@{Ellipse}!FillStyle@{FillStyle}}
+\index{FillStyle@{FillStyle}!Ellipse@{Ellipse}}
+\doxysubsubsection{\texorpdfstring{FillStyle}{FillStyle}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classFillStyle}{Fill\+Style}} Ellipse.\+Fill\+Style = new() \{ \mbox{\hyperlink{structColor}{Color}} = \mbox{\hyperlink{structColors_a9695917727155acebdb5b379dcfdad8b}{Colors.\+Transparent}} \}\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classEllipse_a83ebe48a2a6914754762dfb0867f745e}\label{classEllipse_a83ebe48a2a6914754762dfb0867f745e}} 
+\index{Ellipse@{Ellipse}!IsVisible@{IsVisible}}
+\index{IsVisible@{IsVisible}!Ellipse@{Ellipse}}
+\doxysubsubsection{\texorpdfstring{IsVisible}{IsVisible}}
+{\footnotesize\ttfamily bool Ellipse.\+Is\+Visible = true\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classEllipse_a4d6f9d31cb38b3fa11744da3bfcb9b5c}\label{classEllipse_a4d6f9d31cb38b3fa11744da3bfcb9b5c}} 
+\index{Ellipse@{Ellipse}!Label@{Label}}
+\index{Label@{Label}!Ellipse@{Ellipse}}
+\doxysubsubsection{\texorpdfstring{Label}{Label}}
+{\footnotesize\ttfamily string Ellipse.\+Label\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classEllipse_a91acdb5a40af413851280a01043c4069}\label{classEllipse_a91acdb5a40af413851280a01043c4069}} 
+\index{Ellipse@{Ellipse}!LegendItems@{LegendItems}}
+\index{LegendItems@{LegendItems}!Ellipse@{Ellipse}}
+\doxysubsubsection{\texorpdfstring{LegendItems}{LegendItems}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$\mbox{\hyperlink{classLegendItem}{Legend\+Item}}$>$ Ellipse.\+Legend\+Items\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{classEllipse_a46a6c9c347176aefbae377c5b9afec77}\label{classEllipse_a46a6c9c347176aefbae377c5b9afec77}} 
+\index{Ellipse@{Ellipse}!LegendText@{LegendText}}
+\index{LegendText@{LegendText}!Ellipse@{Ellipse}}
+\doxysubsubsection{\texorpdfstring{LegendText}{LegendText}}
+{\footnotesize\ttfamily string Ellipse.\+Legend\+Text = string.\+Empty\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classEllipse_ae1482fd37ef834c0b290cd62dfc265e1}\label{classEllipse_ae1482fd37ef834c0b290cd62dfc265e1}} 
+\index{Ellipse@{Ellipse}!LineColor@{LineColor}}
+\index{LineColor@{LineColor}!Ellipse@{Ellipse}}
+\doxysubsubsection{\texorpdfstring{LineColor}{LineColor}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structColor}{Color}} Ellipse.\+Line\+Color\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classEllipse_af464570a176ea2cf940d1db9998f2215}\label{classEllipse_af464570a176ea2cf940d1db9998f2215}} 
+\index{Ellipse@{Ellipse}!LinePattern@{LinePattern}}
+\index{LinePattern@{LinePattern}!Ellipse@{Ellipse}}
+\doxysubsubsection{\texorpdfstring{LinePattern}{LinePattern}}
+{\footnotesize\ttfamily Line\+Pattern Ellipse.\+Line\+Pattern\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classEllipse_af598a15ffa534a37f9e408184ae80f5e}\label{classEllipse_af598a15ffa534a37f9e408184ae80f5e}} 
+\index{Ellipse@{Ellipse}!LineStyle@{LineStyle}}
+\index{LineStyle@{LineStyle}!Ellipse@{Ellipse}}
+\doxysubsubsection{\texorpdfstring{LineStyle}{LineStyle}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classLineStyle}{Line\+Style}} Ellipse.\+Line\+Style = new() \{ Width = 1 \}\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classEllipse_acf89a779e9298fcd257f9af2c05a02ce}\label{classEllipse_acf89a779e9298fcd257f9af2c05a02ce}} 
+\index{Ellipse@{Ellipse}!LineWidth@{LineWidth}}
+\index{LineWidth@{LineWidth}!Ellipse@{Ellipse}}
+\doxysubsubsection{\texorpdfstring{LineWidth}{LineWidth}}
+{\footnotesize\ttfamily float Ellipse.\+Line\+Width\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classEllipse_abb0fe32603ced09bcdae30f6e8d708c5}\label{classEllipse_abb0fe32603ced09bcdae30f6e8d708c5}} 
+\index{Ellipse@{Ellipse}!RadiusX@{RadiusX}}
+\index{RadiusX@{RadiusX}!Ellipse@{Ellipse}}
+\doxysubsubsection{\texorpdfstring{RadiusX}{RadiusX}}
+{\footnotesize\ttfamily double Ellipse.\+RadiusX\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Horizontal radius (axis units) 
+
+\mbox{\Hypertarget{classEllipse_a6e8488e058d9126ea72ca38abc346df8}\label{classEllipse_a6e8488e058d9126ea72ca38abc346df8}} 
+\index{Ellipse@{Ellipse}!RadiusY@{RadiusY}}
+\index{RadiusY@{RadiusY}!Ellipse@{Ellipse}}
+\doxysubsubsection{\texorpdfstring{RadiusY}{RadiusY}}
+{\footnotesize\ttfamily double Ellipse.\+RadiusY\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Horizontal radius (axis units) 
+
+\mbox{\Hypertarget{classEllipse_a56cd17791cb9849e3db4bdb808c5b157}\label{classEllipse_a56cd17791cb9849e3db4bdb808c5b157}} 
+\index{Ellipse@{Ellipse}!Rotation@{Rotation}}
+\index{Rotation@{Rotation}!Ellipse@{Ellipse}}
+\doxysubsubsection{\texorpdfstring{Rotation}{Rotation}}
+{\footnotesize\ttfamily double Ellipse.\+Rotation\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Rotation of the ellipse (degrees) 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Plottables/Ellipse.\+cs\end{DoxyCompactItemize}

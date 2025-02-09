@@ -1,0 +1,423 @@
+\doxysection{Scott\+Plot.\+Axis\+Limits Struct Reference}
+\hypertarget{struct_scott_plot_1_1_axis_limits}{}\label{struct_scott_plot_1_1_axis_limits}\index{ScottPlot.AxisLimits@{ScottPlot.AxisLimits}}
+
+
+This object represents the rectangular visible area on a 2D coordinate system. It simply stores a \doxylink{struct_scott_plot_1_1_coordinate_rect}{Coordinate\+Rect} but has axis-\/related methods to act upon it.  
+
+
+Inheritance diagram for Scott\+Plot.\+Axis\+Limits\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{struct_scott_plot_1_1_axis_limits}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_axis_limits_a7ed01d17621b5f043330ba109bfdb5f0}{Axis\+Limits}} (\mbox{\hyperlink{struct_scott_plot_1_1_coordinates}{Coordinates}} coordinates)
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_axis_limits_a70daebc15148c290efa750a29459968a}{Axis\+Limits}} (\mbox{\hyperlink{struct_scott_plot_1_1_coordinate_rect}{Coordinate\+Rect}} rect)
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_axis_limits_a522893d022ce81fdb6ce87e6b3e025a0}{Axis\+Limits}} (double left, double right, double bottom, double top)
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_axis_limits_aa60ddcbee4b54e61b3ffda7fc9e39676}{Axis\+Limits}} (\mbox{\hyperlink{namespace_scott_plot_a4f8afc1393f89ce60e775705cbf134d1}{Coordinate\+Range}} x\+Range, \mbox{\hyperlink{namespace_scott_plot_a4f8afc1393f89ce60e775705cbf134d1}{Coordinate\+Range}} y\+Range)
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_axis_limits_a6a6eb86e6d0f17046b44910e68d6dc12}{Axis\+Limits}} (\mbox{\hyperlink{class_i_enumerable}{IEnumerable}}$<$ \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable}{IPlottable}} $>$ plottables)
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_axis_limits_a06b71dc196afd0386e4df833434f630c}{Axis\+Limits}} (\mbox{\hyperlink{class_i_enumerable}{IEnumerable}}$<$ \mbox{\hyperlink{struct_scott_plot_1_1_coordinates}{Coordinates}} $>$ coordinates)
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}} \mbox{\hyperlink{struct_scott_plot_1_1_axis_limits_a868205cd1671feb15a3bffed2a7a8820}{Inverted\+Vertically}} ()
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}} \mbox{\hyperlink{struct_scott_plot_1_1_axis_limits_a000dd4dfcb33c3e9a924f1068bf0330a}{Inverted\+Horizontally}} ()
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}} \mbox{\hyperlink{struct_scott_plot_1_1_axis_limits_ab8c1543e9a4adb3c918d6b2962944a64}{Expanded\+To\+Include}} (\mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}} other\+Limits)
+\item 
+override string \mbox{\hyperlink{struct_scott_plot_1_1_axis_limits_a6711483e9603774e1fc497e8d78a63a6}{To\+String}} ()
+\item 
+string \mbox{\hyperlink{struct_scott_plot_1_1_axis_limits_a6ce673fc3355f38c52f770e8f22c1a51}{To\+String}} (int digits)
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}} \mbox{\hyperlink{struct_scott_plot_1_1_axis_limits_ada05240e3488689b1f2183f8629f09aa}{Expanded}} (double x, double y)
+\begin{DoxyCompactList}\small\item\em Return a new \doxylink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits} expanded to include the given {\itshape x}  and {\itshape y} . \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}} \mbox{\hyperlink{struct_scott_plot_1_1_axis_limits_aa94bb60728b0479adf6abbb4159aa47c}{Expanded}} (\mbox{\hyperlink{struct_scott_plot_1_1_coordinates}{Coordinates}} coordinates)
+\begin{DoxyCompactList}\small\item\em Return a new \doxylink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits} expanded to include the given {\itshape coordinates} . \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}} \mbox{\hyperlink{struct_scott_plot_1_1_axis_limits_a0a0973c18c0259714d7154c138141757}{Expanded}} (\mbox{\hyperlink{struct_scott_plot_1_1_coordinate_rect}{Coordinate\+Rect}} rect)
+\begin{DoxyCompactList}\small\item\em Return a new \doxylink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits} expanded to include all corners of the given {\itshape rect} . \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}} \mbox{\hyperlink{struct_scott_plot_1_1_axis_limits_a623b6c9773d8463b600269bb42c89099}{Expanded}} (\mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}} limits)
+\begin{DoxyCompactList}\small\item\em Return a new \doxylink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits} expanded to include the area defined by {\itshape limits} . \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}} \mbox{\hyperlink{struct_scott_plot_1_1_axis_limits_a081743b5d88a96599e3cfbc9627e7bb1}{With\+Pan}} (double deltaX, double deltaY)
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}} \mbox{\hyperlink{struct_scott_plot_1_1_axis_limits_ae3dd42826d121955d0b7fe10deac51ad}{With\+Zoom}} (double fracX, double fracY)
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}} \mbox{\hyperlink{struct_scott_plot_1_1_axis_limits_a26eb78f95bc0ada20fb26e8352862304}{With\+Zoom}} (double fracX, double fracY, double zoom\+ToX, double zoom\+ToY)
+\item 
+bool \mbox{\hyperlink{struct_scott_plot_1_1_axis_limits_ab6205be18bba134e34d777f7cd82527e}{Equals}} (\mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}} other)
+\item 
+override bool \mbox{\hyperlink{struct_scott_plot_1_1_axis_limits_a73d3c5441aa971e97a468552a675d7f9}{Equals}} (object? obj)
+\item 
+override int \mbox{\hyperlink{struct_scott_plot_1_1_axis_limits_a30be6aacb370a6335ad13274bb9126db}{Get\+Hash\+Code}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}} \mbox{\hyperlink{struct_scott_plot_1_1_axis_limits_a9735548698aa6d6090b4c334fec3979b}{From\+Point}} (double x, double y)
+\item 
+static \mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}} \mbox{\hyperlink{struct_scott_plot_1_1_axis_limits_a03270807acd4960c682d730b091464fc}{From\+Point}} (\mbox{\hyperlink{struct_scott_plot_1_1_coordinates}{Coordinates}} c)
+\item 
+static \mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}} \mbox{\hyperlink{struct_scott_plot_1_1_axis_limits_a4a5ed2c52f930fc7bd3904137bc4e7f4}{Vertical\+Only}} (double y\+Min, double y\+Max)
+\item 
+static \mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}} \mbox{\hyperlink{struct_scott_plot_1_1_axis_limits_a5ea4e5256a4f6b8771c7b817aa65cbdf}{Horizontal\+Only}} (double x\+Min, double x\+Max)
+\item 
+static bool \mbox{\hyperlink{struct_scott_plot_1_1_axis_limits_a025bd65f528e5ddb46a7974395981345}{operator==}} (\mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}} a, \mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}} b)
+\item 
+static bool \mbox{\hyperlink{struct_scott_plot_1_1_axis_limits_ab659ac75aae9580c9de514600462279e}{operator!=}} (\mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}} a, \mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}} b)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{struct_scott_plot_1_1_axis_limits_adfdeb19efb9e860029a4d13ca8428f92}{Left}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+double \mbox{\hyperlink{struct_scott_plot_1_1_axis_limits_a3e56c0ab05a42bed8c771492bd71d32b}{Right}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+double \mbox{\hyperlink{struct_scott_plot_1_1_axis_limits_a314c8795602c951ce3845a29b5a95c88}{Bottom}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+double \mbox{\hyperlink{struct_scott_plot_1_1_axis_limits_a52b17a69f88100bb702d28e933b36ad8}{Top}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+double \mbox{\hyperlink{struct_scott_plot_1_1_axis_limits_ac6c63648a1e7838e4e7dc84c6cabaa9e}{Horizontal\+Span}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+double \mbox{\hyperlink{struct_scott_plot_1_1_axis_limits_aa59f96c8c5c3646f7be5bfff56882e61}{Vertical\+Span}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+double \mbox{\hyperlink{struct_scott_plot_1_1_axis_limits_a54f7f0e0a7c6bab570c6a8313a032818}{Horizontal\+Center}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+double \mbox{\hyperlink{struct_scott_plot_1_1_axis_limits_a91fa8881bbadaa8341231625fe0f96e4}{Vertical\+Center}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_coordinates}{Coordinates}} \mbox{\hyperlink{struct_scott_plot_1_1_axis_limits_afd239773dbb7c1211bcaaaed4ad95c81}{Center}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{namespace_scott_plot_a4f8afc1393f89ce60e775705cbf134d1}{Coordinate\+Range}} \mbox{\hyperlink{struct_scott_plot_1_1_axis_limits_a510aed96178f0f24464697311848a335}{XRange}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{namespace_scott_plot_a4f8afc1393f89ce60e775705cbf134d1}{Coordinate\+Range}} \mbox{\hyperlink{struct_scott_plot_1_1_axis_limits_a6d76a862ebb54c59c963cb084365cc3f}{YRange}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_coordinate_rect}{Coordinate\+Rect}} \mbox{\hyperlink{struct_scott_plot_1_1_axis_limits_afff138a32e1ec270ad7391bbc6e9827e}{Rect}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+static \mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}} \mbox{\hyperlink{struct_scott_plot_1_1_axis_limits_a1f0410ac6fdc2509b32a1413d876df44}{Default}} = new(-\/10, 10, -\/10, 10)\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+bool \mbox{\hyperlink{struct_scott_plot_1_1_axis_limits_afea663fb467054005934997a91956cd2}{Is\+RealX}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+bool \mbox{\hyperlink{struct_scott_plot_1_1_axis_limits_ad8a07dac3161dcf868b05874778b5016}{Is\+RealY}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+bool \mbox{\hyperlink{struct_scott_plot_1_1_axis_limits_a4b142a7042b9c6e40e125c7ba14dafd4}{Is\+Real}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+bool \mbox{\hyperlink{struct_scott_plot_1_1_axis_limits_ae4746593688f0c1104c28118cac54585}{Has\+Area}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+static \mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}} \mbox{\hyperlink{struct_scott_plot_1_1_axis_limits_aefba66aaabf292b1ad167075ae12bafb}{No\+Limits}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+static \mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}} \mbox{\hyperlink{struct_scott_plot_1_1_axis_limits_ac215411754902b276f13c9d2626e3b7b}{Unset}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This object represents the rectangular visible area on a 2D coordinate system. It simply stores a \doxylink{struct_scott_plot_1_1_coordinate_rect}{Coordinate\+Rect} but has axis-\/related methods to act upon it. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{struct_scott_plot_1_1_axis_limits_a7ed01d17621b5f043330ba109bfdb5f0}\index{ScottPlot.AxisLimits@{ScottPlot.AxisLimits}!AxisLimits@{AxisLimits}}
+\index{AxisLimits@{AxisLimits}!ScottPlot.AxisLimits@{ScottPlot.AxisLimits}}
+\doxysubsubsection{\texorpdfstring{AxisLimits()}{AxisLimits()}\hspace{0.1cm}{\footnotesize\ttfamily [1/6]}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_axis_limits_a7ed01d17621b5f043330ba109bfdb5f0} 
+Scott\+Plot.\+Axis\+Limits.\+Axis\+Limits (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_scott_plot_1_1_coordinates}{Coordinates}}}]{coordinates}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{struct_scott_plot_1_1_axis_limits_a70daebc15148c290efa750a29459968a}\index{ScottPlot.AxisLimits@{ScottPlot.AxisLimits}!AxisLimits@{AxisLimits}}
+\index{AxisLimits@{AxisLimits}!ScottPlot.AxisLimits@{ScottPlot.AxisLimits}}
+\doxysubsubsection{\texorpdfstring{AxisLimits()}{AxisLimits()}\hspace{0.1cm}{\footnotesize\ttfamily [2/6]}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_axis_limits_a70daebc15148c290efa750a29459968a} 
+Scott\+Plot.\+Axis\+Limits.\+Axis\+Limits (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_scott_plot_1_1_coordinate_rect}{Coordinate\+Rect}}}]{rect}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{struct_scott_plot_1_1_axis_limits_a522893d022ce81fdb6ce87e6b3e025a0}\index{ScottPlot.AxisLimits@{ScottPlot.AxisLimits}!AxisLimits@{AxisLimits}}
+\index{AxisLimits@{AxisLimits}!ScottPlot.AxisLimits@{ScottPlot.AxisLimits}}
+\doxysubsubsection{\texorpdfstring{AxisLimits()}{AxisLimits()}\hspace{0.1cm}{\footnotesize\ttfamily [3/6]}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_axis_limits_a522893d022ce81fdb6ce87e6b3e025a0} 
+Scott\+Plot.\+Axis\+Limits.\+Axis\+Limits (\begin{DoxyParamCaption}\item[{double}]{left}{, }\item[{double}]{right}{, }\item[{double}]{bottom}{, }\item[{double}]{top}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{struct_scott_plot_1_1_axis_limits_aa60ddcbee4b54e61b3ffda7fc9e39676}\index{ScottPlot.AxisLimits@{ScottPlot.AxisLimits}!AxisLimits@{AxisLimits}}
+\index{AxisLimits@{AxisLimits}!ScottPlot.AxisLimits@{ScottPlot.AxisLimits}}
+\doxysubsubsection{\texorpdfstring{AxisLimits()}{AxisLimits()}\hspace{0.1cm}{\footnotesize\ttfamily [4/6]}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_axis_limits_aa60ddcbee4b54e61b3ffda7fc9e39676} 
+Scott\+Plot.\+Axis\+Limits.\+Axis\+Limits (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_scott_plot_a4f8afc1393f89ce60e775705cbf134d1}{Coordinate\+Range}}}]{x\+Range}{, }\item[{\mbox{\hyperlink{namespace_scott_plot_a4f8afc1393f89ce60e775705cbf134d1}{Coordinate\+Range}}}]{y\+Range}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{struct_scott_plot_1_1_axis_limits_a6a6eb86e6d0f17046b44910e68d6dc12}\index{ScottPlot.AxisLimits@{ScottPlot.AxisLimits}!AxisLimits@{AxisLimits}}
+\index{AxisLimits@{AxisLimits}!ScottPlot.AxisLimits@{ScottPlot.AxisLimits}}
+\doxysubsubsection{\texorpdfstring{AxisLimits()}{AxisLimits()}\hspace{0.1cm}{\footnotesize\ttfamily [5/6]}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_axis_limits_a6a6eb86e6d0f17046b44910e68d6dc12} 
+Scott\+Plot.\+Axis\+Limits.\+Axis\+Limits (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_i_enumerable}{IEnumerable}}$<$ \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable}{IPlottable}} $>$}]{plottables}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{struct_scott_plot_1_1_axis_limits_a06b71dc196afd0386e4df833434f630c}\index{ScottPlot.AxisLimits@{ScottPlot.AxisLimits}!AxisLimits@{AxisLimits}}
+\index{AxisLimits@{AxisLimits}!ScottPlot.AxisLimits@{ScottPlot.AxisLimits}}
+\doxysubsubsection{\texorpdfstring{AxisLimits()}{AxisLimits()}\hspace{0.1cm}{\footnotesize\ttfamily [6/6]}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_axis_limits_a06b71dc196afd0386e4df833434f630c} 
+Scott\+Plot.\+Axis\+Limits.\+Axis\+Limits (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_i_enumerable}{IEnumerable}}$<$ \mbox{\hyperlink{struct_scott_plot_1_1_coordinates}{Coordinates}} $>$}]{coordinates}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{struct_scott_plot_1_1_axis_limits_ab6205be18bba134e34d777f7cd82527e}\index{ScottPlot.AxisLimits@{ScottPlot.AxisLimits}!Equals@{Equals}}
+\index{Equals@{Equals}!ScottPlot.AxisLimits@{ScottPlot.AxisLimits}}
+\doxysubsubsection{\texorpdfstring{Equals()}{Equals()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_axis_limits_ab6205be18bba134e34d777f7cd82527e} 
+bool Scott\+Plot.\+Axis\+Limits.\+Equals (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}}}]{other}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{struct_scott_plot_1_1_axis_limits_a73d3c5441aa971e97a468552a675d7f9}\index{ScottPlot.AxisLimits@{ScottPlot.AxisLimits}!Equals@{Equals}}
+\index{Equals@{Equals}!ScottPlot.AxisLimits@{ScottPlot.AxisLimits}}
+\doxysubsubsection{\texorpdfstring{Equals()}{Equals()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_axis_limits_a73d3c5441aa971e97a468552a675d7f9} 
+override bool Scott\+Plot.\+Axis\+Limits.\+Equals (\begin{DoxyParamCaption}\item[{object?}]{obj}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{struct_scott_plot_1_1_axis_limits_a623b6c9773d8463b600269bb42c89099}\index{ScottPlot.AxisLimits@{ScottPlot.AxisLimits}!Expanded@{Expanded}}
+\index{Expanded@{Expanded}!ScottPlot.AxisLimits@{ScottPlot.AxisLimits}}
+\doxysubsubsection{\texorpdfstring{Expanded()}{Expanded()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_axis_limits_a623b6c9773d8463b600269bb42c89099} 
+\mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}} Scott\+Plot.\+Axis\+Limits.\+Expanded (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}}}]{limits}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return a new \doxylink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits} expanded to include the area defined by {\itshape limits} . 
+
+\Hypertarget{struct_scott_plot_1_1_axis_limits_a0a0973c18c0259714d7154c138141757}\index{ScottPlot.AxisLimits@{ScottPlot.AxisLimits}!Expanded@{Expanded}}
+\index{Expanded@{Expanded}!ScottPlot.AxisLimits@{ScottPlot.AxisLimits}}
+\doxysubsubsection{\texorpdfstring{Expanded()}{Expanded()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_axis_limits_a0a0973c18c0259714d7154c138141757} 
+\mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}} Scott\+Plot.\+Axis\+Limits.\+Expanded (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_scott_plot_1_1_coordinate_rect}{Coordinate\+Rect}}}]{rect}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return a new \doxylink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits} expanded to include all corners of the given {\itshape rect} . 
+
+\Hypertarget{struct_scott_plot_1_1_axis_limits_aa94bb60728b0479adf6abbb4159aa47c}\index{ScottPlot.AxisLimits@{ScottPlot.AxisLimits}!Expanded@{Expanded}}
+\index{Expanded@{Expanded}!ScottPlot.AxisLimits@{ScottPlot.AxisLimits}}
+\doxysubsubsection{\texorpdfstring{Expanded()}{Expanded()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_axis_limits_aa94bb60728b0479adf6abbb4159aa47c} 
+\mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}} Scott\+Plot.\+Axis\+Limits.\+Expanded (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_scott_plot_1_1_coordinates}{Coordinates}}}]{coordinates}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return a new \doxylink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits} expanded to include the given {\itshape coordinates} . 
+
+\Hypertarget{struct_scott_plot_1_1_axis_limits_ada05240e3488689b1f2183f8629f09aa}\index{ScottPlot.AxisLimits@{ScottPlot.AxisLimits}!Expanded@{Expanded}}
+\index{Expanded@{Expanded}!ScottPlot.AxisLimits@{ScottPlot.AxisLimits}}
+\doxysubsubsection{\texorpdfstring{Expanded()}{Expanded()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_axis_limits_ada05240e3488689b1f2183f8629f09aa} 
+\mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}} Scott\+Plot.\+Axis\+Limits.\+Expanded (\begin{DoxyParamCaption}\item[{double}]{x}{, }\item[{double}]{y}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return a new \doxylink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits} expanded to include the given {\itshape x}  and {\itshape y} . 
+
+\Hypertarget{struct_scott_plot_1_1_axis_limits_ab8c1543e9a4adb3c918d6b2962944a64}\index{ScottPlot.AxisLimits@{ScottPlot.AxisLimits}!ExpandedToInclude@{ExpandedToInclude}}
+\index{ExpandedToInclude@{ExpandedToInclude}!ScottPlot.AxisLimits@{ScottPlot.AxisLimits}}
+\doxysubsubsection{\texorpdfstring{ExpandedToInclude()}{ExpandedToInclude()}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_axis_limits_ab8c1543e9a4adb3c918d6b2962944a64} 
+\mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}} Scott\+Plot.\+Axis\+Limits.\+Expanded\+To\+Include (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}}}]{other\+Limits}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{struct_scott_plot_1_1_axis_limits_a03270807acd4960c682d730b091464fc}\index{ScottPlot.AxisLimits@{ScottPlot.AxisLimits}!FromPoint@{FromPoint}}
+\index{FromPoint@{FromPoint}!ScottPlot.AxisLimits@{ScottPlot.AxisLimits}}
+\doxysubsubsection{\texorpdfstring{FromPoint()}{FromPoint()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_axis_limits_a03270807acd4960c682d730b091464fc} 
+static \mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}} Scott\+Plot.\+Axis\+Limits.\+From\+Point (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_scott_plot_1_1_coordinates}{Coordinates}}}]{c}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\Hypertarget{struct_scott_plot_1_1_axis_limits_a9735548698aa6d6090b4c334fec3979b}\index{ScottPlot.AxisLimits@{ScottPlot.AxisLimits}!FromPoint@{FromPoint}}
+\index{FromPoint@{FromPoint}!ScottPlot.AxisLimits@{ScottPlot.AxisLimits}}
+\doxysubsubsection{\texorpdfstring{FromPoint()}{FromPoint()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_axis_limits_a9735548698aa6d6090b4c334fec3979b} 
+static \mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}} Scott\+Plot.\+Axis\+Limits.\+From\+Point (\begin{DoxyParamCaption}\item[{double}]{x}{, }\item[{double}]{y}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\Hypertarget{struct_scott_plot_1_1_axis_limits_a30be6aacb370a6335ad13274bb9126db}\index{ScottPlot.AxisLimits@{ScottPlot.AxisLimits}!GetHashCode@{GetHashCode}}
+\index{GetHashCode@{GetHashCode}!ScottPlot.AxisLimits@{ScottPlot.AxisLimits}}
+\doxysubsubsection{\texorpdfstring{GetHashCode()}{GetHashCode()}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_axis_limits_a30be6aacb370a6335ad13274bb9126db} 
+override int Scott\+Plot.\+Axis\+Limits.\+Get\+Hash\+Code (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{struct_scott_plot_1_1_axis_limits_a5ea4e5256a4f6b8771c7b817aa65cbdf}\index{ScottPlot.AxisLimits@{ScottPlot.AxisLimits}!HorizontalOnly@{HorizontalOnly}}
+\index{HorizontalOnly@{HorizontalOnly}!ScottPlot.AxisLimits@{ScottPlot.AxisLimits}}
+\doxysubsubsection{\texorpdfstring{HorizontalOnly()}{HorizontalOnly()}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_axis_limits_a5ea4e5256a4f6b8771c7b817aa65cbdf} 
+static \mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}} Scott\+Plot.\+Axis\+Limits.\+Horizontal\+Only (\begin{DoxyParamCaption}\item[{double}]{x\+Min}{, }\item[{double}]{x\+Max}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{struct_scott_plot_1_1_axis_limits_a000dd4dfcb33c3e9a924f1068bf0330a}\index{ScottPlot.AxisLimits@{ScottPlot.AxisLimits}!InvertedHorizontally@{InvertedHorizontally}}
+\index{InvertedHorizontally@{InvertedHorizontally}!ScottPlot.AxisLimits@{ScottPlot.AxisLimits}}
+\doxysubsubsection{\texorpdfstring{InvertedHorizontally()}{InvertedHorizontally()}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_axis_limits_a000dd4dfcb33c3e9a924f1068bf0330a} 
+\mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}} Scott\+Plot.\+Axis\+Limits.\+Inverted\+Horizontally (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{struct_scott_plot_1_1_axis_limits_a868205cd1671feb15a3bffed2a7a8820}\index{ScottPlot.AxisLimits@{ScottPlot.AxisLimits}!InvertedVertically@{InvertedVertically}}
+\index{InvertedVertically@{InvertedVertically}!ScottPlot.AxisLimits@{ScottPlot.AxisLimits}}
+\doxysubsubsection{\texorpdfstring{InvertedVertically()}{InvertedVertically()}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_axis_limits_a868205cd1671feb15a3bffed2a7a8820} 
+\mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}} Scott\+Plot.\+Axis\+Limits.\+Inverted\+Vertically (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{struct_scott_plot_1_1_axis_limits_ab659ac75aae9580c9de514600462279e}\index{ScottPlot.AxisLimits@{ScottPlot.AxisLimits}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!ScottPlot.AxisLimits@{ScottPlot.AxisLimits}}
+\doxysubsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_axis_limits_ab659ac75aae9580c9de514600462279e} 
+static bool Scott\+Plot.\+Axis\+Limits.\+operator!= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}}}]{a}{, }\item[{\mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}}}]{b}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\Hypertarget{struct_scott_plot_1_1_axis_limits_a025bd65f528e5ddb46a7974395981345}\index{ScottPlot.AxisLimits@{ScottPlot.AxisLimits}!operator==@{operator==}}
+\index{operator==@{operator==}!ScottPlot.AxisLimits@{ScottPlot.AxisLimits}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_axis_limits_a025bd65f528e5ddb46a7974395981345} 
+static bool Scott\+Plot.\+Axis\+Limits.\+operator== (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}}}]{a}{, }\item[{\mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}}}]{b}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\Hypertarget{struct_scott_plot_1_1_axis_limits_a6711483e9603774e1fc497e8d78a63a6}\index{ScottPlot.AxisLimits@{ScottPlot.AxisLimits}!ToString@{ToString}}
+\index{ToString@{ToString}!ScottPlot.AxisLimits@{ScottPlot.AxisLimits}}
+\doxysubsubsection{\texorpdfstring{ToString()}{ToString()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_axis_limits_a6711483e9603774e1fc497e8d78a63a6} 
+override string Scott\+Plot.\+Axis\+Limits.\+To\+String (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{struct_scott_plot_1_1_axis_limits_a6ce673fc3355f38c52f770e8f22c1a51}\index{ScottPlot.AxisLimits@{ScottPlot.AxisLimits}!ToString@{ToString}}
+\index{ToString@{ToString}!ScottPlot.AxisLimits@{ScottPlot.AxisLimits}}
+\doxysubsubsection{\texorpdfstring{ToString()}{ToString()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_axis_limits_a6ce673fc3355f38c52f770e8f22c1a51} 
+string Scott\+Plot.\+Axis\+Limits.\+To\+String (\begin{DoxyParamCaption}\item[{int}]{digits}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{struct_scott_plot_1_1_axis_limits_a4a5ed2c52f930fc7bd3904137bc4e7f4}\index{ScottPlot.AxisLimits@{ScottPlot.AxisLimits}!VerticalOnly@{VerticalOnly}}
+\index{VerticalOnly@{VerticalOnly}!ScottPlot.AxisLimits@{ScottPlot.AxisLimits}}
+\doxysubsubsection{\texorpdfstring{VerticalOnly()}{VerticalOnly()}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_axis_limits_a4a5ed2c52f930fc7bd3904137bc4e7f4} 
+static \mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}} Scott\+Plot.\+Axis\+Limits.\+Vertical\+Only (\begin{DoxyParamCaption}\item[{double}]{y\+Min}{, }\item[{double}]{y\+Max}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{struct_scott_plot_1_1_axis_limits_a081743b5d88a96599e3cfbc9627e7bb1}\index{ScottPlot.AxisLimits@{ScottPlot.AxisLimits}!WithPan@{WithPan}}
+\index{WithPan@{WithPan}!ScottPlot.AxisLimits@{ScottPlot.AxisLimits}}
+\doxysubsubsection{\texorpdfstring{WithPan()}{WithPan()}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_axis_limits_a081743b5d88a96599e3cfbc9627e7bb1} 
+\mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}} Scott\+Plot.\+Axis\+Limits.\+With\+Pan (\begin{DoxyParamCaption}\item[{double}]{deltaX}{, }\item[{double}]{deltaY}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{struct_scott_plot_1_1_axis_limits_ae3dd42826d121955d0b7fe10deac51ad}\index{ScottPlot.AxisLimits@{ScottPlot.AxisLimits}!WithZoom@{WithZoom}}
+\index{WithZoom@{WithZoom}!ScottPlot.AxisLimits@{ScottPlot.AxisLimits}}
+\doxysubsubsection{\texorpdfstring{WithZoom()}{WithZoom()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_axis_limits_ae3dd42826d121955d0b7fe10deac51ad} 
+\mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}} Scott\+Plot.\+Axis\+Limits.\+With\+Zoom (\begin{DoxyParamCaption}\item[{double}]{fracX}{, }\item[{double}]{fracY}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{struct_scott_plot_1_1_axis_limits_a26eb78f95bc0ada20fb26e8352862304}\index{ScottPlot.AxisLimits@{ScottPlot.AxisLimits}!WithZoom@{WithZoom}}
+\index{WithZoom@{WithZoom}!ScottPlot.AxisLimits@{ScottPlot.AxisLimits}}
+\doxysubsubsection{\texorpdfstring{WithZoom()}{WithZoom()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_axis_limits_a26eb78f95bc0ada20fb26e8352862304} 
+\mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}} Scott\+Plot.\+Axis\+Limits.\+With\+Zoom (\begin{DoxyParamCaption}\item[{double}]{fracX}{, }\item[{double}]{fracY}{, }\item[{double}]{zoom\+ToX}{, }\item[{double}]{zoom\+ToY}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{struct_scott_plot_1_1_axis_limits_a314c8795602c951ce3845a29b5a95c88}\index{ScottPlot.AxisLimits@{ScottPlot.AxisLimits}!Bottom@{Bottom}}
+\index{Bottom@{Bottom}!ScottPlot.AxisLimits@{ScottPlot.AxisLimits}}
+\doxysubsubsection{\texorpdfstring{Bottom}{Bottom}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_axis_limits_a314c8795602c951ce3845a29b5a95c88} 
+double Scott\+Plot.\+Axis\+Limits.\+Bottom\hspace{0.3cm}{\ttfamily [get]}}
+
+\Hypertarget{struct_scott_plot_1_1_axis_limits_afd239773dbb7c1211bcaaaed4ad95c81}\index{ScottPlot.AxisLimits@{ScottPlot.AxisLimits}!Center@{Center}}
+\index{Center@{Center}!ScottPlot.AxisLimits@{ScottPlot.AxisLimits}}
+\doxysubsubsection{\texorpdfstring{Center}{Center}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_axis_limits_afd239773dbb7c1211bcaaaed4ad95c81} 
+\mbox{\hyperlink{struct_scott_plot_1_1_coordinates}{Coordinates}} Scott\+Plot.\+Axis\+Limits.\+Center\hspace{0.3cm}{\ttfamily [get]}}
+
+\Hypertarget{struct_scott_plot_1_1_axis_limits_a1f0410ac6fdc2509b32a1413d876df44}\index{ScottPlot.AxisLimits@{ScottPlot.AxisLimits}!Default@{Default}}
+\index{Default@{Default}!ScottPlot.AxisLimits@{ScottPlot.AxisLimits}}
+\doxysubsubsection{\texorpdfstring{Default}{Default}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_axis_limits_a1f0410ac6fdc2509b32a1413d876df44} 
+\mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}} Scott\+Plot.\+Axis\+Limits.\+Default = new(-\/10, 10, -\/10, 10)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+\Hypertarget{struct_scott_plot_1_1_axis_limits_ae4746593688f0c1104c28118cac54585}\index{ScottPlot.AxisLimits@{ScottPlot.AxisLimits}!HasArea@{HasArea}}
+\index{HasArea@{HasArea}!ScottPlot.AxisLimits@{ScottPlot.AxisLimits}}
+\doxysubsubsection{\texorpdfstring{HasArea}{HasArea}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_axis_limits_ae4746593688f0c1104c28118cac54585} 
+bool Scott\+Plot.\+Axis\+Limits.\+Has\+Area\hspace{0.3cm}{\ttfamily [get]}}
+
+\Hypertarget{struct_scott_plot_1_1_axis_limits_a54f7f0e0a7c6bab570c6a8313a032818}\index{ScottPlot.AxisLimits@{ScottPlot.AxisLimits}!HorizontalCenter@{HorizontalCenter}}
+\index{HorizontalCenter@{HorizontalCenter}!ScottPlot.AxisLimits@{ScottPlot.AxisLimits}}
+\doxysubsubsection{\texorpdfstring{HorizontalCenter}{HorizontalCenter}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_axis_limits_a54f7f0e0a7c6bab570c6a8313a032818} 
+double Scott\+Plot.\+Axis\+Limits.\+Horizontal\+Center\hspace{0.3cm}{\ttfamily [get]}}
+
+\Hypertarget{struct_scott_plot_1_1_axis_limits_ac6c63648a1e7838e4e7dc84c6cabaa9e}\index{ScottPlot.AxisLimits@{ScottPlot.AxisLimits}!HorizontalSpan@{HorizontalSpan}}
+\index{HorizontalSpan@{HorizontalSpan}!ScottPlot.AxisLimits@{ScottPlot.AxisLimits}}
+\doxysubsubsection{\texorpdfstring{HorizontalSpan}{HorizontalSpan}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_axis_limits_ac6c63648a1e7838e4e7dc84c6cabaa9e} 
+double Scott\+Plot.\+Axis\+Limits.\+Horizontal\+Span\hspace{0.3cm}{\ttfamily [get]}}
+
+\Hypertarget{struct_scott_plot_1_1_axis_limits_a4b142a7042b9c6e40e125c7ba14dafd4}\index{ScottPlot.AxisLimits@{ScottPlot.AxisLimits}!IsReal@{IsReal}}
+\index{IsReal@{IsReal}!ScottPlot.AxisLimits@{ScottPlot.AxisLimits}}
+\doxysubsubsection{\texorpdfstring{IsReal}{IsReal}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_axis_limits_a4b142a7042b9c6e40e125c7ba14dafd4} 
+bool Scott\+Plot.\+Axis\+Limits.\+Is\+Real\hspace{0.3cm}{\ttfamily [get]}}
+
+\Hypertarget{struct_scott_plot_1_1_axis_limits_afea663fb467054005934997a91956cd2}\index{ScottPlot.AxisLimits@{ScottPlot.AxisLimits}!IsRealX@{IsRealX}}
+\index{IsRealX@{IsRealX}!ScottPlot.AxisLimits@{ScottPlot.AxisLimits}}
+\doxysubsubsection{\texorpdfstring{IsRealX}{IsRealX}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_axis_limits_afea663fb467054005934997a91956cd2} 
+bool Scott\+Plot.\+Axis\+Limits.\+Is\+RealX\hspace{0.3cm}{\ttfamily [get]}}
+
+\Hypertarget{struct_scott_plot_1_1_axis_limits_ad8a07dac3161dcf868b05874778b5016}\index{ScottPlot.AxisLimits@{ScottPlot.AxisLimits}!IsRealY@{IsRealY}}
+\index{IsRealY@{IsRealY}!ScottPlot.AxisLimits@{ScottPlot.AxisLimits}}
+\doxysubsubsection{\texorpdfstring{IsRealY}{IsRealY}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_axis_limits_ad8a07dac3161dcf868b05874778b5016} 
+bool Scott\+Plot.\+Axis\+Limits.\+Is\+RealY\hspace{0.3cm}{\ttfamily [get]}}
+
+\Hypertarget{struct_scott_plot_1_1_axis_limits_adfdeb19efb9e860029a4d13ca8428f92}\index{ScottPlot.AxisLimits@{ScottPlot.AxisLimits}!Left@{Left}}
+\index{Left@{Left}!ScottPlot.AxisLimits@{ScottPlot.AxisLimits}}
+\doxysubsubsection{\texorpdfstring{Left}{Left}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_axis_limits_adfdeb19efb9e860029a4d13ca8428f92} 
+double Scott\+Plot.\+Axis\+Limits.\+Left\hspace{0.3cm}{\ttfamily [get]}}
+
+\Hypertarget{struct_scott_plot_1_1_axis_limits_aefba66aaabf292b1ad167075ae12bafb}\index{ScottPlot.AxisLimits@{ScottPlot.AxisLimits}!NoLimits@{NoLimits}}
+\index{NoLimits@{NoLimits}!ScottPlot.AxisLimits@{ScottPlot.AxisLimits}}
+\doxysubsubsection{\texorpdfstring{NoLimits}{NoLimits}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_axis_limits_aefba66aaabf292b1ad167075ae12bafb} 
+\mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}} Scott\+Plot.\+Axis\+Limits.\+No\+Limits\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+\Hypertarget{struct_scott_plot_1_1_axis_limits_afff138a32e1ec270ad7391bbc6e9827e}\index{ScottPlot.AxisLimits@{ScottPlot.AxisLimits}!Rect@{Rect}}
+\index{Rect@{Rect}!ScottPlot.AxisLimits@{ScottPlot.AxisLimits}}
+\doxysubsubsection{\texorpdfstring{Rect}{Rect}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_axis_limits_afff138a32e1ec270ad7391bbc6e9827e} 
+\mbox{\hyperlink{struct_scott_plot_1_1_coordinate_rect}{Coordinate\+Rect}} Scott\+Plot.\+Axis\+Limits.\+Rect\hspace{0.3cm}{\ttfamily [get]}}
+
+\Hypertarget{struct_scott_plot_1_1_axis_limits_a3e56c0ab05a42bed8c771492bd71d32b}\index{ScottPlot.AxisLimits@{ScottPlot.AxisLimits}!Right@{Right}}
+\index{Right@{Right}!ScottPlot.AxisLimits@{ScottPlot.AxisLimits}}
+\doxysubsubsection{\texorpdfstring{Right}{Right}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_axis_limits_a3e56c0ab05a42bed8c771492bd71d32b} 
+double Scott\+Plot.\+Axis\+Limits.\+Right\hspace{0.3cm}{\ttfamily [get]}}
+
+\Hypertarget{struct_scott_plot_1_1_axis_limits_a52b17a69f88100bb702d28e933b36ad8}\index{ScottPlot.AxisLimits@{ScottPlot.AxisLimits}!Top@{Top}}
+\index{Top@{Top}!ScottPlot.AxisLimits@{ScottPlot.AxisLimits}}
+\doxysubsubsection{\texorpdfstring{Top}{Top}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_axis_limits_a52b17a69f88100bb702d28e933b36ad8} 
+double Scott\+Plot.\+Axis\+Limits.\+Top\hspace{0.3cm}{\ttfamily [get]}}
+
+\Hypertarget{struct_scott_plot_1_1_axis_limits_ac215411754902b276f13c9d2626e3b7b}\index{ScottPlot.AxisLimits@{ScottPlot.AxisLimits}!Unset@{Unset}}
+\index{Unset@{Unset}!ScottPlot.AxisLimits@{ScottPlot.AxisLimits}}
+\doxysubsubsection{\texorpdfstring{Unset}{Unset}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_axis_limits_ac215411754902b276f13c9d2626e3b7b} 
+\mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}} Scott\+Plot.\+Axis\+Limits.\+Unset\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+\Hypertarget{struct_scott_plot_1_1_axis_limits_a91fa8881bbadaa8341231625fe0f96e4}\index{ScottPlot.AxisLimits@{ScottPlot.AxisLimits}!VerticalCenter@{VerticalCenter}}
+\index{VerticalCenter@{VerticalCenter}!ScottPlot.AxisLimits@{ScottPlot.AxisLimits}}
+\doxysubsubsection{\texorpdfstring{VerticalCenter}{VerticalCenter}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_axis_limits_a91fa8881bbadaa8341231625fe0f96e4} 
+double Scott\+Plot.\+Axis\+Limits.\+Vertical\+Center\hspace{0.3cm}{\ttfamily [get]}}
+
+\Hypertarget{struct_scott_plot_1_1_axis_limits_aa59f96c8c5c3646f7be5bfff56882e61}\index{ScottPlot.AxisLimits@{ScottPlot.AxisLimits}!VerticalSpan@{VerticalSpan}}
+\index{VerticalSpan@{VerticalSpan}!ScottPlot.AxisLimits@{ScottPlot.AxisLimits}}
+\doxysubsubsection{\texorpdfstring{VerticalSpan}{VerticalSpan}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_axis_limits_aa59f96c8c5c3646f7be5bfff56882e61} 
+double Scott\+Plot.\+Axis\+Limits.\+Vertical\+Span\hspace{0.3cm}{\ttfamily [get]}}
+
+\Hypertarget{struct_scott_plot_1_1_axis_limits_a510aed96178f0f24464697311848a335}\index{ScottPlot.AxisLimits@{ScottPlot.AxisLimits}!XRange@{XRange}}
+\index{XRange@{XRange}!ScottPlot.AxisLimits@{ScottPlot.AxisLimits}}
+\doxysubsubsection{\texorpdfstring{XRange}{XRange}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_axis_limits_a510aed96178f0f24464697311848a335} 
+\mbox{\hyperlink{namespace_scott_plot_a4f8afc1393f89ce60e775705cbf134d1}{Coordinate\+Range}} Scott\+Plot.\+Axis\+Limits.\+XRange\hspace{0.3cm}{\ttfamily [get]}}
+
+\Hypertarget{struct_scott_plot_1_1_axis_limits_a6d76a862ebb54c59c963cb084365cc3f}\index{ScottPlot.AxisLimits@{ScottPlot.AxisLimits}!YRange@{YRange}}
+\index{YRange@{YRange}!ScottPlot.AxisLimits@{ScottPlot.AxisLimits}}
+\doxysubsubsection{\texorpdfstring{YRange}{YRange}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_axis_limits_a6d76a862ebb54c59c963cb084365cc3f} 
+\mbox{\hyperlink{namespace_scott_plot_a4f8afc1393f89ce60e775705cbf134d1}{Coordinate\+Range}} Scott\+Plot.\+Axis\+Limits.\+YRange\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Primitives/Axis\+Limits.\+cs\end{DoxyCompactItemize}

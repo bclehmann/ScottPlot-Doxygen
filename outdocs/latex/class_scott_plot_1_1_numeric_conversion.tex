@@ -1,0 +1,259 @@
+\doxysection{Scott\+Plot.\+Numeric\+Conversion Class Reference}
+\hypertarget{class_scott_plot_1_1_numeric_conversion}{}\label{class_scott_plot_1_1_numeric_conversion}\index{ScottPlot.NumericConversion@{ScottPlot.NumericConversion}}
+
+
+This class contains type-\/specific methods to convert between generic values and doubles optimized for performance using platform-\/specific features. See discussion in \href{https://github.com/ScottPlot/ScottPlot/pull/1927}{\texttt{ https\+://github.\+com/\+Scott\+Plot/\+Scott\+Plot/pull/1927}}.  
+
+
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static double\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_scott_plot_1_1_numeric_conversion_acfcc1d5322a4460248f816938016b471}{Generic\+To\+Double\+Array$<$ T $>$}} (T\mbox{[}$\,$\mbox{]} values)
+\item 
+static double\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_scott_plot_1_1_numeric_conversion_a9c540c88710776606f718ce7b4422f3f}{Generic\+To\+Double\+Array$<$ T $>$}} (\mbox{\hyperlink{class_i_enumerable}{IEnumerable}}$<$ T $>$ values)
+\item 
+static double \mbox{\hyperlink{class_scott_plot_1_1_numeric_conversion_a2614eade9ecc02e353502411519c5705}{Generic\+To\+Double$<$ T $>$}} (ref T value)
+\begin{DoxyCompactList}\small\item\em Returns the double value of a {\itshape T}  using a conversion technique optimized for the platform. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{struct_scott_plot_1_1_coordinates}{Coordinates}} \mbox{\hyperlink{class_scott_plot_1_1_numeric_conversion_aaa7f54aff9f811e92cf2fb56e7618168}{Generic\+To\+Coordinates$<$ T1, T2 $>$}} (ref T1 x, ref T2 y)
+\item 
+static \mbox{\hyperlink{struct_scott_plot_1_1_coordinates}{Coordinates}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_scott_plot_1_1_numeric_conversion_a78bbac14741f0db4f16fee5ff08c7377}{Generic\+To\+Coordinates$<$ T1, T2 $>$}} (\mbox{\hyperlink{class_i_enumerable}{IEnumerable}}$<$ T1 $>$ xs, \mbox{\hyperlink{class_i_enumerable}{IEnumerable}}$<$ T2 $>$ ys)
+\item 
+static double \mbox{\hyperlink{class_scott_plot_1_1_numeric_conversion_a8236cc4221879202e9b74ffd8331cfda}{Generic\+To\+Double$<$ T $>$}} (IRead\+Only\+List$<$ T $>$ list, int i)
+\begin{DoxyCompactList}\small\item\em Returns the double value of the {\itshape T}  at position {\itshape i}  in {\itshape list}  using a conversion technique optimized for the platform. \end{DoxyCompactList}\item 
+static double \mbox{\hyperlink{class_scott_plot_1_1_numeric_conversion_a4c57a227d4e895469b6285a0692506eb}{Generic\+To\+Double$<$ T $>$}} (T\mbox{[}$\,$\mbox{]} array, int i)
+\begin{DoxyCompactList}\small\item\em Returns the double value of the {\itshape T}  at position {\itshape i}  in {\itshape array}  using a conversion technique optimized for the platform. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_scott_plot_1_1_numeric_conversion_a006486ba12611d2a92c30134d0202bee}{Double\+To\+Generic$<$ T $>$}} (double value, out T v)
+\begin{DoxyCompactList}\small\item\em Creates a {\itshape T}  for a given double {\itshape value}  using a conversion technique optimized for the platform. \end{DoxyCompactList}\item 
+static T\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_scott_plot_1_1_numeric_conversion_a05111d00f0b9497b1f5b146f17332948}{Double\+To\+Generic$<$ T $>$}} (this double\mbox{[}$\,$\mbox{]} input)
+\item 
+static T\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_scott_plot_1_1_numeric_conversion_aa819c95bce9f4737f512a35f7d8d76f7}{To\+Generic\+Array$<$ T $>$}} (this double\mbox{[}$\,$\mbox{]} input)
+\item 
+static byte \mbox{\hyperlink{class_scott_plot_1_1_numeric_conversion_ab5caa3b35a6ba27ca146c689891393df}{Add\+Bytes}} (byte a, byte b)
+\item 
+static byte \mbox{\hyperlink{class_scott_plot_1_1_numeric_conversion_a8df382ebb6c9b1edf555567a2427ab8b}{Multiply}} (byte a, byte b)
+\item 
+static byte \mbox{\hyperlink{class_scott_plot_1_1_numeric_conversion_a85eb98b2cae73978947cf0af21e1d8af}{Subtract\+Bytes}} (byte a, byte b)
+\item 
+static bool \mbox{\hyperlink{class_scott_plot_1_1_numeric_conversion_a2aae63f49a09d5c7a24a1b40ba16a2a9}{Less\+Than\+Or\+Equal\+Bytes}} (byte a, byte b)
+\item 
+static Func$<$ T, T, T $>$ \mbox{\hyperlink{class_scott_plot_1_1_numeric_conversion_aff8052b7c71151d337f354bdb14cc2a0}{Create\+Add\+Function$<$ T $>$}} ()
+\item 
+static Func$<$ T, T, T $>$ \mbox{\hyperlink{class_scott_plot_1_1_numeric_conversion_a1bec4785229eed2aa580208d5b9c8568}{Create\+Mult\+Function$<$ T $>$}} ()
+\item 
+static Func$<$ T, T, T $>$ \mbox{\hyperlink{class_scott_plot_1_1_numeric_conversion_a7ddcfae616449ff064bbe1c1d2bdbfba}{Create\+Subtract\+Function$<$ T $>$}} ()
+\item 
+static Func$<$ T, T, bool $>$ \mbox{\hyperlink{class_scott_plot_1_1_numeric_conversion_abb806b6ac68bc81df8ae3f9fa86a07b8}{Create\+Less\+Than\+Or\+Equal\+Function$<$ T $>$}} ()
+\item 
+static T \mbox{\hyperlink{class_scott_plot_1_1_numeric_conversion_a37b2d48a820edf7682897719bd7b8b3e}{Clamp$<$ T $>$}} (T input, T min, T max)
+\item 
+static bool \mbox{\hyperlink{class_scott_plot_1_1_numeric_conversion_aa02e97aa2930ed42b342c0d78f0a4386}{Are\+Real}} (double x, double y)
+\item 
+static bool \mbox{\hyperlink{class_scott_plot_1_1_numeric_conversion_ad9bb1af53c25fd4e04911cf143f7ca16}{Is\+Real}} (double x)
+\item 
+static bool \mbox{\hyperlink{class_scott_plot_1_1_numeric_conversion_aa87f21ae19a3292e549adcf753ed52d8}{Is\+Real}} (float x)
+\item 
+static Date\+Time \mbox{\hyperlink{class_scott_plot_1_1_numeric_conversion_a5d616e860dbb86b19195c74aabb34206}{To\+Date\+Time}} (double value)
+\begin{DoxyCompactList}\small\item\em Convert a number that can be plotted on a numeric axis into a Date\+Time. \end{DoxyCompactList}\item 
+static double \mbox{\hyperlink{class_scott_plot_1_1_numeric_conversion_a7ebe826e5dfe5caaa2a0163811c32a69}{To\+Number}} (Date\+Time value)
+\begin{DoxyCompactList}\small\item\em Convert a Date\+Time into a number that can be plotted on a numeric axis. \end{DoxyCompactList}\item 
+static double \mbox{\hyperlink{class_scott_plot_1_1_numeric_conversion_a09c22d9eebb7f5cd3e408180c572a3ac}{Increment\+Large\+Double}} (double value)
+\item 
+static double \mbox{\hyperlink{class_scott_plot_1_1_numeric_conversion_a2747f031a04cb617f04a6060be93a579}{Decrement\+Large\+Double}} (double value)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class contains type-\/specific methods to convert between generic values and doubles optimized for performance using platform-\/specific features. See discussion in \href{https://github.com/ScottPlot/ScottPlot/pull/1927}{\texttt{ https\+://github.\+com/\+Scott\+Plot/\+Scott\+Plot/pull/1927}}. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_scott_plot_1_1_numeric_conversion_ab5caa3b35a6ba27ca146c689891393df}\index{ScottPlot.NumericConversion@{ScottPlot.NumericConversion}!AddBytes@{AddBytes}}
+\index{AddBytes@{AddBytes}!ScottPlot.NumericConversion@{ScottPlot.NumericConversion}}
+\doxysubsubsection{\texorpdfstring{AddBytes()}{AddBytes()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_numeric_conversion_ab5caa3b35a6ba27ca146c689891393df} 
+static byte Scott\+Plot.\+Numeric\+Conversion.\+Add\+Bytes (\begin{DoxyParamCaption}\item[{byte}]{a}{, }\item[{byte}]{b}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_scott_plot_1_1_numeric_conversion_aa02e97aa2930ed42b342c0d78f0a4386}\index{ScottPlot.NumericConversion@{ScottPlot.NumericConversion}!AreReal@{AreReal}}
+\index{AreReal@{AreReal}!ScottPlot.NumericConversion@{ScottPlot.NumericConversion}}
+\doxysubsubsection{\texorpdfstring{AreReal()}{AreReal()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_numeric_conversion_aa02e97aa2930ed42b342c0d78f0a4386} 
+static bool Scott\+Plot.\+Numeric\+Conversion.\+Are\+Real (\begin{DoxyParamCaption}\item[{double}]{x}{, }\item[{double}]{y}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\Hypertarget{class_scott_plot_1_1_numeric_conversion_a37b2d48a820edf7682897719bd7b8b3e}\index{ScottPlot.NumericConversion@{ScottPlot.NumericConversion}!Clamp$<$ T $>$@{Clamp$<$ T $>$}}
+\index{Clamp$<$ T $>$@{Clamp$<$ T $>$}!ScottPlot.NumericConversion@{ScottPlot.NumericConversion}}
+\doxysubsubsection{\texorpdfstring{Clamp$<$ T $>$()}{Clamp< T >()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_numeric_conversion_a37b2d48a820edf7682897719bd7b8b3e} 
+static T Scott\+Plot.\+Numeric\+Conversion.\+Clamp$<$ T $>$ (\begin{DoxyParamCaption}\item[{T}]{input}{, }\item[{T}]{min}{, }\item[{T}]{max}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\begin{Desc}
+\item[Type Constraints]\begin{description}
+\item[{\em T} : {\em IComparable}]\end{description}
+\end{Desc}
+\Hypertarget{class_scott_plot_1_1_numeric_conversion_aff8052b7c71151d337f354bdb14cc2a0}\index{ScottPlot.NumericConversion@{ScottPlot.NumericConversion}!CreateAddFunction$<$ T $>$@{CreateAddFunction$<$ T $>$}}
+\index{CreateAddFunction$<$ T $>$@{CreateAddFunction$<$ T $>$}!ScottPlot.NumericConversion@{ScottPlot.NumericConversion}}
+\doxysubsubsection{\texorpdfstring{CreateAddFunction$<$ T $>$()}{CreateAddFunction< T >()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_numeric_conversion_aff8052b7c71151d337f354bdb14cc2a0} 
+static Func$<$ T, T, T $>$ Scott\+Plot.\+Numeric\+Conversion.\+Create\+Add\+Function$<$ T $>$ (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\Hypertarget{class_scott_plot_1_1_numeric_conversion_abb806b6ac68bc81df8ae3f9fa86a07b8}\index{ScottPlot.NumericConversion@{ScottPlot.NumericConversion}!CreateLessThanOrEqualFunction$<$ T $>$@{CreateLessThanOrEqualFunction$<$ T $>$}}
+\index{CreateLessThanOrEqualFunction$<$ T $>$@{CreateLessThanOrEqualFunction$<$ T $>$}!ScottPlot.NumericConversion@{ScottPlot.NumericConversion}}
+\doxysubsubsection{\texorpdfstring{CreateLessThanOrEqualFunction$<$ T $>$()}{CreateLessThanOrEqualFunction< T >()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_numeric_conversion_abb806b6ac68bc81df8ae3f9fa86a07b8} 
+static Func$<$ T, T, bool $>$ Scott\+Plot.\+Numeric\+Conversion.\+Create\+Less\+Than\+Or\+Equal\+Function$<$ T $>$ (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\Hypertarget{class_scott_plot_1_1_numeric_conversion_a1bec4785229eed2aa580208d5b9c8568}\index{ScottPlot.NumericConversion@{ScottPlot.NumericConversion}!CreateMultFunction$<$ T $>$@{CreateMultFunction$<$ T $>$}}
+\index{CreateMultFunction$<$ T $>$@{CreateMultFunction$<$ T $>$}!ScottPlot.NumericConversion@{ScottPlot.NumericConversion}}
+\doxysubsubsection{\texorpdfstring{CreateMultFunction$<$ T $>$()}{CreateMultFunction< T >()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_numeric_conversion_a1bec4785229eed2aa580208d5b9c8568} 
+static Func$<$ T, T, T $>$ Scott\+Plot.\+Numeric\+Conversion.\+Create\+Mult\+Function$<$ T $>$ (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\Hypertarget{class_scott_plot_1_1_numeric_conversion_a7ddcfae616449ff064bbe1c1d2bdbfba}\index{ScottPlot.NumericConversion@{ScottPlot.NumericConversion}!CreateSubtractFunction$<$ T $>$@{CreateSubtractFunction$<$ T $>$}}
+\index{CreateSubtractFunction$<$ T $>$@{CreateSubtractFunction$<$ T $>$}!ScottPlot.NumericConversion@{ScottPlot.NumericConversion}}
+\doxysubsubsection{\texorpdfstring{CreateSubtractFunction$<$ T $>$()}{CreateSubtractFunction< T >()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_numeric_conversion_a7ddcfae616449ff064bbe1c1d2bdbfba} 
+static Func$<$ T, T, T $>$ Scott\+Plot.\+Numeric\+Conversion.\+Create\+Subtract\+Function$<$ T $>$ (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\Hypertarget{class_scott_plot_1_1_numeric_conversion_a2747f031a04cb617f04a6060be93a579}\index{ScottPlot.NumericConversion@{ScottPlot.NumericConversion}!DecrementLargeDouble@{DecrementLargeDouble}}
+\index{DecrementLargeDouble@{DecrementLargeDouble}!ScottPlot.NumericConversion@{ScottPlot.NumericConversion}}
+\doxysubsubsection{\texorpdfstring{DecrementLargeDouble()}{DecrementLargeDouble()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_numeric_conversion_a2747f031a04cb617f04a6060be93a579} 
+static double Scott\+Plot.\+Numeric\+Conversion.\+Decrement\+Large\+Double (\begin{DoxyParamCaption}\item[{double}]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\Hypertarget{class_scott_plot_1_1_numeric_conversion_a006486ba12611d2a92c30134d0202bee}\index{ScottPlot.NumericConversion@{ScottPlot.NumericConversion}!DoubleToGeneric$<$ T $>$@{DoubleToGeneric$<$ T $>$}}
+\index{DoubleToGeneric$<$ T $>$@{DoubleToGeneric$<$ T $>$}!ScottPlot.NumericConversion@{ScottPlot.NumericConversion}}
+\doxysubsubsection{\texorpdfstring{DoubleToGeneric$<$ T $>$()}{DoubleToGeneric< T >()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_numeric_conversion_a006486ba12611d2a92c30134d0202bee} 
+static void Scott\+Plot.\+Numeric\+Conversion.\+Double\+To\+Generic$<$ T $>$ (\begin{DoxyParamCaption}\item[{double}]{value}{, }\item[{out T}]{v}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Creates a {\itshape T}  for a given double {\itshape value}  using a conversion technique optimized for the platform. 
+
+\Hypertarget{class_scott_plot_1_1_numeric_conversion_a05111d00f0b9497b1f5b146f17332948}\index{ScottPlot.NumericConversion@{ScottPlot.NumericConversion}!DoubleToGeneric$<$ T $>$@{DoubleToGeneric$<$ T $>$}}
+\index{DoubleToGeneric$<$ T $>$@{DoubleToGeneric$<$ T $>$}!ScottPlot.NumericConversion@{ScottPlot.NumericConversion}}
+\doxysubsubsection{\texorpdfstring{DoubleToGeneric$<$ T $>$()}{DoubleToGeneric< T >()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_numeric_conversion_a05111d00f0b9497b1f5b146f17332948} 
+static T\mbox{[}$\,$\mbox{]} Scott\+Plot.\+Numeric\+Conversion.\+Double\+To\+Generic$<$ T $>$ (\begin{DoxyParamCaption}\item[{this double\mbox{[}$\,$\mbox{]}}]{input}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\Hypertarget{class_scott_plot_1_1_numeric_conversion_a78bbac14741f0db4f16fee5ff08c7377}\index{ScottPlot.NumericConversion@{ScottPlot.NumericConversion}!GenericToCoordinates$<$ T1, T2 $>$@{GenericToCoordinates$<$ T1, T2 $>$}}
+\index{GenericToCoordinates$<$ T1, T2 $>$@{GenericToCoordinates$<$ T1, T2 $>$}!ScottPlot.NumericConversion@{ScottPlot.NumericConversion}}
+\doxysubsubsection{\texorpdfstring{GenericToCoordinates$<$ T1, T2 $>$()}{GenericToCoordinates< T1, T2 >()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_numeric_conversion_a78bbac14741f0db4f16fee5ff08c7377} 
+static \mbox{\hyperlink{struct_scott_plot_1_1_coordinates}{Coordinates}}\mbox{[}$\,$\mbox{]} Scott\+Plot.\+Numeric\+Conversion.\+Generic\+To\+Coordinates$<$ T1, T2 $>$ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_i_enumerable}{IEnumerable}}$<$ T1 $>$}]{xs}{, }\item[{\mbox{\hyperlink{class_i_enumerable}{IEnumerable}}$<$ T2 $>$}]{ys}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\Hypertarget{class_scott_plot_1_1_numeric_conversion_aaa7f54aff9f811e92cf2fb56e7618168}\index{ScottPlot.NumericConversion@{ScottPlot.NumericConversion}!GenericToCoordinates$<$ T1, T2 $>$@{GenericToCoordinates$<$ T1, T2 $>$}}
+\index{GenericToCoordinates$<$ T1, T2 $>$@{GenericToCoordinates$<$ T1, T2 $>$}!ScottPlot.NumericConversion@{ScottPlot.NumericConversion}}
+\doxysubsubsection{\texorpdfstring{GenericToCoordinates$<$ T1, T2 $>$()}{GenericToCoordinates< T1, T2 >()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_numeric_conversion_aaa7f54aff9f811e92cf2fb56e7618168} 
+static \mbox{\hyperlink{struct_scott_plot_1_1_coordinates}{Coordinates}} Scott\+Plot.\+Numeric\+Conversion.\+Generic\+To\+Coordinates$<$ T1, T2 $>$ (\begin{DoxyParamCaption}\item[{ref T1}]{x}{, }\item[{ref T2}]{y}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\Hypertarget{class_scott_plot_1_1_numeric_conversion_a8236cc4221879202e9b74ffd8331cfda}\index{ScottPlot.NumericConversion@{ScottPlot.NumericConversion}!GenericToDouble$<$ T $>$@{GenericToDouble$<$ T $>$}}
+\index{GenericToDouble$<$ T $>$@{GenericToDouble$<$ T $>$}!ScottPlot.NumericConversion@{ScottPlot.NumericConversion}}
+\doxysubsubsection{\texorpdfstring{GenericToDouble$<$ T $>$()}{GenericToDouble< T >()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_numeric_conversion_a8236cc4221879202e9b74ffd8331cfda} 
+static double Scott\+Plot.\+Numeric\+Conversion.\+Generic\+To\+Double$<$ T $>$ (\begin{DoxyParamCaption}\item[{IRead\+Only\+List$<$ T $>$}]{list}{, }\item[{int}]{i}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Returns the double value of the {\itshape T}  at position {\itshape i}  in {\itshape list}  using a conversion technique optimized for the platform. 
+
+\Hypertarget{class_scott_plot_1_1_numeric_conversion_a2614eade9ecc02e353502411519c5705}\index{ScottPlot.NumericConversion@{ScottPlot.NumericConversion}!GenericToDouble$<$ T $>$@{GenericToDouble$<$ T $>$}}
+\index{GenericToDouble$<$ T $>$@{GenericToDouble$<$ T $>$}!ScottPlot.NumericConversion@{ScottPlot.NumericConversion}}
+\doxysubsubsection{\texorpdfstring{GenericToDouble$<$ T $>$()}{GenericToDouble< T >()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_numeric_conversion_a2614eade9ecc02e353502411519c5705} 
+static double Scott\+Plot.\+Numeric\+Conversion.\+Generic\+To\+Double$<$ T $>$ (\begin{DoxyParamCaption}\item[{ref T}]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Returns the double value of a {\itshape T}  using a conversion technique optimized for the platform. 
+
+\Hypertarget{class_scott_plot_1_1_numeric_conversion_a4c57a227d4e895469b6285a0692506eb}\index{ScottPlot.NumericConversion@{ScottPlot.NumericConversion}!GenericToDouble$<$ T $>$@{GenericToDouble$<$ T $>$}}
+\index{GenericToDouble$<$ T $>$@{GenericToDouble$<$ T $>$}!ScottPlot.NumericConversion@{ScottPlot.NumericConversion}}
+\doxysubsubsection{\texorpdfstring{GenericToDouble$<$ T $>$()}{GenericToDouble< T >()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_numeric_conversion_a4c57a227d4e895469b6285a0692506eb} 
+static double Scott\+Plot.\+Numeric\+Conversion.\+Generic\+To\+Double$<$ T $>$ (\begin{DoxyParamCaption}\item[{T\mbox{[}$\,$\mbox{]}}]{array}{, }\item[{int}]{i}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Returns the double value of the {\itshape T}  at position {\itshape i}  in {\itshape array}  using a conversion technique optimized for the platform. 
+
+\Hypertarget{class_scott_plot_1_1_numeric_conversion_a9c540c88710776606f718ce7b4422f3f}\index{ScottPlot.NumericConversion@{ScottPlot.NumericConversion}!GenericToDoubleArray$<$ T $>$@{GenericToDoubleArray$<$ T $>$}}
+\index{GenericToDoubleArray$<$ T $>$@{GenericToDoubleArray$<$ T $>$}!ScottPlot.NumericConversion@{ScottPlot.NumericConversion}}
+\doxysubsubsection{\texorpdfstring{GenericToDoubleArray$<$ T $>$()}{GenericToDoubleArray< T >()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_numeric_conversion_a9c540c88710776606f718ce7b4422f3f} 
+static double\mbox{[}$\,$\mbox{]} Scott\+Plot.\+Numeric\+Conversion.\+Generic\+To\+Double\+Array$<$ T $>$ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_i_enumerable}{IEnumerable}}$<$ T $>$}]{values}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\Hypertarget{class_scott_plot_1_1_numeric_conversion_acfcc1d5322a4460248f816938016b471}\index{ScottPlot.NumericConversion@{ScottPlot.NumericConversion}!GenericToDoubleArray$<$ T $>$@{GenericToDoubleArray$<$ T $>$}}
+\index{GenericToDoubleArray$<$ T $>$@{GenericToDoubleArray$<$ T $>$}!ScottPlot.NumericConversion@{ScottPlot.NumericConversion}}
+\doxysubsubsection{\texorpdfstring{GenericToDoubleArray$<$ T $>$()}{GenericToDoubleArray< T >()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_numeric_conversion_acfcc1d5322a4460248f816938016b471} 
+static double\mbox{[}$\,$\mbox{]} Scott\+Plot.\+Numeric\+Conversion.\+Generic\+To\+Double\+Array$<$ T $>$ (\begin{DoxyParamCaption}\item[{T\mbox{[}$\,$\mbox{]}}]{values}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\Hypertarget{class_scott_plot_1_1_numeric_conversion_a09c22d9eebb7f5cd3e408180c572a3ac}\index{ScottPlot.NumericConversion@{ScottPlot.NumericConversion}!IncrementLargeDouble@{IncrementLargeDouble}}
+\index{IncrementLargeDouble@{IncrementLargeDouble}!ScottPlot.NumericConversion@{ScottPlot.NumericConversion}}
+\doxysubsubsection{\texorpdfstring{IncrementLargeDouble()}{IncrementLargeDouble()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_numeric_conversion_a09c22d9eebb7f5cd3e408180c572a3ac} 
+static double Scott\+Plot.\+Numeric\+Conversion.\+Increment\+Large\+Double (\begin{DoxyParamCaption}\item[{double}]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\Hypertarget{class_scott_plot_1_1_numeric_conversion_ad9bb1af53c25fd4e04911cf143f7ca16}\index{ScottPlot.NumericConversion@{ScottPlot.NumericConversion}!IsReal@{IsReal}}
+\index{IsReal@{IsReal}!ScottPlot.NumericConversion@{ScottPlot.NumericConversion}}
+\doxysubsubsection{\texorpdfstring{IsReal()}{IsReal()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_numeric_conversion_ad9bb1af53c25fd4e04911cf143f7ca16} 
+static bool Scott\+Plot.\+Numeric\+Conversion.\+Is\+Real (\begin{DoxyParamCaption}\item[{double}]{x}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\Hypertarget{class_scott_plot_1_1_numeric_conversion_aa87f21ae19a3292e549adcf753ed52d8}\index{ScottPlot.NumericConversion@{ScottPlot.NumericConversion}!IsReal@{IsReal}}
+\index{IsReal@{IsReal}!ScottPlot.NumericConversion@{ScottPlot.NumericConversion}}
+\doxysubsubsection{\texorpdfstring{IsReal()}{IsReal()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_numeric_conversion_aa87f21ae19a3292e549adcf753ed52d8} 
+static bool Scott\+Plot.\+Numeric\+Conversion.\+Is\+Real (\begin{DoxyParamCaption}\item[{float}]{x}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\Hypertarget{class_scott_plot_1_1_numeric_conversion_a2aae63f49a09d5c7a24a1b40ba16a2a9}\index{ScottPlot.NumericConversion@{ScottPlot.NumericConversion}!LessThanOrEqualBytes@{LessThanOrEqualBytes}}
+\index{LessThanOrEqualBytes@{LessThanOrEqualBytes}!ScottPlot.NumericConversion@{ScottPlot.NumericConversion}}
+\doxysubsubsection{\texorpdfstring{LessThanOrEqualBytes()}{LessThanOrEqualBytes()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_numeric_conversion_a2aae63f49a09d5c7a24a1b40ba16a2a9} 
+static bool Scott\+Plot.\+Numeric\+Conversion.\+Less\+Than\+Or\+Equal\+Bytes (\begin{DoxyParamCaption}\item[{byte}]{a}{, }\item[{byte}]{b}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_scott_plot_1_1_numeric_conversion_a8df382ebb6c9b1edf555567a2427ab8b}\index{ScottPlot.NumericConversion@{ScottPlot.NumericConversion}!Multiply@{Multiply}}
+\index{Multiply@{Multiply}!ScottPlot.NumericConversion@{ScottPlot.NumericConversion}}
+\doxysubsubsection{\texorpdfstring{Multiply()}{Multiply()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_numeric_conversion_a8df382ebb6c9b1edf555567a2427ab8b} 
+static byte Scott\+Plot.\+Numeric\+Conversion.\+Multiply (\begin{DoxyParamCaption}\item[{byte}]{a}{, }\item[{byte}]{b}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_scott_plot_1_1_numeric_conversion_a85eb98b2cae73978947cf0af21e1d8af}\index{ScottPlot.NumericConversion@{ScottPlot.NumericConversion}!SubtractBytes@{SubtractBytes}}
+\index{SubtractBytes@{SubtractBytes}!ScottPlot.NumericConversion@{ScottPlot.NumericConversion}}
+\doxysubsubsection{\texorpdfstring{SubtractBytes()}{SubtractBytes()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_numeric_conversion_a85eb98b2cae73978947cf0af21e1d8af} 
+static byte Scott\+Plot.\+Numeric\+Conversion.\+Subtract\+Bytes (\begin{DoxyParamCaption}\item[{byte}]{a}{, }\item[{byte}]{b}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_scott_plot_1_1_numeric_conversion_a5d616e860dbb86b19195c74aabb34206}\index{ScottPlot.NumericConversion@{ScottPlot.NumericConversion}!ToDateTime@{ToDateTime}}
+\index{ToDateTime@{ToDateTime}!ScottPlot.NumericConversion@{ScottPlot.NumericConversion}}
+\doxysubsubsection{\texorpdfstring{ToDateTime()}{ToDateTime()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_numeric_conversion_a5d616e860dbb86b19195c74aabb34206} 
+static Date\+Time Scott\+Plot.\+Numeric\+Conversion.\+To\+Date\+Time (\begin{DoxyParamCaption}\item[{double}]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Convert a number that can be plotted on a numeric axis into a Date\+Time. 
+
+These methods hold conversion logic between Date\+Time (used for representing dates) and double (used for defining positions on a Cartesian coordinate plane).
+
+Converting double \texorpdfstring{$<$}{<}-\/\texorpdfstring{$>$}{>} OADate has issues (e.\+g., OADates have a limited range), so by isolating the conversion here we can ensure we can change the logic later without hunting around the code base finding all the OADate conversion calls. \Hypertarget{class_scott_plot_1_1_numeric_conversion_aa819c95bce9f4737f512a35f7d8d76f7}\index{ScottPlot.NumericConversion@{ScottPlot.NumericConversion}!ToGenericArray$<$ T $>$@{ToGenericArray$<$ T $>$}}
+\index{ToGenericArray$<$ T $>$@{ToGenericArray$<$ T $>$}!ScottPlot.NumericConversion@{ScottPlot.NumericConversion}}
+\doxysubsubsection{\texorpdfstring{ToGenericArray$<$ T $>$()}{ToGenericArray< T >()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_numeric_conversion_aa819c95bce9f4737f512a35f7d8d76f7} 
+static T\mbox{[}$\,$\mbox{]} Scott\+Plot.\+Numeric\+Conversion.\+To\+Generic\+Array$<$ T $>$ (\begin{DoxyParamCaption}\item[{this double\mbox{[}$\,$\mbox{]}}]{input}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\Hypertarget{class_scott_plot_1_1_numeric_conversion_a7ebe826e5dfe5caaa2a0163811c32a69}\index{ScottPlot.NumericConversion@{ScottPlot.NumericConversion}!ToNumber@{ToNumber}}
+\index{ToNumber@{ToNumber}!ScottPlot.NumericConversion@{ScottPlot.NumericConversion}}
+\doxysubsubsection{\texorpdfstring{ToNumber()}{ToNumber()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_numeric_conversion_a7ebe826e5dfe5caaa2a0163811c32a69} 
+static double Scott\+Plot.\+Numeric\+Conversion.\+To\+Number (\begin{DoxyParamCaption}\item[{Date\+Time}]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Convert a Date\+Time into a number that can be plotted on a numeric axis. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\mbox{\hyperlink{_numeric_conversion_8cs}{Numeric\+Conversion.\+cs}}\end{DoxyCompactItemize}

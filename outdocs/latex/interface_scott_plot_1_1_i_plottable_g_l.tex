@@ -1,0 +1,81 @@
+\doxysection{Scott\+Plot.\+IPlottable\+GL Interface Reference}
+\hypertarget{interface_scott_plot_1_1_i_plottable_g_l}{}\label{interface_scott_plot_1_1_i_plottable_g_l}\index{ScottPlot.IPlottableGL@{ScottPlot.IPlottableGL}}
+
+
+This interface is applied to plottables which can be rendered directly on the GPU using an \doxylink{namespace_scott_plot_1_1_open_g_l}{Open\+GL} shader.  
+
+
+Inheritance diagram for Scott\+Plot.\+IPlottable\+GL\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{interface_scott_plot_1_1_i_plottable_g_l}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable_g_l_aeaf982ac196a96b6ea7b537b37404026}{GLFinish}} ()
+\begin{DoxyCompactList}\small\item\em Used to manually synchronize rendering. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable}{Scott\+Plot.\+IPlottable}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}} \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable_a2e455cf76f9e8bc3187900b1a90487c3}{Get\+Axis\+Limits}} ()
+\begin{DoxyCompactList}\small\item\em Return the 2D area (in coordinate space) occupied by the data contained in this plottable. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable_a11d2487f1d7628e019a09748d876c289}{Render}} (Render\+Pack rp)
+\begin{DoxyCompactList}\small\item\em Draw the data from this plottable into the data area defined in the \doxylink{class_scott_plot_1_1_axes}{Axes}. By default the surface is already clipped to the data area, but this can be cleared inside the plottable. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_scott_plot_1_1_i_plot_control}{IPlot\+Control}} \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable_g_l_a3f18f37b969da7e2a44723845b429e74}{Plot\+Control}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The control used to display this plottable. It is used to access the GRContext at render time. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable}{Scott\+Plot.\+IPlottable}}}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable_abbe75ba55a332d695313ccb5dc780923}{Is\+Visible}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Toggles whether this plottable is shown and contributes to the automatic axis limit detection. The calling method will check this variable (it does not need to be checked inside the Render method). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{interface_scott_plot_1_1_i_axes}{IAxes}} \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable_aa68bc5153a673a7cd4a68f93da377d0a}{Axes}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em This object performs coordinate/pixel translation at render time based on the latest data area. It stores the axes to use for this plottable and also the data area (in pixels) updated just before each render. If this object is null it will be constructed using the default X and Y axes at render time. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_enumerable}{IEnumerable}}$<$ \mbox{\hyperlink{class_scott_plot_1_1_legend_item}{Legend\+Item}} $>$ \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable_a4565f96a253f832bd9aa8033c99eff75}{Legend\+Items}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Items which will appear in the legend. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This interface is applied to plottables which can be rendered directly on the GPU using an \doxylink{namespace_scott_plot_1_1_open_g_l}{Open\+GL} shader. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_scott_plot_1_1_i_plottable_g_l_aeaf982ac196a96b6ea7b537b37404026}\index{ScottPlot.IPlottableGL@{ScottPlot.IPlottableGL}!GLFinish@{GLFinish}}
+\index{GLFinish@{GLFinish}!ScottPlot.IPlottableGL@{ScottPlot.IPlottableGL}}
+\doxysubsubsection{\texorpdfstring{GLFinish()}{GLFinish()}}
+{\footnotesize\ttfamily \label{interface_scott_plot_1_1_i_plottable_g_l_aeaf982ac196a96b6ea7b537b37404026} 
+void Scott\+Plot.\+IPlottable\+GL.\+GLFinish (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Used to manually synchronize rendering. 
+
+
+
+Implemented in \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_scatter_g_l_a9cafa2520c7ea78b69f8440d0416845e}{Scott\+Plot.\+Plottables.\+Scatter\+GL}}.
+
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{interface_scott_plot_1_1_i_plottable_g_l_a3f18f37b969da7e2a44723845b429e74}\index{ScottPlot.IPlottableGL@{ScottPlot.IPlottableGL}!PlotControl@{PlotControl}}
+\index{PlotControl@{PlotControl}!ScottPlot.IPlottableGL@{ScottPlot.IPlottableGL}}
+\doxysubsubsection{\texorpdfstring{PlotControl}{PlotControl}}
+{\footnotesize\ttfamily \label{interface_scott_plot_1_1_i_plottable_g_l_a3f18f37b969da7e2a44723845b429e74} 
+\mbox{\hyperlink{interface_scott_plot_1_1_i_plot_control}{IPlot\+Control}} Scott\+Plot.\+IPlottable\+GL.\+Plot\+Control\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The control used to display this plottable. It is used to access the GRContext at render time. 
+
+
+
+Implemented in \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_scatter_g_l_a539cc077da34b20328914ac6799293c4}{Scott\+Plot.\+Plottables.\+Scatter\+GL}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Interfaces/IPlottable\+GL.\+cs\end{DoxyCompactItemize}

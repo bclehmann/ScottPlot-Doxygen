@@ -1,0 +1,98 @@
+\doxysection{Scott\+Plot.\+Axis\+Limit\+Managers.\+Full Class Reference}
+\hypertarget{class_scott_plot_1_1_axis_limit_managers_1_1_full}{}\label{class_scott_plot_1_1_axis_limit_managers_1_1_full}\index{ScottPlot.AxisLimitManagers.Full@{ScottPlot.AxisLimitManagers.Full}}
+
+
+Show the entire range of data, changing the axis limits only when the data extends outside the current view.  
+
+
+Inheritance diagram for Scott\+Plot.\+Axis\+Limit\+Managers.\+Full\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_scott_plot_1_1_axis_limit_managers_1_1_full}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespace_scott_plot_a4f8afc1393f89ce60e775705cbf134d1}{Coordinate\+Range}} \mbox{\hyperlink{class_scott_plot_1_1_axis_limit_managers_1_1_full_a986bc0f10fde472690f96300ea4d5dc5}{Get\+RangeX}} (\mbox{\hyperlink{namespace_scott_plot_a4f8afc1393f89ce60e775705cbf134d1}{Coordinate\+Range}} view\+RangeX, \mbox{\hyperlink{namespace_scott_plot_a4f8afc1393f89ce60e775705cbf134d1}{Coordinate\+Range}} data\+RangeX)
+\begin{DoxyCompactList}\small\item\em Returns the recommended X axis range given the current view and size of the data. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_scott_plot_a4f8afc1393f89ce60e775705cbf134d1}{Coordinate\+Range}} \mbox{\hyperlink{class_scott_plot_1_1_axis_limit_managers_1_1_full_a2faa6e7c33cef626948e216aeb4891a1}{Get\+RangeY}} (\mbox{\hyperlink{namespace_scott_plot_a4f8afc1393f89ce60e775705cbf134d1}{Coordinate\+Range}} view\+RangeY, \mbox{\hyperlink{namespace_scott_plot_a4f8afc1393f89ce60e775705cbf134d1}{Coordinate\+Range}} data\+RangeY)
+\begin{DoxyCompactList}\small\item\em Returns the recommended Y axis range given the current view and size of the data. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_scott_plot_1_1_i_axis_limit_manager}{Scott\+Plot.\+IAxis\+Limit\+Manager}}}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{class_scott_plot_1_1_axis_limit_managers_1_1_full_af807b794d96991072440eac32db4701b}{Expansion\+Ratio}} = .\+25\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Defines the amount of whitespace added to the right of the data when data runs outside the current view. 1.\+0 for a view that tightly fits the data and is always changing. 2.\+0 for a view that doubles the horizontal span when new data runs outside the current view. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Show the entire range of data, changing the axis limits only when the data extends outside the current view. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_scott_plot_1_1_axis_limit_managers_1_1_full_a986bc0f10fde472690f96300ea4d5dc5}\index{ScottPlot.AxisLimitManagers.Full@{ScottPlot.AxisLimitManagers.Full}!GetRangeX@{GetRangeX}}
+\index{GetRangeX@{GetRangeX}!ScottPlot.AxisLimitManagers.Full@{ScottPlot.AxisLimitManagers.Full}}
+\doxysubsubsection{\texorpdfstring{GetRangeX()}{GetRangeX()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axis_limit_managers_1_1_full_a986bc0f10fde472690f96300ea4d5dc5} 
+\mbox{\hyperlink{namespace_scott_plot_a4f8afc1393f89ce60e775705cbf134d1}{Coordinate\+Range}} Scott\+Plot.\+Axis\+Limit\+Managers.\+Full.\+Get\+RangeX (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_scott_plot_a4f8afc1393f89ce60e775705cbf134d1}{Coordinate\+Range}}}]{view\+RangeX}{, }\item[{\mbox{\hyperlink{namespace_scott_plot_a4f8afc1393f89ce60e775705cbf134d1}{Coordinate\+Range}}}]{data\+RangeX}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the recommended X axis range given the current view and size of the data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em view\+RangeX} & X axis view range\\
+\hline
+{\em data\+RangeX} & X axis data range\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_axis_limit_manager_adf6fe892995462ad4ea7c75fe1609f50}{Scott\+Plot.\+IAxis\+Limit\+Manager}}.
+
+\Hypertarget{class_scott_plot_1_1_axis_limit_managers_1_1_full_a2faa6e7c33cef626948e216aeb4891a1}\index{ScottPlot.AxisLimitManagers.Full@{ScottPlot.AxisLimitManagers.Full}!GetRangeY@{GetRangeY}}
+\index{GetRangeY@{GetRangeY}!ScottPlot.AxisLimitManagers.Full@{ScottPlot.AxisLimitManagers.Full}}
+\doxysubsubsection{\texorpdfstring{GetRangeY()}{GetRangeY()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axis_limit_managers_1_1_full_a2faa6e7c33cef626948e216aeb4891a1} 
+\mbox{\hyperlink{namespace_scott_plot_a4f8afc1393f89ce60e775705cbf134d1}{Coordinate\+Range}} Scott\+Plot.\+Axis\+Limit\+Managers.\+Full.\+Get\+RangeY (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_scott_plot_a4f8afc1393f89ce60e775705cbf134d1}{Coordinate\+Range}}}]{view\+RangeY}{, }\item[{\mbox{\hyperlink{namespace_scott_plot_a4f8afc1393f89ce60e775705cbf134d1}{Coordinate\+Range}}}]{data\+RangeY}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the recommended Y axis range given the current view and size of the data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em view\+RangeY} & Y axis view range\\
+\hline
+{\em data\+RangeY} & Y axis view range\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_axis_limit_manager_af322da7af1ab81ab81cbaad45ffce3de}{Scott\+Plot.\+IAxis\+Limit\+Manager}}.
+
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{class_scott_plot_1_1_axis_limit_managers_1_1_full_af807b794d96991072440eac32db4701b}\index{ScottPlot.AxisLimitManagers.Full@{ScottPlot.AxisLimitManagers.Full}!ExpansionRatio@{ExpansionRatio}}
+\index{ExpansionRatio@{ExpansionRatio}!ScottPlot.AxisLimitManagers.Full@{ScottPlot.AxisLimitManagers.Full}}
+\doxysubsubsection{\texorpdfstring{ExpansionRatio}{ExpansionRatio}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axis_limit_managers_1_1_full_af807b794d96991072440eac32db4701b} 
+double Scott\+Plot.\+Axis\+Limit\+Managers.\+Full.\+Expansion\+Ratio = .\+25\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Defines the amount of whitespace added to the right of the data when data runs outside the current view. 1.\+0 for a view that tightly fits the data and is always changing. 2.\+0 for a view that doubles the horizontal span when new data runs outside the current view. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Axis\+Limit\+Managers/Full.\+cs\end{DoxyCompactItemize}

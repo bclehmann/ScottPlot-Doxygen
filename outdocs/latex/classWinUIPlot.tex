@@ -1,0 +1,172 @@
+\hypertarget{classWinUIPlot}{}\doxysection{Win\+UIPlot Class Reference}
+\label{classWinUIPlot}\index{WinUIPlot@{WinUIPlot}}
+Inheritance diagram for Win\+UIPlot\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classWinUIPlot}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classWinUIPlot_a5dac611a8678822a495eb9c5256e67c1}{Win\+UIPlot}} ()
+\item 
+void \mbox{\hyperlink{classWinUIPlot_a903534b1caddccd2653299f44c05b7e3}{Reset}} ()
+\begin{DoxyCompactList}\small\item\em Disposes the current \mbox{\hyperlink{classPlot}{Plot}} and creates a new one for the control \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classWinUIPlot_a4ce8b4f1e3910957bbe33df7f9b701fd}{Reset}} (\mbox{\hyperlink{classPlot}{Plot}} plot)
+\begin{DoxyCompactList}\small\item\em Loads the given \mbox{\hyperlink{classPlot}{Plot}} into the control \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classWinUIPlot_a35911f78bbcd148d96e4fc160a26138e}{Refresh}} ()
+\begin{DoxyCompactList}\small\item\em Render the plot and update the image \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classWinUIPlot_a296f7390f4089411af5d9617df6aa992}{Show\+Context\+Menu}} (\mbox{\hyperlink{structPixel}{Pixel}} position)
+\begin{DoxyCompactList}\small\item\em Launch the default pop-\/up menu (typically in response to a right-\/click) at the given position in the control \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classWinUIPlot_a6f7f063ffdcf1086a547f43e00c8d706}{Detect\+Display\+Scale}} ()
+\begin{DoxyCompactList}\small\item\em Determine the DPI scaling ratio of the present display. A value of 1.\+0 means no scaling, and 1.\+5 means 150\% scaling. This operation may be costly so do not call it frequently. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPlot}{Plot}} \mbox{\hyperlink{classWinUIPlot_a311d283a5dac21a87ec529b0c2a968de}{Plot}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+Skia\+Sharp.? GRContext \mbox{\hyperlink{classWinUIPlot_a214574119e20ae17c1b4a6af297d6dc6}{GRContext}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{interfaceIPlotInteraction}{IPlot\+Interaction}} \mbox{\hyperlink{classWinUIPlot_acde63ea90cb82f28e4f55b1158050752}{Interaction}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{interfaceIPlotMenu}{IPlot\+Menu}} \mbox{\hyperlink{classWinUIPlot_ac60a9eee4b3b5f2446a3680cf1992c96}{Menu}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+Interactivity.\+User\+Input\+Processor \mbox{\hyperlink{classWinUIPlot_a1a19d2ed310bec8bbb750ab2e1e2d74d}{User\+Input\+Processor}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+Window? \mbox{\hyperlink{classWinUIPlot_a164af3c61ba45a275554426df1e3c76d}{App\+Window}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{classWinUIPlot_a56a17c142ea30f9ad38c4de4e16c9f24}{Display\+Scale}} = 1\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classWinUIPlot_a5dac611a8678822a495eb9c5256e67c1}\label{classWinUIPlot_a5dac611a8678822a495eb9c5256e67c1}} 
+\index{WinUIPlot@{WinUIPlot}!WinUIPlot@{WinUIPlot}}
+\index{WinUIPlot@{WinUIPlot}!WinUIPlot@{WinUIPlot}}
+\doxysubsubsection{\texorpdfstring{WinUIPlot()}{WinUIPlot()}}
+{\footnotesize\ttfamily Win\+UIPlot.\+Win\+UIPlot (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classWinUIPlot_a6f7f063ffdcf1086a547f43e00c8d706}\label{classWinUIPlot_a6f7f063ffdcf1086a547f43e00c8d706}} 
+\index{WinUIPlot@{WinUIPlot}!DetectDisplayScale@{DetectDisplayScale}}
+\index{DetectDisplayScale@{DetectDisplayScale}!WinUIPlot@{WinUIPlot}}
+\doxysubsubsection{\texorpdfstring{DetectDisplayScale()}{DetectDisplayScale()}}
+{\footnotesize\ttfamily float Win\+UIPlot.\+Detect\+Display\+Scale (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Determine the DPI scaling ratio of the present display. A value of 1.\+0 means no scaling, and 1.\+5 means 150\% scaling. This operation may be costly so do not call it frequently. 
+
+
+
+Implements \mbox{\hyperlink{interfaceIPlotControl_aa091d213054094b8acdc307ceda2db06}{IPlot\+Control}}.
+
+\mbox{\Hypertarget{classWinUIPlot_a35911f78bbcd148d96e4fc160a26138e}\label{classWinUIPlot_a35911f78bbcd148d96e4fc160a26138e}} 
+\index{WinUIPlot@{WinUIPlot}!Refresh@{Refresh}}
+\index{Refresh@{Refresh}!WinUIPlot@{WinUIPlot}}
+\doxysubsubsection{\texorpdfstring{Refresh()}{Refresh()}}
+{\footnotesize\ttfamily void Win\+UIPlot.\+Refresh (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Render the plot and update the image 
+
+
+
+Implements \mbox{\hyperlink{interfaceIPlotControl_ac5672b6f3e3e2825da1e95f0cd2f4bcb}{IPlot\+Control}}.
+
+\mbox{\Hypertarget{classWinUIPlot_a903534b1caddccd2653299f44c05b7e3}\label{classWinUIPlot_a903534b1caddccd2653299f44c05b7e3}} 
+\index{WinUIPlot@{WinUIPlot}!Reset@{Reset}}
+\index{Reset@{Reset}!WinUIPlot@{WinUIPlot}}
+\doxysubsubsection{\texorpdfstring{Reset()}{Reset()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Win\+UIPlot.\+Reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Disposes the current \mbox{\hyperlink{classPlot}{Plot}} and creates a new one for the control 
+
+
+
+Implements \mbox{\hyperlink{interfaceIPlotControl_a3021825d73d2bcf47dfd5f6f562e2cdf}{IPlot\+Control}}.
+
+\mbox{\Hypertarget{classWinUIPlot_a4ce8b4f1e3910957bbe33df7f9b701fd}\label{classWinUIPlot_a4ce8b4f1e3910957bbe33df7f9b701fd}} 
+\index{WinUIPlot@{WinUIPlot}!Reset@{Reset}}
+\index{Reset@{Reset}!WinUIPlot@{WinUIPlot}}
+\doxysubsubsection{\texorpdfstring{Reset()}{Reset()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Win\+UIPlot.\+Reset (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPlot}{Plot}}}]{plot }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Loads the given \mbox{\hyperlink{classPlot}{Plot}} into the control 
+
+
+
+Implements \mbox{\hyperlink{interfaceIPlotControl_a3204ee77a937b93563c72a8fbaacd957}{IPlot\+Control}}.
+
+\mbox{\Hypertarget{classWinUIPlot_a296f7390f4089411af5d9617df6aa992}\label{classWinUIPlot_a296f7390f4089411af5d9617df6aa992}} 
+\index{WinUIPlot@{WinUIPlot}!ShowContextMenu@{ShowContextMenu}}
+\index{ShowContextMenu@{ShowContextMenu}!WinUIPlot@{WinUIPlot}}
+\doxysubsubsection{\texorpdfstring{ShowContextMenu()}{ShowContextMenu()}}
+{\footnotesize\ttfamily void Win\+UIPlot.\+Show\+Context\+Menu (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPixel}{Pixel}}}]{position }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Launch the default pop-\/up menu (typically in response to a right-\/click) at the given position in the control 
+
+
+
+Implements \mbox{\hyperlink{interfaceIPlotControl_aa822894e483df742fb376cd3169eefc4}{IPlot\+Control}}.
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{classWinUIPlot_a164af3c61ba45a275554426df1e3c76d}\label{classWinUIPlot_a164af3c61ba45a275554426df1e3c76d}} 
+\index{WinUIPlot@{WinUIPlot}!AppWindow@{AppWindow}}
+\index{AppWindow@{AppWindow}!WinUIPlot@{WinUIPlot}}
+\doxysubsubsection{\texorpdfstring{AppWindow}{AppWindow}}
+{\footnotesize\ttfamily Window? Win\+UIPlot.\+App\+Window\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classWinUIPlot_a56a17c142ea30f9ad38c4de4e16c9f24}\label{classWinUIPlot_a56a17c142ea30f9ad38c4de4e16c9f24}} 
+\index{WinUIPlot@{WinUIPlot}!DisplayScale@{DisplayScale}}
+\index{DisplayScale@{DisplayScale}!WinUIPlot@{WinUIPlot}}
+\doxysubsubsection{\texorpdfstring{DisplayScale}{DisplayScale}}
+{\footnotesize\ttfamily float Win\+UIPlot.\+Display\+Scale = 1\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classWinUIPlot_a214574119e20ae17c1b4a6af297d6dc6}\label{classWinUIPlot_a214574119e20ae17c1b4a6af297d6dc6}} 
+\index{WinUIPlot@{WinUIPlot}!GRContext@{GRContext}}
+\index{GRContext@{GRContext}!WinUIPlot@{WinUIPlot}}
+\doxysubsubsection{\texorpdfstring{GRContext}{GRContext}}
+{\footnotesize\ttfamily Skia\+Sharp.? GRContext Win\+UIPlot.\+GRContext\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{classWinUIPlot_acde63ea90cb82f28e4f55b1158050752}\label{classWinUIPlot_acde63ea90cb82f28e4f55b1158050752}} 
+\index{WinUIPlot@{WinUIPlot}!Interaction@{Interaction}}
+\index{Interaction@{Interaction}!WinUIPlot@{WinUIPlot}}
+\doxysubsubsection{\texorpdfstring{Interaction}{Interaction}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceIPlotInteraction}{IPlot\+Interaction}} Win\+UIPlot.\+Interaction\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classWinUIPlot_ac60a9eee4b3b5f2446a3680cf1992c96}\label{classWinUIPlot_ac60a9eee4b3b5f2446a3680cf1992c96}} 
+\index{WinUIPlot@{WinUIPlot}!Menu@{Menu}}
+\index{Menu@{Menu}!WinUIPlot@{WinUIPlot}}
+\doxysubsubsection{\texorpdfstring{Menu}{Menu}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceIPlotMenu}{IPlot\+Menu}} Win\+UIPlot.\+Menu\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classWinUIPlot_a311d283a5dac21a87ec529b0c2a968de}\label{classWinUIPlot_a311d283a5dac21a87ec529b0c2a968de}} 
+\index{WinUIPlot@{WinUIPlot}!Plot@{Plot}}
+\index{Plot@{Plot}!WinUIPlot@{WinUIPlot}}
+\doxysubsubsection{\texorpdfstring{Plot}{Plot}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPlot}{Plot}} Win\+UIPlot.\+Plot\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classWinUIPlot_a1a19d2ed310bec8bbb750ab2e1e2d74d}\label{classWinUIPlot_a1a19d2ed310bec8bbb750ab2e1e2d74d}} 
+\index{WinUIPlot@{WinUIPlot}!UserInputProcessor@{UserInputProcessor}}
+\index{UserInputProcessor@{UserInputProcessor}!WinUIPlot@{WinUIPlot}}
+\doxysubsubsection{\texorpdfstring{UserInputProcessor}{UserInputProcessor}}
+{\footnotesize\ttfamily Interactivity.\+User\+Input\+Processor Win\+UIPlot.\+User\+Input\+Processor\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5 Controls/\+Scott\+Plot.\+Win\+UI/Win\+UIPlot.\+cs\end{DoxyCompactItemize}

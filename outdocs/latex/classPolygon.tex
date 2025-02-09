@@ -1,0 +1,295 @@
+\hypertarget{classPolygon}{}\doxysection{Polygon Class Reference}
+\label{classPolygon}\index{Polygon@{Polygon}}
+
+
+A polygon is a collection of X/Y points that are all connected to form a closed shape. Polygons can be optionally filled with a color or a gradient.  
+
+
+Inheritance diagram for Polygon\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classPolygon}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPolygon_ac4adfe713c7f90ad00d56ada67c97689}{Polygon}} (\mbox{\hyperlink{structCoordinates}{Coordinates}}\mbox{[}$\,$\mbox{]} coords)
+\begin{DoxyCompactList}\small\item\em Creates a new polygon. \end{DoxyCompactList}\item 
+override string \mbox{\hyperlink{classPolygon_af0b899a3d8e7eac48eec27ec1ae07b97}{To\+String}} ()
+\item 
+void \mbox{\hyperlink{classPolygon_a802fa1822cce438d1d0132561a99bbaa}{Update\+Coordinates}} (\mbox{\hyperlink{structCoordinates}{Coordinates}}\mbox{[}$\,$\mbox{]} new\+Coordinates)
+\item 
+\mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} \mbox{\hyperlink{classPolygon_aa39d3e15101d283d22fc786a50a11468}{Get\+Axis\+Limits}} ()
+\begin{DoxyCompactList}\small\item\em Return the 2D area (in coordinate space) occupied by the data contained in this plottable \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classPolygon_a94aff365a11b639fb0f9fee6f62b67bc}{Render}} (\mbox{\hyperlink{classRenderPack}{Render\+Pack}} rp)
+\begin{DoxyCompactList}\small\item\em Draw the data from this plottable into the data area defined in the \mbox{\hyperlink{classAxes}{Axes}}. By default the surface is already clipped to the data area, but this can be cleared inside the plottable. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classPolygon}{Polygon}} \mbox{\hyperlink{classPolygon_ac6b92b5ed1268be7c47e09c3bc802b0d}{Empty}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+bool \mbox{\hyperlink{classPolygon_a6ed1e06ebe8d24ee9e432ce169b22e89}{Is\+Empty}} = false\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{structCoordinates}{Coordinates}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classPolygon_ae37b1cbea68147e4cd8a77da91d6cc3b}{Coordinates}} = Array.\+Empty$<$\mbox{\hyperlink{structCoordinates}{Coordinates}}$>$()\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+string \mbox{\hyperlink{classPolygon_acb7da6f3dcd8de978611b1091376ae1a}{Label}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+string \mbox{\hyperlink{classPolygon_a27f24486938ba3d816efbc1441416657}{Legend\+Text}} = string.\+Empty\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+bool \mbox{\hyperlink{classPolygon_ad0d65423a6a7691c613ede4b38545d6b}{Is\+Visible}} = true\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{classLineStyle}{Line\+Style}} \mbox{\hyperlink{classPolygon_ac9638b91436790e596a2f1e7fe265b1b}{Line\+Style}} = new() \{ Width = 1 \}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{classPolygon_ad8afc58531262b832bcb0acb0c276bc7}{Line\+Width}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+Line\+Pattern \mbox{\hyperlink{classPolygon_a8dd8e9222733435513f6e86fef84d7a9}{Line\+Pattern}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{structColor}{Color}} \mbox{\hyperlink{classPolygon_a887ed4f6fa52ef1dfb0d4d2050bc3702}{Line\+Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{classFillStyle}{Fill\+Style}} \mbox{\hyperlink{classPolygon_a7df876a0e2152db107d6f9acc3b5fd34}{Fill\+Style}} = new()\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{structColor}{Color}} \mbox{\hyperlink{classPolygon_a4a6c7ad611b3f1b7e0c0ee618ac65082}{Fill\+Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{structColor}{Color}} \mbox{\hyperlink{classPolygon_ab648e99b12d157e62953c33408b89b75}{Fill\+Hatch\+Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{interfaceIHatch}{IHatch}}? \mbox{\hyperlink{classPolygon_a129d90c214bba18997d240709be06695}{Fill\+Hatch}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{classMarkerStyle}{Marker\+Style}} \mbox{\hyperlink{classPolygon_a2cd57b1cf1feb5774c4dec8d2575830c}{Marker\+Style}} = new()\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+Marker\+Shape \mbox{\hyperlink{classPolygon_aef226181a6b235cc07e926d72cbfd9ef}{Marker\+Shape}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{classPolygon_a81d9d076408e467aa8aee6777c3cc591}{Marker\+Size}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{structColor}{Color}} \mbox{\hyperlink{classPolygon_ab5b2c37ac221744c9511674629d3a406}{Marker\+Fill\+Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{structColor}{Color}} \mbox{\hyperlink{classPolygon_aa85b91f98b26fe4f8366bb351e8915b9}{Marker\+Line\+Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{structColor}{Color}} \mbox{\hyperlink{classPolygon_a1913b4437e8453097d4fccb3620e5495}{Marker\+Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{classPolygon_ac131a1e8c382b452d5f121063087dcf0}{Marker\+Line\+Width}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+int \mbox{\hyperlink{classPolygon_a0c384774355cb4b3cde154e39ffbec8d}{Point\+Count}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{interfaceIAxes}{IAxes}} \mbox{\hyperlink{classPolygon_ab0a8389eb754b90dd87028b7a9b4c37d}{Axes}} = new \mbox{\hyperlink{classAxes}{Axes}}()\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$ \mbox{\hyperlink{classLegendItem}{Legend\+Item}} $>$ \mbox{\hyperlink{classPolygon_aed41599bc375c643db4b3921bcb913bd}{Legend\+Items}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A polygon is a collection of X/Y points that are all connected to form a closed shape. Polygons can be optionally filled with a color or a gradient. 
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPolygon_ac4adfe713c7f90ad00d56ada67c97689}\label{classPolygon_ac4adfe713c7f90ad00d56ada67c97689}} 
+\index{Polygon@{Polygon}!Polygon@{Polygon}}
+\index{Polygon@{Polygon}!Polygon@{Polygon}}
+\doxysubsubsection{\texorpdfstring{Polygon()}{Polygon()}}
+{\footnotesize\ttfamily Polygon.\+Polygon (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structCoordinates}{Coordinates}}\mbox{[}$\,$\mbox{]}}]{coords }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Creates a new polygon. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em coords} & The axis dependant vertex coordinates.\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPolygon_aa39d3e15101d283d22fc786a50a11468}\label{classPolygon_aa39d3e15101d283d22fc786a50a11468}} 
+\index{Polygon@{Polygon}!GetAxisLimits@{GetAxisLimits}}
+\index{GetAxisLimits@{GetAxisLimits}!Polygon@{Polygon}}
+\doxysubsubsection{\texorpdfstring{GetAxisLimits()}{GetAxisLimits()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} Polygon.\+Get\+Axis\+Limits (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return the 2D area (in coordinate space) occupied by the data contained in this plottable 
+
+
+
+Implements \mbox{\hyperlink{interfaceIPlottable_ac98e2f5e56f9f938bbd081c87c7c6f50}{IPlottable}}.
+
+\mbox{\Hypertarget{classPolygon_a94aff365a11b639fb0f9fee6f62b67bc}\label{classPolygon_a94aff365a11b639fb0f9fee6f62b67bc}} 
+\index{Polygon@{Polygon}!Render@{Render}}
+\index{Render@{Render}!Polygon@{Polygon}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily virtual void Polygon.\+Render (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classRenderPack}{Render\+Pack}}}]{rp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Draw the data from this plottable into the data area defined in the \mbox{\hyperlink{classAxes}{Axes}}. By default the surface is already clipped to the data area, but this can be cleared inside the plottable. 
+
+
+
+Implements \mbox{\hyperlink{interfaceIPlottable_a201a1a236dc718eda93db143a5ade9f8}{IPlottable}}.
+
+\mbox{\Hypertarget{classPolygon_af0b899a3d8e7eac48eec27ec1ae07b97}\label{classPolygon_af0b899a3d8e7eac48eec27ec1ae07b97}} 
+\index{Polygon@{Polygon}!ToString@{ToString}}
+\index{ToString@{ToString}!Polygon@{Polygon}}
+\doxysubsubsection{\texorpdfstring{ToString()}{ToString()}}
+{\footnotesize\ttfamily override string Polygon.\+To\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classPolygon_a802fa1822cce438d1d0132561a99bbaa}\label{classPolygon_a802fa1822cce438d1d0132561a99bbaa}} 
+\index{Polygon@{Polygon}!UpdateCoordinates@{UpdateCoordinates}}
+\index{UpdateCoordinates@{UpdateCoordinates}!Polygon@{Polygon}}
+\doxysubsubsection{\texorpdfstring{UpdateCoordinates()}{UpdateCoordinates()}}
+{\footnotesize\ttfamily void Polygon.\+Update\+Coordinates (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structCoordinates}{Coordinates}}\mbox{[}$\,$\mbox{]}}]{new\+Coordinates }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{classPolygon_ab0a8389eb754b90dd87028b7a9b4c37d}\label{classPolygon_ab0a8389eb754b90dd87028b7a9b4c37d}} 
+\index{Polygon@{Polygon}!Axes@{Axes}}
+\index{Axes@{Axes}!Polygon@{Polygon}}
+\doxysubsubsection{\texorpdfstring{Axes}{Axes}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceIAxes}{IAxes}} Polygon.\+Axes = new \mbox{\hyperlink{classAxes}{Axes}}()\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classPolygon_ae37b1cbea68147e4cd8a77da91d6cc3b}\label{classPolygon_ae37b1cbea68147e4cd8a77da91d6cc3b}} 
+\index{Polygon@{Polygon}!Coordinates@{Coordinates}}
+\index{Coordinates@{Coordinates}!Polygon@{Polygon}}
+\doxysubsubsection{\texorpdfstring{Coordinates}{Coordinates}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structCoordinates}{Coordinates}} \mbox{[}$\,$\mbox{]} Polygon.\+Coordinates = Array.\+Empty$<$\mbox{\hyperlink{structCoordinates}{Coordinates}}$>$()\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{classPolygon_ac6b92b5ed1268be7c47e09c3bc802b0d}\label{classPolygon_ac6b92b5ed1268be7c47e09c3bc802b0d}} 
+\index{Polygon@{Polygon}!Empty@{Empty}}
+\index{Empty@{Empty}!Polygon@{Polygon}}
+\doxysubsubsection{\texorpdfstring{Empty}{Empty}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPolygon}{Polygon}} Polygon.\+Empty\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+\mbox{\Hypertarget{classPolygon_a4a6c7ad611b3f1b7e0c0ee618ac65082}\label{classPolygon_a4a6c7ad611b3f1b7e0c0ee618ac65082}} 
+\index{Polygon@{Polygon}!FillColor@{FillColor}}
+\index{FillColor@{FillColor}!Polygon@{Polygon}}
+\doxysubsubsection{\texorpdfstring{FillColor}{FillColor}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structColor}{Color}} Polygon.\+Fill\+Color\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classPolygon_a129d90c214bba18997d240709be06695}\label{classPolygon_a129d90c214bba18997d240709be06695}} 
+\index{Polygon@{Polygon}!FillHatch@{FillHatch}}
+\index{FillHatch@{FillHatch}!Polygon@{Polygon}}
+\doxysubsubsection{\texorpdfstring{FillHatch}{FillHatch}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceIHatch}{IHatch}}? Polygon.\+Fill\+Hatch\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classPolygon_ab648e99b12d157e62953c33408b89b75}\label{classPolygon_ab648e99b12d157e62953c33408b89b75}} 
+\index{Polygon@{Polygon}!FillHatchColor@{FillHatchColor}}
+\index{FillHatchColor@{FillHatchColor}!Polygon@{Polygon}}
+\doxysubsubsection{\texorpdfstring{FillHatchColor}{FillHatchColor}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structColor}{Color}} Polygon.\+Fill\+Hatch\+Color\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classPolygon_a7df876a0e2152db107d6f9acc3b5fd34}\label{classPolygon_a7df876a0e2152db107d6f9acc3b5fd34}} 
+\index{Polygon@{Polygon}!FillStyle@{FillStyle}}
+\index{FillStyle@{FillStyle}!Polygon@{Polygon}}
+\doxysubsubsection{\texorpdfstring{FillStyle}{FillStyle}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classFillStyle}{Fill\+Style}} Polygon.\+Fill\+Style = new()\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classPolygon_a6ed1e06ebe8d24ee9e432ce169b22e89}\label{classPolygon_a6ed1e06ebe8d24ee9e432ce169b22e89}} 
+\index{Polygon@{Polygon}!IsEmpty@{IsEmpty}}
+\index{IsEmpty@{IsEmpty}!Polygon@{Polygon}}
+\doxysubsubsection{\texorpdfstring{IsEmpty}{IsEmpty}}
+{\footnotesize\ttfamily bool Polygon.\+Is\+Empty = false\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{classPolygon_ad0d65423a6a7691c613ede4b38545d6b}\label{classPolygon_ad0d65423a6a7691c613ede4b38545d6b}} 
+\index{Polygon@{Polygon}!IsVisible@{IsVisible}}
+\index{IsVisible@{IsVisible}!Polygon@{Polygon}}
+\doxysubsubsection{\texorpdfstring{IsVisible}{IsVisible}}
+{\footnotesize\ttfamily bool Polygon.\+Is\+Visible = true\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classPolygon_acb7da6f3dcd8de978611b1091376ae1a}\label{classPolygon_acb7da6f3dcd8de978611b1091376ae1a}} 
+\index{Polygon@{Polygon}!Label@{Label}}
+\index{Label@{Label}!Polygon@{Polygon}}
+\doxysubsubsection{\texorpdfstring{Label}{Label}}
+{\footnotesize\ttfamily string Polygon.\+Label\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classPolygon_aed41599bc375c643db4b3921bcb913bd}\label{classPolygon_aed41599bc375c643db4b3921bcb913bd}} 
+\index{Polygon@{Polygon}!LegendItems@{LegendItems}}
+\index{LegendItems@{LegendItems}!Polygon@{Polygon}}
+\doxysubsubsection{\texorpdfstring{LegendItems}{LegendItems}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$\mbox{\hyperlink{classLegendItem}{Legend\+Item}}$>$ Polygon.\+Legend\+Items\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{classPolygon_a27f24486938ba3d816efbc1441416657}\label{classPolygon_a27f24486938ba3d816efbc1441416657}} 
+\index{Polygon@{Polygon}!LegendText@{LegendText}}
+\index{LegendText@{LegendText}!Polygon@{Polygon}}
+\doxysubsubsection{\texorpdfstring{LegendText}{LegendText}}
+{\footnotesize\ttfamily string Polygon.\+Legend\+Text = string.\+Empty\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classPolygon_a887ed4f6fa52ef1dfb0d4d2050bc3702}\label{classPolygon_a887ed4f6fa52ef1dfb0d4d2050bc3702}} 
+\index{Polygon@{Polygon}!LineColor@{LineColor}}
+\index{LineColor@{LineColor}!Polygon@{Polygon}}
+\doxysubsubsection{\texorpdfstring{LineColor}{LineColor}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structColor}{Color}} Polygon.\+Line\+Color\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classPolygon_a8dd8e9222733435513f6e86fef84d7a9}\label{classPolygon_a8dd8e9222733435513f6e86fef84d7a9}} 
+\index{Polygon@{Polygon}!LinePattern@{LinePattern}}
+\index{LinePattern@{LinePattern}!Polygon@{Polygon}}
+\doxysubsubsection{\texorpdfstring{LinePattern}{LinePattern}}
+{\footnotesize\ttfamily Line\+Pattern Polygon.\+Line\+Pattern\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classPolygon_ac9638b91436790e596a2f1e7fe265b1b}\label{classPolygon_ac9638b91436790e596a2f1e7fe265b1b}} 
+\index{Polygon@{Polygon}!LineStyle@{LineStyle}}
+\index{LineStyle@{LineStyle}!Polygon@{Polygon}}
+\doxysubsubsection{\texorpdfstring{LineStyle}{LineStyle}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classLineStyle}{Line\+Style}} Polygon.\+Line\+Style = new() \{ Width = 1 \}\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classPolygon_ad8afc58531262b832bcb0acb0c276bc7}\label{classPolygon_ad8afc58531262b832bcb0acb0c276bc7}} 
+\index{Polygon@{Polygon}!LineWidth@{LineWidth}}
+\index{LineWidth@{LineWidth}!Polygon@{Polygon}}
+\doxysubsubsection{\texorpdfstring{LineWidth}{LineWidth}}
+{\footnotesize\ttfamily float Polygon.\+Line\+Width\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classPolygon_a1913b4437e8453097d4fccb3620e5495}\label{classPolygon_a1913b4437e8453097d4fccb3620e5495}} 
+\index{Polygon@{Polygon}!MarkerColor@{MarkerColor}}
+\index{MarkerColor@{MarkerColor}!Polygon@{Polygon}}
+\doxysubsubsection{\texorpdfstring{MarkerColor}{MarkerColor}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structColor}{Color}} Polygon.\+Marker\+Color\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classPolygon_ab5b2c37ac221744c9511674629d3a406}\label{classPolygon_ab5b2c37ac221744c9511674629d3a406}} 
+\index{Polygon@{Polygon}!MarkerFillColor@{MarkerFillColor}}
+\index{MarkerFillColor@{MarkerFillColor}!Polygon@{Polygon}}
+\doxysubsubsection{\texorpdfstring{MarkerFillColor}{MarkerFillColor}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structColor}{Color}} Polygon.\+Marker\+Fill\+Color\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classPolygon_aa85b91f98b26fe4f8366bb351e8915b9}\label{classPolygon_aa85b91f98b26fe4f8366bb351e8915b9}} 
+\index{Polygon@{Polygon}!MarkerLineColor@{MarkerLineColor}}
+\index{MarkerLineColor@{MarkerLineColor}!Polygon@{Polygon}}
+\doxysubsubsection{\texorpdfstring{MarkerLineColor}{MarkerLineColor}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structColor}{Color}} Polygon.\+Marker\+Line\+Color\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classPolygon_ac131a1e8c382b452d5f121063087dcf0}\label{classPolygon_ac131a1e8c382b452d5f121063087dcf0}} 
+\index{Polygon@{Polygon}!MarkerLineWidth@{MarkerLineWidth}}
+\index{MarkerLineWidth@{MarkerLineWidth}!Polygon@{Polygon}}
+\doxysubsubsection{\texorpdfstring{MarkerLineWidth}{MarkerLineWidth}}
+{\footnotesize\ttfamily float Polygon.\+Marker\+Line\+Width\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classPolygon_aef226181a6b235cc07e926d72cbfd9ef}\label{classPolygon_aef226181a6b235cc07e926d72cbfd9ef}} 
+\index{Polygon@{Polygon}!MarkerShape@{MarkerShape}}
+\index{MarkerShape@{MarkerShape}!Polygon@{Polygon}}
+\doxysubsubsection{\texorpdfstring{MarkerShape}{MarkerShape}}
+{\footnotesize\ttfamily Marker\+Shape Polygon.\+Marker\+Shape\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classPolygon_a81d9d076408e467aa8aee6777c3cc591}\label{classPolygon_a81d9d076408e467aa8aee6777c3cc591}} 
+\index{Polygon@{Polygon}!MarkerSize@{MarkerSize}}
+\index{MarkerSize@{MarkerSize}!Polygon@{Polygon}}
+\doxysubsubsection{\texorpdfstring{MarkerSize}{MarkerSize}}
+{\footnotesize\ttfamily float Polygon.\+Marker\+Size\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classPolygon_a2cd57b1cf1feb5774c4dec8d2575830c}\label{classPolygon_a2cd57b1cf1feb5774c4dec8d2575830c}} 
+\index{Polygon@{Polygon}!MarkerStyle@{MarkerStyle}}
+\index{MarkerStyle@{MarkerStyle}!Polygon@{Polygon}}
+\doxysubsubsection{\texorpdfstring{MarkerStyle}{MarkerStyle}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classMarkerStyle}{Marker\+Style}} Polygon.\+Marker\+Style = new()\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classPolygon_a0c384774355cb4b3cde154e39ffbec8d}\label{classPolygon_a0c384774355cb4b3cde154e39ffbec8d}} 
+\index{Polygon@{Polygon}!PointCount@{PointCount}}
+\index{PointCount@{PointCount}!Polygon@{Polygon}}
+\doxysubsubsection{\texorpdfstring{PointCount}{PointCount}}
+{\footnotesize\ttfamily int Polygon.\+Point\+Count\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Plottables/Polygon.\+cs\end{DoxyCompactItemize}

@@ -1,0 +1,26 @@
+var searchData=
+[
+  ['fastsignalsourcedouble_3323',['FastSignalSourceDouble',['../classFastSignalSourceDouble.html#a8921485d43b5c030ed1a4cf3e123421f',1,'FastSignalSourceDouble']]],
+  ['filly_3324',['FillY',['../classPlottableAdder.html#ac9f8e0f1bf7583628511b7bde65720d2',1,'PlottableAdder.FillY()'],['../classFillY.html#a4069b84dfd24eb9e78ff68d9560c522a',1,'FillY.FillY(Scatter scatter1, Scatter scatter2)'],['../classFillY.html#a981e11c34ab7783998cb2bbb93c62ce2',1,'FillY.FillY()'],['../classPlottableAdder.html#afbdc061c443a93f46f159a1bed9592b4',1,'PlottableAdder.FillY(ICollection&lt;(double X, double Top, double Bottom)&gt; data)'],['../classPlottableAdder.html#a1702f7f045cb851ea27671d78eaea014',1,'PlottableAdder.FillY(Scatter scatter1, Scatter scatter2)']]],
+  ['filly_3c_20t_20_3e_3325',['FillY&lt; T &gt;',['../classPlottableAdder.html#a012491f91c298f3c71e7eb9253e699f0',1,'PlottableAdder']]],
+  ['fixed_3326',['Fixed',['../classLayoutManager.html#a09cd5f270fe6b8570b9bc50f2f471fa0',1,'LayoutManager.Fixed(PixelRect dataRect)'],['../classLayoutManager.html#a2448679547d600831d7c01b12e6a1fec',1,'LayoutManager.Fixed(PixelPadding padding)']]],
+  ['formsplot_3327',['FormsPlot',['../classFormsPlot.html#aed0c6eee591f4b5e11305dc75961650b',1,'FormsPlot']]],
+  ['formsplotbase_3328',['FormsPlotBase',['../classFormsPlotBase.html#a46e9ba863656ea814477b2f8c448ad1c',1,'FormsPlotBase']]],
+  ['formsplotgl_3329',['FormsPlotGL',['../classFormsPlotGL.html#a5296552a97c488a1f2adf69f549142c7',1,'FormsPlotGL']]],
+  ['formsplotmenu_3330',['FormsPlotMenu',['../classFormsPlotMenu.html#a87b7b005e107b2e6851312a8959fa650',1,'FormsPlotMenu']]],
+  ['fractionalautoscaler_3331',['FractionalAutoScaler',['../classFractionalAutoScaler.html#af32f434208e6c15b5f762f95b9c78a46',1,'FractionalAutoScaler.FractionalAutoScaler(double horizontal=.1, double vertical=.15)'],['../classFractionalAutoScaler.html#aff708c44cf262bf3f25b5485c25efc8d',1,'FractionalAutoScaler.FractionalAutoScaler(double left, double right, double bottom, double top)']]],
+  ['frame_3332',['Frame',['../classAxisManager.html#a31988bfd94283de507ffc0818220e19b',1,'AxisManager']]],
+  ['framecolor_3333',['FrameColor',['../classAxisManager.html#a0ee58acdc62eeaf45abab85cc72533e6',1,'AxisManager']]],
+  ['frameless_3334',['Frameless',['../classAxisManager.html#aeccaa6c79631d002daa36ad8c8208258',1,'AxisManager.Frameless()'],['../classLayoutManager.html#ac0fac5f4a014accea256b5507e69ced6',1,'LayoutManager.Frameless()']]],
+  ['framewidth_3335',['FrameWidth',['../classAxisManager.html#ac14e40276621829280f357717ccdf6e2',1,'AxisManager']]],
+  ['fromargb_3336',['FromARGB',['../structColor.html#afc549cd89b282e468f80d4c55137f0ff',1,'Color.FromARGB(int argb)'],['../structColor.html#a91ec731618cd0b00e6072fd9d60ed077',1,'Color.FromARGB(uint argb)']]],
+  ['fromcolor_3337',['FromColor',['../structColor.html#a8da68655abd9cc02e868c9a6a2bec264',1,'Color']]],
+  ['fromdegrees_3338',['FromDegrees',['../structAngle.html#a79900411d8f1367b8ae2d314b0eb38c6',1,'Angle']]],
+  ['fromhex_3339',['FromHex',['../structColor.html#a89b986561f631e4ee1dc5008aca5174f',1,'Color.FromHex(string hex)'],['../structColor.html#aa8e1da4023a721e8f82d3f1da10845d6',1,'Color.FromHex(string[] hex)']]],
+  ['fromhsl_3340',['FromHSL',['../structColor.html#a951e698266952c62ba34ad2a71e49876',1,'Color']]],
+  ['fromplot_3341',['FromPlot',['../classPlotStyle.html#ae7b09e2916c04c894e3ed5a00cada681',1,'PlotStyle']]],
+  ['frompoint_3342',['FromPoint',['../structAxisLimits.html#a7f4313970b5a390a0b5f49aabe829a61',1,'AxisLimits.FromPoint(double x, double y)'],['../structAxisLimits.html#a95389c6e0c372e35823a122a71e15917',1,'AxisLimits.FromPoint(Coordinates c)']]],
+  ['fromradians_3343',['FromRadians',['../structAngle.html#ab6b659b1221dcc6a666e0f53f704eb00',1,'Angle']]],
+  ['fromskcolor_3344',['FromSKColor',['../structColor.html#ae4c556ddf64eccf622a66b9d33b7f3a6',1,'Color']]],
+  ['function_3345',['Function',['../classPlottableAdder.html#afe694615a02585b76cb93c5d335fbe4e',1,'PlottableAdder.Function(IFunctionSource functionSource)'],['../classPlottableAdder.html#a717647c0890027fa8b381eb00449b0af',1,'PlottableAdder.Function(Func&lt; double, double &gt; func)']]]
+];

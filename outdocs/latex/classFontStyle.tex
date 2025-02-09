@@ -1,0 +1,140 @@
+\hypertarget{classFontStyle}{}\doxysection{Font\+Style Class Reference}
+\label{classFontStyle}\index{FontStyle@{FontStyle}}
+
+
+This configuration object (reference type) permanently lives inside objects which require styling. It is recommended to use this object as an init-\/only property.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override string \mbox{\hyperlink{classFontStyle_a17cbaaf1cfdd82c50e555fc8233eb67e}{To\+String}} ()
+\item 
+void \mbox{\hyperlink{classFontStyle_a47d2a4165e33334cf28a6f9ffa48b58a}{Set\+Best\+Font}} (string text)
+\begin{DoxyCompactList}\small\item\em Use the characters in {\itshape text}  to determine an installed system font most likely to support this character set. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classFontStyle}{Font\+Style}} \mbox{\hyperlink{classFontStyle_a07bd7b6f7ea47f0a2fa9b253a9cbbb8a}{Clone}} ()
+\item 
+void \mbox{\hyperlink{classFontStyle_a71ba5fbffe7a44e0b2119dcb0b7d36b8}{Apply\+To\+Paint}} (SKPaint paint)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static SKTypeface \mbox{\hyperlink{classFontStyle_adb29934a67710fc79637c9191d2ea4b5}{Create\+Typeface\+From\+Name}} (string font, bool bold, bool italic)
+\item 
+static SKTypeface \mbox{\hyperlink{classFontStyle_a9e34d75e7b83e2f8f0ba0946d5176d65}{Create\+Typeface\+From\+File}} (string path)
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+SKTypeface \mbox{\hyperlink{classFontStyle_a3bc81f3bf19a3b415b7065e799721040}{Typeface}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+string \mbox{\hyperlink{classFontStyle_ab912d622758fbfe98c0cd5c3a1e9c1dc}{Name}} = Fonts.\+Default\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+bool \mbox{\hyperlink{classFontStyle_ad0b76d69afed30eccc24400b80f7ab86}{Bold}} = false\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+bool \mbox{\hyperlink{classFontStyle_a742dc44109c42ad34878af050b7b59e8}{Italic}} = false\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{structColor}{Color}} \mbox{\hyperlink{classFontStyle_a6a1e95427bf475f637403b47739dc5e5}{Color}} = \mbox{\hyperlink{structColors_a6a4f09e77ec6d0ef4c08348eb2e21714}{Colors.\+Black}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{classFontStyle_a21c511e96c2d31780eb619ce2c96106a}{Size}} = 12\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+bool \mbox{\hyperlink{classFontStyle_a622be81a1433b01116f1eedf5ae9e9db}{Anti\+Alias}} = true\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This configuration object (reference type) permanently lives inside objects which require styling. It is recommended to use this object as an init-\/only property. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classFontStyle_a71ba5fbffe7a44e0b2119dcb0b7d36b8}\label{classFontStyle_a71ba5fbffe7a44e0b2119dcb0b7d36b8}} 
+\index{FontStyle@{FontStyle}!ApplyToPaint@{ApplyToPaint}}
+\index{ApplyToPaint@{ApplyToPaint}!FontStyle@{FontStyle}}
+\doxysubsubsection{\texorpdfstring{ApplyToPaint()}{ApplyToPaint()}}
+{\footnotesize\ttfamily void Font\+Style.\+Apply\+To\+Paint (\begin{DoxyParamCaption}\item[{SKPaint}]{paint }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classFontStyle_a07bd7b6f7ea47f0a2fa9b253a9cbbb8a}\label{classFontStyle_a07bd7b6f7ea47f0a2fa9b253a9cbbb8a}} 
+\index{FontStyle@{FontStyle}!Clone@{Clone}}
+\index{Clone@{Clone}!FontStyle@{FontStyle}}
+\doxysubsubsection{\texorpdfstring{Clone()}{Clone()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classFontStyle}{Font\+Style}} Font\+Style.\+Clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classFontStyle_a9e34d75e7b83e2f8f0ba0946d5176d65}\label{classFontStyle_a9e34d75e7b83e2f8f0ba0946d5176d65}} 
+\index{FontStyle@{FontStyle}!CreateTypefaceFromFile@{CreateTypefaceFromFile}}
+\index{CreateTypefaceFromFile@{CreateTypefaceFromFile}!FontStyle@{FontStyle}}
+\doxysubsubsection{\texorpdfstring{CreateTypefaceFromFile()}{CreateTypefaceFromFile()}}
+{\footnotesize\ttfamily static SKTypeface Font\+Style.\+Create\+Typeface\+From\+File (\begin{DoxyParamCaption}\item[{string}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{classFontStyle_adb29934a67710fc79637c9191d2ea4b5}\label{classFontStyle_adb29934a67710fc79637c9191d2ea4b5}} 
+\index{FontStyle@{FontStyle}!CreateTypefaceFromName@{CreateTypefaceFromName}}
+\index{CreateTypefaceFromName@{CreateTypefaceFromName}!FontStyle@{FontStyle}}
+\doxysubsubsection{\texorpdfstring{CreateTypefaceFromName()}{CreateTypefaceFromName()}}
+{\footnotesize\ttfamily static SKTypeface Font\+Style.\+Create\+Typeface\+From\+Name (\begin{DoxyParamCaption}\item[{string}]{font,  }\item[{bool}]{bold,  }\item[{bool}]{italic }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{classFontStyle_a47d2a4165e33334cf28a6f9ffa48b58a}\label{classFontStyle_a47d2a4165e33334cf28a6f9ffa48b58a}} 
+\index{FontStyle@{FontStyle}!SetBestFont@{SetBestFont}}
+\index{SetBestFont@{SetBestFont}!FontStyle@{FontStyle}}
+\doxysubsubsection{\texorpdfstring{SetBestFont()}{SetBestFont()}}
+{\footnotesize\ttfamily void Font\+Style.\+Set\+Best\+Font (\begin{DoxyParamCaption}\item[{string}]{text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Use the characters in {\itshape text}  to determine an installed system font most likely to support this character set. 
+
+\mbox{\Hypertarget{classFontStyle_a17cbaaf1cfdd82c50e555fc8233eb67e}\label{classFontStyle_a17cbaaf1cfdd82c50e555fc8233eb67e}} 
+\index{FontStyle@{FontStyle}!ToString@{ToString}}
+\index{ToString@{ToString}!FontStyle@{FontStyle}}
+\doxysubsubsection{\texorpdfstring{ToString()}{ToString()}}
+{\footnotesize\ttfamily override string Font\+Style.\+To\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{classFontStyle_a622be81a1433b01116f1eedf5ae9e9db}\label{classFontStyle_a622be81a1433b01116f1eedf5ae9e9db}} 
+\index{FontStyle@{FontStyle}!AntiAlias@{AntiAlias}}
+\index{AntiAlias@{AntiAlias}!FontStyle@{FontStyle}}
+\doxysubsubsection{\texorpdfstring{AntiAlias}{AntiAlias}}
+{\footnotesize\ttfamily bool Font\+Style.\+Anti\+Alias = true\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classFontStyle_ad0b76d69afed30eccc24400b80f7ab86}\label{classFontStyle_ad0b76d69afed30eccc24400b80f7ab86}} 
+\index{FontStyle@{FontStyle}!Bold@{Bold}}
+\index{Bold@{Bold}!FontStyle@{FontStyle}}
+\doxysubsubsection{\texorpdfstring{Bold}{Bold}}
+{\footnotesize\ttfamily bool Font\+Style.\+Bold = false\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classFontStyle_a6a1e95427bf475f637403b47739dc5e5}\label{classFontStyle_a6a1e95427bf475f637403b47739dc5e5}} 
+\index{FontStyle@{FontStyle}!Color@{Color}}
+\index{Color@{Color}!FontStyle@{FontStyle}}
+\doxysubsubsection{\texorpdfstring{Color}{Color}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structColor}{Color}} Font\+Style.\+Color = \mbox{\hyperlink{structColors_a6a4f09e77ec6d0ef4c08348eb2e21714}{Colors.\+Black}}\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classFontStyle_a742dc44109c42ad34878af050b7b59e8}\label{classFontStyle_a742dc44109c42ad34878af050b7b59e8}} 
+\index{FontStyle@{FontStyle}!Italic@{Italic}}
+\index{Italic@{Italic}!FontStyle@{FontStyle}}
+\doxysubsubsection{\texorpdfstring{Italic}{Italic}}
+{\footnotesize\ttfamily bool Font\+Style.\+Italic = false\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classFontStyle_ab912d622758fbfe98c0cd5c3a1e9c1dc}\label{classFontStyle_ab912d622758fbfe98c0cd5c3a1e9c1dc}} 
+\index{FontStyle@{FontStyle}!Name@{Name}}
+\index{Name@{Name}!FontStyle@{FontStyle}}
+\doxysubsubsection{\texorpdfstring{Name}{Name}}
+{\footnotesize\ttfamily string Font\+Style.\+Name = Fonts.\+Default\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classFontStyle_a21c511e96c2d31780eb619ce2c96106a}\label{classFontStyle_a21c511e96c2d31780eb619ce2c96106a}} 
+\index{FontStyle@{FontStyle}!Size@{Size}}
+\index{Size@{Size}!FontStyle@{FontStyle}}
+\doxysubsubsection{\texorpdfstring{Size}{Size}}
+{\footnotesize\ttfamily float Font\+Style.\+Size = 12\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classFontStyle_a3bc81f3bf19a3b415b7065e799721040}\label{classFontStyle_a3bc81f3bf19a3b415b7065e799721040}} 
+\index{FontStyle@{FontStyle}!Typeface@{Typeface}}
+\index{Typeface@{Typeface}!FontStyle@{FontStyle}}
+\doxysubsubsection{\texorpdfstring{Typeface}{Typeface}}
+{\footnotesize\ttfamily SKTypeface Font\+Style.\+Typeface\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Primitives/Font\+Style.\+cs\end{DoxyCompactItemize}

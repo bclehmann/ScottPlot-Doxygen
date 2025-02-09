@@ -1,0 +1,345 @@
+\doxysection{Scott\+Plot.\+Plottables.\+Phasor Class Reference}
+\hypertarget{class_scott_plot_1_1_plottables_1_1_phasor}{}\label{class_scott_plot_1_1_plottables_1_1_phasor}\index{ScottPlot.Plottables.Phasor@{ScottPlot.Plottables.Phasor}}
+
+
+A \doxylink{class_scott_plot_1_1_plottables_1_1_phasor}{Phasor} plot marks a collection of points in polar space using an arrow with its base centered at the origin.  
+
+
+Inheritance diagram for Scott\+Plot.\+Plottables.\+Phasor\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_scott_plot_1_1_plottables_1_1_phasor}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_phasor_a8215757693cfc1e92996deb5e317053e}{Get\+Axis\+Limits}} ()
+\begin{DoxyCompactList}\small\item\em Return the 2D area (in coordinate space) occupied by the data contained in this plottable. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_phasor_a634bcbe1de932bef2f52c949600fc7d4}{Render}} (Render\+Pack rp)
+\begin{DoxyCompactList}\small\item\em Draw the data from this plottable into the data area defined in the \doxylink{class_scott_plot_1_1_axes}{Axes}. By default the surface is already clipped to the data area, but this can be cleared inside the plottable. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable}{Scott\+Plot.\+IPlottable}}}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ \mbox{\hyperlink{namespace_scott_plot_ae0fa916047fded02d6130f4481186cd8}{Polar\+Coordinates}} $>$ \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_phasor_a224e519ed5bbdd0a07665808851db183}{Points}} = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em A collection of points in polar space. \end{DoxyCompactList}\item 
+List$<$ string $>$ \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_phasor_a2365c06cb455a8f476b8e96951926ad9}{Labels}} = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em If populated, \doxylink{class_scott_plot_1_1_plottables_1_1_phasor_a224e519ed5bbdd0a07665808851db183}{Points} will be labeled with these strings. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_scott_plot_1_1_label_style}{Label\+Style}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_phasor_af3cc2d53141b5df859803f81a528f537}{Label\+Style}} = new()\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Style for arrow labels defined in \doxylink{class_scott_plot_1_1_plottables_1_1_phasor_a2365c06cb455a8f476b8e96951926ad9}{Labels} \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_phasor_ad96760427f9f97200005e33c0d59412c}{Padding\+Fraction}} = 0.\+01\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Additional padding given to accommodate spoke labels. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_phasor_af7381b43ec17a15d79636cf8ecff34ad}{Padding\+Arc}} = 5\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Additional padding given to accommodate labels. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_phasor_a30f217898b628d9a6644e9bb818799d5}{Is\+Visible}} = true\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Toggles whether this plottable is shown and contributes to the automatic axis limit detection. The calling method will check this variable (it does not need to be checked inside the Render method). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{interface_scott_plot_1_1_i_axes}{IAxes}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_phasor_ae578cdb572051c06c0deb39f2c82b3af}{Axes}} = new \mbox{\hyperlink{class_scott_plot_1_1_axes}{Axes}}()\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em This object performs coordinate/pixel translation at render time based on the latest data area. It stores the axes to use for this plottable and also the data area (in pixels) updated just before each render. If this object is null it will be constructed using the default X and Y axes at render time. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_enumerable}{IEnumerable}}$<$ \mbox{\hyperlink{class_scott_plot_1_1_legend_item}{Legend\+Item}} $>$ \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_phasor_a12bafc797cc756ec27ec29f7d46c316e}{Legend\+Items}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Items which will appear in the legend. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_phasor_abbb6cc2392443238e5050d1a75841336}{Legend\+Text}} = string.\+Empty\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em If populated, this text appears in the legend. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_scott_plot_1_1_arrow_style}{Arrow\+Style}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_phasor_a2b2e0ba56ac5dabf490a0c612c9e33c9}{Arrow\+Style}} = new() \{ Line\+Width = 2, \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_phasor_af6e805946f8e7b30244ba1fc36e9b236}{Arrow\+Width}} = 3 \}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_phasor_a2de9a58967785aed1a2774a753c14678}{Arrow\+Line\+Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_phasor_a0b9bf1453f79abd902bca4d84fd0999b}{Arrow\+Line\+Width}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_phasor_ae23242aa7042a17c332f2b1d896be956}{Arrow\+Fill\+Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_phasor_ad34962609fffda0902a7b8c53350a615}{Arrow\+Minimum\+Length}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_phasor_a82d7d9eedf9c0c1269ab978ae9139fd6}{Arrow\+Maximum\+Length}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_phasor_a322ad3cc286879f0d8b546393ce6a253}{Arrow\+Offset}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{namespace_scott_plot_a99914e2b3acef11b617d1be2720092c9}{Arrow\+Anchor}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_phasor_a7d25748b582058b25f10a3501d2a6e1c}{Arrow\+Anchor}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_phasor_af6e805946f8e7b30244ba1fc36e9b236}{Arrow\+Width}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_phasor_a4b9d8241daf87cbda967aa06fae91863}{Arrowhead\+Axis\+Length}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_phasor_aa2d9c770f47c6eee00742e228e957e37}{Arrowhead\+Length}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_phasor_afcea197f137c405e92e8bde2523649f0}{Arrowhead\+Width}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{interface_scott_plot_1_1_i_arrow_shape}{IArrow\+Shape}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_phasor_a4e1335460feae9c2a7801d975fd05713}{Arrow\+Shape}} = new \mbox{\hyperlink{class_scott_plot_1_1_arrow_shapes_1_1_single}{Arrow\+Shapes.\+Single}}()\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable}{Scott\+Plot.\+IPlottable}}}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{interface_scott_plot_1_1_i_has_arrow}{Scott\+Plot.\+IHas\+Arrow}}}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{interface_scott_plot_1_1_i_has_legend_text}{Scott\+Plot.\+IHas\+Legend\+Text}}}
+
+
+\doxysubsection{Detailed Description}
+A \doxylink{class_scott_plot_1_1_plottables_1_1_phasor}{Phasor} plot marks a collection of points in polar space using an arrow with its base centered at the origin. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_phasor_a8215757693cfc1e92996deb5e317053e}\index{ScottPlot.Plottables.Phasor@{ScottPlot.Plottables.Phasor}!GetAxisLimits@{GetAxisLimits}}
+\index{GetAxisLimits@{GetAxisLimits}!ScottPlot.Plottables.Phasor@{ScottPlot.Plottables.Phasor}}
+\doxysubsubsection{\texorpdfstring{GetAxisLimits()}{GetAxisLimits()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_phasor_a8215757693cfc1e92996deb5e317053e} 
+\mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}} Scott\+Plot.\+Plottables.\+Phasor.\+Get\+Axis\+Limits (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return the 2D area (in coordinate space) occupied by the data contained in this plottable. 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable_a2e455cf76f9e8bc3187900b1a90487c3}{Scott\+Plot.\+IPlottable}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_phasor_a634bcbe1de932bef2f52c949600fc7d4}\index{ScottPlot.Plottables.Phasor@{ScottPlot.Plottables.Phasor}!Render@{Render}}
+\index{Render@{Render}!ScottPlot.Plottables.Phasor@{ScottPlot.Plottables.Phasor}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_phasor_a634bcbe1de932bef2f52c949600fc7d4} 
+virtual void Scott\+Plot.\+Plottables.\+Phasor.\+Render (\begin{DoxyParamCaption}\item[{Render\+Pack}]{rp}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Draw the data from this plottable into the data area defined in the \doxylink{class_scott_plot_1_1_axes}{Axes}. By default the surface is already clipped to the data area, but this can be cleared inside the plottable. 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable_a11d2487f1d7628e019a09748d876c289}{Scott\+Plot.\+IPlottable}}.
+
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_phasor_a7d25748b582058b25f10a3501d2a6e1c}\index{ScottPlot.Plottables.Phasor@{ScottPlot.Plottables.Phasor}!ArrowAnchor@{ArrowAnchor}}
+\index{ArrowAnchor@{ArrowAnchor}!ScottPlot.Plottables.Phasor@{ScottPlot.Plottables.Phasor}}
+\doxysubsubsection{\texorpdfstring{ArrowAnchor}{ArrowAnchor}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_phasor_a7d25748b582058b25f10a3501d2a6e1c} 
+\mbox{\hyperlink{namespace_scott_plot_a99914e2b3acef11b617d1be2720092c9}{Arrow\+Anchor}} Scott\+Plot.\+Plottables.\+Phasor.\+Arrow\+Anchor\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_has_arrow_a0ba8bad0b6a7769391fe268b00436ee6}{Scott\+Plot.\+IHas\+Arrow}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_phasor_ae23242aa7042a17c332f2b1d896be956}\index{ScottPlot.Plottables.Phasor@{ScottPlot.Plottables.Phasor}!ArrowFillColor@{ArrowFillColor}}
+\index{ArrowFillColor@{ArrowFillColor}!ScottPlot.Plottables.Phasor@{ScottPlot.Plottables.Phasor}}
+\doxysubsubsection{\texorpdfstring{ArrowFillColor}{ArrowFillColor}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_phasor_ae23242aa7042a17c332f2b1d896be956} 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} Scott\+Plot.\+Plottables.\+Phasor.\+Arrow\+Fill\+Color\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_has_arrow_ae61f4d4b076fa24a28bb21d8e667a147}{Scott\+Plot.\+IHas\+Arrow}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_phasor_a4b9d8241daf87cbda967aa06fae91863}\index{ScottPlot.Plottables.Phasor@{ScottPlot.Plottables.Phasor}!ArrowheadAxisLength@{ArrowheadAxisLength}}
+\index{ArrowheadAxisLength@{ArrowheadAxisLength}!ScottPlot.Plottables.Phasor@{ScottPlot.Plottables.Phasor}}
+\doxysubsubsection{\texorpdfstring{ArrowheadAxisLength}{ArrowheadAxisLength}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_phasor_a4b9d8241daf87cbda967aa06fae91863} 
+float Scott\+Plot.\+Plottables.\+Phasor.\+Arrowhead\+Axis\+Length\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_has_arrow_abe24f4619a518f63830943d31d7506a8}{Scott\+Plot.\+IHas\+Arrow}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_phasor_aa2d9c770f47c6eee00742e228e957e37}\index{ScottPlot.Plottables.Phasor@{ScottPlot.Plottables.Phasor}!ArrowheadLength@{ArrowheadLength}}
+\index{ArrowheadLength@{ArrowheadLength}!ScottPlot.Plottables.Phasor@{ScottPlot.Plottables.Phasor}}
+\doxysubsubsection{\texorpdfstring{ArrowheadLength}{ArrowheadLength}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_phasor_aa2d9c770f47c6eee00742e228e957e37} 
+float Scott\+Plot.\+Plottables.\+Phasor.\+Arrowhead\+Length\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_has_arrow_a68cf16978113c2fd991084caddd3b580}{Scott\+Plot.\+IHas\+Arrow}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_phasor_afcea197f137c405e92e8bde2523649f0}\index{ScottPlot.Plottables.Phasor@{ScottPlot.Plottables.Phasor}!ArrowheadWidth@{ArrowheadWidth}}
+\index{ArrowheadWidth@{ArrowheadWidth}!ScottPlot.Plottables.Phasor@{ScottPlot.Plottables.Phasor}}
+\doxysubsubsection{\texorpdfstring{ArrowheadWidth}{ArrowheadWidth}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_phasor_afcea197f137c405e92e8bde2523649f0} 
+float Scott\+Plot.\+Plottables.\+Phasor.\+Arrowhead\+Width\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_has_arrow_ae79a48f17f74f26498c9c7b410973f7d}{Scott\+Plot.\+IHas\+Arrow}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_phasor_a2de9a58967785aed1a2774a753c14678}\index{ScottPlot.Plottables.Phasor@{ScottPlot.Plottables.Phasor}!ArrowLineColor@{ArrowLineColor}}
+\index{ArrowLineColor@{ArrowLineColor}!ScottPlot.Plottables.Phasor@{ScottPlot.Plottables.Phasor}}
+\doxysubsubsection{\texorpdfstring{ArrowLineColor}{ArrowLineColor}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_phasor_a2de9a58967785aed1a2774a753c14678} 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} Scott\+Plot.\+Plottables.\+Phasor.\+Arrow\+Line\+Color\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_has_arrow_aa9903bbc04743c5c8649157a63574675}{Scott\+Plot.\+IHas\+Arrow}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_phasor_a0b9bf1453f79abd902bca4d84fd0999b}\index{ScottPlot.Plottables.Phasor@{ScottPlot.Plottables.Phasor}!ArrowLineWidth@{ArrowLineWidth}}
+\index{ArrowLineWidth@{ArrowLineWidth}!ScottPlot.Plottables.Phasor@{ScottPlot.Plottables.Phasor}}
+\doxysubsubsection{\texorpdfstring{ArrowLineWidth}{ArrowLineWidth}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_phasor_a0b9bf1453f79abd902bca4d84fd0999b} 
+float Scott\+Plot.\+Plottables.\+Phasor.\+Arrow\+Line\+Width\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_has_arrow_a5d5484cea564f6910bddb0a3cb38ce0b}{Scott\+Plot.\+IHas\+Arrow}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_phasor_a82d7d9eedf9c0c1269ab978ae9139fd6}\index{ScottPlot.Plottables.Phasor@{ScottPlot.Plottables.Phasor}!ArrowMaximumLength@{ArrowMaximumLength}}
+\index{ArrowMaximumLength@{ArrowMaximumLength}!ScottPlot.Plottables.Phasor@{ScottPlot.Plottables.Phasor}}
+\doxysubsubsection{\texorpdfstring{ArrowMaximumLength}{ArrowMaximumLength}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_phasor_a82d7d9eedf9c0c1269ab978ae9139fd6} 
+float Scott\+Plot.\+Plottables.\+Phasor.\+Arrow\+Maximum\+Length\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_has_arrow_a9ce522ea7ea10129a6bfb7ffbf4155ff}{Scott\+Plot.\+IHas\+Arrow}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_phasor_ad34962609fffda0902a7b8c53350a615}\index{ScottPlot.Plottables.Phasor@{ScottPlot.Plottables.Phasor}!ArrowMinimumLength@{ArrowMinimumLength}}
+\index{ArrowMinimumLength@{ArrowMinimumLength}!ScottPlot.Plottables.Phasor@{ScottPlot.Plottables.Phasor}}
+\doxysubsubsection{\texorpdfstring{ArrowMinimumLength}{ArrowMinimumLength}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_phasor_ad34962609fffda0902a7b8c53350a615} 
+float Scott\+Plot.\+Plottables.\+Phasor.\+Arrow\+Minimum\+Length\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_has_arrow_ab82748454fcb26f1a9384dda2966d28d}{Scott\+Plot.\+IHas\+Arrow}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_phasor_a322ad3cc286879f0d8b546393ce6a253}\index{ScottPlot.Plottables.Phasor@{ScottPlot.Plottables.Phasor}!ArrowOffset@{ArrowOffset}}
+\index{ArrowOffset@{ArrowOffset}!ScottPlot.Plottables.Phasor@{ScottPlot.Plottables.Phasor}}
+\doxysubsubsection{\texorpdfstring{ArrowOffset}{ArrowOffset}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_phasor_a322ad3cc286879f0d8b546393ce6a253} 
+float Scott\+Plot.\+Plottables.\+Phasor.\+Arrow\+Offset\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_has_arrow_aa1f38fdbf66c0d8183ec2449798be361}{Scott\+Plot.\+IHas\+Arrow}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_phasor_a4e1335460feae9c2a7801d975fd05713}\index{ScottPlot.Plottables.Phasor@{ScottPlot.Plottables.Phasor}!ArrowShape@{ArrowShape}}
+\index{ArrowShape@{ArrowShape}!ScottPlot.Plottables.Phasor@{ScottPlot.Plottables.Phasor}}
+\doxysubsubsection{\texorpdfstring{ArrowShape}{ArrowShape}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_phasor_a4e1335460feae9c2a7801d975fd05713} 
+\mbox{\hyperlink{interface_scott_plot_1_1_i_arrow_shape}{IArrow\+Shape}} Scott\+Plot.\+Plottables.\+Phasor.\+Arrow\+Shape = new \mbox{\hyperlink{class_scott_plot_1_1_arrow_shapes_1_1_single}{Arrow\+Shapes.\+Single}}()\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_phasor_a2b2e0ba56ac5dabf490a0c612c9e33c9}\index{ScottPlot.Plottables.Phasor@{ScottPlot.Plottables.Phasor}!ArrowStyle@{ArrowStyle}}
+\index{ArrowStyle@{ArrowStyle}!ScottPlot.Plottables.Phasor@{ScottPlot.Plottables.Phasor}}
+\doxysubsubsection{\texorpdfstring{ArrowStyle}{ArrowStyle}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_phasor_a2b2e0ba56ac5dabf490a0c612c9e33c9} 
+\mbox{\hyperlink{class_scott_plot_1_1_arrow_style}{Arrow\+Style}} Scott\+Plot.\+Plottables.\+Phasor.\+Arrow\+Style = new() \{ Line\+Width = 2, \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_phasor_af6e805946f8e7b30244ba1fc36e9b236}{Arrow\+Width}} = 3 \}\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_has_arrow_a7a823dbf482cd878c6aec9b82a11b890}{Scott\+Plot.\+IHas\+Arrow}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_phasor_af6e805946f8e7b30244ba1fc36e9b236}\index{ScottPlot.Plottables.Phasor@{ScottPlot.Plottables.Phasor}!ArrowWidth@{ArrowWidth}}
+\index{ArrowWidth@{ArrowWidth}!ScottPlot.Plottables.Phasor@{ScottPlot.Plottables.Phasor}}
+\doxysubsubsection{\texorpdfstring{ArrowWidth}{ArrowWidth}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_phasor_af6e805946f8e7b30244ba1fc36e9b236} 
+float Scott\+Plot.\+Plottables.\+Phasor.\+Arrow\+Width\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_has_arrow_ae7af278d72f3288b00612094f773455e}{Scott\+Plot.\+IHas\+Arrow}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_phasor_ae578cdb572051c06c0deb39f2c82b3af}\index{ScottPlot.Plottables.Phasor@{ScottPlot.Plottables.Phasor}!Axes@{Axes}}
+\index{Axes@{Axes}!ScottPlot.Plottables.Phasor@{ScottPlot.Plottables.Phasor}}
+\doxysubsubsection{\texorpdfstring{Axes}{Axes}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_phasor_ae578cdb572051c06c0deb39f2c82b3af} 
+\mbox{\hyperlink{interface_scott_plot_1_1_i_axes}{IAxes}} Scott\+Plot.\+Plottables.\+Phasor.\+Axes = new \mbox{\hyperlink{class_scott_plot_1_1_axes}{Axes}}()\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+This object performs coordinate/pixel translation at render time based on the latest data area. It stores the axes to use for this plottable and also the data area (in pixels) updated just before each render. If this object is null it will be constructed using the default X and Y axes at render time. 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable_aa68bc5153a673a7cd4a68f93da377d0a}{Scott\+Plot.\+IPlottable}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_phasor_a30f217898b628d9a6644e9bb818799d5}\index{ScottPlot.Plottables.Phasor@{ScottPlot.Plottables.Phasor}!IsVisible@{IsVisible}}
+\index{IsVisible@{IsVisible}!ScottPlot.Plottables.Phasor@{ScottPlot.Plottables.Phasor}}
+\doxysubsubsection{\texorpdfstring{IsVisible}{IsVisible}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_phasor_a30f217898b628d9a6644e9bb818799d5} 
+bool Scott\+Plot.\+Plottables.\+Phasor.\+Is\+Visible = true\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Toggles whether this plottable is shown and contributes to the automatic axis limit detection. The calling method will check this variable (it does not need to be checked inside the Render method). 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable_abbe75ba55a332d695313ccb5dc780923}{Scott\+Plot.\+IPlottable}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_phasor_a2365c06cb455a8f476b8e96951926ad9}\index{ScottPlot.Plottables.Phasor@{ScottPlot.Plottables.Phasor}!Labels@{Labels}}
+\index{Labels@{Labels}!ScottPlot.Plottables.Phasor@{ScottPlot.Plottables.Phasor}}
+\doxysubsubsection{\texorpdfstring{Labels}{Labels}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_phasor_a2365c06cb455a8f476b8e96951926ad9} 
+List$<$string$>$ Scott\+Plot.\+Plottables.\+Phasor.\+Labels = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+If populated, \doxylink{class_scott_plot_1_1_plottables_1_1_phasor_a224e519ed5bbdd0a07665808851db183}{Points} will be labeled with these strings. 
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_phasor_af3cc2d53141b5df859803f81a528f537}\index{ScottPlot.Plottables.Phasor@{ScottPlot.Plottables.Phasor}!LabelStyle@{LabelStyle}}
+\index{LabelStyle@{LabelStyle}!ScottPlot.Plottables.Phasor@{ScottPlot.Plottables.Phasor}}
+\doxysubsubsection{\texorpdfstring{LabelStyle}{LabelStyle}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_phasor_af3cc2d53141b5df859803f81a528f537} 
+\mbox{\hyperlink{class_scott_plot_1_1_label_style}{Label\+Style}} Scott\+Plot.\+Plottables.\+Phasor.\+Label\+Style = new()\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Style for arrow labels defined in \doxylink{class_scott_plot_1_1_plottables_1_1_phasor_a2365c06cb455a8f476b8e96951926ad9}{Labels} 
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_phasor_a12bafc797cc756ec27ec29f7d46c316e}\index{ScottPlot.Plottables.Phasor@{ScottPlot.Plottables.Phasor}!LegendItems@{LegendItems}}
+\index{LegendItems@{LegendItems}!ScottPlot.Plottables.Phasor@{ScottPlot.Plottables.Phasor}}
+\doxysubsubsection{\texorpdfstring{LegendItems}{LegendItems}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_phasor_a12bafc797cc756ec27ec29f7d46c316e} 
+\mbox{\hyperlink{class_i_enumerable}{IEnumerable}}$<$\mbox{\hyperlink{class_scott_plot_1_1_legend_item}{Legend\+Item}}$>$ Scott\+Plot.\+Plottables.\+Phasor.\+Legend\+Items\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Items which will appear in the legend. 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable_a4565f96a253f832bd9aa8033c99eff75}{Scott\+Plot.\+IPlottable}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_phasor_abbb6cc2392443238e5050d1a75841336}\index{ScottPlot.Plottables.Phasor@{ScottPlot.Plottables.Phasor}!LegendText@{LegendText}}
+\index{LegendText@{LegendText}!ScottPlot.Plottables.Phasor@{ScottPlot.Plottables.Phasor}}
+\doxysubsubsection{\texorpdfstring{LegendText}{LegendText}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_phasor_abbb6cc2392443238e5050d1a75841336} 
+string Scott\+Plot.\+Plottables.\+Phasor.\+Legend\+Text = string.\+Empty\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+If populated, this text appears in the legend. 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_has_legend_text_ad89967a734dbda7c02217a19c17d88d8}{Scott\+Plot.\+IHas\+Legend\+Text}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_phasor_af7381b43ec17a15d79636cf8ecff34ad}\index{ScottPlot.Plottables.Phasor@{ScottPlot.Plottables.Phasor}!PaddingArc@{PaddingArc}}
+\index{PaddingArc@{PaddingArc}!ScottPlot.Plottables.Phasor@{ScottPlot.Plottables.Phasor}}
+\doxysubsubsection{\texorpdfstring{PaddingArc}{PaddingArc}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_phasor_af7381b43ec17a15d79636cf8ecff34ad} 
+double Scott\+Plot.\+Plottables.\+Phasor.\+Padding\+Arc = 5\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Additional padding given to accommodate labels. 
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_phasor_ad96760427f9f97200005e33c0d59412c}\index{ScottPlot.Plottables.Phasor@{ScottPlot.Plottables.Phasor}!PaddingFraction@{PaddingFraction}}
+\index{PaddingFraction@{PaddingFraction}!ScottPlot.Plottables.Phasor@{ScottPlot.Plottables.Phasor}}
+\doxysubsubsection{\texorpdfstring{PaddingFraction}{PaddingFraction}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_phasor_ad96760427f9f97200005e33c0d59412c} 
+double Scott\+Plot.\+Plottables.\+Phasor.\+Padding\+Fraction = 0.\+01\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Additional padding given to accommodate spoke labels. 
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_phasor_a224e519ed5bbdd0a07665808851db183}\index{ScottPlot.Plottables.Phasor@{ScottPlot.Plottables.Phasor}!Points@{Points}}
+\index{Points@{Points}!ScottPlot.Plottables.Phasor@{ScottPlot.Plottables.Phasor}}
+\doxysubsubsection{\texorpdfstring{Points}{Points}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_phasor_a224e519ed5bbdd0a07665808851db183} 
+List$<$\mbox{\hyperlink{namespace_scott_plot_ae0fa916047fded02d6130f4481186cd8}{Polar\+Coordinates}}$>$ Scott\+Plot.\+Plottables.\+Phasor.\+Points = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+A collection of points in polar space. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Plottables/Phasor.\+cs\end{DoxyCompactItemize}

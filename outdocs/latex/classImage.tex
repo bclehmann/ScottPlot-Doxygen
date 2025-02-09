@@ -1,0 +1,248 @@
+\hypertarget{classImage}{}\doxysection{Image Class Reference}
+\label{classImage}\index{Image@{Image}}
+
+
+Bitmap representation of a \begin{DoxySeeAlso}{See also}
+Skia\+Sharp.\+SKImage
+
+
+\end{DoxySeeAlso}
+ 
+
+
+Inheritance diagram for Image\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classImage}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classImage_a063fedec2c1749e4eaf81c78909f90fe}{Image}} (\mbox{\hyperlink{classImage_a38874b1ddaa03e278c66630eefad1f00}{SKImage}} image)
+\item 
+\mbox{\hyperlink{classImage_a48ac6ffcef6a2c277023f35270608c72}{Image}} (SKSurface surface)
+\item 
+\mbox{\hyperlink{classImage_aab511d20034ebb9a76258be5b89f8127}{Image}} (string filename)
+\item 
+\mbox{\hyperlink{classImage_a0dab12a6cf647baf0c41d55fe91ab9a1}{Image}} (byte\mbox{[}$\,$\mbox{]} bytes)
+\item 
+\mbox{\hyperlink{classImage_aaeb4b1a724e78d0925787d7377b5793d}{Image}} (SKBitmap bmp)
+\item 
+\mbox{\hyperlink{classImage_a1c05cd823b42f73427371718e709fe45}{Image}} (int width, int height)
+\item 
+\mbox{\hyperlink{classImage_ad4b8cf0e08ec6e6aa922f0ad077bf1fa}{Image}} (\mbox{\hyperlink{structPixelSize}{Pixel\+Size}} size)
+\item 
+\mbox{\hyperlink{classImage_a4abe55737c7a862430e9bbd55e5d0da5}{Image}} (int width, int height, \mbox{\hyperlink{structColor}{Color}} color)
+\item 
+\mbox{\hyperlink{classImage_a81d458aa37383239320096b192a2806f}{Image}} (byte\mbox{[},\mbox{]} pixel\+Array)
+\item 
+\mbox{\hyperlink{classImage_af144e0881fc8a2a6f5b20437a5d79d1b}{Image}} (byte\mbox{[},,\mbox{]} pixel\+Array)
+\item 
+byte\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classImage_aa913dca89a2cabda8e62935f7b5b9641}{Get\+Image\+Bytes}} (Image\+Format format=Image\+Format.\+Png, int quality=100)
+\item 
+Saved\+Image\+Info \mbox{\hyperlink{classImage_a182bd5619758176c13b7b36d3fc542de}{Save\+Jpeg}} (string path, int quality=85)
+\item 
+Saved\+Image\+Info \mbox{\hyperlink{classImage_aa99a6f60cb5efbb56e564c3564924ea7}{Save\+Png}} (string path)
+\item 
+Saved\+Image\+Info \mbox{\hyperlink{classImage_a1ef0c77c741e5804fb211433fa4a1176}{Save\+Bmp}} (string path)
+\item 
+Saved\+Image\+Info \mbox{\hyperlink{classImage_aa962226220080b49d65e5e6f18bcbf93}{Save\+Webp}} (string path, int quality=85)
+\item 
+Saved\+Image\+Info \mbox{\hyperlink{classImage_a6e7d619884e67372c02525f0dcef009d}{Save}} (string path, Image\+Format format=Image\+Format.\+Png, int quality=85)
+\item 
+void \mbox{\hyperlink{classImage_aba7d4d81f1bcbd1348d99cc0948e9eb3}{Dispose}} ()
+\item 
+void \mbox{\hyperlink{classImage_ad79f24ebf16a36823deebe10f4405211}{Render}} (SKCanvas canvas, \mbox{\hyperlink{structPixelRect}{Pixel\+Rect}} target, SKPaint paint, bool anti\+Alias)
+\item 
+byte\mbox{[},\mbox{]} \mbox{\hyperlink{classImage_aac602f7f2425c98a83945a810b9bbb25}{Get\+Array\+Grayscale}} ()
+\item 
+byte\mbox{[},,\mbox{]} \mbox{\hyperlink{classImage_ab4bd90ede691dfcdb3bc9671e70cec03}{Get\+Array\+RGB}} ()
+\item 
+\mbox{\hyperlink{classImage}{Image}} \mbox{\hyperlink{classImage_a45c0027a13d99e74c5138eba5613e7d5}{Get\+Autoscaled\+Image}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+SKImage \mbox{\hyperlink{classImage_a38874b1ddaa03e278c66630eefad1f00}{SKImage}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+int \mbox{\hyperlink{classImage_a7def367d61536ddb8819509aa409bef9}{Width}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+int \mbox{\hyperlink{classImage_a3e0be9a53ffa0b72a3353327cbf1e651}{Height}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{structPixelSize}{Pixel\+Size}} \mbox{\hyperlink{classImage_a9fa716f2f5e49f8648b6dea5cea44a75}{Size}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Bitmap representation of a \begin{DoxySeeAlso}{See also}
+Skia\+Sharp.\+SKImage
+
+
+\end{DoxySeeAlso}
+
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classImage_a063fedec2c1749e4eaf81c78909f90fe}\label{classImage_a063fedec2c1749e4eaf81c78909f90fe}} 
+\index{Image@{Image}!Image@{Image}}
+\index{Image@{Image}!Image@{Image}}
+\doxysubsubsection{\texorpdfstring{Image()}{Image()}\hspace{0.1cm}{\footnotesize\ttfamily [1/10]}}
+{\footnotesize\ttfamily Image.\+Image (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classImage_a38874b1ddaa03e278c66630eefad1f00}{SKImage}}}]{image }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classImage_a48ac6ffcef6a2c277023f35270608c72}\label{classImage_a48ac6ffcef6a2c277023f35270608c72}} 
+\index{Image@{Image}!Image@{Image}}
+\index{Image@{Image}!Image@{Image}}
+\doxysubsubsection{\texorpdfstring{Image()}{Image()}\hspace{0.1cm}{\footnotesize\ttfamily [2/10]}}
+{\footnotesize\ttfamily Image.\+Image (\begin{DoxyParamCaption}\item[{SKSurface}]{surface }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classImage_aab511d20034ebb9a76258be5b89f8127}\label{classImage_aab511d20034ebb9a76258be5b89f8127}} 
+\index{Image@{Image}!Image@{Image}}
+\index{Image@{Image}!Image@{Image}}
+\doxysubsubsection{\texorpdfstring{Image()}{Image()}\hspace{0.1cm}{\footnotesize\ttfamily [3/10]}}
+{\footnotesize\ttfamily Image.\+Image (\begin{DoxyParamCaption}\item[{string}]{filename }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classImage_a0dab12a6cf647baf0c41d55fe91ab9a1}\label{classImage_a0dab12a6cf647baf0c41d55fe91ab9a1}} 
+\index{Image@{Image}!Image@{Image}}
+\index{Image@{Image}!Image@{Image}}
+\doxysubsubsection{\texorpdfstring{Image()}{Image()}\hspace{0.1cm}{\footnotesize\ttfamily [4/10]}}
+{\footnotesize\ttfamily Image.\+Image (\begin{DoxyParamCaption}\item[{byte\mbox{[}$\,$\mbox{]}}]{bytes }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classImage_aaeb4b1a724e78d0925787d7377b5793d}\label{classImage_aaeb4b1a724e78d0925787d7377b5793d}} 
+\index{Image@{Image}!Image@{Image}}
+\index{Image@{Image}!Image@{Image}}
+\doxysubsubsection{\texorpdfstring{Image()}{Image()}\hspace{0.1cm}{\footnotesize\ttfamily [5/10]}}
+{\footnotesize\ttfamily Image.\+Image (\begin{DoxyParamCaption}\item[{SKBitmap}]{bmp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classImage_a1c05cd823b42f73427371718e709fe45}\label{classImage_a1c05cd823b42f73427371718e709fe45}} 
+\index{Image@{Image}!Image@{Image}}
+\index{Image@{Image}!Image@{Image}}
+\doxysubsubsection{\texorpdfstring{Image()}{Image()}\hspace{0.1cm}{\footnotesize\ttfamily [6/10]}}
+{\footnotesize\ttfamily Image.\+Image (\begin{DoxyParamCaption}\item[{int}]{width,  }\item[{int}]{height }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classImage_ad4b8cf0e08ec6e6aa922f0ad077bf1fa}\label{classImage_ad4b8cf0e08ec6e6aa922f0ad077bf1fa}} 
+\index{Image@{Image}!Image@{Image}}
+\index{Image@{Image}!Image@{Image}}
+\doxysubsubsection{\texorpdfstring{Image()}{Image()}\hspace{0.1cm}{\footnotesize\ttfamily [7/10]}}
+{\footnotesize\ttfamily Image.\+Image (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPixelSize}{Pixel\+Size}}}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classImage_a4abe55737c7a862430e9bbd55e5d0da5}\label{classImage_a4abe55737c7a862430e9bbd55e5d0da5}} 
+\index{Image@{Image}!Image@{Image}}
+\index{Image@{Image}!Image@{Image}}
+\doxysubsubsection{\texorpdfstring{Image()}{Image()}\hspace{0.1cm}{\footnotesize\ttfamily [8/10]}}
+{\footnotesize\ttfamily Image.\+Image (\begin{DoxyParamCaption}\item[{int}]{width,  }\item[{int}]{height,  }\item[{\mbox{\hyperlink{structColor}{Color}}}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classImage_a81d458aa37383239320096b192a2806f}\label{classImage_a81d458aa37383239320096b192a2806f}} 
+\index{Image@{Image}!Image@{Image}}
+\index{Image@{Image}!Image@{Image}}
+\doxysubsubsection{\texorpdfstring{Image()}{Image()}\hspace{0.1cm}{\footnotesize\ttfamily [9/10]}}
+{\footnotesize\ttfamily Image.\+Image (\begin{DoxyParamCaption}\item[{byte}]{pixel\+Array\mbox{[},\mbox{]} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classImage_af144e0881fc8a2a6f5b20437a5d79d1b}\label{classImage_af144e0881fc8a2a6f5b20437a5d79d1b}} 
+\index{Image@{Image}!Image@{Image}}
+\index{Image@{Image}!Image@{Image}}
+\doxysubsubsection{\texorpdfstring{Image()}{Image()}\hspace{0.1cm}{\footnotesize\ttfamily [10/10]}}
+{\footnotesize\ttfamily Image.\+Image (\begin{DoxyParamCaption}\item[{byte}]{pixel\+Array\mbox{[},,\mbox{]} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classImage_aba7d4d81f1bcbd1348d99cc0948e9eb3}\label{classImage_aba7d4d81f1bcbd1348d99cc0948e9eb3}} 
+\index{Image@{Image}!Dispose@{Dispose}}
+\index{Dispose@{Dispose}!Image@{Image}}
+\doxysubsubsection{\texorpdfstring{Dispose()}{Dispose()}}
+{\footnotesize\ttfamily void Image.\+Dispose (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classImage_aac602f7f2425c98a83945a810b9bbb25}\label{classImage_aac602f7f2425c98a83945a810b9bbb25}} 
+\index{Image@{Image}!GetArrayGrayscale@{GetArrayGrayscale}}
+\index{GetArrayGrayscale@{GetArrayGrayscale}!Image@{Image}}
+\doxysubsubsection{\texorpdfstring{GetArrayGrayscale()}{GetArrayGrayscale()}}
+{\footnotesize\ttfamily byte \mbox{[},\mbox{]} Image.\+Get\+Array\+Grayscale (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classImage_ab4bd90ede691dfcdb3bc9671e70cec03}\label{classImage_ab4bd90ede691dfcdb3bc9671e70cec03}} 
+\index{Image@{Image}!GetArrayRGB@{GetArrayRGB}}
+\index{GetArrayRGB@{GetArrayRGB}!Image@{Image}}
+\doxysubsubsection{\texorpdfstring{GetArrayRGB()}{GetArrayRGB()}}
+{\footnotesize\ttfamily byte \mbox{[},,\mbox{]} Image.\+Get\+Array\+RGB (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classImage_a45c0027a13d99e74c5138eba5613e7d5}\label{classImage_a45c0027a13d99e74c5138eba5613e7d5}} 
+\index{Image@{Image}!GetAutoscaledImage@{GetAutoscaledImage}}
+\index{GetAutoscaledImage@{GetAutoscaledImage}!Image@{Image}}
+\doxysubsubsection{\texorpdfstring{GetAutoscaledImage()}{GetAutoscaledImage()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classImage}{Image}} Image.\+Get\+Autoscaled\+Image (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classImage_aa913dca89a2cabda8e62935f7b5b9641}\label{classImage_aa913dca89a2cabda8e62935f7b5b9641}} 
+\index{Image@{Image}!GetImageBytes@{GetImageBytes}}
+\index{GetImageBytes@{GetImageBytes}!Image@{Image}}
+\doxysubsubsection{\texorpdfstring{GetImageBytes()}{GetImageBytes()}}
+{\footnotesize\ttfamily byte \mbox{[}$\,$\mbox{]} Image.\+Get\+Image\+Bytes (\begin{DoxyParamCaption}\item[{Image\+Format}]{format = {\ttfamily ImageFormat.Png},  }\item[{int}]{quality = {\ttfamily 100} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classImage_ad79f24ebf16a36823deebe10f4405211}\label{classImage_ad79f24ebf16a36823deebe10f4405211}} 
+\index{Image@{Image}!Render@{Render}}
+\index{Render@{Render}!Image@{Image}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily void Image.\+Render (\begin{DoxyParamCaption}\item[{SKCanvas}]{canvas,  }\item[{\mbox{\hyperlink{structPixelRect}{Pixel\+Rect}}}]{target,  }\item[{SKPaint}]{paint,  }\item[{bool}]{anti\+Alias }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classImage_a6e7d619884e67372c02525f0dcef009d}\label{classImage_a6e7d619884e67372c02525f0dcef009d}} 
+\index{Image@{Image}!Save@{Save}}
+\index{Save@{Save}!Image@{Image}}
+\doxysubsubsection{\texorpdfstring{Save()}{Save()}}
+{\footnotesize\ttfamily Saved\+Image\+Info Image.\+Save (\begin{DoxyParamCaption}\item[{string}]{path,  }\item[{Image\+Format}]{format = {\ttfamily ImageFormat.Png},  }\item[{int}]{quality = {\ttfamily 85} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classImage_a1ef0c77c741e5804fb211433fa4a1176}\label{classImage_a1ef0c77c741e5804fb211433fa4a1176}} 
+\index{Image@{Image}!SaveBmp@{SaveBmp}}
+\index{SaveBmp@{SaveBmp}!Image@{Image}}
+\doxysubsubsection{\texorpdfstring{SaveBmp()}{SaveBmp()}}
+{\footnotesize\ttfamily Saved\+Image\+Info Image.\+Save\+Bmp (\begin{DoxyParamCaption}\item[{string}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classImage_a182bd5619758176c13b7b36d3fc542de}\label{classImage_a182bd5619758176c13b7b36d3fc542de}} 
+\index{Image@{Image}!SaveJpeg@{SaveJpeg}}
+\index{SaveJpeg@{SaveJpeg}!Image@{Image}}
+\doxysubsubsection{\texorpdfstring{SaveJpeg()}{SaveJpeg()}}
+{\footnotesize\ttfamily Saved\+Image\+Info Image.\+Save\+Jpeg (\begin{DoxyParamCaption}\item[{string}]{path,  }\item[{int}]{quality = {\ttfamily 85} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classImage_aa99a6f60cb5efbb56e564c3564924ea7}\label{classImage_aa99a6f60cb5efbb56e564c3564924ea7}} 
+\index{Image@{Image}!SavePng@{SavePng}}
+\index{SavePng@{SavePng}!Image@{Image}}
+\doxysubsubsection{\texorpdfstring{SavePng()}{SavePng()}}
+{\footnotesize\ttfamily Saved\+Image\+Info Image.\+Save\+Png (\begin{DoxyParamCaption}\item[{string}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classImage_aa962226220080b49d65e5e6f18bcbf93}\label{classImage_aa962226220080b49d65e5e6f18bcbf93}} 
+\index{Image@{Image}!SaveWebp@{SaveWebp}}
+\index{SaveWebp@{SaveWebp}!Image@{Image}}
+\doxysubsubsection{\texorpdfstring{SaveWebp()}{SaveWebp()}}
+{\footnotesize\ttfamily Saved\+Image\+Info Image.\+Save\+Webp (\begin{DoxyParamCaption}\item[{string}]{path,  }\item[{int}]{quality = {\ttfamily 85} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{classImage_a3e0be9a53ffa0b72a3353327cbf1e651}\label{classImage_a3e0be9a53ffa0b72a3353327cbf1e651}} 
+\index{Image@{Image}!Height@{Height}}
+\index{Height@{Height}!Image@{Image}}
+\doxysubsubsection{\texorpdfstring{Height}{Height}}
+{\footnotesize\ttfamily int Image.\+Height\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{classImage_a9fa716f2f5e49f8648b6dea5cea44a75}\label{classImage_a9fa716f2f5e49f8648b6dea5cea44a75}} 
+\index{Image@{Image}!Size@{Size}}
+\index{Size@{Size}!Image@{Image}}
+\doxysubsubsection{\texorpdfstring{Size}{Size}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structPixelSize}{Pixel\+Size}} Image.\+Size\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{classImage_a38874b1ddaa03e278c66630eefad1f00}\label{classImage_a38874b1ddaa03e278c66630eefad1f00}} 
+\index{Image@{Image}!SKImage@{SKImage}}
+\index{SKImage@{SKImage}!Image@{Image}}
+\doxysubsubsection{\texorpdfstring{SKImage}{SKImage}}
+{\footnotesize\ttfamily SKImage Image.\+SKImage\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classImage_a7def367d61536ddb8819509aa409bef9}\label{classImage_a7def367d61536ddb8819509aa409bef9}} 
+\index{Image@{Image}!Width@{Width}}
+\index{Width@{Width}!Image@{Image}}
+\doxysubsubsection{\texorpdfstring{Width}{Width}}
+{\footnotesize\ttfamily int Image.\+Width\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Primitives/Image.\+cs\end{DoxyCompactItemize}

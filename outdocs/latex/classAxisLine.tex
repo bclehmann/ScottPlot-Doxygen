@@ -1,0 +1,313 @@
+\hypertarget{classAxisLine}{}\doxysection{Axis\+Line Class Reference}
+\label{classAxisLine}\index{AxisLine@{AxisLine}}
+Inheritance diagram for Axis\+Line\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.270073cm]{classAxisLine}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+abstract bool \mbox{\hyperlink{classAxisLine_a9b8ee106a65f97ad00a55dc0117b161d}{Is\+Under\+Mouse}} (\mbox{\hyperlink{structCoordinateRect}{Coordinate\+Rect}} rect)
+\item 
+abstract \mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} \mbox{\hyperlink{classAxisLine_a27d4d4b88ed74cecd82ae9830bf33403}{Get\+Axis\+Limits}} ()
+\begin{DoxyCompactList}\small\item\em Return the 2D area (in coordinate space) occupied by the data contained in this plottable \end{DoxyCompactList}\item 
+abstract void \mbox{\hyperlink{classAxisLine_aa0cb2f156e29e28f42a41f3488310cc9}{Render}} (\mbox{\hyperlink{classRenderPack}{Render\+Pack}} rp)
+\begin{DoxyCompactList}\small\item\em Draw the data from this plottable into the data area defined in the \mbox{\hyperlink{classAxes}{Axes}}. By default the surface is already clipped to the data area, but this can be cleared inside the plottable. \end{DoxyCompactList}\item 
+abstract void \mbox{\hyperlink{classAxisLine_af0921fb9295ff2071d60fec430c6e322}{Render\+Last}} (\mbox{\hyperlink{classRenderPack}{Render\+Pack}} rp)
+\begin{DoxyCompactList}\small\item\em Plottables that implement this interface have a second render method that runs after the axes are drawn, allowing graphics to be placed on top of the axes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classAxisLine_ac597847107aaa17df13f2637e32040b7}{Is\+Visible}} = true\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{interfaceIAxes}{IAxes}} \mbox{\hyperlink{classAxisLine_a24bef13abf9db56415c88836dd1fd5a2}{Axes}} = new \mbox{\hyperlink{classAxes}{Axes}}()\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{classLineStyle}{Line\+Style}} \mbox{\hyperlink{classAxisLine_aa0dd3309d2f8b03a05bb2f0da99cce7d}{Line\+Style}} = new() \{ Width = 1 \}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{classAxisLine_ad2661eed3b4d821173afe5cc58ea6a56}{Line\+Width}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+Line\+Pattern \mbox{\hyperlink{classAxisLine_a61ef9b51462cb70e966dedb80e11738a}{Line\+Pattern}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{structColor}{Color}} \mbox{\hyperlink{classAxisLine_a7f0606ac93d71e3575af935579c637c8}{Line\+Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+override \mbox{\hyperlink{classLabelStyle}{Label\+Style}} \mbox{\hyperlink{classAxisLine_ae472d93797c4cba65edfccaac8bcff80}{Label\+Style}} = new()\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+string \mbox{\hyperlink{classAxisLine_a92d4dc942bf89540a2d1a78c9954029c}{Text}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+string \mbox{\hyperlink{classAxisLine_a6dab28fbae33124e6b497d827fa7c582}{Legend\+Text}} = string.\+Empty\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+Alignment? \mbox{\hyperlink{classAxisLine_af5be98f855a645c73c9e78a388c65fe8}{Manual\+Label\+Alignment}} = null\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+Alignment? \mbox{\hyperlink{classAxisLine_a7ac5813189c579d81c2df26115a7fad3}{Text\+Alignment}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{classLabelStyle}{Label\+Style}} \mbox{\hyperlink{classAxisLine_acc8a22d366d7c74f4cea2c6f10d54079}{Label}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{classAxisLine_a39580e916f08e770ff622ac60f8274eb}{Font\+Size}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+bool \mbox{\hyperlink{classAxisLine_aa3eaac97c5356035a03437266f741cfe}{Font\+Bold}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+string \mbox{\hyperlink{classAxisLine_a3a8b78675e50efa32a1244c5aeedfd61}{Font\+Name}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{structColor}{Color}} \mbox{\hyperlink{classAxisLine_a910daa93ac9d847b71d8aa921ba29fcb}{Font\+Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{structColor}{Color}} \mbox{\hyperlink{classAxisLine_a7ff921fdf4a659280e9801217c9fe1c2}{Text\+Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{structColor}{Color}} \mbox{\hyperlink{classAxisLine_ae0c187ef763554085a513b24e7daf39a}{Text\+Background\+Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{classAxisLine_a7d7a932708115b28d135aa055e06c822}{Text\+Rotation}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{classAxisLine_abf5d837cd73d3eb90845c291f3aeb5e2}{Text\+Size}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+bool \mbox{\hyperlink{classAxisLine_a4709ce5a6bc5b1d599d40fb5242482cb}{Label\+Opposite\+Axis}} = false\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+bool \mbox{\hyperlink{classAxisLine_a476c6811a68319c592e3871fdc61b966}{Is\+Draggable}} = false\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+bool \mbox{\hyperlink{classAxisLine_a855845a8bc30e690b5cf38e5949ad108}{Exclude\+From\+Legend}} = false\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+bool \mbox{\hyperlink{classAxisLine_ae9db53475e864c207e0f16323ca6bf6c}{Enable\+Autoscale}} = true\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{structColor}{Color}} \mbox{\hyperlink{classAxisLine_a305408a728d49319c669ea65c2d94a53}{Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+double \mbox{\hyperlink{classAxisLine_af1db0a5f4107f880c29beed7f423bf60}{Position}} = 0\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$ \mbox{\hyperlink{classLegendItem}{Legend\+Item}} $>$? \mbox{\hyperlink{classAxisLine_aa1f9103887deea10a671995c80c35060}{Legend\+Items}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classAxisLine_a27d4d4b88ed74cecd82ae9830bf33403}\label{classAxisLine_a27d4d4b88ed74cecd82ae9830bf33403}} 
+\index{AxisLine@{AxisLine}!GetAxisLimits@{GetAxisLimits}}
+\index{GetAxisLimits@{GetAxisLimits}!AxisLine@{AxisLine}}
+\doxysubsubsection{\texorpdfstring{GetAxisLimits()}{GetAxisLimits()}}
+{\footnotesize\ttfamily abstract \mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} Axis\+Line.\+Get\+Axis\+Limits (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Return the 2D area (in coordinate space) occupied by the data contained in this plottable 
+
+
+
+Implements \mbox{\hyperlink{interfaceIPlottable_ac98e2f5e56f9f938bbd081c87c7c6f50}{IPlottable}}.
+
+
+
+Implemented in \mbox{\hyperlink{classVerticalLine_a0c23726b6e8dce5e1f76388259d08632}{Vertical\+Line}}, and \mbox{\hyperlink{classHorizontalLine_a3699b28d2cf43ae832413546a4a6b7b6}{Horizontal\+Line}}.
+
+\mbox{\Hypertarget{classAxisLine_a9b8ee106a65f97ad00a55dc0117b161d}\label{classAxisLine_a9b8ee106a65f97ad00a55dc0117b161d}} 
+\index{AxisLine@{AxisLine}!IsUnderMouse@{IsUnderMouse}}
+\index{IsUnderMouse@{IsUnderMouse}!AxisLine@{AxisLine}}
+\doxysubsubsection{\texorpdfstring{IsUnderMouse()}{IsUnderMouse()}}
+{\footnotesize\ttfamily abstract bool Axis\+Line.\+Is\+Under\+Mouse (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structCoordinateRect}{Coordinate\+Rect}}}]{rect }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classVerticalLine_a755eaea84631fadaf1da8a3dd04ef555}{Vertical\+Line}}, and \mbox{\hyperlink{classHorizontalLine_a425f58ff74ff86904927942c51cf8edd}{Horizontal\+Line}}.
+
+\mbox{\Hypertarget{classAxisLine_aa0cb2f156e29e28f42a41f3488310cc9}\label{classAxisLine_aa0cb2f156e29e28f42a41f3488310cc9}} 
+\index{AxisLine@{AxisLine}!Render@{Render}}
+\index{Render@{Render}!AxisLine@{AxisLine}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily abstract void Axis\+Line.\+Render (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classRenderPack}{Render\+Pack}}}]{rp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Draw the data from this plottable into the data area defined in the \mbox{\hyperlink{classAxes}{Axes}}. By default the surface is already clipped to the data area, but this can be cleared inside the plottable. 
+
+
+
+Implements \mbox{\hyperlink{interfaceIPlottable_a201a1a236dc718eda93db143a5ade9f8}{IPlottable}}.
+
+
+
+Implemented in \mbox{\hyperlink{classVerticalLine_ac81672b51699c0d8f305b77ee53aa7b9}{Vertical\+Line}}, and \mbox{\hyperlink{classHorizontalLine_a672b320970ca93fbdd16c0dcdd39ac66}{Horizontal\+Line}}.
+
+\mbox{\Hypertarget{classAxisLine_af0921fb9295ff2071d60fec430c6e322}\label{classAxisLine_af0921fb9295ff2071d60fec430c6e322}} 
+\index{AxisLine@{AxisLine}!RenderLast@{RenderLast}}
+\index{RenderLast@{RenderLast}!AxisLine@{AxisLine}}
+\doxysubsubsection{\texorpdfstring{RenderLast()}{RenderLast()}}
+{\footnotesize\ttfamily abstract void Axis\+Line.\+Render\+Last (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classRenderPack}{Render\+Pack}}}]{rp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Plottables that implement this interface have a second render method that runs after the axes are drawn, allowing graphics to be placed on top of the axes. 
+
+
+
+Implements \mbox{\hyperlink{interfaceIRenderLast_a48d83d7c8c87ddffa18b0fbf746144df}{IRender\+Last}}.
+
+
+
+Implemented in \mbox{\hyperlink{classVerticalLine_abf64de46455b99487f7059990927401d}{Vertical\+Line}}, and \mbox{\hyperlink{classHorizontalLine_af18cfb76c00dcd46a71d7be59d8594a9}{Horizontal\+Line}}.
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{classAxisLine_a24bef13abf9db56415c88836dd1fd5a2}\label{classAxisLine_a24bef13abf9db56415c88836dd1fd5a2}} 
+\index{AxisLine@{AxisLine}!Axes@{Axes}}
+\index{Axes@{Axes}!AxisLine@{AxisLine}}
+\doxysubsubsection{\texorpdfstring{Axes}{Axes}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceIAxes}{IAxes}} Axis\+Line.\+Axes = new \mbox{\hyperlink{classAxes}{Axes}}()\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classAxisLine_a305408a728d49319c669ea65c2d94a53}\label{classAxisLine_a305408a728d49319c669ea65c2d94a53}} 
+\index{AxisLine@{AxisLine}!Color@{Color}}
+\index{Color@{Color}!AxisLine@{AxisLine}}
+\doxysubsubsection{\texorpdfstring{Color}{Color}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structColor}{Color}} Axis\+Line.\+Color\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classAxisLine_ae9db53475e864c207e0f16323ca6bf6c}\label{classAxisLine_ae9db53475e864c207e0f16323ca6bf6c}} 
+\index{AxisLine@{AxisLine}!EnableAutoscale@{EnableAutoscale}}
+\index{EnableAutoscale@{EnableAutoscale}!AxisLine@{AxisLine}}
+\doxysubsubsection{\texorpdfstring{EnableAutoscale}{EnableAutoscale}}
+{\footnotesize\ttfamily bool Axis\+Line.\+Enable\+Autoscale = true\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classAxisLine_a855845a8bc30e690b5cf38e5949ad108}\label{classAxisLine_a855845a8bc30e690b5cf38e5949ad108}} 
+\index{AxisLine@{AxisLine}!ExcludeFromLegend@{ExcludeFromLegend}}
+\index{ExcludeFromLegend@{ExcludeFromLegend}!AxisLine@{AxisLine}}
+\doxysubsubsection{\texorpdfstring{ExcludeFromLegend}{ExcludeFromLegend}}
+{\footnotesize\ttfamily bool Axis\+Line.\+Exclude\+From\+Legend = false\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classAxisLine_aa3eaac97c5356035a03437266f741cfe}\label{classAxisLine_aa3eaac97c5356035a03437266f741cfe}} 
+\index{AxisLine@{AxisLine}!FontBold@{FontBold}}
+\index{FontBold@{FontBold}!AxisLine@{AxisLine}}
+\doxysubsubsection{\texorpdfstring{FontBold}{FontBold}}
+{\footnotesize\ttfamily bool Axis\+Line.\+Font\+Bold\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classAxisLine_a910daa93ac9d847b71d8aa921ba29fcb}\label{classAxisLine_a910daa93ac9d847b71d8aa921ba29fcb}} 
+\index{AxisLine@{AxisLine}!FontColor@{FontColor}}
+\index{FontColor@{FontColor}!AxisLine@{AxisLine}}
+\doxysubsubsection{\texorpdfstring{FontColor}{FontColor}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structColor}{Color}} Axis\+Line.\+Font\+Color\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classAxisLine_a3a8b78675e50efa32a1244c5aeedfd61}\label{classAxisLine_a3a8b78675e50efa32a1244c5aeedfd61}} 
+\index{AxisLine@{AxisLine}!FontName@{FontName}}
+\index{FontName@{FontName}!AxisLine@{AxisLine}}
+\doxysubsubsection{\texorpdfstring{FontName}{FontName}}
+{\footnotesize\ttfamily string Axis\+Line.\+Font\+Name\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classAxisLine_a39580e916f08e770ff622ac60f8274eb}\label{classAxisLine_a39580e916f08e770ff622ac60f8274eb}} 
+\index{AxisLine@{AxisLine}!FontSize@{FontSize}}
+\index{FontSize@{FontSize}!AxisLine@{AxisLine}}
+\doxysubsubsection{\texorpdfstring{FontSize}{FontSize}}
+{\footnotesize\ttfamily float Axis\+Line.\+Font\+Size\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classAxisLine_a476c6811a68319c592e3871fdc61b966}\label{classAxisLine_a476c6811a68319c592e3871fdc61b966}} 
+\index{AxisLine@{AxisLine}!IsDraggable@{IsDraggable}}
+\index{IsDraggable@{IsDraggable}!AxisLine@{AxisLine}}
+\doxysubsubsection{\texorpdfstring{IsDraggable}{IsDraggable}}
+{\footnotesize\ttfamily bool Axis\+Line.\+Is\+Draggable = false\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classAxisLine_ac597847107aaa17df13f2637e32040b7}\label{classAxisLine_ac597847107aaa17df13f2637e32040b7}} 
+\index{AxisLine@{AxisLine}!IsVisible@{IsVisible}}
+\index{IsVisible@{IsVisible}!AxisLine@{AxisLine}}
+\doxysubsubsection{\texorpdfstring{IsVisible}{IsVisible}}
+{\footnotesize\ttfamily bool Axis\+Line.\+Is\+Visible = true\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classAxisLine_acc8a22d366d7c74f4cea2c6f10d54079}\label{classAxisLine_acc8a22d366d7c74f4cea2c6f10d54079}} 
+\index{AxisLine@{AxisLine}!Label@{Label}}
+\index{Label@{Label}!AxisLine@{AxisLine}}
+\doxysubsubsection{\texorpdfstring{Label}{Label}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classLabelStyle}{Label\+Style}} Axis\+Line.\+Label\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classAxisLine_a4709ce5a6bc5b1d599d40fb5242482cb}\label{classAxisLine_a4709ce5a6bc5b1d599d40fb5242482cb}} 
+\index{AxisLine@{AxisLine}!LabelOppositeAxis@{LabelOppositeAxis}}
+\index{LabelOppositeAxis@{LabelOppositeAxis}!AxisLine@{AxisLine}}
+\doxysubsubsection{\texorpdfstring{LabelOppositeAxis}{LabelOppositeAxis}}
+{\footnotesize\ttfamily bool Axis\+Line.\+Label\+Opposite\+Axis = false\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classAxisLine_ae472d93797c4cba65edfccaac8bcff80}\label{classAxisLine_ae472d93797c4cba65edfccaac8bcff80}} 
+\index{AxisLine@{AxisLine}!LabelStyle@{LabelStyle}}
+\index{LabelStyle@{LabelStyle}!AxisLine@{AxisLine}}
+\doxysubsubsection{\texorpdfstring{LabelStyle}{LabelStyle}}
+{\footnotesize\ttfamily override \mbox{\hyperlink{classLabelStyle}{Label\+Style}} Axis\+Line.\+Label\+Style = new()\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classAxisLine_aa1f9103887deea10a671995c80c35060}\label{classAxisLine_aa1f9103887deea10a671995c80c35060}} 
+\index{AxisLine@{AxisLine}!LegendItems@{LegendItems}}
+\index{LegendItems@{LegendItems}!AxisLine@{AxisLine}}
+\doxysubsubsection{\texorpdfstring{LegendItems}{LegendItems}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$\mbox{\hyperlink{classLegendItem}{Legend\+Item}}$>$? Axis\+Line.\+Legend\+Items\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{classAxisLine_a6dab28fbae33124e6b497d827fa7c582}\label{classAxisLine_a6dab28fbae33124e6b497d827fa7c582}} 
+\index{AxisLine@{AxisLine}!LegendText@{LegendText}}
+\index{LegendText@{LegendText}!AxisLine@{AxisLine}}
+\doxysubsubsection{\texorpdfstring{LegendText}{LegendText}}
+{\footnotesize\ttfamily string Axis\+Line.\+Legend\+Text = string.\+Empty\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classAxisLine_a7f0606ac93d71e3575af935579c637c8}\label{classAxisLine_a7f0606ac93d71e3575af935579c637c8}} 
+\index{AxisLine@{AxisLine}!LineColor@{LineColor}}
+\index{LineColor@{LineColor}!AxisLine@{AxisLine}}
+\doxysubsubsection{\texorpdfstring{LineColor}{LineColor}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structColor}{Color}} Axis\+Line.\+Line\+Color\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classAxisLine_a61ef9b51462cb70e966dedb80e11738a}\label{classAxisLine_a61ef9b51462cb70e966dedb80e11738a}} 
+\index{AxisLine@{AxisLine}!LinePattern@{LinePattern}}
+\index{LinePattern@{LinePattern}!AxisLine@{AxisLine}}
+\doxysubsubsection{\texorpdfstring{LinePattern}{LinePattern}}
+{\footnotesize\ttfamily Line\+Pattern Axis\+Line.\+Line\+Pattern\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classAxisLine_aa0dd3309d2f8b03a05bb2f0da99cce7d}\label{classAxisLine_aa0dd3309d2f8b03a05bb2f0da99cce7d}} 
+\index{AxisLine@{AxisLine}!LineStyle@{LineStyle}}
+\index{LineStyle@{LineStyle}!AxisLine@{AxisLine}}
+\doxysubsubsection{\texorpdfstring{LineStyle}{LineStyle}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classLineStyle}{Line\+Style}} Axis\+Line.\+Line\+Style = new() \{ Width = 1 \}\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classAxisLine_ad2661eed3b4d821173afe5cc58ea6a56}\label{classAxisLine_ad2661eed3b4d821173afe5cc58ea6a56}} 
+\index{AxisLine@{AxisLine}!LineWidth@{LineWidth}}
+\index{LineWidth@{LineWidth}!AxisLine@{AxisLine}}
+\doxysubsubsection{\texorpdfstring{LineWidth}{LineWidth}}
+{\footnotesize\ttfamily float Axis\+Line.\+Line\+Width\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classAxisLine_af5be98f855a645c73c9e78a388c65fe8}\label{classAxisLine_af5be98f855a645c73c9e78a388c65fe8}} 
+\index{AxisLine@{AxisLine}!ManualLabelAlignment@{ManualLabelAlignment}}
+\index{ManualLabelAlignment@{ManualLabelAlignment}!AxisLine@{AxisLine}}
+\doxysubsubsection{\texorpdfstring{ManualLabelAlignment}{ManualLabelAlignment}}
+{\footnotesize\ttfamily Alignment? Axis\+Line.\+Manual\+Label\+Alignment = null\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classAxisLine_af1db0a5f4107f880c29beed7f423bf60}\label{classAxisLine_af1db0a5f4107f880c29beed7f423bf60}} 
+\index{AxisLine@{AxisLine}!Position@{Position}}
+\index{Position@{Position}!AxisLine@{AxisLine}}
+\doxysubsubsection{\texorpdfstring{Position}{Position}}
+{\footnotesize\ttfamily double Axis\+Line.\+Position = 0\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classAxisLine_a92d4dc942bf89540a2d1a78c9954029c}\label{classAxisLine_a92d4dc942bf89540a2d1a78c9954029c}} 
+\index{AxisLine@{AxisLine}!Text@{Text}}
+\index{Text@{Text}!AxisLine@{AxisLine}}
+\doxysubsubsection{\texorpdfstring{Text}{Text}}
+{\footnotesize\ttfamily string Axis\+Line.\+Text\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classAxisLine_a7ac5813189c579d81c2df26115a7fad3}\label{classAxisLine_a7ac5813189c579d81c2df26115a7fad3}} 
+\index{AxisLine@{AxisLine}!TextAlignment@{TextAlignment}}
+\index{TextAlignment@{TextAlignment}!AxisLine@{AxisLine}}
+\doxysubsubsection{\texorpdfstring{TextAlignment}{TextAlignment}}
+{\footnotesize\ttfamily Alignment? Axis\+Line.\+Text\+Alignment\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classAxisLine_ae0c187ef763554085a513b24e7daf39a}\label{classAxisLine_ae0c187ef763554085a513b24e7daf39a}} 
+\index{AxisLine@{AxisLine}!TextBackgroundColor@{TextBackgroundColor}}
+\index{TextBackgroundColor@{TextBackgroundColor}!AxisLine@{AxisLine}}
+\doxysubsubsection{\texorpdfstring{TextBackgroundColor}{TextBackgroundColor}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structColor}{Color}} Axis\+Line.\+Text\+Background\+Color\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classAxisLine_a7ff921fdf4a659280e9801217c9fe1c2}\label{classAxisLine_a7ff921fdf4a659280e9801217c9fe1c2}} 
+\index{AxisLine@{AxisLine}!TextColor@{TextColor}}
+\index{TextColor@{TextColor}!AxisLine@{AxisLine}}
+\doxysubsubsection{\texorpdfstring{TextColor}{TextColor}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structColor}{Color}} Axis\+Line.\+Text\+Color\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classAxisLine_a7d7a932708115b28d135aa055e06c822}\label{classAxisLine_a7d7a932708115b28d135aa055e06c822}} 
+\index{AxisLine@{AxisLine}!TextRotation@{TextRotation}}
+\index{TextRotation@{TextRotation}!AxisLine@{AxisLine}}
+\doxysubsubsection{\texorpdfstring{TextRotation}{TextRotation}}
+{\footnotesize\ttfamily float Axis\+Line.\+Text\+Rotation\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classAxisLine_abf5d837cd73d3eb90845c291f3aeb5e2}\label{classAxisLine_abf5d837cd73d3eb90845c291f3aeb5e2}} 
+\index{AxisLine@{AxisLine}!TextSize@{TextSize}}
+\index{TextSize@{TextSize}!AxisLine@{AxisLine}}
+\doxysubsubsection{\texorpdfstring{TextSize}{TextSize}}
+{\footnotesize\ttfamily float Axis\+Line.\+Text\+Size\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Plottables/Axis\+Line.\+cs\end{DoxyCompactItemize}

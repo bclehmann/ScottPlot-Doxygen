@@ -1,0 +1,138 @@
+\hypertarget{classDataLoggerSource}{}\doxysection{Data\+Logger\+Source Class Reference}
+\label{classDataLoggerSource}\index{DataLoggerSource@{DataLoggerSource}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classDataLoggerSource_a8ddb4cd1ab07e234c07fd02655007121}{Data\+Logger\+Source}} (\mbox{\hyperlink{classIList}{IList}}$<$ \mbox{\hyperlink{structCoordinates}{Coordinates}} $>$ coordinates)
+\item 
+void \mbox{\hyperlink{classDataLoggerSource_ac8d487cb08360b00b21e007c197e44cf}{Add}} (\mbox{\hyperlink{structCoordinates}{Coordinates}} coordinates)
+\item 
+void \mbox{\hyperlink{classDataLoggerSource_ad4b2c5de539b3f5d20c7b4d1f2642e31}{On\+Rendered}} ()
+\item 
+\mbox{\hyperlink{structCoordinateRange}{Coordinate\+Range}} \mbox{\hyperlink{classDataLoggerSource_ad542e93cd2c97f8c098253c46f442b79}{Get\+RangeX}} ()
+\item 
+\mbox{\hyperlink{structCoordinateRange}{Coordinate\+Range}} \mbox{\hyperlink{classDataLoggerSource_a45f7be24350c54ee6ed5171234bfea44}{Get\+RangeY}} (\mbox{\hyperlink{structCoordinateRange}{Coordinate\+Range}} new\+RangeX)
+\item 
+\mbox{\hyperlink{structPixel}{Pixel}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classDataLoggerSource_a98071e7ca6cca21916dbfcc35bc7511d}{Get\+Pixels\+To\+Draw\+Horizontally}} (\mbox{\hyperlink{classRenderPack}{Render\+Pack}} rp, \mbox{\hyperlink{interfaceIAxes}{IAxes}} axes, Connect\+Style connect\+Style)
+\item 
+\mbox{\hyperlink{structPixel}{Pixel}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classDataLoggerSource_aa91cd6359bc0e8ceb934f01a20b432f9}{Get\+Pixels\+To\+Draw\+Vertically}} (\mbox{\hyperlink{classRenderPack}{Render\+Pack}} rp, \mbox{\hyperlink{interfaceIAxes}{IAxes}} axes, Connect\+Style connect\+Style)
+\item 
+int \mbox{\hyperlink{classDataLoggerSource_a33daaca6146644187ee048865cbc042d}{Get\+Index}} (double x)
+\begin{DoxyCompactList}\small\item\em Get the index associated with the given X position \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classIList}{IList}}$<$ \mbox{\hyperlink{structCoordinates}{Coordinates}} $>$ \mbox{\hyperlink{classDataLoggerSource_aa987d5624f0b445b140960aeedbad0ca}{Coordinates}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+double \mbox{\hyperlink{classDataLoggerSource_ab907613878a03e924469219b4de18a7f}{XOffset}} = 0\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+double \mbox{\hyperlink{classDataLoggerSource_a790c6ab78ca496de43e5bec6342f3f8f}{YOffset}} = 0\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+double \mbox{\hyperlink{classDataLoggerSource_afdbe35d0e0160e20582791fad4f16e90}{YScale}} = 1\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+bool \mbox{\hyperlink{classDataLoggerSource_a758ddb6fbc2ec2f102cec0b5e109f949}{Has\+New\+Data}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+bool \mbox{\hyperlink{classDataLoggerSource_a2fcee22f3adf06879f1554f62d1d1db4}{Was\+Rendered}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classDataLoggerSource_a8ddb4cd1ab07e234c07fd02655007121}\label{classDataLoggerSource_a8ddb4cd1ab07e234c07fd02655007121}} 
+\index{DataLoggerSource@{DataLoggerSource}!DataLoggerSource@{DataLoggerSource}}
+\index{DataLoggerSource@{DataLoggerSource}!DataLoggerSource@{DataLoggerSource}}
+\doxysubsubsection{\texorpdfstring{DataLoggerSource()}{DataLoggerSource()}}
+{\footnotesize\ttfamily Data\+Logger\+Source.\+Data\+Logger\+Source (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIList}{IList}}$<$ \mbox{\hyperlink{structCoordinates}{Coordinates}} $>$}]{coordinates }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classDataLoggerSource_ac8d487cb08360b00b21e007c197e44cf}\label{classDataLoggerSource_ac8d487cb08360b00b21e007c197e44cf}} 
+\index{DataLoggerSource@{DataLoggerSource}!Add@{Add}}
+\index{Add@{Add}!DataLoggerSource@{DataLoggerSource}}
+\doxysubsubsection{\texorpdfstring{Add()}{Add()}}
+{\footnotesize\ttfamily void Data\+Logger\+Source.\+Add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structCoordinates}{Coordinates}}}]{coordinates }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classDataLoggerSource_a33daaca6146644187ee048865cbc042d}\label{classDataLoggerSource_a33daaca6146644187ee048865cbc042d}} 
+\index{DataLoggerSource@{DataLoggerSource}!GetIndex@{GetIndex}}
+\index{GetIndex@{GetIndex}!DataLoggerSource@{DataLoggerSource}}
+\doxysubsubsection{\texorpdfstring{GetIndex()}{GetIndex()}}
+{\footnotesize\ttfamily int Data\+Logger\+Source.\+Get\+Index (\begin{DoxyParamCaption}\item[{double}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the index associated with the given X position 
+
+\mbox{\Hypertarget{classDataLoggerSource_a98071e7ca6cca21916dbfcc35bc7511d}\label{classDataLoggerSource_a98071e7ca6cca21916dbfcc35bc7511d}} 
+\index{DataLoggerSource@{DataLoggerSource}!GetPixelsToDrawHorizontally@{GetPixelsToDrawHorizontally}}
+\index{GetPixelsToDrawHorizontally@{GetPixelsToDrawHorizontally}!DataLoggerSource@{DataLoggerSource}}
+\doxysubsubsection{\texorpdfstring{GetPixelsToDrawHorizontally()}{GetPixelsToDrawHorizontally()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structPixel}{Pixel}} \mbox{[}$\,$\mbox{]} Data\+Logger\+Source.\+Get\+Pixels\+To\+Draw\+Horizontally (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classRenderPack}{Render\+Pack}}}]{rp,  }\item[{\mbox{\hyperlink{interfaceIAxes}{IAxes}}}]{axes,  }\item[{Connect\+Style}]{connect\+Style }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classDataLoggerSource_aa91cd6359bc0e8ceb934f01a20b432f9}\label{classDataLoggerSource_aa91cd6359bc0e8ceb934f01a20b432f9}} 
+\index{DataLoggerSource@{DataLoggerSource}!GetPixelsToDrawVertically@{GetPixelsToDrawVertically}}
+\index{GetPixelsToDrawVertically@{GetPixelsToDrawVertically}!DataLoggerSource@{DataLoggerSource}}
+\doxysubsubsection{\texorpdfstring{GetPixelsToDrawVertically()}{GetPixelsToDrawVertically()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structPixel}{Pixel}} \mbox{[}$\,$\mbox{]} Data\+Logger\+Source.\+Get\+Pixels\+To\+Draw\+Vertically (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classRenderPack}{Render\+Pack}}}]{rp,  }\item[{\mbox{\hyperlink{interfaceIAxes}{IAxes}}}]{axes,  }\item[{Connect\+Style}]{connect\+Style }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classDataLoggerSource_ad542e93cd2c97f8c098253c46f442b79}\label{classDataLoggerSource_ad542e93cd2c97f8c098253c46f442b79}} 
+\index{DataLoggerSource@{DataLoggerSource}!GetRangeX@{GetRangeX}}
+\index{GetRangeX@{GetRangeX}!DataLoggerSource@{DataLoggerSource}}
+\doxysubsubsection{\texorpdfstring{GetRangeX()}{GetRangeX()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structCoordinateRange}{Coordinate\+Range}} Data\+Logger\+Source.\+Get\+RangeX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classDataLoggerSource_a45f7be24350c54ee6ed5171234bfea44}\label{classDataLoggerSource_a45f7be24350c54ee6ed5171234bfea44}} 
+\index{DataLoggerSource@{DataLoggerSource}!GetRangeY@{GetRangeY}}
+\index{GetRangeY@{GetRangeY}!DataLoggerSource@{DataLoggerSource}}
+\doxysubsubsection{\texorpdfstring{GetRangeY()}{GetRangeY()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structCoordinateRange}{Coordinate\+Range}} Data\+Logger\+Source.\+Get\+RangeY (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structCoordinateRange}{Coordinate\+Range}}}]{new\+RangeX }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classDataLoggerSource_ad4b2c5de539b3f5d20c7b4d1f2642e31}\label{classDataLoggerSource_ad4b2c5de539b3f5d20c7b4d1f2642e31}} 
+\index{DataLoggerSource@{DataLoggerSource}!OnRendered@{OnRendered}}
+\index{OnRendered@{OnRendered}!DataLoggerSource@{DataLoggerSource}}
+\doxysubsubsection{\texorpdfstring{OnRendered()}{OnRendered()}}
+{\footnotesize\ttfamily void Data\+Logger\+Source.\+On\+Rendered (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{classDataLoggerSource_aa987d5624f0b445b140960aeedbad0ca}\label{classDataLoggerSource_aa987d5624f0b445b140960aeedbad0ca}} 
+\index{DataLoggerSource@{DataLoggerSource}!Coordinates@{Coordinates}}
+\index{Coordinates@{Coordinates}!DataLoggerSource@{DataLoggerSource}}
+\doxysubsubsection{\texorpdfstring{Coordinates}{Coordinates}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classIList}{IList}}$<$\mbox{\hyperlink{structCoordinates}{Coordinates}}$>$ Data\+Logger\+Source.\+Coordinates\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{classDataLoggerSource_a758ddb6fbc2ec2f102cec0b5e109f949}\label{classDataLoggerSource_a758ddb6fbc2ec2f102cec0b5e109f949}} 
+\index{DataLoggerSource@{DataLoggerSource}!HasNewData@{HasNewData}}
+\index{HasNewData@{HasNewData}!DataLoggerSource@{DataLoggerSource}}
+\doxysubsubsection{\texorpdfstring{HasNewData}{HasNewData}}
+{\footnotesize\ttfamily bool Data\+Logger\+Source.\+Has\+New\+Data\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{classDataLoggerSource_a2fcee22f3adf06879f1554f62d1d1db4}\label{classDataLoggerSource_a2fcee22f3adf06879f1554f62d1d1db4}} 
+\index{DataLoggerSource@{DataLoggerSource}!WasRendered@{WasRendered}}
+\index{WasRendered@{WasRendered}!DataLoggerSource@{DataLoggerSource}}
+\doxysubsubsection{\texorpdfstring{WasRendered}{WasRendered}}
+{\footnotesize\ttfamily bool Data\+Logger\+Source.\+Was\+Rendered\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classDataLoggerSource_ab907613878a03e924469219b4de18a7f}\label{classDataLoggerSource_ab907613878a03e924469219b4de18a7f}} 
+\index{DataLoggerSource@{DataLoggerSource}!XOffset@{XOffset}}
+\index{XOffset@{XOffset}!DataLoggerSource@{DataLoggerSource}}
+\doxysubsubsection{\texorpdfstring{XOffset}{XOffset}}
+{\footnotesize\ttfamily double Data\+Logger\+Source.\+XOffset = 0\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classDataLoggerSource_a790c6ab78ca496de43e5bec6342f3f8f}\label{classDataLoggerSource_a790c6ab78ca496de43e5bec6342f3f8f}} 
+\index{DataLoggerSource@{DataLoggerSource}!YOffset@{YOffset}}
+\index{YOffset@{YOffset}!DataLoggerSource@{DataLoggerSource}}
+\doxysubsubsection{\texorpdfstring{YOffset}{YOffset}}
+{\footnotesize\ttfamily double Data\+Logger\+Source.\+YOffset = 0\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classDataLoggerSource_afdbe35d0e0160e20582791fad4f16e90}\label{classDataLoggerSource_afdbe35d0e0160e20582791fad4f16e90}} 
+\index{DataLoggerSource@{DataLoggerSource}!YScale@{YScale}}
+\index{YScale@{YScale}!DataLoggerSource@{DataLoggerSource}}
+\doxysubsubsection{\texorpdfstring{YScale}{YScale}}
+{\footnotesize\ttfamily double Data\+Logger\+Source.\+YScale = 1\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Data\+Sources/Data\+Logger\+Source.\+cs\end{DoxyCompactItemize}

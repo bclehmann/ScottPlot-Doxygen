@@ -1,0 +1,27 @@
+var searchData=
+[
+  ['algae_2725',['Algae',['../classScottPlot_1_1Colormaps_1_1Algae.html',1,'ScottPlot::Colormaps']]],
+  ['amber_2726',['Amber',['../classAmber.html',1,'']]],
+  ['amp_2727',['Amp',['../classScottPlot_1_1Colormaps_1_1Amp.html',1,'ScottPlot::Colormaps']]],
+  ['angle_2728',['Angle',['../structAngle.html',1,'']]],
+  ['applyaxisrulesafterlayout_2729',['ApplyAxisRulesAfterLayout',['../classApplyAxisRulesAfterLayout.html',1,'']]],
+  ['applyaxisrulesbeforelayout_2730',['ApplyAxisRulesBeforeLayout',['../classApplyAxisRulesBeforeLayout.html',1,'']]],
+  ['argbcolormapbase_2731',['ArgbColormapBase',['../classArgbColormapBase.html',1,'']]],
+  ['arrow_2732',['Arrow',['../classArrow.html',1,'']]],
+  ['arrowhead_2733',['Arrowhead',['../classArrowhead.html',1,'']]],
+  ['arrowheadline_2734',['ArrowheadLine',['../classArrowheadLine.html',1,'']]],
+  ['arrowstyle_2735',['ArrowStyle',['../classArrowStyle.html',1,'']]],
+  ['attribute_2736',['Attribute',['../classAttribute.html',1,'']]],
+  ['aurora_2737',['Aurora',['../classAurora.html',1,'']]],
+  ['automatic_2738',['Automatic',['../classAutomatic.html',1,'']]],
+  ['autoscaleunsetaxes_2739',['AutoScaleUnsetAxes',['../classAutoScaleUnsetAxes.html',1,'']]],
+  ['avaplot_2740',['AvaPlot',['../classAvaPlot.html',1,'']]],
+  ['avaplotmenu_2741',['AvaPlotMenu',['../classAvaPlotMenu.html',1,'']]],
+  ['axes_2742',['Axes',['../classAxes.html',1,'']]],
+  ['axisbase_2743',['AxisBase',['../classAxisBase.html',1,'']]],
+  ['axislimits_2744',['AxisLimits',['../structAxisLimits.html',1,'']]],
+  ['axisline_2745',['AxisLine',['../classAxisLine.html',1,'']]],
+  ['axismanager_2746',['AxisManager',['../classAxisManager.html',1,'']]],
+  ['axisspan_2747',['AxisSpan',['../classAxisSpan.html',1,'']]],
+  ['axisspanundermouse_2748',['AxisSpanUnderMouse',['../classAxisSpanUnderMouse.html',1,'']]]
+];

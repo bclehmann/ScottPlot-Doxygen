@@ -1,0 +1,105 @@
+\hypertarget{interfaceIScatterSource}{}\doxysection{IScatter\+Source Interface Reference}
+\label{interfaceIScatterSource}\index{IScatterSource@{IScatterSource}}
+
+
+Represents a series of data points with distinct X and Y positions in coordinate space.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+IRead\+Only\+List$<$ \mbox{\hyperlink{structCoordinates}{Coordinates}} $>$ \mbox{\hyperlink{interfaceIScatterSource_aff4ed91aee034f0b9fd0519bf0aca587}{Get\+Scatter\+Points}} ()
+\begin{DoxyCompactList}\small\item\em Return a copy of the data in \mbox{\hyperlink{structCoordinates}{Coordinates}} format. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structDataPoint}{Data\+Point}} \mbox{\hyperlink{interfaceIScatterSource_a27e02519fc97fd5f7164a1e9aada2bc0}{Get\+Nearest}} (\mbox{\hyperlink{structCoordinates}{Coordinates}} location, \mbox{\hyperlink{structRenderDetails}{Render\+Details}} render\+Info, float max\+Distance=15)
+\begin{DoxyCompactList}\small\item\em Return the point nearest a specific location given the X/Y pixel scaling information from a previous render. Will return \mbox{\hyperlink{structDataPoint_a603f30d56d53e5db758b40e244e2ffe8}{Data\+Point.\+None}} if the nearest point is greater than {\itshape max\+Distance}  pixels away. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structDataPoint}{Data\+Point}} \mbox{\hyperlink{interfaceIScatterSource_aa2a12ef7b27644cd4b4577f0c7dca7df}{Get\+NearestX}} (\mbox{\hyperlink{structCoordinates}{Coordinates}} location, \mbox{\hyperlink{structRenderDetails}{Render\+Details}} render\+Info, float max\+Distance=15)
+\begin{DoxyCompactList}\small\item\em Return the point nearest a specific X location given the X/Y pixel scaling information from a previous render. Will return \mbox{\hyperlink{structDataPoint_a603f30d56d53e5db758b40e244e2ffe8}{Data\+Point.\+None}} if the nearest point is greater than {\itshape max\+Distance}  pixels away. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structCoordinateRange}{Coordinate\+Range}} \mbox{\hyperlink{interfaceIScatterSource_af7d0df08dbafabced9ebc3fff752e35c}{Get\+LimitsX}} ()
+\item 
+\mbox{\hyperlink{structCoordinateRange}{Coordinate\+Range}} \mbox{\hyperlink{interfaceIScatterSource_a17f1ffd7337129e1a72611bc12048755}{Get\+LimitsY}} ()
+\item 
+\mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} \mbox{\hyperlink{interfaceIScatterSource_a632912794d96d5c2b77c6bbc1de0c9c1}{Get\+Limits}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{interfaceIScatterSource_a279d84c9d32cd26a3bcf0609fead79ea}{Min\+Render\+Index}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+int \mbox{\hyperlink{interfaceIScatterSource_ab815a04534807ba6ed54b16e466c7fd3}{Max\+Render\+Index}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a series of data points with distinct X and Y positions in coordinate space. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{interfaceIScatterSource_a632912794d96d5c2b77c6bbc1de0c9c1}\label{interfaceIScatterSource_a632912794d96d5c2b77c6bbc1de0c9c1}} 
+\index{IScatterSource@{IScatterSource}!GetLimits@{GetLimits}}
+\index{GetLimits@{GetLimits}!IScatterSource@{IScatterSource}}
+\doxysubsubsection{\texorpdfstring{GetLimits()}{GetLimits()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} IScatter\+Source.\+Get\+Limits (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{interfaceIScatterSource_af7d0df08dbafabced9ebc3fff752e35c}\label{interfaceIScatterSource_af7d0df08dbafabced9ebc3fff752e35c}} 
+\index{IScatterSource@{IScatterSource}!GetLimitsX@{GetLimitsX}}
+\index{GetLimitsX@{GetLimitsX}!IScatterSource@{IScatterSource}}
+\doxysubsubsection{\texorpdfstring{GetLimitsX()}{GetLimitsX()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structCoordinateRange}{Coordinate\+Range}} IScatter\+Source.\+Get\+LimitsX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{interfaceIScatterSource_a17f1ffd7337129e1a72611bc12048755}\label{interfaceIScatterSource_a17f1ffd7337129e1a72611bc12048755}} 
+\index{IScatterSource@{IScatterSource}!GetLimitsY@{GetLimitsY}}
+\index{GetLimitsY@{GetLimitsY}!IScatterSource@{IScatterSource}}
+\doxysubsubsection{\texorpdfstring{GetLimitsY()}{GetLimitsY()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structCoordinateRange}{Coordinate\+Range}} IScatter\+Source.\+Get\+LimitsY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{interfaceIScatterSource_a27e02519fc97fd5f7164a1e9aada2bc0}\label{interfaceIScatterSource_a27e02519fc97fd5f7164a1e9aada2bc0}} 
+\index{IScatterSource@{IScatterSource}!GetNearest@{GetNearest}}
+\index{GetNearest@{GetNearest}!IScatterSource@{IScatterSource}}
+\doxysubsubsection{\texorpdfstring{GetNearest()}{GetNearest()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structDataPoint}{Data\+Point}} IScatter\+Source.\+Get\+Nearest (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structCoordinates}{Coordinates}}}]{location,  }\item[{\mbox{\hyperlink{structRenderDetails}{Render\+Details}}}]{render\+Info,  }\item[{float}]{max\+Distance = {\ttfamily 15} }\end{DoxyParamCaption})}
+
+
+
+Return the point nearest a specific location given the X/Y pixel scaling information from a previous render. Will return \mbox{\hyperlink{structDataPoint_a603f30d56d53e5db758b40e244e2ffe8}{Data\+Point.\+None}} if the nearest point is greater than {\itshape max\+Distance}  pixels away. 
+
+\mbox{\Hypertarget{interfaceIScatterSource_aa2a12ef7b27644cd4b4577f0c7dca7df}\label{interfaceIScatterSource_aa2a12ef7b27644cd4b4577f0c7dca7df}} 
+\index{IScatterSource@{IScatterSource}!GetNearestX@{GetNearestX}}
+\index{GetNearestX@{GetNearestX}!IScatterSource@{IScatterSource}}
+\doxysubsubsection{\texorpdfstring{GetNearestX()}{GetNearestX()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structDataPoint}{Data\+Point}} IScatter\+Source.\+Get\+NearestX (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structCoordinates}{Coordinates}}}]{location,  }\item[{\mbox{\hyperlink{structRenderDetails}{Render\+Details}}}]{render\+Info,  }\item[{float}]{max\+Distance = {\ttfamily 15} }\end{DoxyParamCaption})}
+
+
+
+Return the point nearest a specific X location given the X/Y pixel scaling information from a previous render. Will return \mbox{\hyperlink{structDataPoint_a603f30d56d53e5db758b40e244e2ffe8}{Data\+Point.\+None}} if the nearest point is greater than {\itshape max\+Distance}  pixels away. 
+
+\mbox{\Hypertarget{interfaceIScatterSource_aff4ed91aee034f0b9fd0519bf0aca587}\label{interfaceIScatterSource_aff4ed91aee034f0b9fd0519bf0aca587}} 
+\index{IScatterSource@{IScatterSource}!GetScatterPoints@{GetScatterPoints}}
+\index{GetScatterPoints@{GetScatterPoints}!IScatterSource@{IScatterSource}}
+\doxysubsubsection{\texorpdfstring{GetScatterPoints()}{GetScatterPoints()}}
+{\footnotesize\ttfamily IRead\+Only\+List$<$\mbox{\hyperlink{structCoordinates}{Coordinates}}$>$ IScatter\+Source.\+Get\+Scatter\+Points (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Return a copy of the data in \mbox{\hyperlink{structCoordinates}{Coordinates}} format. 
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{interfaceIScatterSource_ab815a04534807ba6ed54b16e466c7fd3}\label{interfaceIScatterSource_ab815a04534807ba6ed54b16e466c7fd3}} 
+\index{IScatterSource@{IScatterSource}!MaxRenderIndex@{MaxRenderIndex}}
+\index{MaxRenderIndex@{MaxRenderIndex}!IScatterSource@{IScatterSource}}
+\doxysubsubsection{\texorpdfstring{MaxRenderIndex}{MaxRenderIndex}}
+{\footnotesize\ttfamily int IScatter\+Source.\+Max\+Render\+Index\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{interfaceIScatterSource_a279d84c9d32cd26a3bcf0609fead79ea}\label{interfaceIScatterSource_a279d84c9d32cd26a3bcf0609fead79ea}} 
+\index{IScatterSource@{IScatterSource}!MinRenderIndex@{MinRenderIndex}}
+\index{MinRenderIndex@{MinRenderIndex}!IScatterSource@{IScatterSource}}
+\doxysubsubsection{\texorpdfstring{MinRenderIndex}{MinRenderIndex}}
+{\footnotesize\ttfamily int IScatter\+Source.\+Min\+Render\+Index\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Interfaces/IScatter\+Source.\+cs\end{DoxyCompactItemize}

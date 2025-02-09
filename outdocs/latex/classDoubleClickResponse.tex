@@ -1,0 +1,85 @@
+\hypertarget{classDoubleClickResponse}{}\doxysection{Double\+Click\+Response Class Reference}
+\label{classDoubleClickResponse}\index{DoubleClickResponse@{DoubleClickResponse}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structResponseInfo}{Response\+Info}} \mbox{\hyperlink{classDoubleClickResponse_a20a280910a4446e425dc3f72db97aa59}{Execute}} (\mbox{\hyperlink{classPlot}{Plot}} plot, \mbox{\hyperlink{interfaceIUserAction}{IUser\+Action}} user\+Action, \mbox{\hyperlink{classKeyboardState}{Keyboard\+State}} keys)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Time\+Span \mbox{\hyperlink{classDoubleClickResponse_ada46205a04f4bbf14f699ba582085e7f}{Maximum\+Time\+Between\+Clicks}} = Time\+Span.\+From\+Milliseconds(500)
+\begin{DoxyCompactList}\small\item\em Consecutive clicks are only considered a double-\/click if the time between the first click mouse down and second click mouse up does not exceed this value. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structMouseButton}{Mouse\+Button}} \mbox{\hyperlink{classDoubleClickResponse_a138386cbe479c1b001ce933cbfcf9dcd}{button}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+Action$<$ \mbox{\hyperlink{classPlot}{Plot}} \{ get;set;\}public \mbox{\hyperlink{structPixel}{Pixel}} $>$ \mbox{\hyperlink{classDoubleClickResponse_a4a30fc849a7a01daa56a181df4ff617f}{action}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{structMouseButton}{Mouse\+Button}} \mbox{\hyperlink{classDoubleClickResponse_a05a5275c6f173ab54352ae6e148cb200}{Mouse\+Button}} = \mbox{\hyperlink{classDoubleClickResponse_a138386cbe479c1b001ce933cbfcf9dcd}{button}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Which mouse button to watch for double-\/clicks. \end{DoxyCompactList}\item 
+Action$<$ \mbox{\hyperlink{classPlot}{Plot}}, \mbox{\hyperlink{structPixel}{Pixel}} $>$ \mbox{\hyperlink{classDoubleClickResponse_a57c88b6b08928dc3cddc288bc2ba3d75}{Response\+Action}} = \mbox{\hyperlink{classDoubleClickResponse_a4a30fc849a7a01daa56a181df4ff617f}{action}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em This action is invoked when a double-\/click occurs. Replace this action with your own logic to customize double-\/click behavior. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classDoubleClickResponse_a20a280910a4446e425dc3f72db97aa59}\label{classDoubleClickResponse_a20a280910a4446e425dc3f72db97aa59}} 
+\index{DoubleClickResponse@{DoubleClickResponse}!Execute@{Execute}}
+\index{Execute@{Execute}!DoubleClickResponse@{DoubleClickResponse}}
+\doxysubsubsection{\texorpdfstring{Execute()}{Execute()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structResponseInfo}{Response\+Info}} Double\+Click\+Response.\+Execute (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPlot}{Plot}}}]{plot,  }\item[{\mbox{\hyperlink{interfaceIUserAction}{IUser\+Action}}}]{user\+Action,  }\item[{\mbox{\hyperlink{classKeyboardState}{Keyboard\+State}}}]{keys }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classDoubleClickResponse_ada46205a04f4bbf14f699ba582085e7f}\label{classDoubleClickResponse_ada46205a04f4bbf14f699ba582085e7f}} 
+\index{DoubleClickResponse@{DoubleClickResponse}!MaximumTimeBetweenClicks@{MaximumTimeBetweenClicks}}
+\index{MaximumTimeBetweenClicks@{MaximumTimeBetweenClicks}!DoubleClickResponse@{DoubleClickResponse}}
+\doxysubsubsection{\texorpdfstring{MaximumTimeBetweenClicks}{MaximumTimeBetweenClicks}}
+{\footnotesize\ttfamily Time\+Span Double\+Click\+Response.\+Maximum\+Time\+Between\+Clicks = Time\+Span.\+From\+Milliseconds(500)}
+
+
+
+Consecutive clicks are only considered a double-\/click if the time between the first click mouse down and second click mouse up does not exceed this value. 
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{classDoubleClickResponse_a4a30fc849a7a01daa56a181df4ff617f}\label{classDoubleClickResponse_a4a30fc849a7a01daa56a181df4ff617f}} 
+\index{DoubleClickResponse@{DoubleClickResponse}!action@{action}}
+\index{action@{action}!DoubleClickResponse@{DoubleClickResponse}}
+\doxysubsubsection{\texorpdfstring{action}{action}}
+{\footnotesize\ttfamily Action$<$\mbox{\hyperlink{classPlot}{Plot}} \{ get; set; \}public \mbox{\hyperlink{structPixel}{Pixel}}$>$ Double\+Click\+Response.\+action\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classDoubleClickResponse_a138386cbe479c1b001ce933cbfcf9dcd}\label{classDoubleClickResponse_a138386cbe479c1b001ce933cbfcf9dcd}} 
+\index{DoubleClickResponse@{DoubleClickResponse}!button@{button}}
+\index{button@{button}!DoubleClickResponse@{DoubleClickResponse}}
+\doxysubsubsection{\texorpdfstring{button}{button}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structMouseButton}{Mouse\+Button}} Double\+Click\+Response.\+button\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classDoubleClickResponse_a05a5275c6f173ab54352ae6e148cb200}\label{classDoubleClickResponse_a05a5275c6f173ab54352ae6e148cb200}} 
+\index{DoubleClickResponse@{DoubleClickResponse}!MouseButton@{MouseButton}}
+\index{MouseButton@{MouseButton}!DoubleClickResponse@{DoubleClickResponse}}
+\doxysubsubsection{\texorpdfstring{MouseButton}{MouseButton}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structMouseButton}{Mouse\+Button}} Double\+Click\+Response.\+Mouse\+Button = \mbox{\hyperlink{classDoubleClickResponse_a138386cbe479c1b001ce933cbfcf9dcd}{button}}\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Which mouse button to watch for double-\/clicks. 
+
+\mbox{\Hypertarget{classDoubleClickResponse_a57c88b6b08928dc3cddc288bc2ba3d75}\label{classDoubleClickResponse_a57c88b6b08928dc3cddc288bc2ba3d75}} 
+\index{DoubleClickResponse@{DoubleClickResponse}!ResponseAction@{ResponseAction}}
+\index{ResponseAction@{ResponseAction}!DoubleClickResponse@{DoubleClickResponse}}
+\doxysubsubsection{\texorpdfstring{ResponseAction}{ResponseAction}}
+{\footnotesize\ttfamily Action$<$\mbox{\hyperlink{classPlot}{Plot}}, \mbox{\hyperlink{structPixel}{Pixel}}$>$ Double\+Click\+Response.\+Response\+Action = \mbox{\hyperlink{classDoubleClickResponse_a4a30fc849a7a01daa56a181df4ff617f}{action}}\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+This action is invoked when a double-\/click occurs. Replace this action with your own logic to customize double-\/click behavior. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Interactivity/\+User\+Action\+Responses/Double\+Click\+Response.\+cs\end{DoxyCompactItemize}

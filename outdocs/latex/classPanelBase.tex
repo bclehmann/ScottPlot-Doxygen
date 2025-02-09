@@ -1,0 +1,127 @@
+\hypertarget{classPanelBase}{}\doxysection{Panel\+Base Class Reference}
+\label{classPanelBase}\index{PanelBase@{PanelBase}}
+Inheritance diagram for Panel\+Base\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classPanelBase}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+abstract float \mbox{\hyperlink{classPanelBase_a5aa306195e3f7a1fd5a41df159eed8c1}{Measure}} ()
+\begin{DoxyCompactList}\small\item\em Return the size (in pixels) of the panel in the dimension perpendicular to the edge it lays on \end{DoxyCompactList}\item 
+abstract void \mbox{\hyperlink{classPanelBase_a2a07daab584d7db2bdab6c9c892e7cf5}{Render}} (\mbox{\hyperlink{classRenderPack}{Render\+Pack}} rp, float size, float offset)
+\begin{DoxyCompactList}\small\item\em Draw this panel on a canvas \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structPixelRect}{Pixel\+Rect}} \mbox{\hyperlink{classPanelBase_ac6e7212ec029bb898aa18635c9445ad9}{Get\+Panel\+Rect}} (\mbox{\hyperlink{structPixelRect}{Pixel\+Rect}} data\+Rect, float size, float offset)
+\begin{DoxyCompactList}\small\item\em Return the rectangle for this panel \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classPanelBase_a1c4ed14c831b43de78c5fb258dbfe126}{Is\+Visible}} = true\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+Edge \mbox{\hyperlink{classPanelBase_a574b4e13d5cf33555f76a3a2db80dcc5}{Edge}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+bool \mbox{\hyperlink{classPanelBase_a0ec526d23fef840c5820a6a786c0bb8d}{Show\+Debug\+Information}} = false\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{classPanelBase_ab369dacc8167e5089f5d123b052e3464}{Minimum\+Size}} = 0\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{classPanelBase_af535690281119716aa333f6e108545c9}{Maximum\+Size}} = float.\+Max\+Value\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPanelBase_ac6e7212ec029bb898aa18635c9445ad9}\label{classPanelBase_ac6e7212ec029bb898aa18635c9445ad9}} 
+\index{PanelBase@{PanelBase}!GetPanelRect@{GetPanelRect}}
+\index{GetPanelRect@{GetPanelRect}!PanelBase@{PanelBase}}
+\doxysubsubsection{\texorpdfstring{GetPanelRect()}{GetPanelRect()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structPixelRect}{Pixel\+Rect}} Panel\+Base.\+Get\+Panel\+Rect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPixelRect}{Pixel\+Rect}}}]{data\+Rect,  }\item[{float}]{size,  }\item[{float}]{offset }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return the rectangle for this panel 
+
+
+
+Implements \mbox{\hyperlink{interfaceIPanel_a0e0b911af145b8a7797de86bd6e3d94e}{IPanel}}.
+
+\mbox{\Hypertarget{classPanelBase_a5aa306195e3f7a1fd5a41df159eed8c1}\label{classPanelBase_a5aa306195e3f7a1fd5a41df159eed8c1}} 
+\index{PanelBase@{PanelBase}!Measure@{Measure}}
+\index{Measure@{Measure}!PanelBase@{PanelBase}}
+\doxysubsubsection{\texorpdfstring{Measure()}{Measure()}}
+{\footnotesize\ttfamily abstract float Panel\+Base.\+Measure (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Return the size (in pixels) of the panel in the dimension perpendicular to the edge it lays on 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfaceIPanel_a974b8efde6b8f1b9e573d4437e18b59d}{IPanel}}.
+
+\mbox{\Hypertarget{classPanelBase_a2a07daab584d7db2bdab6c9c892e7cf5}\label{classPanelBase_a2a07daab584d7db2bdab6c9c892e7cf5}} 
+\index{PanelBase@{PanelBase}!Render@{Render}}
+\index{Render@{Render}!PanelBase@{PanelBase}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily abstract void Panel\+Base.\+Render (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classRenderPack}{Render\+Pack}}}]{rp,  }\item[{float}]{size,  }\item[{float}]{offset }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Draw this panel on a canvas 
+
+
+\begin{DoxyParams}{Parameters}
+{\em surface} & contains the canvas to draw on\\
+\hline
+{\em data\+Rect} & dimensions of the data area (pixel units)\\
+\hline
+{\em size} & size of this panel (pixel units)\\
+\hline
+{\em offset} & distance from the edge of this panel to the edge of the data area\\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interfaceIPanel_a521381a218c86184b8ea51fa8a45c46d}{IPanel}}.
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{classPanelBase_a574b4e13d5cf33555f76a3a2db80dcc5}\label{classPanelBase_a574b4e13d5cf33555f76a3a2db80dcc5}} 
+\index{PanelBase@{PanelBase}!Edge@{Edge}}
+\index{Edge@{Edge}!PanelBase@{PanelBase}}
+\doxysubsubsection{\texorpdfstring{Edge}{Edge}}
+{\footnotesize\ttfamily Edge Panel\+Base.\+Edge\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classPanelBase_a1c4ed14c831b43de78c5fb258dbfe126}\label{classPanelBase_a1c4ed14c831b43de78c5fb258dbfe126}} 
+\index{PanelBase@{PanelBase}!IsVisible@{IsVisible}}
+\index{IsVisible@{IsVisible}!PanelBase@{PanelBase}}
+\doxysubsubsection{\texorpdfstring{IsVisible}{IsVisible}}
+{\footnotesize\ttfamily bool Panel\+Base.\+Is\+Visible = true\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classPanelBase_af535690281119716aa333f6e108545c9}\label{classPanelBase_af535690281119716aa333f6e108545c9}} 
+\index{PanelBase@{PanelBase}!MaximumSize@{MaximumSize}}
+\index{MaximumSize@{MaximumSize}!PanelBase@{PanelBase}}
+\doxysubsubsection{\texorpdfstring{MaximumSize}{MaximumSize}}
+{\footnotesize\ttfamily float Panel\+Base.\+Maximum\+Size = float.\+Max\+Value\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classPanelBase_ab369dacc8167e5089f5d123b052e3464}\label{classPanelBase_ab369dacc8167e5089f5d123b052e3464}} 
+\index{PanelBase@{PanelBase}!MinimumSize@{MinimumSize}}
+\index{MinimumSize@{MinimumSize}!PanelBase@{PanelBase}}
+\doxysubsubsection{\texorpdfstring{MinimumSize}{MinimumSize}}
+{\footnotesize\ttfamily float Panel\+Base.\+Minimum\+Size = 0\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classPanelBase_a0ec526d23fef840c5820a6a786c0bb8d}\label{classPanelBase_a0ec526d23fef840c5820a6a786c0bb8d}} 
+\index{PanelBase@{PanelBase}!ShowDebugInformation@{ShowDebugInformation}}
+\index{ShowDebugInformation@{ShowDebugInformation}!PanelBase@{PanelBase}}
+\doxysubsubsection{\texorpdfstring{ShowDebugInformation}{ShowDebugInformation}}
+{\footnotesize\ttfamily bool Panel\+Base.\+Show\+Debug\+Information = false\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Panels/Panel\+Base.\+cs\end{DoxyCompactItemize}

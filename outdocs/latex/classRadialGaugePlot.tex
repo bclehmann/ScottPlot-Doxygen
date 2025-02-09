@@ -1,0 +1,380 @@
+\hypertarget{classRadialGaugePlot}{}\doxysection{Radial\+Gauge\+Plot Class Reference}
+\label{classRadialGaugePlot}\index{RadialGaugePlot@{RadialGaugePlot}}
+
+
+A radial gauge chart is a graphical method of displaying scalar data in the form of a chart made of circular gauges so that each scalar is represented by each gauge.  
+
+
+Inheritance diagram for Radial\+Gauge\+Plot\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classRadialGaugePlot}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classRadialGaugePlot_ab93edcf097a866e99ea535d5ee961186}{Radial\+Gauge\+Plot}} (double\mbox{[}$\,$\mbox{]} levels, \mbox{\hyperlink{structColor}{Color}}\mbox{[}$\,$\mbox{]} colors)
+\item 
+override string \mbox{\hyperlink{classRadialGaugePlot_a52f879762f4c09362cdef92072425c69}{To\+String}} ()
+\item 
+void \mbox{\hyperlink{classRadialGaugePlot_a97af313a21fa8bd1d12c1727107938c6}{Update}} (double\mbox{[}$\,$\mbox{]} levels, \mbox{\hyperlink{structColor}{Color}}\mbox{[}$\,$\mbox{]}? colors=null)
+\begin{DoxyCompactList}\small\item\em Replace gauge levels with new ones. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classRadialGaugePlot_a3ccc1aa9fc673df41cefc86e1dcf8d1f}{Validate\+Data}} (bool deep=false)
+\item 
+\mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} \mbox{\hyperlink{classRadialGaugePlot_abd4b7947bb2990f060a768dcf2437bda}{Get\+Axis\+Limits}} ()
+\begin{DoxyCompactList}\small\item\em Return the 2D area (in coordinate space) occupied by the data contained in this plottable \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classRadialGaugePlot_a7c95bdb86409f808ed0fe4f4a65eef9b}{Render}} (\mbox{\hyperlink{classRenderPack}{Render\+Pack}} rp)
+\begin{DoxyCompactList}\small\item\em Draw the data from this plottable into the data area defined in the \mbox{\hyperlink{classAxes}{Axes}}. By default the surface is already clipped to the data area, but this can be cleared inside the plottable. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+readonly \mbox{\hyperlink{classFontStyle}{Font\+Style}} \mbox{\hyperlink{classRadialGaugePlot_a53787e8ca63e3b36250fb715d8666c7d}{Font}} = new()
+\begin{DoxyCompactList}\small\item\em Describes labels drawn on each gauge. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interfaceIAxes}{IAxes}} \mbox{\hyperlink{classRadialGaugePlot_a71eecfc5436f82cf31e608bc42c04731}{Axes}} = new \mbox{\hyperlink{classAxes}{Axes}}()\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+double\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classRadialGaugePlot_ab991810e7274914dd5e64245d152ab9d}{Levels}} = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em This array holds the original levels passed-\/in by the user. These levels are used to calculate radial gauge positions on every render. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classRadialGaugePlot_aa70662c311860bf9da43f18a9ec4de3f}{Gauge\+Count}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Number of gauges. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classRadialGaugePlot_acd593330d28806f211279911c25edf47}{Maximum\+Angle}} = 360\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Maximum size (degrees) for the gauge. 180 is a semicircle and 360 is a full circle. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classRadialGaugePlot_a9c0ce1a9f83290d675ca7084b2ed285c}{Circular\+Background}} = true\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Controls whether the backgrounds of the gauges are full circles or stop at the maximum angle. \end{DoxyCompactList}\item 
+string?\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classRadialGaugePlot_a39a9596c4ba38e2a3250c8f2fffbce3b}{Labels}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Labels that appear in the legend for each gauge. Number of labels must equal number of gauges. May be null if gauges are not to appear in the legend. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structColor}{Color}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classRadialGaugePlot_a0d882eb8d8362088b49a7a11cb0ea973}{Colors}} = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{structColors}{Colors}} for each gauge. Number of colors must equal number of gauges. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classRadialGaugePlot_aa01ee4bb01bee442e3559b5fcaf36541}{Background\+Transparency\+Fraction}} = .\+15\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Describes how transparent the unfilled background of each gauge is (0 to 1). The larger the number the darker the background becomes. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classRadialGaugePlot_ae888b5c352e78f37f899a17d9b6eadbc}{Clockwise}} = true\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Indicates whether gauges fill clockwise as levels increase. If false, gauges will fill counter-\/clockwise (anti-\/clockwise). \end{DoxyCompactList}\item 
+Radial\+Gauge\+Mode \mbox{\hyperlink{classRadialGaugePlot_a2c39927d27e5374ce620dcab4e7e736b}{Gauge\+Mode}} = Radial\+Gauge\+Mode.\+Stacked\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Determines whether the gauges are drawn stacked (dafault value), sequentially, or as a single gauge (ressembling a pie plot). \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classRadialGaugePlot_a8cc50df0b949ae02f2b30dcfea067288}{Order\+Inside\+Out}} = true\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Controls whether gauges will be dwan inside-\/out (true) or outside-\/in (false) \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classRadialGaugePlot_ab6c08d6831891d56872372aeb0d45231}{Label\+Position\+Fraction}} = 1\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Defines where the gauge label is written on the gage as a fraction of its length. Low values place the label near the base and high values place the label at its tip. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classRadialGaugePlot_a7d628401a1cf2cf5d79ed2d2dfb5a512}{Starting\+Angle}} = 270\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{structAngle}{Angle}} (degrees) at which the gauges start. 270° for North (default value), 0° for East, 90° for South, 180° for West, etc. Expected values in the range \mbox{[}0°-\/360°\mbox{]}, otherwise unexpected side-\/effects might happen. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classRadialGaugePlot_ada86ac1b773bfde1e88f583ce97b154f}{Space\+Fraction}} = .\+5f\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The empty space between gauges as a fraction of the gauge width. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classRadialGaugePlot_aecf14769933915b00a1f2ee77a06b8bf}{Font\+Size\+Fraction}} = .\+75\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Size of the gague label text as a fraction of the gauge width. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classRadialGaugePlot_af938c20d55e883f7bd536ae7a7c27754}{Show\+Levels}} = true\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Controls if value labels are shown inside the gauges. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classRadialGaugePlot_a956eb57e8ca63a3044a359189fcc504c}{Level\+Text\+Format}} = \char`\"{}0.\#\#\char`\"{}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em String formatter to use for converting gauge levels to text \end{DoxyCompactList}\item 
+Skia\+Sharp.\+SKStroke\+Cap \mbox{\hyperlink{classRadialGaugePlot_a4c32e331e3575af2a1ae21bb22552567}{End\+Cap}} = SKStroke\+Cap.\+Round\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Style of the tip of the gauge \end{DoxyCompactList}\item 
+Skia\+Sharp.\+SKStroke\+Cap \mbox{\hyperlink{classRadialGaugePlot_ad072ddd6c4bbbb690c14378d9cad7c1d}{Start\+Cap}} = SKStroke\+Cap.\+Round\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Style of the base of the gauge \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classRadialGaugePlot_a1f3329e966d436c234630fcc8e4202d7}{Is\+Visible}} = true\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+int \mbox{\hyperlink{classRadialGaugePlot_a31d250b5a819ce01fdf8f283139058bd}{XAxis\+Index}} = 0\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+int \mbox{\hyperlink{classRadialGaugePlot_a8faba8bf0b411058d12b46ca0ccf06d8}{YAxis\+Index}} = 0\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$ \mbox{\hyperlink{classLegendItem}{Legend\+Item}} $>$ \mbox{\hyperlink{classRadialGaugePlot_a12dcb42a5cfa907c4e069ce2a0ad5d6d}{Legend\+Items}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A radial gauge chart is a graphical method of displaying scalar data in the form of a chart made of circular gauges so that each scalar is represented by each gauge. 
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classRadialGaugePlot_ab93edcf097a866e99ea535d5ee961186}\label{classRadialGaugePlot_ab93edcf097a866e99ea535d5ee961186}} 
+\index{RadialGaugePlot@{RadialGaugePlot}!RadialGaugePlot@{RadialGaugePlot}}
+\index{RadialGaugePlot@{RadialGaugePlot}!RadialGaugePlot@{RadialGaugePlot}}
+\doxysubsubsection{\texorpdfstring{RadialGaugePlot()}{RadialGaugePlot()}}
+{\footnotesize\ttfamily Radial\+Gauge\+Plot.\+Radial\+Gauge\+Plot (\begin{DoxyParamCaption}\item[{double\mbox{[}$\,$\mbox{]}}]{levels,  }\item[{\mbox{\hyperlink{structColor}{Color}}\mbox{[}$\,$\mbox{]}}]{colors }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classRadialGaugePlot_abd4b7947bb2990f060a768dcf2437bda}\label{classRadialGaugePlot_abd4b7947bb2990f060a768dcf2437bda}} 
+\index{RadialGaugePlot@{RadialGaugePlot}!GetAxisLimits@{GetAxisLimits}}
+\index{GetAxisLimits@{GetAxisLimits}!RadialGaugePlot@{RadialGaugePlot}}
+\doxysubsubsection{\texorpdfstring{GetAxisLimits()}{GetAxisLimits()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} Radial\+Gauge\+Plot.\+Get\+Axis\+Limits (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return the 2D area (in coordinate space) occupied by the data contained in this plottable 
+
+
+
+Implements \mbox{\hyperlink{interfaceIPlottable_ac98e2f5e56f9f938bbd081c87c7c6f50}{IPlottable}}.
+
+\mbox{\Hypertarget{classRadialGaugePlot_a7c95bdb86409f808ed0fe4f4a65eef9b}\label{classRadialGaugePlot_a7c95bdb86409f808ed0fe4f4a65eef9b}} 
+\index{RadialGaugePlot@{RadialGaugePlot}!Render@{Render}}
+\index{Render@{Render}!RadialGaugePlot@{RadialGaugePlot}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily virtual void Radial\+Gauge\+Plot.\+Render (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classRenderPack}{Render\+Pack}}}]{rp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Draw the data from this plottable into the data area defined in the \mbox{\hyperlink{classAxes}{Axes}}. By default the surface is already clipped to the data area, but this can be cleared inside the plottable. 
+
+
+
+Implements \mbox{\hyperlink{interfaceIPlottable_a201a1a236dc718eda93db143a5ade9f8}{IPlottable}}.
+
+\mbox{\Hypertarget{classRadialGaugePlot_a52f879762f4c09362cdef92072425c69}\label{classRadialGaugePlot_a52f879762f4c09362cdef92072425c69}} 
+\index{RadialGaugePlot@{RadialGaugePlot}!ToString@{ToString}}
+\index{ToString@{ToString}!RadialGaugePlot@{RadialGaugePlot}}
+\doxysubsubsection{\texorpdfstring{ToString()}{ToString()}}
+{\footnotesize\ttfamily override string Radial\+Gauge\+Plot.\+To\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classRadialGaugePlot_a97af313a21fa8bd1d12c1727107938c6}\label{classRadialGaugePlot_a97af313a21fa8bd1d12c1727107938c6}} 
+\index{RadialGaugePlot@{RadialGaugePlot}!Update@{Update}}
+\index{Update@{Update}!RadialGaugePlot@{RadialGaugePlot}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Radial\+Gauge\+Plot.\+Update (\begin{DoxyParamCaption}\item[{double\mbox{[}$\,$\mbox{]}}]{levels,  }\item[{\mbox{\hyperlink{structColor}{Color}}?\mbox{[}$\,$\mbox{]}}]{colors = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Replace gauge levels with new ones. 
+
+\mbox{\Hypertarget{classRadialGaugePlot_a3ccc1aa9fc673df41cefc86e1dcf8d1f}\label{classRadialGaugePlot_a3ccc1aa9fc673df41cefc86e1dcf8d1f}} 
+\index{RadialGaugePlot@{RadialGaugePlot}!ValidateData@{ValidateData}}
+\index{ValidateData@{ValidateData}!RadialGaugePlot@{RadialGaugePlot}}
+\doxysubsubsection{\texorpdfstring{ValidateData()}{ValidateData()}}
+{\footnotesize\ttfamily void Radial\+Gauge\+Plot.\+Validate\+Data (\begin{DoxyParamCaption}\item[{bool}]{deep = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classRadialGaugePlot_a53787e8ca63e3b36250fb715d8666c7d}\label{classRadialGaugePlot_a53787e8ca63e3b36250fb715d8666c7d}} 
+\index{RadialGaugePlot@{RadialGaugePlot}!Font@{Font}}
+\index{Font@{Font}!RadialGaugePlot@{RadialGaugePlot}}
+\doxysubsubsection{\texorpdfstring{Font}{Font}}
+{\footnotesize\ttfamily readonly \mbox{\hyperlink{classFontStyle}{Font\+Style}} Radial\+Gauge\+Plot.\+Font = new()}
+
+
+
+Describes labels drawn on each gauge. 
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{classRadialGaugePlot_a71eecfc5436f82cf31e608bc42c04731}\label{classRadialGaugePlot_a71eecfc5436f82cf31e608bc42c04731}} 
+\index{RadialGaugePlot@{RadialGaugePlot}!Axes@{Axes}}
+\index{Axes@{Axes}!RadialGaugePlot@{RadialGaugePlot}}
+\doxysubsubsection{\texorpdfstring{Axes}{Axes}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceIAxes}{IAxes}} Radial\+Gauge\+Plot.\+Axes = new \mbox{\hyperlink{classAxes}{Axes}}()\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classRadialGaugePlot_aa01ee4bb01bee442e3559b5fcaf36541}\label{classRadialGaugePlot_aa01ee4bb01bee442e3559b5fcaf36541}} 
+\index{RadialGaugePlot@{RadialGaugePlot}!BackgroundTransparencyFraction@{BackgroundTransparencyFraction}}
+\index{BackgroundTransparencyFraction@{BackgroundTransparencyFraction}!RadialGaugePlot@{RadialGaugePlot}}
+\doxysubsubsection{\texorpdfstring{BackgroundTransparencyFraction}{BackgroundTransparencyFraction}}
+{\footnotesize\ttfamily double Radial\+Gauge\+Plot.\+Background\+Transparency\+Fraction = .\+15\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Describes how transparent the unfilled background of each gauge is (0 to 1). The larger the number the darker the background becomes. 
+
+\mbox{\Hypertarget{classRadialGaugePlot_a9c0ce1a9f83290d675ca7084b2ed285c}\label{classRadialGaugePlot_a9c0ce1a9f83290d675ca7084b2ed285c}} 
+\index{RadialGaugePlot@{RadialGaugePlot}!CircularBackground@{CircularBackground}}
+\index{CircularBackground@{CircularBackground}!RadialGaugePlot@{RadialGaugePlot}}
+\doxysubsubsection{\texorpdfstring{CircularBackground}{CircularBackground}}
+{\footnotesize\ttfamily bool Radial\+Gauge\+Plot.\+Circular\+Background = true\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Controls whether the backgrounds of the gauges are full circles or stop at the maximum angle. 
+
+\mbox{\Hypertarget{classRadialGaugePlot_ae888b5c352e78f37f899a17d9b6eadbc}\label{classRadialGaugePlot_ae888b5c352e78f37f899a17d9b6eadbc}} 
+\index{RadialGaugePlot@{RadialGaugePlot}!Clockwise@{Clockwise}}
+\index{Clockwise@{Clockwise}!RadialGaugePlot@{RadialGaugePlot}}
+\doxysubsubsection{\texorpdfstring{Clockwise}{Clockwise}}
+{\footnotesize\ttfamily bool Radial\+Gauge\+Plot.\+Clockwise = true\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Indicates whether gauges fill clockwise as levels increase. If false, gauges will fill counter-\/clockwise (anti-\/clockwise). 
+
+\mbox{\Hypertarget{classRadialGaugePlot_a0d882eb8d8362088b49a7a11cb0ea973}\label{classRadialGaugePlot_a0d882eb8d8362088b49a7a11cb0ea973}} 
+\index{RadialGaugePlot@{RadialGaugePlot}!Colors@{Colors}}
+\index{Colors@{Colors}!RadialGaugePlot@{RadialGaugePlot}}
+\doxysubsubsection{\texorpdfstring{Colors}{Colors}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structColor}{Color}} \mbox{[}$\,$\mbox{]} Radial\+Gauge\+Plot.\+Colors = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+\mbox{\hyperlink{structColors}{Colors}} for each gauge. Number of colors must equal number of gauges. 
+
+\mbox{\Hypertarget{classRadialGaugePlot_a4c32e331e3575af2a1ae21bb22552567}\label{classRadialGaugePlot_a4c32e331e3575af2a1ae21bb22552567}} 
+\index{RadialGaugePlot@{RadialGaugePlot}!EndCap@{EndCap}}
+\index{EndCap@{EndCap}!RadialGaugePlot@{RadialGaugePlot}}
+\doxysubsubsection{\texorpdfstring{EndCap}{EndCap}}
+{\footnotesize\ttfamily Skia\+Sharp.\+SKStroke\+Cap Radial\+Gauge\+Plot.\+End\+Cap = SKStroke\+Cap.\+Round\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Style of the tip of the gauge 
+
+\mbox{\Hypertarget{classRadialGaugePlot_aecf14769933915b00a1f2ee77a06b8bf}\label{classRadialGaugePlot_aecf14769933915b00a1f2ee77a06b8bf}} 
+\index{RadialGaugePlot@{RadialGaugePlot}!FontSizeFraction@{FontSizeFraction}}
+\index{FontSizeFraction@{FontSizeFraction}!RadialGaugePlot@{RadialGaugePlot}}
+\doxysubsubsection{\texorpdfstring{FontSizeFraction}{FontSizeFraction}}
+{\footnotesize\ttfamily double Radial\+Gauge\+Plot.\+Font\+Size\+Fraction = .\+75\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Size of the gague label text as a fraction of the gauge width. 
+
+\mbox{\Hypertarget{classRadialGaugePlot_aa70662c311860bf9da43f18a9ec4de3f}\label{classRadialGaugePlot_aa70662c311860bf9da43f18a9ec4de3f}} 
+\index{RadialGaugePlot@{RadialGaugePlot}!GaugeCount@{GaugeCount}}
+\index{GaugeCount@{GaugeCount}!RadialGaugePlot@{RadialGaugePlot}}
+\doxysubsubsection{\texorpdfstring{GaugeCount}{GaugeCount}}
+{\footnotesize\ttfamily int Radial\+Gauge\+Plot.\+Gauge\+Count\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Number of gauges. 
+
+\mbox{\Hypertarget{classRadialGaugePlot_a2c39927d27e5374ce620dcab4e7e736b}\label{classRadialGaugePlot_a2c39927d27e5374ce620dcab4e7e736b}} 
+\index{RadialGaugePlot@{RadialGaugePlot}!GaugeMode@{GaugeMode}}
+\index{GaugeMode@{GaugeMode}!RadialGaugePlot@{RadialGaugePlot}}
+\doxysubsubsection{\texorpdfstring{GaugeMode}{GaugeMode}}
+{\footnotesize\ttfamily Radial\+Gauge\+Mode Radial\+Gauge\+Plot.\+Gauge\+Mode = Radial\+Gauge\+Mode.\+Stacked\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Determines whether the gauges are drawn stacked (dafault value), sequentially, or as a single gauge (ressembling a pie plot). 
+
+\mbox{\Hypertarget{classRadialGaugePlot_a1f3329e966d436c234630fcc8e4202d7}\label{classRadialGaugePlot_a1f3329e966d436c234630fcc8e4202d7}} 
+\index{RadialGaugePlot@{RadialGaugePlot}!IsVisible@{IsVisible}}
+\index{IsVisible@{IsVisible}!RadialGaugePlot@{RadialGaugePlot}}
+\doxysubsubsection{\texorpdfstring{IsVisible}{IsVisible}}
+{\footnotesize\ttfamily bool Radial\+Gauge\+Plot.\+Is\+Visible = true\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classRadialGaugePlot_ab6c08d6831891d56872372aeb0d45231}\label{classRadialGaugePlot_ab6c08d6831891d56872372aeb0d45231}} 
+\index{RadialGaugePlot@{RadialGaugePlot}!LabelPositionFraction@{LabelPositionFraction}}
+\index{LabelPositionFraction@{LabelPositionFraction}!RadialGaugePlot@{RadialGaugePlot}}
+\doxysubsubsection{\texorpdfstring{LabelPositionFraction}{LabelPositionFraction}}
+{\footnotesize\ttfamily double Radial\+Gauge\+Plot.\+Label\+Position\+Fraction = 1\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Defines where the gauge label is written on the gage as a fraction of its length. Low values place the label near the base and high values place the label at its tip. 
+
+\mbox{\Hypertarget{classRadialGaugePlot_a39a9596c4ba38e2a3250c8f2fffbce3b}\label{classRadialGaugePlot_a39a9596c4ba38e2a3250c8f2fffbce3b}} 
+\index{RadialGaugePlot@{RadialGaugePlot}!Labels@{Labels}}
+\index{Labels@{Labels}!RadialGaugePlot@{RadialGaugePlot}}
+\doxysubsubsection{\texorpdfstring{Labels}{Labels}}
+{\footnotesize\ttfamily string? \mbox{[}$\,$\mbox{]} Radial\+Gauge\+Plot.\+Labels\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Labels that appear in the legend for each gauge. Number of labels must equal number of gauges. May be null if gauges are not to appear in the legend. 
+
+\mbox{\Hypertarget{classRadialGaugePlot_a12dcb42a5cfa907c4e069ce2a0ad5d6d}\label{classRadialGaugePlot_a12dcb42a5cfa907c4e069ce2a0ad5d6d}} 
+\index{RadialGaugePlot@{RadialGaugePlot}!LegendItems@{LegendItems}}
+\index{LegendItems@{LegendItems}!RadialGaugePlot@{RadialGaugePlot}}
+\doxysubsubsection{\texorpdfstring{LegendItems}{LegendItems}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$\mbox{\hyperlink{classLegendItem}{Legend\+Item}}$>$ Radial\+Gauge\+Plot.\+Legend\+Items\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{classRadialGaugePlot_ab991810e7274914dd5e64245d152ab9d}\label{classRadialGaugePlot_ab991810e7274914dd5e64245d152ab9d}} 
+\index{RadialGaugePlot@{RadialGaugePlot}!Levels@{Levels}}
+\index{Levels@{Levels}!RadialGaugePlot@{RadialGaugePlot}}
+\doxysubsubsection{\texorpdfstring{Levels}{Levels}}
+{\footnotesize\ttfamily double \mbox{[}$\,$\mbox{]} Radial\+Gauge\+Plot.\+Levels = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+This array holds the original levels passed-\/in by the user. These levels are used to calculate radial gauge positions on every render. 
+
+\mbox{\Hypertarget{classRadialGaugePlot_a956eb57e8ca63a3044a359189fcc504c}\label{classRadialGaugePlot_a956eb57e8ca63a3044a359189fcc504c}} 
+\index{RadialGaugePlot@{RadialGaugePlot}!LevelTextFormat@{LevelTextFormat}}
+\index{LevelTextFormat@{LevelTextFormat}!RadialGaugePlot@{RadialGaugePlot}}
+\doxysubsubsection{\texorpdfstring{LevelTextFormat}{LevelTextFormat}}
+{\footnotesize\ttfamily string Radial\+Gauge\+Plot.\+Level\+Text\+Format = \char`\"{}0.\#\#\char`\"{}\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+String formatter to use for converting gauge levels to text 
+
+\mbox{\Hypertarget{classRadialGaugePlot_acd593330d28806f211279911c25edf47}\label{classRadialGaugePlot_acd593330d28806f211279911c25edf47}} 
+\index{RadialGaugePlot@{RadialGaugePlot}!MaximumAngle@{MaximumAngle}}
+\index{MaximumAngle@{MaximumAngle}!RadialGaugePlot@{RadialGaugePlot}}
+\doxysubsubsection{\texorpdfstring{MaximumAngle}{MaximumAngle}}
+{\footnotesize\ttfamily double Radial\+Gauge\+Plot.\+Maximum\+Angle = 360\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Maximum size (degrees) for the gauge. 180 is a semicircle and 360 is a full circle. 
+
+\mbox{\Hypertarget{classRadialGaugePlot_a8cc50df0b949ae02f2b30dcfea067288}\label{classRadialGaugePlot_a8cc50df0b949ae02f2b30dcfea067288}} 
+\index{RadialGaugePlot@{RadialGaugePlot}!OrderInsideOut@{OrderInsideOut}}
+\index{OrderInsideOut@{OrderInsideOut}!RadialGaugePlot@{RadialGaugePlot}}
+\doxysubsubsection{\texorpdfstring{OrderInsideOut}{OrderInsideOut}}
+{\footnotesize\ttfamily bool Radial\+Gauge\+Plot.\+Order\+Inside\+Out = true\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Controls whether gauges will be dwan inside-\/out (true) or outside-\/in (false) 
+
+\mbox{\Hypertarget{classRadialGaugePlot_af938c20d55e883f7bd536ae7a7c27754}\label{classRadialGaugePlot_af938c20d55e883f7bd536ae7a7c27754}} 
+\index{RadialGaugePlot@{RadialGaugePlot}!ShowLevels@{ShowLevels}}
+\index{ShowLevels@{ShowLevels}!RadialGaugePlot@{RadialGaugePlot}}
+\doxysubsubsection{\texorpdfstring{ShowLevels}{ShowLevels}}
+{\footnotesize\ttfamily bool Radial\+Gauge\+Plot.\+Show\+Levels = true\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Controls if value labels are shown inside the gauges. 
+
+\mbox{\Hypertarget{classRadialGaugePlot_ada86ac1b773bfde1e88f583ce97b154f}\label{classRadialGaugePlot_ada86ac1b773bfde1e88f583ce97b154f}} 
+\index{RadialGaugePlot@{RadialGaugePlot}!SpaceFraction@{SpaceFraction}}
+\index{SpaceFraction@{SpaceFraction}!RadialGaugePlot@{RadialGaugePlot}}
+\doxysubsubsection{\texorpdfstring{SpaceFraction}{SpaceFraction}}
+{\footnotesize\ttfamily double Radial\+Gauge\+Plot.\+Space\+Fraction = .\+5f\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The empty space between gauges as a fraction of the gauge width. 
+
+\mbox{\Hypertarget{classRadialGaugePlot_ad072ddd6c4bbbb690c14378d9cad7c1d}\label{classRadialGaugePlot_ad072ddd6c4bbbb690c14378d9cad7c1d}} 
+\index{RadialGaugePlot@{RadialGaugePlot}!StartCap@{StartCap}}
+\index{StartCap@{StartCap}!RadialGaugePlot@{RadialGaugePlot}}
+\doxysubsubsection{\texorpdfstring{StartCap}{StartCap}}
+{\footnotesize\ttfamily Skia\+Sharp.\+SKStroke\+Cap Radial\+Gauge\+Plot.\+Start\+Cap = SKStroke\+Cap.\+Round\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Style of the base of the gauge 
+
+\mbox{\Hypertarget{classRadialGaugePlot_a7d628401a1cf2cf5d79ed2d2dfb5a512}\label{classRadialGaugePlot_a7d628401a1cf2cf5d79ed2d2dfb5a512}} 
+\index{RadialGaugePlot@{RadialGaugePlot}!StartingAngle@{StartingAngle}}
+\index{StartingAngle@{StartingAngle}!RadialGaugePlot@{RadialGaugePlot}}
+\doxysubsubsection{\texorpdfstring{StartingAngle}{StartingAngle}}
+{\footnotesize\ttfamily float Radial\+Gauge\+Plot.\+Starting\+Angle = 270\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+\mbox{\hyperlink{structAngle}{Angle}} (degrees) at which the gauges start. 270° for North (default value), 0° for East, 90° for South, 180° for West, etc. Expected values in the range \mbox{[}0°-\/360°\mbox{]}, otherwise unexpected side-\/effects might happen. 
+
+\mbox{\Hypertarget{classRadialGaugePlot_a31d250b5a819ce01fdf8f283139058bd}\label{classRadialGaugePlot_a31d250b5a819ce01fdf8f283139058bd}} 
+\index{RadialGaugePlot@{RadialGaugePlot}!XAxisIndex@{XAxisIndex}}
+\index{XAxisIndex@{XAxisIndex}!RadialGaugePlot@{RadialGaugePlot}}
+\doxysubsubsection{\texorpdfstring{XAxisIndex}{XAxisIndex}}
+{\footnotesize\ttfamily int Radial\+Gauge\+Plot.\+XAxis\+Index = 0\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classRadialGaugePlot_a8faba8bf0b411058d12b46ca0ccf06d8}\label{classRadialGaugePlot_a8faba8bf0b411058d12b46ca0ccf06d8}} 
+\index{RadialGaugePlot@{RadialGaugePlot}!YAxisIndex@{YAxisIndex}}
+\index{YAxisIndex@{YAxisIndex}!RadialGaugePlot@{RadialGaugePlot}}
+\doxysubsubsection{\texorpdfstring{YAxisIndex}{YAxisIndex}}
+{\footnotesize\ttfamily int Radial\+Gauge\+Plot.\+YAxis\+Index = 0\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Plottables/Radial\+Gauge\+Plot.\+cs\end{DoxyCompactItemize}

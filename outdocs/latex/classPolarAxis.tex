@@ -1,0 +1,247 @@
+\hypertarget{classPolarAxis}{}\doxysection{Polar\+Axis Class Reference}
+\label{classPolarAxis}\index{PolarAxis@{PolarAxis}}
+
+
+A polar axes uses spoke lines and circles to describe a polar coordinate system where points are represented by a radius and angle. This class draws a polar axes and has options to customize spokes and circles.  
+
+
+Inheritance diagram for Polar\+Axis\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classPolarAxis}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classPolarAxis_a1b882bacdd7e7ab089d7cd4f3ca434b3}{Regenerate\+Spokes}} (int count=5)
+\begin{DoxyCompactList}\small\item\em Replace spokes with a new collection evenly-\/spaced around the circle \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPolarAxis_acae9c09e9c8dba0b51aaf816b4e37ee2}{Regenerate\+Circles}} (int count=3)
+\begin{DoxyCompactList}\small\item\em Replace circles with a new collection evenly-\/spaced along the maximum radius \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structCoordinates}{Coordinates}} \mbox{\hyperlink{classPolarAxis_a34afa5acac76e8276d38ab2bc3d52dac}{Get\+Coordinates}} (double radius, double degrees)
+\begin{DoxyCompactList}\small\item\em Return the X/Y position of a polar point \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structCoordinates}{Coordinates}} \mbox{\hyperlink{classPolarAxis_a0007272658e6fbf429be90c9a0111e00}{Get\+Coordinates}} (\mbox{\hyperlink{structPolarCoordinates}{Polar\+Coordinates}} point)
+\begin{DoxyCompactList}\small\item\em Return the X/Y position of a polar point \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} \mbox{\hyperlink{classPolarAxis_a11497462f763138ddacac424a7f49006}{Get\+Axis\+Limits}} ()
+\begin{DoxyCompactList}\small\item\em Return the 2D area (in coordinate space) occupied by the data contained in this plottable \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classPolarAxis_a1194ce95a16604c99a6ffb69aeaab612}{Update\+Axis\+Limits}} (\mbox{\hyperlink{classPlot}{Plot}} plot)
+\item 
+virtual void \mbox{\hyperlink{classPolarAxis_a127e87fdae3100a0c6e3e7e5c727fcba}{Render}} (\mbox{\hyperlink{classRenderPack}{Render\+Pack}} rp)
+\begin{DoxyCompactList}\small\item\em Draw the data from this plottable into the data area defined in the \mbox{\hyperlink{classAxes}{Axes}}. By default the surface is already clipped to the data area, but this can be cleared inside the plottable. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classPolarAxis_a6270aad3ed53426ab79e9624af3a27db}{Is\+Visible}} = true\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{interfaceIAxes}{IAxes}} \mbox{\hyperlink{classPolarAxis_a39826f4dcb9cebf7639bdb0164fd0dd5}{Axes}} = new \mbox{\hyperlink{classAxes}{Axes}}()\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$ \mbox{\hyperlink{classLegendItem}{Legend\+Item}} $>$ \mbox{\hyperlink{classPolarAxis_a5ae21a5941f08769193914288c99881b}{Legend\+Items}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+List$<$ \mbox{\hyperlink{classPolarAxisSpoke}{Polar\+Axis\+Spoke}} $>$ \mbox{\hyperlink{classPolarAxis_a93f51c36dcadeb0b8c8aef424ead9839}{Spokes}} = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Spokes are straight lines that extend outward from the origin \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{classPolarAxisCircle}{Polar\+Axis\+Circle}} $>$ \mbox{\hyperlink{classPolarAxis_a7848ab8228b88402b08b9dd2f2c733d4}{Circles}} = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Concentric circles centered on the origin \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classPolarAxis_ad0c57faa1b190687b20a96bf84d5bec5}{Maximum\+Radius}} = 1\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Size of the largest circle or longest spoke \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classPolarAxis_a6b0875e35c5aa7c31887191efcee736d}{Padding\+Fraction}} = 1.\+1\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Additional padding given to accommodate labels \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPolarAxis_ae2544b0f61b49fc902b8ea23cc77797d}{Manage\+Axis\+Limits}} = true\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Enable this to modify the axis limits at render time to achieve \char`\"{}square axes\char`\"{} where the units/px values are equal for horizontal and vertical axes, allowing circles to always appear as circles instead of ellipses. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classPolarAxis_a48440b560b9c4d1cdbe41775dd8ab9f3}{Line\+Width}}\hspace{0.3cm}{\ttfamily  \mbox{[}set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Sets line width for all \mbox{\hyperlink{classPolarAxis_a7848ab8228b88402b08b9dd2f2c733d4}{Circles}} and \mbox{\hyperlink{classPolarAxis_a93f51c36dcadeb0b8c8aef424ead9839}{Spokes}} \end{DoxyCompactList}\item 
+Line\+Pattern \mbox{\hyperlink{classPolarAxis_aa841694374bbe382bffe9fa08a79b880}{Line\+Pattern}}\hspace{0.3cm}{\ttfamily  \mbox{[}set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Sets line pattern for all \mbox{\hyperlink{classPolarAxis_a7848ab8228b88402b08b9dd2f2c733d4}{Circles}} and \mbox{\hyperlink{classPolarAxis_a93f51c36dcadeb0b8c8aef424ead9839}{Spokes}} \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structColor}{Color}} \mbox{\hyperlink{classPolarAxis_a7d8823ab5deea7397ac8e5f36329ba9b}{Line\+Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Sets line color for all \mbox{\hyperlink{classPolarAxis_a7848ab8228b88402b08b9dd2f2c733d4}{Circles}} and \mbox{\hyperlink{classPolarAxis_a93f51c36dcadeb0b8c8aef424ead9839}{Spokes}} \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A polar axes uses spoke lines and circles to describe a polar coordinate system where points are represented by a radius and angle. This class draws a polar axes and has options to customize spokes and circles. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPolarAxis_a11497462f763138ddacac424a7f49006}\label{classPolarAxis_a11497462f763138ddacac424a7f49006}} 
+\index{PolarAxis@{PolarAxis}!GetAxisLimits@{GetAxisLimits}}
+\index{GetAxisLimits@{GetAxisLimits}!PolarAxis@{PolarAxis}}
+\doxysubsubsection{\texorpdfstring{GetAxisLimits()}{GetAxisLimits()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} Polar\+Axis.\+Get\+Axis\+Limits (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return the 2D area (in coordinate space) occupied by the data contained in this plottable 
+
+
+
+Implements \mbox{\hyperlink{interfaceIPlottable_ac98e2f5e56f9f938bbd081c87c7c6f50}{IPlottable}}.
+
+\mbox{\Hypertarget{classPolarAxis_a34afa5acac76e8276d38ab2bc3d52dac}\label{classPolarAxis_a34afa5acac76e8276d38ab2bc3d52dac}} 
+\index{PolarAxis@{PolarAxis}!GetCoordinates@{GetCoordinates}}
+\index{GetCoordinates@{GetCoordinates}!PolarAxis@{PolarAxis}}
+\doxysubsubsection{\texorpdfstring{GetCoordinates()}{GetCoordinates()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structCoordinates}{Coordinates}} Polar\+Axis.\+Get\+Coordinates (\begin{DoxyParamCaption}\item[{double}]{radius,  }\item[{double}]{degrees }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return the X/Y position of a polar point 
+
+\mbox{\Hypertarget{classPolarAxis_a0007272658e6fbf429be90c9a0111e00}\label{classPolarAxis_a0007272658e6fbf429be90c9a0111e00}} 
+\index{PolarAxis@{PolarAxis}!GetCoordinates@{GetCoordinates}}
+\index{GetCoordinates@{GetCoordinates}!PolarAxis@{PolarAxis}}
+\doxysubsubsection{\texorpdfstring{GetCoordinates()}{GetCoordinates()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structCoordinates}{Coordinates}} Polar\+Axis.\+Get\+Coordinates (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPolarCoordinates}{Polar\+Coordinates}}}]{point }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return the X/Y position of a polar point 
+
+\mbox{\Hypertarget{classPolarAxis_acae9c09e9c8dba0b51aaf816b4e37ee2}\label{classPolarAxis_acae9c09e9c8dba0b51aaf816b4e37ee2}} 
+\index{PolarAxis@{PolarAxis}!RegenerateCircles@{RegenerateCircles}}
+\index{RegenerateCircles@{RegenerateCircles}!PolarAxis@{PolarAxis}}
+\doxysubsubsection{\texorpdfstring{RegenerateCircles()}{RegenerateCircles()}}
+{\footnotesize\ttfamily void Polar\+Axis.\+Regenerate\+Circles (\begin{DoxyParamCaption}\item[{int}]{count = {\ttfamily 3} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Replace circles with a new collection evenly-\/spaced along the maximum radius 
+
+\mbox{\Hypertarget{classPolarAxis_a1b882bacdd7e7ab089d7cd4f3ca434b3}\label{classPolarAxis_a1b882bacdd7e7ab089d7cd4f3ca434b3}} 
+\index{PolarAxis@{PolarAxis}!RegenerateSpokes@{RegenerateSpokes}}
+\index{RegenerateSpokes@{RegenerateSpokes}!PolarAxis@{PolarAxis}}
+\doxysubsubsection{\texorpdfstring{RegenerateSpokes()}{RegenerateSpokes()}}
+{\footnotesize\ttfamily void Polar\+Axis.\+Regenerate\+Spokes (\begin{DoxyParamCaption}\item[{int}]{count = {\ttfamily 5} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Replace spokes with a new collection evenly-\/spaced around the circle 
+
+\mbox{\Hypertarget{classPolarAxis_a127e87fdae3100a0c6e3e7e5c727fcba}\label{classPolarAxis_a127e87fdae3100a0c6e3e7e5c727fcba}} 
+\index{PolarAxis@{PolarAxis}!Render@{Render}}
+\index{Render@{Render}!PolarAxis@{PolarAxis}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily virtual void Polar\+Axis.\+Render (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classRenderPack}{Render\+Pack}}}]{rp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Draw the data from this plottable into the data area defined in the \mbox{\hyperlink{classAxes}{Axes}}. By default the surface is already clipped to the data area, but this can be cleared inside the plottable. 
+
+
+
+Implements \mbox{\hyperlink{interfaceIPlottable_a201a1a236dc718eda93db143a5ade9f8}{IPlottable}}.
+
+\mbox{\Hypertarget{classPolarAxis_a1194ce95a16604c99a6ffb69aeaab612}\label{classPolarAxis_a1194ce95a16604c99a6ffb69aeaab612}} 
+\index{PolarAxis@{PolarAxis}!UpdateAxisLimits@{UpdateAxisLimits}}
+\index{UpdateAxisLimits@{UpdateAxisLimits}!PolarAxis@{PolarAxis}}
+\doxysubsubsection{\texorpdfstring{UpdateAxisLimits()}{UpdateAxisLimits()}}
+{\footnotesize\ttfamily virtual void Polar\+Axis.\+Update\+Axis\+Limits (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPlot}{Plot}}}]{plot }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{interfaceIManagesAxisLimits_a89b37ad99b341ad037982a08228265a3}{IManages\+Axis\+Limits}}.
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{classPolarAxis_a39826f4dcb9cebf7639bdb0164fd0dd5}\label{classPolarAxis_a39826f4dcb9cebf7639bdb0164fd0dd5}} 
+\index{PolarAxis@{PolarAxis}!Axes@{Axes}}
+\index{Axes@{Axes}!PolarAxis@{PolarAxis}}
+\doxysubsubsection{\texorpdfstring{Axes}{Axes}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceIAxes}{IAxes}} Polar\+Axis.\+Axes = new \mbox{\hyperlink{classAxes}{Axes}}()\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classPolarAxis_a7848ab8228b88402b08b9dd2f2c733d4}\label{classPolarAxis_a7848ab8228b88402b08b9dd2f2c733d4}} 
+\index{PolarAxis@{PolarAxis}!Circles@{Circles}}
+\index{Circles@{Circles}!PolarAxis@{PolarAxis}}
+\doxysubsubsection{\texorpdfstring{Circles}{Circles}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classPolarAxisCircle}{Polar\+Axis\+Circle}}$>$ Polar\+Axis.\+Circles = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Concentric circles centered on the origin 
+
+\mbox{\Hypertarget{classPolarAxis_a6270aad3ed53426ab79e9624af3a27db}\label{classPolarAxis_a6270aad3ed53426ab79e9624af3a27db}} 
+\index{PolarAxis@{PolarAxis}!IsVisible@{IsVisible}}
+\index{IsVisible@{IsVisible}!PolarAxis@{PolarAxis}}
+\doxysubsubsection{\texorpdfstring{IsVisible}{IsVisible}}
+{\footnotesize\ttfamily bool Polar\+Axis.\+Is\+Visible = true\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classPolarAxis_a5ae21a5941f08769193914288c99881b}\label{classPolarAxis_a5ae21a5941f08769193914288c99881b}} 
+\index{PolarAxis@{PolarAxis}!LegendItems@{LegendItems}}
+\index{LegendItems@{LegendItems}!PolarAxis@{PolarAxis}}
+\doxysubsubsection{\texorpdfstring{LegendItems}{LegendItems}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$\mbox{\hyperlink{classLegendItem}{Legend\+Item}}$>$ Polar\+Axis.\+Legend\+Items\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{classPolarAxis_a7d8823ab5deea7397ac8e5f36329ba9b}\label{classPolarAxis_a7d8823ab5deea7397ac8e5f36329ba9b}} 
+\index{PolarAxis@{PolarAxis}!LineColor@{LineColor}}
+\index{LineColor@{LineColor}!PolarAxis@{PolarAxis}}
+\doxysubsubsection{\texorpdfstring{LineColor}{LineColor}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structColor}{Color}} Polar\+Axis.\+Line\+Color\hspace{0.3cm}{\ttfamily [set]}}
+
+
+
+Sets line color for all \mbox{\hyperlink{classPolarAxis_a7848ab8228b88402b08b9dd2f2c733d4}{Circles}} and \mbox{\hyperlink{classPolarAxis_a93f51c36dcadeb0b8c8aef424ead9839}{Spokes}} 
+
+\mbox{\Hypertarget{classPolarAxis_aa841694374bbe382bffe9fa08a79b880}\label{classPolarAxis_aa841694374bbe382bffe9fa08a79b880}} 
+\index{PolarAxis@{PolarAxis}!LinePattern@{LinePattern}}
+\index{LinePattern@{LinePattern}!PolarAxis@{PolarAxis}}
+\doxysubsubsection{\texorpdfstring{LinePattern}{LinePattern}}
+{\footnotesize\ttfamily Line\+Pattern Polar\+Axis.\+Line\+Pattern\hspace{0.3cm}{\ttfamily [set]}}
+
+
+
+Sets line pattern for all \mbox{\hyperlink{classPolarAxis_a7848ab8228b88402b08b9dd2f2c733d4}{Circles}} and \mbox{\hyperlink{classPolarAxis_a93f51c36dcadeb0b8c8aef424ead9839}{Spokes}} 
+
+\mbox{\Hypertarget{classPolarAxis_a48440b560b9c4d1cdbe41775dd8ab9f3}\label{classPolarAxis_a48440b560b9c4d1cdbe41775dd8ab9f3}} 
+\index{PolarAxis@{PolarAxis}!LineWidth@{LineWidth}}
+\index{LineWidth@{LineWidth}!PolarAxis@{PolarAxis}}
+\doxysubsubsection{\texorpdfstring{LineWidth}{LineWidth}}
+{\footnotesize\ttfamily float Polar\+Axis.\+Line\+Width\hspace{0.3cm}{\ttfamily [set]}}
+
+
+
+Sets line width for all \mbox{\hyperlink{classPolarAxis_a7848ab8228b88402b08b9dd2f2c733d4}{Circles}} and \mbox{\hyperlink{classPolarAxis_a93f51c36dcadeb0b8c8aef424ead9839}{Spokes}} 
+
+\mbox{\Hypertarget{classPolarAxis_ae2544b0f61b49fc902b8ea23cc77797d}\label{classPolarAxis_ae2544b0f61b49fc902b8ea23cc77797d}} 
+\index{PolarAxis@{PolarAxis}!ManageAxisLimits@{ManageAxisLimits}}
+\index{ManageAxisLimits@{ManageAxisLimits}!PolarAxis@{PolarAxis}}
+\doxysubsubsection{\texorpdfstring{ManageAxisLimits}{ManageAxisLimits}}
+{\footnotesize\ttfamily bool Polar\+Axis.\+Manage\+Axis\+Limits = true\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Enable this to modify the axis limits at render time to achieve \char`\"{}square axes\char`\"{} where the units/px values are equal for horizontal and vertical axes, allowing circles to always appear as circles instead of ellipses. 
+
+\mbox{\Hypertarget{classPolarAxis_ad0c57faa1b190687b20a96bf84d5bec5}\label{classPolarAxis_ad0c57faa1b190687b20a96bf84d5bec5}} 
+\index{PolarAxis@{PolarAxis}!MaximumRadius@{MaximumRadius}}
+\index{MaximumRadius@{MaximumRadius}!PolarAxis@{PolarAxis}}
+\doxysubsubsection{\texorpdfstring{MaximumRadius}{MaximumRadius}}
+{\footnotesize\ttfamily double Polar\+Axis.\+Maximum\+Radius = 1\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Size of the largest circle or longest spoke 
+
+\mbox{\Hypertarget{classPolarAxis_a6b0875e35c5aa7c31887191efcee736d}\label{classPolarAxis_a6b0875e35c5aa7c31887191efcee736d}} 
+\index{PolarAxis@{PolarAxis}!PaddingFraction@{PaddingFraction}}
+\index{PaddingFraction@{PaddingFraction}!PolarAxis@{PolarAxis}}
+\doxysubsubsection{\texorpdfstring{PaddingFraction}{PaddingFraction}}
+{\footnotesize\ttfamily double Polar\+Axis.\+Padding\+Fraction = 1.\+1\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Additional padding given to accommodate labels 
+
+\mbox{\Hypertarget{classPolarAxis_a93f51c36dcadeb0b8c8aef424ead9839}\label{classPolarAxis_a93f51c36dcadeb0b8c8aef424ead9839}} 
+\index{PolarAxis@{PolarAxis}!Spokes@{Spokes}}
+\index{Spokes@{Spokes}!PolarAxis@{PolarAxis}}
+\doxysubsubsection{\texorpdfstring{Spokes}{Spokes}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classPolarAxisSpoke}{Polar\+Axis\+Spoke}}$>$ Polar\+Axis.\+Spokes = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Spokes are straight lines that extend outward from the origin 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Plottables/Polar\+Axis.\+cs\end{DoxyCompactItemize}

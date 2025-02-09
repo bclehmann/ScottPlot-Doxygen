@@ -1,0 +1,227 @@
+\hypertarget{classSignal}{}\doxysection{Signal Class Reference}
+\label{classSignal}\index{Signal@{Signal}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} \mbox{\hyperlink{classSignal_ad874a9400f22c1db8b53c2cc125db312}{Get\+Axis\+Limits}} ()
+\item 
+virtual void \mbox{\hyperlink{classSignal_a6e206442abd96bac3de187fb15e5facb}{Render}} (\mbox{\hyperlink{classRenderPack}{Render\+Pack}} rp)
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interfaceISignalSource}{ISignal\+Source}} \mbox{\hyperlink{classSignal_a37a0cc8ef10a23a5c3026349fa143ecf}{data}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+bool \mbox{\hyperlink{classSignal_a05c25bd47e2e5c00bbbd7dc63b6bbe60}{Is\+Visible}} = true\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{interfaceIAxes}{IAxes}} \mbox{\hyperlink{classSignal_a53473f1497e8b1d0ba475f4ba5166809}{Axes}} = new \mbox{\hyperlink{classAxes}{Axes}}()\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{interfaceISignalSource}{ISignal\+Source}} \mbox{\hyperlink{classSignal_a691ec98362feab59d2c18240d077c29e}{Data}} = \mbox{\hyperlink{classSignal_a37a0cc8ef10a23a5c3026349fa143ecf}{data}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+string \mbox{\hyperlink{classSignal_aaa2de1880993f3537c478d324d5d9131}{Label}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+string \mbox{\hyperlink{classSignal_a27c0098c10874dfc5777f3f2c7da53c5}{Legend\+Text}} = string.\+Empty\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{classMarkerStyle}{Marker\+Style}} \mbox{\hyperlink{classSignal_a7af4a1aec4bc6f6189f77556d37fb39e}{Marker\+Style}} = new() \{ Size = 5, Shape = Marker\+Shape.\+Filled\+Circle \}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+Marker\+Shape \mbox{\hyperlink{classSignal_a45111d59b2421b0dd048c030785239e0}{Marker\+Shape}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{classSignal_a99c64f07c5ad477c3aabefa9ac2c7f10}{Marker\+Size}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{structColor}{Color}} \mbox{\hyperlink{classSignal_a2fc792592ca0bad90115bd5e57ab16be}{Marker\+Fill\+Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{structColor}{Color}} \mbox{\hyperlink{classSignal_a1a4a41c489bf2264895695071197e8b4}{Marker\+Line\+Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{structColor}{Color}} \mbox{\hyperlink{classSignal_ac4f0e45851c5e5ec4603edf22833f769}{Marker\+Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{classSignal_a9b2275490b1ba879227387879799f7be}{Marker\+Line\+Width}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{classLineStyle}{Line\+Style}} \mbox{\hyperlink{classSignal_a63dc7258b9ba62447e3866582e3dcc8d}{Line\+Style}} = new() \{ Width = 1 \}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{classSignal_a474e095b9b37d177b60363df931a453a}{Line\+Width}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+Line\+Pattern \mbox{\hyperlink{classSignal_a9dd34ce42fdc7afce4b3c31bc3843e6f}{Line\+Pattern}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{structColor}{Color}} \mbox{\hyperlink{classSignal_ab6c540d0c18f9094ca25a72bc918afcc}{Line\+Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+int \mbox{\hyperlink{classSignal_a2b1a877f12d36aa72d9da03776dc273d}{Min\+Render\+Index}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+int \mbox{\hyperlink{classSignal_ada6e4118ef377bf6b1bba900d9e5e637}{Max\+Render\+Index}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{classSignal_ad8da4ce84d8a5b635268a10b438b8da8}{Maximum\+Marker\+Size}} = 4\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Maximum size of the marker (in pixels) to display at each data point when the plot is zoomed far in. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classSignal_addd5c54ec90331c550f3e4465911d3cf}{Always\+Use\+Low\+Density\+Mode}} = false\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Setting this flag causes lines to be drawn between every visible point (similar to scatter plots) to improve anti-\/aliasing in static images. Setting this will decrease performance for large datasets and is not recommended for interactive environments. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structColor}{Color}} \mbox{\hyperlink{classSignal_ac7ce633e8b6d5c86357d3060948ae382}{Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$ \mbox{\hyperlink{classLegendItem}{Legend\+Item}} $>$ \mbox{\hyperlink{classSignal_af269ea4c6acc4f28e0ca532445002f04}{Legend\+Items}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classSignal_ad874a9400f22c1db8b53c2cc125db312}\label{classSignal_ad874a9400f22c1db8b53c2cc125db312}} 
+\index{Signal@{Signal}!GetAxisLimits@{GetAxisLimits}}
+\index{GetAxisLimits@{GetAxisLimits}!Signal@{Signal}}
+\doxysubsubsection{\texorpdfstring{GetAxisLimits()}{GetAxisLimits()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} Signal.\+Get\+Axis\+Limits (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classSignal_a6e206442abd96bac3de187fb15e5facb}\label{classSignal_a6e206442abd96bac3de187fb15e5facb}} 
+\index{Signal@{Signal}!Render@{Render}}
+\index{Render@{Render}!Signal@{Signal}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily virtual void Signal.\+Render (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classRenderPack}{Render\+Pack}}}]{rp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{classSignal_addd5c54ec90331c550f3e4465911d3cf}\label{classSignal_addd5c54ec90331c550f3e4465911d3cf}} 
+\index{Signal@{Signal}!AlwaysUseLowDensityMode@{AlwaysUseLowDensityMode}}
+\index{AlwaysUseLowDensityMode@{AlwaysUseLowDensityMode}!Signal@{Signal}}
+\doxysubsubsection{\texorpdfstring{AlwaysUseLowDensityMode}{AlwaysUseLowDensityMode}}
+{\footnotesize\ttfamily bool Signal.\+Always\+Use\+Low\+Density\+Mode = false\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Setting this flag causes lines to be drawn between every visible point (similar to scatter plots) to improve anti-\/aliasing in static images. Setting this will decrease performance for large datasets and is not recommended for interactive environments. 
+
+\mbox{\Hypertarget{classSignal_a53473f1497e8b1d0ba475f4ba5166809}\label{classSignal_a53473f1497e8b1d0ba475f4ba5166809}} 
+\index{Signal@{Signal}!Axes@{Axes}}
+\index{Axes@{Axes}!Signal@{Signal}}
+\doxysubsubsection{\texorpdfstring{Axes}{Axes}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceIAxes}{IAxes}} Signal.\+Axes = new \mbox{\hyperlink{classAxes}{Axes}}()\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classSignal_ac7ce633e8b6d5c86357d3060948ae382}\label{classSignal_ac7ce633e8b6d5c86357d3060948ae382}} 
+\index{Signal@{Signal}!Color@{Color}}
+\index{Color@{Color}!Signal@{Signal}}
+\doxysubsubsection{\texorpdfstring{Color}{Color}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structColor}{Color}} Signal.\+Color\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classSignal_a37a0cc8ef10a23a5c3026349fa143ecf}\label{classSignal_a37a0cc8ef10a23a5c3026349fa143ecf}} 
+\index{Signal@{Signal}!data@{data}}
+\index{data@{data}!Signal@{Signal}}
+\doxysubsubsection{\texorpdfstring{data}{data}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceISignalSource}{ISignal\+Source}} Signal.\+data\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classSignal_a691ec98362feab59d2c18240d077c29e}\label{classSignal_a691ec98362feab59d2c18240d077c29e}} 
+\index{Signal@{Signal}!Data@{Data}}
+\index{Data@{Data}!Signal@{Signal}}
+\doxysubsubsection{\texorpdfstring{Data}{Data}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceISignalSource}{ISignal\+Source}} Signal.\+Data = \mbox{\hyperlink{classSignal_a37a0cc8ef10a23a5c3026349fa143ecf}{data}}\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classSignal_a05c25bd47e2e5c00bbbd7dc63b6bbe60}\label{classSignal_a05c25bd47e2e5c00bbbd7dc63b6bbe60}} 
+\index{Signal@{Signal}!IsVisible@{IsVisible}}
+\index{IsVisible@{IsVisible}!Signal@{Signal}}
+\doxysubsubsection{\texorpdfstring{IsVisible}{IsVisible}}
+{\footnotesize\ttfamily bool Signal.\+Is\+Visible = true\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classSignal_aaa2de1880993f3537c478d324d5d9131}\label{classSignal_aaa2de1880993f3537c478d324d5d9131}} 
+\index{Signal@{Signal}!Label@{Label}}
+\index{Label@{Label}!Signal@{Signal}}
+\doxysubsubsection{\texorpdfstring{Label}{Label}}
+{\footnotesize\ttfamily string Signal.\+Label\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classSignal_af269ea4c6acc4f28e0ca532445002f04}\label{classSignal_af269ea4c6acc4f28e0ca532445002f04}} 
+\index{Signal@{Signal}!LegendItems@{LegendItems}}
+\index{LegendItems@{LegendItems}!Signal@{Signal}}
+\doxysubsubsection{\texorpdfstring{LegendItems}{LegendItems}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$\mbox{\hyperlink{classLegendItem}{Legend\+Item}}$>$ Signal.\+Legend\+Items\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{classSignal_a27c0098c10874dfc5777f3f2c7da53c5}\label{classSignal_a27c0098c10874dfc5777f3f2c7da53c5}} 
+\index{Signal@{Signal}!LegendText@{LegendText}}
+\index{LegendText@{LegendText}!Signal@{Signal}}
+\doxysubsubsection{\texorpdfstring{LegendText}{LegendText}}
+{\footnotesize\ttfamily string Signal.\+Legend\+Text = string.\+Empty\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classSignal_ab6c540d0c18f9094ca25a72bc918afcc}\label{classSignal_ab6c540d0c18f9094ca25a72bc918afcc}} 
+\index{Signal@{Signal}!LineColor@{LineColor}}
+\index{LineColor@{LineColor}!Signal@{Signal}}
+\doxysubsubsection{\texorpdfstring{LineColor}{LineColor}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structColor}{Color}} Signal.\+Line\+Color\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classSignal_a9dd34ce42fdc7afce4b3c31bc3843e6f}\label{classSignal_a9dd34ce42fdc7afce4b3c31bc3843e6f}} 
+\index{Signal@{Signal}!LinePattern@{LinePattern}}
+\index{LinePattern@{LinePattern}!Signal@{Signal}}
+\doxysubsubsection{\texorpdfstring{LinePattern}{LinePattern}}
+{\footnotesize\ttfamily Line\+Pattern Signal.\+Line\+Pattern\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classSignal_a63dc7258b9ba62447e3866582e3dcc8d}\label{classSignal_a63dc7258b9ba62447e3866582e3dcc8d}} 
+\index{Signal@{Signal}!LineStyle@{LineStyle}}
+\index{LineStyle@{LineStyle}!Signal@{Signal}}
+\doxysubsubsection{\texorpdfstring{LineStyle}{LineStyle}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classLineStyle}{Line\+Style}} Signal.\+Line\+Style = new() \{ Width = 1 \}\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classSignal_a474e095b9b37d177b60363df931a453a}\label{classSignal_a474e095b9b37d177b60363df931a453a}} 
+\index{Signal@{Signal}!LineWidth@{LineWidth}}
+\index{LineWidth@{LineWidth}!Signal@{Signal}}
+\doxysubsubsection{\texorpdfstring{LineWidth}{LineWidth}}
+{\footnotesize\ttfamily float Signal.\+Line\+Width\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classSignal_ac4f0e45851c5e5ec4603edf22833f769}\label{classSignal_ac4f0e45851c5e5ec4603edf22833f769}} 
+\index{Signal@{Signal}!MarkerColor@{MarkerColor}}
+\index{MarkerColor@{MarkerColor}!Signal@{Signal}}
+\doxysubsubsection{\texorpdfstring{MarkerColor}{MarkerColor}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structColor}{Color}} Signal.\+Marker\+Color\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classSignal_a2fc792592ca0bad90115bd5e57ab16be}\label{classSignal_a2fc792592ca0bad90115bd5e57ab16be}} 
+\index{Signal@{Signal}!MarkerFillColor@{MarkerFillColor}}
+\index{MarkerFillColor@{MarkerFillColor}!Signal@{Signal}}
+\doxysubsubsection{\texorpdfstring{MarkerFillColor}{MarkerFillColor}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structColor}{Color}} Signal.\+Marker\+Fill\+Color\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classSignal_a1a4a41c489bf2264895695071197e8b4}\label{classSignal_a1a4a41c489bf2264895695071197e8b4}} 
+\index{Signal@{Signal}!MarkerLineColor@{MarkerLineColor}}
+\index{MarkerLineColor@{MarkerLineColor}!Signal@{Signal}}
+\doxysubsubsection{\texorpdfstring{MarkerLineColor}{MarkerLineColor}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structColor}{Color}} Signal.\+Marker\+Line\+Color\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classSignal_a9b2275490b1ba879227387879799f7be}\label{classSignal_a9b2275490b1ba879227387879799f7be}} 
+\index{Signal@{Signal}!MarkerLineWidth@{MarkerLineWidth}}
+\index{MarkerLineWidth@{MarkerLineWidth}!Signal@{Signal}}
+\doxysubsubsection{\texorpdfstring{MarkerLineWidth}{MarkerLineWidth}}
+{\footnotesize\ttfamily float Signal.\+Marker\+Line\+Width\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classSignal_a45111d59b2421b0dd048c030785239e0}\label{classSignal_a45111d59b2421b0dd048c030785239e0}} 
+\index{Signal@{Signal}!MarkerShape@{MarkerShape}}
+\index{MarkerShape@{MarkerShape}!Signal@{Signal}}
+\doxysubsubsection{\texorpdfstring{MarkerShape}{MarkerShape}}
+{\footnotesize\ttfamily Marker\+Shape Signal.\+Marker\+Shape\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classSignal_a99c64f07c5ad477c3aabefa9ac2c7f10}\label{classSignal_a99c64f07c5ad477c3aabefa9ac2c7f10}} 
+\index{Signal@{Signal}!MarkerSize@{MarkerSize}}
+\index{MarkerSize@{MarkerSize}!Signal@{Signal}}
+\doxysubsubsection{\texorpdfstring{MarkerSize}{MarkerSize}}
+{\footnotesize\ttfamily float Signal.\+Marker\+Size\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classSignal_a7af4a1aec4bc6f6189f77556d37fb39e}\label{classSignal_a7af4a1aec4bc6f6189f77556d37fb39e}} 
+\index{Signal@{Signal}!MarkerStyle@{MarkerStyle}}
+\index{MarkerStyle@{MarkerStyle}!Signal@{Signal}}
+\doxysubsubsection{\texorpdfstring{MarkerStyle}{MarkerStyle}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classMarkerStyle}{Marker\+Style}} Signal.\+Marker\+Style = new() \{ Size = 5, Shape = Marker\+Shape.\+Filled\+Circle \}\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classSignal_ad8da4ce84d8a5b635268a10b438b8da8}\label{classSignal_ad8da4ce84d8a5b635268a10b438b8da8}} 
+\index{Signal@{Signal}!MaximumMarkerSize@{MaximumMarkerSize}}
+\index{MaximumMarkerSize@{MaximumMarkerSize}!Signal@{Signal}}
+\doxysubsubsection{\texorpdfstring{MaximumMarkerSize}{MaximumMarkerSize}}
+{\footnotesize\ttfamily float Signal.\+Maximum\+Marker\+Size = 4\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Maximum size of the marker (in pixels) to display at each data point when the plot is zoomed far in. 
+
+\mbox{\Hypertarget{classSignal_ada6e4118ef377bf6b1bba900d9e5e637}\label{classSignal_ada6e4118ef377bf6b1bba900d9e5e637}} 
+\index{Signal@{Signal}!MaxRenderIndex@{MaxRenderIndex}}
+\index{MaxRenderIndex@{MaxRenderIndex}!Signal@{Signal}}
+\doxysubsubsection{\texorpdfstring{MaxRenderIndex}{MaxRenderIndex}}
+{\footnotesize\ttfamily int Signal.\+Max\+Render\+Index\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classSignal_a2b1a877f12d36aa72d9da03776dc273d}\label{classSignal_a2b1a877f12d36aa72d9da03776dc273d}} 
+\index{Signal@{Signal}!MinRenderIndex@{MinRenderIndex}}
+\index{MinRenderIndex@{MinRenderIndex}!Signal@{Signal}}
+\doxysubsubsection{\texorpdfstring{MinRenderIndex}{MinRenderIndex}}
+{\footnotesize\ttfamily int Signal.\+Min\+Render\+Index\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Plottables/Signal.\+cs\end{DoxyCompactItemize}

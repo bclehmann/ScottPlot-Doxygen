@@ -1,0 +1,89 @@
+\hypertarget{classMonth}{}\doxysection{Month Class Reference}
+\label{classMonth}\index{Month@{Month}}
+Inheritance diagram for Month\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classMonth}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Date\+Time \mbox{\hyperlink{classMonth_ac67875a599de9e223c241333e5f8a7e2}{Snap}} (Date\+Time dt)
+\begin{DoxyCompactList}\small\item\em Return a given date \char`\"{}snapped\char`\"{} back to the nearest nice tick position. Use this to find a good tick position for a given Date\+Time. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classMonth_af83e2c9cc0f1d687297620c205e4584e}{Get\+Date\+Time\+Format\+String}} ()
+\begin{DoxyCompactList}\small\item\em Returns the format string used to display tick labels of this time unit. \href{https://learn.microsoft.com/en-us/dotnet/api/system.datetime.tostring}{\texttt{ https\+://learn.\+microsoft.\+com/en-\/us/dotnet/api/system.\+datetime.\+tostring}} \end{DoxyCompactList}\item 
+Date\+Time \mbox{\hyperlink{classMonth_af14f5f75c30a12479c08157295a99bba}{Next}} (Date\+Time date\+Time, int increment=1)
+\begin{DoxyCompactList}\small\item\em Return the Date\+Time N units relative to this one \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+IRead\+Only\+List$<$ int $>$ \mbox{\hyperlink{classMonth_a6f18af4c15658f3aff993c688fde0604}{Divisors}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+Time\+Span \mbox{\hyperlink{classMonth_adfa21c8b1430252db7bc28f79cc93e8c}{Min\+Size}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classMonth_af83e2c9cc0f1d687297620c205e4584e}\label{classMonth_af83e2c9cc0f1d687297620c205e4584e}} 
+\index{Month@{Month}!GetDateTimeFormatString@{GetDateTimeFormatString}}
+\index{GetDateTimeFormatString@{GetDateTimeFormatString}!Month@{Month}}
+\doxysubsubsection{\texorpdfstring{GetDateTimeFormatString()}{GetDateTimeFormatString()}}
+{\footnotesize\ttfamily string Month.\+Get\+Date\+Time\+Format\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the format string used to display tick labels of this time unit. \href{https://learn.microsoft.com/en-us/dotnet/api/system.datetime.tostring}{\texttt{ https\+://learn.\+microsoft.\+com/en-\/us/dotnet/api/system.\+datetime.\+tostring}} 
+
+
+
+Implements \mbox{\hyperlink{interfaceITimeUnit_ad70c5bcb960ce6aea108d372a62d2111}{ITime\+Unit}}.
+
+\mbox{\Hypertarget{classMonth_af14f5f75c30a12479c08157295a99bba}\label{classMonth_af14f5f75c30a12479c08157295a99bba}} 
+\index{Month@{Month}!Next@{Next}}
+\index{Next@{Next}!Month@{Month}}
+\doxysubsubsection{\texorpdfstring{Next()}{Next()}}
+{\footnotesize\ttfamily Date\+Time Month.\+Next (\begin{DoxyParamCaption}\item[{Date\+Time}]{date\+Time,  }\item[{int}]{increment = {\ttfamily 1} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return the Date\+Time N units relative to this one 
+
+
+
+Implements \mbox{\hyperlink{interfaceITimeUnit_a937b9d1835716e8f94106fbf3dd76e99}{ITime\+Unit}}.
+
+\mbox{\Hypertarget{classMonth_ac67875a599de9e223c241333e5f8a7e2}\label{classMonth_ac67875a599de9e223c241333e5f8a7e2}} 
+\index{Month@{Month}!Snap@{Snap}}
+\index{Snap@{Snap}!Month@{Month}}
+\doxysubsubsection{\texorpdfstring{Snap()}{Snap()}}
+{\footnotesize\ttfamily Date\+Time Month.\+Snap (\begin{DoxyParamCaption}\item[{Date\+Time}]{date\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return a given date \char`\"{}snapped\char`\"{} back to the nearest nice tick position. Use this to find a good tick position for a given Date\+Time. 
+
+
+
+Implements \mbox{\hyperlink{interfaceITimeUnit_a5442876054e06f2d6a1d9e79ceb8747b}{ITime\+Unit}}.
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{classMonth_a6f18af4c15658f3aff993c688fde0604}\label{classMonth_a6f18af4c15658f3aff993c688fde0604}} 
+\index{Month@{Month}!Divisors@{Divisors}}
+\index{Divisors@{Divisors}!Month@{Month}}
+\doxysubsubsection{\texorpdfstring{Divisors}{Divisors}}
+{\footnotesize\ttfamily IRead\+Only\+List$<$int$>$ Month.\+Divisors\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{classMonth_adfa21c8b1430252db7bc28f79cc93e8c}\label{classMonth_adfa21c8b1430252db7bc28f79cc93e8c}} 
+\index{Month@{Month}!MinSize@{MinSize}}
+\index{MinSize@{MinSize}!Month@{Month}}
+\doxysubsubsection{\texorpdfstring{MinSize}{MinSize}}
+{\footnotesize\ttfamily Time\+Span Month.\+Min\+Size\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Tick\+Generators/\+Time\+Units/Month.\+cs\end{DoxyCompactItemize}

@@ -1,0 +1,103 @@
+\hypertarget{interfaceIPlottable}{}\doxysection{IPlottable Interface Reference}
+\label{interfaceIPlottable}\index{IPlottable@{IPlottable}}
+
+
+Any object that renders shapes on the canvas using scale information from the axes must implement this interface.  
+
+
+Inheritance diagram for IPlottable\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=12.000000cm]{interfaceIPlottable}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} \mbox{\hyperlink{interfaceIPlottable_ac98e2f5e56f9f938bbd081c87c7c6f50}{Get\+Axis\+Limits}} ()
+\begin{DoxyCompactList}\small\item\em Return the 2D area (in coordinate space) occupied by the data contained in this plottable \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfaceIPlottable_a201a1a236dc718eda93db143a5ade9f8}{Render}} (\mbox{\hyperlink{classRenderPack}{Render\+Pack}} rp)
+\begin{DoxyCompactList}\small\item\em Draw the data from this plottable into the data area defined in the \mbox{\hyperlink{classAxes}{Axes}}. By default the surface is already clipped to the data area, but this can be cleared inside the plottable. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{interfaceIPlottable_ad711a289b277718f1201a48d2f609c8d}{Is\+Visible}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Toggles whether this plottable is shown and contributes to the automatic axis limit detection. The calling method will check this variable (it does not need to be checked inside the Render method). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{interfaceIAxes}{IAxes}} \mbox{\hyperlink{interfaceIPlottable_a6b88b4a84eb82799d61f69fbd7e106bd}{Axes}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em This object performs coordinate/pixel translation at render time based on the latest data area. It stores the axes to use for this plottable and also the data area (in pixels) updated just before each render. If this object is null it will be constructed using the default X and Y axes at render time. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$ \mbox{\hyperlink{classLegendItem}{Legend\+Item}} $>$ \mbox{\hyperlink{interfaceIPlottable_a26c571e709ef34d1cfd3c522eef1a3bf}{Legend\+Items}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Items which will appear in the legend \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Any object that renders shapes on the canvas using scale information from the axes must implement this interface. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{interfaceIPlottable_ac98e2f5e56f9f938bbd081c87c7c6f50}\label{interfaceIPlottable_ac98e2f5e56f9f938bbd081c87c7c6f50}} 
+\index{IPlottable@{IPlottable}!GetAxisLimits@{GetAxisLimits}}
+\index{GetAxisLimits@{GetAxisLimits}!IPlottable@{IPlottable}}
+\doxysubsubsection{\texorpdfstring{GetAxisLimits()}{GetAxisLimits()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} IPlottable.\+Get\+Axis\+Limits (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Return the 2D area (in coordinate space) occupied by the data contained in this plottable 
+
+
+
+Implemented in \mbox{\hyperlink{classVerticalSpan_a8fe95861383953074076d57e7d957168}{Vertical\+Span}}, \mbox{\hyperlink{classVerticalLine_a0c23726b6e8dce5e1f76388259d08632}{Vertical\+Line}}, \mbox{\hyperlink{classRectangle_a411be5483faff7cb8da87cdee5aeb00b}{Rectangle}}, \mbox{\hyperlink{classRadialGaugePlot_abd4b7947bb2990f060a768dcf2437bda}{Radial\+Gauge\+Plot}}, \mbox{\hyperlink{classPolygon_aa39d3e15101d283d22fc786a50a11468}{Polygon}}, \mbox{\hyperlink{classPolarAxis_a11497462f763138ddacac424a7f49006}{Polar\+Axis}}, \mbox{\hyperlink{classPieBase_af20476894681ad7c6f2c839ac17d981f}{Pie\+Base}}, \mbox{\hyperlink{classPie_ae67f304b17cc44695ae32721e4e79c25}{Pie}}, \mbox{\hyperlink{classPhasor_ab4e5338e5943bee0de2cfca53b79e377}{Phasor}}, \mbox{\hyperlink{classMarker_a5a7ee69481d27690953c349b1a1ecaea}{Marker}}, \mbox{\hyperlink{classLinePlot_a6946f61d9a5e61959c8c6f24df15295c}{Line\+Plot}}, \mbox{\hyperlink{classIsoLines_a71493a1d116c03dbe4cc91820697faaf}{Iso\+Lines}}, \mbox{\hyperlink{classImageMarker_a3625a8c26bffa8434db81c6a073b4708}{Image\+Marker}}, \mbox{\hyperlink{classHorizontalSpan_adb7bad9cacc15e6faa4cf9e3f6c82441}{Horizontal\+Span}}, \mbox{\hyperlink{classHorizontalLine_a3699b28d2cf43ae832413546a4a6b7b6}{Horizontal\+Line}}, \mbox{\hyperlink{classFillY_a80da7d455210df23f7f3af9ecfc1ec8b}{FillY}}, \mbox{\hyperlink{classScottPlot_1_1Plottables_1_1ErrorBar_a1a3fcb39df0da5770f5fe0c0ae367e8f}{Scott\+Plot.\+Plottables.\+Error\+Bar}}, \mbox{\hyperlink{classEllipse_ab144897634824c351283752f33d95cc9}{Ellipse}}, \mbox{\hyperlink{classDataStreamer_a1e3e2bbdb484275f688e8a073a9fe1e6}{Data\+Streamer}}, \mbox{\hyperlink{classDataLogger_ac46def6879551c15d691c4c4ba6a6da2}{Data\+Logger}}, \mbox{\hyperlink{classCrosshair_a02d6e3f2a09d0184ef937e6cd9cd2c38}{Crosshair}}, \mbox{\hyperlink{classCoxcomb_a4dacd1192ff1eaa73be8e1c6a1d0f09c}{Coxcomb}}, \mbox{\hyperlink{classCallout_a5c28ae86da2ada4ec9ce24b07a05b0e3}{Callout}}, \mbox{\hyperlink{classBoxPlot_a72c21427b93a8887b764b3ad3440fc8f}{Box\+Plot}}, \mbox{\hyperlink{classBenchmark_a890b2fcd83832a2158cec40609c83578}{Benchmark}}, \mbox{\hyperlink{classBarPlot_a0d3aa08fd44757fd80f281b6d613fb53}{Bar\+Plot}}, \mbox{\hyperlink{classAxisSpan_a17c06d2b92e68f098b2b5a69fb8b3239}{Axis\+Span}}, \mbox{\hyperlink{classAxisLine_a27d4d4b88ed74cecd82ae9830bf33403}{Axis\+Line}}, and \mbox{\hyperlink{classArrow_a4fe24c9eb8a1dbfbe27f025d05a06610}{Arrow}}.
+
+\mbox{\Hypertarget{interfaceIPlottable_a201a1a236dc718eda93db143a5ade9f8}\label{interfaceIPlottable_a201a1a236dc718eda93db143a5ade9f8}} 
+\index{IPlottable@{IPlottable}!Render@{Render}}
+\index{Render@{Render}!IPlottable@{IPlottable}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily void IPlottable.\+Render (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classRenderPack}{Render\+Pack}}}]{rp }\end{DoxyParamCaption})}
+
+
+
+Draw the data from this plottable into the data area defined in the \mbox{\hyperlink{classAxes}{Axes}}. By default the surface is already clipped to the data area, but this can be cleared inside the plottable. 
+
+
+
+Implemented in \mbox{\hyperlink{classVerticalSpan_a3bb6606f608859f038957ea112fe2e96}{Vertical\+Span}}, \mbox{\hyperlink{classVerticalLine_ac81672b51699c0d8f305b77ee53aa7b9}{Vertical\+Line}}, \mbox{\hyperlink{classRectangle_a83b435f93a76099abe83dd2a5ab587e1}{Rectangle}}, \mbox{\hyperlink{classRadialGaugePlot_a7c95bdb86409f808ed0fe4f4a65eef9b}{Radial\+Gauge\+Plot}}, \mbox{\hyperlink{classPolygon_a94aff365a11b639fb0f9fee6f62b67bc}{Polygon}}, \mbox{\hyperlink{classPolarAxis_a127e87fdae3100a0c6e3e7e5c727fcba}{Polar\+Axis}}, \mbox{\hyperlink{classPieBase_a9d91f1e76e5cfbb3b4109057884e905d}{Pie\+Base}}, \mbox{\hyperlink{classPie_a9cdff33c544771a223bb7cc2638ce17f}{Pie}}, \mbox{\hyperlink{classPhasor_afedc5cace9a379a5e8c71d28b35cf579}{Phasor}}, \mbox{\hyperlink{classMarker_a1231915cf444cab93ea7f25e28955425}{Marker}}, \mbox{\hyperlink{classLinePlot_a19a3fc97030379f31fe1eba403bd80ae}{Line\+Plot}}, \mbox{\hyperlink{classIsoLines_a9b286d07cfb084ea82fdb71fd6f5def8}{Iso\+Lines}}, \mbox{\hyperlink{classImageMarker_ae46f6b43a00c3ba46584e023a8d2e209}{Image\+Marker}}, \mbox{\hyperlink{classHorizontalSpan_ac19ab44605844dd9e6b8cfe8804eb9a6}{Horizontal\+Span}}, \mbox{\hyperlink{classHorizontalLine_a672b320970ca93fbdd16c0dcdd39ac66}{Horizontal\+Line}}, \mbox{\hyperlink{classFillY_a24b2696aaca23b8a3ca1d2e20248b2c0}{FillY}}, \mbox{\hyperlink{classScottPlot_1_1Plottables_1_1ErrorBar_a5e0a5617d025aadb2ff1cb201fae3484}{Scott\+Plot.\+Plottables.\+Error\+Bar}}, \mbox{\hyperlink{classEllipse_ab2a2607a099a8278ed1ec00f12f7ad9f}{Ellipse}}, \mbox{\hyperlink{classDataStreamer_a1ffa6cac3c26492bd3f825adde91d0c2}{Data\+Streamer}}, \mbox{\hyperlink{classDataLogger_a4e84320b36b6bef2621d067fe7d25525}{Data\+Logger}}, \mbox{\hyperlink{classCrosshair_a835e69280ae50983bc8301ff5d0a4409}{Crosshair}}, \mbox{\hyperlink{classCoxcomb_a69d2e3839eec22471a42f13417fe923f}{Coxcomb}}, \mbox{\hyperlink{classCallout_ac45e70f621007d9f4576299c782912ac}{Callout}}, \mbox{\hyperlink{classBoxPlot_ab530f244b686da516ba59768433ebc46}{Box\+Plot}}, \mbox{\hyperlink{classBenchmark_aa1f16bb7a435cf0f2c2d9b911ee477ba}{Benchmark}}, \mbox{\hyperlink{classBarPlot_a79dc580cc0593d0a7f7d1162c57537cc}{Bar\+Plot}}, \mbox{\hyperlink{classAxisSpan_af57046c9de82200e4fb4c64758414a79}{Axis\+Span}}, \mbox{\hyperlink{classAxisLine_aa0cb2f156e29e28f42a41f3488310cc9}{Axis\+Line}}, \mbox{\hyperlink{classArrow_aea23dd076b0ab728c21940cf65b96518}{Arrow}}, and \mbox{\hyperlink{classScatterGL_a3504c9a668d6f60a23c0e4a4cd5c0940}{Scatter\+GL}}.
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{interfaceIPlottable_a6b88b4a84eb82799d61f69fbd7e106bd}\label{interfaceIPlottable_a6b88b4a84eb82799d61f69fbd7e106bd}} 
+\index{IPlottable@{IPlottable}!Axes@{Axes}}
+\index{Axes@{Axes}!IPlottable@{IPlottable}}
+\doxysubsubsection{\texorpdfstring{Axes}{Axes}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceIAxes}{IAxes}} IPlottable.\+Axes\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+This object performs coordinate/pixel translation at render time based on the latest data area. It stores the axes to use for this plottable and also the data area (in pixels) updated just before each render. If this object is null it will be constructed using the default X and Y axes at render time. 
+
+\mbox{\Hypertarget{interfaceIPlottable_ad711a289b277718f1201a48d2f609c8d}\label{interfaceIPlottable_ad711a289b277718f1201a48d2f609c8d}} 
+\index{IPlottable@{IPlottable}!IsVisible@{IsVisible}}
+\index{IsVisible@{IsVisible}!IPlottable@{IPlottable}}
+\doxysubsubsection{\texorpdfstring{IsVisible}{IsVisible}}
+{\footnotesize\ttfamily bool IPlottable.\+Is\+Visible\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Toggles whether this plottable is shown and contributes to the automatic axis limit detection. The calling method will check this variable (it does not need to be checked inside the Render method). 
+
+\mbox{\Hypertarget{interfaceIPlottable_a26c571e709ef34d1cfd3c522eef1a3bf}\label{interfaceIPlottable_a26c571e709ef34d1cfd3c522eef1a3bf}} 
+\index{IPlottable@{IPlottable}!LegendItems@{LegendItems}}
+\index{LegendItems@{LegendItems}!IPlottable@{IPlottable}}
+\doxysubsubsection{\texorpdfstring{LegendItems}{LegendItems}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$\mbox{\hyperlink{classLegendItem}{Legend\+Item}}$>$ IPlottable.\+Legend\+Items\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Items which will appear in the legend 
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Interfaces/IPlottable.\+cs\end{DoxyCompactItemize}

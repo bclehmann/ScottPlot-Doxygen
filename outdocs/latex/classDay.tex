@@ -1,0 +1,89 @@
+\hypertarget{classDay}{}\doxysection{Day Class Reference}
+\label{classDay}\index{Day@{Day}}
+Inheritance diagram for Day\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classDay}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Date\+Time \mbox{\hyperlink{classDay_a58df3e4dbf9c1b1a5e86dc88306c5d4d}{Snap}} (Date\+Time dt)
+\begin{DoxyCompactList}\small\item\em Return a given date \char`\"{}snapped\char`\"{} back to the nearest nice tick position. Use this to find a good tick position for a given Date\+Time. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classDay_afc049f8460c400da674afe46770e3554}{Get\+Date\+Time\+Format\+String}} ()
+\begin{DoxyCompactList}\small\item\em Returns the format string used to display tick labels of this time unit. \href{https://learn.microsoft.com/en-us/dotnet/api/system.datetime.tostring}{\texttt{ https\+://learn.\+microsoft.\+com/en-\/us/dotnet/api/system.\+datetime.\+tostring}} \end{DoxyCompactList}\item 
+Date\+Time \mbox{\hyperlink{classDay_a4c32ccf74f3ae8111f52f6a941f4d75e}{Next}} (Date\+Time date\+Time, int increment=1)
+\begin{DoxyCompactList}\small\item\em Return the Date\+Time N units relative to this one \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+IRead\+Only\+List$<$ int $>$ \mbox{\hyperlink{classDay_a8765f928e57111eada0ae74015f9b639}{Divisors}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+Time\+Span \mbox{\hyperlink{classDay_a7a27df8deca849391f90c2c07de0193f}{Min\+Size}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classDay_afc049f8460c400da674afe46770e3554}\label{classDay_afc049f8460c400da674afe46770e3554}} 
+\index{Day@{Day}!GetDateTimeFormatString@{GetDateTimeFormatString}}
+\index{GetDateTimeFormatString@{GetDateTimeFormatString}!Day@{Day}}
+\doxysubsubsection{\texorpdfstring{GetDateTimeFormatString()}{GetDateTimeFormatString()}}
+{\footnotesize\ttfamily string Day.\+Get\+Date\+Time\+Format\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the format string used to display tick labels of this time unit. \href{https://learn.microsoft.com/en-us/dotnet/api/system.datetime.tostring}{\texttt{ https\+://learn.\+microsoft.\+com/en-\/us/dotnet/api/system.\+datetime.\+tostring}} 
+
+
+
+Implements \mbox{\hyperlink{interfaceITimeUnit_ad70c5bcb960ce6aea108d372a62d2111}{ITime\+Unit}}.
+
+\mbox{\Hypertarget{classDay_a4c32ccf74f3ae8111f52f6a941f4d75e}\label{classDay_a4c32ccf74f3ae8111f52f6a941f4d75e}} 
+\index{Day@{Day}!Next@{Next}}
+\index{Next@{Next}!Day@{Day}}
+\doxysubsubsection{\texorpdfstring{Next()}{Next()}}
+{\footnotesize\ttfamily Date\+Time Day.\+Next (\begin{DoxyParamCaption}\item[{Date\+Time}]{date\+Time,  }\item[{int}]{increment = {\ttfamily 1} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return the Date\+Time N units relative to this one 
+
+
+
+Implements \mbox{\hyperlink{interfaceITimeUnit_a937b9d1835716e8f94106fbf3dd76e99}{ITime\+Unit}}.
+
+\mbox{\Hypertarget{classDay_a58df3e4dbf9c1b1a5e86dc88306c5d4d}\label{classDay_a58df3e4dbf9c1b1a5e86dc88306c5d4d}} 
+\index{Day@{Day}!Snap@{Snap}}
+\index{Snap@{Snap}!Day@{Day}}
+\doxysubsubsection{\texorpdfstring{Snap()}{Snap()}}
+{\footnotesize\ttfamily Date\+Time Day.\+Snap (\begin{DoxyParamCaption}\item[{Date\+Time}]{date\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return a given date \char`\"{}snapped\char`\"{} back to the nearest nice tick position. Use this to find a good tick position for a given Date\+Time. 
+
+
+
+Implements \mbox{\hyperlink{interfaceITimeUnit_a5442876054e06f2d6a1d9e79ceb8747b}{ITime\+Unit}}.
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{classDay_a8765f928e57111eada0ae74015f9b639}\label{classDay_a8765f928e57111eada0ae74015f9b639}} 
+\index{Day@{Day}!Divisors@{Divisors}}
+\index{Divisors@{Divisors}!Day@{Day}}
+\doxysubsubsection{\texorpdfstring{Divisors}{Divisors}}
+{\footnotesize\ttfamily IRead\+Only\+List$<$int$>$ Day.\+Divisors\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{classDay_a7a27df8deca849391f90c2c07de0193f}\label{classDay_a7a27df8deca849391f90c2c07de0193f}} 
+\index{Day@{Day}!MinSize@{MinSize}}
+\index{MinSize@{MinSize}!Day@{Day}}
+\doxysubsubsection{\texorpdfstring{MinSize}{MinSize}}
+{\footnotesize\ttfamily Time\+Span Day.\+Min\+Size\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Tick\+Generators/\+Time\+Units/Day.\+cs\end{DoxyCompactItemize}

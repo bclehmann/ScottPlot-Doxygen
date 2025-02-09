@@ -1,0 +1,149 @@
+\hypertarget{classUserInputProcessor}{}\doxysection{User\+Input\+Processor Class Reference}
+\label{classUserInputProcessor}\index{UserInputProcessor@{UserInputProcessor}}
+
+
+This class collects user inputs and performs responses to manipulate a \mbox{\hyperlink{classPlot}{Plot}}. \mbox{\hyperlink{classCustom}{Custom}} user input actions may be supplied, and the list of responses can be modified to achieve total control over interaction behavior.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classUserInputProcessor_aacf6cd046dfabad4e4ce8de39ee79655}{User\+Input\+Processor}} (\mbox{\hyperlink{classPlot}{Plot}} plot)
+\item 
+void \mbox{\hyperlink{classUserInputProcessor_af3aeb308cee618621e7bba6c37ee83e7}{Remove\+All$<$ T $>$}} ()
+\begin{DoxyCompactList}\small\item\em Remove all user input responses of the specified type \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classUserInputProcessor_ab8dbed654bcfdf80554bf7f74728cef2}{Reset}} ()
+\begin{DoxyCompactList}\small\item\em Resets the user input responses to use the default interactivity settings \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classUserInputProcessor_a88439710cba0cf2fa12ffe94d7114196}{Process}} (\mbox{\hyperlink{interfaceIUserAction}{IUser\+Action}} user\+Action)
+\begin{DoxyCompactList}\small\item\em Process a user input and return results of the responses that engaged with it \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static List$<$ \mbox{\hyperlink{interfaceIUserActionResponse}{IUser\+Action\+Response}} $>$ \mbox{\hyperlink{classUserInputProcessor_a3be8b0dd97b9428bea64a6d75c02b875}{Default\+User\+Responses}} ()
+\begin{DoxyCompactList}\small\item\em Default user actions that are in place when the event processor is constructed or reset. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+readonly \mbox{\hyperlink{classKeyboardState}{Keyboard\+State}} \mbox{\hyperlink{classUserInputProcessor_a091b3154559fc6edccd1cdc8c2f0a44c}{Key\+State}}
+\begin{DoxyCompactList}\small\item\em Tracks which keys are currently pressed \end{DoxyCompactList}\item 
+readonly List$<$ \mbox{\hyperlink{interfaceIUserActionResponse}{IUser\+Action\+Response}} $>$ \mbox{\hyperlink{classUserInputProcessor_ac42bd29f643052795e233b3781474aa9}{User\+Action\+Responses}} = \mbox{[}$\,$\mbox{]}
+\begin{DoxyCompactList}\small\item\em A list of user input responses that processes all incoming events in order. Users may manipulate this list to change the default behavior and add custom behaviors. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPlot}{Plot}} \mbox{\hyperlink{classUserInputProcessor_a6a66a701c8a42851b2964b39e1453554}{Plot}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The plot this input processor will act on \end{DoxyCompactList}\item 
+bool? \mbox{\hyperlink{classUserInputProcessor_a8ee11044a547195d27b3b80e28cc22a4}{Is\+Enabled}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Controls whether new events are processed. Enabling this disables the older \mbox{\hyperlink{interfaceIPlotControl_abae89a2eb59b716ccda6f779ccdf8b32}{IPlot\+Control.\+Interaction}} system. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class collects user inputs and performs responses to manipulate a \mbox{\hyperlink{classPlot}{Plot}}. \mbox{\hyperlink{classCustom}{Custom}} user input actions may be supplied, and the list of responses can be modified to achieve total control over interaction behavior. 
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classUserInputProcessor_aacf6cd046dfabad4e4ce8de39ee79655}\label{classUserInputProcessor_aacf6cd046dfabad4e4ce8de39ee79655}} 
+\index{UserInputProcessor@{UserInputProcessor}!UserInputProcessor@{UserInputProcessor}}
+\index{UserInputProcessor@{UserInputProcessor}!UserInputProcessor@{UserInputProcessor}}
+\doxysubsubsection{\texorpdfstring{UserInputProcessor()}{UserInputProcessor()}}
+{\footnotesize\ttfamily User\+Input\+Processor.\+User\+Input\+Processor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPlot}{Plot}}}]{plot }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classUserInputProcessor_a3be8b0dd97b9428bea64a6d75c02b875}\label{classUserInputProcessor_a3be8b0dd97b9428bea64a6d75c02b875}} 
+\index{UserInputProcessor@{UserInputProcessor}!DefaultUserResponses@{DefaultUserResponses}}
+\index{DefaultUserResponses@{DefaultUserResponses}!UserInputProcessor@{UserInputProcessor}}
+\doxysubsubsection{\texorpdfstring{DefaultUserResponses()}{DefaultUserResponses()}}
+{\footnotesize\ttfamily static List$<$\mbox{\hyperlink{interfaceIUserActionResponse}{IUser\+Action\+Response}}$>$ User\+Input\+Processor.\+Default\+User\+Responses (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Default user actions that are in place when the event processor is constructed or reset. 
+
+\mbox{\Hypertarget{classUserInputProcessor_a88439710cba0cf2fa12ffe94d7114196}\label{classUserInputProcessor_a88439710cba0cf2fa12ffe94d7114196}} 
+\index{UserInputProcessor@{UserInputProcessor}!Process@{Process}}
+\index{Process@{Process}!UserInputProcessor@{UserInputProcessor}}
+\doxysubsubsection{\texorpdfstring{Process()}{Process()}}
+{\footnotesize\ttfamily void User\+Input\+Processor.\+Process (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceIUserAction}{IUser\+Action}}}]{user\+Action }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Process a user input and return results of the responses that engaged with it 
+
+\mbox{\Hypertarget{classUserInputProcessor_af3aeb308cee618621e7bba6c37ee83e7}\label{classUserInputProcessor_af3aeb308cee618621e7bba6c37ee83e7}} 
+\index{UserInputProcessor@{UserInputProcessor}!RemoveAll$<$ T $>$@{RemoveAll$<$ T $>$}}
+\index{RemoveAll$<$ T $>$@{RemoveAll$<$ T $>$}!UserInputProcessor@{UserInputProcessor}}
+\doxysubsubsection{\texorpdfstring{RemoveAll$<$ T $>$()}{RemoveAll< T >()}}
+{\footnotesize\ttfamily void User\+Input\+Processor.\+Remove\+All$<$ T $>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Remove all user input responses of the specified type 
+
+\begin{Desc}
+\item[Type Constraints]\begin{description}
+\item[{\em T} : {\em \mbox{\hyperlink{interfaceIUserActionResponse}{IUser\+Action\+Response}}}]\end{description}
+\end{Desc}
+\mbox{\Hypertarget{classUserInputProcessor_ab8dbed654bcfdf80554bf7f74728cef2}\label{classUserInputProcessor_ab8dbed654bcfdf80554bf7f74728cef2}} 
+\index{UserInputProcessor@{UserInputProcessor}!Reset@{Reset}}
+\index{Reset@{Reset}!UserInputProcessor@{UserInputProcessor}}
+\doxysubsubsection{\texorpdfstring{Reset()}{Reset()}}
+{\footnotesize\ttfamily void User\+Input\+Processor.\+Reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Resets the user input responses to use the default interactivity settings 
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classUserInputProcessor_a091b3154559fc6edccd1cdc8c2f0a44c}\label{classUserInputProcessor_a091b3154559fc6edccd1cdc8c2f0a44c}} 
+\index{UserInputProcessor@{UserInputProcessor}!KeyState@{KeyState}}
+\index{KeyState@{KeyState}!UserInputProcessor@{UserInputProcessor}}
+\doxysubsubsection{\texorpdfstring{KeyState}{KeyState}}
+{\footnotesize\ttfamily readonly \mbox{\hyperlink{classKeyboardState}{Keyboard\+State}} User\+Input\+Processor.\+Key\+State}
+
+
+
+Tracks which keys are currently pressed 
+
+\mbox{\Hypertarget{classUserInputProcessor_ac42bd29f643052795e233b3781474aa9}\label{classUserInputProcessor_ac42bd29f643052795e233b3781474aa9}} 
+\index{UserInputProcessor@{UserInputProcessor}!UserActionResponses@{UserActionResponses}}
+\index{UserActionResponses@{UserActionResponses}!UserInputProcessor@{UserInputProcessor}}
+\doxysubsubsection{\texorpdfstring{UserActionResponses}{UserActionResponses}}
+{\footnotesize\ttfamily readonly List$<$\mbox{\hyperlink{interfaceIUserActionResponse}{IUser\+Action\+Response}}$>$ User\+Input\+Processor.\+User\+Action\+Responses = \mbox{[}$\,$\mbox{]}}
+
+
+
+A list of user input responses that processes all incoming events in order. Users may manipulate this list to change the default behavior and add custom behaviors. 
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{classUserInputProcessor_a8ee11044a547195d27b3b80e28cc22a4}\label{classUserInputProcessor_a8ee11044a547195d27b3b80e28cc22a4}} 
+\index{UserInputProcessor@{UserInputProcessor}!IsEnabled@{IsEnabled}}
+\index{IsEnabled@{IsEnabled}!UserInputProcessor@{UserInputProcessor}}
+\doxysubsubsection{\texorpdfstring{IsEnabled}{IsEnabled}}
+{\footnotesize\ttfamily bool? User\+Input\+Processor.\+Is\+Enabled\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Controls whether new events are processed. Enabling this disables the older \mbox{\hyperlink{interfaceIPlotControl_abae89a2eb59b716ccda6f779ccdf8b32}{IPlot\+Control.\+Interaction}} system. 
+
+\mbox{\Hypertarget{classUserInputProcessor_a6a66a701c8a42851b2964b39e1453554}\label{classUserInputProcessor_a6a66a701c8a42851b2964b39e1453554}} 
+\index{UserInputProcessor@{UserInputProcessor}!Plot@{Plot}}
+\index{Plot@{Plot}!UserInputProcessor@{UserInputProcessor}}
+\doxysubsubsection{\texorpdfstring{Plot}{Plot}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPlot}{Plot}} User\+Input\+Processor.\+Plot\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The plot this input processor will act on 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Interactivity/User\+Action\+Processor.\+cs\end{DoxyCompactItemize}

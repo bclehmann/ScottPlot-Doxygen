@@ -1,0 +1,157 @@
+\hypertarget{classPlotActions}{}\doxysection{Plot\+Actions Class Reference}
+\label{classPlotActions}\index{PlotActions@{PlotActions}}
+
+
+This object holds actions which manipulate the plot. To customize plot manipulation behavior, replace these delegates with custom ones.  
+
+
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classPlotActions}{Plot\+Actions}} \mbox{\hyperlink{classPlotActions_af763913b52bb009c47a3288dfa9377a4}{Standard}} ()
+\item 
+static \mbox{\hyperlink{classPlotActions}{Plot\+Actions}} \mbox{\hyperlink{classPlotActions_afaa1cdb2bcd2072dddca6f348baff6a2}{Non\+Interactive}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Action$<$ \mbox{\hyperlink{interfaceIPlotControl}{IPlot\+Control}}, \mbox{\hyperlink{structPixel}{Pixel}}, \mbox{\hyperlink{structLockedAxes}{Locked\+Axes}} $>$ \mbox{\hyperlink{classPlotActions_a3ab99325f74044f93ca967ee4638fab6}{Zoom\+In}} = delegate \{ \}
+\item 
+Action$<$ \mbox{\hyperlink{interfaceIPlotControl}{IPlot\+Control}}, \mbox{\hyperlink{structPixel}{Pixel}}, \mbox{\hyperlink{structLockedAxes}{Locked\+Axes}} $>$ \mbox{\hyperlink{classPlotActions_ac28dc67b5cef3de8957482e62dcb77c5}{Zoom\+Out}} = delegate \{ \}
+\item 
+Action$<$ \mbox{\hyperlink{interfaceIPlotControl}{IPlot\+Control}} $>$ \mbox{\hyperlink{classPlotActions_a5f642b01d553cc8e480f8b1fa2914ceb}{Pan\+Up}} = delegate \{ \}
+\item 
+Action$<$ \mbox{\hyperlink{interfaceIPlotControl}{IPlot\+Control}} $>$ \mbox{\hyperlink{classPlotActions_a89074600232174e95e0a6e5df7555a1c}{Pan\+Down}} = delegate \{ \}
+\item 
+Action$<$ \mbox{\hyperlink{interfaceIPlotControl}{IPlot\+Control}} $>$ \mbox{\hyperlink{classPlotActions_ab92018df170873087c1a14cdacc6d276}{Pan\+Left}} = delegate \{ \}
+\item 
+Action$<$ \mbox{\hyperlink{interfaceIPlotControl}{IPlot\+Control}} $>$ \mbox{\hyperlink{classPlotActions_ac6663c6c9570d5dd7699b2e8ecd75e28}{Pan\+Right}} = delegate \{ \}
+\item 
+Action$<$ \mbox{\hyperlink{interfaceIPlotControl}{IPlot\+Control}}, \mbox{\hyperlink{structMouseDrag}{Mouse\+Drag}}, \mbox{\hyperlink{structLockedAxes}{Locked\+Axes}} $>$ \mbox{\hyperlink{classPlotActions_a7ec865a8055072f6aa57695feff8f218}{Drag\+Pan}} = delegate \{ \}
+\item 
+Action$<$ \mbox{\hyperlink{interfaceIPlotControl}{IPlot\+Control}}, \mbox{\hyperlink{structMouseDrag}{Mouse\+Drag}}, \mbox{\hyperlink{structLockedAxes}{Locked\+Axes}} $>$ \mbox{\hyperlink{classPlotActions_a869af8a6bfbc738cb0e7a43136453727}{Drag\+Zoom}} = delegate \{ \}
+\item 
+Action$<$ \mbox{\hyperlink{interfaceIPlotControl}{IPlot\+Control}}, \mbox{\hyperlink{structMouseDrag}{Mouse\+Drag}}, \mbox{\hyperlink{structLockedAxes}{Locked\+Axes}} $>$ \mbox{\hyperlink{classPlotActions_a6e17994eef9c7406b775e656bbd75f97}{Drag\+Zoom\+Rectangle}} = delegate \{ \}
+\item 
+Action$<$ \mbox{\hyperlink{interfaceIPlotControl}{IPlot\+Control}} $>$ \mbox{\hyperlink{classPlotActions_ab6b340c16f360ba9a93fc0be7a0a69fb}{Zoom\+Rectangle\+Clear}} = delegate \{ \}
+\item 
+Action$<$ \mbox{\hyperlink{interfaceIPlotControl}{IPlot\+Control}} $>$ \mbox{\hyperlink{classPlotActions_a1c45702021f31b2a8e1dbd00aeae3715}{Zoom\+Rectangle\+Apply}} = delegate \{ \}
+\item 
+Action$<$ \mbox{\hyperlink{interfaceIPlotControl}{IPlot\+Control}} $>$ \mbox{\hyperlink{classPlotActions_ab216b3dc624ec32ea548af37541796ee}{Toggle\+Benchmark}} = delegate \{ \}
+\item 
+Action$<$ \mbox{\hyperlink{interfaceIPlotControl}{IPlot\+Control}}, \mbox{\hyperlink{structPixel}{Pixel}} $>$ \mbox{\hyperlink{classPlotActions_af3da9e0058b5aa4b9b2203a031bf99b5}{Auto\+Scale}} = delegate \{ \}
+\item 
+Action$<$ \mbox{\hyperlink{interfaceIPlotControl}{IPlot\+Control}}, \mbox{\hyperlink{structPixel}{Pixel}} $>$ \mbox{\hyperlink{classPlotActions_a368c03f95624b2131d747b82a23a720a}{Show\+Context\+Menu}} = delegate \{ \}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This object holds actions which manipulate the plot. To customize plot manipulation behavior, replace these delegates with custom ones. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPlotActions_afaa1cdb2bcd2072dddca6f348baff6a2}\label{classPlotActions_afaa1cdb2bcd2072dddca6f348baff6a2}} 
+\index{PlotActions@{PlotActions}!NonInteractive@{NonInteractive}}
+\index{NonInteractive@{NonInteractive}!PlotActions@{PlotActions}}
+\doxysubsubsection{\texorpdfstring{NonInteractive()}{NonInteractive()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classPlotActions}{Plot\+Actions}} Plot\+Actions.\+Non\+Interactive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{classPlotActions_af763913b52bb009c47a3288dfa9377a4}\label{classPlotActions_af763913b52bb009c47a3288dfa9377a4}} 
+\index{PlotActions@{PlotActions}!Standard@{Standard}}
+\index{Standard@{Standard}!PlotActions@{PlotActions}}
+\doxysubsubsection{\texorpdfstring{Standard()}{Standard()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classPlotActions}{Plot\+Actions}} Plot\+Actions.\+Standard (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classPlotActions_af3da9e0058b5aa4b9b2203a031bf99b5}\label{classPlotActions_af3da9e0058b5aa4b9b2203a031bf99b5}} 
+\index{PlotActions@{PlotActions}!AutoScale@{AutoScale}}
+\index{AutoScale@{AutoScale}!PlotActions@{PlotActions}}
+\doxysubsubsection{\texorpdfstring{AutoScale}{AutoScale}}
+{\footnotesize\ttfamily Action$<$\mbox{\hyperlink{interfaceIPlotControl}{IPlot\+Control}}, \mbox{\hyperlink{structPixel}{Pixel}}$>$ Plot\+Actions.\+Auto\+Scale = delegate \{ \}}
+
+\mbox{\Hypertarget{classPlotActions_a7ec865a8055072f6aa57695feff8f218}\label{classPlotActions_a7ec865a8055072f6aa57695feff8f218}} 
+\index{PlotActions@{PlotActions}!DragPan@{DragPan}}
+\index{DragPan@{DragPan}!PlotActions@{PlotActions}}
+\doxysubsubsection{\texorpdfstring{DragPan}{DragPan}}
+{\footnotesize\ttfamily Action$<$\mbox{\hyperlink{interfaceIPlotControl}{IPlot\+Control}}, \mbox{\hyperlink{structMouseDrag}{Mouse\+Drag}}, \mbox{\hyperlink{structLockedAxes}{Locked\+Axes}}$>$ Plot\+Actions.\+Drag\+Pan = delegate \{ \}}
+
+\mbox{\Hypertarget{classPlotActions_a869af8a6bfbc738cb0e7a43136453727}\label{classPlotActions_a869af8a6bfbc738cb0e7a43136453727}} 
+\index{PlotActions@{PlotActions}!DragZoom@{DragZoom}}
+\index{DragZoom@{DragZoom}!PlotActions@{PlotActions}}
+\doxysubsubsection{\texorpdfstring{DragZoom}{DragZoom}}
+{\footnotesize\ttfamily Action$<$\mbox{\hyperlink{interfaceIPlotControl}{IPlot\+Control}}, \mbox{\hyperlink{structMouseDrag}{Mouse\+Drag}}, \mbox{\hyperlink{structLockedAxes}{Locked\+Axes}}$>$ Plot\+Actions.\+Drag\+Zoom = delegate \{ \}}
+
+\mbox{\Hypertarget{classPlotActions_a6e17994eef9c7406b775e656bbd75f97}\label{classPlotActions_a6e17994eef9c7406b775e656bbd75f97}} 
+\index{PlotActions@{PlotActions}!DragZoomRectangle@{DragZoomRectangle}}
+\index{DragZoomRectangle@{DragZoomRectangle}!PlotActions@{PlotActions}}
+\doxysubsubsection{\texorpdfstring{DragZoomRectangle}{DragZoomRectangle}}
+{\footnotesize\ttfamily Action$<$\mbox{\hyperlink{interfaceIPlotControl}{IPlot\+Control}}, \mbox{\hyperlink{structMouseDrag}{Mouse\+Drag}}, \mbox{\hyperlink{structLockedAxes}{Locked\+Axes}}$>$ Plot\+Actions.\+Drag\+Zoom\+Rectangle = delegate \{ \}}
+
+\mbox{\Hypertarget{classPlotActions_a89074600232174e95e0a6e5df7555a1c}\label{classPlotActions_a89074600232174e95e0a6e5df7555a1c}} 
+\index{PlotActions@{PlotActions}!PanDown@{PanDown}}
+\index{PanDown@{PanDown}!PlotActions@{PlotActions}}
+\doxysubsubsection{\texorpdfstring{PanDown}{PanDown}}
+{\footnotesize\ttfamily Action$<$\mbox{\hyperlink{interfaceIPlotControl}{IPlot\+Control}}$>$ Plot\+Actions.\+Pan\+Down = delegate \{ \}}
+
+\mbox{\Hypertarget{classPlotActions_ab92018df170873087c1a14cdacc6d276}\label{classPlotActions_ab92018df170873087c1a14cdacc6d276}} 
+\index{PlotActions@{PlotActions}!PanLeft@{PanLeft}}
+\index{PanLeft@{PanLeft}!PlotActions@{PlotActions}}
+\doxysubsubsection{\texorpdfstring{PanLeft}{PanLeft}}
+{\footnotesize\ttfamily Action$<$\mbox{\hyperlink{interfaceIPlotControl}{IPlot\+Control}}$>$ Plot\+Actions.\+Pan\+Left = delegate \{ \}}
+
+\mbox{\Hypertarget{classPlotActions_ac6663c6c9570d5dd7699b2e8ecd75e28}\label{classPlotActions_ac6663c6c9570d5dd7699b2e8ecd75e28}} 
+\index{PlotActions@{PlotActions}!PanRight@{PanRight}}
+\index{PanRight@{PanRight}!PlotActions@{PlotActions}}
+\doxysubsubsection{\texorpdfstring{PanRight}{PanRight}}
+{\footnotesize\ttfamily Action$<$\mbox{\hyperlink{interfaceIPlotControl}{IPlot\+Control}}$>$ Plot\+Actions.\+Pan\+Right = delegate \{ \}}
+
+\mbox{\Hypertarget{classPlotActions_a5f642b01d553cc8e480f8b1fa2914ceb}\label{classPlotActions_a5f642b01d553cc8e480f8b1fa2914ceb}} 
+\index{PlotActions@{PlotActions}!PanUp@{PanUp}}
+\index{PanUp@{PanUp}!PlotActions@{PlotActions}}
+\doxysubsubsection{\texorpdfstring{PanUp}{PanUp}}
+{\footnotesize\ttfamily Action$<$\mbox{\hyperlink{interfaceIPlotControl}{IPlot\+Control}}$>$ Plot\+Actions.\+Pan\+Up = delegate \{ \}}
+
+\mbox{\Hypertarget{classPlotActions_a368c03f95624b2131d747b82a23a720a}\label{classPlotActions_a368c03f95624b2131d747b82a23a720a}} 
+\index{PlotActions@{PlotActions}!ShowContextMenu@{ShowContextMenu}}
+\index{ShowContextMenu@{ShowContextMenu}!PlotActions@{PlotActions}}
+\doxysubsubsection{\texorpdfstring{ShowContextMenu}{ShowContextMenu}}
+{\footnotesize\ttfamily Action$<$\mbox{\hyperlink{interfaceIPlotControl}{IPlot\+Control}}, \mbox{\hyperlink{structPixel}{Pixel}}$>$ Plot\+Actions.\+Show\+Context\+Menu = delegate \{ \}}
+
+\mbox{\Hypertarget{classPlotActions_ab216b3dc624ec32ea548af37541796ee}\label{classPlotActions_ab216b3dc624ec32ea548af37541796ee}} 
+\index{PlotActions@{PlotActions}!ToggleBenchmark@{ToggleBenchmark}}
+\index{ToggleBenchmark@{ToggleBenchmark}!PlotActions@{PlotActions}}
+\doxysubsubsection{\texorpdfstring{ToggleBenchmark}{ToggleBenchmark}}
+{\footnotesize\ttfamily Action$<$\mbox{\hyperlink{interfaceIPlotControl}{IPlot\+Control}}$>$ Plot\+Actions.\+Toggle\+Benchmark = delegate \{ \}}
+
+\mbox{\Hypertarget{classPlotActions_a3ab99325f74044f93ca967ee4638fab6}\label{classPlotActions_a3ab99325f74044f93ca967ee4638fab6}} 
+\index{PlotActions@{PlotActions}!ZoomIn@{ZoomIn}}
+\index{ZoomIn@{ZoomIn}!PlotActions@{PlotActions}}
+\doxysubsubsection{\texorpdfstring{ZoomIn}{ZoomIn}}
+{\footnotesize\ttfamily Action$<$\mbox{\hyperlink{interfaceIPlotControl}{IPlot\+Control}}, \mbox{\hyperlink{structPixel}{Pixel}}, \mbox{\hyperlink{structLockedAxes}{Locked\+Axes}}$>$ Plot\+Actions.\+Zoom\+In = delegate \{ \}}
+
+\mbox{\Hypertarget{classPlotActions_ac28dc67b5cef3de8957482e62dcb77c5}\label{classPlotActions_ac28dc67b5cef3de8957482e62dcb77c5}} 
+\index{PlotActions@{PlotActions}!ZoomOut@{ZoomOut}}
+\index{ZoomOut@{ZoomOut}!PlotActions@{PlotActions}}
+\doxysubsubsection{\texorpdfstring{ZoomOut}{ZoomOut}}
+{\footnotesize\ttfamily Action$<$\mbox{\hyperlink{interfaceIPlotControl}{IPlot\+Control}}, \mbox{\hyperlink{structPixel}{Pixel}}, \mbox{\hyperlink{structLockedAxes}{Locked\+Axes}}$>$ Plot\+Actions.\+Zoom\+Out = delegate \{ \}}
+
+\mbox{\Hypertarget{classPlotActions_a1c45702021f31b2a8e1dbd00aeae3715}\label{classPlotActions_a1c45702021f31b2a8e1dbd00aeae3715}} 
+\index{PlotActions@{PlotActions}!ZoomRectangleApply@{ZoomRectangleApply}}
+\index{ZoomRectangleApply@{ZoomRectangleApply}!PlotActions@{PlotActions}}
+\doxysubsubsection{\texorpdfstring{ZoomRectangleApply}{ZoomRectangleApply}}
+{\footnotesize\ttfamily Action$<$\mbox{\hyperlink{interfaceIPlotControl}{IPlot\+Control}}$>$ Plot\+Actions.\+Zoom\+Rectangle\+Apply = delegate \{ \}}
+
+\mbox{\Hypertarget{classPlotActions_ab6b340c16f360ba9a93fc0be7a0a69fb}\label{classPlotActions_ab6b340c16f360ba9a93fc0be7a0a69fb}} 
+\index{PlotActions@{PlotActions}!ZoomRectangleClear@{ZoomRectangleClear}}
+\index{ZoomRectangleClear@{ZoomRectangleClear}!PlotActions@{PlotActions}}
+\doxysubsubsection{\texorpdfstring{ZoomRectangleClear}{ZoomRectangleClear}}
+{\footnotesize\ttfamily Action$<$\mbox{\hyperlink{interfaceIPlotControl}{IPlot\+Control}}$>$ Plot\+Actions.\+Zoom\+Rectangle\+Clear = delegate \{ \}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Control/Plot\+Actions.\+cs\end{DoxyCompactItemize}

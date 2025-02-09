@@ -1,0 +1,175 @@
+\hypertarget{classEtoPlot}{}\doxysection{Eto\+Plot Class Reference}
+\label{classEtoPlot}\index{EtoPlot@{EtoPlot}}
+Inheritance diagram for Eto\+Plot\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classEtoPlot}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classEtoPlot_a7098dfa4cd90d26424507f408681f17e}{Eto\+Plot}} ()
+\item 
+void \mbox{\hyperlink{classEtoPlot_ada679f78e0d76cd5529daef64362aaab}{Reset}} ()
+\begin{DoxyCompactList}\small\item\em Disposes the current \mbox{\hyperlink{classPlot}{Plot}} and creates a new one for the control \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEtoPlot_a134f71767f88e25edb7608b630b3dddd}{Reset}} (\mbox{\hyperlink{classPlot}{Plot}} plot)
+\begin{DoxyCompactList}\small\item\em Loads the given \mbox{\hyperlink{classPlot}{Plot}} into the control \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEtoPlot_a56bceb2a5481dda508d9e577719976b2}{Refresh}} ()
+\begin{DoxyCompactList}\small\item\em Render the plot and update the image \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEtoPlot_a8d7bb9bbf2842a432fbf2b468ee22b75}{Show\+Context\+Menu}} (\mbox{\hyperlink{structPixel}{Pixel}} position)
+\begin{DoxyCompactList}\small\item\em Launch the default pop-\/up menu (typically in response to a right-\/click) at the given position in the control \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classEtoPlot_a32c0749edc0ec6daff5163404fd421cb}{Detect\+Display\+Scale}} ()
+\begin{DoxyCompactList}\small\item\em Determine the DPI scaling ratio of the present display. A value of 1.\+0 means no scaling, and 1.\+5 means 150\% scaling. This operation may be costly so do not call it frequently. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{classEtoPlot_aa605c94d531f823cf835c6a66c966806}{On\+Paint}} (Paint\+Event\+Args args)
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPlot}{Plot}} \mbox{\hyperlink{classEtoPlot_aa4466262173368da41079b971aaa3b93}{Plot}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+GRContext? \mbox{\hyperlink{classEtoPlot_a0f3b6a4e8b5d750a962460f83f54cc2f}{GRContext}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{interfaceIPlotInteraction}{IPlot\+Interaction}} \mbox{\hyperlink{classEtoPlot_a734d799c60999a3892a414d8d780a1e5}{Interaction}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+Interactivity.\+User\+Input\+Processor \mbox{\hyperlink{classEtoPlot_a287df081c351ea9a2ae967fef0099e54}{User\+Input\+Processor}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{interfaceIPlotMenu}{IPlot\+Menu}} \mbox{\hyperlink{classEtoPlot_ad758f3f52db20b990b563049ee1d3a4c}{Menu}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{classEtoPlot_a4a8aa7342d58c9c28f034cb5dffa20d2}{Display\+Scale}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classEtoPlot_a7098dfa4cd90d26424507f408681f17e}\label{classEtoPlot_a7098dfa4cd90d26424507f408681f17e}} 
+\index{EtoPlot@{EtoPlot}!EtoPlot@{EtoPlot}}
+\index{EtoPlot@{EtoPlot}!EtoPlot@{EtoPlot}}
+\doxysubsubsection{\texorpdfstring{EtoPlot()}{EtoPlot()}}
+{\footnotesize\ttfamily Eto\+Plot.\+Eto\+Plot (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classEtoPlot_a32c0749edc0ec6daff5163404fd421cb}\label{classEtoPlot_a32c0749edc0ec6daff5163404fd421cb}} 
+\index{EtoPlot@{EtoPlot}!DetectDisplayScale@{DetectDisplayScale}}
+\index{DetectDisplayScale@{DetectDisplayScale}!EtoPlot@{EtoPlot}}
+\doxysubsubsection{\texorpdfstring{DetectDisplayScale()}{DetectDisplayScale()}}
+{\footnotesize\ttfamily float Eto\+Plot.\+Detect\+Display\+Scale (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Determine the DPI scaling ratio of the present display. A value of 1.\+0 means no scaling, and 1.\+5 means 150\% scaling. This operation may be costly so do not call it frequently. 
+
+
+
+Implements \mbox{\hyperlink{interfaceIPlotControl_aa091d213054094b8acdc307ceda2db06}{IPlot\+Control}}.
+
+\mbox{\Hypertarget{classEtoPlot_aa605c94d531f823cf835c6a66c966806}\label{classEtoPlot_aa605c94d531f823cf835c6a66c966806}} 
+\index{EtoPlot@{EtoPlot}!OnPaint@{OnPaint}}
+\index{OnPaint@{OnPaint}!EtoPlot@{EtoPlot}}
+\doxysubsubsection{\texorpdfstring{OnPaint()}{OnPaint()}}
+{\footnotesize\ttfamily override void Eto\+Plot.\+On\+Paint (\begin{DoxyParamCaption}\item[{Paint\+Event\+Args}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classEtoPlot_a56bceb2a5481dda508d9e577719976b2}\label{classEtoPlot_a56bceb2a5481dda508d9e577719976b2}} 
+\index{EtoPlot@{EtoPlot}!Refresh@{Refresh}}
+\index{Refresh@{Refresh}!EtoPlot@{EtoPlot}}
+\doxysubsubsection{\texorpdfstring{Refresh()}{Refresh()}}
+{\footnotesize\ttfamily void Eto\+Plot.\+Refresh (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Render the plot and update the image 
+
+
+
+Implements \mbox{\hyperlink{interfaceIPlotControl_ac5672b6f3e3e2825da1e95f0cd2f4bcb}{IPlot\+Control}}.
+
+\mbox{\Hypertarget{classEtoPlot_ada679f78e0d76cd5529daef64362aaab}\label{classEtoPlot_ada679f78e0d76cd5529daef64362aaab}} 
+\index{EtoPlot@{EtoPlot}!Reset@{Reset}}
+\index{Reset@{Reset}!EtoPlot@{EtoPlot}}
+\doxysubsubsection{\texorpdfstring{Reset()}{Reset()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Eto\+Plot.\+Reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Disposes the current \mbox{\hyperlink{classPlot}{Plot}} and creates a new one for the control 
+
+
+
+Implements \mbox{\hyperlink{interfaceIPlotControl_a3021825d73d2bcf47dfd5f6f562e2cdf}{IPlot\+Control}}.
+
+\mbox{\Hypertarget{classEtoPlot_a134f71767f88e25edb7608b630b3dddd}\label{classEtoPlot_a134f71767f88e25edb7608b630b3dddd}} 
+\index{EtoPlot@{EtoPlot}!Reset@{Reset}}
+\index{Reset@{Reset}!EtoPlot@{EtoPlot}}
+\doxysubsubsection{\texorpdfstring{Reset()}{Reset()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Eto\+Plot.\+Reset (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPlot}{Plot}}}]{plot }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Loads the given \mbox{\hyperlink{classPlot}{Plot}} into the control 
+
+
+
+Implements \mbox{\hyperlink{interfaceIPlotControl_a3204ee77a937b93563c72a8fbaacd957}{IPlot\+Control}}.
+
+\mbox{\Hypertarget{classEtoPlot_a8d7bb9bbf2842a432fbf2b468ee22b75}\label{classEtoPlot_a8d7bb9bbf2842a432fbf2b468ee22b75}} 
+\index{EtoPlot@{EtoPlot}!ShowContextMenu@{ShowContextMenu}}
+\index{ShowContextMenu@{ShowContextMenu}!EtoPlot@{EtoPlot}}
+\doxysubsubsection{\texorpdfstring{ShowContextMenu()}{ShowContextMenu()}}
+{\footnotesize\ttfamily void Eto\+Plot.\+Show\+Context\+Menu (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPixel}{Pixel}}}]{position }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Launch the default pop-\/up menu (typically in response to a right-\/click) at the given position in the control 
+
+
+
+Implements \mbox{\hyperlink{interfaceIPlotControl_aa822894e483df742fb376cd3169eefc4}{IPlot\+Control}}.
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{classEtoPlot_a4a8aa7342d58c9c28f034cb5dffa20d2}\label{classEtoPlot_a4a8aa7342d58c9c28f034cb5dffa20d2}} 
+\index{EtoPlot@{EtoPlot}!DisplayScale@{DisplayScale}}
+\index{DisplayScale@{DisplayScale}!EtoPlot@{EtoPlot}}
+\doxysubsubsection{\texorpdfstring{DisplayScale}{DisplayScale}}
+{\footnotesize\ttfamily float Eto\+Plot.\+Display\+Scale\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classEtoPlot_a0f3b6a4e8b5d750a962460f83f54cc2f}\label{classEtoPlot_a0f3b6a4e8b5d750a962460f83f54cc2f}} 
+\index{EtoPlot@{EtoPlot}!GRContext@{GRContext}}
+\index{GRContext@{GRContext}!EtoPlot@{EtoPlot}}
+\doxysubsubsection{\texorpdfstring{GRContext}{GRContext}}
+{\footnotesize\ttfamily GRContext? Eto\+Plot.\+GRContext\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{classEtoPlot_a734d799c60999a3892a414d8d780a1e5}\label{classEtoPlot_a734d799c60999a3892a414d8d780a1e5}} 
+\index{EtoPlot@{EtoPlot}!Interaction@{Interaction}}
+\index{Interaction@{Interaction}!EtoPlot@{EtoPlot}}
+\doxysubsubsection{\texorpdfstring{Interaction}{Interaction}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceIPlotInteraction}{IPlot\+Interaction}} Eto\+Plot.\+Interaction\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classEtoPlot_ad758f3f52db20b990b563049ee1d3a4c}\label{classEtoPlot_ad758f3f52db20b990b563049ee1d3a4c}} 
+\index{EtoPlot@{EtoPlot}!Menu@{Menu}}
+\index{Menu@{Menu}!EtoPlot@{EtoPlot}}
+\doxysubsubsection{\texorpdfstring{Menu}{Menu}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceIPlotMenu}{IPlot\+Menu}} Eto\+Plot.\+Menu\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classEtoPlot_aa4466262173368da41079b971aaa3b93}\label{classEtoPlot_aa4466262173368da41079b971aaa3b93}} 
+\index{EtoPlot@{EtoPlot}!Plot@{Plot}}
+\index{Plot@{Plot}!EtoPlot@{EtoPlot}}
+\doxysubsubsection{\texorpdfstring{Plot}{Plot}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPlot}{Plot}} Eto\+Plot.\+Plot\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classEtoPlot_a287df081c351ea9a2ae967fef0099e54}\label{classEtoPlot_a287df081c351ea9a2ae967fef0099e54}} 
+\index{EtoPlot@{EtoPlot}!UserInputProcessor@{UserInputProcessor}}
+\index{UserInputProcessor@{UserInputProcessor}!EtoPlot@{EtoPlot}}
+\doxysubsubsection{\texorpdfstring{UserInputProcessor}{UserInputProcessor}}
+{\footnotesize\ttfamily Interactivity.\+User\+Input\+Processor Eto\+Plot.\+User\+Input\+Processor\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5 Controls/\+Scott\+Plot.\+Eto/Eto\+Plot.\+cs\end{DoxyCompactItemize}

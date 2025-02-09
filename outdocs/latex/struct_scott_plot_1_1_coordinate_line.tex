@@ -1,0 +1,224 @@
+\doxysection{Scott\+Plot.\+Coordinate\+Line Struct Reference}
+\hypertarget{struct_scott_plot_1_1_coordinate_line}{}\label{struct_scott_plot_1_1_coordinate_line}\index{ScottPlot.CoordinateLine@{ScottPlot.CoordinateLine}}
+
+
+Represents a straight line in coordinate space.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_coordinate_line_ac5d6b408981c836a1e10c16c3f020674}{Coordinate\+Line}} (double x1, double y1, double x2, double y2)
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_coordinate_line_a4aa13e9fbe4e5d7acee2467d36c3a0dc}{Coordinate\+Line}} (\mbox{\hyperlink{struct_scott_plot_1_1_coordinates}{Coordinates}} pt1, \mbox{\hyperlink{struct_scott_plot_1_1_coordinates}{Coordinates}} pt2)
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_coordinate_line_a462453839262fe421ead2874d3d58376}{Coordinate\+Line}} (double x, double y, double slope)
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_coordinate_line_aba4626956df7a2e72ad28fa622e52288}{Coordinate\+Line}} (\mbox{\hyperlink{struct_scott_plot_1_1_coordinates}{Coordinates}} point, double slope)
+\item 
+override string \mbox{\hyperlink{struct_scott_plot_1_1_coordinate_line_a84a199a14c72836eec6ddba9b0d118b3}{To\+String}} ()
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_coordinate_line}{Coordinate\+Line}} \mbox{\hyperlink{struct_scott_plot_1_1_coordinate_line_aa9868c00927f3d6db21c48f12dee36da}{Extend\+To}} (\mbox{\hyperlink{struct_scott_plot_1_1_coordinate_rect}{Coordinate\+Rect}} rect)
+\begin{DoxyCompactList}\small\item\em Adjust the line to fit within the boundaries of the given rectangle. The slope and Y intercept will not be changed. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{struct_scott_plot_1_1_coordinate_line_a27119f134f42a5aba41ade9e63f8388a}{X}} (double y=0)
+\begin{DoxyCompactList}\small\item\em Return the X position on the line at the given Y. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{struct_scott_plot_1_1_coordinate_line_a146cd0435e7e26956a79f49c01746950}{Y}} (double x=0)
+\begin{DoxyCompactList}\small\item\em Return the Y position on the line at the given X. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_coordinate_line}{Coordinate\+Line}} \mbox{\hyperlink{struct_scott_plot_1_1_coordinate_line_afa44d802c9413ae38cbdfbe4d141c1fa}{With\+Delta}} (double dX, double dY)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+readonly double \mbox{\hyperlink{struct_scott_plot_1_1_coordinate_line_a58eb967ba04722cb3424ef22e49c6c4d}{X1}}
+\item 
+readonly double \mbox{\hyperlink{struct_scott_plot_1_1_coordinate_line_a47c2ac8dc554ba647e64d6210972a08a}{X2}}
+\item 
+readonly double \mbox{\hyperlink{struct_scott_plot_1_1_coordinate_line_a1511b1e49b196830db2b81a695b6c4fa}{Y1}}
+\item 
+readonly double \mbox{\hyperlink{struct_scott_plot_1_1_coordinate_line_a7d0c0ed31df761166abb3a5c079cddeb}{Y2}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{struct_scott_plot_1_1_coordinate_line_aee93aa534914cb2841442d458b66e99c}{XSpan}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+double \mbox{\hyperlink{struct_scott_plot_1_1_coordinate_line_a02e6b83a32f65dff2969a0835f142721}{YSpan}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+double \mbox{\hyperlink{struct_scott_plot_1_1_coordinate_line_a7cf8d7ee1eb24355574f723fb4fd32d3}{Slope}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+double \mbox{\hyperlink{struct_scott_plot_1_1_coordinate_line_a6e0f3a1b9525296307921dcd48880616}{Slope\+Radians}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+double \mbox{\hyperlink{struct_scott_plot_1_1_coordinate_line_a179fc2d06bf5f9fabcd9fcd23092e9bf}{Slope\+Degrees}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+double \mbox{\hyperlink{struct_scott_plot_1_1_coordinate_line_a4bb8fb155c8e43c8e2f79ab1d175d15d}{YIntercept}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+float \mbox{\hyperlink{struct_scott_plot_1_1_coordinate_line_a6e6740e3317857206c2c7b1b3c983d92}{Length}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_coordinates}{Coordinates}} \mbox{\hyperlink{struct_scott_plot_1_1_coordinate_line_a97639290f3c1c30f6ab3b65bdf1fae17}{Start}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_coordinates}{Coordinates}} \mbox{\hyperlink{struct_scott_plot_1_1_coordinate_line_a76afc9253a24743ac5508079d218b4f6}{End}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a straight line in coordinate space. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{struct_scott_plot_1_1_coordinate_line_ac5d6b408981c836a1e10c16c3f020674}\index{ScottPlot.CoordinateLine@{ScottPlot.CoordinateLine}!CoordinateLine@{CoordinateLine}}
+\index{CoordinateLine@{CoordinateLine}!ScottPlot.CoordinateLine@{ScottPlot.CoordinateLine}}
+\doxysubsubsection{\texorpdfstring{CoordinateLine()}{CoordinateLine()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_coordinate_line_ac5d6b408981c836a1e10c16c3f020674} 
+Scott\+Plot.\+Coordinate\+Line.\+Coordinate\+Line (\begin{DoxyParamCaption}\item[{double}]{x1}{, }\item[{double}]{y1}{, }\item[{double}]{x2}{, }\item[{double}]{y2}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{struct_scott_plot_1_1_coordinate_line_a4aa13e9fbe4e5d7acee2467d36c3a0dc}\index{ScottPlot.CoordinateLine@{ScottPlot.CoordinateLine}!CoordinateLine@{CoordinateLine}}
+\index{CoordinateLine@{CoordinateLine}!ScottPlot.CoordinateLine@{ScottPlot.CoordinateLine}}
+\doxysubsubsection{\texorpdfstring{CoordinateLine()}{CoordinateLine()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_coordinate_line_a4aa13e9fbe4e5d7acee2467d36c3a0dc} 
+Scott\+Plot.\+Coordinate\+Line.\+Coordinate\+Line (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_scott_plot_1_1_coordinates}{Coordinates}}}]{pt1}{, }\item[{\mbox{\hyperlink{struct_scott_plot_1_1_coordinates}{Coordinates}}}]{pt2}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{struct_scott_plot_1_1_coordinate_line_a462453839262fe421ead2874d3d58376}\index{ScottPlot.CoordinateLine@{ScottPlot.CoordinateLine}!CoordinateLine@{CoordinateLine}}
+\index{CoordinateLine@{CoordinateLine}!ScottPlot.CoordinateLine@{ScottPlot.CoordinateLine}}
+\doxysubsubsection{\texorpdfstring{CoordinateLine()}{CoordinateLine()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_coordinate_line_a462453839262fe421ead2874d3d58376} 
+Scott\+Plot.\+Coordinate\+Line.\+Coordinate\+Line (\begin{DoxyParamCaption}\item[{double}]{x}{, }\item[{double}]{y}{, }\item[{double}]{slope}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{struct_scott_plot_1_1_coordinate_line_aba4626956df7a2e72ad28fa622e52288}\index{ScottPlot.CoordinateLine@{ScottPlot.CoordinateLine}!CoordinateLine@{CoordinateLine}}
+\index{CoordinateLine@{CoordinateLine}!ScottPlot.CoordinateLine@{ScottPlot.CoordinateLine}}
+\doxysubsubsection{\texorpdfstring{CoordinateLine()}{CoordinateLine()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_coordinate_line_aba4626956df7a2e72ad28fa622e52288} 
+Scott\+Plot.\+Coordinate\+Line.\+Coordinate\+Line (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_scott_plot_1_1_coordinates}{Coordinates}}}]{point}{, }\item[{double}]{slope}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{struct_scott_plot_1_1_coordinate_line_aa9868c00927f3d6db21c48f12dee36da}\index{ScottPlot.CoordinateLine@{ScottPlot.CoordinateLine}!ExtendTo@{ExtendTo}}
+\index{ExtendTo@{ExtendTo}!ScottPlot.CoordinateLine@{ScottPlot.CoordinateLine}}
+\doxysubsubsection{\texorpdfstring{ExtendTo()}{ExtendTo()}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_coordinate_line_aa9868c00927f3d6db21c48f12dee36da} 
+\mbox{\hyperlink{struct_scott_plot_1_1_coordinate_line}{Coordinate\+Line}} Scott\+Plot.\+Coordinate\+Line.\+Extend\+To (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_scott_plot_1_1_coordinate_rect}{Coordinate\+Rect}}}]{rect}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Adjust the line to fit within the boundaries of the given rectangle. The slope and Y intercept will not be changed. 
+
+\Hypertarget{struct_scott_plot_1_1_coordinate_line_a84a199a14c72836eec6ddba9b0d118b3}\index{ScottPlot.CoordinateLine@{ScottPlot.CoordinateLine}!ToString@{ToString}}
+\index{ToString@{ToString}!ScottPlot.CoordinateLine@{ScottPlot.CoordinateLine}}
+\doxysubsubsection{\texorpdfstring{ToString()}{ToString()}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_coordinate_line_a84a199a14c72836eec6ddba9b0d118b3} 
+override string Scott\+Plot.\+Coordinate\+Line.\+To\+String (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{struct_scott_plot_1_1_coordinate_line_afa44d802c9413ae38cbdfbe4d141c1fa}\index{ScottPlot.CoordinateLine@{ScottPlot.CoordinateLine}!WithDelta@{WithDelta}}
+\index{WithDelta@{WithDelta}!ScottPlot.CoordinateLine@{ScottPlot.CoordinateLine}}
+\doxysubsubsection{\texorpdfstring{WithDelta()}{WithDelta()}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_coordinate_line_afa44d802c9413ae38cbdfbe4d141c1fa} 
+\mbox{\hyperlink{struct_scott_plot_1_1_coordinate_line}{Coordinate\+Line}} Scott\+Plot.\+Coordinate\+Line.\+With\+Delta (\begin{DoxyParamCaption}\item[{double}]{dX}{, }\item[{double}]{dY}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{struct_scott_plot_1_1_coordinate_line_a27119f134f42a5aba41ade9e63f8388a}\index{ScottPlot.CoordinateLine@{ScottPlot.CoordinateLine}!X@{X}}
+\index{X@{X}!ScottPlot.CoordinateLine@{ScottPlot.CoordinateLine}}
+\doxysubsubsection{\texorpdfstring{X()}{X()}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_coordinate_line_a27119f134f42a5aba41ade9e63f8388a} 
+double Scott\+Plot.\+Coordinate\+Line.\+X (\begin{DoxyParamCaption}\item[{double}]{y}{ = {\ttfamily 0}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return the X position on the line at the given Y. 
+
+\Hypertarget{struct_scott_plot_1_1_coordinate_line_a146cd0435e7e26956a79f49c01746950}\index{ScottPlot.CoordinateLine@{ScottPlot.CoordinateLine}!Y@{Y}}
+\index{Y@{Y}!ScottPlot.CoordinateLine@{ScottPlot.CoordinateLine}}
+\doxysubsubsection{\texorpdfstring{Y()}{Y()}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_coordinate_line_a146cd0435e7e26956a79f49c01746950} 
+double Scott\+Plot.\+Coordinate\+Line.\+Y (\begin{DoxyParamCaption}\item[{double}]{x}{ = {\ttfamily 0}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return the Y position on the line at the given X. 
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{struct_scott_plot_1_1_coordinate_line_a58eb967ba04722cb3424ef22e49c6c4d}\index{ScottPlot.CoordinateLine@{ScottPlot.CoordinateLine}!X1@{X1}}
+\index{X1@{X1}!ScottPlot.CoordinateLine@{ScottPlot.CoordinateLine}}
+\doxysubsubsection{\texorpdfstring{X1}{X1}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_coordinate_line_a58eb967ba04722cb3424ef22e49c6c4d} 
+readonly double Scott\+Plot.\+Coordinate\+Line.\+X1}
+
+\Hypertarget{struct_scott_plot_1_1_coordinate_line_a47c2ac8dc554ba647e64d6210972a08a}\index{ScottPlot.CoordinateLine@{ScottPlot.CoordinateLine}!X2@{X2}}
+\index{X2@{X2}!ScottPlot.CoordinateLine@{ScottPlot.CoordinateLine}}
+\doxysubsubsection{\texorpdfstring{X2}{X2}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_coordinate_line_a47c2ac8dc554ba647e64d6210972a08a} 
+readonly double Scott\+Plot.\+Coordinate\+Line.\+X2}
+
+\Hypertarget{struct_scott_plot_1_1_coordinate_line_a1511b1e49b196830db2b81a695b6c4fa}\index{ScottPlot.CoordinateLine@{ScottPlot.CoordinateLine}!Y1@{Y1}}
+\index{Y1@{Y1}!ScottPlot.CoordinateLine@{ScottPlot.CoordinateLine}}
+\doxysubsubsection{\texorpdfstring{Y1}{Y1}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_coordinate_line_a1511b1e49b196830db2b81a695b6c4fa} 
+readonly double Scott\+Plot.\+Coordinate\+Line.\+Y1}
+
+\Hypertarget{struct_scott_plot_1_1_coordinate_line_a7d0c0ed31df761166abb3a5c079cddeb}\index{ScottPlot.CoordinateLine@{ScottPlot.CoordinateLine}!Y2@{Y2}}
+\index{Y2@{Y2}!ScottPlot.CoordinateLine@{ScottPlot.CoordinateLine}}
+\doxysubsubsection{\texorpdfstring{Y2}{Y2}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_coordinate_line_a7d0c0ed31df761166abb3a5c079cddeb} 
+readonly double Scott\+Plot.\+Coordinate\+Line.\+Y2}
+
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{struct_scott_plot_1_1_coordinate_line_a76afc9253a24743ac5508079d218b4f6}\index{ScottPlot.CoordinateLine@{ScottPlot.CoordinateLine}!End@{End}}
+\index{End@{End}!ScottPlot.CoordinateLine@{ScottPlot.CoordinateLine}}
+\doxysubsubsection{\texorpdfstring{End}{End}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_coordinate_line_a76afc9253a24743ac5508079d218b4f6} 
+\mbox{\hyperlink{struct_scott_plot_1_1_coordinates}{Coordinates}} Scott\+Plot.\+Coordinate\+Line.\+End\hspace{0.3cm}{\ttfamily [get]}}
+
+\Hypertarget{struct_scott_plot_1_1_coordinate_line_a6e6740e3317857206c2c7b1b3c983d92}\index{ScottPlot.CoordinateLine@{ScottPlot.CoordinateLine}!Length@{Length}}
+\index{Length@{Length}!ScottPlot.CoordinateLine@{ScottPlot.CoordinateLine}}
+\doxysubsubsection{\texorpdfstring{Length}{Length}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_coordinate_line_a6e6740e3317857206c2c7b1b3c983d92} 
+float Scott\+Plot.\+Coordinate\+Line.\+Length\hspace{0.3cm}{\ttfamily [get]}}
+
+\Hypertarget{struct_scott_plot_1_1_coordinate_line_a7cf8d7ee1eb24355574f723fb4fd32d3}\index{ScottPlot.CoordinateLine@{ScottPlot.CoordinateLine}!Slope@{Slope}}
+\index{Slope@{Slope}!ScottPlot.CoordinateLine@{ScottPlot.CoordinateLine}}
+\doxysubsubsection{\texorpdfstring{Slope}{Slope}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_coordinate_line_a7cf8d7ee1eb24355574f723fb4fd32d3} 
+double Scott\+Plot.\+Coordinate\+Line.\+Slope\hspace{0.3cm}{\ttfamily [get]}}
+
+\Hypertarget{struct_scott_plot_1_1_coordinate_line_a179fc2d06bf5f9fabcd9fcd23092e9bf}\index{ScottPlot.CoordinateLine@{ScottPlot.CoordinateLine}!SlopeDegrees@{SlopeDegrees}}
+\index{SlopeDegrees@{SlopeDegrees}!ScottPlot.CoordinateLine@{ScottPlot.CoordinateLine}}
+\doxysubsubsection{\texorpdfstring{SlopeDegrees}{SlopeDegrees}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_coordinate_line_a179fc2d06bf5f9fabcd9fcd23092e9bf} 
+double Scott\+Plot.\+Coordinate\+Line.\+Slope\+Degrees\hspace{0.3cm}{\ttfamily [get]}}
+
+\Hypertarget{struct_scott_plot_1_1_coordinate_line_a6e0f3a1b9525296307921dcd48880616}\index{ScottPlot.CoordinateLine@{ScottPlot.CoordinateLine}!SlopeRadians@{SlopeRadians}}
+\index{SlopeRadians@{SlopeRadians}!ScottPlot.CoordinateLine@{ScottPlot.CoordinateLine}}
+\doxysubsubsection{\texorpdfstring{SlopeRadians}{SlopeRadians}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_coordinate_line_a6e0f3a1b9525296307921dcd48880616} 
+double Scott\+Plot.\+Coordinate\+Line.\+Slope\+Radians\hspace{0.3cm}{\ttfamily [get]}}
+
+\Hypertarget{struct_scott_plot_1_1_coordinate_line_a97639290f3c1c30f6ab3b65bdf1fae17}\index{ScottPlot.CoordinateLine@{ScottPlot.CoordinateLine}!Start@{Start}}
+\index{Start@{Start}!ScottPlot.CoordinateLine@{ScottPlot.CoordinateLine}}
+\doxysubsubsection{\texorpdfstring{Start}{Start}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_coordinate_line_a97639290f3c1c30f6ab3b65bdf1fae17} 
+\mbox{\hyperlink{struct_scott_plot_1_1_coordinates}{Coordinates}} Scott\+Plot.\+Coordinate\+Line.\+Start\hspace{0.3cm}{\ttfamily [get]}}
+
+\Hypertarget{struct_scott_plot_1_1_coordinate_line_aee93aa534914cb2841442d458b66e99c}\index{ScottPlot.CoordinateLine@{ScottPlot.CoordinateLine}!XSpan@{XSpan}}
+\index{XSpan@{XSpan}!ScottPlot.CoordinateLine@{ScottPlot.CoordinateLine}}
+\doxysubsubsection{\texorpdfstring{XSpan}{XSpan}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_coordinate_line_aee93aa534914cb2841442d458b66e99c} 
+double Scott\+Plot.\+Coordinate\+Line.\+XSpan\hspace{0.3cm}{\ttfamily [get]}}
+
+\Hypertarget{struct_scott_plot_1_1_coordinate_line_a4bb8fb155c8e43c8e2f79ab1d175d15d}\index{ScottPlot.CoordinateLine@{ScottPlot.CoordinateLine}!YIntercept@{YIntercept}}
+\index{YIntercept@{YIntercept}!ScottPlot.CoordinateLine@{ScottPlot.CoordinateLine}}
+\doxysubsubsection{\texorpdfstring{YIntercept}{YIntercept}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_coordinate_line_a4bb8fb155c8e43c8e2f79ab1d175d15d} 
+double Scott\+Plot.\+Coordinate\+Line.\+YIntercept\hspace{0.3cm}{\ttfamily [get]}}
+
+\Hypertarget{struct_scott_plot_1_1_coordinate_line_a02e6b83a32f65dff2969a0835f142721}\index{ScottPlot.CoordinateLine@{ScottPlot.CoordinateLine}!YSpan@{YSpan}}
+\index{YSpan@{YSpan}!ScottPlot.CoordinateLine@{ScottPlot.CoordinateLine}}
+\doxysubsubsection{\texorpdfstring{YSpan}{YSpan}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_coordinate_line_a02e6b83a32f65dff2969a0835f142721} 
+double Scott\+Plot.\+Coordinate\+Line.\+YSpan\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Primitives/Coordinate\+Line.\+cs\end{DoxyCompactItemize}

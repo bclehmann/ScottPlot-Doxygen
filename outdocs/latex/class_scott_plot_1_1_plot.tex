@@ -1,0 +1,952 @@
+\doxysection{Scott\+Plot.\+Plot Class Reference}
+\hypertarget{class_scott_plot_1_1_plot}{}\label{class_scott_plot_1_1_plot}\index{ScottPlot.Plot@{ScottPlot.Plot}}
+Inheritance diagram for Scott\+Plot.\+Plot\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_scott_plot_1_1_plot}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_scott_plot_1_1_plot_a6efb3482d5bd191afaf143690ad8e3ae}{Plot}} ()
+\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_plot_ac44bc1b6267982cb0ba076b0de15f623}{Dispose}} ()
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}} \mbox{\hyperlink{class_scott_plot_1_1_plot_ad39aa5ee885021d9e26628e39599844c}{Get\+Pixel}} (\mbox{\hyperlink{struct_scott_plot_1_1_coordinates}{Coordinates}} coordinates)
+\begin{DoxyCompactList}\small\item\em Return the location on the screen (pixel) for a location on the plot (coordinates) on the default axes. The figure size and layout referenced will be the one from the last render. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}} \mbox{\hyperlink{class_scott_plot_1_1_plot_a8b82f98173e7c93bd6388f742db5872b}{Get\+Pixel}} (\mbox{\hyperlink{struct_scott_plot_1_1_coordinates}{Coordinates}} coordinates, \mbox{\hyperlink{interface_scott_plot_1_1_i_x_axis}{IXAxis}} x\+Axis, \mbox{\hyperlink{interface_scott_plot_1_1_i_y_axis}{IYAxis}} y\+Axis)
+\begin{DoxyCompactList}\small\item\em Return the location on the screen (pixel) for a location on the plot (coordinates) on the given axes. The figure size and layout referenced will be the one from the last render. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_coordinates}{Coordinates}} \mbox{\hyperlink{class_scott_plot_1_1_plot_af10ca5ae226e80e7f749c55d6fdc1634}{Get\+Coordinates}} (\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}} pixel, \mbox{\hyperlink{interface_scott_plot_1_1_i_x_axis}{IXAxis}}? x\+Axis=null, \mbox{\hyperlink{interface_scott_plot_1_1_i_y_axis}{IYAxis}}? y\+Axis=null)
+\begin{DoxyCompactList}\small\item\em Return the coordinate for a specific pixel using measurements from the most recent render. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_coordinates}{Coordinates}} \mbox{\hyperlink{class_scott_plot_1_1_plot_aaaf83d0e0cc3bfd05b45e2be10981f3d}{Get\+Coordinates}} (float x, float y, \mbox{\hyperlink{interface_scott_plot_1_1_i_x_axis}{IXAxis}}? x\+Axis=null, \mbox{\hyperlink{interface_scott_plot_1_1_i_y_axis}{IYAxis}}? y\+Axis=null)
+\begin{DoxyCompactList}\small\item\em Return the coordinate for a specific pixel using measurements from the most recent render. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_coordinate_rect}{Coordinate\+Rect}} \mbox{\hyperlink{class_scott_plot_1_1_plot_ae5e1efa3135a14765bf77907ed8f8fb7}{Get\+Coordinate\+Rect}} (float x, float y, float radius=10, \mbox{\hyperlink{interface_scott_plot_1_1_i_x_axis}{IXAxis}}? x\+Axis=null, \mbox{\hyperlink{interface_scott_plot_1_1_i_y_axis}{IYAxis}}? y\+Axis=null)
+\begin{DoxyCompactList}\small\item\em Return a coordinate rectangle centered at a pixel. Uses measurements from the most recent render. 
+\begin{DoxyParams}{Parameters}
+{\em x} & Center point pixel\textquotesingle{}s x\\
+\hline
+{\em y} & Center point pixel\textquotesingle{}s y\\
+\hline
+{\em radius} & Radius in pixels\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The coordinate rectangle
+\end{DoxyReturn}
+\end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_coordinate_rect}{Coordinate\+Rect}} \mbox{\hyperlink{class_scott_plot_1_1_plot_aa0a8f4e9536f2dcd56836944396cd431}{Get\+Coordinate\+Rect}} (\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}} pixel, float radius=10, \mbox{\hyperlink{interface_scott_plot_1_1_i_x_axis}{IXAxis}}? x\+Axis=null, \mbox{\hyperlink{interface_scott_plot_1_1_i_y_axis}{IYAxis}}? y\+Axis=null)
+\begin{DoxyCompactList}\small\item\em Return a coordinate rectangle centered at a pixel. Uses measurements from the most recent render. 
+\begin{DoxyParams}{Parameters}
+{\em pixel} & Center point pixel\\
+\hline
+{\em radius} & Radius in pixels\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The coordinate rectangle
+\end{DoxyReturn}
+\end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_coordinate_rect}{Coordinate\+Rect}} \mbox{\hyperlink{class_scott_plot_1_1_plot_a38d6915cdbb15c50006e4d09f36c6d6d}{Get\+Coordinate\+Rect}} (\mbox{\hyperlink{struct_scott_plot_1_1_coordinates}{Coordinates}} coordinates, float radius=10, \mbox{\hyperlink{interface_scott_plot_1_1_i_x_axis}{IXAxis}}? x\+Axis=null, \mbox{\hyperlink{interface_scott_plot_1_1_i_y_axis}{IYAxis}}? y\+Axis=null)
+\begin{DoxyCompactList}\small\item\em Return a coordinate rectangle centered at a coordinate pair with the radius specified in pixels. Uses measurements from the most recent render. 
+\begin{DoxyParams}{Parameters}
+{\em coordinates} & Center point in coordinate units\\
+\hline
+{\em radius} & Radius in pixels\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The coordinate rectangle
+\end{DoxyReturn}
+\end{DoxyCompactList}\item 
+\mbox{\hyperlink{interface_scott_plot_1_1_i_axis}{IAxis}}? \mbox{\hyperlink{class_scott_plot_1_1_plot_a1708bf7d2e369c6f51c52975cc14c252}{Get\+Axis}} (\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}} pixel)
+\begin{DoxyCompactList}\small\item\em Get the axis under a given pixel. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{interface_scott_plot_1_1_i_panel}{IPanel}}? \mbox{\hyperlink{class_scott_plot_1_1_plot_a5fc4d108ea36cb04fd361e9c8690d4c0}{Get\+Panel}} (\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}} pixel, bool axes\+Only)
+\begin{DoxyCompactList}\small\item\em Get the panel under a given pixel. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_plot_ab556f930ae6ef1972baa102d4d32a7ac}{Render}} (int width=400, int height=300)
+\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_plot_a5c2a88296dd4fa00a785f28d2563fcf0}{Render\+In\+Memory}} (int width=400, int height=300)
+\begin{DoxyCompactList}\small\item\em Create a new image of the given dimensions, render the plot onto it, and return it. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_plot_a5550b87bd368edd9979f5efc80b5e029}{Render}} (SKCanvas canvas, int width, int height)
+\begin{DoxyCompactList}\small\item\em Render onto an existing canvas. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_plot_a86045c0874be7dac8823139e88a0e3cc}{Render}} (SKCanvas canvas, \mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect}{Pixel\+Rect}} rect)
+\begin{DoxyCompactList}\small\item\em Render onto an existing canvas inside the given rectangle. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_plot_aee32943bc635977b41085d5be336f27b}{Render}} (SKSurface surface)
+\begin{DoxyCompactList}\small\item\em Render onto an existing canvas of a surface over the local clip bounds. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_scott_plot_1_1_image}{Image}} \mbox{\hyperlink{class_scott_plot_1_1_plot_a4f257cac1ff59155d0e327eea7c7b1ee}{Get\+Image}} (int width, int height)
+\item 
+string \mbox{\hyperlink{class_scott_plot_1_1_plot_aa7fa8830cadbffccf4ac0c99ba0fec1d}{Get\+Image\+Html}} (int width, int height)
+\begin{DoxyCompactList}\small\item\em Render the plot and return an HTML img element containing a Base64-\/encoded PNG. \end{DoxyCompactList}\item 
+Saved\+Image\+Info \mbox{\hyperlink{class_scott_plot_1_1_plot_a3d31a9f854d1f8cbaec9ea5b056f9df5}{Save\+Jpeg}} (string file\+Path, int width, int height, int quality=85)
+\item 
+Saved\+Image\+Info \mbox{\hyperlink{class_scott_plot_1_1_plot_a786083f81e3cfa9fd68bc30287ae8bed}{Save\+Png}} (string file\+Path, int width, int height)
+\item 
+Saved\+Image\+Info \mbox{\hyperlink{class_scott_plot_1_1_plot_a8641b16f407d91b3e07c1f7a213cef26}{Save\+Bmp}} (string file\+Path, int width, int height)
+\item 
+Saved\+Image\+Info \mbox{\hyperlink{class_scott_plot_1_1_plot_a6fa9811d3e99bc22432065989b5d52c3}{Save\+Webp}} (string file\+Path, int width, int height, int quality=85)
+\item 
+Saved\+Image\+Info \mbox{\hyperlink{class_scott_plot_1_1_plot_a670ee3274d68327dda961e4ca14249d2}{Save\+Svg}} (string file\+Path, int width, int height)
+\item 
+string \mbox{\hyperlink{class_scott_plot_1_1_plot_a7cfec1246e256753caa18e24539fc59b}{Get\+Svg\+Xml}} (int width, int height)
+\item 
+Saved\+Image\+Info \mbox{\hyperlink{class_scott_plot_1_1_plot_a89f2602b0c8b6976e33aff0ac2a6d4a1}{Save}} (string file\+Path, int width, int height, \mbox{\hyperlink{namespace_scott_plot_a9a656259ac7f098b833a020b5f6687a2}{Image\+Format}} format=\mbox{\hyperlink{namespace_scott_plot_a9a656259ac7f098b833a020b5f6687a2af8fd4f1b5b05c6b1cc6a661141fd4f54}{Image\+Format.\+Png}}, int quality=85)
+\item 
+byte\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_scott_plot_1_1_plot_addcf6d87703d84ea413f686c7aac86c9}{Get\+Image\+Bytes}} (int width, int height, \mbox{\hyperlink{namespace_scott_plot_a9a656259ac7f098b833a020b5f6687a2}{Image\+Format}} format=\mbox{\hyperlink{namespace_scott_plot_a9a656259ac7f098b833a020b5f6687a2a021d8346462df53d4272607b0f41a8d8}{Image\+Format.\+Bmp}})
+\item 
+\mbox{\hyperlink{class_scott_plot_1_1_image}{Image}} \mbox{\hyperlink{class_scott_plot_1_1_plot_a00d1a23c9b9270f28da9428e3eb3c75d}{Get\+Legend\+Image}} ()
+\begin{DoxyCompactList}\small\item\em Returns the content of the legend as a raster image. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_scott_plot_1_1_plot_a02b4c0fb12b36ec815e3c8bf11f32c1d}{Get\+Legend\+Svg\+Xml}} ()
+\begin{DoxyCompactList}\small\item\em Returns the content of the legend as SVG (vector) image. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_enumerable}{IEnumerable}}$<$ \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable}{IPlottable}} $>$ \mbox{\hyperlink{class_scott_plot_1_1_plot_a82e54fe0766e709f3825639bcd1676bb}{Get\+Plottables}} ()
+\begin{DoxyCompactList}\small\item\em Return contents of \doxylink{class_scott_plot_1_1_plot_a05be5b3317a1979c5f468ec1282c7d9a}{Plottable\+List}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_enumerable}{IEnumerable}}$<$ T $>$ \mbox{\hyperlink{class_scott_plot_1_1_plot_ad46da5489d2d87cf24132f6083d4c9af}{Get\+Plottables$<$ T $>$}} ()
+\begin{DoxyCompactList}\small\item\em Return all plottables in \doxylink{class_scott_plot_1_1_plot_a05be5b3317a1979c5f468ec1282c7d9a}{Plottable\+List} of the given type. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_plot_a42884e22cfac577143c5cbddbd3f788e}{Remove}} (\mbox{\hyperlink{interface_scott_plot_1_1_i_plottable}{IPlottable}} plottable)
+\begin{DoxyCompactList}\small\item\em Remove the given plottable from the \doxylink{class_scott_plot_1_1_plot_a05be5b3317a1979c5f468ec1282c7d9a}{Plottable\+List}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_plot_ac1de5e4cd80731822ec158cb527dacf1}{Remove}} (\mbox{\hyperlink{interface_scott_plot_1_1_i_panel}{IPanel}} panel)
+\begin{DoxyCompactList}\small\item\em Remove the given Panel from the \doxylink{class_scott_plot_1_1_axes}{Axes}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_plot_a3bbaa345a1dd2df97acec0f414cf9c73}{Remove}} (\mbox{\hyperlink{interface_scott_plot_1_1_i_axis}{IAxis}} axis)
+\begin{DoxyCompactList}\small\item\em Remove the given Axis from the \doxylink{class_scott_plot_1_1_axes}{Axes}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_plot_a97632f5dcd0125db030c9930153fb5c2}{Remove}} (Type plot\+Type)
+\begin{DoxyCompactList}\small\item\em Remove all items of a specific type from the \doxylink{class_scott_plot_1_1_plot_a05be5b3317a1979c5f468ec1282c7d9a}{Plottable\+List}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_plot_a2c14b37781733dd894aa1d05bdac39f6}{Remove$<$ T $>$}} ()
+\begin{DoxyCompactList}\small\item\em Remove a all instances of a specific type from the \doxylink{class_scott_plot_1_1_plot_a05be5b3317a1979c5f468ec1282c7d9a}{Plottable\+List}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_plot_a7887097114fdb1eab72227baef78014f}{Remove$<$ T $>$}} (Func$<$ T, bool $>$ predicate)
+\begin{DoxyCompactList}\small\item\em Remove all instances of a specific type from the \doxylink{class_scott_plot_1_1_plot_a05be5b3317a1979c5f468ec1282c7d9a}{Plottable\+List} that meet the {\itshape predicate}  criteraia. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_plot_abc77a4a088125654a14674c76bed7e22}{Move\+To\+Top}} (\mbox{\hyperlink{interface_scott_plot_1_1_i_plottable}{IPlottable}} plottable)
+\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_plot_ac8047637161ac701e4d11c933bbe625f}{Move\+To\+Bottom}} (\mbox{\hyperlink{interface_scott_plot_1_1_i_plottable}{IPlottable}} plottable)
+\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_plot_af2b46b9e3cf361cc84613a5c9c654a1f}{Move\+To\+Front}} (\mbox{\hyperlink{interface_scott_plot_1_1_i_plottable}{IPlottable}} plottable)
+\begin{DoxyCompactList}\small\item\em Move the indicated plottable to the end of the list so it is rendered last. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_plot_a1e10f90bc151ac63883441eb798ffa13}{Move\+To\+Back}} (\mbox{\hyperlink{interface_scott_plot_1_1_i_plottable}{IPlottable}} plottable)
+\begin{DoxyCompactList}\small\item\em Move the indicated plottable to the start of the list so it is rendered first. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_plot_a26c3e3d48ff7be6bfe0a3aa6751fcafa}{Hide\+Axes\+And\+Grid}} (bool show\+Title=true)
+\begin{DoxyCompactList}\small\item\em Disable visibility for all axes and grids. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_plot_aeef87a5fb087b9dc809bb4e575d282b7}{Hide\+Grid}} ()
+\begin{DoxyCompactList}\small\item\em Disable visibility for all grids. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_plot_a7a9d4338b69bf0046971efb8c8535bdd}{Show\+Grid}} ()
+\begin{DoxyCompactList}\small\item\em Enable visibility for all grids. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_scott_plot_1_1_plot_a85c1e63c1986bc89de37df7510375931}{Legend}} \mbox{\hyperlink{class_scott_plot_1_1_plot_a10555f4281cefeffc02bbd27775e4be1}{Show\+Legend}} ()
+\begin{DoxyCompactList}\small\item\em Helper method for setting visibility of the \doxylink{class_scott_plot_1_1_plot_a85c1e63c1986bc89de37df7510375931}{Legend} \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_scott_plot_1_1_plot_a85c1e63c1986bc89de37df7510375931}{Legend}} \mbox{\hyperlink{class_scott_plot_1_1_plot_a28a4cf6c92817f6221e3369cfbaea1d7}{Show\+Legend}} (\mbox{\hyperlink{namespace_scott_plot_a2da000551e02ef1d0af13793cf678abc}{Alignment}} alignment)
+\begin{DoxyCompactList}\small\item\em Helper method for setting visibility of the \doxylink{class_scott_plot_1_1_plot_a85c1e63c1986bc89de37df7510375931}{Legend} and setting Legend.\+Location to the provided one. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_scott_plot_1_1_plot_a85c1e63c1986bc89de37df7510375931}{Legend}} \mbox{\hyperlink{class_scott_plot_1_1_plot_a36e9d6f05c0321076b32107d08867dcd}{Show\+Legend}} (\mbox{\hyperlink{namespace_scott_plot_a2da000551e02ef1d0af13793cf678abc}{Alignment}} alignment, \mbox{\hyperlink{namespace_scott_plot_a2e03998e1b759661fb14b057445748a9}{Orientation}} orientation)
+\begin{DoxyCompactList}\small\item\em Helper method for setting the Legend\textquotesingle{}s Is\+Visible, Alignment, and Orientation properties all at once. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_scott_plot_1_1_plot_a85c1e63c1986bc89de37df7510375931}{Legend}} \mbox{\hyperlink{class_scott_plot_1_1_plot_ab9c9ba893f6870f18fc22992a2b2dd77}{Show\+Legend}} (\mbox{\hyperlink{class_i_enumerable}{IEnumerable}}$<$ \mbox{\hyperlink{class_scott_plot_1_1_legend_item}{Legend\+Item}} $>$ items, \mbox{\hyperlink{namespace_scott_plot_a2da000551e02ef1d0af13793cf678abc}{Alignment}} location=\mbox{\hyperlink{namespace_scott_plot_a2da000551e02ef1d0af13793cf678abca5ef0d4d135d5f2814b07feaf13fda653}{Alignment.\+Lower\+Right}})
+\begin{DoxyCompactList}\small\item\em Helper method for displaying specific items in the legend. \end{DoxyCompactList}\item 
+Panels.\+Legend\+Panel \mbox{\hyperlink{class_scott_plot_1_1_plot_a24744bc09538e5ac9833e7ed41ccbf64}{Show\+Legend}} (\mbox{\hyperlink{namespace_scott_plot_a33d0346dfdd3d1d7cefc8d769ca98fcc}{Edge}} edge)
+\begin{DoxyCompactList}\small\item\em Hide the default legend (inside the data area) and create a new legend panel placed on the edge of the figure outside the data area. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_scott_plot_1_1_plot_a85c1e63c1986bc89de37df7510375931}{Legend}} \mbox{\hyperlink{class_scott_plot_1_1_plot_a07794505b542970d3900ab683b412084}{Hide\+Legend}} ()
+\begin{DoxyCompactList}\small\item\em Helper method for setting visibility of the \doxylink{class_scott_plot_1_1_plot_a85c1e63c1986bc89de37df7510375931}{Legend} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_plot_a4e5127be4a2aa64424616a13e9d9ae3e}{Clear}} ()
+\begin{DoxyCompactList}\small\item\em Clears the \doxylink{class_scott_plot_1_1_plot_a05be5b3317a1979c5f468ec1282c7d9a}{Plottable\+List} list. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_plot_a6ca418e96331013951196b0f3cadc509}{Clear$<$ T $>$}} ()
+\begin{DoxyCompactList}\small\item\em Clear a all instances of a specific type from the \doxylink{class_scott_plot_1_1_plot_a05be5b3317a1979c5f468ec1282c7d9a}{Plottable\+List}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_plot_a15bf174494b221a173a30897e17520e7}{Title}} (string text, float? size=null)
+\begin{DoxyCompactList}\small\item\em Shortcut to set text of the Title\+Panel \doxylink{class_scott_plot_1_1_label}{Label}. Assign properties of Title\+Panel \doxylink{class_scott_plot_1_1_label}{Label} to customize size, color, font, etc. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_plot_a0bb3988d11008e76ceee1b2a3c3ab126}{XLabel}} (string label, float? size=null)
+\begin{DoxyCompactList}\small\item\em Shortcut to set text of the Bottom\+Axis \doxylink{class_scott_plot_1_1_label}{Label} Assign properties of Bottom\+Axis \doxylink{class_scott_plot_1_1_label}{Label} to customize size, color, font, etc. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_plot_aaedfc72de449beb4d824dd700f6e702c}{YLabel}} (string label, float? size=null)
+\begin{DoxyCompactList}\small\item\em Shortcut to set text of the Bottom\+Axis \doxylink{class_scott_plot_1_1_label}{Label} Assign properties of Bottom\+Axis \doxylink{class_scott_plot_1_1_label}{Label} to customize size, color, font, etc. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_scott_plot_1_1_plot_style}{Plot\+Style}} \mbox{\hyperlink{class_scott_plot_1_1_plot_ada383712214101d37f4510c7bdc9c0bc}{Get\+Style}} ()
+\begin{DoxyCompactList}\small\item\em Return the current style settings for this plot. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_plot_a5a6d49620fe7a6b790c820365b592e37}{Set\+Style}} (\mbox{\hyperlink{class_scott_plot_1_1_plot_style}{Plot\+Style}} style)
+\begin{DoxyCompactList}\small\item\em Apply the given style settings to this plot. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_plot_a3b5fafb2970459dc4db3f2779b89364b}{Set\+Style}} (\mbox{\hyperlink{class_scott_plot_1_1_plot}{Plot}} other\+Plot)
+\begin{DoxyCompactList}\small\item\em Apply the style settings from the given plot to this plot. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_plot_a321736d03f7ee6aa413df30fd56d55cc}{Developer\+\_\+\+Show\+Axis\+Details}} (bool enable=true)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static Default\+Grid \mbox{\hyperlink{class_scott_plot_1_1_plot_a38a877a722f6b2bf29a49a94db29c510}{Get\+Default\+Grid}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_scott_plot_1_1_background_style}{Background\+Style}} \mbox{\hyperlink{class_scott_plot_1_1_plot_a47ef5969e1515f280ded62a4c96e4517}{Figure\+Background}} = new() \{ \mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} = \mbox{\hyperlink{struct_scott_plot_1_1_colors_a32e760069282d98fa003166cb08e3aeb}{Colors.\+White}} \}
+\begin{DoxyCompactList}\small\item\em Style for the background of the entire figure. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_scott_plot_1_1_background_style}{Background\+Style}} \mbox{\hyperlink{class_scott_plot_1_1_plot_a45470aeda8cc5c74cf9a06dbeaa16eaa}{Data\+Background}} = new() \{ \mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} = \mbox{\hyperlink{struct_scott_plot_1_1_colors_aecffb5296bdfb8fdb3168a75822b5da0}{Colors.\+Transparent}} \}
+\begin{DoxyCompactList}\small\item\em Style for the data area (the area within the axis frames) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable}{IPlottable}} $>$ \mbox{\hyperlink{class_scott_plot_1_1_plot_a05be5b3317a1979c5f468ec1282c7d9a}{Plottable\+List}} = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{namespace_scott_plot_a3a84709f712aa46f2613e6814147bf30}{Plottable\+Adder}} \mbox{\hyperlink{class_scott_plot_1_1_plot_a2d52981c3373f7732ef919971f5fce76}{Add}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+Render\+Manager \mbox{\hyperlink{class_scott_plot_1_1_plot_a3ea338eb72f646c9566c60a60f11411c}{Render\+Manager}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_render_details}{Render\+Details}} \mbox{\hyperlink{class_scott_plot_1_1_plot_ab5996da43dc1364b226e45eeca51f93b}{Last\+Render}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{class_scott_plot_1_1_layout_manager}{Layout\+Manager}} \mbox{\hyperlink{class_scott_plot_1_1_plot_aedafa988899d7eaefb2841a2e2987406}{Layout}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{interface_scott_plot_1_1_i_zoom_rectangle}{IZoom\+Rectangle}} \mbox{\hyperlink{class_scott_plot_1_1_plot_aa80d43e4cfe7021026cea7d9fbcc6e2d}{Zoom\+Rectangle}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+double \mbox{\hyperlink{class_scott_plot_1_1_plot_a6daefbcf32aa926763593cd79a1a815d}{Scale\+Factor}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{class_scott_plot_1_1_axis_manager}{Axis\+Manager}} \mbox{\hyperlink{class_scott_plot_1_1_plot_aee0a0bf05ca86a9fa2cc676c9fb9e193}{Axes}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+Plot\+Styler \mbox{\hyperlink{class_scott_plot_1_1_plot_a12d253b14731e60353fabc3dbc3a51a9}{Style}} = new()\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+Font\+Styler \mbox{\hyperlink{class_scott_plot_1_1_plot_a78d958a67601b8f47f18eeb0bbfce0a9}{Font}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+Legend \mbox{\hyperlink{class_scott_plot_1_1_plot_a85c1e63c1986bc89de37df7510375931}{Legend}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+Default\+Grid \mbox{\hyperlink{class_scott_plot_1_1_plot_aec8c042ebb2e85df1af19bf8aa063b4f}{Grid}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{interface_scott_plot_1_1_i_plottable}{IPlottable}} \mbox{\hyperlink{class_scott_plot_1_1_plot_a75da540f3a206cbb7adc7f191e48062f}{Benchmark}} = new \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_benchmark}{Plottables.\+Benchmark}}()\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+object \mbox{\hyperlink{class_scott_plot_1_1_plot_aca1f7d05a8d38e9bf6bb19424d4bd5b2}{Sync}} = new()\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em This object is locked by the \doxylink{class_scott_plot_1_1_plot_ab556f930ae6ef1972baa102d4d32a7ac}{Render()} methods. Logic that manipulates the plot (UI inputs or editing data) can lock this object to prevent rendering artifacts. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{interface_scott_plot_1_1_i_plot_control}{IPlot\+Control}}? \mbox{\hyperlink{class_scott_plot_1_1_plot_ab0ed58ae9a914e46ee36415cbe97d53f}{Plot\+Control}} = null\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The user control this plot belongs to. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_scott_plot_1_1_plot_a6efb3482d5bd191afaf143690ad8e3ae}\index{ScottPlot.Plot@{ScottPlot.Plot}!Plot@{Plot}}
+\index{Plot@{Plot}!ScottPlot.Plot@{ScottPlot.Plot}}
+\doxysubsubsection{\texorpdfstring{Plot()}{Plot()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plot_a6efb3482d5bd191afaf143690ad8e3ae} 
+Scott\+Plot.\+Plot.\+Plot (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_scott_plot_1_1_plot_a4e5127be4a2aa64424616a13e9d9ae3e}\index{ScottPlot.Plot@{ScottPlot.Plot}!Clear@{Clear}}
+\index{Clear@{Clear}!ScottPlot.Plot@{ScottPlot.Plot}}
+\doxysubsubsection{\texorpdfstring{Clear()}{Clear()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plot_a4e5127be4a2aa64424616a13e9d9ae3e} 
+void Scott\+Plot.\+Plot.\+Clear (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Clears the \doxylink{class_scott_plot_1_1_plot_a05be5b3317a1979c5f468ec1282c7d9a}{Plottable\+List} list. 
+
+\Hypertarget{class_scott_plot_1_1_plot_a6ca418e96331013951196b0f3cadc509}\index{ScottPlot.Plot@{ScottPlot.Plot}!Clear$<$ T $>$@{Clear$<$ T $>$}}
+\index{Clear$<$ T $>$@{Clear$<$ T $>$}!ScottPlot.Plot@{ScottPlot.Plot}}
+\doxysubsubsection{\texorpdfstring{Clear$<$ T $>$()}{Clear< T >()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plot_a6ca418e96331013951196b0f3cadc509} 
+void \mbox{\hyperlink{class_scott_plot_1_1_plot_a4e5127be4a2aa64424616a13e9d9ae3e}{Scott\+Plot.\+Plot.\+Clear}}$<$ T $>$ (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Clear a all instances of a specific type from the \doxylink{class_scott_plot_1_1_plot_a05be5b3317a1979c5f468ec1282c7d9a}{Plottable\+List}. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & Type of \doxylink{interface_scott_plot_1_1_i_plottable}{IPlottable} to be cleared\\
+\hline
+\end{DoxyTemplParams}
+\begin{Desc}
+\item[Type Constraints]\begin{description}
+\item[{\em T} : {\em IPlottable}]\end{description}
+\end{Desc}
+\Hypertarget{class_scott_plot_1_1_plot_a321736d03f7ee6aa413df30fd56d55cc}\index{ScottPlot.Plot@{ScottPlot.Plot}!Developer\_ShowAxisDetails@{Developer\_ShowAxisDetails}}
+\index{Developer\_ShowAxisDetails@{Developer\_ShowAxisDetails}!ScottPlot.Plot@{ScottPlot.Plot}}
+\doxysubsubsection{\texorpdfstring{Developer\_ShowAxisDetails()}{Developer\_ShowAxisDetails()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plot_a321736d03f7ee6aa413df30fd56d55cc} 
+void Scott\+Plot.\+Plot.\+Developer\+\_\+\+Show\+Axis\+Details (\begin{DoxyParamCaption}\item[{bool}]{enable}{ = {\ttfamily true}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_plot_ac44bc1b6267982cb0ba076b0de15f623}\index{ScottPlot.Plot@{ScottPlot.Plot}!Dispose@{Dispose}}
+\index{Dispose@{Dispose}!ScottPlot.Plot@{ScottPlot.Plot}}
+\doxysubsubsection{\texorpdfstring{Dispose()}{Dispose()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plot_ac44bc1b6267982cb0ba076b0de15f623} 
+void Scott\+Plot.\+Plot.\+Dispose (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_plot_a1708bf7d2e369c6f51c52975cc14c252}\index{ScottPlot.Plot@{ScottPlot.Plot}!GetAxis@{GetAxis}}
+\index{GetAxis@{GetAxis}!ScottPlot.Plot@{ScottPlot.Plot}}
+\doxysubsubsection{\texorpdfstring{GetAxis()}{GetAxis()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plot_a1708bf7d2e369c6f51c52975cc14c252} 
+\mbox{\hyperlink{interface_scott_plot_1_1_i_axis}{IAxis}}? Scott\+Plot.\+Plot.\+Get\+Axis (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}}}]{pixel}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the axis under a given pixel. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pixel} & Point\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The axis at {\itshape pixel}  (or null)
+\end{DoxyReturn}
+\Hypertarget{class_scott_plot_1_1_plot_a38d6915cdbb15c50006e4d09f36c6d6d}\index{ScottPlot.Plot@{ScottPlot.Plot}!GetCoordinateRect@{GetCoordinateRect}}
+\index{GetCoordinateRect@{GetCoordinateRect}!ScottPlot.Plot@{ScottPlot.Plot}}
+\doxysubsubsection{\texorpdfstring{GetCoordinateRect()}{GetCoordinateRect()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plot_a38d6915cdbb15c50006e4d09f36c6d6d} 
+\mbox{\hyperlink{struct_scott_plot_1_1_coordinate_rect}{Coordinate\+Rect}} Scott\+Plot.\+Plot.\+Get\+Coordinate\+Rect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_scott_plot_1_1_coordinates}{Coordinates}}}]{coordinates}{, }\item[{float}]{radius}{ = {\ttfamily 10}, }\item[{\mbox{\hyperlink{interface_scott_plot_1_1_i_x_axis}{IXAxis}}?}]{x\+Axis}{ = {\ttfamily null}, }\item[{\mbox{\hyperlink{interface_scott_plot_1_1_i_y_axis}{IYAxis}}?}]{y\+Axis}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return a coordinate rectangle centered at a coordinate pair with the radius specified in pixels. Uses measurements from the most recent render. 
+\begin{DoxyParams}{Parameters}
+{\em coordinates} & Center point in coordinate units\\
+\hline
+{\em radius} & Radius in pixels\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The coordinate rectangle
+\end{DoxyReturn}
+
+
+\Hypertarget{class_scott_plot_1_1_plot_ae5e1efa3135a14765bf77907ed8f8fb7}\index{ScottPlot.Plot@{ScottPlot.Plot}!GetCoordinateRect@{GetCoordinateRect}}
+\index{GetCoordinateRect@{GetCoordinateRect}!ScottPlot.Plot@{ScottPlot.Plot}}
+\doxysubsubsection{\texorpdfstring{GetCoordinateRect()}{GetCoordinateRect()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plot_ae5e1efa3135a14765bf77907ed8f8fb7} 
+\mbox{\hyperlink{struct_scott_plot_1_1_coordinate_rect}{Coordinate\+Rect}} Scott\+Plot.\+Plot.\+Get\+Coordinate\+Rect (\begin{DoxyParamCaption}\item[{float}]{x}{, }\item[{float}]{y}{, }\item[{float}]{radius}{ = {\ttfamily 10}, }\item[{\mbox{\hyperlink{interface_scott_plot_1_1_i_x_axis}{IXAxis}}?}]{x\+Axis}{ = {\ttfamily null}, }\item[{\mbox{\hyperlink{interface_scott_plot_1_1_i_y_axis}{IYAxis}}?}]{y\+Axis}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return a coordinate rectangle centered at a pixel. Uses measurements from the most recent render. 
+\begin{DoxyParams}{Parameters}
+{\em x} & Center point pixel\textquotesingle{}s x\\
+\hline
+{\em y} & Center point pixel\textquotesingle{}s y\\
+\hline
+{\em radius} & Radius in pixels\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The coordinate rectangle
+\end{DoxyReturn}
+
+
+\Hypertarget{class_scott_plot_1_1_plot_aa0a8f4e9536f2dcd56836944396cd431}\index{ScottPlot.Plot@{ScottPlot.Plot}!GetCoordinateRect@{GetCoordinateRect}}
+\index{GetCoordinateRect@{GetCoordinateRect}!ScottPlot.Plot@{ScottPlot.Plot}}
+\doxysubsubsection{\texorpdfstring{GetCoordinateRect()}{GetCoordinateRect()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plot_aa0a8f4e9536f2dcd56836944396cd431} 
+\mbox{\hyperlink{struct_scott_plot_1_1_coordinate_rect}{Coordinate\+Rect}} Scott\+Plot.\+Plot.\+Get\+Coordinate\+Rect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}}}]{pixel}{, }\item[{float}]{radius}{ = {\ttfamily 10}, }\item[{\mbox{\hyperlink{interface_scott_plot_1_1_i_x_axis}{IXAxis}}?}]{x\+Axis}{ = {\ttfamily null}, }\item[{\mbox{\hyperlink{interface_scott_plot_1_1_i_y_axis}{IYAxis}}?}]{y\+Axis}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return a coordinate rectangle centered at a pixel. Uses measurements from the most recent render. 
+\begin{DoxyParams}{Parameters}
+{\em pixel} & Center point pixel\\
+\hline
+{\em radius} & Radius in pixels\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The coordinate rectangle
+\end{DoxyReturn}
+
+
+\Hypertarget{class_scott_plot_1_1_plot_aaaf83d0e0cc3bfd05b45e2be10981f3d}\index{ScottPlot.Plot@{ScottPlot.Plot}!GetCoordinates@{GetCoordinates}}
+\index{GetCoordinates@{GetCoordinates}!ScottPlot.Plot@{ScottPlot.Plot}}
+\doxysubsubsection{\texorpdfstring{GetCoordinates()}{GetCoordinates()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plot_aaaf83d0e0cc3bfd05b45e2be10981f3d} 
+\mbox{\hyperlink{struct_scott_plot_1_1_coordinates}{Coordinates}} Scott\+Plot.\+Plot.\+Get\+Coordinates (\begin{DoxyParamCaption}\item[{float}]{x}{, }\item[{float}]{y}{, }\item[{\mbox{\hyperlink{interface_scott_plot_1_1_i_x_axis}{IXAxis}}?}]{x\+Axis}{ = {\ttfamily null}, }\item[{\mbox{\hyperlink{interface_scott_plot_1_1_i_y_axis}{IYAxis}}?}]{y\+Axis}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return the coordinate for a specific pixel using measurements from the most recent render. 
+
+\Hypertarget{class_scott_plot_1_1_plot_af10ca5ae226e80e7f749c55d6fdc1634}\index{ScottPlot.Plot@{ScottPlot.Plot}!GetCoordinates@{GetCoordinates}}
+\index{GetCoordinates@{GetCoordinates}!ScottPlot.Plot@{ScottPlot.Plot}}
+\doxysubsubsection{\texorpdfstring{GetCoordinates()}{GetCoordinates()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plot_af10ca5ae226e80e7f749c55d6fdc1634} 
+\mbox{\hyperlink{struct_scott_plot_1_1_coordinates}{Coordinates}} Scott\+Plot.\+Plot.\+Get\+Coordinates (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}}}]{pixel}{, }\item[{\mbox{\hyperlink{interface_scott_plot_1_1_i_x_axis}{IXAxis}}?}]{x\+Axis}{ = {\ttfamily null}, }\item[{\mbox{\hyperlink{interface_scott_plot_1_1_i_y_axis}{IYAxis}}?}]{y\+Axis}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return the coordinate for a specific pixel using measurements from the most recent render. 
+
+\Hypertarget{class_scott_plot_1_1_plot_a38a877a722f6b2bf29a49a94db29c510}\index{ScottPlot.Plot@{ScottPlot.Plot}!GetDefaultGrid@{GetDefaultGrid}}
+\index{GetDefaultGrid@{GetDefaultGrid}!ScottPlot.Plot@{ScottPlot.Plot}}
+\doxysubsubsection{\texorpdfstring{GetDefaultGrid()}{GetDefaultGrid()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plot_a38a877a722f6b2bf29a49a94db29c510} 
+static Default\+Grid Scott\+Plot.\+Plot.\+Get\+Default\+Grid (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_scott_plot_1_1_plot_a4f257cac1ff59155d0e327eea7c7b1ee}\index{ScottPlot.Plot@{ScottPlot.Plot}!GetImage@{GetImage}}
+\index{GetImage@{GetImage}!ScottPlot.Plot@{ScottPlot.Plot}}
+\doxysubsubsection{\texorpdfstring{GetImage()}{GetImage()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plot_a4f257cac1ff59155d0e327eea7c7b1ee} 
+\mbox{\hyperlink{class_scott_plot_1_1_image}{Image}} Scott\+Plot.\+Plot.\+Get\+Image (\begin{DoxyParamCaption}\item[{int}]{width}{, }\item[{int}]{height}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_plot_addcf6d87703d84ea413f686c7aac86c9}\index{ScottPlot.Plot@{ScottPlot.Plot}!GetImageBytes@{GetImageBytes}}
+\index{GetImageBytes@{GetImageBytes}!ScottPlot.Plot@{ScottPlot.Plot}}
+\doxysubsubsection{\texorpdfstring{GetImageBytes()}{GetImageBytes()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plot_addcf6d87703d84ea413f686c7aac86c9} 
+byte\mbox{[}$\,$\mbox{]} Scott\+Plot.\+Plot.\+Get\+Image\+Bytes (\begin{DoxyParamCaption}\item[{int}]{width}{, }\item[{int}]{height}{, }\item[{\mbox{\hyperlink{namespace_scott_plot_a9a656259ac7f098b833a020b5f6687a2}{Image\+Format}}}]{format}{ = {\ttfamily \mbox{\hyperlink{namespace_scott_plot_a9a656259ac7f098b833a020b5f6687a2a021d8346462df53d4272607b0f41a8d8}{Image\+Format\+::\+Bmp}}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_plot_aa7fa8830cadbffccf4ac0c99ba0fec1d}\index{ScottPlot.Plot@{ScottPlot.Plot}!GetImageHtml@{GetImageHtml}}
+\index{GetImageHtml@{GetImageHtml}!ScottPlot.Plot@{ScottPlot.Plot}}
+\doxysubsubsection{\texorpdfstring{GetImageHtml()}{GetImageHtml()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plot_aa7fa8830cadbffccf4ac0c99ba0fec1d} 
+string Scott\+Plot.\+Plot.\+Get\+Image\+Html (\begin{DoxyParamCaption}\item[{int}]{width}{, }\item[{int}]{height}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Render the plot and return an HTML img element containing a Base64-\/encoded PNG. 
+
+\Hypertarget{class_scott_plot_1_1_plot_a00d1a23c9b9270f28da9428e3eb3c75d}\index{ScottPlot.Plot@{ScottPlot.Plot}!GetLegendImage@{GetLegendImage}}
+\index{GetLegendImage@{GetLegendImage}!ScottPlot.Plot@{ScottPlot.Plot}}
+\doxysubsubsection{\texorpdfstring{GetLegendImage()}{GetLegendImage()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plot_a00d1a23c9b9270f28da9428e3eb3c75d} 
+\mbox{\hyperlink{class_scott_plot_1_1_image}{Image}} Scott\+Plot.\+Plot.\+Get\+Legend\+Image (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Returns the content of the legend as a raster image. 
+
+\Hypertarget{class_scott_plot_1_1_plot_a02b4c0fb12b36ec815e3c8bf11f32c1d}\index{ScottPlot.Plot@{ScottPlot.Plot}!GetLegendSvgXml@{GetLegendSvgXml}}
+\index{GetLegendSvgXml@{GetLegendSvgXml}!ScottPlot.Plot@{ScottPlot.Plot}}
+\doxysubsubsection{\texorpdfstring{GetLegendSvgXml()}{GetLegendSvgXml()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plot_a02b4c0fb12b36ec815e3c8bf11f32c1d} 
+string Scott\+Plot.\+Plot.\+Get\+Legend\+Svg\+Xml (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Returns the content of the legend as SVG (vector) image. 
+
+\Hypertarget{class_scott_plot_1_1_plot_a5fc4d108ea36cb04fd361e9c8690d4c0}\index{ScottPlot.Plot@{ScottPlot.Plot}!GetPanel@{GetPanel}}
+\index{GetPanel@{GetPanel}!ScottPlot.Plot@{ScottPlot.Plot}}
+\doxysubsubsection{\texorpdfstring{GetPanel()}{GetPanel()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plot_a5fc4d108ea36cb04fd361e9c8690d4c0} 
+\mbox{\hyperlink{interface_scott_plot_1_1_i_panel}{IPanel}}? Scott\+Plot.\+Plot.\+Get\+Panel (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}}}]{pixel}{, }\item[{bool}]{axes\+Only}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the panel under a given pixel. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pixel} & Point\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The panel at {\itshape pixel}  (or null)
+\end{DoxyReturn}
+\Hypertarget{class_scott_plot_1_1_plot_ad39aa5ee885021d9e26628e39599844c}\index{ScottPlot.Plot@{ScottPlot.Plot}!GetPixel@{GetPixel}}
+\index{GetPixel@{GetPixel}!ScottPlot.Plot@{ScottPlot.Plot}}
+\doxysubsubsection{\texorpdfstring{GetPixel()}{GetPixel()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plot_ad39aa5ee885021d9e26628e39599844c} 
+\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}} Scott\+Plot.\+Plot.\+Get\+Pixel (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_scott_plot_1_1_coordinates}{Coordinates}}}]{coordinates}{}\end{DoxyParamCaption})}
+
+
+
+Return the location on the screen (pixel) for a location on the plot (coordinates) on the default axes. The figure size and layout referenced will be the one from the last render. 
+
+\Hypertarget{class_scott_plot_1_1_plot_a8b82f98173e7c93bd6388f742db5872b}\index{ScottPlot.Plot@{ScottPlot.Plot}!GetPixel@{GetPixel}}
+\index{GetPixel@{GetPixel}!ScottPlot.Plot@{ScottPlot.Plot}}
+\doxysubsubsection{\texorpdfstring{GetPixel()}{GetPixel()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plot_a8b82f98173e7c93bd6388f742db5872b} 
+\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}} Scott\+Plot.\+Plot.\+Get\+Pixel (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_scott_plot_1_1_coordinates}{Coordinates}}}]{coordinates}{, }\item[{\mbox{\hyperlink{interface_scott_plot_1_1_i_x_axis}{IXAxis}}}]{x\+Axis}{, }\item[{\mbox{\hyperlink{interface_scott_plot_1_1_i_y_axis}{IYAxis}}}]{y\+Axis}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return the location on the screen (pixel) for a location on the plot (coordinates) on the given axes. The figure size and layout referenced will be the one from the last render. 
+
+\Hypertarget{class_scott_plot_1_1_plot_a82e54fe0766e709f3825639bcd1676bb}\index{ScottPlot.Plot@{ScottPlot.Plot}!GetPlottables@{GetPlottables}}
+\index{GetPlottables@{GetPlottables}!ScottPlot.Plot@{ScottPlot.Plot}}
+\doxysubsubsection{\texorpdfstring{GetPlottables()}{GetPlottables()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plot_a82e54fe0766e709f3825639bcd1676bb} 
+\mbox{\hyperlink{class_i_enumerable}{IEnumerable}}$<$ \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable}{IPlottable}} $>$ Scott\+Plot.\+Plot.\+Get\+Plottables (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return contents of \doxylink{class_scott_plot_1_1_plot_a05be5b3317a1979c5f468ec1282c7d9a}{Plottable\+List}. 
+
+\Hypertarget{class_scott_plot_1_1_plot_ad46da5489d2d87cf24132f6083d4c9af}\index{ScottPlot.Plot@{ScottPlot.Plot}!GetPlottables$<$ T $>$@{GetPlottables$<$ T $>$}}
+\index{GetPlottables$<$ T $>$@{GetPlottables$<$ T $>$}!ScottPlot.Plot@{ScottPlot.Plot}}
+\doxysubsubsection{\texorpdfstring{GetPlottables$<$ T $>$()}{GetPlottables< T >()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plot_ad46da5489d2d87cf24132f6083d4c9af} 
+\mbox{\hyperlink{class_i_enumerable}{IEnumerable}}$<$ T $>$ \mbox{\hyperlink{class_scott_plot_1_1_plot_a82e54fe0766e709f3825639bcd1676bb}{Scott\+Plot.\+Plot.\+Get\+Plottables}}$<$ T $>$ (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return all plottables in \doxylink{class_scott_plot_1_1_plot_a05be5b3317a1979c5f468ec1282c7d9a}{Plottable\+List} of the given type. 
+
+\begin{Desc}
+\item[Type Constraints]\begin{description}
+\item[{\em T} : {\em IPlottable}]\end{description}
+\end{Desc}
+\Hypertarget{class_scott_plot_1_1_plot_ada383712214101d37f4510c7bdc9c0bc}\index{ScottPlot.Plot@{ScottPlot.Plot}!GetStyle@{GetStyle}}
+\index{GetStyle@{GetStyle}!ScottPlot.Plot@{ScottPlot.Plot}}
+\doxysubsubsection{\texorpdfstring{GetStyle()}{GetStyle()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plot_ada383712214101d37f4510c7bdc9c0bc} 
+\mbox{\hyperlink{class_scott_plot_1_1_plot_style}{Plot\+Style}} Scott\+Plot.\+Plot.\+Get\+Style (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Return the current style settings for this plot. 
+
+\Hypertarget{class_scott_plot_1_1_plot_a7cfec1246e256753caa18e24539fc59b}\index{ScottPlot.Plot@{ScottPlot.Plot}!GetSvgXml@{GetSvgXml}}
+\index{GetSvgXml@{GetSvgXml}!ScottPlot.Plot@{ScottPlot.Plot}}
+\doxysubsubsection{\texorpdfstring{GetSvgXml()}{GetSvgXml()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plot_a7cfec1246e256753caa18e24539fc59b} 
+string Scott\+Plot.\+Plot.\+Get\+Svg\+Xml (\begin{DoxyParamCaption}\item[{int}]{width}{, }\item[{int}]{height}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_plot_a26c3e3d48ff7be6bfe0a3aa6751fcafa}\index{ScottPlot.Plot@{ScottPlot.Plot}!HideAxesAndGrid@{HideAxesAndGrid}}
+\index{HideAxesAndGrid@{HideAxesAndGrid}!ScottPlot.Plot@{ScottPlot.Plot}}
+\doxysubsubsection{\texorpdfstring{HideAxesAndGrid()}{HideAxesAndGrid()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plot_a26c3e3d48ff7be6bfe0a3aa6751fcafa} 
+void Scott\+Plot.\+Plot.\+Hide\+Axes\+And\+Grid (\begin{DoxyParamCaption}\item[{bool}]{show\+Title}{ = {\ttfamily true}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Disable visibility for all axes and grids. 
+
+\Hypertarget{class_scott_plot_1_1_plot_aeef87a5fb087b9dc809bb4e575d282b7}\index{ScottPlot.Plot@{ScottPlot.Plot}!HideGrid@{HideGrid}}
+\index{HideGrid@{HideGrid}!ScottPlot.Plot@{ScottPlot.Plot}}
+\doxysubsubsection{\texorpdfstring{HideGrid()}{HideGrid()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plot_aeef87a5fb087b9dc809bb4e575d282b7} 
+void Scott\+Plot.\+Plot.\+Hide\+Grid (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Disable visibility for all grids. 
+
+\Hypertarget{class_scott_plot_1_1_plot_a07794505b542970d3900ab683b412084}\index{ScottPlot.Plot@{ScottPlot.Plot}!HideLegend@{HideLegend}}
+\index{HideLegend@{HideLegend}!ScottPlot.Plot@{ScottPlot.Plot}}
+\doxysubsubsection{\texorpdfstring{HideLegend()}{HideLegend()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plot_a07794505b542970d3900ab683b412084} 
+\mbox{\hyperlink{class_scott_plot_1_1_plot_a85c1e63c1986bc89de37df7510375931}{Legend}} Scott\+Plot.\+Plot.\+Hide\+Legend (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Helper method for setting visibility of the \doxylink{class_scott_plot_1_1_plot_a85c1e63c1986bc89de37df7510375931}{Legend} 
+
+\Hypertarget{class_scott_plot_1_1_plot_a1e10f90bc151ac63883441eb798ffa13}\index{ScottPlot.Plot@{ScottPlot.Plot}!MoveToBack@{MoveToBack}}
+\index{MoveToBack@{MoveToBack}!ScottPlot.Plot@{ScottPlot.Plot}}
+\doxysubsubsection{\texorpdfstring{MoveToBack()}{MoveToBack()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plot_a1e10f90bc151ac63883441eb798ffa13} 
+void Scott\+Plot.\+Plot.\+Move\+To\+Back (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_scott_plot_1_1_i_plottable}{IPlottable}}}]{plottable}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Move the indicated plottable to the start of the list so it is rendered first. 
+
+\Hypertarget{class_scott_plot_1_1_plot_ac8047637161ac701e4d11c933bbe625f}\index{ScottPlot.Plot@{ScottPlot.Plot}!MoveToBottom@{MoveToBottom}}
+\index{MoveToBottom@{MoveToBottom}!ScottPlot.Plot@{ScottPlot.Plot}}
+\doxysubsubsection{\texorpdfstring{MoveToBottom()}{MoveToBottom()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plot_ac8047637161ac701e4d11c933bbe625f} 
+void Scott\+Plot.\+Plot.\+Move\+To\+Bottom (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_scott_plot_1_1_i_plottable}{IPlottable}}}]{plottable}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_scott_plot_1_1_plot_af2b46b9e3cf361cc84613a5c9c654a1f}\index{ScottPlot.Plot@{ScottPlot.Plot}!MoveToFront@{MoveToFront}}
+\index{MoveToFront@{MoveToFront}!ScottPlot.Plot@{ScottPlot.Plot}}
+\doxysubsubsection{\texorpdfstring{MoveToFront()}{MoveToFront()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plot_af2b46b9e3cf361cc84613a5c9c654a1f} 
+void Scott\+Plot.\+Plot.\+Move\+To\+Front (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_scott_plot_1_1_i_plottable}{IPlottable}}}]{plottable}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Move the indicated plottable to the end of the list so it is rendered last. 
+
+\Hypertarget{class_scott_plot_1_1_plot_abc77a4a088125654a14674c76bed7e22}\index{ScottPlot.Plot@{ScottPlot.Plot}!MoveToTop@{MoveToTop}}
+\index{MoveToTop@{MoveToTop}!ScottPlot.Plot@{ScottPlot.Plot}}
+\doxysubsubsection{\texorpdfstring{MoveToTop()}{MoveToTop()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plot_abc77a4a088125654a14674c76bed7e22} 
+void Scott\+Plot.\+Plot.\+Move\+To\+Top (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_scott_plot_1_1_i_plottable}{IPlottable}}}]{plottable}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_scott_plot_1_1_plot_a3bbaa345a1dd2df97acec0f414cf9c73}\index{ScottPlot.Plot@{ScottPlot.Plot}!Remove@{Remove}}
+\index{Remove@{Remove}!ScottPlot.Plot@{ScottPlot.Plot}}
+\doxysubsubsection{\texorpdfstring{Remove()}{Remove()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plot_a3bbaa345a1dd2df97acec0f414cf9c73} 
+void Scott\+Plot.\+Plot.\+Remove (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_scott_plot_1_1_i_axis}{IAxis}}}]{axis}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Remove the given Axis from the \doxylink{class_scott_plot_1_1_axes}{Axes}. 
+
+\Hypertarget{class_scott_plot_1_1_plot_ac1de5e4cd80731822ec158cb527dacf1}\index{ScottPlot.Plot@{ScottPlot.Plot}!Remove@{Remove}}
+\index{Remove@{Remove}!ScottPlot.Plot@{ScottPlot.Plot}}
+\doxysubsubsection{\texorpdfstring{Remove()}{Remove()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plot_ac1de5e4cd80731822ec158cb527dacf1} 
+void Scott\+Plot.\+Plot.\+Remove (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_scott_plot_1_1_i_panel}{IPanel}}}]{panel}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Remove the given Panel from the \doxylink{class_scott_plot_1_1_axes}{Axes}. 
+
+\Hypertarget{class_scott_plot_1_1_plot_a42884e22cfac577143c5cbddbd3f788e}\index{ScottPlot.Plot@{ScottPlot.Plot}!Remove@{Remove}}
+\index{Remove@{Remove}!ScottPlot.Plot@{ScottPlot.Plot}}
+\doxysubsubsection{\texorpdfstring{Remove()}{Remove()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plot_a42884e22cfac577143c5cbddbd3f788e} 
+void Scott\+Plot.\+Plot.\+Remove (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_scott_plot_1_1_i_plottable}{IPlottable}}}]{plottable}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Remove the given plottable from the \doxylink{class_scott_plot_1_1_plot_a05be5b3317a1979c5f468ec1282c7d9a}{Plottable\+List}. 
+
+\Hypertarget{class_scott_plot_1_1_plot_a97632f5dcd0125db030c9930153fb5c2}\index{ScottPlot.Plot@{ScottPlot.Plot}!Remove@{Remove}}
+\index{Remove@{Remove}!ScottPlot.Plot@{ScottPlot.Plot}}
+\doxysubsubsection{\texorpdfstring{Remove()}{Remove()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plot_a97632f5dcd0125db030c9930153fb5c2} 
+void Scott\+Plot.\+Plot.\+Remove (\begin{DoxyParamCaption}\item[{Type}]{plot\+Type}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Remove all items of a specific type from the \doxylink{class_scott_plot_1_1_plot_a05be5b3317a1979c5f468ec1282c7d9a}{Plottable\+List}. 
+
+\Hypertarget{class_scott_plot_1_1_plot_a2c14b37781733dd894aa1d05bdac39f6}\index{ScottPlot.Plot@{ScottPlot.Plot}!Remove$<$ T $>$@{Remove$<$ T $>$}}
+\index{Remove$<$ T $>$@{Remove$<$ T $>$}!ScottPlot.Plot@{ScottPlot.Plot}}
+\doxysubsubsection{\texorpdfstring{Remove$<$ T $>$()}{Remove< T >()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plot_a2c14b37781733dd894aa1d05bdac39f6} 
+void \mbox{\hyperlink{class_scott_plot_1_1_plot_a42884e22cfac577143c5cbddbd3f788e}{Scott\+Plot.\+Plot.\+Remove}}$<$ T $>$ (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Remove a all instances of a specific type from the \doxylink{class_scott_plot_1_1_plot_a05be5b3317a1979c5f468ec1282c7d9a}{Plottable\+List}. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & Type of \doxylink{interface_scott_plot_1_1_i_plottable}{IPlottable} to be removed\\
+\hline
+\end{DoxyTemplParams}
+\begin{Desc}
+\item[Type Constraints]\begin{description}
+\item[{\em T} : {\em IPlottable}]\end{description}
+\end{Desc}
+\Hypertarget{class_scott_plot_1_1_plot_a7887097114fdb1eab72227baef78014f}\index{ScottPlot.Plot@{ScottPlot.Plot}!Remove$<$ T $>$@{Remove$<$ T $>$}}
+\index{Remove$<$ T $>$@{Remove$<$ T $>$}!ScottPlot.Plot@{ScottPlot.Plot}}
+\doxysubsubsection{\texorpdfstring{Remove$<$ T $>$()}{Remove< T >()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plot_a7887097114fdb1eab72227baef78014f} 
+void \mbox{\hyperlink{class_scott_plot_1_1_plot_a42884e22cfac577143c5cbddbd3f788e}{Scott\+Plot.\+Plot.\+Remove}}$<$ T $>$ (\begin{DoxyParamCaption}\item[{Func$<$ T, bool $>$}]{predicate}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Remove all instances of a specific type from the \doxylink{class_scott_plot_1_1_plot_a05be5b3317a1979c5f468ec1282c7d9a}{Plottable\+List} that meet the {\itshape predicate}  criteraia. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em predicate} & A function to test each element for a condition.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & Type of \doxylink{interface_scott_plot_1_1_i_plottable}{IPlottable} to be removed\\
+\hline
+\end{DoxyTemplParams}
+\begin{Desc}
+\item[Type Constraints]\begin{description}
+\item[{\em T} : {\em IPlottable}]\end{description}
+\end{Desc}
+\Hypertarget{class_scott_plot_1_1_plot_ab556f930ae6ef1972baa102d4d32a7ac}\index{ScottPlot.Plot@{ScottPlot.Plot}!Render@{Render}}
+\index{Render@{Render}!ScottPlot.Plot@{ScottPlot.Plot}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plot_ab556f930ae6ef1972baa102d4d32a7ac} 
+void Scott\+Plot.\+Plot.\+Render (\begin{DoxyParamCaption}\item[{int}]{width}{ = {\ttfamily 400}, }\item[{int}]{height}{ = {\ttfamily 300}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_plot_a5550b87bd368edd9979f5efc80b5e029}\index{ScottPlot.Plot@{ScottPlot.Plot}!Render@{Render}}
+\index{Render@{Render}!ScottPlot.Plot@{ScottPlot.Plot}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plot_a5550b87bd368edd9979f5efc80b5e029} 
+void Scott\+Plot.\+Plot.\+Render (\begin{DoxyParamCaption}\item[{SKCanvas}]{canvas}{, }\item[{int}]{width}{, }\item[{int}]{height}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Render onto an existing canvas. 
+
+\Hypertarget{class_scott_plot_1_1_plot_a86045c0874be7dac8823139e88a0e3cc}\index{ScottPlot.Plot@{ScottPlot.Plot}!Render@{Render}}
+\index{Render@{Render}!ScottPlot.Plot@{ScottPlot.Plot}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plot_a86045c0874be7dac8823139e88a0e3cc} 
+void Scott\+Plot.\+Plot.\+Render (\begin{DoxyParamCaption}\item[{SKCanvas}]{canvas}{, }\item[{\mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect}{Pixel\+Rect}}}]{rect}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Render onto an existing canvas inside the given rectangle. 
+
+\Hypertarget{class_scott_plot_1_1_plot_aee32943bc635977b41085d5be336f27b}\index{ScottPlot.Plot@{ScottPlot.Plot}!Render@{Render}}
+\index{Render@{Render}!ScottPlot.Plot@{ScottPlot.Plot}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plot_aee32943bc635977b41085d5be336f27b} 
+void Scott\+Plot.\+Plot.\+Render (\begin{DoxyParamCaption}\item[{SKSurface}]{surface}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Render onto an existing canvas of a surface over the local clip bounds. 
+
+\Hypertarget{class_scott_plot_1_1_plot_a5c2a88296dd4fa00a785f28d2563fcf0}\index{ScottPlot.Plot@{ScottPlot.Plot}!RenderInMemory@{RenderInMemory}}
+\index{RenderInMemory@{RenderInMemory}!ScottPlot.Plot@{ScottPlot.Plot}}
+\doxysubsubsection{\texorpdfstring{RenderInMemory()}{RenderInMemory()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plot_a5c2a88296dd4fa00a785f28d2563fcf0} 
+void Scott\+Plot.\+Plot.\+Render\+In\+Memory (\begin{DoxyParamCaption}\item[{int}]{width}{ = {\ttfamily 400}, }\item[{int}]{height}{ = {\ttfamily 300}}\end{DoxyParamCaption})}
+
+
+
+Create a new image of the given dimensions, render the plot onto it, and return it. 
+
+\Hypertarget{class_scott_plot_1_1_plot_a89f2602b0c8b6976e33aff0ac2a6d4a1}\index{ScottPlot.Plot@{ScottPlot.Plot}!Save@{Save}}
+\index{Save@{Save}!ScottPlot.Plot@{ScottPlot.Plot}}
+\doxysubsubsection{\texorpdfstring{Save()}{Save()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plot_a89f2602b0c8b6976e33aff0ac2a6d4a1} 
+Saved\+Image\+Info Scott\+Plot.\+Plot.\+Save (\begin{DoxyParamCaption}\item[{string}]{file\+Path}{, }\item[{int}]{width}{, }\item[{int}]{height}{, }\item[{\mbox{\hyperlink{namespace_scott_plot_a9a656259ac7f098b833a020b5f6687a2}{Image\+Format}}}]{format}{ = {\ttfamily \mbox{\hyperlink{namespace_scott_plot_a9a656259ac7f098b833a020b5f6687a2af8fd4f1b5b05c6b1cc6a661141fd4f54}{Image\+Format\+::\+Png}}}, }\item[{int}]{quality}{ = {\ttfamily 85}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_plot_a8641b16f407d91b3e07c1f7a213cef26}\index{ScottPlot.Plot@{ScottPlot.Plot}!SaveBmp@{SaveBmp}}
+\index{SaveBmp@{SaveBmp}!ScottPlot.Plot@{ScottPlot.Plot}}
+\doxysubsubsection{\texorpdfstring{SaveBmp()}{SaveBmp()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plot_a8641b16f407d91b3e07c1f7a213cef26} 
+Saved\+Image\+Info Scott\+Plot.\+Plot.\+Save\+Bmp (\begin{DoxyParamCaption}\item[{string}]{file\+Path}{, }\item[{int}]{width}{, }\item[{int}]{height}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_plot_a3d31a9f854d1f8cbaec9ea5b056f9df5}\index{ScottPlot.Plot@{ScottPlot.Plot}!SaveJpeg@{SaveJpeg}}
+\index{SaveJpeg@{SaveJpeg}!ScottPlot.Plot@{ScottPlot.Plot}}
+\doxysubsubsection{\texorpdfstring{SaveJpeg()}{SaveJpeg()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plot_a3d31a9f854d1f8cbaec9ea5b056f9df5} 
+Saved\+Image\+Info Scott\+Plot.\+Plot.\+Save\+Jpeg (\begin{DoxyParamCaption}\item[{string}]{file\+Path}{, }\item[{int}]{width}{, }\item[{int}]{height}{, }\item[{int}]{quality}{ = {\ttfamily 85}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_plot_a786083f81e3cfa9fd68bc30287ae8bed}\index{ScottPlot.Plot@{ScottPlot.Plot}!SavePng@{SavePng}}
+\index{SavePng@{SavePng}!ScottPlot.Plot@{ScottPlot.Plot}}
+\doxysubsubsection{\texorpdfstring{SavePng()}{SavePng()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plot_a786083f81e3cfa9fd68bc30287ae8bed} 
+Saved\+Image\+Info Scott\+Plot.\+Plot.\+Save\+Png (\begin{DoxyParamCaption}\item[{string}]{file\+Path}{, }\item[{int}]{width}{, }\item[{int}]{height}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_plot_a670ee3274d68327dda961e4ca14249d2}\index{ScottPlot.Plot@{ScottPlot.Plot}!SaveSvg@{SaveSvg}}
+\index{SaveSvg@{SaveSvg}!ScottPlot.Plot@{ScottPlot.Plot}}
+\doxysubsubsection{\texorpdfstring{SaveSvg()}{SaveSvg()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plot_a670ee3274d68327dda961e4ca14249d2} 
+Saved\+Image\+Info Scott\+Plot.\+Plot.\+Save\+Svg (\begin{DoxyParamCaption}\item[{string}]{file\+Path}{, }\item[{int}]{width}{, }\item[{int}]{height}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_plot_a6fa9811d3e99bc22432065989b5d52c3}\index{ScottPlot.Plot@{ScottPlot.Plot}!SaveWebp@{SaveWebp}}
+\index{SaveWebp@{SaveWebp}!ScottPlot.Plot@{ScottPlot.Plot}}
+\doxysubsubsection{\texorpdfstring{SaveWebp()}{SaveWebp()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plot_a6fa9811d3e99bc22432065989b5d52c3} 
+Saved\+Image\+Info Scott\+Plot.\+Plot.\+Save\+Webp (\begin{DoxyParamCaption}\item[{string}]{file\+Path}{, }\item[{int}]{width}{, }\item[{int}]{height}{, }\item[{int}]{quality}{ = {\ttfamily 85}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_plot_a3b5fafb2970459dc4db3f2779b89364b}\index{ScottPlot.Plot@{ScottPlot.Plot}!SetStyle@{SetStyle}}
+\index{SetStyle@{SetStyle}!ScottPlot.Plot@{ScottPlot.Plot}}
+\doxysubsubsection{\texorpdfstring{SetStyle()}{SetStyle()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plot_a3b5fafb2970459dc4db3f2779b89364b} 
+void Scott\+Plot.\+Plot.\+Set\+Style (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_scott_plot_1_1_plot}{Plot}}}]{other\+Plot}{}\end{DoxyParamCaption})}
+
+
+
+Apply the style settings from the given plot to this plot. 
+
+\Hypertarget{class_scott_plot_1_1_plot_a5a6d49620fe7a6b790c820365b592e37}\index{ScottPlot.Plot@{ScottPlot.Plot}!SetStyle@{SetStyle}}
+\index{SetStyle@{SetStyle}!ScottPlot.Plot@{ScottPlot.Plot}}
+\doxysubsubsection{\texorpdfstring{SetStyle()}{SetStyle()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plot_a5a6d49620fe7a6b790c820365b592e37} 
+void Scott\+Plot.\+Plot.\+Set\+Style (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_scott_plot_1_1_plot_style}{Plot\+Style}}}]{style}{}\end{DoxyParamCaption})}
+
+
+
+Apply the given style settings to this plot. 
+
+\Hypertarget{class_scott_plot_1_1_plot_a7a9d4338b69bf0046971efb8c8535bdd}\index{ScottPlot.Plot@{ScottPlot.Plot}!ShowGrid@{ShowGrid}}
+\index{ShowGrid@{ShowGrid}!ScottPlot.Plot@{ScottPlot.Plot}}
+\doxysubsubsection{\texorpdfstring{ShowGrid()}{ShowGrid()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plot_a7a9d4338b69bf0046971efb8c8535bdd} 
+void Scott\+Plot.\+Plot.\+Show\+Grid (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Enable visibility for all grids. 
+
+\Hypertarget{class_scott_plot_1_1_plot_a10555f4281cefeffc02bbd27775e4be1}\index{ScottPlot.Plot@{ScottPlot.Plot}!ShowLegend@{ShowLegend}}
+\index{ShowLegend@{ShowLegend}!ScottPlot.Plot@{ScottPlot.Plot}}
+\doxysubsubsection{\texorpdfstring{ShowLegend()}{ShowLegend()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plot_a10555f4281cefeffc02bbd27775e4be1} 
+\mbox{\hyperlink{class_scott_plot_1_1_plot_a85c1e63c1986bc89de37df7510375931}{Legend}} Scott\+Plot.\+Plot.\+Show\+Legend (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Helper method for setting visibility of the \doxylink{class_scott_plot_1_1_plot_a85c1e63c1986bc89de37df7510375931}{Legend} 
+
+\Hypertarget{class_scott_plot_1_1_plot_a28a4cf6c92817f6221e3369cfbaea1d7}\index{ScottPlot.Plot@{ScottPlot.Plot}!ShowLegend@{ShowLegend}}
+\index{ShowLegend@{ShowLegend}!ScottPlot.Plot@{ScottPlot.Plot}}
+\doxysubsubsection{\texorpdfstring{ShowLegend()}{ShowLegend()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plot_a28a4cf6c92817f6221e3369cfbaea1d7} 
+\mbox{\hyperlink{class_scott_plot_1_1_plot_a85c1e63c1986bc89de37df7510375931}{Legend}} Scott\+Plot.\+Plot.\+Show\+Legend (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_scott_plot_a2da000551e02ef1d0af13793cf678abc}{Alignment}}}]{alignment}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Helper method for setting visibility of the \doxylink{class_scott_plot_1_1_plot_a85c1e63c1986bc89de37df7510375931}{Legend} and setting Legend.\+Location to the provided one. 
+
+\Hypertarget{class_scott_plot_1_1_plot_a36e9d6f05c0321076b32107d08867dcd}\index{ScottPlot.Plot@{ScottPlot.Plot}!ShowLegend@{ShowLegend}}
+\index{ShowLegend@{ShowLegend}!ScottPlot.Plot@{ScottPlot.Plot}}
+\doxysubsubsection{\texorpdfstring{ShowLegend()}{ShowLegend()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plot_a36e9d6f05c0321076b32107d08867dcd} 
+\mbox{\hyperlink{class_scott_plot_1_1_plot_a85c1e63c1986bc89de37df7510375931}{Legend}} Scott\+Plot.\+Plot.\+Show\+Legend (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_scott_plot_a2da000551e02ef1d0af13793cf678abc}{Alignment}}}]{alignment}{, }\item[{\mbox{\hyperlink{namespace_scott_plot_a2e03998e1b759661fb14b057445748a9}{Orientation}}}]{orientation}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Helper method for setting the Legend\textquotesingle{}s Is\+Visible, Alignment, and Orientation properties all at once. 
+
+\Hypertarget{class_scott_plot_1_1_plot_a24744bc09538e5ac9833e7ed41ccbf64}\index{ScottPlot.Plot@{ScottPlot.Plot}!ShowLegend@{ShowLegend}}
+\index{ShowLegend@{ShowLegend}!ScottPlot.Plot@{ScottPlot.Plot}}
+\doxysubsubsection{\texorpdfstring{ShowLegend()}{ShowLegend()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plot_a24744bc09538e5ac9833e7ed41ccbf64} 
+Panels.\+Legend\+Panel Scott\+Plot.\+Plot.\+Show\+Legend (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_scott_plot_a33d0346dfdd3d1d7cefc8d769ca98fcc}{Edge}}}]{edge}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Hide the default legend (inside the data area) and create a new legend panel placed on the edge of the figure outside the data area. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{class_scott_plot_1_1_plot_ab9c9ba893f6870f18fc22992a2b2dd77}\index{ScottPlot.Plot@{ScottPlot.Plot}!ShowLegend@{ShowLegend}}
+\index{ShowLegend@{ShowLegend}!ScottPlot.Plot@{ScottPlot.Plot}}
+\doxysubsubsection{\texorpdfstring{ShowLegend()}{ShowLegend()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plot_ab9c9ba893f6870f18fc22992a2b2dd77} 
+\mbox{\hyperlink{class_scott_plot_1_1_plot_a85c1e63c1986bc89de37df7510375931}{Legend}} Scott\+Plot.\+Plot.\+Show\+Legend (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_i_enumerable}{IEnumerable}}$<$ \mbox{\hyperlink{class_scott_plot_1_1_legend_item}{Legend\+Item}} $>$}]{items}{, }\item[{\mbox{\hyperlink{namespace_scott_plot_a2da000551e02ef1d0af13793cf678abc}{Alignment}}}]{location}{ = {\ttfamily \mbox{\hyperlink{namespace_scott_plot_a2da000551e02ef1d0af13793cf678abca5ef0d4d135d5f2814b07feaf13fda653}{Alignment\+::\+Lower\+Right}}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Helper method for displaying specific items in the legend. 
+
+\Hypertarget{class_scott_plot_1_1_plot_a15bf174494b221a173a30897e17520e7}\index{ScottPlot.Plot@{ScottPlot.Plot}!Title@{Title}}
+\index{Title@{Title}!ScottPlot.Plot@{ScottPlot.Plot}}
+\doxysubsubsection{\texorpdfstring{Title()}{Title()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plot_a15bf174494b221a173a30897e17520e7} 
+void Scott\+Plot.\+Plot.\+Title (\begin{DoxyParamCaption}\item[{string}]{text}{, }\item[{float?}]{size}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Shortcut to set text of the Title\+Panel \doxylink{class_scott_plot_1_1_label}{Label}. Assign properties of Title\+Panel \doxylink{class_scott_plot_1_1_label}{Label} to customize size, color, font, etc. 
+
+\Hypertarget{class_scott_plot_1_1_plot_a0bb3988d11008e76ceee1b2a3c3ab126}\index{ScottPlot.Plot@{ScottPlot.Plot}!XLabel@{XLabel}}
+\index{XLabel@{XLabel}!ScottPlot.Plot@{ScottPlot.Plot}}
+\doxysubsubsection{\texorpdfstring{XLabel()}{XLabel()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plot_a0bb3988d11008e76ceee1b2a3c3ab126} 
+void Scott\+Plot.\+Plot.\+XLabel (\begin{DoxyParamCaption}\item[{string}]{label}{, }\item[{float?}]{size}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Shortcut to set text of the Bottom\+Axis \doxylink{class_scott_plot_1_1_label}{Label} Assign properties of Bottom\+Axis \doxylink{class_scott_plot_1_1_label}{Label} to customize size, color, font, etc. 
+
+\Hypertarget{class_scott_plot_1_1_plot_aaedfc72de449beb4d824dd700f6e702c}\index{ScottPlot.Plot@{ScottPlot.Plot}!YLabel@{YLabel}}
+\index{YLabel@{YLabel}!ScottPlot.Plot@{ScottPlot.Plot}}
+\doxysubsubsection{\texorpdfstring{YLabel()}{YLabel()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plot_aaedfc72de449beb4d824dd700f6e702c} 
+void Scott\+Plot.\+Plot.\+YLabel (\begin{DoxyParamCaption}\item[{string}]{label}{, }\item[{float?}]{size}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Shortcut to set text of the Bottom\+Axis \doxylink{class_scott_plot_1_1_label}{Label} Assign properties of Bottom\+Axis \doxylink{class_scott_plot_1_1_label}{Label} to customize size, color, font, etc. 
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_scott_plot_1_1_plot_a45470aeda8cc5c74cf9a06dbeaa16eaa}\index{ScottPlot.Plot@{ScottPlot.Plot}!DataBackground@{DataBackground}}
+\index{DataBackground@{DataBackground}!ScottPlot.Plot@{ScottPlot.Plot}}
+\doxysubsubsection{\texorpdfstring{DataBackground}{DataBackground}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plot_a45470aeda8cc5c74cf9a06dbeaa16eaa} 
+\mbox{\hyperlink{class_scott_plot_1_1_background_style}{Background\+Style}} Scott\+Plot.\+Plot.\+Data\+Background = new() \{ \mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} = \mbox{\hyperlink{struct_scott_plot_1_1_colors_aecffb5296bdfb8fdb3168a75822b5da0}{Colors.\+Transparent}} \}}
+
+
+
+Style for the data area (the area within the axis frames) 
+
+\Hypertarget{class_scott_plot_1_1_plot_a47ef5969e1515f280ded62a4c96e4517}\index{ScottPlot.Plot@{ScottPlot.Plot}!FigureBackground@{FigureBackground}}
+\index{FigureBackground@{FigureBackground}!ScottPlot.Plot@{ScottPlot.Plot}}
+\doxysubsubsection{\texorpdfstring{FigureBackground}{FigureBackground}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plot_a47ef5969e1515f280ded62a4c96e4517} 
+\mbox{\hyperlink{class_scott_plot_1_1_background_style}{Background\+Style}} Scott\+Plot.\+Plot.\+Figure\+Background = new() \{ \mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} = \mbox{\hyperlink{struct_scott_plot_1_1_colors_a32e760069282d98fa003166cb08e3aeb}{Colors.\+White}} \}}
+
+
+
+Style for the background of the entire figure. 
+
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{class_scott_plot_1_1_plot_a2d52981c3373f7732ef919971f5fce76}\index{ScottPlot.Plot@{ScottPlot.Plot}!Add@{Add}}
+\index{Add@{Add}!ScottPlot.Plot@{ScottPlot.Plot}}
+\doxysubsubsection{\texorpdfstring{Add}{Add}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plot_a2d52981c3373f7732ef919971f5fce76} 
+\mbox{\hyperlink{namespace_scott_plot_a3a84709f712aa46f2613e6814147bf30}{Plottable\+Adder}} Scott\+Plot.\+Plot.\+Add\hspace{0.3cm}{\ttfamily [get]}}
+
+\Hypertarget{class_scott_plot_1_1_plot_aee0a0bf05ca86a9fa2cc676c9fb9e193}\index{ScottPlot.Plot@{ScottPlot.Plot}!Axes@{Axes}}
+\index{Axes@{Axes}!ScottPlot.Plot@{ScottPlot.Plot}}
+\doxysubsubsection{\texorpdfstring{Axes}{Axes}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plot_aee0a0bf05ca86a9fa2cc676c9fb9e193} 
+\mbox{\hyperlink{class_scott_plot_1_1_axis_manager}{Axis\+Manager}} Scott\+Plot.\+Plot.\+Axes\hspace{0.3cm}{\ttfamily [get]}}
+
+\Hypertarget{class_scott_plot_1_1_plot_a75da540f3a206cbb7adc7f191e48062f}\index{ScottPlot.Plot@{ScottPlot.Plot}!Benchmark@{Benchmark}}
+\index{Benchmark@{Benchmark}!ScottPlot.Plot@{ScottPlot.Plot}}
+\doxysubsubsection{\texorpdfstring{Benchmark}{Benchmark}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plot_a75da540f3a206cbb7adc7f191e48062f} 
+\mbox{\hyperlink{interface_scott_plot_1_1_i_plottable}{IPlottable}} Scott\+Plot.\+Plot.\+Benchmark = new \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_benchmark}{Plottables.\+Benchmark}}()\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_plot_a78d958a67601b8f47f18eeb0bbfce0a9}\index{ScottPlot.Plot@{ScottPlot.Plot}!Font@{Font}}
+\index{Font@{Font}!ScottPlot.Plot@{ScottPlot.Plot}}
+\doxysubsubsection{\texorpdfstring{Font}{Font}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plot_a78d958a67601b8f47f18eeb0bbfce0a9} 
+Font\+Styler Scott\+Plot.\+Plot.\+Font\hspace{0.3cm}{\ttfamily [get]}}
+
+\Hypertarget{class_scott_plot_1_1_plot_aec8c042ebb2e85df1af19bf8aa063b4f}\index{ScottPlot.Plot@{ScottPlot.Plot}!Grid@{Grid}}
+\index{Grid@{Grid}!ScottPlot.Plot@{ScottPlot.Plot}}
+\doxysubsubsection{\texorpdfstring{Grid}{Grid}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plot_aec8c042ebb2e85df1af19bf8aa063b4f} 
+Default\+Grid Scott\+Plot.\+Plot.\+Grid\hspace{0.3cm}{\ttfamily [get]}}
+
+\Hypertarget{class_scott_plot_1_1_plot_ab5996da43dc1364b226e45eeca51f93b}\index{ScottPlot.Plot@{ScottPlot.Plot}!LastRender@{LastRender}}
+\index{LastRender@{LastRender}!ScottPlot.Plot@{ScottPlot.Plot}}
+\doxysubsubsection{\texorpdfstring{LastRender}{LastRender}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plot_ab5996da43dc1364b226e45eeca51f93b} 
+\mbox{\hyperlink{struct_scott_plot_1_1_render_details}{Render\+Details}} Scott\+Plot.\+Plot.\+Last\+Render\hspace{0.3cm}{\ttfamily [get]}}
+
+\Hypertarget{class_scott_plot_1_1_plot_aedafa988899d7eaefb2841a2e2987406}\index{ScottPlot.Plot@{ScottPlot.Plot}!Layout@{Layout}}
+\index{Layout@{Layout}!ScottPlot.Plot@{ScottPlot.Plot}}
+\doxysubsubsection{\texorpdfstring{Layout}{Layout}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plot_aedafa988899d7eaefb2841a2e2987406} 
+\mbox{\hyperlink{class_scott_plot_1_1_layout_manager}{Layout\+Manager}} Scott\+Plot.\+Plot.\+Layout\hspace{0.3cm}{\ttfamily [get]}}
+
+\Hypertarget{class_scott_plot_1_1_plot_a85c1e63c1986bc89de37df7510375931}\index{ScottPlot.Plot@{ScottPlot.Plot}!Legend@{Legend}}
+\index{Legend@{Legend}!ScottPlot.Plot@{ScottPlot.Plot}}
+\doxysubsubsection{\texorpdfstring{Legend}{Legend}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plot_a85c1e63c1986bc89de37df7510375931} 
+Legend Scott\+Plot.\+Plot.\+Legend\hspace{0.3cm}{\ttfamily [get]}}
+
+\Hypertarget{class_scott_plot_1_1_plot_ab0ed58ae9a914e46ee36415cbe97d53f}\index{ScottPlot.Plot@{ScottPlot.Plot}!PlotControl@{PlotControl}}
+\index{PlotControl@{PlotControl}!ScottPlot.Plot@{ScottPlot.Plot}}
+\doxysubsubsection{\texorpdfstring{PlotControl}{PlotControl}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plot_ab0ed58ae9a914e46ee36415cbe97d53f} 
+\mbox{\hyperlink{interface_scott_plot_1_1_i_plot_control}{IPlot\+Control}}? Scott\+Plot.\+Plot.\+Plot\+Control = null\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The user control this plot belongs to. 
+
+\Hypertarget{class_scott_plot_1_1_plot_a05be5b3317a1979c5f468ec1282c7d9a}\index{ScottPlot.Plot@{ScottPlot.Plot}!PlottableList@{PlottableList}}
+\index{PlottableList@{PlottableList}!ScottPlot.Plot@{ScottPlot.Plot}}
+\doxysubsubsection{\texorpdfstring{PlottableList}{PlottableList}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plot_a05be5b3317a1979c5f468ec1282c7d9a} 
+List$<$\mbox{\hyperlink{interface_scott_plot_1_1_i_plottable}{IPlottable}}$>$ Scott\+Plot.\+Plot.\+Plottable\+List = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [get]}}
+
+\Hypertarget{class_scott_plot_1_1_plot_a3ea338eb72f646c9566c60a60f11411c}\index{ScottPlot.Plot@{ScottPlot.Plot}!RenderManager@{RenderManager}}
+\index{RenderManager@{RenderManager}!ScottPlot.Plot@{ScottPlot.Plot}}
+\doxysubsubsection{\texorpdfstring{RenderManager}{RenderManager}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plot_a3ea338eb72f646c9566c60a60f11411c} 
+Render\+Manager Scott\+Plot.\+Plot.\+Render\+Manager\hspace{0.3cm}{\ttfamily [get]}}
+
+\Hypertarget{class_scott_plot_1_1_plot_a6daefbcf32aa926763593cd79a1a815d}\index{ScottPlot.Plot@{ScottPlot.Plot}!ScaleFactor@{ScaleFactor}}
+\index{ScaleFactor@{ScaleFactor}!ScottPlot.Plot@{ScottPlot.Plot}}
+\doxysubsubsection{\texorpdfstring{ScaleFactor}{ScaleFactor}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plot_a6daefbcf32aa926763593cd79a1a815d} 
+double Scott\+Plot.\+Plot.\+Scale\+Factor\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_plot_a12d253b14731e60353fabc3dbc3a51a9}\index{ScottPlot.Plot@{ScottPlot.Plot}!Style@{Style}}
+\index{Style@{Style}!ScottPlot.Plot@{ScottPlot.Plot}}
+\doxysubsubsection{\texorpdfstring{Style}{Style}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plot_a12d253b14731e60353fabc3dbc3a51a9} 
+Plot\+Styler Scott\+Plot.\+Plot.\+Style = new()\hspace{0.3cm}{\ttfamily [get]}}
+
+\Hypertarget{class_scott_plot_1_1_plot_aca1f7d05a8d38e9bf6bb19424d4bd5b2}\index{ScottPlot.Plot@{ScottPlot.Plot}!Sync@{Sync}}
+\index{Sync@{Sync}!ScottPlot.Plot@{ScottPlot.Plot}}
+\doxysubsubsection{\texorpdfstring{Sync}{Sync}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plot_aca1f7d05a8d38e9bf6bb19424d4bd5b2} 
+object Scott\+Plot.\+Plot.\+Sync = new()\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+This object is locked by the \doxylink{class_scott_plot_1_1_plot_ab556f930ae6ef1972baa102d4d32a7ac}{Render()} methods. Logic that manipulates the plot (UI inputs or editing data) can lock this object to prevent rendering artifacts. 
+
+\Hypertarget{class_scott_plot_1_1_plot_aa80d43e4cfe7021026cea7d9fbcc6e2d}\index{ScottPlot.Plot@{ScottPlot.Plot}!ZoomRectangle@{ZoomRectangle}}
+\index{ZoomRectangle@{ZoomRectangle}!ScottPlot.Plot@{ScottPlot.Plot}}
+\doxysubsubsection{\texorpdfstring{ZoomRectangle}{ZoomRectangle}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plot_aa80d43e4cfe7021026cea7d9fbcc6e2d} 
+\mbox{\hyperlink{interface_scott_plot_1_1_i_zoom_rectangle}{IZoom\+Rectangle}} Scott\+Plot.\+Plot.\+Zoom\+Rectangle\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/Plot.\+cs\end{DoxyCompactItemize}

@@ -1,0 +1,311 @@
+\doxysection{Scott\+Plot.\+Coordinate\+Range\+Mutable Class Reference}
+\hypertarget{class_scott_plot_1_1_coordinate_range_mutable}{}\label{class_scott_plot_1_1_coordinate_range_mutable}\index{ScottPlot.CoordinateRangeMutable@{ScottPlot.CoordinateRangeMutable}}
+
+
+Represents a range of values between two coordinates on a single axis.  
+
+
+Inheritance diagram for Scott\+Plot.\+Coordinate\+Range\+Mutable\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_scott_plot_1_1_coordinate_range_mutable}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_scott_plot_1_1_coordinate_range_mutable_adec8b21eb5aed0c3710658f88bdc1c2f}{Coordinate\+Range\+Mutable}} (double min, double max)
+\item 
+override string \mbox{\hyperlink{class_scott_plot_1_1_coordinate_range_mutable_a36325e32eb40f6e26169456d09e4909f}{To\+String}} ()
+\item 
+bool \mbox{\hyperlink{class_scott_plot_1_1_coordinate_range_mutable_a7cb2179080a54e7548e121a92320acb9}{Contains}} (double position)
+\begin{DoxyCompactList}\small\item\em Returns true if the given position is within the range (inclusive) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_coordinate_range_mutable_af7a44c744404976c95db7bd1a9dff404}{Expand}} (double value)
+\begin{DoxyCompactList}\small\item\em Expand the range if needed to include the given point. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_coordinate_range_mutable_a2ba7f93d04ee60459f60052f9cef870b}{Expand}} (\mbox{\hyperlink{class_scott_plot_1_1_coordinate_range_mutable}{Coordinate\+Range\+Mutable}} range)
+\begin{DoxyCompactList}\small\item\em Expand this range if needed to ensure the given range is included. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_coordinate_range_mutable_a257f6a8c7e549c94882c7a971c6c490f}{Expand}} (\mbox{\hyperlink{namespace_scott_plot_a4f8afc1393f89ce60e775705cbf134d1}{Coordinate\+Range}} range)
+\begin{DoxyCompactList}\small\item\em Expand this range if needed to ensure the given range is included. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_coordinate_range_mutable_a9fd6fb5b23bf4863e4206dcc76d5b986}{Reset}} ()
+\begin{DoxyCompactList}\small\item\em Reset this range to inverted infinite values to indicate the range has not yet been set. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_coordinate_range_mutable_aaf2163874731c0328b625999f947023f}{Set}} (double min, double max)
+\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_coordinate_range_mutable_ae68b44678e4f0cf6b5fd0d2d67ef9d0b}{Set}} (\mbox{\hyperlink{namespace_scott_plot_a4f8afc1393f89ce60e775705cbf134d1}{Coordinate\+Range}} range)
+\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_coordinate_range_mutable_a4dd66f0ffc496fe23e46cabce3b8b6b9}{Set}} (\mbox{\hyperlink{class_scott_plot_1_1_coordinate_range_mutable}{Coordinate\+Range\+Mutable}} range)
+\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_coordinate_range_mutable_a04b41821aef6fc21fa0c5129ea881fe0}{Set}} (\mbox{\hyperlink{interface_scott_plot_1_1_i_axis}{IAxis}} other\+Axis)
+\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_coordinate_range_mutable_a703b96dfa29468db78d38072005d22c0}{Pan}} (double delta)
+\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_coordinate_range_mutable_a4e83da96f18663a4cafa8c6cb30fb19e}{Pan\+Mouse}} (float mouse\+Delta\+Px, float data\+Size\+Px)
+\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_coordinate_range_mutable_a24725d9874451ed9276c9e242cc87eab}{Zoom\+Frac}} (double frac)
+\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_coordinate_range_mutable_a8612ea80f66bef2fda7ee8bd18746104}{Zoom\+Out}} (double multiple)
+\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_coordinate_range_mutable_ab6303cfd25079a91656035cee20a9984}{Zoom\+Mouse\+Delta}} (float delta\+Px, float data\+Size\+Px)
+\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_coordinate_range_mutable_a94285a5f8feb1379bfb50cbe808bb9f0}{Zoom\+Frac}} (double frac, double zoom\+To)
+\item 
+bool \mbox{\hyperlink{class_scott_plot_1_1_coordinate_range_mutable_aa04b7177577540e466ca8e86679c324e}{Equals}} (\mbox{\hyperlink{class_scott_plot_1_1_coordinate_range_mutable}{Coordinate\+Range\+Mutable}}? other)
+\item 
+override bool \mbox{\hyperlink{class_scott_plot_1_1_coordinate_range_mutable_a9c78314dc16bb7f569a5eda3c794e313}{Equals}} (object? obj)
+\item 
+override int \mbox{\hyperlink{class_scott_plot_1_1_coordinate_range_mutable_a0b37d5fd18c4d0767cb6e30195a1d709}{Get\+Hash\+Code}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{class_scott_plot_1_1_coordinate_range_mutable_a8229fc5a3aa4d59141f51b0a7dbff3f5}{operator==}} (\mbox{\hyperlink{class_scott_plot_1_1_coordinate_range_mutable}{Coordinate\+Range\+Mutable}} a, \mbox{\hyperlink{class_scott_plot_1_1_coordinate_range_mutable}{Coordinate\+Range\+Mutable}} b)
+\item 
+static bool \mbox{\hyperlink{class_scott_plot_1_1_coordinate_range_mutable_a897230f88165e2239225c2bfc3b06b84}{operator!=}} (\mbox{\hyperlink{class_scott_plot_1_1_coordinate_range_mutable}{Coordinate\+Range\+Mutable}} a, \mbox{\hyperlink{class_scott_plot_1_1_coordinate_range_mutable}{Coordinate\+Range\+Mutable}} b)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{class_scott_plot_1_1_coordinate_range_mutable_a3e55d80c66b1e843be9cef1463977d0a}{Min}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+double \mbox{\hyperlink{class_scott_plot_1_1_coordinate_range_mutable_acd172622c9bc588d17f8f5b44f0c8ec0}{Max}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+double \mbox{\hyperlink{class_scott_plot_1_1_coordinate_range_mutable_ad0569f8dc801340be3a5334ddc450e6e}{Center}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+double \mbox{\hyperlink{class_scott_plot_1_1_coordinate_range_mutable_af3dc963631e44198ddf747979f0b2ba4}{Span}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+bool \mbox{\hyperlink{class_scott_plot_1_1_coordinate_range_mutable_af02abf43eb53dec99035dfd3b0ba86a0}{Has\+Been\+Set}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{namespace_scott_plot_a4f8afc1393f89ce60e775705cbf134d1}{Coordinate\+Range}} \mbox{\hyperlink{class_scott_plot_1_1_coordinate_range_mutable_a5c8a4afbc65f93a58d120d33bc1ca1a9}{To\+Coordinate\+Range}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{namespace_scott_plot_a4f8afc1393f89ce60e775705cbf134d1}{Coordinate\+Range}} \mbox{\hyperlink{class_scott_plot_1_1_coordinate_range_mutable_a967d323df3dc60ed6d0dc48664699203}{To\+Rectified\+Coordinate\+Range}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+static \mbox{\hyperlink{class_scott_plot_1_1_coordinate_range_mutable}{Coordinate\+Range\+Mutable}} \mbox{\hyperlink{class_scott_plot_1_1_coordinate_range_mutable_a607752ac38c8b66e2206a460157c96d4}{Infinity}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+static \mbox{\hyperlink{class_scott_plot_1_1_coordinate_range_mutable}{Coordinate\+Range\+Mutable}} \mbox{\hyperlink{class_scott_plot_1_1_coordinate_range_mutable_a0198a8908a814ab3cfb9a6eba2018a43}{Not\+Set}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em This infinite inverted range is used to indicate a range that has not yet been set. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a range of values between two coordinates on a single axis. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_scott_plot_1_1_coordinate_range_mutable_adec8b21eb5aed0c3710658f88bdc1c2f}\index{ScottPlot.CoordinateRangeMutable@{ScottPlot.CoordinateRangeMutable}!CoordinateRangeMutable@{CoordinateRangeMutable}}
+\index{CoordinateRangeMutable@{CoordinateRangeMutable}!ScottPlot.CoordinateRangeMutable@{ScottPlot.CoordinateRangeMutable}}
+\doxysubsubsection{\texorpdfstring{CoordinateRangeMutable()}{CoordinateRangeMutable()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_coordinate_range_mutable_adec8b21eb5aed0c3710658f88bdc1c2f} 
+Scott\+Plot.\+Coordinate\+Range\+Mutable.\+Coordinate\+Range\+Mutable (\begin{DoxyParamCaption}\item[{double}]{min}{, }\item[{double}]{max}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_scott_plot_1_1_coordinate_range_mutable_a7cb2179080a54e7548e121a92320acb9}\index{ScottPlot.CoordinateRangeMutable@{ScottPlot.CoordinateRangeMutable}!Contains@{Contains}}
+\index{Contains@{Contains}!ScottPlot.CoordinateRangeMutable@{ScottPlot.CoordinateRangeMutable}}
+\doxysubsubsection{\texorpdfstring{Contains()}{Contains()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_coordinate_range_mutable_a7cb2179080a54e7548e121a92320acb9} 
+bool Scott\+Plot.\+Coordinate\+Range\+Mutable.\+Contains (\begin{DoxyParamCaption}\item[{double}]{position}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns true if the given position is within the range (inclusive) 
+
+\Hypertarget{class_scott_plot_1_1_coordinate_range_mutable_aa04b7177577540e466ca8e86679c324e}\index{ScottPlot.CoordinateRangeMutable@{ScottPlot.CoordinateRangeMutable}!Equals@{Equals}}
+\index{Equals@{Equals}!ScottPlot.CoordinateRangeMutable@{ScottPlot.CoordinateRangeMutable}}
+\doxysubsubsection{\texorpdfstring{Equals()}{Equals()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_coordinate_range_mutable_aa04b7177577540e466ca8e86679c324e} 
+bool Scott\+Plot.\+Coordinate\+Range\+Mutable.\+Equals (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_scott_plot_1_1_coordinate_range_mutable}{Coordinate\+Range\+Mutable}}?}]{other}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_coordinate_range_mutable_a9c78314dc16bb7f569a5eda3c794e313}\index{ScottPlot.CoordinateRangeMutable@{ScottPlot.CoordinateRangeMutable}!Equals@{Equals}}
+\index{Equals@{Equals}!ScottPlot.CoordinateRangeMutable@{ScottPlot.CoordinateRangeMutable}}
+\doxysubsubsection{\texorpdfstring{Equals()}{Equals()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_coordinate_range_mutable_a9c78314dc16bb7f569a5eda3c794e313} 
+override bool Scott\+Plot.\+Coordinate\+Range\+Mutable.\+Equals (\begin{DoxyParamCaption}\item[{object?}]{obj}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_coordinate_range_mutable_a257f6a8c7e549c94882c7a971c6c490f}\index{ScottPlot.CoordinateRangeMutable@{ScottPlot.CoordinateRangeMutable}!Expand@{Expand}}
+\index{Expand@{Expand}!ScottPlot.CoordinateRangeMutable@{ScottPlot.CoordinateRangeMutable}}
+\doxysubsubsection{\texorpdfstring{Expand()}{Expand()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_coordinate_range_mutable_a257f6a8c7e549c94882c7a971c6c490f} 
+void Scott\+Plot.\+Coordinate\+Range\+Mutable.\+Expand (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_scott_plot_a4f8afc1393f89ce60e775705cbf134d1}{Coordinate\+Range}}}]{range}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Expand this range if needed to ensure the given range is included. 
+
+\Hypertarget{class_scott_plot_1_1_coordinate_range_mutable_a2ba7f93d04ee60459f60052f9cef870b}\index{ScottPlot.CoordinateRangeMutable@{ScottPlot.CoordinateRangeMutable}!Expand@{Expand}}
+\index{Expand@{Expand}!ScottPlot.CoordinateRangeMutable@{ScottPlot.CoordinateRangeMutable}}
+\doxysubsubsection{\texorpdfstring{Expand()}{Expand()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_coordinate_range_mutable_a2ba7f93d04ee60459f60052f9cef870b} 
+void Scott\+Plot.\+Coordinate\+Range\+Mutable.\+Expand (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_scott_plot_1_1_coordinate_range_mutable}{Coordinate\+Range\+Mutable}}}]{range}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Expand this range if needed to ensure the given range is included. 
+
+\Hypertarget{class_scott_plot_1_1_coordinate_range_mutable_af7a44c744404976c95db7bd1a9dff404}\index{ScottPlot.CoordinateRangeMutable@{ScottPlot.CoordinateRangeMutable}!Expand@{Expand}}
+\index{Expand@{Expand}!ScottPlot.CoordinateRangeMutable@{ScottPlot.CoordinateRangeMutable}}
+\doxysubsubsection{\texorpdfstring{Expand()}{Expand()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_coordinate_range_mutable_af7a44c744404976c95db7bd1a9dff404} 
+void Scott\+Plot.\+Coordinate\+Range\+Mutable.\+Expand (\begin{DoxyParamCaption}\item[{double}]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Expand the range if needed to include the given point. 
+
+\Hypertarget{class_scott_plot_1_1_coordinate_range_mutable_a0b37d5fd18c4d0767cb6e30195a1d709}\index{ScottPlot.CoordinateRangeMutable@{ScottPlot.CoordinateRangeMutable}!GetHashCode@{GetHashCode}}
+\index{GetHashCode@{GetHashCode}!ScottPlot.CoordinateRangeMutable@{ScottPlot.CoordinateRangeMutable}}
+\doxysubsubsection{\texorpdfstring{GetHashCode()}{GetHashCode()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_coordinate_range_mutable_a0b37d5fd18c4d0767cb6e30195a1d709} 
+override int Scott\+Plot.\+Coordinate\+Range\+Mutable.\+Get\+Hash\+Code (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_coordinate_range_mutable_a897230f88165e2239225c2bfc3b06b84}\index{ScottPlot.CoordinateRangeMutable@{ScottPlot.CoordinateRangeMutable}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!ScottPlot.CoordinateRangeMutable@{ScottPlot.CoordinateRangeMutable}}
+\doxysubsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_coordinate_range_mutable_a897230f88165e2239225c2bfc3b06b84} 
+static bool Scott\+Plot.\+Coordinate\+Range\+Mutable.\+operator!= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_scott_plot_1_1_coordinate_range_mutable}{Coordinate\+Range\+Mutable}}}]{a}{, }\item[{\mbox{\hyperlink{class_scott_plot_1_1_coordinate_range_mutable}{Coordinate\+Range\+Mutable}}}]{b}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\Hypertarget{class_scott_plot_1_1_coordinate_range_mutable_a8229fc5a3aa4d59141f51b0a7dbff3f5}\index{ScottPlot.CoordinateRangeMutable@{ScottPlot.CoordinateRangeMutable}!operator==@{operator==}}
+\index{operator==@{operator==}!ScottPlot.CoordinateRangeMutable@{ScottPlot.CoordinateRangeMutable}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_coordinate_range_mutable_a8229fc5a3aa4d59141f51b0a7dbff3f5} 
+static bool Scott\+Plot.\+Coordinate\+Range\+Mutable.\+operator== (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_scott_plot_1_1_coordinate_range_mutable}{Coordinate\+Range\+Mutable}}}]{a}{, }\item[{\mbox{\hyperlink{class_scott_plot_1_1_coordinate_range_mutable}{Coordinate\+Range\+Mutable}}}]{b}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\Hypertarget{class_scott_plot_1_1_coordinate_range_mutable_a703b96dfa29468db78d38072005d22c0}\index{ScottPlot.CoordinateRangeMutable@{ScottPlot.CoordinateRangeMutable}!Pan@{Pan}}
+\index{Pan@{Pan}!ScottPlot.CoordinateRangeMutable@{ScottPlot.CoordinateRangeMutable}}
+\doxysubsubsection{\texorpdfstring{Pan()}{Pan()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_coordinate_range_mutable_a703b96dfa29468db78d38072005d22c0} 
+void Scott\+Plot.\+Coordinate\+Range\+Mutable.\+Pan (\begin{DoxyParamCaption}\item[{double}]{delta}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_coordinate_range_mutable_a4e83da96f18663a4cafa8c6cb30fb19e}\index{ScottPlot.CoordinateRangeMutable@{ScottPlot.CoordinateRangeMutable}!PanMouse@{PanMouse}}
+\index{PanMouse@{PanMouse}!ScottPlot.CoordinateRangeMutable@{ScottPlot.CoordinateRangeMutable}}
+\doxysubsubsection{\texorpdfstring{PanMouse()}{PanMouse()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_coordinate_range_mutable_a4e83da96f18663a4cafa8c6cb30fb19e} 
+void Scott\+Plot.\+Coordinate\+Range\+Mutable.\+Pan\+Mouse (\begin{DoxyParamCaption}\item[{float}]{mouse\+Delta\+Px}{, }\item[{float}]{data\+Size\+Px}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_coordinate_range_mutable_a9fd6fb5b23bf4863e4206dcc76d5b986}\index{ScottPlot.CoordinateRangeMutable@{ScottPlot.CoordinateRangeMutable}!Reset@{Reset}}
+\index{Reset@{Reset}!ScottPlot.CoordinateRangeMutable@{ScottPlot.CoordinateRangeMutable}}
+\doxysubsubsection{\texorpdfstring{Reset()}{Reset()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_coordinate_range_mutable_a9fd6fb5b23bf4863e4206dcc76d5b986} 
+void Scott\+Plot.\+Coordinate\+Range\+Mutable.\+Reset (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Reset this range to inverted infinite values to indicate the range has not yet been set. 
+
+\Hypertarget{class_scott_plot_1_1_coordinate_range_mutable_ae68b44678e4f0cf6b5fd0d2d67ef9d0b}\index{ScottPlot.CoordinateRangeMutable@{ScottPlot.CoordinateRangeMutable}!Set@{Set}}
+\index{Set@{Set}!ScottPlot.CoordinateRangeMutable@{ScottPlot.CoordinateRangeMutable}}
+\doxysubsubsection{\texorpdfstring{Set()}{Set()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_coordinate_range_mutable_ae68b44678e4f0cf6b5fd0d2d67ef9d0b} 
+void Scott\+Plot.\+Coordinate\+Range\+Mutable.\+Set (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_scott_plot_a4f8afc1393f89ce60e775705cbf134d1}{Coordinate\+Range}}}]{range}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_coordinate_range_mutable_a4dd66f0ffc496fe23e46cabce3b8b6b9}\index{ScottPlot.CoordinateRangeMutable@{ScottPlot.CoordinateRangeMutable}!Set@{Set}}
+\index{Set@{Set}!ScottPlot.CoordinateRangeMutable@{ScottPlot.CoordinateRangeMutable}}
+\doxysubsubsection{\texorpdfstring{Set()}{Set()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_coordinate_range_mutable_a4dd66f0ffc496fe23e46cabce3b8b6b9} 
+void Scott\+Plot.\+Coordinate\+Range\+Mutable.\+Set (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_scott_plot_1_1_coordinate_range_mutable}{Coordinate\+Range\+Mutable}}}]{range}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_coordinate_range_mutable_aaf2163874731c0328b625999f947023f}\index{ScottPlot.CoordinateRangeMutable@{ScottPlot.CoordinateRangeMutable}!Set@{Set}}
+\index{Set@{Set}!ScottPlot.CoordinateRangeMutable@{ScottPlot.CoordinateRangeMutable}}
+\doxysubsubsection{\texorpdfstring{Set()}{Set()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_coordinate_range_mutable_aaf2163874731c0328b625999f947023f} 
+void Scott\+Plot.\+Coordinate\+Range\+Mutable.\+Set (\begin{DoxyParamCaption}\item[{double}]{min}{, }\item[{double}]{max}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_coordinate_range_mutable_a04b41821aef6fc21fa0c5129ea881fe0}\index{ScottPlot.CoordinateRangeMutable@{ScottPlot.CoordinateRangeMutable}!Set@{Set}}
+\index{Set@{Set}!ScottPlot.CoordinateRangeMutable@{ScottPlot.CoordinateRangeMutable}}
+\doxysubsubsection{\texorpdfstring{Set()}{Set()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_coordinate_range_mutable_a04b41821aef6fc21fa0c5129ea881fe0} 
+void Scott\+Plot.\+Coordinate\+Range\+Mutable.\+Set (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_scott_plot_1_1_i_axis}{IAxis}}}]{other\+Axis}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_coordinate_range_mutable_a36325e32eb40f6e26169456d09e4909f}\index{ScottPlot.CoordinateRangeMutable@{ScottPlot.CoordinateRangeMutable}!ToString@{ToString}}
+\index{ToString@{ToString}!ScottPlot.CoordinateRangeMutable@{ScottPlot.CoordinateRangeMutable}}
+\doxysubsubsection{\texorpdfstring{ToString()}{ToString()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_coordinate_range_mutable_a36325e32eb40f6e26169456d09e4909f} 
+override string Scott\+Plot.\+Coordinate\+Range\+Mutable.\+To\+String (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_coordinate_range_mutable_a24725d9874451ed9276c9e242cc87eab}\index{ScottPlot.CoordinateRangeMutable@{ScottPlot.CoordinateRangeMutable}!ZoomFrac@{ZoomFrac}}
+\index{ZoomFrac@{ZoomFrac}!ScottPlot.CoordinateRangeMutable@{ScottPlot.CoordinateRangeMutable}}
+\doxysubsubsection{\texorpdfstring{ZoomFrac()}{ZoomFrac()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_coordinate_range_mutable_a24725d9874451ed9276c9e242cc87eab} 
+void Scott\+Plot.\+Coordinate\+Range\+Mutable.\+Zoom\+Frac (\begin{DoxyParamCaption}\item[{double}]{frac}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_coordinate_range_mutable_a94285a5f8feb1379bfb50cbe808bb9f0}\index{ScottPlot.CoordinateRangeMutable@{ScottPlot.CoordinateRangeMutable}!ZoomFrac@{ZoomFrac}}
+\index{ZoomFrac@{ZoomFrac}!ScottPlot.CoordinateRangeMutable@{ScottPlot.CoordinateRangeMutable}}
+\doxysubsubsection{\texorpdfstring{ZoomFrac()}{ZoomFrac()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_coordinate_range_mutable_a94285a5f8feb1379bfb50cbe808bb9f0} 
+void Scott\+Plot.\+Coordinate\+Range\+Mutable.\+Zoom\+Frac (\begin{DoxyParamCaption}\item[{double}]{frac}{, }\item[{double}]{zoom\+To}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_coordinate_range_mutable_ab6303cfd25079a91656035cee20a9984}\index{ScottPlot.CoordinateRangeMutable@{ScottPlot.CoordinateRangeMutable}!ZoomMouseDelta@{ZoomMouseDelta}}
+\index{ZoomMouseDelta@{ZoomMouseDelta}!ScottPlot.CoordinateRangeMutable@{ScottPlot.CoordinateRangeMutable}}
+\doxysubsubsection{\texorpdfstring{ZoomMouseDelta()}{ZoomMouseDelta()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_coordinate_range_mutable_ab6303cfd25079a91656035cee20a9984} 
+void Scott\+Plot.\+Coordinate\+Range\+Mutable.\+Zoom\+Mouse\+Delta (\begin{DoxyParamCaption}\item[{float}]{delta\+Px}{, }\item[{float}]{data\+Size\+Px}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_coordinate_range_mutable_a8612ea80f66bef2fda7ee8bd18746104}\index{ScottPlot.CoordinateRangeMutable@{ScottPlot.CoordinateRangeMutable}!ZoomOut@{ZoomOut}}
+\index{ZoomOut@{ZoomOut}!ScottPlot.CoordinateRangeMutable@{ScottPlot.CoordinateRangeMutable}}
+\doxysubsubsection{\texorpdfstring{ZoomOut()}{ZoomOut()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_coordinate_range_mutable_a8612ea80f66bef2fda7ee8bd18746104} 
+void Scott\+Plot.\+Coordinate\+Range\+Mutable.\+Zoom\+Out (\begin{DoxyParamCaption}\item[{double}]{multiple}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{class_scott_plot_1_1_coordinate_range_mutable_ad0569f8dc801340be3a5334ddc450e6e}\index{ScottPlot.CoordinateRangeMutable@{ScottPlot.CoordinateRangeMutable}!Center@{Center}}
+\index{Center@{Center}!ScottPlot.CoordinateRangeMutable@{ScottPlot.CoordinateRangeMutable}}
+\doxysubsubsection{\texorpdfstring{Center}{Center}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_coordinate_range_mutable_ad0569f8dc801340be3a5334ddc450e6e} 
+double Scott\+Plot.\+Coordinate\+Range\+Mutable.\+Center\hspace{0.3cm}{\ttfamily [get]}}
+
+\Hypertarget{class_scott_plot_1_1_coordinate_range_mutable_af02abf43eb53dec99035dfd3b0ba86a0}\index{ScottPlot.CoordinateRangeMutable@{ScottPlot.CoordinateRangeMutable}!HasBeenSet@{HasBeenSet}}
+\index{HasBeenSet@{HasBeenSet}!ScottPlot.CoordinateRangeMutable@{ScottPlot.CoordinateRangeMutable}}
+\doxysubsubsection{\texorpdfstring{HasBeenSet}{HasBeenSet}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_coordinate_range_mutable_af02abf43eb53dec99035dfd3b0ba86a0} 
+bool Scott\+Plot.\+Coordinate\+Range\+Mutable.\+Has\+Been\+Set\hspace{0.3cm}{\ttfamily [get]}}
+
+\Hypertarget{class_scott_plot_1_1_coordinate_range_mutable_a607752ac38c8b66e2206a460157c96d4}\index{ScottPlot.CoordinateRangeMutable@{ScottPlot.CoordinateRangeMutable}!Infinity@{Infinity}}
+\index{Infinity@{Infinity}!ScottPlot.CoordinateRangeMutable@{ScottPlot.CoordinateRangeMutable}}
+\doxysubsubsection{\texorpdfstring{Infinity}{Infinity}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_coordinate_range_mutable_a607752ac38c8b66e2206a460157c96d4} 
+\mbox{\hyperlink{class_scott_plot_1_1_coordinate_range_mutable}{Coordinate\+Range\+Mutable}} Scott\+Plot.\+Coordinate\+Range\+Mutable.\+Infinity\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+\Hypertarget{class_scott_plot_1_1_coordinate_range_mutable_acd172622c9bc588d17f8f5b44f0c8ec0}\index{ScottPlot.CoordinateRangeMutable@{ScottPlot.CoordinateRangeMutable}!Max@{Max}}
+\index{Max@{Max}!ScottPlot.CoordinateRangeMutable@{ScottPlot.CoordinateRangeMutable}}
+\doxysubsubsection{\texorpdfstring{Max}{Max}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_coordinate_range_mutable_acd172622c9bc588d17f8f5b44f0c8ec0} 
+double Scott\+Plot.\+Coordinate\+Range\+Mutable.\+Max\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_coordinate_range_mutable_a3e55d80c66b1e843be9cef1463977d0a}\index{ScottPlot.CoordinateRangeMutable@{ScottPlot.CoordinateRangeMutable}!Min@{Min}}
+\index{Min@{Min}!ScottPlot.CoordinateRangeMutable@{ScottPlot.CoordinateRangeMutable}}
+\doxysubsubsection{\texorpdfstring{Min}{Min}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_coordinate_range_mutable_a3e55d80c66b1e843be9cef1463977d0a} 
+double Scott\+Plot.\+Coordinate\+Range\+Mutable.\+Min\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_coordinate_range_mutable_a0198a8908a814ab3cfb9a6eba2018a43}\index{ScottPlot.CoordinateRangeMutable@{ScottPlot.CoordinateRangeMutable}!NotSet@{NotSet}}
+\index{NotSet@{NotSet}!ScottPlot.CoordinateRangeMutable@{ScottPlot.CoordinateRangeMutable}}
+\doxysubsubsection{\texorpdfstring{NotSet}{NotSet}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_coordinate_range_mutable_a0198a8908a814ab3cfb9a6eba2018a43} 
+\mbox{\hyperlink{class_scott_plot_1_1_coordinate_range_mutable}{Coordinate\+Range\+Mutable}} Scott\+Plot.\+Coordinate\+Range\+Mutable.\+Not\+Set\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+
+
+This infinite inverted range is used to indicate a range that has not yet been set. 
+
+\Hypertarget{class_scott_plot_1_1_coordinate_range_mutable_af3dc963631e44198ddf747979f0b2ba4}\index{ScottPlot.CoordinateRangeMutable@{ScottPlot.CoordinateRangeMutable}!Span@{Span}}
+\index{Span@{Span}!ScottPlot.CoordinateRangeMutable@{ScottPlot.CoordinateRangeMutable}}
+\doxysubsubsection{\texorpdfstring{Span}{Span}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_coordinate_range_mutable_af3dc963631e44198ddf747979f0b2ba4} 
+double Scott\+Plot.\+Coordinate\+Range\+Mutable.\+Span\hspace{0.3cm}{\ttfamily [get]}}
+
+\Hypertarget{class_scott_plot_1_1_coordinate_range_mutable_a5c8a4afbc65f93a58d120d33bc1ca1a9}\index{ScottPlot.CoordinateRangeMutable@{ScottPlot.CoordinateRangeMutable}!ToCoordinateRange@{ToCoordinateRange}}
+\index{ToCoordinateRange@{ToCoordinateRange}!ScottPlot.CoordinateRangeMutable@{ScottPlot.CoordinateRangeMutable}}
+\doxysubsubsection{\texorpdfstring{ToCoordinateRange}{ToCoordinateRange}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_coordinate_range_mutable_a5c8a4afbc65f93a58d120d33bc1ca1a9} 
+\mbox{\hyperlink{namespace_scott_plot_a4f8afc1393f89ce60e775705cbf134d1}{Coordinate\+Range}} Scott\+Plot.\+Coordinate\+Range\+Mutable.\+To\+Coordinate\+Range\hspace{0.3cm}{\ttfamily [get]}}
+
+\Hypertarget{class_scott_plot_1_1_coordinate_range_mutable_a967d323df3dc60ed6d0dc48664699203}\index{ScottPlot.CoordinateRangeMutable@{ScottPlot.CoordinateRangeMutable}!ToRectifiedCoordinateRange@{ToRectifiedCoordinateRange}}
+\index{ToRectifiedCoordinateRange@{ToRectifiedCoordinateRange}!ScottPlot.CoordinateRangeMutable@{ScottPlot.CoordinateRangeMutable}}
+\doxysubsubsection{\texorpdfstring{ToRectifiedCoordinateRange}{ToRectifiedCoordinateRange}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_coordinate_range_mutable_a967d323df3dc60ed6d0dc48664699203} 
+\mbox{\hyperlink{namespace_scott_plot_a4f8afc1393f89ce60e775705cbf134d1}{Coordinate\+Range}} Scott\+Plot.\+Coordinate\+Range\+Mutable.\+To\+Rectified\+Coordinate\+Range\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Primitives/Coordinate\+Range\+Mutable.\+cs\end{DoxyCompactItemize}

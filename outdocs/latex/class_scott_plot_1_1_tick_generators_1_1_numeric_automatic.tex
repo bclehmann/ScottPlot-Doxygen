@@ -1,0 +1,137 @@
+\doxysection{Scott\+Plot.\+Tick\+Generators.\+Numeric\+Automatic Class Reference}
+\hypertarget{class_scott_plot_1_1_tick_generators_1_1_numeric_automatic}{}\label{class_scott_plot_1_1_tick_generators_1_1_numeric_automatic}\index{ScottPlot.TickGenerators.NumericAutomatic@{ScottPlot.TickGenerators.NumericAutomatic}}
+Inheritance diagram for Scott\+Plot.\+Tick\+Generators.\+Numeric\+Automatic\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_scott_plot_1_1_tick_generators_1_1_numeric_automatic}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_tick_generators_1_1_numeric_automatic_af2f2b087a56c0151ee3a7370a87cd04b}{Regenerate}} (\mbox{\hyperlink{namespace_scott_plot_a4f8afc1393f89ce60e775705cbf134d1}{Coordinate\+Range}} range, \mbox{\hyperlink{namespace_scott_plot_a33d0346dfdd3d1d7cefc8d769ca98fcc}{Edge}} edge, \mbox{\hyperlink{struct_scott_plot_1_1_pixel_length}{Pixel\+Length}} size, SKPaint paint, \mbox{\hyperlink{class_scott_plot_1_1_label_style}{Label\+Style}} label\+Style)
+\begin{DoxyCompactList}\small\item\em Generate ticks based on the current settings and store the result in \doxylink{class_scott_plot_1_1_tick_generators_1_1_numeric_automatic_a595b5e50d3ff53bae2638fadb3804616}{Ticks} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_scott_plot_1_1_i_tick_generator}{Scott\+Plot.\+ITick\+Generator}}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_scott_plot_1_1_tick_generators_1_1_decimal_tick_spacing_calculator}{Decimal\+Tick\+Spacing\+Calculator}} \mbox{\hyperlink{class_scott_plot_1_1_tick_generators_1_1_numeric_automatic_af97c4ac7ebefe1a73b0d6525baf96036}{Tick\+Spacing\+Calculator}} = new()
+\item 
+int? \mbox{\hyperlink{class_scott_plot_1_1_tick_generators_1_1_numeric_automatic_a55016beb0f2535e087245f7b6c8cd416}{Target\+Tick\+Count}} = null
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_tick}{Tick}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_scott_plot_1_1_tick_generators_1_1_numeric_automatic_a595b5e50d3ff53bae2638fadb3804616}{Ticks}} = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Ticks to display the next time the axis is rendered. This array and its contents should not be modified directly. Call \doxylink{class_scott_plot_1_1_tick_generators_1_1_numeric_automatic_af2f2b087a56c0151ee3a7370a87cd04b}{Regenerate()} to update this array. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_scott_plot_1_1_tick_generators_1_1_numeric_automatic_ab39efada0fb670339d83524c59c51be4}{Max\+Tick\+Count}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Do not generate more than this number of ticks. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_scott_plot_1_1_tick_generators_1_1_numeric_automatic_a04f3740ef93961bd1fd0239c4d74704a}{Integer\+Ticks\+Only}} = false\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+Func$<$ double, string $>$ \mbox{\hyperlink{class_scott_plot_1_1_tick_generators_1_1_numeric_automatic_a16965e16f032e1273ee0bf132bbe99ad}{Label\+Formatter}} = \mbox{\hyperlink{class_scott_plot_1_1_tick_generators_1_1_label_formatters_af19493aa4cdadbb515bb29b95a522417}{Label\+Formatters.\+Numeric}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{interface_scott_plot_1_1_i_minor_tick_generator}{IMinor\+Tick\+Generator}} \mbox{\hyperlink{class_scott_plot_1_1_tick_generators_1_1_numeric_automatic_a1a7ac55ff44dcb8997f06fc4b816c1b7}{Minor\+Tick\+Generator}} = new Evenly\+Spaced\+Minor\+Tick\+Generator(5)\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_scott_plot_1_1_tick_generators_1_1_numeric_automatic_a8f152b69596df144830a754d04ea8e9e}{Minimum\+Tick\+Spacing}} = 0\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+double \mbox{\hyperlink{class_scott_plot_1_1_tick_generators_1_1_numeric_automatic_aff025149bb2571fc65d178b96c84f913}{Tick\+Density}} = 1.\+0\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{interface_scott_plot_1_1_i_tick_generator}{Scott\+Plot.\+ITick\+Generator}}}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_scott_plot_1_1_tick_generators_1_1_numeric_automatic_af2f2b087a56c0151ee3a7370a87cd04b}\index{ScottPlot.TickGenerators.NumericAutomatic@{ScottPlot.TickGenerators.NumericAutomatic}!Regenerate@{Regenerate}}
+\index{Regenerate@{Regenerate}!ScottPlot.TickGenerators.NumericAutomatic@{ScottPlot.TickGenerators.NumericAutomatic}}
+\doxysubsubsection{\texorpdfstring{Regenerate()}{Regenerate()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_tick_generators_1_1_numeric_automatic_af2f2b087a56c0151ee3a7370a87cd04b} 
+void Scott\+Plot.\+Tick\+Generators.\+Numeric\+Automatic.\+Regenerate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_scott_plot_a4f8afc1393f89ce60e775705cbf134d1}{Coordinate\+Range}}}]{range}{, }\item[{\mbox{\hyperlink{namespace_scott_plot_a33d0346dfdd3d1d7cefc8d769ca98fcc}{Edge}}}]{edge}{, }\item[{\mbox{\hyperlink{struct_scott_plot_1_1_pixel_length}{Pixel\+Length}}}]{size}{, }\item[{SKPaint}]{paint}{, }\item[{\mbox{\hyperlink{class_scott_plot_1_1_label_style}{Label\+Style}}}]{label\+Style}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Generate ticks based on the current settings and store the result in \doxylink{class_scott_plot_1_1_tick_generators_1_1_numeric_automatic_a595b5e50d3ff53bae2638fadb3804616}{Ticks} 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_tick_generator_a370ee9276ff5e75c8831b2709e852871}{Scott\+Plot.\+ITick\+Generator}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_scott_plot_1_1_tick_generators_1_1_numeric_automatic_a55016beb0f2535e087245f7b6c8cd416}\index{ScottPlot.TickGenerators.NumericAutomatic@{ScottPlot.TickGenerators.NumericAutomatic}!TargetTickCount@{TargetTickCount}}
+\index{TargetTickCount@{TargetTickCount}!ScottPlot.TickGenerators.NumericAutomatic@{ScottPlot.TickGenerators.NumericAutomatic}}
+\doxysubsubsection{\texorpdfstring{TargetTickCount}{TargetTickCount}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_tick_generators_1_1_numeric_automatic_a55016beb0f2535e087245f7b6c8cd416} 
+int? Scott\+Plot.\+Tick\+Generators.\+Numeric\+Automatic.\+Target\+Tick\+Count = null}
+
+\Hypertarget{class_scott_plot_1_1_tick_generators_1_1_numeric_automatic_af97c4ac7ebefe1a73b0d6525baf96036}\index{ScottPlot.TickGenerators.NumericAutomatic@{ScottPlot.TickGenerators.NumericAutomatic}!TickSpacingCalculator@{TickSpacingCalculator}}
+\index{TickSpacingCalculator@{TickSpacingCalculator}!ScottPlot.TickGenerators.NumericAutomatic@{ScottPlot.TickGenerators.NumericAutomatic}}
+\doxysubsubsection{\texorpdfstring{TickSpacingCalculator}{TickSpacingCalculator}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_tick_generators_1_1_numeric_automatic_af97c4ac7ebefe1a73b0d6525baf96036} 
+\mbox{\hyperlink{class_scott_plot_1_1_tick_generators_1_1_decimal_tick_spacing_calculator}{Decimal\+Tick\+Spacing\+Calculator}} Scott\+Plot.\+Tick\+Generators.\+Numeric\+Automatic.\+Tick\+Spacing\+Calculator = new()}
+
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{class_scott_plot_1_1_tick_generators_1_1_numeric_automatic_a04f3740ef93961bd1fd0239c4d74704a}\index{ScottPlot.TickGenerators.NumericAutomatic@{ScottPlot.TickGenerators.NumericAutomatic}!IntegerTicksOnly@{IntegerTicksOnly}}
+\index{IntegerTicksOnly@{IntegerTicksOnly}!ScottPlot.TickGenerators.NumericAutomatic@{ScottPlot.TickGenerators.NumericAutomatic}}
+\doxysubsubsection{\texorpdfstring{IntegerTicksOnly}{IntegerTicksOnly}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_tick_generators_1_1_numeric_automatic_a04f3740ef93961bd1fd0239c4d74704a} 
+bool Scott\+Plot.\+Tick\+Generators.\+Numeric\+Automatic.\+Integer\+Ticks\+Only = false\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_tick_generators_1_1_numeric_automatic_a16965e16f032e1273ee0bf132bbe99ad}\index{ScottPlot.TickGenerators.NumericAutomatic@{ScottPlot.TickGenerators.NumericAutomatic}!LabelFormatter@{LabelFormatter}}
+\index{LabelFormatter@{LabelFormatter}!ScottPlot.TickGenerators.NumericAutomatic@{ScottPlot.TickGenerators.NumericAutomatic}}
+\doxysubsubsection{\texorpdfstring{LabelFormatter}{LabelFormatter}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_tick_generators_1_1_numeric_automatic_a16965e16f032e1273ee0bf132bbe99ad} 
+Func$<$double, string$>$ Scott\+Plot.\+Tick\+Generators.\+Numeric\+Automatic.\+Label\+Formatter = \mbox{\hyperlink{class_scott_plot_1_1_tick_generators_1_1_label_formatters_af19493aa4cdadbb515bb29b95a522417}{Label\+Formatters.\+Numeric}}\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_tick_generators_1_1_numeric_automatic_ab39efada0fb670339d83524c59c51be4}\index{ScottPlot.TickGenerators.NumericAutomatic@{ScottPlot.TickGenerators.NumericAutomatic}!MaxTickCount@{MaxTickCount}}
+\index{MaxTickCount@{MaxTickCount}!ScottPlot.TickGenerators.NumericAutomatic@{ScottPlot.TickGenerators.NumericAutomatic}}
+\doxysubsubsection{\texorpdfstring{MaxTickCount}{MaxTickCount}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_tick_generators_1_1_numeric_automatic_ab39efada0fb670339d83524c59c51be4} 
+int Scott\+Plot.\+Tick\+Generators.\+Numeric\+Automatic.\+Max\+Tick\+Count\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Do not generate more than this number of ticks. 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_tick_generator_aa40e7d42d15c23601bd6bd569619eff2}{Scott\+Plot.\+ITick\+Generator}}.
+
+\Hypertarget{class_scott_plot_1_1_tick_generators_1_1_numeric_automatic_a8f152b69596df144830a754d04ea8e9e}\index{ScottPlot.TickGenerators.NumericAutomatic@{ScottPlot.TickGenerators.NumericAutomatic}!MinimumTickSpacing@{MinimumTickSpacing}}
+\index{MinimumTickSpacing@{MinimumTickSpacing}!ScottPlot.TickGenerators.NumericAutomatic@{ScottPlot.TickGenerators.NumericAutomatic}}
+\doxysubsubsection{\texorpdfstring{MinimumTickSpacing}{MinimumTickSpacing}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_tick_generators_1_1_numeric_automatic_a8f152b69596df144830a754d04ea8e9e} 
+float Scott\+Plot.\+Tick\+Generators.\+Numeric\+Automatic.\+Minimum\+Tick\+Spacing = 0\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_tick_generators_1_1_numeric_automatic_a1a7ac55ff44dcb8997f06fc4b816c1b7}\index{ScottPlot.TickGenerators.NumericAutomatic@{ScottPlot.TickGenerators.NumericAutomatic}!MinorTickGenerator@{MinorTickGenerator}}
+\index{MinorTickGenerator@{MinorTickGenerator}!ScottPlot.TickGenerators.NumericAutomatic@{ScottPlot.TickGenerators.NumericAutomatic}}
+\doxysubsubsection{\texorpdfstring{MinorTickGenerator}{MinorTickGenerator}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_tick_generators_1_1_numeric_automatic_a1a7ac55ff44dcb8997f06fc4b816c1b7} 
+\mbox{\hyperlink{interface_scott_plot_1_1_i_minor_tick_generator}{IMinor\+Tick\+Generator}} Scott\+Plot.\+Tick\+Generators.\+Numeric\+Automatic.\+Minor\+Tick\+Generator = new Evenly\+Spaced\+Minor\+Tick\+Generator(5)\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_tick_generators_1_1_numeric_automatic_aff025149bb2571fc65d178b96c84f913}\index{ScottPlot.TickGenerators.NumericAutomatic@{ScottPlot.TickGenerators.NumericAutomatic}!TickDensity@{TickDensity}}
+\index{TickDensity@{TickDensity}!ScottPlot.TickGenerators.NumericAutomatic@{ScottPlot.TickGenerators.NumericAutomatic}}
+\doxysubsubsection{\texorpdfstring{TickDensity}{TickDensity}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_tick_generators_1_1_numeric_automatic_aff025149bb2571fc65d178b96c84f913} 
+double Scott\+Plot.\+Tick\+Generators.\+Numeric\+Automatic.\+Tick\+Density = 1.\+0\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_tick_generators_1_1_numeric_automatic_a595b5e50d3ff53bae2638fadb3804616}\index{ScottPlot.TickGenerators.NumericAutomatic@{ScottPlot.TickGenerators.NumericAutomatic}!Ticks@{Ticks}}
+\index{Ticks@{Ticks}!ScottPlot.TickGenerators.NumericAutomatic@{ScottPlot.TickGenerators.NumericAutomatic}}
+\doxysubsubsection{\texorpdfstring{Ticks}{Ticks}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_tick_generators_1_1_numeric_automatic_a595b5e50d3ff53bae2638fadb3804616} 
+\mbox{\hyperlink{struct_scott_plot_1_1_tick}{Tick}} \mbox{[}$\,$\mbox{]} Scott\+Plot.\+Tick\+Generators.\+Numeric\+Automatic.\+Ticks = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Ticks to display the next time the axis is rendered. This array and its contents should not be modified directly. Call \doxylink{class_scott_plot_1_1_tick_generators_1_1_numeric_automatic_af2f2b087a56c0151ee3a7370a87cd04b}{Regenerate()} to update this array. 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_tick_generator_a18133091b5172e41c805252f94198466}{Scott\+Plot.\+ITick\+Generator}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Tick\+Generators/Numeric\+Automatic.\+cs\end{DoxyCompactItemize}

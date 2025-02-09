@@ -1,0 +1,111 @@
+\doxysection{Scott\+Plot.\+Range Struct Reference}
+\hypertarget{struct_scott_plot_1_1_range}{}\label{struct_scott_plot_1_1_range}\index{ScottPlot.Range@{ScottPlot.Range}}
+
+
+Represents a range between any two finite values (inclusive) /summary\texorpdfstring{$>$}{>}  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_range_a9262e0c6719e4f0f1f7e3650a007d270}{Range}} (double min, double max)
+\item 
+override string \mbox{\hyperlink{struct_scott_plot_1_1_range_a2b622ea4c449d7d1ce1b235542ced287}{To\+String}} ()
+\item 
+double \mbox{\hyperlink{struct_scott_plot_1_1_range_a9038224712bb6143ef5b09f78ce32bca}{Normalize}} (double value, bool clamp=false)
+\begin{DoxyCompactList}\small\item\em Returns the given value as a fraction of the difference between Min and Max. This is a min-\/max feature scaling. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{struct_scott_plot_1_1_range_a836c2a4f6fb0255f403a0d9f2e6a2d21}{Clamp}} (double value)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{struct_scott_plot_1_1_range}{Range}} \mbox{\hyperlink{struct_scott_plot_1_1_range_af8d0c0a507b3679fda9886237661d609}{Get\+Range}} (double\mbox{[},\mbox{]} input)
+\item 
+static \mbox{\hyperlink{struct_scott_plot_1_1_range}{Range}} \mbox{\hyperlink{struct_scott_plot_1_1_range_a2294601d0a0d1ad77e9112c66daafbfc}{Get\+Range}} (\mbox{\hyperlink{class_i_enumerable}{IEnumerable}}$<$ double $>$ input)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{struct_scott_plot_1_1_range_a4602fc530b663f4564642dae379538e7}{Min}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+double \mbox{\hyperlink{struct_scott_plot_1_1_range_ad2324c8f0a7b2c3767674582c14de150}{Max}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a range between any two finite values (inclusive) /summary\texorpdfstring{$>$}{>} 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{struct_scott_plot_1_1_range_a9262e0c6719e4f0f1f7e3650a007d270}\index{ScottPlot.Range@{ScottPlot.Range}!Range@{Range}}
+\index{Range@{Range}!ScottPlot.Range@{ScottPlot.Range}}
+\doxysubsubsection{\texorpdfstring{Range()}{Range()}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_range_a9262e0c6719e4f0f1f7e3650a007d270} 
+Scott\+Plot.\+Range.\+Range (\begin{DoxyParamCaption}\item[{double}]{min}{, }\item[{double}]{max}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{struct_scott_plot_1_1_range_a836c2a4f6fb0255f403a0d9f2e6a2d21}\index{ScottPlot.Range@{ScottPlot.Range}!Clamp@{Clamp}}
+\index{Clamp@{Clamp}!ScottPlot.Range@{ScottPlot.Range}}
+\doxysubsubsection{\texorpdfstring{Clamp()}{Clamp()}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_range_a836c2a4f6fb0255f403a0d9f2e6a2d21} 
+double Scott\+Plot.\+Range.\+Clamp (\begin{DoxyParamCaption}\item[{double}]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{struct_scott_plot_1_1_range_af8d0c0a507b3679fda9886237661d609}\index{ScottPlot.Range@{ScottPlot.Range}!GetRange@{GetRange}}
+\index{GetRange@{GetRange}!ScottPlot.Range@{ScottPlot.Range}}
+\doxysubsubsection{\texorpdfstring{GetRange()}{GetRange()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_range_af8d0c0a507b3679fda9886237661d609} 
+static \mbox{\hyperlink{struct_scott_plot_1_1_range}{Range}} Scott\+Plot.\+Range.\+Get\+Range (\begin{DoxyParamCaption}\item[{double}]{input}{\mbox{[},\mbox{]}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\Hypertarget{struct_scott_plot_1_1_range_a2294601d0a0d1ad77e9112c66daafbfc}\index{ScottPlot.Range@{ScottPlot.Range}!GetRange@{GetRange}}
+\index{GetRange@{GetRange}!ScottPlot.Range@{ScottPlot.Range}}
+\doxysubsubsection{\texorpdfstring{GetRange()}{GetRange()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_range_a2294601d0a0d1ad77e9112c66daafbfc} 
+static \mbox{\hyperlink{struct_scott_plot_1_1_range}{Range}} Scott\+Plot.\+Range.\+Get\+Range (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_i_enumerable}{IEnumerable}}$<$ double $>$}]{input}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\Hypertarget{struct_scott_plot_1_1_range_a9038224712bb6143ef5b09f78ce32bca}\index{ScottPlot.Range@{ScottPlot.Range}!Normalize@{Normalize}}
+\index{Normalize@{Normalize}!ScottPlot.Range@{ScottPlot.Range}}
+\doxysubsubsection{\texorpdfstring{Normalize()}{Normalize()}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_range_a9038224712bb6143ef5b09f78ce32bca} 
+double Scott\+Plot.\+Range.\+Normalize (\begin{DoxyParamCaption}\item[{double}]{value}{, }\item[{bool}]{clamp}{ = {\ttfamily false}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the given value as a fraction of the difference between Min and Max. This is a min-\/max feature scaling. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The value to normalize\\
+\hline
+{\em clamp} & If true, values outside of the range will be clamped onto the interval \mbox{[}0, 1\mbox{]}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The normalized value
+\end{DoxyReturn}
+summary\texorpdfstring{$>$}{>} Returns the given value clamped to the range (inclusive). /summary\texorpdfstring{$>$}{>} \Hypertarget{struct_scott_plot_1_1_range_a2b622ea4c449d7d1ce1b235542ced287}\index{ScottPlot.Range@{ScottPlot.Range}!ToString@{ToString}}
+\index{ToString@{ToString}!ScottPlot.Range@{ScottPlot.Range}}
+\doxysubsubsection{\texorpdfstring{ToString()}{ToString()}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_range_a2b622ea4c449d7d1ce1b235542ced287} 
+override string Scott\+Plot.\+Range.\+To\+String (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{struct_scott_plot_1_1_range_ad2324c8f0a7b2c3767674582c14de150}\index{ScottPlot.Range@{ScottPlot.Range}!Max@{Max}}
+\index{Max@{Max}!ScottPlot.Range@{ScottPlot.Range}}
+\doxysubsubsection{\texorpdfstring{Max}{Max}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_range_ad2324c8f0a7b2c3767674582c14de150} 
+double Scott\+Plot.\+Range.\+Max\hspace{0.3cm}{\ttfamily [get]}}
+
+\Hypertarget{struct_scott_plot_1_1_range_a4602fc530b663f4564642dae379538e7}\index{ScottPlot.Range@{ScottPlot.Range}!Min@{Min}}
+\index{Min@{Min}!ScottPlot.Range@{ScottPlot.Range}}
+\doxysubsubsection{\texorpdfstring{Min}{Min}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_range_a4602fc530b663f4564642dae379538e7} 
+double Scott\+Plot.\+Range.\+Min\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Primitives/Range.\+cs\end{DoxyCompactItemize}

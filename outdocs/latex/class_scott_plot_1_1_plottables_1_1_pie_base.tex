@@ -1,0 +1,199 @@
+\doxysection{Scott\+Plot.\+Plottables.\+Pie\+Base Class Reference}
+\hypertarget{class_scott_plot_1_1_plottables_1_1_pie_base}{}\label{class_scott_plot_1_1_plottables_1_1_pie_base}\index{ScottPlot.Plottables.PieBase@{ScottPlot.Plottables.PieBase}}
+Inheritance diagram for Scott\+Plot.\+Plottables.\+Pie\+Base\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_scott_plot_1_1_plottables_1_1_pie_base}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_pie_base_a8a06cf6f18e971beb7ddf4235c381c47}{Get\+Axis\+Limits}} ()
+\begin{DoxyCompactList}\small\item\em Return the 2D area (in coordinate space) occupied by the data contained in this plottable. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_pie_base_a432880e4bf9f029575438927ce8a947a}{Render}} (Render\+Pack rp)
+\begin{DoxyCompactList}\small\item\em Draw the data from this plottable into the data area defined in the \doxylink{class_scott_plot_1_1_axes}{Axes}. By default the surface is already clipped to the data area, but this can be cleared inside the plottable. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable}{Scott\+Plot.\+IPlottable}}}
+\doxysubsubsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static SKPoint \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_pie_base_a1bde2d4d68b30f3421cacaa5e7e528df}{Get\+Rotated\+Point}} (double radius, double angle\+In\+Degrees)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_scott_plot_1_1_i_axes}{IAxes}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_pie_base_a201fdbfd70ecb5939f8892ff64d5728d}{Axes}} = new \mbox{\hyperlink{class_scott_plot_1_1_axes}{Axes}}()\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em This object performs coordinate/pixel translation at render time based on the latest data area. It stores the axes to use for this plottable and also the data area (in pixels) updated just before each render. If this object is null it will be constructed using the default X and Y axes at render time. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_pie_base_a122c80183b708fd543fdc0bf549cf22c}{Is\+Visible}} = true\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Toggles whether this plottable is shown and contributes to the automatic axis limit detection. The calling method will check this variable (it does not need to be checked inside the Render method). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_enumerable}{IEnumerable}}$<$ \mbox{\hyperlink{class_scott_plot_1_1_legend_item}{Legend\+Item}} $>$ \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_pie_base_ad36c893cfcb0f920ff6252a756e805ca}{Legend\+Items}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Items which will appear in the legend. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_pie_base_af01c7991486ce87aa3dd51c018a34022}{Line\+Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{namespace_scott_plot_a625917eb44cadb4de90991e525db6ab5}{Line\+Pattern}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_pie_base_a1ddf631b7b6e2db600684868879f4849}{Line\+Pattern}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{class_scott_plot_1_1_line_style}{Line\+Style}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_pie_base_abcb1e82f8a6c0894cb8dd42a81d53152}{Line\+Style}} = new() \{ Width = 0 \}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_pie_base_a7722b8f66b58a08d4d710c722e4662c5}{Line\+Width}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+double \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_pie_base_a28d09b7170847eafa81493739c620ad1}{Padding}} = 0.\+2\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+bool \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_pie_base_a4c4004fbae13945d5e52da01d5fea0a1}{Show\+Slice\+Labels}} = false\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+double \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_pie_base_a7e8b567bb9355ddee999b1999c954514}{Slice\+Label\+Distance}} = 1.\+2\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{class_i_list}{IList}}$<$ \mbox{\hyperlink{class_scott_plot_1_1_pie_slice}{Pie\+Slice}} $>$ \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_pie_base_ab7cbbd4ea743bbde88d30e050320ff84}{Slices}} = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable}{Scott\+Plot.\+IPlottable}}}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{interface_scott_plot_1_1_i_has_line}{Scott\+Plot.\+IHas\+Line}}}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_pie_base_a8a06cf6f18e971beb7ddf4235c381c47}\index{ScottPlot.Plottables.PieBase@{ScottPlot.Plottables.PieBase}!GetAxisLimits@{GetAxisLimits}}
+\index{GetAxisLimits@{GetAxisLimits}!ScottPlot.Plottables.PieBase@{ScottPlot.Plottables.PieBase}}
+\doxysubsubsection{\texorpdfstring{GetAxisLimits()}{GetAxisLimits()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_pie_base_a8a06cf6f18e971beb7ddf4235c381c47} 
+\mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}} Scott\+Plot.\+Plottables.\+Pie\+Base.\+Get\+Axis\+Limits (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+
+
+Return the 2D area (in coordinate space) occupied by the data contained in this plottable. 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable_a2e455cf76f9e8bc3187900b1a90487c3}{Scott\+Plot.\+IPlottable}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_pie_base_a1bde2d4d68b30f3421cacaa5e7e528df}\index{ScottPlot.Plottables.PieBase@{ScottPlot.Plottables.PieBase}!GetRotatedPoint@{GetRotatedPoint}}
+\index{GetRotatedPoint@{GetRotatedPoint}!ScottPlot.Plottables.PieBase@{ScottPlot.Plottables.PieBase}}
+\doxysubsubsection{\texorpdfstring{GetRotatedPoint()}{GetRotatedPoint()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_pie_base_a1bde2d4d68b30f3421cacaa5e7e528df} 
+static SKPoint Scott\+Plot.\+Plottables.\+Pie\+Base.\+Get\+Rotated\+Point (\begin{DoxyParamCaption}\item[{double}]{radius}{, }\item[{double}]{angle\+In\+Degrees}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_pie_base_a432880e4bf9f029575438927ce8a947a}\index{ScottPlot.Plottables.PieBase@{ScottPlot.Plottables.PieBase}!Render@{Render}}
+\index{Render@{Render}!ScottPlot.Plottables.PieBase@{ScottPlot.Plottables.PieBase}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_pie_base_a432880e4bf9f029575438927ce8a947a} 
+void Scott\+Plot.\+Plottables.\+Pie\+Base.\+Render (\begin{DoxyParamCaption}\item[{Render\+Pack}]{rp}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+
+
+Draw the data from this plottable into the data area defined in the \doxylink{class_scott_plot_1_1_axes}{Axes}. By default the surface is already clipped to the data area, but this can be cleared inside the plottable. 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable_a11d2487f1d7628e019a09748d876c289}{Scott\+Plot.\+IPlottable}}.
+
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_pie_base_a201fdbfd70ecb5939f8892ff64d5728d}\index{ScottPlot.Plottables.PieBase@{ScottPlot.Plottables.PieBase}!Axes@{Axes}}
+\index{Axes@{Axes}!ScottPlot.Plottables.PieBase@{ScottPlot.Plottables.PieBase}}
+\doxysubsubsection{\texorpdfstring{Axes}{Axes}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_pie_base_a201fdbfd70ecb5939f8892ff64d5728d} 
+\mbox{\hyperlink{interface_scott_plot_1_1_i_axes}{IAxes}} Scott\+Plot.\+Plottables.\+Pie\+Base.\+Axes = new \mbox{\hyperlink{class_scott_plot_1_1_axes}{Axes}}()\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+This object performs coordinate/pixel translation at render time based on the latest data area. It stores the axes to use for this plottable and also the data area (in pixels) updated just before each render. If this object is null it will be constructed using the default X and Y axes at render time. 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable_aa68bc5153a673a7cd4a68f93da377d0a}{Scott\+Plot.\+IPlottable}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_pie_base_a122c80183b708fd543fdc0bf549cf22c}\index{ScottPlot.Plottables.PieBase@{ScottPlot.Plottables.PieBase}!IsVisible@{IsVisible}}
+\index{IsVisible@{IsVisible}!ScottPlot.Plottables.PieBase@{ScottPlot.Plottables.PieBase}}
+\doxysubsubsection{\texorpdfstring{IsVisible}{IsVisible}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_pie_base_a122c80183b708fd543fdc0bf549cf22c} 
+bool Scott\+Plot.\+Plottables.\+Pie\+Base.\+Is\+Visible = true\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Toggles whether this plottable is shown and contributes to the automatic axis limit detection. The calling method will check this variable (it does not need to be checked inside the Render method). 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable_abbe75ba55a332d695313ccb5dc780923}{Scott\+Plot.\+IPlottable}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_pie_base_ad36c893cfcb0f920ff6252a756e805ca}\index{ScottPlot.Plottables.PieBase@{ScottPlot.Plottables.PieBase}!LegendItems@{LegendItems}}
+\index{LegendItems@{LegendItems}!ScottPlot.Plottables.PieBase@{ScottPlot.Plottables.PieBase}}
+\doxysubsubsection{\texorpdfstring{LegendItems}{LegendItems}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_pie_base_ad36c893cfcb0f920ff6252a756e805ca} 
+\mbox{\hyperlink{class_i_enumerable}{IEnumerable}}$<$\mbox{\hyperlink{class_scott_plot_1_1_legend_item}{Legend\+Item}}$>$ Scott\+Plot.\+Plottables.\+Pie\+Base.\+Legend\+Items\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Items which will appear in the legend. 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable_a4565f96a253f832bd9aa8033c99eff75}{Scott\+Plot.\+IPlottable}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_pie_base_af01c7991486ce87aa3dd51c018a34022}\index{ScottPlot.Plottables.PieBase@{ScottPlot.Plottables.PieBase}!LineColor@{LineColor}}
+\index{LineColor@{LineColor}!ScottPlot.Plottables.PieBase@{ScottPlot.Plottables.PieBase}}
+\doxysubsubsection{\texorpdfstring{LineColor}{LineColor}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_pie_base_af01c7991486ce87aa3dd51c018a34022} 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} Scott\+Plot.\+Plottables.\+Pie\+Base.\+Line\+Color\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_has_line_aa6dfc6fced8c40566cc6fdf237b66175}{Scott\+Plot.\+IHas\+Line}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_pie_base_a1ddf631b7b6e2db600684868879f4849}\index{ScottPlot.Plottables.PieBase@{ScottPlot.Plottables.PieBase}!LinePattern@{LinePattern}}
+\index{LinePattern@{LinePattern}!ScottPlot.Plottables.PieBase@{ScottPlot.Plottables.PieBase}}
+\doxysubsubsection{\texorpdfstring{LinePattern}{LinePattern}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_pie_base_a1ddf631b7b6e2db600684868879f4849} 
+\mbox{\hyperlink{namespace_scott_plot_a625917eb44cadb4de90991e525db6ab5}{Line\+Pattern}} Scott\+Plot.\+Plottables.\+Pie\+Base.\+Line\+Pattern\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_has_line_a36a31df15a64944ab9108d98574a5ada}{Scott\+Plot.\+IHas\+Line}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_pie_base_abcb1e82f8a6c0894cb8dd42a81d53152}\index{ScottPlot.Plottables.PieBase@{ScottPlot.Plottables.PieBase}!LineStyle@{LineStyle}}
+\index{LineStyle@{LineStyle}!ScottPlot.Plottables.PieBase@{ScottPlot.Plottables.PieBase}}
+\doxysubsubsection{\texorpdfstring{LineStyle}{LineStyle}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_pie_base_abcb1e82f8a6c0894cb8dd42a81d53152} 
+\mbox{\hyperlink{class_scott_plot_1_1_line_style}{Line\+Style}} Scott\+Plot.\+Plottables.\+Pie\+Base.\+Line\+Style = new() \{ Width = 0 \}\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_has_line_a1a04ccd6d040be2e80338c8af04ea291}{Scott\+Plot.\+IHas\+Line}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_pie_base_a7722b8f66b58a08d4d710c722e4662c5}\index{ScottPlot.Plottables.PieBase@{ScottPlot.Plottables.PieBase}!LineWidth@{LineWidth}}
+\index{LineWidth@{LineWidth}!ScottPlot.Plottables.PieBase@{ScottPlot.Plottables.PieBase}}
+\doxysubsubsection{\texorpdfstring{LineWidth}{LineWidth}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_pie_base_a7722b8f66b58a08d4d710c722e4662c5} 
+float Scott\+Plot.\+Plottables.\+Pie\+Base.\+Line\+Width\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_has_line_aa5f2d70e52466770207ed3547ffeecb3}{Scott\+Plot.\+IHas\+Line}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_pie_base_a28d09b7170847eafa81493739c620ad1}\index{ScottPlot.Plottables.PieBase@{ScottPlot.Plottables.PieBase}!Padding@{Padding}}
+\index{Padding@{Padding}!ScottPlot.Plottables.PieBase@{ScottPlot.Plottables.PieBase}}
+\doxysubsubsection{\texorpdfstring{Padding}{Padding}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_pie_base_a28d09b7170847eafa81493739c620ad1} 
+double Scott\+Plot.\+Plottables.\+Pie\+Base.\+Padding = 0.\+2\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_pie_base_a4c4004fbae13945d5e52da01d5fea0a1}\index{ScottPlot.Plottables.PieBase@{ScottPlot.Plottables.PieBase}!ShowSliceLabels@{ShowSliceLabels}}
+\index{ShowSliceLabels@{ShowSliceLabels}!ScottPlot.Plottables.PieBase@{ScottPlot.Plottables.PieBase}}
+\doxysubsubsection{\texorpdfstring{ShowSliceLabels}{ShowSliceLabels}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_pie_base_a4c4004fbae13945d5e52da01d5fea0a1} 
+bool Scott\+Plot.\+Plottables.\+Pie\+Base.\+Show\+Slice\+Labels = false\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_pie_base_a7e8b567bb9355ddee999b1999c954514}\index{ScottPlot.Plottables.PieBase@{ScottPlot.Plottables.PieBase}!SliceLabelDistance@{SliceLabelDistance}}
+\index{SliceLabelDistance@{SliceLabelDistance}!ScottPlot.Plottables.PieBase@{ScottPlot.Plottables.PieBase}}
+\doxysubsubsection{\texorpdfstring{SliceLabelDistance}{SliceLabelDistance}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_pie_base_a7e8b567bb9355ddee999b1999c954514} 
+double Scott\+Plot.\+Plottables.\+Pie\+Base.\+Slice\+Label\+Distance = 1.\+2\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_pie_base_ab7cbbd4ea743bbde88d30e050320ff84}\index{ScottPlot.Plottables.PieBase@{ScottPlot.Plottables.PieBase}!Slices@{Slices}}
+\index{Slices@{Slices}!ScottPlot.Plottables.PieBase@{ScottPlot.Plottables.PieBase}}
+\doxysubsubsection{\texorpdfstring{Slices}{Slices}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_pie_base_ab7cbbd4ea743bbde88d30e050320ff84} 
+\mbox{\hyperlink{class_i_list}{IList}}$<$\mbox{\hyperlink{class_scott_plot_1_1_pie_slice}{Pie\+Slice}}$>$ Scott\+Plot.\+Plottables.\+Pie\+Base.\+Slices = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Plottables/Pie\+Base.\+cs\end{DoxyCompactItemize}

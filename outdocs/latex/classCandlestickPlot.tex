@@ -1,0 +1,163 @@
+\hypertarget{classCandlestickPlot}{}\doxysection{Candlestick\+Plot Class Reference}
+\label{classCandlestickPlot}\index{CandlestickPlot@{CandlestickPlot}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} \mbox{\hyperlink{classCandlestickPlot_a9a10b17d14dfcf12831cfe9e253aca7e}{Get\+Axis\+Limits}} ()
+\item 
+virtual void \mbox{\hyperlink{classCandlestickPlot_a6862d7ba8f3e665ff36e8c0e3160c235}{Render}} (\mbox{\hyperlink{classRenderPack}{Render\+Pack}} rp)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{classCandlestickPlot_a26257e48816c5ed74870d47498245bc6}{Symbol\+Width}} = .\+8
+\begin{DoxyCompactList}\small\item\em Fractional width of the candle symbol relative to its time span \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interfaceIOHLCSource}{IOHLCSource}} \mbox{\hyperlink{classCandlestickPlot_ae282293414036596e6efcc58dcf26093}{data}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+bool \mbox{\hyperlink{classCandlestickPlot_a42acc88fcd01dd5ee702229ef7f26592}{Is\+Visible}} = true\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{interfaceIAxes}{IAxes}} \mbox{\hyperlink{classCandlestickPlot_aa96898adc77e7092fd430d2410e61e88}{Axes}} = new \mbox{\hyperlink{classAxes}{Axes}}()\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+bool \mbox{\hyperlink{classCandlestickPlot_a049539fb993a05eee110b634ede63b01}{Sequential}} = false\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em X position of candles is sourced from the \mbox{\hyperlink{structOHLC}{OHLC}}\textquotesingle{}s Date\+Time by default. If this option is enabled, X position will be an ascending integers starting at 0 with no gaps. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classLineStyle}{Line\+Style}} \mbox{\hyperlink{classCandlestickPlot_ab5e848dfb2718b6fbe02c1f6fe02598c}{Rising\+Line\+Style}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{classLineStyle}{Line\+Style}} \mbox{\hyperlink{classCandlestickPlot_aadb7c00c9123b8fa89d3016faac3fc9e}{Falling\+Line\+Style}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{classFillStyle}{Fill\+Style}} \mbox{\hyperlink{classCandlestickPlot_a5fe4734a1fe8586762be449b09b9c47e}{Rising\+Fill\+Style}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{classFillStyle}{Fill\+Style}} \mbox{\hyperlink{classCandlestickPlot_a80701e6268d7e8e564e5422984ebebd6}{Falling\+Fill\+Style}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$ \mbox{\hyperlink{classLegendItem}{Legend\+Item}} $>$ \mbox{\hyperlink{classCandlestickPlot_a9ef368465ec01c71216e88164e16216f}{Legend\+Items}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classCandlestickPlot_a9a10b17d14dfcf12831cfe9e253aca7e}\label{classCandlestickPlot_a9a10b17d14dfcf12831cfe9e253aca7e}} 
+\index{CandlestickPlot@{CandlestickPlot}!GetAxisLimits@{GetAxisLimits}}
+\index{GetAxisLimits@{GetAxisLimits}!CandlestickPlot@{CandlestickPlot}}
+\doxysubsubsection{\texorpdfstring{GetAxisLimits()}{GetAxisLimits()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} Candlestick\+Plot.\+Get\+Axis\+Limits (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCandlestickPlot_a6862d7ba8f3e665ff36e8c0e3160c235}\label{classCandlestickPlot_a6862d7ba8f3e665ff36e8c0e3160c235}} 
+\index{CandlestickPlot@{CandlestickPlot}!Render@{Render}}
+\index{Render@{Render}!CandlestickPlot@{CandlestickPlot}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily virtual void Candlestick\+Plot.\+Render (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classRenderPack}{Render\+Pack}}}]{rp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classCandlestickPlot_a26257e48816c5ed74870d47498245bc6}\label{classCandlestickPlot_a26257e48816c5ed74870d47498245bc6}} 
+\index{CandlestickPlot@{CandlestickPlot}!SymbolWidth@{SymbolWidth}}
+\index{SymbolWidth@{SymbolWidth}!CandlestickPlot@{CandlestickPlot}}
+\doxysubsubsection{\texorpdfstring{SymbolWidth}{SymbolWidth}}
+{\footnotesize\ttfamily double Candlestick\+Plot.\+Symbol\+Width = .\+8}
+
+
+
+Fractional width of the candle symbol relative to its time span 
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{classCandlestickPlot_aa96898adc77e7092fd430d2410e61e88}\label{classCandlestickPlot_aa96898adc77e7092fd430d2410e61e88}} 
+\index{CandlestickPlot@{CandlestickPlot}!Axes@{Axes}}
+\index{Axes@{Axes}!CandlestickPlot@{CandlestickPlot}}
+\doxysubsubsection{\texorpdfstring{Axes}{Axes}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceIAxes}{IAxes}} Candlestick\+Plot.\+Axes = new \mbox{\hyperlink{classAxes}{Axes}}()\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classCandlestickPlot_ae282293414036596e6efcc58dcf26093}\label{classCandlestickPlot_ae282293414036596e6efcc58dcf26093}} 
+\index{CandlestickPlot@{CandlestickPlot}!data@{data}}
+\index{data@{data}!CandlestickPlot@{CandlestickPlot}}
+\doxysubsubsection{\texorpdfstring{data}{data}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceIOHLCSource}{IOHLCSource}} Candlestick\+Plot.\+data\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classCandlestickPlot_a80701e6268d7e8e564e5422984ebebd6}\label{classCandlestickPlot_a80701e6268d7e8e564e5422984ebebd6}} 
+\index{CandlestickPlot@{CandlestickPlot}!FallingFillStyle@{FallingFillStyle}}
+\index{FallingFillStyle@{FallingFillStyle}!CandlestickPlot@{CandlestickPlot}}
+\doxysubsubsection{\texorpdfstring{FallingFillStyle}{FallingFillStyle}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classFillStyle}{Fill\+Style}} Candlestick\+Plot.\+Falling\+Fill\+Style\hspace{0.3cm}{\ttfamily [get]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new}()}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        \mbox{\hyperlink{structColor}{Color}} = \mbox{\hyperlink{structColor}{Color}}.\mbox{\hyperlink{structColor_a89b986561f631e4ee1dc5008aca5174f}{FromHex}}(\textcolor{stringliteral}{"{}\#f23645"{}}),}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classCandlestickPlot_aadb7c00c9123b8fa89d3016faac3fc9e}\label{classCandlestickPlot_aadb7c00c9123b8fa89d3016faac3fc9e}} 
+\index{CandlestickPlot@{CandlestickPlot}!FallingLineStyle@{FallingLineStyle}}
+\index{FallingLineStyle@{FallingLineStyle}!CandlestickPlot@{CandlestickPlot}}
+\doxysubsubsection{\texorpdfstring{FallingLineStyle}{FallingLineStyle}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classLineStyle}{Line\+Style}} Candlestick\+Plot.\+Falling\+Line\+Style\hspace{0.3cm}{\ttfamily [get]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new}()}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        \mbox{\hyperlink{structColor}{Color}} = \mbox{\hyperlink{structColor}{Color}}.\mbox{\hyperlink{structColor_a89b986561f631e4ee1dc5008aca5174f}{FromHex}}(\textcolor{stringliteral}{"{}\#f23645"{}}),}
+\DoxyCodeLine{        Width = 2,}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classCandlestickPlot_a42acc88fcd01dd5ee702229ef7f26592}\label{classCandlestickPlot_a42acc88fcd01dd5ee702229ef7f26592}} 
+\index{CandlestickPlot@{CandlestickPlot}!IsVisible@{IsVisible}}
+\index{IsVisible@{IsVisible}!CandlestickPlot@{CandlestickPlot}}
+\doxysubsubsection{\texorpdfstring{IsVisible}{IsVisible}}
+{\footnotesize\ttfamily bool Candlestick\+Plot.\+Is\+Visible = true\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classCandlestickPlot_a9ef368465ec01c71216e88164e16216f}\label{classCandlestickPlot_a9ef368465ec01c71216e88164e16216f}} 
+\index{CandlestickPlot@{CandlestickPlot}!LegendItems@{LegendItems}}
+\index{LegendItems@{LegendItems}!CandlestickPlot@{CandlestickPlot}}
+\doxysubsubsection{\texorpdfstring{LegendItems}{LegendItems}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$\mbox{\hyperlink{classLegendItem}{Legend\+Item}}$>$ Candlestick\+Plot.\+Legend\+Items\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{classCandlestickPlot_a5fe4734a1fe8586762be449b09b9c47e}\label{classCandlestickPlot_a5fe4734a1fe8586762be449b09b9c47e}} 
+\index{CandlestickPlot@{CandlestickPlot}!RisingFillStyle@{RisingFillStyle}}
+\index{RisingFillStyle@{RisingFillStyle}!CandlestickPlot@{CandlestickPlot}}
+\doxysubsubsection{\texorpdfstring{RisingFillStyle}{RisingFillStyle}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classFillStyle}{Fill\+Style}} Candlestick\+Plot.\+Rising\+Fill\+Style\hspace{0.3cm}{\ttfamily [get]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new}()}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        \mbox{\hyperlink{structColor}{Color}} = \mbox{\hyperlink{structColor}{Color}}.\mbox{\hyperlink{structColor_a89b986561f631e4ee1dc5008aca5174f}{FromHex}}(\textcolor{stringliteral}{"{}\#089981"{}}),}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classCandlestickPlot_ab5e848dfb2718b6fbe02c1f6fe02598c}\label{classCandlestickPlot_ab5e848dfb2718b6fbe02c1f6fe02598c}} 
+\index{CandlestickPlot@{CandlestickPlot}!RisingLineStyle@{RisingLineStyle}}
+\index{RisingLineStyle@{RisingLineStyle}!CandlestickPlot@{CandlestickPlot}}
+\doxysubsubsection{\texorpdfstring{RisingLineStyle}{RisingLineStyle}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classLineStyle}{Line\+Style}} Candlestick\+Plot.\+Rising\+Line\+Style\hspace{0.3cm}{\ttfamily [get]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new}()}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        \mbox{\hyperlink{structColor}{Color}} = \mbox{\hyperlink{structColor}{Color}}.\mbox{\hyperlink{structColor_a89b986561f631e4ee1dc5008aca5174f}{FromHex}}(\textcolor{stringliteral}{"{}\#089981"{}}),}
+\DoxyCodeLine{        Width = 2,}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classCandlestickPlot_a049539fb993a05eee110b634ede63b01}\label{classCandlestickPlot_a049539fb993a05eee110b634ede63b01}} 
+\index{CandlestickPlot@{CandlestickPlot}!Sequential@{Sequential}}
+\index{Sequential@{Sequential}!CandlestickPlot@{CandlestickPlot}}
+\doxysubsubsection{\texorpdfstring{Sequential}{Sequential}}
+{\footnotesize\ttfamily bool Candlestick\+Plot.\+Sequential = false\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+X position of candles is sourced from the \mbox{\hyperlink{structOHLC}{OHLC}}\textquotesingle{}s Date\+Time by default. If this option is enabled, X position will be an ascending integers starting at 0 with no gaps. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Plottables/Candlestick\+Plot.\+cs\end{DoxyCompactItemize}

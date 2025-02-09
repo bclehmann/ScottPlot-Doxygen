@@ -1,0 +1,138 @@
+\hypertarget{classPlotStyle}{}\doxysection{Plot\+Style Class Reference}
+\label{classPlotStyle}\index{PlotStyle@{PlotStyle}}
+
+
+This object holds many common plot style customizations and facilitates switching between styles or copying styles from one plot to another.  
+
+
+Inheritance diagram for Plot\+Style\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classPlotStyle}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classPlotStyle_adbbf85356a581e1a1cc75ccaa0d3ec6d}{Apply}} (\mbox{\hyperlink{classPlot}{Plot}} plot)
+\begin{DoxyCompactList}\small\item\em Apply these style settings to the given plot \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPlotStyle}{Plot\+Style}} \mbox{\hyperlink{classPlotStyle_a8f8f6e826df4e1f74852f9b4a15fb0e6}{Where\+Different\+From}} (\mbox{\hyperlink{classPlotStyle}{Plot\+Style}} other)
+\begin{DoxyCompactList}\small\item\em Return a plot style with all values nulled except those that are different than the given style \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classPlotStyle}{Plot\+Style}} \mbox{\hyperlink{classPlotStyle_ae7b09e2916c04c894e3ed5a00cada681}{From\+Plot}} (\mbox{\hyperlink{classPlot}{Plot}} plot)
+\begin{DoxyCompactList}\small\item\em Return the styles represented by the given plot \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interfaceIPalette}{IPalette}}? \mbox{\hyperlink{classPlotStyle_a913376287c4e591e996049c2308da31a}{Palette}} = null\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{structColor}{Color}}? \mbox{\hyperlink{classPlotStyle_ace8b974d3394d1394f8291a29677dea8}{Figure\+Background\+Color}} = null\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{structColor}{Color}}? \mbox{\hyperlink{classPlotStyle_ada55c0be891ff2e1572dff5484c275ee}{Data\+Background\+Color}} = null\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{structColor}{Color}}? \mbox{\hyperlink{classPlotStyle_ad5756c4d0e4c9d654efa362d042c1db0}{Axis\+Color}} = null\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{structColor}{Color}}? \mbox{\hyperlink{classPlotStyle_ae3527bd61322aefcbdaa2ffbb2755be6}{Grid\+Major\+Line\+Color}} = null\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{structColor}{Color}}? \mbox{\hyperlink{classPlotStyle_aa059c51756d46f4294b3fb4b0cc48b8e}{Legend\+Background\+Color}} = null\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{structColor}{Color}}? \mbox{\hyperlink{classPlotStyle_af5c90605d2a7a433168819ae00c07ba1}{Legend\+Font\+Color}} = null\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{structColor}{Color}}? \mbox{\hyperlink{classPlotStyle_a7bfc649e949299ae2bb54e47052ccc91}{Legend\+Outline\+Color}} = null\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This object holds many common plot style customizations and facilitates switching between styles or copying styles from one plot to another. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPlotStyle_adbbf85356a581e1a1cc75ccaa0d3ec6d}\label{classPlotStyle_adbbf85356a581e1a1cc75ccaa0d3ec6d}} 
+\index{PlotStyle@{PlotStyle}!Apply@{Apply}}
+\index{Apply@{Apply}!PlotStyle@{PlotStyle}}
+\doxysubsubsection{\texorpdfstring{Apply()}{Apply()}}
+{\footnotesize\ttfamily void Plot\+Style.\+Apply (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPlot}{Plot}}}]{plot }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Apply these style settings to the given plot 
+
+\mbox{\Hypertarget{classPlotStyle_ae7b09e2916c04c894e3ed5a00cada681}\label{classPlotStyle_ae7b09e2916c04c894e3ed5a00cada681}} 
+\index{PlotStyle@{PlotStyle}!FromPlot@{FromPlot}}
+\index{FromPlot@{FromPlot}!PlotStyle@{PlotStyle}}
+\doxysubsubsection{\texorpdfstring{FromPlot()}{FromPlot()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classPlotStyle}{Plot\+Style}} Plot\+Style.\+From\+Plot (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPlot}{Plot}}}]{plot }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Return the styles represented by the given plot 
+
+\mbox{\Hypertarget{classPlotStyle_a8f8f6e826df4e1f74852f9b4a15fb0e6}\label{classPlotStyle_a8f8f6e826df4e1f74852f9b4a15fb0e6}} 
+\index{PlotStyle@{PlotStyle}!WhereDifferentFrom@{WhereDifferentFrom}}
+\index{WhereDifferentFrom@{WhereDifferentFrom}!PlotStyle@{PlotStyle}}
+\doxysubsubsection{\texorpdfstring{WhereDifferentFrom()}{WhereDifferentFrom()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPlotStyle}{Plot\+Style}} Plot\+Style.\+Where\+Different\+From (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPlotStyle}{Plot\+Style}}}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return a plot style with all values nulled except those that are different than the given style 
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{classPlotStyle_ad5756c4d0e4c9d654efa362d042c1db0}\label{classPlotStyle_ad5756c4d0e4c9d654efa362d042c1db0}} 
+\index{PlotStyle@{PlotStyle}!AxisColor@{AxisColor}}
+\index{AxisColor@{AxisColor}!PlotStyle@{PlotStyle}}
+\doxysubsubsection{\texorpdfstring{AxisColor}{AxisColor}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structColor}{Color}}? Plot\+Style.\+Axis\+Color = null\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classPlotStyle_ada55c0be891ff2e1572dff5484c275ee}\label{classPlotStyle_ada55c0be891ff2e1572dff5484c275ee}} 
+\index{PlotStyle@{PlotStyle}!DataBackgroundColor@{DataBackgroundColor}}
+\index{DataBackgroundColor@{DataBackgroundColor}!PlotStyle@{PlotStyle}}
+\doxysubsubsection{\texorpdfstring{DataBackgroundColor}{DataBackgroundColor}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structColor}{Color}}? Plot\+Style.\+Data\+Background\+Color = null\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classPlotStyle_ace8b974d3394d1394f8291a29677dea8}\label{classPlotStyle_ace8b974d3394d1394f8291a29677dea8}} 
+\index{PlotStyle@{PlotStyle}!FigureBackgroundColor@{FigureBackgroundColor}}
+\index{FigureBackgroundColor@{FigureBackgroundColor}!PlotStyle@{PlotStyle}}
+\doxysubsubsection{\texorpdfstring{FigureBackgroundColor}{FigureBackgroundColor}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structColor}{Color}}? Plot\+Style.\+Figure\+Background\+Color = null\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classPlotStyle_ae3527bd61322aefcbdaa2ffbb2755be6}\label{classPlotStyle_ae3527bd61322aefcbdaa2ffbb2755be6}} 
+\index{PlotStyle@{PlotStyle}!GridMajorLineColor@{GridMajorLineColor}}
+\index{GridMajorLineColor@{GridMajorLineColor}!PlotStyle@{PlotStyle}}
+\doxysubsubsection{\texorpdfstring{GridMajorLineColor}{GridMajorLineColor}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structColor}{Color}}? Plot\+Style.\+Grid\+Major\+Line\+Color = null\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classPlotStyle_aa059c51756d46f4294b3fb4b0cc48b8e}\label{classPlotStyle_aa059c51756d46f4294b3fb4b0cc48b8e}} 
+\index{PlotStyle@{PlotStyle}!LegendBackgroundColor@{LegendBackgroundColor}}
+\index{LegendBackgroundColor@{LegendBackgroundColor}!PlotStyle@{PlotStyle}}
+\doxysubsubsection{\texorpdfstring{LegendBackgroundColor}{LegendBackgroundColor}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structColor}{Color}}? Plot\+Style.\+Legend\+Background\+Color = null\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classPlotStyle_af5c90605d2a7a433168819ae00c07ba1}\label{classPlotStyle_af5c90605d2a7a433168819ae00c07ba1}} 
+\index{PlotStyle@{PlotStyle}!LegendFontColor@{LegendFontColor}}
+\index{LegendFontColor@{LegendFontColor}!PlotStyle@{PlotStyle}}
+\doxysubsubsection{\texorpdfstring{LegendFontColor}{LegendFontColor}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structColor}{Color}}? Plot\+Style.\+Legend\+Font\+Color = null\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classPlotStyle_a7bfc649e949299ae2bb54e47052ccc91}\label{classPlotStyle_a7bfc649e949299ae2bb54e47052ccc91}} 
+\index{PlotStyle@{PlotStyle}!LegendOutlineColor@{LegendOutlineColor}}
+\index{LegendOutlineColor@{LegendOutlineColor}!PlotStyle@{PlotStyle}}
+\doxysubsubsection{\texorpdfstring{LegendOutlineColor}{LegendOutlineColor}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structColor}{Color}}? Plot\+Style.\+Legend\+Outline\+Color = null\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classPlotStyle_a913376287c4e591e996049c2308da31a}\label{classPlotStyle_a913376287c4e591e996049c2308da31a}} 
+\index{PlotStyle@{PlotStyle}!Palette@{Palette}}
+\index{Palette@{Palette}!PlotStyle@{PlotStyle}}
+\doxysubsubsection{\texorpdfstring{Palette}{Palette}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceIPalette}{IPalette}}? Plot\+Style.\+Palette = null\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Primitives/Plot\+Style.\+cs\end{DoxyCompactItemize}

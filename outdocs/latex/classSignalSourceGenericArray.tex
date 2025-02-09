@@ -1,0 +1,120 @@
+\hypertarget{classSignalSourceGenericArray}{}\doxysection{Signal\+Source\+Generic\+Array$<$ T $>$ Class Template Reference}
+\label{classSignalSourceGenericArray}\index{SignalSourceGenericArray$<$ T $>$@{SignalSourceGenericArray$<$ T $>$}}
+Inheritance diagram for Signal\+Source\+Generic\+Array$<$ T $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classSignalSourceGenericArray}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classSignalSourceGenericArray_a1def0ca912bdc06e5a5e53e0057e694e}{Signal\+Source\+Generic\+Array}} (T\mbox{[}$\,$\mbox{]} ys, double period)
+\item 
+IRead\+Only\+List$<$ double $>$ \mbox{\hyperlink{classSignalSourceGenericArray_aef713d1585930888441e60bc4c9c849a}{Get\+Ys}} ()
+\begin{DoxyCompactList}\small\item\em Return an object for working with all Y values. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$ double $>$ \mbox{\hyperlink{classSignalSourceGenericArray_a7af0f6f6fb47961bcaeb99f17025d75e}{Get\+Ys}} (int i1, int i2)
+\begin{DoxyCompactList}\small\item\em Y values between a range of indexes (inclusive). \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classSignalSourceGenericArray_ac8b358304ad5da1d647816f69a597b5a}{GetY}} (int index)
+\begin{DoxyCompactList}\small\item\em Returns the Y position for a given index. \end{DoxyCompactList}\item 
+override \mbox{\hyperlink{structSignalRangeY}{Signal\+RangeY}} \mbox{\hyperlink{classSignalSourceGenericArray_a4b31b739ef867775d58621d19772c280}{Get\+LimitsY}} (int first\+Index, int last\+Index)
+\item 
+\mbox{\hyperlink{structPixelColumn}{Pixel\+Column}} \mbox{\hyperlink{classSignalSourceGenericArray_a85e0d358b870badc06f52be7ef7673bb}{Get\+Pixel\+Column}} (\mbox{\hyperlink{interfaceIAxes}{IAxes}} axes, int x\+Pixel\+Index)
+\begin{DoxyCompactList}\small\item\em Returns range information about the data at a specific pixel location \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+override int \mbox{\hyperlink{classSignalSourceGenericArray_a2d01b9b96266aa49a0c253c7b3e2dfcc}{Length}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classSignalSourceGenericArray_a1def0ca912bdc06e5a5e53e0057e694e}\label{classSignalSourceGenericArray_a1def0ca912bdc06e5a5e53e0057e694e}} 
+\index{SignalSourceGenericArray$<$ T $>$@{SignalSourceGenericArray$<$ T $>$}!SignalSourceGenericArray@{SignalSourceGenericArray}}
+\index{SignalSourceGenericArray@{SignalSourceGenericArray}!SignalSourceGenericArray$<$ T $>$@{SignalSourceGenericArray$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{SignalSourceGenericArray()}{SignalSourceGenericArray()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classSignalSourceGenericArray}{Signal\+Source\+Generic\+Array}}$<$ T $>$.\mbox{\hyperlink{classSignalSourceGenericArray}{Signal\+Source\+Generic\+Array}} (\begin{DoxyParamCaption}\item[{T\mbox{[}$\,$\mbox{]}}]{ys,  }\item[{double}]{period }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classSignalSourceGenericArray_a4b31b739ef867775d58621d19772c280}\label{classSignalSourceGenericArray_a4b31b739ef867775d58621d19772c280}} 
+\index{SignalSourceGenericArray$<$ T $>$@{SignalSourceGenericArray$<$ T $>$}!GetLimitsY@{GetLimitsY}}
+\index{GetLimitsY@{GetLimitsY}!SignalSourceGenericArray$<$ T $>$@{SignalSourceGenericArray$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{GetLimitsY()}{GetLimitsY()}}
+{\footnotesize\ttfamily override \mbox{\hyperlink{structSignalRangeY}{Signal\+RangeY}} \mbox{\hyperlink{classSignalSourceGenericArray}{Signal\+Source\+Generic\+Array}}$<$ T $>$.Get\+LimitsY (\begin{DoxyParamCaption}\item[{int}]{first\+Index,  }\item[{int}]{last\+Index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classSignalSourceBase_a0a564c250ebe10f5dbf24c923c9e6eee}{Signal\+Source\+Base}}.
+
+\mbox{\Hypertarget{classSignalSourceGenericArray_a85e0d358b870badc06f52be7ef7673bb}\label{classSignalSourceGenericArray_a85e0d358b870badc06f52be7ef7673bb}} 
+\index{SignalSourceGenericArray$<$ T $>$@{SignalSourceGenericArray$<$ T $>$}!GetPixelColumn@{GetPixelColumn}}
+\index{GetPixelColumn@{GetPixelColumn}!SignalSourceGenericArray$<$ T $>$@{SignalSourceGenericArray$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{GetPixelColumn()}{GetPixelColumn()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structPixelColumn}{Pixel\+Column}} \mbox{\hyperlink{classSignalSourceGenericArray}{Signal\+Source\+Generic\+Array}}$<$ T $>$.Get\+Pixel\+Column (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceIAxes}{IAxes}}}]{axes,  }\item[{int}]{x\+Pixel\+Index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns range information about the data at a specific pixel location 
+
+
+
+Implements \mbox{\hyperlink{interfaceISignalSource_a25d479c1a4ecc702a4f0c5afca89f6b6}{ISignal\+Source}}.
+
+\mbox{\Hypertarget{classSignalSourceGenericArray_ac8b358304ad5da1d647816f69a597b5a}\label{classSignalSourceGenericArray_ac8b358304ad5da1d647816f69a597b5a}} 
+\index{SignalSourceGenericArray$<$ T $>$@{SignalSourceGenericArray$<$ T $>$}!GetY@{GetY}}
+\index{GetY@{GetY}!SignalSourceGenericArray$<$ T $>$@{SignalSourceGenericArray$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{GetY()}{GetY()}}
+{\footnotesize\ttfamily double \mbox{\hyperlink{classSignalSourceGenericArray}{Signal\+Source\+Generic\+Array}}$<$ T $>$.GetY (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the Y position for a given index. 
+
+
+
+Implements \mbox{\hyperlink{interfaceISignalSource_a8a7a12dfb4bc99b7432bdd6383daf81f}{ISignal\+Source}}.
+
+\mbox{\Hypertarget{classSignalSourceGenericArray_aef713d1585930888441e60bc4c9c849a}\label{classSignalSourceGenericArray_aef713d1585930888441e60bc4c9c849a}} 
+\index{SignalSourceGenericArray$<$ T $>$@{SignalSourceGenericArray$<$ T $>$}!GetYs@{GetYs}}
+\index{GetYs@{GetYs}!SignalSourceGenericArray$<$ T $>$@{SignalSourceGenericArray$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{GetYs()}{GetYs()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily IRead\+Only\+List$<$double$>$ \mbox{\hyperlink{classSignalSourceGenericArray}{Signal\+Source\+Generic\+Array}}$<$ T $>$.Get\+Ys (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return an object for working with all Y values. 
+
+
+
+Implements \mbox{\hyperlink{interfaceISignalSource_ad3b8b4b3d40a211415217f3c51a1d78f}{ISignal\+Source}}.
+
+\mbox{\Hypertarget{classSignalSourceGenericArray_a7af0f6f6fb47961bcaeb99f17025d75e}\label{classSignalSourceGenericArray_a7af0f6f6fb47961bcaeb99f17025d75e}} 
+\index{SignalSourceGenericArray$<$ T $>$@{SignalSourceGenericArray$<$ T $>$}!GetYs@{GetYs}}
+\index{GetYs@{GetYs}!SignalSourceGenericArray$<$ T $>$@{SignalSourceGenericArray$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{GetYs()}{GetYs()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$double$>$ \mbox{\hyperlink{classSignalSourceGenericArray}{Signal\+Source\+Generic\+Array}}$<$ T $>$.Get\+Ys (\begin{DoxyParamCaption}\item[{int}]{index1,  }\item[{int}]{index2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Y values between a range of indexes (inclusive). 
+
+
+
+Implements \mbox{\hyperlink{interfaceISignalSource_a946340ff7bed92681aa1f38e7a6d35ef}{ISignal\+Source}}.
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{classSignalSourceGenericArray_a2d01b9b96266aa49a0c253c7b3e2dfcc}\label{classSignalSourceGenericArray_a2d01b9b96266aa49a0c253c7b3e2dfcc}} 
+\index{SignalSourceGenericArray$<$ T $>$@{SignalSourceGenericArray$<$ T $>$}!Length@{Length}}
+\index{Length@{Length}!SignalSourceGenericArray$<$ T $>$@{SignalSourceGenericArray$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Length}{Length}}
+{\footnotesize\ttfamily override int \mbox{\hyperlink{classSignalSourceGenericArray}{Signal\+Source\+Generic\+Array}}$<$ T $>$.Length\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Data\+Sources/Signal\+Source\+Generic\+Array.\+cs\end{DoxyCompactItemize}

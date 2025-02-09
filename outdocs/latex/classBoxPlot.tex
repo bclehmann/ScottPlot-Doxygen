@@ -1,0 +1,161 @@
+\hypertarget{classBoxPlot}{}\doxysection{Box\+Plot Class Reference}
+\label{classBoxPlot}\index{BoxPlot@{BoxPlot}}
+
+
+Displays 1 or more boxes all styled the same  
+
+
+Inheritance diagram for Box\+Plot\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classBoxPlot}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} \mbox{\hyperlink{classBoxPlot_a72c21427b93a8887b764b3ad3440fc8f}{Get\+Axis\+Limits}} ()
+\begin{DoxyCompactList}\small\item\em Return the 2D area (in coordinate space) occupied by the data contained in this plottable \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classBoxPlot_ab530f244b686da516ba59768433ebc46}{Render}} (\mbox{\hyperlink{classRenderPack}{Render\+Pack}} rp)
+\begin{DoxyCompactList}\small\item\em Draw the data from this plottable into the data area defined in the \mbox{\hyperlink{classAxes}{Axes}}. By default the surface is already clipped to the data area, but this can be cleared inside the plottable. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+readonly List$<$ \mbox{\hyperlink{classBox}{Box}} $>$ \mbox{\hyperlink{classBoxPlot_af7e4b5e9251e857c0535acbb3a26f6c7}{Boxes}} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classBoxPlot_ad15475bd7eee21fe8790f1fdbb9a151a}{Is\+Visible}} = true\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{interfaceIAxes}{IAxes}} \mbox{\hyperlink{classBoxPlot_a04487ea44d6068954b24c9ffe9125b01}{Axes}} = new \mbox{\hyperlink{classAxes}{Axes}}()\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+string \mbox{\hyperlink{classBoxPlot_a983df85997afd25a31e8eb5c4c482ae3}{Label}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+string \mbox{\hyperlink{classBoxPlot_a3b109885f9aaf41ec0017cb4a9cc9066}{Legend\+Text}} = string.\+Empty\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$ \mbox{\hyperlink{classLegendItem}{Legend\+Item}} $>$ \mbox{\hyperlink{classBoxPlot_a280d8cc81e21f9bd349853623f1f2faa}{Legend\+Items}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{structColor}{Color}} \mbox{\hyperlink{classBoxPlot_ac473369e671ee9bc9aa9d2a670b5dc25}{Fill\+Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}set\mbox{]}}
+\item 
+\mbox{\hyperlink{structColor}{Color}} \mbox{\hyperlink{classBoxPlot_a5e47ec9dbcfe704220d1dade4f717cc4}{Line\+Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}set\mbox{]}}
+\item 
+float \mbox{\hyperlink{classBoxPlot_a685787e5a4552a03a4486308f08bfa7a}{Line\+Width}}\hspace{0.3cm}{\ttfamily  \mbox{[}set\mbox{]}}
+\item 
+\mbox{\hyperlink{structColor}{Color}} \mbox{\hyperlink{classBoxPlot_a393b7e4f1c8e115d60dd6e566ebf4e4d}{Stroke\+Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}set\mbox{]}}
+\item 
+float \mbox{\hyperlink{classBoxPlot_ab52438e6121edcd5dfa151a1887c8197}{Stroke\+Width}}\hspace{0.3cm}{\ttfamily  \mbox{[}set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Displays 1 or more boxes all styled the same 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classBoxPlot_a72c21427b93a8887b764b3ad3440fc8f}\label{classBoxPlot_a72c21427b93a8887b764b3ad3440fc8f}} 
+\index{BoxPlot@{BoxPlot}!GetAxisLimits@{GetAxisLimits}}
+\index{GetAxisLimits@{GetAxisLimits}!BoxPlot@{BoxPlot}}
+\doxysubsubsection{\texorpdfstring{GetAxisLimits()}{GetAxisLimits()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} Box\+Plot.\+Get\+Axis\+Limits (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return the 2D area (in coordinate space) occupied by the data contained in this plottable 
+
+
+
+Implements \mbox{\hyperlink{interfaceIPlottable_ac98e2f5e56f9f938bbd081c87c7c6f50}{IPlottable}}.
+
+\mbox{\Hypertarget{classBoxPlot_ab530f244b686da516ba59768433ebc46}\label{classBoxPlot_ab530f244b686da516ba59768433ebc46}} 
+\index{BoxPlot@{BoxPlot}!Render@{Render}}
+\index{Render@{Render}!BoxPlot@{BoxPlot}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily virtual void Box\+Plot.\+Render (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classRenderPack}{Render\+Pack}}}]{rp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Draw the data from this plottable into the data area defined in the \mbox{\hyperlink{classAxes}{Axes}}. By default the surface is already clipped to the data area, but this can be cleared inside the plottable. 
+
+
+
+Implements \mbox{\hyperlink{interfaceIPlottable_a201a1a236dc718eda93db143a5ade9f8}{IPlottable}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classBoxPlot_af7e4b5e9251e857c0535acbb3a26f6c7}\label{classBoxPlot_af7e4b5e9251e857c0535acbb3a26f6c7}} 
+\index{BoxPlot@{BoxPlot}!Boxes@{Boxes}}
+\index{Boxes@{Boxes}!BoxPlot@{BoxPlot}}
+\doxysubsubsection{\texorpdfstring{Boxes}{Boxes}}
+{\footnotesize\ttfamily readonly List$<$\mbox{\hyperlink{classBox}{Box}}$>$ Box\+Plot.\+Boxes = \mbox{[}$\,$\mbox{]}}
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{classBoxPlot_a04487ea44d6068954b24c9ffe9125b01}\label{classBoxPlot_a04487ea44d6068954b24c9ffe9125b01}} 
+\index{BoxPlot@{BoxPlot}!Axes@{Axes}}
+\index{Axes@{Axes}!BoxPlot@{BoxPlot}}
+\doxysubsubsection{\texorpdfstring{Axes}{Axes}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceIAxes}{IAxes}} Box\+Plot.\+Axes = new \mbox{\hyperlink{classAxes}{Axes}}()\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classBoxPlot_ac473369e671ee9bc9aa9d2a670b5dc25}\label{classBoxPlot_ac473369e671ee9bc9aa9d2a670b5dc25}} 
+\index{BoxPlot@{BoxPlot}!FillColor@{FillColor}}
+\index{FillColor@{FillColor}!BoxPlot@{BoxPlot}}
+\doxysubsubsection{\texorpdfstring{FillColor}{FillColor}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structColor}{Color}} Box\+Plot.\+Fill\+Color\hspace{0.3cm}{\ttfamily [set]}}
+
+\mbox{\Hypertarget{classBoxPlot_ad15475bd7eee21fe8790f1fdbb9a151a}\label{classBoxPlot_ad15475bd7eee21fe8790f1fdbb9a151a}} 
+\index{BoxPlot@{BoxPlot}!IsVisible@{IsVisible}}
+\index{IsVisible@{IsVisible}!BoxPlot@{BoxPlot}}
+\doxysubsubsection{\texorpdfstring{IsVisible}{IsVisible}}
+{\footnotesize\ttfamily bool Box\+Plot.\+Is\+Visible = true\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classBoxPlot_a983df85997afd25a31e8eb5c4c482ae3}\label{classBoxPlot_a983df85997afd25a31e8eb5c4c482ae3}} 
+\index{BoxPlot@{BoxPlot}!Label@{Label}}
+\index{Label@{Label}!BoxPlot@{BoxPlot}}
+\doxysubsubsection{\texorpdfstring{Label}{Label}}
+{\footnotesize\ttfamily string Box\+Plot.\+Label\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classBoxPlot_a280d8cc81e21f9bd349853623f1f2faa}\label{classBoxPlot_a280d8cc81e21f9bd349853623f1f2faa}} 
+\index{BoxPlot@{BoxPlot}!LegendItems@{LegendItems}}
+\index{LegendItems@{LegendItems}!BoxPlot@{BoxPlot}}
+\doxysubsubsection{\texorpdfstring{LegendItems}{LegendItems}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$\mbox{\hyperlink{classLegendItem}{Legend\+Item}}$>$ Box\+Plot.\+Legend\+Items\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{classBoxPlot_a3b109885f9aaf41ec0017cb4a9cc9066}\label{classBoxPlot_a3b109885f9aaf41ec0017cb4a9cc9066}} 
+\index{BoxPlot@{BoxPlot}!LegendText@{LegendText}}
+\index{LegendText@{LegendText}!BoxPlot@{BoxPlot}}
+\doxysubsubsection{\texorpdfstring{LegendText}{LegendText}}
+{\footnotesize\ttfamily string Box\+Plot.\+Legend\+Text = string.\+Empty\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classBoxPlot_a5e47ec9dbcfe704220d1dade4f717cc4}\label{classBoxPlot_a5e47ec9dbcfe704220d1dade4f717cc4}} 
+\index{BoxPlot@{BoxPlot}!LineColor@{LineColor}}
+\index{LineColor@{LineColor}!BoxPlot@{BoxPlot}}
+\doxysubsubsection{\texorpdfstring{LineColor}{LineColor}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structColor}{Color}} Box\+Plot.\+Line\+Color\hspace{0.3cm}{\ttfamily [set]}}
+
+\mbox{\Hypertarget{classBoxPlot_a685787e5a4552a03a4486308f08bfa7a}\label{classBoxPlot_a685787e5a4552a03a4486308f08bfa7a}} 
+\index{BoxPlot@{BoxPlot}!LineWidth@{LineWidth}}
+\index{LineWidth@{LineWidth}!BoxPlot@{BoxPlot}}
+\doxysubsubsection{\texorpdfstring{LineWidth}{LineWidth}}
+{\footnotesize\ttfamily float Box\+Plot.\+Line\+Width\hspace{0.3cm}{\ttfamily [set]}}
+
+\mbox{\Hypertarget{classBoxPlot_a393b7e4f1c8e115d60dd6e566ebf4e4d}\label{classBoxPlot_a393b7e4f1c8e115d60dd6e566ebf4e4d}} 
+\index{BoxPlot@{BoxPlot}!StrokeColor@{StrokeColor}}
+\index{StrokeColor@{StrokeColor}!BoxPlot@{BoxPlot}}
+\doxysubsubsection{\texorpdfstring{StrokeColor}{StrokeColor}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structColor}{Color}} Box\+Plot.\+Stroke\+Color\hspace{0.3cm}{\ttfamily [set]}}
+
+\mbox{\Hypertarget{classBoxPlot_ab52438e6121edcd5dfa151a1887c8197}\label{classBoxPlot_ab52438e6121edcd5dfa151a1887c8197}} 
+\index{BoxPlot@{BoxPlot}!StrokeWidth@{StrokeWidth}}
+\index{StrokeWidth@{StrokeWidth}!BoxPlot@{BoxPlot}}
+\doxysubsubsection{\texorpdfstring{StrokeWidth}{StrokeWidth}}
+{\footnotesize\ttfamily float Box\+Plot.\+Stroke\+Width\hspace{0.3cm}{\ttfamily [set]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Plottables/Box\+Plot.\+cs\end{DoxyCompactItemize}

@@ -1,0 +1,65 @@
+\hypertarget{interfaceITickGenerator}{}\doxysection{ITick\+Generator Interface Reference}
+\label{interfaceITickGenerator}\index{ITickGenerator@{ITickGenerator}}
+Inheritance diagram for ITick\+Generator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.458333cm]{interfaceITickGenerator}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{interfaceITickGenerator_afce3e3bc89a3026ca1dc3dfca576020f}{Regenerate}} (\mbox{\hyperlink{structCoordinateRange}{Coordinate\+Range}} range, Edge edge, \mbox{\hyperlink{structPixelLength}{Pixel\+Length}} size, SKPaint paint, \mbox{\hyperlink{classLabelStyle}{Label\+Style}} label\+Style)
+\begin{DoxyCompactList}\small\item\em Generate ticks based on the current settings and store the result in \mbox{\hyperlink{interfaceITickGenerator_a694efaa10e33775a9d7856318f048a8a}{Ticks}} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structTick}{Tick}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{interfaceITickGenerator_a694efaa10e33775a9d7856318f048a8a}{Ticks}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Ticks to display the next time the axis is rendered. This array and its contents should not be modified directly. Call \mbox{\hyperlink{interfaceITickGenerator_afce3e3bc89a3026ca1dc3dfca576020f}{Regenerate()}} to update this array. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{interfaceITickGenerator_a6ff1f25f09eee8d90a334ab273228ee6}{Max\+Tick\+Count}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Do not generate more than this number of ticks \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{interfaceITickGenerator_afce3e3bc89a3026ca1dc3dfca576020f}\label{interfaceITickGenerator_afce3e3bc89a3026ca1dc3dfca576020f}} 
+\index{ITickGenerator@{ITickGenerator}!Regenerate@{Regenerate}}
+\index{Regenerate@{Regenerate}!ITickGenerator@{ITickGenerator}}
+\doxysubsubsection{\texorpdfstring{Regenerate()}{Regenerate()}}
+{\footnotesize\ttfamily void ITick\+Generator.\+Regenerate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structCoordinateRange}{Coordinate\+Range}}}]{range,  }\item[{Edge}]{edge,  }\item[{\mbox{\hyperlink{structPixelLength}{Pixel\+Length}}}]{size,  }\item[{SKPaint}]{paint,  }\item[{\mbox{\hyperlink{classLabelStyle}{Label\+Style}}}]{label\+Style }\end{DoxyParamCaption})}
+
+
+
+Generate ticks based on the current settings and store the result in \mbox{\hyperlink{interfaceITickGenerator_a694efaa10e33775a9d7856318f048a8a}{Ticks}} 
+
+
+
+Implemented in \mbox{\hyperlink{classNumericManual_a152084c799614116a2a1178a143f04c6}{Numeric\+Manual}}, \mbox{\hyperlink{classNumericAutomatic_a910c1ee07d24f90bb33d48a52d7cbcb1}{Numeric\+Automatic}}, \mbox{\hyperlink{classEmptyTickGenerator_a899f13a69f9e34b1de5ce532b898816f}{Empty\+Tick\+Generator}}, \mbox{\hyperlink{classScottPlot_1_1TickGenerators_1_1DateTimeFixedInterval_a7d180dd217e14253bd65d1e88ef8153d}{Scott\+Plot.\+Tick\+Generators.\+Date\+Time\+Fixed\+Interval}}, and \mbox{\hyperlink{classDateTimeAutomatic_ab760087045283513cf25d0e12b9c7ef9}{Date\+Time\+Automatic}}.
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{interfaceITickGenerator_a6ff1f25f09eee8d90a334ab273228ee6}\label{interfaceITickGenerator_a6ff1f25f09eee8d90a334ab273228ee6}} 
+\index{ITickGenerator@{ITickGenerator}!MaxTickCount@{MaxTickCount}}
+\index{MaxTickCount@{MaxTickCount}!ITickGenerator@{ITickGenerator}}
+\doxysubsubsection{\texorpdfstring{MaxTickCount}{MaxTickCount}}
+{\footnotesize\ttfamily int ITick\+Generator.\+Max\+Tick\+Count\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Do not generate more than this number of ticks 
+
+\mbox{\Hypertarget{interfaceITickGenerator_a694efaa10e33775a9d7856318f048a8a}\label{interfaceITickGenerator_a694efaa10e33775a9d7856318f048a8a}} 
+\index{ITickGenerator@{ITickGenerator}!Ticks@{Ticks}}
+\index{Ticks@{Ticks}!ITickGenerator@{ITickGenerator}}
+\doxysubsubsection{\texorpdfstring{Ticks}{Ticks}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structTick}{Tick}} \mbox{[}$\,$\mbox{]} ITick\+Generator.\+Ticks\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Ticks to display the next time the axis is rendered. This array and its contents should not be modified directly. Call \mbox{\hyperlink{interfaceITickGenerator_afce3e3bc89a3026ca1dc3dfca576020f}{Regenerate()}} to update this array. 
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Interfaces/ITick\+Generator.\+cs\end{DoxyCompactItemize}

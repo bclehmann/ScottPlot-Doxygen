@@ -1,0 +1,120 @@
+\hypertarget{classFastSignalSourceDouble}{}\doxysection{Fast\+Signal\+Source\+Double Class Reference}
+\label{classFastSignalSourceDouble}\index{FastSignalSourceDouble@{FastSignalSourceDouble}}
+Inheritance diagram for Fast\+Signal\+Source\+Double\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classFastSignalSourceDouble}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classFastSignalSourceDouble_a8921485d43b5c030ed1a4cf3e123421f}{Fast\+Signal\+Source\+Double}} (IRead\+Only\+List$<$ double $>$ ys, double period, int cache\+Period=1000)
+\item 
+IRead\+Only\+List$<$ double $>$ \mbox{\hyperlink{classFastSignalSourceDouble_ada94c1531076fc3653bc3c5ac81c1ac4}{Get\+Ys}} ()
+\begin{DoxyCompactList}\small\item\em Return an object for working with all Y values. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$ double $>$ \mbox{\hyperlink{classFastSignalSourceDouble_a3739794105c230e4ae0c0e40fcf92463}{Get\+Ys}} (int i1, int i2)
+\begin{DoxyCompactList}\small\item\em Y values between a range of indexes (inclusive). \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classFastSignalSourceDouble_a531acda6682303320d3f5b3c8dbf490f}{GetY}} (int index)
+\begin{DoxyCompactList}\small\item\em Returns the Y position for a given index. \end{DoxyCompactList}\item 
+override \mbox{\hyperlink{structSignalRangeY}{Signal\+RangeY}} \mbox{\hyperlink{classFastSignalSourceDouble_ac32b41178482a0b761fd93c881f4ad51}{Get\+LimitsY}} (int first\+Index, int last\+Index)
+\item 
+\mbox{\hyperlink{structPixelColumn}{Pixel\+Column}} \mbox{\hyperlink{classFastSignalSourceDouble_aa10e6428d9012a131a579d90d08d9706}{Get\+Pixel\+Column}} (\mbox{\hyperlink{interfaceIAxes}{IAxes}} axes, int x\+Pixel\+Index)
+\begin{DoxyCompactList}\small\item\em Returns range information about the data at a specific pixel location \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+override int \mbox{\hyperlink{classFastSignalSourceDouble_a37c0161dc45d687dd4b70f5e059d8473}{Length}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classFastSignalSourceDouble_a8921485d43b5c030ed1a4cf3e123421f}\label{classFastSignalSourceDouble_a8921485d43b5c030ed1a4cf3e123421f}} 
+\index{FastSignalSourceDouble@{FastSignalSourceDouble}!FastSignalSourceDouble@{FastSignalSourceDouble}}
+\index{FastSignalSourceDouble@{FastSignalSourceDouble}!FastSignalSourceDouble@{FastSignalSourceDouble}}
+\doxysubsubsection{\texorpdfstring{FastSignalSourceDouble()}{FastSignalSourceDouble()}}
+{\footnotesize\ttfamily Fast\+Signal\+Source\+Double.\+Fast\+Signal\+Source\+Double (\begin{DoxyParamCaption}\item[{IRead\+Only\+List$<$ double $>$}]{ys,  }\item[{double}]{period,  }\item[{int}]{cache\+Period = {\ttfamily 1000} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classFastSignalSourceDouble_ac32b41178482a0b761fd93c881f4ad51}\label{classFastSignalSourceDouble_ac32b41178482a0b761fd93c881f4ad51}} 
+\index{FastSignalSourceDouble@{FastSignalSourceDouble}!GetLimitsY@{GetLimitsY}}
+\index{GetLimitsY@{GetLimitsY}!FastSignalSourceDouble@{FastSignalSourceDouble}}
+\doxysubsubsection{\texorpdfstring{GetLimitsY()}{GetLimitsY()}}
+{\footnotesize\ttfamily override \mbox{\hyperlink{structSignalRangeY}{Signal\+RangeY}} Fast\+Signal\+Source\+Double.\+Get\+LimitsY (\begin{DoxyParamCaption}\item[{int}]{first\+Index,  }\item[{int}]{last\+Index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classSignalSourceBase_a0a564c250ebe10f5dbf24c923c9e6eee}{Signal\+Source\+Base}}.
+
+\mbox{\Hypertarget{classFastSignalSourceDouble_aa10e6428d9012a131a579d90d08d9706}\label{classFastSignalSourceDouble_aa10e6428d9012a131a579d90d08d9706}} 
+\index{FastSignalSourceDouble@{FastSignalSourceDouble}!GetPixelColumn@{GetPixelColumn}}
+\index{GetPixelColumn@{GetPixelColumn}!FastSignalSourceDouble@{FastSignalSourceDouble}}
+\doxysubsubsection{\texorpdfstring{GetPixelColumn()}{GetPixelColumn()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structPixelColumn}{Pixel\+Column}} Fast\+Signal\+Source\+Double.\+Get\+Pixel\+Column (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceIAxes}{IAxes}}}]{axes,  }\item[{int}]{x\+Pixel\+Index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns range information about the data at a specific pixel location 
+
+
+
+Implements \mbox{\hyperlink{interfaceISignalSource_a25d479c1a4ecc702a4f0c5afca89f6b6}{ISignal\+Source}}.
+
+\mbox{\Hypertarget{classFastSignalSourceDouble_a531acda6682303320d3f5b3c8dbf490f}\label{classFastSignalSourceDouble_a531acda6682303320d3f5b3c8dbf490f}} 
+\index{FastSignalSourceDouble@{FastSignalSourceDouble}!GetY@{GetY}}
+\index{GetY@{GetY}!FastSignalSourceDouble@{FastSignalSourceDouble}}
+\doxysubsubsection{\texorpdfstring{GetY()}{GetY()}}
+{\footnotesize\ttfamily double Fast\+Signal\+Source\+Double.\+GetY (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the Y position for a given index. 
+
+
+
+Implements \mbox{\hyperlink{interfaceISignalSource_a8a7a12dfb4bc99b7432bdd6383daf81f}{ISignal\+Source}}.
+
+\mbox{\Hypertarget{classFastSignalSourceDouble_ada94c1531076fc3653bc3c5ac81c1ac4}\label{classFastSignalSourceDouble_ada94c1531076fc3653bc3c5ac81c1ac4}} 
+\index{FastSignalSourceDouble@{FastSignalSourceDouble}!GetYs@{GetYs}}
+\index{GetYs@{GetYs}!FastSignalSourceDouble@{FastSignalSourceDouble}}
+\doxysubsubsection{\texorpdfstring{GetYs()}{GetYs()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily IRead\+Only\+List$<$double$>$ Fast\+Signal\+Source\+Double.\+Get\+Ys (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return an object for working with all Y values. 
+
+
+
+Implements \mbox{\hyperlink{interfaceISignalSource_ad3b8b4b3d40a211415217f3c51a1d78f}{ISignal\+Source}}.
+
+\mbox{\Hypertarget{classFastSignalSourceDouble_a3739794105c230e4ae0c0e40fcf92463}\label{classFastSignalSourceDouble_a3739794105c230e4ae0c0e40fcf92463}} 
+\index{FastSignalSourceDouble@{FastSignalSourceDouble}!GetYs@{GetYs}}
+\index{GetYs@{GetYs}!FastSignalSourceDouble@{FastSignalSourceDouble}}
+\doxysubsubsection{\texorpdfstring{GetYs()}{GetYs()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$double$>$ Fast\+Signal\+Source\+Double.\+Get\+Ys (\begin{DoxyParamCaption}\item[{int}]{index1,  }\item[{int}]{index2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Y values between a range of indexes (inclusive). 
+
+
+
+Implements \mbox{\hyperlink{interfaceISignalSource_a946340ff7bed92681aa1f38e7a6d35ef}{ISignal\+Source}}.
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{classFastSignalSourceDouble_a37c0161dc45d687dd4b70f5e059d8473}\label{classFastSignalSourceDouble_a37c0161dc45d687dd4b70f5e059d8473}} 
+\index{FastSignalSourceDouble@{FastSignalSourceDouble}!Length@{Length}}
+\index{Length@{Length}!FastSignalSourceDouble@{FastSignalSourceDouble}}
+\doxysubsubsection{\texorpdfstring{Length}{Length}}
+{\footnotesize\ttfamily override int Fast\+Signal\+Source\+Double.\+Length\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Data\+Sources/Fast\+Signal\+Source\+Double.\+cs\end{DoxyCompactItemize}

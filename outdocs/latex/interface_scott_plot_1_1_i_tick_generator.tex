@@ -1,0 +1,73 @@
+\doxysection{Scott\+Plot.\+ITick\+Generator Interface Reference}
+\hypertarget{interface_scott_plot_1_1_i_tick_generator}{}\label{interface_scott_plot_1_1_i_tick_generator}\index{ScottPlot.ITickGenerator@{ScottPlot.ITickGenerator}}
+Inheritance diagram for Scott\+Plot.\+ITick\+Generator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.409396cm]{interface_scott_plot_1_1_i_tick_generator}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{interface_scott_plot_1_1_i_tick_generator_a370ee9276ff5e75c8831b2709e852871}{Regenerate}} (\mbox{\hyperlink{namespace_scott_plot_a4f8afc1393f89ce60e775705cbf134d1}{Coordinate\+Range}} range, \mbox{\hyperlink{namespace_scott_plot_a33d0346dfdd3d1d7cefc8d769ca98fcc}{Edge}} edge, \mbox{\hyperlink{struct_scott_plot_1_1_pixel_length}{Pixel\+Length}} size, SKPaint paint, \mbox{\hyperlink{class_scott_plot_1_1_label_style}{Label\+Style}} label\+Style)
+\begin{DoxyCompactList}\small\item\em Generate ticks based on the current settings and store the result in \doxylink{interface_scott_plot_1_1_i_tick_generator_a18133091b5172e41c805252f94198466}{Ticks} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_tick}{Tick}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{interface_scott_plot_1_1_i_tick_generator_a18133091b5172e41c805252f94198466}{Ticks}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Ticks to display the next time the axis is rendered. This array and its contents should not be modified directly. Call \doxylink{interface_scott_plot_1_1_i_tick_generator_a370ee9276ff5e75c8831b2709e852871}{Regenerate()} to update this array. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{interface_scott_plot_1_1_i_tick_generator_aa40e7d42d15c23601bd6bd569619eff2}{Max\+Tick\+Count}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Do not generate more than this number of ticks. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_scott_plot_1_1_i_tick_generator_a370ee9276ff5e75c8831b2709e852871}\index{ScottPlot.ITickGenerator@{ScottPlot.ITickGenerator}!Regenerate@{Regenerate}}
+\index{Regenerate@{Regenerate}!ScottPlot.ITickGenerator@{ScottPlot.ITickGenerator}}
+\doxysubsubsection{\texorpdfstring{Regenerate()}{Regenerate()}}
+{\footnotesize\ttfamily \label{interface_scott_plot_1_1_i_tick_generator_a370ee9276ff5e75c8831b2709e852871} 
+void Scott\+Plot.\+ITick\+Generator.\+Regenerate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_scott_plot_a4f8afc1393f89ce60e775705cbf134d1}{Coordinate\+Range}}}]{range}{, }\item[{\mbox{\hyperlink{namespace_scott_plot_a33d0346dfdd3d1d7cefc8d769ca98fcc}{Edge}}}]{edge}{, }\item[{\mbox{\hyperlink{struct_scott_plot_1_1_pixel_length}{Pixel\+Length}}}]{size}{, }\item[{SKPaint}]{paint}{, }\item[{\mbox{\hyperlink{class_scott_plot_1_1_label_style}{Label\+Style}}}]{label\+Style}{}\end{DoxyParamCaption})}
+
+
+
+Generate ticks based on the current settings and store the result in \doxylink{interface_scott_plot_1_1_i_tick_generator_a18133091b5172e41c805252f94198466}{Ticks} 
+
+
+
+Implemented in \mbox{\hyperlink{class_scott_plot_1_1_tick_generators_1_1_date_time_automatic_ab69a3854e613e2b7990843a5243fc003}{Scott\+Plot.\+Tick\+Generators.\+Date\+Time\+Automatic}}, \mbox{\hyperlink{class_scott_plot_1_1_tick_generators_1_1_date_time_fixed_interval_a7d180dd217e14253bd65d1e88ef8153d}{Scott\+Plot.\+Tick\+Generators.\+Date\+Time\+Fixed\+Interval}}, \mbox{\hyperlink{class_scott_plot_1_1_tick_generators_1_1_empty_tick_generator_a405a6a4227c03719ab2e2839e6636e69}{Scott\+Plot.\+Tick\+Generators.\+Empty\+Tick\+Generator}}, \mbox{\hyperlink{class_scott_plot_1_1_tick_generators_1_1_numeric_automatic_af2f2b087a56c0151ee3a7370a87cd04b}{Scott\+Plot.\+Tick\+Generators.\+Numeric\+Automatic}}, and \mbox{\hyperlink{class_scott_plot_1_1_tick_generators_1_1_numeric_manual_ac7b4de0e58096837e837f9636ebbe61c}{Scott\+Plot.\+Tick\+Generators.\+Numeric\+Manual}}.
+
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{interface_scott_plot_1_1_i_tick_generator_aa40e7d42d15c23601bd6bd569619eff2}\index{ScottPlot.ITickGenerator@{ScottPlot.ITickGenerator}!MaxTickCount@{MaxTickCount}}
+\index{MaxTickCount@{MaxTickCount}!ScottPlot.ITickGenerator@{ScottPlot.ITickGenerator}}
+\doxysubsubsection{\texorpdfstring{MaxTickCount}{MaxTickCount}}
+{\footnotesize\ttfamily \label{interface_scott_plot_1_1_i_tick_generator_aa40e7d42d15c23601bd6bd569619eff2} 
+int Scott\+Plot.\+ITick\+Generator.\+Max\+Tick\+Count\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Do not generate more than this number of ticks. 
+
+
+
+Implemented in \mbox{\hyperlink{class_scott_plot_1_1_tick_generators_1_1_date_time_automatic_a2c372e28248400c5932a3c4c509a71d0}{Scott\+Plot.\+Tick\+Generators.\+Date\+Time\+Automatic}}, \mbox{\hyperlink{class_scott_plot_1_1_tick_generators_1_1_date_time_fixed_interval_ae77017d5a957269fb2b1b6a1b9e52cc3}{Scott\+Plot.\+Tick\+Generators.\+Date\+Time\+Fixed\+Interval}}, \mbox{\hyperlink{class_scott_plot_1_1_tick_generators_1_1_empty_tick_generator_a8c8a7116587b2a0daff84d013d97fd85}{Scott\+Plot.\+Tick\+Generators.\+Empty\+Tick\+Generator}}, \mbox{\hyperlink{class_scott_plot_1_1_tick_generators_1_1_numeric_automatic_ab39efada0fb670339d83524c59c51be4}{Scott\+Plot.\+Tick\+Generators.\+Numeric\+Automatic}}, and \mbox{\hyperlink{class_scott_plot_1_1_tick_generators_1_1_numeric_manual_a703b019e08eac701cf2d36d097bcdb96}{Scott\+Plot.\+Tick\+Generators.\+Numeric\+Manual}}.
+
+\Hypertarget{interface_scott_plot_1_1_i_tick_generator_a18133091b5172e41c805252f94198466}\index{ScottPlot.ITickGenerator@{ScottPlot.ITickGenerator}!Ticks@{Ticks}}
+\index{Ticks@{Ticks}!ScottPlot.ITickGenerator@{ScottPlot.ITickGenerator}}
+\doxysubsubsection{\texorpdfstring{Ticks}{Ticks}}
+{\footnotesize\ttfamily \label{interface_scott_plot_1_1_i_tick_generator_a18133091b5172e41c805252f94198466} 
+\mbox{\hyperlink{struct_scott_plot_1_1_tick}{Tick}} \mbox{[}$\,$\mbox{]} Scott\+Plot.\+ITick\+Generator.\+Ticks\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Ticks to display the next time the axis is rendered. This array and its contents should not be modified directly. Call \doxylink{interface_scott_plot_1_1_i_tick_generator_a370ee9276ff5e75c8831b2709e852871}{Regenerate()} to update this array. 
+
+
+
+Implemented in \mbox{\hyperlink{class_scott_plot_1_1_tick_generators_1_1_date_time_automatic_a063694d177b382207a625347eefca9b2}{Scott\+Plot.\+Tick\+Generators.\+Date\+Time\+Automatic}}, \mbox{\hyperlink{class_scott_plot_1_1_tick_generators_1_1_date_time_fixed_interval_a809e1fc6eaef85c6ec7b810a3273e733}{Scott\+Plot.\+Tick\+Generators.\+Date\+Time\+Fixed\+Interval}}, \mbox{\hyperlink{class_scott_plot_1_1_tick_generators_1_1_empty_tick_generator_a62b7f8faddb0ac6782643be9d1d5892f}{Scott\+Plot.\+Tick\+Generators.\+Empty\+Tick\+Generator}}, \mbox{\hyperlink{class_scott_plot_1_1_tick_generators_1_1_numeric_automatic_a595b5e50d3ff53bae2638fadb3804616}{Scott\+Plot.\+Tick\+Generators.\+Numeric\+Automatic}}, and \mbox{\hyperlink{class_scott_plot_1_1_tick_generators_1_1_numeric_manual_a1c7a17d8b82699fce33ba1f469dc589c}{Scott\+Plot.\+Tick\+Generators.\+Numeric\+Manual}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Interfaces/ITick\+Generator.\+cs\end{DoxyCompactItemize}

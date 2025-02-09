@@ -1,0 +1,1154 @@
+\doxysection{Scott\+Plot.\+Axis\+Manager Class Reference}
+\hypertarget{class_scott_plot_1_1_axis_manager}{}\label{class_scott_plot_1_1_axis_manager}\index{ScottPlot.AxisManager@{ScottPlot.AxisManager}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_i_enumerable}{IEnumerable}}$<$ \mbox{\hyperlink{interface_scott_plot_1_1_i_axis}{IAxis}} $>$ \mbox{\hyperlink{class_scott_plot_1_1_axis_manager_a7e28cc2ba54cd428ee9127666854327b}{Get\+Axes}} ()
+\begin{DoxyCompactList}\small\item\em All axes. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_enumerable}{IEnumerable}}$<$ \mbox{\hyperlink{interface_scott_plot_1_1_i_axis}{IAxis}} $>$ \mbox{\hyperlink{class_scott_plot_1_1_axis_manager_ae5aa006c713b13ba096cec5e655bd39a}{Get\+Axes}} (\mbox{\hyperlink{namespace_scott_plot_a33d0346dfdd3d1d7cefc8d769ca98fcc}{Edge}} edge)
+\begin{DoxyCompactList}\small\item\em All axes with the given edge. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_scott_plot_1_1_axis_manager_a38e2215464200dba743fdabbfd04795b}{Axis\+Manager}} (\mbox{\hyperlink{class_scott_plot_1_1_plot}{Plot}} plot)
+\begin{DoxyCompactList}\small\item\em Contains state and logic for axes. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_axis_manager_af6120aaf80e6c93ba226ae47ae17599d}{Color}} (\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} color)
+\begin{DoxyCompactList}\small\item\em Apply a single color to the label, tick labels, tick marks, and frame of all axes. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_axis_manager_a935d126fa1cabcfc44c8da8365eb5429}{Color}} (\mbox{\hyperlink{interface_scott_plot_1_1_i_axis}{IAxis}} axis, \mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} color)
+\begin{DoxyCompactList}\small\item\em Apply a single color to the label, tick labels, tick marks, and frame of the specified axis. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_axis_manager_a6b3d5b1549a8f3789384c7c55fad65f7}{Frame}} (bool enable)
+\begin{DoxyCompactList}\small\item\em Set visibility of the frame on every axis. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_axis_manager_a9572b1533fef4e11d0d55c1fa2db203d}{Frame\+Width}} (float width)
+\begin{DoxyCompactList}\small\item\em Set thickness of the frame on every axis. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_axis_manager_a390e62b34464d2efa484ccdca2bb7e46}{Frame\+Color}} (\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} color)
+\begin{DoxyCompactList}\small\item\em Set color of the frame on every axis. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_axis_manager_aea024b1d3d634201b626754f2b8297f4}{Remove}} (\mbox{\hyperlink{namespace_scott_plot_a33d0346dfdd3d1d7cefc8d769ca98fcc}{Edge}} edge)
+\begin{DoxyCompactList}\small\item\em Remove all axes that lie on the given edge. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_axis_manager_a03a29e1e38b00cc837bb7f2bcb9450a0}{Remove}} (\mbox{\hyperlink{interface_scott_plot_1_1_i_axis}{IAxis}} axis)
+\begin{DoxyCompactList}\small\item\em Remove the given axis from the plot. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_axis_manager_ab12351ee8cfab246dc69bf0af877a341}{Remove}} (\mbox{\hyperlink{interface_scott_plot_1_1_i_panel}{IPanel}} panel)
+\begin{DoxyCompactList}\small\item\em Remove the given Panel. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_axis_manager_a31c67d4b3410aa6a34c51cd3b6368bc7}{Add\+Panel}} (\mbox{\hyperlink{interface_scott_plot_1_1_i_panel}{IPanel}} panel)
+\item 
+\mbox{\hyperlink{class_scott_plot_1_1_axis_panels_1_1_date_time_x_axis}{Date\+Time\+XAxis}} \mbox{\hyperlink{class_scott_plot_1_1_axis_manager_a851400da6061f452f8e3b93b6eece538}{Date\+Time\+Ticks\+Bottom}} ()
+\begin{DoxyCompactList}\small\item\em Remove all bottom axes, create a Date\+Time bottom axis, add it to the plot, and return it. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_axis_manager_ae42b36ca6bf7f0b78e40aa15555b7cd0}{Add\+YAxis}} (\mbox{\hyperlink{interface_scott_plot_1_1_i_y_axis}{IYAxis}} axis)
+\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_axis_manager_a3797ccb3e9ffcd0df3d6582b8788062b}{Add\+XAxis}} (\mbox{\hyperlink{interface_scott_plot_1_1_i_x_axis}{IXAxis}} axis)
+\item 
+\mbox{\hyperlink{class_scott_plot_1_1_axis_panels_1_1_left_axis}{Left\+Axis}} \mbox{\hyperlink{class_scott_plot_1_1_axis_manager_adaba1985547f90cb01c8968555428362}{Add\+Left\+Axis}} ()
+\begin{DoxyCompactList}\small\item\em Crete a new axis, add it to the plot, and return it. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_axis_manager_af73e11778687de1593f761a95501bb74}{Add\+Left\+Axis}} (\mbox{\hyperlink{interface_scott_plot_1_1_i_y_axis}{IYAxis}} axis)
+\item 
+\mbox{\hyperlink{class_scott_plot_1_1_axis_panels_1_1_right_axis}{Right\+Axis}} \mbox{\hyperlink{class_scott_plot_1_1_axis_manager_a3cd7f53879f09c4f29a11846842dd552}{Add\+Right\+Axis}} ()
+\begin{DoxyCompactList}\small\item\em Crete a new axis, add it to the plot, and return it. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_axis_manager_a591855f545c141d9592dab4b2c8942ea}{Add\+Right\+Axis}} (\mbox{\hyperlink{interface_scott_plot_1_1_i_y_axis}{IYAxis}} axis)
+\item 
+\mbox{\hyperlink{class_scott_plot_1_1_axis_panels_1_1_bottom_axis}{Bottom\+Axis}} \mbox{\hyperlink{class_scott_plot_1_1_axis_manager_a9d1a64be0a73d114903c6e3a0e1449dc}{Add\+Bottom\+Axis}} ()
+\begin{DoxyCompactList}\small\item\em Crete a new axis, add it to the plot, and return it. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_axis_manager_ad074a430dbd589d62e42802c79c94290}{Add\+Bottom\+Axis}} (\mbox{\hyperlink{interface_scott_plot_1_1_i_x_axis}{IXAxis}} axis)
+\item 
+\mbox{\hyperlink{class_scott_plot_1_1_axis_panels_1_1_top_axis}{Top\+Axis}} \mbox{\hyperlink{class_scott_plot_1_1_axis_manager_a016f2aa582043110235a27e4b8bcaf2c}{Add\+Top\+Axis}} ()
+\begin{DoxyCompactList}\small\item\em Crete a new axis, add it to the plot, and return it. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_axis_manager_a6bd2b7fd4485b02176b019e67b16e0d1}{Add\+Top\+Axis}} (\mbox{\hyperlink{interface_scott_plot_1_1_i_x_axis}{IXAxis}} axis)
+\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_axis_manager_a9e630b7ba09187edd4aba1108036e02f}{Set\+LimitsX}} (double left, double right, \mbox{\hyperlink{interface_scott_plot_1_1_i_x_axis}{IXAxis}} x\+Axis)
+\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_axis_manager_af7fb91da0e97f74f2b26e419eb08899c}{Set\+LimitsY}} (double bottom, double top, \mbox{\hyperlink{interface_scott_plot_1_1_i_y_axis}{IYAxis}} y\+Axis)
+\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_axis_manager_a6aad0d8b7518bdf1e915f00b0139ed44}{Set\+LimitsX}} (double left, double right)
+\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_axis_manager_a09a2f2b4df512288cfbbeaa4842ff8df}{Set\+LimitsY}} (double bottom, double top)
+\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_axis_manager_ae9025cffe9dddd2c6ba0e96c281eedc2}{Set\+Limits}} (double left, double right, double bottom, double top)
+\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_axis_manager_a386d039446a5131e06c9e61f926efe47}{Set\+Limits}} (double left, double right, double bottom, double top, \mbox{\hyperlink{interface_scott_plot_1_1_i_x_axis}{IXAxis}} x\+Axis, \mbox{\hyperlink{interface_scott_plot_1_1_i_y_axis}{IYAxis}} y\+Axis)
+\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_axis_manager_a0d1db82dfab08807922bfd3d9ed0dc9a}{Set\+Limits}} (double? left=null, double? right=null, double? bottom=null, double? top=null)
+\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_axis_manager_a071db66dd2cf30e3c189cf62c5f6f0c1}{Set\+Limits}} (\mbox{\hyperlink{struct_scott_plot_1_1_coordinate_rect}{Coordinate\+Rect}} rect)
+\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_axis_manager_ac45864ec9574ba8a621779f6a6d374fd}{Set\+LimitsX}} (\mbox{\hyperlink{struct_scott_plot_1_1_coordinate_rect}{Coordinate\+Rect}} limits)
+\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_axis_manager_a8ca26de5cd4685a8bd47720240e9f77f}{Set\+LimitsY}} (\mbox{\hyperlink{struct_scott_plot_1_1_coordinate_rect}{Coordinate\+Rect}} limits)
+\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_axis_manager_ae148cf990e1757a8e182ed21f709e288}{Set\+LimitsX}} (\mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}} limits)
+\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_axis_manager_a7d37aa5c10d6963e4147bbb321508b84}{Set\+LimitsX}} (\mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}} limits, \mbox{\hyperlink{interface_scott_plot_1_1_i_x_axis}{IXAxis}} x\+Axis)
+\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_axis_manager_ae3c63ef40e3cf116831eeb19c4b59c27}{Set\+LimitsY}} (\mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}} limits)
+\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_axis_manager_a9843e6b76e6851c191643bc12c5c3a15}{Set\+LimitsY}} (\mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}} limits, \mbox{\hyperlink{interface_scott_plot_1_1_i_y_axis}{IYAxis}} y\+Axis)
+\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_axis_manager_a14022e9ad1ba92413de1dd13f93022d9}{Set\+Limits}} (\mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}} limits)
+\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_axis_manager_ab6ba93659c78540e7d006891520e3101}{Set\+Limits}} (\mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}} limits, \mbox{\hyperlink{interface_scott_plot_1_1_i_x_axis}{IXAxis}} x\+Axis, \mbox{\hyperlink{interface_scott_plot_1_1_i_y_axis}{IYAxis}} y\+Axis)
+\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_axis_manager_a3339aa6013088f999e609a76d02c6ca7}{Set\+Limits}} (\mbox{\hyperlink{namespace_scott_plot_a4f8afc1393f89ce60e775705cbf134d1}{Coordinate\+Range}} x\+Range, \mbox{\hyperlink{namespace_scott_plot_a4f8afc1393f89ce60e775705cbf134d1}{Coordinate\+Range}} y\+Range)
+\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_axis_manager_af18f2a277017f06859f4e6734fe2025a}{InvertX}} ()
+\begin{DoxyCompactList}\small\item\em Adjust the horizontal axis so values descend from left to right. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_axis_manager_a112e4a0af6a0e6cbcb96f847afb0ab76}{RectifyX}} ()
+\begin{DoxyCompactList}\small\item\em Adjust the horizontal axis so values ascend from left to right. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_axis_manager_a5c02fe6266d0ec1b765da11e90f29283}{InvertY}} ()
+\begin{DoxyCompactList}\small\item\em Adjust the vertical axis so values descend from bottom to top. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_axis_manager_ad2f4aa756e8102bc4aea70f171ebbbf6}{RectifyY}} ()
+\begin{DoxyCompactList}\small\item\em Adjust the vertical axis so values ascend from bottom to top. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}} \mbox{\hyperlink{class_scott_plot_1_1_axis_manager_ae5a00bf89900efea1f93ca0d638f8eab}{Get\+Limits}} ()
+\begin{DoxyCompactList}\small\item\em Return the 2D axis limits for the default axes. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}} \mbox{\hyperlink{class_scott_plot_1_1_axis_manager_a9bba244708b439ef7e2f2f0af8c884d4}{Get\+Limits}} (\mbox{\hyperlink{interface_scott_plot_1_1_i_x_axis}{IXAxis}} x\+Axis, \mbox{\hyperlink{interface_scott_plot_1_1_i_y_axis}{IYAxis}} y\+Axis)
+\begin{DoxyCompactList}\small\item\em Return the 2D axis limits for the given X/Y axis pair. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}} \mbox{\hyperlink{class_scott_plot_1_1_axis_manager_a06808939046c6c36e358fde8480d5b4b}{Get\+Limits}} (\mbox{\hyperlink{interface_scott_plot_1_1_i_axes}{IAxes}} axes)
+\begin{DoxyCompactList}\small\item\em Return the 2D axis limits for the given X/Y axis pair. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}} \mbox{\hyperlink{class_scott_plot_1_1_axis_manager_af1513d5719b33774dcc357bd1c9a2bb9}{Get\+Data\+Limits}} ()
+\begin{DoxyCompactList}\small\item\em Return the 2D axis limits of data for all plottables using the default axes. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}} \mbox{\hyperlink{class_scott_plot_1_1_axis_manager_ad6a0889a36a06a1fe6fdbbc8fdd4c9e5}{Get\+Data\+Limits}} (\mbox{\hyperlink{interface_scott_plot_1_1_i_x_axis}{IXAxis}} x\+Axis, \mbox{\hyperlink{interface_scott_plot_1_1_i_y_axis}{IYAxis}} y\+Axis)
+\begin{DoxyCompactList}\small\item\em Return the 2D axis limits of data for all plottables using the given axes. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_axis_manager_a153f379f7afd85f0f7b45d0f3484b5a3}{Auto\+Scale}} (bool? invertX=null, bool? invertY=null)
+\begin{DoxyCompactList}\small\item\em Automatically scale all axes to fit the data in all plottables. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_axis_manager_a3d1f994d365a17bf0061b70cb2a71db0}{Auto\+Scale}} (\mbox{\hyperlink{interface_scott_plot_1_1_i_x_axis}{IXAxis}} x\+Axis, \mbox{\hyperlink{interface_scott_plot_1_1_i_y_axis}{IYAxis}} y\+Axis, bool horizontal=true, bool vertical=true)
+\begin{DoxyCompactList}\small\item\em Autoscale the given axes to accommodate the data from all plottables that use them. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_axis_manager_a319585b48e51ebd1041c69ad8b05c9f4}{Auto\+Scale\+Expand}} ()
+\begin{DoxyCompactList}\small\item\em Automatically expand the default axes to fit the data in all plottables. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_axis_manager_a68641371466ec886142deb7a4a098fe4}{Auto\+Scale\+Expand}} (\mbox{\hyperlink{interface_scott_plot_1_1_i_x_axis}{IXAxis}} x\+Axis, \mbox{\hyperlink{interface_scott_plot_1_1_i_y_axis}{IYAxis}} y\+Axis)
+\begin{DoxyCompactList}\small\item\em Automatically expand the provided axes to fit the data in all plottables. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_axis_manager_a5d58e1de70a846b58cdbfb09a1f8a39a}{Auto\+Scale\+ExpandX}} (\mbox{\hyperlink{interface_scott_plot_1_1_i_x_axis}{IXAxis}} x\+Axis)
+\begin{DoxyCompactList}\small\item\em Automatically expand the provided axes horizontally to fit the data in all plottables. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_axis_manager_a46784dde520a6edc05aeb4ab893c8163}{Auto\+Scale\+ExpandX}} ()
+\begin{DoxyCompactList}\small\item\em Automatically expand the default horizontal axis to fit the data in all plottables. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_axis_manager_a99fa5421bc13570b198fd716decb2ae2}{Auto\+Scale\+ExpandY}} (\mbox{\hyperlink{interface_scott_plot_1_1_i_y_axis}{IYAxis}} y\+Axis)
+\begin{DoxyCompactList}\small\item\em Automatically expand the provided axes vertically to fit the data in all plottables. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_axis_manager_a3667cb5eec11f9e88ad67ffed31cbe23}{Auto\+Scale\+ExpandY}} ()
+\begin{DoxyCompactList}\small\item\em Automatically expand the default vertical axis to fit the data in all plottables. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_axis_manager_a3d1ecf5231533e73666f11193485af2d}{Auto\+ScaleX}} ()
+\begin{DoxyCompactList}\small\item\em Autoscale the bottom horizontal axis limits to fit the data of all plotted objects. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_axis_manager_ae9479c4b0ea1e99a412276e104d5d710}{Auto\+ScaleY}} ()
+\begin{DoxyCompactList}\small\item\em Autoscale the left vertical axis limits to fit the data of all plotted objects. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_axis_manager_ac8e5318a28198204d83b9af5ecfbd718}{Auto\+ScaleX}} (\mbox{\hyperlink{interface_scott_plot_1_1_i_x_axis}{IXAxis}} x\+Axis)
+\begin{DoxyCompactList}\small\item\em Autoscale the supplied horizontal axis limits to fit the data of all plotted objects. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_axis_manager_ad722be111a8aa579a51cad9d0f6f5ccd}{Auto\+ScaleY}} (\mbox{\hyperlink{interface_scott_plot_1_1_i_y_axis}{IYAxis}} y\+Axis)
+\begin{DoxyCompactList}\small\item\em Autoscale the supplied vertical axis limits to fit the data of all plotted objects. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_axis_manager_a993380ab36ad54fd710b7d99fab8dae1}{Auto\+Scale}} (\mbox{\hyperlink{class_i_enumerable}{IEnumerable}}$<$ \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable}{IPlottable}} $>$ plottables)
+\begin{DoxyCompactList}\small\item\em Autoscale the default (left and bottom) axis limits to fit the data of the supplied plottables. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_axis_manager_afce29648729b330bd2bf8fefd3bf6345}{Auto\+ScaleX}} (\mbox{\hyperlink{class_i_enumerable}{IEnumerable}}$<$ \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable}{IPlottable}} $>$ plottables)
+\begin{DoxyCompactList}\small\item\em Autoscale the default bottom horizontal axis limits to fit the data of the supplied plottables. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_axis_manager_a4866d6f94116936c1b2e7a3f201a84ca}{Auto\+ScaleY}} (\mbox{\hyperlink{class_i_enumerable}{IEnumerable}}$<$ \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable}{IPlottable}} $>$ plottables)
+\begin{DoxyCompactList}\small\item\em Autoscale the default left vertical axis limits to fit the data of the supplied plottables. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_axis_manager_a27d21b79ee056f2e147559927e729772}{Pan}} (\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}} mouse\+Down, \mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}} mouse\+Up)
+\begin{DoxyCompactList}\small\item\em Adjust limits all axes to pan the pixel distance between two points. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_axis_manager_aba60dfd19b051abb7940c091bc0584e3}{Pan}} (\mbox{\hyperlink{namespace_scott_plot_a3dfefa78aee0c8cf7184895e4ad7d44b}{Pixel\+Offset}} offset)
+\begin{DoxyCompactList}\small\item\em Adjust limits all axes to pan given pixel distance. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_axis_manager_ad9b715785a17e37265095f1a6d10eb9d}{Pan}} (\mbox{\hyperlink{namespace_scott_plot_a1d50f487129d99b603f7d00c100a0226}{Coordinate\+Offset}} distance)
+\begin{DoxyCompactList}\small\item\em Adjust limits all axes to pan by the given distance in coordinate space. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_axis_manager_a24b5e8701fdd4f356493e7b298657ffd}{Zoom}} (\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}} px1, \mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}} px2)
+\begin{DoxyCompactList}\small\item\em Modify zoom for all axes as if the mouse were right-\/clicked and dragged. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_axis_manager_ad9461fb2664792be5d72e3815d491746}{Zoom}} (\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}} px, double fracX, double fracY)
+\begin{DoxyCompactList}\small\item\em Zoom into (frac \texorpdfstring{$>$}{>}1) or out of (frac \texorpdfstring{$<$}{<}1) the given point. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_axis_manager_a6f04f24ae561e9d2aa7a6d342cbdce7a}{Zoom}} (double fracX=1.\+0, double fracY=1.\+0)
+\begin{DoxyCompactList}\small\item\em Modify limits of all axes to apply the given zoom. Fractional values \texorpdfstring{$>$}{>}1 zoom in and \texorpdfstring{$<$}{<}1 zoom out. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_axis_manager_a13c0cb7d50cc34e7af24a6bcad9ef4e7}{Zoom\+In}} (double fracX=1.\+0, double fracY=1.\+0)
+\begin{DoxyCompactList}\small\item\em Modify limits of all axes to apply the given zoom. Fractional values \texorpdfstring{$>$}{>}1 zoom in and \texorpdfstring{$<$}{<}1 zoom out. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_axis_manager_a4e7095d1fb615596ed79b28b338d4bdf}{Zoom\+Out}} (double x=1.\+0, double y=1.\+0)
+\begin{DoxyCompactList}\small\item\em Zoom out so the new view is the given fraction of the original view. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_axis_manager_a716728f0b6e8d7e56c904f0753c90e17}{Zoom\+OutX}} (double x=1.\+0)
+\begin{DoxyCompactList}\small\item\em Zoom out so the new view is the given fraction of the original view. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_axis_manager_afbb80f33f57dd60f017835f90a780af8}{Zoom\+OutY}} (double y=1.\+0)
+\begin{DoxyCompactList}\small\item\em Zoom out so the new view is the given fraction of the original view. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_axis_manager_ab73c3a7f9b376b427ef3781a438d6d9d}{Margins}} ()
+\begin{DoxyCompactList}\small\item\em Reset plot data margins to their default value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_axis_manager_aa81bda5cada1e89ffc723445e9441e85}{Margins}} (double horizontal=0.\+1, double vertical=.\+15)
+\begin{DoxyCompactList}\small\item\em Define the amount of whitespace to place around the data area when calling \doxylink{class_scott_plot_1_1_axis_manager_a153f379f7afd85f0f7b45d0f3484b5a3}{Auto\+Scale()}. Values are a fraction from 0 (tightly fit the data) to 1 (lots of whitespace). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_axis_manager_afd4ca7c397ab7ec21e8be88e94c53dc3}{Margins}} (double left=.\+05, double right=.\+05, double bottom=.\+07, double top=.\+07)
+\begin{DoxyCompactList}\small\item\em Define the amount of whitespace to place around the data area when calling \doxylink{class_scott_plot_1_1_axis_manager_a153f379f7afd85f0f7b45d0f3484b5a3}{Auto\+Scale()}. Values are a fraction from 0 (tightly fit the data) to 1 (lots of whitespace). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_axis_manager_ac9f0cdbec24a84ab5d28b604b0376aef}{Square\+Units}} ()
+\begin{DoxyCompactList}\small\item\em Force pixels to have a 1\+:1 scale ratio. This allows circles to always appear as circles and not stretched ellipses. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_axis_manager_a0560a4f6211e426e4bf2693436f8fcad}{Frameless}} (bool show\+Title=false)
+\begin{DoxyCompactList}\small\item\em Disable visibility of all axes and titles so the data area fills the entire figure. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_axis_manager_a8bfe017a577eb3f85b26a1638e8b2d1e}{Anti\+Alias}} (bool enable)
+\begin{DoxyCompactList}\small\item\em Set anti-\/aliasing for axis frames, tick marks, and grid lines. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_axis_manager_a84d547d1016cdfb49f36dbdeac89244c}{Hairline}} (bool enable)
+\begin{DoxyCompactList}\small\item\em Hairline mode causes lines to always render exactly 1 pixel wide regardless of \doxylink{class_scott_plot_1_1_plot_a6daefbcf32aa926763593cd79a1a815d}{Plot.\+Scale\+Factor}. This function controls hairline behavior for all axis frames. tick marks, and grid lines. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_axis_manager_a462143391251ebb9cc6ee3c08b11383f}{Link}} (\mbox{\hyperlink{interface_scott_plot_1_1_i_axis}{IAxis}} this\+Plot\+Axis, \mbox{\hyperlink{interface_scott_plot_1_1_i_axis}{IAxis}} other\+Plot\+Axis, \mbox{\hyperlink{class_scott_plot_1_1_plot}{Plot}} other\+Plot)
+\begin{DoxyCompactList}\small\item\em Add a link to another plot\textquotesingle{}s axis so its limits update when limits of an axis from this plot changes. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_axis_manager_a8e3380a5b0cdcb420f22bba0e5a5639d}{Link}} (\mbox{\hyperlink{interface_scott_plot_1_1_i_plot_control}{IPlot\+Control}} target, bool x=true, bool y=true)
+\begin{DoxyCompactList}\small\item\em Add a link to the target plot control so its axis limits update when this plot\textquotesingle{}s axis limits change. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_axis_manager_aa6f4f9d609558c875ca91da8c1d35124}{Link}} (\mbox{\hyperlink{class_scott_plot_1_1_plot}{Plot}} target, bool x=true, bool y=true)
+\begin{DoxyCompactList}\small\item\em Add a link to the target plot so its axis limits update when this plot\textquotesingle{}s axis limits change. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_axis_manager_a0faca5109027df0a530e5b17b98c236a}{Unlink\+All}} ()
+\begin{DoxyCompactList}\small\item\em Remove all linked axes rules. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_axis_manager_ae9260dcf25a98182c500bb54c1c429a7}{Unlink}} (\mbox{\hyperlink{interface_scott_plot_1_1_i_plot_control}{IPlot\+Control}} target)
+\begin{DoxyCompactList}\small\item\em Remove all linked axes rules involving the target plot control. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_axis_manager_a0a71f702edcddb99e85e055ac4d0fc71}{Unlink}} (\mbox{\hyperlink{class_scott_plot_1_1_plot}{Plot}} target)
+\begin{DoxyCompactList}\small\item\em Remove all linked axes rules involving the target plot. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_axis_manager_a68e88e13cadf50bd43389ac91f2d6572}{Unlink}} (\mbox{\hyperlink{interface_scott_plot_1_1_i_axis}{IAxis}} axis)
+\begin{DoxyCompactList}\small\item\em Remove all linked axes rules involving the given axis. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_scott_plot_1_1_axis_manager_a9506cb3c9a8921064bc99e12f6ab6bc4}{Default\+Continuous\+Autoscale\+Action}} (Render\+Pack rp)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_scott_plot_1_1_i_auto_scaler}{IAuto\+Scaler}} \mbox{\hyperlink{class_scott_plot_1_1_axis_manager_a6cc53854762cf12733a85f5fdccf7dc3}{Auto\+Scaler}} = new \mbox{\hyperlink{class_scott_plot_1_1_auto_scalers_1_1_fractional_auto_scaler}{Auto\+Scalers.\+Fractional\+Auto\+Scaler}}(.\+1, .\+15)\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Logic that determines padding around the data area when \doxylink{class_scott_plot_1_1_axis_manager_a153f379f7afd85f0f7b45d0f3484b5a3}{Auto\+Scale()} is called. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_scott_plot_1_1_panels_1_1_title_panel}{Panels.\+Title\+Panel}} \mbox{\hyperlink{class_scott_plot_1_1_axis_manager_a741753cdb6f455023452ed9a64133f94}{Title}} = new()\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em A special panel. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{interface_scott_plot_1_1_i_x_axis}{IXAxis}} \mbox{\hyperlink{class_scott_plot_1_1_axis_manager_a8483f14ffbb83367ff5399fb500527a6}{Top}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The primary horizontal axis above the plot. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{interface_scott_plot_1_1_i_x_axis}{IXAxis}} \mbox{\hyperlink{class_scott_plot_1_1_axis_manager_a6c22a1bbd024429163903a0802057d46}{Bottom}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The primary horizontal axis below the plot. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{interface_scott_plot_1_1_i_y_axis}{IYAxis}} \mbox{\hyperlink{class_scott_plot_1_1_axis_manager_a4bbc652a4c73b627f7bff6adb32e6f35}{Left}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The primary vertical axis to the left of the plot. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{interface_scott_plot_1_1_i_y_axis}{IYAxis}} \mbox{\hyperlink{class_scott_plot_1_1_axis_manager_aa7b4e0e72fde5f2fa8fbd90eb2d64d93}{Right}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The primary vertical axis to the right of the plot. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_scott_plot_1_1_axis_manager_a128f9d838db3f40352319973a6a96306}{Limits\+Have\+Been\+Set}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Indicates whether the axis limits have been set (manually or by autoscale) \end{DoxyCompactList}\item 
+Default\+Grid \mbox{\hyperlink{class_scott_plot_1_1_axis_manager_acaabe54038e6d22937b5705d1dcdf14d}{Default\+Grid}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The standard grid that is added when a \doxylink{class_scott_plot_1_1_plot}{Plot} is created. Users can achieve custom grid functionality by disabling the visibility of this grid and adding their own classes to the List of \doxylink{class_scott_plot_1_1_axis_manager_a90c007de4c8c229edeb2f54770e08697}{Custom\+Grids}. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{interface_scott_plot_1_1_i_grid}{IGrid}} $>$ \mbox{\hyperlink{class_scott_plot_1_1_axis_manager_a90c007de4c8c229edeb2f54770e08697}{Custom\+Grids}} = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em List of custom grids. If in use, it is likely the default grid visibility should be disabled. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{interface_scott_plot_1_1_i_grid}{IGrid}} $>$ \mbox{\hyperlink{class_scott_plot_1_1_axis_manager_ac43cdc449e4216c858322f6ad785fd88}{All\+Grids}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Return the \doxylink{class_scott_plot_1_1_axis_manager_acaabe54038e6d22937b5705d1dcdf14d}{Default\+Grid} and all \doxylink{class_scott_plot_1_1_axis_manager_a90c007de4c8c229edeb2f54770e08697}{Custom\+Grids} \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{interface_scott_plot_1_1_i_axis_rule}{IAxis\+Rule}} $>$ \mbox{\hyperlink{class_scott_plot_1_1_axis_manager_ab81ca98b81c66cb12dc58e306523a68c}{Rules}} = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Rules that are applied before each render. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_scott_plot_1_1_axis_manager_a274c68dc748f601e782bbc4fa36ae956}{Continuously\+Autoscale}} = false\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em If enabled, \doxylink{class_scott_plot_1_1_axis_manager_a153f379f7afd85f0f7b45d0f3484b5a3}{Auto\+Scale()} will be called at the start of each render. This can negatively impact performance of plots with an extremely large number of data points. \end{DoxyCompactList}\item 
+Action$<$ Render\+Pack $>$ \mbox{\hyperlink{class_scott_plot_1_1_axis_manager_a629eb3a02b1cb16819fa507fe4b3b807}{Continuous\+Autoscale\+Action}} = \mbox{\hyperlink{class_scott_plot_1_1_axis_manager_a9506cb3c9a8921064bc99e12f6ab6bc4}{Default\+Continuous\+Autoscale\+Action}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em When \doxylink{class_scott_plot_1_1_axis_manager_a274c68dc748f601e782bbc4fa36ae956}{Continuously\+Autoscale} is true, this action is called before each frame is rendered. Users can assign their own static function to customize continuous autoscaling behavior. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_scott_plot_1_1_axis_manager_a38e2215464200dba743fdabbfd04795b}\index{ScottPlot.AxisManager@{ScottPlot.AxisManager}!AxisManager@{AxisManager}}
+\index{AxisManager@{AxisManager}!ScottPlot.AxisManager@{ScottPlot.AxisManager}}
+\doxysubsubsection{\texorpdfstring{AxisManager()}{AxisManager()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axis_manager_a38e2215464200dba743fdabbfd04795b} 
+Scott\+Plot.\+Axis\+Manager.\+Axis\+Manager (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_scott_plot_1_1_plot}{Plot}}}]{plot}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Contains state and logic for axes. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_scott_plot_1_1_axis_manager_a9d1a64be0a73d114903c6e3a0e1449dc}\index{ScottPlot.AxisManager@{ScottPlot.AxisManager}!AddBottomAxis@{AddBottomAxis}}
+\index{AddBottomAxis@{AddBottomAxis}!ScottPlot.AxisManager@{ScottPlot.AxisManager}}
+\doxysubsubsection{\texorpdfstring{AddBottomAxis()}{AddBottomAxis()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axis_manager_a9d1a64be0a73d114903c6e3a0e1449dc} 
+\mbox{\hyperlink{class_scott_plot_1_1_axis_panels_1_1_bottom_axis}{Bottom\+Axis}} Scott\+Plot.\+Axis\+Manager.\+Add\+Bottom\+Axis (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Crete a new axis, add it to the plot, and return it. 
+
+\Hypertarget{class_scott_plot_1_1_axis_manager_ad074a430dbd589d62e42802c79c94290}\index{ScottPlot.AxisManager@{ScottPlot.AxisManager}!AddBottomAxis@{AddBottomAxis}}
+\index{AddBottomAxis@{AddBottomAxis}!ScottPlot.AxisManager@{ScottPlot.AxisManager}}
+\doxysubsubsection{\texorpdfstring{AddBottomAxis()}{AddBottomAxis()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axis_manager_ad074a430dbd589d62e42802c79c94290} 
+void Scott\+Plot.\+Axis\+Manager.\+Add\+Bottom\+Axis (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_scott_plot_1_1_i_x_axis}{IXAxis}}}]{axis}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_axis_manager_adaba1985547f90cb01c8968555428362}\index{ScottPlot.AxisManager@{ScottPlot.AxisManager}!AddLeftAxis@{AddLeftAxis}}
+\index{AddLeftAxis@{AddLeftAxis}!ScottPlot.AxisManager@{ScottPlot.AxisManager}}
+\doxysubsubsection{\texorpdfstring{AddLeftAxis()}{AddLeftAxis()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axis_manager_adaba1985547f90cb01c8968555428362} 
+\mbox{\hyperlink{class_scott_plot_1_1_axis_panels_1_1_left_axis}{Left\+Axis}} Scott\+Plot.\+Axis\+Manager.\+Add\+Left\+Axis (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Crete a new axis, add it to the plot, and return it. 
+
+\Hypertarget{class_scott_plot_1_1_axis_manager_af73e11778687de1593f761a95501bb74}\index{ScottPlot.AxisManager@{ScottPlot.AxisManager}!AddLeftAxis@{AddLeftAxis}}
+\index{AddLeftAxis@{AddLeftAxis}!ScottPlot.AxisManager@{ScottPlot.AxisManager}}
+\doxysubsubsection{\texorpdfstring{AddLeftAxis()}{AddLeftAxis()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axis_manager_af73e11778687de1593f761a95501bb74} 
+void Scott\+Plot.\+Axis\+Manager.\+Add\+Left\+Axis (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_scott_plot_1_1_i_y_axis}{IYAxis}}}]{axis}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_axis_manager_a31c67d4b3410aa6a34c51cd3b6368bc7}\index{ScottPlot.AxisManager@{ScottPlot.AxisManager}!AddPanel@{AddPanel}}
+\index{AddPanel@{AddPanel}!ScottPlot.AxisManager@{ScottPlot.AxisManager}}
+\doxysubsubsection{\texorpdfstring{AddPanel()}{AddPanel()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axis_manager_a31c67d4b3410aa6a34c51cd3b6368bc7} 
+void Scott\+Plot.\+Axis\+Manager.\+Add\+Panel (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_scott_plot_1_1_i_panel}{IPanel}}}]{panel}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_axis_manager_a3cd7f53879f09c4f29a11846842dd552}\index{ScottPlot.AxisManager@{ScottPlot.AxisManager}!AddRightAxis@{AddRightAxis}}
+\index{AddRightAxis@{AddRightAxis}!ScottPlot.AxisManager@{ScottPlot.AxisManager}}
+\doxysubsubsection{\texorpdfstring{AddRightAxis()}{AddRightAxis()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axis_manager_a3cd7f53879f09c4f29a11846842dd552} 
+\mbox{\hyperlink{class_scott_plot_1_1_axis_panels_1_1_right_axis}{Right\+Axis}} Scott\+Plot.\+Axis\+Manager.\+Add\+Right\+Axis (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Crete a new axis, add it to the plot, and return it. 
+
+\Hypertarget{class_scott_plot_1_1_axis_manager_a591855f545c141d9592dab4b2c8942ea}\index{ScottPlot.AxisManager@{ScottPlot.AxisManager}!AddRightAxis@{AddRightAxis}}
+\index{AddRightAxis@{AddRightAxis}!ScottPlot.AxisManager@{ScottPlot.AxisManager}}
+\doxysubsubsection{\texorpdfstring{AddRightAxis()}{AddRightAxis()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axis_manager_a591855f545c141d9592dab4b2c8942ea} 
+void Scott\+Plot.\+Axis\+Manager.\+Add\+Right\+Axis (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_scott_plot_1_1_i_y_axis}{IYAxis}}}]{axis}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_axis_manager_a016f2aa582043110235a27e4b8bcaf2c}\index{ScottPlot.AxisManager@{ScottPlot.AxisManager}!AddTopAxis@{AddTopAxis}}
+\index{AddTopAxis@{AddTopAxis}!ScottPlot.AxisManager@{ScottPlot.AxisManager}}
+\doxysubsubsection{\texorpdfstring{AddTopAxis()}{AddTopAxis()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axis_manager_a016f2aa582043110235a27e4b8bcaf2c} 
+\mbox{\hyperlink{class_scott_plot_1_1_axis_panels_1_1_top_axis}{Top\+Axis}} Scott\+Plot.\+Axis\+Manager.\+Add\+Top\+Axis (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Crete a new axis, add it to the plot, and return it. 
+
+\Hypertarget{class_scott_plot_1_1_axis_manager_a6bd2b7fd4485b02176b019e67b16e0d1}\index{ScottPlot.AxisManager@{ScottPlot.AxisManager}!AddTopAxis@{AddTopAxis}}
+\index{AddTopAxis@{AddTopAxis}!ScottPlot.AxisManager@{ScottPlot.AxisManager}}
+\doxysubsubsection{\texorpdfstring{AddTopAxis()}{AddTopAxis()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axis_manager_a6bd2b7fd4485b02176b019e67b16e0d1} 
+void Scott\+Plot.\+Axis\+Manager.\+Add\+Top\+Axis (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_scott_plot_1_1_i_x_axis}{IXAxis}}}]{axis}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_axis_manager_a3797ccb3e9ffcd0df3d6582b8788062b}\index{ScottPlot.AxisManager@{ScottPlot.AxisManager}!AddXAxis@{AddXAxis}}
+\index{AddXAxis@{AddXAxis}!ScottPlot.AxisManager@{ScottPlot.AxisManager}}
+\doxysubsubsection{\texorpdfstring{AddXAxis()}{AddXAxis()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axis_manager_a3797ccb3e9ffcd0df3d6582b8788062b} 
+void Scott\+Plot.\+Axis\+Manager.\+Add\+XAxis (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_scott_plot_1_1_i_x_axis}{IXAxis}}}]{axis}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_axis_manager_ae42b36ca6bf7f0b78e40aa15555b7cd0}\index{ScottPlot.AxisManager@{ScottPlot.AxisManager}!AddYAxis@{AddYAxis}}
+\index{AddYAxis@{AddYAxis}!ScottPlot.AxisManager@{ScottPlot.AxisManager}}
+\doxysubsubsection{\texorpdfstring{AddYAxis()}{AddYAxis()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axis_manager_ae42b36ca6bf7f0b78e40aa15555b7cd0} 
+void Scott\+Plot.\+Axis\+Manager.\+Add\+YAxis (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_scott_plot_1_1_i_y_axis}{IYAxis}}}]{axis}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_axis_manager_a8bfe017a577eb3f85b26a1638e8b2d1e}\index{ScottPlot.AxisManager@{ScottPlot.AxisManager}!AntiAlias@{AntiAlias}}
+\index{AntiAlias@{AntiAlias}!ScottPlot.AxisManager@{ScottPlot.AxisManager}}
+\doxysubsubsection{\texorpdfstring{AntiAlias()}{AntiAlias()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axis_manager_a8bfe017a577eb3f85b26a1638e8b2d1e} 
+void Scott\+Plot.\+Axis\+Manager.\+Anti\+Alias (\begin{DoxyParamCaption}\item[{bool}]{enable}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set anti-\/aliasing for axis frames, tick marks, and grid lines. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em enable} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_scott_plot_1_1_axis_manager_a153f379f7afd85f0f7b45d0f3484b5a3}\index{ScottPlot.AxisManager@{ScottPlot.AxisManager}!AutoScale@{AutoScale}}
+\index{AutoScale@{AutoScale}!ScottPlot.AxisManager@{ScottPlot.AxisManager}}
+\doxysubsubsection{\texorpdfstring{AutoScale()}{AutoScale()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axis_manager_a153f379f7afd85f0f7b45d0f3484b5a3} 
+void Scott\+Plot.\+Axis\+Manager.\+Auto\+Scale (\begin{DoxyParamCaption}\item[{bool?}]{invertX}{ = {\ttfamily null}, }\item[{bool?}]{invertY}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Automatically scale all axes to fit the data in all plottables. 
+
+\Hypertarget{class_scott_plot_1_1_axis_manager_a993380ab36ad54fd710b7d99fab8dae1}\index{ScottPlot.AxisManager@{ScottPlot.AxisManager}!AutoScale@{AutoScale}}
+\index{AutoScale@{AutoScale}!ScottPlot.AxisManager@{ScottPlot.AxisManager}}
+\doxysubsubsection{\texorpdfstring{AutoScale()}{AutoScale()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axis_manager_a993380ab36ad54fd710b7d99fab8dae1} 
+void Scott\+Plot.\+Axis\+Manager.\+Auto\+Scale (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_i_enumerable}{IEnumerable}}$<$ \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable}{IPlottable}} $>$}]{plottables}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Autoscale the default (left and bottom) axis limits to fit the data of the supplied plottables. 
+
+\Hypertarget{class_scott_plot_1_1_axis_manager_a3d1f994d365a17bf0061b70cb2a71db0}\index{ScottPlot.AxisManager@{ScottPlot.AxisManager}!AutoScale@{AutoScale}}
+\index{AutoScale@{AutoScale}!ScottPlot.AxisManager@{ScottPlot.AxisManager}}
+\doxysubsubsection{\texorpdfstring{AutoScale()}{AutoScale()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axis_manager_a3d1f994d365a17bf0061b70cb2a71db0} 
+void Scott\+Plot.\+Axis\+Manager.\+Auto\+Scale (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_scott_plot_1_1_i_x_axis}{IXAxis}}}]{x\+Axis}{, }\item[{\mbox{\hyperlink{interface_scott_plot_1_1_i_y_axis}{IYAxis}}}]{y\+Axis}{, }\item[{bool}]{horizontal}{ = {\ttfamily true}, }\item[{bool}]{vertical}{ = {\ttfamily true}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Autoscale the given axes to accommodate the data from all plottables that use them. 
+
+\Hypertarget{class_scott_plot_1_1_axis_manager_a319585b48e51ebd1041c69ad8b05c9f4}\index{ScottPlot.AxisManager@{ScottPlot.AxisManager}!AutoScaleExpand@{AutoScaleExpand}}
+\index{AutoScaleExpand@{AutoScaleExpand}!ScottPlot.AxisManager@{ScottPlot.AxisManager}}
+\doxysubsubsection{\texorpdfstring{AutoScaleExpand()}{AutoScaleExpand()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axis_manager_a319585b48e51ebd1041c69ad8b05c9f4} 
+void Scott\+Plot.\+Axis\+Manager.\+Auto\+Scale\+Expand (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Automatically expand the default axes to fit the data in all plottables. 
+
+\Hypertarget{class_scott_plot_1_1_axis_manager_a68641371466ec886142deb7a4a098fe4}\index{ScottPlot.AxisManager@{ScottPlot.AxisManager}!AutoScaleExpand@{AutoScaleExpand}}
+\index{AutoScaleExpand@{AutoScaleExpand}!ScottPlot.AxisManager@{ScottPlot.AxisManager}}
+\doxysubsubsection{\texorpdfstring{AutoScaleExpand()}{AutoScaleExpand()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axis_manager_a68641371466ec886142deb7a4a098fe4} 
+void Scott\+Plot.\+Axis\+Manager.\+Auto\+Scale\+Expand (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_scott_plot_1_1_i_x_axis}{IXAxis}}}]{x\+Axis}{, }\item[{\mbox{\hyperlink{interface_scott_plot_1_1_i_y_axis}{IYAxis}}}]{y\+Axis}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Automatically expand the provided axes to fit the data in all plottables. 
+
+\Hypertarget{class_scott_plot_1_1_axis_manager_a46784dde520a6edc05aeb4ab893c8163}\index{ScottPlot.AxisManager@{ScottPlot.AxisManager}!AutoScaleExpandX@{AutoScaleExpandX}}
+\index{AutoScaleExpandX@{AutoScaleExpandX}!ScottPlot.AxisManager@{ScottPlot.AxisManager}}
+\doxysubsubsection{\texorpdfstring{AutoScaleExpandX()}{AutoScaleExpandX()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axis_manager_a46784dde520a6edc05aeb4ab893c8163} 
+void Scott\+Plot.\+Axis\+Manager.\+Auto\+Scale\+ExpandX (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Automatically expand the default horizontal axis to fit the data in all plottables. 
+
+\Hypertarget{class_scott_plot_1_1_axis_manager_a5d58e1de70a846b58cdbfb09a1f8a39a}\index{ScottPlot.AxisManager@{ScottPlot.AxisManager}!AutoScaleExpandX@{AutoScaleExpandX}}
+\index{AutoScaleExpandX@{AutoScaleExpandX}!ScottPlot.AxisManager@{ScottPlot.AxisManager}}
+\doxysubsubsection{\texorpdfstring{AutoScaleExpandX()}{AutoScaleExpandX()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axis_manager_a5d58e1de70a846b58cdbfb09a1f8a39a} 
+void Scott\+Plot.\+Axis\+Manager.\+Auto\+Scale\+ExpandX (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_scott_plot_1_1_i_x_axis}{IXAxis}}}]{x\+Axis}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Automatically expand the provided axes horizontally to fit the data in all plottables. 
+
+\Hypertarget{class_scott_plot_1_1_axis_manager_a3667cb5eec11f9e88ad67ffed31cbe23}\index{ScottPlot.AxisManager@{ScottPlot.AxisManager}!AutoScaleExpandY@{AutoScaleExpandY}}
+\index{AutoScaleExpandY@{AutoScaleExpandY}!ScottPlot.AxisManager@{ScottPlot.AxisManager}}
+\doxysubsubsection{\texorpdfstring{AutoScaleExpandY()}{AutoScaleExpandY()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axis_manager_a3667cb5eec11f9e88ad67ffed31cbe23} 
+void Scott\+Plot.\+Axis\+Manager.\+Auto\+Scale\+ExpandY (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Automatically expand the default vertical axis to fit the data in all plottables. 
+
+\Hypertarget{class_scott_plot_1_1_axis_manager_a99fa5421bc13570b198fd716decb2ae2}\index{ScottPlot.AxisManager@{ScottPlot.AxisManager}!AutoScaleExpandY@{AutoScaleExpandY}}
+\index{AutoScaleExpandY@{AutoScaleExpandY}!ScottPlot.AxisManager@{ScottPlot.AxisManager}}
+\doxysubsubsection{\texorpdfstring{AutoScaleExpandY()}{AutoScaleExpandY()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axis_manager_a99fa5421bc13570b198fd716decb2ae2} 
+void Scott\+Plot.\+Axis\+Manager.\+Auto\+Scale\+ExpandY (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_scott_plot_1_1_i_y_axis}{IYAxis}}}]{y\+Axis}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Automatically expand the provided axes vertically to fit the data in all plottables. 
+
+\Hypertarget{class_scott_plot_1_1_axis_manager_a3d1ecf5231533e73666f11193485af2d}\index{ScottPlot.AxisManager@{ScottPlot.AxisManager}!AutoScaleX@{AutoScaleX}}
+\index{AutoScaleX@{AutoScaleX}!ScottPlot.AxisManager@{ScottPlot.AxisManager}}
+\doxysubsubsection{\texorpdfstring{AutoScaleX()}{AutoScaleX()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axis_manager_a3d1ecf5231533e73666f11193485af2d} 
+void Scott\+Plot.\+Axis\+Manager.\+Auto\+ScaleX (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Autoscale the bottom horizontal axis limits to fit the data of all plotted objects. 
+
+\Hypertarget{class_scott_plot_1_1_axis_manager_afce29648729b330bd2bf8fefd3bf6345}\index{ScottPlot.AxisManager@{ScottPlot.AxisManager}!AutoScaleX@{AutoScaleX}}
+\index{AutoScaleX@{AutoScaleX}!ScottPlot.AxisManager@{ScottPlot.AxisManager}}
+\doxysubsubsection{\texorpdfstring{AutoScaleX()}{AutoScaleX()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axis_manager_afce29648729b330bd2bf8fefd3bf6345} 
+void Scott\+Plot.\+Axis\+Manager.\+Auto\+ScaleX (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_i_enumerable}{IEnumerable}}$<$ \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable}{IPlottable}} $>$}]{plottables}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Autoscale the default bottom horizontal axis limits to fit the data of the supplied plottables. 
+
+\Hypertarget{class_scott_plot_1_1_axis_manager_ac8e5318a28198204d83b9af5ecfbd718}\index{ScottPlot.AxisManager@{ScottPlot.AxisManager}!AutoScaleX@{AutoScaleX}}
+\index{AutoScaleX@{AutoScaleX}!ScottPlot.AxisManager@{ScottPlot.AxisManager}}
+\doxysubsubsection{\texorpdfstring{AutoScaleX()}{AutoScaleX()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axis_manager_ac8e5318a28198204d83b9af5ecfbd718} 
+void Scott\+Plot.\+Axis\+Manager.\+Auto\+ScaleX (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_scott_plot_1_1_i_x_axis}{IXAxis}}}]{x\+Axis}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Autoscale the supplied horizontal axis limits to fit the data of all plotted objects. 
+
+\Hypertarget{class_scott_plot_1_1_axis_manager_ae9479c4b0ea1e99a412276e104d5d710}\index{ScottPlot.AxisManager@{ScottPlot.AxisManager}!AutoScaleY@{AutoScaleY}}
+\index{AutoScaleY@{AutoScaleY}!ScottPlot.AxisManager@{ScottPlot.AxisManager}}
+\doxysubsubsection{\texorpdfstring{AutoScaleY()}{AutoScaleY()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axis_manager_ae9479c4b0ea1e99a412276e104d5d710} 
+void Scott\+Plot.\+Axis\+Manager.\+Auto\+ScaleY (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Autoscale the left vertical axis limits to fit the data of all plotted objects. 
+
+\Hypertarget{class_scott_plot_1_1_axis_manager_a4866d6f94116936c1b2e7a3f201a84ca}\index{ScottPlot.AxisManager@{ScottPlot.AxisManager}!AutoScaleY@{AutoScaleY}}
+\index{AutoScaleY@{AutoScaleY}!ScottPlot.AxisManager@{ScottPlot.AxisManager}}
+\doxysubsubsection{\texorpdfstring{AutoScaleY()}{AutoScaleY()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axis_manager_a4866d6f94116936c1b2e7a3f201a84ca} 
+void Scott\+Plot.\+Axis\+Manager.\+Auto\+ScaleY (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_i_enumerable}{IEnumerable}}$<$ \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable}{IPlottable}} $>$}]{plottables}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Autoscale the default left vertical axis limits to fit the data of the supplied plottables. 
+
+\Hypertarget{class_scott_plot_1_1_axis_manager_ad722be111a8aa579a51cad9d0f6f5ccd}\index{ScottPlot.AxisManager@{ScottPlot.AxisManager}!AutoScaleY@{AutoScaleY}}
+\index{AutoScaleY@{AutoScaleY}!ScottPlot.AxisManager@{ScottPlot.AxisManager}}
+\doxysubsubsection{\texorpdfstring{AutoScaleY()}{AutoScaleY()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axis_manager_ad722be111a8aa579a51cad9d0f6f5ccd} 
+void Scott\+Plot.\+Axis\+Manager.\+Auto\+ScaleY (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_scott_plot_1_1_i_y_axis}{IYAxis}}}]{y\+Axis}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Autoscale the supplied vertical axis limits to fit the data of all plotted objects. 
+
+\Hypertarget{class_scott_plot_1_1_axis_manager_af6120aaf80e6c93ba226ae47ae17599d}\index{ScottPlot.AxisManager@{ScottPlot.AxisManager}!Color@{Color}}
+\index{Color@{Color}!ScottPlot.AxisManager@{ScottPlot.AxisManager}}
+\doxysubsubsection{\texorpdfstring{Color()}{Color()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axis_manager_af6120aaf80e6c93ba226ae47ae17599d} 
+void Scott\+Plot.\+Axis\+Manager.\+Color (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}}}]{color}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Apply a single color to the label, tick labels, tick marks, and frame of all axes. 
+
+\Hypertarget{class_scott_plot_1_1_axis_manager_a935d126fa1cabcfc44c8da8365eb5429}\index{ScottPlot.AxisManager@{ScottPlot.AxisManager}!Color@{Color}}
+\index{Color@{Color}!ScottPlot.AxisManager@{ScottPlot.AxisManager}}
+\doxysubsubsection{\texorpdfstring{Color()}{Color()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axis_manager_a935d126fa1cabcfc44c8da8365eb5429} 
+void Scott\+Plot.\+Axis\+Manager.\+Color (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_scott_plot_1_1_i_axis}{IAxis}}}]{axis}{, }\item[{\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}}}]{color}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Apply a single color to the label, tick labels, tick marks, and frame of the specified axis. 
+
+\Hypertarget{class_scott_plot_1_1_axis_manager_a851400da6061f452f8e3b93b6eece538}\index{ScottPlot.AxisManager@{ScottPlot.AxisManager}!DateTimeTicksBottom@{DateTimeTicksBottom}}
+\index{DateTimeTicksBottom@{DateTimeTicksBottom}!ScottPlot.AxisManager@{ScottPlot.AxisManager}}
+\doxysubsubsection{\texorpdfstring{DateTimeTicksBottom()}{DateTimeTicksBottom()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axis_manager_a851400da6061f452f8e3b93b6eece538} 
+\mbox{\hyperlink{class_scott_plot_1_1_axis_panels_1_1_date_time_x_axis}{Date\+Time\+XAxis}} Scott\+Plot.\+Axis\+Manager.\+Date\+Time\+Ticks\+Bottom (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Remove all bottom axes, create a Date\+Time bottom axis, add it to the plot, and return it. 
+
+\Hypertarget{class_scott_plot_1_1_axis_manager_a9506cb3c9a8921064bc99e12f6ab6bc4}\index{ScottPlot.AxisManager@{ScottPlot.AxisManager}!DefaultContinuousAutoscaleAction@{DefaultContinuousAutoscaleAction}}
+\index{DefaultContinuousAutoscaleAction@{DefaultContinuousAutoscaleAction}!ScottPlot.AxisManager@{ScottPlot.AxisManager}}
+\doxysubsubsection{\texorpdfstring{DefaultContinuousAutoscaleAction()}{DefaultContinuousAutoscaleAction()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axis_manager_a9506cb3c9a8921064bc99e12f6ab6bc4} 
+static void Scott\+Plot.\+Axis\+Manager.\+Default\+Continuous\+Autoscale\+Action (\begin{DoxyParamCaption}\item[{Render\+Pack}]{rp}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\Hypertarget{class_scott_plot_1_1_axis_manager_a6b3d5b1549a8f3789384c7c55fad65f7}\index{ScottPlot.AxisManager@{ScottPlot.AxisManager}!Frame@{Frame}}
+\index{Frame@{Frame}!ScottPlot.AxisManager@{ScottPlot.AxisManager}}
+\doxysubsubsection{\texorpdfstring{Frame()}{Frame()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axis_manager_a6b3d5b1549a8f3789384c7c55fad65f7} 
+void Scott\+Plot.\+Axis\+Manager.\+Frame (\begin{DoxyParamCaption}\item[{bool}]{enable}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set visibility of the frame on every axis. 
+
+\Hypertarget{class_scott_plot_1_1_axis_manager_a390e62b34464d2efa484ccdca2bb7e46}\index{ScottPlot.AxisManager@{ScottPlot.AxisManager}!FrameColor@{FrameColor}}
+\index{FrameColor@{FrameColor}!ScottPlot.AxisManager@{ScottPlot.AxisManager}}
+\doxysubsubsection{\texorpdfstring{FrameColor()}{FrameColor()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axis_manager_a390e62b34464d2efa484ccdca2bb7e46} 
+void Scott\+Plot.\+Axis\+Manager.\+Frame\+Color (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}}}]{color}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set color of the frame on every axis. 
+
+\Hypertarget{class_scott_plot_1_1_axis_manager_a0560a4f6211e426e4bf2693436f8fcad}\index{ScottPlot.AxisManager@{ScottPlot.AxisManager}!Frameless@{Frameless}}
+\index{Frameless@{Frameless}!ScottPlot.AxisManager@{ScottPlot.AxisManager}}
+\doxysubsubsection{\texorpdfstring{Frameless()}{Frameless()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axis_manager_a0560a4f6211e426e4bf2693436f8fcad} 
+void Scott\+Plot.\+Axis\+Manager.\+Frameless (\begin{DoxyParamCaption}\item[{bool}]{show\+Title}{ = {\ttfamily false}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Disable visibility of all axes and titles so the data area fills the entire figure. 
+
+\Hypertarget{class_scott_plot_1_1_axis_manager_a9572b1533fef4e11d0d55c1fa2db203d}\index{ScottPlot.AxisManager@{ScottPlot.AxisManager}!FrameWidth@{FrameWidth}}
+\index{FrameWidth@{FrameWidth}!ScottPlot.AxisManager@{ScottPlot.AxisManager}}
+\doxysubsubsection{\texorpdfstring{FrameWidth()}{FrameWidth()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axis_manager_a9572b1533fef4e11d0d55c1fa2db203d} 
+void Scott\+Plot.\+Axis\+Manager.\+Frame\+Width (\begin{DoxyParamCaption}\item[{float}]{width}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set thickness of the frame on every axis. 
+
+\Hypertarget{class_scott_plot_1_1_axis_manager_a7e28cc2ba54cd428ee9127666854327b}\index{ScottPlot.AxisManager@{ScottPlot.AxisManager}!GetAxes@{GetAxes}}
+\index{GetAxes@{GetAxes}!ScottPlot.AxisManager@{ScottPlot.AxisManager}}
+\doxysubsubsection{\texorpdfstring{GetAxes()}{GetAxes()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axis_manager_a7e28cc2ba54cd428ee9127666854327b} 
+\mbox{\hyperlink{class_i_enumerable}{IEnumerable}}$<$ \mbox{\hyperlink{interface_scott_plot_1_1_i_axis}{IAxis}} $>$ Scott\+Plot.\+Axis\+Manager.\+Get\+Axes (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+All axes. 
+
+\Hypertarget{class_scott_plot_1_1_axis_manager_ae5aa006c713b13ba096cec5e655bd39a}\index{ScottPlot.AxisManager@{ScottPlot.AxisManager}!GetAxes@{GetAxes}}
+\index{GetAxes@{GetAxes}!ScottPlot.AxisManager@{ScottPlot.AxisManager}}
+\doxysubsubsection{\texorpdfstring{GetAxes()}{GetAxes()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axis_manager_ae5aa006c713b13ba096cec5e655bd39a} 
+\mbox{\hyperlink{class_i_enumerable}{IEnumerable}}$<$ \mbox{\hyperlink{interface_scott_plot_1_1_i_axis}{IAxis}} $>$ Scott\+Plot.\+Axis\+Manager.\+Get\+Axes (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_scott_plot_a33d0346dfdd3d1d7cefc8d769ca98fcc}{Edge}}}]{edge}{}\end{DoxyParamCaption})}
+
+
+
+All axes with the given edge. 
+
+\Hypertarget{class_scott_plot_1_1_axis_manager_af1513d5719b33774dcc357bd1c9a2bb9}\index{ScottPlot.AxisManager@{ScottPlot.AxisManager}!GetDataLimits@{GetDataLimits}}
+\index{GetDataLimits@{GetDataLimits}!ScottPlot.AxisManager@{ScottPlot.AxisManager}}
+\doxysubsubsection{\texorpdfstring{GetDataLimits()}{GetDataLimits()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axis_manager_af1513d5719b33774dcc357bd1c9a2bb9} 
+\mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}} Scott\+Plot.\+Axis\+Manager.\+Get\+Data\+Limits (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return the 2D axis limits of data for all plottables using the default axes. 
+
+\Hypertarget{class_scott_plot_1_1_axis_manager_ad6a0889a36a06a1fe6fdbbc8fdd4c9e5}\index{ScottPlot.AxisManager@{ScottPlot.AxisManager}!GetDataLimits@{GetDataLimits}}
+\index{GetDataLimits@{GetDataLimits}!ScottPlot.AxisManager@{ScottPlot.AxisManager}}
+\doxysubsubsection{\texorpdfstring{GetDataLimits()}{GetDataLimits()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axis_manager_ad6a0889a36a06a1fe6fdbbc8fdd4c9e5} 
+\mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}} Scott\+Plot.\+Axis\+Manager.\+Get\+Data\+Limits (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_scott_plot_1_1_i_x_axis}{IXAxis}}}]{x\+Axis}{, }\item[{\mbox{\hyperlink{interface_scott_plot_1_1_i_y_axis}{IYAxis}}}]{y\+Axis}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return the 2D axis limits of data for all plottables using the given axes. 
+
+\Hypertarget{class_scott_plot_1_1_axis_manager_ae5a00bf89900efea1f93ca0d638f8eab}\index{ScottPlot.AxisManager@{ScottPlot.AxisManager}!GetLimits@{GetLimits}}
+\index{GetLimits@{GetLimits}!ScottPlot.AxisManager@{ScottPlot.AxisManager}}
+\doxysubsubsection{\texorpdfstring{GetLimits()}{GetLimits()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axis_manager_ae5a00bf89900efea1f93ca0d638f8eab} 
+\mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}} Scott\+Plot.\+Axis\+Manager.\+Get\+Limits (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return the 2D axis limits for the default axes. 
+
+\Hypertarget{class_scott_plot_1_1_axis_manager_a06808939046c6c36e358fde8480d5b4b}\index{ScottPlot.AxisManager@{ScottPlot.AxisManager}!GetLimits@{GetLimits}}
+\index{GetLimits@{GetLimits}!ScottPlot.AxisManager@{ScottPlot.AxisManager}}
+\doxysubsubsection{\texorpdfstring{GetLimits()}{GetLimits()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axis_manager_a06808939046c6c36e358fde8480d5b4b} 
+\mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}} Scott\+Plot.\+Axis\+Manager.\+Get\+Limits (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_scott_plot_1_1_i_axes}{IAxes}}}]{axes}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return the 2D axis limits for the given X/Y axis pair. 
+
+\Hypertarget{class_scott_plot_1_1_axis_manager_a9bba244708b439ef7e2f2f0af8c884d4}\index{ScottPlot.AxisManager@{ScottPlot.AxisManager}!GetLimits@{GetLimits}}
+\index{GetLimits@{GetLimits}!ScottPlot.AxisManager@{ScottPlot.AxisManager}}
+\doxysubsubsection{\texorpdfstring{GetLimits()}{GetLimits()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axis_manager_a9bba244708b439ef7e2f2f0af8c884d4} 
+\mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}} Scott\+Plot.\+Axis\+Manager.\+Get\+Limits (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_scott_plot_1_1_i_x_axis}{IXAxis}}}]{x\+Axis}{, }\item[{\mbox{\hyperlink{interface_scott_plot_1_1_i_y_axis}{IYAxis}}}]{y\+Axis}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return the 2D axis limits for the given X/Y axis pair. 
+
+\Hypertarget{class_scott_plot_1_1_axis_manager_a84d547d1016cdfb49f36dbdeac89244c}\index{ScottPlot.AxisManager@{ScottPlot.AxisManager}!Hairline@{Hairline}}
+\index{Hairline@{Hairline}!ScottPlot.AxisManager@{ScottPlot.AxisManager}}
+\doxysubsubsection{\texorpdfstring{Hairline()}{Hairline()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axis_manager_a84d547d1016cdfb49f36dbdeac89244c} 
+void Scott\+Plot.\+Axis\+Manager.\+Hairline (\begin{DoxyParamCaption}\item[{bool}]{enable}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Hairline mode causes lines to always render exactly 1 pixel wide regardless of \doxylink{class_scott_plot_1_1_plot_a6daefbcf32aa926763593cd79a1a815d}{Plot.\+Scale\+Factor}. This function controls hairline behavior for all axis frames. tick marks, and grid lines. 
+
+\Hypertarget{class_scott_plot_1_1_axis_manager_af18f2a277017f06859f4e6734fe2025a}\index{ScottPlot.AxisManager@{ScottPlot.AxisManager}!InvertX@{InvertX}}
+\index{InvertX@{InvertX}!ScottPlot.AxisManager@{ScottPlot.AxisManager}}
+\doxysubsubsection{\texorpdfstring{InvertX()}{InvertX()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axis_manager_af18f2a277017f06859f4e6734fe2025a} 
+void Scott\+Plot.\+Axis\+Manager.\+InvertX (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Adjust the horizontal axis so values descend from left to right. 
+
+\Hypertarget{class_scott_plot_1_1_axis_manager_a5c02fe6266d0ec1b765da11e90f29283}\index{ScottPlot.AxisManager@{ScottPlot.AxisManager}!InvertY@{InvertY}}
+\index{InvertY@{InvertY}!ScottPlot.AxisManager@{ScottPlot.AxisManager}}
+\doxysubsubsection{\texorpdfstring{InvertY()}{InvertY()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axis_manager_a5c02fe6266d0ec1b765da11e90f29283} 
+void Scott\+Plot.\+Axis\+Manager.\+InvertY (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Adjust the vertical axis so values descend from bottom to top. 
+
+\Hypertarget{class_scott_plot_1_1_axis_manager_a462143391251ebb9cc6ee3c08b11383f}\index{ScottPlot.AxisManager@{ScottPlot.AxisManager}!Link@{Link}}
+\index{Link@{Link}!ScottPlot.AxisManager@{ScottPlot.AxisManager}}
+\doxysubsubsection{\texorpdfstring{Link()}{Link()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axis_manager_a462143391251ebb9cc6ee3c08b11383f} 
+void Scott\+Plot.\+Axis\+Manager.\+Link (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_scott_plot_1_1_i_axis}{IAxis}}}]{this\+Plot\+Axis}{, }\item[{\mbox{\hyperlink{interface_scott_plot_1_1_i_axis}{IAxis}}}]{other\+Plot\+Axis}{, }\item[{\mbox{\hyperlink{class_scott_plot_1_1_plot}{Plot}}}]{other\+Plot}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Add a link to another plot\textquotesingle{}s axis so its limits update when limits of an axis from this plot changes. 
+
+\Hypertarget{class_scott_plot_1_1_axis_manager_a8e3380a5b0cdcb420f22bba0e5a5639d}\index{ScottPlot.AxisManager@{ScottPlot.AxisManager}!Link@{Link}}
+\index{Link@{Link}!ScottPlot.AxisManager@{ScottPlot.AxisManager}}
+\doxysubsubsection{\texorpdfstring{Link()}{Link()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axis_manager_a8e3380a5b0cdcb420f22bba0e5a5639d} 
+void Scott\+Plot.\+Axis\+Manager.\+Link (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_scott_plot_1_1_i_plot_control}{IPlot\+Control}}}]{target}{, }\item[{bool}]{x}{ = {\ttfamily true}, }\item[{bool}]{y}{ = {\ttfamily true}}\end{DoxyParamCaption})}
+
+
+
+Add a link to the target plot control so its axis limits update when this plot\textquotesingle{}s axis limits change. 
+
+\Hypertarget{class_scott_plot_1_1_axis_manager_aa6f4f9d609558c875ca91da8c1d35124}\index{ScottPlot.AxisManager@{ScottPlot.AxisManager}!Link@{Link}}
+\index{Link@{Link}!ScottPlot.AxisManager@{ScottPlot.AxisManager}}
+\doxysubsubsection{\texorpdfstring{Link()}{Link()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axis_manager_aa6f4f9d609558c875ca91da8c1d35124} 
+void Scott\+Plot.\+Axis\+Manager.\+Link (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_scott_plot_1_1_plot}{Plot}}}]{target}{, }\item[{bool}]{x}{ = {\ttfamily true}, }\item[{bool}]{y}{ = {\ttfamily true}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Add a link to the target plot so its axis limits update when this plot\textquotesingle{}s axis limits change. 
+
+\Hypertarget{class_scott_plot_1_1_axis_manager_ab73c3a7f9b376b427ef3781a438d6d9d}\index{ScottPlot.AxisManager@{ScottPlot.AxisManager}!Margins@{Margins}}
+\index{Margins@{Margins}!ScottPlot.AxisManager@{ScottPlot.AxisManager}}
+\doxysubsubsection{\texorpdfstring{Margins()}{Margins()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axis_manager_ab73c3a7f9b376b427ef3781a438d6d9d} 
+void Scott\+Plot.\+Axis\+Manager.\+Margins (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Reset plot data margins to their default value. 
+
+\Hypertarget{class_scott_plot_1_1_axis_manager_aa81bda5cada1e89ffc723445e9441e85}\index{ScottPlot.AxisManager@{ScottPlot.AxisManager}!Margins@{Margins}}
+\index{Margins@{Margins}!ScottPlot.AxisManager@{ScottPlot.AxisManager}}
+\doxysubsubsection{\texorpdfstring{Margins()}{Margins()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axis_manager_aa81bda5cada1e89ffc723445e9441e85} 
+void Scott\+Plot.\+Axis\+Manager.\+Margins (\begin{DoxyParamCaption}\item[{double}]{horizontal}{ = {\ttfamily 0\+:\+:1}, }\item[{double}]{vertical}{ = {\ttfamily \+:\+:15}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Define the amount of whitespace to place around the data area when calling \doxylink{class_scott_plot_1_1_axis_manager_a153f379f7afd85f0f7b45d0f3484b5a3}{Auto\+Scale()}. Values are a fraction from 0 (tightly fit the data) to 1 (lots of whitespace). 
+
+\Hypertarget{class_scott_plot_1_1_axis_manager_afd4ca7c397ab7ec21e8be88e94c53dc3}\index{ScottPlot.AxisManager@{ScottPlot.AxisManager}!Margins@{Margins}}
+\index{Margins@{Margins}!ScottPlot.AxisManager@{ScottPlot.AxisManager}}
+\doxysubsubsection{\texorpdfstring{Margins()}{Margins()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axis_manager_afd4ca7c397ab7ec21e8be88e94c53dc3} 
+void Scott\+Plot.\+Axis\+Manager.\+Margins (\begin{DoxyParamCaption}\item[{double}]{left}{ = {\ttfamily \+:\+:05}, }\item[{double}]{right}{ = {\ttfamily \+:\+:05}, }\item[{double}]{bottom}{ = {\ttfamily \+:\+:07}, }\item[{double}]{top}{ = {\ttfamily \+:\+:07}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Define the amount of whitespace to place around the data area when calling \doxylink{class_scott_plot_1_1_axis_manager_a153f379f7afd85f0f7b45d0f3484b5a3}{Auto\+Scale()}. Values are a fraction from 0 (tightly fit the data) to 1 (lots of whitespace). 
+
+\Hypertarget{class_scott_plot_1_1_axis_manager_ad9b715785a17e37265095f1a6d10eb9d}\index{ScottPlot.AxisManager@{ScottPlot.AxisManager}!Pan@{Pan}}
+\index{Pan@{Pan}!ScottPlot.AxisManager@{ScottPlot.AxisManager}}
+\doxysubsubsection{\texorpdfstring{Pan()}{Pan()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axis_manager_ad9b715785a17e37265095f1a6d10eb9d} 
+void Scott\+Plot.\+Axis\+Manager.\+Pan (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_scott_plot_a1d50f487129d99b603f7d00c100a0226}{Coordinate\+Offset}}}]{distance}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Adjust limits all axes to pan by the given distance in coordinate space. 
+
+\Hypertarget{class_scott_plot_1_1_axis_manager_a27d21b79ee056f2e147559927e729772}\index{ScottPlot.AxisManager@{ScottPlot.AxisManager}!Pan@{Pan}}
+\index{Pan@{Pan}!ScottPlot.AxisManager@{ScottPlot.AxisManager}}
+\doxysubsubsection{\texorpdfstring{Pan()}{Pan()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axis_manager_a27d21b79ee056f2e147559927e729772} 
+void Scott\+Plot.\+Axis\+Manager.\+Pan (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}}}]{mouse\+Down}{, }\item[{\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}}}]{mouse\+Up}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Adjust limits all axes to pan the pixel distance between two points. 
+
+\Hypertarget{class_scott_plot_1_1_axis_manager_aba60dfd19b051abb7940c091bc0584e3}\index{ScottPlot.AxisManager@{ScottPlot.AxisManager}!Pan@{Pan}}
+\index{Pan@{Pan}!ScottPlot.AxisManager@{ScottPlot.AxisManager}}
+\doxysubsubsection{\texorpdfstring{Pan()}{Pan()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axis_manager_aba60dfd19b051abb7940c091bc0584e3} 
+void Scott\+Plot.\+Axis\+Manager.\+Pan (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_scott_plot_a3dfefa78aee0c8cf7184895e4ad7d44b}{Pixel\+Offset}}}]{offset}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Adjust limits all axes to pan given pixel distance. 
+
+\Hypertarget{class_scott_plot_1_1_axis_manager_a112e4a0af6a0e6cbcb96f847afb0ab76}\index{ScottPlot.AxisManager@{ScottPlot.AxisManager}!RectifyX@{RectifyX}}
+\index{RectifyX@{RectifyX}!ScottPlot.AxisManager@{ScottPlot.AxisManager}}
+\doxysubsubsection{\texorpdfstring{RectifyX()}{RectifyX()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axis_manager_a112e4a0af6a0e6cbcb96f847afb0ab76} 
+void Scott\+Plot.\+Axis\+Manager.\+RectifyX (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Adjust the horizontal axis so values ascend from left to right. 
+
+\Hypertarget{class_scott_plot_1_1_axis_manager_ad2f4aa756e8102bc4aea70f171ebbbf6}\index{ScottPlot.AxisManager@{ScottPlot.AxisManager}!RectifyY@{RectifyY}}
+\index{RectifyY@{RectifyY}!ScottPlot.AxisManager@{ScottPlot.AxisManager}}
+\doxysubsubsection{\texorpdfstring{RectifyY()}{RectifyY()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axis_manager_ad2f4aa756e8102bc4aea70f171ebbbf6} 
+void Scott\+Plot.\+Axis\+Manager.\+RectifyY (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Adjust the vertical axis so values ascend from bottom to top. 
+
+\Hypertarget{class_scott_plot_1_1_axis_manager_aea024b1d3d634201b626754f2b8297f4}\index{ScottPlot.AxisManager@{ScottPlot.AxisManager}!Remove@{Remove}}
+\index{Remove@{Remove}!ScottPlot.AxisManager@{ScottPlot.AxisManager}}
+\doxysubsubsection{\texorpdfstring{Remove()}{Remove()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axis_manager_aea024b1d3d634201b626754f2b8297f4} 
+void Scott\+Plot.\+Axis\+Manager.\+Remove (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_scott_plot_a33d0346dfdd3d1d7cefc8d769ca98fcc}{Edge}}}]{edge}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Remove all axes that lie on the given edge. 
+
+\Hypertarget{class_scott_plot_1_1_axis_manager_a03a29e1e38b00cc837bb7f2bcb9450a0}\index{ScottPlot.AxisManager@{ScottPlot.AxisManager}!Remove@{Remove}}
+\index{Remove@{Remove}!ScottPlot.AxisManager@{ScottPlot.AxisManager}}
+\doxysubsubsection{\texorpdfstring{Remove()}{Remove()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axis_manager_a03a29e1e38b00cc837bb7f2bcb9450a0} 
+void Scott\+Plot.\+Axis\+Manager.\+Remove (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_scott_plot_1_1_i_axis}{IAxis}}}]{axis}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Remove the given axis from the plot. 
+
+\Hypertarget{class_scott_plot_1_1_axis_manager_ab12351ee8cfab246dc69bf0af877a341}\index{ScottPlot.AxisManager@{ScottPlot.AxisManager}!Remove@{Remove}}
+\index{Remove@{Remove}!ScottPlot.AxisManager@{ScottPlot.AxisManager}}
+\doxysubsubsection{\texorpdfstring{Remove()}{Remove()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axis_manager_ab12351ee8cfab246dc69bf0af877a341} 
+void Scott\+Plot.\+Axis\+Manager.\+Remove (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_scott_plot_1_1_i_panel}{IPanel}}}]{panel}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Remove the given Panel. 
+
+\Hypertarget{class_scott_plot_1_1_axis_manager_a14022e9ad1ba92413de1dd13f93022d9}\index{ScottPlot.AxisManager@{ScottPlot.AxisManager}!SetLimits@{SetLimits}}
+\index{SetLimits@{SetLimits}!ScottPlot.AxisManager@{ScottPlot.AxisManager}}
+\doxysubsubsection{\texorpdfstring{SetLimits()}{SetLimits()}\hspace{0.1cm}{\footnotesize\ttfamily [1/7]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axis_manager_a14022e9ad1ba92413de1dd13f93022d9} 
+void Scott\+Plot.\+Axis\+Manager.\+Set\+Limits (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}}}]{limits}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_axis_manager_ab6ba93659c78540e7d006891520e3101}\index{ScottPlot.AxisManager@{ScottPlot.AxisManager}!SetLimits@{SetLimits}}
+\index{SetLimits@{SetLimits}!ScottPlot.AxisManager@{ScottPlot.AxisManager}}
+\doxysubsubsection{\texorpdfstring{SetLimits()}{SetLimits()}\hspace{0.1cm}{\footnotesize\ttfamily [2/7]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axis_manager_ab6ba93659c78540e7d006891520e3101} 
+void Scott\+Plot.\+Axis\+Manager.\+Set\+Limits (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}}}]{limits}{, }\item[{\mbox{\hyperlink{interface_scott_plot_1_1_i_x_axis}{IXAxis}}}]{x\+Axis}{, }\item[{\mbox{\hyperlink{interface_scott_plot_1_1_i_y_axis}{IYAxis}}}]{y\+Axis}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_axis_manager_a3339aa6013088f999e609a76d02c6ca7}\index{ScottPlot.AxisManager@{ScottPlot.AxisManager}!SetLimits@{SetLimits}}
+\index{SetLimits@{SetLimits}!ScottPlot.AxisManager@{ScottPlot.AxisManager}}
+\doxysubsubsection{\texorpdfstring{SetLimits()}{SetLimits()}\hspace{0.1cm}{\footnotesize\ttfamily [3/7]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axis_manager_a3339aa6013088f999e609a76d02c6ca7} 
+void Scott\+Plot.\+Axis\+Manager.\+Set\+Limits (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_scott_plot_a4f8afc1393f89ce60e775705cbf134d1}{Coordinate\+Range}}}]{x\+Range}{, }\item[{\mbox{\hyperlink{namespace_scott_plot_a4f8afc1393f89ce60e775705cbf134d1}{Coordinate\+Range}}}]{y\+Range}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_axis_manager_a071db66dd2cf30e3c189cf62c5f6f0c1}\index{ScottPlot.AxisManager@{ScottPlot.AxisManager}!SetLimits@{SetLimits}}
+\index{SetLimits@{SetLimits}!ScottPlot.AxisManager@{ScottPlot.AxisManager}}
+\doxysubsubsection{\texorpdfstring{SetLimits()}{SetLimits()}\hspace{0.1cm}{\footnotesize\ttfamily [4/7]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axis_manager_a071db66dd2cf30e3c189cf62c5f6f0c1} 
+void Scott\+Plot.\+Axis\+Manager.\+Set\+Limits (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_scott_plot_1_1_coordinate_rect}{Coordinate\+Rect}}}]{rect}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_axis_manager_ae9025cffe9dddd2c6ba0e96c281eedc2}\index{ScottPlot.AxisManager@{ScottPlot.AxisManager}!SetLimits@{SetLimits}}
+\index{SetLimits@{SetLimits}!ScottPlot.AxisManager@{ScottPlot.AxisManager}}
+\doxysubsubsection{\texorpdfstring{SetLimits()}{SetLimits()}\hspace{0.1cm}{\footnotesize\ttfamily [5/7]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axis_manager_ae9025cffe9dddd2c6ba0e96c281eedc2} 
+void Scott\+Plot.\+Axis\+Manager.\+Set\+Limits (\begin{DoxyParamCaption}\item[{double}]{left}{, }\item[{double}]{right}{, }\item[{double}]{bottom}{, }\item[{double}]{top}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_axis_manager_a386d039446a5131e06c9e61f926efe47}\index{ScottPlot.AxisManager@{ScottPlot.AxisManager}!SetLimits@{SetLimits}}
+\index{SetLimits@{SetLimits}!ScottPlot.AxisManager@{ScottPlot.AxisManager}}
+\doxysubsubsection{\texorpdfstring{SetLimits()}{SetLimits()}\hspace{0.1cm}{\footnotesize\ttfamily [6/7]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axis_manager_a386d039446a5131e06c9e61f926efe47} 
+void Scott\+Plot.\+Axis\+Manager.\+Set\+Limits (\begin{DoxyParamCaption}\item[{double}]{left}{, }\item[{double}]{right}{, }\item[{double}]{bottom}{, }\item[{double}]{top}{, }\item[{\mbox{\hyperlink{interface_scott_plot_1_1_i_x_axis}{IXAxis}}}]{x\+Axis}{, }\item[{\mbox{\hyperlink{interface_scott_plot_1_1_i_y_axis}{IYAxis}}}]{y\+Axis}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_axis_manager_a0d1db82dfab08807922bfd3d9ed0dc9a}\index{ScottPlot.AxisManager@{ScottPlot.AxisManager}!SetLimits@{SetLimits}}
+\index{SetLimits@{SetLimits}!ScottPlot.AxisManager@{ScottPlot.AxisManager}}
+\doxysubsubsection{\texorpdfstring{SetLimits()}{SetLimits()}\hspace{0.1cm}{\footnotesize\ttfamily [7/7]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axis_manager_a0d1db82dfab08807922bfd3d9ed0dc9a} 
+void Scott\+Plot.\+Axis\+Manager.\+Set\+Limits (\begin{DoxyParamCaption}\item[{double?}]{left}{ = {\ttfamily null}, }\item[{double?}]{right}{ = {\ttfamily null}, }\item[{double?}]{bottom}{ = {\ttfamily null}, }\item[{double?}]{top}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_axis_manager_ae148cf990e1757a8e182ed21f709e288}\index{ScottPlot.AxisManager@{ScottPlot.AxisManager}!SetLimitsX@{SetLimitsX}}
+\index{SetLimitsX@{SetLimitsX}!ScottPlot.AxisManager@{ScottPlot.AxisManager}}
+\doxysubsubsection{\texorpdfstring{SetLimitsX()}{SetLimitsX()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axis_manager_ae148cf990e1757a8e182ed21f709e288} 
+void Scott\+Plot.\+Axis\+Manager.\+Set\+LimitsX (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}}}]{limits}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_axis_manager_a7d37aa5c10d6963e4147bbb321508b84}\index{ScottPlot.AxisManager@{ScottPlot.AxisManager}!SetLimitsX@{SetLimitsX}}
+\index{SetLimitsX@{SetLimitsX}!ScottPlot.AxisManager@{ScottPlot.AxisManager}}
+\doxysubsubsection{\texorpdfstring{SetLimitsX()}{SetLimitsX()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axis_manager_a7d37aa5c10d6963e4147bbb321508b84} 
+void Scott\+Plot.\+Axis\+Manager.\+Set\+LimitsX (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}}}]{limits}{, }\item[{\mbox{\hyperlink{interface_scott_plot_1_1_i_x_axis}{IXAxis}}}]{x\+Axis}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_axis_manager_ac45864ec9574ba8a621779f6a6d374fd}\index{ScottPlot.AxisManager@{ScottPlot.AxisManager}!SetLimitsX@{SetLimitsX}}
+\index{SetLimitsX@{SetLimitsX}!ScottPlot.AxisManager@{ScottPlot.AxisManager}}
+\doxysubsubsection{\texorpdfstring{SetLimitsX()}{SetLimitsX()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axis_manager_ac45864ec9574ba8a621779f6a6d374fd} 
+void Scott\+Plot.\+Axis\+Manager.\+Set\+LimitsX (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_scott_plot_1_1_coordinate_rect}{Coordinate\+Rect}}}]{limits}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_axis_manager_a6aad0d8b7518bdf1e915f00b0139ed44}\index{ScottPlot.AxisManager@{ScottPlot.AxisManager}!SetLimitsX@{SetLimitsX}}
+\index{SetLimitsX@{SetLimitsX}!ScottPlot.AxisManager@{ScottPlot.AxisManager}}
+\doxysubsubsection{\texorpdfstring{SetLimitsX()}{SetLimitsX()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axis_manager_a6aad0d8b7518bdf1e915f00b0139ed44} 
+void Scott\+Plot.\+Axis\+Manager.\+Set\+LimitsX (\begin{DoxyParamCaption}\item[{double}]{left}{, }\item[{double}]{right}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_axis_manager_a9e630b7ba09187edd4aba1108036e02f}\index{ScottPlot.AxisManager@{ScottPlot.AxisManager}!SetLimitsX@{SetLimitsX}}
+\index{SetLimitsX@{SetLimitsX}!ScottPlot.AxisManager@{ScottPlot.AxisManager}}
+\doxysubsubsection{\texorpdfstring{SetLimitsX()}{SetLimitsX()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axis_manager_a9e630b7ba09187edd4aba1108036e02f} 
+void Scott\+Plot.\+Axis\+Manager.\+Set\+LimitsX (\begin{DoxyParamCaption}\item[{double}]{left}{, }\item[{double}]{right}{, }\item[{\mbox{\hyperlink{interface_scott_plot_1_1_i_x_axis}{IXAxis}}}]{x\+Axis}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_axis_manager_ae3c63ef40e3cf116831eeb19c4b59c27}\index{ScottPlot.AxisManager@{ScottPlot.AxisManager}!SetLimitsY@{SetLimitsY}}
+\index{SetLimitsY@{SetLimitsY}!ScottPlot.AxisManager@{ScottPlot.AxisManager}}
+\doxysubsubsection{\texorpdfstring{SetLimitsY()}{SetLimitsY()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axis_manager_ae3c63ef40e3cf116831eeb19c4b59c27} 
+void Scott\+Plot.\+Axis\+Manager.\+Set\+LimitsY (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}}}]{limits}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_axis_manager_a9843e6b76e6851c191643bc12c5c3a15}\index{ScottPlot.AxisManager@{ScottPlot.AxisManager}!SetLimitsY@{SetLimitsY}}
+\index{SetLimitsY@{SetLimitsY}!ScottPlot.AxisManager@{ScottPlot.AxisManager}}
+\doxysubsubsection{\texorpdfstring{SetLimitsY()}{SetLimitsY()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axis_manager_a9843e6b76e6851c191643bc12c5c3a15} 
+void Scott\+Plot.\+Axis\+Manager.\+Set\+LimitsY (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}}}]{limits}{, }\item[{\mbox{\hyperlink{interface_scott_plot_1_1_i_y_axis}{IYAxis}}}]{y\+Axis}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_axis_manager_a8ca26de5cd4685a8bd47720240e9f77f}\index{ScottPlot.AxisManager@{ScottPlot.AxisManager}!SetLimitsY@{SetLimitsY}}
+\index{SetLimitsY@{SetLimitsY}!ScottPlot.AxisManager@{ScottPlot.AxisManager}}
+\doxysubsubsection{\texorpdfstring{SetLimitsY()}{SetLimitsY()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axis_manager_a8ca26de5cd4685a8bd47720240e9f77f} 
+void Scott\+Plot.\+Axis\+Manager.\+Set\+LimitsY (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_scott_plot_1_1_coordinate_rect}{Coordinate\+Rect}}}]{limits}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_axis_manager_a09a2f2b4df512288cfbbeaa4842ff8df}\index{ScottPlot.AxisManager@{ScottPlot.AxisManager}!SetLimitsY@{SetLimitsY}}
+\index{SetLimitsY@{SetLimitsY}!ScottPlot.AxisManager@{ScottPlot.AxisManager}}
+\doxysubsubsection{\texorpdfstring{SetLimitsY()}{SetLimitsY()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axis_manager_a09a2f2b4df512288cfbbeaa4842ff8df} 
+void Scott\+Plot.\+Axis\+Manager.\+Set\+LimitsY (\begin{DoxyParamCaption}\item[{double}]{bottom}{, }\item[{double}]{top}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_axis_manager_af7fb91da0e97f74f2b26e419eb08899c}\index{ScottPlot.AxisManager@{ScottPlot.AxisManager}!SetLimitsY@{SetLimitsY}}
+\index{SetLimitsY@{SetLimitsY}!ScottPlot.AxisManager@{ScottPlot.AxisManager}}
+\doxysubsubsection{\texorpdfstring{SetLimitsY()}{SetLimitsY()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axis_manager_af7fb91da0e97f74f2b26e419eb08899c} 
+void Scott\+Plot.\+Axis\+Manager.\+Set\+LimitsY (\begin{DoxyParamCaption}\item[{double}]{bottom}{, }\item[{double}]{top}{, }\item[{\mbox{\hyperlink{interface_scott_plot_1_1_i_y_axis}{IYAxis}}}]{y\+Axis}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_scott_plot_1_1_axis_manager_ac9f0cdbec24a84ab5d28b604b0376aef}\index{ScottPlot.AxisManager@{ScottPlot.AxisManager}!SquareUnits@{SquareUnits}}
+\index{SquareUnits@{SquareUnits}!ScottPlot.AxisManager@{ScottPlot.AxisManager}}
+\doxysubsubsection{\texorpdfstring{SquareUnits()}{SquareUnits()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axis_manager_ac9f0cdbec24a84ab5d28b604b0376aef} 
+void Scott\+Plot.\+Axis\+Manager.\+Square\+Units (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Force pixels to have a 1\+:1 scale ratio. This allows circles to always appear as circles and not stretched ellipses. 
+
+\Hypertarget{class_scott_plot_1_1_axis_manager_a68e88e13cadf50bd43389ac91f2d6572}\index{ScottPlot.AxisManager@{ScottPlot.AxisManager}!Unlink@{Unlink}}
+\index{Unlink@{Unlink}!ScottPlot.AxisManager@{ScottPlot.AxisManager}}
+\doxysubsubsection{\texorpdfstring{Unlink()}{Unlink()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axis_manager_a68e88e13cadf50bd43389ac91f2d6572} 
+void Scott\+Plot.\+Axis\+Manager.\+Unlink (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_scott_plot_1_1_i_axis}{IAxis}}}]{axis}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Remove all linked axes rules involving the given axis. 
+
+\Hypertarget{class_scott_plot_1_1_axis_manager_ae9260dcf25a98182c500bb54c1c429a7}\index{ScottPlot.AxisManager@{ScottPlot.AxisManager}!Unlink@{Unlink}}
+\index{Unlink@{Unlink}!ScottPlot.AxisManager@{ScottPlot.AxisManager}}
+\doxysubsubsection{\texorpdfstring{Unlink()}{Unlink()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axis_manager_ae9260dcf25a98182c500bb54c1c429a7} 
+void Scott\+Plot.\+Axis\+Manager.\+Unlink (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_scott_plot_1_1_i_plot_control}{IPlot\+Control}}}]{target}{}\end{DoxyParamCaption})}
+
+
+
+Remove all linked axes rules involving the target plot control. 
+
+\Hypertarget{class_scott_plot_1_1_axis_manager_a0a71f702edcddb99e85e055ac4d0fc71}\index{ScottPlot.AxisManager@{ScottPlot.AxisManager}!Unlink@{Unlink}}
+\index{Unlink@{Unlink}!ScottPlot.AxisManager@{ScottPlot.AxisManager}}
+\doxysubsubsection{\texorpdfstring{Unlink()}{Unlink()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axis_manager_a0a71f702edcddb99e85e055ac4d0fc71} 
+void Scott\+Plot.\+Axis\+Manager.\+Unlink (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_scott_plot_1_1_plot}{Plot}}}]{target}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Remove all linked axes rules involving the target plot. 
+
+\Hypertarget{class_scott_plot_1_1_axis_manager_a0faca5109027df0a530e5b17b98c236a}\index{ScottPlot.AxisManager@{ScottPlot.AxisManager}!UnlinkAll@{UnlinkAll}}
+\index{UnlinkAll@{UnlinkAll}!ScottPlot.AxisManager@{ScottPlot.AxisManager}}
+\doxysubsubsection{\texorpdfstring{UnlinkAll()}{UnlinkAll()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axis_manager_a0faca5109027df0a530e5b17b98c236a} 
+void Scott\+Plot.\+Axis\+Manager.\+Unlink\+All (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Remove all linked axes rules. 
+
+\Hypertarget{class_scott_plot_1_1_axis_manager_a6f04f24ae561e9d2aa7a6d342cbdce7a}\index{ScottPlot.AxisManager@{ScottPlot.AxisManager}!Zoom@{Zoom}}
+\index{Zoom@{Zoom}!ScottPlot.AxisManager@{ScottPlot.AxisManager}}
+\doxysubsubsection{\texorpdfstring{Zoom()}{Zoom()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axis_manager_a6f04f24ae561e9d2aa7a6d342cbdce7a} 
+void Scott\+Plot.\+Axis\+Manager.\+Zoom (\begin{DoxyParamCaption}\item[{double}]{fracX}{ = {\ttfamily 1\+:\+:0}, }\item[{double}]{fracY}{ = {\ttfamily 1\+:\+:0}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Modify limits of all axes to apply the given zoom. Fractional values \texorpdfstring{$>$}{>}1 zoom in and \texorpdfstring{$<$}{<}1 zoom out. 
+
+\Hypertarget{class_scott_plot_1_1_axis_manager_ad9461fb2664792be5d72e3815d491746}\index{ScottPlot.AxisManager@{ScottPlot.AxisManager}!Zoom@{Zoom}}
+\index{Zoom@{Zoom}!ScottPlot.AxisManager@{ScottPlot.AxisManager}}
+\doxysubsubsection{\texorpdfstring{Zoom()}{Zoom()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axis_manager_ad9461fb2664792be5d72e3815d491746} 
+void Scott\+Plot.\+Axis\+Manager.\+Zoom (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}}}]{px}{, }\item[{double}]{fracX}{, }\item[{double}]{fracY}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Zoom into (frac \texorpdfstring{$>$}{>}1) or out of (frac \texorpdfstring{$<$}{<}1) the given point. 
+
+\Hypertarget{class_scott_plot_1_1_axis_manager_a24b5e8701fdd4f356493e7b298657ffd}\index{ScottPlot.AxisManager@{ScottPlot.AxisManager}!Zoom@{Zoom}}
+\index{Zoom@{Zoom}!ScottPlot.AxisManager@{ScottPlot.AxisManager}}
+\doxysubsubsection{\texorpdfstring{Zoom()}{Zoom()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axis_manager_a24b5e8701fdd4f356493e7b298657ffd} 
+void Scott\+Plot.\+Axis\+Manager.\+Zoom (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}}}]{px1}{, }\item[{\mbox{\hyperlink{struct_scott_plot_1_1_pixel}{Pixel}}}]{px2}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Modify zoom for all axes as if the mouse were right-\/clicked and dragged. 
+
+\Hypertarget{class_scott_plot_1_1_axis_manager_a13c0cb7d50cc34e7af24a6bcad9ef4e7}\index{ScottPlot.AxisManager@{ScottPlot.AxisManager}!ZoomIn@{ZoomIn}}
+\index{ZoomIn@{ZoomIn}!ScottPlot.AxisManager@{ScottPlot.AxisManager}}
+\doxysubsubsection{\texorpdfstring{ZoomIn()}{ZoomIn()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axis_manager_a13c0cb7d50cc34e7af24a6bcad9ef4e7} 
+void Scott\+Plot.\+Axis\+Manager.\+Zoom\+In (\begin{DoxyParamCaption}\item[{double}]{fracX}{ = {\ttfamily 1\+:\+:0}, }\item[{double}]{fracY}{ = {\ttfamily 1\+:\+:0}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Modify limits of all axes to apply the given zoom. Fractional values \texorpdfstring{$>$}{>}1 zoom in and \texorpdfstring{$<$}{<}1 zoom out. 
+
+\Hypertarget{class_scott_plot_1_1_axis_manager_a4e7095d1fb615596ed79b28b338d4bdf}\index{ScottPlot.AxisManager@{ScottPlot.AxisManager}!ZoomOut@{ZoomOut}}
+\index{ZoomOut@{ZoomOut}!ScottPlot.AxisManager@{ScottPlot.AxisManager}}
+\doxysubsubsection{\texorpdfstring{ZoomOut()}{ZoomOut()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axis_manager_a4e7095d1fb615596ed79b28b338d4bdf} 
+void Scott\+Plot.\+Axis\+Manager.\+Zoom\+Out (\begin{DoxyParamCaption}\item[{double}]{x}{ = {\ttfamily 1\+:\+:0}, }\item[{double}]{y}{ = {\ttfamily 1\+:\+:0}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Zoom out so the new view is the given fraction of the original view. 
+
+\Hypertarget{class_scott_plot_1_1_axis_manager_a716728f0b6e8d7e56c904f0753c90e17}\index{ScottPlot.AxisManager@{ScottPlot.AxisManager}!ZoomOutX@{ZoomOutX}}
+\index{ZoomOutX@{ZoomOutX}!ScottPlot.AxisManager@{ScottPlot.AxisManager}}
+\doxysubsubsection{\texorpdfstring{ZoomOutX()}{ZoomOutX()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axis_manager_a716728f0b6e8d7e56c904f0753c90e17} 
+void Scott\+Plot.\+Axis\+Manager.\+Zoom\+OutX (\begin{DoxyParamCaption}\item[{double}]{x}{ = {\ttfamily 1\+:\+:0}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Zoom out so the new view is the given fraction of the original view. 
+
+\Hypertarget{class_scott_plot_1_1_axis_manager_afbb80f33f57dd60f017835f90a780af8}\index{ScottPlot.AxisManager@{ScottPlot.AxisManager}!ZoomOutY@{ZoomOutY}}
+\index{ZoomOutY@{ZoomOutY}!ScottPlot.AxisManager@{ScottPlot.AxisManager}}
+\doxysubsubsection{\texorpdfstring{ZoomOutY()}{ZoomOutY()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axis_manager_afbb80f33f57dd60f017835f90a780af8} 
+void Scott\+Plot.\+Axis\+Manager.\+Zoom\+OutY (\begin{DoxyParamCaption}\item[{double}]{y}{ = {\ttfamily 1\+:\+:0}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Zoom out so the new view is the given fraction of the original view. 
+
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{class_scott_plot_1_1_axis_manager_ac43cdc449e4216c858322f6ad785fd88}\index{ScottPlot.AxisManager@{ScottPlot.AxisManager}!AllGrids@{AllGrids}}
+\index{AllGrids@{AllGrids}!ScottPlot.AxisManager@{ScottPlot.AxisManager}}
+\doxysubsubsection{\texorpdfstring{AllGrids}{AllGrids}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axis_manager_ac43cdc449e4216c858322f6ad785fd88} 
+List$<$\mbox{\hyperlink{interface_scott_plot_1_1_i_grid}{IGrid}}$>$ Scott\+Plot.\+Axis\+Manager.\+All\+Grids\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Return the \doxylink{class_scott_plot_1_1_axis_manager_acaabe54038e6d22937b5705d1dcdf14d}{Default\+Grid} and all \doxylink{class_scott_plot_1_1_axis_manager_a90c007de4c8c229edeb2f54770e08697}{Custom\+Grids} 
+
+\Hypertarget{class_scott_plot_1_1_axis_manager_a6cc53854762cf12733a85f5fdccf7dc3}\index{ScottPlot.AxisManager@{ScottPlot.AxisManager}!AutoScaler@{AutoScaler}}
+\index{AutoScaler@{AutoScaler}!ScottPlot.AxisManager@{ScottPlot.AxisManager}}
+\doxysubsubsection{\texorpdfstring{AutoScaler}{AutoScaler}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axis_manager_a6cc53854762cf12733a85f5fdccf7dc3} 
+\mbox{\hyperlink{interface_scott_plot_1_1_i_auto_scaler}{IAuto\+Scaler}} Scott\+Plot.\+Axis\+Manager.\+Auto\+Scaler = new \mbox{\hyperlink{class_scott_plot_1_1_auto_scalers_1_1_fractional_auto_scaler}{Auto\+Scalers.\+Fractional\+Auto\+Scaler}}(.\+1, .\+15)\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Logic that determines padding around the data area when \doxylink{class_scott_plot_1_1_axis_manager_a153f379f7afd85f0f7b45d0f3484b5a3}{Auto\+Scale()} is called. 
+
+\Hypertarget{class_scott_plot_1_1_axis_manager_a6c22a1bbd024429163903a0802057d46}\index{ScottPlot.AxisManager@{ScottPlot.AxisManager}!Bottom@{Bottom}}
+\index{Bottom@{Bottom}!ScottPlot.AxisManager@{ScottPlot.AxisManager}}
+\doxysubsubsection{\texorpdfstring{Bottom}{Bottom}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axis_manager_a6c22a1bbd024429163903a0802057d46} 
+\mbox{\hyperlink{interface_scott_plot_1_1_i_x_axis}{IXAxis}} Scott\+Plot.\+Axis\+Manager.\+Bottom\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The primary horizontal axis below the plot. 
+
+\Hypertarget{class_scott_plot_1_1_axis_manager_a629eb3a02b1cb16819fa507fe4b3b807}\index{ScottPlot.AxisManager@{ScottPlot.AxisManager}!ContinuousAutoscaleAction@{ContinuousAutoscaleAction}}
+\index{ContinuousAutoscaleAction@{ContinuousAutoscaleAction}!ScottPlot.AxisManager@{ScottPlot.AxisManager}}
+\doxysubsubsection{\texorpdfstring{ContinuousAutoscaleAction}{ContinuousAutoscaleAction}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axis_manager_a629eb3a02b1cb16819fa507fe4b3b807} 
+Action$<$Render\+Pack$>$ Scott\+Plot.\+Axis\+Manager.\+Continuous\+Autoscale\+Action = \mbox{\hyperlink{class_scott_plot_1_1_axis_manager_a9506cb3c9a8921064bc99e12f6ab6bc4}{Default\+Continuous\+Autoscale\+Action}}\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+When \doxylink{class_scott_plot_1_1_axis_manager_a274c68dc748f601e782bbc4fa36ae956}{Continuously\+Autoscale} is true, this action is called before each frame is rendered. Users can assign their own static function to customize continuous autoscaling behavior. 
+
+\Hypertarget{class_scott_plot_1_1_axis_manager_a274c68dc748f601e782bbc4fa36ae956}\index{ScottPlot.AxisManager@{ScottPlot.AxisManager}!ContinuouslyAutoscale@{ContinuouslyAutoscale}}
+\index{ContinuouslyAutoscale@{ContinuouslyAutoscale}!ScottPlot.AxisManager@{ScottPlot.AxisManager}}
+\doxysubsubsection{\texorpdfstring{ContinuouslyAutoscale}{ContinuouslyAutoscale}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axis_manager_a274c68dc748f601e782bbc4fa36ae956} 
+bool Scott\+Plot.\+Axis\+Manager.\+Continuously\+Autoscale = false\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+If enabled, \doxylink{class_scott_plot_1_1_axis_manager_a153f379f7afd85f0f7b45d0f3484b5a3}{Auto\+Scale()} will be called at the start of each render. This can negatively impact performance of plots with an extremely large number of data points. 
+
+\Hypertarget{class_scott_plot_1_1_axis_manager_a90c007de4c8c229edeb2f54770e08697}\index{ScottPlot.AxisManager@{ScottPlot.AxisManager}!CustomGrids@{CustomGrids}}
+\index{CustomGrids@{CustomGrids}!ScottPlot.AxisManager@{ScottPlot.AxisManager}}
+\doxysubsubsection{\texorpdfstring{CustomGrids}{CustomGrids}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axis_manager_a90c007de4c8c229edeb2f54770e08697} 
+List$<$\mbox{\hyperlink{interface_scott_plot_1_1_i_grid}{IGrid}}$>$ Scott\+Plot.\+Axis\+Manager.\+Custom\+Grids = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+List of custom grids. If in use, it is likely the default grid visibility should be disabled. 
+
+\Hypertarget{class_scott_plot_1_1_axis_manager_acaabe54038e6d22937b5705d1dcdf14d}\index{ScottPlot.AxisManager@{ScottPlot.AxisManager}!DefaultGrid@{DefaultGrid}}
+\index{DefaultGrid@{DefaultGrid}!ScottPlot.AxisManager@{ScottPlot.AxisManager}}
+\doxysubsubsection{\texorpdfstring{DefaultGrid}{DefaultGrid}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axis_manager_acaabe54038e6d22937b5705d1dcdf14d} 
+Default\+Grid Scott\+Plot.\+Axis\+Manager.\+Default\+Grid\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The standard grid that is added when a \doxylink{class_scott_plot_1_1_plot}{Plot} is created. Users can achieve custom grid functionality by disabling the visibility of this grid and adding their own classes to the List of \doxylink{class_scott_plot_1_1_axis_manager_a90c007de4c8c229edeb2f54770e08697}{Custom\+Grids}. 
+
+\Hypertarget{class_scott_plot_1_1_axis_manager_a4bbc652a4c73b627f7bff6adb32e6f35}\index{ScottPlot.AxisManager@{ScottPlot.AxisManager}!Left@{Left}}
+\index{Left@{Left}!ScottPlot.AxisManager@{ScottPlot.AxisManager}}
+\doxysubsubsection{\texorpdfstring{Left}{Left}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axis_manager_a4bbc652a4c73b627f7bff6adb32e6f35} 
+\mbox{\hyperlink{interface_scott_plot_1_1_i_y_axis}{IYAxis}} Scott\+Plot.\+Axis\+Manager.\+Left\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The primary vertical axis to the left of the plot. 
+
+\Hypertarget{class_scott_plot_1_1_axis_manager_a128f9d838db3f40352319973a6a96306}\index{ScottPlot.AxisManager@{ScottPlot.AxisManager}!LimitsHaveBeenSet@{LimitsHaveBeenSet}}
+\index{LimitsHaveBeenSet@{LimitsHaveBeenSet}!ScottPlot.AxisManager@{ScottPlot.AxisManager}}
+\doxysubsubsection{\texorpdfstring{LimitsHaveBeenSet}{LimitsHaveBeenSet}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axis_manager_a128f9d838db3f40352319973a6a96306} 
+bool Scott\+Plot.\+Axis\+Manager.\+Limits\+Have\+Been\+Set\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Indicates whether the axis limits have been set (manually or by autoscale) 
+
+\Hypertarget{class_scott_plot_1_1_axis_manager_aa7b4e0e72fde5f2fa8fbd90eb2d64d93}\index{ScottPlot.AxisManager@{ScottPlot.AxisManager}!Right@{Right}}
+\index{Right@{Right}!ScottPlot.AxisManager@{ScottPlot.AxisManager}}
+\doxysubsubsection{\texorpdfstring{Right}{Right}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axis_manager_aa7b4e0e72fde5f2fa8fbd90eb2d64d93} 
+\mbox{\hyperlink{interface_scott_plot_1_1_i_y_axis}{IYAxis}} Scott\+Plot.\+Axis\+Manager.\+Right\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The primary vertical axis to the right of the plot. 
+
+\Hypertarget{class_scott_plot_1_1_axis_manager_ab81ca98b81c66cb12dc58e306523a68c}\index{ScottPlot.AxisManager@{ScottPlot.AxisManager}!Rules@{Rules}}
+\index{Rules@{Rules}!ScottPlot.AxisManager@{ScottPlot.AxisManager}}
+\doxysubsubsection{\texorpdfstring{Rules}{Rules}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axis_manager_ab81ca98b81c66cb12dc58e306523a68c} 
+List$<$\mbox{\hyperlink{interface_scott_plot_1_1_i_axis_rule}{IAxis\+Rule}}$>$ Scott\+Plot.\+Axis\+Manager.\+Rules = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Rules that are applied before each render. 
+
+\Hypertarget{class_scott_plot_1_1_axis_manager_a741753cdb6f455023452ed9a64133f94}\index{ScottPlot.AxisManager@{ScottPlot.AxisManager}!Title@{Title}}
+\index{Title@{Title}!ScottPlot.AxisManager@{ScottPlot.AxisManager}}
+\doxysubsubsection{\texorpdfstring{Title}{Title}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axis_manager_a741753cdb6f455023452ed9a64133f94} 
+\mbox{\hyperlink{class_scott_plot_1_1_panels_1_1_title_panel}{Panels.\+Title\+Panel}} Scott\+Plot.\+Axis\+Manager.\+Title = new()\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+A special panel. 
+
+\Hypertarget{class_scott_plot_1_1_axis_manager_a8483f14ffbb83367ff5399fb500527a6}\index{ScottPlot.AxisManager@{ScottPlot.AxisManager}!Top@{Top}}
+\index{Top@{Top}!ScottPlot.AxisManager@{ScottPlot.AxisManager}}
+\doxysubsubsection{\texorpdfstring{Top}{Top}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_axis_manager_a8483f14ffbb83367ff5399fb500527a6} 
+\mbox{\hyperlink{interface_scott_plot_1_1_i_x_axis}{IXAxis}} Scott\+Plot.\+Axis\+Manager.\+Top\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The primary horizontal axis above the plot. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/Axis\+Manager.\+cs\end{DoxyCompactItemize}

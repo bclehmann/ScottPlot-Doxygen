@@ -1,0 +1,72 @@
+\hypertarget{interfaceIUserAction}{}\doxysection{IUser\+Action Interface Reference}
+\label{interfaceIUserAction}\index{IUserAction@{IUserAction}}
+
+
+Describes something the uer did to interact with the plot  
+
+
+Inheritance diagram for IUser\+Action\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{interfaceIUserAction}
+\end{center}
+\end{figure}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{interfaceIUserAction_a6a0ecc1ed28b49777983c020110d2926}{Device}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Name of the thing performing the action but no state. E.\+g., \char`\"{}left button\char`\"{} or \char`\"{}shift key\char`\"{} \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{interfaceIUserAction_a1ff6cd4521ab8eeab1adb170bb6ccda8}{Description}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Description of both the input device and its state. E.\+g., \char`\"{}left button released\char`\"{} or \char`\"{}shift key pressed\char`\"{} \end{DoxyCompactList}\item 
+Date\+Time \mbox{\hyperlink{interfaceIUserAction_a7d1508126da2002f82f9c3b93773af13}{Date\+Time}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Describes when the event happened. Useful for distinguishing single from double-\/clicks. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Describes something the uer did to interact with the plot 
+
+
+\begin{DoxyParams}{Parameters}
+{\em device} & What the user engaged with\\
+\hline
+{\em description} & What the user did to the device\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{interfaceIUserAction_a7d1508126da2002f82f9c3b93773af13}\label{interfaceIUserAction_a7d1508126da2002f82f9c3b93773af13}} 
+\index{IUserAction@{IUserAction}!DateTime@{DateTime}}
+\index{DateTime@{DateTime}!IUserAction@{IUserAction}}
+\doxysubsubsection{\texorpdfstring{DateTime}{DateTime}}
+{\footnotesize\ttfamily Date\+Time IUser\+Action.\+Date\+Time\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Describes when the event happened. Useful for distinguishing single from double-\/clicks. 
+
+\mbox{\Hypertarget{interfaceIUserAction_a1ff6cd4521ab8eeab1adb170bb6ccda8}\label{interfaceIUserAction_a1ff6cd4521ab8eeab1adb170bb6ccda8}} 
+\index{IUserAction@{IUserAction}!Description@{Description}}
+\index{Description@{Description}!IUserAction@{IUserAction}}
+\doxysubsubsection{\texorpdfstring{Description}{Description}}
+{\footnotesize\ttfamily string IUser\+Action.\+Description\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Description of both the input device and its state. E.\+g., \char`\"{}left button released\char`\"{} or \char`\"{}shift key pressed\char`\"{} 
+
+\mbox{\Hypertarget{interfaceIUserAction_a6a0ecc1ed28b49777983c020110d2926}\label{interfaceIUserAction_a6a0ecc1ed28b49777983c020110d2926}} 
+\index{IUserAction@{IUserAction}!Device@{Device}}
+\index{Device@{Device}!IUserAction@{IUserAction}}
+\doxysubsubsection{\texorpdfstring{Device}{Device}}
+{\footnotesize\ttfamily string IUser\+Action.\+Device\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Name of the thing performing the action but no state. E.\+g., \char`\"{}left button\char`\"{} or \char`\"{}shift key\char`\"{} 
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Interactivity/IUser\+Action.\+cs\end{DoxyCompactItemize}

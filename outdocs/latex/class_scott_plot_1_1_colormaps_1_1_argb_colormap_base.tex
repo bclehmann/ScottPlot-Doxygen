@@ -1,0 +1,70 @@
+\doxysection{Scott\+Plot.\+Colormaps.\+Argb\+Colormap\+Base Class Reference}
+\hypertarget{class_scott_plot_1_1_colormaps_1_1_argb_colormap_base}{}\label{class_scott_plot_1_1_colormaps_1_1_argb_colormap_base}\index{ScottPlot.Colormaps.ArgbColormapBase@{ScottPlot.Colormaps.ArgbColormapBase}}
+Inheritance diagram for Scott\+Plot.\+Colormaps.\+Argb\+Colormap\+Base\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=11.000000cm]{class_scott_plot_1_1_colormaps_1_1_argb_colormap_base}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override \mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} \mbox{\hyperlink{class_scott_plot_1_1_colormaps_1_1_argb_colormap_base_accf83d5938fefa88711b4f590431c83a}{Get\+Color}} (double normalized\+Intensity)
+\begin{DoxyCompactList}\small\item\em Returns the color of a position on this colormap (from 0 to 1). Returns transparent if NaN. Positions outside the range will be clamped. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_scott_plot_1_1_colormaps_1_1_colormap_base}{Scott\+Plot.\+Colormaps.\+Colormap\+Base}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} \mbox{\hyperlink{class_scott_plot_1_1_colormaps_1_1_colormap_base_ada0268059a3819cdbf9cc605369218b1}{Get\+Color}} (double position)
+\begin{DoxyCompactList}\small\item\em Returns the color of a position on this colormap (from 0 to 1). Returns transparent if NaN. Positions outside the range will be clamped. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} \mbox{\hyperlink{class_scott_plot_1_1_colormaps_1_1_colormap_base_a76c8bb5b009212f250396e4911834029}{Get\+Color}} (double position, \mbox{\hyperlink{struct_scott_plot_1_1_range}{Range}} range)
+\begin{DoxyCompactList}\small\item\em Returns the color of a position on this colormap (according to the given range). Returns transparent if NaN. Positions outside the range will be clamped. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{interface_scott_plot_1_1_i_colormap}{IColormap}} \mbox{\hyperlink{class_scott_plot_1_1_colormaps_1_1_colormap_base_a9aad16d99d7a31226f2ac7c00c5cd4fc}{Reversed}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_scott_plot_1_1_i_colormap}{Scott\+Plot.\+IColormap}}}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+uint\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_scott_plot_1_1_colormaps_1_1_argb_colormap_base_ad67d17e79c64241e8e481d652d96110a}{Argbs}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{class_scott_plot_1_1_colormaps_1_1_colormap_base}{Scott\+Plot.\+Colormaps.\+Colormap\+Base}}}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_scott_plot_1_1_colormaps_1_1_colormap_base_af1804c8bec0b33d733855eef9234a1f7}{Name}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Full name for this colormap. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{interface_scott_plot_1_1_i_colormap}{Scott\+Plot.\+IColormap}}}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_scott_plot_1_1_colormaps_1_1_argb_colormap_base_accf83d5938fefa88711b4f590431c83a}\index{ScottPlot.Colormaps.ArgbColormapBase@{ScottPlot.Colormaps.ArgbColormapBase}!GetColor@{GetColor}}
+\index{GetColor@{GetColor}!ScottPlot.Colormaps.ArgbColormapBase@{ScottPlot.Colormaps.ArgbColormapBase}}
+\doxysubsubsection{\texorpdfstring{GetColor()}{GetColor()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_colormaps_1_1_argb_colormap_base_accf83d5938fefa88711b4f590431c83a} 
+override \mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} Scott\+Plot.\+Colormaps.\+Argb\+Colormap\+Base.\+Get\+Color (\begin{DoxyParamCaption}\item[{double}]{position}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the color of a position on this colormap (from 0 to 1). Returns transparent if NaN. Positions outside the range will be clamped. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & position from 0 (first color) to 1 (last color)\\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_colormap_a475396e5f91bc5d1581b15acb1fcf773}{Scott\+Plot.\+IColormap}}.
+
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{class_scott_plot_1_1_colormaps_1_1_argb_colormap_base_ad67d17e79c64241e8e481d652d96110a}\index{ScottPlot.Colormaps.ArgbColormapBase@{ScottPlot.Colormaps.ArgbColormapBase}!Argbs@{Argbs}}
+\index{Argbs@{Argbs}!ScottPlot.Colormaps.ArgbColormapBase@{ScottPlot.Colormaps.ArgbColormapBase}}
+\doxysubsubsection{\texorpdfstring{Argbs}{Argbs}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_colormaps_1_1_argb_colormap_base_ad67d17e79c64241e8e481d652d96110a} 
+uint \mbox{[}$\,$\mbox{]} Scott\+Plot.\+Colormaps.\+Argb\+Colormap\+Base.\+Argbs\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [abstract]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Colormaps/Argb\+Colormap\+Base.\+cs\end{DoxyCompactItemize}

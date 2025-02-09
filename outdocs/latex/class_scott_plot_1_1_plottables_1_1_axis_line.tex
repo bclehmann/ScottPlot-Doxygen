@@ -1,0 +1,398 @@
+\doxysection{Scott\+Plot.\+Plottables.\+Axis\+Line Class Reference}
+\hypertarget{class_scott_plot_1_1_plottables_1_1_axis_line}{}\label{class_scott_plot_1_1_plottables_1_1_axis_line}\index{ScottPlot.Plottables.AxisLine@{ScottPlot.Plottables.AxisLine}}
+Inheritance diagram for Scott\+Plot.\+Plottables.\+Axis\+Line\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.113208cm]{class_scott_plot_1_1_plottables_1_1_axis_line}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_axis_line_a2be739c394912450e50f3ebbcbd24b8d}{Is\+Under\+Mouse}} (\mbox{\hyperlink{struct_scott_plot_1_1_coordinate_rect}{Coordinate\+Rect}} rect)
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_axis_line_af0f72d9f10e89a3a333b4e4a91050a07}{Get\+Axis\+Limits}} ()
+\begin{DoxyCompactList}\small\item\em Return the 2D area (in coordinate space) occupied by the data contained in this plottable. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_axis_line_a92c21c19a4f689f04a8a615994ff4e5a}{Render}} (Render\+Pack rp)
+\begin{DoxyCompactList}\small\item\em Draw the data from this plottable into the data area defined in the \doxylink{class_scott_plot_1_1_axes}{Axes}. By default the surface is already clipped to the data area, but this can be cleared inside the plottable. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_axis_line_af43cab20a06dca6f6e0e910bbd9aa8ab}{Render\+Last}} (Render\+Pack rp)
+\begin{DoxyCompactList}\small\item\em \doxylink{namespace_scott_plot_1_1_plottables}{Plottables} that implement this interface have a second render method that runs after the axes are drawn, allowing graphics to be placed on top of the axes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable}{Scott\+Plot.\+IPlottable}}}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_scott_plot_1_1_i_render_last}{Scott\+Plot.\+IRender\+Last}}}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_axis_line_a8430a9d5d9b61c74116a24dcfb82d575}{Is\+Visible}} = true\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Toggles whether this plottable is shown and contributes to the automatic axis limit detection. The calling method will check this variable (it does not need to be checked inside the Render method). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{interface_scott_plot_1_1_i_axes}{IAxes}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_axis_line_ad1dd44f28cd1d7626ccee019279bfc67}{Axes}} = new \mbox{\hyperlink{class_scott_plot_1_1_axes}{Axes}}()\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em This object performs coordinate/pixel translation at render time based on the latest data area. It stores the axes to use for this plottable and also the data area (in pixels) updated just before each render. If this object is null it will be constructed using the default X and Y axes at render time. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_scott_plot_1_1_line_style}{Line\+Style}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_axis_line_a480caa53bb1ab5c0d60a53d74f8b804b}{Line\+Style}} = new() \{ Width = 1 \}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_axis_line_a1527316b60db522c6954dae8cbbfa606}{Line\+Width}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{namespace_scott_plot_a625917eb44cadb4de90991e525db6ab5}{Line\+Pattern}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_axis_line_a777ca2fc0b9371a88c1a262fe14e2974}{Line\+Pattern}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_axis_line_a41de81298a48ff227b4f2d551806b419}{Line\+Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+override \mbox{\hyperlink{class_scott_plot_1_1_label_style}{Label\+Style}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_axis_line_afac6f3b143789f4030efcd37376090d3}{Label\+Style}} = new()\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+string \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_axis_line_ab64520728537021b210bc59e4263e42e}{Text}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+string \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_axis_line_a5c01646872ecab7b350256267265ae00}{Legend\+Text}} = string.\+Empty\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em If populated, this text appears in the legend. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_scott_plot_a2da000551e02ef1d0af13793cf678abc}{Alignment}}? \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_axis_line_abc019eeeb4c28e663ceffa1a5c4421df}{Manual\+Label\+Alignment}} = null\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{namespace_scott_plot_a2da000551e02ef1d0af13793cf678abc}{Alignment}}? \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_axis_line_abf831d1eaa2dd137fccd6bb472d69fcf}{Text\+Alignment}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{class_scott_plot_1_1_label_style}{Label\+Style}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_axis_line_a2c3bd81d4b57abe498998af060960fbd}{Label}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_axis_line_a5efc4706499594596bff892d6713495f}{Font\+Size}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+bool \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_axis_line_aced7e147eec50709043202f57f114e50}{Font\+Bold}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+string \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_axis_line_ad669b480e836a8e638630e12b5596383}{Font\+Name}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_axis_line_a13d548940b5f0ec499536261bab2991d}{Font\+Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_axis_line_a364c8d786fe2ac43af735d5cd6d4dc81}{Text\+Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_axis_line_a60a73b1262fb5eb91e499bfe3ace77c9}{Text\+Background\+Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_axis_line_a3ab4e0ac4c9bb72b2f76e76abbd89b56}{Text\+Rotation}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_axis_line_a3b3537009b09e3e9f20b36e0b15d89d0}{Text\+Size}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+bool \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_axis_line_a225e86b075382bf590bec57a92ec2e4c}{Label\+Opposite\+Axis}} = false\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+bool \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_axis_line_a7cb8be715aedba2a0b1919ac46e6340f}{Is\+Draggable}} = false\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+bool \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_axis_line_a66ae075fdd3ba18c32bbe0b2c837e048}{Exclude\+From\+Legend}} = false\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+bool \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_axis_line_a2f7afe344e6e4967d158fb8509b0b13a}{Enable\+Autoscale}} = true\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_axis_line_abd35a41eba33c9b9588eb13a3737085b}{Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+double \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_axis_line_aaac95ad6217ef5cb0b9ef31c38437e3c}{Position}} = 0\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{class_i_enumerable}{IEnumerable}}$<$ \mbox{\hyperlink{class_scott_plot_1_1_legend_item}{Legend\+Item}} $>$ \mbox{\hyperlink{class_scott_plot_1_1_plottables_1_1_axis_line_aa934f7f03800a238998082331a535bf5}{Legend\+Items}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Items which will appear in the legend. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{class_scott_plot_1_1_label_style_properties}{Scott\+Plot.\+Label\+Style\+Properties}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_scott_plot_1_1_label_style}{Label\+Style}} \mbox{\hyperlink{class_scott_plot_1_1_label_style_properties_a4d45af4d6ce14b3115c1fdcc913e54ad}{Label\+Style}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_scott_plot_1_1_label_style_properties_ad66633c9a6aa11859343f9dfe832a192}{Label\+OffsetX}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_scott_plot_1_1_label_style_properties_a86d6fd9120d65534c6baaa2e529c51ee}{Label\+OffsetY}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_scott_plot_1_1_label_style_properties_aa4647f36b4fa1d2f4557c6bc466cc0db}{Label\+Rotation}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_scott_plot_1_1_label_style_properties_a049cfb7ea0df971f637e0d121338ad2c}{Label\+Padding}}\hspace{0.3cm}{\ttfamily  \mbox{[}set\mbox{]}}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_pixel_padding}{Pixel\+Padding}} \mbox{\hyperlink{class_scott_plot_1_1_label_style_properties_a6105a8187fb6499678e5dbf99cc3bd76}{Label\+Pixel\+Padding}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect}{Pixel\+Rect}} \mbox{\hyperlink{class_scott_plot_1_1_label_style_properties_abb2cb41053cd69e21f0fd74bbe72363c}{Label\+Last\+Render\+Pixel\+Rect}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+string \mbox{\hyperlink{class_scott_plot_1_1_label_style_properties_a022d8202c3f13282e962f16c53866f58}{Label\+Text}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{namespace_scott_plot_a2da000551e02ef1d0af13793cf678abc}{Alignment}} \mbox{\hyperlink{class_scott_plot_1_1_label_style_properties_a2b86910ff4f6425f2034f63824fd1a8c}{Label\+Alignment}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+string \mbox{\hyperlink{class_scott_plot_1_1_label_style_properties_ab5eda90c765a6037744d900deaf08f8a}{Label\+Font\+Name}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_scott_plot_1_1_label_style_properties_a88a150094f4b81eb7f38267ec24b7649}{Label\+Font\+Size}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float? \mbox{\hyperlink{class_scott_plot_1_1_label_style_properties_a331be92968ee012e7828cca5c1e60eaa}{Label\+Line\+Spacing}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+bool \mbox{\hyperlink{class_scott_plot_1_1_label_style_properties_af2e763b88d56a7d99fa3e6dc3d05a018}{Label\+Italic}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+bool \mbox{\hyperlink{class_scott_plot_1_1_label_style_properties_aaa25e4307df5bc9406f8ca3bcbe4d4ab}{Label\+Bold}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} \mbox{\hyperlink{class_scott_plot_1_1_label_style_properties_ad89528902ec8bf119b397682be415ead}{Label\+Font\+Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} \mbox{\hyperlink{class_scott_plot_1_1_label_style_properties_a3f9706403c67ae5dc55f3e70c9724767}{Label\+Background\+Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_scott_plot_1_1_label_style_properties_a5f084224053ee525e8dd9438b4420190}{Label\+Border\+Width}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} \mbox{\hyperlink{class_scott_plot_1_1_label_style_properties_a0594321f834452bffb8b1913078be01a}{Label\+Border\+Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} \mbox{\hyperlink{class_scott_plot_1_1_label_style_properties_ad1a9e2fc0141629cfa77808874d43344}{Label\+Shadow\+Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{namespace_scott_plot_a3dfefa78aee0c8cf7184895e4ad7d44b}{Pixel\+Offset}} \mbox{\hyperlink{class_scott_plot_1_1_label_style_properties_a6f0e42f2ca9a5f08f8780028b4eeb46f}{Label\+Shadow\+Offset}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{interface_scott_plot_1_1_i_has_label}{Scott\+Plot.\+IHas\+Label}}}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable}{Scott\+Plot.\+IPlottable}}}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{interface_scott_plot_1_1_i_has_line}{Scott\+Plot.\+IHas\+Line}}}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{interface_scott_plot_1_1_i_has_legend_text}{Scott\+Plot.\+IHas\+Legend\+Text}}}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_axis_line_af0f72d9f10e89a3a333b4e4a91050a07}\index{ScottPlot.Plottables.AxisLine@{ScottPlot.Plottables.AxisLine}!GetAxisLimits@{GetAxisLimits}}
+\index{GetAxisLimits@{GetAxisLimits}!ScottPlot.Plottables.AxisLine@{ScottPlot.Plottables.AxisLine}}
+\doxysubsubsection{\texorpdfstring{GetAxisLimits()}{GetAxisLimits()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_axis_line_af0f72d9f10e89a3a333b4e4a91050a07} 
+\mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}} Scott\+Plot.\+Plottables.\+Axis\+Line.\+Get\+Axis\+Limits (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+
+
+Return the 2D area (in coordinate space) occupied by the data contained in this plottable. 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable_a2e455cf76f9e8bc3187900b1a90487c3}{Scott\+Plot.\+IPlottable}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_axis_line_a2be739c394912450e50f3ebbcbd24b8d}\index{ScottPlot.Plottables.AxisLine@{ScottPlot.Plottables.AxisLine}!IsUnderMouse@{IsUnderMouse}}
+\index{IsUnderMouse@{IsUnderMouse}!ScottPlot.Plottables.AxisLine@{ScottPlot.Plottables.AxisLine}}
+\doxysubsubsection{\texorpdfstring{IsUnderMouse()}{IsUnderMouse()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_axis_line_a2be739c394912450e50f3ebbcbd24b8d} 
+bool Scott\+Plot.\+Plottables.\+Axis\+Line.\+Is\+Under\+Mouse (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_scott_plot_1_1_coordinate_rect}{Coordinate\+Rect}}}]{rect}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_axis_line_a92c21c19a4f689f04a8a615994ff4e5a}\index{ScottPlot.Plottables.AxisLine@{ScottPlot.Plottables.AxisLine}!Render@{Render}}
+\index{Render@{Render}!ScottPlot.Plottables.AxisLine@{ScottPlot.Plottables.AxisLine}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_axis_line_a92c21c19a4f689f04a8a615994ff4e5a} 
+void Scott\+Plot.\+Plottables.\+Axis\+Line.\+Render (\begin{DoxyParamCaption}\item[{Render\+Pack}]{rp}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+
+
+Draw the data from this plottable into the data area defined in the \doxylink{class_scott_plot_1_1_axes}{Axes}. By default the surface is already clipped to the data area, but this can be cleared inside the plottable. 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable_a11d2487f1d7628e019a09748d876c289}{Scott\+Plot.\+IPlottable}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_axis_line_af43cab20a06dca6f6e0e910bbd9aa8ab}\index{ScottPlot.Plottables.AxisLine@{ScottPlot.Plottables.AxisLine}!RenderLast@{RenderLast}}
+\index{RenderLast@{RenderLast}!ScottPlot.Plottables.AxisLine@{ScottPlot.Plottables.AxisLine}}
+\doxysubsubsection{\texorpdfstring{RenderLast()}{RenderLast()}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_axis_line_af43cab20a06dca6f6e0e910bbd9aa8ab} 
+void Scott\+Plot.\+Plottables.\+Axis\+Line.\+Render\+Last (\begin{DoxyParamCaption}\item[{Render\+Pack}]{rp}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+
+
+\doxylink{namespace_scott_plot_1_1_plottables}{Plottables} that implement this interface have a second render method that runs after the axes are drawn, allowing graphics to be placed on top of the axes. 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_render_last_a769cbb9129f1e1929981857cfb8bfef0}{Scott\+Plot.\+IRender\+Last}}.
+
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_axis_line_ad1dd44f28cd1d7626ccee019279bfc67}\index{ScottPlot.Plottables.AxisLine@{ScottPlot.Plottables.AxisLine}!Axes@{Axes}}
+\index{Axes@{Axes}!ScottPlot.Plottables.AxisLine@{ScottPlot.Plottables.AxisLine}}
+\doxysubsubsection{\texorpdfstring{Axes}{Axes}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_axis_line_ad1dd44f28cd1d7626ccee019279bfc67} 
+\mbox{\hyperlink{interface_scott_plot_1_1_i_axes}{IAxes}} Scott\+Plot.\+Plottables.\+Axis\+Line.\+Axes = new \mbox{\hyperlink{class_scott_plot_1_1_axes}{Axes}}()\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+This object performs coordinate/pixel translation at render time based on the latest data area. It stores the axes to use for this plottable and also the data area (in pixels) updated just before each render. If this object is null it will be constructed using the default X and Y axes at render time. 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable_aa68bc5153a673a7cd4a68f93da377d0a}{Scott\+Plot.\+IPlottable}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_axis_line_abd35a41eba33c9b9588eb13a3737085b}\index{ScottPlot.Plottables.AxisLine@{ScottPlot.Plottables.AxisLine}!Color@{Color}}
+\index{Color@{Color}!ScottPlot.Plottables.AxisLine@{ScottPlot.Plottables.AxisLine}}
+\doxysubsubsection{\texorpdfstring{Color}{Color}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_axis_line_abd35a41eba33c9b9588eb13a3737085b} 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} Scott\+Plot.\+Plottables.\+Axis\+Line.\+Color\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_axis_line_a2f7afe344e6e4967d158fb8509b0b13a}\index{ScottPlot.Plottables.AxisLine@{ScottPlot.Plottables.AxisLine}!EnableAutoscale@{EnableAutoscale}}
+\index{EnableAutoscale@{EnableAutoscale}!ScottPlot.Plottables.AxisLine@{ScottPlot.Plottables.AxisLine}}
+\doxysubsubsection{\texorpdfstring{EnableAutoscale}{EnableAutoscale}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_axis_line_a2f7afe344e6e4967d158fb8509b0b13a} 
+bool Scott\+Plot.\+Plottables.\+Axis\+Line.\+Enable\+Autoscale = true\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_axis_line_a66ae075fdd3ba18c32bbe0b2c837e048}\index{ScottPlot.Plottables.AxisLine@{ScottPlot.Plottables.AxisLine}!ExcludeFromLegend@{ExcludeFromLegend}}
+\index{ExcludeFromLegend@{ExcludeFromLegend}!ScottPlot.Plottables.AxisLine@{ScottPlot.Plottables.AxisLine}}
+\doxysubsubsection{\texorpdfstring{ExcludeFromLegend}{ExcludeFromLegend}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_axis_line_a66ae075fdd3ba18c32bbe0b2c837e048} 
+bool Scott\+Plot.\+Plottables.\+Axis\+Line.\+Exclude\+From\+Legend = false\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_axis_line_aced7e147eec50709043202f57f114e50}\index{ScottPlot.Plottables.AxisLine@{ScottPlot.Plottables.AxisLine}!FontBold@{FontBold}}
+\index{FontBold@{FontBold}!ScottPlot.Plottables.AxisLine@{ScottPlot.Plottables.AxisLine}}
+\doxysubsubsection{\texorpdfstring{FontBold}{FontBold}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_axis_line_aced7e147eec50709043202f57f114e50} 
+bool Scott\+Plot.\+Plottables.\+Axis\+Line.\+Font\+Bold\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_axis_line_a13d548940b5f0ec499536261bab2991d}\index{ScottPlot.Plottables.AxisLine@{ScottPlot.Plottables.AxisLine}!FontColor@{FontColor}}
+\index{FontColor@{FontColor}!ScottPlot.Plottables.AxisLine@{ScottPlot.Plottables.AxisLine}}
+\doxysubsubsection{\texorpdfstring{FontColor}{FontColor}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_axis_line_a13d548940b5f0ec499536261bab2991d} 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} Scott\+Plot.\+Plottables.\+Axis\+Line.\+Font\+Color\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_axis_line_ad669b480e836a8e638630e12b5596383}\index{ScottPlot.Plottables.AxisLine@{ScottPlot.Plottables.AxisLine}!FontName@{FontName}}
+\index{FontName@{FontName}!ScottPlot.Plottables.AxisLine@{ScottPlot.Plottables.AxisLine}}
+\doxysubsubsection{\texorpdfstring{FontName}{FontName}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_axis_line_ad669b480e836a8e638630e12b5596383} 
+string Scott\+Plot.\+Plottables.\+Axis\+Line.\+Font\+Name\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_axis_line_a5efc4706499594596bff892d6713495f}\index{ScottPlot.Plottables.AxisLine@{ScottPlot.Plottables.AxisLine}!FontSize@{FontSize}}
+\index{FontSize@{FontSize}!ScottPlot.Plottables.AxisLine@{ScottPlot.Plottables.AxisLine}}
+\doxysubsubsection{\texorpdfstring{FontSize}{FontSize}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_axis_line_a5efc4706499594596bff892d6713495f} 
+float Scott\+Plot.\+Plottables.\+Axis\+Line.\+Font\+Size\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_axis_line_a7cb8be715aedba2a0b1919ac46e6340f}\index{ScottPlot.Plottables.AxisLine@{ScottPlot.Plottables.AxisLine}!IsDraggable@{IsDraggable}}
+\index{IsDraggable@{IsDraggable}!ScottPlot.Plottables.AxisLine@{ScottPlot.Plottables.AxisLine}}
+\doxysubsubsection{\texorpdfstring{IsDraggable}{IsDraggable}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_axis_line_a7cb8be715aedba2a0b1919ac46e6340f} 
+bool Scott\+Plot.\+Plottables.\+Axis\+Line.\+Is\+Draggable = false\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_axis_line_a8430a9d5d9b61c74116a24dcfb82d575}\index{ScottPlot.Plottables.AxisLine@{ScottPlot.Plottables.AxisLine}!IsVisible@{IsVisible}}
+\index{IsVisible@{IsVisible}!ScottPlot.Plottables.AxisLine@{ScottPlot.Plottables.AxisLine}}
+\doxysubsubsection{\texorpdfstring{IsVisible}{IsVisible}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_axis_line_a8430a9d5d9b61c74116a24dcfb82d575} 
+bool Scott\+Plot.\+Plottables.\+Axis\+Line.\+Is\+Visible = true\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Toggles whether this plottable is shown and contributes to the automatic axis limit detection. The calling method will check this variable (it does not need to be checked inside the Render method). 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable_abbe75ba55a332d695313ccb5dc780923}{Scott\+Plot.\+IPlottable}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_axis_line_a2c3bd81d4b57abe498998af060960fbd}\index{ScottPlot.Plottables.AxisLine@{ScottPlot.Plottables.AxisLine}!Label@{Label}}
+\index{Label@{Label}!ScottPlot.Plottables.AxisLine@{ScottPlot.Plottables.AxisLine}}
+\doxysubsubsection{\texorpdfstring{Label}{Label}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_axis_line_a2c3bd81d4b57abe498998af060960fbd} 
+\mbox{\hyperlink{class_scott_plot_1_1_label_style}{Label\+Style}} Scott\+Plot.\+Plottables.\+Axis\+Line.\+Label\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_axis_line_a225e86b075382bf590bec57a92ec2e4c}\index{ScottPlot.Plottables.AxisLine@{ScottPlot.Plottables.AxisLine}!LabelOppositeAxis@{LabelOppositeAxis}}
+\index{LabelOppositeAxis@{LabelOppositeAxis}!ScottPlot.Plottables.AxisLine@{ScottPlot.Plottables.AxisLine}}
+\doxysubsubsection{\texorpdfstring{LabelOppositeAxis}{LabelOppositeAxis}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_axis_line_a225e86b075382bf590bec57a92ec2e4c} 
+bool Scott\+Plot.\+Plottables.\+Axis\+Line.\+Label\+Opposite\+Axis = false\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_axis_line_afac6f3b143789f4030efcd37376090d3}\index{ScottPlot.Plottables.AxisLine@{ScottPlot.Plottables.AxisLine}!LabelStyle@{LabelStyle}}
+\index{LabelStyle@{LabelStyle}!ScottPlot.Plottables.AxisLine@{ScottPlot.Plottables.AxisLine}}
+\doxysubsubsection{\texorpdfstring{LabelStyle}{LabelStyle}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_axis_line_afac6f3b143789f4030efcd37376090d3} 
+override \mbox{\hyperlink{class_scott_plot_1_1_label_style}{Label\+Style}} Scott\+Plot.\+Plottables.\+Axis\+Line.\+Label\+Style = new()\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_has_label_ac97a4b2409820e4f3bc5c9167f2449c4}{Scott\+Plot.\+IHas\+Label}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_axis_line_aa934f7f03800a238998082331a535bf5}\index{ScottPlot.Plottables.AxisLine@{ScottPlot.Plottables.AxisLine}!LegendItems@{LegendItems}}
+\index{LegendItems@{LegendItems}!ScottPlot.Plottables.AxisLine@{ScottPlot.Plottables.AxisLine}}
+\doxysubsubsection{\texorpdfstring{LegendItems}{LegendItems}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_axis_line_aa934f7f03800a238998082331a535bf5} 
+\mbox{\hyperlink{class_i_enumerable}{IEnumerable}}$<$\mbox{\hyperlink{class_scott_plot_1_1_legend_item}{Legend\+Item}}$>$ Scott\+Plot.\+Plottables.\+Axis\+Line.\+Legend\+Items\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Items which will appear in the legend. 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_plottable_a4565f96a253f832bd9aa8033c99eff75}{Scott\+Plot.\+IPlottable}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_axis_line_a5c01646872ecab7b350256267265ae00}\index{ScottPlot.Plottables.AxisLine@{ScottPlot.Plottables.AxisLine}!LegendText@{LegendText}}
+\index{LegendText@{LegendText}!ScottPlot.Plottables.AxisLine@{ScottPlot.Plottables.AxisLine}}
+\doxysubsubsection{\texorpdfstring{LegendText}{LegendText}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_axis_line_a5c01646872ecab7b350256267265ae00} 
+string Scott\+Plot.\+Plottables.\+Axis\+Line.\+Legend\+Text = string.\+Empty\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+If populated, this text appears in the legend. 
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_has_legend_text_ad89967a734dbda7c02217a19c17d88d8}{Scott\+Plot.\+IHas\+Legend\+Text}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_axis_line_a41de81298a48ff227b4f2d551806b419}\index{ScottPlot.Plottables.AxisLine@{ScottPlot.Plottables.AxisLine}!LineColor@{LineColor}}
+\index{LineColor@{LineColor}!ScottPlot.Plottables.AxisLine@{ScottPlot.Plottables.AxisLine}}
+\doxysubsubsection{\texorpdfstring{LineColor}{LineColor}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_axis_line_a41de81298a48ff227b4f2d551806b419} 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} Scott\+Plot.\+Plottables.\+Axis\+Line.\+Line\+Color\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_has_line_aa6dfc6fced8c40566cc6fdf237b66175}{Scott\+Plot.\+IHas\+Line}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_axis_line_a777ca2fc0b9371a88c1a262fe14e2974}\index{ScottPlot.Plottables.AxisLine@{ScottPlot.Plottables.AxisLine}!LinePattern@{LinePattern}}
+\index{LinePattern@{LinePattern}!ScottPlot.Plottables.AxisLine@{ScottPlot.Plottables.AxisLine}}
+\doxysubsubsection{\texorpdfstring{LinePattern}{LinePattern}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_axis_line_a777ca2fc0b9371a88c1a262fe14e2974} 
+\mbox{\hyperlink{namespace_scott_plot_a625917eb44cadb4de90991e525db6ab5}{Line\+Pattern}} Scott\+Plot.\+Plottables.\+Axis\+Line.\+Line\+Pattern\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_has_line_a36a31df15a64944ab9108d98574a5ada}{Scott\+Plot.\+IHas\+Line}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_axis_line_a480caa53bb1ab5c0d60a53d74f8b804b}\index{ScottPlot.Plottables.AxisLine@{ScottPlot.Plottables.AxisLine}!LineStyle@{LineStyle}}
+\index{LineStyle@{LineStyle}!ScottPlot.Plottables.AxisLine@{ScottPlot.Plottables.AxisLine}}
+\doxysubsubsection{\texorpdfstring{LineStyle}{LineStyle}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_axis_line_a480caa53bb1ab5c0d60a53d74f8b804b} 
+\mbox{\hyperlink{class_scott_plot_1_1_line_style}{Line\+Style}} Scott\+Plot.\+Plottables.\+Axis\+Line.\+Line\+Style = new() \{ Width = 1 \}\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_has_line_a1a04ccd6d040be2e80338c8af04ea291}{Scott\+Plot.\+IHas\+Line}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_axis_line_a1527316b60db522c6954dae8cbbfa606}\index{ScottPlot.Plottables.AxisLine@{ScottPlot.Plottables.AxisLine}!LineWidth@{LineWidth}}
+\index{LineWidth@{LineWidth}!ScottPlot.Plottables.AxisLine@{ScottPlot.Plottables.AxisLine}}
+\doxysubsubsection{\texorpdfstring{LineWidth}{LineWidth}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_axis_line_a1527316b60db522c6954dae8cbbfa606} 
+float Scott\+Plot.\+Plottables.\+Axis\+Line.\+Line\+Width\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Implements \mbox{\hyperlink{interface_scott_plot_1_1_i_has_line_aa5f2d70e52466770207ed3547ffeecb3}{Scott\+Plot.\+IHas\+Line}}.
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_axis_line_abc019eeeb4c28e663ceffa1a5c4421df}\index{ScottPlot.Plottables.AxisLine@{ScottPlot.Plottables.AxisLine}!ManualLabelAlignment@{ManualLabelAlignment}}
+\index{ManualLabelAlignment@{ManualLabelAlignment}!ScottPlot.Plottables.AxisLine@{ScottPlot.Plottables.AxisLine}}
+\doxysubsubsection{\texorpdfstring{ManualLabelAlignment}{ManualLabelAlignment}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_axis_line_abc019eeeb4c28e663ceffa1a5c4421df} 
+\mbox{\hyperlink{namespace_scott_plot_a2da000551e02ef1d0af13793cf678abc}{Alignment}}? Scott\+Plot.\+Plottables.\+Axis\+Line.\+Manual\+Label\+Alignment = null\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_axis_line_aaac95ad6217ef5cb0b9ef31c38437e3c}\index{ScottPlot.Plottables.AxisLine@{ScottPlot.Plottables.AxisLine}!Position@{Position}}
+\index{Position@{Position}!ScottPlot.Plottables.AxisLine@{ScottPlot.Plottables.AxisLine}}
+\doxysubsubsection{\texorpdfstring{Position}{Position}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_axis_line_aaac95ad6217ef5cb0b9ef31c38437e3c} 
+double Scott\+Plot.\+Plottables.\+Axis\+Line.\+Position = 0\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_axis_line_ab64520728537021b210bc59e4263e42e}\index{ScottPlot.Plottables.AxisLine@{ScottPlot.Plottables.AxisLine}!Text@{Text}}
+\index{Text@{Text}!ScottPlot.Plottables.AxisLine@{ScottPlot.Plottables.AxisLine}}
+\doxysubsubsection{\texorpdfstring{Text}{Text}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_axis_line_ab64520728537021b210bc59e4263e42e} 
+string Scott\+Plot.\+Plottables.\+Axis\+Line.\+Text\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_axis_line_abf831d1eaa2dd137fccd6bb472d69fcf}\index{ScottPlot.Plottables.AxisLine@{ScottPlot.Plottables.AxisLine}!TextAlignment@{TextAlignment}}
+\index{TextAlignment@{TextAlignment}!ScottPlot.Plottables.AxisLine@{ScottPlot.Plottables.AxisLine}}
+\doxysubsubsection{\texorpdfstring{TextAlignment}{TextAlignment}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_axis_line_abf831d1eaa2dd137fccd6bb472d69fcf} 
+\mbox{\hyperlink{namespace_scott_plot_a2da000551e02ef1d0af13793cf678abc}{Alignment}}? Scott\+Plot.\+Plottables.\+Axis\+Line.\+Text\+Alignment\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_axis_line_a60a73b1262fb5eb91e499bfe3ace77c9}\index{ScottPlot.Plottables.AxisLine@{ScottPlot.Plottables.AxisLine}!TextBackgroundColor@{TextBackgroundColor}}
+\index{TextBackgroundColor@{TextBackgroundColor}!ScottPlot.Plottables.AxisLine@{ScottPlot.Plottables.AxisLine}}
+\doxysubsubsection{\texorpdfstring{TextBackgroundColor}{TextBackgroundColor}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_axis_line_a60a73b1262fb5eb91e499bfe3ace77c9} 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} Scott\+Plot.\+Plottables.\+Axis\+Line.\+Text\+Background\+Color\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_axis_line_a364c8d786fe2ac43af735d5cd6d4dc81}\index{ScottPlot.Plottables.AxisLine@{ScottPlot.Plottables.AxisLine}!TextColor@{TextColor}}
+\index{TextColor@{TextColor}!ScottPlot.Plottables.AxisLine@{ScottPlot.Plottables.AxisLine}}
+\doxysubsubsection{\texorpdfstring{TextColor}{TextColor}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_axis_line_a364c8d786fe2ac43af735d5cd6d4dc81} 
+\mbox{\hyperlink{struct_scott_plot_1_1_color}{Color}} Scott\+Plot.\+Plottables.\+Axis\+Line.\+Text\+Color\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_axis_line_a3ab4e0ac4c9bb72b2f76e76abbd89b56}\index{ScottPlot.Plottables.AxisLine@{ScottPlot.Plottables.AxisLine}!TextRotation@{TextRotation}}
+\index{TextRotation@{TextRotation}!ScottPlot.Plottables.AxisLine@{ScottPlot.Plottables.AxisLine}}
+\doxysubsubsection{\texorpdfstring{TextRotation}{TextRotation}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_axis_line_a3ab4e0ac4c9bb72b2f76e76abbd89b56} 
+float Scott\+Plot.\+Plottables.\+Axis\+Line.\+Text\+Rotation\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_scott_plot_1_1_plottables_1_1_axis_line_a3b3537009b09e3e9f20b36e0b15d89d0}\index{ScottPlot.Plottables.AxisLine@{ScottPlot.Plottables.AxisLine}!TextSize@{TextSize}}
+\index{TextSize@{TextSize}!ScottPlot.Plottables.AxisLine@{ScottPlot.Plottables.AxisLine}}
+\doxysubsubsection{\texorpdfstring{TextSize}{TextSize}}
+{\footnotesize\ttfamily \label{class_scott_plot_1_1_plottables_1_1_axis_line_a3b3537009b09e3e9f20b36e0b15d89d0} 
+float Scott\+Plot.\+Plottables.\+Axis\+Line.\+Text\+Size\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Plottables/Axis\+Line.\+cs\end{DoxyCompactItemize}

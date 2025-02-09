@@ -1,0 +1,244 @@
+\doxysection{Scott\+Plot.\+Render\+Details Struct Reference}
+\hypertarget{struct_scott_plot_1_1_render_details}{}\label{struct_scott_plot_1_1_render_details}\index{ScottPlot.RenderDetails@{ScottPlot.RenderDetails}}
+
+
+Details about a completed render.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_render_details_ae58d187bd470633be3298f6bf2e73a7c}{readonly}} (string, Time\+Span)\mbox{[}$\,$\mbox{]} Timed\+Actions
+\begin{DoxyCompactList}\small\item\em Each step of the render and how long it took to execute. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_render_details_a7c007f5c84b3e77fbfcdf3df30c44002}{Render\+Details}} (Render\+Pack rp,(string, Time\+Span)\mbox{[}$\,$\mbox{]} action\+Times, \mbox{\hyperlink{struct_scott_plot_1_1_render_details}{Render\+Details}} last\+Render)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_render_details_ae58d187bd470633be3298f6bf2e73a7c}{readonly}} \mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect}{Pixel\+Rect}} \mbox{\hyperlink{struct_scott_plot_1_1_render_details_a723b24b7ac2eed4fa7a3754516f9b544}{Figure\+Rect}}
+\begin{DoxyCompactList}\small\item\em Size of the plot image in pixel units. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_render_details_ae58d187bd470633be3298f6bf2e73a7c}{readonly}} \mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect}{Pixel\+Rect}} \mbox{\hyperlink{struct_scott_plot_1_1_render_details_accd9bda2c74378aef31e0184dacdc358}{Data\+Rect}}
+\begin{DoxyCompactList}\small\item\em Size of the data area of the plot in pixel units. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_render_details_ae58d187bd470633be3298f6bf2e73a7c}{readonly}} \mbox{\hyperlink{struct_scott_plot_1_1_pixel_padding}{Pixel\+Padding}} \mbox{\hyperlink{struct_scott_plot_1_1_render_details_ad216ad6d541252e384b8c8a48b63ae66}{Padding}}
+\begin{DoxyCompactList}\small\item\em Distance between the data area and the edge of the figure. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_render_details_ae58d187bd470633be3298f6bf2e73a7c}{readonly}} Time\+Span \mbox{\hyperlink{struct_scott_plot_1_1_render_details_a2995fddea216d629870449accd725a19}{Elapsed}}
+\begin{DoxyCompactList}\small\item\em Total time required to render this image. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_render_details_ae58d187bd470633be3298f6bf2e73a7c}{readonly}} Date\+Time \mbox{\hyperlink{struct_scott_plot_1_1_render_details_ae1274a7cc67c0fa1c85ffac97eed1e72}{Timestamp}}
+\begin{DoxyCompactList}\small\item\em Time the render was completed. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_render_details_ae58d187bd470633be3298f6bf2e73a7c}{readonly}} \mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}} \mbox{\hyperlink{struct_scott_plot_1_1_render_details_a3967742292f47b6e8331e6cbf2456089}{Axis\+Limits}}
+\begin{DoxyCompactList}\small\item\em Axis limits of the primary axes for this render. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_render_details_ae58d187bd470633be3298f6bf2e73a7c}{readonly}} \mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}} \mbox{\hyperlink{struct_scott_plot_1_1_render_details_a2de82cc6a0d016ba80f5e6607acf743b}{Previous\+Axis\+Limits}}
+\begin{DoxyCompactList}\small\item\em Axis limits of the primary axes for the previous render. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_render_details_ae58d187bd470633be3298f6bf2e73a7c}{readonly}} Dictionary$<$ \mbox{\hyperlink{interface_scott_plot_1_1_i_axis}{IAxis}}, \mbox{\hyperlink{namespace_scott_plot_a4f8afc1393f89ce60e775705cbf134d1}{Coordinate\+Range}} $>$ \mbox{\hyperlink{struct_scott_plot_1_1_render_details_af33594b75f27d7eb0c398e369126f1e1}{Axis\+Limits\+By\+Axis}}
+\begin{DoxyCompactList}\small\item\em Axis limits for every axis. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_render_details_ae58d187bd470633be3298f6bf2e73a7c}{readonly}} Dictionary$<$ \mbox{\hyperlink{interface_scott_plot_1_1_i_axis}{IAxis}}, \mbox{\hyperlink{namespace_scott_plot_a4f8afc1393f89ce60e775705cbf134d1}{Coordinate\+Range}} $>$ \mbox{\hyperlink{struct_scott_plot_1_1_render_details_a4443c154219672d6576a272d08e45e13}{Previous\+Axis\+Limits\+By\+Axis}}
+\begin{DoxyCompactList}\small\item\em Axis limits of all axes from the previous render. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_render_details_ae58d187bd470633be3298f6bf2e73a7c}{readonly}} \mbox{\hyperlink{struct_scott_plot_1_1_layout}{Layout}} \mbox{\hyperlink{struct_scott_plot_1_1_render_details_aa007dcf0c8f8bbb235a874d1781785cd}{Layout}}
+\begin{DoxyCompactList}\small\item\em Arrangement of all panels. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_render_details_ae58d187bd470633be3298f6bf2e73a7c}{readonly}} int \mbox{\hyperlink{struct_scott_plot_1_1_render_details_a35120954951e7cf75a9cb08c10e6fe5e}{Count}}
+\begin{DoxyCompactList}\small\item\em The number of total renders including this one. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_render_details_ae58d187bd470633be3298f6bf2e73a7c}{readonly}} bool \mbox{\hyperlink{struct_scott_plot_1_1_render_details_a3026113b4f160ce66bf8c54a8b6accef}{Axis\+Limits\+Changed}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Indicates whether the axis view (coordinate units) of this render differs from the previous. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_scott_plot_1_1_render_details_ae58d187bd470633be3298f6bf2e73a7c}{readonly}} bool \mbox{\hyperlink{struct_scott_plot_1_1_render_details_aec837f8359f0b8cae87a8a08f6aa1c0f}{Size\+Changed}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Indicates whether the size (pixels) of this render differs from the previous. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{struct_scott_plot_1_1_render_details_a139dbfeecf658bc2233dbd1c0f2f2ef8}{Px\+Per\+UnitX}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+double \mbox{\hyperlink{struct_scott_plot_1_1_render_details_a1151a74fbe2e29a0cdfc28bbb06c5e2a}{Px\+Per\+UnitY}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+double \mbox{\hyperlink{struct_scott_plot_1_1_render_details_aa198ddf0dc7bb8bfee74ce3db6c0457c}{Units\+Per\+PxX}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+double \mbox{\hyperlink{struct_scott_plot_1_1_render_details_a30ec56a82b02ab4ebc486dfdf527b86f}{Units\+Per\+PxY}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Details about a completed render. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{struct_scott_plot_1_1_render_details_a7c007f5c84b3e77fbfcdf3df30c44002}\index{ScottPlot.RenderDetails@{ScottPlot.RenderDetails}!RenderDetails@{RenderDetails}}
+\index{RenderDetails@{RenderDetails}!ScottPlot.RenderDetails@{ScottPlot.RenderDetails}}
+\doxysubsubsection{\texorpdfstring{RenderDetails()}{RenderDetails()}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_render_details_a7c007f5c84b3e77fbfcdf3df30c44002} 
+Scott\+Plot.\+Render\+Details.\+Render\+Details (\begin{DoxyParamCaption}\item[{Render\+Pack}]{rp}{, }\item[{(string, Time\+Span)\mbox{[}$\,$\mbox{]}}]{action\+Times}{, }\item[{\mbox{\hyperlink{struct_scott_plot_1_1_render_details}{Render\+Details}}}]{last\+Render}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{struct_scott_plot_1_1_render_details_ae58d187bd470633be3298f6bf2e73a7c}\index{ScottPlot.RenderDetails@{ScottPlot.RenderDetails}!readonly@{readonly}}
+\index{readonly@{readonly}!ScottPlot.RenderDetails@{ScottPlot.RenderDetails}}
+\doxysubsubsection{\texorpdfstring{readonly()}{readonly()}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_render_details_ae58d187bd470633be3298f6bf2e73a7c} 
+Scott\+Plot.\+Render\+Details.\+readonly (\begin{DoxyParamCaption}\item[{string}]{}{, }\item[{Time\+Span}]{}{}\end{DoxyParamCaption})}
+
+
+
+Each step of the render and how long it took to execute. 
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{struct_scott_plot_1_1_render_details_a3967742292f47b6e8331e6cbf2456089}\index{ScottPlot.RenderDetails@{ScottPlot.RenderDetails}!AxisLimits@{AxisLimits}}
+\index{AxisLimits@{AxisLimits}!ScottPlot.RenderDetails@{ScottPlot.RenderDetails}}
+\doxysubsubsection{\texorpdfstring{AxisLimits}{AxisLimits}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_render_details_a3967742292f47b6e8331e6cbf2456089} 
+\mbox{\hyperlink{struct_scott_plot_1_1_render_details_ae58d187bd470633be3298f6bf2e73a7c}{readonly}} \mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}} Scott\+Plot.\+Render\+Details.\+Axis\+Limits}
+
+
+
+Axis limits of the primary axes for this render. 
+
+\Hypertarget{struct_scott_plot_1_1_render_details_af33594b75f27d7eb0c398e369126f1e1}\index{ScottPlot.RenderDetails@{ScottPlot.RenderDetails}!AxisLimitsByAxis@{AxisLimitsByAxis}}
+\index{AxisLimitsByAxis@{AxisLimitsByAxis}!ScottPlot.RenderDetails@{ScottPlot.RenderDetails}}
+\doxysubsubsection{\texorpdfstring{AxisLimitsByAxis}{AxisLimitsByAxis}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_render_details_af33594b75f27d7eb0c398e369126f1e1} 
+\mbox{\hyperlink{struct_scott_plot_1_1_render_details_ae58d187bd470633be3298f6bf2e73a7c}{readonly}} Dictionary$<$\mbox{\hyperlink{interface_scott_plot_1_1_i_axis}{IAxis}}, \mbox{\hyperlink{namespace_scott_plot_a4f8afc1393f89ce60e775705cbf134d1}{Coordinate\+Range}}$>$ Scott\+Plot.\+Render\+Details.\+Axis\+Limits\+By\+Axis}
+
+
+
+Axis limits for every axis. 
+
+\Hypertarget{struct_scott_plot_1_1_render_details_a35120954951e7cf75a9cb08c10e6fe5e}\index{ScottPlot.RenderDetails@{ScottPlot.RenderDetails}!Count@{Count}}
+\index{Count@{Count}!ScottPlot.RenderDetails@{ScottPlot.RenderDetails}}
+\doxysubsubsection{\texorpdfstring{Count}{Count}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_render_details_a35120954951e7cf75a9cb08c10e6fe5e} 
+\mbox{\hyperlink{struct_scott_plot_1_1_render_details_ae58d187bd470633be3298f6bf2e73a7c}{readonly}} int Scott\+Plot.\+Render\+Details.\+Count}
+
+
+
+The number of total renders including this one. 
+
+\Hypertarget{struct_scott_plot_1_1_render_details_accd9bda2c74378aef31e0184dacdc358}\index{ScottPlot.RenderDetails@{ScottPlot.RenderDetails}!DataRect@{DataRect}}
+\index{DataRect@{DataRect}!ScottPlot.RenderDetails@{ScottPlot.RenderDetails}}
+\doxysubsubsection{\texorpdfstring{DataRect}{DataRect}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_render_details_accd9bda2c74378aef31e0184dacdc358} 
+\mbox{\hyperlink{struct_scott_plot_1_1_render_details_ae58d187bd470633be3298f6bf2e73a7c}{readonly}} \mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect}{Pixel\+Rect}} Scott\+Plot.\+Render\+Details.\+Data\+Rect}
+
+
+
+Size of the data area of the plot in pixel units. 
+
+\Hypertarget{struct_scott_plot_1_1_render_details_a2995fddea216d629870449accd725a19}\index{ScottPlot.RenderDetails@{ScottPlot.RenderDetails}!Elapsed@{Elapsed}}
+\index{Elapsed@{Elapsed}!ScottPlot.RenderDetails@{ScottPlot.RenderDetails}}
+\doxysubsubsection{\texorpdfstring{Elapsed}{Elapsed}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_render_details_a2995fddea216d629870449accd725a19} 
+\mbox{\hyperlink{struct_scott_plot_1_1_render_details_ae58d187bd470633be3298f6bf2e73a7c}{readonly}} Time\+Span Scott\+Plot.\+Render\+Details.\+Elapsed}
+
+
+
+Total time required to render this image. 
+
+\Hypertarget{struct_scott_plot_1_1_render_details_a723b24b7ac2eed4fa7a3754516f9b544}\index{ScottPlot.RenderDetails@{ScottPlot.RenderDetails}!FigureRect@{FigureRect}}
+\index{FigureRect@{FigureRect}!ScottPlot.RenderDetails@{ScottPlot.RenderDetails}}
+\doxysubsubsection{\texorpdfstring{FigureRect}{FigureRect}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_render_details_a723b24b7ac2eed4fa7a3754516f9b544} 
+\mbox{\hyperlink{struct_scott_plot_1_1_render_details_ae58d187bd470633be3298f6bf2e73a7c}{readonly}} \mbox{\hyperlink{struct_scott_plot_1_1_pixel_rect}{Pixel\+Rect}} Scott\+Plot.\+Render\+Details.\+Figure\+Rect}
+
+
+
+Size of the plot image in pixel units. 
+
+\Hypertarget{struct_scott_plot_1_1_render_details_aa007dcf0c8f8bbb235a874d1781785cd}\index{ScottPlot.RenderDetails@{ScottPlot.RenderDetails}!Layout@{Layout}}
+\index{Layout@{Layout}!ScottPlot.RenderDetails@{ScottPlot.RenderDetails}}
+\doxysubsubsection{\texorpdfstring{Layout}{Layout}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_render_details_aa007dcf0c8f8bbb235a874d1781785cd} 
+\mbox{\hyperlink{struct_scott_plot_1_1_render_details_ae58d187bd470633be3298f6bf2e73a7c}{readonly}} \mbox{\hyperlink{struct_scott_plot_1_1_layout}{Layout}} Scott\+Plot.\+Render\+Details.\+Layout}
+
+
+
+Arrangement of all panels. 
+
+\Hypertarget{struct_scott_plot_1_1_render_details_ad216ad6d541252e384b8c8a48b63ae66}\index{ScottPlot.RenderDetails@{ScottPlot.RenderDetails}!Padding@{Padding}}
+\index{Padding@{Padding}!ScottPlot.RenderDetails@{ScottPlot.RenderDetails}}
+\doxysubsubsection{\texorpdfstring{Padding}{Padding}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_render_details_ad216ad6d541252e384b8c8a48b63ae66} 
+\mbox{\hyperlink{struct_scott_plot_1_1_render_details_ae58d187bd470633be3298f6bf2e73a7c}{readonly}} \mbox{\hyperlink{struct_scott_plot_1_1_pixel_padding}{Pixel\+Padding}} Scott\+Plot.\+Render\+Details.\+Padding}
+
+
+
+Distance between the data area and the edge of the figure. 
+
+\Hypertarget{struct_scott_plot_1_1_render_details_a2de82cc6a0d016ba80f5e6607acf743b}\index{ScottPlot.RenderDetails@{ScottPlot.RenderDetails}!PreviousAxisLimits@{PreviousAxisLimits}}
+\index{PreviousAxisLimits@{PreviousAxisLimits}!ScottPlot.RenderDetails@{ScottPlot.RenderDetails}}
+\doxysubsubsection{\texorpdfstring{PreviousAxisLimits}{PreviousAxisLimits}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_render_details_a2de82cc6a0d016ba80f5e6607acf743b} 
+\mbox{\hyperlink{struct_scott_plot_1_1_render_details_ae58d187bd470633be3298f6bf2e73a7c}{readonly}} \mbox{\hyperlink{struct_scott_plot_1_1_axis_limits}{Axis\+Limits}} Scott\+Plot.\+Render\+Details.\+Previous\+Axis\+Limits}
+
+
+
+Axis limits of the primary axes for the previous render. 
+
+\Hypertarget{struct_scott_plot_1_1_render_details_a4443c154219672d6576a272d08e45e13}\index{ScottPlot.RenderDetails@{ScottPlot.RenderDetails}!PreviousAxisLimitsByAxis@{PreviousAxisLimitsByAxis}}
+\index{PreviousAxisLimitsByAxis@{PreviousAxisLimitsByAxis}!ScottPlot.RenderDetails@{ScottPlot.RenderDetails}}
+\doxysubsubsection{\texorpdfstring{PreviousAxisLimitsByAxis}{PreviousAxisLimitsByAxis}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_render_details_a4443c154219672d6576a272d08e45e13} 
+\mbox{\hyperlink{struct_scott_plot_1_1_render_details_ae58d187bd470633be3298f6bf2e73a7c}{readonly}} Dictionary$<$\mbox{\hyperlink{interface_scott_plot_1_1_i_axis}{IAxis}}, \mbox{\hyperlink{namespace_scott_plot_a4f8afc1393f89ce60e775705cbf134d1}{Coordinate\+Range}}$>$ Scott\+Plot.\+Render\+Details.\+Previous\+Axis\+Limits\+By\+Axis}
+
+
+
+Axis limits of all axes from the previous render. 
+
+\Hypertarget{struct_scott_plot_1_1_render_details_ae1274a7cc67c0fa1c85ffac97eed1e72}\index{ScottPlot.RenderDetails@{ScottPlot.RenderDetails}!Timestamp@{Timestamp}}
+\index{Timestamp@{Timestamp}!ScottPlot.RenderDetails@{ScottPlot.RenderDetails}}
+\doxysubsubsection{\texorpdfstring{Timestamp}{Timestamp}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_render_details_ae1274a7cc67c0fa1c85ffac97eed1e72} 
+\mbox{\hyperlink{struct_scott_plot_1_1_render_details_ae58d187bd470633be3298f6bf2e73a7c}{readonly}} Date\+Time Scott\+Plot.\+Render\+Details.\+Timestamp}
+
+
+
+Time the render was completed. 
+
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{struct_scott_plot_1_1_render_details_a3026113b4f160ce66bf8c54a8b6accef}\index{ScottPlot.RenderDetails@{ScottPlot.RenderDetails}!AxisLimitsChanged@{AxisLimitsChanged}}
+\index{AxisLimitsChanged@{AxisLimitsChanged}!ScottPlot.RenderDetails@{ScottPlot.RenderDetails}}
+\doxysubsubsection{\texorpdfstring{AxisLimitsChanged}{AxisLimitsChanged}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_render_details_a3026113b4f160ce66bf8c54a8b6accef} 
+\mbox{\hyperlink{struct_scott_plot_1_1_render_details_ae58d187bd470633be3298f6bf2e73a7c}{readonly}} bool Scott\+Plot.\+Render\+Details.\+Axis\+Limits\+Changed\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Indicates whether the axis view (coordinate units) of this render differs from the previous. 
+
+\Hypertarget{struct_scott_plot_1_1_render_details_a139dbfeecf658bc2233dbd1c0f2f2ef8}\index{ScottPlot.RenderDetails@{ScottPlot.RenderDetails}!PxPerUnitX@{PxPerUnitX}}
+\index{PxPerUnitX@{PxPerUnitX}!ScottPlot.RenderDetails@{ScottPlot.RenderDetails}}
+\doxysubsubsection{\texorpdfstring{PxPerUnitX}{PxPerUnitX}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_render_details_a139dbfeecf658bc2233dbd1c0f2f2ef8} 
+double Scott\+Plot.\+Render\+Details.\+Px\+Per\+UnitX\hspace{0.3cm}{\ttfamily [get]}}
+
+\Hypertarget{struct_scott_plot_1_1_render_details_a1151a74fbe2e29a0cdfc28bbb06c5e2a}\index{ScottPlot.RenderDetails@{ScottPlot.RenderDetails}!PxPerUnitY@{PxPerUnitY}}
+\index{PxPerUnitY@{PxPerUnitY}!ScottPlot.RenderDetails@{ScottPlot.RenderDetails}}
+\doxysubsubsection{\texorpdfstring{PxPerUnitY}{PxPerUnitY}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_render_details_a1151a74fbe2e29a0cdfc28bbb06c5e2a} 
+double Scott\+Plot.\+Render\+Details.\+Px\+Per\+UnitY\hspace{0.3cm}{\ttfamily [get]}}
+
+\Hypertarget{struct_scott_plot_1_1_render_details_aec837f8359f0b8cae87a8a08f6aa1c0f}\index{ScottPlot.RenderDetails@{ScottPlot.RenderDetails}!SizeChanged@{SizeChanged}}
+\index{SizeChanged@{SizeChanged}!ScottPlot.RenderDetails@{ScottPlot.RenderDetails}}
+\doxysubsubsection{\texorpdfstring{SizeChanged}{SizeChanged}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_render_details_aec837f8359f0b8cae87a8a08f6aa1c0f} 
+\mbox{\hyperlink{struct_scott_plot_1_1_render_details_ae58d187bd470633be3298f6bf2e73a7c}{readonly}} bool Scott\+Plot.\+Render\+Details.\+Size\+Changed\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Indicates whether the size (pixels) of this render differs from the previous. 
+
+\Hypertarget{struct_scott_plot_1_1_render_details_aa198ddf0dc7bb8bfee74ce3db6c0457c}\index{ScottPlot.RenderDetails@{ScottPlot.RenderDetails}!UnitsPerPxX@{UnitsPerPxX}}
+\index{UnitsPerPxX@{UnitsPerPxX}!ScottPlot.RenderDetails@{ScottPlot.RenderDetails}}
+\doxysubsubsection{\texorpdfstring{UnitsPerPxX}{UnitsPerPxX}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_render_details_aa198ddf0dc7bb8bfee74ce3db6c0457c} 
+double Scott\+Plot.\+Render\+Details.\+Units\+Per\+PxX\hspace{0.3cm}{\ttfamily [get]}}
+
+\Hypertarget{struct_scott_plot_1_1_render_details_a30ec56a82b02ab4ebc486dfdf527b86f}\index{ScottPlot.RenderDetails@{ScottPlot.RenderDetails}!UnitsPerPxY@{UnitsPerPxY}}
+\index{UnitsPerPxY@{UnitsPerPxY}!ScottPlot.RenderDetails@{ScottPlot.RenderDetails}}
+\doxysubsubsection{\texorpdfstring{UnitsPerPxY}{UnitsPerPxY}}
+{\footnotesize\ttfamily \label{struct_scott_plot_1_1_render_details_a30ec56a82b02ab4ebc486dfdf527b86f} 
+double Scott\+Plot.\+Render\+Details.\+Units\+Per\+PxY\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Primitives/Render\+Details.\+cs\end{DoxyCompactItemize}

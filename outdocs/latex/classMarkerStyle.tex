@@ -1,0 +1,250 @@
+\hypertarget{classMarkerStyle}{}\doxysection{Marker\+Style Class Reference}
+\label{classMarkerStyle}\index{MarkerStyle@{MarkerStyle}}
+
+
+This configuration object (reference type) permanently lives inside objects which require styling. It is recommended to use this object as an init-\/only property.  
+
+
+Inheritance diagram for Marker\+Style\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classMarkerStyle}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classMarkerStyle_a9e854f2b5740101bf6067f0418140504}{Marker\+Style}} ()
+\item 
+\mbox{\hyperlink{classMarkerStyle_a9e05181f3de04f79b2d809ad927dbc60}{Marker\+Style}} (Marker\+Shape shape, float size)
+\item 
+\mbox{\hyperlink{classMarkerStyle_a93d22b327421f6e18c9767c3add2a64b}{Marker\+Style}} (Marker\+Shape shape, float size, \mbox{\hyperlink{structColor}{Color}} color)
+\item 
+void \mbox{\hyperlink{classMarkerStyle_afd2d6441ed5cb4d9c4fff0e7c0717e2a}{Render}} (SKCanvas canvas, \mbox{\hyperlink{structPixel}{Pixel}} px, SKPaint paint)
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classMarkerStyle_aba6d0493f8a51d4f2ff90bede6eacbb3}{Is\+Visible}} = true\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+Marker\+Shape \mbox{\hyperlink{classMarkerStyle_ab24f72322a4734ce921f72b7453d251b}{Shape}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{classMarkerStyle_a3935f3f64bb69e41e26754585f9ff85d}{Size}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Diameter of the marker (in pixels) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structColor}{Color}} \mbox{\hyperlink{classMarkerStyle_ad2139395af6c3917c1a1109b1ea3a27d}{Marker\+Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{classLineStyle}{Line\+Style}} \mbox{\hyperlink{classMarkerStyle_aebe4c2b240d42387a3997dd9702267e1}{Line\+Style}} = new() \{ Width = 1 \}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{classMarkerStyle_a83b8f991676ee7532a56abf5e079a773}{Line\+Width}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+Line\+Pattern \mbox{\hyperlink{classMarkerStyle_afa0f41855f5f4792e68cee73fb28204a}{Line\+Pattern}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{structColor}{Color}} \mbox{\hyperlink{classMarkerStyle_a0d5f82db324554e68eee01688142bb7f}{Line\+Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{classFillStyle}{Fill\+Style}} \mbox{\hyperlink{classMarkerStyle_a5c266a5f871db66a0574ab60a11beedf}{Fill\+Style}} = new()\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{structColor}{Color}} \mbox{\hyperlink{classMarkerStyle_a85f3691fda4f2e268b3ecd20bbaab773}{Fill\+Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{structColor}{Color}} \mbox{\hyperlink{classMarkerStyle_aef14c8319e6398dd86ec1638392ab6e3}{Fill\+Hatch\+Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{interfaceIHatch}{IHatch}}? \mbox{\hyperlink{classMarkerStyle_a46ef59144d0713f6d9bef7b953aebaca}{Fill\+Hatch}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{interfaceIMarker}{IMarker}}? \mbox{\hyperlink{classMarkerStyle_acf5f45428eb3ab424465142b0fdb5757}{Custom\+Renderer}} = null\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+bool \mbox{\hyperlink{classMarkerStyle_a1ae0198bfbada895d2ab91d231626675}{Fill\+Outline}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{classLineStyle}{Line\+Style}} \mbox{\hyperlink{classMarkerStyle_aeb1ecec2578b065be185e04acd1cc233}{Outline}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{classLineStyle}{Line\+Style}} \mbox{\hyperlink{classMarkerStyle_afdf9e2884eb850898fe7b9674c392705}{Outline\+Style}} = new() \{ \mbox{\hyperlink{structColor}{Color}} = \mbox{\hyperlink{structColors_a6a4f09e77ec6d0ef4c08348eb2e21714}{Colors.\+Black}}, Width = 0 \}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{classMarkerStyle_a29feb39286a43fdf2f7436dd3a50e19d}{Outline\+Width}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{classMarkerStyle_afa0f41855f5f4792e68cee73fb28204a}{Line\+Pattern}} \mbox{\hyperlink{classMarkerStyle_a0ba8c31e2dfd67d0f6169183ae065c01}{Outline\+Pattern}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{structColor}{Color}} \mbox{\hyperlink{classMarkerStyle_a6e30ccba260c973f2654b71bea67ba51}{Outline\+Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{classFillStyle}{Fill\+Style}} \mbox{\hyperlink{classMarkerStyle_a4d04a7c5c03d2452f0806609eda8033d}{Fill}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+static \mbox{\hyperlink{classMarkerStyle}{Marker\+Style}} \mbox{\hyperlink{classMarkerStyle_a4486076a4e2e7c58b1f2df58e3797174}{Default}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+static \mbox{\hyperlink{classMarkerStyle}{Marker\+Style}} \mbox{\hyperlink{classMarkerStyle_a48317b2df08a90a227eabfd6c1073fcc}{None}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This configuration object (reference type) permanently lives inside objects which require styling. It is recommended to use this object as an init-\/only property. 
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classMarkerStyle_a9e854f2b5740101bf6067f0418140504}\label{classMarkerStyle_a9e854f2b5740101bf6067f0418140504}} 
+\index{MarkerStyle@{MarkerStyle}!MarkerStyle@{MarkerStyle}}
+\index{MarkerStyle@{MarkerStyle}!MarkerStyle@{MarkerStyle}}
+\doxysubsubsection{\texorpdfstring{MarkerStyle()}{MarkerStyle()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Marker\+Style.\+Marker\+Style (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classMarkerStyle_a9e05181f3de04f79b2d809ad927dbc60}\label{classMarkerStyle_a9e05181f3de04f79b2d809ad927dbc60}} 
+\index{MarkerStyle@{MarkerStyle}!MarkerStyle@{MarkerStyle}}
+\index{MarkerStyle@{MarkerStyle}!MarkerStyle@{MarkerStyle}}
+\doxysubsubsection{\texorpdfstring{MarkerStyle()}{MarkerStyle()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Marker\+Style.\+Marker\+Style (\begin{DoxyParamCaption}\item[{Marker\+Shape}]{shape,  }\item[{float}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classMarkerStyle_a93d22b327421f6e18c9767c3add2a64b}\label{classMarkerStyle_a93d22b327421f6e18c9767c3add2a64b}} 
+\index{MarkerStyle@{MarkerStyle}!MarkerStyle@{MarkerStyle}}
+\index{MarkerStyle@{MarkerStyle}!MarkerStyle@{MarkerStyle}}
+\doxysubsubsection{\texorpdfstring{MarkerStyle()}{MarkerStyle()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Marker\+Style.\+Marker\+Style (\begin{DoxyParamCaption}\item[{Marker\+Shape}]{shape,  }\item[{float}]{size,  }\item[{\mbox{\hyperlink{structColor}{Color}}}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classMarkerStyle_afd2d6441ed5cb4d9c4fff0e7c0717e2a}\label{classMarkerStyle_afd2d6441ed5cb4d9c4fff0e7c0717e2a}} 
+\index{MarkerStyle@{MarkerStyle}!Render@{Render}}
+\index{Render@{Render}!MarkerStyle@{MarkerStyle}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily void Marker\+Style.\+Render (\begin{DoxyParamCaption}\item[{SKCanvas}]{canvas,  }\item[{\mbox{\hyperlink{structPixel}{Pixel}}}]{px,  }\item[{SKPaint}]{paint }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{classMarkerStyle_acf5f45428eb3ab424465142b0fdb5757}\label{classMarkerStyle_acf5f45428eb3ab424465142b0fdb5757}} 
+\index{MarkerStyle@{MarkerStyle}!CustomRenderer@{CustomRenderer}}
+\index{CustomRenderer@{CustomRenderer}!MarkerStyle@{MarkerStyle}}
+\doxysubsubsection{\texorpdfstring{CustomRenderer}{CustomRenderer}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceIMarker}{IMarker}}? Marker\+Style.\+Custom\+Renderer = null\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classMarkerStyle_a4486076a4e2e7c58b1f2df58e3797174}\label{classMarkerStyle_a4486076a4e2e7c58b1f2df58e3797174}} 
+\index{MarkerStyle@{MarkerStyle}!Default@{Default}}
+\index{Default@{Default}!MarkerStyle@{MarkerStyle}}
+\doxysubsubsection{\texorpdfstring{Default}{Default}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classMarkerStyle}{Marker\+Style}} Marker\+Style.\+Default\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+\mbox{\Hypertarget{classMarkerStyle_a4d04a7c5c03d2452f0806609eda8033d}\label{classMarkerStyle_a4d04a7c5c03d2452f0806609eda8033d}} 
+\index{MarkerStyle@{MarkerStyle}!Fill@{Fill}}
+\index{Fill@{Fill}!MarkerStyle@{MarkerStyle}}
+\doxysubsubsection{\texorpdfstring{Fill}{Fill}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classFillStyle}{Fill\+Style}} Marker\+Style.\+Fill\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classMarkerStyle_a85f3691fda4f2e268b3ecd20bbaab773}\label{classMarkerStyle_a85f3691fda4f2e268b3ecd20bbaab773}} 
+\index{MarkerStyle@{MarkerStyle}!FillColor@{FillColor}}
+\index{FillColor@{FillColor}!MarkerStyle@{MarkerStyle}}
+\doxysubsubsection{\texorpdfstring{FillColor}{FillColor}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structColor}{Color}} Marker\+Style.\+Fill\+Color\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classMarkerStyle_a46ef59144d0713f6d9bef7b953aebaca}\label{classMarkerStyle_a46ef59144d0713f6d9bef7b953aebaca}} 
+\index{MarkerStyle@{MarkerStyle}!FillHatch@{FillHatch}}
+\index{FillHatch@{FillHatch}!MarkerStyle@{MarkerStyle}}
+\doxysubsubsection{\texorpdfstring{FillHatch}{FillHatch}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceIHatch}{IHatch}}? Marker\+Style.\+Fill\+Hatch\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classMarkerStyle_aef14c8319e6398dd86ec1638392ab6e3}\label{classMarkerStyle_aef14c8319e6398dd86ec1638392ab6e3}} 
+\index{MarkerStyle@{MarkerStyle}!FillHatchColor@{FillHatchColor}}
+\index{FillHatchColor@{FillHatchColor}!MarkerStyle@{MarkerStyle}}
+\doxysubsubsection{\texorpdfstring{FillHatchColor}{FillHatchColor}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structColor}{Color}} Marker\+Style.\+Fill\+Hatch\+Color\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classMarkerStyle_a1ae0198bfbada895d2ab91d231626675}\label{classMarkerStyle_a1ae0198bfbada895d2ab91d231626675}} 
+\index{MarkerStyle@{MarkerStyle}!FillOutline@{FillOutline}}
+\index{FillOutline@{FillOutline}!MarkerStyle@{MarkerStyle}}
+\doxysubsubsection{\texorpdfstring{FillOutline}{FillOutline}}
+{\footnotesize\ttfamily bool Marker\+Style.\+Fill\+Outline\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classMarkerStyle_a5c266a5f871db66a0574ab60a11beedf}\label{classMarkerStyle_a5c266a5f871db66a0574ab60a11beedf}} 
+\index{MarkerStyle@{MarkerStyle}!FillStyle@{FillStyle}}
+\index{FillStyle@{FillStyle}!MarkerStyle@{MarkerStyle}}
+\doxysubsubsection{\texorpdfstring{FillStyle}{FillStyle}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classFillStyle}{Fill\+Style}} Marker\+Style.\+Fill\+Style = new()\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classMarkerStyle_aba6d0493f8a51d4f2ff90bede6eacbb3}\label{classMarkerStyle_aba6d0493f8a51d4f2ff90bede6eacbb3}} 
+\index{MarkerStyle@{MarkerStyle}!IsVisible@{IsVisible}}
+\index{IsVisible@{IsVisible}!MarkerStyle@{MarkerStyle}}
+\doxysubsubsection{\texorpdfstring{IsVisible}{IsVisible}}
+{\footnotesize\ttfamily bool Marker\+Style.\+Is\+Visible = true\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classMarkerStyle_a0d5f82db324554e68eee01688142bb7f}\label{classMarkerStyle_a0d5f82db324554e68eee01688142bb7f}} 
+\index{MarkerStyle@{MarkerStyle}!LineColor@{LineColor}}
+\index{LineColor@{LineColor}!MarkerStyle@{MarkerStyle}}
+\doxysubsubsection{\texorpdfstring{LineColor}{LineColor}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structColor}{Color}} Marker\+Style.\+Line\+Color\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classMarkerStyle_afa0f41855f5f4792e68cee73fb28204a}\label{classMarkerStyle_afa0f41855f5f4792e68cee73fb28204a}} 
+\index{MarkerStyle@{MarkerStyle}!LinePattern@{LinePattern}}
+\index{LinePattern@{LinePattern}!MarkerStyle@{MarkerStyle}}
+\doxysubsubsection{\texorpdfstring{LinePattern}{LinePattern}}
+{\footnotesize\ttfamily Line\+Pattern Marker\+Style.\+Line\+Pattern\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classMarkerStyle_aebe4c2b240d42387a3997dd9702267e1}\label{classMarkerStyle_aebe4c2b240d42387a3997dd9702267e1}} 
+\index{MarkerStyle@{MarkerStyle}!LineStyle@{LineStyle}}
+\index{LineStyle@{LineStyle}!MarkerStyle@{MarkerStyle}}
+\doxysubsubsection{\texorpdfstring{LineStyle}{LineStyle}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classLineStyle}{Line\+Style}} Marker\+Style.\+Line\+Style = new() \{ Width = 1 \}\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classMarkerStyle_a83b8f991676ee7532a56abf5e079a773}\label{classMarkerStyle_a83b8f991676ee7532a56abf5e079a773}} 
+\index{MarkerStyle@{MarkerStyle}!LineWidth@{LineWidth}}
+\index{LineWidth@{LineWidth}!MarkerStyle@{MarkerStyle}}
+\doxysubsubsection{\texorpdfstring{LineWidth}{LineWidth}}
+{\footnotesize\ttfamily float Marker\+Style.\+Line\+Width\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classMarkerStyle_ad2139395af6c3917c1a1109b1ea3a27d}\label{classMarkerStyle_ad2139395af6c3917c1a1109b1ea3a27d}} 
+\index{MarkerStyle@{MarkerStyle}!MarkerColor@{MarkerColor}}
+\index{MarkerColor@{MarkerColor}!MarkerStyle@{MarkerStyle}}
+\doxysubsubsection{\texorpdfstring{MarkerColor}{MarkerColor}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structColor}{Color}} Marker\+Style.\+Marker\+Color\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classMarkerStyle_a48317b2df08a90a227eabfd6c1073fcc}\label{classMarkerStyle_a48317b2df08a90a227eabfd6c1073fcc}} 
+\index{MarkerStyle@{MarkerStyle}!None@{None}}
+\index{None@{None}!MarkerStyle@{MarkerStyle}}
+\doxysubsubsection{\texorpdfstring{None}{None}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classMarkerStyle}{Marker\+Style}} Marker\+Style.\+None\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+\mbox{\Hypertarget{classMarkerStyle_aeb1ecec2578b065be185e04acd1cc233}\label{classMarkerStyle_aeb1ecec2578b065be185e04acd1cc233}} 
+\index{MarkerStyle@{MarkerStyle}!Outline@{Outline}}
+\index{Outline@{Outline}!MarkerStyle@{MarkerStyle}}
+\doxysubsubsection{\texorpdfstring{Outline}{Outline}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classLineStyle}{Line\+Style}} Marker\+Style.\+Outline\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classMarkerStyle_a6e30ccba260c973f2654b71bea67ba51}\label{classMarkerStyle_a6e30ccba260c973f2654b71bea67ba51}} 
+\index{MarkerStyle@{MarkerStyle}!OutlineColor@{OutlineColor}}
+\index{OutlineColor@{OutlineColor}!MarkerStyle@{MarkerStyle}}
+\doxysubsubsection{\texorpdfstring{OutlineColor}{OutlineColor}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structColor}{Color}} Marker\+Style.\+Outline\+Color\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classMarkerStyle_a0ba8c31e2dfd67d0f6169183ae065c01}\label{classMarkerStyle_a0ba8c31e2dfd67d0f6169183ae065c01}} 
+\index{MarkerStyle@{MarkerStyle}!OutlinePattern@{OutlinePattern}}
+\index{OutlinePattern@{OutlinePattern}!MarkerStyle@{MarkerStyle}}
+\doxysubsubsection{\texorpdfstring{OutlinePattern}{OutlinePattern}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classMarkerStyle_afa0f41855f5f4792e68cee73fb28204a}{Line\+Pattern}} Marker\+Style.\+Outline\+Pattern\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classMarkerStyle_afdf9e2884eb850898fe7b9674c392705}\label{classMarkerStyle_afdf9e2884eb850898fe7b9674c392705}} 
+\index{MarkerStyle@{MarkerStyle}!OutlineStyle@{OutlineStyle}}
+\index{OutlineStyle@{OutlineStyle}!MarkerStyle@{MarkerStyle}}
+\doxysubsubsection{\texorpdfstring{OutlineStyle}{OutlineStyle}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classLineStyle}{Line\+Style}} Marker\+Style.\+Outline\+Style = new() \{ \mbox{\hyperlink{structColor}{Color}} = \mbox{\hyperlink{structColors_a6a4f09e77ec6d0ef4c08348eb2e21714}{Colors.\+Black}}, Width = 0 \}\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classMarkerStyle_a29feb39286a43fdf2f7436dd3a50e19d}\label{classMarkerStyle_a29feb39286a43fdf2f7436dd3a50e19d}} 
+\index{MarkerStyle@{MarkerStyle}!OutlineWidth@{OutlineWidth}}
+\index{OutlineWidth@{OutlineWidth}!MarkerStyle@{MarkerStyle}}
+\doxysubsubsection{\texorpdfstring{OutlineWidth}{OutlineWidth}}
+{\footnotesize\ttfamily float Marker\+Style.\+Outline\+Width\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classMarkerStyle_ab24f72322a4734ce921f72b7453d251b}\label{classMarkerStyle_ab24f72322a4734ce921f72b7453d251b}} 
+\index{MarkerStyle@{MarkerStyle}!Shape@{Shape}}
+\index{Shape@{Shape}!MarkerStyle@{MarkerStyle}}
+\doxysubsubsection{\texorpdfstring{Shape}{Shape}}
+{\footnotesize\ttfamily Marker\+Shape Marker\+Style.\+Shape\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classMarkerStyle_a3935f3f64bb69e41e26754585f9ff85d}\label{classMarkerStyle_a3935f3f64bb69e41e26754585f9ff85d}} 
+\index{MarkerStyle@{MarkerStyle}!Size@{Size}}
+\index{Size@{Size}!MarkerStyle@{MarkerStyle}}
+\doxysubsubsection{\texorpdfstring{Size}{Size}}
+{\footnotesize\ttfamily float Marker\+Style.\+Size\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Diameter of the marker (in pixels) 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Primitives/Marker\+Style.\+cs\end{DoxyCompactItemize}

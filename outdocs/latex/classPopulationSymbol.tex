@@ -1,0 +1,188 @@
+\hypertarget{classPopulationSymbol}{}\doxysection{Population\+Symbol Class Reference}
+\label{classPopulationSymbol}\index{PopulationSymbol@{PopulationSymbol}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} \mbox{\hyperlink{classPopulationSymbol_aac4e9a1acd04e5a63158a8727c9fe350}{Get\+Axis\+Limits}} ()
+\item 
+virtual void \mbox{\hyperlink{classPopulationSymbol_a23d54120148f9045bd955ebe774d807c}{Render}} (\mbox{\hyperlink{classRenderPack}{Render\+Pack}} rp)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classPopulation}{Population}} \mbox{\hyperlink{classPopulationSymbol_acc2100b4d59018fd18081443ad0b0452}{Box\+Value\+Configurator\+\_\+\+Mean\+Std\+Err\+St\+Dev}} (\mbox{\hyperlink{classBox}{Box}} box, \mbox{\hyperlink{classPopulation}{Population}} pop)
+\item 
+static \mbox{\hyperlink{classPopulation}{Population}} \mbox{\hyperlink{classPopulationSymbol_a2789f549f015c9c6cdd8560686166c54}{Box\+Value\+Configurator\+\_\+\+Median\+Quantile\+Extrema}} (\mbox{\hyperlink{classBox}{Box}} box, \mbox{\hyperlink{classPopulation}{Population}} pop)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{classPopulationSymbol_a39c839317350921a334cbeca20f7f620}{Marker\+Width\+Fraction}} = 0.\+8
+\item 
+double \mbox{\hyperlink{classPopulationSymbol_a7fd980b1fe42fb65f4a151a77a0f8d17}{Bar\+Width\+Fraction}} = .\+9
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPopulation}{Population}} \mbox{\hyperlink{classPopulationSymbol_ac2eac70541ca72f7fb9dd22b7ea0b0fc}{population}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{classPopulation}{Population}} \mbox{\hyperlink{classPopulationSymbol_abcfc1209cc5837284404e6f9b1797b26}{Population}} = \mbox{\hyperlink{classPopulationSymbol_ac2eac70541ca72f7fb9dd22b7ea0b0fc}{population}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+bool \mbox{\hyperlink{classPopulationSymbol_ad3f1a50d38063bf676431157c6a23f1b}{Is\+Visible}} = true\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{interfaceIAxes}{IAxes}} \mbox{\hyperlink{classPopulationSymbol_aba7585d89ad098abc2d5d2022c9e2aca}{Axes}} = new \mbox{\hyperlink{classAxes}{Axes}}()\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$ \mbox{\hyperlink{classLegendItem}{Legend\+Item}} $>$ \mbox{\hyperlink{classPopulationSymbol_a7ca022d1b35da897d74561e3ff221aef}{Legend\+Items}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+double \mbox{\hyperlink{classPopulationSymbol_a020fcd9d493df6415450cedf77f3ae46}{X}} = 0\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+double \mbox{\hyperlink{classPopulationSymbol_a8ab0d47880a1a1461fcb092e1644b52e}{Width}} = 0.\+8\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+Horizontal\+Alignment \mbox{\hyperlink{classPopulationSymbol_a64a6ca64ba60d26b96cb8bab810393e4}{Marker\+Alignment}} = Horizontal\+Alignment.\+Left\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+Horizontal\+Alignment \mbox{\hyperlink{classPopulationSymbol_aaad210703158a37f4538b90fb7a191fb}{Bar\+Alignment}} = Horizontal\+Alignment.\+Right\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+Horizontal\+Alignment \mbox{\hyperlink{classPopulationSymbol_ab2ad874ec006a8afa87c69dc98b3fce7}{Box\+Alignment}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{classBar}{Bar}} \mbox{\hyperlink{classPopulationSymbol_a5a6f8459a30797ccf2471d3c7bf2d930}{Bar}} = new() \{ \mbox{\hyperlink{classPopulationSymbol_ad3f1a50d38063bf676431157c6a23f1b}{Is\+Visible}} = true \}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{classBox}{Box}} \mbox{\hyperlink{classPopulationSymbol_a345a724e925b6d2698ae983960717f68}{Box}} = new() \{ \mbox{\hyperlink{classPopulationSymbol_ad3f1a50d38063bf676431157c6a23f1b}{Is\+Visible}} = false \}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{classMarker}{Marker}} \mbox{\hyperlink{classPopulationSymbol_a193713eca3a664f01777698df903fc86}{Marker}} = new() \{ Size = 10, Shape = Marker\+Shape.\+Open\+Circle \}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+Func$<$ \mbox{\hyperlink{classBox}{Box}}, \mbox{\hyperlink{classPopulation}{Population}}, \mbox{\hyperlink{classPopulation}{Population}} $>$ \mbox{\hyperlink{classPopulationSymbol_a6144b3adc4bec066aa05d7589facf1fd}{Box\+Value\+Config}} = \mbox{\hyperlink{classPopulationSymbol_a2789f549f015c9c6cdd8560686166c54}{Box\+Value\+Configurator\+\_\+\+Median\+Quantile\+Extrema}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPopulationSymbol_acc2100b4d59018fd18081443ad0b0452}\label{classPopulationSymbol_acc2100b4d59018fd18081443ad0b0452}} 
+\index{PopulationSymbol@{PopulationSymbol}!BoxValueConfigurator\_MeanStdErrStDev@{BoxValueConfigurator\_MeanStdErrStDev}}
+\index{BoxValueConfigurator\_MeanStdErrStDev@{BoxValueConfigurator\_MeanStdErrStDev}!PopulationSymbol@{PopulationSymbol}}
+\doxysubsubsection{\texorpdfstring{BoxValueConfigurator\_MeanStdErrStDev()}{BoxValueConfigurator\_MeanStdErrStDev()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classPopulation}{Population}} Population\+Symbol.\+Box\+Value\+Configurator\+\_\+\+Mean\+Std\+Err\+St\+Dev (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classBox}{Box}}}]{box,  }\item[{\mbox{\hyperlink{classPopulation}{Population}}}]{pop }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{classPopulationSymbol_a2789f549f015c9c6cdd8560686166c54}\label{classPopulationSymbol_a2789f549f015c9c6cdd8560686166c54}} 
+\index{PopulationSymbol@{PopulationSymbol}!BoxValueConfigurator\_MedianQuantileExtrema@{BoxValueConfigurator\_MedianQuantileExtrema}}
+\index{BoxValueConfigurator\_MedianQuantileExtrema@{BoxValueConfigurator\_MedianQuantileExtrema}!PopulationSymbol@{PopulationSymbol}}
+\doxysubsubsection{\texorpdfstring{BoxValueConfigurator\_MedianQuantileExtrema()}{BoxValueConfigurator\_MedianQuantileExtrema()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classPopulation}{Population}} Population\+Symbol.\+Box\+Value\+Configurator\+\_\+\+Median\+Quantile\+Extrema (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classBox}{Box}}}]{box,  }\item[{\mbox{\hyperlink{classPopulation}{Population}}}]{pop }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{classPopulationSymbol_aac4e9a1acd04e5a63158a8727c9fe350}\label{classPopulationSymbol_aac4e9a1acd04e5a63158a8727c9fe350}} 
+\index{PopulationSymbol@{PopulationSymbol}!GetAxisLimits@{GetAxisLimits}}
+\index{GetAxisLimits@{GetAxisLimits}!PopulationSymbol@{PopulationSymbol}}
+\doxysubsubsection{\texorpdfstring{GetAxisLimits()}{GetAxisLimits()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structAxisLimits}{Axis\+Limits}} Population\+Symbol.\+Get\+Axis\+Limits (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPopulationSymbol_a23d54120148f9045bd955ebe774d807c}\label{classPopulationSymbol_a23d54120148f9045bd955ebe774d807c}} 
+\index{PopulationSymbol@{PopulationSymbol}!Render@{Render}}
+\index{Render@{Render}!PopulationSymbol@{PopulationSymbol}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily virtual void Population\+Symbol.\+Render (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classRenderPack}{Render\+Pack}}}]{rp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classPopulationSymbol_a7fd980b1fe42fb65f4a151a77a0f8d17}\label{classPopulationSymbol_a7fd980b1fe42fb65f4a151a77a0f8d17}} 
+\index{PopulationSymbol@{PopulationSymbol}!BarWidthFraction@{BarWidthFraction}}
+\index{BarWidthFraction@{BarWidthFraction}!PopulationSymbol@{PopulationSymbol}}
+\doxysubsubsection{\texorpdfstring{BarWidthFraction}{BarWidthFraction}}
+{\footnotesize\ttfamily double Population\+Symbol.\+Bar\+Width\+Fraction = .\+9}
+
+\mbox{\Hypertarget{classPopulationSymbol_a39c839317350921a334cbeca20f7f620}\label{classPopulationSymbol_a39c839317350921a334cbeca20f7f620}} 
+\index{PopulationSymbol@{PopulationSymbol}!MarkerWidthFraction@{MarkerWidthFraction}}
+\index{MarkerWidthFraction@{MarkerWidthFraction}!PopulationSymbol@{PopulationSymbol}}
+\doxysubsubsection{\texorpdfstring{MarkerWidthFraction}{MarkerWidthFraction}}
+{\footnotesize\ttfamily double Population\+Symbol.\+Marker\+Width\+Fraction = 0.\+8}
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{classPopulationSymbol_aba7585d89ad098abc2d5d2022c9e2aca}\label{classPopulationSymbol_aba7585d89ad098abc2d5d2022c9e2aca}} 
+\index{PopulationSymbol@{PopulationSymbol}!Axes@{Axes}}
+\index{Axes@{Axes}!PopulationSymbol@{PopulationSymbol}}
+\doxysubsubsection{\texorpdfstring{Axes}{Axes}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceIAxes}{IAxes}} Population\+Symbol.\+Axes = new \mbox{\hyperlink{classAxes}{Axes}}()\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classPopulationSymbol_a5a6f8459a30797ccf2471d3c7bf2d930}\label{classPopulationSymbol_a5a6f8459a30797ccf2471d3c7bf2d930}} 
+\index{PopulationSymbol@{PopulationSymbol}!Bar@{Bar}}
+\index{Bar@{Bar}!PopulationSymbol@{PopulationSymbol}}
+\doxysubsubsection{\texorpdfstring{Bar}{Bar}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classBar}{Bar}} Population\+Symbol.\+Bar = new() \{ \mbox{\hyperlink{classPopulationSymbol_ad3f1a50d38063bf676431157c6a23f1b}{Is\+Visible}} = true \}\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classPopulationSymbol_aaad210703158a37f4538b90fb7a191fb}\label{classPopulationSymbol_aaad210703158a37f4538b90fb7a191fb}} 
+\index{PopulationSymbol@{PopulationSymbol}!BarAlignment@{BarAlignment}}
+\index{BarAlignment@{BarAlignment}!PopulationSymbol@{PopulationSymbol}}
+\doxysubsubsection{\texorpdfstring{BarAlignment}{BarAlignment}}
+{\footnotesize\ttfamily Horizontal\+Alignment Population\+Symbol.\+Bar\+Alignment = Horizontal\+Alignment.\+Right\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classPopulationSymbol_a345a724e925b6d2698ae983960717f68}\label{classPopulationSymbol_a345a724e925b6d2698ae983960717f68}} 
+\index{PopulationSymbol@{PopulationSymbol}!Box@{Box}}
+\index{Box@{Box}!PopulationSymbol@{PopulationSymbol}}
+\doxysubsubsection{\texorpdfstring{Box}{Box}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classBox}{Box}} Population\+Symbol.\+Box = new() \{ \mbox{\hyperlink{classPopulationSymbol_ad3f1a50d38063bf676431157c6a23f1b}{Is\+Visible}} = false \}\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classPopulationSymbol_ab2ad874ec006a8afa87c69dc98b3fce7}\label{classPopulationSymbol_ab2ad874ec006a8afa87c69dc98b3fce7}} 
+\index{PopulationSymbol@{PopulationSymbol}!BoxAlignment@{BoxAlignment}}
+\index{BoxAlignment@{BoxAlignment}!PopulationSymbol@{PopulationSymbol}}
+\doxysubsubsection{\texorpdfstring{BoxAlignment}{BoxAlignment}}
+{\footnotesize\ttfamily Horizontal\+Alignment Population\+Symbol.\+Box\+Alignment\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classPopulationSymbol_a6144b3adc4bec066aa05d7589facf1fd}\label{classPopulationSymbol_a6144b3adc4bec066aa05d7589facf1fd}} 
+\index{PopulationSymbol@{PopulationSymbol}!BoxValueConfig@{BoxValueConfig}}
+\index{BoxValueConfig@{BoxValueConfig}!PopulationSymbol@{PopulationSymbol}}
+\doxysubsubsection{\texorpdfstring{BoxValueConfig}{BoxValueConfig}}
+{\footnotesize\ttfamily Func$<$\mbox{\hyperlink{classBox}{Box}}, \mbox{\hyperlink{classPopulation}{Population}}, \mbox{\hyperlink{classPopulation}{Population}}$>$ Population\+Symbol.\+Box\+Value\+Config = \mbox{\hyperlink{classPopulationSymbol_a2789f549f015c9c6cdd8560686166c54}{Box\+Value\+Configurator\+\_\+\+Median\+Quantile\+Extrema}}\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classPopulationSymbol_ad3f1a50d38063bf676431157c6a23f1b}\label{classPopulationSymbol_ad3f1a50d38063bf676431157c6a23f1b}} 
+\index{PopulationSymbol@{PopulationSymbol}!IsVisible@{IsVisible}}
+\index{IsVisible@{IsVisible}!PopulationSymbol@{PopulationSymbol}}
+\doxysubsubsection{\texorpdfstring{IsVisible}{IsVisible}}
+{\footnotesize\ttfamily bool Population\+Symbol.\+Is\+Visible = true\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classPopulationSymbol_a7ca022d1b35da897d74561e3ff221aef}\label{classPopulationSymbol_a7ca022d1b35da897d74561e3ff221aef}} 
+\index{PopulationSymbol@{PopulationSymbol}!LegendItems@{LegendItems}}
+\index{LegendItems@{LegendItems}!PopulationSymbol@{PopulationSymbol}}
+\doxysubsubsection{\texorpdfstring{LegendItems}{LegendItems}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classIEnumerable}{IEnumerable}}$<$\mbox{\hyperlink{classLegendItem}{Legend\+Item}}$>$ Population\+Symbol.\+Legend\+Items\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{classPopulationSymbol_a193713eca3a664f01777698df903fc86}\label{classPopulationSymbol_a193713eca3a664f01777698df903fc86}} 
+\index{PopulationSymbol@{PopulationSymbol}!Marker@{Marker}}
+\index{Marker@{Marker}!PopulationSymbol@{PopulationSymbol}}
+\doxysubsubsection{\texorpdfstring{Marker}{Marker}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classMarker}{Marker}} Population\+Symbol.\+Marker = new() \{ Size = 10, Shape = Marker\+Shape.\+Open\+Circle \}\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classPopulationSymbol_a64a6ca64ba60d26b96cb8bab810393e4}\label{classPopulationSymbol_a64a6ca64ba60d26b96cb8bab810393e4}} 
+\index{PopulationSymbol@{PopulationSymbol}!MarkerAlignment@{MarkerAlignment}}
+\index{MarkerAlignment@{MarkerAlignment}!PopulationSymbol@{PopulationSymbol}}
+\doxysubsubsection{\texorpdfstring{MarkerAlignment}{MarkerAlignment}}
+{\footnotesize\ttfamily Horizontal\+Alignment Population\+Symbol.\+Marker\+Alignment = Horizontal\+Alignment.\+Left\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classPopulationSymbol_ac2eac70541ca72f7fb9dd22b7ea0b0fc}\label{classPopulationSymbol_ac2eac70541ca72f7fb9dd22b7ea0b0fc}} 
+\index{PopulationSymbol@{PopulationSymbol}!population@{population}}
+\index{population@{population}!PopulationSymbol@{PopulationSymbol}}
+\doxysubsubsection{\texorpdfstring{population}{population}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPopulation}{Population}} Population\+Symbol.\+population\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classPopulationSymbol_abcfc1209cc5837284404e6f9b1797b26}\label{classPopulationSymbol_abcfc1209cc5837284404e6f9b1797b26}} 
+\index{PopulationSymbol@{PopulationSymbol}!Population@{Population}}
+\index{Population@{Population}!PopulationSymbol@{PopulationSymbol}}
+\doxysubsubsection{\texorpdfstring{Population}{Population}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPopulation}{Population}} Population\+Symbol.\+Population = \mbox{\hyperlink{classPopulationSymbol_ac2eac70541ca72f7fb9dd22b7ea0b0fc}{population}}\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{classPopulationSymbol_a8ab0d47880a1a1461fcb092e1644b52e}\label{classPopulationSymbol_a8ab0d47880a1a1461fcb092e1644b52e}} 
+\index{PopulationSymbol@{PopulationSymbol}!Width@{Width}}
+\index{Width@{Width}!PopulationSymbol@{PopulationSymbol}}
+\doxysubsubsection{\texorpdfstring{Width}{Width}}
+{\footnotesize\ttfamily double Population\+Symbol.\+Width = 0.\+8\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classPopulationSymbol_a020fcd9d493df6415450cedf77f3ae46}\label{classPopulationSymbol_a020fcd9d493df6415450cedf77f3ae46}} 
+\index{PopulationSymbol@{PopulationSymbol}!X@{X}}
+\index{X@{X}!PopulationSymbol@{PopulationSymbol}}
+\doxysubsubsection{\texorpdfstring{X}{X}}
+{\footnotesize\ttfamily double Population\+Symbol.\+X = 0\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scott\+Plot/src/\+Scott\+Plot5/\+Scott\+Plot5/\+Plottables/Population\+Symbol.\+cs\end{DoxyCompactItemize}
